@@ -4,7 +4,9 @@ use std::{
     sync::{Arc, Mutex},
 };
 
-use llama_cpp::{standard_sampler::StandardSampler, LlamaModel, LlamaParams, SessionParams, Token};
+use llama_cpp::{
+    standard_sampler::StandardSampler, LlamaModel, LlamaParams, LlamaSession, SessionParams, Token,
+};
 use llama_cpp_sys::llama_token_data;
 
 pub struct PeekSampler {
@@ -38,8 +40,82 @@ impl llama_cpp::Sampler for PeekSampler {
     }
 }
 
+struct Strip {
+    leadup: String,
+    punchline: String,
+}
+
+fn get_strips(path: &str) -> Vec<Strip> {
+    let file = std::fs::File::open(path).unwrap();
+    let mut reader = csv::Reader::from_reader(file);
+
+    let mut res = vec![];
+    for result in reader.records() {
+        let record = result.unwrap();
+
+        let (prefix_lines, last_line) = record.get(0).unwrap().rsplit_once("[LINE] ").unwrap();
+        // Skip one-word punchlines:
+        if let Some((first_punchword, mystery)) = last_line.split_once(" ") {
+            res.push(Strip {
+                leadup: prefix_lines.to_owned() + "[LINE] " + first_punchword,
+                punchline: " ".to_owned() + mystery,
+            });
+        }
+    }
+    return res;
+}
+
 fn megabytes(bytes: usize) -> usize {
     return bytes >> 20;
+}
+
+fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
+    ctx.set_context(&strip.leadup).unwrap();
+
+    let punch_toks = ctx
+        .model()
+        .tokenize_bytes(&strip.punchline, false, false)
+        .unwrap();
+
+    let mut punchline: String = String::new();
+    for tok in punch_toks {
+        let candidates = Arc::new(Mutex::new(vec![]));
+        let peek_sampler = PeekSampler {
+            eos: ctx.model().eos(),
+            candidates: candidates.clone(),
+        };
+
+        let mut completion_res = ctx
+            .start_completing_with(peek_sampler, 1)
+            .expect("Completion error!");
+        let _ = completion_res.next_token();
+
+        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
+
+        println!("{} ...: ({} candidates)", punchline, candidates.len());
+
+        let mut tok_s = "   ".to_string();
+        let mut prb_s = "   ".to_string();
+        let mut lgt_s = "   ".to_string();
+
+        for candidate in candidates.iter().take(10) {
+            let one_tok = vec![Token(candidate.id)];
+            write!(tok_s, "{:>10}", ctx.model().decode_tokens(one_tok.iter())).unwrap();
+            if candidate.p < 0.01 {
+                write!(prb_s, "{:>9.2}%", candidate.p * 100.0).unwrap();
+            } else if candidate.p < 0.1 {
+                write!(prb_s, "{:>9.1}%", candidate.p * 100.0).unwrap();
+            } else {
+                write!(prb_s, "{:>9.0}%", candidate.p * 100.0).unwrap();
+            }
+            write!(lgt_s, "{:>10.1}", candidate.logit).unwrap();
+        }
+        print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
+
+        ctx.advance_context_with_tokens(&[tok])
+            .expect("Advancement error!");
+        punchline.push_str(&ctx.model().decode_tokens([tok].iter()));
+    }
 }
 
 fn main() {
@@ -70,78 +146,9 @@ fn main() {
 
     println!("Initial context size: {}", megabytes(ctx.memory_size()));
 
-    let toks = model
-        .tokenize_bytes(
-            "Once upon a time there was a DINOSAUR who had some THOUGHTS about SCIENCE.",
-            false,
-            false,
-        )
-        .unwrap();
+    let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
-    ctx.advance_context_with_tokens(&[model.bos()])
-        .expect("Context BOS");
-
-    let mut punchline: String = String::new();
-    for tok in toks {
-        let candidates = Arc::new(Mutex::new(vec![]));
-        let peek_sampler = PeekSampler {
-            eos: model.eos(),
-            candidates: candidates.clone(),
-        };
-
-        let mut completion_res = ctx
-            .start_completing_with(peek_sampler, 1)
-            .expect("Completion error!");
-        let _ = completion_res.next_token();
-
-        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
-
-        println!("{} ...: ({} candidates)", punchline, candidates.len());
-
-        let mut tok_s = "   ".to_string();
-        let mut prb_s = "   ".to_string();
-        let mut lgt_s = "   ".to_string();
-
-        for candidate in candidates.iter().take(10) {
-            let one_tok = vec![Token(candidate.id)];
-            write!(tok_s, "{:>10}", model.decode_tokens(one_tok.iter())).unwrap();
-            if candidate.p < 0.01 {
-                write!(prb_s, "{:>9.2}%", candidate.p * 100.0).unwrap();
-            } else if candidate.p < 0.1 {
-                write!(prb_s, "{:>9.1}%", candidate.p * 100.0).unwrap();
-            } else {
-                write!(prb_s, "{:>9.0}%", candidate.p * 100.0).unwrap();
-            }
-            write!(lgt_s, "{:>10.1}", candidate.logit).unwrap();
-        }
-        print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
-
-        ctx.advance_context_with_tokens(&[tok])
-            .expect("Advancement error!");
-        punchline.push_str(&model.decode_tokens([tok].iter()));
-    }
-
-    // ctx.advance_context("").unwrap();
-
-    // LLMs are typically used to predict the next word in a sequence. Let's generate some tokens!
-    let max_tokens = 1024;
-    let mut decoded_tokens = 0;
-
-    // `ctx.start_completing_with` creates a worker thread that generates tokens. When the completion
-    // handle is dropped, tokens stop generating!
-    let mut completions = ctx
-        .start_completing_with(StandardSampler::default(), 1024)
-        .unwrap()
-        .into_strings();
-
-    for completion in completions {
-        print!("{completion}");
-        let _ = std::io::stdout().flush();
-
-        decoded_tokens += 1;
-
-        if decoded_tokens > max_tokens {
-            break;
-        }
+    for strip in strips.iter().take(3) {
+        predict_strip(&strip, &mut ctx);
     }
 }

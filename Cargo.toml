@@ -6,3 +6,4 @@ edition = "2021"
 [dependencies]
 llama_cpp = "0.3.2"
 llama_cpp_sys = "0.3.2"
+csv = "1.1"
