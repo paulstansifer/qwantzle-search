@@ -4,9 +4,8 @@ use std::{
     sync::{Arc, Mutex},
 };
 
-use llama_cpp::{
-    standard_sampler::StandardSampler, LlamaModel, LlamaParams, LlamaSession, SessionParams, Token,
-};
+use indicatif::ProgressIterator;
+use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 
 pub struct PeekSampler {
@@ -25,7 +24,7 @@ impl llama_cpp::Sampler for PeekSampler {
             llama_cpp_sys::llama_sample_top_p(
                 context,
                 std::ptr::addr_of_mut!(candidates_p),
-                0.9,
+                0.999,
                 5,
             );
         }
@@ -69,13 +68,50 @@ fn megabytes(bytes: usize) -> usize {
     return bytes >> 20;
 }
 
-fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
+#[derive(Default)]
+struct Stats {
+    details: String,
+    tok_times: Vec<std::time::Duration>,
+    aheads: Vec<u32>,
+    prob_aheads: Vec<f32>,
+    logits: Vec<f32>,
+    probs: Vec<f32>,
+}
+
+//fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
+fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
+    let mut params = SessionParams::default();
+    params.n_ctx += 2000;
+
+    let mut ctx = model
+        .create_session(params)
+        .expect("Failed to create session");
+
     ctx.set_context(&strip.leadup).unwrap();
 
-    let punch_toks = ctx
+    let mut punch_toks = ctx
         .model()
         .tokenize_bytes(&strip.punchline, false, false)
         .unwrap();
+
+    punch_toks.remove(0);
+
+    write!(
+        stats.details,
+        "...{}\n",
+        strip
+            .leadup
+            .chars()
+            .skip(strip.leadup.len() - 150)
+            .collect::<String>()
+    )
+    .unwrap();
+
+    let mut tok_s = "   ".to_string();
+    let mut ahead_s = "   ".to_string();
+    let mut prob_ahead_s = "   ".to_string();
+    let mut logit_s = "   ".to_string();
+    let mut prob_s = "   ".to_string();
 
     let mut punchline: String = String::new();
     for tok in punch_toks {
@@ -85,37 +121,60 @@ fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
             candidates: candidates.clone(),
         };
 
+        let before = std::time::Instant::now();
         let mut completion_res = ctx
             .start_completing_with(peek_sampler, 1)
             .expect("Completion error!");
         let _ = completion_res.next_token();
+        stats.tok_times.push(before.elapsed());
 
         let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
 
-        println!("{} ...: ({} candidates)", punchline, candidates.len());
-
-        let mut tok_s = "   ".to_string();
-        let mut prb_s = "   ".to_string();
-        let mut lgt_s = "   ".to_string();
-
-        for candidate in candidates.iter().take(10) {
-            let one_tok = vec![Token(candidate.id)];
-            write!(tok_s, "{:>10}", ctx.model().decode_tokens(one_tok.iter())).unwrap();
-            if candidate.p < 0.01 {
-                write!(prb_s, "{:>9.2}%", candidate.p * 100.0).unwrap();
-            } else if candidate.p < 0.1 {
-                write!(prb_s, "{:>9.1}%", candidate.p * 100.0).unwrap();
-            } else {
-                write!(prb_s, "{:>9.0}%", candidate.p * 100.0).unwrap();
+        let mut ahead = 0;
+        let mut prob_ahead = 0.0;
+        let mut found_cand = None;
+        for cand in candidates.iter() {
+            if Token(cand.id) == tok {
+                found_cand = Some(cand);
+                break;
             }
-            write!(lgt_s, "{:>10.1}", candidate.logit).unwrap();
+            ahead += 1;
+            prob_ahead += cand.p;
         }
-        print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
+
+        write!(tok_s, "{:>10}", ctx.model().decode_tokens(&[tok])).unwrap();
+
+        if let Some(cand) = found_cand {
+            write!(ahead_s, "{:>10}", ahead).unwrap();
+            write!(prob_ahead_s, "{:>9.2}%", prob_ahead * 100.0).unwrap();
+            write!(logit_s, "{:>10.2}", cand.logit).unwrap();
+            write!(prob_s, "{:>9.2}%", cand.p * 100.0).unwrap();
+            stats.aheads.push(ahead);
+            stats.probs.push(cand.p);
+            stats.prob_aheads.push(prob_ahead);
+            stats.logits.push(cand.logit);
+        } else {
+            write!(ahead_s, " -------- ").unwrap();
+            write!(prob_ahead_s, " -------- ").unwrap();
+            write!(logit_s, " -------- ").unwrap();
+            write!(prob_s, " -------- ").unwrap();
+            stats.aheads.push(0);
+            stats.probs.push(0.0);
+            stats.prob_aheads.push(0.0);
+            stats.logits.push(0.0);
+        }
 
         ctx.advance_context_with_tokens(&[tok])
             .expect("Advancement error!");
         punchline.push_str(&ctx.model().decode_tokens([tok].iter()));
     }
+
+    write!(
+        stats.details,
+        "{}\n{}\n{}\n{}\n{}\n",
+        tok_s, logit_s, prob_s, ahead_s, prob_ahead_s
+    )
+    .unwrap();
 }
 
 fn main() {
@@ -138,17 +197,67 @@ fn main() {
         )
     );
 
-    // A `LlamaModel` holds the weights shared across many _sessions_; while your model may be
-    // several gigabytes large, a session is typically a few dozen to a hundred megabytes!
-    let mut ctx = model
-        .create_session(SessionParams::default())
-        .expect("Failed to create session");
-
-    println!("Initial context size: {}", megabytes(ctx.memory_size()));
+    // // A `LlamaModel` holds the weights shared across many _sessions_; while your model may be
+    // // several gigabytes large, a session is typically a few dozen to a hundred megabytes!
+    // let mut ctx = model
+    //     .create_session(SessionParams::default())
+    //     .expect("Failed to create session");
 
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
-    for strip in strips.iter().take(3) {
-        predict_strip(&strip, &mut ctx);
+    let mut stats = Stats::default();
+    for strip in strips.iter().take(100).progress() {
+        predict_strip(&strip, &model, &mut stats);
     }
+    std::fs::write("details.txt", stats.details).unwrap();
+
+    let mut stats_csv = csv::Writer::from_path("stats.csv").unwrap();
+
+    stats_csv
+        .write_record(&[
+            "microseconds",
+            "tokens ahead",
+            "probability ahead",
+            "logit score",
+            "probability score",
+        ])
+        .unwrap();
+
+    for i in 0..stats.tok_times.len() {
+        stats_csv
+            .serialize((
+                stats.tok_times[i].as_micros(),
+                stats.aheads[i],
+                stats.prob_aheads[i],
+                stats.logits[i],
+                stats.probs[i],
+            ))
+            .unwrap();
+    }
+
+    stats_csv.flush().unwrap();
 }
+
+/*
+       let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
+
+       println!("{} ...: ({} candidates)", punchline, candidates.len());
+
+       let mut tok_s = "   ".to_string();
+       let mut prb_s = "   ".to_string();
+       let mut lgt_s = "   ".to_string();
+
+       for candidate in candidates.iter().take(10) {
+           let one_tok = vec![Token(candidate.id)];
+           write!(tok_s, "{:>10}", ctx.model().decode_tokens(one_tok.iter())).unwrap();
+           if candidate.p < 0.01 {
+               write!(prb_s, "{:>9.2}%", candidate.p * 100.0).unwrap();
+           } else if candidate.p < 0.1 {
+               write!(prb_s, "{:>9.1}%", candidate.p * 100.0).unwrap();
+           } else {
+               write!(prb_s, "{:>9.0}%", candidate.p * 100.0).unwrap();
+           }
+           write!(lgt_s, "{:>10.1}", candidate.logit).unwrap();
+       }
+       print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
+*/
