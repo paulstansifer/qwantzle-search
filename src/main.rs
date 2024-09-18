@@ -1,4 +1,5 @@
 use std::{
+    default,
     fmt::Write,
     io::Write as _,
     sync::{Arc, Mutex},
@@ -39,12 +40,14 @@ impl llama_cpp::Sampler for PeekSampler {
     }
 }
 
+#[derive(PartialEq, Eq, Hash, Clone)]
 struct Strip {
     leadup: String,
     punchline: String,
 }
 
 fn get_strips(path: &str) -> Vec<Strip> {
+    let mut unique_strips = std::collections::HashSet::<Strip>::default();
     let file = std::fs::File::open(path).unwrap();
     let mut reader = csv::Reader::from_reader(file);
 
@@ -52,13 +55,28 @@ fn get_strips(path: &str) -> Vec<Strip> {
     for result in reader.records() {
         let record = result.unwrap();
 
-        let (prefix_lines, last_line) = record.get(0).unwrap().rsplit_once("[LINE] ").unwrap();
+        let last_line_owned: String;
+        let (mut prefix_lines, mut last_line) =
+            record.get(0).unwrap().rsplit_once("[LINE] ").unwrap();
+
+        if last_line.len() < 50 {
+            let (less_prefix_lines, penultimate_line) =
+                prefix_lines.rsplit_once("[LINE] ").unwrap();
+            prefix_lines = less_prefix_lines;
+            last_line_owned = format!("{}[LINE] {}", penultimate_line.to_string(), last_line);
+            last_line = &last_line_owned
+        }
         // Skip one-word punchlines:
         if let Some((first_punchword, mystery)) = last_line.split_once(" ") {
-            res.push(Strip {
+            let strip = Strip {
                 leadup: prefix_lines.to_owned() + "[LINE] " + first_punchword,
-                punchline: " ".to_owned() + mystery,
-            });
+                punchline: " ".to_owned() + mystery.trim(),
+            };
+            if unique_strips.contains(&strip) {
+                continue;
+            }
+            unique_strips.insert(strip.clone());
+            res.push(strip);
         }
     }
     return res;
@@ -175,6 +193,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
         tok_s, logit_s, prob_s, ahead_s, prob_ahead_s
     )
     .unwrap();
+    println!("{}", stats.details);
 }
 
 fn main() {
@@ -206,7 +225,7 @@ fn main() {
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
     let mut stats = Stats::default();
-    for strip in strips.iter().take(100).progress() {
+    for strip in strips.iter().take(10).progress() {
         predict_strip(&strip, &model, &mut stats);
     }
     std::fs::write("details.txt", stats.details).unwrap();
