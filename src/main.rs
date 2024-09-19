@@ -192,6 +192,106 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
     // println!("{}", stats.details);
 }
 
+fn price_out_strip(
+    strip: &Strip,
+    model: &LlamaModel,
+    aheads_limit: u32,
+    prob_aheads_limit: f32,
+    logits_limit: f32,
+    probs_limit: f32,
+) -> (f64, f64, f64, f64) {
+    let mut params = SessionParams::default();
+    params.n_ctx += 2000;
+
+    let mut ctx = model
+        .create_session(params)
+        .expect("Failed to create session");
+
+    ctx.set_context(&strip.leadup).unwrap();
+
+    let punch_toks = ctx
+        .model()
+        .tokenize_bytes(&strip.punchline, false, false)
+        .unwrap();
+
+    let mut a_total = 1.0;
+    let mut pa_total = 1.0;
+    let mut l_total = 1.0;
+    let mut p_total = 1.0;
+    for (tok_i, tok) in punch_toks.iter().enumerate() {
+        let candidates = Arc::new(Mutex::new(vec![]));
+        let peek_sampler = PeekSampler {
+            eos: ctx.model().eos(),
+            candidates: candidates.clone(),
+        };
+
+        let mut completion_res = ctx
+            .start_completing_with(peek_sampler, 1)
+            .expect("Completion error!");
+        let _ = completion_res.next_token();
+
+        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
+
+        let mut pa_count = None;
+        let mut l_count = None;
+        let mut p_count = None;
+
+        let mut i = 0;
+        let mut prob_ahead = 0.0;
+        for cand in candidates.iter() {
+            i += 1;
+            prob_ahead += cand.p;
+
+            if pa_count.is_none() && prob_ahead > prob_aheads_limit {
+                pa_count = Some(i);
+            }
+            if l_count.is_none() && cand.logit < logits_limit {
+                l_count = Some(i);
+            }
+            if p_count.is_none() && cand.p < probs_limit {
+                p_count = Some(i);
+            }
+        }
+        if pa_count.is_none() {
+            pa_count = Some(i);
+        }
+        if l_count.is_none() {
+            l_count = Some(i);
+        }
+        if p_count.is_none() {
+            p_count = Some(i);
+        }
+        let a_count = std::cmp::min(candidates.len() as u32, aheads_limit);
+
+        let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
+
+        let a_choices = f64::max(a_count as f64 * anagram_restriction, 1.0);
+        let pa_choices = f64::max(pa_count.unwrap() as f64 * anagram_restriction, 1.0);
+        let l_choices = f64::max(l_count.unwrap() as f64 * anagram_restriction, 1.0);
+        let p_choices = f64::max(p_count.unwrap() as f64 * anagram_restriction, 1.0);
+
+        print!(
+            "{}|{}|{:.0}:{:.2}  ",
+            candidates.len(),
+            pa_count.unwrap(),
+            pa_choices,
+            anagram_restriction
+        );
+
+        a_total *= a_choices;
+        pa_total *= pa_choices;
+        l_total *= l_choices;
+        p_total *= p_choices;
+
+        ctx.advance_context_with_tokens(&[*tok])
+            .expect("Advancement error!");
+    }
+
+    println!();
+
+    (a_total, pa_total, l_total, p_total)
+}
+
 fn main() {
     // Create a model from anything that implements `AsRef<Path>`:
 
@@ -221,7 +321,7 @@ fn main() {
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
     let mut stats = Stats::default();
-    for strip in strips.iter().take(30).progress() {
+    for strip in strips.iter().take(60).progress() {
         predict_strip(&strip, &model, &mut stats);
     }
     std::fs::write("details.txt", stats.details).unwrap();
@@ -251,6 +351,83 @@ fn main() {
     }
 
     stats_csv.flush().unwrap();
+
+    let mut aheads = stats.aheads;
+    let mut prob_aheads = stats.prob_aheads;
+    let mut logits = stats.logits;
+    let mut probs = stats.probs;
+
+    aheads.sort(); // higher is harder
+    prob_aheads.sort_by(|a, b| a.partial_cmp(b).unwrap()); // higher is harder
+    logits.sort_by(|a, b| a.partial_cmp(b).unwrap());
+    logits.reverse(); // lower is harder
+    probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
+    probs.reverse(); // lower is harder
+
+    for p_limit in [0.95, 0.96, 0.97, 0.98, 0.99, 0.995] {
+        let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
+        let prob_aheads_limit =
+            prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
+        let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
+        let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
+
+        println!(
+            "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
+            p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
+        );
+    }
+
+    let p_limit = 0.97;
+    let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
+    let prob_aheads_limit =
+        prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
+    let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
+    let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
+
+    println!(
+        "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
+        p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
+    );
+
+    let mut needed = 20;
+    for strip in strips.iter() {
+        if strip.punchline.len() > 85 && strip.punchline.len() < 115 {
+            needed -= 1;
+            let (a, pa, l, p) = price_out_strip(
+                strip,
+                &model,
+                aheads_limit,
+                prob_aheads_limit,
+                logits_limit,
+                probs_limit,
+            );
+
+            println!(
+                "...{} | {}",
+                strip
+                    .leadup
+                    .chars()
+                    .skip(strip.leadup.len() - 150)
+                    .collect::<String>(),
+                strip.punchline
+            );
+            println!(
+                "Strip punchline length: {} chars, {} tokens",
+                strip.punchline.len(),
+                model
+                    .tokenize_bytes(strip.punchline.to_string(), false, false)
+                    .unwrap()
+                    .len()
+            );
+            println!(
+                "Aheads: {:.2e}   Prob aheads: {:.2e}   Logits: {:.2e}   Probs: {:.2e}",
+                a, pa, l, p
+            );
+        }
+        if needed <= 0 {
+            break;
+        }
+    }
 }
 
 /*
