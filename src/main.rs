@@ -127,8 +127,10 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
     let mut logit_s = "   ".to_string();
     let mut prob_s = "   ".to_string();
 
+    let mut optimistic_cost = 1.0;
+
     let mut punchline: String = String::new();
-    for tok in punch_toks {
+    for (tok_i, tok) in punch_toks.iter().enumerate() {
         let candidates = Arc::new(Mutex::new(vec![]));
         let peek_sampler = PeekSampler {
             eos: ctx.model().eos(),
@@ -148,7 +150,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
         let mut prob_ahead = 0.0;
         let mut found_cand = None;
         for cand in candidates.iter() {
-            if Token(cand.id) == tok {
+            if Token(cand.id) == *tok {
                 found_cand = Some(cand);
                 break;
             }
@@ -156,7 +158,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
             prob_ahead += cand.p;
         }
 
-        write!(tok_s, "{:>10}", ctx.model().decode_tokens(&[tok])).unwrap();
+        write!(tok_s, "{:>10}", ctx.model().decode_tokens(&[*tok])).unwrap();
 
         if let Some(cand) = found_cand {
             write!(ahead_s, "{:>10}", ahead).unwrap();
@@ -178,18 +180,23 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
             stats.logits.push(-9999.9);
         }
 
-        ctx.advance_context_with_tokens(&[tok])
+        let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
+
+        optimistic_cost *= (*stats.aheads.last().unwrap() as f64 * anagram_restriction) + 1.0;
+
+        ctx.advance_context_with_tokens(&[*tok])
             .expect("Advancement error!");
-        punchline.push_str(&ctx.model().decode_tokens([tok].iter()));
+        punchline.push_str(&ctx.model().decode_tokens([*tok].iter()));
     }
 
     write!(
         stats.details,
-        "{}\n{}\n{}\n{}\n{}\n",
-        tok_s, logit_s, prob_s, ahead_s, prob_ahead_s
+        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average tok time: {:.0}\n",
+        optimistic_cost,
+        stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
+             (stats.tok_times.len()) as f64
     )
     .unwrap();
-    // println!("{}", stats.details);
 }
 
 fn price_out_strip(
@@ -295,7 +302,9 @@ fn price_out_strip(
 fn main() {
     // Create a model from anything that implements `AsRef<Path>`:
 
-    let model = LlamaModel::load_from_file("/workspace/micro_llama.gguf", LlamaParams::default())
+    let mut model_params = LlamaParams::default();
+    model_params.n_gpu_layers = 1000000;
+    let model = LlamaModel::load_from_file("/workspace/micro_llama.gguf", model_params)
         .expect("Could not load model");
 
     println!(
@@ -320,8 +329,13 @@ fn main() {
 
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
+    let representative_strips: Vec<&Strip> = strips
+        .iter()
+        .filter(|s| s.punchline.len() > 100 && s.punchline.len() < 120)
+        .collect();
+
     let mut stats = Stats::default();
-    for strip in strips.iter().take(60).progress() {
+    for strip in representative_strips.iter().take(10).progress() {
         predict_strip(&strip, &model, &mut stats);
     }
     std::fs::write("details.txt", stats.details).unwrap();
@@ -376,58 +390,6 @@ fn main() {
             p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
         );
     }
-
-    let p_limit = 0.97;
-    let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
-    let prob_aheads_limit =
-        prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
-    let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
-    let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
-
-    println!(
-        "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
-        p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
-    );
-
-    let mut needed = 20;
-    for strip in strips.iter() {
-        if strip.punchline.len() > 85 && strip.punchline.len() < 115 {
-            needed -= 1;
-            let (a, pa, l, p) = price_out_strip(
-                strip,
-                &model,
-                aheads_limit,
-                prob_aheads_limit,
-                logits_limit,
-                probs_limit,
-            );
-
-            println!(
-                "...{} | {}",
-                strip
-                    .leadup
-                    .chars()
-                    .skip(strip.leadup.len() - 150)
-                    .collect::<String>(),
-                strip.punchline
-            );
-            println!(
-                "Strip punchline length: {} chars, {} tokens",
-                strip.punchline.len(),
-                model
-                    .tokenize_bytes(strip.punchline.to_string(), false, false)
-                    .unwrap()
-                    .len()
-            );
-            println!(
-                "Aheads: {:.2e}   Prob aheads: {:.2e}   Logits: {:.2e}   Probs: {:.2e}",
-                a, pa, l, p
-            );
-        }
-        if needed <= 0 {
-            break;
-        }
-    }
 }
 
 /*
@@ -453,3 +415,57 @@ fn main() {
        }
        print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
 */
+
+/*
+
+let p_limit = 0.97;
+let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
+let prob_aheads_limit =
+    prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
+let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
+let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
+
+println!(
+    "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
+    p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
+);
+
+let mut needed = 20;
+for strip in strips.iter() {
+    if strip.punchline.len() > 85 && strip.punchline.len() < 115 {
+        needed -= 1;
+        let (a, pa, l, p) = price_out_strip(
+            strip,
+            &model,
+            aheads_limit,
+            prob_aheads_limit,
+            logits_limit,
+            probs_limit,
+        );
+
+        println!(
+            "...{} | {}",
+            strip
+                .leadup
+                .chars()
+                .skip(strip.leadup.len() - 150)
+                .collect::<String>(),
+            strip.punchline
+        );
+        println!(
+            "Strip punchline length: {} chars, {} tokens",
+            strip.punchline.len(),
+            model
+                .tokenize_bytes(strip.punchline.to_string(), false, false)
+                .unwrap()
+                .len()
+        );
+        println!(
+            "Aheads: {:.2e}   Prob aheads: {:.2e}   Logits: {:.2e}   Probs: {:.2e}",
+            a, pa, l, p
+        );
+    }
+    if needed <= 0 {
+        break;
+    }
+} */
