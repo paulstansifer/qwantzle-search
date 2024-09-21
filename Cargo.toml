@@ -8,6 +8,7 @@ llama_cpp = "0.3.2"
 llama_cpp_sys = "0.3.2"
 csv = "1.1"
 indicatif = "0.17"
+clap = { version = "4.5.18", features = ["derive"] }
 
 [features]
 cuda = ["llama_cpp/cuda", "llama_cpp_sys/cuda"]
