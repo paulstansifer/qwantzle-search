@@ -1,3 +1,4 @@
+use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
@@ -6,6 +7,12 @@ use std::{
     sync::{Arc, Mutex},
 };
 
+#[derive(Parser, Debug)]
+struct Args {
+    /// Path to the .gguf model file
+    #[arg(short, long)]
+    model: String,
+}
 pub struct PeekSampler {
     eos: Token,
     candidates: Arc<Mutex<Vec<llama_token_data>>>,
@@ -104,6 +111,17 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
         .expect("Failed to create session");
 
     ctx.set_context(&strip.leadup).unwrap();
+
+    {
+        let before = std::time::Instant::now();
+        ctx.deep_copy().unwrap();
+        writeln!(
+            stats.details,
+            "Context copy time: {} microseconds",
+            before.elapsed().as_micros()
+        )
+        .unwrap();
+    }
 
     let punch_toks = ctx
         .model()
@@ -301,11 +319,11 @@ fn price_out_strip(
 
 fn main() {
     // Create a model from anything that implements `AsRef<Path>`:
+    let args = Args::parse();
 
     let mut model_params = LlamaParams::default();
     model_params.n_gpu_layers = 1000000;
-    let model = LlamaModel::load_from_file("/workspace/micro_llama.gguf", model_params)
-        .expect("Could not load model");
+    let model = LlamaModel::load_from_file(args.model, model_params).expect("Could not load model");
 
     println!(
         "Estimated session size: {} / {}",
