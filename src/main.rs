@@ -4,6 +4,7 @@ use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use std::{
     fmt::Write,
+    io::Read,
     sync::{Arc, Mutex},
 };
 
@@ -104,7 +105,7 @@ struct Stats {
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
 fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
     let mut params = SessionParams::default();
-    params.n_ctx += 2000;
+    params.n_ctx += 1000;
 
     let mut ctx = model
         .create_session(params)
@@ -115,10 +116,12 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
     {
         let before = std::time::Instant::now();
         ctx.deep_copy().unwrap();
+        let copy_time = before.elapsed();
         writeln!(
             stats.details,
-            "Context copy time: {} microseconds",
-            before.elapsed().as_micros()
+            "Context copy time: {} microseconds or {:.6} seconds",
+            copy_time.as_micros(),
+            copy_time.as_secs_f32()
         )
         .unwrap();
     }
@@ -226,7 +229,7 @@ fn price_out_strip(
     probs_limit: f32,
 ) -> (f64, f64, f64, f64) {
     let mut params = SessionParams::default();
-    params.n_ctx += 2000;
+    params.n_ctx += 1000;
 
     let mut ctx = model
         .create_session(params)
@@ -337,6 +340,20 @@ fn main() {
                 .estimate_session_size(&SessionParams::default())
                 .device_memory
         )
+    );
+
+    let mut prefix_1663: String = String::default();
+    std::fs::File::open("1663-prefix.txt")
+        .unwrap()
+        .read_to_string(&mut prefix_1663)
+        .unwrap();
+
+    println!(
+        "prefix tokens: {}",
+        model
+            .tokenize_bytes(prefix_1663, true, false)
+            .unwrap()
+            .len()
     );
 
     // // A `LlamaModel` holds the weights shared across many _sessions_; while your model may be
