@@ -8,6 +8,22 @@ use std::{
     sync::{Arc, Mutex},
 };
 
+use tracing_subscriber::layer::SubscriberExt;
+use tracing_subscriber::util::SubscriberInitExt;
+
+fn init_tracing() {
+    let format = tracing_subscriber::fmt::layer().compact();
+    let filter = tracing_subscriber::EnvFilter::try_from_default_env().unwrap_or(
+        tracing_subscriber::EnvFilter::default()
+            .add_directive(tracing_subscriber::filter::LevelFilter::WARN.into()),
+    );
+
+    tracing_subscriber::registry()
+        .with(format)
+        .with(filter)
+        .init();
+}
+
 #[derive(Parser, Debug)]
 struct Args {
     /// Path to the .gguf model file
@@ -321,6 +337,7 @@ fn price_out_strip(
 }
 
 fn main() {
+    init_tracing();
     // Create a model from anything that implements `AsRef<Path>`:
     let args = Args::parse();
 
