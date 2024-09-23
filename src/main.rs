@@ -121,7 +121,7 @@ struct Stats {
 }
 
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
-fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
+fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
     let mut params = SessionParams::default();
     params.n_ctx += 1000;
 
@@ -236,121 +236,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) {
              (stats.tok_times.len()) as f64
     )
     .unwrap();
-}
 
-fn price_out_strip(
-    strip: &Strip,
-    model: &LlamaModel,
-    aheads_limit: u32,
-    prob_aheads_limit: f32,
-    logits_limit: f32,
-    probs_limit: f32,
-) -> (f64, f64, f64, f64) {
-    let mut params = SessionParams::default();
-    params.n_ctx += 1000;
-
-    let mut ctx = model
-        .create_session(params)
-        .expect("Failed to create session");
-
-    ctx.set_context(&strip.leadup).unwrap();
-
-    let punch_toks = ctx
-        .model()
-        .tokenize_bytes(&strip.punchline, false, false)
-        .unwrap();
-
-    let mut a_total = 1.0;
-    let mut pa_total = 1.0;
-    let mut l_total = 1.0;
-    let mut p_total = 1.0;
-    for (tok_i, tok) in punch_toks.iter().enumerate() {
-        let candidates = Arc::new(Mutex::new(vec![]));
-        let peek_sampler = PeekSampler {
-            eos: ctx.model().eos(),
-            candidates: candidates.clone(),
-        };
-
-        let mut completion_res = ctx
-            .start_completing_with(peek_sampler, 1)
-            .expect("Completion error!");
-        let _ = completion_res.next_token();
-
-        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
-
-        let mut pa_count = None;
-        let mut l_count = None;
-        let mut p_count = None;
-
-        let mut i = 0;
-        let mut prob_ahead = 0.0;
-        for cand in candidates.iter() {
-            i += 1;
-            prob_ahead += cand.p;
-
-            if pa_count.is_none() && prob_ahead > prob_aheads_limit {
-                pa_count = Some(i);
-            }
-            if l_count.is_none() && cand.logit < logits_limit {
-                l_count = Some(i);
-            }
-            if p_count.is_none() && cand.p < probs_limit {
-                p_count = Some(i);
-            }
-        }
-        if pa_count.is_none() {
-            pa_count = Some(i);
-        }
-        if l_count.is_none() {
-            l_count = Some(i);
-        }
-        if p_count.is_none() {
-            p_count = Some(i);
-        }
-        let a_count = std::cmp::min(candidates.len() as u32, aheads_limit);
-
-        let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
-
-        let a_choices = f64::max(a_count as f64 * anagram_restriction, 1.0);
-        let pa_choices = f64::max(pa_count.unwrap() as f64 * anagram_restriction, 1.0);
-        let l_choices = f64::max(l_count.unwrap() as f64 * anagram_restriction, 1.0);
-        let p_choices = f64::max(p_count.unwrap() as f64 * anagram_restriction, 1.0);
-
-        print!(
-            "{}|{}|{:.0}:{:.2}  ",
-            candidates.len(),
-            pa_count.unwrap(),
-            pa_choices,
-            anagram_restriction
-        );
-
-        a_total *= a_choices;
-        pa_total *= pa_choices;
-        l_total *= l_choices;
-        p_total *= p_choices;
-
-        ctx.advance_context_with_tokens(&[*tok])
-            .expect("Advancement error!");
-    }
-
-    println!();
-
-    (a_total, pa_total, l_total, p_total)
-}
-
-fn log_gpu(machine: &machine_info::Machine) {
-    let mut any = false;
-    for card in machine.graphics_status() {
-        any = true;
-        println!(
-            "({}: {} MB used)",
-            card.id,
-            megabytes(card.memory_used as usize)
-        );
-    }
-    if !any {
-        println!("(no graphics cards)")
-    }
+    return optimistic_cost;
 }
 
 fn main() {
@@ -382,51 +269,34 @@ fn main() {
         )
     );
 
-    let mut prefix_1663: String = String::default();
-    std::fs::File::open("1663-prefix.txt")
-        .unwrap()
-        .read_to_string(&mut prefix_1663)
-        .unwrap();
-
-    println!(
-        "prefix tokens: {}",
-        model
-            .tokenize_bytes(prefix_1663, true, false)
-            .unwrap()
-            .len()
-    );
-
-    // // A `LlamaModel` holds the weights shared across many _sessions_; while your model may be
-    // // several gigabytes large, a session is typically a few dozen to a hundred megabytes!
-    // let mut ctx = model
-    //     .create_session(SessionParams::default())
-    //     .expect("Failed to create session");
-
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
-    let mut toks_of_strips = vec![];
-    for strip in &strips {
-        toks_of_strips.push(
-            model
-                .tokenize_bytes(&strip.leadup, true, false)
-                .unwrap()
-                .len()
-                + model
-                    .tokenize_bytes(&strip.punchline, true, false)
-                    .unwrap()
-                    .len(),
-        );
-    }
-    toks_of_strips.sort();
+    // let mut toks_of_strips = vec![];
+    // for strip in &strips {
+    //     toks_of_strips.push(
+    //         model
+    //             .tokenize_bytes(&strip.leadup, true, false)
+    //             .unwrap()
+    //             .len()
+    //             + model
+    //                 .tokenize_bytes(&strip.punchline, true, false)
+    //                 .unwrap()
+    //                 .len(),
+    //     );
+    // }
+    // toks_of_strips.sort();
 
-    println!(
-        "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
-        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
-        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
-        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
-        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
-        toks_of_strips.last().unwrap(),
-    );
+    // println!(
+    //     "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
+    //     toks_of_strips.last().unwrap(),
+    // );
+
+    // Result:
+    // (Percentile) tokens in a strip: (75) 371  (90) 398  (95) 418  (99) 454  (max) 580
 
     let representative_strips: Vec<&Strip> = strips
         .iter()
@@ -451,16 +321,27 @@ fn main() {
     ];
 
     let mut stats = Stats::default();
+    let mut costs = vec![];
     for strip in representative_strips.iter().progress() {
         if !exemplars.contains(&strip.id) {
             continue;
         }
-        predict_strip(&strip, &model, &mut stats);
+        costs.push(predict_strip(&strip, &model, &mut stats));
         for card in machine.graphics_status() {
             peak_vram = std::cmp::max(peak_vram, card.memory_used);
         }
     }
     std::fs::write("details.txt", stats.details).unwrap();
+
+    costs.sort_by(|a, b| a.partial_cmp(b).unwrap());
+
+    println!(
+        "(Percentile) costs: (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
+        costs[((costs.len() - 1) as f32 * 0.75).floor() as usize],
+        costs[((costs.len() - 1) as f32 * 0.50).floor() as usize],
+        costs[((costs.len() - 1) as f32 * 0.25).floor() as usize],
+        costs[((costs.len() - 1) as f32 * 0.10).floor() as usize],
+    );
 
     let mut stats_csv = csv::Writer::from_path("stats.csv").unwrap();
 
@@ -488,31 +369,32 @@ fn main() {
 
     stats_csv.flush().unwrap();
 
-    let mut aheads = stats.aheads;
     let mut prob_aheads = stats.prob_aheads;
-    let mut logits = stats.logits;
-    let mut probs = stats.probs;
 
-    aheads.sort(); // higher is harder
     prob_aheads.sort_by(|a, b| a.partial_cmp(b).unwrap()); // higher is harder
-    logits.sort_by(|a, b| a.partial_cmp(b).unwrap());
-    logits.reverse(); // lower is harder
-    probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
-    probs.reverse(); // lower is harder
 
-    for p_limit in [0.5, 0.75, 0.8, 0.9, 0.95, 0.99, 0.995] {
-        let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
+    print!("Calibration: ");
+    for p_limit in [0.5, 0.75, 0.8, 0.9, 0.95, 0.98, 0.99, 0.995] {
         let prob_aheads_limit =
             prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
-        let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
-        let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
 
-        println!(
-            "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
-            p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
+        print!(
+            "({:.2}%) {:.2}%  ",
+            p_limit * 100.0,
+            prob_aheads_limit * 100.0
         );
     }
+    println!();
     println!("Peak VRAM used: {}", megabytes(peak_vram as usize));
+    println!(
+        "Average token time: {:.0}",
+        stats
+            .tok_times
+            .iter()
+            .map(std::time::Duration::as_micros)
+            .sum::<u128>() as f32
+            / stats.tok_times.len() as f32
+    );
 }
 
 /*
