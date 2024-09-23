@@ -63,6 +63,7 @@ impl llama_cpp::Sampler for PeekSampler {
 
 #[derive(PartialEq, Eq, Hash, Clone)]
 struct Strip {
+    id: usize,
     leadup: String,
     punchline: String,
 }
@@ -93,6 +94,7 @@ fn get_strips(path: &str) -> Vec<Strip> {
                 punchline.split_once(char::is_whitespace)
             {
                 let strip = Strip {
+                    id: str::parse::<usize>(record.get(0).unwrap()).unwrap(),
                     leadup: format!("{}\n{}: {}", leadup, speaker, punchline_first_word),
                     punchline: punchline_rest.to_owned(),
                 };
@@ -428,8 +430,21 @@ fn main() {
 
     let representative_strips: Vec<&Strip> = strips
         .iter()
-        .filter(|s| s.punchline.len() > 100 && s.punchline.len() < 120)
+        .filter(|s| s.punchline.len() > 95 && s.punchline.len() < 120)
         .collect();
+
+    for strip in representative_strips.iter().progress() {
+        println!(
+            "{}: {} | {}",
+            strip.id,
+            strip
+                .leadup
+                .chars()
+                .skip(strip.leadup.len() - 150)
+                .collect::<String>(),
+            strip.punchline
+        )
+    }
 
     let mut stats = Stats::default();
     for strip in representative_strips.iter().take(10).progress() {
