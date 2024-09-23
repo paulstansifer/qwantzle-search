@@ -269,7 +269,7 @@ fn main() {
         )
     );
 
-    let strips = get_strips("/workspace/qwantzle-search/strips.csv");
+    let strips = get_strips("strips.csv");
 
     // let mut toks_of_strips = vec![];
     // for strip in &strips {
