@@ -433,21 +433,28 @@ fn main() {
         .filter(|s| s.punchline.len() > 95 && s.punchline.len() < 120)
         .collect();
 
-    for strip in representative_strips.iter().progress() {
-        println!(
-            "{}: {} | {}",
-            strip.id,
-            strip
-                .leadup
-                .chars()
-                .skip(strip.leadup.len() - 150)
-                .collect::<String>(),
-            strip.punchline
-        )
-    }
+    // for strip in representative_strips.iter().progress() {
+    //     println!(
+    //         "{}: {} | {}",
+    //         strip.id,
+    //         strip
+    //             .leadup
+    //             .chars()
+    //             .skip(strip.leadup.len() - 150)
+    //             .collect::<String>(),
+    //         strip.punchline
+    //     )
+    // }
+
+    let exemplars: Vec<usize> = vec![
+        540, 2281, 2369, 2370, 1923, 2038, 811, 371, 1543, 2064, 1587, 2368, 951, 2297,
+    ];
 
     let mut stats = Stats::default();
-    for strip in representative_strips.iter().take(10).progress() {
+    for strip in representative_strips.iter().progress() {
+        if !exemplars.contains(&strip.id) {
+            continue;
+        }
         predict_strip(&strip, &model, &mut stats);
         for card in machine.graphics_status() {
             peak_vram = std::cmp::max(peak_vram, card.memory_used);
