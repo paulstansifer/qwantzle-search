@@ -2,12 +2,12 @@ use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
+use machine_info::Machine;
 use std::{
     fmt::Write,
     io::Read,
     sync::{Arc, Mutex},
 };
-
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
@@ -336,8 +336,29 @@ fn price_out_strip(
     (a_total, pa_total, l_total, p_total)
 }
 
+fn log_gpu(machine: &machine_info::Machine) {
+    let mut any = false;
+    for card in machine.graphics_status() {
+        any = true;
+        println!(
+            "({}: {} MB used)",
+            card.id,
+            megabytes(card.memory_used as usize)
+        );
+    }
+    if !any {
+        println!("(no graphics cards)")
+    }
+}
+
 fn main() {
     init_tracing();
+    let mut peak_vram: u64 = 0;
+
+    let machine = machine_info::Machine::new();
+    for card in machine.graphics_status() {
+        peak_vram = std::cmp::max(peak_vram, card.memory_used);
+    }
     // Create a model from anything that implements `AsRef<Path>`:
     let args = Args::parse();
 
@@ -381,6 +402,30 @@ fn main() {
 
     let strips = get_strips("/workspace/qwantzle-search/strips.csv");
 
+    let mut toks_of_strips = vec![];
+    for strip in &strips {
+        toks_of_strips.push(
+            model
+                .tokenize_bytes(&strip.leadup, true, false)
+                .unwrap()
+                .len()
+                + model
+                    .tokenize_bytes(&strip.punchline, true, false)
+                    .unwrap()
+                    .len(),
+        );
+    }
+    toks_of_strips.sort();
+
+    println!(
+        "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
+        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
+        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
+        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
+        toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
+        toks_of_strips.last().unwrap(),
+    );
+
     let representative_strips: Vec<&Strip> = strips
         .iter()
         .filter(|s| s.punchline.len() > 100 && s.punchline.len() < 120)
@@ -389,6 +434,9 @@ fn main() {
     let mut stats = Stats::default();
     for strip in representative_strips.iter().take(10).progress() {
         predict_strip(&strip, &model, &mut stats);
+        for card in machine.graphics_status() {
+            peak_vram = std::cmp::max(peak_vram, card.memory_used);
+        }
     }
     std::fs::write("details.txt", stats.details).unwrap();
 
@@ -430,7 +478,7 @@ fn main() {
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
     probs.reverse(); // lower is harder
 
-    for p_limit in [0.95, 0.96, 0.97, 0.98, 0.99, 0.995] {
+    for p_limit in [0.5, 0.75, 0.8, 0.9, 0.95, 0.99, 0.995] {
         let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
         let prob_aheads_limit =
             prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
@@ -442,6 +490,7 @@ fn main() {
             p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
         );
     }
+    println!("Peak VRAM used: {}", megabytes(peak_vram as usize));
 }
 
 /*
