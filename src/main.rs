@@ -2,6 +2,7 @@ use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
+use regex;
 use std::{
     fmt::Write,
     sync::{Arc, Mutex},
@@ -34,8 +35,14 @@ struct Args {
     #[arg(short, long, action = clap::ArgAction::Count)]
     verbose: u8,
 
+    /// Don't store the model on the GPU.
     #[arg(long, action = clap::ArgAction::SetTrue)]
     no_gpu: bool,
+
+    /// String to prepend to every strip. Use "l" to add a message about what the longest word in
+    /// the punchline is.
+    #[arg(short, long, default_value(""))]
+    prompt_prefix: String,
 }
 pub struct PeekSampler {
     eos: Token,
@@ -75,7 +82,7 @@ struct Strip {
     punchline: String,
 }
 
-fn get_strips(path: &str) -> Vec<Strip> {
+fn get_strips(path: &str, prompt_prefix: &str) -> Vec<Strip> {
     let file = std::fs::File::open(path).unwrap();
     let mut reader = csv::Reader::from_reader(file);
 
@@ -100,9 +107,28 @@ fn get_strips(path: &str) -> Vec<Strip> {
             if let Some((punchline_first_word, punchline_rest)) =
                 punchline.split_once(char::is_whitespace)
             {
+                let prompt_prefix_formatted = if prompt_prefix.is_empty() {
+                    "".to_owned()
+                } else if prompt_prefix == "l" {
+                    let mut words: Vec<&str> = regex::Regex::new(r"\W+")
+                        .unwrap()
+                        .split(punchline_rest)
+                        .collect();
+                    words.sort_by(|a, b| a.len().cmp(&b.len()));
+                    format!(
+                        "The longest word in the punchline is \"{}\".\n---\n",
+                        words.last().unwrap()
+                    )
+                } else {
+                    format!("{}\n---\n", prompt_prefix)
+                };
+
                 let strip = Strip {
                     id: str::parse::<usize>(record.get(0).unwrap()).unwrap(),
-                    leadup: format!("{}\n{}: {}", leadup, speaker, punchline_first_word),
+                    leadup: format!(
+                        "{}{}\n{}: {}",
+                        prompt_prefix_formatted, leadup, speaker, punchline_first_word
+                    ),
                     punchline: punchline_rest.to_owned(),
                 };
 
@@ -167,7 +193,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     write!(
         stats.details,
-        "...{}\n",
+        "{}...{}\n",
+        strip.leadup.chars().take(100).collect::<String>(),
         strip
             .leadup
             .chars()
@@ -283,7 +310,7 @@ fn main() {
         )
     );
 
-    let strips = get_strips("strips.csv");
+    let strips = get_strips("strips.csv", &args.prompt_prefix);
 
     // let mut toks_of_strips = vec![];
     // for strip in &strips {
