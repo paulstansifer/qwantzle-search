@@ -2,13 +2,17 @@ use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
-use regex;
 use std::{
     fmt::Write,
     sync::{Arc, Mutex},
 };
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
+
+mod llm;
+mod strip;
+
+use strip::{get_strips, Strip};
 
 fn init_tracing(args: &Args) {
     let format = tracing_subscriber::fmt::layer().compact();
@@ -44,100 +48,6 @@ struct Args {
     #[arg(short, long, default_value(""))]
     prompt_prefix: String,
 }
-pub struct PeekSampler {
-    eos: Token,
-    candidates: Arc<Mutex<Vec<llama_token_data>>>,
-}
-
-impl llama_cpp::Sampler for PeekSampler {
-    fn sample(
-        &mut self,
-        context: *mut llama_cpp_sys::llama_context,
-        _tokens: &[Token],
-        mut candidates_p: llama_cpp_sys::llama_token_data_array,
-    ) -> Token {
-        unsafe {
-            llama_cpp_sys::llama_sample_top_p(
-                context,
-                std::ptr::addr_of_mut!(candidates_p),
-                0.9995,
-                5,
-            );
-        }
-
-        for i in 0..candidates_p.size {
-            self.candidates
-                .lock()
-                .unwrap()
-                .push(unsafe { *candidates_p.data.wrapping_add(i) });
-        }
-        return self.eos; // Don't produce any tokens! (This sampler doesn't sample.)
-    }
-}
-
-#[derive(PartialEq, Eq, Hash, Clone)]
-struct Strip {
-    id: usize,
-    leadup: String,
-    punchline: String,
-}
-
-fn get_strips(path: &str, prompt_prefix: &str) -> Vec<Strip> {
-    let file = std::fs::File::open(path).unwrap();
-    let mut reader = csv::Reader::from_reader(file);
-
-    let mut res = vec![];
-    for result in reader.records() {
-        let record = result.unwrap();
-
-        let (prefix_lines, last_line) = record.get(3).unwrap().trim().rsplit_once("\n").unwrap();
-
-        let leadup: String;
-        let ending: String;
-        if last_line.len() > 50 {
-            leadup = prefix_lines.to_owned();
-            ending = last_line.to_string();
-        } else {
-            let (leadup_first, penultimate) = prefix_lines.rsplit_once("\n").unwrap();
-            leadup = leadup_first.to_owned();
-            ending = format!("{penultimate}\n{last_line}");
-        }
-
-        if let Some((speaker, punchline)) = ending.split_once(": ") {
-            if let Some((punchline_first_word, punchline_rest)) =
-                punchline.split_once(char::is_whitespace)
-            {
-                let prompt_prefix_formatted = if prompt_prefix.is_empty() {
-                    "".to_owned()
-                } else if prompt_prefix == "l" {
-                    let mut words: Vec<&str> = regex::Regex::new(r"\W+")
-                        .unwrap()
-                        .split(punchline_rest)
-                        .collect();
-                    words.sort_by(|a, b| a.len().cmp(&b.len()));
-                    format!(
-                        "The longest word in the punchline is \"{}\".\n---\n",
-                        words.last().unwrap()
-                    )
-                } else {
-                    format!("{}\n---\n", prompt_prefix)
-                };
-
-                let strip = Strip {
-                    id: str::parse::<usize>(record.get(0).unwrap()).unwrap(),
-                    leadup: format!(
-                        "{}{}\n{}: {}",
-                        prompt_prefix_formatted, leadup, speaker, punchline_first_word
-                    ),
-                    punchline: punchline_rest.to_owned(),
-                };
-
-                res.push(strip);
-            }
-        }
-    }
-    return res;
-}
 
 fn megabytes(bytes: usize) -> usize {
     return bytes >> 20;
@@ -147,6 +57,8 @@ fn megabytes(bytes: usize) -> usize {
 struct Stats {
     details: String,
     tok_times: Vec<std::time::Duration>,
+    ctx_cpy_times: Vec<std::time::Duration>,
+    truncate_times: Vec<std::time::Duration>,
     aheads: Vec<u32>,
     prob_aheads: Vec<f32>,
     logits: Vec<f32>,
@@ -173,23 +85,23 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     ctx.set_context(&strip.leadup).unwrap();
 
-    {
-        let before = std::time::Instant::now();
-        ctx.deep_copy().unwrap();
-        let copy_time = before.elapsed();
-        writeln!(
-            stats.details,
-            "Context copy time: {} microseconds or {:.6} seconds",
-            copy_time.as_micros(),
-            copy_time.as_secs_f32()
-        )
-        .unwrap();
-    }
-
     let punch_toks = ctx
         .model()
         .tokenize_bytes(&strip.punchline, false, false)
         .unwrap();
+
+    {
+        // Determine how long copy and truncation take.
+        let before_cpy = std::time::Instant::now();
+        let mut copied_ctx = ctx.deep_copy().unwrap();
+        stats.ctx_cpy_times.push(before_cpy.elapsed());
+
+        let before_trn = std::time::Instant::now();
+        copied_ctx
+            .truncate_context(ctx.context_size() - 10)
+            .unwrap();
+        stats.truncate_times.push(before_trn.elapsed());
+    }
 
     write!(
         stats.details,
@@ -215,7 +127,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     let mut punchline: String = String::new();
     for (tok_i, tok) in punch_toks.iter().enumerate() {
         let candidates = Arc::new(Mutex::new(vec![]));
-        let peek_sampler = PeekSampler {
+        let peek_sampler = llm::PeekSampler {
             eos: ctx.model().eos(),
             candidates: candidates.clone(),
         };
@@ -436,11 +348,24 @@ fn main() {
             prob_aheads_limit * 100.0
         );
     }
+
     println!();
     println!(
-        "Average token time: {:.0}",
+        "Average token time: {:.0}  Average truncation time: {:.0}  Average copy time: {:.0}",
         stats
             .tok_times
+            .iter()
+            .map(std::time::Duration::as_micros)
+            .sum::<u128>() as f32
+            / stats.tok_times.len() as f32,
+        stats
+            .truncate_times
+            .iter()
+            .map(std::time::Duration::as_micros)
+            .sum::<u128>() as f32
+            / stats.tok_times.len() as f32,
+        stats
+            .ctx_cpy_times
             .iter()
             .map(std::time::Duration::as_micros)
             .sum::<u128>() as f32

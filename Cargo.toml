@@ -2,6 +2,16 @@
 name = "qwantzle-search"
 version = "0.1.0"
 edition = "2021"
+default-run = "main"
+
+[[bin]]
+name = "main"
+path = "src/main.rs"
+
+# Various random experiments.
+[[bin]]
+name = "aux"
+path = "src/aux.rs"
 
 [dependencies]
 llama_cpp = "0.3.2"
