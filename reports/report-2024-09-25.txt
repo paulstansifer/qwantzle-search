@@ -1,0 +1,77 @@
+=== /app/Mistral-7B-v0.3.Q4_K_S.gguf ===
+Estimated session size: 64 / 128
+(Percentile) costs: (90) 1.7e12  (75) 2.7e11  (50) 7.9e8  (25) 1.2e7  (10) 1.8e6
+(Percentile) avg_probs: (90) 4.30%  (75) 5.58%  (50) 10.79%  (25) 12.14%  (10) 13.46%
+Calibration: (50.00%) 27.28%  (75.00%) 67.04%  (80.00%) 74.52%  (90.00%) 85.57%  (95.00%) 94.29%  (98.00%) 96.62%  (99.00%) 97.92%  (99.50%) 99.57%
+Average token time: 11680  Average truncation time: 0  Average copy time: 23812
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/TinyLlama_v1.1.Q8_0.gguf ===
+Estimated session size: 62 / 73
+(Percentile) costs: (90) 7.1e14  (75) 1.8e14  (50) 6.6e10  (25) 4.0e9  (10) 4.8e7
+(Percentile) avg_probs: (90) 2.66%  (75) 4.61%  (50) 7.44%  (25) 9.82%  (10) 11.83%
+Calibration: (50.00%) 34.33%  (75.00%) 69.25%  (80.00%) 73.19%  (90.00%) 88.61%  (95.00%) 95.42%  (98.00%) 98.24%  (99.00%) 99.46%  (99.50%) 99.69%
+Average token time: 4524  Average truncation time: 0  Average copy time: 5115
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/llama-2-13b.Q4_0.gguf ===
+Estimated session size: 62 / 462
+(Percentile) costs: (90) 2.7e13  (75) 7.4e11  (50) 1.6e9  (25) 2.0e8  (10) 1.1e7
+(Percentile) avg_probs: (90) 5.65%  (75) 6.43%  (50) 8.22%  (25) 12.58%  (10) 17.09%
+Calibration: (50.00%) 21.33%  (75.00%) 68.77%  (80.00%) 76.45%  (90.00%) 86.11%  (95.00%) 94.58%  (98.00%) 97.51%  (99.00%) 98.32%  (99.50%) 99.46%
+Average token time: 19383  Average truncation time: 0  Average copy time: 108517
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/mistral-7b-v0.1.Q4_0.gguf ===
+Estimated session size: 62 / 126
+(Percentile) costs: (90) 1.8e12  (75) 2.5e11  (50) 5.9e8  (25) 1.4e7  (10) 1.9e6
+(Percentile) avg_probs: (90) 4.24%  (75) 6.03%  (50) 10.14%  (25) 12.14%  (10) 14.59%
+Calibration: (50.00%) 23.09%  (75.00%) 67.65%  (80.00%) 74.48%  (90.00%) 84.53%  (95.00%) 93.56%  (98.00%) 96.45%  (99.00%) 97.43%  (99.50%) 98.99%
+Average token time: 11521  Average truncation time: 0  Average copy time: 24334
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/mistral-7b-v0.1.Q8_0.gguf ===
+Estimated session size: 62 / 126
+(Percentile) costs: (90) 1.5e12  (75) 1.9e11  (50) 3.5e8  (25) 1.1e7  (10) 4.2e6
+(Percentile) avg_probs: (90) 4.34%  (75) 6.26%  (50) 10.85%  (25) 12.63%  (10) 14.63%
+Calibration: (50.00%) 22.75%  (75.00%) 68.33%  (80.00%) 73.95%  (90.00%) 83.61%  (95.00%) 93.70%  (98.00%) 96.38%  (99.00%) 97.74%  (99.50%) 99.14%
+Average token time: 20361  Average truncation time: 0  Average copy time: 24310
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/mythomax-l2-13b.Q3_K_M.gguf ===
+Estimated session size: 62 / 462
+(Percentile) costs: (90) 2.1e14  (75) 2.3e13  (50) 4.1e9  (25) 5.2e8  (10) 2.6e7
+(Percentile) avg_probs: (90) 4.74%  (75) 5.10%  (50) 6.79%  (25) 10.48%  (10) 13.46%
+Calibration: (50.00%) 47.46%  (75.00%) 82.33%  (80.00%) 88.28%  (90.00%) 97.42%  (95.00%) 98.66%  (98.00%) 99.36%  (99.00%) 99.77%  (99.50%) 99.90%
+Average token time: 25853  Average truncation time: 0  Average copy time: 115070
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/qw-mistral.Q4_K_M.gguf ===
+Estimated session size: 62 / 126
+(Percentile) costs: (90) 7.5e15  (75) 9.2e13  (50) 3.8e10  (25) 9.9e9  (10) 1.3e9
+(Percentile) avg_probs: (90) 3.21%  (75) 4.41%  (50) 6.47%  (25) 10.74%  (10) 12.87%
+Calibration: (50.00%) 25.22%  (75.00%) 68.15%  (80.00%) 75.36%  (90.00%) 90.44%  (95.00%) 96.88%  (98.00%) 99.63%  (99.00%) 99.91%  (99.50%) 99.94%
+Average token time: 11938  Average truncation time: 0  Average copy time: 23579
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/qw-tinyllama.Q4_K_M.gguf ===
+Estimated session size: 62 / 73
+(Percentile) costs: (90) 3.1e16  (75) 1.8e16  (50) 3.8e11  (25) 9.0e9  (10) 8.5e8
+(Percentile) avg_probs: (90) 2.60%  (75) 3.50%  (50) 6.83%  (25) 9.44%  (10) 11.57%
+Calibration: (50.00%) 17.10%  (75.00%) 67.32%  (80.00%) 72.85%  (90.00%) 88.69%  (95.00%) 96.71%  (98.00%) 99.58%  (99.00%) 99.81%  (99.50%) 99.83%
+Average token time: 7215  Average truncation time: 0  Average copy time: 4869
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/qw-tinyllama.Q8_0.gguf ===
+Estimated session size: 62 / 73
+(Percentile) costs: (90) 2.9e16  (75) 1.8e16  (50) 2.7e11  (25) 9.4e9  (10) 8.3e8
+(Percentile) avg_probs: (90) 2.59%  (75) 3.51%  (50) 6.84%  (25) 9.47%  (10) 11.56%
+Calibration: (50.00%) 17.37%  (75.00%) 67.67%  (80.00%) 72.71%  (90.00%) 88.56%  (95.00%) 96.54%  (98.00%) 99.57%  (99.00%) 99.81%  (99.50%) 99.83%
+Average token time: 4608  Average truncation time: 0  Average copy time: 5051
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/nous-capybara-7b-v1.9.Q4_K_S.gguf ===
+Estimated session size: 62 / 126
+(Percentile) costs: (90) 5.2e14  (75) 1.6e12  (50) 1.7e9  (25) 8.9e8  (10) 1.2e8
+(Percentile) avg_probs: (90) 2.78%  (75) 4.12%  (50) 7.76%  (25) 9.32%  (10) 11.75%
+Calibration: (50.00%) 32.05%  (75.00%) 75.54%  (80.00%) 80.85%  (90.00%) 92.25%  (95.00%) 96.56%  (98.00%) 98.54%  (99.00%) 98.72%  (99.50%) 99.11%
+Average token time: 11763  Average truncation time: 0  Average copy time: 23953
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
+=== /app/phi-2.Q8_0.gguf ===
+Estimated session size: 100 / 260
+(Percentile) costs: (90) 4.8e19  (75) 5.1e18  (50) 2.0e14  (25) 4.6e11  (10) 3.0e11
+(Percentile) avg_probs: (90) 1.08%  (75) 1.65%  (50) 2.15%  (25) 4.99%  (10) 6.16%
+Calibration: (50.00%) 44.06%  (75.00%) 77.19%  (80.00%) 83.64%  (90.00%) 95.19%  (95.00%) 98.22%  (98.00%) 99.52%  (99.00%) 99.81%  (99.50%) 99.86%
+Average token time: 10673  Average truncation time: 0  Average copy time: 52203
+WARNING: /proc/sys/kernel/numa_balancing is enabled, this has been observed to impair performance
