@@ -2,7 +2,6 @@ use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
-use machine_info::Machine;
 use std::{
     fmt::Write,
     io::Read,
@@ -15,7 +14,7 @@ fn init_tracing() {
     let format = tracing_subscriber::fmt::layer().compact();
     let filter = tracing_subscriber::EnvFilter::try_from_default_env().unwrap_or(
         tracing_subscriber::EnvFilter::default()
-            .add_directive(tracing_subscriber::filter::LevelFilter::WARN.into()),
+            .add_directive(tracing_subscriber::filter::LevelFilter::ERROR.into()),
     );
 
     tracing_subscriber::registry()
@@ -121,9 +120,11 @@ struct Stats {
 }
 
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
-fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
+fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
+    let toks_needed = model.tokenize_bytes(&strip.leadup, true, false).unwrap().len()
+        + model.tokenize_bytes(&strip.punchline, false, false).unwrap().len() + 2;
     let mut params = SessionParams::default();
-    params.n_ctx += 1000;
+    params.n_ctx = toks_needed as u32;
 
     let mut ctx = model
         .create_session(params)
@@ -167,6 +168,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
     let mut prob_s = "   ".to_string();
 
     let mut optimistic_cost = 1.0;
+    let mut overall_probability : f64 = 1.0;
 
     let mut punchline: String = String::new();
     for (tok_i, tok) in punch_toks.iter().enumerate() {
@@ -208,6 +210,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
             stats.probs.push(cand.p);
             stats.prob_aheads.push(prob_ahead);
             stats.logits.push(cand.logit);
+            overall_probability *= cand.p as f64;
         } else {
             write!(ahead_s, " -------- ").unwrap();
             write!(prob_ahead_s, " -------- ").unwrap();
@@ -217,6 +220,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
             stats.probs.push(0.0001);
             stats.prob_aheads.push(0.9999);
             stats.logits.push(-9999.9);
+            overall_probability *= 0.0001 as f64;
         }
 
         let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
@@ -228,26 +232,24 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> f64 {
         punchline.push_str(&ctx.model().decode_tokens([*tok].iter()));
     }
 
+    let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
+
     write!(
         stats.details,
-        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average tok time: {:.0}\n",
-        optimistic_cost,
+        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.3e}  average tok time: {:.0}\n",
+        optimistic_cost,  average_probability,
         stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
     )
     .unwrap();
 
-    return optimistic_cost;
+    return (optimistic_cost, average_probability);
 }
 
 fn main() {
     init_tracing();
     let mut peak_vram: u64 = 0;
 
-    let machine = machine_info::Machine::new();
-    for card in machine.graphics_status() {
-        peak_vram = std::cmp::max(peak_vram, card.memory_used);
-    }
     // Create a model from anything that implements `AsRef<Path>`:
     let args = Args::parse();
 
@@ -322,25 +324,36 @@ fn main() {
 
     let mut stats = Stats::default();
     let mut costs = vec![];
+    let mut avg_probs = vec![];
     for strip in representative_strips.iter().progress() {
         if !exemplars.contains(&strip.id) {
             continue;
         }
-        costs.push(predict_strip(&strip, &model, &mut stats));
-        for card in machine.graphics_status() {
-            peak_vram = std::cmp::max(peak_vram, card.memory_used);
-        }
+        let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
+        costs.push(cost);
+        avg_probs.push(avg_prob);
     }
     std::fs::write("details.txt", stats.details).unwrap();
 
     costs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
     println!(
-        "(Percentile) costs: (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
+        "(Percentile) costs: (90) {:.1e}  (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
+        costs[((costs.len() - 1) as f32 * 0.90).floor() as usize],
         costs[((costs.len() - 1) as f32 * 0.75).floor() as usize],
         costs[((costs.len() - 1) as f32 * 0.50).floor() as usize],
         costs[((costs.len() - 1) as f32 * 0.25).floor() as usize],
         costs[((costs.len() - 1) as f32 * 0.10).floor() as usize],
+    );
+
+    avg_probs.sort_by(|a, b| b.partial_cmp(a).unwrap());
+    println!(
+        "(Percentile) avg_probs: (90) {:.2}%  (75) {:.2}%  (50) {:.2}%  (25) {:.2}%  (10) {:.2}%",
+        avg_probs[((avg_probs.len() - 1) as f32 * 0.90).floor() as usize] * 100.0,
+        avg_probs[((avg_probs.len() - 1) as f32 * 0.75).floor() as usize] * 100.0,
+        avg_probs[((avg_probs.len() - 1) as f32 * 0.50).floor() as usize] * 100.0,
+        avg_probs[((avg_probs.len() - 1) as f32 * 0.25).floor() as usize] * 100.0,
+        avg_probs[((avg_probs.len() - 1) as f32 * 0.10).floor() as usize] * 100.0,
     );
 
     let mut stats_csv = csv::Writer::from_path("stats.csv").unwrap();
@@ -385,7 +398,6 @@ fn main() {
         );
     }
     println!();
-    println!("Peak VRAM used: {}", megabytes(peak_vram as usize));
     println!(
         "Average token time: {:.0}",
         stats
