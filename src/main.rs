@@ -10,11 +10,15 @@ use std::{
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
-fn init_tracing() {
+fn init_tracing(args: &Args) {
     let format = tracing_subscriber::fmt::layer().compact();
+    let level = if args.verbose > 0 {
+        tracing_subscriber::filter::LevelFilter::INFO.into()
+    } else {
+        tracing_subscriber::filter::LevelFilter::ERROR.into()
+    };
     let filter = tracing_subscriber::EnvFilter::try_from_default_env().unwrap_or(
-        tracing_subscriber::EnvFilter::default()
-            .add_directive(tracing_subscriber::filter::LevelFilter::ERROR.into()),
+        tracing_subscriber::EnvFilter::default().add_directive(level),
     );
 
     tracing_subscriber::registry()
@@ -28,6 +32,9 @@ struct Args {
     /// Path to the .gguf model file
     #[arg(short, long)]
     model: String,
+
+    #[arg(short, long, action = clap::ArgAction::Count)]
+    verbose: u8,
 }
 pub struct PeekSampler {
     eos: Token,
@@ -247,11 +254,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 }
 
 fn main() {
-    init_tracing();
-    let mut peak_vram: u64 = 0;
-
-    // Create a model from anything that implements `AsRef<Path>`:
     let args = Args::parse();
+    init_tracing(&args);
 
     let mut model_params = LlamaParams::default();
     model_params.n_gpu_layers = 1000000;
