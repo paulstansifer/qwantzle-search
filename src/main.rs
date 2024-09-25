@@ -4,7 +4,6 @@ use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use std::{
     fmt::Write,
-    io::Read,
     sync::{Arc, Mutex},
 };
 use tracing_subscriber::layer::SubscriberExt;
@@ -17,9 +16,8 @@ fn init_tracing(args: &Args) {
     } else {
         tracing_subscriber::filter::LevelFilter::ERROR.into()
     };
-    let filter = tracing_subscriber::EnvFilter::try_from_default_env().unwrap_or(
-        tracing_subscriber::EnvFilter::default().add_directive(level),
-    );
+    let filter = tracing_subscriber::EnvFilter::try_from_default_env()
+        .unwrap_or(tracing_subscriber::EnvFilter::default().add_directive(level));
 
     tracing_subscriber::registry()
         .with(format)
@@ -35,6 +33,9 @@ struct Args {
 
     #[arg(short, long, action = clap::ArgAction::Count)]
     verbose: u8,
+
+    #[arg(long, action = clap::ArgAction::SetTrue)]
+    no_gpu: bool,
 }
 pub struct PeekSampler {
     eos: Token,
@@ -128,8 +129,15 @@ struct Stats {
 
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
 fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
-    let toks_needed = model.tokenize_bytes(&strip.leadup, true, false).unwrap().len()
-        + model.tokenize_bytes(&strip.punchline, false, false).unwrap().len() + 2;
+    let toks_needed = model
+        .tokenize_bytes(&strip.leadup, true, false)
+        .unwrap()
+        .len()
+        + model
+            .tokenize_bytes(&strip.punchline, false, false)
+            .unwrap()
+            .len()
+        + 2;
     let mut params = SessionParams::default();
     params.n_ctx = toks_needed as u32;
 
@@ -175,7 +183,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     let mut prob_s = "   ".to_string();
 
     let mut optimistic_cost = 1.0;
-    let mut overall_probability : f64 = 1.0;
+    let mut overall_probability: f64 = 1.0;
 
     let mut punchline: String = String::new();
     for (tok_i, tok) in punch_toks.iter().enumerate() {
@@ -258,7 +266,7 @@ fn main() {
     init_tracing(&args);
 
     let mut model_params = LlamaParams::default();
-    model_params.n_gpu_layers = 1000000;
+    model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
     let model = LlamaModel::load_from_file(args.model, model_params).expect("Could not load model");
 
     println!(
