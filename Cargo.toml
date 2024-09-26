@@ -22,6 +22,7 @@ clap = { version = "4.5.18", features = ["derive"] }
 tracing = "0.1.40"
 tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
 regex = "1.10"
+num-traits = "0.2"
 
 [features]
 cuda = ["llama_cpp/cuda", "llama_cpp_sys/cuda"]

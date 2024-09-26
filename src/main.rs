@@ -65,6 +65,32 @@ struct Stats {
     probs: Vec<f32>,
 }
 
+fn percentile<T: PartialOrd + Copy, U: num_traits::ToPrimitive>(
+    samples: &Vec<T>,
+    position: U,
+    reverse: bool,
+) -> T {
+    let mut samples_sorted = samples.clone();
+    samples_sorted.sort_by(|a, b| a.partial_cmp(b).unwrap());
+    if reverse {
+        samples_sorted.reverse();
+    }
+
+    samples_sorted[((samples_sorted.len() - 1) as f32 * (position.to_f32().unwrap() / 100.0) + 0.5)
+        .floor() as usize]
+}
+
+macro_rules! percentile_table_2_digits {
+    ($samples:expr, ($($pos:expr),*), $fmt:literal, $reverse:expr) => {
+        {
+            let mut res = String::new();
+            $(write!(res, "({}%) {}  ", $pos, format!($fmt, percentile($samples, $pos, $reverse)))
+                .unwrap();)*
+            res
+        }
+    };
+}
+
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
 fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
     let toks_needed = model
@@ -190,7 +216,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     write!(
         stats.details,
-        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1e}%  average tok time: {:.0}\n",
+        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
         optimistic_cost,  average_probability * 100.0,
         stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
@@ -286,13 +312,20 @@ fn main() {
         avg_probs.push(avg_prob);
     }
     std::fs::write(
-        format!("reports/tok_scores/{}.txt", &args.model),
+        format!(
+            "reports/tok_scores/{}.txt",
+            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+        ),
         stats.details,
     )
     .unwrap();
 
     costs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
+    println!(
+        "{}",
+        percentile_table_2_digits!(&costs, (90, 75, 50, 25, 10), "{:1e}", false)
+    );
     println!(
         "(Percentile) costs: (90) {:.1e}  (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
         costs[((costs.len() - 1) as f32 * 0.90).floor() as usize],
