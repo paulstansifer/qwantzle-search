@@ -16,3 +16,8 @@ huggingface-cli download mradermacher/pythia-2.8b-deduped-GGUF  pythia-2.8b-dedu
 huggingface-cli download mradermacher/pythia-6.9b-deduped-GGUF  pythia-6.9b-deduped.Q8_0.gguf  --local-dir .
 huggingface-cli download TheBloke/Nous-Capybara-7B-v1.9-GGUF   nous-capybara-7b-v1.9.Q4_K_S.gguf --local-dir .
 huggingface-cli download TheBloke/phi-2-GGUF   phi-2.Q8_0.gguf --local-dir .
+huggingface-cli download Aloshe/Sheared-LLaMA-1.3B-Q8_0-GGUF  sheared-llama-1.3b-q8_0.gguf  --local-dir .
+huggingface-cli download DevQuasar/Llama-3.2-3B-GGUF  Llama-3.2-3B.Q4_K_M.gguf --local-dir .
+huggingface-cli download QuantFactory/gemma-2-9b-GGUF   gemma-2-9b.Q4_K_S.gguf --local-dir .
+huggingface-cli download Aryanne/Sheared-LLaMA-2.7B-gguf  q4_0-sheared-llama-2.7b.gguf   --local-dir .
+ huggingface-cli download TheBloke/Mistral-7B-OpenOrca-GGUF  mistral-7b-openorca.Q4_0.gguf --local-dir .

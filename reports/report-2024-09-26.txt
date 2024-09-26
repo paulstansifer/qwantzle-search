@@ -1,0 +1,47 @@
+RTX 3070
+
+=== /app/models/Llama-3.2-3B.Q4_K_M.gguf ===
+llama_model_load: error loading model: done_getting_tensors: wrong number of tensors; expected 255, got 254
+llama_load_model_from_file: failed to load model
+=== /app/models/gemma-2-9b.Q4_K_S.gguf ===
+llama_model_load: error loading model: error loading model architecture: unknown model architecture: 'gemma2'
+llama_load_model_from_file: failed to load model
+=== /app/models/pythia-1.4b-deduped.f16.gguf ===
+Estimated session size: 98 / 194
+(Percentile) costs: (90) 9.8e18  (75) 1.2e18  (50) 2.4e14  (25) 3.1e12  (10) 6.9e10
+(Percentile) avg_probs: (90) 1.44%  (75) 2.13%  (50) 2.95%  (25) 4.31%  (10) 6.23%
+Calibration: (50.00%) 40.71%  (75.00%) 77.01%  (80.00%) 80.60%  (90.00%) 93.91%  (95.00%) 97.91%  (98.00%) 99.13%  (99.00%) 99.68%  (99.50%) 99.75%
+Average token time: 10020  Average truncation time: 0  Average copy time: 29313
+=== /app/models/pythia-2.8b-deduped.f16.gguf ===
+Estimated session size: 98 / 258
+(Percentile) costs: (90) 3.4e18  (75) 4.2e17  (50) 8.1e13  (25) 4.5e12  (10) 4.6e10
+(Percentile) avg_probs: (90) 1.40%  (75) 2.30%  (50) 3.10%  (25) 4.01%  (10) 6.92%
+Calibration: (50.00%) 41.48%  (75.00%) 72.88%  (80.00%) 81.67%  (90.00%) 93.40%  (95.00%) 97.79%  (98.00%) 99.61%  (99.00%) 99.77%  (99.50%) 99.87%
+Average token time: 15316  Average truncation time: 0  Average copy time: 50474
+=== /app/models/pythia-6.9b-deduped.Q8_0.gguf ===
+Estimated session size: 98 / 354
+(Percentile) costs: (90) 1.6e18  (75) 4.6e16  (50) 2.8e13  (25) 6.6e11  (10) 4.2e10
+(Percentile) avg_probs: (90) 1.67%  (75) 2.16%  (50) 3.96%  (25) 5.97%  (10) 6.68%
+Calibration: (50.00%) 42.45%  (75.00%) 70.40%  (80.00%) 80.32%  (90.00%) 93.43%  (95.00%) 97.96%  (98.00%) 99.79%  (99.00%) 99.81%  (99.50%) 99.89%
+Average token time: 18702  Average truncation time: 0  Average copy time: 81505
+=== /app/models/sheared-llama-1.3b-q8_0.gguf ===
+Estimated session size: 62 / 158
+(Percentile) costs: (90) 1.3e16  (75) 5.6e14  (50) 4.5e10  (25) 5.7e8  (10) 6.4e7
+(Percentile) avg_probs: (90) 2.98%  (75) 4.90%  (50) 6.64%  (25) 9.67%  (10) 13.36%
+Calibration: (50.00%) 31.49%  (75.00%) 68.95%  (80.00%) 77.17%  (90.00%) 88.73%  (95.00%) 94.61%  (98.00%) 97.81%  (99.00%) 99.20%  (99.50%) 99.71%
+Average token time: 5495  Average truncation time: 0  Average copy time: 26959
+=== /app/models/q4_0-sheared-llama-2.7b.gguf ===
+Estimated session size: 62 / 222
+(Percentile) costs: (90) 3.5e14  (75) 4.3e13  (50) 6.1e10  (25) 3.0e8  (10) 4.8e7
+(Percentile) avg_probs: (90) 3.89%  (75) 5.59%  (50) 7.57%  (25) 10.25%  (10) 13.67%
+Calibration: (50.00%) 31.07%  (75.00%) 68.50%  (80.00%) 73.48%  (90.00%) 86.27%  (95.00%) 95.49%  (98.00%) 97.91%  (99.00%) 98.88%  (99.50%) 99.65%
+Average token time: 5748  Average truncation time: 0  Average copy time: 43575
+=== /app/models/Llama-3.2-3B.Q4_K_M.gguf ===
+llama_model_load: error loading model: done_getting_tensors: wrong number of tensors; expected 255, got 254
+llama_load_model_from_file: failed to load model
+=== /app/models/mistral-7b-openorca.Q4_0.gguf ===
+Estimated session size: 62 / 126
+(Percentile) costs: (90) 9.6e12  (75) 5.1e12  (50) 5.1e9  (25) 4.8e8  (10) 1.3e8
+(Percentile) avg_probs: (90) 3.21%  (75) 4.58%  (50) 7.42%  (25) 9.83%  (10) 11.26%
+Calibration: (50.00%) 39.75%  (75.00%) 78.07%  (80.00%) 83.54%  (90.00%) 94.66%  (95.00%) 97.64%  (98.00%) 99.26%  (99.00%) 99.57%  (99.50%) 99.60%
+Average token time: 10494  Average truncation time: 0  Average copy time: 22292
