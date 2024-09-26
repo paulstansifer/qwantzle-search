@@ -190,8 +190,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     write!(
         stats.details,
-        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.3e}  average tok time: {:.0}\n",
-        optimistic_cost,  average_probability,
+        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1e}%  average tok time: {:.0}\n",
+        optimistic_cost,  average_probability * 100.0,
         stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
     )
@@ -206,7 +206,8 @@ fn main() {
 
     let mut model_params = LlamaParams::default();
     model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
-    let model = LlamaModel::load_from_file(args.model, model_params).expect("Could not load model");
+    let model =
+        LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
 
     println!(
         "Estimated session size: {} / {}",
@@ -284,7 +285,11 @@ fn main() {
         costs.push(cost);
         avg_probs.push(avg_prob);
     }
-    std::fs::write("details.txt", stats.details).unwrap();
+    std::fs::write(
+        format!("reports/tok_scores/{}.txt", &args.model),
+        stats.details,
+    )
+    .unwrap();
 
     costs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
