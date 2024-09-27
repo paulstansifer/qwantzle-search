@@ -1,4 +1,5 @@
 #! /bin/bash
+cd /app/models/
 huggingface-cli download QuantFactory/TinyLlama_v1.1-GGUF  TinyLlama_v1.1.Q8_0.gguf  --local-dir .
 huggingface-cli download paul-stansifer/qw-us-mistral-7b-gguf  unsloth.Q4_K_M.gguf  --local-dir .
 mv unsloth.Q4_K_M.gguf qw-mistral.Q4_K_M.gguf

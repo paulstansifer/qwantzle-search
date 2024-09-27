@@ -29,7 +29,7 @@ ENV PATH=/root/.cargo/bin:$PATH
 
 # Possibly redundant
 RUN apt-get update && apt-get install -y python3 python3-pip
-RUN apt-get install -y git zile
+RUN apt-get install -y git zile nano netcat
 
 # Install requirements for the llama.cpp converter (possibly redundant)
 RUN pip3 install "numpy~=1.26.4"
@@ -46,17 +46,17 @@ WORKDIR /app
 
 RUN git clone https://github.com/paulstansifer/qwantzle-search.git
 WORKDIR /app/qwantzle-search
-RUN cargo build --release
+RUN cargo build --release --features "cuda"
 
 WORKDIR /app
 RUN git clone https://github.com/ggerganov/llama.cpp
 
 
 # Copy the shell script into the container
-COPY estimation.sh .
+COPY start_build.sh .
+COPY evaluate_models.sh .
 
-# Make the shell script executable
-RUN chmod +x estimation.sh
+RUN chmod +x start_build.sh evaluate_models.sh
 
 ENV TYPE=f16
 # shell variables:
@@ -66,5 +66,5 @@ ENV TYPE=f16
 # * $HF_TOKEN
 
 # Set the entrypoint to the shell script
-ENTRYPOINT ["./estimation.sh"]
+ENTRYPOINT ["./start_build.sh"]
 
