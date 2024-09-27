@@ -10,6 +10,7 @@ use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
 mod llm;
+mod pool;
 mod strip;
 
 use strip::{get_strips, Strip};
@@ -129,6 +130,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
         stats.truncate_times.push(before_trn.elapsed());
     }
 
+    let mut letter_pool = pool::LetterPool::from_text(&strip.punchline);
+
     write!(
         stats.details,
         "{}...{}\n",
@@ -143,6 +146,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     let mut tok_s = "   ".to_string();
     let mut ahead_s = "   ".to_string();
+    let mut ahead_pv_s = "   ".to_string();
     let mut prob_ahead_s = "   ".to_string();
     let mut logit_s = "   ".to_string();
     let mut prob_s = "   ".to_string();
@@ -151,7 +155,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     let mut overall_probability: f64 = 1.0;
 
     let mut punchline: String = String::new();
-    for (tok_i, tok) in punch_toks.iter().enumerate() {
+    for tok in &punch_toks {
         let candidates = Arc::new(Mutex::new(vec![]));
         let peek_sampler = llm::PeekSampler {
             eos: ctx.model().eos(),
@@ -168,6 +172,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
         let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
 
         let mut ahead = 0;
+        let mut ahead_and_pool_valid = 0;
         let mut prob_ahead = 0.0;
         let mut found_cand = None;
         for cand in candidates.iter() {
@@ -176,6 +181,10 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
                 break;
             }
             ahead += 1;
+            if letter_pool.has(Token(cand.id), model) {
+                ahead_and_pool_valid += 1;
+            }
+
             prob_ahead += cand.p;
         }
 
@@ -183,6 +192,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
         if let Some(cand) = found_cand {
             write!(ahead_s, "{:>10}", ahead).unwrap();
+            write!(ahead_pv_s, "{:>10}", ahead_and_pool_valid).unwrap();
             write!(prob_ahead_s, "{:>9.2}%", prob_ahead * 100.0).unwrap();
             write!(logit_s, "{:>10.2}", cand.logit).unwrap();
             write!(prob_s, "{:>9.2}%", cand.p * 100.0).unwrap();
@@ -193,6 +203,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
             overall_probability *= cand.p as f64;
         } else {
             write!(ahead_s, " -------- ").unwrap();
+            write!(ahead_pv_s, " -------- ").unwrap();
             write!(prob_ahead_s, " -------- ").unwrap();
             write!(logit_s, " -------- ").unwrap();
             write!(prob_s, " -------- ").unwrap();
@@ -203,20 +214,22 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
             overall_probability *= 0.0001 as f64;
         }
 
-        let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
+        // let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
 
-        optimistic_cost *= (*stats.aheads.last().unwrap() as f64 * anagram_restriction) + 1.0;
+        optimistic_cost *= ahead_and_pool_valid as f64 + 1.0;
 
         ctx.advance_context_with_tokens(&[*tok])
             .expect("Advancement error!");
-        punchline.push_str(&ctx.model().decode_tokens([*tok].iter()));
+        punchline.push_str(&model.decode_tokens([*tok].iter()));
+        letter_pool.remove(*tok, &model);
     }
+    assert!(letter_pool.size() == 0);
 
     let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
 
     write!(
         stats.details,
-        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
+        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
         optimistic_cost,  average_probability * 100.0,
         stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
@@ -285,7 +298,7 @@ fn main() {
 
     // for strip in representative_strips.iter().progress() {
     //     println!(
-    //         "{}: {} | {}",
+    //         "{}: {} | {}\n-----------",
     //         strip.id,
     //         strip
     //             .leadup
@@ -299,6 +312,7 @@ fn main() {
     let exemplars: Vec<usize> = vec![
         540, 2281, 2369, 2370, 1923, 2038, 811, 371, 1543, 2064, 1587, 2368, 951, 2297,
     ];
+    // Some other proposed exemplars: 1448, 1699, 1551, 1392, 1959
 
     let mut stats = Stats::default();
     let mut costs = vec![];
@@ -324,7 +338,7 @@ fn main() {
 
     println!(
         "{}",
-        percentile_table_2_digits!(&costs, (90, 75, 50, 25, 10), "{:1e}", false)
+        percentile_table_2_digits!(&costs, (90, 75, 50, 25, 10), "{:.1e}", false)
     );
     println!(
         "(Percentile) costs: (90) {:.1e}  (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
