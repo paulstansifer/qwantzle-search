@@ -14,8 +14,8 @@ name = "aux"
 path = "src/aux.rs"
 
 [dependencies]
-llama_cpp = "0.3.2"
-llama_cpp_sys = "0.3.2"
+llama_cpp = { git = "https://github.com/vargad/llama_cpp-rs.git", branch = "bump_3038" }
+llama_cpp_sys = { git = "https://github.com/vargad/llama_cpp-rs.git", branch = "bump_3038" }
 csv = "1.1"
 indicatif = "0.17"
 clap = { version = "4.5.18", features = ["derive"] }
