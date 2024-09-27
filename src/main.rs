@@ -92,6 +92,18 @@ macro_rules! percentile_table_2_digits {
     };
 }
 
+macro_rules! percentile_table_2_digits_percentage {
+    ($samples:expr, ($($pos:expr),*), $fmt:literal, $reverse:expr) => {
+        {
+            let new_samples = $samples.iter().map(|v| 100.0 * v).collect::<Vec<_>>();
+            let mut res = String::new();
+            $(write!(res, "({}%) {}%  ", $pos, format!($fmt, percentile(&new_samples, $pos, $reverse)))
+                .unwrap();)*
+            res
+        }
+    };
+}
+
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
 fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
     let toks_needed = model
@@ -337,26 +349,13 @@ fn main() {
     costs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
     println!(
-        "{}",
+        "Costs: {}",
         percentile_table_2_digits!(&costs, (90, 75, 50, 25, 10), "{:.1e}", false)
     );
-    println!(
-        "(Percentile) costs: (90) {:.1e}  (75) {:.1e}  (50) {:.1e}  (25) {:.1e}  (10) {:.1e}",
-        costs[((costs.len() - 1) as f32 * 0.90).floor() as usize],
-        costs[((costs.len() - 1) as f32 * 0.75).floor() as usize],
-        costs[((costs.len() - 1) as f32 * 0.50).floor() as usize],
-        costs[((costs.len() - 1) as f32 * 0.25).floor() as usize],
-        costs[((costs.len() - 1) as f32 * 0.10).floor() as usize],
-    );
 
-    avg_probs.sort_by(|a, b| b.partial_cmp(a).unwrap());
     println!(
-        "(Percentile) avg_probs: (90) {:.2}%  (75) {:.2}%  (50) {:.2}%  (25) {:.2}%  (10) {:.2}%",
-        avg_probs[((avg_probs.len() - 1) as f32 * 0.90).floor() as usize] * 100.0,
-        avg_probs[((avg_probs.len() - 1) as f32 * 0.75).floor() as usize] * 100.0,
-        avg_probs[((avg_probs.len() - 1) as f32 * 0.50).floor() as usize] * 100.0,
-        avg_probs[((avg_probs.len() - 1) as f32 * 0.25).floor() as usize] * 100.0,
-        avg_probs[((avg_probs.len() - 1) as f32 * 0.10).floor() as usize] * 100.0,
+        "Probs: {}",
+        percentile_table_2_digits_percentage!(&avg_probs, (90, 75, 50, 25, 10), "{:.2}", true)
     );
 
     let mut stats_csv = csv::Writer::from_path("stats.csv").unwrap();
