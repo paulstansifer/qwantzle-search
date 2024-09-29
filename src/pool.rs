@@ -156,6 +156,7 @@ fn pool_test() {
     let mut pool = LetterPool::from_text("an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!");
 
     assert!(pool.has_pt(&PoolTok::from_str("okay")));
+    assert!(pool.has_pt(&PoolTok::from_str(" okay")));
     assert!(pool.has_pt(&PoolTok::from_str("disappoints")));
     assert!(!pool.has_pt(&PoolTok::from_str("xerox")));
     for w in "an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!".split(" ") {
@@ -165,4 +166,5 @@ fn pool_test() {
 
     assert!(!pool.has_pt(&PoolTok::from_str("o")));
     assert!(!pool.has_pt(&PoolTok::from_str("e")));
+    assert_eq!(pool.size(), 0)
 }

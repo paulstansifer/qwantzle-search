@@ -274,7 +274,7 @@ fn main() {
         )
     );
 
-    let strips = get_strips("strips.csv", &args.prompt_prefix);
+    let strips = get_strips("corpus/strips.csv", &args.prompt_prefix);
 
     // let mut toks_of_strips = vec![];
     // for strip in &strips {
