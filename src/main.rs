@@ -124,10 +124,21 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     ctx.set_context(&strip.leadup).unwrap();
 
-    let punch_toks = ctx
-        .model()
+    let toks_without_space = model
         .tokenize_bytes(&strip.punchline, false, false)
         .unwrap();
+
+    let toks_with_space = model
+        .tokenize_bytes(&format!(" {}", strip.punchline), false, false)
+        .unwrap();
+
+    let punch_toks = if toks_with_space.len() <= toks_without_space.len() {
+        writeln!(stats.details, "Padding the suffix with a space.").unwrap();
+        toks_with_space
+    } else {
+        writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
+        toks_without_space
+    };
 
     {
         // Determine how long copy and truncation take.
@@ -388,17 +399,15 @@ fn main() {
 
     prob_aheads.sort_by(|a, b| a.partial_cmp(b).unwrap()); // higher is harder
 
-    print!("Calibration: ");
-    for p_limit in [0.5, 0.75, 0.8, 0.9, 0.95, 0.98, 0.99, 0.995] {
-        let prob_aheads_limit =
-            prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
-
-        print!(
-            "({:.2}%) {:.2}%  ",
-            p_limit * 100.0,
-            prob_aheads_limit * 100.0
-        );
-    }
+    println!(
+        "Calibration: {}",
+        percentile_table_2_digits_percentage!(
+            &prob_aheads,
+            (50, 75, 80, 90, 95, 98, 99, 99.5),
+            "{:.2}",
+            false
+        )
+    );
 
     println!();
     println!(
