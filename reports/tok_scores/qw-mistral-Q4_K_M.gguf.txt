@@ -1,70 +1,85 @@
+Padding the suffix with a space.
 Narrator: HOW TO BE A SAILOR
 T-Rex: Oh crap! Is there like a school you go to for that? Like... sail... audacious boat-shaped objects??
 Utahraptor: These are among the questions I have, yes
 Narrator: LATER:
 T-Rex: Attention, class!!
 T-Rex (punchline): I
-            t      ried        to      look     boats        up        on Wikipedia         ,       but according        to Wikipedia         ,        my        IP        is        to       tes    banned      from Wikipedia
-         0.41      3.75     10.30      9.46      7.70     15.92     16.07     14.02     14.27     16.35      5.89     18.17     12.42     13.13      9.57      7.46     12.15      4.49     11.59      9.96     13.58     12.64
-        0.00%     0.00%     5.73%     2.73%     0.22%    92.40%    73.63%    31.71%    25.88%    87.70%     0.03%    99.59%    18.22%    40.68%     1.11%     0.34%     5.50%     0.02%    31.59%     8.71%    15.19%    23.01%
-         3300       393         4         8        29         0         0         1         1         0       136         0         1         0        12        34         1       320         0         1         2         0
-       99.85%    98.98%    50.30%    36.38%    90.93%     0.00%     0.00%    55.92%    40.45%     0.00%    95.72%     0.00%    18.83%     0.00%    74.67%    62.31%    79.93%    92.40%     0.00%    16.19%    38.53%     0.00%
-optimistic cost: 5.92e14  average probability: 2.6%  average tok time: 148980
+        tried        to      look     boats        up        on Wikipedia         ,       but according        to Wikipedia         ,        my        IP        is        to       tes    banned      from Wikipedia
+         7.51     13.93     11.14      8.90     17.50     17.37     14.91     15.80     17.86      6.85     19.01     13.32     13.81     10.16      7.62     12.47      4.81     11.30     10.20     13.75     13.11
+        0.10%    60.93%     2.45%     0.30%    96.33%    69.53%    34.83%    41.27%    90.30%     0.03%    99.78%    20.21%    44.58%     1.08%     0.27%     5.60%     0.02%    24.05%     8.46%    13.86%    22.77%
+           88         0         8        19         0         0         1         0         0       110         0         0         0        12        41         1       318         0         1         2         0
+           36         0         7         9         0         0         0         0         0        39         0         0         0         5        15         1        61         0         0         0         0
+       88.85%     0.00%    32.44%    92.30%     0.00%     0.00%    54.50%     0.00%     0.00%    95.61%     0.00%     0.00%     0.00%    76.28%    66.70%    81.28%    92.54%     0.00%    17.26%    40.34%     0.00%
+optimistic cost: 1.41e9  average probability: 6.0%  average tok time: 7103
+Padding the suffix with a space.
 T-Rex: Okay! I am going to write a story and it will be something BRAND NEW. It will be the most sta...II"!
 Utahraptor: I might as well!
 Narrator: SOON:
 Off panel: Hamlet is Shakespeare's most disappointing Terminator sequel yet.
 T-Rex (punchline): It's
            an      okay     story         ,       but        as         a      Term    inator      sequ        el         ,        it  profound        ly disappoint         s        on     every     conce        iv      able     level         !
-    --------       5.84     10.20     13.06     12.90      7.74     13.62     13.24     17.98     13.85     18.97     13.98     13.93      3.03     18.27     13.45     18.88     10.28     13.34     12.50     19.55     19.67     16.03     15.97
-    --------      0.21%     8.56%    32.22%    47.62%     0.35%    66.34%    42.76%    98.94%    68.48%    99.55%    23.23%    65.93%     0.00%    99.68%    32.22%    99.21%     0.29%    22.88%     3.90%    99.74%    98.94%    96.08%    28.02%
-    --------         54         2         0         0        29         0         0         0         0         0         1         0       937         0         0         0        11         0         1         0         0         0         1
-    --------     56.58%    56.37%     0.00%     0.00%    77.13%     0.00%     0.00%     0.00%     0.00%     0.00%    42.81%     0.00%    99.01%     0.00%     0.00%     0.00%    96.94%     0.00%    85.27%     0.00%     0.00%     0.00%    59.10%
-optimistic cost: 4.60e10  average probability: 10.8%  average tok time: 147106
+         9.31     11.68     11.81     14.61     14.61      8.38     13.99     14.32     18.66     14.72     20.87     14.66     14.82      4.09     19.46     14.27     20.46     10.94     13.57     12.83     21.15     20.80     16.45     16.72
+        0.77%     4.09%    12.49%    44.40%    54.32%     0.34%    62.35%    48.61%    99.55%    66.58%    99.85%    20.75%    68.48%     0.00%    99.85%    32.47%    99.67%     0.35%    22.56%     4.39%    99.91%    99.30%    96.10%    29.35%
+           21         2         1         0         0        35         0         0         0         0         0         1         0       799         0         0         0        11         0         1         0         0         0         1
+           16         1         1         0         0        17         0         0         0         0         0         1         0       377         0         0         0         2         0         1         0         0         0         0
+       62.88%    12.36%    45.41%     0.00%     0.00%    80.62%     0.00%     0.00%     0.00%     0.00%     0.00%    47.76%     0.00%    99.42%     0.00%     0.00%     0.00%    96.87%     0.00%    84.42%     0.00%     0.00%     0.00%    58.42%
+optimistic cost: 5.55e6  average probability: 15.3%  average tok time: 6922
+Padding the suffix with a space.
 T-Rex: How come none of you guys have described me as an "elite professional" yet? It's really weird...Dear audio diary: today I made another problem that can only be fixed by time machines!! AGAIN. It's like - my special skill?
 T-Rex (punchline): Still
       looking       for         a    friend     whose   special     skill        is    invent       ing       and      then    giving      away      time  machines         ,     diary         .
-        -1.36     11.16     10.66      8.88      6.96      8.86     16.18     15.97      8.55     17.85      8.39     11.40     11.11     13.77     12.59     17.25     13.43     12.34     14.25
-        0.00%     1.34%    27.41%     1.41%     0.39%     2.35%    97.72%    91.32%     1.03%    99.52%     0.71%     7.30%     7.48%    27.37%    48.72%    96.39%    18.50%    25.35%    16.72%
-         6822         5         0        11        31         3         0         0        12         0         5         2         2         1         0         0         1         0         2
-       99.91%    86.77%     0.00%    60.30%    77.91%    25.29%     0.00%     0.00%    56.82%     0.00%    75.22%    34.80%    22.81%    55.70%     0.00%     0.00%    36.06%     0.00%    61.87%
-optimistic cost: 1.37e9  average probability: 5.3%  average tok time: 147062
+         8.22     16.31     12.42      9.17      8.63      9.61     16.99     17.20      9.53     19.04      9.55     11.56     11.70     14.65     13.42     17.90     14.42     12.45     14.94
+        0.48%    77.07%    36.45%     0.89%     0.57%     2.32%    97.84%    93.04%     1.26%    99.74%     0.79%     8.10%     8.86%    27.81%    51.37%    96.46%    16.13%    18.38%    20.83%
+           24         0         0        11        15         4         0         0         9         0         4         1         2         1         0         0         1         1         2
+           16         0         0         7         7         2         0         0         1         0         3         0         0         1         0         0         0         0         0
+       76.40%     0.00%     0.00%    61.28%    86.53%    26.58%     0.00%     0.00%    54.37%     0.00%    78.68%    25.11%    21.77%    57.39%     0.00%     0.00%    25.25%    20.11%    55.25%
+optimistic cost: 5.22e4  average probability: 11.2%  average tok time: 6929
+Padding the suffix with a space.
 T-Rex: I have led my life believing that people who write down cuss words have bad things happen to ... I realized there's probably a delay, so when a bunch of birds poop on my head later on this week I'm not going to wonder why.
 T-Rex (punchline): Look
           for        me         ,         I         '        ll        be       the       guy    shield       ing        my      head      with       one      hand     while  shouting         "       Don         '         t     worry  everyone         !         I   deserve      this         !        !"
-         2.75      6.35     12.13     10.65     17.82     17.26     17.00     13.92     14.21      4.89     19.31     14.71     14.78     15.25     10.21     14.19     14.53     10.38     14.75     10.17     17.49     18.03     11.87     11.11     16.77     15.60     12.70     17.08     13.54     14.36
-        0.00%     0.33%    22.28%    11.22%    95.23%    92.79%    95.60%    52.59%    46.88%     0.01%    97.33%    25.49%    58.78%    55.56%     1.09%    55.67%    20.30%     1.65%    82.19%     0.46%    99.35%    99.75%    18.54%     2.85%    48.63%    41.14%    10.90%    66.52%    17.31%    21.67%
-          373        22         0         0         0         0         0         0         0       573         0         1         0         0         5         0         1        12         0        38         0         0         0         4         0         0         1         0         1         1
-       99.68%    78.64%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    97.31%     0.00%    59.72%     0.00%     0.00%    90.39%     0.00%    45.37%    48.96%     0.00%    60.99%     0.00%     0.00%     0.00%    81.67%     0.00%     0.00%    34.36%     0.00%    59.44%    38.11%
-optimistic cost: 2.35e9  average probability: 11.7%  average tok time: 147306
+        12.27     13.20     13.50     11.16     18.37     19.07     18.47     14.53     14.35      5.27     20.05     15.51     14.87     15.53     10.56     14.43     14.78     10.57     15.04     10.22     18.00     19.11     12.17     11.25     16.95     15.88     12.75     17.43     13.63     14.39
+        8.39%    43.07%    27.90%     9.44%    95.11%    93.14%    95.71%    65.81%    44.14%     0.01%    97.93%    25.53%    59.06%    56.47%     1.16%    56.31%    21.10%     1.77%    82.82%     0.42%    99.50%    99.93%    19.08%     3.16%    47.21%    40.39%    10.78%    67.56%    18.26%    20.32%
+            3         0         0         2         0         0         0         0         0       539         0         1         0         0         5         0         1        10         0        42         0         0         0         5         0         0         1         0         1         1
+            3         0         0         1         0         0         0         0         0       245         0         1         0         0         4         0         0         7         0         3         0         0         0         1         0         0         0         0         1         0
+       65.32%     0.00%     0.00%    38.81%     0.00%     0.00%     0.00%     0.00%     0.00%    97.36%     0.00%    60.81%     0.00%     0.00%    90.14%     0.00%    46.42%    46.70%     0.00%    64.30%     0.00%     0.00%     0.00%    84.15%     0.00%     0.00%    33.03%     0.00%    57.70%    38.43%
+optimistic cost: 2.52e6  average probability: 19.1%  average tok time: 7105
+Padding the suffix with a space.
 T-Rex: Attention, musicians! One question, phrased as a statement: why are you making me do your job...ew Friends (Thank Me Later)"
 T-Rex: "I Correctly Answer Whatever Question You Ask Before You Press Play; Use Me To Invent Stuff"
 T-Rex (punchline): "I
-            H        ad        No       Ide         a     Songs      Were      This     Power       ful         ,        It         '         s        So    Wonder       ful      That     Music       Can       Now     Liter      ally    Change       The     World         (         D        ub      step       Rem        ix        )"
-         3.38      9.39      6.19     13.48     18.42      9.65     14.12     13.45     12.14     20.60     13.78     10.78     16.30     19.85     12.58      9.96     19.06     13.87     10.74     14.31     11.01     11.67     21.84     14.52     16.07     16.49     15.00     10.78     10.04     14.55     10.98     21.65     15.92
-        0.00%     0.67%     0.03%    57.07%    97.86%     0.74%    10.21%    15.79%     1.79%    99.82%     8.83%     0.94%    63.70%    99.22%     4.38%     0.40%    99.23%    10.74%     0.44%    25.20%     0.76%     2.27%    99.83%    20.04%    49.54%    65.83%    32.47%     0.59%     0.54%    83.96%     2.94%    99.47%    90.22%
-         1230        12       167         0         0        20         1         1         8         0         4        12         0         0         6        32         0         1        20         0        15         9         0         0         0         0         0        35        28         0         2         0         0
-       99.19%    84.60%    93.64%     0.00%     0.00%    77.53%    63.87%    23.26%    66.42%     0.00%    60.52%    62.72%     0.00%     0.00%    39.93%    79.56%     0.00%    20.92%    86.77%     0.00%    72.25%    55.39%     0.00%     0.00%     0.00%     0.00%     0.00%    56.18%    71.80%     0.00%    80.00%     0.00%     0.00%
-optimistic cost: 7.37e15  average probability: 6.5%  average tok time: 147583
+          Had        No       Ide         a     Songs      Were      This     Power       ful         ,        It         '         s        So    Wonder       ful      That     Music       Can       Now     Liter      ally    Change       The     World         (         D        ub      step       Rem        ix        )"
+         8.96     13.22     16.05     22.63     12.45     15.63     13.98     13.32     21.32     15.03     11.58     16.65     20.62     12.86     10.30     19.89     14.38     11.57     14.45     11.12     11.86     22.63     14.69     16.33     16.73     15.44     11.05     10.10     14.68     11.08     21.82     15.92
+        0.25%     6.50%    70.68%    97.87%     0.96%    11.33%    15.38%     3.07%    99.93%     9.86%     0.96%    62.78%    99.43%     4.30%     0.42%    99.57%    10.28%     0.45%    22.35%     0.62%     2.46%    99.86%    18.86%    51.00%    66.06%    31.83%     0.59%     0.51%    84.41%     2.84%    99.45%    89.64%
+           62         4         0         0        14         1         0         8         0         2        12         0         0         6        31         0         1        20         0        19         9         0         0         0         0         0        35        33         0         2         0         0
+           35         2         0         0        11         1         0         1         0         0         6         0         0         1        11         0         1         8         0         5         3         0         0         0         0         0         0         2         0         1         0         0
+       79.69%    54.60%     0.00%     0.00%    85.81%    64.24%     0.00%    64.56%     0.00%    45.15%    68.50%     0.00%     0.00%    40.34%    79.95%     0.00%    21.78%    87.48%     0.00%    75.76%    54.44%     0.00%     0.00%     0.00%     0.00%     0.00%    56.70%    75.06%     0.00%    78.68%     0.00%     0.00%
+optimistic cost: 2.26e9  average probability: 10.1%  average tok time: 7350
+Padding the suffix with a space.
 T-Rex: I am a guy who really likes Batman. And it occurs to me: at some point in my life I'm going t...ways be able to argue about Batman.
 Utahraptor: Even if you were paralyzed and couldn't communicate?
 T-Rex: Utahraptor, please!
 T-Rex (punchline): For
         every       Bat       man  argument      that     comes       out        of        my     mouth     there         '         s      like     eight         y        of      them      that        go        on        in        my      head         .
-        -1.20      7.67     14.58      8.58      9.47      9.30     11.70     14.88     14.83     13.85     11.71     16.22     17.22     10.85     11.23     11.43      8.52     14.04     12.07     11.56     13.50     14.59     15.74     16.17     15.24
-        0.00%     0.79%    88.20%     3.75%     2.14%     0.92%     5.48%    79.73%    79.98%    85.30%     6.60%    43.45%    90.46%     2.26%     1.56%    19.35%     1.40%    49.14%    11.28%     4.17%    32.98%    47.68%    94.96%    87.84%    48.55%
-         6750         9         0         3         6        19         2         0         0         0         2         0         0         6        16         0        12         0         1         5         0         0         0         0         0
-       99.94%    68.18%     0.00%    36.12%    75.77%    79.99%    55.89%     0.00%     0.00%     0.00%    75.46%     0.00%     0.00%    71.49%    80.83%     0.00%    61.09%     0.00%    16.27%    60.87%     0.00%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 1.31e10  average probability: 8.4%  average tok time: 147233
+         9.42     11.19     15.35      9.82     11.31     10.26     12.46     15.42     15.78     14.75     13.04     17.02     18.30     11.91     12.21     11.36      8.89     14.75     12.52     12.10     14.05     15.08     16.47     16.94     15.88
+        0.89%    15.34%    96.23%     4.15%     3.18%     0.89%     5.53%    75.80%    78.62%    83.23%     8.94%    47.90%    86.88%     2.53%     1.68%    15.25%     1.56%    51.31%    10.65%     4.93%    47.17%    47.24%    95.71%    86.82%    53.13%
+           13         0         0         4         5        17         3         0         0         0         2         0         0         6        14         0        11         0         1         4         0         0         0         0         0
+           12         0         0         2         2        12         2         0         0         0         0         0         0         4         3         0         2         0         1         1         0         0         0         0         0
+       79.74%     0.00%     0.00%    45.97%    85.32%    78.75%    61.30%     0.00%     0.00%     0.00%    77.06%     0.00%     0.00%    71.53%    78.93%     0.00%    58.89%     0.00%    16.69%    57.79%     0.00%     0.00%     0.00%     0.00%     0.00%
+optimistic cost: 1.10e6  average probability: 15.3%  average tok time: 7527
+Padding the suffix with a space.
 Narrator: T-REX IN: "PRESENTISM"
 T-Rex: Presentism is when you interpret the historical past with a ... point of having our advanced modern ideals, if we can't apply them? I think we SHOULD be able to judge historical figures!
 T-Rex (punchline): Anyway!
            In conclusion         ,   present       ism       has      good    points       and       bad    points       and        is       not        as interesting        as         I   thought        it       was         !
-    --------      10.62     15.19     10.77     17.12     10.69      9.15     13.84     15.90     15.74     17.28     13.98     11.61     11.59     11.28     11.11     16.90     11.94     14.65     16.46     17.55     14.75
-    --------     13.37%    63.13%     9.95%    98.24%     1.10%     0.67%    29.84%    46.20%    88.46%    82.50%     6.77%     6.56%     6.88%     5.98%     4.74%    76.82%    23.69%    39.71%    78.93%    38.40%    21.71%
-    --------          1         0         1         0         5        19         1         0         0         0         3         2         1         3         2         0         0         0         0         1         1
-    --------     18.75%     0.00%    26.52%     0.00%    78.11%    62.96%    35.70%     0.00%     0.00%     0.00%    85.93%    37.08%    15.42%    26.27%    26.78%     0.00%     0.00%     0.00%     0.00%    48.45%    33.81%
-optimistic cost: 3.96e7  average probability: 12.9%  average tok time: 146896
+        10.74     11.78     16.44     11.84     17.41     11.20      8.96     13.59     16.79     16.01     17.91     15.42     11.96     11.90     11.48     11.17     17.53     11.99     14.81     17.06     18.03     15.42
+        0.45%    25.02%    65.60%    11.80%    98.14%     1.09%     0.50%    25.39%    45.36%    87.91%    80.20%     8.66%     6.14%     6.64%     5.98%     4.57%    76.77%    22.42%    39.00%    75.18%    40.17%    24.19%
+           19         0         0         1         0         6        28         1         0         0         0         3         2         1         3         2         0         0         0         0         1         1
+            2         0         0         1         0         3        16         1         0         0         0         1         2         1         2         0         0         0         0         0         0         0
+       77.88%     0.00%     0.00%    25.90%     0.00%    78.77%    68.45%    39.60%     0.00%     0.00%     0.00%    84.23%    37.87%    15.14%    26.28%    27.55%     0.00%     0.00%     0.00%     0.00%    46.04%    32.19%
+optimistic cost: 2.94e4  average probability: 15.6%  average tok time: 7547
+Padding the suffix with a space.
 T-Rex: I wonder, what's the craziest way to spell "crazy"?
 T-Rex: My suggestion: "K-RAY-Z"!
 Dromicei...UTAHRAPTOR MIGHT HAVE TO DO TODAY:
@@ -73,69 +88,82 @@ T-Rex: Eat a whole bag of plums?
 Off panel: I'M JUST BUYING GROCERIES
 T-Rex (punchline): Buy
             a     whole       bag        of        pl       ums         ,       and      then       eat       the        pl       ums         ,       and      then     blame         a   passing       dog       for       the resulting        pl      ummy      mess         ?
-         3.36      6.52     13.00     16.34     13.72     18.16     12.86     11.62     14.77     13.86     13.36     14.23     19.26     13.46     14.13     16.32      5.86      9.53      7.62     10.00     14.98     13.63     10.73     11.56     14.36     11.98     15.95
-        0.00%     0.44%    65.18%    94.17%    80.26%    93.99%     5.68%    10.81%    62.49%    44.80%     7.11%    24.07%    97.77%    10.81%    50.64%    82.53%     0.02%     0.73%     0.35%     4.36%    66.48%    30.98%     4.86%    13.74%     2.28%    26.76%    66.63%
-          973        28         0         0         0         0         2         1         0         0         3         1         0         1         0         0       269        12        39         3         0         0         3         1         3         0         0
-       96.51%    68.83%     0.00%     0.00%     0.00%     0.00%    68.90%    19.90%     0.00%     0.00%    80.59%    58.96%     0.00%    38.53%     0.00%     0.00%    95.22%    87.14%    51.81%    51.60%     0.00%     0.00%    42.29%    21.63%    87.03%     0.00%     0.00%
-optimistic cost: 9.92e9  average probability: 9.1%  average tok time: 147050
+        12.80     11.22     13.46     18.09     15.02     20.72     14.60     12.89     15.87     15.04     14.86     15.32     20.80     13.86     14.38     16.87      6.87      9.90      7.95     10.08     15.16     13.63     10.91     11.48     14.84     12.17     16.32
+       39.23%     7.48%    52.86%    98.80%    88.33%    98.98%     8.30%    16.27%    67.81%    58.70%     6.78%    26.90%    99.12%    10.03%    49.88%    83.08%     0.03%     0.60%     0.39%     4.66%    67.91%    29.37%     5.80%    13.13%     2.22%    26.77%    70.52%
+            0         0         0         0         0         0         2         1         0         0         2         1         0         1         0         0       180        13        40         3         0         0         3         1         2         0         0
+            0         0         0         0         0         0         2         1         0         0         2         0         0         1         0         0        99        11        19         1         0         0         2         1         2         0         0
+        0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    65.64%    27.65%     0.00%     0.00%    77.86%    58.57%     0.00%    41.47%     0.00%     0.00%    93.11%    89.60%    55.61%    53.46%     0.00%     0.00%    41.54%    19.13%    87.12%     0.00%     0.00%
+optimistic cost: 3.11e7  average probability: 15.4%  average tok time: 7571
+Padding the suffix with a space.
 T-Rex: God you answer people's prayers, right? Folks are always saying how you answer prayers.
 God: ...OPULAR PRAYERS WOULD YOU BE HAPPY
 T-Rex: If that were true, then the FUTURE ITSELF becomes a friggin' popularity contest!!
 T-Rex (punchline): Although
          that     would      mean        we         '         d       all       get       imm       ort        al   talking      pupp       ies         ;    listen         ,         I      need        to       get      back        to       you        on      this       one
-         1.41     10.43     10.65      9.97     13.91     15.85     13.39     12.56      4.06     18.83     17.25      4.71      7.39     18.35      8.40      4.03     12.36     12.46      9.26     13.61     12.15     13.14     16.51     10.23     15.48     14.46     13.37
-        0.00%     5.32%     3.86%     5.44%    51.72%    43.00%    27.66%    13.78%     0.03%    92.87%    22.96%     0.04%     0.37%    55.40%     0.24%     0.01%    34.58%    33.04%     0.28%    63.53%     9.77%    29.67%    92.68%     4.88%    83.12%    19.38%    33.24%
-         2545         3         4         3         0         1         0         1       245         0         1       232        51         0        29       427         0         0        33         0         1         0         0         4         0         1         0
-       99.63%    48.59%    56.26%    48.77%     0.00%    46.66%     0.00%    47.91%    85.94%     0.00%    76.60%    82.03%    66.61%     0.00%    90.80%    94.07%     0.00%     0.00%    88.61%     0.00%    31.73%     0.00%     0.00%    46.16%     0.00%    65.81%     0.00%
-optimistic cost: 7.38e15  average probability: 4.4%  average tok time: 148107
+        12.38     13.52     12.31     11.27     14.65     17.48     14.39     13.60      4.95     19.20     17.94      5.02      7.68     18.78      9.13      4.95     12.86     13.18      9.86     14.24     12.98     13.44     17.14     10.67     16.02     15.34     13.50
+        9.93%    20.09%     4.53%     6.18%    49.80%    46.01%    26.11%    15.35%     0.03%    93.80%    21.50%     0.05%     0.37%    54.90%     0.25%     0.01%    38.63%    35.01%     0.30%    63.81%    10.66%    27.75%    92.92%     4.71%    83.49%    23.00%    32.79%
+            2         1         3         3         0         0         0         1       215         0         1       188        50         0        28       399         0         0        31         0         1         0         0         4         0         1         0
+            2         1         2         3         0         0         0         1       125         0         1        80        26         0        11       125         0         0         9         0         1         0         0         2         0         0         0
+       42.87%    24.31%    52.93%    47.26%     0.00%     0.00%     0.00%    46.27%    86.26%     0.00%    78.14%    80.38%    66.62%     0.00%    91.56%    94.90%     0.00%     0.00%    88.31%     0.00%    31.11%     0.00%     0.00%    46.01%     0.00%    62.54%     0.00%
+optimistic cost: 7.20e12  average probability: 7.3%  average tok time: 7654
+Padding the suffix with a space.
 T-Rex: Check out my new alternate history story: it's the 1920s, and flappers are super sexy, obvs! ...are INVENTED that! Or have you forgotten how "Hamlet" stands for "H.A.M.L.E.T.'s Actually Me; Lshak Espeare Thrustbottoms"?
 T-Rex (punchline): Perhaps
           you         '        ve        AL        SO simultaneously forgotten       how        we       all    agreed        to    change       his      name        to Shakespeare        to      make        it      less     super      dumb        ??
-         2.95     10.87     14.09      6.83     17.73      1.59     13.21     12.22      7.39     10.88      9.48     12.53      8.41     11.16     13.47     15.00     10.98      9.85     11.99     13.14     12.67      6.10      6.82     13.13
-        0.00%     9.78%    36.67%     0.41%    93.13%     0.00%    73.39%    29.85%     0.61%     9.66%     2.54%    28.65%     0.59%     7.04%    59.80%    70.28%     6.93%     5.31%    12.00%    24.20%    16.13%     0.04%     0.22%    19.93%
-          862         1         0        34         0      1144         0         0        18         1         2         1        23         4         0         0         1         3         1         1         1       161        48         1
-       98.26%    14.04%     0.00%    70.51%     0.00%    99.40%     0.00%     0.00%    68.70%    24.94%    19.37%    29.50%    64.60%    64.53%     0.00%     0.00%    47.38%    25.41%    25.15%    33.60%    25.86%    90.31%    76.82%    33.18%
-optimistic cost: 2.05e13  average probability: 3.3%  average tok time: 149173
+        13.23     14.05     16.45      9.20     19.17      3.37     15.45     13.70      8.63     11.46     10.57     13.60      9.38     11.87     13.85     15.35     11.64      9.88     12.41     13.44     12.91      6.41      6.82     13.48
+       39.02%    30.54%    53.40%     0.39%    95.68%     0.00%    82.87%    31.77%     0.65%    10.01%     3.23%    31.21%     0.60%     7.62%    60.97%    71.26%     6.73%     5.14%    11.31%    24.39%    16.19%     0.04%     0.21%    21.40%
+            0         0         0        23         0       675         0         0        18         1         2         0        24         4         0         0         1         3         1         1         1       151        50         1
+            0         0         0        18         0       455         0         0        11         0         0         0        14         3         0         0         0         2         0         0         0        14         2         1
+        0.00%     0.00%     0.00%    81.95%     0.00%    99.75%     0.00%     0.00%    70.52%    24.63%    18.05%     0.00%    64.76%    64.00%     0.00%     0.00%    49.42%    23.65%    23.95%    33.35%    24.57%    90.67%    78.48%    32.81%
+optimistic cost: 1.68e9  average probability: 5.6%  average tok time: 7772
+Padding the suffix with a space.
 T-Rex: The most famous racehorse of all time is Secretariat! And that's kind of a rip-off, everyone....S FRIENDS:
 Off panel: Hey, any ideas for what we should name our new baby?
 T-Rex (punchline): Oh man! ABSOLUTELY!
 Off panel: Wait!!
 Off panel: Somehow
             I   thought      this    wouldn         '         t        be         a       bad      idea         ,       but         I       can        no    longer         -  remember       how         I   reached      that conclusion         ?
-         4.69      3.38      9.56      6.69     16.06     17.99     13.36     12.34     11.23     15.11     10.01     13.45     12.24     11.63      8.93     16.80      7.98      5.84     12.11     12.13      7.11     16.23     15.10     12.57
-        0.00%     0.00%     2.32%     0.13%    95.74%    99.88%    30.32%    32.91%     7.61%    93.10%     2.88%    68.05%    19.22%     4.07%     0.12%    98.43%     0.21%     0.05%     9.71%     9.20%     0.04%    63.51%    79.22%     3.50%
-          260       945         7        33         0         0         0         0         2         0         6         0         1         4        24         0        54        60         2         1        95         0         0         4
-       99.18%    96.73%    65.02%    89.78%     0.00%     0.00%     0.00%     0.00%    62.65%     0.00%    75.49%     0.00%    20.99%    59.81%    96.02%     0.00%    82.37%    91.59%    45.98%    34.21%    95.22%     0.00%     0.00%    87.23%
-optimistic cost: 8.18e13  average probability: 3.2%  average tok time: 149816
+        14.34     12.72     12.82      8.20     19.62     19.47     15.21     12.92     11.58     16.44     12.76     15.85     13.36     12.45      9.73     18.04      9.01      6.24     13.32     12.53      7.62     16.84     15.27     14.34
+       36.30%     6.36%     6.82%     0.19%    99.01%    99.97%    33.58%    31.47%     7.31%    94.29%     2.36%    80.41%    17.61%     4.52%     0.10%    99.14%     0.35%     0.03%     9.37%     8.05%     0.04%    67.89%    79.64%     5.35%
+            0         4         3        25         0         0         0         0         2         0         6         0         1         4        25         0        36        60         2         3        90         0         0         4
+            0         2         2        13         0         0         0         0         1         0         1         0         1         1         7         0         8        29         1         1        16         0         0         0
+        0.00%    52.01%    65.39%    90.90%     0.00%     0.00%     0.00%     0.00%    60.17%     0.00%    81.31%     0.00%    27.08%    64.00%    97.01%     0.00%    79.49%    95.64%    53.79%    53.90%    95.60%     0.00%     0.00%    84.55%
+optimistic cost: 2.96e8  average probability: 7.1%  average tok time: 7823
+Padding the suffix with a space.
 T-Rex: Alex Trebek announces his retirement from Jeopardy. 3 weeks later, the final episode airs. Of... studio audience.
 T-Rex: "What is -" he begins. His voice breaks. He collects himself and starts again. "What WAS... Jeopardy?"
 T-Rex (punchline): His
         score       dou      bles      into       the      bill      ions         ,       the     crowd       los        es     their     minds         ,       and        we       cut        to       our      last commercial         .
-         1.75      4.68     17.49      7.89     14.28     13.09     20.91     13.65     10.62      9.21     10.28     20.45     15.24     15.40     16.44     14.39     10.88     12.00     16.78      7.68      9.37     11.14     13.16
-        0.00%     0.02%    78.42%     0.35%    89.66%    41.45%    99.92%    12.27%     3.73%     2.01%     1.76%    99.76%    43.22%    75.12%    71.29%    77.90%     5.54%     7.25%    83.98%     0.16%     2.24%    19.60%     4.98%
-         2413       219         0        31         0         0         0         3         3         9         8         0         0         0         0         0         2         2         0        15         6         0         1
-       98.68%    94.83%     0.00%    86.63%     0.00%     0.00%     0.00%    70.28%    55.95%    39.95%    64.14%     0.00%     0.00%     0.00%     0.00%     0.00%    31.46%    44.01%     0.00%    91.93%    55.93%     0.00%    79.38%
-optimistic cost: 2.47e10  average probability: 6.4%  average tok time: 150423
+        11.14      9.24     21.14      9.22     14.97     13.94     22.60     15.27     11.03      9.21     10.70     21.98     15.41     15.58     17.15     14.78     11.13     12.11     17.02      7.66      9.40     11.00     13.41
+        9.00%     0.41%    95.80%     0.28%    89.81%    44.23%    99.97%    15.06%     3.56%     1.86%     2.18%   100.00%    44.45%    75.75%    75.31%    80.87%     5.73%     7.63%    85.45%     0.15%     2.33%    17.11%     5.33%
+            2        14         0        30         0         0         0         1         3        12         7         0         0         0         0         0         2         2         0        16         6         1         1
+            1         7         0        15         0         0         0         1         2         5         5         0         0         0         0         0         0         1         0         3         1         0         0
+       25.63%    83.37%     0.00%    93.28%     0.00%     0.00%     0.00%    45.61%    59.88%    48.48%    63.72%     0.00%     0.00%     0.00%     0.00%     0.00%    31.01%    43.77%     0.00%    92.24%    54.92%    17.18%    78.57%
+optimistic cost: 8.85e5  average probability: 11.4%  average tok time: 7857
+Padding the suffix with a space.
 T-Rex: Miracles! They happen in real life!
 T-Rex: According to religion!
 T-Rex: And this is great, b...isease" unlikely. I'm talking "cute cat survived car accident". "Favourite hat found". "Lady got a job she kinda wanted".
 T-Rex (punchline): "Unlikely
           but       des    irable     event  happened        in     front        of        an  observer         ,    making        my historical  analysis complicated       and  annoying        ".
-         1.94      0.05     16.57     10.65     11.59     11.35      8.04     17.64      9.20     12.23     11.11      9.37      6.39      3.37      8.94      8.83     12.14      8.38     14.17
-        0.00%     0.00%    81.49%    16.40%    17.85%     4.34%     0.68%    99.57%     1.60%     7.16%     3.45%     0.88%     0.02%     0.01%     1.51%     0.66%     6.69%     0.57%    28.50%
-         2311      5277         0         0         1         5        23         0        10         1         4        12        87      1107        11        27         4        31         0
-       95.14%    99.81%     0.00%     0.00%    25.41%    53.64%    63.12%     0.00%    63.16%    20.84%    66.11%    56.75%    95.69%    90.71%    34.96%    57.99%    64.24%    45.30%     0.00%
-optimistic cost: 1.57e17  average probability: 1.0%  average tok time: 150666
+        10.23      8.57     20.39     12.07     12.40     12.32      8.44     17.76      9.76     12.46     11.86      9.62      6.58      3.63      9.31      8.91     12.84      8.50     14.98
+        9.67%     0.44%    98.11%    15.93%    16.98%     3.84%     0.80%    99.63%     1.92%     7.18%     3.83%     0.88%     0.02%     0.01%     1.75%     0.58%     6.64%     0.58%    29.22%
+            0        27         0         0         1         5        21         0         7         1         5        12        95      1050         7        34         4        31         0
+            0        22         0         0         0         5        12         0         5         0         3         4        43       406         3         3         3         2         0
+        0.00%    54.98%     0.00%     0.00%    23.10%    55.03%    64.91%     0.00%    57.46%    21.68%    67.93%    59.38%    96.17%    90.67%    28.73%    62.18%    66.49%    45.39%     0.00%
+optimistic cost: 7.40e11  average probability: 2.5%  average tok time: 7854
+Padding the suffix with a space.
 T-Rex: Today is a good day I think for talking about ex-girlfriends!
 T-Rex: Woooooooo!
 Dromiceiomimu... serious, will not lead to good things.
 T-Rex: But what if I have only good things to say about them, hmm? What about THAT?
 Narrator: AND SO:
 T-Rex: I
-           st       ill      love       all        my        ex         -      girl    friend         s         ,       and    remain      good   friends      with      them        to      this       day         .         
+        still      love       all        my        ex         -      girl    friend         s         ,       and    remain      good   friends      with      them        to      this       day         .
          T         -         R        ex         (         p      unch      line        ):         T         -        RE         X         W       INS         !
-         0.48      8.72      8.43      9.61     16.20     15.44     16.41     18.48     18.42     17.70     12.97     12.21      8.30     10.83     17.20     18.14     14.87     13.80     18.56     17.94     15.83     15.71     17.75     20.56     24.12     30.86     18.13     26.11     28.05     24.90     20.83      9.49     14.49     12.21     17.28     10.47     17.48     14.89
-        0.00%     0.99%     0.29%     2.78%    74.88%    87.26%    63.29%    97.87%    98.70%    99.42%    21.60%    19.80%     0.12%     4.28%    97.98%    96.42%    22.29%     5.17%    99.15%    89.24%    20.34%    54.26%    69.68%    99.95%   100.00%   100.00%    39.66%   100.00%   100.00%   100.00%    99.98%     0.32%    49.33%     9.80%    95.72%     2.49%    43.49%    24.73%
-         3574        11        36         5         0         0         0         0         0         0         1         0        70         2         0         0         0         4         0         0         1         0         0         0         0         0         1         0         0         0         0        60         0         1         0         9         0         0
-       99.92%    74.81%    82.31%    70.70%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    32.07%     0.00%    90.95%    45.86%     0.00%     0.00%     0.00%    83.66%     0.00%     0.00%    69.55%     0.00%     0.00%     0.00%     0.00%     0.00%    59.70%     0.00%     0.00%     0.00%     0.00%    71.74%     0.00%    69.92%     0.00%    61.41%     0.00%     0.00%
-optimistic cost: 7.16e10  average probability: 17.8%  average tok time: 151459
+        10.55     14.06     11.89     18.20     17.08     17.86     19.41     19.62     19.53     14.31     13.00      8.69     11.65     18.08     19.32     15.57     14.64     19.16     18.68     16.55     16.12     17.73     20.54     24.15     30.78     18.07     25.99     27.98     24.99     20.86      9.73     14.43     12.21     17.32     10.78     17.47     15.09
+        1.05%    18.31%     4.92%    77.01%    90.33%    69.86%    98.80%    99.45%    99.92%    22.86%    22.27%     0.11%     5.27%    98.59%    97.79%    19.91%     5.33%    99.39%    91.13%    18.43%    52.71%    68.18%    99.94%   100.00%   100.00%    39.26%   100.00%   100.00%   100.00%    99.98%     0.26%    46.42%    10.63%    95.28%     2.74%    44.05%    26.43%
+           20         1         3         0         0         0         0         0         0         1         0        72         2         0         0         1         4         0         0         1         0         0         0         0         0         1         0         0         0         0        69         0         1         0         9         0         0
+           15         0         3         0         0         0         0         0         0         1         0        51         2         0         0         1         2         0         0         1         0         0         0         0         0         1         0         0         0         0         4         0         1         0         3         0         0
+       66.56%    20.58%    67.84%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    44.07%     0.00%    91.97%    46.39%     0.00%     0.00%    21.22%    85.66%     0.00%     0.00%    74.26%     0.00%     0.00%     0.00%     0.00%     0.00%    60.03%     0.00%     0.00%     0.00%     0.00%    75.83%     0.00%    66.66%     0.00%    60.10%     0.00%     0.00%
+optimistic cost: 1.92e7  average probability: 29.0%  average tok time: 7877

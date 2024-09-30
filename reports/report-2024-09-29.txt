@@ -1,0 +1,88 @@
+=== /app/models/mixtral-8x7b-v0.1.Q3_K_M.gguf ===
+Estimated session size: 62 / 126
+Costs: (90%) 1.6e14  (75%) 1.8e11  (50%) 7.7e8  (25%) 4.6e6  (10%) 1.1e6
+Probs: (90%) 4.24%  (75%) 5.20%  (50%) 8.39%  (25%) 12.77%  (10%) 13.43%
+Calibration: (50%) 27.07%  (75%) 68.21%  (80%) 74.87%  (90%) 90.63%  (95%) 95.58%  (98%) 98.22%  (99%) 98.72%  (99.5%) 99.63%
+Average token time: 5460  Average truncation time: 0  Average copy time: 14529
+
+=== /app/models/mixtral-8x7b-v0.1.Q3_K_M.gguf ===
+Estimated session size: 62 / 126
+Costs: (90%) 1.6e14  (75%) 1.8e11  (50%) 7.7e8  (25%) 4.6e6  (10%) 1.1e6
+Probs: (90%) 4.24%  (75%) 5.20%  (50%) 8.39%  (25%) 12.77%  (10%) 13.43%
+Calibration: (50%) 27.07%  (75%) 68.21%  (80%) 74.87%  (90%) 90.63%  (95%) 95.58%  (98%) 98.22%  (99%) 98.72%  (99.5%) 99.63%
+Average token time: 5372  Average truncation time: 0  Average copy time: 14726
+
+=== /app/models/yi-34b.Q4_0.gguf ===
+Estimated session size: 125 / 245
+Costs: (90%) 3.2e12  (75%) 3.6e10  (50%) 1.2e8  (25%) 6.8e6  (10%) 1.1e6
+Probs: (90%) 4.56%  (75%) 5.17%  (50%) 8.32%  (25%) 12.10%  (10%) 13.66%
+Calibration: (50%) 32.42%  (75%) 71.08%  (80%) 75.78%  (90%) 88.25%  (95%) 94.25%  (98%) 97.66%  (99%) 99.29%  (99.5%) 99.56%
+Average token time: 20152  Average truncation time: 0  Average copy time: 33375
+
+=== yi with prompt: [The punchline has a confident and brash tone and is comfortable with absurdity]
+Estimated session size: 125 / 245
+Costs: (90%) 4.5e12  (75%) 3.7e10  (50%) 8.5e7  (25%) 5.4e6  (10%) 7.8e5
+Probs: (90%) 4.68%  (75%) 5.06%  (50%) 8.28%  (25%) 12.05%  (10%) 13.75%
+Calibration: (50%) 34.14%  (75%) 70.26%  (80%) 74.84%  (90%) 87.72%  (95%) 94.96%  (98%) 97.06%  (99%) 98.64%  (99.5%) 99.50%
+Average token time: 19770  Average truncation time: 0  Average copy time: 35480
+
+=== yi with prompt: [The dialogues feature casual, humorous exchanges between characters, relying on absurd logic, playful wordplay, and unexpected reversals for punchlines. Characters often treat ridiculous ideas seriously, leading to exaggerated or nonsensical conclusions. The humor is conversational, with frequent meta-references to the comic format, and often plays with expectations by building up logical arguments before subverting them with a twist.] ===
+Estimated session size: 125 / 245
+Costs: (90%) 6.6e12  (75%) 1.9e10  (50%) 9.7e7  (25%) 5.1e6  (10%) 5.0e5
+Probs: (90%) 4.38%  (75%) 4.95%  (50%) 8.57%  (25%) 12.14%  (10%) 13.45%
+Calibration: (50%) 34.83%  (75%) 69.62%  (80%) 77.74%  (90%) 88.02%  (95%) 95.26%  (98%) 97.31%  (99%) 98.84%  (99.5%) 99.55%
+Average token time: 19799  Average truncation time: 0  Average copy time: 37506
+
+=== yi with longest-word prompt
+Estimated session size: 125 / 245
+Costs: (90%) 2.0e11  (75%) 1.2e10  (50%) 6.2e7  (25%) 1.1e6  (10%) 2.1e5
+Probs: (90%) 4.47%  (75%) 6.08%  (50%) 8.73%  (25%) 12.46%  (10%) 16.19%
+Calibration: (50%) 30.27%  (75%) 68.52%  (80%) 75.22%  (90%) 87.16%  (95%) 94.75%  (98%) 97.94%  (99%) 98.99%  (99.5%) 99.51%
+Average token time: 19904  Average truncation time: 0  Average copy time: 35103
+
+=== yi with prompt: [The punchline has an enthusiastic and brash tone and is comfortable with absurdity]
+Estimated session size: 125 / 245
+Costs: (90%) 3.6e12  (75%) 3.7e10  (50%) 9.9e7  (25%) 5.8e6  (10%) 3.6e5
+Probs: (90%) 4.56%  (75%) 5.17%  (50%) 8.31%  (25%) 12.16%  (10%) 13.62%
+Calibration: (50%) 32.65%  (75%) 69.65%  (80%) 75.93%  (90%) 87.09%  (95%) 94.73%  (98%) 97.15%  (99%) 98.57%  (99.5%) 99.50%
+Average token time: 19937  Average truncation time: 0  Average copy time: 35013
+
+=== /app/models/Meta-Llama-3.1-70B.i1-IQ2_XS.gguf ===
+ llama_model_load: error loading model: done_getting_tensors: wrong number of tensors; expected 724, got 723
+ llama_load_model_from_file: failed to load model
+
+=== /app/models/Qwen2.5-32B.Q4_K_S.gguf ===
+Estimated session size: 297 / 425
+Costs: (90%) 2.6e13  (75%) 1.3e11  (50%) 2.0e9  (25%) 1.8e7  (10%) 4.2e6
+Probs: (90%) 3.23%  (75%) 3.83%  (50%) 6.93%  (25%) 8.58%  (10%) 10.60%
+Calibration: (50%) 43.02%  (75%) 73.80%  (80%) 78.63%  (90%) 89.25%  (95%) 94.69%  (98%) 97.16%  (99%) 99.01%  (99.5%) 99.09%
+Average token time: 26618  Average truncation time: 0  Average copy time: 36920
+
+=== /app/models/mixtral-8x7b-v0.1.Q3_K_M.gguf ===
+Estimated session size: 62 / 126
+Costs: (90%) 1.6e14  (75%) 1.8e11  (50%) 7.7e8  (25%) 4.6e6  (10%) 1.1e6
+Probs: (90%) 4.24%  (75%) 5.20%  (50%) 8.39%  (25%) 12.77%  (10%) 13.43%
+Calibration: (50%) 27.07%  (75%) 68.21%  (80%) 74.87%  (90%) 90.63%  (95%) 95.58%  (98%) 98.22%  (99%) 98.72%  (99.5%) 99.63%
+Average token time: 5891  Average truncation time: 0  Average copy time: 14606
+
+=== /app/models/yi-34b.Q4_0.gguf ===
+Estimated session size: 125 / 245
+Costs: (90%) 3.2e12  (75%) 3.6e10  (50%) 1.2e8  (25%) 6.8e6  (10%) 1.1e6
+Probs: (90%) 4.56%  (75%) 5.17%  (50%) 8.32%  (25%) 12.10%  (10%) 13.66%
+Calibration: (50%) 32.42%  (75%) 71.08%  (80%) 75.78%  (90%) 88.25%  (95%) 94.25%  (98%) 97.66%  (99%) 99.29%  (99.5%) 99.56%
+Average token time: 22302  Average truncation time: 0  Average copy time: 35947
+
+=== qw-shearedllama
+Estimated session size: 62 / 222
+Costs: (90%) 1.0e15  (75%) 1.2e14  (50%) 3.8e11  (25%) 1.8e10  (10%) 2.9e6
+Probs: (90%) 2.49%  (75%) 3.28%  (50%) 5.57%  (25%) 9.10%  (10%) 11.00%
+Calibration: (50%) 27.89%  (75%) 64.97%  (80%) 70.87%  (90%) 86.71%  (95%) 95.18%  (98%) 97.82%  (99%) 98.38%  (99.5%) 99.39%
+Average token time: 6065  Average truncation time: 0  Average copy time: 35515
+
+=== qw-mistral-7b.Q4_K_M
+Estimated session size: 62 / 126
+Costs: (90%) 7.4e11  (75%) 1.7e9  (50%) 3.1e7  (25%) 1.1e6  (10%) 5.2e4
+Probs: (90%) 5.59%  (75%) 7.13%  (50%) 11.20%  (25%) 15.38%  (10%) 19.13%
+Calibration: (50%) 16.69%  (75%) 61.28%  (80%) 66.56%  (90%) 83.37%  (95%) 90.67%  (98%) 95.61%  (99%) 96.87%  (99.5%) 97.36%
+Average token time: 7877  Average truncation time: 0  Average copy time: 17531
+
