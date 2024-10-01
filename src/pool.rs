@@ -1,11 +1,12 @@
 use small_map::SmallMap;
 use std::cell::RefCell;
+use std::collections::HashMap;
 use std::hash::Hash;
-use std::{collections::HashMap, default};
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy)]
 struct Char(u8);
 
+#[derive(Clone)]
 pub struct LetterPool {
     lowercase: [u8; 26],
     other_chars: SmallMap<8, Char, u8>,
@@ -134,6 +135,23 @@ impl LetterPool {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.remove_pt(pt)
+        })
+    }
+
+    /// Creates a copy, unless it's not possible
+    fn try_remove_pt(&self, tok: &PoolTok) -> Option<Self> {
+        if self.has_pt(tok) {
+            let mut res = (*self).clone();
+            res.remove_pt(tok);
+            return Some(res);
+        }
+        return None;
+    }
+
+    pub fn try_remove(&self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> Option<Self> {
+        POOL_TOK_CACHE.with_borrow_mut(|ptc| {
+            let pt = ptc.get_tok(tok, model);
+            self.try_remove_pt(pt)
         })
     }
 }
