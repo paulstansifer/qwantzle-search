@@ -11,6 +11,7 @@ use tracing_subscriber::util::SubscriberInitExt;
 
 mod llm;
 mod pool;
+mod search;
 mod strip;
 
 use strip::{get_strips, Strip};
@@ -43,6 +44,10 @@ struct Args {
     /// Don't store the model on the GPU.
     #[arg(long, action = clap::ArgAction::SetTrue)]
     no_gpu: bool,
+
+    /// Calculate costs and calibrate them against a search
+    #[arg(long, action = clap::ArgAction::SetTrue)]
+    calibrate_costs: bool,
 
     /// String to prepend to every strip. Use "l" to add a message about what the longest word in
     /// the punchline is.
@@ -262,58 +267,37 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     return (optimistic_cost, average_probability);
 }
 
-fn main() {
-    let args = Args::parse();
-    init_tracing(&args);
+fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
+    let small_strips: Vec<&Strip> = strips
+        .iter()
+        .filter(|s| s.punchline.len() > 15 && s.punchline.len() <= 25)
+        .filter(|s| !s.punchline.contains(":"))
+        .collect();
 
-    let mut model_params = LlamaParams::default();
-    model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
-    let model =
-        LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
+    let mut stats = Stats::default();
 
-    println!(
-        "Estimated session size: {} / {}",
-        megabytes(
-            model
-                .estimate_session_size(&SessionParams::default())
-                .host_memory
+    for strip in small_strips.iter().take(10) {
+        let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
+        println!(
+            "Estimated steps: {}. Avg. prob: {:.1}%",
+            cost,
+            avg_prob * 100.0
+        );
+
+        search::practice_search(strip, model, Some(cost as usize * 25 + 20))
+    }
+
+    std::fs::write(
+        format!(
+            "reports/tok_scores/{}.cost-cal.txt",
+            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
         ),
-        megabytes(
-            model
-                .estimate_session_size(&SessionParams::default())
-                .device_memory
-        )
-    );
+        stats.details,
+    )
+    .unwrap();
+}
 
-    let strips = get_strips("corpus/strips.csv", &args.prompt_prefix);
-
-    // let mut toks_of_strips = vec![];
-    // for strip in &strips {
-    //     toks_of_strips.push(
-    //         model
-    //             .tokenize_bytes(&strip.leadup, true, false)
-    //             .unwrap()
-    //             .len()
-    //             + model
-    //                 .tokenize_bytes(&strip.punchline, true, false)
-    //                 .unwrap()
-    //                 .len(),
-    //     );
-    // }
-    // toks_of_strips.sort();
-
-    // println!(
-    //     "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
-    //     toks_of_strips.last().unwrap(),
-    // );
-
-    // Result:
-    // (Percentile) tokens in a strip: (75) 371  (90) 398  (95) 418  (99) 454  (max) 580
-
+fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let representative_strips: Vec<&Strip> = strips
         .iter()
         .filter(|s| s.punchline.len() > 95 && s.punchline.len() < 120)
@@ -431,6 +415,65 @@ fn main() {
             .sum::<u128>() as f32
             / stats.tok_times.len() as f32
     );
+}
+
+fn main() {
+    let args = Args::parse();
+    init_tracing(&args);
+
+    let mut model_params = LlamaParams::default();
+    model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
+    let model =
+        LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
+
+    println!(
+        "Estimated session size: {} / {}",
+        megabytes(
+            model
+                .estimate_session_size(&SessionParams::default())
+                .host_memory
+        ),
+        megabytes(
+            model
+                .estimate_session_size(&SessionParams::default())
+                .device_memory
+        )
+    );
+
+    let strips = get_strips("corpus/strips.csv", &args.prompt_prefix);
+
+    if args.calibrate_costs {
+        calibrate_costs(&strips, &model, &args);
+    } else {
+        measure_costs(&strips, &model, &args);
+    }
+
+    // let mut toks_of_strips = vec![];
+    // for strip in &strips {
+    //     toks_of_strips.push(
+    //         model
+    //             .tokenize_bytes(&strip.leadup, true, false)
+    //             .unwrap()
+    //             .len()
+    //             + model
+    //                 .tokenize_bytes(&strip.punchline, true, false)
+    //                 .unwrap()
+    //                 .len(),
+    //     );
+    // }
+    // toks_of_strips.sort();
+
+    // println!(
+    //     "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
+    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
+    //     toks_of_strips.last().unwrap(),
+    // );
+
+    // Result:
+    // (Percentile) tokens in a strip: (75) 371  (90) 398  (95) 418  (99) 454  (max) 580
 }
 
 /*

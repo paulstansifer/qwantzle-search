@@ -1,37 +1,18 @@
 use std::{
+    cell::Cell,
     cmp::Ordering,
     sync::{Arc, Mutex},
 };
 
 use clap::Parser;
-use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
+use indicatif::ProgressBar;
+use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
-mod llm;
-mod pool;
-mod strip;
-
-use pool::LetterPool;
-use strip::{get_strips, Strip};
-
-fn init_tracing(args: &Args) {
-    let format = tracing_subscriber::fmt::layer().compact();
-    let level = if args.verbose > 0 {
-        tracing_subscriber::filter::LevelFilter::INFO.into()
-    } else {
-        tracing_subscriber::filter::LevelFilter::ERROR.into()
-    };
-    let filter = tracing_subscriber::EnvFilter::try_from_default_env()
-        .unwrap_or(tracing_subscriber::EnvFilter::default().add_directive(level));
-
-    tracing_subscriber::registry()
-        .with(format)
-        .with(filter)
-        .init();
-}
+use crate::{llm, pool::LetterPool, strip::Strip};
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -96,6 +77,10 @@ const MIN_AVG_P: f64 = 0.01;
 
 // Note that `ctx.model()` clones the whole model! It's just an `Arc` plus a bunch of `usize`s, so it's not too bad, but it's an optimization opportunity.
 
+thread_local! {
+    pub static PREDICT_TIME : Cell<u128> = Cell::<u128>::default();
+}
+
 impl Node {
     fn new(text: &str) -> Node {
         Node {
@@ -116,14 +101,13 @@ impl Node {
         };
         res.text.push(t);
 
-        if done {
-            println!(
-                "=== === === {:.2}%: {}",
-                f64::powf(res.probability as f64, 1.0 / (res.text.len() as f64)) * 100.0,
-                model.decode_tokens(&res.text)
-            );
-            return None;
-        }
+        // if done {
+        //     println!(
+        //         "=== === === {:.2}%: {}",
+        //         f64::powf(res.probability as f64, 1.0 / (res.text.len() as f64)) * 100.0,
+        //         model.decode_tokens(&res.text)
+        //     );
+        // }
 
         Some(res)
     }
@@ -140,10 +124,15 @@ impl Node {
             candidates: candidates.clone(),
         };
 
-        let mut completion_res = my_ctx
-            .start_completing_with(peek_sampler, 1)
-            .expect("Completion error!");
-        let _ = completion_res.next_token();
+        {
+            let _before_predict = std::time::Instant::now();
+
+            let mut completion_res = my_ctx
+                .start_completing_with(peek_sampler, 1)
+                .expect("Completion error!");
+            let _ = completion_res.next_token();
+            // TODO count time
+        }
 
         let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
 
@@ -161,26 +150,98 @@ impl Node {
                 break;
             }
 
-            if self.text.is_empty() {
-                print!(
-                    "{:.1}% {}  ",
-                    cand.p * 100.0,
-                    root_ctx.model().decode_tokens(&[Token(cand.id)])
-                )
-            }
+            // if self.text.is_empty() {
+            //     print!(
+            //         "{:.1}% {}  ",
+            //         cand.p * 100.0,
+            //         root_ctx.model().decode_tokens(&[Token(cand.id)])
+            //     )
+            // }
 
             if let Some(node) = self.push_token(Token(cand.id), cand.p, &root_ctx.model()) {
                 q.push(node, Score(avg_prob));
             }
         }
 
-        if self.text.is_empty() {
-            println!();
+        // if self.text.is_empty() {
+        //     println!();
+        // }
+    }
+}
+
+pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<usize>) {
+    let mut q = Q::new();
+    q.push(Node::new(&strip.punchline), Score(1.0));
+
+    let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
+
+    let mut params = SessionParams::default();
+    params.n_ctx = leadup_toks.len() as u32 + 25;
+
+    println!(
+        "{} >>{}<<",
+        strip
+            .leadup
+            .chars()
+            .skip(strip.leadup.len() - 50)
+            .collect::<String>()
+            .replace("\n", "  "),
+        strip.punchline
+    );
+
+    let progress = ProgressBar::new_spinner();
+
+    progress.set_message(format!("Loading context"));
+
+    let mut root_ctx = model.create_session(params).unwrap();
+    root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
+
+    let mut step = 0;
+    loop {
+        progress.tick();
+        if let Some(lim) = steps_limit {
+            if step > lim {
+                progress.abandon_with_message(format!("Hit step limit: {}", step));
+                break;
+            }
+        }
+        if let Some((node, p)) = q.pop() {
+            if node.remaining.size() == 0
+                && model.decode_tokens(&node.text).trim() == strip.punchline.trim()
+            {
+                progress.abandon_with_message(format!(
+                    "Search successful after {} steps. Prob: {:.2}%",
+                    step,
+                    p.0 * 100.0
+                ));
+                break;
+            } else if node.remaining.size() == 0 {
+                progress.println(format!(
+                    "Non-answer: {} != {}",
+                    model.decode_tokens(&node.text).trim(),
+                    strip.punchline.trim()
+                ));
+            }
+
+            progress.set_message(format!(
+                "{:7} {:.2}%: {}",
+                step,
+                p.0 * 100.0,
+                model.decode_tokens(&node.text)
+            ));
+
+            node.advance(&root_ctx, &mut q);
+            step += 1;
+        } else {
+            progress
+                .abandon_with_message(format!("Exhausted all reasonable nodes at {} steps", step));
+            break;
         }
     }
 }
 
-fn main() {
+/*
+fn () {
     let args = Args::parse();
     init_tracing(&args);
 
@@ -196,12 +257,12 @@ fn main() {
         if !strip.punchline.contains("\n")
             && !strip.punchline.contains(":")
             && !strip.punchline.contains("tricky")
-            && !strip.punchline.contains("flossing")
-            && !strip.punchline.contains("TOES THAT HURT")
-            && !strip.punchline.contains("get that ALL")
-            && !strip.punchline.contains("just a little closer")
-            && !strip.punchline.contains("them my story, Utah")
-            && !strip.punchline.contains("you should quit")
+            // && !strip.punchline.contains("flossing")
+            // && !strip.punchline.contains("TOES THAT HURT")
+            // && !strip.punchline.contains("get that ALL")
+            // && !strip.punchline.contains("just a little closer")
+            // && !strip.punchline.contains("them my story, Utah")
+            // && !strip.punchline.contains("you should quit")
             && strip.punchline.len() > 20
             && strip.punchline.len() <= 25
         {
@@ -210,30 +271,34 @@ fn main() {
         }
     }
     let strip = strip_with_right_size.expect("Unable to find a strip with the right size.");
-    let mut q = Q::new();
-    println!("{}", strip.leadup);
 
-    println!(">> {} <<", strip.punchline);
-    q.push(Node::new(&strip.punchline), Score(1.0));
+    search(&strip, &model, Some(1e8 as usize));
 
-    let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
+    // let mut q = Q::new();
+    // println!("{}", strip.leadup);
 
-    let mut params = SessionParams::default();
-    params.n_ctx = leadup_toks.len() as u32 + 25;
+    // println!(">> {} <<", strip.punchline);
+    // q.push(Node::new(&strip.punchline), Score(1.0));
 
-    let mut root_ctx = model.create_session(params).unwrap();
-    root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
+    // let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
 
-    loop {
-        match q.pop() {
-            Some((node, p)) => {
-                println!("{:.2}%: {}", p.0 * 100.0, model.decode_tokens(&node.text));
-                node.advance(&root_ctx, &mut q);
-            }
-            None => {
-                break;
-            }
-        }
-    }
-    println!("Search complete.");
+    // let mut params = SessionParams::default();
+    // params.n_ctx = leadup_toks.len() as u32 + 25;
+
+    // let mut root_ctx = model.create_session(params).unwrap();
+    // root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
+
+    // loop {
+    //     match q.pop() {
+    //         Some((node, p)) => {
+    //             println!("{:.2}%: {}", p.0 * 100.0, model.decode_tokens(&node.text));
+    //             node.advance(&root_ctx, &mut q);
+    //         }
+    //         None => {
+    //             break;
+    //         }
+    //     }
+    // }
+    // println!("Search complete.");
 }
+*/
