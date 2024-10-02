@@ -13,25 +13,6 @@ use priority_queue::PriorityQueue;
 
 use crate::{llm, pool::LetterPool, strip::Strip};
 
-#[derive(Parser, Debug)]
-struct Args {
-    /// Path to the .gguf model file
-    #[arg(short, long)]
-    model: String,
-
-    #[arg(short, long, action = clap::ArgAction::Count)]
-    verbose: u8,
-
-    /// Don't store the model on the GPU.
-    #[arg(long, action = clap::ArgAction::SetTrue)]
-    no_gpu: bool,
-
-    /// String to prepend to every strip. Use "l" to add a message about what the longest word in
-    /// the punchline is.
-    #[arg(short, long, default_value(""))]
-    prompt_prefix: String,
-}
-
 // Reversed ordering for the priority queue, and pretending to really be `Cmp`.
 #[derive(PartialOrd, PartialEq)]
 struct Score(f64);
@@ -207,11 +188,6 @@ impl Node {
             //     )
             // }
 
-            let score = f64::powf(
-                cand.p as f64 * self.probability * 0.3 * 0.3,
-                1.0 / (self.text.len() as f64 + 3.0),
-            );
-
             if let Some((node, score)) = self.push_token(Token(cand.id), cand.p, &root_ctx.model())
             {
                 q.push(node, score);
@@ -254,12 +230,10 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     COPY_TIME.replace(0);
     ADVANCE_TIME.replace(0);
     PREDICT_TIME.replace(0);
-    let mut max_q_len = 0;
     let mut step = 0;
     let mut log = String::new();
     loop {
         progress.tick();
-        max_q_len = max(max_q_len, q.len());
         if let Some(lim) = steps_limit {
             if step > lim {
                 progress.abandon_with_message(format!("Hit step limit: {}", step));
@@ -305,11 +279,10 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
     println!(
-        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms.  Max queue length: {}",
+        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms.",
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
         per_step(PREDICT_TIME.get()),
-        max_q_len
     );
 
     std::fs::write(

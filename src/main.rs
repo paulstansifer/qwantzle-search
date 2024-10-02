@@ -53,6 +53,9 @@ struct Args {
     /// the punchline is.
     #[arg(short, long, default_value(""))]
     prompt_prefix: String,
+
+    #[arg(short, long, default_value("1"))]
+    workers: u8,
 }
 
 fn megabytes(bytes: usize) -> usize {
