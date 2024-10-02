@@ -270,13 +270,13 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let small_strips: Vec<&Strip> = strips
         .iter()
-        .filter(|s| s.punchline.len() > 15 && s.punchline.len() <= 25)
+        .filter(|s| s.punchline.len() > 12 && s.punchline.len() <= 30)
         .filter(|s| !s.punchline.contains(":"))
         .collect();
 
     let mut stats = Stats::default();
 
-    for strip in small_strips.iter().take(10) {
+    for strip in small_strips.iter().take(20) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         println!(
             "Estimated steps: {}. Avg. prob: {:.1}%",
@@ -284,7 +284,11 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
             avg_prob * 100.0
         );
 
-        search::practice_search(strip, model, Some(cost as usize * 25 + 20))
+        if cost > 1000.0 {
+            continue;
+        }
+
+        search::practice_search(strip, model, Some(1000))
     }
 
     std::fs::write(

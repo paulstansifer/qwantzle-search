@@ -1,0 +1,602 @@
+wait suddenly I see your point
+      0 100.00%: 
+      1 7.68%:  no
+      2 14.02%:  no I
+      3 10.26%:  no I don
+      4 8.90%:  no I was
+      5 8.82%:  no I lied
+      6 8.71%:  no wait
+      7 11.07%:  no wait I
+      8 8.21%:  no I need
+      9 14.20%:  no I need to
+     10 11.75%:  no I need to lie
+     11 9.09%:  no I need to sit
+     12 8.42%:  no I need a
+     13 8.20%:  no wait I don
+     14 7.82%:  no wait I need
+     15 11.94%:  no wait I need to
+     16 8.62%:  no wait I need to re
+     17 7.70%:  no wait I need to lie
+     18 7.66%:  no I need to say
+     19 8.17%:  no I need to say it
+     20 7.54%:  no I need to write
+     21 7.58%:  no I need to write a
+     22 7.45%:  no I need to eat
+     23 7.36%:  no I need to lay
+     24 7.14%:  no I lied we
+     25 7.14%:  no I didn
+     26 7.06%:  no I lied it
+     27 8.69%:  no I lied it was
+     28 6.98%:  no I need to rest
+     29 6.95%:  no wait I need you
+     30 6.84%:  nope
+     31 9.67%:  nope I
+     32 8.16%:  nope I lied
+     33 8.07%:  nope I don
+     34 7.41%:  nope I lied we
+     35 7.37%:  nope I was
+     36 6.81%:  no I need you
+     37 6.80%:  no I need to re
+     38 6.79%:  no I lied we are
+     39 8.43%:  no I lied we are not
+     40 6.77%:  no I need to step
+     41 6.76%:  nope I need
+     42 10.59%:  nope I need to
+     43 8.18%:  nope I need a
+     44 7.25%:  nope I need to sit
+     45 6.61%:  nope I lied it
+     46 7.73%:  nope I lied it was
+     47 6.49%:  no I need to put
+     48 6.35%:  nope I need to say
+     49 6.90%:  nope I need to say it
+     50 6.31%:  no wait I need to res
+     51 6.22%:  no wait I lied
+     52 6.13%:  no I need to rest up
+     53 6.67%:  no I need to rest up a
+     54 6.12%:  nope I need to lay
+     55 6.07%:  no I lied you
+     56 6.19%:  no I lied you are
+     57 6.25%:  no I lied you are stupid
+     58 6.07%:  no wait I need to use
+     59 6.03%:  nope I lied you
+     60 6.01%:  nope I lied you are
+     61 6.00%:  no I need to rest a
+     62 5.97%:  no I lied to
+     63 5.87%:  no I was not
+     64 5.78%:  nope I lied now
+     65 6.22%:  nope I lied now it
+     66 5.71%:  nope now
+     67 10.50%:  nope now I
+     68 5.87%:  nope now it
+     69 5.68%:  no wait I didn
+     70 5.67%:  nope I lied to
+     71 5.63%:  no wait I need to r
+     72 5.61%:  no wait I lied to
+     73 5.59%:  no I lied you were
+     74 5.55%:  no I need to wrap
+     75 5.54%:  no I need a lie
+     76 5.54%:  nope I didn
+     77 5.49%:  nope I was not
+     78 5.47%:  no I need to pause
+     79 5.47%:  no I need to put a
+     80 6.39%:  no I need to put a lid
+     81 5.45%:  no I lied you were a
+     82 5.43%:  no wait I need to red
+     83 5.41%:  no I need to write up
+     84 7.03%:  no I need to write up a
+     85 5.35%:  nope I lied wait
+     86 5.31%:  no I need to say it is
+     87 5.31%:  no I lied it sounds
+     88 5.60%:  no I lied it sounds way
+     89 5.30%:  no I want
+     90 9.60%:  no I want to
+     91 6.79%:  no I want to see
+     92 6.29%:  no I want to die
+     93 6.02%:  no I want to re
+     94 5.29%:  no I lied it was super
+     95 5.29%:  no I was only
+     96 5.28%:  I
+     97 5.26%:  no I did
+     98 9.57%:  no I did not
+     99 8.64%:  no I did not say
+    100 7.93%:  no I did not say it
+    101 6.13%:  no I did it
+    102 7.85%:  no I did it on
+    103 6.11%:  no I did not write
+    104 5.30%:  no I did not write a
+    105 5.23%:  nope I lied it turns
+    106 5.20%:  no I lied it wasn
+    107 5.18%:  no I did not wait
+    108 5.16%:  nope I need you
+    109 5.15%:  no I want you
+    110 5.11%:  no I lied it was so
+    111 5.11%:  no I need to rest up a l
+    112 5.11%:  no I need to wrap it
+    113 5.11%:  no wait let
+    114 5.09%:  nope I lied it wasn
+    115 5.07%:  nope I said
+    116 7.83%:  nope I said it
+    117 6.46%:  nope I said it out
+    118 6.20%:  nope I said it now
+    119 6.09%:  nope I said it now let
+    120 5.10%:  nope I said it let
+    121 5.09%:  nope I said it on
+    122 5.08%:  nope I said it now let us
+    123 5.07%:  no I lied wait
+    124 5.06%:  no I lied now
+    125 5.57%:  no I lied now it
+    126 5.05%:  nope now I see
+    127 5.52%:  nope now I see it
+    128 5.05%:  no I was only pret
+    129 5.02%:  nope I lied today
+    130 7.82%:  nope I lied today is
+    131 5.24%:  nope I lied today is 
+    132 5.01%:  no I did not see
+    133 5.01%:  no I lied we are no
+    134 5.00%:  nope I need to r
+    135 4.97%:  no I need to write 
+    136 4.95%:  nope I lied it sounds
+    137 5.43%:  nope I lied it sounds way
+    138 4.93%:  nope it
+    139 6.38%:  nope it turns
+    140 4.89%:  no I did not say we
+    141 4.89%:  nope I was only
+    142 4.88%:  nope I need to stay
+    143 4.88%:  no wait I see
+    144 6.02%:  no wait I see your
+    145 4.85%:  no I lied it doesn
+    146 4.85%:  nope I lied it doesn
+    147 4.84%:  nope we
+    148 4.84%:  no I said
+    149 7.62%:  no I said it
+    150 6.41%:  no I said it out
+    151 4.82%:  nope I said it to
+    152 4.81%:  nope I said it so
+    153 4.81%:  no I lied it was 
+    154 4.79%:  no I need to eat 
+    155 4.78%:  nope I need to say it is
+    156 4.78%:  no I said it on
+    157 4.77%:  no I lied you were stupid
+    158 4.76%:  no I did it now
+    159 4.75%:  no wait I lied you
+    160 4.75%:  no I said it to
+    161 4.73%:  nope I lied no
+    162 4.72%:  no I wrote
+    163 6.53%:  no I wrote it
+    164 5.50%:  no I wrote it in
+    165 6.25%:  no I wrote it in a
+    166 4.99%:  no I wrote it in p
+    167 4.71%:  no I said it now
+    168 4.98%:  no I said it now let
+    169 4.69%:  nope now i
+    170 4.67%:  no wait it
+    171 4.66%:  nope I lied it was so
+    172 4.65%:  nope I lied it was 
+    173 4.64%:  no wait I did
+    174 5.34%:  no wait I did not
+    175 4.63%:  no I put
+    176 6.35%:  no I put it
+    177 7.62%:  no I put it in
+    178 7.27%:  no I put it on
+    179 7.65%:  no I put it on a
+    180 7.26%:  no I put it in a
+    181 5.88%:  no I put it down
+    182 5.88%:  no I put it down as
+    183 5.37%:  no I put it in your
+    184 5.05%:  no I put it in a worse
+    185 4.64%:  no I put it in a lower
+    186 4.63%:  no I need to write a 
+    187 4.61%:  no I need to write up a 
+    188 4.61%:  no I lied we aren
+    189 4.60%:  nope I went
+    190 4.60%:  no I need to write up a dis
+    191 4.59%:  nope it was
+    192 4.59%:  no I lied and
+    193 5.10%:  no I lied and we
+    194 4.58%:  no wait no
+    195 6.65%:  no wait no I
+    196 4.68%:  no wait no I lied
+    197 4.56%:  no I need to lay up
+    198 4.56%:  no I put it in so
+    199 4.81%:  no I put it in so we
+    200 4.56%:  no I lied we are in
+    201 4.54%:  no I want out
+    202 4.53%:  nope I lied no way
+    203 4.53%:  no I lied it was st
+    204 7.01%:  no I lied it was stup
+    205 5.25%:  no I lied it was stupor
+    206 4.95%:  no I lied it was stupend
+    207 4.66%:  no I lied it was stupd
+    208 4.53%:  no I lied we are so
+    209 4.53%:  no I need to say it yes
+    210 4.52%:  no I put it in as
+    211 4.52%:  nope I lied wait no
+    212 4.52%:  no I need to say it we
+    213 4.51%:  no I need a lie to
+    214 4.51%:  no I put it on a swe
+    215 4.51%:  no I lied we are not p
+    216 4.50%:  no I wrote it and
+    217 4.50%:  no I was super
+    218 4.50%:  no I put it way
+    219 4.50%:  no I did not say it super
+    220 4.50%:  no I lied and it
+    221 4.48%:  no I lied it was on
+    222 4.48%:  no wait I need it
+    223 4.47%:  no I put it in a s
+    224 4.47%:  no I lied it was true
+    225 4.47%:  nope I lied wait you
+    226 4.47%:  no I want to sleep
+    227 4.45%:  no I need to sit up
+    228 4.42%:  no I lied it was not
+    229 4.42%:  nope I did
+    230 7.12%:  nope I did it
+    231 6.50%:  nope I did it on
+    232 6.27%:  nope I did not
+    233 6.66%:  nope I did not say
+    234 5.98%:  nope I did not say it
+    235 5.73%:  nope I did not see
+    236 5.48%:  nope I did it now
+    237 4.88%:  nope I did not write
+    238 4.58%:  nope I did it to
+    239 4.55%:  nope I did it now let
+    240 4.47%:  nope I did not wait
+    241 4.40%:  no wait I need to lie up
+    242 4.40%:  nope I lied we don
+    243 4.39%:  nope I was in
+    244 4.38%:  nope I lied it was not
+    245 4.38%:  nope no
+    246 4.50%:  nope no I
+    247 4.37%:  no I did not it
+    248 6.33%:  no I did not it was
+    249 5.18%:  no I did not it was super
+    250 4.37%:  nope I wrote
+    251 5.66%:  nope I wrote it
+    252 4.88%:  nope I wrote it in
+    253 5.34%:  nope I wrote it in a
+    254 4.36%:  no I put it on us
+    255 4.35%:  no I lied wait you
+    256 4.35%:  no I put it on a slide
+    257 5.07%:  no I put it on a slidey
+    258 4.34%:  no I said it so
+    259 4.33%:  no I need to write a dis
+    260 4.33%:  no I lied it was so true
+    261 4.32%:  no I put it in a row
+    262 4.30%:  no wait I see your s
+    263 4.30%:  nope I lied no idea
+    264 4.29%:  no I lied it was so rude
+    265 4.29%:  nope I lied you are st
+    266 4.29%:  no I said it now let us
+    267 4.29%:  no I was pretty
+    268 4.28%:  no I lied you were a stupid
+    269 4.28%:  no I did it now let
+    270 4.28%:  nope I did not say yes
+    271 4.27%:  no I lied it was stupod
+    272 4.25%:  no I did not say yes
+    273 4.25%:  nope we are
+    274 6.29%:  nope we are not
+    275 4.47%:  nope we are no
+    276 4.24%:  no wait I put
+    277 4.24%:  nope I did it now let us
+    278 4.24%:  nope now I see it as
+    279 4.24%:  nope I lied and
+    280 4.76%:  nope I lied and we
+    281 4.23%:  nope I was on
+    282 4.28%:  nope I was on it
+    283 4.23%:  nope I lied it was true
+    284 4.23%:  no I was on
+    285 4.22%:  no wait I see it
+    286 4.22%:  nope I lied it was on
+    287 4.22%:  no I did not type
+    288 4.22%:  nope I said it so we
+    289 4.22%:  nope I lied today isn
+    290 4.20%:  no I lied it was super not
+    291 4.20%:  no I did it to
+    292 4.20%:  nope I lied it was so true
+    293 4.19%:  nope no I lied
+    294 4.25%:  nope no I lied we
+    295 4.19%:  no wait no I did
+    296 4.19%:  no I lied you are st
+    297 6.54%:  no I lied you are stup
+    298 7.02%:  no I lied you are stupids
+    299 6.10%:  no I lied you are stupi
+    300 6.07%:  no I lied you are stupend
+    301 5.67%:  no I lied you are stupid
+    302 4.86%:  no I lied you are stupids we
+    303 4.81%:  no I lied you are stupd
+    304 4.76%:  no I lied you are stupids 
+    305 4.44%:  no I lied you are stupide
+    306 4.19%:  no I lied it was your
+    307 4.18%:  no it
+    308 4.42%:  no it turns
+    309 4.27%:  no it was
+    310 4.18%:  nope now it is
+    311 4.17%:  no I lied we arent
+    312 4.17%:  nope I did not say we
+    313 4.17%:  nope I said it now let us re
+    314 4.16%:  no I lied it was pet
+    315 4.13%:  nope I lied no we
+    316 4.13%:  nope I want
+    317 6.86%:  nope I want to
+    318 5.31%:  nope I want to die
+    319 5.14%:  nope I want to re
+    320 4.99%:  nope I want to see
+    321 4.66%:  nope I want out
+    322 4.13%:  nope I need to say it i
+    323 4.13%:  nope I lied don
+    324 4.13%:  no I lied wait no
+    325 4.12%:  no I lied it was super on
+    326 4.12%:  no I did not y
+    327 4.12%:  no I need to say it is 
+    328 4.11%:  no I want us
+    329 7.66%:  no I want us to
+    330 4.11%:  no I lied we are 
+    331 4.09%:  no I lied you were a d
+    332 4.09%:  no I was on it
+    333 4.08%:  no I did it now let us
+    334 4.08%:  nope I did not write a
+    335 4.08%:  no I put it in your e
+    336 4.08%:  no I need a re
+    337 6.24%:  no I need a redo
+    338 4.07%:  nope I wrote it and
+    339 4.07%:  no I put it in a less
+    340 4.26%:  no I put it in a less rude
+    341 4.07%:  no we
+    342 4.07%:  no wait I put in
+    343 4.07%:  no I did not see it
+    344 4.07%:  no I lied you are stupidy
+    345 4.06%:  no I need to step 
+    346 4.06%:  nope no I was
+    347 4.06%:  no I lied and you
+    348 4.76%:  no I lied and you were
+    349 4.05%:  no I want to press
+    350 4.05%:  nope I lied it turned
+    351 4.05%:  no wait I need to use up
+    352 4.05%:  no wait I need your
+    353 4.04%:  no I did not it was 
+    354 4.04%:  no I wrote it in a sp
+    355 4.04%:  nope I lied and it
+    356 4.04%:  so
+    357 8.82%:  so I
+    358 7.24%:  so I was
+    359 6.56%:  so I don
+    360 5.92%:  so I need
+    361 10.66%:  so I need to
+    362 7.60%:  so I need to say
+    363 6.86%:  so I need to win
+    364 7.65%:  so I need to win a
+    365 6.76%:  so I need to say it
+    366 6.74%:  so I need to win at
+    367 6.65%:  so I need to re
+    368 6.65%:  so I need a
+    369 8.43%:  so I need a new
+    370 6.46%:  so I need to write
+    371 7.66%:  so I need to write a
+    372 6.43%:  so I need you
+    373 6.03%:  so I need to put
+    374 7.29%:  so I need to put in
+    375 8.83%:  so I need to put in a
+    376 6.45%:  so I need to put in a re
+    377 6.01%:  so I need to send
+    378 7.40%:  so I need to send a
+    379 5.97%:  so I need to lie
+    380 6.38%:  so I need to lie and
+    381 5.96%:  so I need to write up
+    382 7.81%:  so I need to write up a
+    383 5.91%:  so I need to put a
+    384 5.79%:  so I need to write up an
+    385 5.79%:  so I need to step
+    386 5.78%:  so I need to put in a w
+    387 5.72%:  so I need to sit
+    388 5.69%:  so I need to step in
+    389 5.67%:  so I need to win 
+    390 5.65%:  so I need to put a new
+    391 5.63%:  so I need to set
+    392 7.60%:  so I need to set up
+    393 9.85%:  so I need to set up a
+    394 7.62%:  so I need to set up an
+    395 6.26%:  so I need to set a
+    396 6.11%:  so I need to set up a 
+    397 5.54%:  so I need to learn
+    398 5.52%:  so I need to lie in
+    399 5.93%:  so I need to lie in a
+    400 5.37%:  so I need to put in a res
+    401 5.35%:  so I need to sit in
+    402 7.19%:  so I need to sit in a
+    403 5.30%:  so I need to eat
+    404 5.28%:  so I need to say it in
+    405 5.28%:  so I need to win a stupid
+    406 5.28%:  so I need to write an
+    407 5.24%:  so I need to write up a 
+    408 5.23%:  so I need to put a lid
+    409 5.18%:  so I need to step in a
+    410 5.18%:  so I need to put in a 
+    411 5.16%:  so I need to write 
+    412 5.15%:  so I need to write up a dis
+    413 5.08%:  so I need to spend
+    414 5.64%:  so I need to spend a
+    415 5.00%:  so now
+    416 10.03%:  so now I
+    417 7.43%:  so now I need
+    418 7.70%:  so now I need a
+    419 5.75%:  so now it
+    420 5.20%:  so now it turns
+    421 4.99%:  so now I see
+    422 5.53%:  so now I see it
+    423 4.98%:  so I need to put an
+    424 4.98%:  so I need to put in a resi
+    425 4.96%:  so I need to lay
+    426 4.93%:  so I need to write a 
+    427 4.90%:  so I need to set up an i
+    428 4.85%:  so I need to set up and
+    429 4.84%:  so I need to send a 
+    430 4.84%:  so now I need a lie
+    431 4.83%:  so I need to en
+    432 7.78%:  so I need to enlist
+    433 4.81%:  so I need to run
+    434 4.81%:  so I need to sit and
+    435 4.75%:  so I need to let
+    436 4.75%:  so I need to lie in a d
+    437 4.74%:  so I need to wrap
+    438 4.73%:  so I lied
+    439 4.70%:  so I need to lay in
+    440 4.70%:  so I need to put in 
+    441 4.69%:  so I need to update
+    442 4.65%:  so I need to sit in a d
+    443 4.61%:  so I need to win a 
+    444 4.60%:  so I need to enlist a
+    445 4.58%:  so I need to run a
+    446 4.54%:  so I was pretty
+    447 4.54%:  so I lied a
+    448 4.53%:  so I need to sit and p
+    449 4.53%:  so I need to stay
+    450 5.24%:  so I need to stay in
+    451 4.52%:  so I need to write a dis
+    452 4.51%:  so I need to win at 
+    453 4.49%:  so I need to write in
+    454 5.28%:  so I need to write in a
+    455 4.48%:  so I need to lie in a sw
+    456 4.47%:  so now I see it in
+    457 4.76%:  so now I see it in a
+    458 4.64%:  so now I see it in ret
+    459 4.46%:  so now I need a re
+    460 4.45%:  so I need to write up 
+    461 4.45%:  so I need a new list
+    462 4.44%:  so I need to send 
+    463 4.39%:  so I lied and
+    464 5.30%:  so I lied and we
+    465 4.70%:  so I lied and it
+    466 4.37%:  so I lied and it turns
+    467 4.34%:  so now I need a p
+    468 4.32%:  so I need to end
+    469 4.32%:  so I need to say we
+    470 4.31%:  so I need to turn
+    471 4.31%:  so I need to play
+    472 4.59%:  so I need to play 
+    473 4.29%:  so now I need a dist
+    474 4.28%:  so I need to set up 
+    475 4.28%:  so I need to study
+    476 5.78%:  so I need to study up
+    477 4.57%:  so I need to study up a
+    478 4.26%:  so I was only
+    479 4.25%:  so I need to answer
+    480 4.25%:  so I need to wait
+    481 4.25%:  so I need to pause
+    482 4.24%:  so I need to use
+    483 4.92%:  so I need to use a
+    484 4.24%:  so I need to write up and
+    485 4.22%:  so I need to win a r
+    486 4.21%:  so I lied and now
+    487 4.35%:  so I lied and now it
+    488 4.20%:  so I need to rest
+    489 4.86%:  so I need to rest up
+    490 5.30%:  so I need to rest up a
+    491 4.84%:  so I need to rest up and
+    492 4.43%:  so I need to rest and
+    493 4.20%:  so I need to rest a
+    494 4.18%:  so I need to write and
+    495 4.17%:  so I need to set an
+    496 4.17%:  so I need to sit up
+    497 4.95%:  so I need to sit up and
+    498 4.17%:  so I need to say in
+    499 4.15%:  so I was only 
+    500 4.15%:  so I need to win a super
+    501 4.13%:  so I need to rewind
+    502 4.78%:  so I need to rewind a
+    503 4.13%:  so now I need us
+    504 4.12%:  so now I need a 
+    505 4.12%:  so I need to put a line
+    506 4.11%:  so now I need a list
+    507 4.10%:  so we
+    508 4.08%:  so I need to stay up
+    509 4.07%:  so I need to wrap it
+    510 4.04%:  so I need to put a 
+    511 4.04%:  so I didn
+    512 4.04%:  so I need a new p
+    513 4.03%:  nope I won
+    514 4.03%:  so I was only pret
+    515 4.02%:  no wait I did not see
+    516 4.02%:  no I need to lay upside
+    517 4.02%:  no I won
+    518 4.02%:  so I was in
+    519 4.01%:  no I lied we are p
+    520 4.01%:  no I was in
+    521 4.01%:  nope I said it let us
+    522 4.01%:  no I put it in a e
+    523 4.00%:  nope now I see it is
+    524 4.25%:  nope now I see it is a
+    525 4.00%:  nope I lied you are 
+    526 4.00%:  no I lied we don
+    527 4.00%:  no I put it way in
+    528 4.00%:  so I need to set a 
+    529 4.00%:  no I need to say yes
+    530 3.99%:  no I put it on a sweee
+    531 3.99%:  nope no I lied it
+    532 4.92%:  nope no I lied it was
+    533 3.99%:  nope I want you
+    534 3.99%:  so I need to wait 
+    535 3.98%:  nope no way
+    536 5.23%:  nope no way I
+    537 3.98%:  no I put it down as 
+    538 3.98%:  so I need your
+    539 3.97%:  no I lied wait nope
+    540 3.97%:  no I put it down a
+    541 3.97%:  so I need to put us
+    542 4.86%:  so I need to put us in
+    543 5.69%:  so I need to put us in a
+    544 3.96%:  no I lied to us
+    545 3.96%:  so I need to put us in a 
+    546 3.96%:  so I need to spend 
+    547 3.96%:  nope I was done
+    548 3.96%:  no I lied you said
+    549 3.95%:  no I did not use
+    550 4.50%:  no I did not use a
+    551 3.95%:  so I need to study a
+    552 3.95%:  so I need to rest up a l
+    553 3.95%:  so I need you in
+    554 3.95%:  so I need you in a
+    555 3.95%:  so I need to eat 
+    556 3.94%:  no wait I re
+    557 3.94%:  so now I need a stupid
+    558 3.94%:  no I lied you are stupes
+    559 3.94%:  nope I need a s
+    560 3.94%:  no wait I lied to us
+    561 3.94%:  no I was super not
+    562 3.94%:  no I lied yes
+    563 5.87%:  no I lied yes we
+    564 3.99%:  no I lied yes it
+    565 5.30%:  no I lied yes it was
+    566 4.58%:  no I lied yes it was true
+    567 4.13%:  no I lied yes it was true no
+    568 4.02%:  no I lied yes it was rude
+    569 3.97%:  no I lied yes it was rude to
+    570 3.93%:  no I was super into
+    571 5.21%:  no I was super into it
+    572 3.93%:  no I lied today
+    573 6.99%:  no I lied today is
+    574 4.33%:  no I lied today is 
+    575 3.93%:  so now I need a pet
+    576 5.61%:  so now I need a petty
+    577 3.93%:  no I lied you are stupendi
+    578 3.93%:  nope I lied you are in
+    579 3.92%:  nope I lied to us
+    580 3.92%:  nope I lied no wait
+    581 3.92%:  nope I lied no way is
+    582 3.92%:  so now I need a super
+    583 3.92%:  no I lied we are stupid
+    584 3.91%:  no I lied yes it was rude no
+    585 3.91%:  no I lied no
+    586 4.64%:  no I lied no we
+    587 4.05%:  no I lied no we are
+    588 3.91%:  so we need
+    589 7.94%:  so we need to
+    590 5.48%:  so we need a
+    591 4.93%:  so we need to put
+    592 5.51%:  so we need to put in
+    593 7.84%:  so we need to put in a
+    594 5.45%:  so we need to put a
+    595 5.40%:  so we need to put a lid
+    596 4.80%:  so we need to put an
+    597 4.33%:  so we need to sit
+    598 4.08%:  so we need to sit in
+    599 5.17%:  so we need to sit in a
+    600 4.02%:  so we need to say

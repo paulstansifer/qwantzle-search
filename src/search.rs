@@ -1,6 +1,7 @@
 use std::{
     cell::Cell,
     cmp::Ordering,
+    fmt::Write,
     sync::{Arc, Mutex},
 };
 
@@ -78,6 +79,8 @@ const MIN_AVG_P: f64 = 0.01;
 // Note that `ctx.model()` clones the whole model! It's just an `Arc` plus a bunch of `usize`s, so it's not too bad, but it's an optimization opportunity.
 
 thread_local! {
+    pub static COPY_TIME : Cell<u128> = Cell::<u128>::default();
+    pub static ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
     pub static PREDICT_TIME : Cell<u128> = Cell::<u128>::default();
 }
 
@@ -113,10 +116,19 @@ impl Node {
     }
 
     fn advance(&self, root_ctx: &llama_cpp::LlamaSession, q: &mut Q) {
-        let mut my_ctx = root_ctx.deep_copy().expect("Failed to copy context");
-        my_ctx
-            .advance_context_with_tokens(&self.text)
-            .expect("Failed to advance context");
+        let mut my_ctx;
+        {
+            let before_copy = std::time::Instant::now();
+            my_ctx = root_ctx.deep_copy().expect("Failed to copy context");
+            COPY_TIME.replace(COPY_TIME.get() + before_copy.elapsed().as_micros());
+        }
+        {
+            let before_advance = std::time::Instant::now();
+            my_ctx
+                .advance_context_with_tokens(&self.text)
+                .expect("Failed to advance context");
+            ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
+        }
 
         let candidates = Arc::new(Mutex::new(vec![]));
         let peek_sampler = llm::PeekSampler {
@@ -125,13 +137,13 @@ impl Node {
         };
 
         {
-            let _before_predict = std::time::Instant::now();
+            let before_predict = std::time::Instant::now();
 
             let mut completion_res = my_ctx
                 .start_completing_with(peek_sampler, 1)
                 .expect("Completion error!");
             let _ = completion_res.next_token();
-            // TODO count time
+            PREDICT_TIME.replace(PREDICT_TIME.get() + before_predict.elapsed().as_micros());
         }
 
         let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
@@ -158,8 +170,13 @@ impl Node {
             //     )
             // }
 
+            let score = f64::powf(
+                cand.p as f64 * self.probability * 0.3 * 0.3,
+                1.0 / (self.text.len() as f64 + 3.0),
+            );
+
             if let Some(node) = self.push_token(Token(cand.id), cand.p, &root_ctx.model()) {
-                q.push(node, Score(avg_prob));
+                q.push(node, Score(score));
             }
         }
 
@@ -197,6 +214,7 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
     let mut step = 0;
+    let mut log = String::new();
     loop {
         progress.tick();
         if let Some(lim) = steps_limit {
@@ -223,12 +241,15 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
                 ));
             }
 
-            progress.set_message(format!(
+            let cur_str = format!(
                 "{:7} {:.2}%: {}",
                 step,
                 p.0 * 100.0,
                 model.decode_tokens(&node.text)
-            ));
+            );
+            log.write_str(&format!("{}\n", cur_str)).unwrap();
+
+            progress.set_message(cur_str);
 
             node.advance(&root_ctx, &mut q);
             step += 1;
@@ -238,6 +259,20 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
             break;
         }
     }
+    let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
+
+    println!(
+        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms",
+        per_step(COPY_TIME.get()),
+        per_step(ADVANCE_TIME.get()),
+        per_step(PREDICT_TIME.get())
+    );
+
+    std::fs::write(
+        format!("reports/search-{}.txt", strip.id),
+        format!("{}\n{}", strip.punchline, log),
+    )
+    .unwrap();
 }
 
 /*

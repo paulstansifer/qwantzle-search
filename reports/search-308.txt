@@ -1,0 +1,602 @@
+try it out somewhere else!
+      0 100.00%: 
+      1 17.43%:  you
+      2 13.46%:  it
+      3 8.91%:  you were
+      4 5.48%:  you were the
+      5 4.61%:  you were so
+      6 3.76%:  you were there
+      7 7.05%:  you were there!
+      8 3.54%:  you were mess
+      9 3.53%:  you were 
+     10 3.28%:  you stole
+     11 4.11%:  you stole it
+     12 5.16%:  you stole it!
+     13 3.50%:  you stole the
+     14 2.97%:  your
+     15 2.83%:  you were so l
+     16 2.75%:  you owe
+     17 8.87%:  you owe me
+     18 8.96%:  you owe me!
+     19 6.38%:  you owe me 
+     20 5.20%:  you owe me three
+     21 6.11%:  you owe me three!
+     22 4.21%:  you owe me the
+     23 4.28%:  you owe me the rest
+     24 3.17%:  you owe me three sets
+     25 3.50%:  you owe me three sets!
+     26 3.04%:  you owe me the rest!
+     27 3.04%:  you owe me this
+     28 3.76%:  you owe me this!
+     29 2.75%:  you owe me the 
+     30 2.72%:  you stole the m
+     31 2.70%:  you mess
+     32 2.65%:  you were the most
+     33 2.57%:  you owe me three t
+     34 2.55%:  you were ro
+     35 2.49%:  you owe me three tr
+     36 2.46%:  you owe me three 
+     37 2.46%:  you were so there
+     38 4.74%:  you were so there!
+     39 2.41%:  you were t
+     40 2.37%:  you mess with
+     41 2.25%:  you were there to
+     42 2.18%:  you owe me the re
+     43 2.16%:  you were so sl
+     44 2.15%:  you were tr
+     45 2.14%:  you wrote
+     46 5.01%:  you wrote the
+     47 3.76%:  you wrote it
+     48 6.18%:  you wrote it!
+     49 2.23%:  you wrote the 
+     50 2.12%:  you wrote this
+     51 3.22%:  you wrote this!
+     52 2.02%:  you were!
+     53 1.99%:  you owe me the rest! 
+     54 1.90%:  you wrote me
+     55 2.09%:  you wrote me the
+     56 1.99%:  you wrote me!
+     57 1.88%:  you were there 
+     58 1.84%:  you owe me three tiers
+     59 2.35%:  you owe me three tiers!
+     60 1.82%:  you were so!
+     61 1.82%:  you owe me three tril
+     62 1.81%:  you owe me three tet
+     63 1.83%:  you owe me three tetris
+     64 2.84%:  you owe me three tetris!
+     65 1.83%:  you owe me three tetri
+     66 2.75%:  you owe me three tetri!
+     67 1.76%:  you owe me three tet!
+     68 1.74%:  you wrote me the r
+     69 1.72%:  this
+     70 1.68%:  you wrote me this
+     71 1.85%:  you wrote me this!
+     72 1.67%:  you owe me three tris
+     73 2.61%:  you owe me three tris!
+     74 1.66%:  you stole his
+     75 1.66%:  you stole the rest
+     76 1.70%:  you stole the rest!
+     77 1.63%:  it rules
+     78 4.30%:  it rules!
+     79 1.89%:  it rules to
+     80 2.49%:  it rules to see
+     81 3.11%:  it rules to see the
+     82 2.77%:  it rules to see how
+     83 2.25%:  it rules to see me
+     84 2.31%:  it rules to see me!
+     85 2.18%:  it rules to see my
+     86 2.15%:  it rules to see the om
+     87 2.10%:  it rules to see how my
+     88 1.95%:  it rules to see the m
+     89 1.65%:  it rules to see me try
+     90 1.85%:  it rules to see me try!
+     91 1.62%:  it seems
+     92 3.62%:  it seems to
+     93 3.61%:  it seems you
+     94 3.61%:  it seems you were
+     95 3.61%:  it seems you were the
+     96 2.23%:  it seems you were!
+     97 1.97%:  it seems you were ro
+     98 1.94%:  it seems we
+     99 1.84%:  it seems you were t
+    100 1.83%:  it seems your
+    101 1.83%:  it seems you were 
+    102 1.61%:  it rules to see two
+    103 1.61%:  you wrote it there
+    104 3.04%:  you wrote it there!
+    105 1.57%:  you wrote it the
+    106 1.56%:  you were there to set
+    107 1.53%:  you owe him
+    108 1.98%:  you owe him!
+    109 1.53%:  it rules to see who
+    110 1.50%:  you owe me the rets
+    111 2.10%:  you owe me the rets!
+    112 1.50%:  you owe me the reel
+    113 2.33%:  you owe me the reel!
+    114 1.49%:  you wrote this 
+    115 1.47%:  you owe me three tril!
+    116 1.45%:  it rules to see them
+    117 1.93%:  it rules to see them!
+    118 1.45%:  it rules to see!
+    119 1.45%:  you owe him 
+    120 1.44%:  you were the most el
+    121 1.44%:  you were tes
+    122 1.41%:  it rules to see me r
+    123 1.39%:  you owe me the reel 
+    124 1.38%:  you were tester
+    125 1.52%:  you were testert
+    126 1.38%:  you wrote me letters
+    127 2.20%:  you wrote me letters!
+    128 1.35%:  you owe me the ree
+    129 1.36%:  you owe me the ree!
+    130 1.35%:  it rules to see my two
+    131 1.35%:  it seems the
+    132 1.35%:  you were rote
+    133 2.31%:  you were rote!
+    134 1.35%:  you were tester!
+    135 1.32%:  you wrote me the l
+    136 1.32%:  you threw
+    137 2.92%:  you threw me
+    138 3.21%:  you threw me to
+    139 1.76%:  you threw it
+    140 1.96%:  you threw it!
+    141 1.88%:  you threw it to
+    142 3.68%:  you threw it to me
+    143 5.25%:  you threw it to me!
+    144 1.29%:  why
+    145 1.28%:  you threw me!
+    146 1.27%:  you were tesit
+    147 1.27%:  you stole!
+    148 1.26%:  it rules to meet
+    149 1.24%:  you wrote me the 
+    150 1.24%:  it seems the two
+    151 1.23%:  you wrote me the s
+    152 1.21%:  you owe the
+    153 1.26%:  you owe the m
+    154 1.20%:  you wrote me 
+    155 1.20%:  you were trite
+    156 2.66%:  you were trite!
+    157 1.19%:  the
+    158 3.25%:  the m
+    159 1.19%:  you were there to set!
+    160 1.18%:  it rules so
+    161 1.17%:  you were testeret
+    162 1.33%:  you were testeret!
+    163 1.17%:  you were trom
+    164 1.17%:  you owe the rest
+    165 1.16%:  you owe me the retsil
+    166 1.46%:  you owe me the retsil!
+    167 1.28%:  you owe me the retsilest
+    168 1.62%:  you owe me the retsilest!
+    169 1.16%:  you were testers
+    170 2.06%:  you were testers!
+    171 1.14%:  it rules to try
+    172 1.14%:  you were tet
+    173 1.96%:  you were tetter
+    174 2.38%:  you were tetter!
+    175 1.54%:  you were tettero
+    176 2.33%:  you were tettero!
+    177 1.39%:  you were tet!
+    178 1.25%:  you were tetris
+    179 2.01%:  you were tetris!
+    180 1.24%:  you were tettero me
+    181 1.96%:  you were tettero me!
+    182 1.14%:  you were rol
+    183 1.14%:  you owe me the retsilest 
+    184 1.14%:  you were rotes
+    185 2.26%:  you were rotes!
+    186 1.15%:  you were rotesh
+    187 2.13%:  you were rotesh!
+    188 1.14%:  it seems you were tet
+    189 1.24%:  it seems you were tetro
+    190 1.45%:  it seems you were tetro!
+    191 1.13%:  you stole this
+    192 1.78%:  you stole this!
+    193 1.12%:  you wrote me this 
+    194 1.12%:  it rules to the
+    195 1.13%:  it rules to the 
+    196 1.11%:  you were tetst
+    197 1.11%:  you wrote me letters 
+    198 1.10%:  you were tetro
+    199 1.42%:  you were tetro!
+    200 1.10%:  you were trite to
+    201 1.80%:  you were trite to me
+    202 2.92%:  you were trite to me!
+    203 1.10%:  you were testere
+    204 1.24%:  you were testere!
+    205 1.16%:  you were testereot
+    206 1.09%:  it seems your whole
+    207 1.08%:  it seems you were tet!
+    208 1.08%:  you were tettero m
+    209 1.07%:  we
+    210 1.06%:  you were testert!
+    211 1.06%:  you were tesr
+    212 1.47%:  you were tesrtt
+    213 1.22%:  you were tesrtt!
+    214 1.05%:  you were tesrttl
+    215 1.19%:  you were tesrttl!
+    216 1.09%:  you were tesrttlh
+    217 1.24%:  you were tesrttlh!
+    218 1.05%:  you were tester the
+    219 1.05%:  you owe me the reel it
+    220 1.16%:  you owe me the reel it!
+    221 1.05%:  you wrote it the l
+    222 1.04%:  you stole me
+    223 2.17%:  you stole me!
+    224 1.03%:  it seems there
+    225 1.03%:  you were testertis
+    226 1.35%:  you were testertis!
+    227 1.03%:  you were testers to
+    228 1.32%:  you were testers to me
+    229 2.07%:  you were testers to me!
+    230 1.04%:  you were testers to me 
+    231 1.02%:  you were tesst
+    232 1.01%:  you wrote me this l
+    233 1.01%:  you wrote me three
+    234 1.01%:  you were tesrttlh!e
+    235 1.00%:  you wrote me this e
+    236 0.99%:  why is
+    237 0.76%:  your stories
+    238 0.76%:  why so
+    239 0.69%:  my
+    240 0.66%:  this story
+    241 0.65%:  let
+    242 6.15%:  let me
+    243 4.31%:  let me try
+    244 6.46%:  let me try!
+    245 5.89%:  let me try it
+    246 8.11%:  let me try it!
+    247 5.43%:  let me try out
+    248 4.30%:  let me see
+    249 5.54%:  let me see!
+    250 4.88%:  let me see those
+    251 4.56%:  let me see the
+    252 4.30%:  let me see you
+    253 4.29%:  let me see it
+    254 7.04%:  let me see it!
+    255 4.29%:  let me see your
+    256 4.05%:  let me try the
+    257 3.82%:  let me see those!
+    258 3.36%:  let me try this
+    259 3.73%:  let me try this!
+    260 3.30%:  let me try to
+    261 3.09%:  let me see how
+    262 4.88%:  let me see how it
+    263 3.92%:  let me see how you
+    264 3.07%:  let me see how your
+    265 2.69%:  let me see your other
+    266 2.55%:  let me see how you re
+    267 2.55%:  let me see how to
+    268 2.49%:  let me see your res
+    269 2.46%:  let me see how to use
+    270 3.36%:  let me see how to use it
+    271 4.52%:  let me see how to use it!
+    272 2.45%:  let me see how you set
+    273 3.62%:  let me see how you set it
+    274 2.40%:  let me see it too
+    275 4.29%:  let me see it too!
+    276 2.39%:  let me see you wh
+    277 2.38%:  let me see how you set it!
+    278 2.36%:  let me try to re
+    279 2.33%:  let me see those t
+    280 2.31%:  let me see your wr
+    281 2.31%:  let me see your re
+    282 2.29%:  let me see your w
+    283 3.10%:  let me see your wi
+    284 2.47%:  let me see your wit
+    285 3.54%:  let me see your wit!
+    286 2.29%:  let me see yours
+    287 4.16%:  let me see yours!
+    288 2.29%:  let me see you!
+    289 2.27%:  let me see this
+    290 3.67%:  let me see this!
+    291 2.24%:  let me try to use
+    292 2.24%:  let me see your shit
+    293 3.31%:  let me see your shit!
+    294 2.24%:  let me worry
+    295 2.16%:  let me see you write
+    296 2.15%:  let me see it try
+    297 3.59%:  let me see it try!
+    298 2.13%:  let me try with
+    299 2.13%:  let me see your r
+    300 2.10%:  let me see it the
+    301 2.09%:  let me see how to re
+    302 2.08%:  let me see it out
+    303 3.30%:  let me see it out!
+    304 2.08%:  let me see your so
+    305 2.07%:  let me out
+    306 3.97%:  let me out!
+    307 2.19%:  let me out this
+    308 2.07%:  let me try to see
+    309 2.42%:  let me try to see how
+    310 2.04%:  let me see your rhe
+    311 2.86%:  let me see your rheost
+    312 2.36%:  let me see your rheto
+    313 2.31%:  let me see your rheto!
+    314 2.30%:  let me see your rheot
+    315 2.21%:  let me see your rheo
+    316 2.64%:  let me see your rheo!
+    317 2.03%:  let me see your sh
+    318 2.55%:  let me see your sho
+    319 2.07%:  let me see your shoet
+    320 2.05%:  let me see your shoet!
+    321 2.03%:  let me see you throw
+    322 2.32%:  let me see you throw it
+    323 3.14%:  let me see you throw it!
+    324 2.00%:  let me see how yours
+    325 1.98%:  let me show
+    326 5.06%:  let me show you
+    327 3.40%:  let me show you!
+    328 1.97%:  let me see you write!
+    329 1.96%:  let me try to see!
+    330 1.91%:  let me see your sho!
+    331 1.90%:  let me see your wors
+    332 2.17%:  let me see your worsh
+    333 2.52%:  let me see your worsh!
+    334 2.12%:  let me see your wors!
+    335 2.15%:  let me see your wors!t
+    336 1.96%:  let me see your worshite
+    337 2.65%:  let me see your worshite!
+    338 1.89%:  let me see your rhetoi
+    339 2.53%:  let me see your rhetoi!
+    340 1.87%:  let me see how to tie
+    341 1.87%:  let me see you write 
+    342 1.86%:  let me see your shri
+    343 2.03%:  let me see your shriew
+    344 2.70%:  let me see your shriew!
+    345 1.85%:  let me see your wret
+    346 1.85%:  let me see your worsht
+    347 2.36%:  let me see your worsht!
+    348 1.84%:  let me see your wires
+    349 2.91%:  let me see your wires!
+    350 1.83%:  let me see your wier
+    351 1.83%:  let me see your writh
+    352 1.83%:  let me see how your re
+    353 1.81%:  let me see your wors t
+    354 2.10%:  let me see your wors t!
+    355 1.80%:  let me see how to ret
+    356 1.80%:  let me see how to set
+    357 1.79%:  let me see your wit so
+    358 1.79%:  let me re
+    359 3.06%:  let me reiter
+    360 2.58%:  let me rewrite
+    361 3.56%:  let me rewrite the
+    362 2.05%:  let me rewrite!
+    363 1.76%:  let me see your rhett
+    364 2.06%:  let me see your rhett!
+    365 1.78%:  let me see your rhetts
+    366 2.54%:  let me see your rhetts!
+    367 1.76%:  let me see your sho!e
+    368 1.76%:  let me see your shi
+    369 1.75%:  let me out this!
+    370 1.75%:  let me see your resh
+    371 2.29%:  let me see your resh!
+    372 1.74%:  let me see your worshiet
+    373 2.31%:  let me see your worshiet!
+    374 1.73%:  let me see your shriw
+    375 1.86%:  let me see your shriw!
+    376 1.72%:  let me see you throw it 
+    377 1.70%:  let me try too
+    378 3.70%:  let me try too!
+    379 1.70%:  let me see your worshi
+    380 1.70%:  let me show it
+    381 3.69%:  let me show it to
+    382 1.69%:  let me see your rhettos
+    383 2.50%:  let me see your rhettos!
+    384 1.69%:  let me see your wre
+    385 1.69%:  let me see your shitt
+    386 1.69%:  let me see you throw 
+    387 1.66%:  let me see your other 
+    388 1.65%:  let me see your wit set
+    389 2.34%:  let me see your wit set!
+    390 1.65%:  let me see your worsh t
+    391 1.65%:  let me see your resh!t
+    392 1.63%:  let me see your worset
+    393 2.23%:  let me see your worset!
+    394 1.63%:  let me see your worshit
+    395 2.13%:  let me see your worshit!
+    396 1.63%:  let me see your wit to
+    397 1.62%:  let me see your rheot!
+    398 1.62%:  let me see your shriewt
+    399 2.18%:  let me see your shriewt!
+    400 1.61%:  let me see your worsh t!
+    401 1.60%:  let me see your writt
+    402 1.61%:  let me see your writts
+    403 2.46%:  let me see your writts!
+    404 1.59%:  let me see your wors!e
+    405 1.59%:  let me see your worshtie
+    406 2.12%:  let me see your worshtie!
+    407 1.59%:  let me set
+    408 3.87%:  let me set the
+    409 2.70%:  let me set you
+    410 2.45%:  let me set this
+    411 2.04%:  let me set it
+    412 1.59%:  let me see your wit or
+    413 1.68%:  let me see your wit or the
+    414 1.58%:  let me see your worshte
+    415 1.87%:  let me see your worshte!
+    416 1.58%:  let me see your wors!t 
+    417 1.57%:  let me see your wit re
+    418 1.57%:  let me set you two
+    419 1.55%:  let me see your shir
+    420 2.53%:  let me see your shirtt
+    421 1.62%:  let me see your shirto
+    422 1.98%:  let me see your shirto!
+    423 1.55%:  let me see you throw!
+    424 1.55%:  let me see your worshite t
+    425 1.55%:  let him
+    426 3.13%:  let him try
+    427 5.88%:  let him try out
+    428 4.45%:  let him try!
+    429 2.14%:  let him try to
+    430 2.05%:  let him try to use
+    431 1.63%:  let him try to see
+    432 1.81%:  let him try to see!
+    433 1.55%:  let me try to reuse
+    434 1.55%:  let me see your worshie
+    435 1.92%:  let me see your worshie!
+    436 1.55%:  let me see your reh
+    437 1.54%:  let me see your shoetw
+    438 1.54%:  let me show it!
+    439 1.52%:  let me see your worshiett
+    440 1.97%:  let me see your worshiett!
+    441 1.51%:  let me see your sho!t
+    442 1.51%:  let me see your rhetot
+    443 1.51%:  let me see your shir t
+    444 1.74%:  let me see your shir t!
+    445 1.51%:  let me see your sh!
+    446 2.26%:  let me see your sh!t
+    447 1.58%:  let me see your sh!tier
+    448 1.51%:  let me try to see who
+    449 1.57%:  let me try to see who is
+    450 1.50%:  let me see your wit so the
+    451 1.49%:  let me see your worshitt
+    452 1.56%:  let me see your worshitt!
+    453 1.48%:  let me see your witt
+    454 1.48%:  let him try to!
+    455 1.48%:  let me see your wiresh
+    456 1.48%:  let me see your shitt!
+    457 1.47%:  let me see your worshti
+    458 1.74%:  let me see your worshti!
+    459 1.47%:  let me see your shriew to
+    460 1.46%:  let me see it out so
+    461 1.59%:  let me see it out so we
+    462 1.46%:  let me see your sho!tier
+    463 1.46%:  let me try to use his
+    464 1.46%:  let him!
+    465 1.46%:  let me see your worsht 
+    466 1.45%:  let me see you whore
+    467 1.88%:  let me see you whore it
+    468 2.35%:  let me see you whore it!
+    469 1.81%:  let me see you whore!
+    470 1.45%:  let me show your
+    471 1.45%:  let me see your shitter
+    472 2.22%:  let me see your shitter!
+    473 1.45%:  let me see your wors!te
+    474 1.44%:  let him try to re
+    475 1.44%:  let him out
+    476 3.68%:  let him out!
+    477 1.43%:  let me try to reuse!
+    478 1.43%:  let me see your rhetoi !
+    479 1.43%:  let me see your worshi!
+    480 1.42%:  let me see your rhettis
+    481 1.95%:  let me see your rhettis!
+    482 1.42%:  let me see your worshiet t
+    483 1.41%:  let me see your shirtoe
+    484 1.99%:  let me see your shirtoe!
+    485 1.41%:  let me see your rheos
+    486 1.57%:  let me see your rheos!
+    487 1.41%:  let me see your worshe
+    488 1.41%:  let me out the
+    489 1.40%:  let me see your shit to
+    490 1.40%:  let me see your shoetwir
+    491 1.50%:  let me see your shoetwir!
+    492 1.40%:  let me see your rheist
+    493 2.00%:  let me see your rheist!
+    494 1.40%:  let me see your wort
+    495 2.00%:  let me see your wort!
+    496 1.38%:  let us
+    497 1.38%:  let it
+    498 1.50%:  let it out
+    499 3.97%:  let it out!
+    500 1.38%:  let me see your rhetoti
+    501 1.43%:  let me see your rhetoti!
+    502 1.38%:  let me see your rhe!
+    503 1.38%:  let me see your shriwet
+    504 1.72%:  let me see your shriwet!
+    505 1.37%:  let me see your rist
+    506 1.92%:  let me see your rist!
+    507 1.37%:  let me see your wriths
+    508 2.14%:  let me see your wriths!
+    509 1.36%:  let me see your shite
+    510 1.83%:  let me see your shite!
+    511 1.36%:  let me worry!
+    512 1.36%:  let me see your shoetwirt
+    513 1.65%:  let me see your shoetwirt!
+    514 1.36%:  let me out here
+    515 2.91%:  let me out here!
+    516 1.35%:  let me see your sho!e w
+    517 1.47%:  let me see your sho!e wit
+    518 1.35%:  let me see your writh!
+    519 1.34%:  let me see your wreth
+    520 1.86%:  let me see your wreth!
+    521 1.64%:  let me see your wreths
+    522 2.39%:  let me see your wreths!
+    523 1.39%:  let me see your wreths to
+    524 1.34%:  let me see your shoetwit
+    525 1.78%:  let me see your shoetwit!
+    526 1.33%:  let him use
+    527 1.32%:  let me see your shi!
+    528 1.36%:  let me see your shi!t
+    529 1.32%:  let him try to reuse
+    530 1.44%:  let him try to reuse!
+    531 1.32%:  let me see your rhetotis
+    532 1.77%:  let me see your rhetotis!
+    533 1.31%:  let me see your worshtie t
+    534 1.31%:  let me see your wit or the 
+    535 1.31%:  let me see your sh!tiert
+    536 1.31%:  let me see your reshot
+    537 2.08%:  let me see your reshot!
+    538 1.31%:  let me out this so
+    539 1.32%:  let me out this so we
+    540 1.30%:  let me see your worsht t
+    541 1.40%:  let me see your worsht t!
+    542 1.30%:  let me see your worthe
+    543 1.50%:  let me see your worthest
+    544 1.52%:  let me see your worthest!
+    545 1.30%:  let me see your worthes
+    546 1.91%:  let me see your worthes!
+    547 1.30%:  let me see your worshe!
+    548 1.30%:  let me see your sh!te
+    549 1.30%:  let me see your resh!t to
+    550 1.29%:  let me see your wit so!
+    551 1.29%:  let me see your wors tth
+    552 1.35%:  let me see your wors tth!
+    553 1.29%:  let me see your sho!e wi
+    554 1.28%:  let me see your witts
+    555 1.97%:  let me see your witts!
+    556 1.28%:  let me see your worshiet t!
+    557 1.28%:  let me see your wires to
+    558 1.28%:  let me see your worshite t!
+    559 1.28%:  let me see your wors tthi
+    560 1.27%:  let me see your writtes
+    561 2.02%:  let me see your writtes!
+    562 1.27%:  let me set your
+    563 1.27%:  let me see your worsit
+    564 1.71%:  let me see your worsit!
+    565 1.27%:  let me see your shriwet t
+    566 1.26%:  let me see your worsh tet
+    567 1.54%:  let me see your worsh tet!
+    568 1.25%:  let me see your sho!tie
+    569 1.25%:  let me see your sher
+    570 1.25%:  let me see your wors!e t
+    571 1.25%:  let me see your witt!
+    572 1.25%:  let me see your rhettw
+    573 1.31%:  let me see your rhettwis
+    574 1.50%:  let me see your rhettwis!
+    575 1.25%:  let me see your wors!t ith
+    576 1.24%:  let me set your s
+    577 1.56%:  let me set your sht
+    578 1.24%:  let me see yours with
+    579 1.24%:  let me see your worshit t
+    580 1.23%:  let me see your worthe!
+    581 1.23%:  let me see your worshtie t!
+    582 1.23%:  let me out this r
+    583 1.32%:  let me out this rye
+    584 2.03%:  let me out this rye!
+    585 1.23%:  let me see your shirtoe t
+    586 1.23%:  let me see your ristow
+    587 1.59%:  let me see your ristow!
+    588 1.37%:  let me see your ristowh
+    589 1.23%:  let me show it you
+    590 1.89%:  let me show it you!
+    591 1.22%:  let me see your ristot
+    592 1.22%:  let me see your reshott
+    593 1.65%:  let me see your reshott!
+    594 1.22%:  let me see your shriewt to
+    595 1.22%:  let me outwe
+    596 1.22%:  let me see your sh! t
+    597 1.21%:  let me see your shriewt t
+    598 1.21%:  let me see your sho!e wri
+    599 1.21%:  let me out so
+    600 1.61%:  let me out so we

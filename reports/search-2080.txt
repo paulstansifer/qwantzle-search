@@ -1,0 +1,602 @@
+is singular now, tell bitches
+      0 100.00%: 
+      1 23.78%: ,
+      2 14.42%:  are
+      3 14.00%: , what
+      4 13.57%: , we
+      5 13.56%:  is
+      6 14.35%:  is a
+      7 13.41%: , it
+      8 15.97%: , it turns
+      9 12.73%: , this
+     10 15.57%: , this is
+     11 15.86%: , this is a
+     12 12.62%: , this is a bit
+     13 12.35%: , what is
+     14 12.20%: , that
+     15 11.92%: , this is a new
+     16 11.92%: , are
+     17 11.81%: , this is not
+     18 13.42%: , this is not a
+     19 11.62%: , this is an
+     20 11.40%: , this is one
+     21 11.09%: , can
+     22 12.80%: , can we
+     23 11.50%: , can we get
+     24 11.92%: , can we get this
+     25 11.32%: , can we go
+     26 11.05%: , this is all
+     27 10.96%: , bit
+     28 17.04%: , bitches
+     29 11.90%: , bitches are
+     30 11.46%: , bitches is
+     31 12.14%: , bitches is a
+     32 10.94%: , we are
+     33 10.94%: , we all
+     34 10.82%: , can we be
+     35 10.75%:  is a n
+     36 15.27%:  is a noun
+     37 15.68%:  is a noun,
+     38 14.74%:  is a noun, right
+     39 13.66%:  is a noun, bit
+     40 17.03%:  is a noun, bitches
+     41 14.40%:  is a noun, bitches is
+     42 10.70%: , it is
+     43 10.61%: , how
+     44 10.59%: , it is true
+     45 10.59%:  are so
+     46 10.58%:  is a bit
+     47 11.46%:  is a bitches
+     48 10.86%:  is a bitches,
+     49 10.57%:  is a noun, is
+     50 12.43%:  is a noun, is it
+     51 10.55%: , that is
+     52 10.52%: , what is it
+     53 10.47%:  can
+     54 13.60%:  can be
+     55 10.38%: , we can
+     56 10.27%:  are not
+     57 10.27%: , this is a nice
+     58 10.24%: , can we get on
+     59 10.23%:  is a noun here
+     60 11.92%:  is a noun here,
+     61 10.92%:  is a noun here, bit
+     62 10.21%: , is
+     63 13.77%: , is that
+     64 11.45%: , is it
+     65 12.24%: , is it true
+     66 10.25%: , is this
+     67 10.38%: , is this a
+     68 10.20%: , bitches is a n
+     69 13.03%: , bitches is a noun
+     70 10.16%: , it was
+     71 10.13%: , are we
+     72 10.44%: , are we still
+     73 10.13%: , bitches are not
+     74 10.10%: , where
+     75 10.09%: , this is so
+     76 10.08%:  are the
+     77 10.07%: , bitches are so
+     78 10.05%: , when
+     79 10.04%:  is not
+     80 13.41%:  is not a
+     81 10.62%:  is not a n
+     82 10.03%: , this is a big
+     83 10.03%: , can we get on this
+     84 10.02%:  is a noun with
+     85 10.00%: , the
+     86 9.95%: , this is not an
+     87 9.88%:  is the
+     88 10.06%:  is the new
+     89 9.81%: , let
+     90 9.83%: , let us
+     91 9.90%: , let us not
+     92 9.76%: , this is not a e
+     93 9.73%: , let us be
+     94 9.70%: , can we still
+     95 12.76%: , can we still be
+     96 9.70%: , bitches is not
+     97 11.63%: , bitches is not a
+     98 10.00%: , bitches is not a n
+     99 9.68%: , we can be
+    100 9.66%:  are bit
+    101 15.40%:  are bitches
+    102 16.43%:  are bitches,
+    103 12.65%:  are bitches, so
+    104 11.18%:  are bitches, not
+    105 10.97%:  are bitches, so it
+    106 10.64%:  are bitches, no
+    107 9.98%:  are bitches, so it is
+    108 9.64%: , this is a lie
+    109 9.57%:  is a noun, while
+    110 10.38%:  is a noun, while bit
+    111 9.55%: , listen
+    112 9.53%: , we are in
+    113 9.53%: , how are
+    114 9.47%: , this is one bit
+    115 9.45%: , it is a
+    116 9.45%: , this is a long
+    117 9.44%: , we are not
+    118 9.43%: , this is a new one
+    119 9.42%: , that is one
+    120 9.40%: , this is gonna
+    121 11.96%: , this is gonna be
+    122 9.40%:  is not a bit
+    123 13.09%:  is not a bitches
+    124 11.98%:  is not a bitches,
+    125 9.33%:  are still
+    126 9.48%:  are still bit
+    127 14.03%:  are still bitches
+    128 15.10%:  are still bitches,
+    129 12.03%:  are still bitches, no
+    130 10.46%:  are still bitches, so
+    131 9.67%:  are still bitches in
+    132 9.61%:  are still bitches no
+    133 9.31%: , this is a t
+    134 9.28%: , not
+    135 9.28%: , we gotta
+    136 9.27%: , this one
+    137 9.68%: , this one is
+    138 10.20%: , this one is a
+    139 10.19%: , this one is a bit
+    140 9.26%:  is a noun, h
+    141 9.26%: , are we still on
+    142 9.22%:  are bitches in
+    143 9.21%: , is there
+    144 11.08%: , is there a
+    145 9.21%:  is so
+    146 9.20%: , bitches is a noun we
+    147 9.19%: , it was nice
+    148 11.55%: , it was nice to
+    149 9.18%: , this is not a new
+    150 9.16%:  is a noun, it
+    151 9.16%: , this is all bit
+    152 9.13%: , are we still bit
+    153 9.12%: , bitches is all
+    154 9.12%: , is that so
+    155 9.12%:  still
+    156 9.11%:  were
+    157 9.07%:  is a noun, the
+    158 9.05%: , this is a true
+    159 9.05%: , that is so
+    160 9.04%: , this is no
+    161 9.03%: , it is now
+    162 9.02%: , are we still using
+    163 9.00%:  are bitches, in
+    164 8.97%: , this is so true
+    165 8.96%: , it was nice to be
+    166 8.95%:  is singular
+    167 10.58%:  is singular,
+    168 9.47%:  is singular, bit
+    169 13.26%:  is singular, bitches
+    170 8.95%: , is this a bit
+    171 8.94%:  is the new bit
+    172 8.94%:  is not a bitches in
+    173 8.94%: , are bit
+    174 13.36%: , are bitches
+    175 9.13%: , are bitches still
+    176 8.99%: , are bitches not
+    177 8.94%: , are bitches in
+    178 8.91%: , bitches are in
+    179 8.91%: , this is a lot
+    180 8.89%: , are we still using bit
+    181 8.88%: , are we still using this
+    182 8.88%: , is this a new
+    183 8.86%:  is a noun, is bit
+    184 11.29%:  is a noun, is bitches
+    185 8.86%: , where is
+    186 8.84%:  is a nig
+    187 8.84%: , bitches is not a nig
+    188 8.81%: , this is an un
+    189 8.79%: , bitches was
+    190 8.78%: , this is our
+    191 9.35%: , this is our last
+    192 8.94%: , this is our new
+    193 8.78%:  is a noun, with
+    194 8.73%:  is the best
+    195 8.73%: , bitches are still
+    196 8.73%: , what is bit
+    197 8.72%: , bitches is a nig
+    198 8.69%: , can we get this on
+    199 8.69%:  is not the
+    200 8.68%: , bitches is so
+    201 8.68%: , we are in this
+    202 8.67%: , is it still
+    203 8.67%:  is still
+    204 10.72%:  is still a
+    205 8.64%: , this is a well
+    206 8.64%: , let us all
+    207 8.64%:  is still a n
+    208 11.61%:  is still a noun
+    209 13.13%:  is still a noun,
+    210 12.66%:  is still a noun, right
+    211 10.92%:  is still a noun, bit
+    212 13.62%:  is still a noun, bitches
+    213 9.09%:  is still a noun, h
+    214 8.72%:  is still a nig
+    215 8.64%:  are not the
+    216 8.64%:  is still a noun, is
+    217 8.63%:  are bitches no
+    218 8.63%: , this is so great
+    219 8.63%:  is singular, so
+    220 8.97%:  is singular, so it
+    221 8.62%:  are in
+    222 9.86%:  are in the
+    223 8.61%:  are not bit
+    224 12.96%:  are not bitches
+    225 12.66%:  are not bitches,
+    226 9.13%:  are not bitches, in
+    227 9.10%:  are not bitches in
+    228 8.61%:  is a bitches, so
+    229 8.61%: , how can
+    230 8.60%: , this was
+    231 8.60%:  is not a nig
+    232 8.58%:  is a noun, it is
+    233 8.58%:  is still a bit
+    234 9.87%:  is still a bitches
+    235 10.25%:  is still a bitches,
+    236 8.57%: , bitches is a sl
+    237 8.56%:  can be the
+    238 8.55%: , bitches get
+    239 8.54%: , is it a
+    240 8.52%:  is a noun this
+    241 8.50%: , on
+    242 13.70%: , on the
+    243 8.50%: , let us not be
+    244 8.48%:  are bitches, ut
+    245 8.48%:  are still not
+    246 8.48%: , h
+    247 8.48%:  are bitches now
+    248 8.94%:  are bitches now,
+    249 8.46%: , this is not a nice
+    250 8.46%: , get
+    251 9.58%: , get out
+    252 8.46%: , let us all be
+    253 8.46%: , this is a one
+    254 8.45%: , a
+    255 8.45%:  are still bitches, in
+    256 8.44%: , are we still in
+    257 9.41%: , are we still in this
+    258 8.44%: , this is true
+    259 8.44%:  was
+    260 8.44%: , can we get to
+    261 8.43%:  is a noun we
+    262 8.42%: , bitches on
+    263 9.70%: , bitches on a
+    264 8.42%: , can we use
+    265 8.63%: , can we use this
+    266 8.42%: , we can still
+    267 10.14%: , we can still be
+    268 8.41%: , there
+    269 8.73%: , there is
+    270 10.96%: , there is no
+    271 10.38%: , there is a
+    272 9.92%: , there is a lot
+    273 8.40%:  are bitches, it
+    274 8.37%:  is not an
+    275 8.37%: , this is a non
+    276 8.37%: , can we still use
+    277 8.37%: , is it so
+    278 8.36%: , bitches will
+    279 8.35%: , we can still use
+    280 8.35%: , bitches are on
+    281 8.35%: , this isn
+    282 8.34%: , bitches is not a e
+    283 8.33%: , this is great
+    284 8.54%: , this is great news
+    285 8.32%: , this is still
+    286 9.62%: , this is still a
+    287 8.32%:  is still a noun, th
+    288 8.31%:  is a new
+    289 8.30%: , is it a bit
+    290 10.61%: , is it a bitches
+    291 9.34%: , is it a bitches or
+    292 8.30%: , bitches are now
+    293 8.29%: , are bitches now
+    294 8.29%: , bitches is a slur
+    295 8.28%: , this is a new bit
+    296 8.27%:  is a noun, is the
+    297 8.27%:  is not a bitches n
+    298 8.26%: , it is now clear
+    299 8.25%:  is not a bitches, in
+    300 8.25%:  is now
+    301 9.78%:  is now a
+    302 8.89%:  is now a n
+    303 8.43%:  is now the
+    304 8.24%: , bitches are not in
+    305 8.24%:  is a little
+    306 8.24%: , bitches is a slur on
+    307 8.23%:  are now
+    308 8.23%:  is a bitches, so it
+    309 8.23%: , are we still on this
+    310 8.23%: , bitches a
+    311 9.69%: , bitches a lot
+    312 8.22%:  is still a noun here
+    313 9.54%:  is still a noun here,
+    314 8.49%:  is still a noun here, bit
+    315 8.21%:  are bitches so
+    316 8.21%: , bitches is to
+    317 8.21%: , this is all we
+    318 8.21%: , bitches is in
+    319 8.38%: , bitches is in a
+    320 8.20%:  is still a noun there
+    321 9.91%:  is still a noun there,
+    322 8.20%: , bitches is on
+    323 8.19%: , is it in
+    324 9.36%: , is it in the
+    325 8.19%: , this is now
+    326 9.40%: , this is now a
+    327 8.19%: , we all got
+    328 8.19%: , are bitches so
+    329 8.19%: , bitches is a new
+    330 8.17%: , bitches is a lie
+    331 8.17%: , can we go in
+    332 9.26%: , can we go in the
+    333 8.17%: , when are
+    334 8.17%: , we are out
+    335 8.17%: , this is a 
+    336 8.16%:  are so bit
+    337 11.51%:  are so bitches
+    338 10.37%:  are so bitches,
+    339 8.95%:  are so bitches, it
+    340 8.60%:  are so bitches, it is
+    341 8.30%:  are so bitche
+    342 9.07%:  are so bitchess
+    343 8.26%:  are so bitchess,
+    344 8.16%: , can we get out
+    345 8.15%:  is still a noun, e
+    346 10.47%:  is still a noun, eh
+    347 8.15%: , bitches got
+    348 8.15%: , bitches is not a single
+    349 8.15%:  is not a bitches, is
+    350 8.13%: , can we get it
+    351 9.78%: , can we get it on
+    352 8.13%: , bitches is all i
+    353 8.62%: , bitches is all i got
+    354 8.12%: , bitches is singular
+    355 8.12%: , bitches all
+    356 8.11%: , not all
+    357 10.00%: , not all bit
+    358 13.90%: , not all bitches
+    359 9.17%: , not all bitches is
+    360 8.36%: , not all bitches use
+    361 8.11%: , we are not bit
+    362 8.10%: , bitches is not a g
+    363 8.09%: , is it in the bag
+    364 8.09%: , bitches got a
+    365 8.09%:  is a noun there
+    366 9.79%:  is a noun there,
+    367 9.28%:  is a noun there, bit
+    368 8.08%: , who
+    369 8.10%: , who are
+    370 8.08%: , bitches is not an
+    371 8.06%:  are bitches, is
+    372 8.06%:  is a sl
+    373 8.06%:  is not a single
+    374 8.12%:  is not a single,
+    375 8.05%: , where is it
+    376 8.04%: , this is an in
+    377 8.03%:  is still a noun, with
+    378 8.03%:  is a noun, bitche
+    379 9.61%:  is a noun, bitchess
+    380 8.03%: , is it not
+    381 8.02%: , can we get this in
+    382 8.02%:  are bitches, on
+    383 8.01%: , is it true we
+    384 8.27%: , is it true we can
+    385 8.00%: , not all bitches in
+    386 8.00%: , bitches is on a
+    387 7.99%: , is it still r
+    388 7.98%: , it is not
+    389 7.98%: , bitches is a slut
+    390 7.97%: , listen to
+    391 7.97%: , we are still
+    392 7.97%: , this is not a well
+    393 7.97%:  can be so
+    394 7.97%: , this one is a true
+    395 7.97%:  is the new singular
+    396 9.65%:  is the new singular,
+    397 7.97%: , this is not a big
+    398 7.96%: , what is it in
+    399 7.95%:  is still a noun, it
+    400 7.95%: , can we get our
+    401 7.94%: , bitches will not
+    402 7.93%: , not a
+    403 10.15%: , not a single
+    404 10.12%: , not a single bit
+    405 11.07%: , not a single bitches
+    406 9.56%: , not a single bitches is
+    407 8.26%: , not a single bites
+    408 7.96%: , not a bit
+    409 7.93%: , this is a sweet
+    410 7.93%:  not
+    411 7.92%:  is still not
+    412 10.65%:  is still not a
+    413 7.92%: , bitches in
+    414 7.91%: , we are still not
+    415 7.90%: , bitches is all we
+    416 9.03%: , bitches is all we got
+    417 7.90%: , this one is all
+    418 7.90%:  is an
+    419 7.89%: , bitches is a single
+    420 7.89%: , is that one
+    421 7.87%: , bitches in a
+    422 7.87%: , are bitches to
+    423 7.87%:  are not in
+    424 8.72%:  are not in the
+    425 7.87%: , what is in
+    426 7.86%: , we got
+    427 8.77%: , we got a
+    428 7.85%: , can we still go
+    429 8.04%: , can we still go in
+    430 7.85%: , bitches is an
+    431 7.85%: , it was nice to be in
+    432 7.85%:  is still the
+    433 7.83%:  is a noun here, it
+    434 7.83%:  is not a bitches nig
+    435 7.82%: , bitches is gonna
+    436 7.82%: , not a single bitches will
+    437 7.82%:  is still not a n
+    438 7.82%: , it is the
+    439 7.82%: , bitches is still
+    440 9.34%: , bitches is still a
+    441 8.44%: , bitches is still a n
+    442 10.60%: , bitches is still a noun
+    443 7.81%:  is not a new
+    444 7.81%: , this is a song
+    445 7.81%:  is singular, so bit
+    446 7.80%: , bitches is all i gots
+    447 7.80%: , we still
+    448 7.80%: , we are not in
+    449 7.79%:  are bitches to
+    450 7.78%: , not a bitches
+    451 7.78%: , it was the
+    452 7.77%: , is there a bit
+    453 7.77%: , this is a new song
+    454 7.77%: , will
+    455 7.76%:  can be,
+    456 7.76%: , it is a bit
+    457 8.61%: , it is a bitches
+    458 7.75%: , are we bit
+    459 7.74%: , it was so
+    460 7.74%: , this is a n
+    461 10.10%: , this is a noun
+    462 7.89%: , this is a nig
+    463 7.73%: , can we not
+    464 7.73%: , can we get into
+    465 7.73%: , are bitches still in
+    466 7.73%: , this is an unbel
+    467 7.72%:  are bitches, not in
+    468 7.72%: , this is a c
+    469 7.71%:  is still a noun, the
+    470 7.71%: , not a single bitch
+    471 7.71%:  are bitches, so in
+    472 7.71%: , bitches gonna
+    473 7.71%:  is the singular
+    474 7.87%:  is the singular,
+    475 7.71%:  is a slur
+    476 8.08%:  is a slur,
+    477 7.80%:  is a slur, bit
+    478 10.35%:  is a slur, bitches
+    479 7.70%:  is still a noun with
+    480 7.70%: , this is one big
+    481 7.69%: , is it the
+    482 7.69%: , are we not
+    483 7.69%: , can we use this to
+    484 7.69%: , bitches is one
+    485 7.69%:  can still
+    486 11.70%:  can still be
+    487 8.57%:  can still be the
+    488 7.68%: , this is as
+    489 7.68%: , this is not a lie
+    490 7.67%: , a lot
+    491 7.67%:  is a bitches to
+    492 7.67%: , bitches get a
+    493 7.66%: , this is one case
+    494 7.66%: , that one
+    495 7.66%: , get it
+    496 7.65%: , are we in
+    497 7.94%: , are we in this
+    498 7.65%: , is it still a
+    499 7.65%: , we all got bit
+    500 10.08%: , we all got bitches
+    501 9.42%: , we all got bitches in
+    502 10.15%: , we all got bitches in us
+    503 7.64%: , is it in the news
+    504 7.63%: , we are not in this
+    505 7.63%: , this is one case in
+    506 7.63%: , is it in the bag or
+    507 7.63%: , this is a nice new
+    508 7.62%: , let us now
+    509 7.61%: , can we get in
+    510 7.61%:  is singular, not
+    511 7.61%: , this is an insult
+    512 7.61%: , bitches is not a new
+    513 7.60%: , bitches is so great
+    514 7.59%: , this is now an
+    515 7.59%: , is this true
+    516 7.59%: , this one is a big
+    517 7.59%: , this was not
+    518 7.59%: , can we be in
+    519 7.59%:  is in
+    520 9.87%:  is in the
+    521 7.69%:  is in the news
+    522 7.58%:  are so bitchess, it
+    523 7.58%: , bitches in a nuts
+    524 7.57%: , where is it at
+    525 7.56%:  are on
+    526 9.98%:  are on the
+    527 8.32%:  are on the bus
+    528 8.66%:  are on the bus,
+    529 7.56%:  is in the singular
+    530 8.07%:  is in the singular,
+    531 7.56%: , what is so
+    532 7.55%: , this is not a eul
+    533 7.55%:  is a noun here, is
+    534 8.92%:  is a noun here, is it
+    535 7.54%: , can we still get
+    536 7.54%:  is a noun, is he
+    537 7.53%: , this is all one
+    538 8.90%: , this is all one big
+    539 7.53%: , bitches is a lot
+    540 7.53%: , we are so
+    541 7.52%: , get the
+    542 7.52%: , this is all we get
+    543 7.51%:  are bitches until
+    544 7.51%: , it is now 
+    545 7.51%: , bitches is a non
+    546 7.51%:  won
+    547 7.51%: , it is not a
+    548 7.51%:  is in the singular, so
+    549 7.50%:  is still a sl
+    550 9.41%:  is still a slur
+    551 10.37%:  is still a slur,
+    552 9.46%:  is still a slur, bit
+    553 8.81%:  is still a slur on
+    554 9.03%:  is still a slur on bit
+    555 8.86%:  is still a slur on the
+    556 7.58%:  is still a slur, h
+    557 7.50%:  are bitches on
+    558 7.50%: , this is 
+    559 7.50%:  are not in this
+    560 7.50%: , bitches is no
+    561 7.50%:  are so bitches it
+    562 7.50%:  are bitches, so it is un
+    563 7.50%: , this is a nice swe
+    564 7.50%:  is still a noun, eh bit
+    565 7.50%: , can we get on it
+    566 7.50%: , when it
+    567 7.49%:  is still not an
+    568 7.49%:  are now the
+    569 7.49%:  are so bitch
+    570 7.73%:  are so bitchin
+    571 7.48%:  is in a
+    572 7.48%:  is not the singular
+    573 7.79%:  is not the singular,
+    574 7.48%: , not a single bit is
+    575 7.48%:  are so bitches it is
+    576 7.47%: , bitches are no
+    577 7.46%: , let us not be h
+    578 7.46%: , bitches is a e
+    579 7.45%: , bitches are so un
+    580 7.45%: , bitches are to
+    581 7.45%:  is so great
+    582 7.92%:  is so great,
+    583 7.83%:  is so great, bit
+    584 10.76%:  is so great, bitches
+    585 7.72%:  is so great, but
+    586 7.45%:  is a slur on
+    587 8.57%:  is a slur on bit
+    588 11.26%:  is a slur on bitches
+    589 11.45%:  is a slur on bitches,
+    590 8.65%:  is a slur on bitches in
+    591 8.47%:  is a slur on bitches, in
+    592 8.00%:  is a slur on the
+    593 7.85%:  is a slur on the bit
+    594 7.54%:  is a slur on bitches, it
+    595 7.44%: , bitches g
+    596 10.17%: , bitches gon
+    597 7.44%:  are still bitches on
+    598 7.44%: , is a
+    599 7.44%: , is it worth
+    600 7.44%: , that one is

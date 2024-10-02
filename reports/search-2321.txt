@@ -1,0 +1,602 @@
+It's not bad if you're six
+      0 100.00%: 
+      1 12.07%:  If
+      2 31.31%:  If you
+      3 30.79%:  If you'
+      4 31.04%:  If you're
+      5 27.92%:  If you'd
+      6 24.92%:  If you're a
+      7 23.24%:  If you're not
+      8 22.12%:  If you're into
+      9 19.57%:  If you're not a
+     10 17.43%:  If you're in
+     11 18.76%:  If you're in a
+     12 16.62%:  If you're in a d
+     13 15.31%:  If you're into it
+     14 15.21%:  If you're an
+     15 15.06%:  If you are
+     16 15.05%:  If you don
+     17 24.16%:  If you don'
+     18 32.09%:  If you don't
+     19 14.80%:  If you're on
+     20 16.10%:  If you're on a
+     21 13.94%:  If you do
+     22 13.92%:  If you're in it
+     23 13.11%:  If you're in to
+     24 12.72%:  If you're into a
+     25 12.64%:  If you're at
+     26 12.42%:  If you're a d
+     27 12.40%:  If you're a bot
+     28 12.38%:  If you're so
+     29 11.77%:  If you're a sn
+     30 12.61%:  If you're a snob
+     31 11.76%:  If you're 
+     32 11.59%:  If you're not 
+     33 11.56%:  If you're into d
+     34 11.52%:  If you're a dino
+     35 11.40%:  If you're in it to
+     36 11.25%:  If you're a bit
+     37 11.18%:  If you're a din
+     38 15.29%:  If you're a dinos
+     39 11.14%:  If you're not at
+     40 10.95%:  If you're in to it
+     41 10.55%:  If you're an idiot
+     42 10.49%:  If you're on a 
+     43 10.42%:  If you're bad
+     44 10.22%:  If you're not d
+     45 10.11%:  If you're not a d
+     46 10.09%:  If you're in a 
+     47 10.03%:  If you're a 
+     48 9.50%:  If you're in a box
+     49 9.46%:  If you are not
+     50 9.43%:  If you're a bot in
+     51 9.34%:  If you're in a bit
+     52 9.32%:  If you're in d
+     53 9.13%:  If you're in a '
+     54 9.04%:  If you're a snob it
+     55 10.86%:  If you're a snob it'
+     56 13.35%:  If you're a snob it's
+     57 9.05%:  If you're a snob it'd
+     58 9.02%:  If you're a snob it's 
+     59 8.98%:  If you're in a 'do
+     60 8.95%:  If you're an 
+     61 8.92%:  If you're into a d
+     62 8.71%:  If you're a snob it is
+     63 8.61%:  If you are in
+     64 8.60%:  If you are into
+     65 8.55%:  If you're on a '
+     66 8.47%:  If you're an obs
+     67 8.34%:  If you're in to a
+     68 8.27%:  If you're into a 
+     69 8.21%:  If you're on a six
+     70 8.16%:  If you're on a d
+     71 8.09%:  If you're in a 'd
+     72 8.07%:  If you're into a bit
+     73 8.03%:  If you're a bit into
+     74 7.92%:  If you're on 
+     75 7.84%:  If you're ants
+     76 7.82%:  If you're in a box it
+     77 9.22%:  If you're in a box it'
+     78 11.54%:  If you're in a box it's
+     79 8.56%:  If you're in a box it'd
+     80 8.35%:  If you're in a box it's 
+     81 7.48%:  If you're into dab
+     82 7.45%:  If you do it
+     83 7.20%:  If you're a bit on
+     84 7.15%:  If you're in to d
+     85 7.11%:  If you're at it
+     86 7.08%:  If you're an '
+     87 7.05%:  I
+     88 9.91%:  I'
+     89 14.01%:  I'd
+     90 11.61%:  I'd be
+     91 10.37%:  I'd say
+     92 12.26%:  I'd say it
+     93 16.62%:  I'd say it'
+     94 21.39%:  I'd say it's
+     95 17.80%:  I'd say it's not
+     96 16.28%:  I'd say it's not for
+     97 14.16%:  I'd say it's one
+     98 16.80%:  I'd say it's one of
+     99 14.03%:  I'd say it's for
+    100 13.84%:  I'd say it's too
+    101 13.78%:  I'd say it's 
+    102 12.88%:  I'd say it's fun
+    103 13.59%:  I'd say it's fun to
+    104 12.17%:  I'd say it's in
+    105 11.40%:  I'd say it's on
+    106 11.33%:  I'd say it's one for
+    107 11.22%:  I'd say it's fun to be
+    108 11.04%:  I'd say it's no
+    109 10.93%:  I'd say it's one to
+    110 10.86%:  I'd say it's not for 
+    111 10.40%:  I'd say it's not 
+    112 10.28%:  I'd say it's for 
+    113 10.08%:  I'd say it's for no
+    114 10.02%:  I'd say it's in our
+    115 9.72%:  I'd say it's one out
+    116 9.41%:  I'd say it is
+    117 9.30%:  I'd say it's fun too
+    118 9.24%:  I'd say it's in 
+    119 9.19%:  I'd say it's for one
+    120 9.14%:  I'd say it's one or
+    121 8.82%:  I'd say it's too n
+    122 8.65%:  I'd be a
+    123 8.12%:  I'd say it's fun to be ro
+    124 8.06%:  I'd say it's fun 
+    125 7.95%:  I'd say it's fun to be 
+    126 7.93%:  I'd say it's on for
+    127 7.74%:  I'd say it's one for 
+    128 7.58%:  I'd say it's on to
+    129 8.20%:  I'd say it's on to be
+    130 7.50%:  I'd say it's one to 
+    131 7.50%:  I'd say it is not
+    132 7.74%:  I'd say it is not for
+    133 7.49%:  I'd say it's on our
+    134 7.48%:  I'd say it's infe
+    135 7.38%:  I'd say it's inex
+    136 7.33%:  I'd say it's on for 
+    137 7.30%:  I'd say it is one
+    138 9.48%:  I'd say it is one of
+    139 7.22%:  I'd say it's inexor
+    140 7.12%:  I'd say it's on to be 
+    141 6.99%:  If you're on it
+    142 6.99%:  If you're a bit into d
+    143 6.96%:  I'd say it is for
+    144 6.94%:  If you're in to 
+    145 6.89%:  If you're a bot it
+    146 8.98%:  If you're a bot it'
+    147 11.61%:  If you're a bot it's
+    148 8.48%:  If you're a bot it's 
+    149 8.10%:  If you're a bot it'd
+    150 7.04%:  If you're a bot it is
+    151 6.87%:  I'd say if
+    152 6.86%:  If you're a snobs
+    153 6.78%:  If you're a bit in
+    154 7.32%:  If you're a bit in to
+    155 6.77%:  I'd say it's on 
+    156 6.72%:  I'd bet
+    157 7.92%:  I'd bet you
+    158 9.67%:  I'd bet you'
+    159 7.16%:  I'd bet you a
+    160 6.95%:  I'd bet on
+    161 7.41%:  I'd bet on a
+    162 7.83%:  I'd bet on a 
+    163 6.81%:  I'd bet it
+    164 9.87%:  I'd bet it'
+    165 13.42%:  I'd bet it's
+    166 12.81%:  I'd bet it's a
+    167 10.51%:  I'd bet it's fun
+    168 9.91%:  I'd bet it's a fun
+    169 9.29%:  I'd bet it's a 
+    170 9.15%:  I'd bet it's for
+    171 10.41%:  I'd bet it's for you
+    172 8.85%:  I'd bet it's on
+    173 8.77%:  I'd bet it's 
+    174 8.68%:  I'd bet it's for you in
+    175 9.15%:  I'd bet it's for you in a
+    176 8.67%:  I'd bet it's an
+    177 8.21%:  I'd bet it's for you a
+    178 8.14%:  I'd bet it's in
+    179 8.04%:  I'd bet it's a sn
+    180 7.95%:  I'd bet it's fun as
+    181 7.93%:  I'd bet it's far
+    182 7.90%:  I'd bet it's so
+    183 7.90%:  I'd bet it's for a
+    184 7.84%:  I'd bet it's for no
+    185 7.84%:  I'd bet it's on a
+    186 7.83%:  I'd bet it's as
+    187 9.01%:  I'd bet it's as fun
+    188 7.81%:  I'd bet it's in your
+    189 7.75%:  I'd bet it's no
+    190 7.74%:  I'd bet it's for you as
+    191 7.70%:  I'd bet it's on your
+    192 7.60%:  I'd bet it's a ri
+    193 7.53%:  I'd bet it's so fun
+    194 7.49%:  I'd bet it's for us
+    195 7.41%:  I'd bet it's your
+    196 7.17%:  I'd bet it's in a
+    197 7.04%:  I'd bet it's on a 
+    198 6.88%:  I'd bet it's on 
+    199 6.87%:  I'd bet it's for you 
+    200 6.78%:  I'd bet it's on you
+    201 7.03%:  I'd bet it's on you if
+    202 6.75%:  I'd bet on it
+    203 6.74%:  I'd bet it's in 
+    204 6.72%:  I'd bet it's for you in 
+    205 6.70%:  If you are so
+    206 6.67%:  I'd bet it's a fun 
+    207 6.66%:  I'd bet it's on for
+    208 7.10%:  I'd bet it's on for a
+    209 6.66%:  If you're a bit n
+    210 6.66%:  If you're into a b
+    211 6.64%:  I'd bet it's an 
+    212 6.63%:  I'd bet it's in our
+    213 6.62%:  If you do it in
+    214 8.29%:  If you do it in a
+    215 6.61%:  If you're into a '
+    216 6.60%:  I'd bet it's for you as in
+    217 6.60%:  I'd bet it's so you
+    218 6.59%:  If you're a snob it is 
+    219 6.58%:  If you're not dab
+    220 6.58%:  If you're on '
+    221 6.56%:  I'd bet it's for you a 
+    222 6.56%:  If you are to
+    223 6.56%:  If you're in a 't
+    224 6.56%:  If you're in a 'b
+    225 6.55%:  I'd bet it's on our
+    226 6.55%:  I'd say it's on our 
+    227 6.55%:  If you're a dino it
+    228 8.28%:  If you're a dino it'
+    229 10.56%:  If you're a dino it's
+    230 7.94%:  If you're a dino it's 
+    231 6.54%:  I'd say it's one or 
+    232 6.47%:  If you're in a 's
+    233 6.43%:  If you're in to a bit
+    234 6.42%:  If you're into a t
+    235 6.42%:  If you're so bad
+    236 6.38%:  If you're in a 'do it
+    237 6.38%:  If you're in it to '
+    238 6.36%:  It
+    239 15.75%:  It'
+    240 28.91%:  It's
+    241 20.93%:  It's not
+    242 20.61%:  It's a
+    243 18.27%:  It's fun
+    244 22.37%:  It's fun to
+    245 17.90%:  It's not a
+    246 16.30%:  It's fun to say
+    247 15.92%:  It's a fun
+    248 15.75%:  It's not as
+    249 15.62%:  It's fun to do
+    250 15.10%:  It's fun to ride
+    251 14.84%:  It's not for
+    252 14.54%:  It's not bad
+    253 15.42%:  It's not bad if
+    254 19.92%:  It's not bad if you
+    255 21.28%:  It's not bad if you'
+    256 23.57%:  It's not bad if you're
+    257 17.41%:  It's not bad if you're 
+    258 14.86%:  It's not bad for
+    259 14.49%:  It's fun to y
+    260 14.27%:  It's fun to be
+    261 14.47%:  It's fun to be a
+    262 13.37%:  It's a bit
+    263 15.29%:  It's a bit of
+    264 13.26%:  It's fun to ride a
+    265 13.06%:  It's fun to say '
+    266 12.33%:  It's not as if
+    267 14.43%:  It's not as if you
+    268 15.85%:  It's not as if you'
+    269 17.95%:  It's not as if you're
+    270 16.03%:  It's not as if you'd
+    271 16.63%:  It's not as if you'd be
+    272 12.30%:  It's fun to do a
+    273 12.06%:  It's so
+    274 11.96%:  It's true
+    275 11.96%:  It's not so
+    276 15.55%:  It's not so bad
+    277 15.76%:  It's not so bad if
+    278 11.70%:  It's fun to say 'ro
+    279 11.30%:  It's not for us
+    280 10.89%:  It's too
+    281 16.28%:  It's too bad
+    282 12.29%:  It's too bad if
+    283 10.63%:  It's an
+    284 10.56%:  It's fun to say 'd
+    285 10.48%:  It's a fun ride
+    286 10.33%:  It's fun too
+    287 10.16%:  It's not bad for 
+    288 10.11%:  It's fun at
+    289 10.02%:  It is
+    290 10.73%:  It is a
+    291 9.94%:  It's a fun di
+    292 9.89%:  It's a fine
+    293 9.88%:  It's a 
+    294 9.82%:  It's fun to read
+    295 9.74%:  It's not bad if your
+    296 9.57%:  It's not a d
+    297 9.49%:  It's not bad for us
+    298 9.42%:  It's fun as
+    299 9.38%:  It's not fair
+    300 9.31%:  It's not easy
+    301 9.30%:  It is a fun
+    302 9.22%:  It's best
+    303 11.65%:  It's best if
+    304 16.07%:  It's best if you
+    305 15.72%:  It's best if you'
+    306 13.83%:  It's best if you don
+    307 17.71%:  It's best if you don'
+    308 12.10%:  It's best if you'd
+    309 11.71%:  It's best if you do
+    310 9.23%:  It's best if you and
+    311 9.21%:  It's fun to do as
+    312 9.20%:  It's so fun
+    313 11.60%:  It's so fun to
+    314 10.01%:  It's so fun to ride
+    315 9.41%:  It's so fun to ride a
+    316 9.13%:  It's sort
+    317 14.44%:  It's sort of
+    318 14.72%:  It's sort of a
+    319 11.03%:  It's sort of a b
+    320 10.02%:  It's sort of an
+    321 9.11%:  It's fun to re
+    322 9.06%:  It's for
+    323 9.78%:  It's for one
+    324 9.61%:  It's for 
+    325 9.05%:  It's so fun to be
+    326 9.25%:  It's so fun to be a
+    327 9.03%:  It's not for a
+    328 9.03%:  It's sorta
+    329 11.07%:  It's sorta fun
+    330 8.99%:  It's fun to say 'rode
+    331 8.98%:  It's in
+    332 8.97%:  It's fun to be so
+    333 8.91%:  It's not as if your
+    334 8.88%:  It's fun to yod
+    335 8.81%:  It's not as if you die
+    336 8.77%:  It's 
+    337 8.77%:  It's in board
+    338 8.63%:  It's one
+    339 12.09%:  It's one of
+    340 8.61%:  It's so fun to y
+    341 8.47%:  It's so bad
+    342 8.57%:  It's so bad it
+    343 11.53%:  It's so bad it'
+    344 8.44%:  It's not as if rob
+    345 8.43%:  It's not as d
+    346 8.43%:  It's on
+    347 8.41%:  It's fun to be a d
+    348 8.39%:  It's based
+    349 13.49%:  It's based on
+    350 8.32%:  It's un
+    351 8.31%:  It's sort of a n
+    352 8.30%:  It is fun
+    353 13.86%:  It is fun to
+    354 10.89%:  It is fun to ride
+    355 10.55%:  It is fun to say
+    356 10.24%:  It is fun to ride a
+    357 9.65%:  It is fun to do
+    358 9.15%:  It is fun to y
+    359 8.97%:  It is fun to say '
+    360 8.88%:  It is fun to be
+    361 9.55%:  It is fun to be a
+    362 8.34%:  It is fun to say 'ro
+    363 8.28%:  It's fun to say 'b
+    364 8.24%:  It's sort of a d
+    365 8.24%:  It's a t
+    366 9.06%:  It's a ted
+    367 12.65%:  It's a tedious
+    368 8.24%:  It's a one
+    369 8.22%:  It's best if you do a
+    370 8.22%:  It's fun to be r
+    371 8.21%:  It's fun to say 'rob
+    372 8.13%:  It is fun to do a
+    373 8.10%:  It's easy
+    374 12.90%:  It's easy to
+    375 9.10%:  It's easy to find
+    376 8.22%:  It's easy to do
+    377 8.08%:  It's a tedious 
+    378 8.07%:  It's fun to say 're
+    379 8.07%:  It's so bad you
+    380 10.25%:  It's so bad you'
+    381 10.36%:  It's so bad you're
+    382 8.00%:  It's a d
+    383 7.98%:  It's fun to do a '
+    384 7.98%:  It's not bad for sex
+    385 7.98%:  It's fun to ride a 
+    386 7.95%:  It's far
+    387 7.93%:  It's fun to be rid
+    388 7.93%:  It's fun to be a '
+    389 8.38%:  It's fun to be a 'ro
+    390 7.92%:  It's for you
+    391 8.48%:  It's for you and
+    392 7.91%:  It's fun to say 'bo
+    393 7.90%:  It's fun to be a ro
+    394 7.89%:  It's fun to do a 
+    395 7.83%:  It's sort of a '
+    396 7.81%:  It's a fun dist
+    397 7.81%:  It's not as if our
+    398 7.81%:  It's neat
+    399 7.79%:  It's based on 
+    400 7.78%:  It's not a 
+    401 7.76%:  It's fun to say 'do
+    402 7.76%:  It's a sn
+    403 9.80%:  It's a snore
+    404 10.18%:  It's a snoref
+    405 8.61%:  It's a snore to
+    406 8.19%:  It's a snore if
+    407 10.99%:  It's a snore if you
+    408 12.92%:  It's a snore if you'
+    409 9.79%:  It's a snore if you'd
+    410 7.77%:  It's a snore of
+    411 7.74%:  It's too bad sn
+    412 7.74%:  It's rad
+    413 9.23%:  It's rad to
+    414 8.64%:  It's rad if
+    415 12.65%:  It's rad if you
+    416 13.98%:  It's rad if you'
+    417 8.64%:  It's rad to be
+    418 8.73%:  It's rad to be on
+    419 7.74%:  It's sort of a 
+    420 7.71%:  It's a ton
+    421 11.63%:  It's a ton of
+    422 7.65%:  It's too bad in
+    423 7.63%:  It's a bit on
+    424 7.60%:  It's fun to be ro
+    425 7.59%:  It's no
+    426 7.58%:  It'd
+    427 13.76%:  It'd be
+    428 11.14%:  It'd be a
+    429 9.81%:  It'd be fun
+    430 13.06%:  It'd be fun to
+    431 9.05%:  It'd be fun to say
+    432 8.06%:  It'd be so
+    433 7.66%:  It'd be fun to say '
+    434 7.65%:  It'd be a fun
+    435 7.58%:  It's not d
+    436 7.53%:  It's fine
+    437 7.80%:  It's fine to
+    438 7.65%:  It's fine to do
+    439 7.51%:  It's not ready
+    440 7.51%:  It's in a
+    441 8.73%:  It's in a box
+    442 7.95%:  It's in a box so
+    443 8.34%:  It's in a box so it
+    444 10.17%:  It's in a box so it'
+    445 8.97%:  It's in a box so it'd
+    446 7.76%:  It's in a box so if
+    447 7.51%:  It's not 
+    448 7.48%:  It's fun to be 
+    449 7.46%:  It's often
+    450 7.44%:  It's not bad for s
+    451 7.43%:  It's fun to say 'die
+    452 7.41%:  It is fun to say 'd
+    453 7.40%:  It's not bad for s'
+    454 7.35%:  It's fun to be '
+    455 7.34%:  It's in 
+    456 7.33%:  It'd be fun to y
+    457 7.32%:  It's based on our
+    458 7.30%:  It's not for 
+    459 7.28%:  It's fun to be d
+    460 7.25%:  It's in our
+    461 9.48%:  It's in our best
+    462 7.20%:  It's not your
+    463 7.20%:  It's not due
+    464 7.20%:  It's not for s
+    465 7.16%:  It's fun to say 'ex
+    466 7.16%:  It's a fun story
+    467 7.16%:  It's not easy for
+    468 7.15%:  It's fun to say 'bod
+    469 7.09%:  It's so d
+    470 10.55%:  It's so darn
+    471 7.09%:  It'd be n
+    472 7.82%:  It'd be nif
+    473 11.25%:  It'd be nifty
+    474 7.08%:  It's a bit uns
+    475 7.07%:  It's a bit un
+    476 7.04%:  It's rad to be in
+    477 7.04%:  It's not as you
+    478 8.92%:  It's not as you'
+    479 11.63%:  It's not as you'd
+    480 8.95%:  It's not as you're
+    481 7.76%:  It's not as you'd be
+    482 7.03%:  It's fun to be 'ro
+    483 7.02%:  It's a bit dis
+    484 7.01%:  It's a fun 
+    485 7.01%:  It's too easy
+    486 7.00%:  It's fun to be a 'd
+    487 6.97%:  It's fun to do a r
+    488 6.97%:  It's in your
+    489 10.30%:  It's in your best
+    490 6.95%:  It's easy to do if
+    491 6.92%:  It's a fun ride so
+    492 6.90%:  It's on a
+    493 6.88%:  It's for you and it
+    494 9.34%:  It's for you and it'
+    495 12.12%:  It's for you and it's
+    496 8.22%:  It's for you and it's 
+    497 6.88%:  It's often a
+    498 6.87%:  It's best if your
+    499 6.82%:  It's a fun ride to
+    500 6.79%:  It's a bit rude
+    501 6.78%:  It's a bit under
+    502 6.78%:  It's best if you and 
+    503 6.77%:  It is a bit
+    504 8.77%:  It is a bit of
+    505 6.76%:  It's a bit rude if
+    506 6.76%:  It's so bad you're in
+    507 6.75%:  It's far too
+    508 6.75%:  It's often said
+    509 6.72%:  It's for you and 
+    510 6.68%:  It's sort of in
+    511 6.63%:  It's not so d
+    512 6.60%:  It's for you in
+    513 7.91%:  It's for you in a
+    514 6.60%:  It's so rad
+    515 7.60%:  It's so rad to
+    516 7.38%:  It's so rad to be
+    517 6.59%:  It's so rad you
+    518 8.56%:  It's so rad you'
+    519 6.58%:  It's one of a
+    520 6.57%:  It's in a box of
+    521 6.55%:  It's so fun it
+    522 9.03%:  It's so fun it'
+    523 6.76%:  It's so fun it'd
+    524 8.84%:  It's so fun it'd be
+    525 9.97%:  It's so fun it'd be a
+    526 6.53%:  It's fun to say 'dix
+    527 7.99%:  It's fun to say 'dixie
+    528 6.52%:  It is fun to say 'rode
+    529 7.70%:  It is fun to say 'rode'
+    530 6.51%:  It's for you and it is
+    531 6.51%:  It's a bit n
+    532 6.77%:  It's a bit nif
+    533 6.47%:  It's fun to do a 's
+    534 6.46%:  It's unbeat
+    535 6.46%:  It's rad if you sne
+    536 6.45%:  It's not fair you
+    537 7.57%:  It's not fair you'
+    538 7.47%:  It's not fair you'd
+    539 7.68%:  It's not fair you'd be
+    540 6.44%:  It's so far
+    541 6.44%:  It's easy for
+    542 6.43%:  It'd be fun to say 'ro
+    543 6.42%:  It's fun to say 'bored
+    544 6.40%:  It's not due for
+    545 8.41%:  It's not due for a
+    546 6.40%:  It's fun to say 'dib
+    547 6.40%:  It's fun to redo
+    548 6.40%:  It's a bit iron
+    549 6.38%:  It'd be nifty as
+    550 6.37%:  It's too easy if
+    551 6.36%:  It's so darn t
+    552 6.36%:  It's so rad to be in
+    553 6.36%:  It's sort of ad
+    554 6.35%:  If you are on
+    555 6.35%:  It's sort of bad
+    556 6.34%:  It's so fun to be a d
+    557 6.33%:  I'd say it's for one 
+    558 6.33%:  It's easy to do in
+    559 6.33%:  It's based on '
+    560 6.32%:  If you're so in
+    561 6.32%:  I'd bet it's on for 
+    562 6.31%:  It's a bit fun
+    563 6.31%:  If you're in to a 
+    564 6.30%:  It's so fun to ride a 
+    565 6.30%:  It's not easy if
+    566 6.27%:  If you're on a six it
+    567 7.97%:  If you're on a six it'
+    568 10.20%:  If you're on a six it's
+    569 7.80%:  If you're on a six it's 
+    570 6.27%:  It's a one to
+    571 6.41%:  It's a one to six
+    572 6.27%:  I'd bet it's for 
+    573 6.27%:  I'd say it is too
+    574 6.26%:  It's in a box you
+    575 6.28%:  It's in a box you'
+    576 6.94%:  It's in a box you're
+    577 6.66%:  It's in a box you'd
+    578 6.26%:  It's so fun to be rid
+    579 6.26%:  It's fun to redo a
+    580 6.25%:  It's on board
+    581 6.25%:  If you're a botist
+    582 6.24%:  It's a snorey
+    583 6.23%:  I'd say '
+    584 6.22%:  It's not a dye
+    585 6.22%:  It'd be fun as
+    586 6.22%:  It's sort of a 'd
+    587 6.21%:  It'd be an
+    588 6.21%:  I'd say it isn
+    589 9.24%:  I'd say it isn'
+    590 12.45%:  I'd say it isn't
+    591 11.75%:  I'd say it isn't for
+    592 8.18%:  I'd say it isn't for 
+    593 7.54%:  I'd say it isn't 
+    594 6.21%:  It's so true
+    595 6.21%:  I'd say 
+    596 6.21%:  If you're in a 'it
+    597 6.20%:  It's in a box for
+    598 6.19%:  It's often said you
+    599 7.11%:  It's often said you'
+    600 6.19%:  If you're not at 
