@@ -1,36 +1,105 @@
 SURE they'll think of a word.
       0 100.00%: 
-      1 17.55%:  not
-      2 14.23%:  not the
-      3 12.37%:  not a
-      4 12.25%:  S
-      5 13.69%:  SURE
-      6 10.93%:  a
-      7 10.66%:  the
-      8 10.46%:  SURE we
-      9 13.82%:  SURE we'
-     10 17.67%:  SURE we'll
-     11 16.16%:  SURE we'll find
-     12 17.81%:  SURE we'll find a
-     13 13.06%:  SURE we'll think
-     14 16.25%:  SURE we'll think of
-     15 17.05%:  SURE we'll think of a
-     16 11.89%:  SURE we'd
-     17 13.84%:  SURE we'd all
-     18 11.44%:  SURE we'll do
-     19 10.44%:  SURE we'll do a
-     20 10.35%:  SURE we'll find that
-     21 10.30%:  SURE we'll do it
-     22 10.22%:  SURE we'll hit
-     23 11.25%:  SURE we'll hit on
-     24 11.05%:  SURE we'll hit on a
-     25 9.97%:  SURE they
-     26 14.42%:  SURE they'
-     27 18.40%:  SURE they'll
-     28 17.75%:  SURE they'll find
-     29 20.03%:  SURE they'll find a
-     30 14.19%:  SURE they'd
-     31 14.04%:  SURE they'll think
-     32 16.11%:  SURE they'll think of
-     33 17.20%:  SURE they'll think of a
-     34 15.66%:  SURE they'll think of a word
+      1 24.33%:  not
+      2 22.43%:  not the
+      3 22.13%:  S
+      4 23.69%:  SURE
+      5 21.76%:  a
+      6 21.69%:  the
+      7 21.37%:  really
+      8 21.34%:  in
+      9 21.31%:  not a
+     10 21.28%:  in.
+     11 21.28%:  RE
+     12 21.16%:  all
+     13 27.46%:  all for
+     14 30.34%:  all for it
+     15 31.06%:  all for it.
+     16 23.07%:  all for the
+     17 21.90%:  all for '
+     18 21.73%:  all for new
+     19 21.14%:  down
+     20 22.53%:  down for
+     21 21.07%:  on
+     22 21.05%:  ready
+     23 25.84%:  ready to
+     24 21.02%:  totally
+     25 20.99%:  tired
+     26 28.55%:  tired of
+     27 23.73%:  tired of all
+     28 22.96%:  tired of not
+     29 22.57%:  tired of talk
+     30 21.32%:  tired.
+     31 20.93%:  kinda
+     32 20.93%:  into
+     33 20.93%:  
+     34 20.92%:  R
+     35 20.91%:  now
+     36 20.91%:  for
+     37 20.90%:  done
+     38 22.11%:  done.
+     39 21.23%:  done with
+     40 20.90%:  an
+     41 20.88%:  at
+     42 24.26%:  at the
+     43 20.66%:  on the
+     44 20.60%:  now the
+     45 20.52%:  totally down
+     46 20.44%:  the only
+     47 20.22%:  really into
+     48 20.20%:  down to
+     49 19.78%:  not really
+     50 19.71%:  in for
+     51 19.99%:  in for a
+     52 19.62%:  really not
+     53 19.62%:  down for it
+     54 21.35%:  down for it.
+     55 19.62%:  down for a
+     56 19.60%:  for the
+     57 19.58%:  not likely
+     58 27.05%:  not likely to
+     59 19.57%:  not for
+     60 19.56%:  not 
+     61 19.54%:  not.
+     62 19.54%:  not at
+     63 19.53%:  not k
+     64 19.53%:  not old
+     65 19.51%:  not likely to E
+     66 19.48%:  SURE we
+     67 23.21%:  SURE we'
+     68 27.56%:  SURE we'll
+     69 23.85%:  SURE we'll find
+     70 25.17%:  SURE we'll find a
+     71 20.92%:  SURE we'll think
+     72 24.70%:  SURE we'll think of
+     73 24.85%:  SURE we'll think of a
+     74 20.68%:  SURE we'll do
+     75 20.60%:  SURE we'll hit
+     76 20.98%:  SURE we'll hit on
+     77 19.42%:  down for that
+     78 21.25%:  down for that.
+     79 19.35%:  SURE we'll hit on a
+     80 19.34%:  in a
+     81 19.33%:  for it
+     82 20.64%:  for it.
+     83 19.29%:  for one
+     84 19.26%:  SURE they
+     85 24.97%:  SURE they'
+     86 29.46%:  SURE they'll
+     87 26.80%:  SURE they'll find
+     88 28.88%:  SURE they'll find a
+     89 22.71%:  SURE they'd
+     90 22.34%:  SURE they'll find a work
+     91 21.80%:  SURE they'll think
+     92 23.82%:  SURE they'll think of
+     93 24.45%:  SURE they'll think of a
+     94 21.56%:  SURE they'll think of a word
+     95 21.44%:  SURE they'll work
+     96 24.15%:  SURE they'll work it
+     97 21.42%:  SURE they'll do
+     98 21.41%:  SURE they'll want
+     99 21.36%:  SURE they'll know
+    100 21.36%:  SURE they'll at
+    101 21.00%:  SURE they'll do it
+    102 21.43%:  SURE they'll do it.
+    103 20.18%:  SURE they'd all

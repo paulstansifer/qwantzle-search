@@ -77,7 +77,7 @@ Estimated session size: 62 / 222
 Costs: (90%) 1.0e15  (75%) 1.2e14  (50%) 3.8e11  (25%) 1.8e10  (10%) 2.9e6
 Probs: (90%) 2.49%  (75%) 3.28%  (50%) 5.57%  (25%) 9.10%  (10%) 11.00%
 Calibration: (50%) 27.89%  (75%) 64.97%  (80%) 70.87%  (90%) 86.71%  (95%) 95.18%  (98%) 97.82%  (99%) 98.38%  (99.5%) 99.39%
-Average token time: 6065  Average truncation time: 0  Average copy time: 35515
+Average token time: 6065  Average trun1q    cation time: 0  Average copy time: 35515
 
 === qw-mistral-7b.Q4_K_M
 Estimated session size: 62 / 126

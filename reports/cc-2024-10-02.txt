@@ -97,3 +97,81 @@ ntial moisturizing oils"!  T-Rex (punchline): Kinda >>have to count that as a wi
   Estimated steps: 135. Avg. prob: 4.2%
 Were Friends, Utahraptor!!  T-Rex (punchline): Okay >>wait suddenly I see your point<<
   Hit step limit: 601
+
+  ---
+
+  After scoring revision:
+
+  Estimated session size: 62 / 126
+Estimated steps: 2160. Avg. prob: 2.3%
+Estimated steps: 144. Avg. prob: 5.6%
+ this one!  T-Rex: Utahraptor!  T-Rex (punchline): I >>still really want to be pals!!<<
+  Search successful after 222 steps. Prob: 19.32%
+  Per-step times: Copy: 29ms  Advance: 206ms  Predict: 2ms.  Max queue length: 351
+Estimated steps: 81. Avg. prob: 8.9%
+ore to an earlier save point.  T-Rex (punchline): I >>have failed to prove my point!<<
+  Search successful after 594 steps. Prob: 23.70%
+  Per-step times: Copy: 24ms  Advance: 226ms  Predict: 2ms.  Max queue length: 578
+Estimated steps: 16. Avg. prob: 6.2%
+ming it!  T-Rex: No, wait!!  T-Rex (punchline): That >>sounds like the boring part!!<<
+  Search successful after 217 steps. Prob: 18.26%
+  Per-step times: Copy: 33ms  Advance: 208ms  Predict: 3ms.  Max queue length: 475
+Estimated steps: 60. Avg. prob: 11.9%
+l, you know what they say:  T-Rex (punchline): "I'm >>not particularly good at it!!"<<
+  Search successful after 51 steps. Prob: 29.32%
+  Per-step times: Copy: 28ms  Advance: 270ms  Predict: 3ms.  Max queue length: 117
+Estimated steps: 1. Avg. prob: 17.5%
+enlightened soon.  Multiple off-panel voices: Dude! >>We get that ALL THE TIME!<<
+  Search successful after 58 steps. Prob: 26.61%
+  Per-step times: Copy: 31ms  Advance: 172ms  Predict: 2ms.  Max queue length: 212
+Estimated steps: 1856. Avg. prob: 4.9%
+Estimated steps: 168. Avg. prob: 6.9%
+picture of yourself!  T-Rex (punchline): Like >>when I lost someone's baby!<<
+  Search successful after 765 steps. Prob: 18.60%
+  Per-step times: Copy: 23ms  Advance: 312ms  Predict: 3ms.  Max queue length: 1353
+Estimated steps: 16. Avg. prob: 7.2%
+HAPPENED:  T-Rex: maybe...  T-Rex (punchline): maybe >>i should get me some clothes<<
+  Search successful after 68 steps. Prob: 20.51%
+  Per-step times: Copy: 31ms  Advance: 229ms  Predict: 3ms.  Max queue length: 251
+Estimated steps: 8. Avg. prob: 12.2%
+ Bustarians?  T-Rex: Anyway.  T-Rex (punchline): I'M >>SURE they'll think of a word.<<
+  Search successful after 104 steps. Prob: 19.67%
+  Per-step times: Copy: 33ms  Advance: 229ms  Predict: 3ms.  Max queue length: 218
+Estimated steps: 20. Avg. prob: 29.8%
+ou both super equally!  T-Rex (punchline): [thinks] >>I DON'T KNOW WHO I AM ANYMORE.<<
+  Search successful after 50 steps. Prob: 42.39%
+  Per-step times: Copy: 26ms  Advance: 542ms  Predict: 2ms.  Max queue length: 267
+Estimated steps: 120. Avg. prob: 5.6%
+vies together!  T-Rex: HEY!  T-Rex (punchline): Stay >>away from women named "Susan"!<<
+  Exhausted all reasonable nodes at 244 steps
+  Per-step times: Copy: 26ms  Advance: 332ms  Predict: 3ms.  Max queue length: 78
+Estimated steps: 4. Avg. prob: 12.4%
+-Rex: Hah hah! Awesome!  T-Rex (punchline): ...It's >>not the guy I made up, though.<<
+  Search successful after 640 steps. Prob: 22.18%
+  Per-step times: Copy: 33ms  Advance: 265ms  Predict: 3ms.  Max queue length: 843
+Estimated steps: 780. Avg. prob: 10.7%
+ous typographic error!  T-Rex (punchline): [thinks] >>BUT HOW TO PROFIT FROM IT??<<
+  Hit step limit: 1001
+  Per-step times: Copy: 33ms  Advance: 385ms  Predict: 3ms.  Max queue length: 3538
+Estimated steps: 2. Avg. prob: 5.7%
+YTHING  T-Rex: Um -  T-Rex (punchline): Implications >>are tricky so maybe<<
+  Search successful after 31 steps. Prob: 21.85%
+  Per-step times: Copy: 37ms  Advance: 203ms  Predict: 3ms.  Max queue length: 43
+Estimated steps: 3. Avg. prob: 13.8%
+ure what I'm asking here  T-Rex (punchline): Please >>just keep it in mind for now<<
+Non-answer: keep it in mind just for now != just keep it in mind for now
+  Search successful after 90 steps. Prob: 22.14%
+  Per-step times: Copy: 34ms  Advance: 233ms  Predict: 3ms.  Max queue length: 212
+Estimated steps: 15. Avg. prob: 19.0%
+ TRYING OUT SOMETHING NEW  T-Rex (punchline): Dude, >>try it out somewhere else!<<
+  Search successful after 55 steps. Prob: 34.02%
+  Per-step times: Copy: 50ms  Advance: 274ms  Predict: 3ms.  Max queue length: 124
+Estimated steps: 24. Avg. prob: 13.2%
+ is the game for you.  T-Rex (punchline): ALTHOUGH! >>It's not bad if you're six<<
+  Hit step limit: 1001                                                                                                         Per-step times: Copy: 29ms  Advance: 362ms  Predict: 3ms.  Max queue length: 1920
+Estimated steps: 79. Avg. prob: 11.4%
+ntial moisturizing oils"!  T-Rex (punchline): Kinda >>have to count that as a win!<<
+  Hit step limit: 1001                                                                                                         Per-step times: Copy: 38ms  Advance: 400ms  Predict: 3ms.  Max queue length: 318
+Estimated steps: 135. Avg. prob: 4.2%
+Were Friends, Utahraptor!!  T-Rex (punchline): Okay >>wait suddenly I see your point<<
+  Hit step limit: 1001                                                                                                         Per-step times: Copy: 31ms  Advance: 242ms  Predict: 3ms.  Max queue length: 2588

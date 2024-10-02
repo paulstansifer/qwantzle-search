@@ -1,602 +1,1002 @@
 have to count that as a win!
       0 100.00%: 
-      1 4.64%: !
-      2 3.93%:  a
-      3 6.94%:  a win
-      4 6.40%:  a waste
-      5 5.89%:  a win!
-      6 5.32%:  a waste!
-      7 3.11%:  a win on
-      8 4.82%:  a win on that
-      9 4.54%:  a win on the
-     10 3.26%:  a win on that!
-     11 3.15%:  a win on the o
-     12 2.38%:  a win on the s
-     13 2.38%:  a waste in
-     14 3.15%:  a waste in that
-     15 3.05%:  a waste in a
-     16 2.36%:  a wash
-     17 3.55%:  a wash!
-     18 2.29%:  nice
-     19 6.03%:  nice!
-     20 4.15%:  nice to
-     21 3.14%:  nice to not
-     22 2.21%:  a win on the ch
-     23 2.18%:  a win on the act
-     24 2.52%:  a win on the act!
-     25 2.11%:  a win on a
-     26 2.01%:  a win on the actu
-     27 1.92%:  a win on the chast
-     28 1.89%:  a waste to
-     29 1.99%:  a waste to not
-     30 1.87%:  a waste on
-     31 3.18%:  a waste on that
-     32 4.44%:  a waste on that count
-     33 5.28%:  a waste on that count!
-     34 2.40%:  a waste on that!
-     35 1.83%:  a win at
-     36 3.37%:  a win at the
-     37 3.09%:  a win at the cost
-     38 2.89%:  a win at that
-     39 3.40%:  a win at that!
-     40 3.24%:  a win at that one
-     41 4.03%:  a win at that one!
-     42 2.34%:  a win at that one at
-     43 1.90%:  a win at that count
-     44 2.72%:  a win at that count!
-     45 1.83%:  nice that
-     46 1.98%:  nice that that
-     47 2.08%:  nice that that was
-     48 2.57%:  nice that that was a
-     49 2.02%:  nice that that was an
-     50 1.83%:  nice that at
-     51 1.80%:  a win on the oats
-     52 2.21%:  a win on the oats!
-     53 1.78%:  a waste at
-     54 3.48%:  a waste at that
-     55 3.60%:  a waste at that!
-     56 1.72%:  a waste on a
-     57 1.68%:  a win at that at
-     58 1.66%:  nice that that was!
-     59 1.66%:  a net
-     60 5.23%:  a net win
-     61 5.48%:  a net win!
-     62 1.98%:  a net win to
-     63 1.90%:  a net win to that
-     64 2.49%:  a net win to that!
-     65 1.85%:  a net win to us
-     66 2.07%:  a net win to us!
-     67 1.65%:  a waste to not at
-     68 1.65%:  a win at that too
-     69 2.37%:  a win at that too!
-     70 1.61%:  nice that that was on
-     71 1.61%:  a waste too
-     72 2.55%:  a waste too!
-     73 1.61%:  a win at that cost
-     74 2.25%:  a win at that cost!
-     75 1.59%:  nice that that was a 
-     76 1.58%:  a net win to a
-     77 1.57%:  a wash on
-     78 3.56%:  a wash on the
-     79 3.14%:  a wash on that
-     80 5.31%:  a wash on that one
-     81 5.93%:  a wash on that one!
-     82 3.05%:  a wash on that count
-     83 3.92%:  a wash on that count!
-     84 2.56%:  a wash on that!
-     85 2.34%:  a wash on that count at
-     86 2.01%:  a wash on the o
-     87 1.95%:  a wash on the act
-     88 2.56%:  a wash on the actin
-     89 2.36%:  a wash on the act!
-     90 1.88%:  a wash on the no
-     91 1.78%:  a wash on the actin!
-     92 1.76%:  a wash on the oint
-     93 1.69%:  a wash on that note
-     94 2.44%:  a wash on that note!
-     95 1.67%:  a wash on the actu
-     96 1.56%:  a win on the act that
-     97 1.56%:  a win on the chaa
-     98 2.61%:  a win on the chaaa
-     99 1.54%:  a win on the act as
-    100 2.66%:  a win on the act as a
-    101 1.47%:  wish
-    102 2.20%:  wish that
-    103 2.28%:  wish that one
-    104 1.44%:  a waste to not act
-    105 1.41%:  a waste to a
-    106 1.39%:  a wash in
-    107 3.10%:  a wash in the
-    108 1.74%:  a wash in that
-    109 1.56%:  a wash in that one
-    110 1.96%:  a wash in that one!
-    111 1.37%:  a wash on the oat
-    112 1.37%:  a win on each
-    113 1.36%:  a wash on the act in
-    114 1.37%:  a wash on the act in tot
-    115 1.35%:  nice that no
-    116 1.35%:  a win on those
-    117 1.33%:  neat
-    118 6.63%:  neat!
-    119 1.32%:  a win at a
-    120 1.83%:  a win at a cost
-    121 2.48%:  a win at a cost!
-    122 1.83%:  a win at a cost to
-    123 2.31%:  a win at a cost to the
-    124 1.66%:  a win at a cost to a
-    125 1.61%:  a win at a cost to the un
-    126 1.51%:  a win at a cost that
-    127 1.42%:  a win at a cost that no
-    128 1.32%:  wish he
-    129 1.31%:  a win on the actus
-    130 1.48%:  a win on the actus!
-    131 1.31%:  a win at a cost to a 
-    132 1.31%:  a wash on the actio
-    133 1.30%:  a wash on the act in a
-    134 1.30%:  a nice
-    135 1.28%:  wish the
-    136 1.27%:  a win at a cost to an
-    137 1.26%:  a waste to that
-    138 1.61%:  a waste to that!
-    139 1.26%:  a win on a ch
-    140 1.34%:  a win on a chaste
-    141 1.48%:  a win on a chaste!
-    142 1.40%:  a win on a chasteau
-    143 1.61%:  a win on a chasteau!
-    144 1.26%:  nice that that was on a
-    145 1.25%:  a wash on that note at
-    146 1.25%:  nice that that was an u
-    147 1.24%:  a waste to not act in
-    148 1.83%:  a waste to not act in a
-    149 1.29%:  a waste to not act in a h
-    150 1.24%:  a net wash
-    151 1.61%:  a net wash!
-    152 1.30%:  a net wash on
-    153 1.83%:  a net wash on that
-    154 1.91%:  a net wash on that!
-    155 1.52%:  a net wash on it
-    156 1.75%:  a net wash on it!
-    157 1.23%:  a win at a cost to a h
-    158 1.36%:  a win at a cost to a huh
-    159 1.38%:  a win at a cost to a huh!
-    160 1.25%:  a win at a cost to a huhn
-    161 1.27%:  a win at a cost to a huhn!
-    162 1.23%:  a win on the act that!
-    163 1.23%:  a win at a cost to the unv
-    164 1.23%:  nice that now
-    165 2.09%:  nice that now that
-    166 1.86%:  nice that now!
-    167 1.34%:  nice that now that!
-    168 1.22%:  nice that no host
-    169 1.22%:  a wash on the no!
-    170 1.21%:  wish the o
-    171 1.20%:  a wash on it
-    172 1.70%:  a wash on it!
-    173 1.20%:  a net win to a 
-    174 1.20%:  a win on the act that a
-    175 1.19%:  a waste to not act!
-    176 1.19%:  a net wash in
-    177 1.56%:  a net wash in that
-    178 1.18%:  a win on a chaa
-    179 1.18%:  a win at one
-    180 1.27%:  a win at one!
-    181 1.18%:  the
-    182 1.17%:  a wash on the actuai
-    183 1.16%:  neat that
-    184 2.30%:  neat that it
-    185 2.55%:  neat that it was
-    186 3.32%:  neat that it was a
-    187 2.45%:  neat that it was an
-    188 2.45%:  neat that it was a 
-    189 2.24%:  neat that it was on
-    190 2.16%:  neat that it was on a
-    191 1.96%:  neat that it was a n
-    192 1.85%:  neat that it was an o
-    193 1.78%:  neat that it was an oo
-    194 1.78%:  neat that it was 
-    195 1.76%:  neat that it was on a h
-    196 1.73%:  neat that it was un
-    197 1.55%:  neat that it wasn
-    198 1.53%:  neat that it was on a 
-    199 1.53%:  neat that it was an oo!
-    200 1.50%:  neat that it was on a ch
-    201 1.46%:  neat that it was an u
-    202 2.11%:  neat that it was an uh
-    203 1.46%:  neat that it can
-    204 1.45%:  neat that it was an 
-    205 1.38%:  neat that it was!
-    206 1.34%:  neat that it was no
-    207 1.29%:  neat that it has
-    208 1.99%:  neat that it has a
-    209 1.71%:  neat that it has no
-    210 1.50%:  neat that it has a 
-    211 1.48%:  neat that it has now
-    212 1.42%:  neat that it has a n
-    213 1.31%:  neat that it has an
-    214 1.29%:  neat that it was a noc
-    215 1.28%:  neat that this
-    216 1.25%:  neat that!
-    217 1.25%:  neat that it has a con
-    218 1.23%:  neat that it was unch
-    219 1.20%:  neat that this can
-    220 1.17%:  neat that it won
-    221 1.16%:  a win on the act that a 
-    222 1.16%:  a waste to nothin
-    223 1.15%:  a net wash in a
-    224 1.13%:  wish that one to
-    225 1.44%:  wish that one to a
-    226 1.46%:  wish that one to a 
-    227 1.13%:  a wash on the actuai!
-    228 1.13%:  a net win to t
-    229 1.42%:  a net win to tac
-    230 2.46%:  a net win to tacos
-    231 2.86%:  a net win to tacos!
-    232 1.70%:  a net win to tacos at
-    233 1.57%:  a net win to tacos at a
-    234 1.46%:  a net win to tacos at 
-    235 1.40%:  a net win to tacos at a 
-    236 1.13%:  neat that it hasn
-    237 1.12%:  wish that one on
-    238 1.34%:  wish that one on a
-    239 1.29%:  wish that one on a t
-    240 1.12%:  a win at a cost to a hue
-    241 1.14%:  a win at a cost to a hue!
-    242 1.12%:  a net wash on it t
-    243 1.11%:  a win at a cost to a huh 
-    244 1.11%:  a net win to a t
-    245 1.20%:  a net win to a tac
-    246 1.31%:  a net win to a tacos
-    247 1.45%:  a net win to a tacos!
-    248 1.11%:  neat that it was unco
-    249 1.18%:  neat that it was uncoo
-    250 1.14%:  neat that it was uncoo!
-    251 1.11%:  a waste to not cut
-    252 1.37%:  a waste to not cut a
-    253 1.32%:  a waste to not cut in
-    254 1.66%:  a waste to not cut in a
-    255 1.35%:  a waste to not cut in a 
-    256 1.19%:  a waste to not cut a 
-    257 1.16%:  a waste to not cut a h
-    258 1.10%:  neat that it was a nocu
-    259 1.10%:  a wash on the act in tot!
-    260 1.10%:  a net win to tat
-    261 1.43%:  a net win to tat!
-    262 1.10%:  a net win to tac!
-    263 1.09%:  a waste to an
-    264 1.09%:  a win on the chaaao
-    265 1.08%:  wish that one on a tac
-    266 1.08%:  wish the oo
-    267 1.08%:  neat that it was an uv
-    268 1.07%:  wish that one on a 
-    269 1.07%:  a win at a cost to a huev
-    270 1.07%:  a win at one out
-    271 1.18%:  a win at one outta
-    272 1.08%:  a win at one outta 
-    273 1.07%:  a win at that too h
-    274 1.06%:  a win at a cost to a hu
-    275 1.06%:  a wash in a
-    276 1.06%:  a waste to not act in a huh
-    277 1.06%:  a waste on a 
-    278 1.05%:  a wash on the actio!
-    279 1.05%:  wish that one to an
-    280 1.05%:  a net win to a tacos at
-    281 1.13%:  a net win to a tacos at 
-    282 1.05%:  neat that it was an ouch
-    283 1.19%:  neat that it was an ouch!
-    284 1.05%:  a waste to an un
-    285 1.05%:  a net win to a tacos a
-    286 1.05%:  nice that!
-    287 1.05%:  a win on the actus o
-    288 1.05%:  a net win to tacot
-    289 1.04%:  a win at a cost to a huhn!t
-    290 1.04%:  a wash on the oatc
-    291 1.04%:  a net win to a tacos a t
-    292 1.04%:  neat that it was a nocuo
-    293 1.17%:  neat that it was a nocuo!
-    294 1.04%:  a waste to not cut in!
-    295 1.04%:  a win at a st
-    296 1.03%:  a win at a cost to a hueh
-    297 1.03%:  a waste to not act in a huh!
-    298 1.03%:  a net win to a taut
-    299 1.02%:  a waste on an
-    300 1.02%:  neat that no
-    301 1.02%:  a win on a chasteau to
-    302 1.01%:  a win at a cost to an e
-    303 1.01%:  a win on the act that a s
-    304 1.01%:  a net win to a c
-    305 1.01%:  wish that one to a t
-    306 1.03%:  wish that one to a tac
-    307 1.01%:  neat that it has an o
-    308 1.08%:  neat that it has an oo
-    309 1.23%:  neat that it has an oo!
-    310 1.00%:  wish that one on a taut
-    311 1.00%:  a waste at a
-    312 0.98%:  nice not
-    313 4.13%:  nice not to
-    314 2.60%:  nice not to!
-    315 0.89%:  neat to
-    316 0.71%:  nice at
-    317 1.22%:  nice at that
-    318 2.66%:  nice at that!
-    319 0.69%:  a neat
-    320 0.66%:  a sh
-    321 1.01%:  a shitt
-    322 1.79%:  a shitton
-    323 1.83%:  a shitton!
-    324 1.79%:  a shitton to
-    325 1.60%:  a shitton to che
-    326 2.74%:  a shitton to cheat
-    327 2.55%:  a shitton to cheat!
-    328 2.52%:  a shitton to cheat a
-    329 2.44%:  a shitton to chew
-    330 1.95%:  a shitton to chew!
-    331 1.87%:  a shitton to cheat an
-    332 1.82%:  a shitton to cheat a n
-    333 1.81%:  a shitton to chew at
-    334 2.07%:  a shitton to chew at a
-    335 1.81%:  a shitton to cheat a 
-    336 1.76%:  a shitton to chew at!
-    337 1.59%:  a shitton to chew at a 
-    338 1.58%:  a shitton o
-    339 1.58%:  a shitton to chew at 
-    340 1.55%:  a shitton to cheat an aw
-    341 1.54%:  a shitton to cheat an 
-    342 1.53%:  a shitton to cheat an a
-    343 1.51%:  a shitton to chew at an
-    344 1.46%:  a shitton to cheat a naw
-    345 1.46%:  a shitton to cheat an!
-    346 1.46%:  a shitton to have
-    347 1.41%:  a shitton to cheat a naw!
-    348 1.36%:  a shitton on
-    349 2.32%:  a shitton on the
-    350 1.49%:  a shitton on that
-    351 1.64%:  a shitton on that!
-    352 1.34%:  a shitton on a
-    353 1.34%:  a shitton to un
-    354 1.33%:  a shitton to the
-    355 1.29%:  a shitton to chew at an a
-    356 1.28%:  a shitton to have at
-    357 1.28%:  a shitton to have at a
-    358 1.22%:  a shitton to chew at an 
-    359 1.18%:  a shitton to the un
-    360 1.18%:  a shitton to eat
-    361 1.40%:  a shitton to eat!
-    362 1.18%:  a shitton to chew at an u
-    363 1.18%:  a shitton to have at 
-    364 1.17%:  a shitton to have a
-    365 1.14%:  a shitton to have!
-    366 1.07%:  a shitton to the 
-    367 1.06%:  a shitton to the aw
-    368 1.05%:  a shitton to have at a 
-    369 1.04%:  a shitton on a wh
-    370 1.04%:  a shitton to chew at an a 
-    371 1.02%:  a shitton to the w
-    372 1.10%:  a shitton to the waa
-    373 1.69%:  a shitton to the waaa
-    374 1.40%:  a shitton to the waaa!
-    375 1.01%:  a shitton to have a 
-    376 1.00%:  a shitton to unac
-    377 1.00%:  a shitton to have at an
-    378 1.00%:  a shitton to eat a
-    379 0.65%:  nice too
-    380 2.13%:  nice too!
-    381 0.61%:  the s
-    382 0.60%:  neat how
-    383 2.64%:  neat how that
-    384 1.98%:  neat how that is
-    385 3.25%:  neat how that is!
-    386 1.96%:  neat how it
-    387 1.46%:  neat how that is a
-    388 1.39%:  neat how that is a 
-    389 1.29%:  neat how that can
-    390 1.19%:  neat how it can
-    391 1.15%:  neat how that is to
-    392 0.49%:  nice how
-    393 2.05%:  nice how that
-    394 0.47%:  too
-    395 0.45%:  the win
-    396 0.42%:  neat in
-    397 1.85%:  neat in a
-    398 1.01%:  neat in a what
-    399 0.42%:  anti
-    400 0.39%:  the ch
-    401 0.35%:  an
-    402 1.88%:  an ant
-    403 7.07%:  an antic
-    404 1.52%:  an anti
-    405 0.85%:  an un
-    406 0.53%:  ants
-    407 0.51%:  an uns
-    408 0.34%:  an in
-    409 0.29%:  ant
-    410 5.37%:  antic
-    411 0.26%:  an own
-    412 0.25%:  an unt
-    413 0.24%:  an aw
-    414 1.37%:  an awes
-    415 1.08%:  an awesoo
-    416 0.24%:  an une
-    417 0.23%:  not
-    418 1.21%:  not a
-    419 2.36%:  not a win
-    420 2.26%:  not a win!
-    421 1.84%:  not a win at
-    422 2.39%:  not a win at the
-    423 1.83%:  not a win at that
-    424 1.92%:  not a win at that!
-    425 1.81%:  not a waste
-    426 2.40%:  not a waste!
-    427 1.64%:  not a win at the cost
-    428 1.39%:  not a win at that house
-    429 1.76%:  not a win at that house!
-    430 1.29%:  not a win at the cost!
-    431 1.10%:  not a net
-    432 1.09%:  not the
-    433 1.02%:  not that
-    434 1.31%:  not that!
-    435 1.10%:  not that into
-    436 1.09%:  not that one
-    437 1.65%:  not that one!
-    438 1.03%:  not that one is
-    439 1.74%:  not that one is a
-    440 1.24%:  not that one is what
-    441 1.19%:  not that one is a t
-    442 1.32%:  not that one is a tac
-    443 1.18%:  not that one is a 
-    444 0.79%:  not as
-    445 0.78%:  notew
-    446 0.72%:  not what
-    447 0.52%:  nothin
-    448 0.49%:  not!
-    449 0.43%:  not an
-    450 0.33%:  not so
-    451 0.31%:  not in
-    452 1.70%:  not in a
-    453 1.29%:  not in the
-    454 1.26%:  not in a host
-    455 0.29%:  notic
-    456 0.29%:  not how
-    457 0.28%:  not at
-    458 0.28%:  notches
-    459 0.26%:  not to
-    460 0.25%:  not on
-    461 0.25%:  notch
-    462 1.60%:  notch in
-    463 2.93%:  notch in the
-    464 2.34%:  notch in the o
-    465 0.21%:  an o
-    466 0.18%:  nuts
-    467 1.47%:  nuts!
-    468 0.81%:  nuts that
-    469 1.91%:  nuts that it
-    470 1.53%:  nuts that we
-    471 1.79%:  nuts that we can
-    472 1.31%:  nuts that it can
-    473 1.19%:  nuts that the
-    474 1.22%:  nuts that the o
-    475 1.15%:  nuts that one
-    476 1.29%:  nuts that one!
-    477 0.52%:  nuts to
-    478 0.46%:  nuts when
-    479 0.39%:  nuts how
-    480 1.79%:  nuts how that
-    481 1.65%:  nuts how that one
-    482 1.35%:  nuts how it
-    483 1.17%:  nuts how that can
-    484 0.22%:  nuts on
-    485 1.29%:  nuts on that
-    486 1.40%:  nuts on that!
-    487 0.19%:  nuts in
-    488 0.17%:  not into
-    489 0.17%:  not one
-    490 0.16%:  nots
-    491 0.16%:  waste
-    492 0.26%:  waste!
-    493 0.15%:  waste in
-    494 0.15%:  nuts it
-    495 0.15%:  waste that
-    496 0.15%:  waste a
-    497 0.14%:  uns
-    498 0.20%:  unsav
-    499 0.18%:  unsat
-    500 0.13%:  how
-    501 1.03%:  how it
-    502 0.37%:  how the
-    503 0.23%:  how that
-    504 0.21%:  how this
-    505 0.14%:  how he
-    506 0.13%:  how to
-    507 0.13%:  wins
-    508 1.43%:  wins out
-    509 2.14%:  wins out!
-    510 1.27%:  wins out on
-    511 3.35%:  wins out on the
-    512 2.22%:  wins out on that
-    513 1.86%:  wins out on that!
-    514 1.05%:  wins out that
-    515 1.09%:  wins out that one
-    516 1.57%:  wins out that one!
-    517 0.71%:  wins the
-    518 0.51%:  wins at
-    519 1.29%:  wins at the
-    520 1.03%:  wins at that
-    521 1.79%:  wins at that one
-    522 2.49%:  wins at that one!
-    523 1.43%:  wins at that one at
-    524 1.25%:  wins at that!
-    525 0.36%:  wins on
-    526 1.59%:  wins on the
-    527 1.32%:  wins on that
-    528 1.12%:  wins on that!
-    529 1.02%:  wins on the o
-    530 0.26%:  wins!
-    531 0.20%:  wins that
-    532 0.20%:  wins a
-    533 0.13%:  waste it
-    534 0.13%:  nut
-    535 1.06%:  nutso
-    536 2.71%:  nutso!
-    537 1.06%:  nutsoo
-    538 1.97%:  nutsoo!
-    539 1.05%:  nutso that
-    540 1.80%:  nutso that it
-    541 1.39%:  nutso that we
-    542 1.43%:  nutso that we can
-    543 1.28%:  nutso that it can
-    544 1.27%:  nutso that the
-    545 1.38%:  nutso that the o
-    546 1.25%:  nutso that one
-    547 1.34%:  nutso that one!
-    548 1.05%:  nutso that no
-    549 1.03%:  nutso that it won
-    550 1.05%:  nutso that it won!
-    551 0.12%:  unsent
-    552 0.12%:  win
-    553 0.59%:  win!
-    554 0.36%:  win on
-    555 1.75%:  win on that
-    556 1.70%:  win on that!
-    557 1.33%:  win on the
-    558 0.29%:  win at
-    559 0.17%:  win a
-    560 0.16%:  win the
-    561 0.13%:  winst
-    562 0.12%:  win that
-    563 0.12%:  nutto
-    564 0.12%:  w
-    565 1.38%:  wist
-    566 0.69%:  woo
-    567 1.82%:  woo!
-    568 0.56%:  winn
-    569 0.51%:  waa
-    570 2.40%:  waaa
-    571 3.11%:  waaaaste
-    572 3.03%:  waaaaste!
-    573 2.61%:  waaaast
-    574 2.70%:  waaaast!
-    575 2.33%:  waaaastin
-    576 2.28%:  waaaast the
-    577 2.22%:  waaaah
-    578 3.13%:  waaaahh
-    579 3.36%:  waaaahhst
-    580 3.37%:  waaaahhst!
-    581 2.93%:  waaaahhst it
-    582 3.24%:  waaaahhst it!
-    583 2.73%:  waaaahh!
-    584 2.64%:  waaaahst
-    585 2.63%:  waaaahhstin
-    586 2.48%:  waaaahht
-    587 2.76%:  waaaahht!
-    588 2.68%:  waaaahhts
-    589 3.00%:  waaaahhts!
-    590 2.72%:  waaaahhts it
-    591 3.05%:  waaaahhts it!
-    592 2.42%:  waaaahht it
-    593 2.41%:  waaaahhstin!
-    594 2.40%:  waaaahst!
-    595 2.39%:  waaaahst the
-    596 2.37%:  waaaahhst in
-    597 2.36%:  waaaahhts to
-    598 2.33%:  waaaahstin
-    599 2.33%:  waaaahst it
-    600 2.72%:  waaaahst it!
+      1 23.62%: !
+      2 23.23%:  a
+      3 22.99%:  a win
+      4 22.49%:  a waste
+      5 22.28%:  nice
+      6 23.13%:  nice!
+      7 21.77%:  wish
+      8 21.69%:  neat
+      9 25.72%:  neat!
+     10 21.59%:  the
+     11 21.12%:  too
+     12 21.09%:  anti
+     13 21.04%:  an
+     14 21.00%:  ant
+     15 31.75%:  antic
+     16 20.98%:  nice to
+     17 20.96%:  not
+     18 20.92%:  nuts
+     19 21.24%:  nuts!
+     20 20.91%:  waste
+     21 20.89%:  uns
+     22 20.89%:  how
+     23 20.89%:  wins
+     24 21.91%:  wins out
+     25 20.89%:  nut
+     26 20.89%:  win
+     27 20.88%:  w
+     28 22.17%:  wist
+     29 20.88%:  un
+     30 20.87%:  ch
+     31 20.80%:  an ant
+     32 28.44%:  an antic
+     33 20.40%:  nutso
+     34 20.11%:  how it
+     35 19.83%:  an anti
+     36 19.80%:  nutso!
+     37 19.67%:  not a
+     38 19.49%:  unint
+     39 19.45%:  a wash
+     40 19.31%:  not the
+     41 19.25%:  wish that
+     42 19.14%:  a net
+     43 23.36%:  a net win
+     44 19.11%:  not that
+     45 19.02%:  a nice
+     46 18.94%:  woo
+     47 18.87%:  a neat
+     48 18.87%:  a sh
+     49 18.87%:  nice that
+     50 18.84%:  wins the
+     51 18.83%:  nuts that
+     52 18.78%:  a net win!
+     53 18.54%:  a win!
+     54 18.49%:  win!
+     55 18.48%:  not as
+     56 18.45%:  winn
+     57 18.45%:  notew
+     58 18.43%:  wish he
+     59 18.43%:  nice not
+     60 24.30%:  nice not to
+     61 18.41%:  wish the
+     62 18.34%:  nice at
+     63 18.32%:  nice too
+     64 19.18%:  nice too!
+     65 18.32%:  wins out!
+     66 18.31%:  an un
+     67 18.31%:  not what
+     68 18.31%:  neat that
+     69 18.29%:  nice how
+     70 20.90%:  nice how that
+     71 18.28%:  waa
+     72 22.56%:  waaa
+     73 18.45%:  waaaaste
+     74 18.25%:  chaste
+     75 18.17%:  wins at
+     76 18.13%:  neat to
+     77 18.04%:  unn
+     78 18.02%:  nuts to
+     79 17.99%:  neat how
+     80 22.11%:  neat how that
+     81 18.49%:  neat how it
+     82 17.96%:  uncon
+     83 17.95%:  the s
+     84 17.94%:  waaaa
+     85 17.93%:  neat in
+     86 20.58%:  neat in a
+     87 17.91%:  unin
+     88 17.91%:  nothin
+     89 17.89%:  nuts when
+     90 17.89%:  the win
+     91 17.87%:  the ch
+     92 17.85%:  not!
+     93 17.81%:  ants
+     94 17.81%:  win on
+     95 21.12%:  win on that
+     96 17.80%:  how the
+     97 17.80%:  a waste!
+     98 17.79%:  wan
+     99 17.79%:  an uns
+    100 17.78%:  wins on
+    101 19.93%:  wins on the
+    102 17.76%:  nuts how
+    103 20.59%:  nuts how that
+    104 17.76%:  not an
+    105 17.73%:  wah
+    106 17.70%:  unne
+    107 17.69%:  unch
+    108 17.67%:  chast
+    109 17.65%:  win at
+    110 17.64%:  unhe
+    111 17.62%:  not so
+    112 17.61%:  an in
+    113 17.60%:  not in
+    114 21.81%:  not in a
+    115 17.59%:  wins!
+    116 17.58%:  notic
+    117 17.58%:  not how
+    118 17.57%:  waste!
+    119 17.57%:  not at
+    120 17.56%:  notches
+    121 17.55%:  an own
+    122 17.55%:  how that
+    123 17.55%:  an unt
+    124 17.55%:  not to
+    125 17.54%:  an aw
+    126 17.54%:  an une
+    127 17.54%:  not on
+    128 17.54%:  notch
+    129 22.79%:  notch in
+    130 21.92%:  notch in the
+    131 17.53%:  an o
+    132 17.52%:  how this
+    133 17.52%:  woot
+    134 17.51%:  nuts on
+    135 17.51%:  wins that
+    136 17.50%:  unsav
+    137 17.50%:  chint
+    138 17.50%:  wins a
+    139 17.49%:  unav
+    140 17.48%:  nuts in
+    141 17.48%:  a win on
+    142 17.57%:  a win on that
+    143 17.48%:  wai
+    144 17.48%:  unsat
+    145 17.47%:  win a
+    146 17.47%:  not into
+    147 17.47%:  not one
+    148 17.47%:  nots
+    149 17.46%:  win the
+    150 17.45%:  nuts it
+    151 17.45%:  waste in
+    152 17.45%:  unse
+    153 17.45%:  waste that
+    154 17.45%:  waste a
+    155 17.45%:  unat
+    156 17.44%:  unwise
+    157 17.44%:  how he
+    158 17.44%:  wi
+    159 17.44%:  woo!
+    160 17.44%:  how to
+    161 17.43%:  waste it
+    162 17.43%:  chon
+    163 17.43%:  unant
+    164 17.43%:  winst
+    165 17.43%:  wuh
+    166 17.43%:  chis
+    167 17.43%:  chiv
+    168 17.43%:  unst
+    169 17.43%:  unsent
+    170 17.43%:  win that
+    171 17.43%:  chou
+    172 17.42%:  unconv
+    173 17.42%:  unco
+    174 17.42%:  nutto
+    175 17.42%:  wit
+    176 17.42%:  uncont
+    177 17.42%:  win one
+    178 17.42%:  wac
+    179 17.41%:  chats
+    180 17.32%:  a win at
+    181 17.90%:  a win at the
+    182 16.88%:  a win on the
+    183 16.83%:  not a win
+    184 16.83%:  a waste in
+    185 16.78%:  nuts that it
+    186 16.78%:  a waste to
+    187 16.77%:  a waste on
+    188 16.77%:  a waste at
+    189 18.06%:  a waste at that
+    190 16.75%:  a waste too
+    191 16.57%:  a waste on that
+    192 16.60%:  a waste on that count
+    193 16.45%:  a net win to
+    194 16.44%:  waaaast
+    195 16.29%:  a wash!
+    196 16.14%:  a win at that
+    197 16.05%:  a waste on that count!
+    198 16.00%:  nice not to!
+    199 15.87%:  neat that it
+    200 15.79%:  nice to not
+    201 15.40%:  a waste too!
+    202 15.28%:  waaaah
+    203 15.22%:  waaaant
+    204 18.37%:  waaaant to
+    205 15.19%:  not a waste
+    206 15.16%:  waaaait
+    207 15.04%:  waaaas
+    208 15.01%:  waaaist
+    209 14.81%:  waaaahh
+    210 14.71%:  nuts that we
+    211 14.64%:  a waste in that
+    212 14.63%:  a waste at that!
+    213 14.34%:  a waste in a
+    214 14.17%:  a win at that!
+    215 14.13%:  a win at the cost
+    216 14.07%:  waaaaste!
+    217 13.98%:  notch in the o
+    218 13.75%:  neat how that is
+    219 14.83%:  neat how that is!
+    220 13.69%:  a win at that one
+    221 13.66%:  win on that!
+    222 13.66%:  a win on that!
+    223 13.57%:  not a win!
+    224 13.46%:  a win at that one!
+    225 13.40%:  waaaant to use
+    226 15.64%:  waaaant to use it
+    227 13.40%:  a wash on
+    228 16.17%:  a wash on the
+    229 14.88%:  a wash on that
+    230 17.33%:  a wash on that one
+    231 16.23%:  a wash on that one!
+    232 13.39%:  waaaant to use it on
+    233 13.38%:  waaaaste it
+    234 13.38%:  waaaant to!
+    235 13.35%:  not a win at
+    236 13.34%:  wish that one
+    237 13.34%:  waaaant to test
+    238 13.34%:  waaaastei
+    239 13.34%:  waaaaste in
+    240 13.33%:  waaaaste o
+    241 13.32%:  waaaaste i
+    242 13.31%:  waaaaste to
+    243 13.24%:  waaaant to set
+    244 13.24%:  waaaant to che
+    245 13.24%:  waaaant to the
+    246 13.24%:  waaaant to it
+    247 13.23%:  waaaant to hit
+    248 13.71%:  waaaant to hit the
+    249 13.21%:  a win on the o
+    250 13.13%:  waaaahst
+    251 13.11%:  a win on the s
+    252 13.10%:  a win on the ch
+    253 13.10%:  a win on the act
+    254 13.04%:  a win on a
+    255 13.01%:  a waste on that!
+    256 13.00%:  waaaant it
+    257 15.07%:  waaaant it to
+    258 12.96%:  nuts how that one
+    259 12.96%:  waaaast!
+    260 12.90%:  a waste to not
+    261 12.88%:  waaaaits
+    262 12.88%:  not a waste!
+    263 12.87%:  waaaaits to
+    264 12.85%:  waaaahhst
+    265 12.82%:  waaaaste it!
+    266 12.76%:  waaaant to set it
+    267 12.73%:  a waste on a
+    268 12.64%:  a win at that count
+    269 13.05%:  a win at that count!
+    270 12.62%:  a win at that at
+    271 12.61%:  a win at that too
+    272 12.83%:  a win at that too!
+    273 12.61%:  a win at that cost
+    274 12.58%:  waaaist a
+    275 12.57%:  a win at that cost!
+    276 12.56%:  waaaahht
+    277 12.46%:  waaaasn
+    278 12.42%:  nice that that
+    279 12.34%:  neat that it was
+    280 12.29%:  nice that at
+    281 12.28%:  waaaastin
+    282 12.25%:  waaaast the
+    283 12.15%:  waaaast it
+    284 12.14%:  waaaastie
+    285 12.14%:  waaaastie!
+    286 12.14%:  waaaasti
+    287 12.13%:  waaaast to
+    288 12.12%:  not a win at the
+    289 12.09%:  waaaastet
+    290 12.09%:  waaaast too
+    291 12.07%:  waaaast in
+    292 12.28%:  waaaast in the
+    293 12.07%:  waaaast on
+    294 13.89%:  waaaast on the
+    295 12.07%:  waaaast not
+    296 12.07%:  waaaast he
+    297 12.06%:  waaaant to use it th
+    298 13.54%:  waaaant to use it tho
+    299 12.24%:  waaaant to use it tho!
+    300 12.04%:  waaaant to use it!
+    301 12.01%:  waaaant to hit the s
+    302 14.08%:  waaaant to hit the sno
+    303 12.01%:  waaaant to use it to
+    304 11.87%:  neat that it was a
+    305 11.79%:  a net win to that
+    306 11.70%:  waaaas the
+    307 11.67%:  a wash on that count
+    308 11.90%:  a wash on that count!
+    309 11.66%:  waaaant to it to
+    310 11.65%:  a win on the act!
+    311 11.57%:  nuts that we can
+    312 11.56%:  a net win to us
+    313 11.53%:  waaaant it to count
+    314 11.52%:  waaaant it to!
+    315 11.52%:  waaaast not!
+    316 11.50%:  a net win to that!
+    317 11.31%:  waaaahh!
+    318 11.30%:  a win at that one at
+    319 11.25%:  waaaast nothin
+    320 11.23%:  a wash on the o
+    321 11.23%:  a wash on the act
+    322 11.22%:  a wash on the no
+    323 11.18%:  waaaahhnn
+    324 11.17%:  waaaahs
+    325 11.16%:  waaaahhste
+    326 11.16%:  waaaahhnt
+    327 12.02%:  waaaahhnt to
+    328 11.56%:  waaaahhnt it
+    329 11.15%:  waaaahhse
+    330 11.11%:  waaaahhst!
+    331 11.11%:  waaaahht!
+    332 11.10%:  waaaah!
+    333 11.09%:  waaaas it
+    334 11.05%:  a wash on the actin
+    335 11.04%:  waaaahhs
+    336 11.00%:  waaaast not to
+    337 10.95%:  waaaant to it!
+    338 10.88%:  waaaast it!
+    339 10.86%:  waaaahhts
+    340 10.86%:  waaaant the
+    341 10.85%:  waaaastet!
+    342 10.85%:  waaaantin
+    343 10.84%:  waaaist!
+    344 10.83%:  waaaant in
+    345 10.83%:  waaaaits!
+    346 10.82%:  waaaant to set it on
+    347 10.80%:  waaaant to use it tho 
+    348 10.80%:  waaaant to use it tho h
+    349 10.71%:  waaaant in the
+    350 10.66%:  waaaant to use it on ch
+    351 10.66%:  waaaaste oint
+    352 10.59%:  a wash on that!
+    353 10.59%:  waaaait!
+    354 10.59%:  waaaahhnt it!
+    355 10.59%:  waaaait to
+    356 10.57%:  waaaant to hit on
+    357 10.56%:  waaaahhste!
+    358 10.49%:  waaaant to it th
+    359 12.17%:  waaaant to it tho
+    360 10.88%:  waaaant to it tho!
+    361 10.47%:  a net win to a
+    362 10.47%:  waaaast on the o
+    363 10.45%:  a wash on that note
+    364 10.99%:  a wash on that note!
+    365 10.45%:  waaaant to hit the o
+    366 10.40%:  a wash on the act!
+    367 10.37%:  neat that it wasn
+    368 10.35%:  waaaant to hit the 
+    369 10.27%:  waaaahhst it
+    370 10.22%:  waaaantin to
+    371 10.19%:  waaaahhstin
+    372 10.19%:  waaaahst!
+    373 10.19%:  waaaahst the
+    374 10.16%:  waaaahstin
+    375 10.16%:  waaaahst it
+    376 10.16%:  waaaahhst in
+    377 10.15%:  waaaahhstie
+    378 10.15%:  waaaas nice
+    379 10.59%:  waaaas nice!
+    380 10.15%:  waaaahhst too
+    381 10.15%:  waaaahhsti
+    382 10.15%:  waaaahhst not
+    383 10.15%:  waaaahhst to
+    384 10.14%:  waaaahhst on
+    385 10.14%:  waaaahhstet
+    386 10.14%:  waaaahhts!
+    387 10.14%:  waaaahhstie!
+    388 10.13%:  waaaasnt
+    389 10.09%:  waaaahhse!
+    390 10.07%:  waaaaste to not
+    391 10.06%:  waaaahsth
+    392 10.05%:  waaaahhst not!
+    393 10.05%:  waaaahht it
+    394 10.05%:  waaaahsteth
+    395 10.81%:  waaaahstethic
+    396 10.86%:  waaaahstethic!
+    397 10.05%:  waaaahst in
+    398 10.05%:  waaaahst in the
+    399 10.05%:  waaaahstet
+    400 10.04%:  waaaahsti
+    401 10.03%:  waaaahst to
+    402 10.03%:  waaaahsthe
+    403 10.03%:  waaaahst on
+    404 11.10%:  waaaahst on the
+    405 10.03%:  waaaahst too
+    406 10.03%:  waaaahsten
+    407 10.03%:  waaaahstie
+    408 10.19%:  waaaahstie!
+    409 10.03%:  waaaahst not
+    410 10.01%:  waaaaits on
+    411 10.87%:  waaaaits on the
+    412 10.01%:  a net win to us!
+    413 10.00%:  not a win at that
+    414 10.00%:  waaaant to the o
+    415 9.98%:  waaaaste oo
+    416 9.94%:  waaaant it!
+    417 9.91%:  waaaahhnts
+    418 10.04%:  waaaahhnts it
+    419 9.91%:  a waste to not at
+    420 9.90%:  waaaahst not!
+    421 9.88%:  waaaastei!
+    422 9.88%:  waaaaits to the
+    423 9.86%:  a win on the actu
+    424 9.85%:  waaaahhnts to
+    425 9.83%:  waaaaits to cut
+    426 10.13%:  waaaaits to cut the
+    427 9.83%:  waaaahhnt to!
+    428 9.82%:  waaaasnt it
+    429 9.82%:  waaaast hei
+    430 9.81%:  waaaahhst it!
+    431 9.81%:  waaaant it th
+    432 9.81%:  waaaaits to count
+    433 9.79%:  waaaant it too
+    434 9.79%:  waaaahhnt!
+    435 9.79%:  waaaant it so
+    436 9.79%:  waaaahhnts it!
+    437 9.79%:  waaaant it t
+    438 9.79%:  waaaant it on
+    439 10.02%:  waaaant it on the
+    440 9.77%:  waaaahht to
+    441 9.73%:  waaaast on it
+    442 10.08%:  waaaast on it!
+    443 9.72%:  waaaahst it!
+    444 9.72%:  waaaant to hit one
+    445 9.70%:  waaaahht not
+    446 9.69%:  waaaahht in
+    447 9.68%:  waaaahht too
+    448 9.66%:  waaaahht on
+    449 9.65%:  waaaahhte
+    450 9.65%:  waaaahhtin
+    451 9.64%:  waaaahhstettt
+    452 9.58%:  waaaaits the
+    453 9.57%:  neat that it was an
+    454 9.53%:  waaaaits too
+    455 9.52%:  waaaant it too!
+    456 9.52%:  waaaant to use it thh
+    457 9.52%:  waaaant to hit on the
+    458 9.52%:  waaaant to use it thon
+    459 9.50%:  waaaaits th
+    460 9.45%:  nice that that was
+    461 9.44%:  a win on the chast
+    462 9.42%:  waaaast not the
+    463 9.41%:  waaaast in the o
+    464 9.74%:  waaaast in the oo
+    465 9.41%:  waaaahhts it
+    466 9.40%:  waaaant to hit those
+    467 9.37%:  waaaastin!
+    468 9.31%:  waaaahst nothin
+    469 9.29%:  waaaastin the
+    470 9.27%:  waaaahstettt
+    471 9.27%:  waaaasti!
+    472 9.25%:  waaaahhnt it to
+    473 9.22%:  waaaahhstet!
+    474 9.22%:  waaaant it to count!
+    475 9.21%:  waaaast the o
+    476 9.20%:  waaaahhnts!
+    477 9.20%:  waaaast heh
+    478 9.19%:  waaaant to hit on ch
+    479 9.19%:  waaaant to the host
+    480 9.18%:  waaaahhst too!
+    481 9.17%:  waaaast not to!
+    482 9.16%:  waaaast hein
+    483 9.13%:  a win on the oats
+    484 9.10%:  waaaahhts it!
+    485 9.07%:  waaaast on the c
+    486 9.04%:  waaaahsie
+    487 9.01%:  waaaahst on the o
+    488 9.00%:  waaaaits to count!
+    489 8.99%:  waaaant to hit the c
+    490 8.98%:  neat that it was on
+    491 8.98%:  waaaahsie!
+    492 8.96%:  waaaast to not
+    493 8.95%:  neat that it was a 
+    494 8.95%:  a win on the oats!
+    495 8.91%:  a win on the act that
+    496 8.91%:  a win on the chaa
+    497 10.97%:  a win on the chaaa
+    498 8.91%:  a win on the act as
+    499 11.20%:  a win on the act as a
+    500 8.91%:  waaaaste it to
+    501 8.91%:  neat that it was a n
+    502 8.91%:  waaaahhs it
+    503 8.88%:  a wash on that count at
+    504 8.88%:  waaaasnt the
+    505 8.87%:  neat that it was 
+    506 8.87%:  neat that it was un
+    507 8.85%:  waaaahh!t
+    508 8.85%:  nice that that was a
+    509 8.83%:  waaaant to it t
+    510 8.83%:  waaaahh!s
+    511 8.83%:  waaaahh!n
+    512 8.83%:  waaaas it!
+    513 8.83%:  waaaahhts to
+    514 8.82%:  waaaaits to count the
+    515 8.81%:  waaaahhnn!
+    516 8.81%:  waaaahsthe!
+    517 8.80%:  waaaant to it to!
+    518 8.78%:  waaaast it to
+    519 8.77%:  waaaant the o
+    520 8.77%:  waaaahs the
+    521 8.76%:  waaaahht not to
+    522 8.76%:  waaaahhts in
+    523 8.75%:  waaaast the oo
+    524 8.75%:  waaaahhts on
+    525 8.75%:  waaaahhtsit
+    526 8.74%:  waaaahhts out
+    527 8.74%:  waaaahhts too
+    528 8.74%:  waaaahhts nice
+    529 9.17%:  waaaahhts nice!
+    530 8.74%:  waaaahhts not
+    531 8.79%:  waaaahhts not to
+    532 8.73%:  waaaast on the ch
+    533 8.72%:  waaaast on the t
+    534 8.72%:  waaaast on the 
+    535 8.72%:  waaaast on the un
+    536 8.72%:  waaaast on the co
+    537 8.72%:  waaaahhte!
+    538 8.71%:  waaaahht not!
+    539 8.69%:  waaaant it so!
+    540 8.69%:  waaaast to the
+    541 8.68%:  waaaahst on it
+    542 8.70%:  waaaahst on it!
+    543 8.67%:  waaaahs!
+    544 8.67%:  waaaaits on the t
+    545 8.67%:  waaaaits on the o
+    546 8.66%:  not a win at the cost
+    547 8.65%:  waaaaits on the c
+    548 8.65%:  waaaaits on the ch
+    549 8.65%:  waaaaits on the 
+    550 8.65%:  waaaaits on the un
+    551 8.65%:  waaaahsten!
+    552 8.64%:  waaaahhst on it
+    553 8.72%:  waaaahhst on it!
+    554 8.64%:  waaaahstenin
+    555 8.63%:  waaaahhsti!
+    556 8.63%:  waaaantin!
+    557 8.62%:  waaaant in the o
+    558 8.60%:  waaaahstet!
+    559 8.59%:  waaaant to hit 
+    560 8.59%:  waaaast the oint
+    561 8.58%:  waaaant it tho
+    562 8.54%:  waaaist ahh
+    563 8.50%:  waaaahsht
+    564 8.50%:  waaaahhtsit!
+    565 8.49%:  waaaahs it
+    566 8.49%:  waaaahsit
+    567 8.48%:  waaaasnt it the
+    568 8.45%:  waaaaste oo!
+    569 8.44%:  waaaahs to
+    570 8.44%:  waaaaits to cut to
+    571 8.44%:  waaaahs out
+    572 8.40%:  not a win at that!
+    573 8.40%:  waaaahst to the
+    574 8.40%:  waaaantin to!
+    575 8.37%:  waaaasnt!
+    576 8.37%:  waaaant to the c
+    577 8.37%:  waaaahhnt ittt
+    578 8.35%:  waaaahhnnit
+    579 9.07%:  waaaahhnnittt
+    580 10.23%:  waaaahhnnitttt
+    581 9.87%:  waaaahhnnitttt!
+    582 8.37%:  waaaahhnnittt!
+    583 8.35%:  waaaahhs!
+    584 8.34%:  waaaahhsit
+    585 8.34%:  waaaahsth!
+    586 8.34%:  waaaahhs it!
+    587 8.32%:  waaaasnt it!
+    588 8.32%:  waaaahhnt to use
+    589 9.26%:  waaaahhnt to use it
+    590 8.77%:  waaaahhnt to use it on
+    591 8.31%:  waaaahhstettt!
+    592 8.30%:  waaaahhstin!
+    593 8.30%:  waaaant to hit ten
+    594 8.29%:  waaaahhnnit!
+    595 8.29%:  waaaahsteth!
+    596 8.28%:  waaaahhst it on
+    597 8.28%:  waaaahhst it to
+    598 8.27%:  waaaast in the 
+    599 8.27%:  waaaahhst not to
+    600 8.27%:  waaaahhst ittt
+    601 8.27%:  waaaahhst it too
+    602 8.27%:  waaaahht it out
+    603 8.26%:  waaaahhst it t
+    604 8.26%:  waaaant to it on
+    605 8.81%:  waaaant to it on the
+    606 8.26%:  waaaahht it!
+    607 8.26%:  waaaant in the oo
+    608 8.25%:  waaaant to the s
+    609 8.25%:  waaaahhst it too!
+    610 8.24%:  waaaant to the t
+    611 8.24%:  waaaahhnnce
+    612 8.22%:  waaaast in the c
+    613 8.22%:  a wash on the oint
+    614 8.20%:  waaaahst the o
+    615 8.19%:  waaaast heh!
+    616 8.19%:  waaaant to the ch
+    617 8.18%:  waaaahht it to
+    618 8.16%:  waaaahst in the o
+    619 8.18%:  waaaahst in the oo
+    620 8.16%:  waaaahsti!
+    621 8.16%:  waaaahht ittt
+    622 8.15%:  waaaahht it o
+    623 8.85%:  waaaahht it oo
+    624 8.15%:  waaaahsten it
+    625 8.15%:  waaaahht it t
+    626 8.15%:  waaaast on the ouch
+    627 8.15%:  waaaahht too!
+    628 8.12%:  waaaast in the t
+    629 8.10%:  waaaahhnnce!
+    630 8.10%:  waaaahst the t
+    631 8.09%:  waaaahst the c
+    632 8.09%:  waaaahs to the
+    633 8.09%:  waaaant to the h
+    634 8.09%:  waaaahst the 
+    635 8.09%:  waaaahst the un
+    636 8.09%:  a wash on the actin!
+    637 8.08%:  waaaahshte
+    638 8.38%:  waaaahshtein
+    639 8.34%:  waaaahshtein!
+    640 8.07%:  waaaahhts too!
+    641 8.05%:  waaaahst too!
+    642 8.04%:  waaaahstin!
+    643 8.04%:  waaaahsit!
+    644 8.02%:  a wash on the actu
+    645 8.02%:  waaaahhnt to use it!
+    646 8.02%:  waaaahsten it!
+    647 8.02%:  waaaahst not to
+    648 8.02%:  waaaahst the unint
+    649 8.02%:  waaaahhstein
+    650 8.01%:  waaaahht on it
+    651 8.01%:  waaaaste ooit
+    652 8.40%:  waaaaste ooit!
+    653 8.00%:  waaaahst it th
+    654 9.28%:  waaaahst it tho
+    655 8.41%:  waaaahst it tho!
+    656 8.00%:  waaaantin to use
+    657 8.00%:  waaaant to it tho 
+    658 7.99%:  waaaahhsit!
+    659 7.98%:  waaaant to the 
+    660 7.98%:  waaaahhnt in
+    661 7.97%:  waaaahstinh
+    662 7.97%:  waaaant to the ouch
+    663 7.97%:  waaaahhnt to it
+    664 7.97%:  waaaahht on it!
+    665 7.96%:  waaaahst it on
+    666 8.20%:  waaaahst it on the
+    667 7.96%:  waaaahstin the
+    668 7.96%:  waaaahstinut
+    669 7.96%:  waaaahst it to
+    670 7.95%:  waaaahst it too
+    671 7.96%:  waaaahst it too!
+    672 7.95%:  waaaahst ittt
+    673 7.94%:  waaaahs out the
+    674 7.92%:  waaaant the host
+    675 7.91%:  waaaant to hit ten!
+    676 7.91%:  waaaast on the oint
+    677 7.91%:  waaaahst it thoo
+    678 7.91%:  waaaant to the ho
+    679 7.91%:  waaaant to the co
+    680 7.90%:  waaaasnt too
+    681 7.88%:  waaaahhnt to it!
+    682 7.88%:  waaaahhts it to
+    683 7.88%:  waaaahhst to it
+    684 7.97%:  waaaahhst to it!
+    685 7.87%:  waaaant it on the o
+    686 7.86%:  waaaahhts not!
+    687 7.86%:  waaaahhts it out
+    688 7.86%:  waaaahhnt to set
+    689 7.86%:  waaaant it tho!
+    690 7.85%:  waaaahsth it
+    691 7.85%:  waaaaits on one
+    692 7.85%:  waaaahhnt to set it
+    693 7.85%:  waaaaits on t
+    694 7.84%:  waaaahs it!
+    695 7.84%:  waaaahhnt to use it to
+    696 7.84%:  waaaant in the 
+    697 7.83%:  waaaast in the h
+    698 7.83%:  waaaant in the c
+    699 7.83%:  waaaant in the host
+    700 7.83%:  waaaast in the un
+    701 7.82%:  waaaant in the h
+    702 7.81%:  waaaahhte it
+    703 7.78%:  waaaahh!nnt
+    704 8.07%:  waaaahh!nnttt
+    705 8.84%:  waaaahh!nntttt
+    706 7.84%:  waaaahh!nnt to
+    707 7.77%:  waaaahh!s it
+    708 7.76%:  waaaahhstein!
+    709 7.74%:  waaaant to it thh
+    710 7.74%:  waaaahhts out!
+    711 7.73%:  waaaahhnnce it
+    712 7.72%:  waaaaits on the ouch
+    713 7.72%:  waaaaits too!
+    714 7.71%:  waaaahhnnitttt !
+    715 7.70%:  waaaahsth it!
+    716 7.70%:  waaaant to the oint
+    717 7.69%:  waaaahhste it
+    718 7.68%:  nice that that was an
+    719 7.67%:  waaaahht to not
+    720 7.67%:  waaaant to use it thonch
+    721 7.66%:  waaaantin to test
+    722 7.66%:  waaaaits to cut the o
+    723 7.66%:  waaaantin to th
+    724 7.65%:  waaaahhste it!
+    725 7.64%:  waaaahhnttt
+    726 8.86%:  waaaahhntttt
+    727 8.45%:  waaaahhntttt!
+    728 7.64%:  waaaantin to che
+    729 7.64%:  waaaantin to set
+    730 7.64%:  waaaahhnnst
+    731 7.64%:  waaaaits to the t
+    732 7.63%:  waaaaits to the un
+    733 7.62%:  waaaahst on the c
+    734 7.62%:  waaaaits to the o
+    735 7.62%:  waaaaits to the 
+    736 7.62%:  waaaaits to the c
+    737 7.61%:  waaaaits to the n
+    738 7.61%:  waaaaits to the h
+    739 7.61%:  waaaaits to the ch
+    740 7.61%:  waaaahhnnc
+    741 7.61%:  waaaaits to thet
+    742 7.61%:  waaaahhts it out!
+    743 7.59%:  waaaahs out!
+    744 7.59%:  waaaahhst to not
+    745 7.59%:  waaaahhnnce it!
+    746 7.58%:  waaaant to hit those 
+    747 7.58%:  waaaastin the o
+    748 7.60%:  waaaastin the oo
+    749 7.57%:  nice that that was!
+    750 7.56%:  nice that that was on
+    751 7.56%:  waaaant in the hust
+    752 7.55%:  waaaant the oo
+    753 7.54%:  waaaahst in touch
+    754 7.54%:  waaaahhs it out
+    755 7.53%:  waaaahht it out!
+    756 7.53%:  waaaahst the oo
+    757 7.53%:  waaaahhst inne
+    758 7.53%:  waaaant to use it thon!
+    759 7.53%:  waaaahst on the oint
+    760 7.52%:  waaaahstethic to
+    761 7.52%:  waaaahshte!
+    762 7.51%:  waaaahhnts it to
+    763 7.48%:  waaaaits to cut the h
+    764 7.47%:  waaaaits to cut the on
+    765 7.47%:  waaaaits to the nth
+    766 7.46%:  waaaahst it to the
+    767 7.46%:  waaaahhnnst!
+    768 7.45%:  waaaahstinuttt
+    769 7.45%:  waaaaits to cut!
+    770 7.45%:  waaaahht not so
+    771 7.44%:  waaaahstethin
+    772 7.43%:  waaaaits tho
+    773 7.42%:  waaaant to set it on!
+    774 7.41%:  waaaaste oo i
+    775 7.41%:  waaaahh!nnts
+    776 7.41%:  neat that it was an o
+    777 7.40%:  waaaaits the t
+    778 7.40%:  waaaahh!t to
+    779 7.40%:  waaaahstinh!
+    780 7.37%:  waaaantin to tho
+    781 7.36%:  waaaahst on the in
+    782 7.36%:  waaaant it thh
+    783 7.35%:  waaaast on the oi
+    784 7.35%:  neat that it was on a
+    785 7.35%:  waaaahst inne
+    786 7.34%:  waaaasnt it th
+    787 7.33%:  waaaasnt it too
+    788 7.32%:  waaaahhst on one
+    789 7.32%:  waaaahh!nntt
+    790 7.32%:  waaaasnt ittt
+    791 7.32%:  waaaasnt itch
+    792 7.31%:  waaaahhsittt
+    793 8.37%:  waaaahhsitttt
+    794 7.85%:  waaaahhsitttt!
+    795 7.30%:  waaaahhst in t
+    796 7.30%:  nice that that was a 
+    797 7.29%:  waaaahhts nice to
+    798 7.28%:  waaaaits on the chon
+    799 7.28%:  waaaaits to cut on
+    800 8.09%:  waaaaits to cut on the
+    801 7.28%:  waaaant to hit the cus
+    802 7.28%:  waaaast on the ouchin
+    803 7.28%:  waaaahhstetttic
+    804 7.27%:  waaaast in the outh
+    805 7.26%:  waaaaits on the chu
+    806 7.26%:  waaaant to it on the s
+    807 7.26%:  waaaaits on the ouch!
+    808 7.26%:  waaaahh!nnts to
+    809 7.25%:  waaaahhs it out!
+    810 7.25%:  waaaahst on the 
+    811 7.24%:  waaaast on the ouch!
+    812 7.24%:  waaaahsht!
+    813 7.23%:  waaaast on the coh
+    814 7.22%:  waaaahhstetttic!
+    815 7.22%:  waaaahsteth o
+    816 7.40%:  waaaahsteth oo
+    817 7.21%:  waaaahh!t it
+    818 7.21%:  waaaahhnnittts
+    819 7.25%:  waaaahhnnittts!
+    820 7.20%:  waaaant it on the t
+    821 7.20%:  waaaahhstet it
+    822 7.31%:  waaaahhstet it!
+    823 7.20%:  waaaahhstetit
+    824 7.20%:  waaaahst in the c
+    825 7.20%:  waaaahhts on it
+    826 7.44%:  waaaahhts on it!
+    827 7.20%:  waaaast in the oo!
+    828 7.19%:  waaaahstettt!
+    829 7.19%:  waaaahhst innev
+    830 7.18%:  waaaahh!nnts it
+    831 7.18%:  waaaant it on the s
+    832 7.18%:  waaaahhts not to!
+    833 7.17%:  waaaant it thoo
+    834 7.17%:  waaaahst on the un
+    835 7.14%:  waaaahhnt ittt!
+    836 7.14%:  waaaahhst ine
+    837 7.13%:  waaaahhst in one
+    838 7.13%:  waaaahhst in 
+    839 7.13%:  waaaahhst in!
+    840 7.13%:  waaaahhst in on
+    841 7.13%:  waaaahsittt
+    842 8.03%:  waaaahsitttt
+    843 7.42%:  waaaahsitttt!
+    844 7.12%:  waaaahhst ittt!
+    845 7.12%:  waaaahhte it!
+    846 7.11%:  waaaahhts to it
+    847 7.52%:  waaaahhts to it!
+    848 7.11%:  waaaahhts to not
+    849 7.10%:  waaaahhts outt
+    850 7.09%:  waaaahhst not to!
+    851 7.08%:  waaaast on the coi
+    852 7.08%:  waaaast it to the
+    853 7.08%:  waaaast on the chon
+    854 7.07%:  waaaahhtsittt
+    855 7.07%:  waaaant it on the ch
+    856 7.07%:  waaaahst in the 
+    857 7.07%:  waaaaits to cutt
+    858 7.06%:  waaaaits tho!
+    859 7.06%:  waaaahst on the oi
+    860 7.06%:  waaaaits to cut one
+    861 7.05%:  waaaast on the uni
+    862 7.05%:  waaaant to the ouch!
+    863 7.05%:  waaaahstetttic
+    864 7.05%:  waaaahstetttic!
+    865 7.05%:  waaaahht inne
+    866 7.05%:  waaaahs the o
+    867 7.27%:  waaaahs the oo
+    868 7.04%:  waaaasti!e
+    869 7.04%:  waaaahst on the t
+    870 7.03%:  waaaahh!n it
+    871 7.03%:  waaaahsteth oo!
+    872 7.02%:  waaaahht nottt
+    873 7.01%:  waaaant to the outh
+    874 7.01%:  waaaahstin the o
+    875 7.01%:  waaaahhnts to it
+    876 7.38%:  waaaahhnts to it!
+    877 7.01%:  waaaant the oint
+    878 6.99%:  waaaahhstie on
+    879 6.99%:  waaaast in the ouch
+    880 6.99%:  waaaahh!nnttt to
+    881 6.98%:  waaaahhnttt to
+    882 6.98%:  waaaahst in the t
+    883 6.97%:  waaaahhst to 
+    884 6.97%:  waaaant to the oi
+    885 6.97%:  waaaahhnts in
+    886 6.96%:  waaaant to hit on the 
+    887 6.95%:  waaaahh!nntt to
+    888 6.95%:  waaaant to use it thonc
+    889 6.95%:  waaaahst the uni
+    890 6.94%:  waaaahhnts ittt
+    891 6.93%:  waaaahhst ono
+    892 6.94%:  waaaahhst ono!
+    893 6.92%:  waaaahshtein to
+    894 6.92%:  waaaant to hit ten o
+    895 6.92%:  waaaahshtein on
+    896 6.91%:  waaaaits to count th
+    897 6.91%:  waaaahst innev
+    898 6.90%:  waaaahshtein o
+    899 7.09%:  waaaahshtein oo
+    900 6.90%:  waaaant to it thon
+    901 6.90%:  waaaantin to tho!
+    902 6.90%:  waaaast the oo!
+    903 6.90%:  waaaahshtein 
+    904 6.89%:  waaaahhst on t
+    905 6.89%:  waaaahst ittt!
+    906 6.88%:  waaaahhnts to not
+    907 6.88%:  waaaahhst too t
+    908 6.88%:  waaaahhst too nice
+    909 6.92%:  waaaahhst too nice!
+    910 6.88%:  waaaahht it out to
+    911 6.88%:  waaaahhnttt!
+    912 6.87%:  waaaahhsti n
+    913 6.87%:  waaaahhst not in
+    914 6.87%:  waaaahht it outt
+    915 6.86%:  waaaahht it out on
+    916 6.86%:  waaaahst not to!
+    917 6.86%:  waaaahh!nnttte
+    918 6.86%:  waaaahhst not on
+    919 6.85%:  waaaahhst not not
+    920 6.85%:  waaaahhstetoo
+    921 6.85%:  waaaahh!nne
+    922 6.84%:  waaaahstenin!
+    923 6.84%:  waaaahst nothin to
+    924 6.83%:  waaaahst the oint
+    925 6.82%:  waaaant in the hoo
+    926 6.82%:  waaaahhnts to tie
+    927 6.82%:  waaaahhstetit!
+    928 6.81%:  waaaahhnts to cut
+    929 7.48%:  waaaahhnts to cut it
+    930 6.80%:  waaaant to the ouchin
+    931 6.80%:  waaaast to not!
+    932 6.80%:  waaaahh!nin
+    933 6.80%:  waaaahhtsitc
+    934 6.79%:  waaaahhst ine!
+    935 6.79%:  waaaahhnnc!
+    936 6.79%:  waaaahst the oi
+    937 6.78%:  waaaahh!sic
+    938 6.77%:  waaaahst to the n
+    939 6.76%:  waaaahs it out
+    940 6.75%:  waaaant to the ouths
+    941 6.75%:  waaaahshto
+    942 6.75%:  waaaast on the chit
+    943 6.74%:  waaaahhnnittt to
+    944 6.74%:  waaaahhnnitttte
+    945 6.74%:  waaaaits to thet!
+    946 6.73%:  waaaast on the chu
+    947 6.72%:  waaaahh!sit
+    948 6.71%:  waaaahh!sie
+    949 6.71%:  waaaahs it out!
+    950 6.71%:  waaaahhts ine
+    951 6.70%:  waaaahhts inne
+    952 6.69%:  waaaahhnt to set it on
+    953 6.68%:  waaaahhstet on
+    954 6.68%:  waaaaits on one!
+    955 6.68%:  waaaahs to the t
+    956 6.68%:  waaaahhnts on
+    957 6.67%:  waaaahhst on!
+    958 6.66%:  waaaahshtein oo!
+    959 6.66%:  waaaahs it to
+    960 6.84%:  waaaahs it to the
+    961 6.65%:  waaaahhstettti
+    962 6.64%:  waaaahst it thoo!
+    963 6.64%:  waaaahhnt to use it t
+    964 6.64%:  waaaahstinh o
+    965 6.64%:  waaaant in the ooh
+    966 6.64%:  waaaant in the oth
+    967 6.63%:  waaaant it on the to
+    968 6.63%:  waaaahhnttt it
+    969 6.62%:  waaaahhts it out to
+    970 6.62%:  waaaahhstet too
+    971 6.62%:  waaaahhstetu
+    972 6.62%:  waaaahhstet too!
+    973 6.61%:  waaaant to the hu
+    974 6.61%:  waaaasnt it the o
+    975 6.61%:  waaaahhnts too
+    976 6.61%:  waaaahht not to!
+    977 6.61%:  waaaahhnt to use!
+    978 6.60%:  waaaahht not to use
+    979 6.85%:  waaaahht not to use it
+    980 6.60%:  waaaasnt it the c
+    981 6.60%:  waaaant to it on the ch
+    982 6.60%:  waaaahh!nnttts
+    983 6.59%:  waaaant to use it thonh
+    984 6.59%:  waaaahhts outtt
+    985 6.59%:  waaaant it on the h
+    986 6.58%:  waaaahsittttch
+    987 6.58%:  waaaahhnnst it
+    988 6.58%:  waaaahhst in one!
+    989 6.58%:  waaaahhst on ittt
+    990 6.57%:  waaaahhstetttin
+    991 6.56%:  waaaant in the ouch
+    992 6.56%:  waaaahshte it
+    993 6.62%:  waaaahshte it!
+    994 6.56%:  waaaahshteit
+    995 6.85%:  waaaahshteit!
+    996 6.56%:  waaaahhts outtte
+    997 6.55%:  waaaant in the oo!
+    998 6.55%:  waaaaits on the oth
+    999 6.55%:  waaaaits to the oth
+   1000 6.55%:  waaaahhnt in!

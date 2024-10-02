@@ -1,6 +1,6 @@
 use std::{
     cell::Cell,
-    cmp::Ordering,
+    cmp::{max, Ordering},
     fmt::Write,
     sync::{Arc, Mutex},
 };
@@ -10,8 +10,6 @@ use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
-use tracing_subscriber::layer::SubscriberExt;
-use tracing_subscriber::util::SubscriberInitExt;
 
 use crate::{llm, pool::LetterPool, strip::Strip};
 
@@ -49,6 +47,7 @@ struct Node {
     text: Vec<Token>,
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
+    tok_probs: Vec<f32>,
 }
 
 impl std::hash::Hash for Node {
@@ -72,6 +71,17 @@ type Q = PriorityQueue<Node, Score>;
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 const MIN_TOK_P: f32 = 0.001;
 
+// Token 0: (50%) 1.82%  (25%) 0.45%  (10%) 0.24%  (5%) 0.24% (1%) 0.10%
+// Token 1: (50%) 5.31%  (25%) 1.58%  (10%) 1.07%  (5%) 1.07% (1%) 0.35%
+// Token 2: (50%) 8.92%  (25%) 4.23%  (10%) 2.50%  (5%) 2.50% (1%) 2.21%
+// Token 3: (50%) 9.00%  (25%) 4.54%  (10%) 1.48%  (5%) 1.48% (1%) 1.45%
+// Token 4: (50%) 9.24%  (25%) 4.92%  (10%) 3.37%  (5%) 3.37% (1%) 3.33%
+// Token 5: (50%) 6.77%  (25%) 4.83%  (10%) 4.13%  (5%) 4.13% (1%) 3.93%
+// Token 6: (50%) 6.98%  (25%) 6.43%  (10%) 5.49%  (5%) 5.49% (1%) 4.14%
+// Token 7: (50%) 8.93%  (25%) 7.39%  (10%) 6.16%  (5%) 6.16% (1%) 6.14%
+// Token 8: (50%) 9.37%  (25%) 7.82%  (10%) 5.96%  (5%) 5.96% (1%) 5.59%
+// Token 9: (50%) 11.72%  (25%) 6.33%  (10%) 6.28%  (5%) 6.28% (1%) 6.27%
+
 // Average at the end tends to be 5%, but it bounces around some, especially at the beginning.
 // Perhaps we want some sort of grace period instead of setting this so low?
 const MIN_AVG_P: f64 = 0.01;
@@ -84,25 +94,51 @@ thread_local! {
     pub static PREDICT_TIME : Cell<u128> = Cell::<u128>::default();
 }
 
+fn generous_score(probs: &Vec<f32>) -> Score {
+    let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
+    probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
+
+    if probs.len() >= 1 {
+        probs[0] += 0.1;
+        if probs.len() >= 2 {
+            probs[1] += 0.1;
+        }
+    }
+    let prod: f64 = probs.iter().product();
+
+    Score(f64::powf(
+        prod * 0.3 * 0.3,
+        1.0 / (probs.len() as f64 + 2.0),
+    ))
+}
+
 impl Node {
     fn new(text: &str) -> Node {
         Node {
             text: vec![],
             remaining: LetterPool::from_text(text),
             probability: 1.0,
+            tok_probs: vec![],
         }
     }
 
-    fn push_token(&self, t: Token, prob: f32, model: &llama_cpp::LlamaModel) -> Option<Node> {
+    fn push_token(
+        &self,
+        t: Token,
+        prob: f32,
+        model: &llama_cpp::LlamaModel,
+    ) -> Option<(Node, Score)> {
         let new_remaining = self.remaining.try_remove(t, model)?;
-        let done = new_remaining.size() == 0;
+        // let done = new_remaining.size() == 0;
 
         let mut res = Node {
             remaining: new_remaining,
             text: self.text.clone(),
             probability: self.probability * prob as f64,
+            tok_probs: self.tok_probs.clone(),
         };
         res.text.push(t);
+        res.tok_probs.push(prob);
 
         // if done {
         //     println!(
@@ -111,8 +147,9 @@ impl Node {
         //         model.decode_tokens(&res.text)
         //     );
         // }
+        let score = generous_score(&res.tok_probs);
 
-        Some(res)
+        Some((res, score))
     }
 
     fn advance(&self, root_ctx: &llama_cpp::LlamaSession, q: &mut Q) {
@@ -175,8 +212,9 @@ impl Node {
                 1.0 / (self.text.len() as f64 + 3.0),
             );
 
-            if let Some(node) = self.push_token(Token(cand.id), cand.p, &root_ctx.model()) {
-                q.push(node, Score(score));
+            if let Some((node, score)) = self.push_token(Token(cand.id), cand.p, &root_ctx.model())
+            {
+                q.push(node, score);
             }
         }
 
@@ -213,10 +251,15 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let mut root_ctx = model.create_session(params).unwrap();
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
+    COPY_TIME.replace(0);
+    ADVANCE_TIME.replace(0);
+    PREDICT_TIME.replace(0);
+    let mut max_q_len = 0;
     let mut step = 0;
     let mut log = String::new();
     loop {
         progress.tick();
+        max_q_len = max(max_q_len, q.len());
         if let Some(lim) = steps_limit {
             if step > lim {
                 progress.abandon_with_message(format!("Hit step limit: {}", step));
@@ -262,10 +305,11 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
     println!(
-        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms",
+        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms.  Max queue length: {}",
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
-        per_step(PREDICT_TIME.get())
+        per_step(PREDICT_TIME.get()),
+        max_q_len
     );
 
     std::fs::write(

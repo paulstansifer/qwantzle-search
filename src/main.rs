@@ -69,6 +69,7 @@ struct Stats {
     prob_aheads: Vec<f32>,
     logits: Vec<f32>,
     probs: Vec<f32>,
+    strip_avg_probs: Vec<Vec<f64>>,
 }
 
 fn percentile<T: PartialOrd + Copy, U: num_traits::ToPrimitive>(
@@ -172,6 +173,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     )
     .unwrap();
 
+    stats.strip_avg_probs.push(vec![]);
     let mut tok_s = "   ".to_string();
     let mut ahead_s = "   ".to_string();
     let mut ahead_pv_s = "   ".to_string();
@@ -241,6 +243,13 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
             stats.logits.push(-9999.9);
             overall_probability *= 0.0001 as f64;
         }
+
+        let toks_so_far = stats.strip_avg_probs.last().unwrap().len() + 1;
+        stats
+            .strip_avg_probs
+            .last_mut()
+            .unwrap()
+            .push(f64::powf(overall_probability, 1.0 / (toks_so_far as f64)));
 
         // let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
 
@@ -396,6 +405,23 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
             false
         )
     );
+
+    for tok_id in 0..10 {
+        let mut tok_avg_probs = vec![];
+        for sap in &stats.strip_avg_probs {
+            tok_avg_probs.push(sap[tok_id]);
+        }
+        println!(
+            "Token {} running average probability: {}",
+            tok_id,
+            percentile_table_2_digits_percentage!(
+                &tok_avg_probs,
+                (50, 25, 20, 10, 5, 2, 1),
+                "{:.2}",
+                false
+            )
+        );
+    }
 
     println!();
     println!(
