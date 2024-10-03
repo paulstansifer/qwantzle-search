@@ -1,11 +1,10 @@
 use std::{
     cell::Cell,
-    cmp::{max, Ordering},
+    cmp::Ordering,
     fmt::Write,
     sync::{Arc, Mutex},
 };
 
-use clap::Parser;
 use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
@@ -49,6 +48,10 @@ impl Eq for Node {}
 
 type Q = PriorityQueue<Node, Score>;
 
+// How good does the best next token need to be to fast-forward it?
+// Performance seems very sensitive to this; maybe we need a better criterion?
+const FF_MIN_P: f32 = 0.18;
+
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 const MIN_TOK_P: f32 = 0.001;
 
@@ -72,6 +75,7 @@ const MIN_AVG_P: f64 = 0.01;
 thread_local! {
     pub static COPY_TIME : Cell<u128> = Cell::<u128>::default();
     pub static ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
+    pub static FF_ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
     pub static PREDICT_TIME : Cell<u128> = Cell::<u128>::default();
 }
 
@@ -121,13 +125,6 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        // if done {
-        //     println!(
-        //         "=== === === {:.2}%: {}",
-        //         f64::powf(res.probability as f64, 1.0 / (res.text.len() as f64)) * 100.0,
-        //         model.decode_tokens(&res.text)
-        //     );
-        // }
         let score = generous_score(&res.tok_probs);
 
         Some((res, score))
@@ -148,6 +145,10 @@ impl Node {
             ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
         }
 
+        self.predict_with_ctx(&mut my_ctx, q);
+    }
+
+    fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
         let candidates = Arc::new(Mutex::new(vec![]));
         let peek_sampler = llm::PeekSampler {
             eos: my_ctx.model().eos(),
@@ -166,6 +167,8 @@ impl Node {
 
         let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
 
+        let mut fast_forwarded = false;
+
         for cand in candidates {
             if cand.p < MIN_TOK_P {
                 break;
@@ -180,23 +183,25 @@ impl Node {
                 break;
             }
 
-            // if self.text.is_empty() {
-            //     print!(
-            //         "{:.1}% {}  ",
-            //         cand.p * 100.0,
-            //         root_ctx.model().decode_tokens(&[Token(cand.id)])
-            //     )
-            // }
-
-            if let Some((node, score)) = self.push_token(Token(cand.id), cand.p, &root_ctx.model())
+            if let Some((next_node, score)) =
+                self.push_token(Token(cand.id), cand.p, &my_ctx.model())
             {
-                q.push(node, score);
+                // Re-use the context right away, if the best candidate is good enough.
+                if cand.p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
+                    let before_advance = std::time::Instant::now();
+                    my_ctx
+                        .advance_context_with_tokens(&[Token(cand.id)])
+                        .unwrap();
+                    FF_ADVANCE_TIME
+                        .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
+
+                    next_node.predict_with_ctx(my_ctx, q);
+                    fast_forwarded = true;
+                } else {
+                    q.push(next_node, score);
+                }
             }
         }
-
-        // if self.text.is_empty() {
-        //     println!();
-        // }
     }
 }
 
@@ -227,8 +232,10 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let mut root_ctx = model.create_session(params).unwrap();
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
+    let search_start_time = std::time::Instant::now();
     COPY_TIME.replace(0);
     ADVANCE_TIME.replace(0);
+    FF_ADVANCE_TIME.replace(0);
     PREDICT_TIME.replace(0);
     let mut step = 0;
     let mut log = String::new();
@@ -279,9 +286,11 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
     println!(
-        "Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms.",
+        "Search time: {:.0}s.  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms.",
+        search_start_time.elapsed().as_secs_f32(),
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
+        per_step(FF_ADVANCE_TIME.get()),
         per_step(PREDICT_TIME.get()),
     );
 
