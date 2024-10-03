@@ -84,9 +84,9 @@ fn generous_score(probs: &Vec<f32>) -> Score {
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
     if probs.len() >= 1 {
-        probs[0] += 0.1;
+        probs[0] += 0.07;
         if probs.len() >= 2 {
-            probs[1] += 0.1;
+            probs[1] += 0.05;
         }
     }
     let prod: f64 = probs.iter().product();

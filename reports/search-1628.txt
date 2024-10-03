@@ -1,91 +1,61 @@
 just keep it in mind for now
       0 100.00%: 
-      1 23.46%:  don
-      2 22.71%:  keep
-      3 25.90%:  keep it
-      4 27.33%:  keep it in
-      5 33.51%:  keep it in mind
-      6 28.69%:  keep it in mind for
-      7 27.15%:  keep it in mind just
-      8 27.14%:  keep it in mind so
-      9 23.53%:  keep it in mind just for
-     10 23.42%:  keep it to
-     11 23.09%:  keep it in mind just for now
-     12 22.80%:  keep it in mind for now
-     13 22.21%:  do
-     14 26.07%:  do not
-     15 22.08%:  keep it in mind for us
-     16 22.07%:  keep it in mind for 
-     17 22.05%:  just
-     18 21.73%:  stop
-     19 21.31%:  keep in
-     20 28.75%:  keep in mind
-     21 21.40%:  keep in mind it
-     22 21.16%:  send
-     23 25.11%:  send me
-     24 21.14%:  keep it on
-     25 21.09%:  keep in mind for
-     26 21.05%:  keep in mind our
-     27 21.05%:  keep in mind if
-     28 21.03%:  put
-     29 28.23%:  put me
-     30 28.49%:  put me on
-     31 27.11%:  put me in
-     32 23.92%:  put me first
-     33 24.40%:  put me first on
-     34 22.92%:  put me down
-     35 23.91%:  put me down for
-     36 22.79%:  put me on first
-     37 22.74%:  put me in first
-     38 22.46%:  put me in front
-     39 22.39%:  put me into
-     40 22.37%:  put me to
-     41 21.34%:  put me in on
-     42 21.32%:  put me in for
-     43 21.31%:  put me in 
-     44 21.30%:  put me in one
-     45 24.82%:  put me in one of
-     46 21.01%:  re
-     47 21.01%:  keep in mind in
-     48 20.94%:  know
-     49 20.94%:  ensure
-     50 20.94%:  turn
-     51 22.12%:  turn me
-     52 25.26%:  turn me into
-     53 20.92%:  pretend
-     54 20.90%:  see
-     55 26.75%:  see to
-     56 34.22%:  see to it
-     57 27.04%:  see to it if
-     58 27.03%:  see to it in
-     59 20.90%:  find
-     60 25.33%:  find me
-     61 21.35%:  find it
-     62 22.96%:  find it in
-     63 20.88%:  dis
-     64 20.88%:  promise
-     65 23.14%:  promise to
-     66 20.71%:  do not put
-     67 25.31%:  do not put me
-     68 26.95%:  do not put me in
-     69 20.67%:  do me
-     70 20.56%:  do not meet
-     71 20.54%:  keep it from
-     72 20.53%:  do not use
-     73 20.51%:  do not ruin
-     74 20.49%:  do not keep
-     75 20.46%:  do not turn
-     76 23.73%:  do not turn me
-     77 20.46%:  do not set
-     78 20.46%:  find me in
-     79 20.45%:  do not see
-     80 20.44%:  do not write
-     81 20.44%:  do not step
-     82 20.43%:  do not sur
-     83 20.43%:  keep it for
-     84 20.41%:  keep it down
-     85 20.40%:  just keep
-     86 23.10%:  just keep it
-     87 25.19%:  just keep it in
-     88 30.24%:  just keep it in mind
-     89 24.77%:  just keep it in mind for
+      1 21.70%:  don
+      2 20.82%:  keep
+      3 26.12%:  keep it in mind for
+      4 24.13%:  keep it in mind just
+      5 24.12%:  keep it in mind so
+      6 21.23%:  keep it in mind just for
+      7 21.06%:  keep it in mind just for now
+      8 21.05%:  keep it to
+      9 20.79%:  keep it in mind for now
+     10 20.21%:  do
+     11 20.01%:  just
+     12 19.89%:  keep it in mind for us
+     13 19.88%:  keep it in mind for 
+     14 19.62%:  stop
+     15 18.93%:  send
+     16 18.76%:  put
+     17 24.30%:  put me in
+     18 20.51%:  put me first
+     19 20.07%:  put me in first
+     20 19.69%:  put me in front
+     21 19.32%:  put me on first
+     22 19.14%:  put me down
+     23 18.74%:  re
+     24 18.65%:  know
+     25 18.64%:  ensure
+     26 18.64%:  turn
+     27 19.22%:  turn me
+     28 18.62%:  pretend
+     29 18.60%:  see
+     30 22.78%:  see to it if
+     31 22.76%:  see to it in
+     32 18.59%:  find
+     33 18.58%:  keep it in mind for us to
+     34 18.58%:  dis
+     35 18.57%:  promise
+     36 18.38%:  find it
+     37 18.36%:  keep in
+     38 18.75%:  keep in mind it
+     39 18.38%:  keep in mind for
+     40 18.33%:  keep in mind our
+     41 18.33%:  keep in mind if
+     42 18.33%:  put me into
+     43 18.30%:  put me to
+     44 18.28%:  keep in mind in
+     45 18.19%:  put me 
+     46 18.18%:  keep it on
+     47 18.04%:  put me in on
+     48 18.02%:  put me in for
+     49 18.00%:  put me in 
+     50 17.99%:  put me in one
+     51 17.79%:  keep it in mind just now
+     52 17.73%:  put me down for 
+     53 17.61%:  do me
+     54 17.49%:  keep it from
+     55 17.46%:  do not put
+     56 17.36%:  keep it for
+     57 17.34%:  keep it down
+     58 17.29%:  just keep
+     59 22.80%:  just keep it in mind for

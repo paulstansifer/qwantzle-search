@@ -1,595 +1,562 @@
 have failed to prove my point!
       0 100.00%: 
-      1 24.46%:  don
-      2 23.13%:  mean
-      3 22.13%:  have
-      4 23.23%:  have no
-      5 28.43%:  have no idea
-      6 23.77%:  have no idea if
-      7 22.30%:  have no idea!
-      8 22.10%:  have a
-      9 21.76%:  hope
-     10 21.45%:  am
-     11 21.33%:  hate
-     12 26.48%:  hate to
-     13 22.01%:  hate it
-     14 21.27%:  find
-     15 23.01%:  find that
-     16 22.42%:  find it
-     17 21.27%:  haven
-     18 21.27%:  love
-     19 21.25%:  hate to end
-     20 21.18%:  never
-     21 21.18%:  feel
-     22 21.16%:  hate to die
-     23 21.12%:  had
-     24 25.10%:  had a
-     25 22.14%:  had a lot
-     26 28.10%:  had a lot of
-     27 22.24%:  had a lot of time
-     28 21.59%:  had a lot of money
-     29 21.57%:  had a lot of my
-     30 21.23%:  had a pretty
-     31 21.08%:  do
-     32 23.73%:  do that
-     33 21.06%:  hear
-     34 23.61%:  hear it
-     35 21.05%:  meant
-     36 24.17%:  meant to
-     37 20.96%:  hate to inform
-     38 20.95%:  hate to do
-     39 20.94%:  hate to leave
-     40 20.93%:  heard
-     41 21.82%:  heard it
-     42 20.92%:  need
-     43 29.68%:  need to
-     44 23.83%:  need to lie
-     45 23.67%:  need to have
-     46 23.54%:  need to eat
-     47 23.47%:  need to play
-     48 24.46%:  need to play more
-     49 23.46%:  need to re
-     50 23.41%:  need to try
-     51 22.75%:  need to have a
-     52 21.30%:  need to play a
-     53 20.92%:  tried
-     54 23.34%:  tried to
-     55 22.51%:  tried it
-     56 20.92%:  hate to even
-     57 20.92%:  hate to remind
-     58 20.90%:  only
-     59 20.89%:  made
-     60 23.79%:  made a
-     61 21.42%:  made that
-     62 20.90%:  made it
-     63 20.74%:  have a lot
-     64 26.62%:  have a lot of
-     65 22.16%:  have a lot of time
-     66 21.43%:  have a lot of my
-     67 21.26%:  have a lot of em
-     68 21.26%:  have a lot of re
-     69 20.97%:  have a lot of time on
-     70 20.68%:  love it
-     71 20.64%:  had a point
-     72 20.62%:  have to
-     73 20.47%:  had a very
-     74 20.44%:  find the
-     75 20.41%:  made that one
-     76 20.35%:  need to replay
-     77 20.34%:  hate to die!
-     78 20.34%:  do that a
-     79 20.27%:  need to have my
-     80 20.25%:  made a lot
-     81 26.35%:  made a lot of
-     82 20.35%:  made a lot of ty
-     83 20.25%:  am not
-     84 20.23%:  love the
-     85 20.18%:  am a
-     86 20.17%:  tried it!
-     87 20.07%:  do it
-     88 20.03%:  mean!
-     89 19.99%:  love my
-     90 19.97%:  feel that
-     91 19.95%:  made the
-     92 19.90%:  had a time
-     93 19.87%:  had a 
-     94 19.76%:  made a lot of the
-     95 19.75%:  had to
-     96 19.70%:  need a
-     97 19.67%:  made a typ
-     98 25.76%:  made a typo
-     99 25.66%:  made a typo in
-    100 24.25%:  made a typo in the
-    101 22.41%:  made a typo!
-    102 20.88%:  made a typo on
-    103 20.87%:  made a typo there
-    104 20.60%:  made a typo on the
-    105 20.44%:  made a typo there!
-    106 19.65%:  made a lot of typ
-    107 22.30%:  made a lot of typo
-    108 19.59%:  made a lot of point
-    109 19.59%:  need to lie to
-    110 21.18%:  need to lie to my
-    111 19.59%:  made a lot of very
-    112 19.58%:  made a lot of it
-    113 19.57%:  love that
-    114 19.50%:  tried!
-    115 19.50%:  hate to end a
-    116 19.49%:  meant it
-    117 19.45%:  had one
-    118 21.37%:  had one of
-    119 19.30%:  have never
-    120 19.30%:  do that!
-    121 19.27%:  made a point
-    122 19.67%:  made a point of
-    123 19.26%:  only hope
-    124 19.25%:  hope my
-    125 19.24%:  do that in
-    126 20.40%:  do that in my
-    127 19.21%:  meant to do
-    128 19.15%:  made a typo in there
-    129 19.10%:  do not
-    130 19.09%:  need to eat!
-    131 19.07%:  hope it
-    132 19.05%:  mean that
-    133 19.03%:  do have
-    134 21.85%:  do have a
-    135 23.02%:  do have a lot
-    136 28.20%:  do have a lot of
-    137 22.09%:  do have a lot of time
-    138 21.41%:  do have a lot of my
-    139 21.23%:  do have a lot of 
-    140 21.22%:  do have a lot of pre
-    141 21.21%:  do have a lot of re
-    142 18.94%:  only have
-    143 18.94%:  mean it
-    144 18.92%:  am the
-    145 18.91%:  made a typo in it
-    146 18.90%:  feel the
-    147 18.89%:  find it to
-    148 18.87%:  mean the
-    149 18.87%:  mean if
-    150 18.85%:  do that every
-    151 18.83%:  had no
-    152 18.83%:  mean to
-    153 18.81%:  do love
-    154 18.81%:  find it very
-    155 18.80%:  have no idea if my
-    156 18.76%:  love to
-    157 18.75%:  do that on
-    158 19.17%:  do that on my
-    159 18.75%:  had it
-    160 18.74%:  have no more
-    161 18.73%:  meant the
-    162 18.72%:  made a typo in there!
-    163 18.69%:  do a
-    164 25.39%:  do a lot
-    165 31.70%:  do a lot of
-    166 22.36%:  do a lot of it
-    167 22.21%:  do a lot of them
-    168 22.31%:  do a lot of them!
-    169 22.19%:  do a lot of my
-    170 22.09%:  do a lot of time
-    171 22.04%:  do a lot of the
-    172 21.95%:  do a lot of re
-    173 21.87%:  do a lot of mean
-    174 21.86%:  do a lot of 
-    175 21.30%:  do a lot of it!
-    176 18.68%:  have a friend
-    177 18.68%:  am pretty
-    178 18.68%:  tried it on
-    179 21.61%:  tried it on my
-    180 18.67%:  never had
-    181 20.45%:  never had a
-    182 18.67%:  find that my
-    183 18.67%:  never do
-    184 22.85%:  never do that
-    185 22.28%:  never do that!
-    186 18.66%:  have many
-    187 18.64%:  had my
-    188 18.62%:  made a typo in the 
-    189 18.61%:  only ever
-    190 18.61%:  made a typo in the file
-    191 18.58%:  have an
-    192 18.58%:  love video
-    193 18.54%:  hate my
-    194 20.40%:  hate my life
-    195 19.90%:  hate my life!
-    196 18.53%:  do hope
-    197 18.52%:  need more
-    198 18.50%:  have it
-    199 20.49%:  have it on
-    200 18.50%:  have not
-    201 18.48%:  feel a
-    202 18.46%:  hear people
-    203 21.07%:  hear people do
-    204 18.54%:  hear people do it
-    205 18.45%:  am very
-    206 18.45%:  love the idea
-    207 22.51%:  love the idea of
-    208 21.85%:  love the idea of a
-    209 18.43%:  find that a
-    210 18.43%:  have made
-    211 18.42%:  have my
-    212 18.41%:  have one
-    213 18.41%:  find that people
-    214 18.41%:  never play
-    215 18.41%:  had an
-    216 18.40%:  love it!
-    217 18.39%:  had a point to
-    218 18.39%:  heard a
-    219 18.39%:  made a typo here
-    220 18.35%:  find that very
-    221 18.33%:  find it a
-    222 18.30%:  have played
-    223 18.30%:  find my
-    224 18.28%:  feel it
-    225 18.28%:  have yet
-    226 25.57%:  have yet to
-    227 24.08%:  have yet to find
-    228 27.81%:  have yet to find a
-    229 20.09%:  have yet to find a more
-    230 18.28%:  have learned
-    231 18.28%:  have done
-    232 18.27%:  have only
-    233 18.26%:  have often
-    234 18.26%:  have tried
-    235 18.26%:  have more
-    236 18.25%:  have too
-    237 22.73%:  have too many
-    238 18.24%:  never have
-    239 18.69%:  never have!
-    240 18.23%:  have 
-    241 18.22%:  only had
-    242 18.22%:  have over
-    243 23.38%:  have over 
-    244 18.21%:  made a typo for
-    245 18.20%:  have very
-    246 18.20%:  have failed
-    247 22.39%:  have failed to
-    248 18.20%:  have plenty
-    249 24.49%:  have plenty of
-    250 18.20%:  made a typo too
-    251 19.80%:  made a typo too!
-    252 18.20%:  do a lot of time in
-    253 18.19%:  made a typo over
-    254 18.19%:  made a typo the
-    255 18.19%:  have read
-    256 18.18%:  had a lot of money!
-    257 18.18%:  made a typo of
-    258 18.45%:  made a typo of the
-    259 18.17%:  made a typo or
-    260 18.17%:  love the idea of an
-    261 18.17%:  made a typo to
-    262 18.12%:  love the idea of my
-    263 18.12%:  never played
-    264 18.11%:  hope no
-    265 18.11%:  have no real
-    266 18.10%:  do that in real
-    267 18.10%:  do have a lot of time in
-    268 18.09%:  never played a
-    269 18.09%:  hope to
-    270 18.07%:  am an
-    271 18.07%:  have no more to
-    272 18.06%:  tried it a
-    273 18.04%:  do the
-    274 18.04%:  had a lot of time on
-    275 18.03%:  hate people
-    276 18.02%:  made an
-    277 18.02%:  have no time
-    278 21.26%:  have no time for
-    279 20.39%:  have no time to
-    280 18.01%:  find that more
-    281 18.00%:  am only
-    282 18.00%:  hope one
-    283 24.35%:  hope one day
-    284 23.91%:  hope one day to
-    285 17.98%:  hope!
-    286 17.98%:  have no life
-    287 17.97%:  love the idea of it
-    288 19.33%:  love the idea of it!
-    289 17.97%:  hope for
-    290 17.97%:  made a lot of it!
-    291 17.96%:  love the idea of a tim
-    292 17.94%:  am happy
-    293 22.04%:  am happy to
-    294 17.93%:  love the idea of a 
-    295 17.93%:  have no moral
-    296 17.93%:  am 
-    297 17.92%:  am in
-    298 17.92%:  love a
-    299 17.89%:  am never
-    300 17.89%:  find there
-    301 17.88%:  meant a
-    302 17.88%:  meant for
-    303 17.87%:  do have a lot of time!
-    304 17.87%:  feel pretty
-    305 17.87%:  find people
-    306 17.85%:  need help
-    307 17.85%:  hear if
-    308 17.83%:  heard if
-    309 17.83%:  love time
-    310 17.82%:  am no
-    311 17.82%:  only do
-    312 18.83%:  only do that
-    313 18.62%:  only do it
-    314 17.82%:  find a
-    315 22.15%:  find a lot
-    316 17.82%:  am tired
-    317 22.72%:  am tired of
-    318 17.81%:  hear life
-    319 17.81%:  am at
-    320 17.81%:  am open
-    321 24.49%:  am open to
-    322 21.73%:  am open to the
-    323 21.41%:  am open to the idea
-    324 21.38%:  am open to the idea of
-    325 21.20%:  am open to other
-    326 18.98%:  am open to the idea!
-    327 17.81%:  hear a
-    328 23.99%:  hear a lot
-    329 30.16%:  hear a lot of
-    330 19.58%:  hear a lot of my
-    331 17.81%:  find it am
-    332 17.81%:  love the idea of not
-    333 17.80%:  am done
-    334 17.80%:  love the idea of 
-    335 17.79%:  am often
-    336 17.79%:  am one
-    337 17.79%:  hate video
-    338 17.79%:  am told
-    339 17.79%:  am deeply
-    340 17.79%:  am torn
-    341 17.78%:  love me
-    342 17.78%:  am too
-    343 17.78%:  need help!
-    344 17.77%:  am on
-    345 17.77%:  hear a lot of men
-    346 17.77%:  feel my
-    347 17.77%:  do feel
-    348 17.76%:  tried the
-    349 17.75%:  heard people
-    350 17.75%:  heard one
-    351 21.33%:  heard one time
-    352 19.41%:  heard one time it
-    353 17.74%:  hate me
-    354 17.74%:  meant if
-    355 17.74%:  find them
-    356 18.76%:  find them to
-    357 17.74%:  hear a lot of d
-    358 17.73%:  made a typo here!
-    359 17.72%:  hear a lot of 
-    360 17.72%:  need my
-    361 17.72%:  never die
-    362 18.27%:  never die!
-    363 17.72%:  do my
-    364 17.72%:  hear a lot of teen
-    365 17.72%:  meant at
-    366 17.72%:  love re
-    367 17.72%:  hear a lot of video
-    368 17.72%:  had never
-    369 17.71%:  hate life
-    370 17.71%:  love vide
-    371 17.70%:  have a lot of time in
-    372 17.70%:  hear time
-    373 17.70%:  hate vide
-    374 17.70%:  hear a lot of time
-    375 17.70%:  hear a lot of it
-    376 17.70%:  never told
-    377 17.69%:  need the
-    378 17.69%:  hate a
-    379 17.69%:  find they
-    380 17.69%:  hear a lot of men do
-    381 17.69%:  made one
-    382 17.68%:  feel very
-    383 17.68%:  love met
-    384 24.59%:  love metaph
-    385 17.68%:  tried not
-    386 17.68%:  do mean
-    387 22.53%:  do mean to
-    388 17.67%:  never made
-    389 20.44%:  never made it
-    390 20.81%:  never made it to
-    391 17.78%:  never made it to a
-    392 17.67%:  need to eat my
-    393 17.66%:  only made
-    394 17.66%:  love iron
-    395 24.44%:  love irony
-    396 27.68%:  love irony!
-    397 17.66%:  love not
-    398 17.65%:  tried a
-    399 17.64%:  hear in
-    400 17.63%:  feel more
-    401 17.63%:  do that in my life
-    402 17.63%:  only tried
-    403 17.62%:  never felt
-    404 17.62%:  feel no
-    405 17.62%:  never met
-    406 17.61%:  feel an
-    407 17.61%:  feel they
-    408 17.61%:  do plan
-    409 21.65%:  do plan to
-    410 17.61%:  had more
-    411 17.60%:  had 
-    412 17.59%:  heard in
-    413 17.59%:  heard my
-    414 17.59%:  heard on
-    415 17.59%:  made no
-    416 17.58%:  heard of
-    417 21.91%:  heard of a
-    418 17.57%:  do too
-    419 22.38%:  do too!
-    420 17.57%:  meant after
-    421 17.57%:  meant there
-    422 17.57%:  had not
-    423 17.56%:  tried it on a
-    424 17.56%:  do!
-    425 17.56%:  meant death
-    426 17.56%:  hear my
-    427 17.55%:  meant hyp
-    428 24.83%:  meant hypot
-    429 17.55%:  hear even
-    430 17.55%:  hear video
-    431 17.54%:  do hate
-    432 17.54%:  hear 
-    433 17.53%:  meant life
-    434 17.53%:  do a lot of it in
-    435 19.77%:  do a lot of it in my
-    436 17.53%:  meant!
-    437 17.53%:  tried my
-    438 17.53%:  find it more
-    439 17.52%:  tried one
-    440 17.51%:  heard!
-    441 17.49%:  heard an
-    442 17.48%:  heard life
-    443 17.48%:  need time
-    444 17.47%:  had a lot more
-    445 19.28%:  had a lot more to
-    446 17.46%:  need that
-    447 17.46%:  need it
-    448 17.45%:  heard time
-    449 17.45%:  made another
-    450 17.45%:  never played that
-    451 17.44%:  made 
-    452 17.43%:  do have a lot to
-    453 17.35%:  made a typo in it!
-    454 17.31%:  only have a
-    455 17.30%:  do have a lot more
-    456 17.30%:  hate it!
-    457 17.27%:  have a pretty
-    458 17.26%:  am not a
-    459 17.23%:  had a point!
-    460 17.21%:  meant for it
-    461 17.20%:  have a lot of time!
-    462 17.19%:  made a point of it
-    463 18.30%:  made a point of it!
-    464 17.17%:  have a lot to
-    465 17.16%:  do have a lot on
-    466 21.15%:  do have a lot on my
-    467 17.15%:  do a lot in
-    468 20.27%:  do a lot in my
-    469 17.13%:  love a happy
-    470 17.13%:  find that people are
-    471 17.13%:  had a lot to
-    472 17.13%:  do a lot!
-    473 17.12%:  do have a lot in
-    474 17.12%:  have a very
-    475 17.11%:  do have a lot in my
-    476 17.08%:  do a lot on
-    477 18.79%:  do a lot on my
-    478 18.50%:  do a lot on the
-    479 17.06%:  had a lot of time in
-    480 17.05%:  have yet to do
-    481 17.03%:  hate to leave my
-    482 17.03%:  made it a
-    483 17.03%:  do a lot in my free
-    484 17.03%:  have done it
-    485 17.02%:  have a lot more
-    486 17.67%:  have a lot more to
-    487 16.99%:  made a point!
-    488 16.99%:  hope one of
-    489 16.98%:  have a lot of time over
-    490 16.97%:  have no moral to
-    491 16.96%:  only hope it
-    492 16.94%:  had a lot in
-    493 16.94%:  have a point
-    494 16.91%:  had a lot on
-    495 21.23%:  had a lot on my
-    496 16.91%:  do love my
-    497 16.90%:  need to eat a
-    498 16.83%:  have a life
-    499 16.82%:  have a time
-    500 16.80%:  hope one day to live
-    501 16.79%:  have a 
-    502 16.78%:  do love to
-    503 16.77%:  only had a
-    504 16.76%:  have a video
-    505 16.76%:  have a limited
-    506 16.73%:  feel my point
-    507 16.72%:  hate to die in
-    508 17.83%:  hate to die in a
-    509 16.72%:  had a lot of time!
-    510 16.70%:  have a lot on
-    511 21.35%:  have a lot on my
-    512 16.69%:  have a lot in
-    513 16.66%:  had a lot of time over
-    514 16.65%:  need to replay a
-    515 16.64%:  have a lot!
-    516 16.62%:  made it to
-    517 16.60%:  do that in my real
-    518 16.59%:  have too many of
-    519 16.59%:  made that one!
-    520 16.58%:  made that one for
-    521 16.57%:  do have a point
-    522 16.55%:  have to admit
-    523 16.54%:  do a lot of them in
-    524 16.50%:  do a lot of reth
-    525 16.48%:  find that a very
-    526 16.47%:  heard a lot
-    527 21.94%:  heard a lot of
-    528 16.47%:  have one more
-    529 16.46%:  have yet to die
-    530 16.58%:  have yet to die in
-    531 18.65%:  have yet to die in a
-    532 16.44%:  do plan to have
-    533 16.44%:  hate to leave on
-    534 16.42%:  have done it!
-    535 16.40%:  made a typo for the
-    536 16.38%:  do that in my life!
-    537 16.35%:  have yet to fail
-    538 16.32%:  am open to a
-    539 16.31%:  have yet to live
-    540 16.31%:  have yet to dev
-    541 16.30%:  have yet to learn
-    542 16.29%:  have yet to prove
-    543 16.29%:  have tried it
-    544 16.29%:  hear a lot of men do it
-    545 17.06%:  hear a lot of men do it!
-    546 16.27%:  made a lot of tyop
-    547 16.25%:  heard one time a
-    548 16.25%:  made a lot of typo in
-    549 16.24%:  do love the
-    550 16.22%:  tried it on my 
-    551 16.21%:  am tired of the
-    552 16.20%:  do have to
-    553 16.19%:  have plenty of time
-    554 16.82%:  have plenty of time!
-    555 16.14%:  have no moral!
-    556 16.13%:  had one of my
-    557 16.13%:  never play the
-    558 16.12%:  made a typo on the 
-    559 16.11%:  have yet to live a
-    560 16.10%:  have not yet
-    561 16.06%:  do a lot of it every
-    562 16.04%:  have tried it!
-    563 16.02%:  made a typo there in
-    564 15.99%:  am in love
-    565 15.99%:  do plan to have my
-    566 15.99%:  have yet to live in
-    567 19.42%:  have yet to live in a
-    568 15.98%:  made a typo in the file!
-    569 15.94%:  need to play the
-    570 15.91%:  do have a pretty
-    571 15.87%:  made a typo there on
-    572 15.85%:  have plenty of room
-    573 15.85%:  do have a lot of preempt
-    574 15.83%:  made a typo on it
-    575 15.83%:  made a lot of it in
-    576 15.83%:  made a point to
-    577 15.82%:  only ever do
-    578 19.62%:  only ever do that
-    579 15.80%:  made a typo here in
-    580 15.79%:  find people are
-    581 15.79%:  heard a lot of my
-    582 15.76%:  hope one day to travel
-    583 15.76%:  made a lot of typer
-    584 15.76%:  hope one day to re
-    585 15.76%:  do have a very
-    586 15.75%:  do have a time
-    587 15.73%:  had it in
-    588 18.20%:  had it in my
-    589 15.73%:  have a lot of redo
-    590 15.73%:  mean if that
-    591 15.72%:  have failed to prove
-    592 19.36%:  have failed to prove my
-    593 23.00%:  have failed to prove my point
+      1 22.85%:  don
+      2 21.31%:  mean
+      3 20.11%:  have
+      4 20.54%:  have no
+      5 21.23%:  have no idea if
+      6 19.66%:  hope
+      7 19.29%:  have a
+      8 19.29%:  have no idea!
+      9 19.29%:  am
+     10 19.13%:  hate
+     11 19.15%:  hate it
+     12 19.06%:  find
+     13 19.59%:  find it
+     14 19.06%:  haven
+     15 19.05%:  love
+     16 18.95%:  never
+     17 18.95%:  feel
+     18 18.87%:  had
+     19 19.36%:  had a lot
+     20 19.73%:  had a lot of time
+     21 18.82%:  do
+     22 18.80%:  hear
+     23 18.79%:  meant
+     24 18.73%:  had a lot of money
+     25 18.71%:  had a lot of my
+     26 18.63%:  heard
+     27 18.90%:  heard it
+     28 18.62%:  need
+     29 19.76%:  need to lie
+     30 19.51%:  need to have
+     31 19.31%:  need to eat
+     32 19.20%:  need to play
+     33 19.18%:  need to re
+     34 19.10%:  need to try
+     35 19.07%:  need to lay
+     36 19.00%:  need to let
+     37 18.99%:  need to move
+     38 18.62%:  tried
+     39 19.64%:  tried it
+     40 18.60%:  have a lot
+     41 19.91%:  have a lot of time
+     42 19.10%:  have a lot of time on
+     43 18.93%:  have a lot of my
+     44 18.73%:  have a lot of em
+     45 18.73%:  have a lot of re
+     46 18.60%:  only
+     47 18.58%:  made
+     48 18.46%:  made that
+     49 18.20%:  had a pretty
+     50 18.12%:  made that one
+     51 18.02%:  need to play a
+     52 17.88%:  made it
+     53 17.77%:  tried it!
+     54 17.65%:  love it
+     55 17.64%:  hate to end
+     56 17.58%:  do that a
+     57 17.56%:  have to
+     58 17.49%:  hate to die
+     59 17.40%:  had a point
+     60 17.39%:  made a lot
+     61 18.08%:  made a lot of ty
+     62 17.37%:  find the
+     63 17.36%:  hate to die!
+     64 17.26%:  need to have my
+     65 17.26%:  hate to inform
+     66 17.25%:  hate to do
+     67 17.25%:  hate to leave
+     68 17.22%:  hate to even
+     69 17.21%:  hate to remind
+     70 17.21%:  need to replay
+     71 17.19%:  made a lot of the
+     72 17.15%:  had a very
+     73 17.14%:  am not
+     74 17.12%:  love the
+     75 17.05%:  am a
+     76 17.00%:  made a lot of typ
+     77 16.93%:  do it
+     78 16.91%:  made a lot of point
+     79 16.90%:  made a lot of very
+     80 16.89%:  made a lot of it
+     81 16.84%:  have no idea if my
+     82 16.84%:  love my
+     83 16.81%:  feel that
+     84 16.79%:  made the
+     85 16.75%:  mean!
+     86 16.75%:  need to lie to
+     87 16.70%:  hate to end a
+     88 16.62%:  need to let my
+     89 16.61%:  made a typ
+     90 21.82%:  made a typo in the
+     91 19.86%:  made a typo!
+     92 18.51%:  made a typo on
+     93 18.50%:  made a typo there
+     94 18.39%:  made a typo there!
+     95 17.01%:  made a typo in there
+     96 16.85%:  made a typo in there!
+     97 16.62%:  made a typo in it
+     98 16.62%:  made a typo in the 
+     99 16.59%:  made a typo in the file
+    100 16.55%:  had to
+    101 16.49%:  have a friend
+    102 16.49%:  need a
+    103 16.35%:  find it to
+    104 16.32%:  love that
+    105 16.31%:  had a time
+    106 16.27%:  had a 
+    107 16.25%:  had a more
+    108 16.25%:  tried!
+    109 16.25%:  find it very
+    110 16.24%:  had a lot of time on
+    111 16.24%:  meant it
+    112 16.22%:  had a met
+    113 16.22%:  had a line
+    114 16.21%:  love it!
+    115 16.19%:  need to eat!
+    116 16.19%:  do that!
+    117 16.17%:  had one
+    118 16.14%:  love the idea
+    119 16.13%:  need to move to
+    120 16.12%:  have a lot of time in
+    121 16.10%:  do that in
+    122 16.06%:  had a lot of money!
+    123 16.04%:  made a point
+    124 16.03%:  made a typo here
+    125 16.03%:  love the idea of an
+    126 16.00%:  have no more
+    127 15.95%:  only hope
+    128 15.95%:  love the idea of my
+    129 15.95%:  had a point to
+    130 15.93%:  love the idea of a tim
+    131 15.91%:  tried it on
+    132 15.90%:  love the idea of a 
+    133 15.87%:  have never
+    134 15.86%:  hope my
+    135 15.84%:  have no more to
+    136 15.79%:  made a lot of it!
+    137 15.77%:  meant to do
+    138 15.75%:  find that my
+    139 15.74%:  made a typo for
+    140 15.74%:  do not
+    141 15.73%:  made a typo here!
+    142 15.72%:  made a typo too
+    143 15.71%:  made a typo over
+    144 15.71%:  made a typo the
+    145 15.71%:  love the idea of it
+    146 15.69%:  made a typo of
+    147 15.68%:  made a typo or
+    148 15.68%:  made a typo to
+    149 15.66%:  made a pretty
+    150 15.66%:  mean that
+    151 15.65%:  do have
+    152 20.03%:  do have a lot of time
+    153 19.00%:  do have a lot of my
+    154 18.72%:  do have a lot of 
+    155 18.71%:  do have a lot of pre
+    156 18.70%:  do have a lot of re
+    157 16.51%:  do have a lot of time in
+    158 16.16%:  do have a lot of time!
+    159 15.62%:  meant to have
+    160 15.62%:  hope it
+    161 15.61%:  find it a
+    162 15.61%:  do that in real
+    163 15.57%:  meant to die
+    164 15.55%:  only have
+    165 15.54%:  mean it
+    166 15.52%:  do that in my life
+    167 15.52%:  do that every
+    168 15.49%:  love the idea of not
+    169 15.48%:  have a lot of time!
+    170 15.47%:  love the idea of 
+    171 15.47%:  made a typo in it!
+    172 15.47%:  am the
+    173 15.47%:  feel the
+    174 15.46%:  made a note
+    175 15.46%:  mean the
+    176 15.46%:  mean if
+    177 15.41%:  mean to
+    178 15.41%:  find that a
+    179 15.39%:  had no
+    180 15.38%:  find that people
+    181 15.38%:  made a very
+    182 15.37%:  do love
+    183 15.37%:  tried it on a
+    184 15.36%:  do that on
+    185 15.35%:  had a lot of time in
+    186 15.30%:  do have a lot to
+    187 15.28%:  find that very
+    188 15.28%:  love to
+    189 15.28%:  had it
+    190 15.27%:  do that for
+    191 15.33%:  do that for a
+    192 15.27%:  meant the
+    193 15.27%:  do that from
+    194 15.25%:  do that 
+    195 15.22%:  have no real
+    196 15.21%:  do a
+    197 19.70%:  do a lot of it
+    198 19.46%:  do a lot of them
+    199 19.44%:  do a lot of my
+    200 19.27%:  do a lot of time
+    201 19.20%:  do a lot of the
+    202 19.06%:  do a lot of it!
+    203 19.04%:  do a lot of re
+    204 18.94%:  do a lot of mean
+    205 18.93%:  do a lot of 
+    206 16.15%:  do a lot of time in
+    207 15.69%:  do a lot of it in
+    208 15.21%:  have a lot of time over
+    209 15.18%:  tried to play
+    210 15.18%:  hear it only
+    211 15.17%:  never had
+    212 15.17%:  never do
+    213 15.15%:  am pretty
+    214 15.15%:  had a lot more
+    215 15.13%:  tried to have
+    216 15.13%:  had my
+    217 15.12%:  have no time
+    218 17.62%:  have no time to
+    219 15.12%:  only ever
+    220 15.10%:  am not a
+    221 15.10%:  do have a lot more
+    222 15.09%:  have many
+    223 15.08%:  made a point of it
+    224 15.08%:  tried to help
+    225 15.07%:  have no life
+    226 15.06%:  tried it a
+    227 15.04%:  love video
+    228 15.02%:  tried to imply
+    229 15.01%:  have no moral
+    230 15.01%:  have an
+    231 15.00%:  need more
+    232 15.00%:  do hope
+    233 14.99%:  have a lot to
+    234 14.98%:  need to eat my
+    235 14.98%:  hate my
+    236 17.26%:  hate my life!
+    237 14.94%:  had a point!
+    238 14.92%:  feel a
+    239 14.92%:  have it
+    240 14.91%:  have not
+    241 14.90%:  hear people
+    242 16.08%:  hear people do it
+    243 14.90%:  tried to play a
+    244 14.88%:  do have a lot on
+    245 14.87%:  find it am
+    246 14.84%:  have made
+    247 14.83%:  do have a lot in
+    248 15.09%:  do have a lot in my
+    249 14.83%:  am very
+    250 14.83%:  had an
+    251 14.83%:  had a lot of time!
+    252 14.83%:  have my
+    253 14.82%:  heard a
+    254 14.82%:  find that more
+    255 14.82%:  never play
+    256 14.82%:  have one
+    257 14.81%:  made a note of the
+    258 14.81%:  have a lot more
+    259 14.79%:  find that am
+    260 14.79%:  only have a
+    261 14.77%:  find that real
+    262 14.75%:  find that 
+    263 14.75%:  find that people are
+    264 14.74%:  find that every
+    265 14.73%:  do a lot of them in
+    266 14.72%:  had a lot of time over
+    267 14.69%:  have played
+    268 14.68%:  made a lot of tyop
+    269 14.67%:  have yet
+    270 20.80%:  have yet to find
+    271 18.00%:  have yet to find a more
+    272 14.72%:  have yet to do
+    273 14.67%:  have learned
+    274 14.67%:  have done
+    275 14.66%:  do that in my life!
+    276 14.66%:  have only
+    277 14.65%:  have often
+    278 14.64%:  feel it
+    279 14.64%:  find my
+    280 14.64%:  have tried
+    281 14.64%:  have more
+    282 14.64%:  have no moral to
+    283 14.63%:  have a pretty
+    284 14.63%:  have too
+    285 14.63%:  had a lot to
+    286 14.62%:  do that in my real
+    287 14.61%:  have 
+    288 14.60%:  only had
+    289 14.59%:  have over
+    290 14.59%:  only hope it
+    291 14.59%:  made a point!
+    292 14.58%:  never have
+    293 14.58%:  have very
+    294 14.58%:  have failed
+    295 14.57%:  have plenty
+    296 14.57%:  made it a
+    297 14.57%:  do a lot of reth
+    298 14.57%:  have read
+    299 14.55%:  have to admit
+    300 14.54%:  do have a point
+    301 14.53%:  do a lot in
+    302 15.04%:  do a lot in my free
+    303 14.52%:  made a lot of typo in
+    304 14.50%:  do a lot!
+    305 14.49%:  hate to leave my
+    306 14.45%:  have a very
+    307 14.45%:  find it more
+    308 14.44%:  made a typo for the
+    309 14.44%:  do a lot on
+    310 16.02%:  do a lot on the
+    311 14.42%:  have a lot on
+    312 14.42%:  need to replay a
+    313 14.42%:  hope no
+    314 14.42%:  have a lot in
+    315 14.41%:  made a typo in the file!
+    316 14.41%:  never played
+    317 15.07%:  never played a
+    318 14.53%:  never played that
+    319 14.40%:  hate it!
+    320 14.40%:  made a typo on the 
+    321 14.39%:  hope to
+    322 14.38%:  do love my
+    323 14.37%:  made a note to
+    324 14.36%:  have a lot!
+    325 14.35%:  had a lot in
+    326 14.35%:  find it the
+    327 14.33%:  made an
+    328 14.33%:  need to eat a
+    329 14.32%:  do the
+    330 14.32%:  have too many of
+    331 14.31%:  had a lot on
+    332 14.31%:  am an
+    333 14.29%:  find it t
+    334 14.29%:  hope one
+    335 14.73%:  hope one day to live
+    336 14.28%:  find it ple
+    337 14.28%:  find it heart
+    338 14.28%:  have done it
+    339 14.27%:  do love to
+    340 14.27%:  find it thr
+    341 14.27%:  hate to die in
+    342 14.27%:  hope!
+    343 14.26%:  made a typo there in
+    344 14.26%:  heard it on
+    345 14.25%:  hope for
+    346 14.25%:  hate people
+    347 14.25%:  have a point
+    348 14.23%:  am only
+    349 14.20%:  find that a very
+    350 14.17%:  have done it!
+    351 14.17%:  do have a lot of preempt
+    352 14.16%:  am happy
+    353 14.16%:  do a lot of it every
+    354 14.15%:  am 
+    355 14.14%:  am in
+    356 14.13%:  hope one of
+    357 14.12%:  have a life
+    358 14.11%:  am never
+    359 14.11%:  meant to die!
+    360 14.10%:  have a time
+    361 14.10%:  love a
+    362 14.15%:  love a happy
+    363 14.10%:  meant a
+    364 14.09%:  meant for
+    365 14.23%:  meant for it
+    366 14.09%:  heard it in
+    367 14.09%:  tried it on my 
+    368 14.09%:  need help
+    369 14.71%:  need help!
+    370 14.07%:  have a 
+    371 14.06%:  find there
+    372 14.05%:  heard if
+    373 14.05%:  hear if
+    374 14.05%:  feel pretty
+    375 14.05%:  only had a
+    376 14.04%:  find people
+    377 14.04%:  only do
+    378 15.39%:  only do it
+    379 14.04%:  have a video
+    380 14.04%:  have a limited
+    381 14.03%:  am no
+    382 14.03%:  am tired
+    383 14.02%:  am at
+    384 14.02%:  made that one!
+    385 14.02%:  have a fr
+    386 14.02%:  made a typo there on
+    387 14.02%:  am open
+    388 18.52%:  am open to the
+    389 18.08%:  am open to other
+    390 16.84%:  am open to the idea!
+    391 14.02%:  have a ton
+    392 14.02%:  made a typo here in
+    393 14.02%:  made it to
+    394 14.02%:  have a deep
+    395 14.01%:  am done
+    396 14.01%:  made that one for
+    397 14.00%:  am often
+    398 14.00%:  love time
+    399 14.00%:  am one
+    400 14.00%:  am told
+    401 14.37%:  am told it
+    402 14.00%:  hear life
+    403 14.00%:  am deeply
+    404 14.00%:  am torn
+    405 13.99%:  have yet to die
+    406 14.43%:  have yet to die in
+    407 13.99%:  hear a
+    408 17.06%:  hear a lot of my
+    409 15.42%:  hear a lot of men
+    410 15.62%:  hear a lot of men do
+    411 15.37%:  hear a lot of d
+    412 15.36%:  hear a lot of 
+    413 15.35%:  hear a lot of teen
+    414 15.35%:  hear a lot of video
+    415 15.33%:  hear a lot of time
+    416 15.32%:  hear a lot of it
+    417 14.58%:  hear a lot of men do it
+    418 13.99%:  find a
+    419 13.99%:  have a lot of redo
+    420 13.98%:  am too
+    421 13.98%:  hate to leave on
+    422 13.98%:  am on
+    423 15.22%:  am on a
+    424 14.07%:  am on the ver
+    425 13.97%:  hate video
+    426 13.96%:  have plenty of time
+    427 13.95%:  made a lot of typer
+    428 13.95%:  love me
+    429 13.95%:  made a typo on it
+    430 14.02%:  made a typo on it!
+    431 13.94%:  tried the
+    432 13.94%:  hate it in
+    433 13.93%:  heard people
+    434 13.93%:  heard one
+    435 16.51%:  heard one time it
+    436 13.93%:  do feel
+    437 13.92%:  hate me
+    438 13.92%:  have no moral!
+    439 13.91%:  feel my
+    440 13.91%:  am open to a
+    441 13.91%:  made a lot of it in
+    442 13.91%:  made that one very
+    443 13.91%:  have a lot of emo
+    444 13.90%:  find them
+    445 13.90%:  need my
+    446 13.89%:  meant if
+    447 13.88%:  love the idea!
+    448 13.88%:  hate life
+    449 13.87%:  love re
+    450 13.87%:  hate vide
+    451 13.87%:  had one of my
+    452 13.87%:  love vide
+    453 13.86%:  heard a lot
+    454 13.86%:  never die
+    455 13.86%:  hate a
+    456 14.26%:  hate a lot
+    457 18.73%:  hate a lot of my
+    458 14.63%:  hate a lot of video
+    459 13.86%:  do have to
+    460 13.86%:  do my
+    461 13.86%:  meant at
+    462 13.85%:  need the
+    463 13.85%:  hate me!
+    464 13.85%:  made one
+    465 13.85%:  find they
+    466 13.84%:  have one more
+    467 13.84%:  have a lot of rept
+    468 13.84%:  had never
+    469 13.83%:  hear time
+    470 13.83%:  never told
+    471 13.83%:  have yet to fail
+    472 13.83%:  love met
+    473 13.83%:  heard one time a
+    474 13.83%:  tried not
+    475 13.82%:  am tired of the
+    476 13.82%:  have a lot of my video
+    477 13.82%:  have a lot of my 
+    478 13.82%:  feel very
+    479 13.81%:  do love the
+    480 13.81%:  only made
+    481 13.81%:  love iron
+    482 13.81%:  love not
+    483 13.81%:  never made
+    484 15.44%:  never made it to a
+    485 13.80%:  tried to have my
+    486 13.79%:  do have a point to
+    487 13.79%:  made a lot of tyo
+    488 13.79%:  do mean
+    489 13.79%:  heard a lot of my
+    490 13.78%:  tried a
+    491 13.78%:  made a lot of typh
+    492 13.78%:  have yet to live
+    493 13.94%:  have yet to live a
+    494 13.83%:  have yet to live in
+    495 13.77%:  have yet to dev
+    496 13.76%:  have yet to learn
+    497 13.76%:  feel more
+    498 13.76%:  only tried
+    499 14.77%:  only tried it a
+    500 13.76%:  have yet to prove
+    501 13.76%:  feel my point
+    502 13.76%:  have a ton of time
+    503 13.76%:  made a lot of tyre
+    504 13.76%:  made a lot of typp
+    505 13.75%:  never felt
+    506 13.75%:  made a lot of tyoe
+    507 13.75%:  feel no
+    508 13.75%:  never met
+    509 13.74%:  hear in
+    510 13.74%:  feel an
+    511 13.74%:  feel they
+    512 13.72%:  had more
+    513 13.71%:  had 
+    514 13.71%:  do plan
+    515 13.91%:  do plan to have
+    516 13.86%:  do plan to have my
+    517 13.70%:  have yet to find a more p
+    518 13.70%:  made no
+    519 13.70%:  heard in
+    520 14.02%:  heard in a
+    521 13.70%:  heard my
+    522 13.69%:  heard on
+    523 13.69%:  have yet to find a more po
+    524 13.69%:  heard of
+    525 13.68%:  had not
+    526 13.67%:  do too
+    527 13.67%:  meant after
+    528 13.67%:  meant there
+    529 13.66%:  had a line of
+    530 13.66%:  do have a pretty
+    531 13.66%:  made a lot of pointy
+    532 13.66%:  have yet to find a more pl
+    533 13.66%:  do!
+    534 13.65%:  have tried it
+    535 13.85%:  have tried it!
+    536 13.65%:  meant death
+    537 13.65%:  hear my
+    538 13.65%:  heard a lot of it
+    539 13.64%:  meant hyp
+    540 13.64%:  hear even
+    541 13.64%:  do hate
+    542 13.64%:  have a lot of em in
+    543 13.64%:  hear video
+    544 13.64%:  hear people do it!
+    545 13.64%:  have a lot of reinde
+    546 13.64%:  have a lot of empy
+    547 13.63%:  hear 
+    548 13.63%:  have a lot of reen
+    549 13.63%:  hope one day to travel
+    550 13.63%:  hope one day to re
+    551 13.62%:  meant life
+    552 13.62%:  meant!
+    553 13.61%:  tried my
+    554 13.59%:  tried one
+    555 17.06%:  tried one time!
+    556 13.59%:  heard a lot of men
+    557 13.59%:  made a point to
+    558 13.58%:  heard!
+    559 13.58%:  do a lot of them every
+    560 13.56%:  have failed to prove

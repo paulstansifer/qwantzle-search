@@ -1,641 +1,543 @@
 not the guy I made up, though.
       0 100.00%: 
-      1 26.62%:  a
-      2 25.69%:  a good
-      3 25.62%:  not
-      4 24.48%:  not a
-      5 23.17%:  the
-      6 22.26%:  not the
-      7 22.17%:  my
-      8 22.16%:  too
-      9 22.07%:  not that
-     10 21.60%:  an
-     11 21.54%:  a pun
-     12 21.53%:  not my
-     13 21.37%:  me
-     14 22.02%:  me.
-     15 21.35%:  got
-     16 23.78%:  got to
-     17 23.42%:  got a
-     18 21.33%:  on
-     19 22.60%:  on my
-     20 21.33%:  me,
-     21 21.22%:  good
-     22 21.17%:  on the
-     23 21.15%:  a met
-     24 21.15%:  gotta
-     25 21.14%:  that
-     26 22.19%:  that one
-     27 21.07%:  one
-     28 21.05%: ,
-     29 25.39%: , um
-     30 24.74%: , u
-     31 32.42%: , uh
-     32 26.56%: , uh.
-     33 29.64%: , uh. It
-     34 21.89%: , um.
-     35 25.29%: , um. It
-     36 21.05%:  a pun,
-     37 21.04%:  good that
-     38 22.13%:  good that I
-     39 21.01%:  no
-     40 21.00%:  
-     41 20.99%:  a guy
-     42 20.93%:  a one
-     43 20.93%:  a 
-     44 20.92%:  a typ
-     45 28.58%:  a typo
-     46 28.09%:  a typo,
-     47 27.64%:  a typo though
-     48 25.95%:  a typo though.
-     49 25.50%:  a typo, though
-     50 26.72%:  a typo, though.
-     51 25.38%:  a typo though,
-     52 24.32%:  a typo, though. I
-     53 24.20%:  a typo, though. It
-     54 24.06%:  a typo though. I
-     55 23.94%:  a typo.
-     56 23.32%:  a typo, I
-     57 23.24%:  a typo though. It
-     58 22.33%:  a typo, not
-     59 22.32%:  a typo, h
-     60 22.12%:  a typo, e
-     61 26.68%:  a typo, eh
-     62 21.84%:  a typo though h
-     63 21.83%:  a typo though I
-     64 21.77%:  a typo on
-     65 21.97%:  a typo on the
-     66 21.75%:  a typo th
-     67 26.65%:  a typo tho
-     68 21.93%:  a typo tho.
-     69 21.90%:  a typo tho,
-     70 21.72%:  a typo though, I
-     71 21.64%:  a typo I
-     72 21.53%:  a typo though, h
-     73 20.96%:  a typo, though. I need
-     74 20.95%:  a typo, though. I get
-     75 20.93%:  a typo though, e
-     76 24.83%:  a typo though, eh
-     77 20.91%:  a typo though, he
-     78 20.91%:  a typo though, the
-     79 20.91%:  a t
-     80 20.90%:  a tough
-     81 20.89%:  you
-     82 26.73%:  you,
-     83 22.02%:  you, though
-     84 22.19%:  you, though.
-     85 21.53%:  you, man
-     86 21.48%:  you, I
-     87 21.41%:  you, and
-     88 21.56%:  you, and I
-     89 21.37%:  you, h
-     90 25.54%:  you, huh
-     91 23.30%:  you, hah
-     92 27.45%:  you, hah h
-     93 20.89%:  made
-     94 21.84%:  made up
-     95 21.46%:  made out
-     96 21.08%:  made up,
-     97 20.89%:  a typo, though. I dun
-     98 20.87%:  a typo though, d
-     99 20.79%: , uhh
-    100 20.78%:  that one I
-    101 20.73%:  got me
-    102 20.62%:  not you
-    103 25.56%:  not you,
-    104 20.58%:  good,
-    105 20.57%:  not,
-    106 21.27%:  not, though
-    107 23.51%:  not, though.
-    108 21.47%:  not, though. I
-    109 20.55%:  not.
-    110 20.53%:  not me
-    111 20.48%:  a typo, huh
-    112 20.46%:  made up.
-    113 20.44%:  a typo though. I need
-    114 20.42%:  gotta go
-    115 20.41%:  a typo though. I get
-    116 20.38%:  not at
-    117 20.37%:  not 
-    118 20.36%:  not me,
-    119 21.58%:  not me, though
-    120 22.54%:  not me, though.
-    121 20.36%:  a typo though. I dun
-    122 20.35%:  not though
-    123 20.34%:  not out
-    124 20.33%:  a typo. I
-    125 20.31%:  not, though. It
-    126 20.29%:  on,
-    127 20.18%:  you, man.
-    128 20.01%:  not me, though. I
-    129 19.98%:  the one
-    130 19.94%: , uh. I
-    131 19.88%:  a typo. It
-    132 19.84%:  a typo tho. I
-    133 19.79%:  the name
-    134 19.78%:  not though.
-    135 19.62%: , uhm
-    136 19.60%:  got the
-    137 19.55%:  made up though
-    138 19.63%:  made up though.
-    139 19.48%:  not you, I
-    140 19.46%:  a typo tho. It
-    141 19.45%:  not you, ut
-    142 24.41%:  not you, utah
-    143 19.38%:  not though,
-    144 19.31%:  on.
-    145 19.29%:  not you, that
-    146 19.29%:  the one I
-    147 19.28%:  not you, d
-    148 19.27%:  good that he
-    149 19.24%:  not me, though. It
-    150 19.23%:  that good
-    151 19.23%:  on a
-    152 19.20%:  good I
-    153 19.15%: , ah
-    154 19.11%:  a good pun
-    155 22.13%:  a good pun,
-    156 19.18%:  a good pun, I
-    157 19.07%:  not me.
-    158 19.04%:  the 
-    159 19.00%:  the end
-    160 18.99%:  got a dot
-    161 21.85%:  got a dot net
-    162 20.85%:  got a dot net,
-    163 18.99%:  got to mean
-    164 18.95%:  the guy
-    165 18.94%:  got to the
-    166 18.92%:  on me
-    167 19.26%:  on me to
-    168 18.92%:  good that I put
-    169 18.90%:  the d
-    170 18.86%:  that one,
-    171 18.85%:  you.
-    172 18.84%:  made up, though
-    173 20.91%:  made up, though.
-    174 18.84%:  the pun
-    175 18.84%:  the good
-    176 18.83%:  the type
-    177 18.80%:  got my
-    178 18.79%: , uh. In
-    179 18.77%:  got a 
-    180 18.73%:  got to get
-    181 18.72%: , you
-    182 18.69%:  got to end
-    183 18.67%:  got to pay
-    184 18.66%:  one I
-    185 18.63%:  a typo, I don
-    186 18.62%:  that guy
-    187 18.61%:  got a typ
-    188 24.62%:  got a typo
-    189 22.56%:  got a typo,
-    190 19.76%:  got a typo.
-    191 18.61%:  that I
-    192 18.61%:  not, though. I put
-    193 18.53%:  a pun, I
-    194 18.53%:  got a pun
-    195 18.52%:  not a typ
-    196 24.51%:  not a typo
-    197 24.04%:  not a typo,
-    198 23.65%:  not a typo.
-    199 20.85%:  not a typo. I
-    200 20.55%:  not a typo. It
-    201 20.46%:  not a typo, I
-    202 19.75%:  not a typo, h
-    203 20.32%:  not a typo, huh
-    204 19.69%:  not a typo, he
-    205 19.66%:  not a typo, the
-    206 19.62%:  not a typo, e
-    207 23.48%:  not a typo, eh
-    208 19.60%:  not a typo, ut
-    209 19.60%:  not a typo, d
-    210 19.37%:  not a typo I
-    211 18.49%:  good.
-    212 18.46%:  got a guy
-    213 18.46%:  got an
-    214 18.45%:  got a .
-    215 23.19%:  got a .net
-    216 23.84%:  got a .net though
-    217 24.27%:  got a .net though,
-    218 21.08%:  got a .net,
-    219 21.72%:  got a .net, though
-    220 18.38%:  got a n
-    221 18.37%:  got a home
-    222 18.35%:  got a one
-    223 18.35%:  a typo, I get
-    224 18.30%:  not though. I
-    225 18.25%:  a typo, I need
-    226 21.23%:  a typo, I need to
-    227 18.24%:  my nep
-    228 18.24%:  my e
-    229 18.24%:  me though
-    230 18.23%:  a typo, I got
-    231 18.22%:  too many
-    232 18.21%:  that,
-    233 19.33%:  that, um
-    234 18.21%:  too,
-    235 20.14%:  too, um
-    236 18.20%:  a typo, I thought
-    237 18.19%:  a typo tho, I
-    238 18.19%:  a typo, I dun
-    239 18.19%:  a typo, I do
-    240 18.17%:  made up, though. I
-    241 18.15%:  you, man. It
-    242 18.13%:  got no
-    243 18.13%:  not me though
-    244 18.10%:  good. It
-    245 18.08%:  not a dot
-    246 18.08%:  not a huge
-    247 18.07%:  not a met
-    248 18.07%:  a good pun, h
-    249 18.48%:  a good pun, huh
-    250 18.06%:  not, though. I had
-    251 18.06%:  a good pun, my
-    252 18.04%:  on to
-    253 20.77%:  on to the
-    254 18.04%:  not, though. I made
-    255 18.01%:  that one guy
-    256 17.99%:  you though
-    257 19.00%:  you though,
-    258 17.98%:  an em
-    259 17.98%:  got that
-    260 17.97%:  that one.
-    261 17.95%:  you, man. I
-    262 17.92%:  got one
-    263 17.92%:  not, though. I hate
-    264 17.91%:  not, though. I am
-    265 17.90%:  me and
-    266 17.89%:  an egg
-    267 17.88%:  an empty
-    268 17.88%:  me. I
-    269 17.87%:  an emot
-    270 17.87%:  an e
-    271 19.46%:  an eup
-    272 25.50%:  an euphem
-    273 17.87%:  an 
-    274 17.87%:  an I
-    275 17.86%:  made up, I
-    276 17.85%:  got,
-    277 17.85%: , uh. I don
-    278 17.84%:  on that
-    279 17.83%:  got, um
-    280 17.83%:  on though
-    281 17.83%:  not, though. I get
-    282 17.83%:  not me though.
-    283 17.82%:  good he
-    284 17.81%:  gotta get
-    285 17.81%:  on you
-    286 20.41%:  on you,
-    287 17.80%:  made up, you
-    288 17.80%:  got 
-    289 17.78%:  got d
-    290 17.77%:  on my to
-    291 17.75%:  got you
-    292 17.73%:  one that
-    293 19.89%:  one that I
-    294 17.73%:  good at
-    295 17.72%:  me on
-    296 22.64%:  me on the
-    297 17.72%: , I
-    298 17.89%: , I mean
-    299 17.72%:  me that
-    300 17.72%:  got n
-    301 17.72%:  not a typo. I get
-    302 17.71%:  one day
-    303 17.70%:  got a .net though, I
-    304 17.70%:  made up. I
-    305 17.70%:  on I
-    306 17.68%:  gotta do
-    307 17.67%:  gotta end
-    308 17.67%:  good the
-    309 17.67%:  not though. It
-    310 17.67%:  that you
-    311 17.66%:  not a typo. I,
-    312 19.70%:  not a typo. I, um
-    313 17.66%:  no,
-    314 17.66%:  one guy
-    315 17.66%:  on my head
-    316 17.65%:  that the
-    317 17.65%:  good they
-    318 17.65%:  good my
-    319 17.65%:  one to
-    320 17.64%:  one he
-    321 17.62%: , 
-    322 17.62%:  a pun.
-    323 17.62%:  made the
-    324 17.61%:  you and
-    325 17.61%:  one you
-    326 17.61%:  one up
-    327 17.61%:  that pun
-    328 17.60%:  that he
-    329 17.60%:  on my top
-    330 17.59%:  that type
-    331 17.59%:  on my top 
-    332 17.59%:  a typo though, I get
-    333 17.58%:  that one you
-    334 17.58%: , a
-    335 17.58%:  that too
-    336 17.57%:  one,
-    337 17.55%: , y
-    338 17.55%: , yeah
-    339 17.54%:  one o
-    340 17.54%: , that
-    341 17.54%:  you I
-    342 17.54%:  me, though
-    343 19.02%:  me, though.
-    344 17.53%:  made to
-    345 17.53%: , It
-    346 17.52%:  that one you get
-    347 17.52%:  not, um
-    348 17.52%:  me though.
-    349 17.52%:  good that I get
-    350 17.52%:  made up though. I
-    351 17.52%:  not a typo, eh h
-    352 17.52%:  no d
-    353 17.51%:  no typ
-    354 24.80%:  no typo
-    355 24.87%:  no typo,
-    356 23.31%:  no typo.
-    357 20.18%:  no typo. I
-    358 19.83%:  no typo, I
-    359 19.30%:  no typo. It
-    360 18.57%:  no typo, that
-    361 17.50%:  no.
-    362 17.49%:  you on
-    363 17.48%:  the pun that
-    364 17.47%:  a typo though, I need
-    365 17.47%:  not a typo. I, u
-    366 20.42%:  not a typo. I, uh
-    367 17.47%:  not that I
-    368 17.44%:  you that
-    369 17.44%:  a typo though, I dun
-    370 17.43%:  a pun, though
-    371 18.35%:  a pun, though.
-    372 17.40%:  a typo. I don
-    373 17.40%:  on me,
-    374 17.37%:  made up, though. It
-    375 17.37%:  that one though
-    376 18.57%:  that one though,
-    377 17.36%:  a pun, you
-    378 17.29%:  me. It
-    379 17.29%:  that one though.
-    380 17.26%:  not out yet
-    381 17.25%:  that one I get
-    382 17.22%:  that good,
-    383 17.21%:  made up though,
-    384 17.20%:  got a home,
-    385 17.20%:  not me, though. I put
-    386 17.19%:  made up, h
-    387 17.19%:  not out yet,
-    388 17.17%:  made up, not
-    389 17.16%:  not me, though. I had
-    390 17.16%:  the pun I
-    391 17.14%:  not. It
-    392 17.14%:  a typo, huh.
-    393 17.13%: , um. I
-    394 17.12%:  that one I put
-    395 17.10%:  that I don
-    396 17.09%:  made out to
-    397 17.08%:  that one I got
-    398 17.08%:  that one you get,
-    399 17.08%:  not, though. I hate my
-    400 17.07%:  not me, though. I get
-    401 17.06%:  not me, though. I hate
-    402 17.04%:  got to get me
-    403 17.02%:  a pun, h
-    404 17.02%:  that one I hope
-    405 17.01%:  not a typo, eh huh
-    406 17.01%:  on though,
-    407 17.00%:  a typo, I thought he
-    408 16.98%:  the one that
-    409 16.97%:  on my head,
-    410 17.34%:  on my head, though
-    411 19.06%:  on my head, though.
-    412 16.96%:  on that I
-    413 16.95%:  not, though. I made the
-    414 16.93%:  made up. It
-    415 16.92%:  good that the
-    416 16.84%: , uh. In the
-    417 16.83%:  a pun, get
-    418 16.81%:  a guy I
-    419 16.81%:  a typo, eh he
-    420 19.48%:  a typo, eh heh
-    421 16.79%:  a pun, my
-    422 16.79%:  a pun, too
-    423 16.77%:  a pun, um
-    424 16.76%:  me, and
-    425 19.86%:  me, and I
-    426 16.75%:  good, I
-    427 16.75%:  a typo, not the
-    428 16.75%: , uh. I mean
-    429 16.74%:  a pun, e
-    430 21.58%:  a pun, eh
-    431 16.73%:  you, though. I
-    432 16.72%:  a pun, he
-    433 18.48%:  a pun, heh
-    434 22.07%:  a pun, heh he
-    435 16.72%:  a pun, d
-    436 16.69%:  not though, I
-    437 16.69%:  me, I
-    438 16.68%:  a typo. I got
-    439 16.68%:  the pun that I
-    440 16.66%:  a pun though
-    441 17.32%:  a pun though,
-    442 16.66%:  a typo. I thought
-    443 16.64%:  a typo. I need
-    444 19.67%:  a typo. I need to
-    445 16.64%:  got a .net though, h
-    446 16.64%: , uhhh
-    447 16.64%:  not, you
-    448 16.62%:  me, you
-    449 16.61%:  a typo, I got the
-    450 16.61%:  not me, I
-    451 16.60%:  a typo. I get
-    452 16.60%:  a typo, eh h
-    453 16.59%:  good that my
-    454 16.58%:  not the guy
-    455 19.57%:  not the guy I
-    456 16.55%:  a typo. I do
-    457 16.54%:  a typo. I dun
-    458 16.54%:  a typo tho I
-    459 16.53%:  a typo. I,
-    460 18.71%:  a typo. I, um
-    461 17.74%:  a typo. I, u
-    462 21.01%:  a typo. I, uh
-    463 16.53%:  not a typo, I get
-    464 16.53%:  not. I
-    465 16.52%:  got a .net though, e
-    466 19.68%:  got a .net though, eh
-    467 16.52%:  a pun I
-    468 16.52%:  a typo tho h
-    469 16.50%:  got to get me a
-    470 16.48%:  made up though. It
-    471 16.46%:  on though.
-    472 16.46%:  got to end up
-    473 16.45%:  that good, h
-    474 20.92%:  that good, huh
-    475 16.53%:  that good, huh.
-    476 16.45%:  got me a
-    477 16.44%:  not you.
-    478 16.44%:  a typo though, hee
-    479 16.43%:  not, I
-    480 16.42%:  too, um.
-    481 17.66%:  too, um. It
-    482 16.40%:  got me on
-    483 20.64%:  got me on the
-    484 16.36%:  not that he
-    485 16.35%:  a typo though, eh.
-    486 16.34%:  not that guy
-    487 16.33%:  gotta go,
-    488 16.33%:  not out yet.
-    489 16.32%:  not the 
-    490 16.32%:  not the type
-    491 16.30%:  the guy I
-    492 16.29%:  a good pun.
-    493 16.29%:  me, h
-    494 21.86%:  me, hah
-    495 26.24%:  me, hah h
-    496 16.29%:  not that you
-    497 16.28%:  me, that
-    498 16.27%: , uh. In a
-    499 16.32%: , uh. In a good
-    500 16.26%:  not that,
-    501 16.82%:  not that, um
-    502 16.25%:  that good.
-    503 16.25%:  gotta get me
-    504 16.24%:  not at the
-    505 16.23%:  not me, that
-    506 16.23%:  not me, you
-    507 16.22%:  good that they
-    508 16.22%:  not that my
-    509 16.22%: , um. In
-    510 16.21%:  not that.
-    511 16.19%:  a pun, hee
-    512 16.18%:  not a typo. I, uh 
-    513 16.17%:  not me, though. I put a
-    514 16.17%:  a typo. I thought he
-    515 16.17%:  a typo tho, h
-    516 16.16%:  a typo I don
-    517 16.16%:  a typo. I got the
-    518 16.13%:  not, though. I made up
-    519 17.40%:  not, though. I made up the
-    520 16.12%:  on the top
-    521 16.11%:  on the dot
-    522 16.09%:  a pun, though. I
-    523 16.08%:  not me though. I
-    524 16.08%:  not me, h
-    525 20.57%:  not me, hah
-    526 24.28%:  not me, hah h
-    527 16.07%:  got to pay the
-    528 16.06%:  me, though. I
-    529 16.01%:  not me. I
-    530 15.98%:  got me to
-    531 17.98%:  got me to the
-    532 15.98%:  not me though,
-    533 15.97%:  on the dot,
-    534 15.97%:  not me, th
-    535 19.57%:  not me, tho
-    536 17.88%:  not me, tho.
-    537 16.17%:  not me, tho. I
-    538 15.96%:  not though, h
-    539 15.96%:  not my e
-    540 15.96%:  not me, d
-    541 15.95%:  not me, the
-    542 15.95%:  not me, yeah
-    543 15.94%:  gotta go up
-    544 15.88%:  you, though. It
-    545 15.82%:  not, though. I put a
-    546 15.79%:  good that I put my
-    547 15.79%:  not, though. I get a
-    548 15.76%:  good, yeah
-    549 16.60%:  good, yeah.
-    550 15.75%:  not though. I put
-    551 15.75%:  not, though. I put my
-    552 15.74%:  a pun, too.
-    553 15.74%:  got me and
-    554 15.73%:  not, u
-    555 21.27%:  not, uh
-    556 15.73%:  got a dot net.
-    557 15.73%:  got me,
-    558 15.72%:  not me. It
-    559 15.72%:  good that he put
-    560 15.70%:  not you I
-    561 15.68%:  that one guy I
-    562 15.66%:  a typo, eh.
-    563 15.66%:  not you, utah.
-    564 15.66%: , uhm.
-    565 18.73%: , uhm. It
-    566 15.64%:  a pun though.
-    567 15.63%:  a pun, I get
-    568 15.63%:  not, h
-    569 20.56%:  not, hah
-    570 24.54%:  not, hah h
-    571 15.63%:  on me.
-    572 15.62%:  that one though, I
-    573 15.62%: , um. I don
-    574 15.61%:  no typo. I am
-    575 15.60%:  a good pun, I get
-    576 15.60%:  got me at
-    577 16.59%:  got me at the
-    578 15.58%:  me and I
-    579 15.57%:  not, that
-    580 15.55%:  good, h
-    581 20.21%:  good, huh
-    582 16.64%:  good, hah
-    583 20.28%:  good, hah h
-    584 15.52%: , uh. In my
-    585 15.51%:  not you that
-    586 16.11%:  not you that I
-    587 15.51%:  a pun, hehe
-    588 15.50%:  gotta go.
-    589 15.50%:  not me though. It
-    590 15.49%:  good, at
-    591 15.49%:  no typo, h
-    592 18.92%:  no typo, hah
-    593 22.05%:  no typo, hah h
-    594 16.06%:  no typo, huh
-    595 15.48%:  a typo, eh huh
-    596 15.47%: , uh. I need
-    597 18.55%: , uh. I need to
-    598 17.63%: , uh. I need to go
-    599 15.47%:  a good pun I
-    600 15.47%:  not, ah
-    601 15.46%:  got a typo th
-    602 15.46%:  a good pun th
-    603 15.45%:  on my head, though. I
-    604 15.45%:  got me on the gut
-    605 15.44%:  not a typo, huh.
-    606 15.43%:  got me on the 
-    607 15.43%:  got me on the h
-    608 16.03%:  got me on the hah
-    609 15.43%:  got a dot net, I
-    610 15.43%:  got me on the pay
-    611 15.42%:  got me on the path
-    612 15.42%:  got me on the p
-    613 15.42%:  got me on the d
-    614 15.41%:  not though, the
-    615 15.38%:  not though, my
-    616 15.38%:  got a dot net, h
-    617 15.38%:  not, huh
-    618 15.37%:  not though. I hate
-    619 15.91%:  not though. I hate my
-    620 15.37%:  not though. I had
-    621 15.37%: , uh. I gotta
-    622 15.46%: , uh. I gotta go
-    623 15.36%:  good, yeah. It
-    624 15.36%:  not though, am
-    625 19.82%:  not though, am I
-    626 15.35%: , uh. I get
-    627 15.35%: , uh. I am
-    628 15.35%:  not though, e
-    629 19.94%:  not though, eh
-    630 15.34%:  not though, he
-    631 15.34%:  not though, d
-    632 15.34%: , uh. I got
-    633 15.47%: , uh. I got a
-    634 15.34%:  got a dot net, my
-    635 15.33%:  not though, they
-    636 15.32%:  not the guy I made
-    637 18.90%:  not the guy I made up
-    638 19.89%:  not the guy I made up,
-    639 20.92%:  not the guy I made up, though
+      1 25.29%:  a
+      2 24.17%:  not
+      3 23.26%:  a good
+      4 21.92%:  not a
+      5 21.36%:  the
+      6 20.16%:  my
+      7 20.15%:  too
+      8 19.47%:  an
+      9 19.44%:  not the
+     10 19.23%:  not that
+     11 19.18%:  me
+     12 19.16%:  me.
+     13 19.16%:  got
+     14 20.66%:  got a
+     15 19.14%:  on
+     16 19.79%:  on my
+     17 19.00%:  good
+     18 18.91%:  gotta
+     19 18.90%:  that
+     20 19.32%:  that one
+     21 18.81%:  one
+     22 18.79%: ,
+     23 21.97%: , u
+     24 23.15%: , uh.
+     25 18.92%: , um.
+     26 18.73%:  no
+     27 18.72%:  
+     28 18.64%:  a pun
+     29 18.63%:  not my
+     30 18.60%:  that one I
+     31 18.59%:  you
+     32 18.58%:  made
+     33 18.92%:  made up
+     34 18.51%:  you, though
+     35 18.50%:  made out
+     36 18.39%:  me,
+     37 18.24%:  made up.
+     38 18.20%:  on the
+     39 18.19%:  a met
+     40 18.06%:  good that
+     41 17.99%:  a guy
+     42 17.92%:  a one
+     43 17.91%:  a 
+     44 17.91%:  a typ
+     45 24.92%:  a typo though
+     46 23.74%:  a typo though.
+     47 23.33%:  a typo, though
+     48 23.22%:  a typo though,
+     49 22.69%:  a typo, though. I
+     50 22.58%:  a typo, though. It
+     51 22.25%:  a typo though. I
+     52 21.48%:  a typo though. It
+     53 21.45%:  a typo.
+     54 20.90%:  a typo, I
+     55 19.67%:  a typo though, I
+     56 19.44%:  a typo, not
+     57 19.42%:  a typo, h
+     58 19.39%:  a typo though, h
+     59 19.10%:  a typo, e
+     60 18.97%:  a typo, though. I need
+     61 18.95%:  a typo, though. I get
+     62 18.86%:  a typo though h
+     63 18.85%:  a typo, though. I dun
+     64 18.84%:  a typo though I
+     65 18.49%:  a typo on
+     66 18.46%:  a typo though, e
+     67 18.45%:  a typo th
+     68 19.38%:  a typo tho.
+     69 19.36%:  a typo tho,
+     70 18.42%:  a typo though, he
+     71 18.41%:  a typo though, the
+     72 18.35%:  a typo. I
+     73 18.35%:  a typo though, d
+     74 18.31%:  a typo though. I need
+     75 18.27%:  a typo I
+     76 18.26%:  a typo though. I get
+     77 18.17%:  a typo though. I dun
+     78 18.13%:  a typo, huh
+     79 17.89%:  a t
+     80 17.88%:  a tough
+     81 17.79%:  you, man
+     82 17.77%:  a typo tho. I
+     83 17.75%: , uhh
+     84 17.73%:  a typo. It
+     85 17.73%: , uh. I
+     86 17.71%:  you, I
+     87 17.70%:  got me
+     88 17.61%:  you, and
+     89 17.58%:  not you
+     90 17.55%:  you, h
+     91 19.77%:  you, hah
+     92 17.53%:  good,
+     93 17.51%:  not,
+     94 19.59%:  not, though. I
+     95 18.50%:  not, though. It
+     96 17.50%:  not.
+     97 17.47%:  not me
+     98 18.46%:  not me, though. I
+     99 17.44%:  a typo tho. It
+    100 17.43%:  not me, though. It
+    101 17.36%:  you, ut
+    102 17.34%:  gotta go
+    103 17.29%:  not at
+    104 17.28%:  not 
+    105 17.26%:  made up though
+    106 17.26%:  not though
+    107 17.33%:  not though.
+    108 17.24%:  not out
+    109 17.21%:  you, man.
+    110 17.19%:  on,
+    111 17.05%:  good that he
+    112 16.99%:  not though,
+    113 16.95%:  not, though. I put
+    114 16.89%:  a good pun
+    115 17.28%:  a good pun, I
+    116 16.88%:  good that I put
+    117 16.82%:  made up, though
+    118 16.76%:  not me.
+    119 16.72%:  a pun, I
+    120 16.70%:  the one
+    121 16.71%:  the one I
+    122 16.70%:  a typo, I don
+    123 16.62%:  not you, I
+    124 16.58%:  not you, ut
+    125 16.55%:  made up, though. I
+    126 16.50%:  the name
+    127 16.40%:  not you, that
+    128 16.39%:  not though. I
+    129 16.37%:  that one,
+    130 16.37%:  not you, d
+    131 16.37%:  not a typ
+    132 21.65%:  not a typo.
+    133 19.30%:  not a typo. I
+    134 18.92%:  not a typo. It
+    135 18.66%:  not a typo, I
+    136 17.64%:  not a typo, h
+    137 17.56%:  not a typo, he
+    138 17.53%:  not a typo, the
+    139 17.47%:  not a typo, e
+    140 17.45%:  not a typo, ut
+    141 17.45%:  not a typo, d
+    142 16.96%:  not a typo I
+    143 16.35%:  got the
+    144 16.30%:  a typo tho, I
+    145 16.27%: , uh. In
+    146 16.25%:  a typo, I get
+    147 16.15%:  not, though. I had
+    148 16.11%:  not, though. I made
+    149 16.10%: , uh. I don
+    150 16.09%:  a typo, I need
+    151 16.06%: , uhm
+    152 16.06%:  a typo, I got
+    153 16.00%:  a typo, I thought
+    154 16.00%:  got a dot
+    155 18.45%:  got a dot net,
+    156 16.00%:  not a typo. I get
+    157 16.00%:  a typo, I dun
+    158 15.99%:  a typo, I do
+    159 15.99%:  on.
+    160 15.93%:  not a typo. I,
+    161 15.93%:  not me though
+    162 16.01%:  not me though.
+    163 15.92%:  not a typo. I, u
+    164 15.91%:  not, though. I hate
+    165 15.90%:  that good
+    166 15.89%:  not, though. I am
+    167 15.88%:  on a
+    168 15.87%:  a typo though, I get
+    169 15.86%:  good I
+    170 15.85%:  made up though. I
+    171 15.85%:  a typo. I don
+    172 15.84%:  not a dot
+    173 15.84%:  not a huge
+    174 15.83%:  you, man. It
+    175 15.83%:  not though. It
+    176 15.83%:  not a met
+    177 15.81%:  not a typo, eh h
+    178 15.81%: , ah
+    179 15.78%:  not, though. I get
+    180 15.78%:  got to mean
+    181 15.72%:  got to the
+    182 15.68%:  got a 
+    183 15.68%:  a typo though, I need
+    184 15.67%:  you, man. I
+    185 15.65%:  the 
+    186 15.64%:  a good pun, h
+    187 15.63%:  a good pun, my
+    188 15.63%:  a typo though, I dun
+    189 15.61%:  the end
+    190 15.55%:  the guy
+    191 15.55%:  made up. I
+    192 15.54%:  made up, I
+    193 15.50%:  not a typo, eh huh
+    194 15.49%:  not me, though. I put
+    195 15.49%:  the d
+    196 15.48%:  on me
+    197 15.45%:  made up, you
+    198 15.45%:  got to get
+    199 15.45%:  got a typ
+    200 19.75%:  got a typo,
+    201 17.29%:  got a typo.
+    202 15.44%:  you.
+    203 15.43%:  not me, though. I had
+    204 15.42%:  the pun
+    205 15.42%:  the good
+    206 15.41%:  the type
+    207 15.41%:  not, um
+    208 15.41%:  got to end
+    209 15.38%:  got to pay
+    210 15.38%:  a typo, huh.
+    211 15.38%:  made up, though. It
+    212 15.37%:  not, though. I hate my
+    213 15.34%:  made up though,
+    214 15.33%:  not, though. I made the
+    215 15.33%:  got a pun
+    216 15.32%:  not that I
+    217 15.32%:  got my
+    218 15.29%:  not me, though. I get
+    219 15.29%:  a pun.
+    220 15.29%:  not me, though. I hate
+    221 15.28%:  a pun, though
+    222 15.25%:  that one guy
+    223 15.25%:  got a guy
+    224 15.25%: , you
+    225 15.24%:  me. I
+    226 15.24%:  got a .
+    227 18.39%:  got a .net,
+    228 15.92%:  got a .net though, I
+    229 15.19%:  that one.
+    230 15.18%:  a pun, you
+    231 15.17%:  me, though
+    232 15.17%:  one I
+    233 15.17%:  a typo, I thought he
+    234 15.16%:  got a n
+    235 15.15%:  got a home
+    236 15.12%:  got a one
+    237 15.12%:  not out yet
+    238 15.40%:  not out yet,
+    239 15.11%:  that guy
+    240 15.11%: , uh. I mean
+    241 15.10%:  got a p
+    242 15.10%:  that I
+    243 15.10%:  got a m
+    244 15.09%:  got a ton
+    245 15.08%:  got a d
+    246 15.08%:  got a t
+    247 15.07%:  got a hyp
+    248 16.86%:  got a hyphen,
+    249 15.04%: , um. I
+    250 15.02%:  not. It
+    251 14.99%:  a typo, eh he
+    252 14.96%:  got a .net though, h
+    253 14.92%:  good.
+    254 15.25%:  good. It
+    255 14.91%:  good that I get
+    256 14.91%:  not a typo, I get
+    257 14.90%:  the pun that
+    258 14.87%:  not though, I
+    259 14.86%:  got an
+    260 14.85%:  not a typo. I, uh 
+    261 14.85%: , uh. In the
+    262 14.84%:  a typo, I got the
+    263 14.84%:  got a mop
+    264 14.83%:  a typo, not the
+    265 14.82%:  on me,
+    266 14.80%:  a typo, eh h
+    267 14.79%:  that good,
+    268 14.79%:  got a .net though, e
+    269 14.79%:  a typo. I got
+    270 14.78%:  a typo though, eh.
+    271 14.78%:  you, though. I
+    272 14.77%:  that one I get
+    273 14.74%:  a typo. I thought
+    274 14.72%:  not me, though. I put a
+    275 14.72%:  a typo. I need
+    276 14.72%:  the one that
+    277 14.70%:  on my to
+    278 14.68%:  a typo though, hee
+    279 14.68%:  a pun, h
+    280 14.66%:  not me though. I
+    281 14.64%:  got a home,
+    282 14.64%:  a typo. I get
+    283 14.63%:  that one you
+    284 15.04%:  that one you get
+    285 14.98%:  that one you get,
+    286 14.63%:  my nep
+    287 14.63%:  my e
+    288 14.63%:  not out yet.
+    289 14.62%:  the pun I
+    290 14.61%:  too many
+    291 14.60%:  the pun that I
+    292 14.59%:  too,
+    293 14.58%:  not, though. I made up
+    294 14.58%: , uhhh
+    295 14.58%:  a pun, though. I
+    296 14.57%:  on my head
+    297 14.56%:  a typo tho I
+    298 14.56%:  a typo. I do
+    299 14.56%:  that one I put
+    300 14.55%:  that,
+    301 14.55%:  me though
+    302 14.62%:  me though.
+    303 14.54%:  a typo. I dun
+    304 14.54%:  a typo. I,
+    305 15.82%:  a typo. I, u
+    306 14.53%:  a typo tho h
+    307 14.52%:  good, I
+    308 14.52%:  made up, h
+    309 14.51%:  a typo. I got the
+    310 14.51%:  got to get me
+    311 14.51%:  on my top
+    312 14.98%:  on my top 
+    313 14.51%:  a typo. I thought he
+    314 14.50%:  that one I got
+    315 14.50%:  that good, h
+    316 14.61%:  that good, huh.
+    317 14.49%:  a typo tho, h
+    318 14.49%:  me, though. I
+    319 14.49%:  not, though. I put a
+    320 14.48%:  made up, not
+    321 14.48%:  not me, I
+    322 14.47%:  good that the
+    323 14.47%:  that I don
+    324 14.46%:  on my head,
+    325 14.46%:  a pun, get
+    326 14.43%:  on my 
+    327 14.43%:  that one I hope
+    328 14.42%:  made up, the
+    329 14.42%:  made up, no
+    330 14.42%:  made up. It
+    331 14.41%:  a pun, my
+    332 14.40%:  me. It
+    333 14.40%:  a pun, too
+    334 14.40%:  got no
+    335 14.39%:  made up though. It
+    336 14.39%:  not, you
+    337 14.38%:  not, though. I put my
+    338 14.38%:  a pun, um
+    339 14.38%:  got to get me a
+    340 14.35%:  a pun, e
+    341 14.34%: , uh. In a
+    342 14.58%: , uh. In a good
+    343 14.33%:  not me though,
+    344 14.32%:  a pun, he
+    345 14.32%:  a pun, d
+    346 14.32%:  that one though
+    347 14.71%:  that one though.
+    348 14.31%:  made out to
+    349 14.30%:  not the guy
+    350 14.30%:  a good pun.
+    351 14.29%:  you though
+    352 14.27%:  a guy I
+    353 14.27%:  on to
+    354 14.25%:  not. I
+    355 14.24%:  an em
+    356 14.18%:  got that
+    357 14.18%:  a pun, hee
+    358 14.17%:  too, um.
+    359 14.17%:  not, though. I get a
+    360 14.14%:  an egg
+    361 14.13%:  an empty
+    362 14.13%:  that one he
+    363 14.12%:  not you.
+    364 14.12%:  me, and
+    365 14.12%:  not, I
+    366 14.12%:  an emot
+    367 14.12%:  got one
+    368 14.11%:  an e
+    369 14.11%:  an 
+    370 14.11%:  an I
+    371 14.10%:  me and
+    372 14.09%:  not me. I
+    373 14.09%:  got me a
+    374 14.08%:  that one to
+    375 14.06%:  good that I put my
+    376 14.05%:  not though. I put
+    377 14.05%:  got a hyphen.
+    378 14.05%:  gotta go,
+    379 14.04%:  got,
+    380 14.72%:  got, um
+    381 14.03%:  on that
+    382 14.03%:  not a typo, huh.
+    383 14.02%:  me, I
+    384 14.02%:  not that he
+    385 14.02%:  got me on
+    386 14.02%:  on though
+    387 14.03%:  on though,
+    388 14.01%:  good that my
+    389 14.01%:  got to end up
+    390 14.00%:  not that guy
+    391 13.99%:  not the 
+    392 13.99%:  on that I
+    393 13.99%:  on you
+    394 13.99%:  got 
+    395 13.98%:  not the type
+    396 13.98%:  good he
+    397 13.98%:  a typo I don
+    398 13.97%: , um. I don
+    399 13.97%:  gotta get
+    400 13.97%:  a typo, eh huh
+    401 13.97%:  a typo, eh.
+    402 13.96%:  got d
+    403 13.96%:  a pun though
+    404 13.96%:  that good.
+    405 13.95%:  made up to
+    406 13.94%:  not that you
+    407 13.93%:  got you
+    408 13.92%:  got a dot net.
+    409 13.92%:  me, you
+    410 13.91%:  not me, that
+    411 13.91%:  the guy I
+    412 13.91%:  not me, you
+    413 13.91%:  not that,
+    414 13.91%:  me on
+    415 13.90%:  me that
+    416 13.90%:  got n
+    417 13.90%:  not me though. It
+    418 13.89%:  not though, h
+    419 13.89%:  on my head, though. I
+    420 13.88%:  good at
+    421 13.88%:  not at the
+    422 13.88%:  one that
+    423 13.88%:  you, though. It
+    424 13.87%:  on I
+    425 13.87%:  a pun, I get
+    426 13.86%: , I
+    427 13.85%:  not that my
+    428 13.85%:  one day
+    429 13.85%:  not that.
+    430 13.84%:  not you, utah.
+    431 13.81%:  good the
+    432 13.81%:  a pun I
+    433 13.81%:  gotta do
+    434 13.80%:  a pun, too.
+    435 13.80%:  gotta end
+    436 13.79%:  got a hyphen dot
+    437 13.79%:  that you
+    438 13.79%:  good they
+    439 13.79%:  good my
+    440 13.78%:  no,
+    441 13.78%: , uh. I need
+    442 16.06%: , uh. I need to go
+    443 13.77%:  that the
+    444 13.76%:  one guy
+    445 13.76%:  me, though. I put
+    446 13.75%:  a good pun, I get
+    447 13.75%:  one to
+    448 13.75%:  made the
+    449 13.74%:  one he
+    450 13.74%:  you and
+    451 13.84%:  you and I
+    452 13.72%:  that pun
+    453 13.72%:  that he
+    454 13.71%: , 
+    455 13.71%:  one you
+    456 13.71%:  one up
+    457 13.71%:  that type
+    458 13.70%: , um. In
+    459 13.70%:  got a dot net, I
+    460 13.70%:  not me. It
+    461 13.69%:  that too
+    462 13.69%:  you though.
+    463 13.68%: , uh. In my
+    464 13.67%:  not me, h
+    465 13.67%:  got to pay the
+    466 13.67%: , a
+    467 13.67%:  one,
+    468 13.65%:  that one guy I
+    469 13.65%: , y
+    470 13.64%:  got a dot net, h
+    471 13.64%: , yeah
+    472 13.63%:  one o
+    473 13.63%: , that
+    474 13.62%:  you I
+    475 13.62%: , It
+    476 13.62%:  made to
+    477 13.61%:  that one though, I
+    478 13.60%: , uh. I gotta
+    479 13.87%: , uh. I gotta go
+    480 13.59%:  no d
+    481 13.59%:  no typ
+    482 19.68%:  no typo.
+    483 17.46%:  no typo. I
+    484 17.15%:  no typo, I
+    485 16.70%:  no typo. It
+    486 16.06%:  no typo, that
+    487 13.75%:  no typo. I am
+    488 13.58%:  got a dot net, my
+    489 13.58%:  a pun, hehe
+    490 13.64%:  a pun, heheh
+    491 13.58%:  on though.
+    492 13.58%:  made up, though. I got
+    493 13.57%:  no.
+    494 13.57%: , uh. I get
+    495 13.73%: , uh. I get that
+    496 13.57%:  got a typo, I
+    497 13.56%: , uh. I am
+    498 13.56%:  you and I,
+    499 13.55%: , uh. I got
+    500 13.86%: , uh. I got a
+    501 13.55%:  you on
+    502 13.55%:  a pun too
+    503 13.68%:  a pun too,
+    504 13.54%:  not me, th
+    505 15.80%:  not me, tho.
+    506 14.48%:  not me, tho. I
+    507 13.53%:  gotta go up
+    508 13.53%:  a pun he
+    509 13.52%:  not me, d
+    510 13.52%: , uh. I hate
+    511 13.52%: , uh. I hope
+    512 14.15%: , uh. I hope he
+    513 13.52%: , uh. I thought
+    514 13.51%: , uh. I dun
+    515 13.51%:  not me, the
+    516 13.51%:  not me, yeah
+    517 13.50%:  a pun you
+    518 13.50%: , uh. I had
+    519 13.81%: , uh. I had no
+    520 13.50%:  not though. I hate
+    521 13.50%:  not my e
+    522 13.50%:  a pun though.
+    523 13.49%:  not though. I had
+    524 13.49%: , uh. I get the
+    525 13.49%:  got a typo th
+    526 13.49%:  good that they
+    527 13.48%:  you that
+    528 13.48%: , uh. I do
+    529 13.78%: , uh. I do not
+    530 13.47%:  that good, I
+    531 13.47%: , uh. I meant
+    532 13.90%: , uh. I meant to type
+    533 13.66%: , uh. I meant to put
+    534 13.47%: , uh. I may
+    535 13.46%: , uh. I put
+    536 13.46%:  made up though, I
+    537 13.46%:  a typo, though. I get he
+    538 13.46%:  good that he put
+    539 13.45%:  me, h
+    540 13.45%:  got me on the gut
+    541 13.45%:  not the guy I made
