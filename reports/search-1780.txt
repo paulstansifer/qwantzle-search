@@ -1,73 +1,72 @@
 SURE they'll think of a word.
       0 100.00%: 
-      1 22.71%:  not
-      2 20.11%:  S
-      3 19.66%:  a
-      4 19.59%:  not the
-      5 19.58%:  the
+      1 22.48%:  not
+      2 20.10%:  S
+      3 19.62%:  a
+      4 19.61%:  the
+      5 19.42%:  not the
       6 19.18%:  really
-      7 19.15%:  in
-      8 19.07%:  RE
-      9 18.92%:  all
-     10 19.72%:  all for the
-     11 18.90%:  down
-     12 19.69%:  down for
-     13 18.80%:  on
-     14 18.78%:  ready
-     15 18.74%:  totally
-     16 18.71%:  tired
-     17 20.13%:  tired of all
-     18 19.03%:  tired of not
-     19 18.64%:  kinda
-     20 18.63%:  into
-     21 18.63%:  
-     22 18.62%:  R
-     23 18.61%:  now
-     24 18.60%:  for
-     25 18.60%:  done
-     26 19.21%:  done.
-     27 18.59%:  an
-     28 18.57%:  at
-     29 18.43%:  tired of talk
-     30 18.41%:  tired of '
-     31 18.37%:  tired of how
-     32 18.37%:  tired of only
-     33 18.36%:  tired.
-     34 18.36%:  tired of a
-     35 18.34%:  in.
-     36 18.30%:  not a
-     37 18.26%:  done with
-     38 18.04%:  all for '
-     39 17.83%:  all for new
-     40 17.62%:  on the
-     41 17.54%:  now the
-     42 17.46%:  totally down
-     43 17.36%:  the only
-     44 17.18%:  down for it
-     45 17.17%:  down for a
-     46 17.11%:  really into
-     47 17.09%:  down to
-     48 16.94%:  down for that
-     49 16.78%:  SURE we
-     50 21.72%:  SURE we'll find
-     51 18.84%:  SURE we'll think
-     52 18.55%:  SURE we'll do
-     53 18.45%:  SURE we'll hit
-     54 17.71%:  SURE we'll hit on a
-     55 16.98%:  SURE we'll find that
-     56 16.67%:  SURE we'd
-     57 16.66%:  down for all
-     58 16.58%:  not really
-     59 16.48%:  in for
-     60 16.47%:  SURE they
-     61 24.30%:  SURE they'll find
-     62 20.44%:  SURE they'll find a work
-     63 20.31%:  SURE they'd
-     64 19.68%:  SURE they'll think
-     65 20.02%:  SURE they'll think of a word
-     66 19.23%:  SURE they'll work
-     67 19.21%:  SURE they'll do
-     68 19.19%:  SURE they'll want
-     69 19.13%:  SURE they'll know
-     70 19.13%:  SURE they'll at
-     71 19.06%:  SURE they'll do it
+      7 19.09%:  RE
+      8 19.09%:  in
+      9 18.90%:  all
+     10 19.77%:  all for the
+     11 18.88%:  down
+     12 18.80%:  on
+     13 18.76%:  totally
+     14 18.75%:  ready
+     15 18.70%:  tired
+     16 20.23%:  tired of all
+     17 19.08%:  tired of not
+     18 18.62%:  kinda
+     19 18.62%:  into
+     20 18.61%:  
+     21 18.61%:  R
+     22 18.61%:  now
+     23 18.59%:  done
+     24 19.05%:  done.
+     25 18.58%:  an
+     26 18.58%:  for
+     27 18.47%:  tired of talk
+     28 18.43%:  tired of '
+     29 18.42%:  tired of how
+     30 18.41%:  tired of only
+     31 18.41%:  tired of a
+     32 18.33%:  done with
+     33 18.22%:  in.
+     34 18.22%:  tired.
+     35 18.12%:  not a
+     36 18.10%:  all for '
+     37 17.90%:  on the
+     38 17.89%:  all for new
+     39 17.78%:  now the
+     40 17.43%:  totally down
+     41 17.40%:  down for a
+     42 17.35%:  the only
+     43 17.34%:  down for it
+     44 17.30%:  really into
+     45 17.24%:  down for that
+     46 17.14%:  down to
+     47 17.07%:  down for all
+     48 16.83%:  SURE we
+     49 21.71%:  SURE we'll find
+     50 18.75%:  SURE we'll think
+     51 18.45%:  SURE we'll do
+     52 18.34%:  SURE we'll hit
+     53 17.48%:  SURE we'll hit on a
+     54 16.89%:  SURE we'll find that
+     55 16.62%:  SURE we'd
+     56 16.60%:  for the
+     57 16.54%:  in for
+     58 16.52%:  SURE they
+     59 24.27%:  SURE they'll find
+     60 20.61%:  SURE they'd
+     61 20.31%:  SURE they'll find a work
+     62 19.49%:  SURE they'll think
+     63 19.77%:  SURE they'll think of a word
+     64 19.08%:  SURE they'll work
+     65 19.06%:  SURE they'll do
+     66 19.06%:  SURE they'll want
+     67 19.01%:  SURE they'll at
+     68 19.01%:  SURE they'll know
+     69 18.90%:  SURE they'll do it
+     70 18.60%:  SURE they'd all

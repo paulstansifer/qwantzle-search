@@ -26,3 +26,111 @@ picture of yourself!  T-Rex (punchline): Like >>when I lost someone's baby!<<
 Search time: 272s.  Per-step times: Copy: 0ms  Advance: 357ms  FF advance: 18ms  Predict: 3ms  Misc: 0.
 
 This time is seems to work? (At the cost of making the first few tokens much more expensive?)
+
+Estimated session size: 62 / 126
+Estimated steps: 402. Avg. prob: 8.3%
+on the lottery! The end!!"  T-Rex (punchline): Okay >>even I think that one's not so good.<<
+  Hit step limit: 5001
+  Search time: 530s.  Per-step times: Copy: 0ms  Advance: 13ms  FF advance: 2ms  Predict: 92ms  Misc: 0.
+Estimated steps: 10. Avg. prob: 16.4%
+t!  T-Rex (punchline): OH, SICK BURN  Off panel: So, >>um... I guess I'll talk to you later huh<<
+  Search successful after 463 steps. Prob: 27.17%
+  Search time: 47s.  Per-step times: Copy: 0ms  Advance: 12ms  FF advance: 2ms  Predict: 87ms  Misc: 0.
+Estimated steps: 2100. Avg. prob: 2.3%
+ know.  Narrator: LATER:  T-Rex (punchline): Bitches >>is singular now, tell bitches<<
+  Hit step limit: 5001
+  Search time: 325s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 1ms  Predict: 53ms  Misc: 0.
+Estimated steps: 546. Avg. prob: 3.3%
+rcourse is for kids." Wow!  T-Rex (punchline): That >>idea backfired incredibly quickly!<<
+  Exhausted all reasonable nodes at 31 steps
+  Search time: 2s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 1ms  Predict: 40ms  Misc: 0.
+Estimated steps: 160. Avg. prob: 5.8%
+ this one!  T-Rex: Utahraptor!  T-Rex (punchline): I >>still really want to be pals!!<<
+  Search successful after 281 steps. Prob: 16.76%
+  Search time: 16s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 46ms  Misc: 0.
+Estimated steps: 81. Avg. prob: 8.9%
+ore to an earlier save point.  T-Rex (punchline): I >>have failed to prove my point!<<
+  Search successful after 544 steps. Prob: 21.39%
+  Search time: 32s.  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 2ms  Predict: 47ms  Misc: 0.
+Estimated steps: 68. Avg. prob: 4.3%
+r now, everyone!  T-Rex: So!  T-Rex (punchline): Did >>yesterday really happen or WHAT?<<
+  Exhausted all reasonable nodes at 110 steps
+  Search time: 7s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 0ms  Predict: 51ms  Misc: 0.
+Estimated steps: 144. Avg. prob: 5.8%
+t, desperate cry for help.  T-Rex (punchline): It's >>a death spasm that infects the galaxy.<<
+  Hit step limit: 5001
+  Search time: 401s.  Per-step times: Copy: 0ms  Advance: 12ms  FF advance: 1ms  Predict: 67ms  Misc: 0.
+Estimated steps: 192. Avg. prob: 10.8%
+ in my head right now.  T-Rex (punchline): [thinks] >>Aw man! Why would I even say that??<<
+  Search successful after 3716 steps. Prob: 15.70%
+  Search time: 273s.  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 2ms  Predict: 62ms  Misc: 0.
+Estimated steps: 16. Avg. prob: 6.3%
+ming it!  T-Rex: No, wait!!  T-Rex (punchline): That >>sounds like the boring part!!<<
+  Search successful after 129 steps. Prob: 16.43%
+  Search time: 8s.  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 50ms  Misc: 0.
+Estimated steps: 162. Avg. prob: 9.0%
+y War and Pup-Pup Peace!!  T-Rex (punchline): Well, >>it looks like I'M never reading again<<
+  Search successful after 648 steps. Prob: 17.43%
+  Search time: 49s.  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 2ms  Predict: 64ms  Misc: 0.
+Estimated steps: 6. Avg. prob: 24.5%
+hell was he talking about?  T-Rex (punchline): I've >>got the insurance papers right here!<<
+  Search successful after 19 steps. Prob: 31.36%
+  Search time: 1s.  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 9ms  Predict: 56ms  Misc: 0.
+Estimated steps: 70. Avg. prob: 12.6%
+e to say it out loud.  T-Rex (punchline): Sometimes >>life is full of compromises, you know?<<
+Non-answer: , life is full of compromises you know? != life is full of compromises, you know?
+  Hit step limit: 5001
+  Search time: 495s.  Per-step times: Copy: 0ms  Advance: 12ms  FF advance: 1ms  Predict: 85ms  Misc: 0.
+Estimated steps: 60. Avg. prob: 11.8%
+l, you know what they say:  T-Rex (punchline): "I'm >>not particularly good at it!!"<<
+Non-answer: not particularly good at it"!! != not particularly good at it!!"
+  Search successful after 44 steps. Prob: 26.54%
+  Search time: 4s.  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 3ms  Predict: 70ms  Misc: 0.
+Estimated steps: 216. Avg. prob: 23.1%
+IRONIC  Off panel: IRON-IC // GET IT  Off panel: FUN >>FACT // I WAS ALSO PROGRAMMED FOR JOKES<<
+  Search successful after 1479 steps. Prob: 30.65%
+  Search time: 209s.  Per-step times: Copy: 0ms  Advance: 16ms  FF advance: 3ms  Predict: 122ms  Misc: 0.
+Estimated steps: 1. Avg. prob: 17.2%
+enlightened soon.  Multiple off-panel voices: Dude! >>We get that ALL THE TIME!<<
+  Search successful after 51 steps. Prob: 24.51%
+  Search time: 3s.  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 50ms  Misc: 0.
+Estimated steps: 1840. Avg. prob: 4.8%
+ that to us "mortalies"!  T-Rex (punchline): That's >>their racist name for us!!<<
+Non-answer: it for the c! a! m e r u a r s i n s != their racist name for us!!
+Non-answer: it for the c! a! m e r u a r s s i n != their racist name for us!!
+Non-answer: it for the c! a! m e r i a n r u s s != their racist name for us!!
+Non-answer: it for the c! a! n i s m a s u e r r != their racist name for us!!
+...
+Non-answer: it for the c! a n i! a s s e m u r r != their racist name for us!!
+Non-answer: it for the c! a n i! s m a s u r e r != their racist name for us!!
+  Hit step limit: 5001
+  Search time: 785s.  Per-step times: Copy: 0ms  Advance: 18ms  FF advance: 1ms  Predict: 137ms  Misc: 0.
+Estimated steps: 140. Avg. prob: 6.9%
+picture of yourself!  T-Rex (punchline): Like >>when I lost someone's baby!<<
+  Search successful after 718 steps. Prob: 16.76%
+  Search time: 52s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 60ms  Misc: 0.
+Estimated steps: 64. Avg. prob: 4.1%
+lsey! We're on speakphone!  T-Rex (punchline): ...I >>think your voice is a wonderful gift!<<
+  Hit step limit: 5001
+  Search time: 377s.  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 62ms  Misc: 0.
+Estimated steps: 15. Avg. prob: 11.5%
+ramped bikes off exploding boats!!  Off panel: What >>the hell kind of question is that anyway<<
+  Search successful after 44 steps. Prob: 25.41%
+  Search time: 4s.  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 4ms  Predict: 69ms  Misc: 0.
+Estimated steps: 64. Avg. prob: 16.7%
+AFFIC WE ARE TRAFFIC T-REX  T-Rex (punchline): That >>is technically true, cannibals!<<
+  Hit step limit: 5001
+  Search time: 600s.  Per-step times: Copy: 0ms  Advance: 14ms  FF advance: 2ms  Predict: 103ms  Misc: 0.
+Estimated steps: 6. Avg. prob: 32.3%
+ Tearing Open The Machine"?  T-Rex (punchline): God >>Tearing Open The Machine, LADIES.<<
+  Search successful after 10 steps. Prob: 44.40%
+  Search time: 1s.  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 8ms  Predict: 120ms  Misc: 0.
+Estimated steps: 16000. Avg. prob: 5.1%
+Estimated steps: 16. Avg. prob: 7.1%
+HAPPENED:  T-Rex: maybe...  T-Rex (punchline): maybe >>i should get me some clothes<<
+  Search successful after 57 steps. Prob: 18.06%
+  Search time: 3s.  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 51ms  Misc: 0.
+Estimated steps: 24. Avg. prob: 35.3%
+ a reason!!  T-Rex: AW FRIG  T-Rex (punchline): THAT >>IS A SENTENCE ONLY AN OLD MAN WOULD SAY<<
+  Hit step limit: 5001
+  Search time: 767s.  Per-step times: Copy: 0ms  Advance: 17ms  FF advance: 4ms  Predict: 132ms  Misc: 0.

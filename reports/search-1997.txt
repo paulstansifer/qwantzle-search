@@ -1,0 +1,464 @@
+um... I guess I'll talk to you later huh
+      0 100.00%: 
+      1 24.85%:  um
+      2 23.86%:  I
+      3 25.35%:  I'm a
+      4 25.08%:  I'm the
+      5 24.54%:  I'll
+      6 23.94%:  I'm your
+      7 23.89%:  I'm really
+      8 23.82%:  I'm out
+      9 23.76%:  I'm guess
+     10 23.74%:  I'm...
+     11 23.59%:  I'm totally
+     12 23.59%:  um...
+     13 23.52%:  I'm sure
+     14 23.50%:  I'm at
+     15 23.49%:  I'm all
+     16 23.47%:  I'm that
+     17 23.46%:  I'm also
+     18 23.45%:  I'm sort
+     19 23.45%:  I'm you
+     20 23.45%:  I'm 
+     21 23.45%:  I'm here
+     22 23.33%:  I guess
+     23 29.62%:  I guess I'm
+     24 25.70%:  I guess I'm the
+     25 24.41%:  I guess I'm a
+     26 24.40%:  I guess I'll try
+     27 24.39%:  I guess I'll take
+     28 24.36%:  I guess I'll tell
+     29 24.33%:  I guess I'll let
+     30 24.27%:  I guess I'll talk
+     31 27.86%:  I guess I'll talk to you later.
+     32 26.48%:  I guess I'll talk to you later...
+     33 26.28%:  I guess I'll talk to my
+     34 25.78%:  I guess I'll talk to you later h
+     35 25.31%:  I guess I'll talk to your
+     36 24.25%:  I guess I'm...
+     37 24.24%:  I guess I'm out
+     38 24.24%:  I guess I'll talk to you at
+     39 24.24%:  I guess I'll make
+     40 24.23%:  I guess I'll...
+     41 24.22%:  I guess I'll talk to the
+     42 24.12%:  I guess I'm your
+     43 24.06%:  I guess I'll tell you
+     44 23.98%:  I guess I'll talk to you...
+     45 23.97%:  I guess I'll talk to you a
+     46 23.90%:  I guess I'll talk to you.
+     47 23.76%:  I guess I'm really
+     48 23.64%:  I guess I'm all
+     49 23.63%:  I guess I'm you
+     50 23.61%:  I guess I'm that
+     51 23.61%:  I guess I'm at
+     52 23.60%:  I guess I'm okay
+     53 23.59%:  I guess I'm al
+     54 23.58%:  I guess I'm totally
+     55 22.91%:  I guess I'll talk to you later huh.
+     56 22.87%:  I guess I'll let my
+     57 22.68%:  I guess I'll try to make
+     58 22.60%:  you
+     59 25.06%:  you're the
+     60 24.30%:  you're a
+     61 23.36%:  you're...
+     62 23.33%:  you're all
+     63 22.98%:  you're out
+     64 22.87%:  you're so
+     65 22.84%:  you're that
+     66 22.84%:  you're team
+     67 22.84%:  you're at
+     68 22.54%:  I guess I'll talk to ya
+     69 22.37%:  I guess I'll talk to my other
+     70 22.37%:  I'm sorta
+     71 22.36%:  I guess I'll make a
+     72 22.36%:  I guess I'll talk to a
+     73 22.36%:  I guess I'll talk to our
+     74 22.29%:  I guess I'll talk to me
+     75 22.20%:  yeah
+     76 22.17%:  I guess I'll try to...
+     77 22.15%:  I guess I'll try to take
+     78 22.14%:  I guess I'll try to tell
+     79 22.10%:  I guess I'll try to let
+     80 22.10%:  I guess I'll try to talk
+     81 22.08%:  I guess I'll try to.
+     82 22.02%:  I guess I'll take my
+     83 21.87%:  I guess I'll tell you a
+     84 21.81%:  I'll see
+     85 22.52%:  I'll see you at 
+     86 21.87%:  I'll see you at a
+     87 21.77%:  I guess I'm at your
+     88 21.76%:  I'm at a
+     89 21.72%:  I guess I'll talk to my real
+     90 21.68%:  I'll see you all
+     91 21.67%:  I'll see you at our
+     92 21.62%:  you're at a
+     93 21.60%:  I guess I'll make that
+     94 21.44%:  I guess I'll tell your
+     95 21.43%:  I'll see you...
+     96 21.40%:  I guess I'll talk to you later... h
+     97 21.40%:  I guess I'll talk to you later... um
+     98 21.37%:  I'll see you at that
+     99 21.36%:  I'll see you at...
+    100 21.27%:  I'm here to say I
+    101 21.26%:  I guess I'll talk to you later huh...
+    102 21.25%:  I'll see you out
+    103 21.22%:  I'll see you to
+    104 21.14%:  I guess I'll take a
+    105 21.14%:  yeah. I
+    106 26.62%:  yeah. I guess I'm
+    107 23.03%:  yeah. I guess I'm a
+    108 22.64%:  yeah. I guess I'm out
+    109 22.43%:  yeah. I guess I'm that
+    110 22.42%:  yeah. I guess I'm all
+    111 22.40%:  yeah. I guess I'll talk
+    112 22.29%:  yeah. I guess I'm al
+    113 22.28%:  yeah. I guess I'll look
+    114 22.28%:  yeah. I guess I'm at
+    115 22.26%:  yeah. I guess I'm too
+    116 21.53%:  yeah. I'
+    117 21.08%:  I'm also your
+    118 21.08%:  I guess I'll let you talk
+    119 21.07%:  I guess I'll let you out
+    120 21.06%:  I guess I'll let you...
+    121 21.03%:  I'm out.
+    122 21.02%:  I guess I'll tell you that
+    123 21.00%:  I guess I'll make you
+    124 20.97%:  yeah. I guess I'll talk to our
+    125 20.95%:  you'll
+    126 20.89%:  yeah. I'm the
+    127 20.86%:  I'm at your
+    128 20.83%:  yeah. I'm a
+    129 20.81%:  I guess I'm outta
+    130 20.79%:  I guess I'm the...
+    131 20.77%:  I'm here to say that...
+    132 20.76%:  I'm also a
+    133 20.75%:  I guess I'll tell you to
+    134 20.74%:  I'm really a
+    135 20.73%:  I guess I'll let your
+    136 20.70%:  I guess I'll take your
+    137 20.62%:  I guess I'll make you a
+    138 20.62%:  I'll say
+    139 20.61%:  I guess I'm out.
+    140 20.61%:  I'm here to say...
+    141 20.60%:  I guess I'm at a
+    142 20.57%:  yeah. I guess I'm that.
+    143 20.55%:  I guess I'll let that
+    144 20.53%:  um.
+    145 20.49%:  yeah. I'll
+    146 20.47%:  I guess I'm... the
+    147 20.46%:  so
+    148 20.44%:  I'm here to say that I...
+    149 20.41%:  I guess I'll take that you
+    150 20.39%:  yeah. I'm out
+    151 20.31%:  yeah. I'm that
+    152 20.31%:  that
+    153 30.84%:  that's the
+    154 29.65%:  that's a
+    155 28.51%:  that's my
+    156 28.46%:  that's your
+    157 27.66%:  that's all
+    158 27.17%:  that's our
+    159 27.14%:  that's...
+    160 27.07%:  that's you
+    161 27.05%:  that's me
+    162 27.05%:  that's a yes
+    163 26.96%:  that's us
+    164 26.92%:  that's 
+    165 26.91%:  that's really
+    166 26.90%:  that's okay
+    167 26.87%:  that's three
+    168 25.39%:  that's all I got
+    169 25.21%:  that's okay.
+    170 24.70%:  that's all you
+    171 23.96%:  that's us.
+    172 23.37%:  that's all you got
+    173 23.00%:  that's okay. I
+    174 22.91%:  that's the real
+    175 22.88%:  that's me.
+    176 22.67%:  that's really the
+    177 22.60%:  that's the moral
+    178 22.60%:  that's the same
+    179 22.59%:  that's the g
+    180 22.51%:  that's the 
+    181 22.50%:  that's the guy
+    182 22.41%:  that's a yes.
+    183 22.13%:  that's all the
+    184 22.08%:  that's our team
+    185 21.90%:  that's a yes to
+    186 21.67%:  that's all I got. I
+    187 21.64%:  that's a met
+    188 21.49%:  that's a story
+    189 21.35%:  that's a...
+    190 21.28%:  that's a hell
+    191 21.26%:  that's a 
+    192 21.25%:  that's a rhet
+    193 21.20%:  that's a y
+    194 21.19%:  that's a lot
+    195 21.19%:  that's a th
+    196 21.13%:  that'll
+    197 21.13%:  that's... a
+    198 20.98%:  that's the guy I
+    199 20.95%:  that's all I get
+    200 20.91%:  that's... the
+    201 20.89%:  that's you.
+    202 20.52%:  that's the guy I am
+    203 20.51%:  that's a yes I
+    204 20.46%:  that's a yes or
+    205 20.44%:  that's a yes...
+    206 20.37%:  that's me. I
+    207 20.30%:  I guess you
+    208 22.45%:  I guess you'll
+    209 20.82%:  I guess you're a
+    210 20.62%:  I guess you're...
+    211 20.61%:  I guess you're all
+    212 20.32%:  I guess you're out
+    213 20.29%:  I guess you're al
+    214 20.28%:  I guess I'll take that...
+    215 20.28%:  you're at least
+    216 20.28%:  I guess I'll take that.
+    217 20.27%:  yeah. I'm all
+    218 20.26%:  I guess I'm really a
+    219 20.26%:  I guess you're at
+    220 20.23%:  I guess I'll take that 
+    221 20.22%:  I'm here to ask
+    222 20.22%:  I guess I'm all out
+    223 20.18%:  I guess I'll take you
+    224 20.18%:  I guess I'll tell that
+    225 20.17%:  yeah. I'm sure
+    226 20.16%:  I'm at a loss. I
+    227 20.14%:  yeah. I'm ret
+    228 20.14%:  yeah. I'm sort
+    229 20.12%:  yeah. I'm guess
+    230 20.11%:  yeah. I'm at
+    231 20.11%:  the
+    232 20.11%:  yeah. I'm also
+    233 20.11%:  yeah. I'm 
+    234 20.11%:  yeah. I'm great
+    235 20.11%:  yeah. I'm so
+    236 20.11%:  u
+    237 25.24%:  uh...
+    238 22.23%:  uh.
+    239 20.85%:  uh yeah
+    240 20.85%:  uh..
+    241 20.84%:  uh so
+    242 20.84%:  uh I
+    243 20.89%:  uh I guess
+    244 26.44%:  uh I guess I'm
+    245 22.27%:  uh I guess I'm the
+    246 21.61%:  uh I guess I'll try
+    247 21.24%:  uh I guess I'll take
+    248 21.21%:  uh I guess I'll tell
+    249 21.17%:  uh I guess I'll let
+    250 21.16%:  uh I guess I'll talk
+    251 24.89%:  uh I guess I'll talk to you later.
+    252 23.14%:  uh I guess I'll talk to my
+    253 22.57%:  uh I guess I'll talk to you later...
+    254 22.16%:  uh I guess I'll talk to your
+    255 21.83%:  uh I guess I'll talk to the
+    256 21.09%:  uh I guess I'll...
+    257 21.08%:  uh I guess I'll make
+    258 20.97%:  uh I guess I'll look
+    259 20.89%:  uh I guess I'll talk to you later h
+    260 20.53%:  uh... I
+    261 23.33%:  uh... I'll
+    262 22.12%:  uh... I'll try
+    263 21.45%:  uh... I'll see
+    264 21.12%:  uh... I'll see you at 
+    265 20.70%:  uh... I'll see you at a
+    266 20.64%:  uh... I'll see you at our
+    267 20.54%:  uh... I'll see you all
+    268 20.49%:  uh I guess I'll tell you
+    269 20.44%:  uh I guess I'm out
+    270 20.43%:  uh... I guess
+    271 25.53%:  uh... I guess I'm
+    272 23.48%:  uh... I guess I'll try
+    273 22.76%:  uh... I guess I'll take
+    274 22.74%:  uh... I guess I'll tell
+    275 22.70%:  uh... I guess I'll let
+    276 22.68%:  uh... I guess I'll talk
+    277 24.89%:  uh... I guess I'll talk to my
+    278 23.68%:  uh... I guess I'll talk to your
+    279 23.51%:  uh... I guess I'll talk to the
+    280 22.65%:  uh... I guess I'll make
+    281 22.56%:  uh... I guess I'll look
+    282 21.91%:  uh... I guess I'm the
+    283 21.64%:  uh... I guess I'm out
+    284 21.62%:  uh... I guess I'll talk to you at
+    285 21.60%:  uh... I guess I'll make a
+    286 21.55%:  uh... I guess I'll make that
+    287 21.50%:  uh... I guess I'll try to make
+    288 21.47%:  uh... I guess I'm a
+    289 21.45%:  uh... I guess I'll talk to you a
+    290 21.42%:  uh... I guess I'll tell you
+    291 21.30%:  uh... I guess I'll try to take
+    292 21.27%:  uh... I guess I'm your
+    293 21.26%:  uh... I guess I'll try to talk
+    294 21.22%:  uh... I guess I'll let my
+    295 21.15%:  uh... I guess I'm really
+    296 21.14%:  uh... I guess I'm that
+    297 21.12%:  uh... I guess I'm all
+    298 21.11%:  uh... I guess I'm okay
+    299 21.11%:  uh... I guess I'm at
+    300 21.10%:  uh... I guess I'm al
+    301 21.09%:  uh... I guess I'll talk to my other
+    302 21.07%:  uh... I guess I'm you
+    303 21.07%:  uh... I guess I'm ret
+    304 21.07%:  uh... I guess I'm totally
+    305 20.75%:  uh... I guess I'll tell your
+    306 20.70%:  uh... I guess I'll let that
+    307 20.55%:  uh... I guess I'll take my
+    308 20.55%:  uh... I guess I'll talk to ya
+    309 20.43%:  uh... I guess I'll talk to our
+    310 20.43%:  uh... I guess I'll look at
+    311 20.42%:  uh... I guess I'm at your
+    312 20.41%:  uh I guess I'll let my
+    313 20.40%:  uh... I guess I'll talk to a
+    314 20.40%:  uh... I guess I'll talk to me
+    315 20.40%:  uh I guess I'm a
+    316 20.38%:  uh... I'll see you out
+    317 20.38%:  uh... I'll see you to
+    318 20.36%:  uh... I'll see you at that
+    319 20.34%:  uh... I'll see you at sl
+    320 20.34%:  uh I guess I'm...
+    321 20.32%:  uh... I guess I'll talk to other
+    322 20.32%:  uh... I guess I'll tell that
+    323 20.32%:  uh... I guess I'll talk to her
+    324 20.29%:  uh... I'm a
+    325 20.27%:  uh... I'm the
+    326 20.19%:  uh... I guess I'll look at my
+    327 20.11%:  uh I guess I'm your
+    328 20.11%:  uh... I'm out
+    329 20.07%:  uh I guess I'll make a
+    330 20.07%:  uh... I'll try to get
+    331 20.05%:  I'll go
+    332 20.04%:  I guess I'll make out
+    333 20.04%:  uh... I'm really
+    334 20.03%:  that's my last
+    335 20.01%:  yeah. I guess I'll look at
+    336 20.01%:  I'm here all
+    337 20.01%:  uh... I'll stay
+    338 20.00%:  I'll stay
+    339 20.00%:  uh I guess I'll talk to you at
+    340 20.00%:  I guess I'm your...
+    341 20.00%:  I guess I'm... a
+    342 19.99%:  yeah. I guess that
+    343 19.98%:  uh... I'll try to make
+    344 19.98%:  uh... I'm your
+    345 19.98%:  that's your last
+    346 19.95%:  uh I guess I'm really
+    347 19.93%:  I guess I'll try that
+    348 19.90%:  that's the guy I am.
+    349 19.90%:  uh I guess I'm all
+    350 19.90%:  I guess I'm you.
+    351 19.89%:  uh I guess I'm that
+    352 19.89%:  uh... I'm totally
+    353 19.89%:  yeah. I guess I'm that too
+    354 19.88%:  uh I guess I'll make that
+    355 19.88%:  uh I guess I'm at
+    356 19.88%:  uh... I'm ret
+    357 19.88%:  I'm a ghost
+    358 19.86%:  uh I guess I'm okay
+    359 19.86%:  uh I guess I'm al
+    360 19.85%:  uh... I'm at
+    361 19.85%:  I guess I'm out...
+    362 19.84%:  uh... I'm sure
+    363 19.84%:  uh... I'm guess
+    364 19.84%:  I guess I'll tell you...
+    365 19.84%:  uh I guess I'm you
+    366 19.84%:  uh... I guess I'll tell you that
+    367 19.83%:  I guess I'm a...
+    368 19.83%:  uh I guess I'm totally
+    369 19.82%:  uh... I'm that
+    370 19.82%:  I'm a guy
+    371 19.81%:  uh... I'm all
+    372 19.81%:  I guess I'm at the 
+    373 19.81%:  uh... I'm here
+    374 19.81%:  uh... I'll try to take
+    375 19.81%:  uh... I'm also
+    376 19.81%:  uh... I'm al
+    377 19.81%:  I'm at your house.
+    378 19.80%:  I guess I'm... your
+    379 19.80%:  I guess I'm at the...
+    380 19.80%:  uh... I'm sort
+    381 19.80%:  uh... I'm allerg
+    382 19.80%:  uh... I'm ste
+    383 19.79%:  uh... I'm okay
+    384 19.79%:  uh... I'll try to use
+    385 19.79%:  I guess I'll tell you.
+    386 19.78%:  I'm also the
+    387 19.78%:  that's my take
+    388 19.77%:  I guess I'll talk to you at 
+    389 19.77%:  I guess I'm totally out
+    390 19.76%:  I guess I'll try to tell a
+    391 19.76%:  I'm here to say that... I
+    392 19.76%:  I'm sure you get
+    393 19.75%:  I guess I'm a really
+    394 19.74%:  I guess I'm a real
+    395 19.74%:  uh... I'll go
+    396 19.74%:  I guess I'll tell you our
+    397 19.73%:  uh... I guess I'll take your
+    398 19.73%:  that's a... yes
+    399 19.72%:  I guess I'm okay.
+    400 19.72%:  uh... I guess I'll take a
+    401 19.72%:  I guess I'm... out
+    402 19.71%:  that's all I see
+    403 19.71%:  I guess I'll tell you at
+    404 19.70%:  I guess I'll make all
+    405 19.70%:  I guess I'll tell our
+    406 19.70%:  that's my role
+    407 19.69%:  I guess I'll talk later
+    408 19.68%:  yeah. I guess that'll
+    409 19.68%:  I guess I'm a t
+    410 19.68%:  I'm here to stay
+    411 19.67%:  that's your take
+    412 19.67%:  I'll see you at... 
+    413 19.67%:  I guess I'm a total
+    414 19.67%:  I guess I'm a h
+    415 19.67%:  I guess I'm a 
+    416 19.67%:  I guess I'm a lot
+    417 19.66%:  I guess I'll... take
+    418 19.66%:  I guess I'm a re
+    419 19.66%:  I guess I'm out a
+    420 19.65%:  I guess I'm a r
+    421 19.65%:  I guess I'm a ro
+    422 19.65%:  I guess I'm a tool
+    423 19.65%:  that's my 
+    424 19.64%:  I guess I'll talk to our mutual
+    425 19.64%:  I guess I'm totally the
+    426 19.64%:  uh... I guess I'll make you
+    427 19.64%:  I guess I'll tell a
+    428 19.63%:  that's my real
+    429 19.63%:  I guess I'll... tell
+    430 19.63%:  uh... I'm here to say
+    431 19.63%:  I guess I'll make your
+    432 19.62%:  that's my I
+    433 19.62%:  um... I
+    434 21.32%:  um... I'll try
+    435 20.11%:  um... I'll see
+    436 20.74%:  um... I'll see you at 
+    437 20.32%:  um... I'll see you at a
+    438 20.24%:  um... I'll see you at our
+    439 19.96%:  um... I'll see you all
+    440 19.95%:  um... I'll see you at that
+    441 19.93%:  um... I'll see you at sl
+    442 19.86%:  um... I'll try to get
+    443 19.77%:  um... I'll see you out
+    444 19.62%:  um... I'll try to take
+    445 19.62%:  I guess I'll talk more
+    446 19.62%:  I'll try
+    447 19.60%:  that's your met
+    448 19.60%:  uh... I guess I'll tell you a
+    449 19.60%:  I guess I'm at that
+    450 19.60%:  I'm sure I
+    451 19.60%:  I guess I'm outta the
+    452 19.60%:  I guess I'll... try
+    453 19.59%:  I guess I'll try a
+    454 19.59%:  um... I'll try to use
+    455 19.59%:  that's your team
+    456 19.59%:  um... I guess
+    457 23.94%:  um... I guess I'll try
+    458 23.12%:  um... I guess I'll take
+    459 23.09%:  um... I guess I'll tell
+    460 23.06%:  um... I guess I'll let
+    461 23.04%:  um... I guess I'll talk
+    462 24.85%:  um... I guess I'll talk to you later h

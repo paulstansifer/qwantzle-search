@@ -53,7 +53,7 @@ type Q = PriorityQueue<Node, Score>;
 const FF_MIN_P: f32 = 0.18;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
-const MIN_TOK_P: f32 = 0.001;
+const MIN_TOK_P: f32 = 0.001; // REVISE DOWN
 
 // Token 0: (50%) 1.82%  (25%) 0.45%  (10%) 0.24%  (5%) 0.24% (1%) 0.10%
 // Token 1: (50%) 5.31%  (25%) 1.58%  (10%) 1.07%  (5%) 1.07% (1%) 0.35%
@@ -289,8 +289,9 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
     println!(
-        "Search time: {:.0}s.  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Misc: {:.0}.",
+        "Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}.",
         search_start_time.elapsed().as_secs_f32(),
+        (search_start_time.elapsed().as_micros() - (COPY_TIME.get() + ADVANCE_TIME.get() + FF_ADVANCE_TIME.get() + PREDICT_TIME.get() + MISC_TIME.get())) / 1000000.0,
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
         per_step(FF_ADVANCE_TIME.get()),
