@@ -1,0 +1,28 @@
+Using truncation instead of copying the context.
+
+Estimated session size: 62 / 126
+ this one!  T-Rex: Utahraptor!  T-Rex (punchline): I >>still really want to be pals!!<<
+Non-answer: really want to be pals still!! != still really want to be pals!!
+  Search successful after 274 steps. Prob: 17.49%
+Search time: 116s.  Per-step times: Copy: 0ms  Advance: 359ms  FF advance: 59ms  Predict: 4ms  Misc: 0.
+ore to an earlier save point.  T-Rex (punchline): I >>have failed to prove my point!<<
+  Search successful after 561 steps. Prob: 21.47%
+Search time: 143s.  Per-step times: Copy: 0ms  Advance: 234ms  FF advance: 18ms  Predict: 3ms  Misc: 0.
+ming it!  T-Rex: No, wait!!  T-Rex (punchline): That >>sounds like the boring part!!<<
+  Search successful after 125 steps. Prob: 16.46%
+Search time: 30s.  Per-step times: Copy: 0ms  Advance: 222ms  FF advance: 15ms  Predict: 3ms  Misc: 0.
+l, you know what they say:  T-Rex (punchline): "I'm >>not particularly good at it!!"<<
+Non-answer: not particularly good at it"!! != not particularly good at it!!"
+  Search successful after 44 steps. Prob: 26.41%
+Search time: 19s.  Per-step times: Copy: 0ms  Advance: 334ms  FF advance: 91ms  Predict: 4ms  Misc: 0.
+enlightened soon.  Multiple off-panel voices: Dude! >>We get that ALL THE TIME!<<
+  Search successful after 48 steps. Prob: 24.84%
+Search time: 27s.  Per-step times: Copy: 0ms  Advance: 535ms  FF advance: 14ms  Predict: 5ms  Misc: 0.
+ that to us "mortalies"!  T-Rex (punchline): That's >>their racist name for us!!<<
+  Hit step limit: 1001
+Search time: 284s.  Per-step times: Copy: 0ms  Advance: 268ms  FF advance: 12ms  Predict: 3ms  Misc: 0.
+picture of yourself!  T-Rex (punchline): Like >>when I lost someone's baby!<<
+  Search successful after 715 steps. Prob: 16.83%
+Search time: 272s.  Per-step times: Copy: 0ms  Advance: 357ms  FF advance: 18ms  Predict: 3ms  Misc: 0.
+
+This time is seems to work? (At the cost of making the first few tokens much more expensive?)

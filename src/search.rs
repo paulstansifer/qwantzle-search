@@ -77,6 +77,7 @@ thread_local! {
     pub static ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
     pub static FF_ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
     pub static PREDICT_TIME : Cell<u128> = Cell::<u128>::default();
+    pub static MISC_TIME : Cell<u128> = Cell::<u128>::default();
 }
 
 fn generous_score(probs: &Vec<f32>) -> Score {
@@ -130,22 +131,23 @@ impl Node {
         Some((res, score))
     }
 
-    fn advance(&self, root_ctx: &llama_cpp::LlamaSession, q: &mut Q) {
-        let mut my_ctx;
-        {
-            let before_copy = std::time::Instant::now();
-            my_ctx = root_ctx.deep_copy().expect("Failed to copy context");
-            COPY_TIME.replace(COPY_TIME.get() + before_copy.elapsed().as_micros());
-        }
+    fn advance(&self, root_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
+        let orig_toks = root_ctx.context_size();
         {
             let before_advance = std::time::Instant::now();
-            my_ctx
+            root_ctx
                 .advance_context_with_tokens(&self.text)
                 .expect("Failed to advance context");
             ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
         }
 
-        self.predict_with_ctx(&mut my_ctx, q);
+        self.predict_with_ctx(root_ctx, q);
+
+        {
+            let before_truncate = std::time::Instant::now();
+            root_ctx.truncate_context(orig_toks).unwrap();
+            MISC_TIME.replace(MISC_TIME.get() + before_truncate.elapsed().as_micros());
+        }
     }
 
     fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
@@ -237,6 +239,7 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     ADVANCE_TIME.replace(0);
     FF_ADVANCE_TIME.replace(0);
     PREDICT_TIME.replace(0);
+    MISC_TIME.replace(0);
     let mut step = 0;
     let mut log = String::new();
     loop {
@@ -275,7 +278,7 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
 
             progress.set_message(cur_str);
 
-            node.advance(&root_ctx, &mut q);
+            node.advance(&mut root_ctx, &mut q);
             step += 1;
         } else {
             progress
@@ -286,12 +289,13 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
     println!(
-        "Search time: {:.0}s.  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms.",
+        "Search time: {:.0}s.  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Misc: {:.0}.",
         search_start_time.elapsed().as_secs_f32(),
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
         per_step(FF_ADVANCE_TIME.get()),
         per_step(PREDICT_TIME.get()),
+        per_step(MISC_TIME.get()),
     );
 
     std::fs::write(

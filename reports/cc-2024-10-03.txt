@@ -1,0 +1,75 @@
+ this one!  T-Rex: Utahraptor!  T-Rex (punchline): I >>still really want to be pals!!<<
+Non-answer: really want to be pals still!! != still really want to be pals!!
+  Search successful after 274 steps. Prob: 17.49%
+  Search time: 89s.  Per-step times: Copy: 48ms  Advance: 252ms  FF advance: 19ms  Predict: 3ms.
+Estimated steps: 81. Avg. prob: 8.9%
+ore to an earlier save point.  T-Rex (punchline): I >>have failed to prove my point!<<
+  Search successful after 561 steps. Prob: 21.47%
+  Search time: 165s.  Per-step times: Copy: 30ms  Advance: 242ms  FF advance: 18ms  Predict: 3ms.
+Estimated steps: 16. Avg. prob: 6.2%
+ming it!  T-Rex: No, wait!!  T-Rex (punchline): That >>sounds like the boring part!!<<
+  Search successful after 125 steps. Prob: 16.46%
+  Search time: 37s.  Per-step times: Copy: 53ms  Advance: 227ms  FF advance: 13ms  Predict: 3ms.
+Estimated steps: 60. Avg. prob: 11.9%
+l, you know what they say:  T-Rex (punchline): "I'm >>not particularly good at it!!"<<
+Non-answer: not particularly good at it"!! != not particularly good at it!!"
+  Search successful after 44 steps. Prob: 26.41%
+  Search time: 16s.  Per-step times: Copy: 31ms  Advance: 290ms  FF advance: 36ms  Predict: 4ms.
+Estimated steps: 1. Avg. prob: 17.5%
+enlightened soon.  Multiple off-panel voices: Dude! >>We get that ALL THE TIME!<<
+  Search successful after 48 steps. Prob: 24.84%
+  Search time: 13s.  Per-step times: Copy: 51ms  Advance: 208ms  FF advance: 11ms  Predict: 3ms.
+Estimated steps: 1856. Avg. prob: 4.9%
+Estimated steps: 168. Avg. prob: 6.9%
+picture of yourself!  T-Rex (punchline): Like >>when I lost someone's baby!<<
+  Search successful after 715 steps. Prob: 16.83%
+  Search time: 267s.  Per-step times: Copy: 25ms  Advance: 330ms  FF advance: 14ms  Predict: 3ms.
+Estimated steps: 16. Avg. prob: 7.2%
+HAPPENED:  T-Rex: maybe...  T-Rex (punchline): maybe >>i should get me some clothes<<
+  Search successful after 46 steps. Prob: 18.58%
+  Search time: 16s.  Per-step times: Copy: 58ms  Advance: 236ms  FF advance: 52ms  Predict: 3ms.
+Estimated steps: 8. Avg. prob: 12.2%
+ Bustarians?  T-Rex: Anyway.  T-Rex (punchline): I'M >>SURE they'll think of a word.<<
+  Search successful after 72 steps. Prob: 18.37%
+  Search time: 26s.  Per-step times: Copy: 63ms  Advance: 259ms  FF advance: 32ms  Predict: 4ms.
+Estimated steps: 20. Avg. prob: 29.8%
+ou both super equally!  T-Rex (punchline): [thinks] >>I DON'T KNOW WHO I AM ANYMORE.<<
+  Search successful after 757 steps. Prob: 40.31%
+  Search time: 585s.  Per-step times: Copy: 31ms  Advance: 703ms  FF advance: 33ms  Predict: 4ms.
+Estimated steps: 120. Avg. prob: 5.6%
+vies together!  T-Rex: HEY!  T-Rex (punchline): Stay >>away from women named "Susan"!<<
+  Hit step limit: 1001
+  Search time: 946s.  Per-step times: Copy: 36ms  Advance: 885ms  FF advance: 19ms  Predict: 3ms.
+Estimated steps: 4. Avg. prob: 12.4%
+-Rex: Hah hah! Awesome!  T-Rex (punchline): ...It's >>not the guy I made up, though.<<
+  Search successful after 542 steps. Prob: 20.41%
+  Search time: 203s.  Per-step times: Copy: 55ms  Advance: 297ms  FF advance: 18ms  Predict: 3ms.
+Estimated steps: 780. Avg. prob: 10.7%
+ous typographic error!  T-Rex (punchline): [thinks] >>BUT HOW TO PROFIT FROM IT??<<
+  Hit step limit: 1001
+       Search time: 427s.  Per-step times: Copy: 39ms  Advance: 372ms  FF advance: 10ms  Predict: 3ms.
+Estimated steps: 2. Avg. prob: 5.7%
+YTHING  T-Rex: Um -  T-Rex (punchline): Implications >>are tricky so maybe<<
+  Search successful after 23 steps. Prob: 19.28%
+  Search time: 7s.  Per-step times: Copy: 79ms  Advance: 192ms  FF advance: 35ms  Predict: 3ms.
+Estimated steps: 3. Avg. prob: 13.8%
+ure what I'm asking here  T-Rex (punchline): Please >>just keep it in mind for now<<
+Non-answer: keep it in mind just for now != just keep it in mind for now
+  Search successful after 60 steps. Prob: 20.57%
+  Search time: 18s.  Per-step times: Copy: 31ms  Advance: 227ms  FF advance: 32ms  Predict: 4ms.
+Estimated steps: 15. Avg. prob: 19.0%
+ TRYING OUT SOMETHING NEW  T-Rex (punchline): Dude, >>try it out somewhere else!<<
+  Search successful after 30 steps. Prob: 31.92%
+  Search time: 11s.  Per-step times: Copy: 62ms  Advance: 250ms  FF advance: 50ms  Predict: 8ms.
+Estimated steps: 24. Avg. prob: 13.2%
+ is the game for you.  T-Rex (punchline): ALTHOUGH! >>It's not bad if you're six<<
+  Hit step limit: 1001
+  Search time: 463s.  Per-step times: Copy: 41ms  Advance: 395ms  FF advance: 21ms  Predict: 3ms.
+Estimated steps: 79. Avg. prob: 11.4%
+ntial moisturizing oils"!  T-Rex (punchline): Kinda >>have to count that as a win!<<
+  Hit step limit: 1001
+  Search time: 442s.  Per-step times: Copy: 51ms  Advance: 379ms  FF advance: 6ms  Predict: 3ms.
+Estimated steps: 135. Avg. prob: 4.2%
+Were Friends, Utahraptor!!  T-Rex (punchline): Okay >>wait suddenly I see your point<<
+  Hit step limit: 1001
+  Search time: 370s.  Per-step times: Copy: 44ms  Advance: 301ms  FF advance: 20ms  Predict: 3ms.
