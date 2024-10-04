@@ -291,7 +291,7 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
     println!(
         "Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}.",
         search_start_time.elapsed().as_secs_f32(),
-        (search_start_time.elapsed().as_micros() - (COPY_TIME.get() + ADVANCE_TIME.get() + FF_ADVANCE_TIME.get() + PREDICT_TIME.get() + MISC_TIME.get())) / 1000000.0,
+        (search_start_time.elapsed().as_micros() - (COPY_TIME.get() + ADVANCE_TIME.get() + FF_ADVANCE_TIME.get() + PREDICT_TIME.get() + MISC_TIME.get())) as f32 / 1000000.0,
         per_step(COPY_TIME.get()),
         per_step(ADVANCE_TIME.get()),
         per_step(FF_ADVANCE_TIME.get()),
