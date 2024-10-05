@@ -280,28 +280,45 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 }
 
 fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
+    let char_min = 15;
+    let char_max = 55;
+
     let small_strips: Vec<&Strip> = strips
         .iter()
-        .filter(|s| s.punchline.len() > 15 && s.punchline.len() <= 40)
+        .filter(|s| s.punchline.len() > char_min && s.punchline.len() <= char_max)
         .filter(|s| !s.punchline.contains(":"))
         .collect();
 
     let mut stats = Stats::default();
+    let mut report = String::new();
 
-    for strip in small_strips.iter().take(25) {
+    for strip in small_strips.iter().take(30) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
-        println!(
+        let msg = format!(
             "Estimated steps: {}. Avg. prob: {:.1}%",
             cost,
             avg_prob * 100.0
         );
+        println!("{}", msg);
+        report += &msg;
+        report += "\n";
 
-        if cost > 3000.0 {
+        if cost > 2000.0 {
             continue;
         }
 
-        search::practice_search(strip, model, Some(5000))
+        search::practice_search(strip, model, Some(10000), &mut report)
     }
+
+    std::fs::write(
+        format!(
+            "reports/cc-{}-by-{}.txt",
+            char_max,
+            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+        ),
+        report,
+    )
+    .unwrap();
 
     std::fs::write(
         format!(

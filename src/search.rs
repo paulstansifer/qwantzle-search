@@ -48,6 +48,8 @@ impl Eq for Node {}
 
 type Q = PriorityQueue<Node, Score>;
 
+const TOK_BUFFER: u32 = 25;
+
 // How good does the best next token need to be to fast-forward it?
 // Performance seems very sensitive to this; maybe we need a better criterion?
 const FF_MIN_P: f32 = 0.18;
@@ -151,6 +153,10 @@ impl Node {
     }
 
     fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
+        if self.text.len() >= (TOK_BUFFER - 1) as usize {
+            return;
+        }
+
         let candidates = Arc::new(Mutex::new(vec![]));
         let peek_sampler = llm::PeekSampler {
             eos: my_ctx.model().eos(),
@@ -207,17 +213,22 @@ impl Node {
     }
 }
 
-pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<usize>) {
+pub fn practice_search(
+    strip: &Strip,
+    model: &LlamaModel,
+    steps_limit: Option<usize>,
+    report: &mut String,
+) {
     let mut q = Q::new();
     q.push(Node::new(&strip.punchline), Score(1.0));
 
     let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
 
     let mut params = SessionParams::default();
-    params.n_ctx = leadup_toks.len() as u32 + 25;
+    params.n_ctx = leadup_toks.len() as u32 + TOK_BUFFER;
 
-    println!(
-        "{} >>{}<<",
+    let strip_summary = format!(
+        "...{} >>{}<<\n",
         strip
             .leadup
             .chars()
@@ -226,6 +237,9 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
             .replace("\n", "  "),
         strip.punchline
     );
+
+    print!("{}", strip_summary);
+    *report += &strip_summary;
 
     let progress = ProgressBar::new_spinner();
 
@@ -246,7 +260,9 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
         progress.tick();
         if let Some(lim) = steps_limit {
             if step > lim {
-                progress.abandon_with_message(format!("Hit step limit: {}", step));
+                let msg = format!("Hit step limit: {}", step);
+                *report += &msg;
+                progress.abandon_with_message(msg);
                 break;
             }
         }
@@ -254,18 +270,23 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
             if node.remaining.size() == 0
                 && model.decode_tokens(&node.text).trim() == strip.punchline.trim()
             {
-                progress.abandon_with_message(format!(
+                let msg = format!(
                     "Search successful after {} steps. Prob: {:.2}%",
                     step,
                     p.0 * 100.0
-                ));
+                );
+                *report += &msg;
+                progress.abandon_with_message(msg);
                 break;
             } else if node.remaining.size() == 0 {
-                progress.println(format!(
+                let msg = format!(
                     "Non-answer: {} != {}",
                     model.decode_tokens(&node.text).trim(),
                     strip.punchline.trim()
-                ));
+                );
+                *report += &msg;
+                *report += "\n";
+                progress.println(msg);
             }
 
             let cur_str = format!(
@@ -281,14 +302,16 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
             node.advance(&mut root_ctx, &mut q);
             step += 1;
         } else {
-            progress
-                .abandon_with_message(format!("Exhausted all reasonable nodes at {} steps", step));
+            let msg = format!("Exhausted all reasonable nodes at {} steps", step);
+            *report += &msg;
+            progress.abandon_with_message(msg);
             break;
         }
     }
+    *report += "\n";
     let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
 
-    println!(
+    let time_info = format!(
         "Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}.",
         search_start_time.elapsed().as_secs_f32(),
         (search_start_time.elapsed().as_micros() - (COPY_TIME.get() + ADVANCE_TIME.get() + FF_ADVANCE_TIME.get() + PREDICT_TIME.get() + MISC_TIME.get())) as f32 / 1000000.0,
@@ -298,6 +321,10 @@ pub fn practice_search(strip: &Strip, model: &LlamaModel, steps_limit: Option<us
         per_step(PREDICT_TIME.get()),
         per_step(MISC_TIME.get()),
     );
+
+    *report += &time_info;
+    *report += "\n";
+    println!("{}", time_info);
 
     std::fs::write(
         format!("reports/search-{}.txt", strip.id),
