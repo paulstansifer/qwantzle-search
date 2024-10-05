@@ -100,6 +100,36 @@ fn generous_score(probs: &Vec<f32>) -> Score {
     ))
 }
 
+fn compromise_score(probs: &Vec<f32>) -> Score {
+    let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
+    probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
+
+    if probs.len() >= 1 {
+        probs[0] += 0.07;
+        if probs.len() >= 2 {
+            probs[1] += 0.05;
+        }
+    }
+    let prod: f64 = probs.iter().product();
+
+    Score(f64::powf(prod, 2.0 / (probs.len() as f64)))
+}
+
+fn prob_score(probs: &Vec<f32>) -> Score {
+    let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
+    probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
+
+    if probs.len() >= 1 {
+        probs[0] += 0.07;
+        if probs.len() >= 2 {
+            probs[1] += 0.05;
+        }
+    }
+    let prod: f64 = probs.iter().product();
+
+    Score(prod)
+}
+
 impl Node {
     fn new(text: &str) -> Node {
         Node {
@@ -128,7 +158,7 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = generous_score(&res.tok_probs);
+        let score = prob_score(&res.tok_probs);
 
         Some((res, score))
     }
