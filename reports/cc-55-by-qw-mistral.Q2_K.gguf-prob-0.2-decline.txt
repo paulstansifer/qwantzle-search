@@ -2,13 +2,13 @@ Estimated steps: 88. Avg. prob: 12.9%
 ...R NEW LANGUAGES.  T-Rex: NEVER  T-Rex (punchline): - >>has an analogy been so accurate and personally damaging<<
 Non-answer: has an analogy been so accurate and damagingly personal != has an analogy been so accurate and personally damaging
 Search successful after 372 steps. Prob: 96.38%
-Search time: 48s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 15ms  FF advance: 2ms  Predict: 112ms  Truncate: 0.
+Search time: 47s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 15ms  FF advance: 2ms  Predict: 110ms  Truncate: 0.
 Estimated steps: 720. Avg. prob: 17.8%
 Estimated steps: 402. Avg. prob: 8.3%
 Estimated steps: 10. Avg. prob: 16.4%
 ...t!  T-Rex (punchline): OH, SICK BURN  Off panel: So, >>um... I guess I'll talk to you later huh<<
 Search successful after 98 steps. Prob: 828.69%
-Search time: 9s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 3ms  Predict: 81ms  Truncate: 0.
+Search time: 9s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 3ms  Predict: 80ms  Truncate: 0.
 Estimated steps: 1690. Avg. prob: 7.9%
 Estimated steps: 2100. Avg. prob: 2.3%
 Estimated steps: 546. Avg. prob: 3.3%
@@ -16,66 +16,66 @@ Estimated steps: 160. Avg. prob: 5.8%
 ... this one!  T-Rex: Utahraptor!  T-Rex (punchline): I >>still really want to be pals!!<<
 Non-answer: really want to be pals still!! != still really want to be pals!!
 Search successful after 435 steps. Prob: 0.24%
-Search time: 23s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 8ms  FF advance: 1ms  Predict: 43ms  Truncate: 0.
+Search time: 23s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 43ms  Truncate: 0.
 Estimated steps: 81. Avg. prob: 8.9%
 ...ore to an earlier save point.  T-Rex (punchline): I >>have failed to prove my point!<<
 Search successful after 553 steps. Prob: 3.91%
-Search time: 29s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 43ms  Truncate: 0.
+Search time: 29s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 8ms  FF advance: 1ms  Predict: 43ms  Truncate: 0.
 Estimated steps: 96. Avg. prob: 21.1%
 ...l: So?  T-Rex: It's just -  T-Rex (punchline): Never >>has one man sucked on his fingers so much for so little<<
 Search successful after 540 steps. Prob: 25558.77%
-Search time: 44s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 68ms  Truncate: 0.
+Search time: 44s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 2ms  Predict: 69ms  Truncate: 0.
 Estimated steps: 17992800. Avg. prob: 14.1%
 Estimated steps: 96. Avg. prob: 9.1%
 ...better off without this jerk!  T-Rex (punchline): I >>would still like to hear about the sex, however!<<
 Search successful after 1029 steps. Prob: 1.08%
-Search time: 66s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 1ms  Predict: 53ms  Truncate: 0.
+Search time: 66s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 53ms  Truncate: 0.
 Estimated steps: 12. Avg. prob: 10.3%
 ...ust by SPENDING MONEY!  T-Rex (punchline): [thinks] >>Wow! No wonder people like capitalism so much!!<<
 Search successful after 399 steps. Prob: 5.58%
-Search time: 34s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 13ms  FF advance: 3ms  Predict: 69ms  Truncate: 0.
+Search time: 34s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 72ms  Truncate: 0.
 Estimated steps: 134016. Avg. prob: 1.7%
 Estimated steps: 68. Avg. prob: 4.3%
 ...r now, everyone!  T-Rex: So!  T-Rex (punchline): Did >>yesterday really happen or WHAT?<<
 Exhausted all reasonable nodes at 110 steps
-Search time: 6s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 0ms  Predict: 46ms  Truncate: 0.
+Search time: 6s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 0ms  Predict: 48ms  Truncate: 0.
 Estimated steps: 144. Avg. prob: 5.8%
 ...t, desperate cry for help.  T-Rex (punchline): It's >>a death spasm that infects the galaxy.<<
 Hit step limit: 3001
-Search time: 197s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 12ms  FF advance: 1ms  Predict: 52ms  Truncate: 0.
+Search time: 196s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 55ms  Truncate: 0.
 Estimated steps: 31680. Avg. prob: 8.5%
 Estimated steps: 192. Avg. prob: 10.8%
 ... in my head right now.  T-Rex (punchline): [thinks] >>Aw man! Why would I even say that??<<
 Search successful after 667 steps. Prob: 5.71%
-Search time: 39s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 49ms  Truncate: 0.
+Search time: 40s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 2ms  Predict: 48ms  Truncate: 0.
 Estimated steps: 33196800. Avg. prob: 3.9%
 Estimated steps: 44160. Avg. prob: 5.8%
 Estimated steps: 16. Avg. prob: 6.3%
 ...ming it!  T-Rex: No, wait!!  T-Rex (punchline): That >>sounds like the boring part!!<<
 Search successful after 215 steps. Prob: 0.55%
-Search time: 11s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 8ms  FF advance: 1ms  Predict: 40ms  Truncate: 0.
+Search time: 11s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 40ms  Truncate: 0.
 Estimated steps: 600. Avg. prob: 14.7%
 Estimated steps: 816. Avg. prob: 16.7%
 Estimated steps: 1164. Avg. prob: 5.8%
 Estimated steps: 162. Avg. prob: 9.0%
 ...y War and Pup-Pup Peace!!  T-Rex (punchline): Well, >>it looks like I'M never reading again<<
 Search successful after 479 steps. Prob: 1.85%
-Search time: 33s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 58ms  Truncate: 0.
+Search time: 33s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 10ms  FF advance: 1ms  Predict: 57ms  Truncate: 0.
 Estimated steps: 6. Avg. prob: 24.5%
 ...hell was he talking about?  T-Rex (punchline): I've >>got the insurance papers right here!<<
 Search successful after 8 steps. Prob: 3958.28%
-Search time: 1s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 7ms  FF advance: 7ms  Predict: 76ms  Truncate: 0.
+Search time: 1s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 7ms  FF advance: 7ms  Predict: 77ms  Truncate: 0.
 Estimated steps: 144. Avg. prob: 16.2%
 ...-Rex: Is it meat salad?  T-Rex (punchline): Because >>if not then I doubt it would be a very good salad!<<
 Hit step limit: 3001
-Search time: 282s.  (Non-ML: 1s)  Per-step times: Copy: 0ms  Advance: 11ms  FF advance: 2ms  Predict: 80ms  Truncate: 0.
+Search time: 281s.  (Non-ML: 1s)  Per-step times: Copy: 0ms  Advance: 12ms  FF advance: 2ms  Predict: 79ms  Truncate: 0.
 Estimated steps: 72. Avg. prob: 17.8%
 ...ut I find I cannot resist!  T-Rex (punchline): Time >>Magazine's Beth Photos of 2006? Hilarious!<<
 Search successful after 695 steps. Prob: 11899.75%
-Search time: 89s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 16ms  FF advance: 3ms  Predict: 108ms  Truncate: 0.
+Search time: 88s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 15ms  FF advance: 2ms  Predict: 110ms  Truncate: 0.
 Estimated steps: 560. Avg. prob: 40.8%
 Estimated steps: 70. Avg. prob: 12.6%
 ...e to say it out loud.  T-Rex (punchline): Sometimes >>life is full of compromises, you know?<<
 Non-answer: , life is full of compromises you know? != life is full of compromises, you know?
 Hit step limit: 3001
-Search time: 204s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 13ms  FF advance: 2ms  Predict: 53ms  Truncate: 0.
+Search time: 203s.  (Non-ML: 0s)  Per-step times: Copy: 0ms  Advance: 9ms  FF advance: 1ms  Predict: 58ms  Truncate: 0.
