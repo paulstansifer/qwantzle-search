@@ -53,7 +53,7 @@ const TOK_BUFFER: u32 = 25;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems very sensitive to this; maybe we need a better criterion?
-const FF_MIN_P: f32 = 0.18; // REVISE UP FOR GPU CONSTRAINTS
+const FF_MIN_P: f32 = 0.25;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 const MIN_TOK_P: f32 = 0.001; // REVISE DOWN

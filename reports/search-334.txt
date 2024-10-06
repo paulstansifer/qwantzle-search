@@ -11,131 +11,135 @@ have failed to prove my point!
       9 17.45%:  hope
      10 17.01%:  hate
      11 16.96%:  find
-     12 16.94%:  love
-     13 16.81%:  feel
-     14 16.69%:  hear
-     15 16.52%:  need
-     16 16.49%:  only
-     17 16.47%:  made
-     18 16.07%:  have learned
-     19 15.78%:  never played
-     20 15.45%:  made that
-     21 15.31%:  heard people
-     22 14.95%:  hear people
-     23 14.90%:  tried it
-     24 14.86%:  made another
-     25 14.69%:  have played
-     26 14.59%:  had
-     27 14.58%:  have plenty
-     28 14.58%:  have failed
-     29 14.39%:  never played that
-     30 14.36%:  heard it
-     31 14.36%:  find that people
-     32 14.33%:  have never
-     33 14.27%:  hate people
-     34 14.05%:  find people
-     35 14.03%:  feel pretty
-     36 13.92%:  have no
-     37 13.64%:  meant after
-     38 13.62%:  meant there
-     39 13.62%:  meant death
-     40 13.60%:  love video
-     41 13.59%:  hate to inform
-     42 13.58%:  never play
-     43 13.55%:  hate to remind
-     44 13.54%:  feel that
-     45 13.34%:  love that
-     46 13.31%:  made that one
-     47 13.23%:  have often
-     48 13.23%:  have tried
-     49 13.22%:  never have
-     50 13.08%:  find it
-     51 12.94%:  need to have
-     52 12.89%:  only hope
-     53 12.79%:  mean that
-     54 12.75%:  am
-     55 12.72%:  only have
-     56 12.70%:  need to play
-     57 12.70%:  find there
-     58 12.68%:  find the
-     59 12.62%:  find that every
-     60 12.61%:  hate it
-     61 12.60%:  hate video
-     62 12.53%:  need to move
-     63 12.48%:  love the
-     64 12.46%:  never told
-     65 12.43%:  never made
-     66 12.39%:  only tried
-     67 12.39%:  do
-     68 12.37%:  never felt
-     69 12.37%:  only ever
-     70 12.36%:  never fail
-     71 12.35%:  hate to leave
-     72 12.31%:  meant the
-     73 12.28%:  am pretty
-     74 12.27%:  hear video
-     75 12.24%:  have no idea if
-     76 12.24%:  meant life
-     77 12.24%:  never had
-     78 12.22%:  have many
-     79 12.18%:  heard life
-     80 12.16%:  heard time
-     81 12.16%:  made the
-     82 12.11%:  need more
-     83 12.02%:  find that people are
-     84 12.01%:  have made
-     85 11.97%:  find that very
-     86 11.86%:  need to lie
-     87 11.85%:  have done
-     88 11.85%:  have only
-     89 11.83%:  have more
-     90 11.79%:  have over
-     91 11.78%:  have very
-     92 11.76%:  have read
-     93 11.74%:  meant it
-     94 11.69%:  had a pretty
-     95 11.60%:  never played a
-     96 11.55%:  find that more
-     97 11.54%:  made it
-     98 11.50%:  find that real
-     99 11.50%:  have failed to improve
-    100 11.47%:  love the idea
-    101 11.44%:  need to eat
-    102 11.36%:  meant for
-    103 11.33%:  need to try
-    104 11.31%:  need help
-    105 11.31%:  love it
-    106 11.30%:  need to lay
-    107 11.29%:  have to
-    108 11.29%:  love time
-    109 11.26%:  have a
-    110 11.73%:  have a friend
-    111 11.25%:  hear life
-    112 11.23%:  need to let
-    113 11.22%:  heard one
-    114 11.22%:  am deeply
-    115 11.19%:  find them
-    116 11.19%:  tried the
-    117 11.16%:  hate life
-    118 11.16%:  mean the
-    119 11.14%:  hate vide
-    120 11.14%:  love vide
-    121 11.13%:  never die
-    122 11.13%:  find they
-    123 11.12%:  hear time
-    124 11.10%:  only made
-    125 11.10%:  love iron
-    126 11.09%:  hate to even
-    127 11.09%:  had never
-    128 11.08%:  tried not
-    129 11.08%:  feel very
-    130 11.05%:  meant to have
-    131 11.04%:  find people are
-    132 11.03%:  feel more
-    133 11.03%:  never met
-    134 11.00%:  feel they
-    135 11.00%:  feel the
-    136 10.98%:  made a pretty
-    137 10.94%:  hear even
-    138 10.93%:  never do
-    139 10.92%:  have failed to prove
+     12 17.11%:  find that
+     13 16.94%:  love
+     14 16.81%:  feel
+     15 16.69%:  hear
+     16 16.52%:  need
+     17 16.49%:  only
+     18 16.47%:  made
+     19 16.07%:  have learned
+     20 15.78%:  never played
+     21 15.45%:  made that
+     22 15.31%:  heard people
+     23 15.24%:  tried to
+     24 14.95%:  hear people
+     25 14.90%:  tried it
+     26 14.86%:  made another
+     27 14.69%:  have played
+     28 14.59%:  had
+     29 14.58%:  have plenty
+     30 14.58%:  have failed
+     31 14.39%:  never played that
+     32 14.38%:  find that people
+     33 14.36%:  heard it
+     34 14.33%:  have never
+     35 14.27%:  hate people
+     36 14.05%:  find people
+     37 14.03%:  feel pretty
+     38 14.03%:  hear it
+     39 13.92%:  have no
+     40 13.64%:  meant after
+     41 13.62%:  meant there
+     42 13.62%:  meant death
+     43 13.60%:  love video
+     44 13.59%:  hate to inform
+     45 13.58%:  never play
+     46 13.55%:  hate to remind
+     47 13.54%:  feel that
+     48 13.34%:  love that
+     49 13.31%:  made that one
+     50 13.23%:  have often
+     51 13.23%:  have tried
+     52 13.22%:  never have
+     53 13.08%:  find it
+     54 12.94%:  need to have
+     55 12.89%:  only hope
+     56 12.79%:  mean that
+     57 12.75%:  am
+     58 12.72%:  only have
+     59 12.70%:  need to play
+     60 12.70%:  find there
+     61 12.68%:  find the
+     62 12.62%:  find that every
+     63 12.61%:  hate it
+     64 12.60%:  hate video
+     65 12.53%:  need to move
+     66 12.48%:  love the
+     67 12.46%:  never told
+     68 12.43%:  never made
+     69 12.39%:  only tried
+     70 12.39%:  do
+     71 14.15%:  do that
+     72 12.37%:  never felt
+     73 12.37%:  only ever
+     74 12.36%:  never fail
+     75 12.35%:  hate to leave
+     76 12.31%:  meant the
+     77 12.28%:  am pretty
+     78 12.27%:  hear video
+     79 12.24%:  have no idea if
+     80 12.24%:  meant life
+     81 12.24%:  never had
+     82 12.22%:  have many
+     83 12.18%:  heard life
+     84 12.16%:  heard time
+     85 12.16%:  made the
+     86 12.11%:  need more
+     87 12.03%:  find that people are
+     88 12.01%:  have made
+     89 11.96%:  find that very
+     90 11.86%:  need to lie
+     91 11.85%:  have done
+     92 11.85%:  have only
+     93 11.83%:  have more
+     94 11.79%:  have over
+     95 11.78%:  have very
+     96 11.76%:  have read
+     97 11.74%:  meant it
+     98 11.69%:  had a pretty
+     99 11.60%:  never played a
+    100 11.55%:  find that more
+    101 11.54%:  made it
+    102 11.50%:  find that real
+    103 11.50%:  have failed to improve
+    104 11.47%:  love the idea
+    105 11.44%:  need to eat
+    106 11.36%:  meant for
+    107 11.33%:  need to try
+    108 11.31%:  need help
+    109 11.31%:  love it
+    110 11.30%:  need to lay
+    111 11.29%:  have to
+    112 11.29%:  love time
+    113 11.26%:  have a
+    114 11.73%:  have a friend
+    115 11.25%:  hear life
+    116 11.23%:  need to let
+    117 11.22%:  heard one
+    118 11.22%:  am deeply
+    119 11.19%:  find them
+    120 11.19%:  tried the
+    121 11.16%:  hate life
+    122 11.16%:  mean the
+    123 11.14%:  hate vide
+    124 11.14%:  love vide
+    125 11.13%:  never die
+    126 11.13%:  find they
+    127 11.12%:  hear time
+    128 11.10%:  only made
+    129 11.10%:  love iron
+    130 11.09%:  hate to even
+    131 11.09%:  had never
+    132 11.08%:  tried not
+    133 11.08%:  feel very
+    134 11.05%:  meant to have
+    135 11.04%:  find people are
+    136 11.03%:  feel more
+    137 11.03%:  never met
+    138 11.00%:  feel they
+    139 11.00%:  feel the
+    140 10.98%:  made a pretty
+    141 10.94%:  hear even
+    142 10.93%:  never do
+    143 10.92%:  have failed to prove
