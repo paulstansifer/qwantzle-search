@@ -1,87 +1,751 @@
 sounds like the boring part!!
       0 100.00%: 
-      1 23.04%:  sounds
-      2 21.89%:  sounds terrible
-      3 21.33%:  should
-      4 20.82%:  sounds horrible
-      5 19.35%:  sounds like the
-      6 19.21%:  sounds like great
-      7 19.21%:  sounds like a boring
-      8 19.06%:  doesn
-      9 18.65%:  takes
-     10 18.59%:  sound
-     11 18.33%:  sounds boring
-     12 18.05%:  sounds like a thing
-     13 18.03%:  sounds better
-     14 17.82%:  sounds like that
-     15 17.62%:  last
-     16 17.63%:  last one turned
-     17 17.34%:  sounds like it
-     18 17.23%:  sounds great
-     19 16.90%:  should be reason
-     20 16.85%:  sounds like an
-     21 16.81%:  sounds like a terr
-     22 16.72%:  sounds right
-     23 16.71%:  should take
-     24 16.67%:  last one is
-     25 16.63%:  took
-     26 16.55%:  sounds like one
-     27 16.54%:  idea
-     28 16.49%:  part
-     29 16.88%:  part sounds
-     30 16.49%:  does
-     31 16.40%:  last one doesn
-     32 16.15%:  takes longer
-     33 15.97%:  one
-     34 15.77%:  one sounds
-     35 15.70%:  takes too
-     36 15.68%:  sounds like a ton
-     37 15.67%:  should be taken
-     38 15.65%:  sounds like a big
-     39 15.48%:  one sounds like
-     40 15.31%:  sound is
-     41 15.21%:  sound like
-     42 15.16%:  sounds real
-     43 15.13%:  sounds like the boring
-     44 15.12%:  sounds terrible!
-     45 15.05%:  last one does
-     46 14.96%:  last one gets
-     47 14.94%:  idea belongs
-     48 14.90%:  takes things
-     49 14.89%:  part sounds like
-     50 14.87%:  does nothing
-     51 14.83%:  sound better
-     52 14.61%:  last option
-     53 14.51%:  sounds terrible!!
-     54 14.50%:  should be step
-     55 14.47%:  is
-     56 15.52%:  is terrible
-     57 14.39%:  should be part
-     58 14.37%:  should keep
-     59 14.36%:  has
-     60 14.86%:  has inspired
-     61 14.20%:  part should
-     62 14.07%:  one sounds like it
-     63 13.90%:  sounds horrible!!
-     64 13.74%:  sound great
-     65 13.73%:  sounds horrible!
-     66 13.72%:  sounds the
-     67 13.71%:  last one got
-     68 13.63%:  takes hours
-     69 13.60%:  last one isn
-     70 13.58%:  one should
-     71 13.57%:  should be taken into
-     72 13.55%:  part looked
-     73 13.52%:  sound right
-     74 13.52%:  should be its
-     75 13.24%:  should get
-     76 13.22%:  should be one
-     77 13.18%:  should not
-     78 13.17%:  sounds boring!!
-     79 13.13%:  sounds like the boring part!
-     80 13.06%:  sounds boring!
-     81 13.02%:  last thing
-     82 12.98%:  part is
-     83 12.82%:  should be a
-     84 12.79%:  last one is the
-     85 12.78%:  idea is
+      1 6.22%:  is
+      2 5.21%:  sounds
+      3 4.05%:  one
+      4 2.68%:  last
+      5 2.04%:  is a
+      6 1.52%:  should
+      7 1.50%:  is the
+      8 1.16%:  doesn
+      9 0.94%:  one is
+     10 0.85%:  last one is
+     11 0.70%:  is a terrible
+     12 0.56%:  sounds like the
+     13 0.52%:  took
+     14 0.48%:  is an
+     15 0.46%:  is the best
+     16 0.42%:  sounds like it
+     17 0.39%:  one sounds
+     18 0.37%:  is a good
+     19 0.35%:  idea
+     20 0.35%:  takes
+     21 0.32%:  sounds like an
+     22 0.25%:  has
+     23 0.24%:  part
+     24 0.23%:  does
+     25 0.23%:  sound
+     26 0.22%:  sounds terrible
+     27 0.20%:  is not
+     28 0.16%:  should take
+     29 0.15%:  last one is the
+     30 0.15%:  one sounds like
+     31 0.15%:  should be a
+     32 0.14%:  sounds great
+     33 0.13%:  is one
+     34 0.13%:  one has
+     35 0.11%:  is to
+     36 0.11%:  is so
+     37 0.10%:  is like
+     38 0.10%:  sounds a
+     39 0.10%:  idea is
+     40 0.10%:  took a
+     41 0.09%:  one had
+     42 0.09%:  one is a
+     43 0.09%:  takes too
+     44 0.09%:  sound is
+     45 0.08%:  sounds pl
+     46 0.08%:  one sounds like it
+     47 0.08%:  one is the
+     48 0.08%:  sounds boring
+     49 0.07%:  took us
+     50 0.07%:  part is
+     51 0.07%:  one takes
+     52 0.07%:  has to
+     53 0.07%:  is too
+     54 0.06%:  should go
+     55 0.06%:  is super
+     56 0.05%:  is a horrible
+     57 0.05%:  one doesn
+     58 0.05%:  sounds terrible!
+     59 0.04%:  is 
+     60 0.04%:  sounds right
+     61 0.04%:  sounds a lot
+     62 0.04%:  is terrible
+     63 0.04%:  one should
+     64 0.04%:  is the stupid
+     65 0.04%:  should get
+     66 0.04%:  is true
+     67 0.04%:  is a stupid
+     68 0.04%:  should not
+     69 0.04%:  sounds like great
+     70 0.03%:  does not
+     71 0.03%:  sounds great!
+     72 0.03%:  should be an
+     73 0.03%:  takes us
+     74 0.03%:  one sounds great
+     75 0.03%:  part sounds
+     76 0.03%:  one sounds the
+     77 0.03%:  one is so
+     78 0.03%:  last option
+     79 0.03%:  is the least
+     80 0.03%:  one gets
+     81 0.03%:  one is great
+     82 0.03%:  sounds horrible
+     83 0.03%:  is a lie
+     84 0.03%:  sound like
+     85 0.03%:  is also
+     86 0.03%:  sounds better
+     87 0.03%:  should keep
+     88 0.03%:  last one got
+     89 0.03%:  sounds terrible!!
+     90 0.03%:  should be its
+     91 0.03%:  sounds to
+     92 0.03%:  is good
+     93 0.03%:  is not the
+     94 0.02%:  is a super
+     95 0.02%:  is no
+     96 0.02%:  last one does
+     97 0.02%:  last one doesn
+     98 0.02%:  sounds a bit
+     99 0.02%:  is the best n
+    100 0.02%:  sounds great!!
+    101 0.02%:  is the s
+    102 0.02%:  should be in
+    103 0.02%:  sounds like a ton
+    104 0.02%:  sounds boring!
+    105 0.02%:  took up
+    106 0.02%:  sounds real
+    107 0.02%:  one is best
+    108 0.02%:  is not a thing
+    109 0.02%:  sounds like one
+    110 0.02%:  is great
+    111 0.02%:  is the single
+    112 0.02%:  took the
+    113 0.02%:  sounds the
+    114 0.02%:  is stupid
+    115 0.02%:  takes the
+    116 0.02%:  is the last
+    117 0.02%:  is bad
+    118 0.02%:  should go in
+    119 0.02%:  is not an
+    120 0.02%:  one got
+    121 0.02%:  sounds like a thing
+    122 0.02%:  sounds like that
+    123 0.02%:  took 
+    124 0.02%:  took it
+    125 0.02%:  is the one
+    126 0.02%:  one goes
+    127 0.02%:  sounds like a big
+    128 0.02%:  one is super
+    129 0.01%:  one isn
+    130 0.01%:  one is like
+    131 0.01%:  sounds boring!!
+    132 0.01%:  is a solid
+    133 0.01%:  is like 
+    134 0.01%:  should be on
+    135 0.01%:  takes longer
+    136 0.01%:  is in
+    137 0.01%:  one does
+    138 0.01%:  has to be done
+    139 0.01%:  last thing
+    140 0.01%:  part is the
+    141 0.01%:  is a hor
+    142 0.01%:  is the reason
+    143 0.01%:  idea is too
+    144 0.01%:  sounds like a boring
+    145 0.01%:  last one gets
+    146 0.01%:  one!
+    147 0.01%:  idea is so
+    148 0.01%:  took us a
+    149 0.01%:  is like a
+    150 0.01%:  is true!
+    151 0.01%:  is a thing
+    152 0.01%:  last option is
+    153 0.01%:  last one isn
+    154 0.01%:  is a better
+    155 0.01%:  is the absolute
+    156 0.01%:  takes up
+    157 0.01%:  is the ideal
+    158 0.01%:  last one turned
+    159 0.01%:  should be step
+    160 0.01%:  has no
+    161 0.01%:  is true!!
+    162 0.01%:  should at
+    163 0.01%:  one sounds great!
+    164 0.01%:  should be one
+    165 0.01%:  sounds like a terr
+    166 0.01%:  sounds right!
+    167 0.01%:  one is taken
+    168 0.01%:  one has to
+    169 0.01%:  is a poor
+    170 0.01%:  has been our
+    171 0.01%:  is the part
+    172 0.01%:  is a genius
+    173 0.01%:  takes so
+    174 0.01%:  last bit
+    175 0.01%:  part sounds like
+    176 0.01%:  is so true
+    177 0.01%:  is a terr
+    178 0.01%:  takes it
+    179 0.01%:  one is an
+    180 0.01%:  should be so
+    181 0.01%:  took us 
+    182 0.01%:  one sounds a
+    183 0.01%:  took an
+    184 0.01%:  one is best!
+    185 0.01%:  is a lot
+    186 0.01%:  sounds a bit like
+    187 0.01%:  one is great!
+    188 0.01%:  is one thing
+    189 0.01%:  is the point
+    190 0.01%:  last one!
+    191 0.01%:  one is 
+    192 0.01%:  should be no
+    193 0.01%:  has to be our
+    194 0.01%:  is a lie!
+    195 0.01%:  has got
+    196 0.01%:  should be 
+    197 0.01%:  took three
+    198 0.01%:  one is in
+    199 0.01%:  is a pun
+    200 0.01%:  is the solution
+    201 0.01%:  one sounds great!!
+    202 0.01%:  part should
+    203 0.01%:  is a delight
+    204 0.01%:  one is bad
+    205 0.01%:  is a super good
+    206 0.01%:  is so the
+    207 0.01%:  takes 
+    208 0.01%:  one is so great
+    209 0.01%:  takes us right
+    210 0.01%:  sounds horrible!
+    211 0.00%:  one gets us
+    212 0.00%:  should be it
+    213 0.00%:  is not the order
+    214 0.00%:  has to be one
+    215 0.00%:  is a lie!!
+    216 0.00%:  takes us too
+    217 0.00%:  one takes us
+    218 0.00%:  one is not
+    219 0.00%:  is an un
+    220 0.00%:  is a 
+    221 0.00%:  part is done
+    222 0.00%:  sound like it
+    223 0.00%:  sounds better!
+    224 0.00%:  is the idea
+    225 0.00%:  is not true
+    226 0.00%:  one is on
+    227 0.00%:  one sounds pl
+    228 0.00%:  is the l
+    229 0.00%:  should be as
+    230 0.00%:  does it
+    231 0.00%:  took up a
+    232 0.00%:  is too bad
+    233 0.00%:  takes longer!
+    234 0.00%:  sounds great to
+    235 0.00%:  is the true
+    236 0.00%:  one has no
+    237 0.00%:  took a turn
+    238 0.00%:  shoulda
+    239 0.00%:  is a terrible n
+    240 0.00%:  should be taken
+    241 0.00%:  should take no
+    242 0.00%:  has too
+    243 0.00%:  one gets a
+    244 0.00%:  one goes in
+    245 0.00%:  one sounds real
+    246 0.00%:  is so not
+    247 0.00%:  one takes top
+    248 0.00%:  last one is our
+    249 0.00%:  idea is the
+    250 0.00%:  should keep it
+    251 0.00%:  part looks
+    252 0.00%:  is the end
+    253 0.00%:  one should be a
+    254 0.00%:  one is right
+    255 0.00%:  sounds horrible!!
+    256 0.00%:  is the real
+    257 0.00%:  is the n
+    258 0.00%:  one is about
+    259 0.00%:  last one is not
+    260 0.00%:  should be part
+    261 0.00%:  is no longer the
+    262 0.00%:  part doesn
+    263 0.00%:  is the sound
+    264 0.00%:  sounds right!!
+    265 0.00%:  took up the
+    266 0.00%:  sounds right to
+    267 0.00%:  one is great!!
+    268 0.00%:  last thing is
+    269 0.00%:  is one great
+    270 0.00%:  one is best!!
+    271 0.00%:  last one is 
+    272 0.00%:  should get it
+    273 0.00%:  one is stupid
+    274 0.00%:  takes up too
+    275 0.00%:  is the great
+    276 0.00%:  is the r
+    277 0.00%:  one had like
+    278 0.00%:  is the sort
+    279 0.00%:  is stupid!
+    280 0.00%:  is one he
+    281 0.00%:  sound in
+    282 0.00%:  sounds right on
+    283 0.00%:  should be a pr
+    284 0.00%:  should be reason
+    285 0.00%:  one is hilar
+    286 0.00%:  is the order
+    287 0.00%:  sound like the
+    288 0.00%:  should take 
+    289 0.00%:  is the kind
+    290 0.00%:  is the best plan
+    291 0.00%:  has to be done in
+    292 0.00%:  is the ep
+    293 0.00%:  is super bad
+    294 0.00%:  is also the
+    295 0.00%:  takes no
+    296 0.00%:  took us three
+    297 0.00%:  part took
+    298 0.00%:  is an ins
+    299 0.00%:  one takes up
+    300 0.00%:  has not
+    301 0.00%:  is so a
+    302 0.00%:  should be at
+    303 0.00%:  one is hard
+    304 0.00%:  idea is not
+    305 0.00%:  sounds terrible to
+    306 0.00%:  one has like
+    307 0.00%:  sounds better!!
+    308 0.00%:  takes us to
+    309 0.00%:  is too late
+    310 0.00%:  is super good
+    311 0.00%:  one has so
+    312 0.00%:  is the one and
+    313 0.00%:  idea took
+    314 0.00%:  one is a 
+    315 0.00%:  is a horrend
+    316 0.00%:  one is genius
+    317 0.00%:  is so bad
+    318 0.00%:  sound is a
+    319 0.00%:  took us in
+    320 0.00%:  last one is on
+    321 0.00%:  last one is one
+    322 0.00%:  took less
+    323 0.00%:  is one step
+    324 0.00%:  last one is in
+    325 0.00%:  is so great
+    326 0.00%:  is one idea
+    327 0.00%:  should not be an
+    328 0.00%:  idea isn
+    329 0.00%:  sounds like the n
+    330 0.00%:  is the best and
+    331 0.00%:  sound great
+    332 0.00%:  sound like an
+    333 0.00%:  should be its tag
+    334 0.00%:  takes longer!!
+    335 0.00%:  one is no
+    336 0.00%:  one is so bad
+    337 0.00%:  is so true!!
+    338 0.00%:  should go at
+    339 0.00%:  should be step 
+    340 0.00%:  is an option
+    341 0.00%:  part sounds like it
+    342 0.00%:  took ten
+    343 0.00%:  one is in the
+    344 0.00%:  took a surprising
+    345 0.00%:  is not the order in
+    346 0.00%:  one is taken!!
+    347 0.00%:  takes hours
+    348 0.00%:  sound has
+    349 0.00%:  is not a terrible
+    350 0.00%:  is no longer true
+    351 0.00%:  one is like a
+    352 0.00%:  sounds right in
+    353 0.00%:  is to be
+    354 0.00%:  is so terrible
+    355 0.00%:  sounds to be
+    356 0.00%:  is like one
+    357 0.00%:  sounds like the boring
+    358 0.00%:  has to go
+    359 0.00%:  does raise
+    360 0.00%:  is in no
+    361 0.00%:  one sounds a bit
+    362 0.00%:  takes so long!
+    363 0.00%:  is so true!
+    364 0.00%:  one goes at
+    365 0.00%:  is an in
+    366 0.00%:  is not enough
+    367 0.00%:  is one long
+    368 0.00%:  is so that
+    369 0.00%:  has like
+    370 0.00%:  one is on the
+    371 0.00%:  one is a sure
+    372 0.00%:  one should take
+    373 0.00%:  is so hard
+    374 0.00%:  last bit is
+    375 0.00%:  should get a
+    376 0.00%:  does it!
+    377 0.00%:  is a pun on
+    378 0.00%:  is not true!!
+    379 0.00%:  should not take
+    380 0.00%:  is terrible and
+    381 0.00%:  is not our
+    382 0.00%:  is terrible!
+    383 0.00%:  has gone
+    384 0.00%:  took it a
+    385 0.00%:  part is so
+    386 0.00%:  sounds like that one
+    387 0.00%:  is like an
+    388 0.00%:  is stupid!!
+    389 0.00%:  sounds great on
+    390 0.00%:  one is not a
+    391 0.00%:  is one bad
+    392 0.00%:  part is done!!
+    393 0.00%:  one is so rad
+    394 0.00%:  has turned
+    395 0.00%:  is not in
+    396 0.00%:  is too hard
+    397 0.00%:  is one thousand
+    398 0.00%:  idea belongs
+    399 0.00%:  sounds terrible in
+    400 0.00%:  one sounds right
+    401 0.00%:  one should get
+    402 0.00%:  does not help
+    403 0.00%:  sounds terrible on
+    404 0.00%:  one had it
+    405 0.00%:  does take
+    406 0.00%:  idea is super
+    407 0.00%:  one should be in
+    408 0.00%:  idea got
+    409 0.00%:  is one giant
+    410 0.00%:  should be on a
+    411 0.00%:  one is like 
+    412 0.00%:  one is a lie
+    413 0.00%:  took us an
+    414 0.00%:  is an und
+    415 0.00%:  is an intr
+    416 0.00%:  took us the
+    417 0.00%:  is totes
+    418 0.00%:  took up 
+    419 0.00%:  is no reason
+    420 0.00%:  is so rad
+    421 0.00%:  last one got us
+    422 0.00%:  sounds great in
+    423 0.00%:  takes our
+    424 0.00%:  is the order in
+    425 0.00%:  is an order
+    426 0.00%:  takes so long!!
+    427 0.00%:  should be a one
+    428 0.00%:  one is great but
+    429 0.00%:  is an entire
+    430 0.00%:  sounds better in
+    431 0.00%:  sounds like an ob
+    432 0.00%:  is one reason
+    433 0.00%:  sound!
+    434 0.00%:  part is good
+    435 0.00%:  is not at
+    436 0.00%:  takes things
+    437 0.00%:  is true in
+    438 0.00%:  idea is 
+    439 0.00%:  is so l
+    440 0.00%:  part is too
+    441 0.00%:  takes up the
+    442 0.00%:  took this
+    443 0.00%:  one is a no
+    444 0.00%:  takes longer to
+    445 0.00%:  is not as
+    446 0.00%:  took super
+    447 0.00%:  is not a stupid
+    448 0.00%:  should be a no
+    449 0.00%:  one is a lot
+    450 0.00%:  one had no
+    451 0.00%:  is great!
+    452 0.00%:  one sounds legit
+    453 0.00%:  one goes last
+    454 0.00%:  has ruined
+    455 0.00%:  sounding
+    456 0.00%:  idea gets
+    457 0.00%:  has to sound
+    458 0.00%:  took us in a
+    459 0.00%:  is too late!
+    460 0.00%:  part looked
+    461 0.00%:  is super great
+    462 0.00%:  one gets us a
+    463 0.00%:  one has it
+    464 0.00%:  does it!!
+    465 0.00%:  is the rud
+    466 0.00%:  is terrible n
+    467 0.00%:  sounds a lot n
+    468 0.00%:  is not a thing!
+    469 0.00%:  took us right
+    470 0.00%:  one gets it
+    471 0.00%:  is the last good
+    472 0.00%:  one had so
+    473 0.00%:  has led
+    474 0.00%:  one sounds al
+    475 0.00%:  should be a pre
+    476 0.00%:  one gets to
+    477 0.00%:  took at
+    478 0.00%:  is not true!
+    479 0.00%:  one got a
+    480 0.00%:  is a good rule
+    481 0.00%:  took ages
+    482 0.00%:  one had like 
+    483 0.00%:  one takes 
+    484 0.00%:  has to do
+    485 0.00%:  does bring
+    486 0.00%:  took a turn!
+    487 0.00%:  is so not a
+    488 0.00%:  is also true
+    489 0.00%:  is too bad!
+    490 0.00%:  is one super
+    491 0.00%:  sounds great th
+    492 0.00%:  takes long
+    493 0.00%:  is the point!
+    494 0.00%:  sound isn
+    495 0.00%:  has gotten
+    496 0.00%:  is an ent
+    497 0.00%:  sound so
+    498 0.00%:  is too late!!
+    499 0.00%:  has so
+    500 0.00%:  one sounds hilar
+    501 0.00%:  takes us 
+    502 0.00%:  takes us longer
+    503 0.00%:  is an insult
+    504 0.00%:  is a good title
+    505 0.00%:  is so rude
+    506 0.00%:  took us ages
+    507 0.00%:  is no longer true!!
+    508 0.00%:  has to be like
+    509 0.00%:  takes us into
+    510 0.00%:  has to be in
+    511 0.00%:  is a good line
+    512 0.00%:  is not a bug
+    513 0.00%:  one is genius!
+    514 0.00%:  sound right
+    515 0.00%:  should go a
+    516 0.00%:  takes so long it
+    517 0.00%:  does nothing
+    518 0.00%:  is not log
+    519 0.00%:  is so our
+    520 0.00%:  sound has been
+    521 0.00%:  should be taken into
+    522 0.00%:  one had to
+    523 0.00%:  takes this
+    524 0.00%:  one is right on
+    525 0.00%:  is so not the
+    526 0.00%:  is to be the
+    527 0.00%:  is so on
+    528 0.00%:  is a good n
+    529 0.00%:  sound a
+    530 0.00%:  one should be an
+    531 0.00%:  is like the s
+    532 0.00%:  sounds a bit like the
+    533 0.00%:  part sounds like the
+    534 0.00%:  sound in the
+    535 0.00%:  took us ten
+    536 0.00%:  has inspired
+    537 0.00%:  is super l
+    538 0.00%:  one is a super
+    539 0.00%:  does help
+    540 0.00%:  should be it!
+    541 0.00%:  one has like 
+    542 0.00%:  is super hard
+    543 0.00%:  one is super rad
+    544 0.00%:  one is right!
+    545 0.00%:  part is like
+    546 0.00%:  has to be on
+    547 0.00%:  one is a bit
+    548 0.00%:  should take so
+    549 0.00%:  is too bad!!
+    550 0.00%:  is the point!!
+    551 0.00%:  is the solution!!
+    552 0.00%:  is a superb
+    553 0.00%:  part isn
+    554 0.00%:  should be a sign
+    555 0.00%:  is not a rhet
+    556 0.00%:  one has 
+    557 0.00%:  has its
+    558 0.00%:  one gets an
+    559 0.00%:  part goes
+    560 0.00%:  is one stupid
+    561 0.00%:  is a horrid
+    562 0.00%:  should go in a
+    563 0.00%:  part does
+    564 0.00%:  is the solution!
+    565 0.00%:  is also not
+    566 0.00%:  one is a sure thing
+    567 0.00%:  is so like
+    568 0.00%:  is a good use
+    569 0.00%:  one is so great!
+    570 0.00%:  is not a rule
+    571 0.00%:  took a turn!!
+    572 0.00%:  one is so bad it
+    573 0.00%:  does sort
+    574 0.00%:  is so un
+    575 0.00%:  has 
+    576 0.00%:  last one is in the
+    577 0.00%:  part gets
+    578 0.00%:  is true and
+    579 0.00%:  one takes it
+    580 0.00%:  takes up so
+    581 0.00%:  one is so great!!
+    582 0.00%:  sounds to be a
+    583 0.00%:  sounds terrible in a
+    584 0.00%:  idea is no
+    585 0.00%:  is not a thing!!
+    586 0.00%:  is so 
+    587 0.00%:  one sounds like that
+    588 0.00%:  is good!
+    589 0.00%:  is one sure
+    590 0.00%:  one is so great it
+    591 0.00%:  is an unbel
+    592 0.00%:  has to get
+    593 0.00%:  is so a terrible
+    594 0.00%:  is one line
+    595 0.00%:  is one n
+    596 0.00%:  sound greats
+    597 0.00%:  took us this
+    598 0.00%:  idea is on
+    599 0.00%:  is not a e
+    600 0.00%:  is super rad
+    601 0.00%:  should not be taken
+    602 0.00%:  does not take
+    603 0.00%:  part sounds the
+    604 0.00%:  idea is one
+    605 0.00%:  has to be its
+    606 0.00%:  is one big
+    607 0.00%:  is an option!
+    608 0.00%:  is so gonna
+    609 0.00%:  is so right
+    610 0.00%:  has like 
+    611 0.00%:  is one rad
+    612 0.00%:  one is super bad
+    613 0.00%:  part right
+    614 0.00%:  sound on
+    615 0.00%:  one is on us
+    616 0.00%:  does that
+    617 0.00%:  has it
+    618 0.00%:  sound ok
+    619 0.00%:  is like a 
+    620 0.00%:  one had legs
+    621 0.00%:  is not one
+    622 0.00%:  is an option!!
+    623 0.00%:  sound goes
+    624 0.00%:  is one part
+    625 0.00%:  is so boring
+    626 0.00%:  is so pl
+    627 0.00%:  sound better
+    628 0.00%:  sounds plag
+    629 0.00%:  should be a n
+    630 0.00%:  is no longer true!
+    631 0.00%:  took us at
+    632 0.00%:  sounds like a thing to
+    633 0.00%:  has gone on
+    634 0.00%:  sounds a li
+    635 0.00%:  one is a solid
+    636 0.00%:  is inarg
+    637 0.00%:  is not on
+    638 0.00%:  has been 
+    639 0.00%:  one takes us to
+    640 0.00%:  sound al
+    641 0.00%:  should be a post
+    642 0.00%:  one is super hard
+    643 0.00%:  is the nerd
+    644 0.00%:  took it up
+    645 0.00%:  is the best plan!!
+    646 0.00%:  is inad
+    647 0.00%:  took it in
+    648 0.00%:  is not to
+    649 0.00%:  one is stupid!
+    650 0.00%:  should be in a
+    651 0.00%:  one is genius!!
+    652 0.00%:  is so an
+    653 0.00%:  one is hardest
+    654 0.00%:  does get
+    655 0.00%:  is a pun on the
+    656 0.00%:  part needs
+    657 0.00%:  sounds to be the
+    658 0.00%:  sound to
+    659 0.00%:  should be a t
+    660 0.00%:  is a lie to
+    661 0.00%:  is the one part
+    662 0.00%:  is an unhelp
+    663 0.00%:  should be a 
+    664 0.00%:  has kept
+    665 0.00%:  one sounds alright!
+    666 0.00%:  sounds like the boring part!
+    667 0.00%:  is a pun!
+    668 0.00%:  should be a note
+    669 0.00%:  does bring up the
+    670 0.00%:  is the best plan!
+    671 0.00%:  is the idea!
+    672 0.00%:  one is a big
+    673 0.00%:  one is in the bag
+    674 0.00%:  has to go in
+    675 0.00%:  one is bad!
+    676 0.00%:  should be a test
+    677 0.00%:  has to be our sl
+    678 0.00%:  one is a one
+    679 0.00%:  sounds to be like
+    680 0.00%:  one is best and
+    681 0.00%:  does not help us
+    682 0.00%:  is a poor use
+    683 0.00%:  one sounds right!
+    684 0.00%:  has to sound like
+    685 0.00%:  is like a good
+    686 0.00%:  one is the stupid
+    687 0.00%:  one is a lie!
+    688 0.00%:  should not be as
+    689 0.00%:  should be it!!
+    690 0.00%:  is also true!!
+    691 0.00%:  does bring up an
+    692 0.00%:  one takes us right
+    693 0.00%:  should be a non
+    694 0.00%:  should not be in
+    695 0.00%:  is to be our
+    696 0.00%:  is so great!
+    697 0.00%:  one is a rhet
+    698 0.00%:  one should be at
+    699 0.00%:  took us a bit
+    700 0.00%:  one is about the
+    701 0.00%:  is not a line
+    702 0.00%:  is the idea!!
+    703 0.00%:  should be its ep
+    704 0.00%:  is a lot to
+    705 0.00%:  one goes last!!
+    706 0.00%:  is not a n
+    707 0.00%:  one sounds a bit like
+    708 0.00%:  one is so hard
+    709 0.00%:  is so on the
+    710 0.00%:  is so not true
+    711 0.00%:  is not a pro
+    712 0.00%:  one is a sure thing!
+    713 0.00%:  part is good!
+    714 0.00%:  is so great!!
+    715 0.00%:  is not a pun
+    716 0.00%:  sounds right on!
+    717 0.00%:  one has to be in
+    718 0.00%:  is not the end
+    719 0.00%:  last one gets 
+    720 0.00%:  shoulda been in
+    721 0.00%:  is the ideal!
+    722 0.00%:  is a solid 
+    723 0.00%:  should be a top
+    724 0.00%:  is not a long
+    725 0.00%:  one is about right
+    726 0.00%:  one is a done
+    727 0.00%:  last one got 
+    728 0.00%:  is not a strong
+    729 0.00%:  is not a lie
+    730 0.00%:  one is a stupid
+    731 0.00%:  one sounds legit!
+    732 0.00%:  is so rad!
+    733 0.00%:  one is the last
+    734 0.00%:  has to be step
+    735 0.00%:  one is a sl
+    736 0.00%:  takes us to 
+    737 0.00%:  should get it a
+    738 0.00%:  has to get done
+    739 0.00%:  one is in a
+    740 0.00%:  one is a sure thing!!
+    741 0.00%:  should get it on
+    742 0.00%:  one should be pat
+    743 0.00%:  one sounds like a 
+    744 0.00%:  one goes in a
+    745 0.00%:  one is so rad it
+    746 0.00%:  has to be 
+    747 0.00%:  one is inarg
+    748 0.00%:  is like a super
+    749 0.00%:  is so bad it

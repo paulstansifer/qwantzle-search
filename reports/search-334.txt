@@ -1,145 +1,719 @@
 have failed to prove my point!
       0 100.00%: 
-      1 19.14%:  mean
-      2 19.07%:  haven
-      3 18.93%:  never
-      4 18.75%:  meant
-      5 18.64%:  heard
-      6 18.61%:  tried
-      7 18.00%:  don
-      8 17.94%:  have
-      9 17.45%:  hope
-     10 17.01%:  hate
-     11 16.96%:  find
-     12 17.11%:  find that
-     13 16.94%:  love
-     14 16.81%:  feel
-     15 16.69%:  hear
-     16 16.52%:  need
-     17 16.49%:  only
-     18 16.47%:  made
-     19 16.07%:  have learned
-     20 15.78%:  never played
-     21 15.45%:  made that
-     22 15.31%:  heard people
-     23 15.24%:  tried to
-     24 14.95%:  hear people
-     25 14.90%:  tried it
-     26 14.86%:  made another
-     27 14.69%:  have played
-     28 14.59%:  had
-     29 14.58%:  have plenty
-     30 14.58%:  have failed
-     31 14.39%:  never played that
-     32 14.38%:  find that people
-     33 14.36%:  heard it
-     34 14.33%:  have never
-     35 14.27%:  hate people
-     36 14.05%:  find people
-     37 14.03%:  feel pretty
-     38 14.03%:  hear it
-     39 13.92%:  have no
-     40 13.64%:  meant after
-     41 13.62%:  meant there
-     42 13.62%:  meant death
-     43 13.60%:  love video
-     44 13.59%:  hate to inform
-     45 13.58%:  never play
-     46 13.55%:  hate to remind
-     47 13.54%:  feel that
-     48 13.34%:  love that
-     49 13.31%:  made that one
-     50 13.23%:  have often
-     51 13.23%:  have tried
-     52 13.22%:  never have
-     53 13.08%:  find it
-     54 12.94%:  need to have
-     55 12.89%:  only hope
-     56 12.79%:  mean that
-     57 12.75%:  am
-     58 12.72%:  only have
-     59 12.70%:  need to play
-     60 12.70%:  find there
-     61 12.68%:  find the
-     62 12.62%:  find that every
-     63 12.61%:  hate it
-     64 12.60%:  hate video
-     65 12.53%:  need to move
-     66 12.48%:  love the
-     67 12.46%:  never told
-     68 12.43%:  never made
-     69 12.39%:  only tried
-     70 12.39%:  do
-     71 14.15%:  do that
-     72 12.37%:  never felt
-     73 12.37%:  only ever
-     74 12.36%:  never fail
-     75 12.35%:  hate to leave
-     76 12.31%:  meant the
-     77 12.28%:  am pretty
-     78 12.27%:  hear video
-     79 12.24%:  have no idea if
-     80 12.24%:  meant life
-     81 12.24%:  never had
-     82 12.22%:  have many
-     83 12.18%:  heard life
-     84 12.16%:  heard time
-     85 12.16%:  made the
-     86 12.11%:  need more
-     87 12.03%:  find that people are
-     88 12.01%:  have made
-     89 11.96%:  find that very
-     90 11.86%:  need to lie
-     91 11.85%:  have done
-     92 11.85%:  have only
-     93 11.83%:  have more
-     94 11.79%:  have over
-     95 11.78%:  have very
-     96 11.76%:  have read
-     97 11.74%:  meant it
-     98 11.69%:  had a pretty
-     99 11.60%:  never played a
-    100 11.55%:  find that more
-    101 11.54%:  made it
-    102 11.50%:  find that real
-    103 11.50%:  have failed to improve
-    104 11.47%:  love the idea
-    105 11.44%:  need to eat
-    106 11.36%:  meant for
-    107 11.33%:  need to try
-    108 11.31%:  need help
-    109 11.31%:  love it
-    110 11.30%:  need to lay
-    111 11.29%:  have to
-    112 11.29%:  love time
-    113 11.26%:  have a
-    114 11.73%:  have a friend
-    115 11.25%:  hear life
-    116 11.23%:  need to let
-    117 11.22%:  heard one
-    118 11.22%:  am deeply
-    119 11.19%:  find them
-    120 11.19%:  tried the
-    121 11.16%:  hate life
-    122 11.16%:  mean the
-    123 11.14%:  hate vide
-    124 11.14%:  love vide
-    125 11.13%:  never die
-    126 11.13%:  find they
-    127 11.12%:  hear time
-    128 11.10%:  only made
-    129 11.10%:  love iron
-    130 11.09%:  hate to even
-    131 11.09%:  had never
-    132 11.08%:  tried not
-    133 11.08%:  feel very
-    134 11.05%:  meant to have
-    135 11.04%:  find people are
-    136 11.03%:  feel more
-    137 11.03%:  never met
-    138 11.00%:  feel they
-    139 11.00%:  feel the
-    140 10.98%:  made a pretty
-    141 10.94%:  hear even
-    142 10.93%:  never do
-    143 10.92%:  have failed to prove
+      1 9.79%:  don
+      2 6.41%:  mean
+      3 3.41%:  have
+      4 2.29%:  hope
+      5 1.54%:  am
+      6 1.32%:  hate
+      7 1.22%:  find
+      8 1.18%:  haven
+      9 1.17%:  love
+     10 1.02%:  have no
+     11 0.90%:  never
+     12 0.89%:  feel
+     13 0.75%:  had
+     14 0.73%:  have a
+     15 0.65%:  do
+     16 0.65%:  hear
+     17 0.54%:  meant
+     18 0.43%:  find that
+     19 0.38%:  have to
+     20 0.35%:  find it
+     21 0.33%:  heard
+     22 0.32%:  hate it
+     23 0.31%:  mean!
+     24 0.30%:  need
+     25 0.27%:  do that
+     26 0.27%:  tried
+     27 0.26%:  hear it
+     28 0.24%:  only
+     29 0.22%:  have a lot
+     30 0.21%:  made
+     31 0.19%:  am a
+     32 0.18%:  am not
+     33 0.17%:  love it
+     34 0.17%:  find the
+     35 0.16%:  have never
+     36 0.15%:  love the
+     37 0.13%:  love my
+     38 0.13%:  hope my
+     39 0.12%:  have no idea if
+     40 0.12%:  hope it
+     41 0.11%:  love that
+     42 0.10%:  tried to
+     43 0.10%:  have a friend
+     44 0.09%:  feel that
+     45 0.09%:  heard it
+     46 0.09%:  tried it
+     47 0.09%:  do it
+     48 0.08%:  am the
+     49 0.08%:  had to
+     50 0.07%:  had one
+     51 0.07%:  mean that
+     52 0.07%:  have many
+     53 0.06%:  am pretty
+     54 0.06%:  love to
+     55 0.06%:  have an
+     56 0.05%:  had a lot
+     57 0.05%:  meant it
+     58 0.05%:  hate my
+     59 0.05%:  made that
+     60 0.05%:  love video
+     61 0.05%:  feel the
+     62 0.05%:  have not
+     63 0.05%:  have to admit
+     64 0.05%:  never do
+     65 0.05%:  had no
+     66 0.05%:  do not
+     67 0.05%:  am very
+     68 0.05%:  have it
+     69 0.04%:  do have
+     70 0.04%:  mean it
+     71 0.04%:  have no more
+     72 0.04%:  never had
+     73 0.04%:  do love
+     74 0.04%:  never play
+     75 0.04%:  have made
+     76 0.04%:  had it
+     77 0.04%:  have my
+     78 0.04%:  made it
+     79 0.04%:  have one
+     80 0.04%:  had my
+     81 0.04%:  feel a
+     82 0.04%:  love the idea
+     83 0.03%:  love it!
+     84 0.03%:  need a
+     85 0.03%:  do a
+     86 0.03%:  find my
+     87 0.03%:  find it to
+     88 0.03%:  find it very
+     89 0.03%:  am not a
+     90 0.03%:  meant the
+     91 0.03%:  had a pretty
+     92 0.03%:  hear people
+     93 0.03%:  mean the
+     94 0.03%:  mean if
+     95 0.03%:  never have
+     96 0.03%:  had an
+     97 0.03%:  do hope
+     98 0.03%:  have a lot of time
+     99 0.03%:  do that a
+    100 0.03%:  made the
+    101 0.02%:  feel it
+    102 0.02%:  tried!
+    103 0.02%:  have a pretty
+    104 0.02%:  am an
+    105 0.02%:  have played
+    106 0.02%:  hate people
+    107 0.02%:  never played
+    108 0.02%:  only hope
+    109 0.02%:  mean to
+    110 0.02%:  find it a
+    111 0.02%:  have yet
+    112 0.02%:  find that my
+    113 0.02%:  only have
+    114 0.02%:  hope no
+    115 0.02%:  have learned
+    116 0.02%:  have done
+    117 0.02%:  have only
+    118 0.02%:  am only
+    119 0.02%:  have a very
+    120 0.02%:  tried it!
+    121 0.02%:  had a point
+    122 0.02%:  hope to
+    123 0.02%:  made that one
+    124 0.02%:  never do that!
+    125 0.02%:  have more
+    126 0.02%:  have often
+    127 0.01%:  have tried
+    128 0.01%:  need more
+    129 0.01%:  hate to end
+    130 0.01%:  have too
+    131 0.01%:  only ever
+    132 0.01%:  love the idea of a
+    133 0.01%:  do the
+    134 0.01%:  love a
+    135 0.01%:  heard a
+    136 0.01%:  find there
+    137 0.01%:  hate to die
+    138 0.01%:  am happy
+    139 0.01%:  had a very
+    140 0.01%:  find that people
+    141 0.01%:  am 
+    142 0.01%:  have 
+    143 0.01%:  find that a
+    144 0.01%:  find people
+    145 0.01%:  have no more to
+    146 0.01%:  love time
+    147 0.01%:  feel pretty
+    148 0.01%:  am in
+    149 0.01%:  hope my life
+    150 0.01%:  have yet to find
+    151 0.01%:  am never
+    152 0.01%:  am a very
+    153 0.01%:  hope my point
+    154 0.01%:  find a
+    155 0.01%:  have no real
+    156 0.01%:  have to leave
+    157 0.01%:  find that very
+    158 0.01%:  have over
+    159 0.01%:  never have!
+    160 0.01%:  meant for
+    161 0.01%:  hear if
+    162 0.01%:  have no idea!
+    163 0.01%:  hear a
+    164 0.01%:  need to lie
+    165 0.01%:  hate my life!
+    166 0.01%:  only had
+    167 0.01%:  hear life
+    168 0.01%:  find it am
+    169 0.01%:  have a lot to
+    170 0.01%:  do that!
+    171 0.01%:  have a point
+    172 0.01%:  meant a
+    173 0.01%:  do that in
+    174 0.01%:  am not the
+    175 0.01%:  have very
+    176 0.01%:  am not very
+    177 0.01%:  hope one
+    178 0.01%:  have not yet
+    179 0.01%:  do love my
+    180 0.01%:  have a lot more
+    181 0.01%:  love me
+    182 0.01%:  have plenty
+    183 0.01%:  have failed
+    184 0.01%:  love that one
+    185 0.01%:  have no time
+    186 0.01%:  do love to
+    187 0.01%:  feel my
+    188 0.01%:  love that!
+    189 0.01%:  hate video
+    190 0.01%:  have a lot of time on
+    191 0.01%:  made a lot
+    192 0.01%:  do feel
+    193 0.01%:  have no idea if my
+    194 0.01%:  have one more
+    195 0.01%:  never played a
+    196 0.01%:  do have to
+    197 0.01%:  hate it!
+    198 0.01%:  never die
+    199 0.01%:  never play the
+    200 0.01%:  have read
+    201 0.01%:  heard if
+    202 0.01%:  love my video
+    203 0.01%:  find them
+    204 0.01%:  do love the
+    205 0.01%:  meant if
+    206 0.01%:  do my
+    207 0.01%:  hear time
+    208 0.01%:  have in
+    209 0.01%:  need to have
+    210 0.01%:  feel that my
+    211 0.01%:  am no
+    212 0.01%:  never played that
+    213 0.01%:  made an
+    214 0.01%:  had never
+    215 0.01%:  need help
+    216 0.01%:  have a life
+    217 0.01%:  have a time
+    218 0.01%:  hope!
+    219 0.01%:  tried it on
+    220 0.01%:  never told
+    221 0.01%:  hate me
+    222 0.01%:  do not have
+    223 0.01%:  have no time to
+    224 0.01%:  never do!
+    225 0.01%:  had it in
+    226 0.01%:  heard one
+    227 0.01%:  am at
+    228 0.00%:  find the time
+    229 0.00%:  hope one day to
+    230 0.00%:  am open
+    231 0.00%:  am tired
+    232 0.00%:  made a typ
+    233 0.00%:  heard people
+    234 0.00%:  do mean
+    235 0.00%:  hope for
+    236 0.00%:  only do
+    237 0.00%:  meant at
+    238 0.00%:  have a lot of my
+    239 0.00%:  had a lot of time
+    240 0.00%:  love re
+    241 0.00%:  feel very
+    242 0.00%:  have no life
+    243 0.00%:  hate to inform
+    244 0.00%:  love vide
+    245 0.00%:  am the only
+    246 0.00%:  never play that
+    247 0.00%:  am done
+    248 0.00%:  hope my anal
+    249 0.00%:  have done it
+    250 0.00%:  had one time
+    251 0.00%:  hate to leave
+    252 0.00%:  need my
+    253 0.00%:  hear in
+    254 0.00%:  never made
+    255 0.00%:  made a typo in
+    256 0.00%:  hate to die!
+    257 0.00%:  am often
+    258 0.00%:  hate to do
+    259 0.00%:  find the met
+    260 0.00%:  have made it
+    261 0.00%:  only have a
+    262 0.00%:  need the
+    263 0.00%:  mean if that
+    264 0.00%:  tried the
+    265 0.00%:  love that idea
+    266 0.00%:  am one
+    267 0.00%:  am told
+    268 0.00%:  am a friend
+    269 0.00%:  hate life
+    270 0.00%:  do have one
+    271 0.00%:  am not a very
+    272 0.00%:  am torn
+    273 0.00%:  do that every
+    274 0.00%:  only hope it
+    275 0.00%:  need to eat
+    276 0.00%:  find it more
+    277 0.00%:  hate to end a
+    278 0.00%:  love the idea!
+    279 0.00%:  do love a
+    280 0.00%:  find they
+    281 0.00%:  have a 
+    282 0.00%:  am deeply
+    283 0.00%:  hope my friend
+    284 0.00%:  hear people do it
+    285 0.00%:  do have my
+    286 0.00%:  love a happy
+    287 0.00%:  mean if it
+    288 0.00%:  love met
+    289 0.00%:  am not at
+    290 0.00%:  have a lot more to
+    291 0.00%:  had a point to
+    292 0.00%:  do plan
+    293 0.00%:  never play video
+    294 0.00%:  made it a
+    295 0.00%:  tried not
+    296 0.00%:  had to learn
+    297 0.00%:  need to play
+    298 0.00%:  only made
+    299 0.00%:  am the one
+    300 0.00%:  had my life
+    301 0.00%:  feel more
+    302 0.00%:  am on
+    303 0.00%:  made one
+    304 0.00%:  hate to remind
+    305 0.00%:  find that people are
+    306 0.00%:  meant for it
+    307 0.00%:  heard of
+    308 0.00%:  heard in
+    309 0.00%:  am too
+    310 0.00%:  need to re
+    311 0.00%:  have not tried
+    312 0.00%:  hate vide
+    313 0.00%:  meant to do
+    314 0.00%:  tried a
+    315 0.00%:  hate to even
+    316 0.00%:  do a lot of it
+    317 0.00%:  had 
+    318 0.00%:  have one of
+    319 0.00%:  had more
+    320 0.00%:  am a pretty
+    321 0.00%:  have tried it
+    322 0.00%:  never do it
+    323 0.00%:  do that in real
+    324 0.00%:  heard on
+    325 0.00%:  love that my
+    326 0.00%:  heard a lot
+    327 0.00%:  never met
+    328 0.00%:  made a point
+    329 0.00%:  have only ever
+    330 0.00%:  do love that
+    331 0.00%:  heard my
+    332 0.00%:  do have a point
+    333 0.00%:  feel no
+    334 0.00%:  had a time
+    335 0.00%:  tried it a
+    336 0.00%:  do hope my
+    337 0.00%:  only tried
+    338 0.00%:  love iron
+    339 0.00%:  never die!
+    340 0.00%:  hate people!
+    341 0.00%:  do love it
+    342 0.00%:  have learned my
+    343 0.00%:  have to leave!
+    344 0.00%:  find that more
+    345 0.00%:  hate a
+    346 0.00%:  had a lot more
+    347 0.00%:  have to do
+    348 0.00%:  do have a lot of time
+    349 0.00%:  only ever do
+    350 0.00%:  find people are
+    351 0.00%:  do not have a
+    352 0.00%:  love the time
+    353 0.00%:  love that in
+    354 0.00%:  have a video
+    355 0.00%:  find that a very
+    356 0.00%:  find it a very
+    357 0.00%:  do have an
+    358 0.00%:  need to try
+    359 0.00%:  love that movie
+    360 0.00%:  have no moral
+    361 0.00%:  meant after
+    362 0.00%:  have to find
+    363 0.00%:  feel that one
+    364 0.00%:  do a lot of them
+    365 0.00%:  mean that if
+    366 0.00%:  love not
+    367 0.00%:  have a limited
+    368 0.00%:  never felt
+    369 0.00%:  have many life
+    370 0.00%:  only have 
+    371 0.00%:  only do that
+    372 0.00%:  never play a
+    373 0.00%:  am in love
+    374 0.00%:  hope one of
+    375 0.00%:  do a lot of my
+    376 0.00%:  only do it
+    377 0.00%:  do that on
+    378 0.00%:  need to have a
+    379 0.00%:  love the iron
+    380 0.00%:  love the irony of
+    381 0.00%:  have many of
+    382 0.00%:  feel an
+    383 0.00%:  had a point!
+    384 0.00%:  made no
+    385 0.00%:  do too
+    386 0.00%:  love my idea
+    387 0.00%:  feel they
+    388 0.00%:  meant there
+    389 0.00%:  have one for
+    390 0.00%:  only had a
+    391 0.00%:  meant death
+    392 0.00%:  hear my
+    393 0.00%:  have a lot of time in
+    394 0.00%:  heard it on
+    395 0.00%:  have it in
+    396 0.00%:  find it the
+    397 0.00%:  feel my point
+    398 0.00%:  need help!
+    399 0.00%:  have only a
+    400 0.00%:  had one more
+    401 0.00%:  find the term
+    402 0.00%:  hope it made
+    403 0.00%:  had a 
+    404 0.00%:  need to lay
+    405 0.00%:  have one from
+    406 0.00%:  hear even
+    407 0.00%:  am open to the
+    408 0.00%:  have to leave for
+    409 0.00%:  love the name
+    410 0.00%:  love my friend
+    411 0.00%:  have tried to
+    412 0.00%:  find that am
+    413 0.00%:  never fail
+    414 0.00%:  made it to
+    415 0.00%:  never had to
+    416 0.00%:  have more to
+    417 0.00%:  meant for the
+    418 0.00%:  have a ton
+    419 0.00%:  made a typo!
+    420 0.00%:  love to hear
+    421 0.00%:  have a point to
+    422 0.00%:  have a deep
+    423 0.00%:  hear 
+    424 0.00%:  do it often
+    425 0.00%:  have made no
+    426 0.00%:  have learned to
+    427 0.00%:  hope my idea
+    428 0.00%:  never played it
+    429 0.00%:  am in a
+    430 0.00%:  am a pro
+    431 0.00%:  do it every
+    432 0.00%:  had not
+    433 0.00%:  have not played
+    434 0.00%:  do feel that
+    435 0.00%:  am only a
+    436 0.00%:  love to have
+    437 0.00%:  do a lot of time
+    438 0.00%:  have an old
+    439 0.00%:  have a fr
+    440 0.00%:  am open to other
+    441 0.00%:  have a point!
+    442 0.00%:  need a life
+    443 0.00%:  have yet to do
+    444 0.00%:  have it on my
+    445 0.00%:  do hope it
+    446 0.00%:  have played too
+    447 0.00%:  hope to never
+    448 0.00%:  tried my
+    449 0.00%:  love the idea of an
+    450 0.00%:  heard!
+    451 0.00%:  find the more
+    452 0.00%:  hear video
+    453 0.00%:  do!
+    454 0.00%:  meant hyp
+    455 0.00%:  have a lot on
+    456 0.00%:  have a lot in
+    457 0.00%:  tried it on a
+    458 0.00%:  hope to one
+    459 0.00%:  made a pretty
+    460 0.00%:  had it on
+    461 0.00%:  find the moral
+    462 0.00%:  have not made
+    463 0.00%:  do it a
+    464 0.00%:  love the idea of my
+    465 0.00%:  love time!
+    466 0.00%:  love the met
+    467 0.00%:  find that real
+    468 0.00%:  have my life
+    469 0.00%:  made a typo in the
+    470 0.00%:  had one of my
+    471 0.00%:  hate life!
+    472 0.00%:  meant life
+    473 0.00%:  hate my friend
+    474 0.00%:  meant!
+    475 0.00%:  hate me!
+    476 0.00%:  have tried!
+    477 0.00%:  love that video
+    478 0.00%:  meant to have
+    479 0.00%:  feel the point
+    480 0.00%:  need to lie to
+    481 0.00%:  do hate
+    482 0.00%:  hate to die in
+    483 0.00%:  had to try
+    484 0.00%:  love a man
+    485 0.00%:  hope my plan
+    486 0.00%:  hope it never
+    487 0.00%:  heard it in
+    488 0.00%:  do a lot of the
+    489 0.00%:  love my re
+    490 0.00%:  made the point
+    491 0.00%:  am not here
+    492 0.00%:  tried one
+    493 0.00%:  had a more
+    494 0.00%:  have a life to
+    495 0.00%:  am a fool
+    496 0.00%:  find the real
+    497 0.00%:  am not 
+    498 0.00%:  have to point
+    499 0.00%:  feel that a
+    500 0.00%:  have one at
+    501 0.00%:  mean if there
+    502 0.00%:  hate my video
+    503 0.00%:  love the 
+    504 0.00%:  never have a
+    505 0.00%:  heard an
+    506 0.00%:  am told it
+    507 0.00%:  find it very am
+    508 0.00%:  am on a
+    509 0.00%:  feel that in
+    510 0.00%:  am not too
+    511 0.00%:  have too!
+    512 0.00%:  do not fore
+    513 0.00%:  had one at
+    514 0.00%:  do feel a
+    515 0.00%:  find that 
+    516 0.00%:  do love me
+    517 0.00%:  need time
+    518 0.00%:  do have many
+    519 0.00%:  am in the
+    520 0.00%:  had one for
+    521 0.00%:  have too many of
+    522 0.00%:  never have to
+    523 0.00%:  made a typo on
+    524 0.00%:  love it in
+    525 0.00%:  need to have my
+    526 0.00%:  have done it!
+    527 0.00%:  had one a
+    528 0.00%:  mean if the
+    529 0.00%:  made a typo there
+    530 0.00%:  find it a lot
+    531 0.00%:  never made it to
+    532 0.00%:  made a point of
+    533 0.00%:  never had a time
+    534 0.00%:  love to dream
+    535 0.00%:  heard life
+    536 0.00%:  heard one time it
+    537 0.00%:  am an idiot
+    538 0.00%:  do it in
+    539 0.00%:  need that
+    540 0.00%:  have my fl
+    541 0.00%:  have over a
+    542 0.00%:  do that for
+    543 0.00%:  find it t
+    544 0.00%:  am at the
+    545 0.00%:  tried to play
+    546 0.00%:  never made a
+    547 0.00%:  find it a real
+    548 0.00%:  do hope to
+    549 0.00%:  need a time
+    550 0.00%:  only had 
+    551 0.00%:  have to eat
+    552 0.00%:  have a very limited
+    553 0.00%:  love the irony of it
+    554 0.00%:  do a lot of them!
+    555 0.00%:  find that every
+    556 0.00%:  have failed in
+    557 0.00%:  do not feel
+    558 0.00%:  had a lot to
+    559 0.00%:  love that no
+    560 0.00%:  need it
+    561 0.00%:  love the term
+    562 0.00%:  have more of
+    563 0.00%:  find them very
+    564 0.00%:  made a lot of ty
+    565 0.00%:  had a line
+    566 0.00%:  tried to have
+    567 0.00%:  am the ep
+    568 0.00%:  have a lot of em
+    569 0.00%:  meant it for
+    570 0.00%:  do that from
+    571 0.00%:  do that on my
+    572 0.00%:  made a note
+    573 0.00%:  never play vide
+    574 0.00%:  am only 
+    575 0.00%:  am very fond
+    576 0.00%:  had a ton
+    577 0.00%:  am not yet
+    578 0.00%:  do a lot of it!
+    579 0.00%:  love my fant
+    580 0.00%:  heard time
+    581 0.00%:  love me a
+    582 0.00%:  find it heart
+    583 0.00%:  have to pe
+    584 0.00%:  find it ple
+    585 0.00%:  am an old
+    586 0.00%:  hear it only
+    587 0.00%:  have a lot to do
+    588 0.00%:  love to te
+    589 0.00%:  had one!
+    590 0.00%:  have a lot of re
+    591 0.00%:  need to let
+    592 0.00%:  have it on very
+    593 0.00%:  had to leave
+    594 0.00%:  do have a pretty
+    595 0.00%:  had a met
+    596 0.00%:  meant it a
+    597 0.00%:  need to move
+    598 0.00%:  never had my
+    599 0.00%:  never had it
+    600 0.00%:  never told my
+    601 0.00%:  made another
+    602 0.00%:  have played more
+    603 0.00%:  find the very
+    604 0.00%:  had it at
+    605 0.00%:  had one too
+    606 0.00%:  heard in a
+    607 0.00%:  have to admit!
+    608 0.00%:  only ever had
+    609 0.00%:  need to play a
+    610 0.00%:  hope it r
+    611 0.00%:  feel that one day
+    612 0.00%:  have tried it!
+    613 0.00%:  hate it in
+    614 0.00%:  have a lot of time!
+    615 0.00%:  have in my
+    616 0.00%:  do that in my life
+    617 0.00%:  love the idea of it
+    618 0.00%:  made it in
+    619 0.00%:  meant to die
+    620 0.00%:  had to point
+    621 0.00%:  hate a lot
+    622 0.00%:  am open to the idea
+    623 0.00%:  had it in a
+    624 0.00%:  love the part
+    625 0.00%:  have no more idea
+    626 0.00%:  am not happy
+    627 0.00%:  do mean that
+    628 0.00%:  only have to
+    629 0.00%:  never had a lot
+    630 0.00%:  am no help
+    631 0.00%:  had it for
+    632 0.00%:  tried to help
+    633 0.00%:  find there to
+    634 0.00%:  love the tim
+    635 0.00%:  made it into
+    636 0.00%:  do love a happy
+    637 0.00%:  love time parad
+    638 0.00%:  only hope to
+    639 0.00%:  hear a lot of my
+    640 0.00%:  hate people in
+    641 0.00%:  had a lot of money
+    642 0.00%:  do it!
+    643 0.00%:  have a lot!
+    644 0.00%:  mean that!
+    645 0.00%:  have it tim
+    646 0.00%:  have plenty!
+    647 0.00%:  only made it
+    648 0.00%:  have yet to find a more
+    649 0.00%:  hope to die
+    650 0.00%:  am happy for
+    651 0.00%:  need to replay
+    652 0.00%:  made it too
+    653 0.00%:  made it!
+    654 0.00%:  do a lot of re
+    655 0.00%:  have many fl
+    656 0.00%:  had to re
+    657 0.00%:  had an ep
+    658 0.00%:  am a li
+    659 0.00%:  hope my final
+    660 0.00%:  never made that
+    661 0.00%:  mean that people
+    662 0.00%:  only ever have
+    663 0.00%:  have an over
+    664 0.00%:  do have one more
+    665 0.00%:  have a pointy
+    666 0.00%:  love to end
+    667 0.00%:  find the people
+    668 0.00%:  love my friend!
+    669 0.00%:  tried it one
+    670 0.00%:  hope to do
+    671 0.00%:  hope my fr
+    672 0.00%:  am only the
+    673 0.00%:  am the type
+    674 0.00%:  mean it!
+    675 0.00%:  do that 
+    676 0.00%:  hate me too
+    677 0.00%:  love that in a
+    678 0.00%:  love my fr
+    679 0.00%:  am the very
+    680 0.00%:  am a t
+    681 0.00%:  have a lot more of
+    682 0.00%:  am a friend to
+    683 0.00%:  am a din
+    684 0.00%:  never fail to am
+    685 0.00%:  have an 
+    686 0.00%:  have no moral to
+    687 0.00%:  have a point for
+    688 0.00%:  have to pee!
+    689 0.00%:  have to leave in
+    690 0.00%:  made 
+    691 0.00%:  do have a lot of my
+    692 0.00%:  do have a time
+    693 0.00%:  hate to leave my
+    694 0.00%:  do have a point to
+    695 0.00%:  do that in my real
+    696 0.00%:  had a point for
+    697 0.00%:  have to do my
+    698 0.00%:  do that in every
+    699 0.00%:  need to eat!
+    700 0.00%:  love to have my
+    701 0.00%:  made a point!
+    702 0.00%:  do have a very
+    703 0.00%:  had to learn to
+    704 0.00%:  am a fool!
+    705 0.00%:  do have a lot to
+    706 0.00%:  had a lot of my
+    707 0.00%:  have plenty of time
+    708 0.00%:  hate to leave on
+    709 0.00%:  have to leave to
+    710 0.00%:  made it a lot
+    711 0.00%:  hate my life and
+    712 0.00%:  have it in a
+    713 0.00%:  have a life!
+    714 0.00%:  only ever do it
+    715 0.00%:  have yet to die
+    716 0.00%:  love the idea too
+    717 0.00%:  have failed to prove

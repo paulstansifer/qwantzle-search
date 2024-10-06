@@ -9,6 +9,7 @@ use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
+use tracing_subscriber::filter;
 
 use crate::{llm, pool::LetterPool, strip::Strip};
 
@@ -116,16 +117,9 @@ fn compromise_score(probs: &Vec<f32>) -> Score {
     Score(f64::powf(prod, 1.0 / (f64::powf(probs.len() as f64, 0.5))))
 }
 
-fn prob_score(probs: &Vec<f32>) -> Score {
+fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
-
-    for prob in probs.iter_mut() {
-        if *prob > 0.5 {
-            *prob = 0.5;
-        }
-        *prob += 0.75
-    }
 
     // if probs.len() >= 1 {
     //     probs[0] += 0.07;
@@ -133,7 +127,15 @@ fn prob_score(probs: &Vec<f32>) -> Score {
     //         probs[1] += 0.05;
     //     }
     // }
-    let prod: f64 = probs.iter().product();
+
+    let mut prod: f64 = probs.iter().product();
+    for tok_i in 0..probs.len() {
+        let chars_i = chars_so_far as f32 * tok_i as f32 / probs.len() as f32;
+
+        // This is ill-behaved off the end in *both* directions!
+        let filter_ratio = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        prod = prod / filter_ratio as f64;
+    }
 
     Score(prod)
 }
@@ -168,7 +170,7 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = generous_score(&res.tok_probs, res.chars_so_far);
+        let score = prob_score(&res.tok_probs, res.chars_so_far);
 
         Some((res, score))
     }
