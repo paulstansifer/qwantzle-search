@@ -28,6 +28,7 @@ struct Node {
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
     tok_probs: Vec<f32>,
+    chars_so_far: u8,
 }
 
 impl std::hash::Hash for Node {
@@ -52,7 +53,7 @@ const TOK_BUFFER: u32 = 25;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems very sensitive to this; maybe we need a better criterion?
-const FF_MIN_P: f32 = 0.18;
+const FF_MIN_P: f32 = 0.18; // REVISE UP FOR GPU CONSTRAINTS
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 const MIN_TOK_P: f32 = 0.001; // REVISE DOWN
@@ -82,7 +83,7 @@ thread_local! {
     pub static MISC_TIME : Cell<u128> = Cell::<u128>::default();
 }
 
-fn generous_score(probs: &Vec<f32>) -> Score {
+fn generous_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
@@ -96,7 +97,7 @@ fn generous_score(probs: &Vec<f32>) -> Score {
 
     Score(f64::powf(
         prod * 0.3 * 0.3,
-        1.0 / (probs.len() as f64 + 2.0),
+        1.0 / ((chars_so_far as f64 / 5.0) + 2.0),
     ))
 }
 
@@ -112,19 +113,26 @@ fn compromise_score(probs: &Vec<f32>) -> Score {
     }
     let prod: f64 = probs.iter().product();
 
-    Score(f64::powf(prod, 2.0 / (probs.len() as f64)))
+    Score(f64::powf(prod, 1.0 / (f64::powf(probs.len() as f64, 0.5))))
 }
 
 fn prob_score(probs: &Vec<f32>) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
-    if probs.len() >= 1 {
-        probs[0] += 0.07;
-        if probs.len() >= 2 {
-            probs[1] += 0.05;
+    for prob in probs.iter_mut() {
+        if *prob > 0.5 {
+            *prob = 0.5;
         }
+        *prob += 0.75
     }
+
+    // if probs.len() >= 1 {
+    //     probs[0] += 0.07;
+    //     if probs.len() >= 2 {
+    //         probs[1] += 0.05;
+    //     }
+    // }
     let prod: f64 = probs.iter().product();
 
     Score(prod)
@@ -137,6 +145,7 @@ impl Node {
             remaining: LetterPool::from_text(text),
             probability: 1.0,
             tok_probs: vec![],
+            chars_so_far: 0,
         }
     }
 
@@ -154,11 +163,12 @@ impl Node {
             text: self.text.clone(),
             probability: self.probability * prob as f64,
             tok_probs: self.tok_probs.clone(),
+            chars_so_far: self.chars_so_far + model.decode_tokens(&[t]).trim().len() as u8,
         };
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = prob_score(&res.tok_probs);
+        let score = generous_score(&res.tok_probs, res.chars_so_far);
 
         Some((res, score))
     }
