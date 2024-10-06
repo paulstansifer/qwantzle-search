@@ -1,3002 +1,1683 @@
 um... I guess I'll talk to you later huh
       0 100.00%: 
-      1 16.74%:  um
-      2 13.50%:  I
-      3 9.72%:  you
-      4 8.58%:  yeah
-      5 4.36%:  um...
-      6 4.19%:  so
-      7 3.91%:  I guess
-      8 3.85%:  that
-      9 3.40%:  the
-     10 3.38%:  u
-     11 2.85%:  yeah.
-     12 2.09%:  my
-     13 1.95%:  I'll
-     14 1.92%:  are
-     15 1.74%:  um.
-     16 1.64%:  let
-     17 1.46%:  I guess I'm
-     18 1.37%:  your
-     19 1.36%:  to
-     20 1.31%:  that's the
-     21 1.03%:  let me
-     22 1.00%:  yes
-     23 0.82%:  that's a
-     24 0.82%:  uh...
-     25 0.77%:  okay
-     26 0.73%:  yeah. I
-     27 0.71%:  I guess you
-     28 0.60%:  you'll
-     29 0.58%:  you're the
-     30 0.58%:  I'm a
-     31 0.57%:  y
-     32 0.55%:  let's all
-     33 0.55%:  uhh
-     34 0.54%:  um... I
-     35 0.53%:  hey
-     36 0.52%:  let's go
-     37 0.51%:  I'm the
-     38 0.51%:  a
-     39 0.50%:  there
-     40 0.50%:  that's your
-     41 0.49%:  that's my
-     42 0.48%:  the story
-     43 0.47%:  tell
-     44 0.45%:  yeah...
-     45 0.45%:  here
-     46 0.44%:  I guess that
-     47 0.43%:  let's get
-     48 0.39%:  yes.
-     49 0.38%:  I'll see
-     50 0.36%:  I guess my
-     51 0.34%:  you're a
-     52 0.33%:  yeah. I guess
-     53 0.33%:  am
-     54 0.33%:  here's a
-     55 0.32%:  to sum
-     56 0.32%:  I guess the
-     57 0.31%:  the moral
-     58 0.30%:  yeah. I'
-     59 0.30%:  um. I
-     60 0.29%:  ah
-     61 0.29%:  er
-     62 0.28%:  
-     63 0.27%:  I'll see you at
-     64 0.26%:  you got
-     65 0.26%:  h
-     66 0.25%:  go
-     67 0.25%:  yeah I
-     68 0.25%:  that's all
-     69 0.24%:  that's a yes
-     70 0.24%:  okay.
-     71 0.24%:  um... yeah
-     72 0.23%:  all
-     73 0.23%:  I thought
-     74 0.22%:  uh.
-     75 0.22%:  there's a
-     76 0.22%:  I'll say
-     77 0.21%:  let's talk
-     78 0.20%:  I guess I'm the
-     79 0.20%:  let me ask
-     80 0.20%:  um... you
-     81 0.20%:  um... I guess
-     82 0.20%:  I guess you'll
-     83 0.19%:  more
-     84 0.19%:  I gotta
-     85 0.19%:  as
-     86 0.19%:  let's say
-     87 0.18%:  so true
-     88 0.18%:  I got
-     89 0.18%:  I get
-     90 0.17%:  he
-     91 0.17%:  um... so
-     92 0.16%:  um... that
-     93 0.15%:  uhh...
-     94 0.15%:  I'm your
-     95 0.15%:  I guess...
-     96 0.15%:  yeah. I guess I'll
-     97 0.15%:  let's all go
-     98 0.14%:  I'm really
-     99 0.14%:  I'll go
-    100 0.14%:  yeah that
-    101 0.14%:  I'll stay
-    102 0.14%:  I am
-    103 0.12%:  you're...
-    104 0.12%:  you see
-    105 0.12%:  tell us
-    106 0.12%:  I'm out
-    107 0.12%:  you're all
-    108 0.11%:  um. I guess
-    109 0.11%:  I guess your
-    110 0.11%:  you get
-    111 0.10%:  so...
-    112 0.10%:  that's our
-    113 0.10%:  here's my
-    114 0.10%:  I'm guess
-    115 0.10%:  let's make
-    116 0.10%:  yes. I
-    117 0.10%:  I say
-    118 0.10%:  yeah... I
-    119 0.10%:  let's hear
-    120 0.10%:  I'll try
-    121 0.10%:  I'm...
-    122 0.09%:  I see
-    123 0.09%:  that's...
-    124 0.09%:  all I
-    125 0.09%:  yeah. It
-    126 0.09%:  let's all get
-    127 0.09%:  uh... I
-    128 0.09%:  I take
-    129 0.08%:  the story'
-    130 0.08%:  yeah. I'll
-    131 0.08%:  that'll
-    132 0.08%:  let us
-    133 0.08%:  erm
-    134 0.08%:  as you
-    135 0.08%:  you are
-    136 0.08%:  yeah. I guess that
-    137 0.08%:  huh.
-    138 0.08%:  that's you
-    139 0.08%:  I really
-    140 0.08%:  let's get to
-    141 0.07%:  hah
-    142 0.07%:  hey.
-    143 0.07%:  I guess the moral
-    144 0.07%:  I thought I
-    145 0.07%:  that's me
-    146 0.07%:  that story
-    147 0.07%:  uhm
-    148 0.07%:  I hear
-    149 0.07%:  um. I'll
-    150 0.07%:  I took
-    151 0.07%:  I thought you
-    152 0.06%:  I guess I'm a
-    153 0.06%:  um yeah
-    154 0.06%:  the rest
-    155 0.06%:  ahem
-    156 0.06%:  um I
-    157 0.06%:  I'll tell
-    158 0.06%:  yeah I'
-    159 0.06%:  I'm totally
-    160 0.06%:  so so
-    161 0.06%:  that's all you
-    162 0.06%:  are you a
-    163 0.06%:  okay. I
-    164 0.05%:  I guess I'm...
-    165 0.05%:  I guess I'm out
-    166 0.05%:  he'
-    167 0.05%:  yah
-    168 0.05%:  er...
-    169 0.05%:  there you
-    170 0.05%:  um... let
-    171 0.05%:  so hot
-    172 0.05%:  yeah I guess I'm
-    173 0.05%:  um... I'll try
-    174 0.05%:  you gotta
-    175 0.05%:  um... that's a
-    176 0.05%:  I got that
-    177 0.05%:  you got a
-    178 0.05%:  um... that's the
-    179 0.05%:  you go
-    180 0.05%:  uh... you
-    181 0.05%:  here I
-    182 0.05%:  the real
-    183 0.05%:  um... the
-    184 0.05%:  go to
-    185 0.05%:  so true.
-    186 0.05%:  let's go to
-    187 0.05%:  that makes
-    188 0.05%:  um..
-    189 0.05%:  I guess... I
-    190 0.05%:  the other
-    191 0.05%:  I guess I'm your
-    192 0.04%:  yeah... that
-    193 0.04%:  tell me a
-    194 0.04%:  that's us
-    195 0.04%:  yeah... I guess
-    196 0.04%:  let's take
-    197 0.04%:  you use
-    198 0.04%:  you thought
-    199 0.04%:  I'll let
-    200 0.04%:  yeah. I guess.
-    201 0.04%:  um... are
-    202 0.04%:  yeah... I'
-    203 0.04%:  let's say that
-    204 0.04%:  you're out
-    205 0.04%:  I get to
-    206 0.04%:  I get that
-    207 0.04%:  as a
-    208 0.04%:  let's say I
-    209 0.04%:  yeah I guess that
-    210 0.04%:  I'll make
-    211 0.04%:  um... tell
-    212 0.04%:  let me ask you a
-    213 0.04%:  I'll get
-    214 0.04%:  I gotta ask
-    215 0.04%:  I'm sure
-    216 0.04%:  let's all stay
-    217 0.04%:  uh... yeah
-    218 0.04%:  you'll let
-    219 0.04%:  let's go out
-    220 0.04%:  all I'
-    221 0.04%:  let's sum
-    222 0.04%:  am I the
-    223 0.04%:  let's stay
-    224 0.04%:  all the
-    225 0.04%:  so you
-    226 0.04%:  heh
-    227 0.04%:  I guess our
-    228 0.04%:  there's a lot
-    229 0.04%:  let's all go to
-    230 0.04%:  let's team
-    231 0.04%:  so that
-    232 0.04%:  am I a
-    233 0.04%:  that's really
-    234 0.03%:  all you
-    235 0.03%:  y'all are
-    236 0.03%:  tell me your
-    237 0.03%:  uh... I guess
-    238 0.03%:  yea
-    239 0.03%:  ah...
-    240 0.03%:  um... let's all
-    241 0.03%:  uh... I'll
-    242 0.03%:  that's all I got
-    243 0.03%:  uh... so
-    244 0.03%:  let that
-    245 0.03%:  I got a
-    246 0.03%:  I'm at
-    247 0.03%:  um... that's all
-    248 0.03%:  uh... that
-    249 0.03%:  okay. I'll
-    250 0.03%:  I'll take
-    251 0.03%:  that's 
-    252 0.03%:  yes. I'
-    253 0.03%:  erm...
-    254 0.03%:  I'm all
-    255 0.03%:  so.
-    256 0.03%:  let's try
-    257 0.03%:  you got that
-    258 0.03%:  um... yes
-    259 0.03%:  uh. I
-    260 0.03%:  um... I'll see
-    261 0.03%:  that's okay
-    262 0.03%:  there's that...
-    263 0.03%:  the last
-    264 0.03%:  I...
-    265 0.03%:  here's to
-    266 0.03%:  I go
-    267 0.03%:  um. It
-    268 0.03%:  so I
-    269 0.03%:  huh...
-    270 0.03%:  um... I guess that
-    271 0.03%:  I get the
-    272 0.03%:  a story
-    273 0.03%:  that's all the
-    274 0.03%:  you'll see
-    275 0.03%:  you hear
-    276 0.03%:  are you the
-    277 0.03%:  I thought you'
-    278 0.03%:  you agree
-    279 0.03%:  that's the real
-    280 0.03%:  I guess I'll try
-    281 0.03%:  that's a yes.
-    282 0.03%:  um... let's go
-    283 0.03%:  I'm that
-    284 0.03%:  I guess I'll take
-    285 0.03%:  um... I guess you
-    286 0.03%:  my last
-    287 0.03%:  he says
-    288 0.03%:  all that
-    289 0.03%:  I must
-    290 0.02%:  I ate
-    291 0.02%:  I guess... I'll
-    292 0.02%:  uuh
-    293 0.02%:  I'll tell you a
-    294 0.02%:  to the
-    295 0.02%:  I'll talk
-    296 0.02%:  yeah. It's a
-    297 0.02%:  you seem
-    298 0.02%:  um I'
-    299 0.02%:  you talk
-    300 0.02%:  you got the
-    301 0.02%:  the story goes
-    302 0.02%:  you got me
-    303 0.02%:  I guess all
-    304 0.02%:  you...
-    305 0.02%:  you must
-    306 0.02%:  I'm also
-    307 0.02%:  I'm really a
-    308 0.02%:  yes I
-    309 0.02%:  I'm a ghost
-    310 0.02%:  let's get out
-    311 0.02%:  I guess I'll tell
-    312 0.02%:  tell your
-    313 0.02%:  um... I'll see you at
-    314 0.02%:  that's a yes to
-    315 0.02%:  um... that's your
-    316 0.02%:  tell the
-    317 0.02%:  let's all go out
-    318 0.02%:  um... so I
-    319 0.02%:  I'll see you at 
-    320 0.02%:  I got my
-    321 0.02%:  ahem...
-    322 0.02%:  you'll go
-    323 0.02%:  I am.
-    324 0.02%:  I'm sort
-    325 0.02%:  you'll get
-    326 0.02%:  um I guess
-    327 0.02%:  you make
-    328 0.02%:  uh... you'
-    329 0.02%:  you'll tell
-    330 0.02%:  um... your
-    331 0.02%:  I'm out.
-    332 0.02%:  that's three
-    333 0.02%:  I'm you
-    334 0.02%:  um. I'll try
-    335 0.02%:  are you...
-    336 0.02%:  let's all say
-    337 0.02%:  tell us more
-    338 0.02%:  let's start
-    339 0.02%:  so s
-    340 0.02%:  let's get a
-    341 0.02%:  I'm a guy
-    342 0.02%:  y'all got
-    343 0.02%:  uhm...
-    344 0.02%:  I'm here
-    345 0.02%:  go me
-    346 0.02%:  there's my
-    347 0.02%:  I guess I'll let
-    348 0.02%:  um... I guess I'll try
-    349 0.02%:  that last
-    350 0.02%:  that's a met
-    351 0.02%:  yes to
-    352 0.02%:  let us all
-    353 0.02%:  let's make a
-    354 0.02%:  I'm 
-    355 0.02%:  so am
-    356 0.02%:  let's get you
-    357 0.02%:  let's shake
-    358 0.02%:  I guess I'm really
-    359 0.02%:  yeah I guess.
-    360 0.02%:  that's all you got
-    361 0.02%:  there.
-    362 0.02%:  um... so you
-    363 0.02%:  so yeah
-    364 0.02%:  yeah. I gotta
-    365 0.02%:  I'll see you all
-    366 0.02%:  I got the
-    367 0.02%:  huh. I
-    368 0.02%:  I get a
-    369 0.02%:  so hot.
-    370 0.02%:  let's make that
-    371 0.02%:  you're so
-    372 0.02%:  uh... I guess I'm
-    373 0.02%:  let's go home
-    374 0.02%:  a lot
-    375 0.02%:  yeah... I guess I'm
-    376 0.02%:  you lost
-    377 0.02%:  you take
-    378 0.02%:  uhh.
-    379 0.02%:  I say to
-    380 0.02%:  he's got
-    381 0.02%:  I took the
-    382 0.02%:  so meta
-    383 0.02%:  I'll make sure
-    384 0.02%:  I guess you're a
-    385 0.02%:  I'll go to
-    386 0.02%:  so yes
-    387 0.02%:  yeah. I'm the
-    388 0.02%:  so great
-    389 0.02%:  hey. I
-    390 0.02%:  um... there
-    391 0.02%:  um... there's that
-    392 0.02%:  I took a
-    393 0.02%:  um... I'll stay
-    394 0.02%:  yes...
-    395 0.02%:  let's all go home
-    396 0.02%:  ah.
-    397 0.02%:  yeah. I get
-    398 0.02%:  uhh... I
-    399 0.02%:  um. I guess that
-    400 0.02%:  so 
-    401 0.02%:  um. Is
-    402 0.02%:  I guess I'll talk
-    403 0.02%:  I guess I really
-    404 0.02%:  let's all shake
-    405 0.02%:  that's all I got.
-    406 0.02%:  I'll use
-    407 0.01%:  let's all try
-    408 0.01%:  um... you'll
-    409 0.01%:  yeah um
-    410 0.01%:  um... let's get
-    411 0.01%:  so totally
-    412 0.01%:  hey...
-    413 0.01%:  you thought I
-    414 0.01%:  I'll shut
-    415 0.01%:  all my
-    416 0.01%:  I'ma
-    417 0.01%:  your last
-    418 0.01%:  um. I guess you
-    419 0.01%:  I'll see ya
-    420 0.01%:  I gotta say...
-    421 0.01%:  yeah. I'm a
-    422 0.01%:  you get that
-    423 0.01%:  the story has
-    424 0.01%:  um... go
-    425 0.01%:  that's a story
-    426 0.01%:  so are
-    427 0.01%:  um... a
-    428 0.01%:  are you all
-    429 0.01%:  I'll start
-    430 0.01%:  um... okay
-    431 0.01%:  so'
-    432 0.01%:  I get my
-    433 0.01%:  as usual
-    434 0.01%:  yes. It
-    435 0.01%:  I guess... you
-    436 0.01%:  I see your
-    437 0.01%:  um yeah.
-    438 0.01%:  am I your
-    439 0.01%:  are those
-    440 0.01%:  you're the last
-    441 0.01%:  yeah I'll
-    442 0.01%:  um... I'll go
-    443 0.01%:  let's take a
-    444 0.01%:  I'll see your
-    445 0.01%:  you're that
-    446 0.01%:  um... y
-    447 0.01%:  that's our team
-    448 0.01%:  um... you're the
-    449 0.01%:  tell that
-    450 0.01%:  here at
-    451 0.01%:  you're team
-    452 0.01%:  that's your last
-    453 0.01%:  um... to
-    454 0.01%:  are the
-    455 0.01%:  I'll say that
-    456 0.01%:  I hear that
-    457 0.01%:  ahh
-    458 0.01%:  um... I gotta
-    459 0.01%:  um. I'll see
-    460 0.01%:  I guess I'll make
-    461 0.01%:  you get the
-    462 0.01%:  um... say
-    463 0.01%:  uh. I guess
-    464 0.01%:  um... there's a
-    465 0.01%:  let's re
-    466 0.01%:  yee
-    467 0.01%:  let's talk to
-    468 0.01%:  as I'
-    469 0.01%:  I guess to
-    470 0.01%:  the story's a
-    471 0.01%:  all you'
-    472 0.01%:  let's all take
-    473 0.01%:  yah.
-    474 0.01%:  ah yes
-    475 0.01%:  I guess you're...
-    476 0.01%:  um... so that
-    477 0.01%:  I guess I'll...
-    478 0.01%:  yeah... I'll
-    479 0.01%:  to make
-    480 0.01%:  I guess you're all
-    481 0.01%:  yess
-    482 0.01%:  you'll use
-    483 0.01%:  let's look
-    484 0.01%:  that's my last
-    485 0.01%:  the same
-    486 0.01%:  I guess.
-    487 0.01%:  here you
-    488 0.01%:  let's use
-    489 0.01%:  tell my
-    490 0.01%:  tell us your
-    491 0.01%:  I am a
-    492 0.01%:  you are the
-    493 0.01%:  the story I
-    494 0.01%:  let's all make
-    495 0.01%:  uh yeah
-    496 0.01%:  I'll tell my
-    497 0.01%:  all those
-    498 0.01%:  to re
-    499 0.01%:  you're at
-    500 0.01%:  let me ask you...
-    501 0.01%:  okay. I guess
-    502 0.01%:  you'll take
-    503 0.01%:  hee
-    504 0.01%:  you'll let us
-    505 0.01%:  let's all talk
-    506 0.01%:  the truth
-    507 0.01%:  let's reg
-    508 0.01%:  let's get our
-    509 0.01%:  uh... that's a
-    510 0.01%:  I see that
-    511 0.01%:  you agree to
-    512 0.01%:  yaa
-    513 0.01%:  yeah. I got
-    514 0.01%:  that makes us...
-    515 0.01%:  my other
-    516 0.01%:  ahem.
-    517 0.01%:  I took my
-    518 0.01%:  ugh
-    519 0.01%:  that's me.
-    520 0.01%:  that's all.
-    521 0.01%:  let's all hug
-    522 0.01%:  I go to
-    523 0.01%:  um... that's all I got
-    524 0.01%:  okay...
-    525 0.01%:  I guess I'll tell you
-    526 0.01%:  huh. I guess I'll
-    527 0.01%:  I'll make a
-    528 0.01%:  er.
-    529 0.01%:  uh... let
-    530 0.01%:  so hurt
-    531 0.01%:  you use the
-    532 0.01%:  as I say
-    533 0.01%:  uh... the
-    534 0.01%:  uh..
-    535 0.01%:  as the
-    536 0.01%:  to get
-    537 0.01%:  the guy
-    538 0.01%:  yes that
-    539 0.01%:  uh... I'll try
-    540 0.01%:  okay I
-    541 0.01%:  uh... are
-    542 0.01%:  I guess let
-    543 0.01%:  I guess I...
-    544 0.01%:  he's a
-    545 0.01%:  um... I'll say
-    546 0.01%:  um... It
-    547 0.01%:  so the
-    548 0.01%:  there's also
-    549 0.01%:  I guess they
-    550 0.01%:  that's okay.
-    551 0.01%:  I guess... that
-    552 0.01%:  yes. I'll
-    553 0.01%:  I'll see you at a
-    554 0.01%:  let's say the
-    555 0.01%:  yeah... I guess that
-    556 0.01%:  that's us.
-    557 0.01%:  uh... tell
-    558 0.01%:  I'll make sure I
-    559 0.01%:  um. I'll see you at
-    560 0.01%:  the take
-    561 0.01%:  I gotta ask...
-    562 0.01%:  let's go eat
-    563 0.01%:  go home
-    564 0.01%:  um... that'll
-    565 0.01%:  uh so
-    566 0.01%:  I got your
-    567 0.01%:  let's talk later
-    568 0.01%:  I'll ask
-    569 0.01%:  um... yeah I
-    570 0.01%:  let's share
-    571 0.01%:  there's that. I
-    572 0.01%:  there you go
-    573 0.01%:  you are a
-    574 0.01%:  uh I
-    575 0.01%:  my real
-    576 0.01%:  um... stay
-    577 0.01%:  I got you
-    578 0.01%:  um. I guess I'll try
-    579 0.01%:  I'm really the
-    580 0.01%:  let me talk
-    581 0.01%:  um... I guess the
-    582 0.01%:  that's all your
-    583 0.01%:  I guess a
-    584 0.01%:  um... let's all go
-    585 0.01%:  I am the
-    586 0.01%:  um... tell your
-    587 0.01%:  uh... my
-    588 0.01%:  um... Is
-    589 0.01%:  I'm... a
-    590 0.01%:  so that's a
-    591 0.01%:  am I...
-    592 0.01%:  I'll see you...
-    593 0.01%:  I'm... I
-    594 0.01%:  I guess I'm all
-    595 0.01%:  um. I gotta
-    596 0.01%:  yeah. I guess I'm a
-    597 0.01%:  I gotta say I
-    598 0.01%:  are they
-    599 0.01%:  let me say
-    600 0.01%:  I gotta stay
-    601 0.01%:  I guess I am
-    602 0.01%:  you get to
-    603 0.01%:  that's the moral
-    604 0.01%:  I gotta tell
-    605 0.01%:  so am I.
-    606 0.01%:  I'll get you
-    607 0.01%:  I thought.
-    608 0.01%:  so real
-    609 0.01%:  as a result
-    610 0.01%:  let me out
-    611 0.01%:  hey I
-    612 0.01%:  as your
-    613 0.01%:  I get that you
-    614 0.01%:  um... get
-    615 0.01%:  um... so yeah
-    616 0.01%:  that's... a
-    617 0.01%:  I'm at a
-    618 0.01%:  I guess I'll talk to my
-    619 0.01%:  that's the same
-    620 0.01%:  I guess I'm you
-    621 0.01%:  let's let
-    622 0.01%:  let's all team
-    623 0.01%:  he says.
-    624 0.01%:  yeah that's me
-    625 0.01%:  that's... the
-    626 0.01%:  that's a...
-    627 0.01%:  a guy
-    628 0.01%:  as you'
-    629 0.01%:  all that'
-    630 0.01%:  tell us a
-    631 0.01%:  you get a
-    632 0.01%:  there'll
-    633 0.01%:  uh. I'll
-    634 0.01%:  uhh... you
-    635 0.01%:  I guess that'll
-    636 0.01%:  the short
-    637 0.01%:  to your
-    638 0.01%:  so that's the
-    639 0.01%:  let's...
-    640 0.01%:  you lost the
-    641 0.01%:  there's all
-    642 0.01%:  I thought my
-    643 0.01%:  let's get all
-    644 0.01%:  um... I guess you'll
-    645 0.01%:  uh... I'll see
-    646 0.01%:  that's all my
-    647 0.01%:  so great.
-    648 0.01%:  I'm... the
-    649 0.01%:  I'll say the
-    650 0.01%:  that's all I get
-    651 0.01%:  you see that
-    652 0.01%:  to that
-    653 0.01%:  y'all get
-    654 0.01%:  I really thought
-    655 0.01%:  my take
-    656 0.01%:  here's to us
-    657 0.01%:  you'll make
-    658 0.01%:  that's the g
-    659 0.01%:  let me go
-    660 0.01%:  I'll...
-    661 0.01%:  I ate a
-    662 0.01%:  all your
-    663 0.01%:  yeah. It's all
-    664 0.01%:  I say that
-    665 0.01%:  I see.
-    666 0.01%:  I'll talk to my
-    667 0.01%:  that story'
-    668 0.01%:  I'll meet
-    669 0.01%:  yeah... um
-    670 0.01%:  let's say that I
-    671 0.01%:  that makes you
-    672 0.01%:  um... let's talk
-    673 0.01%:  you're... the
-    674 0.01%:  let's talk more
-    675 0.01%:  all I got
-    676 0.01%:  I guess I'm that
-    677 0.01%:  um... I got
-    678 0.01%:  um yeah I
-    679 0.01%:  I got to
-    680 0.01%:  um... I thought
-    681 0.01%:  there I
-    682 0.01%:  you see a
-    683 0.01%:  um... so there
-    684 0.01%:  yes to that
-    685 0.01%:  tell us the
-    686 0.01%:  um... the story
-    687 0.01%:  here I am.
-    688 0.01%:  I'll talk to you later.
-    689 0.01%:  to me
-    690 0.01%:  go team
-    691 0.01%:  let's go to a
-    692 0.01%:  I'll tell you the
-    693 0.01%:  I'll talk to your
-    694 0.01%:  the met
-    695 0.01%:  y'all gotta
-    696 0.01%:  let me ask...
-    697 0.01%:  I thought your
-    698 0.01%:  y'all go
-    699 0.01%:  let's hug
-    700 0.01%:  yes. It's true
-    701 0.01%:  go you
-    702 0.01%:  yeh
-    703 0.01%:  let's talk.
-    704 0.01%:  I'll look
-    705 0.01%:  I'm sorta
-    706 0.01%:  I get you
-    707 0.01%:  I'm at your
-    708 0.01%:  let's say...
-    709 0.01%:  I'll see you at our
-    710 0.01%:  let the
-    711 0.01%:  you're a ghost
-    712 0.01%:  to you
-    713 0.01%:  I'll make you
-    714 0.01%:  all I really
-    715 0.01%:  you're a team
-    716 0.01%:  the guys
-    717 0.01%:  yeah... the
-    718 0.01%:  I guess I'm at
-    719 0.01%:  um... let's all stay
-    720 0.01%:  I must say
-    721 0.01%:  uh... that's my
-    722 0.01%:  I'll let my
-    723 0.01%:  yeah. It's true
-    724 0.01%:  yeah I get
-    725 0.01%:  um... let's stay
-    726 0.01%:  uhh... I'll
-    727 0.01%:  I'll see ya at
-    728 0.01%:  that's you.
-    729 0.01%:  I took that
-    730 0.01%:  uh... let's all
-    731 0.01%:  I... I
-    732 0.01%:  I got out
-    733 0.01%:  let's make out.
-    734 0.01%:  I guess I'll talk to your
-    735 0.01%:  the most
-    736 0.01%:  I guess you'll tell
-    737 0.01%:  uh. I guess I'm
-    738 0.01%:  yeah... so
-    739 0.01%:  the story gets
-    740 0.01%:  yeah... let
-    741 0.01%:  yeah. I'm out
-    742 0.01%:  yeah. Is
-    743 0.01%:  uh... let's go
-    744 0.01%:  tell you
-    745 0.01%:  I guess I'll talk to you later.
-    746 0.01%:  uh... that's all
-    747 0.01%:  I'll tell the
-    748 0.01%:  yeah I gotta
-    749 0.01%:  so meta.
-    750 0.01%:  are you al
-    751 0.01%:  okay. I guess I'm
-    752 0.01%:  um... I'll tell
-    753 0.01%:  let me try
-    754 0.01%:  he's the
-    755 0.01%:  there's a lot to
-    756 0.01%:  let's set
-    757 0.01%:  let's eat
-    758 0.01%:  uhh... I guess
-    759 0.01%:  here to
-    760 0.01%:  tell me a story.
-    761 0.01%:  I guess I'm okay
-    762 0.01%:  so you'll
-    763 0.01%:  I say.
-    764 0.01%:  you take that
-    765 0.01%:  um... tell that
-    766 0.01%:  I'm outta
-    767 0.01%:  all I get
-    768 0.01%:  I'll go to the
-    769 0.01%:  all these
-    770 0.01%:  I gotta say... I
-    771 0.01%:  yeah. I'll go
-    772 0.01%:  let's take out
-    773 0.01%:  I'm the guy
-    774 0.01%:  let's all look
-    775 0.01%:  I'll get my
-    776 0.01%:  y'all got a
-    777 0.01%:  um. It's a
-    778 0.01%:  I guess all I'
-    779 0.01%:  I'll lay
-    780 0.01%:  let's go.
-    781 0.01%:  go easy
-    782 0.01%:  that's really the
-    783 0.01%:  yea.
-    784 0.01%:  yeah. I guess I am
-    785 0.01%:  um. I'll stay
-    786 0.01%:  yeah that's true
-    787 0.01%:  yeah. I am
-    788 0.01%:  um... you got
-    789 0.01%:  yeah... let's all
-    790 0.01%:  here's to you
-    791 0.01%:  let's go team
-    792 0.01%:  go to the
-    793 0.01%:  you're... a
-    794 0.01%:  uh... that's your
-    795 0.01%:  yes. I am
-    796 0.01%:  I'll take the
-    797 0.01%:  yeah. It's the
-    798 0.01%:  I ate my
-    799 0.01%:  so are you.
-    800 0.01%:  I guess I'll let my
-    801 0.01%:  um.. I
-    802 0.01%:  tell me all
-    803 0.01%:  that's a hell
-    804 0.01%:  I guess I take
-    805 0.01%:  so... so
-    806 0.01%:  you'll see us
-    807 0.01%:  the moral'
-    808 0.01%:  haha
-    809 0.01%:  let me ask you.
-    810 0.01%:  yeah I guess...
-    811 0.01%:  the story...
-    812 0.01%:  let's talk to my
-    813 0.01%:  uh... I'll see you at
-    814 0.01%:  I guess I'm outta
-    815 0.01%:  yes I'
-    816 0.01%:  huh. I'
-    817 0.01%:  yes that's true
-    818 0.01%:  to resume
-    819 0.01%:  to my
-    820 0.01%:  uh... I guess that
-    821 0.01%:  let's all get a
-    822 0.00%:  erm.
-    823 0.00%:  are my
-    824 0.00%:  as my
-    825 0.00%:  I'm the last
-    826 0.00%:  that's... your
-    827 0.00%:  you make a
-    828 0.00%:  I'm also your
-    829 0.00%:  you'll agree
-    830 0.00%:  um I'll
-    831 0.00%:  I'll sum
-    832 0.00%:  I guess I'll take my
-    833 0.00%:  you get me
-    834 0.00%:  am I out
-    835 0.00%:  he's your
-    836 0.00%:  my thoughts
-    837 0.00%:  you're the host
-    838 0.00%:  I guess you are
-    839 0.00%:  um... I gotta say
-    840 0.00%:  um... I get
-    841 0.00%:  I guess all that
-    842 0.00%:  let's all share
-    843 0.00%:  you thought I'
-    844 0.00%:  uh... I guess you
-    845 0.00%:  that's my take
-    846 0.00%:  uuhh
-    847 0.00%:  I guess I'm totally
-    848 0.00%:  um. I thought
-    849 0.00%:  I'll get to
-    850 0.00%:  um. I'll go
-    851 0.00%:  I got some
-    852 0.00%:  am I really
-    853 0.00%:  um... I really
-    854 0.00%:  so yeah.
-    855 0.00%:  I'll guess
-    856 0.00%:  um. I guess the
-    857 0.00%:  let's hear that
-    858 0.00%:  okay I'll
-    859 0.00%:  um... that's really
-    860 0.00%:  the moral to
-    861 0.00%:  let us talk
-    862 0.00%:  yeah. I'm that
-    863 0.00%:  let's all make out
-    864 0.00%:  I guess I'm al
-    865 0.00%:  yeah. It's great
-    866 0.00%:  I guess you'll let
-    867 0.00%:  more to
-    868 0.00%:  I hear the
-    869 0.00%:  my '
-    870 0.00%:  let's take our
-    871 0.00%:  my I
-    872 0.00%:  a met
-    873 0.00%:  I got that.
-    874 0.00%:  um... so I'll
-    875 0.00%:  um... you're a
-    876 0.00%:  there's a guy
-    877 0.00%:  you got us
-    878 0.00%:  um... so that's the
-    879 0.00%:  tell me.
-    880 0.00%:  go the
-    881 0.00%:  more salt
-    882 0.00%:  um... I guess I'll take
-    883 0.00%:  I'm here to say
-    884 0.00%:  I get that.
-    885 0.00%:  the story's got
-    886 0.00%:  um... I'll take
-    887 0.00%:  I'll tell your
-    888 0.00%:  yer
-    889 0.00%:  so's the
-    890 0.00%:  that's a rhet
-    891 0.00%:  I see I
-    892 0.00%:  um... I'll get
-    893 0.00%:  er... I
-    894 0.00%:  the story I'
-    895 0.00%:  you'll tell the
-    896 0.00%:  I'll shut my
-    897 0.00%:  I guess our team
-    898 0.00%:  that's your take
-    899 0.00%:  yeah... let's go
-    900 0.00%:  yeah. It's that
-    901 0.00%:  yuh
-    902 0.00%:  my house
-    903 0.00%:  a 
-    904 0.00%:  um yeah...
-    905 0.00%:  um... that's our
-    906 0.00%:  um. I'll say
-    907 0.00%:  I see my
-    908 0.00%:  let's all get to
-    909 0.00%:  I'm your...
-    910 0.00%:  I ate your
-    911 0.00%:  um... so the
-    912 0.00%:  uuh...
-    913 0.00%:  he'll
-    914 0.00%:  yeah. I guess I'm out
-    915 0.00%:  I'll eat
-    916 0.00%:  that's a 
-    917 0.00%:  you agree that
-    918 0.00%:  uhm.
-    919 0.00%:  uh... your
-    920 0.00%:  I guess I'm out.
-    921 0.00%:  yeah. I guess. I
-    922 0.00%:  let's get at
-    923 0.00%:  I'll get some
-    924 0.00%:  tell me...
-    925 0.00%:  I'm also a
-    926 0.00%:  to say
-    927 0.00%:  uh... let me
-    928 0.00%:  let's go to my
-    929 0.00%:  to use
-    930 0.00%:  I ate the
-    931 0.00%:  um... let's all get
-    932 0.00%:  okay. I get
-    933 0.00%:  um... let's say
-    934 0.00%:  you'll tell me
-    935 0.00%:  you'll get that
-    936 0.00%:  um yeah. I
-    937 0.00%:  huh... I
-    938 0.00%:  let's say I am
-    939 0.00%:  um. I'll try.
-    940 0.00%:  heh.
-    941 0.00%:  you'll hear
-    942 0.00%:  tell me that
-    943 0.00%:  I gotta tell my
-    944 0.00%:  yes... I
-    945 0.00%:  I'll let that
-    946 0.00%:  okay. It
-    947 0.00%:  I hear you got
-    948 0.00%:  um. I guess you'll
-    949 0.00%:  I guess I'm... the
-    950 0.00%:  go tell
-    951 0.00%:  uh... I'll stay
-    952 0.00%:  let's all eat
-    953 0.00%:  I guess... my
-    954 0.00%:  you'll take the
-    955 0.00%:  I thought to
-    956 0.00%:  I'm sure I
-    957 0.00%:  uh... so I
-    958 0.00%:  I guess I really am
-    959 0.00%:  I'ma go
-    960 0.00%:  I guess all the
-    961 0.00%:  I'm sure that
-    962 0.00%:  you'll tell that
-    963 0.00%:  so true...
-    964 0.00%:  uh... so you
-    965 0.00%:  uh... yes
-    966 0.00%:  um... I guess I'll tell
-    967 0.00%:  there ya
-    968 0.00%:  I'll hear
-    969 0.00%:  um... let's go to
-    970 0.00%:  let us say
-    971 0.00%:  you'll shut
-    972 0.00%:  all I ask
-    973 0.00%:  I guess... the
-    974 0.00%:  I'm the real
-    975 0.00%:  let's all go eat
-    976 0.00%:  let's all go to a
-    977 0.00%:  um... that's okay
-    978 0.00%:  um... I'll let
-    979 0.00%:  you'll talk
-    980 0.00%:  yeah. I'm all
-    981 0.00%:  I'll make that
-    982 0.00%:  I'll try to get
-    983 0.00%:  okay that
-    984 0.00%:  let's go make
-    985 0.00%:  uh... you'll
-    986 0.00%:  you use a
-    987 0.00%:  I guess I'll tell your
-    988 0.00%:  I'm out to
-    989 0.00%:  um. I got
-    990 0.00%:  I'll talk to the
-    991 0.00%:  yeah I got
-    992 0.00%:  um. I gotta say
-    993 0.00%:  I guess I'll talk to the
-    994 0.00%:  as you see
-    995 0.00%:  you're all out
-    996 0.00%:  um. I guess.
-    997 0.00%:  uh... let's get
-    998 0.00%:  I'll take a
-    999 0.00%:  er... yeah
-   1000 0.00%:  you hear me
-   1001 0.00%:  I'll make sure to stay
-   1002 0.00%:  let me ask a
-   1003 0.00%:  um... so that's a
-   1004 0.00%:  uh. It
-   1005 0.00%:  I guess you're out
-   1006 0.00%:  let me ask.
-   1007 0.00%:  uh I guess
-   1008 0.00%:  I get your
-   1009 0.00%:  um... yeah I'
-   1010 0.00%:  are all
-   1011 0.00%:  um... you get
-   1012 0.00%:  I'm totally a
-   1013 0.00%:  that's our last
-   1014 0.00%:  I hear that'
-   1015 0.00%:  you're a...
-   1016 0.00%:  uhh... so
-   1017 0.00%:  uh... there
-   1018 0.00%:  let's make our
-   1019 0.00%:  uh... go
-   1020 0.00%:  I'll try to make
-   1021 0.00%:  I'll use that
-   1022 0.00%:  yes. It's a
-   1023 0.00%:  all I hear
-   1024 0.00%:  I'm totally the
-   1025 0.00%:  yah...
-   1026 0.00%:  erm... I
-   1027 0.00%:  let's all get our
-   1028 0.00%:  I'll get a
-   1029 0.00%:  I'm... your
-   1030 0.00%:  let me talk to you
-   1031 0.00%:  I see you got
-   1032 0.00%:  you'll let me out
-   1033 0.00%:  I'm outta here.
-   1034 0.00%:  I'll take my
-   1035 0.00%:  that story has
-   1036 0.00%:  aha
-   1037 0.00%:  you're the most
-   1038 0.00%:  you take the
-   1039 0.00%:  um... so let
-   1040 0.00%:  you got all
-   1041 0.00%:  um... that's a yes
-   1042 0.00%:  uh I'
-   1043 0.00%:  I'm a h
-   1044 0.00%:  um... tell the
-   1045 0.00%:  um... I guess I'll let
-   1046 0.00%:  to the story
-   1047 0.00%:  okay so
-   1048 0.00%:  um... that's great
-   1049 0.00%:  I gotta ask.
-   1050 0.00%:  uh... say
-   1051 0.00%:  um. Is that a
-   1052 0.00%:  a real
-   1053 0.00%:  I'm a ghost.
-   1054 0.00%:  let's talk to your
-   1055 0.00%:  tell me you
-   1056 0.00%:  you're at a
-   1057 0.00%:  yeah I'm a
-   1058 0.00%:  let's get your
-   1059 0.00%:  yea...
-   1060 0.00%:  I guess... I'll try
-   1061 0.00%:  um. I really
-   1062 0.00%:  uh... I guess I'll try
-   1063 0.00%:  um... I thought I
-   1064 0.00%:  you're a talk
-   1065 0.00%:  all I gotta
-   1066 0.00%:  I'm at a loss
-   1067 0.00%:  there you go.
-   1068 0.00%:  I'm at least
-   1069 0.00%:  um. Is there
-   1070 0.00%:  I guess all you
-   1071 0.00%:  um... I guess I'll talk
-   1072 0.00%:  yeah I guess I'm a
-   1073 0.00%:  I'm the other
-   1074 0.00%:  let's make that our
-   1075 0.00%:  let's use that
-   1076 0.00%:  uh... a
-   1077 0.00%:  let's all use
-   1078 0.00%:  let's get you a
-   1079 0.00%:  all the other
-   1080 0.00%:  I really am
-   1081 0.00%:  you seem a
-   1082 0.00%:  um... that's all the
-   1083 0.00%:  um yeah that
-   1084 0.00%:  I'll say I
-   1085 0.00%:  I really thought I
-   1086 0.00%:  that's all there
-   1087 0.00%:  um... I'll say that
-   1088 0.00%:  you'll get me
-   1089 0.00%:  am I here
-   1090 0.00%:  you use that
-   1091 0.00%:  let's say a
-   1092 0.00%:  um. I get
-   1093 0.00%:  I hear they
-   1094 0.00%:  um... so you'll
-   1095 0.00%:  let's go take
-   1096 0.00%:  the story.
-   1097 0.00%:  to all
-   1098 0.00%:  so. I
-   1099 0.00%:  ahem... I
-   1100 0.00%:  I guess I'll take a
-   1101 0.00%:  ah... I
-   1102 0.00%:  yeah... It
-   1103 0.00%:  I'm a...
-   1104 0.00%:  so that's your
-   1105 0.00%:  I guess... you'll
-   1106 0.00%:  you see...
-   1107 0.00%:  I get that'
-   1108 0.00%:  I get out
-   1109 0.00%:  I'm also the
-   1110 0.00%:  um. I'll tell
-   1111 0.00%:  uh... I'll go
-   1112 0.00%:  all I'll
-   1113 0.00%:  I'm here all
-   1114 0.00%:  um... that's all you
-   1115 0.00%:  yoo
-   1116 0.00%:  yeah... tell
-   1117 0.00%:  um... yeah that
-   1118 0.00%:  um... tell us
-   1119 0.00%:  that makes us the
-   1120 0.00%:  here's that
-   1121 0.00%:  that's my role
-   1122 0.00%:  a r
-   1123 0.00%:  I guess. I
-   1124 0.00%:  you hear the
-   1125 0.00%:  uhh... I guess I'm
-   1126 0.00%:  your '
-   1127 0.00%:  um... there's a lot
-   1128 0.00%:  I... guess
-   1129 0.00%:  here I am...
-   1130 0.00%:  you're... um
-   1131 0.00%:  you'll share
-   1132 0.00%:  um I guess you
-   1133 0.00%:  ergo
-   1134 0.00%:  am I to
-   1135 0.00%:  um yeah I guess
-   1136 0.00%:  okay I guess
-   1137 0.00%:  I took that as
-   1138 0.00%:  um... so'
-   1139 0.00%:  heh...
-   1140 0.00%:  I guess I'll make a
-   1141 0.00%:  I guess... I'm the
-   1142 0.00%:  let's hear you
-   1143 0.00%:  um... I'll talk
-   1144 0.00%:  I ate some
-   1145 0.00%:  let's get you to
-   1146 0.00%:  yeah I guess. I
-   1147 0.00%:  that story...
-   1148 0.00%:  all'
-   1149 0.00%:  there's a lot I
-   1150 0.00%:  so I'll
-   1151 0.00%:  I'll make the
-   1152 0.00%:  let's go to the m
-   1153 0.00%:  yeah. I guess that'll
-   1154 0.00%:  you'll get a
-   1155 0.00%:  I'll get that
-   1156 0.00%:  let's talk at
-   1157 0.00%:  you'll get the
-   1158 0.00%:  yeah... I gotta
-   1159 0.00%:  yeah. I hate
-   1160 0.00%:  that's the 
-   1161 0.00%:  I'll see that
-   1162 0.00%:  that'll go
-   1163 0.00%:  I am. I
-   1164 0.00%:  I see that.
-   1165 0.00%:  let us get
-   1166 0.00%:  you got me.
-   1167 0.00%:  I say to the
-   1168 0.00%:  I'll try.
-   1169 0.00%:  I say...
-   1170 0.00%:  I ate all
-   1171 0.00%:  so so.
-   1172 0.00%:  I guess... yeah
-   1173 0.00%:  that's all you get
-   1174 0.00%:  tell them
-   1175 0.00%:  so's that
-   1176 0.00%:  let's make out a
-   1177 0.00%:  um... let's hear
-   1178 0.00%:  I got us
-   1179 0.00%:  uhh I
-   1180 0.00%:  that's the guy
-   1181 0.00%:  a year
-   1182 0.00%:  a really
-   1183 0.00%:  uh... so that
-   1184 0.00%:  okay. I'll go
-   1185 0.00%:  um... say that
-   1186 0.00%:  you're... so
-   1187 0.00%:  yeah. I guess I am.
-   1188 0.00%:  so that's all
-   1189 0.00%:  uh... y
-   1190 0.00%:  yes to that.
-   1191 0.00%:  let's talk to our
-   1192 0.00%:  I guess the moral'
-   1193 0.00%:  there's...
-   1194 0.00%:  I guess you'll take
-   1195 0.00%:  um yeah I'
-   1196 0.00%:  I'll go home
-   1197 0.00%:  uh... you're the
-   1198 0.00%:  I'll stay that
-   1199 0.00%:  that's your met
-   1200 0.00%:  you'll let me go
-   1201 0.00%:  as I see
-   1202 0.00%:  I say the
-   1203 0.00%:  um I guess that
-   1204 0.00%:  I'll let the
-   1205 0.00%:  more a
-   1206 0.00%:  I gotta take
-   1207 0.00%:  so hurt.
-   1208 0.00%:  um... let's try
-   1209 0.00%:  the story got
-   1210 0.00%:  the story's the
-   1211 0.00%:  I guess you're al
-   1212 0.00%:  you make the
-   1213 0.00%:  let's go sm
-   1214 0.00%:  I'm out...
-   1215 0.00%:  let us go
-   1216 0.00%:  the story's a met
-   1217 0.00%:  um... let's all go to
-   1218 0.00%:  here.
-   1219 0.00%:  I'll let you take
-   1220 0.00%:  uhh. I
-   1221 0.00%:  let's start a
-   1222 0.00%:  um... I guess your
-   1223 0.00%:  so that's my
-   1224 0.00%:  hehe
-   1225 0.00%:  um... so are
-   1226 0.00%:  you'll all
-   1227 0.00%:  let's go steal
-   1228 0.00%:  I'll see you out
-   1229 0.00%:  um... I thought you
-   1230 0.00%:  I'll say.
-   1231 0.00%:  I'll use your
-   1232 0.00%:  hey... I
-   1233 0.00%:  as they
-   1234 0.00%:  there's lots
-   1235 0.00%:  uh... that's all I got
-   1236 0.00%:  I'm out here
-   1237 0.00%:  go us
-   1238 0.00%:  I'll get the
-   1239 0.00%:  um... let's go out
-   1240 0.00%:  I am...
-   1241 0.00%:  as I'm sure
-   1242 0.00%:  yeah that'll
-   1243 0.00%:  the other guy
-   1244 0.00%:  ahh...
-   1245 0.00%:  um... I got that
-   1246 0.00%:  yah. I
-   1247 0.00%:  yeah I guess I am
-   1248 0.00%:  tell me a story...
-   1249 0.00%:  tell the story.
-   1250 0.00%:  I'm a 
-   1251 0.00%:  I'll let your
-   1252 0.00%:  you'll meet
-   1253 0.00%:  yes let
-   1254 0.00%:  so you're the
-   1255 0.00%:  yeah that's me.
-   1256 0.00%:  I see a
-   1257 0.00%:  that's your team
-   1258 0.00%:  I take that
-   1259 0.00%:  uh. Is
-   1260 0.00%:  you'll use that
-   1261 0.00%:  huh. I'll
-   1262 0.00%:  uh... to
-   1263 0.00%:  that's you there
-   1264 0.00%:  um... I'll tell you
-   1265 0.00%:  all our
-   1266 0.00%:  um... you're all
-   1267 0.00%:  I guess I'll make that
-   1268 0.00%:  uh. I'll try
-   1269 0.00%:  huh... you
-   1270 0.00%:  a great
-   1271 0.00%:  the story's all
-   1272 0.00%:  I'll tell that
-   1273 0.00%:  that's a y
-   1274 0.00%:  are you all set
-   1275 0.00%:  yeah. I'll get
-   1276 0.00%:  I guess I'll take your
-   1277 0.00%:  uhm... I
-   1278 0.00%:  uhh..
-   1279 0.00%:  I'm a t
-   1280 0.00%:  uh yeah.
-   1281 0.00%:  I took all
-   1282 0.00%:  let's all talk to
-   1283 0.00%:  so you're a
-   1284 0.00%:  yeah. It's more
-   1285 0.00%:  you're at least
-   1286 0.00%:  uh... there's a
-   1287 0.00%:  I'll ask you
-   1288 0.00%:  um.. yeah
-   1289 0.00%:  um... let's all try
-   1290 0.00%:  yeah. It's got
-   1291 0.00%:  go me.
-   1292 0.00%:  I thought...
-   1293 0.00%:  so the story
-   1294 0.00%:  tell us all
-   1295 0.00%:  I got all
-   1296 0.00%:  I'm all ears
-   1297 0.00%:  let's let our
-   1298 0.00%:  yeah. I'll tell
-   1299 0.00%:  okay... I
-   1300 0.00%:  yeah that's true.
-   1301 0.00%:  I'll say to
-   1302 0.00%:  I get that I
-   1303 0.00%:  yeah um...
-   1304 0.00%:  you lost a
-   1305 0.00%:  um... Is that a
-   1306 0.00%:  ah... you
-   1307 0.00%:  ah. I
-   1308 0.00%:  go.
-   1309 0.00%:  I'm a really
-   1310 0.00%:  I'll guess you
-   1311 0.00%:  yeah. I guess I'm that
-   1312 0.00%:  there's at
-   1313 0.00%:  let's go talk
-   1314 0.00%:  let's all hear
-   1315 0.00%:  let's talk a
-   1316 0.00%:  I get to stay
-   1317 0.00%:  let's all gather
-   1318 0.00%:  yeah. I'll make
-   1319 0.00%:  that's a lot
-   1320 0.00%:  yeah. I'll let
-   1321 0.00%:  you're all the
-   1322 0.00%:  uh... I guess my
-   1323 0.00%:  I see that'
-   1324 0.00%:  that's okay. I
-   1325 0.00%:  I'm a real
-   1326 0.00%:  I guess I'm your...
-   1327 0.00%:  tell a
-   1328 0.00%:  ahem. I
-   1329 0.00%:  yes I am
-   1330 0.00%:  y'all thought
-   1331 0.00%:  there's 
-   1332 0.00%:  I ate you
-   1333 0.00%:  I'll take you
-   1334 0.00%:  er... you
-   1335 0.00%:  the other guys
-   1336 0.00%:  hey. It
-   1337 0.00%:  I go home
-   1338 0.00%:  y'all see
-   1339 0.00%:  um... to the
-   1340 0.00%:  let's talk some
-   1341 0.00%:  um. It's true
-   1342 0.00%:  you'll take that
-   1343 0.00%:  yes that's true.
-   1344 0.00%:  yeah... that's me
-   1345 0.00%:  ah... so
-   1346 0.00%:  yeah. I guess I'm out.
-   1347 0.00%:  uh... I'm the
-   1348 0.00%:  I thought a
-   1349 0.00%:  um... It's a
-   1350 0.00%:  I gotta hear
-   1351 0.00%:  I guess they'll
-   1352 0.00%:  huh. I guess you
-   1353 0.00%:  that's a yes I
-   1354 0.00%:  um... I get that
-   1355 0.00%:  you're all set
-   1356 0.00%:  um I gotta
-   1357 0.00%:  um. I guess I'll take
-   1358 0.00%:  yeah. I took
-   1359 0.00%:  um... you gotta
-   1360 0.00%:  I'll look at
-   1361 0.00%:  um. I thought I
-   1362 0.00%:  um. I guess I'll tell
-   1363 0.00%:  that's all he
-   1364 0.00%:  let's share a
-   1365 0.00%:  I'll say that to
-   1366 0.00%:  hey. I'll
-   1367 0.00%:  that's a th
-   1368 0.00%:  yeah. I guess I'm all
-   1369 0.00%:  I guess I'm... a
-   1370 0.00%:  I'm out. I
-   1371 0.00%:  uh... I'm a
-   1372 0.00%:  let's all start
-   1373 0.00%:  yeah. It's me
-   1374 0.00%:  huh... I'
-   1375 0.00%:  you'll use the
-   1376 0.00%:  I get all
-   1377 0.00%:  um.. you
-   1378 0.00%:  yeah. It'll
-   1379 0.00%:  tell our
-   1380 0.00%:  you gotta tell
-   1381 0.00%:  yeah... I'm a
-   1382 0.00%:  um... I take
-   1383 0.00%:  yeah that's our
-   1384 0.00%:  you are...
-   1385 0.00%:  yeeaa
-   1386 0.00%:  I say let
-   1387 0.00%:  yes. I'm the
-   1388 0.00%:  I'm a total
-   1389 0.00%:  uh... okay
-   1390 0.00%:  y'all got that
-   1391 0.00%:  I guess... I'm out
-   1392 0.00%:  I'm a house
-   1393 0.00%:  that's... so
-   1394 0.00%:  I'm the host
-   1395 0.00%:  um... let's get to
-   1396 0.00%:  I guess all my
-   1397 0.00%:  let's take you
-   1398 0.00%:  he's really
-   1399 0.00%:  y'all a
-   1400 0.00%:  he got
-   1401 0.00%:  I guess I'll talk to you later...
-   1402 0.00%:  you'll eat
-   1403 0.00%:  let's say our
-   1404 0.00%:  he's my
-   1405 0.00%:  so real.
-   1406 0.00%:  um... that's us
-   1407 0.00%:  er... that
-   1408 0.00%:  I am your
-   1409 0.00%:  yees
-   1410 0.00%:  uh... let's all go
-   1411 0.00%:  yes... that
-   1412 0.00%:  I gotta make
-   1413 0.00%:  hey. I guess
-   1414 0.00%:  um... let's take
-   1415 0.00%:  uh... I gotta
-   1416 0.00%:  hm
-   1417 0.00%:  yeah I am
-   1418 0.00%:  he says that
-   1419 0.00%:  I guess my real
-   1420 0.00%:  yeah. I take
-   1421 0.00%:  yeah. I'm sure
-   1422 0.00%:  I guess you're at
-   1423 0.00%:  um.. I guess
-   1424 0.00%:  I guess I'll tell you a
-   1425 0.00%:  there's a lot you
-   1426 0.00%:  all that to
-   1427 0.00%:  uh... um
-   1428 0.00%:  okay. I'll see
-   1429 0.00%:  a story that
-   1430 0.00%:  am I I
-   1431 0.00%:  uh... tell your
-   1432 0.00%:  uh... get
-   1433 0.00%:  uh... the story
-   1434 0.00%:  yr
-   1435 0.00%:  uh. I guess that
-   1436 0.00%:  you're all a
-   1437 0.00%:  a s
-   1438 0.00%:  um. I thought you
-   1439 0.00%:  tell me I
-   1440 0.00%:  yeah um I
-   1441 0.00%:  yes that's the
-   1442 0.00%:  uh... I'll say
-   1443 0.00%:  I'll use the
-   1444 0.00%:  yeah I'm the
-   1445 0.00%:  yeah I get that.
-   1446 0.00%:  I'm a re
-   1447 0.00%:  that'll take
-   1448 0.00%:  I guess I'll let your
-   1449 0.00%:  uhh... I'll try
-   1450 0.00%:  um... let us
-   1451 0.00%:  all I'm really
-   1452 0.00%:  uhh... let
-   1453 0.00%:  I'll tell you that
-   1454 0.00%:  um... go to
-   1455 0.00%:  yeh.
-   1456 0.00%:  so's your
-   1457 0.00%:  there that
-   1458 0.00%:  um... so there's a
-   1459 0.00%:  um. It's the
-   1460 0.00%:  you're all...
-   1461 0.00%:  uh... stay
-   1462 0.00%:  um... so let's all
-   1463 0.00%:  I'll go to my
-   1464 0.00%:  I'll take your
-   1465 0.00%:  you make a lot
-   1466 0.00%:  you take a
-   1467 0.00%:  I'll let me
-   1468 0.00%:  yeah... I'm the
-   1469 0.00%:  um... I say
-   1470 0.00%:  um... Is there
-   1471 0.00%:  huh... I guess I'm
-   1472 0.00%:  um. I'll let
-   1473 0.00%:  er... I guess
-   1474 0.00%:  that's us all
-   1475 0.00%:  I'll make sure you
-   1476 0.00%:  he has
-   1477 0.00%:  y'all talk
-   1478 0.00%:  that's a... yes
-   1479 0.00%:  let's all look at the
-   1480 0.00%:  uh. I guess you
-   1481 0.00%:  that's me. I
-   1482 0.00%:  I must ask
-   1483 0.00%:  erm... yeah
-   1484 0.00%:  um... so I'll see
-   1485 0.00%:  um... I'll see you at 
-   1486 0.00%:  I'll eat my
-   1487 0.00%:  um... that's true
-   1488 0.00%:  uh... that'll
-   1489 0.00%:  y'all g
-   1490 0.00%:  a house
-   1491 0.00%:  I'll go tell
-   1492 0.00%:  let me try to
-   1493 0.00%:  um... yea
-   1494 0.00%:  let's go tell
-   1495 0.00%:  that'll make
-   1496 0.00%:  I'll say...
-   1497 0.00%:  you see.
-   1498 0.00%:  there's that I
-   1499 0.00%:  I must'
-   1500 0.00%:  that's your...
-   1501 0.00%:  that's... my
-   1502 0.00%:  yeah. I am.
-   1503 0.00%:  uh... take
-   1504 0.00%:  ugh.
-   1505 0.00%:  you hear I
-   1506 0.00%:  y'all all
-   1507 0.00%:  yell
-   1508 0.00%:  yeah. I guess I'll talk
-   1509 0.00%:  uhh... tell
-   1510 0.00%:  you see I
-   1511 0.00%:  you'll use me
-   1512 0.00%:  I got a lot
-   1513 0.00%:  y'all take
-   1514 0.00%:  yeah... I got
-   1515 0.00%:  you must'
-   1516 0.00%:  a re
-   1517 0.00%:  I'm you.
-   1518 0.00%:  y'all got to
-   1519 0.00%:  I see that you
-   1520 0.00%:  there ya go
-   1521 0.00%:  to the rest
-   1522 0.00%:  a t
-   1523 0.00%:  the moral I
-   1524 0.00%:  yes that's a
-   1525 0.00%:  um... I see
-   1526 0.00%:  the moral's that you
-   1527 0.00%:  here I am at
-   1528 0.00%:  yeah. I guess our
-   1529 0.00%:  um... that's you
-   1530 0.00%:  I guess my take
-   1531 0.00%:  that's all she
-   1532 0.00%:  um. I'll take
-   1533 0.00%:  I see you'll
-   1534 0.00%:  um. I'll get
-   1535 0.00%:  let us take
-   1536 0.00%:  I guess the moral to
-   1537 0.00%:  I guess you'll tell that
-   1538 0.00%:  I guess you'll make
-   1539 0.00%:  let's hear all
-   1540 0.00%:  you go.
-   1541 0.00%:  all three
-   1542 0.00%:  let's get all our
-   1543 0.00%:  all you'll
-   1544 0.00%:  you're a t
-   1545 0.00%:  that's our team sl
-   1546 0.00%:  you got '
-   1547 0.00%:  um. I guess I'll let
-   1548 0.00%:  that's your take home
-   1549 0.00%:  let's all get out
-   1550 0.00%:  yeah. It's too
-   1551 0.00%:  you'll take me
-   1552 0.00%:  yeah that's sort
-   1553 0.00%:  there. I
-   1554 0.00%:  I'll make sure I stay
-   1555 0.00%:  so so...
-   1556 0.00%:  yes. I'm a
-   1557 0.00%:  yeah... I get
-   1558 0.00%:  let's take your
-   1559 0.00%:  you must agree
-   1560 0.00%:  a team
-   1561 0.00%:  er... I'll
-   1562 0.00%:  hey guess
-   1563 0.00%:  here's my last
-   1564 0.00%:  that's all I got. I
-   1565 0.00%:  so true my
-   1566 0.00%:  yes. It's true. I
-   1567 0.00%:  ah... yeah
-   1568 0.00%:  uh I guess I'm
-   1569 0.00%:  that'll get
-   1570 0.00%:  I'm... you
-   1571 0.00%:  yeah... that'll
-   1572 0.00%:  I'll hear you
-   1573 0.00%:  let's let you
-   1574 0.00%:  am I ste
-   1575 0.00%:  okay. I guess that
-   1576 0.00%:  um... so that's your
-   1577 0.00%:  I'm a talk
-   1578 0.00%:  um I thought
-   1579 0.00%:  you'll make sure
-   1580 0.00%:  I guess that...
-   1581 0.00%:  I get to say
-   1582 0.00%:  I'll see you... at
-   1583 0.00%:  yeah. It's that.
-   1584 0.00%:  that's a story I
-   1585 0.00%:  here's a hot
-   1586 0.00%:  yeah that's us
-   1587 0.00%:  uh. I'll see
-   1588 0.00%:  uh... you got
-   1589 0.00%:  uh... It
-   1590 0.00%:  I'll make out
-   1591 0.00%:  uh... I guess you'll
-   1592 0.00%:  yes. I thought
-   1593 0.00%:  yeah that's more
-   1594 0.00%:  there may
-   1595 0.00%:  um... I'll start
-   1596 0.00%:  there's a 
-   1597 0.00%:  he gets
-   1598 0.00%:  you use me
-   1599 0.00%:  hey um
-   1600 0.00%:  that's all. I
-   1601 0.00%:  yeah... go
-   1602 0.00%:  um. I guess I'll talk
-   1603 0.00%:  um. I guess I'll talk to you later.
-   1604 0.00%:  y'all got the
-   1605 0.00%:  you gotta let
-   1606 0.00%:  I am really
-   1607 0.00%:  um... so let's go
-   1608 0.00%:  I guess I'm really a
-   1609 0.00%:  I guess I'll let that
-   1610 0.00%:  I take the
-   1611 0.00%:  let me ask ya
-   1612 0.00%:  here you go
-   1613 0.00%:  I guess I'm at your
-   1614 0.00%:  so yes. I
-   1615 0.00%:  I'm here.
-   1616 0.00%:  I guess I'm out...
-   1617 0.00%:  holog
-   1618 0.00%:  you'll make a
-   1619 0.00%:  um... I'll tell your
-   1620 0.00%:  he's gotta
-   1621 0.00%:  you're a total
-   1622 0.00%:  you're the talk
-   1623 0.00%:  uhh... my
-   1624 0.00%:  a message
-   1625 0.00%:  y'all I
-   1626 0.00%:  I'm out to get
-   1627 0.00%:  I'm a story
-   1628 0.00%:  I'll let you go
-   1629 0.00%:  yeah. It's true. I
-   1630 0.00%:  I guess I'll try to make
-   1631 0.00%:  that's a yes or
-   1632 0.00%:  yeah that's...
-   1633 0.00%:  I thought I'm
-   1634 0.00%:  um.. that
-   1635 0.00%:  he says to
-   1636 0.00%:  I'm out a
-   1637 0.00%:  I guess I'll make you
-   1638 0.00%:  that's my 
-   1639 0.00%:  I say that to
-   1640 0.00%:  uh... let's talk
-   1641 0.00%:  uhh... are
-   1642 0.00%:  you see our
-   1643 0.00%:  I'll see all
-   1644 0.00%:  y'all hear
-   1645 0.00%:  yeah. I guess that.
-   1646 0.00%:  uh... I guess the
-   1647 0.00%:  I hear that.
-   1648 0.00%:  as you'll
-   1649 0.00%:  I guess you tell
-   1650 0.00%:  um... so I'll see you at
-   1651 0.00%:  you got...
-   1652 0.00%:  he's got the
-   1653 0.00%:  I guess... um
-   1654 0.00%:  am I totally
-   1655 0.00%:  yes to all
-   1656 0.00%:  I get you'
-   1657 0.00%:  I'm sure the
-   1658 0.00%:  um... I guess let
-   1659 0.00%:  um... so the story
-   1660 0.00%:  I'll say that I
-   1661 0.00%:  you're out.
-   1662 0.00%:  y'all look
-   1663 0.00%:  um... yes to
-   1664 0.00%:  let's go eat a
-   1665 0.00%:  um... I guess our
-   1666 0.00%:  you're a salt
-   1667 0.00%:  yes... I'
-   1668 0.00%:  um... I'll see your
-   1669 0.00%:  that makes you...
-   1670 0.00%:  I'll tell a
-   1671 0.00%:  uh... so yeah
-   1672 0.00%:  I'm a huge
-   1673 0.00%:  here at my
-   1674 0.00%:  you'll get some
-   1675 0.00%:  I get 
-   1676 0.00%:  you get out
-   1677 0.00%:  I say let's all
-   1678 0.00%:  um... that story
-   1679 0.00%:  I guess my other
-   1680 0.00%:  yeah... let's all go
-   1681 0.00%:  I'll lay here
-   1682 0.00%:  um... let's say that
-   1683 0.00%:  yeah. I'll talk
-   1684 0.00%:  you talk to me
-   1685 0.00%:  that's your theme
-   1686 0.00%:  that's your s
-   1687 0.00%:  you are all
-   1688 0.00%:  huh. It
-   1689 0.00%:  let's hear a
-   1690 0.00%:  let's try to make
-   1691 0.00%:  that's your so
-   1692 0.00%:  um... yeah I'll
-   1693 0.00%:  I'm totally out
-   1694 0.00%:  yeah. I'll take
-   1695 0.00%:  the last I
-   1696 0.00%:  I ate that
-   1697 0.00%:  um yeah. I guess
-   1698 0.00%:  let's all go to the m
-   1699 0.00%:  yeah... a
-   1700 0.00%:  all I see
-   1701 0.00%:  I'll get you a
-   1702 0.00%:  yeah. I guess. I'
-   1703 0.00%:  I guess... I'm a
-   1704 0.00%:  you're the last to
-   1705 0.00%:  that's... you
-   1706 0.00%:  let us make
-   1707 0.00%:  uh... I guess I'm the
-   1708 0.00%:  let's... let
-   1709 0.00%:  I'm here to say that I
-   1710 0.00%:  a salt
-   1711 0.00%:  uh... so there
-   1712 0.00%:  okay. I'm out
-   1713 0.00%:  I guess I'm... your
-   1714 0.00%:  uh... I'm out
-   1715 0.00%:  okay. I'll tell
-   1716 0.00%:  um... I hate
-   1717 0.00%:  let's get out our
-   1718 0.00%:  um... you are
-   1719 0.00%:  yeah...I
-   1720 0.00%:  here's a shot
-   1721 0.00%:  um... I guess I'll talk to your
-   1722 0.00%:  let's all take our
-   1723 0.00%:  tell me you'
-   1724 0.00%:  uh... tell that
-   1725 0.00%:  I guess my I
-   1726 0.00%:  let us say that
-   1727 0.00%:  I gotta talk
-   1728 0.00%:  am I at
-   1729 0.00%:  um... so your
-   1730 0.00%:  um... so that's all
-   1731 0.00%:  let's say that.
-   1732 0.00%:  uuhh...
-   1733 0.00%:  here...
-   1734 0.00%:  I say I
-   1735 0.00%:  um... I hear
-   1736 0.00%:  um. I guess your
-   1737 0.00%:  yeah. It looks
-   1738 0.00%:  you seem...
-   1739 0.00%:  uhh... I'll see
-   1740 0.00%:  to all you
-   1741 0.00%:  you see us
-   1742 0.00%:  um. I get that
-   1743 0.00%:  so... I
-   1744 0.00%:  that makes us... the
-   1745 0.00%:  a '
-   1746 0.00%:  I guess you'll hear
-   1747 0.00%:  I'll guess I
-   1748 0.00%:  y'all use
-   1749 0.00%:  let's say I get
-   1750 0.00%:  you'll make that
-   1751 0.00%:  all you got
-   1752 0.00%:  let's go all
-   1753 0.00%:  I'll see you to
-   1754 0.00%:  I'll talk to you later...
-   1755 0.00%:  aka
-   1756 0.00%:  yeah that.
-   1757 0.00%:  yeah. It all
-   1758 0.00%:  as I say...
-   1759 0.00%:  er... so
-   1760 0.00%:  go out
-   1761 0.00%:  let's sum that
-   1762 0.00%:  the same as
-   1763 0.00%:  okay. I'm a
-   1764 0.00%:  um. I got that
-   1765 0.00%:  y'all.
-   1766 0.00%:  um... I'll go to
-   1767 0.00%:  I hear you got a
-   1768 0.00%:  yeah. I'm sort
-   1769 0.00%:  I guess all you'
-   1770 0.00%:  am I guest
-   1771 0.00%:  yea. I
-   1772 0.00%:  are they all
-   1773 0.00%:  erm... you
-   1774 0.00%:  let's all go team
-   1775 0.00%:  I am to
-   1776 0.00%:  er. I
-   1777 0.00%:  go make
-   1778 0.00%:  that's our mot
-   1779 0.00%:  okay. Is
-   1780 0.00%:  um... let's talk later
-   1781 0.00%:  huh... so
-   1782 0.00%:  he's...
-   1783 0.00%:  um.. so
-   1784 0.00%:  um. Is that the
-   1785 0.00%:  yeah. I'm ret
-   1786 0.00%:  let's get you out
-   1787 0.00%:  I'll take that you
-   1788 0.00%:  I ate all your
-   1789 0.00%:  okay. It's a
-   1790 0.00%:  I guess I'm outta the
-   1791 0.00%:  huh. I guess my
-   1792 0.00%:  that's a story.
-   1793 0.00%:  that's our sl
-   1794 0.00%:  let's go take a
-   1795 0.00%:  I must go
-   1796 0.00%:  to make the
-   1797 0.00%:  all I got out
-   1798 0.00%:  um... that last
-   1799 0.00%:  so I am
-   1800 0.00%:  um. It's okay
-   1801 0.00%:  I guess all your
-   1802 0.00%:  I gotta say.
-   1803 0.00%:  ah yes. I
-   1804 0.00%:  that makes the
-   1805 0.00%:  I'm a s
-   1806 0.00%:  as to
-   1807 0.00%:  I... guess I'm
-   1808 0.00%:  y'all...
-   1809 0.00%:  erm... that
-   1810 0.00%:  I got shot
-   1811 0.00%:  uh... I got
-   1812 0.00%:  all's I
-   1813 0.00%:  yeah I guess I'm out
-   1814 0.00%:  tell me '
-   1815 0.00%:  you're the ghost
-   1816 0.00%:  I guess our team'
-   1817 0.00%:  uh... I'm really
-   1818 0.00%:  uh... I am
-   1819 0.00%:  erm... I guess
-   1820 0.00%:  that's... I
-   1821 0.00%:  um... let's all say
-   1822 0.00%:  let's say hell
-   1823 0.00%:  I'm really a ghost
-   1824 0.00%:  let's get my
-   1825 0.00%:  all you get
-   1826 0.00%:  the story goes...
-   1827 0.00%:  let's use your
-   1828 0.00%:  I guess my role
-   1829 0.00%:  that's all to
-   1830 0.00%:  am I you
-   1831 0.00%:  okay I guess I
-   1832 0.00%:  I'll hear that
-   1833 0.00%:  I'll say a
-   1834 0.00%:  that's my real
-   1835 0.00%:  um... that's all you got
-   1836 0.00%:  um... I guess tell
-   1837 0.00%:  I'm a lot
-   1838 0.00%:  I'm the least
-   1839 0.00%:  yeah. It's great to
-   1840 0.00%:  I'll see you at that
-   1841 0.00%:  so that's...
-   1842 0.00%:  the story's...
-   1843 0.00%:  I guess you'll all
-   1844 0.00%:  here's to my
-   1845 0.00%:  y'all got some
-   1846 0.00%:  um... let's shake
-   1847 0.00%:  uh... that's our
-   1848 0.00%:  you're the...
-   1849 0.00%:  um... the story'
-   1850 0.00%:  um... so to
-   1851 0.00%:  that's a yes. I
-   1852 0.00%:  you make that
-   1853 0.00%:  um. I'll talk
-   1854 0.00%:  there's a small
-   1855 0.00%:  I'm that guy
-   1856 0.00%:  um... the rest
-   1857 0.00%:  hull
-   1858 0.00%:  I guess I'll tell you that
-   1859 0.00%:  ah... I guess
-   1860 0.00%:  aha.
-   1861 0.00%:  I guess I'll take you
-   1862 0.00%:  um. It's your
-   1863 0.00%:  that's... um
-   1864 0.00%:  that's our theme
-   1865 0.00%:  I get to hear
-   1866 0.00%:  I guess... your
-   1867 0.00%:  here's to a
-   1868 0.00%:  I get I
-   1869 0.00%:  that's you at
-   1870 0.00%:  that's a yes...
-   1871 0.00%:  I get to tell
-   1872 0.00%:  um... I'll talk to your
-   1873 0.00%:  so I'm the
-   1874 0.00%:  that's a yes to me
-   1875 0.00%:  y'all sure
-   1876 0.00%:  the same story
-   1877 0.00%:  let's go stom
-   1878 0.00%:  you got us all
-   1879 0.00%:  yeah. It makes
-   1880 0.00%:  yes. I get
-   1881 0.00%:  I guess that I
-   1882 0.00%:  I say let's go
-   1883 0.00%:  um... say that to
-   1884 0.00%:  I'll stay there
-   1885 0.00%:  let's take all
-   1886 0.00%:  that's your 
-   1887 0.00%:  I'm a ske
-   1888 0.00%:  um... yeah I guess that
-   1889 0.00%:  uh... let's stay
-   1890 0.00%:  uhh... let's all
-   1891 0.00%:  yeah. I guess all
-   1892 0.00%:  uh. I'll see you at
-   1893 0.00%:  so I'm a
-   1894 0.00%:  to get to
-   1895 0.00%:  I'll get you later
-   1896 0.00%:  um... so let's get
-   1897 0.00%:  let's get a room
-   1898 0.00%:  um... let's all go to the
-   1899 0.00%:  the most you
-   1900 0.00%:  you're a h
-   1901 0.00%:  uh... yeah I
-   1902 0.00%:  um. Is your
-   1903 0.00%:  let's talk later.
-   1904 0.00%:  you gotta take
-   1905 0.00%:  you're... u
-   1906 0.00%:  uh... that's a yes
-   1907 0.00%:  y'all must
-   1908 0.00%:  let us all stay
-   1909 0.00%:  you're a huge
-   1910 0.00%:  you lost me
-   1911 0.00%:  let us hear
-   1912 0.00%:  I get to make
-   1913 0.00%:  yah I
-   1914 0.00%:  so you agree
-   1915 0.00%:  let's make all
-   1916 0.00%:  okay. I'm the
-   1917 0.00%:  I ate a lot
-   1918 0.00%:  I got you a
-   1919 0.00%:  I'ma say
-   1920 0.00%:  I guess... tell
-   1921 0.00%:  I guess I'll tell that
-   1922 0.00%:  a sort
-   1923 0.00%:  yes. It's all
-   1924 0.00%:  yeah I guess that'll
-   1925 0.00%:  let's all go to my
-   1926 0.00%:  I'll stay...
-   1927 0.00%:  you use to
-   1928 0.00%:  ah... I'll
-   1929 0.00%:  you're a s
-   1930 0.00%:  okay... I'll
-   1931 0.00%:  I go to a
-   1932 0.00%:  you gett
-   1933 0.00%:  hey. Is
-   1934 0.00%:  all I get to
-   1935 0.00%:  to sumar
-   1936 0.00%:  you're a 
-   1937 0.00%:  I must say...
-   1938 0.00%:  let's all shut
-   1939 0.00%:  let's go a
-   1940 0.00%:  I... so
-   1941 0.00%:  I got you there
-   1942 0.00%:  yeah I guess I'm...
-   1943 0.00%:  I'm out at
-   1944 0.00%:  ah yes...
-   1945 0.00%:  y'all go to
-   1946 0.00%:  so you are
-   1947 0.00%:  that's me out
-   1948 0.00%:  um... that's sort
-   1949 0.00%:  let's say I go
-   1950 0.00%:  um... I'll try to get
-   1951 0.00%:  um... I'll see ya
-   1952 0.00%:  ah... that
-   1953 0.00%:  so... yeah
-   1954 0.00%:  as our
-   1955 0.00%:  all you gotta
-   1956 0.00%:  um. It's really
-   1957 0.00%:  the story takes
-   1958 0.00%:  um... let's all shake
-   1959 0.00%:  uhh I guess
-   1960 0.00%:  I hear you'll
-   1961 0.00%:  am I the guy
-   1962 0.00%:  um. I say
-   1963 0.00%:  you make out
-   1964 0.00%:  so so true
-   1965 0.00%:  I'm at a loss.
-   1966 0.00%:  so's my
-   1967 0.00%:  so true. I
-   1968 0.00%:  um... let's say I
-   1969 0.00%:  let's go home.
-   1970 0.00%:  aa
-   1971 0.00%:  huh. Is
-   1972 0.00%:  to that I
-   1973 0.00%:  yeah... get
-   1974 0.00%:  uhh... let's go
-   1975 0.00%:  um... I got a
-   1976 0.00%:  uh... I'll tell
-   1977 0.00%:  I gotta ask you
-   1978 0.00%:  um. I'll say that
-   1979 0.00%:  that's your goal
-   1980 0.00%:  y'all tell
-   1981 0.00%:  hey. I guess I'll
-   1982 0.00%:  yuu
-   1983 0.00%:  let's say that...
-   1984 0.00%:  he says he
-   1985 0.00%:  um... I took
-   1986 0.00%:  um... I guess I'll talk to the
-   1987 0.00%:  um... that's a lot
-   1988 0.00%:  am I a guy
-   1989 0.00%:  um... that's a story
-   1990 0.00%:  I see...
-   1991 0.00%:  I see our
-   1992 0.00%:  I'm all out
-   1993 0.00%:  he's got to
-   1994 0.00%:  I guess I am the
-   1995 0.00%:  you agree I
-   1996 0.00%:  um... that's your last
-   1997 0.00%:  I got that...
-   1998 0.00%:  I guess... I'm your
-   1999 0.00%:  um... so you're the
-   2000 0.00%:  uh... you're a
-   2001 0.00%:  that's me...
-   2002 0.00%:  I go to my
-   2003 0.00%:  I got out my
-   2004 0.00%:  all those years
-   2005 0.00%:  I go out
-   2006 0.00%:  hark
-   2007 0.00%:  all the rest
-   2008 0.00%:  uhm... yeah
-   2009 0.00%:  um. I guess. I
-   2010 0.00%:  y'all get the
-   2011 0.00%:  yeah... all
-   2012 0.00%:  uh... let's all stay
-   2013 0.00%:  that's the real you
-   2014 0.00%:  am I 
-   2015 0.00%:  um... I'll say I
-   2016 0.00%:  that's your sl
-   2017 0.00%:  a...
-   2018 0.00%:  you gotta ask
-   2019 0.00%:  I hear a
-   2020 0.00%:  I'll say that.
-   2021 0.00%:  um... so true
-   2022 0.00%:  yah. I'
-   2023 0.00%:  y'all meet
-   2024 0.00%:  I'll see y
-   2025 0.00%:  y'all here
-   2026 0.00%:  um... you got that
-   2027 0.00%:  as I am
-   2028 0.00%:  um... that's al
-   2029 0.00%:  I'll stay out
-   2030 0.00%:  I'll go talk
-   2031 0.00%:  yeah... so I
-   2032 0.00%:  let us tell
-   2033 0.00%:  let's talk to you
-   2034 0.00%:  a talk
-   2035 0.00%:  yes I'll
-   2036 0.00%:  he's got that
-   2037 0.00%:  aye
-   2038 0.00%:  I... I'
-   2039 0.00%:  I guess. I'll
-   2040 0.00%:  go to hell
-   2041 0.00%:  that story's a
-   2042 0.00%:  uh... I'll get
-   2043 0.00%:  uh... I'll make
-   2044 0.00%:  y'all let
-   2045 0.00%:  go take
-   2046 0.00%:  okay. I gotta
-   2047 0.00%:  y'all are the
-   2048 0.00%:  yeah. I guess. I'll
-   2049 0.00%:  you'll get me a
-   2050 0.00%:  let us all go
-   2051 0.00%:  I'll... I
-   2052 0.00%:  so that's all I
-   2053 0.00%:  so hot...
-   2054 0.00%:  I guess I take that
-   2055 0.00%:  I'll see you at...
-   2056 0.00%:  there...
-   2057 0.00%:  yeah I got that.
-   2058 0.00%:  um. I'll talk to you later.
-   2059 0.00%:  as the story
-   2060 0.00%:  I gotta use
-   2061 0.00%:  uh.. I
-   2062 0.00%:  to all my
-   2063 0.00%:  huh... I'll
-   2064 0.00%:  um... I guess I really
-   2065 0.00%:  um. I take
-   2066 0.00%:  let's all go take
-   2067 0.00%:  um... yes to the
-   2068 0.00%:  I get to talk
-   2069 0.00%:  um yeah... I
-   2070 0.00%:  um... I gotta say I
-   2071 0.00%:  okay. I'll get
-   2072 0.00%:  y'all make
-   2073 0.00%:  um... the other
-   2074 0.00%:  let us try
-   2075 0.00%:  a lot to
-   2076 0.00%:  yeah um.
-   2077 0.00%:  let's make that 
-   2078 0.00%:  yes that's all
-   2079 0.00%:  you'll share the
-   2080 0.00%:  hey look
-   2081 0.00%:  I'll talk to ya
-   2082 0.00%:  a small
-   2083 0.00%:  uh... let's make
-   2084 0.00%:  more out
-   2085 0.00%:  you'll get to
-   2086 0.00%:  yea I
-   2087 0.00%:  let's all hug.
-   2088 0.00%:  all together
-   2089 0.00%:  I got all the
-   2090 0.00%:  I guess all'
-   2091 0.00%:  um... I'll use
-   2092 0.00%:  so yeah. I
-   2093 0.00%:  um. I see
-   2094 0.00%:  let's say all
-   2095 0.00%:  I'll lay out
-   2096 0.00%:  I'm the I
-   2097 0.00%:  he's got some
-   2098 0.00%:  okay. I guess.
-   2099 0.00%:  uhh. I guess
-   2100 0.00%:  I guess I'm... out
-   2101 0.00%:  tell '
-   2102 0.00%:  a total
-   2103 0.00%:  okay. I'll let
-   2104 0.00%:  I guess I'm a...
-   2105 0.00%:  um... I guess that'll
-   2106 0.00%:  that's you...
-   2107 0.00%:  go see
-   2108 0.00%:  y'all there
-   2109 0.00%:  um... let's get a
-   2110 0.00%:  uh... tell us
-   2111 0.00%:  um... I guess I'll tell you
-   2112 0.00%:  that's my I
-   2113 0.00%:  y'all share
-   2114 0.00%:  um. It'll
-   2115 0.00%:  are you a ghost
-   2116 0.00%:  let's use my
-   2117 0.00%:  I'll let us
-   2118 0.00%:  yeah. It's gotta
-   2119 0.00%:  um... I guess try
-   2120 0.00%:  I guess all I'll
-   2121 0.00%:  let us all get
-   2122 0.00%:  you're a m
-   2123 0.00%:  I guess the mor
-   2124 0.00%:  yeah. I'm guess
-   2125 0.00%:  yeah... I'm out
-   2126 0.00%:  uh... I guess I'm out
-   2127 0.00%:  uhh... I'll see you at
-   2128 0.00%:  y'all thought I
-   2129 0.00%:  go tell that
-   2130 0.00%:  the real you
-   2131 0.00%:  as you are
-   2132 0.00%:  hey I guess
-   2133 0.00%:  let's all say the
-   2134 0.00%:  I get a lot
-   2135 0.00%:  yeah... u
-   2136 0.00%:  y'all gett
-   2137 0.00%:  there's a...
-   2138 0.00%:  ah. I guess
-   2139 0.00%:  uhh I'
-   2140 0.00%:  I must say I
-   2141 0.00%:  um I guess the
-   2142 0.00%:  um... I'll ask
-   2143 0.00%:  yeah... I guess I'm a
-   2144 0.00%:  I take my
-   2145 0.00%:  hah...
-   2146 0.00%:  I am totally
-   2147 0.00%:  to use a
-   2148 0.00%:  I'll see my
-   2149 0.00%:  the story as
-   2150 0.00%:  I'll get us
-   2151 0.00%:  ah yeah
-   2152 0.00%:  a.
-   2153 0.00%:  y'see
-   2154 0.00%:  let me ask your
-   2155 0.00%:  that's all...
-   2156 0.00%:  you get that I
-   2157 0.00%:  um. It's all
-   2158 0.00%:  yeah I guess... I
-   2159 0.00%:  to use the
-   2160 0.00%:  uh... so I'll
-   2161 0.00%:  yeah...that
-   2162 0.00%:  yeah. It goes
-   2163 0.00%:  I take you
-   2164 0.00%:  uh. I guess I'll try
-   2165 0.00%:  he's totally
-   2166 0.00%:  um I'll try
-   2167 0.00%:  uh... that's me
-   2168 0.00%:  um... I'll see you all
-   2169 0.00%:  he says...
-   2170 0.00%:  um... I gotta stay
-   2171 0.00%:  let's say I am.
-   2172 0.00%:  you got 
-   2173 0.00%:  um... you'll tell
-   2174 0.00%:  yeah. I got a
-   2175 0.00%:  um... you'll see
-   2176 0.00%:  let's talk...
-   2177 0.00%:  um... a lot
-   2178 0.00%:  uh... you get
-   2179 0.00%:  let's take you out
-   2180 0.00%:  a last
-   2181 0.00%:  here I am. I
-   2182 0.00%:  I got us a
-   2183 0.00%:  okay. I got
-   2184 0.00%:  so...s
-   2185 0.00%:  uhh... yes
-   2186 0.00%:  go you.
-   2187 0.00%:  the most I
-   2188 0.00%:  um... I get to
-   2189 0.00%:  uhm... you
-   2190 0.00%:  I thought our
-   2191 0.00%:  um yeah. I'll
-   2192 0.00%:  um I guess you'll
-   2193 0.00%:  I gotta say the
-   2194 0.00%:  tell us that
-   2195 0.00%:  I'm out the
-   2196 0.00%:  um... that's the real
-   2197 0.00%:  I see I'll
-   2198 0.00%:  you're all talk
-   2199 0.00%:  um... you get the
-   2200 0.00%:  I guess all I really
-   2201 0.00%:  I'm sorta the
-   2202 0.00%:  erm... so
-   2203 0.00%:  I'll get to the
-   2204 0.00%:  you gotta make
-   2205 0.00%:  I take a
-   2206 0.00%:  so... s
-   2207 0.00%:  um... you're out
-   2208 0.00%:  I'll try that
-   2209 0.00%:  I'm out 
-   2210 0.00%:  let's hug.
-   2211 0.00%:  uh... I'll take
-   2212 0.00%:  um... let's start
-   2213 0.00%:  um... I'll talk to the
-   2214 0.00%:  okay so I
-   2215 0.00%:  um... let's go eat
-   2216 0.00%:  I thought you're
-   2217 0.00%:  let's say... 
-   2218 0.00%:  that's our team.
-   2219 0.00%:  I hear ya
-   2220 0.00%:  I'm at 
-   2221 0.00%:  um... go the
-   2222 0.00%:  um... are you a
-   2223 0.00%:  so yeah I
-   2224 0.00%:  uh... I'm your
-   2225 0.00%:  uh. I gotta
-   2226 0.00%:  are all the
-   2227 0.00%:  so that.
-   2228 0.00%:  yeah. I'm that.
-   2229 0.00%:  um I got
-   2230 0.00%:  you'll hear me
-   2231 0.00%:  you'll make the
-   2232 0.00%:  uhm... I guess
-   2233 0.00%:  uh... tell my
-   2234 0.00%:  you get all
-   2235 0.00%:  go talk
-   2236 0.00%:  uh... so that's a
-   2237 0.00%:  you'll see that
-   2238 0.00%:  I'll make us
-   2239 0.00%:  you're all that
-   2240 0.00%:  um... let that
-   2241 0.00%:  you get some
-   2242 0.00%:  yeah. It's all I
-   2243 0.00%:  uh... I get
-   2244 0.00%:  you got hurt
-   2245 0.00%:  I take your
-   2246 0.00%:  er..
-   2247 0.00%:  yeah. It's a lot
-   2248 0.00%:  tell me a story I
-   2249 0.00%:  yeaah
-   2250 0.00%:  uh... let's say
-   2251 0.00%:  let's make out...
-   2252 0.00%:  um... I'll say the
-   2253 0.00%:  let's... shake
-   2254 0.00%:  yeah... I am
-   2255 0.00%:  I guess you'll take that
-   2256 0.00%:  I guess... let
-   2257 0.00%:  you'll agree that
-   2258 0.00%:  um. I'll see you at 
-   2259 0.00%:  I'm a ghost that
-   2260 0.00%:  um... say hell
-   2261 0.00%:  go tell your
-   2262 0.00%:  uh... let's all get
-   2263 0.00%:  I guess my '
-   2264 0.00%:  um... so say
-   2265 0.00%:  the moral's to
-   2266 0.00%:  you'll get us
-   2267 0.00%:  um... that's u
-   2268 0.00%:  allll
-   2269 0.00%:  you'll let the
-   2270 0.00%:  yeah... let's talk
-   2271 0.00%:  um. It looks
-   2272 0.00%:  uh yeah I
-   2273 0.00%:  um. I hate
-   2274 0.00%:  I got those
-   2275 0.00%:  I gotta see
-   2276 0.00%:  I thought. I
-   2277 0.00%:  let us use
-   2278 0.00%:  um... let's all take
-   2279 0.00%:  you got them
-   2280 0.00%:  I guess the truth
-   2281 0.00%:  I guess I'll tell you to
-   2282 0.00%:  um... tell the story
-   2283 0.00%:  that's me you
-   2284 0.00%:  hm...
-   2285 0.00%:  okay I get
-   2286 0.00%:  here's a t
-   2287 0.00%:  I got all my
-   2288 0.00%:  I got them
-   2289 0.00%:  I'm all you
-   2290 0.00%:  ahem... I'll
-   2291 0.00%:  the last story
-   2292 0.00%:  um... I guess I'll look
-   2293 0.00%:  let us all try
-   2294 0.00%:  ahem... I guess
-   2295 0.00%:  you'll meet us
-   2296 0.00%:  yeah I took
-   2297 0.00%:  uh... the moral
-   2298 0.00%:  um... tell you
-   2299 0.00%:  you agree that I
-   2300 0.00%:  I'll let you get
-   2301 0.00%:  you're all I
-   2302 0.00%:  let's go tell my
-   2303 0.00%:  the guy I
-   2304 0.00%:  ah..
-   2305 0.00%:  erm. I
-   2306 0.00%:  hey I gotta
-   2307 0.00%:  I get more
-   2308 0.00%:  here's a guy
-   2309 0.00%:  yeah... that's our
-   2310 0.00%:  here I'
-   2311 0.00%:  I guess you'll talk
-   2312 0.00%:  uh... so the
-   2313 0.00%:  I get that you're a
-   2314 0.00%:  there you'
-   2315 0.00%:  uh... I guess I'll take
-   2316 0.00%:  you'll take a
-   2317 0.00%:  I'll take some
-   2318 0.00%:  ugh...
-   2319 0.00%:  yeah. I'm at
-   2320 0.00%:  I'll... stay
-   2321 0.00%:  go a
-   2322 0.00%:  um... I'll see you at a
-   2323 0.00%:  tell me a story. I
-   2324 0.00%:  the moral's...
-   2325 0.00%:  yeah. I'm also
-   2326 0.00%:  I gotta let
-   2327 0.00%:  as a guy
-   2328 0.00%:  yeah I guess. I'll
-   2329 0.00%:  um I'll see
-   2330 0.00%:  I'll tell ya
-   2331 0.00%:  I guess I'll try that
-   2332 0.00%:  I guess I'm the...
-   2333 0.00%:  I'll go.
-   2334 0.00%:  let's all go home.
-   2335 0.00%:  I'm here to ask
-   2336 0.00%:  so that's our
-   2337 0.00%:  uh... let's go to
-   2338 0.00%:  to make sure
-   2339 0.00%:  um... you got the
-   2340 0.00%:  I hear you get
-   2341 0.00%:  er... I guess I'm
-   2342 0.00%:  you see that I
-   2343 0.00%:  I'ma get
-   2344 0.00%:  yeesh.
-   2345 0.00%:  yes. It's true I
-   2346 0.00%:  the other guy'
-   2347 0.00%:  goo
-   2348 0.00%:  yeah. It's got a
-   2349 0.00%:  here. I
-   2350 0.00%:  you'll let me tag
-   2351 0.00%:  that's... all
-   2352 0.00%:  uhh... I guess you
-   2353 0.00%:  okay I guess I'm
-   2354 0.00%:  yes. Is
-   2355 0.00%:  yeah. It's sort
-   2356 0.00%:  to me you
-   2357 0.00%:  yeah. I'm great
-   2358 0.00%:  uh. It's a
-   2359 0.00%:  so you get
-   2360 0.00%:  go '
-   2361 0.00%:  hah.
-   2362 0.00%:  um... that's really the
-   2363 0.00%:  I'm sorta a
-   2364 0.00%:  I got the same
-   2365 0.00%:  let's get you to a
-   2366 0.00%:  I'm... so
-   2367 0.00%:  all to
-   2368 0.00%:  here's a small
-   2369 0.00%:  um... I'll look
-   2370 0.00%:  yes. It's the
-   2371 0.00%:  am I... a
-   2372 0.00%:  to get the
-   2373 0.00%:  that story I
-   2374 0.00%:  uh... so let
-   2375 0.00%:  ahem... that
-   2376 0.00%:  you got all the
-   2377 0.00%:  let's all get st
-   2378 0.00%:  um. Is that a yes
-   2379 0.00%:  your last thought
-   2380 0.00%:  okay that's the
-   2381 0.00%:  a guy'
-   2382 0.00%:  you're a sm
-   2383 0.00%:  I guess I'm all out
-   2384 0.00%:  um... I'll tell the
-   2385 0.00%:  uhh... I'll stay
-   2386 0.00%:  uth
-   2387 0.00%:  the guys at
-   2388 0.00%:  you're a sh
-   2389 0.00%:  I say. I
-   2390 0.00%:  you're a ghost.
-   2391 0.00%:  okay. I am
-   2392 0.00%:  I get to take
-   2393 0.00%:  you'll make sure to
-   2394 0.00%:  I'll make sure to say
-   2395 0.00%:  that'll get you
-   2396 0.00%:  yeah um I guess
-   2397 0.00%:  I really hate
-   2398 0.00%:  that story makes
-   2399 0.00%:  let us re
-   2400 0.00%:  let's all go make
-   2401 0.00%:  I'm... u
-   2402 0.00%:  uhh... let me
-   2403 0.00%:  um. I hear
-   2404 0.00%:  um. Is the
-   2405 0.00%:  I got me
-   2406 0.00%:  you see a lot
-   2407 0.00%:  I get some
-   2408 0.00%:  so... um
-   2409 0.00%:  I guess I'm at a
-   2410 0.00%:  all s
-   2411 0.00%:  heh. I
-   2412 0.00%:  you got me a
-   2413 0.00%:  hey. I gotta
-   2414 0.00%:  um... let's get out
-   2415 0.00%:  yeah. It took
-   2416 0.00%:  to you I
-   2417 0.00%:  uh... that's really
-   2418 0.00%:  let's make you
-   2419 0.00%:  um. I guess our
-   2420 0.00%:  goose
-   2421 0.00%:  I'll try to.
-   2422 0.00%:  y'all got me
-   2423 0.00%:  I'll get you some
-   2424 0.00%:  um... I get the
-   2425 0.00%:  that's all out
-   2426 0.00%:  the moral's that I
-   2427 0.00%:  um... I'll see you at our
-   2428 0.00%:  let's try a
-   2429 0.00%:  um I guess I'll try
-   2430 0.00%:  I'll make sure that
-   2431 0.00%:  let me go to
-   2432 0.00%:  let's all say our
-   2433 0.00%:  I got...
-   2434 0.00%:  uh yeah...
-   2435 0.00%:  um... Is that the
-   2436 0.00%:  um... I hate to say
-   2437 0.00%:  I hear my
-   2438 0.00%:  let us all say
-   2439 0.00%:  here's a salt
-   2440 0.00%:  I get to eat
-   2441 0.00%:  um... It's the
-   2442 0.00%:  that's... okay
-   2443 0.00%:  uh I'll
-   2444 0.00%:  let's make your
-   2445 0.00%:  you're at home
-   2446 0.00%:  um... you thought
-   2447 0.00%:  I get to use
-   2448 0.00%:  as a result I
-   2449 0.00%:  I'm here to say I
-   2450 0.00%:  yeah I take
-   2451 0.00%:  you lost at
-   2452 0.00%:  yell at
-   2453 0.00%:  um... soak
-   2454 0.00%:  here's to us.
-   2455 0.00%:  uh. I guess my
-   2456 0.00%:  uh... I guess I'll tell
-   2457 0.00%:  uhm. I
-   2458 0.00%:  he goes
-   2459 0.00%:  um... you see
-   2460 0.00%:  I'll guess that
-   2461 0.00%:  um. I guess I'll talk to your
-   2462 0.00%:  um... you lost
-   2463 0.00%:  yeah I'll go
-   2464 0.00%:  um... there's also
-   2465 0.00%:  I'm the hostage
-   2466 0.00%:  yeah. I'll start
-   2467 0.00%:  I'll use a
-   2468 0.00%:  um. I took
-   2469 0.00%:  let's make out or
-   2470 0.00%:  so. It
-   2471 0.00%:  I'll eat you
-   2472 0.00%:  yeah I'm out
-   2473 0.00%:  you'll tell me that
-   2474 0.00%:  um... you got a
-   2475 0.00%:  all I get out
-   2476 0.00%:  yah. I guess
-   2477 0.00%:  you lost that
-   2478 0.00%:  uh... I'll let
-   2479 0.00%:  you're out...
-   2480 0.00%:  you'll use us
-   2481 0.00%:  um... yaa
-   2482 0.00%:  you got a letter
-   2483 0.00%:  here's a shout
-   2484 0.00%:  uhm... that
-   2485 0.00%:  yeah. I'll get that
-   2486 0.00%:  ah ha
-   2487 0.00%:  yeah... It's a
-   2488 0.00%:  you're a lot
-   2489 0.00%:  I'll ask the
-   2490 0.00%:  let me out.
-   2491 0.00%:  he really
-   2492 0.00%:  uhh... your
-   2493 0.00%:  you'll tell them
-   2494 0.00%:  that's all true
-   2495 0.00%:  I'm all the
-   2496 0.00%:  I'll tell you to
-   2497 0.00%:  uh... tell the
-   2498 0.00%:  go eat
-   2499 0.00%:  I'll get your
-   2500 0.00%:  so that's okay
-   2501 0.00%:  you take me
-   2502 0.00%:  um... I got the
-   2503 0.00%:  you got the same
-   2504 0.00%:  um... y'
-   2505 0.00%:  I'll look at my
-   2506 0.00%:  uhh. I'll
-   2507 0.00%:  yeah. I'm so
-   2508 0.00%:  am I... the
-   2509 0.00%:  there's a lot at
-   2510 0.00%:  you'll go see
-   2511 0.00%:  yeah... I guess I am
-   2512 0.00%:  I'm you at
-   2513 0.00%:  yeah. It's a met
-   2514 0.00%:  he's got a lot
-   2515 0.00%:  that story.
-   2516 0.00%:  yes. I'm sure
-   2517 0.00%:  um... are those
-   2518 0.00%:  I guess I'm out a
-   2519 0.00%:  I'm sure you get
-   2520 0.00%:  I got us all
-   2521 0.00%:  the story goes.
-   2522 0.00%:  um... let's all go out
-   2523 0.00%:  let's go. I
-   2524 0.00%:  uh... I'll say that
-   2525 0.00%:  I'm really all
-   2526 0.00%:  um... I gotta ask
-   2527 0.00%:  y'all get me
-   2528 0.00%:  here I am to
-   2529 0.00%:  I'll get out
-   2530 0.00%:  yeah. I got the
-   2531 0.00%:  y'all get that
-   2532 0.00%:  yes... that's the
-   2533 0.00%:  um... you get that
-   2534 0.00%:  yeah I guess I'll talk
-   2535 0.00%:  I really gotta
-   2536 0.00%:  let's say... I
-   2537 0.00%:  yeah. I'm 
-   2538 0.00%:  you... um
-   2539 0.00%:  I get that you'll
-   2540 0.00%:  I'm a ghost...
-   2541 0.00%:  I'll try to use
-   2542 0.00%:  am I the last
-   2543 0.00%:  let's say that our
-   2544 0.00%:  let's talk through
-   2545 0.00%:  y'all go out
-   2546 0.00%:  you'll tell us
-   2547 0.00%:  I'll go out
-   2548 0.00%:  um... are you the
-   2549 0.00%:  uh... that's all you
-   2550 0.00%:  I'ma stay
-   2551 0.00%:  yeah. I get to
-   2552 0.00%:  so totally.
-   2553 0.00%:  as I take
-   2554 0.00%:  yeah. I'ma
-   2555 0.00%:  so that makes
-   2556 0.00%:  um I guess...
-   2557 0.00%:  uhh... I guess I'll try
-   2558 0.00%:  let us share
-   2559 0.00%:  yeah... I'll go
-   2560 0.00%:  uh. I'll stay
-   2561 0.00%:  I guess I am.
-   2562 0.00%:  the guy'
-   2563 0.00%:  um... I guess I'll tell your
-   2564 0.00%:  I guess the talk
-   2565 0.00%:  huh..
-   2566 0.00%:  um I thought I
-   2567 0.00%:  um. I got a
-   2568 0.00%:  he took
-   2569 0.00%:  uhh... go
-   2570 0.00%:  I say let's get
-   2571 0.00%:  uh so I
-   2572 0.00%:  um. It's great
-   2573 0.00%:  I gotta lay
-   2574 0.00%:  uh... I gotta say
-   2575 0.00%:  you hear us
-   2576 0.00%:  you'll go tell
-   2577 0.00%:  I'll eat your
-   2578 0.00%:  uh yeah. I
-   2579 0.00%:  er... tell
-   2580 0.00%:  so you're...
-   2581 0.00%:  um. I guess let
-   2582 0.00%:  yeah um I'
-   2583 0.00%:  um. I gotta say I
-   2584 0.00%:  I'm you...
-   2585 0.00%:  yeah. I guess I'm al
-   2586 0.00%:  I'll tell more
-   2587 0.00%:  let's say 
-   2588 0.00%:  er... let
-   2589 0.00%:  so's to
-   2590 0.00%:  um... so here
-   2591 0.00%:  um... so here's a
-   2592 0.00%:  um... you go
-   2593 0.00%:  um... let's take a
-   2594 0.00%:  so yeah...
-   2595 0.00%:  I'm at least 
-   2596 0.00%:  that's me I
-   2597 0.00%:  I'm also really
-   2598 0.00%:  uh... I really
-   2599 0.00%:  uh... so you'll
-   2600 0.00%:  um. I totally
-   2601 0.00%:  you get us
-   2602 0.00%:  I got a letter
-   2603 0.00%:  yeah I hate
-   2604 0.00%:  you're out at
-   2605 0.00%:  you see all
-   2606 0.00%:  you're out a
-   2607 0.00%:  let's get to a
-   2608 0.00%:  let us all take
-   2609 0.00%:  all the guys
-   2610 0.00%:  um... so okay
-   2611 0.00%:  huh I
-   2612 0.00%:  uhh... say
-   2613 0.00%:  to say that
-   2614 0.00%:  um... I guess you're all
-   2615 0.00%:  I gotta try
-   2616 0.00%:  er... that's the
-   2617 0.00%:  I get that my
-   2618 0.00%:  you lost.
-   2619 0.00%:  huh. I guess I'll try
-   2620 0.00%:  he says I
-   2621 0.00%:  uh. .
-   2622 0.00%:  you must agree that
-   2623 0.00%:  ahem... you
-   2624 0.00%:  tell us some
-   2625 0.00%:  are those my
-   2626 0.00%:  uh... I'll make sure I
-   2627 0.00%:  that's my take.
-   2628 0.00%:  I'm here at
-   2629 0.00%:  yea... I
-   2630 0.00%:  um... say I
-   2631 0.00%:  um. I'll see your
-   2632 0.00%:  I see you got a
-   2633 0.00%:  all the same
-   2634 0.00%:  that's... a yes
-   2635 0.00%:  um... I'll say that I
-   2636 0.00%:  um... get the
-   2637 0.00%:  yeah. It's 
-   2638 0.00%:  uhh... you'll
-   2639 0.00%:  you thought a
-   2640 0.00%:  uh... I guess I'm a
-   2641 0.00%:  let's take you to
-   2642 0.00%:  um. I guess I really
-   2643 0.00%:  yeah...I guess
-   2644 0.00%:  I see. I
-   2645 0.00%:  um. I'll start
-   2646 0.00%:  I'll see all you
-   2647 0.00%:  uh... that's okay
-   2648 0.00%:  that's the guy I
-   2649 0.00%:  you'll let that
-   2650 0.00%:  yeah. It's tough
-   2651 0.00%:  I'm at that
-   2652 0.00%:  I gotta re
-   2653 0.00%:  here to stay
-   2654 0.00%:  I guess I'm a really
-   2655 0.00%:  all I really got
-   2656 0.00%:  uhh... let's get
-   2657 0.00%:  um... so you're a
-   2658 0.00%:  I'm at your house.
-   2659 0.00%:  um... you agree
-   2660 0.00%:  you're... that
-   2661 0.00%:  he's all
-   2662 0.00%:  I get you to
-   2663 0.00%:  um... I guess I'll let that
-   2664 0.00%:  um.. the
-   2665 0.00%:  I'm out there
-   2666 0.00%:  uh... let's get to
-   2667 0.00%:  to use my
-   2668 0.00%:  uh... let's hear
-   2669 0.00%:  I'll see you all at 
-   2670 0.00%:  um I really
-   2671 0.00%:  you'll take me out
-   2672 0.00%:  I'll shut the
-   2673 0.00%:  um... I'll go to the
-   2674 0.00%:  I'm... really
-   2675 0.00%:  so true though
-   2676 0.00%:  I say a
-   2677 0.00%:  that story goes
-   2678 0.00%:  um... that'll go
-   2679 0.00%:  I guess that I'll
-   2680 0.00%:  yeah... that's sort
-   2681 0.00%:  um. I also
-   2682 0.00%:  um... you use
-   2683 0.00%:  let's let my
-   2684 0.00%:  I'll try to...
-   2685 0.00%:  let's go take out
-   2686 0.00%:  ery
-   2687 0.00%:  tell us a story.
-   2688 0.00%:  um... you'll let
-   2689 0.00%:  that makes us 
-   2690 0.00%:  you'll let me talk
-   2691 0.00%:  um... I'll stay that
-   2692 0.00%:  I'll talk you
-   2693 0.00%:  okay. I thought
-   2694 0.00%:  uh. I'm a
-   2695 0.00%:  so I thought
-   2696 0.00%:  yeah that's us.
-   2697 0.00%:  uh. I'll go
-   2698 0.00%:  so... you
-   2699 0.00%:  um I get
-   2700 0.00%:  to all those
-   2701 0.00%:  um yeah I guess that
-   2702 0.00%:  go that
-   2703 0.00%:  you're a... a
-   2704 0.00%:  alls
-   2705 0.00%:  I say I'll
-   2706 0.00%:  yeah. It's so
-   2707 0.00%:  here's to all
-   2708 0.00%:  yeah I'm all
-   2709 0.00%:  okay... I guess
-   2710 0.00%:  I got a really
-   2711 0.00%:  you get me.
-   2712 0.00%:  let's say I take
-   2713 0.00%:  ah. I'll
-   2714 0.00%:  yeah... I'm that
-   2715 0.00%:  um I'll see you at
-   2716 0.00%:  um... I'll get that
-   2717 0.00%:  I guess you're all out
-   2718 0.00%:  um... I guess tell your
-   2719 0.00%:  you'll talk to us
-   2720 0.00%:  I'll take you to
-   2721 0.00%:  I'm really...
-   2722 0.00%:  um... let's re
-   2723 0.00%:  I get that...
-   2724 0.00%:  I really got
-   2725 0.00%:  um... I guess all
-   2726 0.00%:  all I say
-   2727 0.00%:  um yeah I'll
-   2728 0.00%:  I am that
-   2729 0.00%:  um. It's too
-   2730 0.00%:  you use a lot
-   2731 0.00%:  um... so's the
-   2732 0.00%:  yeah I guess I'm all
-   2733 0.00%:  I'll talk to you later I
-   2734 0.00%:  y'all got a lot
-   2735 0.00%:  here to say
-   2736 0.00%:  um... let's all talk
-   2737 0.00%:  yeah... that's more
-   2738 0.00%:  huh. I guess I'm a
-   2739 0.00%:  uh. I'm the
-   2740 0.00%:  I'm really out
-   2741 0.00%:  that's our talk
-   2742 0.00%:  yeah um that
-   2743 0.00%:  um... so tell
-   2744 0.00%:  so you're all
-   2745 0.00%:  all you are
-   2746 0.00%:  I got a story
-   2747 0.00%:  more '
-   2748 0.00%:  okay I'll go
-   2749 0.00%:  you gotta see
-   2750 0.00%:  so... hot
-   2751 0.00%:  the guys I
-   2752 0.00%:  I hear you talk
-   2753 0.00%:  as usual.
-   2754 0.00%:  I guess I'm a real
-   2755 0.00%:  yes to all that
-   2756 0.00%:  um... you'll go
-   2757 0.00%:  uh... that's us
-   2758 0.00%:  all they
-   2759 0.00%:  you got me...
-   2760 0.00%:  I'll see that you
-   2761 0.00%:  um... I'll tell you a
-   2762 0.00%:  I hear I
-   2763 0.00%:  yeah...I'
-   2764 0.00%:  I guess a lot
-   2765 0.00%:  uh... I guess I'll let
-   2766 0.00%:  er... yes
-   2767 0.00%:  yea. I'
-   2768 0.00%:  that's you. I
-   2769 0.00%:  um. I got that.
-   2770 0.00%:  um. It's that
-   2771 0.00%:  as I lay
-   2772 0.00%:  to get you
-   2773 0.00%:  um... so let's talk
-   2774 0.00%:  you go the
-   2775 0.00%:  ah so
-   2776 0.00%:  I ate too
-   2777 0.00%:  I'll use that to
-   2778 0.00%:  um. I guess I'll tell you
-   2779 0.00%:  yeah. I guess I'm at
-   2780 0.00%:  the moral's you
-   2781 0.00%:  you get 
-   2782 0.00%:  hey. I'm the
-   2783 0.00%:  I got to say
-   2784 0.00%:  that's me at
-   2785 0.00%:  um. I'll tell your
-   2786 0.00%:  yeah... I guess I'm out
-   2787 0.00%:  yeah. I get that. I
-   2788 0.00%:  ah... tell
-   2789 0.00%:  ute
-   2790 0.00%:  let's use our I
-   2791 0.00%:  okay. 
-   2792 0.00%:  y'all get to
-   2793 0.00%:  the moral I'
-   2794 0.00%:  yeah I guess I'm that
-   2795 0.00%:  I'm outta the
-   2796 0.00%:  you'll use a
-   2797 0.00%:  I took the rest
-   2798 0.00%:  I'll try...
-   2799 0.00%:  the last shot
-   2800 0.00%:  um... so yes
-   2801 0.00%:  you got three
-   2802 0.00%:  uh... I'm totally
-   2803 0.00%:  the last guy
-   2804 0.00%:  um... there's a lot to
-   2805 0.00%:  uhm... so
-   2806 0.00%:  um... let's all hug
-   2807 0.00%:  um... I'll tell that
-   2808 0.00%:  I got you.
-   2809 0.00%:  uhh... I'll go
-   2810 0.00%:  I get...
-   2811 0.00%:  I'm your I
-   2812 0.00%:  um. I guess I'll talk to the
-   2813 0.00%:  um... It'll
-   2814 0.00%:  um... Is that a yes
-   2815 0.00%:  uh. I guess you'll
-   2816 0.00%:  yeah I'm that
-   2817 0.00%:  let that go
-   2818 0.00%:  so... true
-   2819 0.00%:  so the moral
-   2820 0.00%:  all I got to
-   2821 0.00%:  um. I'll talk to your
-   2822 0.00%:  I am out
-   2823 0.00%:  uh... so'
-   2824 0.00%:  uuh.
-   2825 0.00%:  I'll get more
-   2826 0.00%:  yeah... tell that
-   2827 0.00%:  I guess I'll talk to you at
-   2828 0.00%:  ah... the
-   2829 0.00%:  you got a 
-   2830 0.00%:  um... you hear
-   2831 0.00%:  I guess... our
-   2832 0.00%:  I guess I'll make out
-   2833 0.00%:  um. I'll try to get
-   2834 0.00%:  uh... I got that
-   2835 0.00%:  yes. I am the
-   2836 0.00%:  you'll see us all
-   2837 0.00%:  let me say that
-   2838 0.00%:  I'm totally ste
-   2839 0.00%:  I must ask...
-   2840 0.00%:  y'all get a
-   2841 0.00%:  uh. yeah
-   2842 0.00%:  um... I'll take the
-   2843 0.00%:  you... so
-   2844 0.00%:  um. I guess tell
-   2845 0.00%:  so's you
-   2846 0.00%:  I must say that
-   2847 0.00%:  ah... I guess I'm
-   2848 0.00%:  I'll start a
-   2849 0.00%:  um... let's let
-   2850 0.00%:  uh... I guess I'll talk
-   2851 0.00%:  let's talk. I
-   2852 0.00%:  I am you
-   2853 0.00%:  um... It's okay
-   2854 0.00%:  you are.
-   2855 0.00%:  I'm... out
-   2856 0.00%:  tell us the story.
-   2857 0.00%:  let's talk to a
-   2858 0.00%:  I'll shut your
-   2859 0.00%:  that makes you... the
-   2860 0.00%:  he's our
-   2861 0.00%:  to that I say...
-   2862 0.00%:  you'll eat the
-   2863 0.00%:  you're outta
-   2864 0.00%:  uh... say that
-   2865 0.00%:  so's a
-   2866 0.00%:  um... that goes
-   2867 0.00%:  um... yah
-   2868 0.00%:  um... get your
-   2869 0.00%:  er... that's a
-   2870 0.00%:  there's a t
-   2871 0.00%:  I guess... I'll take
-   2872 0.00%:  I thought I'll
-   2873 0.00%:  um... that's all your
-   2874 0.00%:  yeah. It takes
-   2875 0.00%:  um. It says
-   2876 0.00%:  I... um
-   2877 0.00%:  I got '
-   2878 0.00%:  I'm here to say...
-   2879 0.00%:  yes. I am.
-   2880 0.00%:  all I am
-   2881 0.00%:  you see that'
-   2882 0.00%:  yeah. I gotta tell
-   2883 0.00%:  he's out
-   2884 0.00%:  I am at
-   2885 0.00%:  yeah. I took that
-   2886 0.00%:  uh... let's all go to
-   2887 0.00%:  huh... are
-   2888 0.00%:  uh... tell me a
-   2889 0.00%:  uh. I guess I'm the
-   2890 0.00%:  yes... I'll
-   2891 0.00%:  er. I guess
-   2892 0.00%:  he'll say
-   2893 0.00%:  I guess I'll talk to ya
-   2894 0.00%:  hm.
-   2895 0.00%:  you hear that.
-   2896 0.00%:  uh... there's a lot
-   2897 0.00%:  I'll try to take
-   2898 0.00%:  let's all go sm
-   2899 0.00%:  I guess... the moral
-   2900 0.00%:  I'm here...
-   2901 0.00%:  um... there'll
-   2902 0.00%:  um... so let's all go
-   2903 0.00%:  I'll go see
-   2904 0.00%:  uh... let's go out
-   2905 0.00%:  that's all our
-   2906 0.00%:  let's all make out.
-   2907 0.00%:  I'll let that go
-   2908 0.00%:  that's... u
-   2909 0.00%:  yah... I
-   2910 0.00%:  yes to all the
-   2911 0.00%:  you're all team
-   2912 0.00%:  uh. I guess the
-   2913 0.00%:  so that's you
-   2914 0.00%:  are you... a
-   2915 0.00%:  uh.. you
-   2916 0.00%:  I'ma take
-   2917 0.00%:  um... let's reg
-   2918 0.00%:  yeea
-   2919 0.00%:  uhh... y
-   2920 0.00%:  I must say... I
-   2921 0.00%:  I say let's all go
-   2922 0.00%:  am I guest or
-   2923 0.00%:  I'm a... a
-   2924 0.00%:  there's a shot
-   2925 0.00%:  let's eat our
-   2926 0.00%:  yes to the last
-   2927 0.00%:  that's you all
-   2928 0.00%:  I guess I'll make you a
-   2929 0.00%:  yes. I take
-   2930 0.00%:  let's go to the mall.
-   2931 0.00%:  um... I'll get you
-   2932 0.00%:  yes. I got
-   2933 0.00%:  are you a...
-   2934 0.00%:  the story I take
-   2935 0.00%:  um... Is your
-   2936 0.00%:  hey. I'm a
-   2937 0.00%:  I got to the
-   2938 0.00%:  am I the real
-   2939 0.00%:  um. Is that your
-   2940 0.00%:  that's a yes to our
-   2941 0.00%:  um... you'll get
-   2942 0.00%:  um... It's true
-   2943 0.00%:  there's... a
-   2944 0.00%:  I'll see you all at our
-   2945 0.00%:  um... yee
-   2946 0.00%:  I'll get you to
-   2947 0.00%:  I'll make your
-   2948 0.00%:  um. I get the
-   2949 0.00%:  that's all 
-   2950 0.00%:  let's say he
-   2951 0.00%:  I guess I am a
-   2952 0.00%:  yeah. It's our
-   2953 0.00%:  um I thought you
-   2954 0.00%:  let's let your
-   2955 0.00%:  more the
-   2956 0.00%:  there's a salt
-   2957 0.00%:  you're out the
-   2958 0.00%:  um... go easy
-   2959 0.00%:  so that's me
-   2960 0.00%:  uh so...
-   2961 0.00%:  yes. I thought I
-   2962 0.00%:  um. I guess that'll
-   2963 0.00%:  ah yes. I'
-   2964 0.00%:  uh... I'll talk
-   2965 0.00%:  I'm at the store
-   2966 0.00%:  uhh... a
-   2967 0.00%:  I'll go tell the
-   2968 0.00%:  I got out the
-   2969 0.00%:  you're... out
-   2970 0.00%:  yeah. I took the
-   2971 0.00%:  uh I guess that
-   2972 0.00%:  I'm all ears.
-   2973 0.00%:  uh I guess you
-   2974 0.00%:  um... I guess I'll tell that
-   2975 0.00%:  I... I guess that
-   2976 0.00%:  hrm
-   2977 0.00%:  uh... so are
-   2978 0.00%:  okay. I guess the
-   2979 0.00%:  to the story.
-   2980 0.00%:  that's... 
-   2981 0.00%:  let's all go sl
-   2982 0.00%:  uh... you gotta
-   2983 0.00%:  uh. I got
-   2984 0.00%:  I'm a talky
-   2985 0.00%:  let's take my
-   2986 0.00%:  all I get to say
-   2987 0.00%:  um... I'll see that
-   2988 0.00%:  I guess... oh
-   2989 0.00%:  let's all go the
-   2990 0.00%:  I'ma tell
-   2991 0.00%:  um... let's share
-   2992 0.00%:  he y
-   2993 0.00%:  he stole
-   2994 0.00%:  um... I guess you're a
-   2995 0.00%:  I'm that.
-   2996 0.00%:  um... so that's our
-   2997 0.00%:  um... so I'll try
-   2998 0.00%:  um... let's go to a
-   2999 0.00%:  um... It's your
-   3000 0.00%:  um... let's hug
+      1 30.90%:  um
+      2 24.92%:  I
+      3 17.95%:  you
+      4 15.85%:  yeah
+      5 14.82%:  um...
+      6 13.30%:  I guess
+      7 30.79%:  I guess I'm
+      8 12.23%:  I'll
+      9 9.71%:  yeah.
+     10 7.84%:  I guess I'm the
+     11 7.73%:  so
+     12 7.11%:  that
+     13 15.00%:  that's the
+     14 9.49%:  that's a
+     15 6.73%:  I'm a
+     16 6.71%:  you're the
+     17 6.27%:  the
+     18 6.25%:  u
+     19 5.92%:  um.
+     20 5.83%:  I'm the
+     21 5.68%:  that's your
+     22 5.66%:  that's my
+     23 5.13%:  uh...
+     24 5.06%:  that's a yes
+     25 4.60%:  yeah. I
+     26 4.43%:  I'll see
+     27 10.48%:  I'll see you at
+     28 4.42%:  I guess you
+     29 4.12%:  I guess you'll
+     30 3.96%:  you're a
+     31 3.86%:  my
+     32 3.82%:  yeah. I guess
+     33 10.32%:  yeah. I guess I'll
+     34 3.78%:  you'll
+     35 3.54%:  are
+     36 3.51%:  yeah. I'
+     37 3.39%:  um... I
+     38 3.03%:  let
+     39 6.35%:  let's all
+     40 6.01%:  let's go
+     41 4.98%:  let's get
+     42 3.52%:  let me
+     43 3.09%:  let's all go
+     44 2.85%:  that's all
+     45 2.76%:  I guess that
+     46 2.53%:  your
+     47 2.51%:  to
+     48 2.51%:  I guess I'm a
+     49 2.48%:  I'll say
+     50 2.45%:  let's talk
+     51 2.27%:  um... I guess
+     52 2.47%:  um... I guess I'll try
+     53 2.25%:  I guess my
+     54 2.13%:  let's say
+     55 2.11%:  I guess I'm...
+     56 2.09%:  I guess I'm out
+     57 1.99%:  I guess the
+     58 1.89%:  um... I'll try
+     59 1.88%:  um. I
+     60 1.88%:  let's all get
+     61 1.87%:  uhh
+     62 1.84%:  yes
+     63 1.78%:  yeah. I'll
+     64 1.76%:  I guess I'm your
+     65 1.75%:  I'm your
+     66 1.66%:  I'm really
+     67 1.63%:  I'll go
+     68 1.62%:  the story
+     69 1.62%:  I'll stay
+     70 1.61%:  yeah. I guess that
+     71 1.60%:  let's get to
+     72 1.53%:  yeah...
+     73 1.52%:  I'll see you at 
+     74 1.47%:  um... yeah
+     75 1.42%:  you're...
+     76 1.41%:  okay
+     77 1.41%:  um. I'll
+     78 1.41%:  uh.
+     79 1.38%:  let's all go to
+     80 1.36%:  I'm out
+     81 1.33%:  you're all
+     82 1.32%:  yes.
+     83 1.29%:  that's all I got
+     84 1.27%:  um. I guess
+     85 1.26%:  let me ask
+     86 1.25%:  um... you
+     87 1.24%:  that's all you
+     88 1.20%:  that's our
+     89 1.18%:  I'm guess
+     90 1.17%:  let's make
+     91 1.17%:  um... I'll see
+     92 2.84%:  um... I'll see you at
+     93 1.11%:  um. I guess I'll try
+     94 1.10%:  let's hear
+     95 1.10%:  I'll try
+     96 1.10%:  I'm...
+     97 1.09%:  to sum
+     98 1.07%:  that's...
+     99 1.07%:  um... so
+    100 1.07%:  the moral
+    101 1.06%:  y
+    102 1.06%:  yeah. I guess I'm a
+    103 1.05%:  that's all I got.
+    104 1.02%:  um... that
+    105 1.89%:  um... that's a
+    106 1.86%:  um... that's the
+    107 1.26%:  um... that's all
+    108 1.29%:  um... that's all I got
+    109 1.02%:  uh... I
+    110 1.32%:  uh... I'll
+    111 1.01%:  that's a yes.
+    112 1.01%:  I guess I'll try
+    113 0.98%:  let's go to
+    114 0.98%:  I guess I'll take
+    115 0.98%:  hey
+    116 0.96%:  uhh...
+    117 0.93%:  a
+    118 0.93%:  I guess...
+    119 0.92%:  there
+    120 2.53%:  there's a
+    121 0.89%:  you got
+    122 0.88%:  yeah. I guess.
+    123 0.88%:  that's you
+    124 0.87%:  I guess I'll tell
+    125 0.86%:  let's say that
+    126 0.86%:  tell
+    127 0.85%:  that's a yes to
+    128 0.85%:  yeah I
+    129 1.89%:  yeah I guess I'm
+    130 0.84%:  um... that's your
+    131 0.83%:  let's all go out
+    132 0.83%:  here
+    133 3.75%:  here's a
+    134 1.20%:  here's my
+    135 0.83%:  let's say I
+    136 0.81%:  okay.
+    137 0.81%:  I guess the moral
+    138 0.81%:  let me ask you a
+    139 0.80%:  let's all stay
+    140 0.80%:  um. I'll try
+    141 0.80%:  that's me
+    142 0.79%:  let's go out
+    143 0.78%:  I thought
+    144 0.77%:  there's a lot
+    145 0.75%:  I guess I'll let
+    146 0.72%:  uh... I guess
+    147 2.25%:  uh... I guess I'm
+    148 0.71%:  I guess I'm really
+    149 0.71%:  I guess I'll tell you
+    150 0.70%:  that's all you got
+    151 0.70%:  I'll tell
+    152 0.93%:  I'll tell you a
+    153 0.70%:  uh... I guess I'll try
+    154 0.69%:  I'll see you all
+    155 0.69%:  I'm totally
+    156 0.68%:  uh... I'll try
+    157 0.67%:  I guess your
+    158 0.66%:  I gotta
+    159 0.65%:  I'll see you at a
+    160 0.65%:  I guess you're a
+    161 0.64%:  yeah. I'm the
+    162 0.64%:  yes. I
+    163 0.63%:  um... I'll stay
+    164 0.62%:  there's that...
+    165 0.62%:  let's all go home
+    166 0.61%:  am
+    167 0.61%:  yeah... I
+    168 0.61%:  so true
+    169 0.60%:  I got
+    170 0.60%:  I get
+    171 0.59%:  I guess I'll talk
+    172 2.38%:  I guess I'll talk to you later.
+    173 1.00%:  I guess I'll talk to my
+    174 0.75%:  I guess I'll talk to you later...
+    175 0.75%:  I guess I'll talk to your
+    176 0.58%:  um... I guess that
+    177 0.57%:  that's all the
+    178 0.57%:  yeah. It
+    179 0.94%:  yeah. It's a
+    180 0.56%:  um... I guess I'll take
+    181 0.55%:  uh... you
+    182 0.55%:  that's the real
+    183 0.55%:  yeah. I'm a
+    184 0.53%:  ah
+    185 0.53%:  er
+    186 0.53%:  yeah. I guess I'm out
+    187 0.53%:  the story'
+    188 0.53%:  um... I guess you
+    189 0.53%:  I guess... I
+    190 0.95%:  I guess... I'll
+    191 0.52%:  that'll
+    192 0.52%:  uh... I'll see
+    193 1.20%:  uh... I'll see you at
+    194 0.51%:  
+    195 0.51%:  um... I guess you'll
+    196 0.51%:  um... I'll go
+    197 0.50%:  that's us
+    198 0.49%:  um... you're the
+    199 0.49%:  let's take
+    200 0.49%:  yeah... I guess
+    201 1.21%:  yeah... I guess I'm
+    202 0.49%:  I'm really a
+    203 0.49%:  I'm a ghost
+    204 0.49%:  I'll let
+    205 0.48%:  let's get out
+    206 0.48%:  h
+    207 0.48%:  huh.
+    208 0.48%:  yeah that
+    209 0.48%:  I am
+    210 0.47%:  um... I guess I'll tell
+    211 0.47%:  yeah... I'
+    212 0.47%:  um. I'll see
+    213 1.15%:  um. I'll see you at
+    214 0.47%:  I guess I'll make
+    215 0.46%:  yeah. I guess I'm out.
+    216 0.46%:  go
+    217 0.46%:  you're out
+    218 0.45%:  I'll make
+    219 0.45%:  I guess I'll talk to the
+    220 0.45%:  I guess you're...
+    221 0.45%:  I guess I'll...
+    222 0.45%:  yeah I guess that
+    223 0.44%:  I'll get
+    224 0.44%:  I thought I
+    225 0.44%:  uh... you'
+    226 0.44%:  I'll see you at our
+    227 0.44%:  I'm out.
+    228 0.44%:  I'm sure
+    229 0.44%:  I guess you're all
+    230 0.43%:  uh... yeah
+    231 0.43%:  you'll let
+    232 0.43%:  let's all say
+    233 0.43%:  let's sum
+    234 0.43%:  all
+    235 0.43%:  let's get a
+    236 0.43%:  let's stay
+    237 0.43%:  I'm a guy
+    238 0.41%:  you see
+    239 0.41%:  I thought you
+    240 0.41%:  let's team
+    241 0.41%:  tell us
+    242 0.40%:  that's a met
+    243 0.40%:  let's make a
+    244 0.40%:  that's really
+    245 0.40%:  um... I guess I'll let
+    246 0.40%:  y'all are
+    247 0.40%:  let's get you
+    248 0.39%:  um... I'll see you at 
+    249 0.38%:  uh... so
+    250 0.38%:  I'm at
+    251 0.38%:  yeah I'
+    252 0.37%:  uh... that
+    253 0.76%:  uh... that's a
+    254 0.43%:  uh... that's my
+    255 0.41%:  uh... that's all
+    256 0.54%:  uh... that's all I got
+    257 0.37%:  uh... that's your
+    258 0.37%:  I'll take
+    259 0.37%:  um... I guess I'll talk
+    260 0.53%:  um... I guess I'll talk to your
+    261 0.42%:  um... I guess I'll talk to the
+    262 0.37%:  that's 
+    263 0.37%:  let's make that
+    264 0.37%:  I guess I'll let my
+    265 0.37%:  yes. I'
+    266 0.37%:  let's go home
+    267 0.37%:  are you a
+    268 0.36%:  I'm all
+    269 0.36%:  um... I'll say
+    270 0.36%:  you get
+    271 0.36%:  I guess I'm outta
+    272 0.36%:  okay. I
+    273 0.69%:  okay. I'll
+    274 0.36%:  more
+    275 0.36%:  so...
+    276 0.36%:  I'll go to
+    277 0.35%:  as
+    278 0.35%:  I'll make sure
+    279 0.35%:  uh. I
+    280 0.35%:  let's try
+    281 0.35%:  I'll make sure I
+    282 0.34%:  that's okay
+    283 0.34%:  I guess I'll take my
+    284 0.34%:  I say
+    285 0.34%:  there's that. I
+    286 0.33%:  here's to
+    287 0.33%:  um. I guess that
+    288 0.32%:  he
+    289 0.32%:  I see
+    290 0.32%:  I'll see you...
+    291 0.32%:  I guess I'm all
+    292 0.31%:  let's all shake
+    293 0.31%:  um... let
+    294 1.30%:  um... let's all
+    295 1.00%:  um... let's go
+    296 0.59%:  um... let's all go
+    297 0.57%:  um... let's get
+    298 0.43%:  um... let's all stay
+    299 0.31%:  let's all try
+    300 0.31%:  um... you'll
+    301 0.31%:  all I
+    302 0.31%:  you'll see
+    303 0.31%:  uh... I guess I'm the
+    304 0.31%:  um... let's all go to
+    305 0.30%:  I got that
+    306 0.30%:  I thought you'
+    307 0.30%:  you got a
+    308 0.30%:  I guess I'm you
+    309 0.30%:  I'll see ya
+    310 0.30%:  um. I guess you
+    311 0.30%:  I take
+    312 0.30%:  I'm that
+    313 0.30%:  um... the
+    314 0.29%:  uh. I'll
+    315 0.29%:  so true.
+    316 0.29%:  I guess I'm out.
+    317 0.29%:  that's a story
+    318 0.28%:  um... let's all get
+    319 0.28%:  um. I'll try.
+    320 0.28%:  let us
+    321 0.28%:  erm
+    322 0.28%:  I'll talk
+    323 0.82%:  I'll talk to you later.
+    324 0.28%:  that's all I get
+    325 0.28%:  let's take a
+    326 0.28%:  as you
+    327 0.28%:  you're the last
+    328 0.28%:  I'll see your
+    329 0.27%:  yeah... that
+    330 0.27%:  um. I guess you'll
+    331 0.27%:  uh... I'll stay
+    332 0.27%:  you are
+    333 0.27%:  I guess I'm... the
+    334 0.27%:  tell me a
+    335 0.27%:  that's our team
+    336 0.27%:  I'm also
+    337 0.27%:  yeah. It's all
+    338 0.26%:  yeah. I guess I'm that
+    339 0.26%:  um... let's go to
+    340 0.26%:  that's your last
+    341 0.26%:  let's all go to a
+    342 0.26%:  I'll say that
+    343 0.26%:  I'll talk to my
+    344 0.26%:  I really
+    345 0.26%:  um... are
+    346 0.26%:  let's say that I
+    347 0.26%:  um... let's talk
+    348 0.26%:  I guess I'm that
+    349 0.26%:  um... let's all go to the
+    350 0.25%:  hah
+    351 0.25%:  uh. I guess
+    352 0.77%:  uh. I guess I'm
+    353 0.25%:  um. I guess I'll take
+    354 0.25%:  I guess I'll tell your
+    355 0.25%:  hey.
+    356 0.25%:  let's go to a
+    357 0.25%:  um. I guess I'll tell
+    358 0.25%:  I get to
+    359 0.25%:  let's talk to
+    360 0.25%:  the story's a
+    361 0.25%:  let's all take
+    362 0.25%:  yeah. I guess I'm all
+    363 0.25%:  um... so I
+    364 0.25%:  I'll tell you the
+    365 0.25%:  I'll talk to your
+    366 0.25%:  I get that
+    367 0.24%:  you'll go
+    368 0.24%:  I'm sort
+    369 0.24%:  you'll get
+    370 0.24%:  yeah... I'll
+    371 0.24%:  um... tell
+    372 0.24%:  I guess I'm at
+    373 0.24%:  I gotta ask
+    374 0.24%:  I'll make sure to stay
+    375 0.24%:  you'll tell
+    376 0.24%:  I'm you
+    377 0.24%:  that's my last
+    378 0.24%:  that's three
+    379 0.24%:  yeah. It's true
+    380 0.24%:  I'll see ya at
+    381 0.23%:  let's start
+    382 0.23%:  um... let's stay
+    383 0.23%:  all I'
+    384 0.23%:  am I the
+    385 0.23%:  that story
+    386 0.23%:  let's all make
+    387 0.23%:  I'll tell my
+    388 0.23%:  I guess I'll tell you a
+    389 0.23%:  y'all got
+    390 0.23%:  uhm
+    391 0.23%:  I'm here
+    392 0.23%:  I guess our
+    393 0.23%:  let me ask you...
+    394 0.23%:  let's make out.
+    395 0.23%:  I hear
+    396 0.23%:  you'll let us
+    397 0.23%:  let's all talk
+    398 0.23%:  yeah. I'm out
+    399 0.23%:  I took
+    400 0.23%:  let's get our
+    401 0.23%:  I guess you'll tell
+    402 0.22%:  there's my
+    403 0.22%:  um... that's a yes
+    404 0.22%:  am I a
+    405 0.22%:  um... I'll tell
+    406 0.22%:  I'm 
+    407 0.22%:  there's a lot to
+    408 0.22%:  that's me.
+    409 0.22%:  that's all.
+    410 0.22%:  um yeah
+    411 0.22%:  I guess I'm okay
+    412 0.22%:  let's all hug
+    413 0.22%:  let's shake
+    414 0.22%:  tell me your
+    415 0.22%:  I'll go to the
+    416 0.21%:  yeah. I'll go
+    417 0.21%:  I'll make a
+    418 0.21%:  uh... I guess I'm out
+    419 0.21%:  the rest
+    420 0.21%:  I guess... I'll try
+    421 0.21%:  yeah I guess.
+    422 0.21%:  ahem
+    423 0.21%:  um. I'll stay
+    424 0.21%:  um I
+    425 0.21%:  um... I guess I'll tell you
+    426 0.21%:  um... so you
+    427 0.21%:  yeah. I guess I am
+    428 0.21%:  uh. I guess I'll try
+    429 0.21%:  yeah. I guess I'll talk
+    430 0.21%:  yeah. I gotta
+    431 0.21%:  yeah I guess I'm a
+    432 0.21%:  huh. I
+    433 1.31%:  huh. I guess I'll
+    434 0.21%:  I got a
+    435 0.21%:  yeah. It's the
+    436 0.20%:  you're so
+    437 0.20%:  so so
+    438 0.20%:  um... that's all the
+    439 0.20%:  um... I'll say that
+    440 0.20%:  um. I guess I'll let
+    441 0.20%:  I guess I'll take a
+    442 0.20%:  uh... I'll go
+    443 0.20%:  that's all I got. I
+    444 0.20%:  let's talk to my
+    445 0.20%:  erm...
+    446 0.20%:  yes. I'll
+    447 0.20%:  that's okay.
+    448 0.19%:  um... that's all you
+    449 0.19%:  let's say the
+    450 0.19%:  that's us.
+    451 0.19%:  let's all get a
+    452 0.19%:  uh... I guess that
+    453 0.19%:  yeah... I guess that
+    454 0.19%:  um. I'll see you at 
+    455 0.19%:  um... yes
+    456 0.19%:  you got that
+    457 0.19%:  I guess I'll make a
+    458 0.19%:  I guess... I'm the
+    459 0.19%:  let's go eat
+    460 0.19%:  um. I guess I'll talk
+    461 2.25%:  um. I guess I'll talk to you later.
+    462 0.29%:  um. I guess I'll talk to your
+    463 0.22%:  um. I guess I'll talk to the
+    464 0.19%:  um... that'll
+    465 0.19%:  yeah. It's true. I
+    466 0.19%:  let's go to the m
+    467 0.18%:  let's talk later
+    468 0.18%:  uh... I guess you
+    469 0.19%:  uh... I guess you'll
+    470 0.18%:  um. I'll go
+    471 0.18%:  I guess I'll try to make
+    472 0.18%:  I guess I'm totally
+    473 0.18%:  yeah. I guess that'll
+    474 0.18%:  he'
+    475 0.20%:  he's got
+    476 0.18%:  I'm really the
+    477 0.18%:  uhh... I
+    478 0.24%:  uhh... I'll
+    479 0.18%:  yeah. I get
+    480 0.18%:  um... I guess the
+    481 0.18%:  yah
+    482 0.18%:  um. It
+    483 0.21%:  um. It's a
+    484 0.18%:  that's all your
+    485 0.18%:  uh... I guess I'll take
+    486 0.18%:  um... I'll see you at a
+    487 0.18%:  I'm... a
+    488 0.18%:  er...
+    489 0.18%:  I'm... I
+    490 0.18%:  huh...
+    491 0.18%:  yeah. I'm that
+    492 0.18%:  I guess I'm al
+    493 0.18%:  yeah. I guess I am.
+    494 0.17%:  yeah. It's great
+    495 0.17%:  um... that's really
+    496 0.17%:  let's all make out
+    497 0.17%:  I guess I really
+    498 0.17%:  uh... you're the
+    499 0.17%:  I guess you'll let
+    500 0.17%:  there you
+    501 0.17%:  I'll use
+    502 0.17%:  um... so I'll
+    503 0.17%:  I get the
+    504 0.17%:  um... you're a
+    505 0.17%:  let's all go to the m
+    506 0.17%:  I'll get you
+    507 0.17%:  so hot
+    508 0.17%:  that's the moral
+    509 0.17%:  I'm here to say
+    510 0.17%:  I'm here to say that I
+    511 0.17%:  um. I guess I'll take that.
+    512 0.17%:  I'm at a
+    513 0.17%:  um... I'll take
+    514 0.17%:  um... I'll get
+    515 0.17%:  I'll shut
+    516 0.17%:  are you the
+    517 0.17%:  that's... a
+    518 0.17%:  you gotta
+    519 0.17%:  yeah. It's that
+    520 0.17%:  that's the same
+    521 0.17%:  you go
+    522 0.16%:  um. I'll say
+    523 0.16%:  uh... I'll see you at 
+    524 0.16%:  let's all team
+    525 0.16%:  here I
+    526 0.16%:  I gotta say...
+    527 0.16%:  yeah that's me
+    528 0.16%:  um... that's our
+    529 0.16%:  that's... the
+    530 0.16%:  that's a...
+    531 0.16%:  um... let's go out
+    532 0.16%:  let's all get to
+    533 0.16%:  um... I'll see you at our
+    534 0.16%:  the real
+    535 0.16%:  uh... I guess I'll tell
+    536 0.16%:  go to
+    537 0.16%:  I'll talk to you later...
+    538 0.16%:  yeah. I guess. I
+    539 0.16%:  I'll start
+    540 0.16%:  let's go to my
+    541 0.16%:  that makes
+    542 0.16%:  uh. I'll try
+    543 0.16%:  um..
+    544 0.16%:  I guess that'll
+    545 0.16%:  the other
+    546 0.16%:  I guess I'm outta the
+    547 0.16%:  um... I'll tell you
+    548 0.15%:  um... let's say
+    549 0.15%:  let's get all
+    550 0.15%:  I guess I'll make that
+    551 0.15%:  let's say I am
+    552 0.15%:  I guess... you
+    553 0.15%:  that's all my
+    554 0.15%:  I'm... the
+    555 0.15%:  I'll say the
+    556 0.15%:  I guess I'll take your
+    557 0.15%:  yeah I'll
+    558 0.15%:  um... let's all try
+    559 0.15%:  um I'
+    560 0.15%:  here's to us
+    561 0.15%:  that's the g
+    562 0.15%:  you got the
+    563 0.15%:  you're that
+    564 0.15%:  you got me
+    565 0.15%:  the story goes
+    566 0.15%:  um... that's all you got
+    567 0.15%:  I guess all
+    568 0.15%:  you use
+    569 0.14%:  um... I guess I'll tell your
+    570 0.14%:  you're team
+    571 0.14%:  I guess I'll tell you that
+    572 0.14%:  I guess I'm your...
+    573 0.14%:  you thought
+    574 0.14%:  let's all go eat
+    575 0.14%:  huh. I guess I'll try
+    576 0.14%:  um... I'll let
+    577 0.14%:  uh... I'm the
+    578 0.14%:  uh... I guess I'm a
+    579 0.14%:  um... that's okay
+    580 0.14%:  yeah. I'm all
+    581 0.14%:  I'll try to get
+    582 0.14%:  uh... that's a yes
+    583 0.14%:  you're... the
+    584 0.14%:  let's talk more
+    585 0.14%:  uh... you'll
+    586 0.14%:  um... I gotta
+    587 0.14%:  I'll talk to the
+    588 0.14%:  uh... I'm a
+    589 0.14%:  let's re
+    590 0.14%:  I guess I'm... a
+    591 0.14%:  um... I'll try to get
+    592 0.13%:  I'm sorta
+    593 0.13%:  um... I guess I'll let that
+    594 0.13%:  let's talk.
+    595 0.13%:  as a
+    596 0.13%:  I'm at your
+    597 0.13%:  I got my
+    598 0.13%:  I am.
+    599 0.13%:  ahem...
+    600 0.13%:  let's say...
+    601 0.13%:  um... so that
+    602 0.31%:  um... so that's the
+    603 0.24%:  um... so that's a
+    604 0.13%:  I guess... I'm out
+    605 0.13%:  um... let's get to
+    606 0.13%:  you're a ghost
+    607 0.13%:  huh. I guess I'm a
+    608 0.13%:  I'll make you
+    609 0.13%:  you're a team
+    610 0.13%:  um I guess
+    611 0.13%:  you'll use
+    612 0.13%:  I guess you're out
+    613 0.13%:  let's look
+    614 0.13%:  um... your
+    615 0.13%:  I'll let my
+    616 0.13%:  let's use
+    617 0.13%:  I'll try to make
+    618 0.13%:  are you...
+    619 0.13%:  that's you.
+    620 0.13%:  tell us more
+    621 0.13%:  uh... I guess I'll let
+    622 0.13%:  you're at
+    623 0.13%:  uh... I'll say
+    624 0.13%:  so you
+    625 0.13%:  let's all get our
+    626 0.13%:  all the
+    627 0.13%:  heh
+    628 0.13%:  uhm...
+    629 0.13%:  you'll take
+    630 0.13%:  okay. I guess
+    631 0.41%:  okay. I guess I'm
+    632 0.12%:  uhh... I'll try
+    633 0.12%:  you'll let me out
+    634 0.12%:  um. I guess I'll tell you
+    635 0.12%:  let's reg
+    636 0.12%:  I guess I'll let your
+    637 0.12%:  I'll tell the
+    638 0.12%:  so that
+    639 0.18%:  so that's a
+    640 0.16%:  so that's the
+    641 0.12%:  yeah. I got
+    642 0.12%:  that makes us...
+    643 0.12%:  let us all
+    644 0.12%:  I'm a ghost.
+    645 0.12%:  uhh... I guess
+    646 0.35%:  uhh... I guess I'm
+    647 0.15%:  uhh... I guess I'll try
+    648 0.12%:  I guess I'll talk to you at
+    649 0.12%:  um... that's great
+    650 0.12%:  tell me a story.
+    651 0.12%:  um... so I'll see
+    652 0.33%:  um... so I'll see you at
+    653 0.12%:  I'm outta
+    654 0.23%:  I'm outta here.
+    655 0.12%:  uh... I guess I'll talk
+    656 0.31%:  uh... I guess I'll talk to my
+    657 0.18%:  uh... I guess I'll talk to your
+    658 0.16%:  uh... I guess I'll talk to the
+    659 0.12%:  all you
+    660 0.12%:  let's talk to your
+    661 0.12%:  uh. I guess I'm the
+    662 0.12%:  I'm the guy
+    663 0.12%:  I'll get my
+    664 0.12%:  y'all got a
+    665 0.12%:  I gotta say... I
+    666 0.12%:  let's take out
+    667 0.12%:  let's go.
+    668 0.12%:  yea
+    669 0.12%:  let's all look
+    670 0.12%:  let's all look at the
+    671 0.12%:  I'm at a loss
+    672 0.12%:  I guess all I'
+    673 0.12%:  ah...
+    674 0.12%:  uh... let
+    675 0.43%:  uh... let's all
+    676 0.41%:  uh... let's go
+    677 0.25%:  uh... let's get
+    678 0.24%:  uh... let's all go
+    679 0.13%:  uh... let's all stay
+    680 0.12%:  uh... let's all go to
+    681 0.12%:  uh... let's all go to the
+    682 0.12%:  yeah... I guess I'm a
+    683 0.11%:  uh... the
+    684 0.11%:  that's really the
+    685 0.11%:  yeah that's true
+    686 0.11%:  here's to you
+    687 0.11%:  let's go to the mall.
+    688 0.11%:  let's go team
+    689 0.11%:  let that
+    690 0.11%:  you're... a
+    691 0.11%:  I'll take the
+    692 0.11%:  I get a
+    693 0.11%:  I got the
+    694 0.11%:  um... I'll see you all
+    695 0.11%:  let's get you a
+    696 0.11%:  let's make that our
+    697 0.11%:  so hot.
+    698 0.11%:  that's a hell
+    699 0.11%:  you'll see us
+    700 0.11%:  um... so you'll
+    701 0.11%:  I guess you'll tell that
+    702 0.11%:  uh... are
+    703 0.11%:  let me ask you.
+    704 0.11%:  he's a
+    705 0.11%:  I guess I...
+    706 0.11%:  I'll make sure I stay
+    707 0.11%:  um. I'll tell
+    708 0.11%:  uhh.
+    709 0.11%:  huh. I'
+    710 0.11%:  I guess... you'll
+    711 0.11%:  uh. I'll see
+    712 0.26%:  uh. I'll see you at
+    713 0.11%:  I say to
+    714 0.11%:  there's also
+    715 0.11%:  yeah. It's that.
+    716 0.11%:  um... I guess I'll tell that
+    717 0.11%:  I'll see you... at
+    718 0.11%:  um... so that's your
+    719 0.11%:  I took the
+    720 0.11%:  so.
+    721 0.11%:  I guess... that
+    722 0.10%:  uh... tell
+    723 0.10%:  I'm the last
+    724 0.10%:  um... I guess I'll take your
+    725 0.10%:  hey. I
+    726 0.10%:  I'm also your
+    727 0.10%:  uh... let's all get
+    728 0.10%:  that's... your
+    729 0.10%:  um... I'll talk
+    730 0.14%:  um... I'll talk to your
+    731 0.11%:  um... I'll talk to the
+    732 0.10%:  I guess I'm at your
+    733 0.10%:  I guess I'm really a
+    734 0.10%:  I took a
+    735 0.10%:  I guess I'm out...
+    736 0.10%:  I guess I'll let that
+    737 0.10%:  I gotta ask...
+    738 0.10%:  um... there
+    739 0.83%:  um... there's that
+    740 0.46%:  um... there's a
+    741 0.19%:  um... there's a lot
+    742 0.10%:  let's get you to
+    743 0.10%:  um... I'll tell your
+    744 0.10%:  there's a lot I
+    745 0.10%:  I'll ask
+    746 0.10%:  you're the host
+    747 0.10%:  um... yeah I
+    748 0.10%:  um... I gotta say
+    749 0.10%:  let's all share
+    750 0.10%:  the last
+    751 0.10%:  let's share
+    752 0.10%:  I guess I'll tell you to
+    753 0.10%:  that's my take
+    754 0.10%:  uh... let's talk
+    755 0.10%:  I'll get to
+    756 0.10%:  I guess I'll make you
+    757 0.10%:  um... I guess I'll look
+    758 0.10%:  I...
+    759 0.10%:  uh... let's go to
+    760 0.10%:  I go
+    761 0.10%:  uh... I guess I'll make
+    762 0.10%:  let's make out a
+    763 0.10%:  um. I guess the
+    764 0.10%:  that's all you get
+    765 0.10%:  um... let's hear
+    766 0.10%:  I guess I'll talk to my other
+    767 0.10%:  okay. I'll go
+    768 0.10%:  um... I'll see your
+    769 0.10%:  so I
+    770 0.10%:  uh... my
+    771 0.10%:  let's hear that
+    772 0.10%:  um. Is
+    773 0.10%:  um... tell your
+    774 0.10%:  let's talk to our
+    775 0.09%:  um... let's say that
+    776 0.09%:  um. I gotta
+    777 0.09%:  you'll let me go
+    778 0.09%:  I guess you'll take
+    779 0.09%:  huh. I guess I'm out
+    780 0.09%:  let's take our
+    781 0.09%:  I gotta say I
+    782 0.09%:  I guess... I'm a
+    783 0.09%:  yeah. I guess. I'
+    784 0.12%:  yeah. I guess. I'll
+    785 0.09%:  I guess I am
+    786 0.09%:  there's a guy
+    787 0.09%:  um... let's try
+    788 0.09%:  uh... I'm out
+    789 0.09%:  a story
+    790 0.09%:  uh... I guess I'll try to make
+    791 0.09%:  I guess you're al
+    792 0.09%:  you thought I
+    793 0.09%:  I guess I'm... your
+    794 0.09%:  the story's a met
+    795 0.09%:  you hear
+    796 0.09%:  I'll let you take
+    797 0.09%:  that's a rhet
+    798 0.09%:  I'll tell your
+    799 0.09%:  the story's got
+    800 0.09%:  I'll shut my
+    801 0.09%:  I get that you
+    802 0.09%:  I'ma
+    803 0.09%:  you'll tell the
+    804 0.09%:  um... so yeah
+    805 0.09%:  um... so that's all
+    806 0.09%:  uhh... I'll see
+    807 0.21%:  uhh... I'll see you at
+    808 0.09%:  let's let
+    809 0.09%:  that's your take
+    810 0.09%:  I'll see you out
+    811 0.09%:  you agree
+    812 0.09%:  I'm your...
+    813 0.09%:  that's a 
+    814 0.09%:  you get that
+    815 0.09%:  um... I'll go to
+    816 0.09%:  the story has
+    817 0.09%:  huh. I'll
+    818 0.09%:  I'm also a
+    819 0.09%:  um... go
+    820 0.09%:  let's get at
+    821 0.09%:  yeah that's me.
+    822 0.09%:  I'll get some
+    823 0.09%:  um... a
+    824 0.09%:  uh... let me
+    825 0.09%:  my last
+    826 0.09%:  are you all
+    827 0.09%:  uhh... you
+    828 0.09%:  he says
+    829 0.09%:  um... let's talk later
+    830 0.09%:  all that
+    831 0.09%:  I must
+    832 0.09%:  um... okay
+    833 0.09%:  I get my
+    834 0.09%:  um... you're all
+    835 0.08%:  yes. It
+    836 0.25%:  yes. It's true
+    837 0.20%:  yes. It's true. I
+    838 0.13%:  yes. It's a
+    839 0.08%:  let's...
+    840 0.08%:  I ate
+    841 0.08%:  you'll tell me
+    842 0.08%:  there's all
+    843 0.08%:  uh... I'll say that
+    844 0.08%:  yeah. I'll get
+    845 0.08%:  uh... I guess I'm your
+    846 0.08%:  huh. I guess I'm your
+    847 0.08%:  you'll get that
+    848 0.08%:  um... let's all go out
+    849 0.08%:  um yeah.
+    850 0.08%:  I see your
+    851 0.08%:  am I your
+    852 0.08%:  uuh
+    853 0.08%:  yeah. It's more
+    854 0.08%:  uh... I'm really
+    855 0.08%:  let's all talk to
+    856 0.08%:  yeah I guess I'm out
+    857 0.08%:  yeah. It's got
+    858 0.08%:  I'll let that
+    859 0.08%:  to the
+    860 0.08%:  y'all get
+    861 0.08%:  um... let's all say
+    862 0.08%:  uh... that's all you
+    863 0.08%:  you seem
+    864 0.08%:  yeah. I'll tell
+    865 0.08%:  yeah. I guess I'm that.
+    866 0.08%:  that's a yes. I
+    867 0.08%:  yeah that's true.
+    868 0.08%:  yeah. It's great to
+    869 0.08%:  uh... that's our
+    870 0.08%:  I'll see you at that
+    871 0.08%:  you'll make
+    872 0.08%:  you talk
+    873 0.08%:  let's all eat
+    874 0.08%:  I'm sure I
+    875 0.08%:  uh... so I
+    876 0.08%:  um... y
+    877 0.08%:  you'll take the
+    878 0.08%:  I'll...
+    879 0.08%:  yeah. I guess I'm al
+    880 0.08%:  uh... let's all go home
+    881 0.08%:  I'm sure that
+    882 0.08%:  you...
+    883 0.08%:  I guess I'll talk to you later h
+    884 0.08%:  yeah. I'll let
+    885 0.08%:  yeah. I'll make
+    886 0.08%:  that's okay. I
+    887 0.08%:  I guess I'll take you
+    888 0.08%:  uh... so you
+    889 0.08%:  I guess I really am
+    890 0.08%:  uh... I guess my
+    891 0.08%:  that's a yes to me
+    892 0.08%:  you must
+    893 0.08%:  you'll tell that
+    894 0.08%:  uh... let's stay
+    895 0.08%:  yes I
+    896 0.08%:  I'm the real
+    897 0.08%:  um... to
+    898 0.08%:  um. It's true
+    899 0.08%:  um... I guess I'll talk to you at
+    900 0.08%:  I'll meet
+    901 0.08%:  I hear that
+    902 0.08%:  um... I guess you're all
+    903 0.08%:  I'll make that
+    904 0.08%:  um... I'll say that I
+    905 0.08%:  that's a yes I
+    906 0.08%:  yeah... that's me
+    907 0.08%:  tell your
+    908 0.08%:  let's go make
+    909 0.08%:  huh. I guess you
+    910 0.08%:  let's all go to my
+    911 0.08%:  uh... I'll see you at a
+    912 0.08%:  I'm out to
+    913 0.08%:  um... I got
+    914 0.08%:  yeah. I guess I'm outta
+    915 0.08%:  um... I guess I'll take a
+    916 0.08%:  you get the
+    917 0.08%:  I guess I'll tell that
+    918 0.08%:  uh... let's get to
+    919 0.08%:  um... say
+    920 0.08%:  I'm out. I
+    921 0.08%:  I'll talk to you later. I
+    922 0.08%:  I'll see you all at 
+    923 0.08%:  um... I thought
+    924 0.08%:  yeah I guess I'm...
+    925 0.08%:  um... I'll see ya
+    926 0.08%:  um... I'll go to the
+    927 0.08%:  I'll say that to
+    928 0.07%:  um... so there
+    929 0.12%:  um... so there's a
+    930 0.07%:  here I am.
+    931 0.07%:  I'm at a loss.
+    932 0.07%:  yeah. It's me
+    933 0.07%:  as I'
+    934 0.07%:  um... the story
+    935 0.07%:  um. I gotta say
+    936 0.07%:  um. I guess.
+    937 0.07%:  tell the
+    938 0.07%:  I guess to
+    939 0.07%:  you're all out
+    940 0.07%:  all you'
+    941 0.07%:  um. I'll see you at a
+    942 0.07%:  I'll take a
+    943 0.07%:  y'all gotta
+    944 0.07%:  um... let's say I
+    945 0.07%:  yah.
+    946 0.07%:  y'all go
+    947 0.07%:  let's hug
+    948 0.07%:  let me ask...
+    949 0.07%:  yes. I'm the
+    950 0.07%:  um... let's all shake
+    951 0.07%:  yeah... I'm a
+    952 0.07%:  uh... I'll tell
+    953 0.07%:  I'll look
+    954 0.07%:  um. I'll say that
+    955 0.07%:  um... that's a lot
+    956 0.07%:  um... I guess I'll try that
+    957 0.07%:  uh... I guess I'll tell you
+    958 0.07%:  um... yeah I'
+    959 0.07%:  uh... you're a
+    960 0.07%:  um... that's a story
+    961 0.07%:  you make
+    962 0.07%:  I'm totally a
+    963 0.07%:  um... I guess I'll tell you that
+    964 0.07%:  you're a...
+    965 0.07%:  um... that's us
+    966 0.07%:  I guess... I'm your
+    967 0.07%:  um... so you're the
+    968 0.07%:  um. I guess I'll try.
+    969 0.07%:  that's our last
+    970 0.07%:  I guess.
+    971 0.07%:  I'll talk to you later I
+    972 0.08%:  I'll talk to you later I guess.
+    973 0.07%:  let's make our
+    974 0.07%:  um... I'll say I
+    975 0.07%:  I am a
+    976 0.07%:  um... that's your last
+    977 0.07%:  yeah. I'm sure
+    978 0.07%:  um... let's take
+    979 0.07%:  I'll use that
+    980 0.07%:  um... I guess I'll try to take
+    981 0.07%:  tell us your
+    982 0.07%:  um... I'll tell you a
+    983 0.07%:  okay. I'll see
+    984 0.07%:  I guess you're at
+    985 0.07%:  you are the
+    986 0.07%:  there's a lot you
+    987 0.07%:  I'll get a
+    988 0.07%:  the story I
+    989 0.07%:  uh... I'll see you at our
+    990 0.07%:  so s
+    991 0.07%:  uh yeah
+    992 0.07%:  I'm totally the
+    993 0.07%:  yeah. I guess I'm at
+    994 0.07%:  I'm... your
+    995 0.07%:  uh. I guess that
+    996 0.07%:  uh... I'll get
+    997 0.07%:  um. I guess I'll tell your
+    998 0.07%:  uh... I'll make
+    999 0.14%:  uh... I'll make sure I
+   1000 0.11%:  uh... I'll make sure to stay
+   1001 0.07%:  uh. I guess I'm out
+   1002 0.07%:  I'll take my
+   1003 0.07%:  yeah... I guess I'm out
+   1004 0.07%:  um... there's a lot to
+   1005 0.07%:  you're the most
+   1006 0.07%:  I'll see you at...
+   1007 0.07%:  um. It's the
+   1008 0.07%:  I'll tell you that
+   1009 0.07%:  I'm a h
+   1010 0.07%:  go me
+   1011 0.07%:  I'll go to my
+   1012 0.07%:  um. I'll try to get
+   1013 0.07%:  I see that
+   1014 0.07%:  um. I'll let
+   1015 0.07%:  he's the
+   1016 0.07%:  you agree to
+   1017 0.07%:  uh... let's make
+   1018 0.07%:  yeah... I'm the
+   1019 0.07%:  ahem.
+   1020 0.07%:  um... so that's all I got
+   1021 0.07%:  let's set
+   1022 0.07%:  that last
+   1023 0.07%:  that's me. I
+   1024 0.07%:  let's eat
+   1025 0.07%:  uh. I guess you
+   1026 0.07%:  uh. I guess you'll
+   1027 0.07%:  I took my
+   1028 0.07%:  I guess I'm a...
+   1029 0.07%:  I'll make sure you
+   1030 0.07%:  that's a... yes
+   1031 0.07%:  um. Is that a
+   1032 0.07%:  I guess I'm... out
+   1033 0.07%:  so you'll
+   1034 0.07%:  yes to
+   1035 0.07%:  um. I'll see you at our
+   1036 0.06%:  um... let's get a
+   1037 0.06%:  uh... that'll
+   1038 0.06%:  yeah I'm a
+   1039 0.06%:  you're at a
+   1040 0.06%:  I go to
+   1041 0.06%:  so am
+   1042 0.09%:  so am I.
+   1043 0.06%:  yes. It's true. I am
+   1044 0.06%:  um... that's true
+   1045 0.06%:  um... I guess that'll
+   1046 0.06%:  let's get your
+   1047 0.06%:  um. I guess I'll let that
+   1048 0.06%:  um... tell that
+   1049 0.06%:  uh... so I'll
+   1050 0.06%:  I'll lay
+   1051 0.06%:  you're a talk
+   1052 0.06%:  uh... let's go out
+   1053 0.06%:  I guess I'll talk to ya
+   1054 0.06%:  um... I thought I
+   1055 0.06%:  I'm at least
+   1056 0.06%:  there.
+   1057 0.06%:  yeah. I guess I'm that too
+   1058 0.06%:  you use the
+   1059 0.06%:  as I say
+   1060 0.06%:  yeah. I am
+   1061 0.06%:  let's say I am.
+   1062 0.06%:  uh... that's me
+   1063 0.06%:  uh..
+   1064 0.06%:  um. I'll take
+   1065 0.06%:  um... you got
+   1066 0.06%:  um. I'll get
+   1067 0.06%:  I guess I'll make you a
+   1068 0.06%:  I'm the other
+   1069 0.06%:  so yeah
+   1070 0.06%:  um... that's you
+   1071 0.06%:  yes. I am
+   1072 0.06%:  let's use that
+   1073 0.06%:  I'll say I
+   1074 0.06%:  let's all use
+   1075 0.06%:  let's get all our
+   1076 0.06%:  I'll see you all at our
+   1077 0.06%:  yes. I'm a
+   1078 0.06%:  let's say a
+   1079 0.06%:  I guess you'll make
+   1080 0.06%:  you'll get me
+   1081 0.06%:  yeah. It's too
+   1082 0.06%:  that's all there
+   1083 0.06%:  that's our team sl
+   1084 0.06%:  let's all get out
+   1085 0.06%:  let's go take
+   1086 0.06%:  I guess I take
+   1087 0.06%:  uh. I'll try.
+   1088 0.06%:  I'm a...
+   1089 0.06%:  um... that's the real
+   1090 0.06%:  uh... I'll take
+   1091 0.06%:  that's your take home
+   1092 0.06%:  I guess let
+   1093 0.06%:  so that's your
+   1094 0.06%:  huh. I guess I'll tell
+   1095 0.06%:  um... let's go to a
+   1096 0.06%:  a lot
+   1097 0.06%:  I'm also the
+   1098 0.06%:  yeah I guess...
+   1099 0.06%:  uh... I'm your
+   1100 0.06%:  um... let's go eat
+   1101 0.06%:  I'm here all
+   1102 0.06%:  you lost
+   1103 0.06%:  um... I guess you're a
+   1104 0.06%:  you take
+   1105 0.06%:  um... It
+   1106 0.08%:  um... It's a
+   1107 0.06%:  yeah. I'm that.
+   1108 0.06%:  okay. I guess I'm the
+   1109 0.06%:  that's a story I
+   1110 0.06%:  yeah. It's all I
+   1111 0.06%:  I guess they
+   1112 0.06%:  um. I'll tell you a
+   1113 0.06%:  yeah. It's a lot
+   1114 0.06%:  that's my role
+   1115 0.06%:  uh... let's say
+   1116 0.06%:  so meta
+   1117 0.06%:  you're... um
+   1118 0.06%:  that's all. I
+   1119 0.06%:  um... I'll say the
+   1120 0.06%:  so yes
+   1121 0.06%:  um... I'll start
+   1122 0.06%:  um. I'll try to.
+   1123 0.06%:  so great
+   1124 0.06%:  let's hear you
+   1125 0.06%:  um. I guess I'll try to.
+   1126 0.06%:  um I'll
+   1127 0.06%:  you'll agree
+   1128 0.06%:  uh... I'll try to get
+   1129 0.06%:  I guess I'll take you to
+   1130 0.06%:  I'll sum
+   1131 0.06%:  I guess you'll take that
+   1132 0.06%:  he's your
+   1133 0.06%:  I'm out to get
+   1134 0.06%:  uh... I'll make sure I stay
+   1135 0.06%:  yes...
+   1136 0.06%:  yeah I guess. I
+   1137 0.06%:  I'll let you go
+   1138 0.06%:  that's a yes or
+   1139 0.06%:  um... let's all take
+   1140 0.06%:  um... I get
+   1141 0.06%:  uh so
+   1142 0.06%:  I'll make the
+   1143 0.06%:  I guess you are
+   1144 0.06%:  I got your
+   1145 0.06%:  you'll get a
+   1146 0.06%:  I guess all that
+   1147 0.06%:  I'll get that
+   1148 0.06%:  that's the 
+   1149 0.06%:  let's talk at
+   1150 0.05%:  you thought I'
+   1151 0.05%:  you'll get the
+   1152 0.05%:  I'll see that
+   1153 0.05%:  uh I
+   1154 0.05%:  uh. I guess I'm a
+   1155 0.05%:  uh... I guess the
+   1156 0.05%:  I'll try.
+   1157 0.05%:  um. I thought
+   1158 0.05%:  you are a
+   1159 0.05%:  there you go
+   1160 0.05%:  yeah. I guess that.
+   1161 0.05%:  ah.
+   1162 0.05%:  um... stay
+   1163 0.05%:  I got you
+   1164 0.05%:  I get that you're a
+   1165 0.05%:  I'll say that I
+   1166 0.05%:  let's go eat a
+   1167 0.05%:  um... I really
+   1168 0.05%:  I'll guess
+   1169 0.05%:  let me talk
+   1170 0.07%:  let me talk to you
+   1171 0.05%:  yeah I guess. I'll
+   1172 0.05%:  I guess I'm the...
+   1173 0.05%:  let's all go home.
+   1174 0.05%:  I guess a
+   1175 0.05%:  yes. It's true I
+   1176 0.05%:  I guess I'll try that
+   1177 0.05%:  that's the guy
+   1178 0.05%:  I am the
+   1179 0.05%:  uh... so that
+   1180 0.11%:  uh... so that's a
+   1181 0.05%:  yeah. It's got a
+   1182 0.05%:  so 
+   1183 0.05%:  you're... so
+   1184 0.05%:  so that's all
+   1185 0.05%:  uh... so that's your
+   1186 0.05%:  um... Is
+   1187 0.05%:  am I...
+   1188 0.05%:  yeah. I'll talk
+   1189 0.05%:  I'll go home
+   1190 0.05%:  uh... I guess I'll tell your
+   1191 0.05%:  uh... I guess I'll make that
+   1192 0.05%:  let's get you to a
+   1193 0.05%:  um... I guess I'll let your
+   1194 0.05%:  I'll stay that
+   1195 0.05%:  I guess the moral'
+   1196 0.05%:  um... yeah I'll
+   1197 0.05%:  let's try to make
+   1198 0.05%:  that's your met
+   1199 0.05%:  yeah. I'll take
+   1200 0.05%:  I'll get you a
+   1201 0.05%:  I'll let the
+   1202 0.05%:  let me say
+   1203 0.05%:  I got that.
+   1204 0.05%:  I gotta stay
+   1205 0.05%:  um... that's really the
+   1206 0.05%:  okay. I'm out
+   1207 0.05%:  uhh... I'll stay
+   1208 0.05%:  uh. I guess I'll tell
+   1209 0.05%:  you get to
+   1210 0.05%:  let's go sm
+   1211 0.05%:  I guess I'm all out
+   1212 0.05%:  you're the last to
+   1213 0.05%:  I'm out...
+   1214 0.05%:  yeah um
+   1215 0.05%:  I gotta tell
+   1216 0.05%:  um... I'll tell the
+   1217 0.05%:  hey...
+   1218 0.05%:  so totally
+   1219 0.05%:  yeah. I guess I'll look
+   1220 0.05%:  the story's the
+   1221 0.05%:  I thought.
+   1222 0.05%:  okay. I'll tell
+   1223 0.05%:  um. I guess I'll tell that
+   1224 0.05%:  I guess I'm at a
+   1225 0.05%:  I get that.
+   1226 0.05%:  let's get out our
+   1227 0.05%:  I'll make sure to say
+   1228 0.05%:  as a result
+   1229 0.05%:  let me out
+   1230 0.05%:  let's all take our
+   1231 0.05%:  let's start a
+   1232 0.05%:  so that's my
+   1233 0.05%:  the story I'
+   1234 0.05%:  let's say that.
+   1235 0.05%:  um... so I'll see you at 
+   1236 0.05%:  um... get
+   1237 0.05%:  all my
+   1238 0.05%:  uh. I guess I'll take
+   1239 0.05%:  um... let's get out
+   1240 0.05%:  yeah. I'm out. I
+   1241 0.05%:  let's go steal
+   1242 0.05%:  I guess our team
+   1243 0.05%:  I'll say.
+   1244 0.05%:  um... I guess your
+   1245 0.05%:  um I guess I'll try
+   1246 0.05%:  uh... that's really
+   1247 0.05%:  I'm here to say I
+   1248 0.05%:  let's say I get
+   1249 0.05%:  yeah. It's great. I
+   1250 0.05%:  your last
+   1251 0.05%:  I'll use your
+   1252 0.05%:  I'm out here
+   1253 0.05%:  I'll see you to
+   1254 0.05%:  huh. I guess you'll
+   1255 0.05%:  um... I thought you
+   1256 0.05%:  I'll get the
+   1257 0.05%:  as I'm sure
+   1258 0.05%:  okay. I'm a
+   1259 0.05%:  uh... I'll see you all
+   1260 0.05%:  uh... I guess I'll let my
+   1261 0.05%:  I guess you'll hear
+   1262 0.05%:  he says.
+   1263 0.05%:  I'm a 
+   1264 0.05%:  uh... I'll let
+   1265 0.05%:  I'll eat
+   1266 0.05%:  um... so the
+   1267 0.05%:  yeah. I'm sort
+   1268 0.05%:  um... so there's a lot
+   1269 0.05%:  um... I got that
+   1270 0.05%:  yeah I guess I am
+   1271 0.05%:  as you'
+   1272 0.05%:  uh... your
+   1273 0.05%:  I'll let your
+   1274 0.05%:  yeah. I'm ret
+   1275 0.05%:  tell me a story...
+   1276 0.05%:  let's all go team
+   1277 0.05%:  yeah. I'll get that
+   1278 0.05%:  all that'
+   1279 0.05%:  so you're the
+   1280 0.05%:  tell us a
+   1281 0.05%:  um. I'll see you all
+   1282 0.05%:  you get a
+   1283 0.05%:  let's get you out
+   1284 0.05%:  there'll
+   1285 0.05%:  um... I'll see ya at
+   1286 0.05%:  huh. I guess my
+   1287 0.05%:  so are
+   1288 0.06%:  so are you.
+   1289 0.05%:  that's a story.
+   1290 0.05%:  that's your team
+   1291 0.05%:  um. I guess I'll try that
+   1292 0.05%:  yeah. It's a met
+   1293 0.05%:  let's go take a
+   1294 0.05%:  I'll take that you
+   1295 0.05%:  you'll use that
+   1296 0.05%:  I guess I'm out a
+   1297 0.05%:  uh... let's go home
+   1298 0.05%:  um. It's okay
+   1299 0.05%:  so'
+   1300 0.05%:  so's the
+   1301 0.05%:  that's you there
+   1302 0.05%:  that's a y
+   1303 0.05%:  huh. I guess I'll take
+   1304 0.05%:  I'm a t
+   1305 0.05%:  okay. I get
+   1306 0.05%:  as usual
+   1307 0.05%:  I'll tell that
+   1308 0.05%:  the story's all
+   1309 0.05%:  you lost the
+   1310 0.05%:  huh... I
+   1311 0.22%:  huh... I guess I'm
+   1312 0.05%:  huh. I guess I'm out.
+   1313 0.05%:  um yeah. I
+   1314 0.05%:  um... I guess I'll tell you a
+   1315 0.05%:  I thought my
+   1316 0.05%:  uh... I guess I'm really
+   1317 0.05%:  so you're a
+   1318 0.05%:  um. I guess I'll take your
+   1319 0.05%:  um... I guess I'll talk to ya
+   1320 0.05%:  uh... I'll tell you
+   1321 0.05%:  I'll ask you
+   1322 0.05%:  yeah I guess I'll talk
+   1323 0.05%:  uh... I guess I'll take my
+   1324 0.05%:  uh. I'll stay
+   1325 0.05%:  so great.
+   1326 0.05%:  you'll hear
+   1327 0.05%:  uh... I guess I'm outta
+   1328 0.05%:  uh... I guess I'll make a
+   1329 0.05%:  you're at least
+   1330 0.05%:  I gotta tell my
+   1331 0.05%:  I'm really a ghost
+   1332 0.05%:  I'm all ears
+   1333 0.04%:  you see that
+   1334 0.04%:  let's let our
+   1335 0.04%:  are those
+   1336 0.04%:  I'll say to
+   1337 0.04%:  um. I'll talk
+   1338 0.40%:  um. I'll talk to you later.
+   1339 0.07%:  um. I'll talk to your
+   1340 0.04%:  I really thought
+   1341 0.04%:  I hear you got
+   1342 0.04%:  um... Is that a
+   1343 0.04%:  I guess you'll all
+   1344 0.04%:  um... let's shake
+   1345 0.04%:  I'm a really
+   1346 0.04%:  um. It's your
+   1347 0.04%:  I guess... my
+   1348 0.04%:  I'll guess you
+   1349 0.04%:  let's go talk
+   1350 0.04%:  let's talk a
+   1351 0.04%:  um. I guess I'll look
+   1352 0.04%:  I'ma go
+   1353 0.04%:  let me go
+   1354 0.04%:  uh... so you'll
+   1355 0.04%:  let's all hear
+   1356 0.04%:  um... let's take a
+   1357 0.04%:  that's a lot
+   1358 0.04%:  I ate a
+   1359 0.04%:  I'm a real
+   1360 0.04%:  that's a yes...
+   1361 0.04%:  I guess all the
+   1362 0.04%:  you're all the
+   1363 0.04%:  let's all gather
+   1364 0.04%:  uh... yes
+   1365 0.04%:  tell that
+   1366 0.04%:  um. I'll talk to the
+   1367 0.04%:  I'll hear
+   1368 0.04%:  here at
+   1369 0.04%:  I'll take you
+   1370 0.04%:  you'll shut
+   1371 0.04%:  um. I'll see your
+   1372 0.04%:  let's get a room
+   1373 0.04%:  I say that
+   1374 0.04%:  I see.
+   1375 0.04%:  I guess... the
+   1376 0.04%:  I'll get you later
+   1377 0.04%:  are the
+   1378 0.04%:  um. I guess I'll talk to you at
+   1379 0.04%:  um... yeah I guess that
+   1380 0.04%:  okay. I'm the
+   1381 0.04%:  you'll talk
+   1382 0.04%:  let's talk some
+   1383 0.04%:  yes. It's all
+   1384 0.04%:  yeah... um
+   1385 0.04%:  let's talk later.
+   1386 0.04%:  that story'
+   1387 0.04%:  uh... that's okay
+   1388 0.04%:  you'll take that
+   1389 0.04%:  that makes you
+   1390 0.04%:  um... so you're a
+   1391 0.04%:  ahh
+   1392 0.04%:  uh... I'll try to make
+   1393 0.04%:  um. I'll say that.
+   1394 0.04%:  I guess I'm a really
+   1395 0.04%:  I guess they'll
+   1396 0.04%:  you're all set
+   1397 0.04%:  all I got
+   1398 0.04%:  I'm at your house.
+   1399 0.04%:  um... I get that
+   1400 0.04%:  I guess I'll talk to you...
+   1401 0.04%:  um. I got
+   1402 0.04%:  um yeah I
+   1403 0.04%:  uh... so that's my
+   1404 0.04%:  I'll look at
+   1405 0.04%:  yeah I guess that'll
+   1406 0.04%:  I got to
+   1407 0.04%:  yeah. I guess I'm too
+   1408 0.04%:  uh... let's hear
+   1409 0.04%:  hey. I'll
+   1410 0.04%:  let's say I go
+   1411 0.04%:  uh. I'm a
+   1412 0.04%:  um. I thought I
+   1413 0.04%:  that's all he
+   1414 0.04%:  let's share a
+   1415 0.04%:  that's a th
+   1416 0.04%:  you see a
+   1417 0.04%:  uh. I'll go
+   1418 0.04%:  yes to that
+   1419 0.04%:  tell us the
+   1420 0.04%:  I guess I'll take that you
+   1421 0.04%:  um... that's sort
+   1422 0.04%:  huh... I'
+   1423 0.04%:  um. It's really
+   1424 0.04%:  uh... I guess I'll let that
+   1425 0.04%:  yee
+   1426 0.04%:  uh... I guess I'll tell that
+   1427 0.04%:  let's go home.
+   1428 0.04%:  let's all start
+   1429 0.04%:  yeah. It'll
+   1430 0.04%:  um... I'll stay that
+   1431 0.04%:  um... let's say that I
+   1432 0.04%:  you'll use the
+   1433 0.04%:  I'm a total
+   1434 0.04%:  uh... I'll see your
+   1435 0.04%:  ah yes
+   1436 0.04%:  I'm a house
+   1437 0.04%:  I thought your
+   1438 0.04%:  yeah that's our
+   1439 0.04%:  uh. I'm the
+   1440 0.04%:  I'm the host
+   1441 0.04%:  that's... so
+   1442 0.04%:  let me ask a
+   1443 0.04%:  y'all got that
+   1444 0.04%:  uh. It
+   1445 0.05%:  uh. It's a
+   1446 0.04%:  I get you
+   1447 0.04%:  um... I'll get that
+   1448 0.04%:  uh... let's all go out
+   1449 0.04%:  let's take you
+   1450 0.04%:  let's say that...
+   1451 0.04%:  I guess you're all out
+   1452 0.04%:  uh I guess
+   1453 0.11%:  uh I guess I'm
+   1454 0.04%:  let me ask.
+   1455 0.04%:  uh... I'll tell your
+   1456 0.04%:  to make
+   1457 0.04%:  uh... I guess I'm that
+   1458 0.04%:  I'll see you at a sl
+   1459 0.04%:  yeah I guess I'm all
+   1460 0.04%:  all I really
+   1461 0.04%:  yess
+   1462 0.04%:  um... you get
+   1463 0.04%:  let's say our
+   1464 0.04%:  uh... I'll see ya
+   1465 0.04%:  uh... let's all try
+   1466 0.04%:  yeah... the
+   1467 0.04%:  uh... that's a met
+   1468 0.04%:  um... let's all talk
+   1469 0.04%:  uh... that's us
+   1470 0.04%:  um. I guess. I
+   1471 0.04%:  um. I guess. I'll try.
+   1472 0.04%:  I guess I'm a real
+   1473 0.04%:  I must say
+   1474 0.04%:  uhh... so
+   1475 0.04%:  I hear that'
+   1476 0.04%:  uh... go
+   1477 0.04%:  uh... there
+   1478 0.15%:  uh... there's a
+   1479 0.06%:  uh... there's a lot
+   1480 0.04%:  uh... I gotta
+   1481 0.04%:  the same
+   1482 0.04%:  I'll say that.
+   1483 0.04%:  here you
+   1484 0.04%:  yeah I get
+   1485 0.04%:  uh. I guess I'll let
+   1486 0.04%:  tell my
+   1487 0.04%:  that's the real you
+   1488 0.04%:  um... that's al
+   1489 0.04%:  erm... I
+   1490 0.04%:  I took that
+   1491 0.04%:  let's talk to you
+   1492 0.04%:  uh... tell your
+   1493 0.04%:  um. I'll tell your
+   1494 0.04%:  you're all a
+   1495 0.04%:  yeah. I get that. I
+   1496 0.04%:  uh... the story
+   1497 0.04%:  I'm a re
+   1498 0.04%:  I... I
+   1499 0.04%:  uh... that's a story
+   1500 0.04%:  uh... I guess I'll talk to my other
+   1501 0.04%:  I'll use the
+   1502 0.04%:  yeah I'm the
+   1503 0.04%:  to re
+   1504 0.04%:  yeah. It's got a lot
+   1505 0.04%:  uhh... I'll go
+   1506 0.04%:  I see you got
+   1507 0.04%:  all those
+   1508 0.04%:  uh... I'm totally
+   1509 0.04%:  um. I thought you
+   1510 0.04%:  I got out
+   1511 0.04%:  yeah I guess I'm that
+   1512 0.04%:  yeah. It's a lot.
+   1513 0.04%:  you'll get me a
+   1514 0.04%:  hee
+   1515 0.04%:  uh... so I'll see
+   1516 0.11%:  uh... so I'll see you at
+   1517 0.04%:  um... let's all hug
+   1518 0.04%:  I guess I'll talk to our
+   1519 0.04%:  yeah I get that.
+   1520 0.04%:  so that's all I
+   1521 0.04%:  uh. I'll see you at 
+   1522 0.04%:  I guess I'll try to...
+   1523 0.04%:  huh... I'll
+   1524 0.04%:  um... I'll tell that
+   1525 0.04%:  all I'm really
+   1526 0.04%:  yeah... so
+   1527 0.04%:  uh I'
+   1528 0.04%:  um... so let
+   1529 0.12%:  um... so let's all
+   1530 0.10%:  um... so let's go
+   1531 0.08%:  um... so let's get
+   1532 0.06%:  um... so let's all go
+   1533 0.04%:  um... so let's talk
+   1534 0.04%:  the story gets
+   1535 0.04%:  the truth
+   1536 0.04%:  yeah... let
+   1537 0.21%:  yeah... let's all
+   1538 0.17%:  yeah... let's go
+   1539 0.10%:  yeah... let's all go
+   1540 0.05%:  yeah... let's all go to
+   1541 0.04%:  yeah. Is
+   1542 0.04%:  okay. I'll get
+   1543 0.04%:  let's all go take
+   1544 0.04%:  yeah. I'll get that.
+   1545 0.04%:  um... I guess I'll take you
+   1546 0.04%:  you're all...
+   1547 0.04%:  I'll talk to ya
+   1548 0.04%:  I'll let me
+   1549 0.04%:  let's make that 
+   1550 0.04%:  yeah I gotta
+   1551 0.04%:  um... I gotta say I
+   1552 0.04%:  so meta.
+   1553 0.04%:  are you al
+   1554 0.04%:  um... I guess I really
+   1555 0.04%:  yaa
+   1556 0.04%:  I'll take your
+   1557 0.04%:  I guess I'll make out
+   1558 0.04%:  huh. I guess I'll let
+   1559 0.04%:  let's all hug.
+   1560 0.04%:  let me try
+   1561 0.04%:  that's us all
+   1562 0.04%:  um... I'll use
+   1563 0.04%:  um... I'll take the
+   1564 0.04%:  um... tell the
+   1565 0.04%:  uh... say
+   1566 0.04%:  I gotta ask.
+   1567 0.04%:  my other
+   1568 0.04%:  okay. I'll let
+   1569 0.04%:  I'll eat my
+   1570 0.04%:  uh... I'll make a
+   1571 0.04%:  yeah. It's all I got
+   1572 0.04%:  ugh
+   1573 0.04%:  I guess I'll talk to you a
+   1574 0.04%:  um... I'll talk to you later I
+   1575 0.04%:  I say.
+   1576 0.04%:  I'll go tell
+   1577 0.04%:  yeah. I'll talk to the
+   1578 0.04%:  I'll say...
+   1579 0.04%:  I guess all I'll
+   1580 0.04%:  let's go tell
+   1581 0.04%:  I'm here to say...
+   1582 0.04%:  uh... let's say that
+   1583 0.04%:  yeah. It's gotta
+   1584 0.04%:  yeah. I'm guess
+   1585 0.04%:  I guess... I'll take
+   1586 0.04%:  yeah. I am.
+   1587 0.04%:  yeah... I'm out
+   1588 0.04%:  there's that I
+   1589 0.04%:  that's... my
+   1590 0.04%:  um... let's all go to a
+   1591 0.03%:  um... that's all your
+   1592 0.03%:  you take that
+   1593 0.03%:  that's your...
+   1594 0.03%:  all I get
+   1595 0.03%:  let's all say the
+   1596 0.03%:  um... I'll ask
+   1597 0.03%:  uhh... I guess I'll take
+   1598 0.03%:  okay...
+   1599 0.03%:  um. It's all
+   1600 0.03%:  uh. I guess I'll talk
+   1601 0.40%:  uh. I guess I'll talk to you later.
+   1602 0.09%:  uh. I guess I'll talk to my
+   1603 0.05%:  uh. I guess I'll talk to your
+   1604 0.05%:  uh. I guess I'll talk to the
+   1605 0.03%:  um. I really
+   1606 0.03%:  I'm you.
+   1607 0.03%:  you'll use me
+   1608 0.03%:  um... let's all get a
+   1609 0.03%:  I guess I'll talk to a
+   1610 0.03%:  y'all got to
+   1611 0.03%:  yea.
+   1612 0.03%:  let's all make out.
+   1613 0.03%:  huh. I guess I'll tell you
+   1614 0.03%:  er.
+   1615 0.03%:  huh... I guess I'll try
+   1616 0.03%:  um. I guess I'll tell you that
+   1617 0.03%:  so hurt
+   1618 0.03%:  um. Is there
+   1619 0.03%:  there you go.
+   1620 0.03%:  um... I'll get you
+   1621 0.03%:  I guess all you
+   1622 0.03%:  uh... a
+   1623 0.03%:  I see you'll
+   1624 0.03%:  that's all she
+   1625 0.03%:  that's a yes to our
+   1626 0.03%:  um... you'll see
+   1627 0.03%:  yeah. I guess our
+   1628 0.03%:  as the
+   1629 0.03%:  um... you'll tell
+   1630 0.03%:  to get
+   1631 0.03%:  uh... so that's all
+   1632 0.03%:  go to the
+   1633 0.03%:  you're a t
+   1634 0.03%:  yeah... I guess I'm that
+   1635 0.03%:  um... so let's all get
+   1636 0.03%:  uh... I'll talk
+   1637 0.05%:  uh... I'll talk to my
+   1638 0.04%:  uh... I'll talk to your
+   1639 0.04%:  uh... I'll talk to the
+   1640 0.03%:  um yeah. I'll
+   1641 0.03%:  uh... let's make that
+   1642 0.03%:  let's hear all
+   1643 0.03%:  let's take you out
+   1644 0.03%:  um. I guess I'll take a
+   1645 0.03%:  um. I guess you're all
+   1646 0.03%:  uh. I guess I'm out.
+   1647 0.03%:  I ate my
+   1648 0.03%:  I guess the moral to
+   1649 0.03%:  um. I guess that'll
+   1650 0.03%:  I'm at a loss. I
+   1651 0.03%:  I'm sorta the
+   1652 0.03%:  the guy
+   1653 0.03%:  um.. I
+   1654 0.03%:  um. I get
+   1655 0.03%:  yes that
+   1656 0.11%:  yes that's true
+   1657 0.08%:  yes that's true.
+   1658 0.04%:  yes that's the
+   1659 0.03%:  yes that's a
+   1660 0.03%:  you'll take me
+   1661 0.03%:  I'll get to the
+   1662 0.03%:  I really thought I
+   1663 0.03%:  tell me all
+   1664 0.03%:  huh. I guess I'll talk
+   1665 0.42%:  huh. I guess I'll talk to you later.
+   1666 0.07%:  huh. I guess I'll talk to my
+   1667 0.06%:  huh. I guess I'll talk to your
+   1668 0.03%:  yeah. I get that. I'
+   1669 0.03%:  so... so
+   1670 0.03%:  yeah that's sort
+   1671 0.03%:  ahem... I
+   1672 0.03%:  um... you're out
+   1673 0.03%:  I guess I'll try to take
+   1674 0.03%:  the moral'
+   1675 0.06%:  the moral's that you
+   1676 0.03%:  uh... let's talk later
+   1677 0.03%:  let's take your
+   1678 0.03%:  okay I
+   1679 0.05%:  okay I'll
+   1680 0.03%:  um... I'll see that
+   1681 0.03%:  um... I guess I'll talk to you later h

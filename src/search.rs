@@ -133,7 +133,7 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
         let chars_i = chars_so_far as f32 * tok_i as f32 / probs.len() as f32;
 
         // This is ill-behaved off the end in *both* directions!
-        let filter_ratio = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        let filter_ratio = 0.05 + 0.5 * 0.55 * ((80.0 - chars_i) / 80.0);
         prod = prod / filter_ratio as f64;
     }
 
