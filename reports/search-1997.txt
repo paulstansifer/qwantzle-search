@@ -1,99 +1,727 @@
 um... I guess I'll talk to you later huh
       0 100.00%: 
-      1 62.77%:  um
-      2 60.83%:  um...
-      3 50.62%:  I
-      4 113.10%:  I'm a
-      5 101.65%:  I'll
-      6 97.41%:  I'm the
-      7 73.76%:  I'll see
-      8 690.52%:  I'll see you at
-      9 200.41%:  I'll see you at 
-     10 85.53%:  I'll see you at a
-     11 57.05%:  I'll see you at our
-     12 54.54%:  I guess
-     13 1025.47%:  I guess I'm
-     14 516.52%:  I guess I'm the
-     15 166.98%:  I guess I'm a
-     16 139.12%:  I guess I'm...
-     17 137.63%:  I guess I'm out
-     18 115.43%:  I guess I'm your
-     19 66.32%:  I guess I'll try
-     20 63.84%:  I guess I'll take
-     21 56.95%:  I guess I'll tell
-     22 89.88%:  I guess I'll tell you
-     23 58.21%:  I guess I'll tell you a
-     24 48.95%:  I guess I'll let
-     25 47.88%:  I guess I'll let my
-     26 47.09%:  I guess I'm outta
-     27 46.08%:  I guess I'm really
-     28 45.54%:  I guess I'll try to make
-     29 45.32%:  I'll see you all
-     30 43.75%:  I guess I'll take my
-     31 41.31%:  I'll say
-     32 39.55%:  I guess I'm outta the
-     33 38.36%:  I guess I'm out.
-     34 38.23%:  I guess I'll talk
-     35 2187.99%:  I guess I'll talk to you later.
-     36 673.55%:  I guess I'll talk to you later...
-     37 252.03%:  I guess I'll talk to my
-     38 184.80%:  I guess I'll talk to your
-     39 111.67%:  I guess I'll talk to the
-     40 73.09%:  I guess I'll talk to you later h
-     41 58.05%:  I guess I'll talk to you at
-     42 54.05%:  I guess I'll talk to you later huh.
-     43 46.25%:  I guess I'll talk to my other
-     44 36.45%:  you
-     45 111.04%:  you're the
-     46 66.02%:  you're a
-     47 36.37%:  I guess you
-     48 135.44%:  I guess you'll
-     49 42.29%:  I guess you're a
-     50 35.26%:  I guess I'll tell you that
-     51 35.12%:  I guess I'm... the
-     52 32.19%:  yeah
-     53 39.84%:  yeah.
-     54 38.07%:  yeah. I
-     55 62.82%:  yeah. I guess
-     56 1335.30%:  yeah. I guess I'll
-     57 273.60%:  yeah. I guess I'm a
-     58 135.49%:  yeah. I guess I'm out
-     59 233.07%:  yeah. I guess I'm out.
-     60 66.74%:  yeah. I guess I'm that
-     61 62.99%:  yeah. I guess I'm all
-     62 58.45%:  yeah. I'
-     63 59.33%:  yeah. I'll
-     64 52.12%:  yeah. I guess that
-     65 51.95%:  yeah. I guess I'll talk
-     66 42.67%:  yeah. I'm the
-     67 40.71%:  yeah. I guess I'm that.
-     68 37.79%:  yeah. I guess I'm outta
-     69 36.96%:  yeah. I'm a
-     70 31.85%:  I guess I'll tell your
-     71 31.33%:  you'll
-     72 30.42%:  I guess I'll make
-     73 30.41%:  yeah. I guess I'm that too
-     74 29.22%:  I'm your
-     75 29.17%:  I guess I'll...
-     76 28.98%:  yeah. I guess.
-     77 28.94%:  I guess you're...
-     78 28.38%:  I guess you're all
-     79 28.04%:  um... I
-     80 124.49%:  um... I'll try
-     81 76.92%:  um... I'll see
-     82 722.30%:  um... I'll see you at
-     83 198.82%:  um... I'll see you at 
-     84 89.26%:  um... I'll see you at a
-     85 79.52%:  um... I'll see you at our
-     86 41.21%:  um... I'll stay
-     87 37.37%:  um... I guess
-     88 620.94%:  um... I guess I'll try
-     89 138.78%:  um... I guess I'll take
-     90 118.25%:  um... I guess I'll tell
-     91 100.87%:  um... I guess I'll tell you
-     92 100.32%:  um... I guess I'll let
-     93 93.03%:  um... I guess I'll talk
-     94 490.59%:  um... I guess I'll talk to your
-     95 392.66%:  um... I guess I'll talk to the
-     96 138.83%:  um... I guess I'll talk to you at
-     97 107.49%:  um... I guess I'll talk to you later h
+      1 19.93%:  yeah
+      2 18.73%:  there
+      3 18.13%:  that
+      4 17.98%:  you
+      5 17.54%:  um
+      6 17.03%:  your
+      7 16.75%:  okay
+      8 16.70%:  that's really
+      9 16.60%:  tell
+     10 16.59%:  here
+     11 16.47%:  more
+     12 16.30%:  you thought
+     13 15.71%:  the
+     14 15.61%:  that's the
+     15 15.30%:  that's three
+     16 15.18%:  that's your
+     17 15.10%:  are
+     18 15.10%:  there's that...
+     19 14.98%:  let
+     20 14.92%:  the story
+     21 14.70%:  yes
+     22 14.57%:  um...
+     23 14.49%:  hey
+     24 14.42%:  let me
+     25 14.35%:  all
+     26 14.89%:  all together
+     27 14.17%:  I
+     28 16.21%:  I guess
+     29 14.43%:  I thought
+     30 13.97%:  the moral
+     31 13.95%:  that's okay
+     32 13.91%:  tell me your
+     33 13.87%:  yeah.
+     34 13.76%:  so
+     35 13.72%:  that story
+     36 13.70%:  there's also
+     37 13.66%:  here's a
+     38 13.60%:  there's a
+     39 13.57%:  that makes
+     40 13.50%:  there's lots
+     41 13.44%:  so totally
+     42 13.43%:  yeah that
+     43 13.37%:  there you
+     44 13.35%:  you gotta
+     45 13.28%:  you agree
+     46 13.14%:  that's all
+     47 13.06%:  let's all
+     48 12.97%:  my
+     49 14.16%:  my thoughts
+     50 12.78%:  that's our
+     51 12.78%:  yeah...
+     52 12.75%:  that's...
+     53 12.72%:  I guess that
+     54 12.71%:  that's you
+     55 12.68%:  to
+     56 12.56%:  I really
+     57 12.87%:  I really thought
+     58 12.55%:  let's talk
+     59 12.54%:  here's that
+     60 12.53%:  tell us
+     61 12.52%:  that's really the
+     62 12.49%:  let's get
+     63 12.41%:  tell me that
+     64 12.35%:  that's my
+     65 12.35%:  there's all
+     66 12.33%:  tell me your thoughts
+     67 12.28%:  I thought you
+     68 12.27%:  I guess you
+     69 12.26%:  here's my
+     70 12.26%:  there that
+     71 12.25%:  let's start
+     72 12.25%:  am
+     73 13.48%:  am I totally
+     74 12.32%:  am I really
+     75 12.24%:  let's shake
+     76 12.23%:  ah
+     77 12.23%:  er
+     78 12.22%:  go
+     79 12.22%:  there's...
+     80 12.19%:  as
+     81 12.38%:  as you
+     82 12.18%:  he
+     83 12.17%:  tell your
+     84 12.16%:  let's share
+     85 12.11%:  he totally
+     86 12.08%:  all those
+     87 12.06%:  the other
+     88 12.05%:  you thought I
+     89 11.97%:  that last
+     90 11.92%:  all that
+     91 11.84%:  are you the
+     92 11.80%:  you hear
+     93 11.79%:  the truth
+     94 11.79%:  you seem
+     95 11.79%:  you talk
+     96 11.79%:  you must
+     97 11.78%:  you make
+     98 11.78%:  are you...
+     99 11.77%:  the short
+    100 11.77%:  you lost
+    101 11.77%:  you take
+    102 11.75%:  there's that I
+    103 11.72%:  you take that
+    104 11.71%:  that makes us...
+    105 11.71%:  are you all
+    106 11.70%:  that's a
+    107 11.68%:  let's make
+    108 11.63%:  let's hear
+    109 11.61%:  tell that
+    110 11.58%:  okay.
+    111 11.55%:  let me ask
+    112 11.50%:  let's go
+    113 11.47%:  um yeah
+    114 11.46%:  I'm totally
+    115 11.46%:  all these
+    116 11.45%:  are those
+    117 11.43%:  that's the moral
+    118 11.42%:  there's my
+    119 11.41%:  more salt
+    120 11.39%:  I guess your
+    121 11.37%:  your last
+    122 11.32%:  that's me
+    123 11.31%:  you lost the
+    124 11.26%:  I gotta
+    125 11.25%:  that's us
+    126 11.25%:  you're the
+    127 11.24%:  all the
+    128 11.23%:  I guess I really
+    129 11.22%:  u
+    130 11.20%:  to resume
+    131 11.20%:  tell me all
+    132 11.19%:  you agree to
+    133 11.18%:  as usual
+    134 11.14%:  let's take
+    135 11.13%:  tell me...
+    136 11.10%:  let's stay
+    137 11.09%:  all you
+    138 11.09%:  let's team
+    139 11.07%:  tell me you
+    140 11.03%:  um... there
+    141 13.45%:  um... there's that
+    142 11.03%:  okay that
+    143 11.01%:  I guess the
+    144 11.12%:  I guess the moral
+    145 11.01%:  let's say
+    146 10.99%:  he says
+    147 10.98%:  you agree that
+    148 10.96%:  to sum
+    149 10.95%:  tell them
+    150 10.94%:  let's all gather
+    151 10.93%:  all three
+    152 10.93%:  there's at
+    153 10.92%:  you're that
+    154 10.92%:  you're team
+    155 10.92%:  you got
+    156 10.90%:  hey guess
+    157 10.90%:  let's look
+    158 10.90%:  I guess they
+    159 10.90%:  there may
+    160 10.89%:  tell us more
+    161 10.87%:  there...
+    162 10.83%:  the story takes
+    163 10.82%:  he really
+    164 10.81%:  that's all you
+    165 10.78%:  am I guest
+    166 10.76%:  let's talk through
+    167 10.76%:  the rest
+    168 10.72%:  tell the
+    169 10.71%:  um... yeah
+    170 10.67%:  yes.
+    171 10.67%:  here's to
+    172 10.66%:  the real
+    173 10.63%:  I guess I'm
+    174 10.83%:  I guess I'm totally
+    175 10.62%:  there's that. I
+    176 10.62%:  so great
+    177 10.62%:  that's the real
+    178 10.57%:  you see
+    179 10.55%:  the story goes
+    180 10.54%:  the last
+    181 10.53%:  you get
+    182 10.50%:  all I
+    183 10.69%:  all I really
+    184 10.46%:  you are
+    185 10.44%:  um... that
+    186 10.57%:  um... that's really
+    187 10.43%:  there's a lot
+    188 10.43%:  I'm really
+    189 10.40%:  the same
+    190 10.40%:  that's the same
+    191 10.39%:  the take
+    192 10.38%:  here's a small
+    193 10.38%:  here's a shout
+    194 10.43%:  here's a shout out
+    195 10.37%:  the guys
+    196 10.37%:  the most
+    197 10.36%:  you use
+    198 10.35%:  I guess...
+    199 10.32%:  let that
+    200 10.32%:  are you al
+    201 10.31%:  let's all shake
+    202 10.31%:  you...
+    203 10.30%:  I really thought I
+    204 10.30%:  there's a small
+    205 10.24%:  all your
+    206 10.21%:  y
+    207 12.12%:  y'all thought
+    208 10.19%:  a
+    209 10.89%:  a message
+    210 10.18%:  that's your theme
+    211 10.17%:  here you
+    212 10.17%:  that'll
+    213 10.17%:  tell me a
+    214 10.15%:  that's a yes
+    215 10.11%:  your last thought
+    216 10.10%:  I thought I
+    217 10.09%:  h
+    218 10.09%:  my other
+    219 10.09%:  yeah um
+    220 10.08%:  uh...
+    221 10.07%:  you're...
+    222 10.06%:  let's say that
+    223 10.06%:  am I your
+    224 10.06%:  that's okay.
+    225 10.05%:  so true
+    226 10.04%:  you're all
+    227 10.04%:  let's make that
+    228 10.04%:  that's our team
+    229 10.04%:  y'all gotta
+    230 10.03%:  I guess I'm really
+    231 10.03%:  that makes you
+    232 10.02%:  are they
+    233 10.02%:  my house
+    234 10.02%:  let's all share
+    235 10.01%:  er...
+    236 9.98%:  there'll
+    237 9.97%:  tell us your
+    238 10.06%:  tell us your thoughts
+    239 9.96%:  the story gets
+    240 9.95%:  let's all stay
+    241 9.95%:  let's all get
+    242 9.94%:  all those years
+    243 9.94%:  yeah that's true
+    244 9.94%:  let's all start
+    245 9.92%:  um... tell
+    246 9.92%:  okay...
+    247 9.89%:  tell me a story...
+    248 9.89%:  I guess my
+    249 9.89%:  I thought your
+    250 9.88%:  am I guest star
+    251 9.88%:  let's all go
+    252 9.87%:  yes that
+    253 10.61%:  yes that's true
+    254 9.84%:  um... your
+    255 10.48%:  um... your thoughts
+    256 9.84%:  I guess our
+    257 9.83%:  let's sum
+    258 9.82%:  tell you
+    259 9.81%:  let me talk
+    260 10.03%:  let me talk to you
+    261 9.81%:  um... okay
+    262 9.81%:  you're out
+    263 9.79%:  um... stay
+    264 9.78%:  let's try
+    265 9.77%:  I guess all
+    266 9.77%:  let me ask you...
+    267 9.77%:  yeah that's sort
+    268 9.77%:  y'all there
+    269 9.77%:  that's all you got
+    270 9.77%:  y'all share
+    271 9.77%:  yeah that's more
+    272 9.76%:  y'all thought I
+    273 9.70%:  I guess let
+    274 9.69%:  all the other
+    275 9.68%:  there ya
+    276 9.66%:  y'all share the
+    277 9.66%:  there's... that
+    278 9.65%:  um... that's great
+    279 9.65%:  am I the
+    280 9.64%:  let's use
+    281 9.64%:  let's reg
+    282 9.62%:  let's let
+    283 9.61%:  let's...
+    284 9.61%:  a really
+    285 9.61%:  I thought you'
+    286 9.60%:  let's hug
+    287 9.60%:  let's set
+    288 9.60%:  let's eat
+    289 9.58%:  tell our
+    290 9.55%:  that's your last
+    291 9.55%:  I take
+    292 9.55%:  hey look
+    293 9.55%:  here...
+    294 9.54%:  you must agree
+    295 10.07%:  you must agree that
+    296 9.54%:  am I here
+    297 9.53%:  more out
+    298 9.52%:  I guess I'll take
+    299 9.51%:  I hear
+    300 9.51%:  I took
+    301 9.51%:  are you a
+    302 9.50%:  all I really thought
+    303 9.50%:  I guess I'll tell
+    304 9.50%:  a story
+    305 9.47%:  let's talk later
+    306 9.46%:  all they
+    307 9.46%:  he stole
+    308 9.46%:  he looks
+    309 9.46%:  more the
+    310 9.45%:  he makes
+    311 9.44%:  I guess I'll talk
+    312 11.60%:  I guess I'll talk to you later...
+    313 11.18%:  I guess I'll talk to you later.
+    314 10.13%:  I guess I'll talk to your
+    315 9.79%:  I guess I'll talk to you later h
+    316 9.44%:  more...
+    317 9.44%:  he takes
+    318 9.44%:  he shoot
+    319 9.49%:  he shoots me
+    320 9.43%:  I must
+    321 9.42%:  I guess I'll make
+    322 9.42%:  yeah... that
+    323 9.40%:  um... there's also
+    324 9.37%:  my thoughts are all
+    325 9.37%:  let's use that
+    326 9.35%:  here's a shot
+    327 9.34%:  um... you
+    328 9.43%:  um... you thought
+    329 9.34%:  that's your take
+    330 9.61%:  that's your take home
+    331 9.34%:  so that
+    332 9.34%:  um... that's your
+    333 9.32%:  that's the guy
+    334 9.32%:  I really gotta
+    335 9.32%:  here's a salt
+    336 9.31%:  I guess I'll tell you
+    337 9.29%:  um... that really
+    338 9.29%:  I guess you'll
+    339 9.28%:  um... there's a
+    340 9.28%:  that's your team
+    341 9.27%:  um... tell your
+    342 9.26%:  yeah I
+    343 11.85%:  yeah I guess that
+    344 9.25%:  that's your goal
+    345 9.24%:  so yeah
+    346 9.24%:  there's a shot
+    347 9.24%:  there's a salt
+    348 9.24%:  so meta
+    349 9.23%:  that's... really
+    350 9.22%:  that's all I got
+    351 9.21%:  let's all take
+    352 9.20%:  I guess I'll talk to my
+    353 9.20%:  so hurt
+    354 9.19%:  you take the
+    355 9.19%:  um... there's lots
+    356 9.19%:  am I guest or
+    357 9.19%:  let's all make
+    358 9.19%:  so real
+    359 9.18%:  let's all talk
+    360 9.18%:  you gotta tell
+    361 9.17%:  the story has
+    362 9.15%:  um... that's the
+    363 9.15%:  as your
+    364 9.15%:  ah...
+    365 9.12%:  there.
+    366 9.11%:  I'm guess
+    367 9.10%:  let's all team
+    368 9.09%:  there you go
+    369 9.09%:  let me ask you a
+    370 9.08%:  that's really...
+    371 9.08%:  that's all the
+    372 9.05%:  huh...
+    373 9.05%:  I guess I take
+    374 9.04%:  let's all look
+    375 9.04%:  tell me a story.
+    376 9.04%:  I guess all that
+    377 9.03%:  here I
+    378 9.02%:  go home
+    379 9.02%:  the guy
+    380 9.02%:  tell the story.
+    381 9.01%:  the story'
+    382 9.00%:  the met
+    383 9.00%:  I really thought last
+    384 8.98%:  that story makes
+    385 8.98%:  you thought I'
+    386 8.98%:  are you all set
+    387 8.96%:  the same story
+    388 8.95%:  let's all hear
+    389 8.95%:  let's all make out
+    390 8.93%:  let's all shut
+    391 8.92%:  you go
+    392 8.92%:  I gotta ask
+    393 8.92%:  I guess I really am
+    394 8.92%:  hey...
+    395 8.90%:  the story...
+    396 8.90%:  all I gotta
+    397 8.90%:  you gotta take
+    398 8.90%:  here at
+    399 8.89%:  I'm totally agree
+    400 8.89%:  my last
+    401 8.89%:  let's go steal
+    402 8.89%:  tell the story...
+    403 8.88%:  I'm totally ghost
+    404 8.88%:  that makes us... the
+    405 8.87%:  that makes us the
+    406 8.86%:  y'all are
+    407 8.85%:  yeah that's our
+    408 8.84%:  I guess you tell
+    409 8.83%:  yeah that's...
+    410 8.82%:  let's all look at the
+    411 8.82%:  yeah I guess I'm
+    412 8.82%:  all you gotta
+    413 8.81%:  um... that's okay
+    414 8.81%:  the story got
+    415 8.81%:  you gotta make
+    416 8.81%:  yeah. I
+    417 11.19%:  yeah. I guess
+    418 10.48%:  yeah. I guess that
+    419 9.26%:  yeah. I guess I'll
+    420 8.80%:  tell my
+    421 8.79%:  go team
+    422 8.78%:  um... that's all
+    423 8.78%:  um... let
+    424 9.19%:  um... let's all
+    425 8.77%:  um... the
+    426 8.76%:  you gotta make sure
+    427 8.76%:  I gotta say...
+    428 8.75%:  um.
+    429 8.75%:  um... that's true
+    430 8.75%:  I guess the truth
+    431 8.74%:  um... are
+    432 8.73%:  tell the story all
+    433 8.73%:  um... that's sort
+    434 8.73%:  are the
+    435 8.72%:  my real
+    436 8.72%:  more to
+    437 8.72%:  tell me your last
+    438 8.72%:  yes...
+    439 8.72%:  that's all there
+    440 8.71%:  my take
+    441 8.70%:  you'll
+    442 8.70%:  um... yes
+    443 8.69%:  go easy
+    444 8.68%:  you use the
+    445 8.68%:  that's you there
+    446 8.67%:  y'all talk
+    447 8.67%:  I guess I'll talk to the
+    448 8.67%:  I guess our mutual
+    449 8.67%:  y'all take
+    450 8.66%:  um... tell that
+    451 8.66%:  y'all hear
+    452 8.66%:  y'all look
+    453 8.66%:  you're the ghost
+    454 8.66%:  that's a story
+    455 8.65%:  y'all sure
+    456 8.65%:  y'all must
+    457 8.65%:  y'all tell
+    458 8.65%:  y'all meet
+    459 8.65%:  y'all here
+    460 8.65%:  y'all make
+    461 8.64%:  um... that's really the
+    462 8.63%:  tell me you'
+    463 8.63%:  uh yeah
+    464 8.63%:  um... the story
+    465 8.63%:  are all
+    466 8.62%:  let me say
+    467 8.62%:  tell me.
+    468 8.62%:  to make
+    469 8.62%:  let me out
+    470 8.62%:  um... say
+    471 8.60%:  I guess I'll try
+    472 8.60%:  um... get
+    473 8.60%:  let the
+    474 8.59%:  you get that
+    475 8.59%:  I guess I'll talk to you...
+    476 8.58%:  let me try
+    477 8.58%:  there's a guy
+    478 8.57%:  you hear that...
+    479 8.57%:  I hear that
+    480 8.56%:  go to
+    481 8.56%:  to your
+    482 8.56%:  I guess I'll let
+    483 8.55%:  you got that
+    484 8.55%:  I thought...
+    485 8.55%:  you're so
+    486 8.55%:  let's get to
+    487 8.55%:  to that
+    488 8.55%:  that makes us your
+    489 8.55%:  there ya go
+    490 8.54%:  let's... shake
+    491 8.54%:  that's 
+    492 8.53%:  I guess to
+    493 8.53%:  you're at
+    494 8.82%:  you're at least
+    495 8.53%:  go tell
+    496 8.53%:  I hear you gotta
+    497 8.53%:  there I
+    498 8.52%:  I guess I'll make that
+    499 8.52%:  let's get your
+    500 8.51%:  tell us that
+    501 8.50%:  I guess I'll...
+    502 8.50%:  here to
+    503 8.50%:  tell me I
+    504 8.50%:  am I...
+    505 8.49%:  um... that story
+    506 8.49%:  let's all say
+    507 8.48%:  okay that's the
+    508 8.48%:  here's to you
+    509 8.48%:  let's let our
+    510 8.48%:  tell me '
+    511 8.47%:  that makes you...
+    512 8.47%:  tell us your latest
+    513 8.47%:  I thought our
+    514 8.46%:  tell us some
+    515 8.46%:  that's our theme
+    516 8.45%:  I guess I'm the
+    517 8.45%:  um... let's all gather
+    518 8.43%:  I guess I'm your
+    519 8.43%:  yes that's true.
+    520 8.43%:  as they
+    521 8.42%:  let's talk more
+    522 8.42%:  there's 
+    523 8.42%:  I guess I'll tell your
+    524 8.41%:  let's re
+    525 8.41%:  let's all go home
+    526 8.40%:  um... let's all stay
+    527 8.39%:  tell me a story to
+    528 8.39%:  um..
+    529 8.39%:  so that's really
+    530 8.39%:  yes let
+    531 8.39%:  tell me a story so
+    532 8.38%:  go tell that
+    533 8.38%:  that's your met
+    534 8.38%:  you make that
+    535 8.37%:  all our
+    536 8.37%:  um... there's all
+    537 8.36%:  um yeah that
+    538 8.36%:  um... let's shake
+    539 8.36%:  okay so
+    540 8.36%:  that's your...
+    541 8.35%:  y'all got
+    542 8.34%:  let's go home
+    543 8.34%:  I really hate
+    544 8.34%:  that's... great
+    545 8.33%:  am I out
+    546 8.33%:  that's... three
+    547 8.33%:  that's... your
+    548 8.33%:  um... let's start
+    549 8.33%:  he says that
+    550 8.33%:  he gets
+    551 8.32%:  let's all try
+    552 8.31%:  here's a hot
+    553 8.31%:  I guess all I really
+    554 8.31%:  tell us the
+    555 8.31%:  yeah I guess...
+    556 8.30%:  so...
+    557 8.29%:  um... let's share
+    558 8.29%:  that's... the
+    559 8.29%:  let us
+    560 8.29%:  a great
+    561 8.28%:  here's a guy
+    562 8.28%:  there's a...
+    563 8.27%:  the most you
+    564 8.27%:  a house
+    565 8.26%:  I guess I take that
+    566 8.25%:  I guess I'll talk to my other
+    567 8.24%:  go make
+    568 8.24%:  I guess our team
+    569 8.24%:  a small
+    570 8.24%:  a total
+    571 8.23%:  you're a
+    572 8.23%:  that's really me
+    573 8.23%:  let's get out
+    574 8.23%:  all my
+    575 8.23%:  all that'
+    576 8.22%:  I really thought...
+    577 8.22%:  I got
+    578 8.52%:  I got that
+    579 8.22%:  I get
+    580 8.22%:  that's really us
+    581 8.21%:  go take
+    582 8.21%:  that's three...
+    583 8.21%:  I took the
+    584 8.21%:  that's three you
+    585 8.20%:  ah yeah
+    586 8.20%:  he goes
+    587 8.20%:  go talk
+    588 8.19%:  yeah... tell
+    589 8.19%:  my thoughts are...
+    590 8.19%:  he took
+    591 8.19%:  let's go steal your
+    592 8.19%:  yeah that's me
+    593 8.18%:  let's all hug
+    594 8.18%:  here's my last
+    595 8.18%:  that makes you... the
+    596 8.17%:  am I ste
+    597 8.17%:  go that
+    598 8.17%:  let's take out
+    599 8.17%:  so great.
+    600 8.16%:  let's share a
+    601 8.16%:  I guess that...
+    602 8.16%:  am I you
+    603 8.16%:  more sh
+    604 8.16%:  you make the
+    605 8.16%:  um... say that
+    606 8.15%:  more sl
+    607 8.15%:  you lost that
+    608 8.14%:  he uses
+    609 8.14%:  I'll
+    610 8.13%:  go tell your
+    611 8.13%:  um... let's talk
+    612 8.17%:  um... let's talk later
+    613 8.13%:  yeah...that
+    614 8.13%:  he'
+    615 9.87%:  he's totally
+    616 9.02%:  he's really
+    617 8.61%:  he's mostly
+    618 8.13%:  let's talk some
+    619 8.12%:  I guess I'm that
+    620 8.12%:  let's make that our
+    621 8.12%:  there's all that
+    622 8.12%:  I guess I'm okay
+    623 8.11%:  that's all your
+    624 8.10%:  let's all go share
+    625 8.10%:  let me ask your
+    626 8.10%:  let's get you
+    627 8.10%:  as you see
+    628 8.09%:  I say
+    629 8.09%:  I guess I'll talk to you at
+    630 8.09%:  huh.
+    631 8.08%:  I see
+    632 8.74%:  I see you thought
+    633 8.08%:  I guess I'm totally out
+    634 8.08%:  I guess I'll tell you that
+    635 8.07%:  um... let's stay
+    636 8.07%:  here's to us
+    637 8.07%:  I must say
+    638 8.07%:  you take that home
+    639 8.06%:  hey.
+    640 8.06%:  that story goes
+    641 8.06%:  you gotta let
+    642 8.05%:  I guess I...
+    643 8.17%:  I guess I... totally
+    644 8.05%:  I guess... that
+    645 8.05%:  I gotta stay
+    646 8.04%:  so hot
+    647 8.04%:  you lost the game
+    648 8.04%:  um... so
+    649 8.04%:  I gotta tell
+    650 8.04%:  I get that
+    651 8.04%:  I'm totally here
+    652 8.03%:  
+    653 8.09%:  erm
+    654 8.06%:  erm...
+    655 8.03%:  I guess I'll talk later
+    656 8.03%:  I'm totally sure
+    657 8.03%:  let's all eat
+    658 8.03%:  you're the last
+    659 8.02%:  um... there's a lot
+    660 8.02%:  I'm your
+    661 8.02%:  um... let's all shake
+    662 8.01%:  hah
+    663 8.00%:  let's all use
+    664 8.00%:  I guess I'm totally the
+    665 8.00%:  as the
+    666 8.00%:  let's go team
+    667 8.00%:  yeah... I
+    668 10.06%:  yeah... I guess
+    669 9.36%:  yeah... I guess that
+    670 8.00%:  I guess my other
+    671 8.00%:  I guess they'll
+    672 7.99%:  I guess you're...
+    673 7.99%:  yeah I guess our
+    674 7.99%:  let's take a
+    675 7.99%:  I guess you're all
+    676 7.98%:  you got three
+    677 7.98%:  um... that's our
+    678 7.98%:  I guess you are
+    679 7.98%:  so you
+    680 7.97%:  yeah that's true.
+    681 7.97%:  I...
+    682 7.96%:  I ate
+    683 7.96%:  am I here to stay
+    684 7.96%:  I guess I'll take your
+    685 7.96%:  you hear the
+    686 7.95%:  let's go make
+    687 7.94%:  um... let's get
+    688 7.93%:  um... stay alert
+    689 7.93%:  let's go take
+    690 7.93%:  tell the story as
+    691 7.93%:  I thought my
+    692 7.92%:  there's lots to
+    693 7.92%:  there's... a
+    694 7.91%:  let's go talk
+    695 7.91%:  yeah that's us
+    696 7.91%:  um... that's you
+    697 7.90%:  tell the story so
+    698 7.90%:  let's go tell
+    699 7.90%:  you gotta ask
+    700 7.90%:  that's our last
+    701 7.90%:  um... that's all I got
+    702 7.89%:  you agree to that
+    703 7.89%:  let's go stom
+    704 7.89%:  all the rest
+    705 7.89%:  let's go out
+    706 7.88%:  I'm totally the
+    707 7.88%:  so yes
+    708 7.87%:  um... yeah that
+    709 7.87%:  he's gotta
+    710 7.86%:  so are
+    711 7.86%:  you're the host
+    712 7.86%:  I guess the talk
+    713 7.86%:  let's all go out
+    714 7.85%:  yeah... that's sort
+    715 7.85%:  um... I
+    716 9.74%:  um... I guess
+    717 8.62%:  um... I thought
+    718 8.56%:  um... I guess that
+    719 8.45%:  um... I guess I really
+    720 8.25%:  um... I thought you
+    721 8.06%:  um... I guess that really
+    722 8.01%:  um... I guess I'll take
+    723 7.99%:  um... I guess I'll tell
+    724 7.96%:  um... I guess I'll talk
+    725 8.75%:  um... I guess I'll talk to you later h

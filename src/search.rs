@@ -172,7 +172,7 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = prob_score(&res.tok_probs, res.chars_so_far);
+        let score = generous_score(&res.tok_probs, res.chars_so_far);
 
         Some((res, score))
     }
