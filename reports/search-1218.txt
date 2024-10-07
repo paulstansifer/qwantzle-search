@@ -1,3002 +1,482 @@
 know what? It's really weird when you say that.
       0 100.00%: 
-      1 104.45%: 're not
-      2 99.77%: 're the
-      3 102.47%: 're the one who said
-      4 98.52%: 're there
-      5 97.71%: 're here
-      6 97.60%: 're a
-      7 97.30%: 're in
-      8 96.49%: 're still
-      9 96.10%: 're on
-     10 96.03%: 're not allowed
-     11 95.53%: 're k
-     12 95.14%: 're okay
-     13 95.07%: 're so
-     14 95.07%: 're an
-     15 95.04%: 're always
-     16 95.03%: 're like
-     17 95.00%: 're only
-     18 94.98%: 're really
-     19 94.98%: 're all
-     20 94.96%: 're allowed
-     21 105.09%: 're allowed to say
-     22 125.60%: 're allowed to say that? I
-     23 124.00%: 're allowed to say that? It
-     24 123.56%: 're allowed to say that? Is
-     25 113.60%: 're allowed to say that? Is it
-     26 101.09%: 're allowed to say that in
-     27 100.20%: 're allowed to say that.
-     28 99.06%: 're allowed to say that as
-     29 99.03%: 're allowed to say that when
-     30 98.99%: 're allowed to say that I
-     31 98.80%: 're allowed to say that at
-     32 98.29%: 're allowed to swear
-     33 98.12%: 're allowed to say that? I was
-     34 96.25%: 're allowed to say that? Is it a
-     35 95.76%: 're allowed to say that? I think
-     36 95.42%: 're allowed to say that? It was
-     37 94.94%: 're with
-     38 108.68%: 're with us? I
-     39 107.44%: 're with us? Is
-     40 107.37%: 're with us? It
-     41 94.87%: 're totally
-     42 94.87%: 're allowed to say that? I hate
-     43 94.81%: 're allowed to say that? I want
-     44 94.51%: 're allowed to say that? I wasn
-     45 94.49%: 're allowed to say that? I swear
-     46 94.39%: 're allowed to say that? I say
-     47 94.38%: 're allowed to say that? I saw
-     48 94.37%: 're allowed to say that? I knew
-     49 94.34%: 're allowed to say that? Is he
-     50 94.27%: 're allowed to say that? Is the
-     51 93.75%: 're with us? Is that what
-     52 93.72%: 're here? I
-     53 93.67%: 're there? I
-     54 93.55%: 're allowed to say that? It is
-     55 93.42%: 're allowed to say that? It hur
-     56 93.26%: 're allowed to say that? It wasn
-     57 92.80%: 're allowed to say that? Is a
-     58 92.51%: 're there? It
-     59 92.50%: 're there? Is
-     60 97.40%: 're there? Is this a
-     61 93.06%: 're there? Is that
-     62 91.92%: 're here? Is
-     63 99.58%: 're here? Is this a
-     64 91.91%: 're here? It
-     65 91.36%: 're allowed to use
-     66 91.34%: 're allowed to hear
-     67 90.82%: 're the only
-     68 91.78%: 're the only one that
-     69 91.33%: 're the only one I
-     70 90.67%: 're allowed to think
-     71 90.33%: 're with us? I don
-     72 90.04%: 're the one who says
-     73 89.83%: 're allowed to y
-     74 89.75%: 're allowed to e
-     75 89.61%: 're the one who was
-     76 89.43%: 're the one who draws
-     77 89.41%: 're the one who thinks
-     78 89.39%: 're allowed to hate
-     79 89.33%: 're allowed to take
-     80 89.33%: 're the one who wants
-     81 89.28%: 're allowed to write
-     82 89.22%: 're allowed to answer
-     83 89.20%: 're allowed to?
-     84 89.17%: 're allowed to eat
-     85 89.15%: 're allowed to ask
-     86 89.14%: 're allowed to sne
-     87 108.06%: 're allowed to sneak in?
-     88 93.84%: 're allowed to sneak in a
-     89 93.37%: 're allowed to sneak in at
-     90 93.14%: 're allowed to sneak in as
-     91 92.86%: 're allowed to sneak in that
-     92 92.80%: 're allowed to sneak in.
-     93 89.04%: 're the one who has
-     94 88.78%: 're the one who always
-     95 88.78%: 're the one who had
-     96 88.68%: 're the one who list
-     97 88.65%: 're the one who is
-     98 88.65%: 're the one who talks
-     99 88.59%: 're the one who runs
-    100 88.53%: 're the one who starts
-    101 88.50%: 're the one who t
-    102 88.42%: 're with us? Is there
-    103 88.01%:  know
-    104 93.76%:  know what I'd
-    105 87.99%: 're the one who said that
-    106 87.71%: 're with us too
-    107 87.53%: 're still there
-    108 87.41%: 're allowed to swear in
-    109 87.40%: 're with us now
-    110 87.21%: 're in here
-    111 87.18%:  know what?
-    112 89.89%:  know what? I'd
-    113 87.00%: 're allowed to sneak a
-    114 86.61%: 're the only one with
-    115 86.58%: 're with us? Is that a
-    116 86.53%: 're here? Is this what
-    117 86.41%: 're with us.
-    118 86.37%: 're allowed to say that? Is it an
-    119 86.07%: 're with us on
-    120 86.05%: 're allowed to think that? I
-    121 86.02%: 're allowed to say that? It is a
-    122 86.01%: 're the one who said I
-    123 85.98%: 're with us at
-    124 101.93%: 're with us at the show? I
-    125 100.70%: 're with us at the show? It
-    126 85.92%: 're with us the
-    127 85.89%: 're with us and
-    128 85.86%: 're with us here
-    129 85.86%: 're with us? Is there a way
-    130 85.61%: 're the only one?
-    131 85.47%:  know what I'd really
-    132 85.33%: 're allowed to say that? Is it 
-    133 85.28%: 're the only one at
-    134 85.28%: 're the only one.
-    135 85.05%: 're with us? I was
-    136 84.99%: 're with us at the show? I don
-    137 84.95%: 're allowed to think that? Is
-    138 84.86%:  know what? I'll
-    139 84.84%:  know what I'll
-    140 84.82%: 're still there? I
-    141 84.32%:  know what? I don
-    142 104.80%:  know what? I don't really
-    143 100.88%:  know what? I don't see
-    144 99.25%:  know what? I don't trust
-    145 99.09%:  know what? I don't hear
-    146 98.96%:  know what? I don't either
-    147 87.39%:  know what? I don't see the
-    148 87.12%:  know what? I don't see why we
-    149 87.06%:  know what? I don't see what
-    150 84.26%: 're there? Is this what
-    151 84.07%: 're okay with
-    152 84.02%: 're still here
-    153 83.90%: 're allowed to sneak that
-    154 83.87%: 're with us too? I
-    155 83.86%: 're allowed to say it
-    156 83.78%: 're here? Is that
-    157 83.71%: 're allowed to sneak away
-    158 83.70%: 're allowed to sneak at
-    159 83.70%: 're allowed to sneak an
-    160 83.66%: 're in here? I
-    161 83.62%: 're with us? Is the
-    162 83.50%: 're here? Is this an
-    163 83.45%: 're still here? I
-    164 83.42%: 're with us? I need
-    165 83.39%: 're here? Is this you
-    166 83.12%: 're allowed to sneak in as a
-    167 83.11%: 're with us? Is that the
-    168 83.08%: 're with us? I know
-    169 83.02%: 're with us? It was
-    170 82.94%: 're allowed to say that in a
-    171 82.91%: 're with us now? I
-    172 82.91%: 're with us at the stand
-    173 82.84%: 're here? Is it
-    174 82.75%: 're with us? Is that why we
-    175 82.72%: 're with us? I see
-    176 82.70%: 're in the
-    177 82.67%: 're with us? I knew
-    178 82.65%: 're okay? I
-    179 82.50%: 're with us? Is he
-    180 82.50%: 're with us? It looks
-    181 82.49%: 're allowed to sneak in? I
-    182 82.49%: 're with us too? It
-    183 82.49%: 're not the
-    184 82.48%: 're with us too? Is
-    185 82.44%: 're with us the whole way
-    186 82.43%: 're here? Is this how
-    187 82.37%: 're still there? It
-    188 82.34%:  know what? I don't hear a
-    189 82.24%: 're with us now? Is
-    190 82.20%: 're still there? Is
-    191 82.19%:  heard
-    192 82.17%:  were
-    193 82.15%: 're with us now? It
-    194 82.14%: 're not a
-    195 82.14%: 're with us? I had
-    196 82.14%: 're with us? I heard
-    197 82.12%: 're with us here? I
-    198 82.10%: 're with us? I want
-    199 86.38%: 're with us? I want to know the
-    200 82.08%: 're in here? Is
-    201 82.06%: 're in here? It
-    202 81.99%: 're with us? Is that who
-    203 81.98%: 're with us? I told
-    204 81.96%: 're with us? I asked
-    205 81.90%: 're with us? I saw
-    206 81.89%:  know what? I don't really see
-    207 81.81%: 're with us? I wasn
-    208 81.81%: 're here? Is this why
-    209 81.76%: 're with us? I wanted
-    210 89.89%: 're with us? I wanted to ask
-    211 88.31%: 're with us? I wanted to know
-    212 83.87%: 're with us? I wanted to talk
-    213 82.12%: 're with us? I wanted to say
-    214 81.76%: 're with us? I swear
-    215 81.72%: 're with us? I really
-    216 81.70%: 're with us? I hear
-    217 81.69%: 're with us? I want to learn
-    218 81.69%: 're with us? I always
-    219 81.65%: 're here? Is this all
-    220 81.63%: 're here? Is this to
-    221 81.63%: 're with us? I take
-    222 81.62%: 're allowed to sneak that in? I
-    223 81.62%: 're with us? I only
-    224 81.60%: 're here? Is this on
-    225 81.51%: 're there? Is that why
-    226 81.48%: 're there? Is it
-    227 81.44%: 're with us? Is that where
-    228 81.38%: 're the one who has a
-    229 81.35%: 're allowed to sneak in? It
-    230 81.27%: 're allowed to sneak in? Is
-    231 81.21%: 're with us? It doesn
-    232 81.18%: 're okay? It
-    233 81.14%: 're not one
-    234 81.10%: 're there? Is this an
-    235 81.03%: 're okay? Is
-    236 80.98%: 're with us here? It
-    237 80.97%: 're with us? I want to know what
-    238 80.92%: 're with us here? Is
-    239 80.92%: 're with us? It took
-    240 80.88%: 're with us? It all
-    241 80.86%: 'd
-    242 80.84%: 're with us at the d
-    243 80.83%: 're allowed to ask that
-    244 80.82%: 're with us? It wasn
-    245 80.82%: 're with us? Is one
-    246 80.82%: 're allowed to ask?
-    247 80.81%: 're on the radio
-    248 80.80%: 're with us? Is that how
-    249 80.79%: 're with us? It takes
-    250 80.79%: 're with us at the show.
-    251 80.78%: 're with us at the end
-    252 80.77%: 're a din
-    253 118.03%: 're a dinosaur? I
-    254 115.52%: 're a dinosaur? Is
-    255 144.52%: 're a dinosaur? Is that what
-    256 119.52%: 're a dinosaur? Is that a
-    257 116.73%: 're a dinosaur? Is that why they
-    258 116.34%: 're a dinosaur? Is that why we
-    259 115.26%: 're a dinosaur? It
-    260 114.70%: 're a dinosaur? Is that what the
-    261 114.62%: 're a dinosaur? Is that why the
-    262 114.36%: 're a dinosaur? Is that why he
-    263 113.19%: 're a dinosaur? Is that the
-    264 112.75%: 're a dinosaur? Is that why no
-    265 112.69%: 're a dinosaur? Is that why all
-    266 112.68%: 're a dinosaur? Is that why that
-    267 111.98%: 're a dinosaur? Is that how
-    268 110.62%: 're a dinosaur? Is that who
-    269 110.18%: 're a dinosaur? Is that what he
-    270 109.88%: 're a dinosaur? Is that what they
-    271 109.45%: 're a dinosaur? Is that what we
-    272 108.96%: 're a dinosaur? Is that an
-    273 108.66%: 're a dinosaur? Is that all
-    274 108.55%: 're a dinosaur? Is that okay
-    275 108.54%: 're a dinosaur? Is that what t
-    276 108.54%: 're a dinosaur? Is that on
-    277 108.50%: 're a dinosaur? Is that new
-    278 108.48%: 're a dinosaur? Is that one
-    279 97.23%: 're a dinosaur.
-    280 96.83%: 're a dinosaur who
-    281 96.54%: 're a dinosaur? Is that why all the t
-    282 96.06%: 're a dinosaur now
-    283 95.92%: 're a dinosaur that
-    284 94.89%: 're a dinosaur on
-    285 94.82%: 're a dinosaur at
-    286 93.99%: 're a dinosaur? Is that a new
-    287 92.55%: 're a dinosaur now? I
-    288 90.81%: 're a dinosaur on the
-    289 90.75%: 're a dinosaur now? Is
-    290 105.55%: 're a dinosaur now? Is that why
-    291 95.27%: 're a dinosaur now? Is that a
-    292 94.30%: 're a dinosaur now? Is that what the
-    293 91.02%: 're a dinosaur now? Is that what we
-    294 90.68%: 're a dinosaur? I was
-    295 90.66%: 're a dinosaur now? Is that what he
-    296 90.52%: 're a dinosaur? Is that why that one
-    297 90.47%: 're a dinosaur now? Is that what they
-    298 90.35%: 're a dinosaur now? It
-    299 90.32%: 're a dinosaur? Is that a e
-    300 89.99%: 're a dinosaur now? Is that the
-    301 89.92%: 're a dinosaur? Is that a t
-    302 89.77%: 're a dinosaur? I want
-    303 90.82%: 're a dinosaur? I want to see
-    304 89.55%: 're a dinosaur? I knew
-    305 89.23%: 're a dinosaur? I know
-    306 89.01%: 're a dinosaur? I see
-    307 88.83%: 're a dinosaur? Is that the only
-    308 88.83%: 're a dinosaur? I hate
-    309 97.07%: 're a dinosaur? I hate to tell
-    310 88.79%: 're a dinosaur? I always
-    311 88.78%: 're a dinosaur? I wasn
-    312 88.74%: 're a dinosaur? I saw
-    313 88.66%: 're a dinosaur? I totally
-    314 88.64%: 're a dinosaur? I only
-    315 88.46%: 're a dinosaur? Is that why they all
-    316 88.39%: 're a dinosaur? Is that why we all
-    317 88.34%: 're a dinosaur? Is he
-    318 88.17%: 're a dinosaur? Is that how they
-    319 88.00%: 're a dinosaur? Is that why they won
-    320 88.00%: 're a dinosaur? It was
-    321 87.98%: 're a dinosaur? Is that why we talk
-    322 87.93%: 're a dinosaur? Is that why they let
-    323 87.88%: 're a dinosaur? Is that why they talk
-    324 87.71%: 're a dinosaur? Is that why they know
-    325 87.70%: 're a dinosaur? Is that why we went
-    326 87.70%: 're a dinosaur? Is that why they want
-    327 87.64%: 're a dinosaur? Is the
-    328 87.44%: 're a dinosaur? Is that why we eat
-    329 87.36%: 're a dinosaur? Is that who we
-    330 87.32%: 're a dinosaur? Is that all the
-    331 86.99%: 're a dinosaur? Is that why he won
-    332 86.76%: 're a dinosaur? Is a
-    333 86.73%: 're a dinosaur? Is that how we
-    334 86.72%: 're a dinosaur? It takes
-    335 86.65%: 're a dinosaur? Is that the new
-    336 86.63%: 're a dinosaur? It all
-    337 86.63%: 're a dinosaur? It wasn
-    338 86.57%: 're a dinosaur? It only
-    339 86.57%: 're a dinosaur? It won
-    340 86.56%: 're a dinosaur? It has
-    341 86.54%: 're a dinosaur? Is that why he ate
-    342 86.31%: 're a dinosaur? Is that why the two
-    343 86.29%: 're a dinosaur? Is that the key
-    344 86.23%: 're a dinosaur? Is that what the new
-    345 86.19%: 're a dinosaur? Is that the whole
-    346 86.18%: 're a dinosaur? Is that what the 
-    347 86.18%: 're a dinosaur? Is that what the no
-    348 86.15%: 're a dinosaur? Is that why the one
-    349 86.12%: 're a dinosaur? Is that why the t
-    350 86.10%: 're a dinosaur? Is that why he went
-    351 86.01%: 're a dinosaur? Is that why he e
-    352 85.97%: 're a dinosaur? Is that why he let
-    353 85.91%: 're a dinosaur? Is that the one
-    354 85.73%: 're a dinosaur? Is that how the
-    355 85.65%: 're a dinosaur? Is that the way
-    356 85.53%: 're a dinosaur? Is that who the
-    357 85.47%: 're a dinosaur? Is that how that
-    358 85.44%: 're a dinosaur? Is that on the
-    359 85.23%: 're a dinosaur now? Is that all
-    360 84.98%: 're a dinosaur? Is that how he
-    361 84.95%: 're a dinosaur? I want to talk
-    362 84.55%: 're a dinosaur? I want to tell
-    363 84.53%: 're a dinosaur? I want to say
-    364 84.50%: 're a dinosaur? Is that who that
-    365 84.48%: 're a dinosaur? I want to eat
-    366 84.44%: 're a dinosaur? I want to take
-    367 84.39%: 're a dinosaur? I want to ask
-    368 83.99%: 're a dinosaur? Is that who he
-    369 83.74%: 're a dinosaur at a
-    370 83.38%: 're a dinosaur? Is that who they
-    371 83.29%: 're a dinosaur? Is that the key to all
-    372 82.97%: 're a dinosaur on a sk
-    373 82.95%: 're a dinosaur? Is that on a
-    374 82.84%: 're a dinosaur? Is that all they
-    375 82.49%: 're a dinosaur? Is that why we went to all
-    376 82.46%: 're a dinosaur? Is that an e
-    377 82.40%: 're a dinosaur? Is that all we
-    378 82.32%: 're a dinosaur now? Is that why we
-    379 81.94%: 're a dinosaur? Is that all he
-    380 81.88%: 're a dinosaur? Is that an 
-    381 81.87%: 're a dinosaur? Is that an o
-    382 81.82%: 're a dinosaur? Is that one way
-    383 81.79%: 're a dinosaur? Is that one the
-    384 81.78%: 're a dinosaur? Is that one a
-    385 81.70%: 're a dinosaur? Is that what t.
-    386 81.68%: 're a dinosaur? Is that one that
-    387 81.68%: 're a dinosaur? Is that on all
-    388 81.67%: 're a dinosaur? Is that all to
-    389 81.59%: 're a dinosaur? Is that new to
-    390 81.57%: 're a dinosaur? Is that the key to a
-    391 81.29%: 're a dinosaur? Is that the key to why
-    392 81.22%: 're a dinosaur now? Is that why they
-    393 81.18%: 're a dinosaur at the show
-    394 81.15%: 're a dinosaur now? Is that why the
-    395 80.80%: 're a dinosaur? I know a
-    396 80.77%: 're the one who thinks I
-    397 80.75%: 're with us? It looked
-    398 80.73%: 're there? Is this you
-    399 80.72%: 're with us? It started
-    400 80.72%: 're with us? It really
-    401 80.69%: 're with us? It only
-    402 80.67%: 're with us? It won
-    403 80.66%: 're a dinosaur? I hate to ask
-    404 80.64%: 're allowed to answer?
-    405 80.61%: 're with us here? In
-    406 80.59%:  know what? I don't see why it
-    407 80.55%: 're allowed to say that? Is it a new
-    408 80.55%: 're the one who says that
-    409 80.53%: 're with us at the show and
-    410 80.52%: 're with us? Is that allowed
-    411 80.40%: 're allowed to hear us? I
-    412 80.39%: 're allowed to say that? I want in
-    413 80.31%: 're a dinosaur now? Is that why he
-    414 80.29%: 're with us? I want to hear
-    415 80.27%: 're with us? Is that an
-    416 80.20%:  know what? I don't see why this
-    417 80.19%: 're allowed to say that in the
-    418 80.18%: 're with us? Is that really
-    419 80.15%: 're allowed to sneak that in? It
-    420 80.14%: 're allowed to sneak that in.
-    421 80.10%: 're with us? Is that okay
-    422 80.05%: 're there? Is this how
-    423 80.01%:  know what? I don't see why they
-    424 80.00%: 're still around
-    425 79.93%:  know what? I don't see why the
-    426 79.91%: 're allowed to say that? I saw the
-    427 79.91%: 're with us? Is that all
-    428 79.90%: 're with us? Is that another
-    429 79.86%: 're with us? Is that one
-    430 79.86%: 're allowed to say that. I
-    431 79.83%: 're with us? Is that on
-    432 79.83%: 're with us? Is that not
-    433 79.76%:  don
-    434 107.92%:  don't like
-    435 106.25%:  don't know
-    436 106.21%:  don't think
-    437 101.38%:  don't want
-    438 102.70%:  don't want to hear
-    439 101.64%:  don't want to see
-    440 99.47%:  don't want to tell
-    441 98.10%:  don't want to talk
-    442 96.75%:  don't want to try
-    443 96.01%:  don't want to say
-    444 95.56%:  don't want to take
-    445 95.39%:  don't want to share
-    446 95.10%:  don't hear
-    447 94.68%:  don't see
-    448 94.59%:  don't want to ask
-    449 94.57%:  don't want to eat
-    450 94.52%:  don't want to stay
-    451 94.50%:  don't want to steal
-    452 94.41%:  don't want to sit
-    453 94.31%:  don't say
-    454 94.28%:  don't want to kill
-    455 94.24%:  don't want to write
-    456 94.23%:  don't want to sell
-    457 94.23%:  don't want to hire
-    458 94.22%:  don't want to use
-    459 94.18%:  don't want to hurt
-    460 94.16%:  don't want to let
-    461 93.95%:  don't really
-    462 93.76%:  don't tell
-    463 93.71%:  don't use
-    464 93.71%:  don't hate
-    465 93.71%:  don't think I
-    466 93.66%:  don't trust
-    467 93.65%:  don't?
-    468 93.64%:  don't take
-    469 93.62%:  don't eat
-    470 93.60%:  don't listen
-    471 94.71%:  don't listen to the
-    472 93.60%:  don't talk
-    473 92.82%:  don't like the
-    474 92.07%:  don't know?
-    475 91.50%:  don't listen to us
-    476 90.24%:  don't want to see us
-    477 89.98%:  don't want to tell us
-    478 89.84%:  don't listen to these
-    479 88.95%:  don't say? I
-    480 88.67%:  don't think the
-    481 88.09%:  don't listen to a
-    482 87.97%:  don't listen to what
-    483 106.31%:  don't listen to what I say.
-    484 103.84%:  don't listen to what I say here
-    485 87.72%:  don't use that
-    486 87.65%:  don't hear that?
-    487 87.52%:  don't think that
-    488 87.35%:  don't know why
-    489 87.30%:  don't want to see the
-    490 86.83%:  don't want to share the
-    491 86.83%:  don't know the
-    492 86.79%:  don't want to hear it
-    493 86.69%:  don't think you
-    494 86.63%:  don't want to let us
-    495 86.60%:  don't want to talk?
-    496 86.21%:  don't see what
-    497 86.04%:  don't want to kill us
-    498 84.65%:  don't think they were
-    499 84.18%:  don't like that
-    500 84.17%:  don't want to use the
-    501 83.72%:  don't know what?
-    502 83.71%:  don't think these
-    503 83.69%:  don't know these
-    504 83.49%:  don't want to see a
-    505 83.39%:  don't want to hear this
-    506 83.08%:  don't like these
-    507 83.07%:  don't know either
-    508 82.79%:  don't want to sit here
-    509 82.73%:  don't listen to what I hear
-    510 82.72%:  don't really think that
-    511 82.68%:  don't really want
-    512 92.36%:  don't really want to hear
-    513 84.75%:  don't really want to see
-    514 82.59%:  don't listen to what I was
-    515 82.51%:  don't know what a
-    516 82.48%:  don't hear it
-    517 82.26%:  don't want us
-    518 82.25%:  don't like our
-    519 82.21%:  don't want to hear what
-    520 82.35%:  don't want to hear what I was
-    521 82.19%:  don't listen to these?
-    522 82.13%:  don't like us
-    523 82.04%:  don't want to sell us
-    524 81.97%:  don't like how
-    525 81.94%:  don't think we
-    526 81.93%:  don't see what I was
-    527 81.91%:  don't like to
-    528 81.81%:  don't know why they
-    529 81.80%:  don't see any
-    530 81.78%:  don't want to hear a
-    531 81.71%:  don't think those
-    532 81.60%:  don't like your
-    533 81.56%:  don't like what
-    534 81.36%:  don't think so
-    535 81.33%:  don't know this
-    536 81.29%:  don't think there
-    537 81.28%:  don't like those
-    538 81.23%:  don't like when
-    539 81.22%:  don't like a
-    540 81.16%:  don't know a
-    541 81.08%:  don't like tr
-    542 81.03%:  don't see what I saw
-    543 81.01%:  don't see what I think
-    544 80.89%:  don't know what I was
-    545 80.75%:  don't think he
-    546 80.62%:  don't want to hear us
-    547 80.46%:  don't know that
-    548 80.34%:  don't want to hear the
-    549 80.33%:  don't know what it
-    550 80.24%:  don't know their
-    551 80.20%:  don't want to stay?
-    552 80.19%:  don't know it
-    553 80.11%:  don't think your
-    554 80.10%:  don't know where
-    555 80.07%:  don't think a
-    556 79.98%:  don't want to hear what I say
-    557 79.91%:  don't think?
-    558 79.87%:  don't know I
-    559 79.86%:  don't think our
-    560 79.84%:  don't know his
-    561 79.81%:  don't know.
-    562 79.81%:  don't know whether
-    563 79.80%:  don't like what I say
-    564 79.74%: 're with us? I wanted to hear
-    565 79.62%:  don't know either? I
-    566 79.59%:  don't want a
-    567 79.57%:  don't like what I wrote
-    568 79.55%: 're with us? I want to see
-    569 79.54%: 're there? Is this why
-    570 79.53%:  don't want to hire the
-    571 79.52%:  don't take the
-    572 79.52%:  don't listen to what I say here.
-    573 79.50%: 're allowed to sneak that in? Is
-    574 79.49%: 're with us? I wanted to thank
-    575 79.46%: 're there? Is this on
-    576 79.45%: 're not on
-    577 79.43%: 're there? Is this all
-    578 79.38%: 're a dinosaur now? Is that why all
-    579 79.37%:  don't want to see it
-    580 79.35%: 're allowed to sneak that in at
-    581 79.35%: 're allowed to say that? I knew it
-    582 79.34%: 're there? Is that what
-    583 79.32%:  don't see it
-    584 79.32%: 're with us? I want to do
-    585 79.32%: 're with us? I want to know why
-    586 79.31%: 're a dinosaur now? Is that why that
-    587 79.30%: 're allowed to sneak that in as
-    588 79.29%:  don't talk to us
-    589 79.28%: 're still here? It
-    590 79.25%:  don't want to see what
-    591 79.24%: 're with us? I need to talk
-    592 79.23%: 're allowed to say what
-    593 79.21%: 're a dinosaur? I knew that
-    594 79.16%: 're allowed to hear us? Is
-    595 79.15%: 're allowed to hear us? It
-    596 79.04%: 're allowed to say his
-    597 79.04%: 're allowed to say the
-    598 79.00%: 're still here? Is
-    599 78.99%: 're still around? I
-    600 78.98%: 're allowed to say this
-    601 78.97%: 're an anth
-    602 78.94%: 're allowed to say I
-    603 78.92%:  don't want to share a
-    604 78.86%: 're allowed to say that? Is he a
-    605 78.85%:  know what? I don't really trust
-    606 78.85%:  don't really think you
-    607 78.85%: 're allowed to sneak that in a
-    608 78.83%: 're not here
-    609 78.82%:  don't want to see this
-    610 78.82%: 're not in
-    611 78.81%:  don't really want to take
-    612 78.80%:  don't want us to talk
-    613 78.79%:  don't like when I use
-    614 78.77%: 're allowed to hear that
-    615 78.75%:  know what? I don't see a
-    616 78.73%: 're not really
-    617 78.72%:  don't hear that a
-    618 86.12%:  don't hear that a lot?
-    619 79.13%:  don't hear that a lot.
-    620 78.68%: 're allowed to think that.
-    621 78.67%:  don't want to see?
-    622 78.67%: 'll
-    623 78.67%:  don't want us to try
-    624 78.67%: 're allowed to say that when I say
-    625 78.65%: 're not serious
-    626 78.65%: 're not like
-    627 78.65%:  don't want to hire a
-    628 78.65%: 're not used
-    629 81.99%: 're not used to the
-    630 78.63%: 're not still
-    631 78.61%: 're with us? I want to thank
-    632 78.57%: 're not?
-    633 78.55%: 're not k
-    634 78.55%: 're not seriously
-    635 78.54%: 're not that
-    636 78.53%: 're with us? I want to talk
-    637 78.53%: 're not real
-    638 78.53%: 're allowed to say that. It
-    639 78.52%: 're allowed to say that? I think we
-    640 78.51%: 're not an
-    641 78.48%:  don't really want to say
-    642 78.48%:  don't hate the
-    643 78.47%: 're not around
-    644 78.46%: 're not who
-    645 79.02%: 're not who I was y
-    646 78.45%: 're with us? I wanted to tell
-    647 78.44%: 're not d
-    648 78.44%:  don't think they are
-    649 78.43%:  don't want us to write
-    650 78.37%:  know what? I don't see why that
-    651 78.36%: 're here? I don
-    652 78.34%: 're with us? I want to ask
-    653 78.34%: 're allowed to think that I
-    654 78.33%:  don't want to hear what I really
-    655 78.23%:  don't know either? It
-    656 78.22%: 're a dinosaur at the show? I
-    657 78.21%: 're allowed to say that when it
-    658 78.19%:  don't want us to see
-    659 78.18%: 're the one who starts it
-    660 78.13%:  don't hear that all
-    661 78.09%:  don't want to hear?
-    662 78.08%:  don't want us to take
-    663 78.08%:  don't know what the
-    664 78.08%:  don't really want to try
-    665 78.06%:  don't want us to say
-    666 78.04%: 're allowed to swear at
-    667 78.04%:  don't see the
-    668 78.02%:  don't want us to eat
-    669 78.02%:  know what? I don't see why a
-    670 78.02%:  don't know either? Is
-    671 78.01%:  don't know why the
-    672 77.95%:  don't hate us
-    673 77.94%: 're in a
-    674 77.90%:  don't really want to sit
-    675 77.88%: 're allowed to hear us? Is that what
-    676 77.87%:  don't really want to eat
-    677 77.86%:  don't want us to hear
-    678 77.84%: 're the one that
-    679 77.83%:  don't really want to share
-    680 77.83%: 're a dinosaur? I hate to state
-    681 77.82%: 're there? I don
-    682 77.80%: 're the one who draws this
-    683 77.78%:  don't know what they
-    684 77.76%: 're a dinosaur? Is he a t
-    685 77.75%: 're allowed to think that way
-    686 77.75%:  don't like what I was
-    687 77.73%:  don't really want to see us
-    688 77.72%: 're a dinosaur who wants
-    689 77.71%:  don't really want to write
-    690 77.69%: 're a dinosaur? It takes a
-    691 77.68%:  know what? I don't hear it
-    692 77.68%:  know what? I don't hear the
-    693 77.68%:  don't really want to use
-    694 77.67%:  don't want the
-    695 77.66%:  don't really want to ask
-    696 77.66%:  look
-    697 77.66%: 're allowed to think that when
-    698 77.64%:  don't really want to hire
-    699 77.63%:  don't really want to hurt
-    700 77.61%: 're with us? I want to say
-    701 77.60%:  don't want us to steal
-    702 77.58%: 're allowed to think that as
-    703 77.56%: 're a dinosaur. I
-    704 77.55%:  said
-    705 77.54%: 're a dinosaur? Is that the way to
-    706 77.53%:  don't want to ask why
-    707 77.52%: 're allowed to think that we
-    708 77.51%: 're with us at the show? I know
-    709 77.48%:  don't really think they
-    710 77.45%:  don't take this
-    711 77.45%:  don't want us to share
-    712 77.45%:  don't want to hear why
-    713 77.42%:  don't want us to tell
-    714 77.39%:  don't want us to like
-    715 77.39%:  don't want to eat us
-    716 77.37%:  don't want us to all
-    717 77.36%: 're with us? I want to try
-    718 77.36%: 're with us at the show? I knew
-    719 77.34%: 're with us? I wanted to show
-    720 77.34%:  don't want your
-    721 77.34%: 're with us? Is that why all
-    722 77.33%: 're with us? I want to stand
-    723 77.32%:  don't want to hear these
-    724 77.32%:  don't want us to stay
-    725 77.32%: 're with us? I wanted to try
-    726 77.31%: 're with us? I want to take
-    727 77.29%:  don't want us to re
-    728 77.27%:  don't want to hear all
-    729 77.27%:  don't want us to hire
-    730 77.26%:  know what? I don't see why.
-    731 77.26%: 're with us? I want to tell
-    732 77.26%: 're an at
-    733 109.79%: 're an atheist? I
-    734 107.92%: 're an atheist? Is
-    735 150.70%: 're an atheist? Is that why you don
-    736 139.25%: 're an atheist? Is that why you won
-    737 137.43%: 're an atheist? Is that why you do
-    738 137.41%: 're an atheist? Is that why you drew
-    739 137.39%: 're an atheist? Is that why you are
-    740 137.38%: 're an atheist? Is that why you read
-    741 137.37%: 're an atheist? Is that why you aren
-    742 137.34%: 're an atheist? Is that why you wear
-    743 137.33%: 're an atheist? Is that why you only
-    744 124.71%: 're an atheist? Is that why you drew a
-    745 113.83%: 're an atheist? Is that why we
-    746 111.70%: 're an atheist? Is that why your
-    747 109.94%: 're an atheist? Is that why our
-    748 109.86%: 're an atheist? Is that why all
-    749 109.86%: 're an atheist? Is that why no
-    750 108.87%: 're an atheist? Is that why you only read
-    751 106.94%: 're an atheist now
-    752 106.68%: 're an atheist? Is that why you only draw
-    753 106.54%: 're an atheist? Is that why you do a
-    754 105.72%: 're an atheist? Is that why you do all
-    755 105.12%: 're an atheist? Is that why you are on
-    756 105.08%: 're an atheist? Is that a
-    757 104.62%: 're an atheist? Is that your
-    758 104.58%: 're an atheist? Is that why you won a
-    759 104.34%: 're an atheist? Is that why you drew all
-    760 104.28%: 're an atheist? Is that why you are now
-    761 104.19%: 're an atheist? Is that why you drew on
-    762 104.13%: 're an atheist? Is that why you drew an
-    763 104.02%: 're an atheist? Is that how
-    764 103.98%: 're an atheist? Is that why you are y
-    765 103.65%: 're an atheist? Is that why you wear no
-    766 103.56%: 're an atheist? Is that why you only wear
-    767 103.54%: 're an atheist? Is that why you are no
-    768 103.42%: 're an atheist? Is that why you are only
-    769 103.41%: 're an atheist? Is that why you only drew
-    770 103.40%: 're an atheist? Is that why you do an
-    771 103.28%: 're an atheist? Is that why you are down
-    772 103.20%: 're an atheist? Is that why you are w
-    773 102.81%: 're an atheist? Is that who
-    774 120.86%: 're an atheist? Is that who you are.
-    775 102.51%: 're an atheist now? I
-    776 102.37%: 're an atheist? Is that you
-    777 101.75%: 're an atheist? Is that really
-    778 101.60%: 're an atheist? Is that okay
-    779 101.55%: 're an atheist? Is that new
-    780 101.52%: 're an atheist? Is that an
-    781 101.38%: 're an atheist? Is that allowed
-    782 101.34%: 're an atheist? Is that all
-    783 100.57%: 're an atheist now? Is
-    784 122.41%: 're an atheist now? Is that why you are
-    785 101.13%: 're an atheist now? Is that why we
-    786 100.51%: 're an atheist now? It
-    787 100.03%: 're an atheist now? Is that why your
-    788 98.69%: 're an atheist? Is that how you are
-    789 98.18%: 're an atheist now? Is that a
-    790 97.90%: 're an atheist now? Is that why our
-    791 97.89%: 're an atheist now? Is that why all
-    792 97.82%: 're an atheist? Is that how you deal
-    793 97.82%: 're an atheist? Is that how you knew
-    794 97.74%: 're an atheist? Is that how you really
-    795 97.70%: 're an atheist? Is that how you read
-    796 97.61%: 're an atheist? Is that who you really
-    797 96.64%: 're an atheist now? Is that your
-    798 96.50%: 're an atheist now? Is that how
-    799 95.09%: 're an atheist now? Is that you
-    800 95.04%: 're an atheist now? Is that really
-    801 94.80%: 're an atheist now? Is that who
-    802 94.76%: 're an atheist? I don
-    803 94.49%: 're an atheist now? Is that okay
-    804 94.44%: 're an atheist now? Is that all
-    805 94.44%: 're an atheist now? Is that allowed
-    806 93.70%: 're an atheist? Is that why you drew a 
-    807 92.89%: 're an atheist now? Is that why you are y
-    808 92.67%: 're an atheist too
-    809 91.95%: 're an atheist now? Is that why you are w
-    810 91.74%: 're an atheist.
-    811 91.44%: 're an atheist and
-    812 91.18%: 're an atheist aren
-    813 90.95%: 're an atheist who
-    814 90.79%: 're an atheist are
-    815 109.94%: 're an atheist are you? I
-    816 106.71%: 're an atheist are you? Is
-    817 113.07%: 're an atheist are you? Is that why no
-    818 106.70%: 're an atheist are you? It
-    819 102.60%: 're an atheist are you? Is that how
-    820 102.03%: 're an atheist are you? Is that who
-    821 99.58%: 're an atheist are you not
-    822 95.77%: 're an atheist are you not? I
-    823 95.16%: 're an atheist are you? I don
-    824 93.79%: 're an atheist are you not? It
-    825 93.48%: 're an atheist are you not? Is
-    826 90.76%: 're an atheist? Is that your new
-    827 90.69%: 're an atheist or
-    828 89.37%: 're an atheist? Is that why we don
-    829 88.00%: 're an atheist too? I
-    830 87.14%: 're an atheist? Is that why you only drew a
-    831 86.49%: 're an atheist? Is that why all you
-    832 86.42%: 're an atheist are you? I was
-    833 86.23%: 're an atheist are you don
-    834 85.87%: 're an atheist? Is that why we all
-    835 85.70%: 're an atheist? Is that why we only
-    836 85.64%: 're an atheist are you now
-    837 85.52%: 're an atheist? Is that why we look
-    838 85.51%: 're an atheist? Is that why we won
-    839 85.31%: 're an atheist are you.
-    840 85.29%: 're an atheist? I was
-    841 85.19%: 're an atheist? Is that how we
-    842 85.13%: 're an atheist are you? Is that why no d
-    843 84.57%: 're an atheist? Is that why all your d
-    844 84.31%: 're an atheist? I had
-    845 84.03%: 're an atheist? Is that why your new
-    846 83.98%: 're an atheist? Is that why your a
-    847 83.91%: 're an atheist? Is that why your only
-    848 83.79%: 're an atheist are you? I know
-    849 83.64%: 're an atheist? Is that why all our
-    850 83.59%: 're an atheist? Is that why all your w
-    851 83.37%: 're an atheist? Is that really how
-    852 83.27%: 're an atheist are you? It was
-    853 83.14%: 're an atheist are you? I had
-    854 83.12%: 're an atheist are you now? I
-    855 83.09%: 're an atheist? I always
-    856 83.03%: 're an atheist are you? I saw
-    857 82.92%: 're an atheist? I know
-    858 82.91%: 're an atheist? Is that why our new
-    859 82.91%: 're an atheist are you? I want
-    860 82.90%: 're an atheist? I knew
-    861 82.88%: 're an atheist? Is your
-    862 82.84%: 're an atheist? I heard
-    863 84.06%: 're an atheist? I heard that
-    864 83.98%: 're an atheist? I heard you say
-    865 82.82%: 're an atheist? I would
-    866 82.79%: 're an atheist are you? I wasn
-    867 82.77%: 're an atheist? Is that your deal
-    868 82.70%: 're an atheist are you? I told
-    869 82.68%: 're an atheist? I saw
-    870 95.25%: 're an atheist? I saw you on
-    871 89.23%: 're an atheist? I saw you at
-    872 84.57%: 're an atheist? I saw you at the d
-    873 83.77%: 're an atheist? I saw you at the 
-    874 82.67%: 're an atheist? Is that why no d
-    875 82.66%: 're an atheist are you? I totally
-    876 82.63%: 're an atheist? Is that why our d
-    877 82.63%: 're an atheist? I wasn
-    878 82.63%: 're an atheist? I saw you on a
-    879 82.62%: 're an atheist are you? I won
-    880 82.59%: 're an atheist? Is that why our day
-    881 82.59%: 're an atheist? Is that why our w
-    882 82.59%: 're an atheist are you? I ask
-    883 82.58%: 're an atheist are you? I do
-    884 82.57%: 're an atheist are you? I only
-    885 82.57%: 're an atheist? Is that why our deal
-    886 82.57%: 're an atheist are you? I say
-    887 82.57%: 're an atheist? I want
-    888 87.73%: 're an atheist? I want to hear
-    889 82.56%: 're an atheist? I swear
-    890 82.52%: 're an atheist? I really
-    891 82.52%: 're an atheist? Is that why all we
-    892 82.51%: 're an atheist? I should
-    893 82.50%: 're an atheist? I told
-    894 82.50%: 're an atheist? I asked
-    895 82.50%: 're an atheist? I totally
-    896 82.46%: 're an atheist? I wouldn
-    897 82.46%: 're an atheist? I hate
-    898 90.32%: 're an atheist? I hate to say
-    899 82.46%: 're an atheist? I only
-    900 82.20%: 're an atheist? Is that why you only read 
-    901 82.02%: 're an atheist? Is the
-    902 81.79%: 're an atheist? I hate to ask
-    903 81.71%: 're an atheist now? Is that how we
-    904 81.65%: 're an atheist? Is he
-    905 81.62%: 're an atheist now? It was
-    906 81.24%: 're an atheist? Is at
-    907 81.17%: 're an atheist? Is that who we
-    908 80.86%: 're an atheist? Is that why you are now y
-    909 80.70%: 're an atheist? Is that why you drew on a
-    910 80.63%: 're an atheist are you now? Is
-    911 80.60%: 're an atheist? I told you we
-    912 80.59%: 're an atheist are you now? It
-    913 80.50%: 're an atheist? Is that all you do
-    914 80.48%: 're an atheist? Is that why you only draw 
-    915 80.40%: 're an atheist? Is that how your
-    916 80.40%: 're an atheist are you? Is at
-    917 80.39%: 're an atheist and I
-    918 80.38%: 're an atheist? Is that why all you do
-    919 80.36%: 're an atheist now or
-    920 80.35%: 're an atheist are you? It wasn
-    921 80.32%: 're an atheist now.
-    922 80.32%: 're an atheist? Is that really who
-    923 80.15%: 're an atheist? Is that why you are wow
-    924 80.13%: 're an atheist are you? It all
-    925 80.10%: 're an atheist? Is that why you do a 
-    926 80.03%: 're an atheist? Is that why you do a re
-    927 80.02%: 're an atheist? Is that why you do a new
-    928 79.26%: 're an atheist now? I was
-    929 79.24%: 're an atheist? Is that a d
-    930 79.22%: 're an atheist? Is that why you are yod
-    931 79.22%: 're an atheist? Is that why you drew on all
-    932 79.20%: 're an atheist? Is that you on
-    933 79.14%: 're an atheist? Is that your whole
-    934 79.08%: 're an atheist? Is that your way
-    935 79.06%: 're an atheist who doesn
-    936 79.05%: 're an atheist? Is that a e
-    937 79.00%: 're an atheist? Is that a rule
-    938 78.96%: 're an atheist? Is that a he
-    939 78.96%: 're an atheist? Is that a re
-    940 78.94%: 're an atheist? Is that a no
-    941 78.90%: 're an atheist? Is that your only
-    942 78.89%: 're an atheist? Is that why you won a 
-    943 78.82%: 're an atheist? Is that why you won a d
-    944 78.82%: 're an atheist? I told you the
-    945 78.69%: 're an atheist? Is that really you
-    946 78.68%: 're an atheist? Is that your one
-    947 78.61%: 're an atheist? Is that why you won a r
-    948 78.58%: 're an atheist? Is that your holy
-    949 78.57%: 're an atheist? Is that your de
-    950 78.56%: 're an atheist? I saw you draw
-    951 78.38%: 're an atheist? Is that why you drew an o
-    952 78.35%: 're an atheist? Is that why you are now w
-    953 78.33%: 're an atheist? I want to do
-    954 78.33%: 're an atheist? Is that why you drew an 
-    955 78.32%: 're an atheist? I saw you do
-    956 78.29%: 're an atheist? Is that how our
-    957 78.28%: 're an atheist? Is that why you are yon
-    958 78.26%: 're an atheist? I told you a
-    959 78.22%: 're an atheist and you say
-    960 78.16%: 're an atheist? Is that why you only drew 
-    961 78.16%: 're an atheist? I told you.
-    962 78.13%: 're an atheist? Is that why you are only 
-    963 78.09%: 're an atheist? I saw you when
-    964 78.06%: 're an atheist? I want to ask
-    965 78.04%: 're an atheist? I hate to know
-    966 78.03%: 're an atheist? Is that who your
-    967 78.00%: 're an atheist? I told you they
-    968 77.98%: 're an atheist? I saw you a
-    969 77.94%: 're an atheist? Is that really why
-    970 77.93%: 're an atheist? I saw you read
-    971 77.91%: 're an atheist? I saw you throw
-    972 77.91%: 're an atheist? Is that why you only wear k
-    973 77.89%: 're an atheist? Is that why you do an er
-    974 77.88%: 're an atheist and you swear
-    975 77.87%: 're an atheist? Is that why you only wear 
-    976 77.85%: 're an atheist? I saw you the
-    977 77.85%: 're an atheist? I saw you not
-    978 77.83%: 're an atheist? I saw you take
-    979 77.80%: 're an atheist? Is that why you do an 
-    980 77.79%: 're an atheist? Is that why you only wear l
-    981 77.79%: 're an atheist? I saw you talk
-    982 77.78%: 're an atheist? I saw you eat
-    983 77.78%: 're an atheist? I saw you.
-    984 77.75%: 're an atheist? I told you he
-    985 88.58%: 're an atheist? I told you he was a
-    986 77.74%: 're an atheist? I saw you one
-    987 77.74%: 're an atheist? I saw you tell
-    988 77.73%: 're an atheist? I saw you hold
-    989 77.70%: 're an atheist? I saw you that
-    990 77.70%: 're an atheist now? I heard
-    991 79.99%: 're an atheist now? I heard you say
-    992 77.70%: 're an atheist? I want to say
-    993 77.69%: 're an atheist? Is that why you are only d
-    994 77.69%: 're an atheist? I saw you t
-    995 77.68%: 're an atheist? I saw you den
-    996 77.66%: 're an atheist? I saw you w
-    997 77.66%: 're an atheist? Is that why you do an e
-    998 77.64%: 're an atheist? I told you what
-    999 77.63%: 're an atheist? I saw you deny
-   1000 77.63%: 're an atheist? I want to show
-   1001 77.63%: 're an atheist? I saw you and
-   1002 77.62%: 're an atheist? I saw you all
-   1003 77.62%: 're an atheist? I saw you wear
-   1004 77.61%: 're an atheist? I want to read
-   1005 77.60%: 're an atheist? I told you at
-   1006 77.57%: 're an atheist? Is that why you are wond
-   1007 77.57%: 're an atheist? I want to re
-   1008 77.57%: 're an atheist? I told you last
-   1009 77.56%: 're an atheist? I want to use
-   1010 77.53%: 're an atheist? I told you when
-   1011 77.53%: 're an atheist now? I had
-   1012 77.51%: 're an atheist now? I saw
-   1013 80.07%: 're an atheist now? I saw you at
-   1014 77.49%: 're an atheist and you swear?
-   1015 77.42%: 're an atheist? I hate to do
-   1016 77.33%: 're an atheist now? I always
-   1017 77.28%: 're an atheist now? I told
-   1018 77.26%: 're an atheist now? Is that really how
-   1019 77.25%:  don't want us to sell
-   1020 77.25%:  don't really want to hear this
-   1021 77.24%: 're with us? I wanted to take
-   1022 77.24%: 're an atheist now? I would
-   1023 77.23%:  don't want us to wait
-   1024 77.23%:  don't want us to sit
-   1025 77.23%:  know what? I don't hear that
-   1026 77.23%: 're an atheist now? I swear
-   1027 77.23%:  don't want us to kill
-   1028 77.19%:  don't know what I say
-   1029 77.18%: 're with us? I want to show
-   1030 77.17%: 're with us? Is that why no
-   1031 77.17%: 're an atheist now? I really
-   1032 77.16%:  don't want to hear I
-   1033 77.16%:  don't want to hear yet
-   1034 77.16%: 're with us? I want to work
-   1035 77.16%:  don't want to hear their
-   1036 77.15%: 're not used to this
-   1037 77.15%: 're the one who said a
-   1038 77.14%: 're an atheist now? I asked
-   1039 77.13%: 're an atheist? Is that really why you don
-   1040 77.13%: 're an atheist? Is that all we
-   1041 77.12%: 're on your
-   1042 77.55%: 're on your knees? I
-   1043 77.11%: 're not used to it
-   1044 77.09%: 're an atheist now? I should
-   1045 77.09%: 're a dinosaur at that
-   1046 77.08%: 're an atheist now? I hate
-   1047 81.42%: 're an atheist now? I hate to say
-   1048 77.07%: 're an atheist now? I totally
-   1049 77.07%:  don't hate these
-   1050 77.04%: 're the last
-   1051 84.15%: 're the last one who wants
-   1052 82.89%: 're the last one I
-   1053 77.03%: 're an atheist now? I wrote
-   1054 77.03%:  don't really want to hear what
-   1055 77.02%: 're the one who said all
-   1056 77.01%: 're an atheist now? I read
-   1057 77.01%: 're an atheist now? I used
-   1058 77.00%:  know what? I don't see why all
-   1059 77.00%:  know what I was
-   1060 77.00%: 're allowed to answer that
-   1061 77.00%:  know what? I don't see why he
-   1062 76.99%: 're an atheist? Is that you who
-   1063 76.99%: 're really not
-   1064 76.98%: 're a dinosaur at the last
-   1065 76.95%:  know what? I don't see it
-   1066 76.92%: 're an atheist? Is that allowed on
-   1067 76.91%: 're an atheist? Is that you.
-   1068 76.90%: 're an atheist? Is that you and
-   1069 76.89%: 're with us? I wanted to stay
-   1070 76.89%:  know what? I don't hear what
-   1071 76.88%:  don't want this
-   1072 76.87%: 're the only one with that
-   1073 76.86%: 're with us? Is that why none
-   1074 76.85%:  don't want to hear it? I
-   1075 76.85%: 're with us? I wanted to work
-   1076 76.83%: 're with us? I wanted to let
-   1077 76.82%: 're a dinosaur? Is that why he went to
-   1078 76.82%: 're with us? I wanted to learn
-   1079 76.79%: 're an atheist or what
-   1080 76.79%:  don't want to ask what
-   1081 76.78%: 're with us? I wanted to share
-   1082 76.77%:  don't want it
-   1083 76.77%: 're with us? I wanted to warn
-   1084 76.76%:  don't want to share?
-   1085 76.76%: 're allowed to say that I think
-   1086 76.76%: 're an atheist? Is that an old
-   1087 76.75%: 're with us at the show? I really
-   1088 76.75%: 're an atheist now? Is your
-   1089 76.72%:  don't know what these
-   1090 76.71%: 're with us at the show? I told
-   1091 76.70%: 're with us at the show? I want
-   1092 76.68%: 're with us? I need to know what
-   1093 76.67%: 're an atheist? Is that all your
-   1094 76.66%:  don't like what I eat
-   1095 76.63%:  don't want to take us all
-   1096 76.62%:  think
-   1097 81.93%:  think I'll
-   1098 81.74%:  think I'd
-   1099 76.62%: 're like the
-   1100 76.61%:  know what? I don't see why she
-   1101 76.61%: 're there? Is that a
-   1102 76.57%: 're with us at the show? I wanted
-   1103 76.57%: 're on your knees? Is
-   1104 76.56%:  should
-   1105 76.55%: 're with us at the show? I only
-   1106 76.55%: 're not who I wanted
-   1107 76.50%:  don't want to write a 
-   1108 76.49%: 're an atheist now? Is the
-   1109 76.49%:  hear
-   1110 86.50%:  hear that? It
-   1111 124.79%:  hear that? It's the
-   1112 112.63%:  hear that? It's like
-   1113 108.19%:  hear that? It's a
-   1114 103.20%:  hear that? It's not
-   1115 102.91%:  hear that? It's so
-   1116 102.19%:  hear that? It's all
-   1117 102.11%:  hear that? It's your
-   1118 102.06%:  hear that? It's an
-   1119 102.02%:  hear that? It's one
-   1120 101.92%:  hear that? It's what
-   1121 101.85%:  hear that? It's this
-   1122 101.85%:  hear that? It's hard
-   1123 101.72%:  hear that? It's our
-   1124 101.72%:  hear that? It's really
-   1125 101.67%:  hear that? It's as
-   1126 101.64%:  hear that? It's weird
-   1127 101.63%:  hear that? It's in
-   1128 101.62%:  hear that? It's okay
-   1129 101.60%:  hear that? It's din
-   1130 137.06%:  hear that? It's dinosaur no
-   1131 122.75%:  hear that? It's dinosa
-   1132 121.80%:  hear that? It's dinosaur.
-   1133 120.73%:  hear that? It's dinosaur talk
-   1134 119.58%:  hear that? It's dinosaur on
-   1135 119.47%:  hear that? It's dinosaurly
-   1136 119.43%:  hear that? It's dinosaur w
-   1137 119.42%:  hear that? It's dinosaur th
-   1138 119.41%:  hear that? It's dinosaur y
-   1139 119.36%:  hear that? It's dinosaur t
-   1140 119.31%:  hear that? It's dinosaur ho
-   1141 119.29%:  hear that? It's dinosaur n
-   1142 119.25%:  hear that? It's dinosaur a
-   1143 105.74%:  hear that? It's dinosaurly.
-   1144 101.59%:  hear that? It's too
-   1145 101.55%:  hear that? It's way
-   1146 101.54%:  hear that? It's always
-   1147 101.54%:  hear that? It's hilar
-   1148 101.54%:  hear that? It's true
-   1149 101.53%:  hear that? It's only
-   1150 101.51%:  hear that? It's how
-   1151 101.50%:  hear that? It's 
-   1152 100.97%:  hear that? It's dinosaur on the
-   1153 99.42%:  hear that? It's dinosaur awe
-   1154 98.90%:  hear that? It's the din
-   1155 119.12%:  hear that? It's the dinosaur.
-   1156 116.91%:  hear that? It's the dinosaur no
-   1157 116.83%:  hear that? It's the dinosaur on
-   1158 116.25%:  hear that? It's the dinosaur we
-   1159 116.14%:  hear that? It's the dinosaur one
-   1160 116.10%:  hear that? It's the dinosaur y
-   1161 116.05%:  hear that? It's the dinosaur w
-   1162 111.57%:  hear that? It's the dinosa
-   1163 103.11%:  hear that? It's the dinosaur one.
-   1164 99.43%:  hear that? It's the dinosaur yell
-   1165 98.20%:  hear that? It's the dinosaur we all
-   1166 97.71%:  hear that? It's hard to say
-   1167 97.48%:  hear that? It's the dinosaur yow
-   1168 96.90%:  hear that? It's hard to know
-   1169 96.81%:  hear that? It's dinosaur yow
-   1170 96.16%:  hear that? It's hard to see
-   1171 95.51%:  hear that? It's dinos.
-   1172 95.44%:  hear that? It's dinosau
-   1173 95.41%:  hear that? It's so loud
-   1174 95.19%:  hear that? It's the sound we
-   1175 94.27%:  hear that? It's the noise
-   1176 94.19%:  hear that? It's dinosaur aww
-   1177 94.05%:  hear that? It's dinosaur on a
-   1178 94.01%:  hear that? It's the end
-   1179 93.86%:  hear that? It's the new
-   1180 93.84%:  hear that? It's the d
-   1181 93.83%:  hear that? It's the only
-   1182 93.78%:  hear that? It's the words
-   1183 93.76%:  hear that? It's the work
-   1184 93.75%:  hear that? It's the old
-   1185 93.75%:  hear that? It's the one
-   1186 93.75%:  hear that? It's the word
-   1187 93.73%:  hear that? It's the loud
-   1188 93.73%:  hear that? It's the way
-   1189 93.66%:  hear that? It's dinosaur awww
-   1190 93.21%:  hear that? It's the dinosau
-   1191 93.19%:  hear that? It's the dinos.
-   1192 93.13%:  hear that? It's like the
-   1193 93.01%:  hear that? It's the dinos on
-   1194 92.91%:  hear that? It's true.
-   1195 92.56%:  hear that? It's dinosaur wow
-   1196 92.16%:  hear that? It's dinosaur yel
-   1197 91.84%:  hear that? It's in the
-   1198 91.82%:  hear that? It's dinosaur hokey
-   1199 91.26%:  hear that? It's like they
-   1200 91.21%:  hear that? It's only the
-   1201 91.13%:  hear that? It's way too early
-   1202 90.95%:  hear that? It's dinosaur talk on
-   1203 90.82%:  hear that? It's dinosaur wank
-   1204 90.75%:  hear that? It's dinosaur yell
-   1205 90.70%:  hear that? It's dinosaur a no
-   1206 90.43%:  hear that? It's dinosaur wah
-   1207 90.17%:  hear that? It's dinosaur nak
-   1208 90.11%:  hear that? It's dinosaur a.
-   1209 90.11%:  hear that? It's dinosaur tho
-   1210 90.08%:  hear that? It's dinosaur on t
-   1211 89.99%:  hear that? It's dinosaur yak
-   1212 89.97%:  hear that? It's dinosaurly no
-   1213 89.94%:  hear that? It's dinosaur yaw
-   1214 89.93%:  hear that? It's dinosaur walt
-   1215 89.90%:  hear that? It's dinosaur awo
-   1216 89.87%:  hear that? It's dinosaur thw
-   1217 89.86%:  hear that? It's dinosaur on 
-   1218 89.84%:  hear that? It's dinosaur thon
-   1219 91.56%:  hear that? It's dinosaur thonk.
-   1220 89.83%:  hear that? It's dinosaur on all
-   1221 89.81%:  hear that? It's dinosaur awh
-   1222 89.80%:  hear that? It's dinosaurly talk
-   1223 89.79%:  hear that? It's dinosaur t.
-   1224 89.79%:  hear that? It's dinosaur yee
-   1225 89.78%:  hear that? It's dinosaurly y
-   1226 89.77%:  hear that? It's dinosaurly the
-   1227 89.77%:  hear that? It's dinosaur tha
-   1228 89.77%:  hear that? It's dinosaur yolk
-   1229 89.74%:  hear that? It's dinosaur nya
-   1230 89.74%:  hear that? It's dinosaur wan
-   1231 89.74%:  hear that? It's dinosaurly on
-   1232 89.71%:  hear that? It's dinosaur yay
-   1233 89.71%:  hear that? It's dinosaur thaw
-   1234 89.70%:  hear that? It's dinosaur waw
-   1235 89.69%:  hear that? It's dinosaur yank
-   1236 89.68%:  hear that? It's dinosaur yok
-   1237 89.68%:  hear that? It's dinosaur ae
-   1238 89.66%:  hear that? It's dinosaur a lot
-   1239 89.63%:  hear that? It's dinosaur ahe
-   1240 89.62%:  hear that? It's dinosaur a w
-   1241 89.61%:  hear that? It's dinosaur ayy
-   1242 89.60%:  hear that? It's dinosaur nate
-   1243 89.57%:  hear that? It's dinosaur a y
-   1244 89.57%:  hear that? It's dinosaur aye
-   1245 89.56%:  hear that? It's dinosaur a n
-   1246 89.40%:  hear that? It's the dinosaur on a
-   1247 89.20%:  hear that? It's dinosaur awwwwk
-   1248 88.91%:  hear that? It's dinosaur awwww.
-   1249 88.58%:  hear that? It's the dinosaur wow
-   1250 88.43%:  hear that? It's dinosaur awwwwt
-   1251 88.42%:  hear that? It's the dinosaur yel
-   1252 88.20%:  hear that? It's the dinosaur yaw
-   1253 88.16%:  hear that? It's the dinosaur on all
-   1254 87.71%:  hear that? It's the dinosaur yolk
-   1255 87.64%:  hear that? It's the dinosaur yak
-   1256 87.57%:  hear that? It's the dinosaur we know
-   1257 87.46%:  hear that? It's the dinosaur yank
-   1258 87.44%:  hear that? It's the dinosaur wank
-   1259 87.37%:  hear that? It's the dinosaur yay
-   1260 87.23%:  hear that? It's the dinosaur one l
-   1261 87.22%:  hear that? It's the dinosaur one a
-   1262 87.22%:  hear that? It's the dinosaur yoke
-   1263 87.10%:  hear that? It's all the
-   1264 86.78%:  hear that? It's like he
-   1265 86.36%:  hear that? I
-   1266 86.19%:  hear that? It's like an
-   1267 86.16%:  hear that? It's like you
-   1268 85.98%:  hear that? It's a din
-   1269 119.06%:  hear that? It's a dinosaur.
-   1270 101.83%:  hear that? It's a dinosaur who
-   1271 101.45%:  hear that? It's a dinosaur on
-   1272 100.99%:  hear that? It's a dinosaur y
-   1273 100.91%:  hear that? It's a dinosaur t
-   1274 88.56%:  hear that? It's a dinosaur yell
-   1275 85.20%:  hear that? It's like when
-   1276 85.11%:  hear that? It's always the
-   1277 85.08%:  hear that? It's like we
-   1278 84.97%:  hear that? It's only a
-   1279 84.88%:  hear that? It's like one
-   1280 84.84%:  hear that? It's like 
-   1281 84.68%:  hear that? It's like your
-   1282 84.68%:  hear that? It's like our
-   1283 84.66%:  hear that? It's like thunder
-   1284 84.64%:  hear that? It's like loud
-   1285 84.62%:  hear that? It's like how
-   1286 84.58%:  hear that? It's like two
-   1287 83.93%:  hear that? It's way too hard
-   1288 83.79%:  hear that? It's way too easy
-   1289 83.75%:  hear that? It's dinosauro
-   1290 83.65%:  hear that? It's not a
-   1291 83.64%:  hear that? It's the dinosaur yowl
-   1292 83.44%:  hear that? It's not like
-   1293 83.33%:  hear that? It's in your
-   1294 83.26%:  hear that? It sounds
-   1295 95.83%:  hear that? It sounds like a
-   1296 82.96%:  hear that? It's so weird
-   1297 82.90%:  hear that? It's a new
-   1298 82.86%:  hear that? It's a sound
-   1299 82.78%:  hear that? It's like the sound
-   1300 82.60%:  hear that? It's the sound we all
-   1301 82.55%:  hear that? Is
-   1302 85.11%:  hear that? Is that a
-   1303 84.00%:  hear that? Is it
-   1304 82.46%:  hear that? It's way too weird
-   1305 82.13%:  hear that? It's dinosaur thonk w
-   1306 82.13%:  hear that? It's dinosaur thonk a
-   1307 82.12%:  hear that? It's dinosaur thonk 
-   1308 82.11%:  hear that? It's dinosaur thonk y
-   1309 81.90%:  hear that? It's a noise
-   1310 81.85%:  hear that? It's the dinosaur we all know
-   1311 81.81%:  hear that? It sounds like the
-   1312 81.65%:  hear that? It's how we
-   1313 81.65%:  hear that? It's a weird
-   1314 81.60%:  hear that? It's a d
-   1315 81.58%:  hear that? It's a tiny
-   1316 81.58%:  hear that? It's a t
-   1317 81.52%:  hear that? It's a sweet
-   1318 81.51%:  hear that? It's a tr
-   1319 81.48%:  hear that? It's a really
-   1320 81.46%:  hear that? It's like a ro
-   1321 81.44%:  hear that? It's like a low
-   1322 81.43%:  hear that? It's a lot
-   1323 81.41%:  hear that? It's a loud
-   1324 81.40%:  hear that? It's a sin
-   1325 81.39%:  hear that? It's a low
-   1326 81.37%:  hear that? It's a word
-   1327 81.37%:  hear that? It's a s
-   1328 96.62%:  hear that? It's a siren and
-   1329 96.29%:  hear that? It's a siren w
-   1330 96.05%:  hear that? It's a siren on
-   1331 95.87%:  hear that? It's a siren at
-   1332 95.73%:  hear that? It's a siren to
-   1333 91.29%:  hear that? It's a siren on a
-   1334 91.18%:  hear that? It's a siren on the way
-   1335 90.29%:  hear that? It's a siren on the 
-   1336 90.18%:  hear that? It's a siren on the walk
-   1337 81.35%:  hear that? It's a real
-   1338 81.35%:  hear that? It's a ro
-   1339 81.35%:  hear that? It's a wh
-   1340 89.82%:  hear that? It's a whale.
-   1341 81.34%:  hear that? It's a way
-   1342 81.32%:  hear that? It's a r
-   1343 81.32%:  hear that? It's a horse
-   1344 81.30%:  hear that? It's a whole
-   1345 81.30%:  hear that? It's a shout
-   1346 81.29%:  hear that? It's a w
-   1347 81.29%:  hear that? It's a re
-   1348 81.27%:  hear that? It's a thunder
-   1349 81.27%:  hear that? It's a radio
-   1350 81.27%:  hear that? It's a hint
-   1351 81.27%:  hear that? It'll
-   1352 81.26%:  hear that? It's a st
-   1353 81.26%:  hear that? It's a h
-   1354 81.21%:  hear that? It'd
-   1355 81.13%:  hear that? It's like a thousand
-   1356 81.09%:  hear that? It's like a sound
-   1357 81.03%:  hear that? It's a dinosaur yow
-   1358 81.02%:  hear that? It's like when you say
-   1359 80.99%:  hear that? It's way too hilar
-   1360 80.98%:  hear that? It's way too real
-   1361 80.98%:  hear that? It's way too dark
-   1362 80.96%:  hear that? It's all these
-   1363 80.84%:  hear that? It's like a s
-   1364 80.83%:  hear that? It's like a new
-   1365 80.82%:  hear that? It's the dul
-   1366 80.74%:  hear that? It's our new
-   1367 80.73%:  hear that? It's like a wh
-   1368 84.03%:  hear that? It's like a whale.
-   1369 80.70%:  hear that? It's like a horse
-   1370 80.69%:  hear that? It's like a whole
-   1371 80.68%:  hear that? It's like a t
-   1372 80.65%:  hear that? It's like a word
-   1373 80.64%:  hear that? It's like a water
-   1374 80.64%:  hear that? It's like a loud
-   1375 80.61%:  hear that? It's like a r
-   1376 80.59%:  hear that? It's like a shout
-   1377 80.59%:  hear that? It's like a h
-   1378 80.55%:  hear that? It's like a w
-   1379 80.53%:  hear that? It's like a d
-   1380 80.52%:  hear that? It's like a how
-   1381 82.69%:  hear that? It's like a howler
-   1382 81.62%:  hear that? It's like a howl.
-   1383 80.50%:  hear that? It's like a thunder
-   1384 80.49%:  hear that? It's like a 
-   1385 80.49%:  hear that? It's like a tr
-   1386 80.48%:  hear that? It's like a her
-   1387 80.48%:  hear that? It's like a horn
-   1388 80.48%:  hear that? It's like a st
-   1389 80.47%:  hear that? It's like a door
-   1390 80.47%:  hear that? It's like a sne
-   1391 80.46%:  hear that? It's like a slow
-   1392 80.46%:  hear that? It's like a sh
-   1393 80.44%:  hear that? It's so hard
-   1394 80.43%:  hear that? It's like a real
-   1395 80.43%:  hear that? It's like a l
-   1396 80.42%:  hear that? It's like a heart
-   1397 80.41%:  hear that? It's dinosaurly talk.
-   1398 80.39%:  hear that? It's how you
-   1399 80.31%:  hear that? It's hard to say.
-   1400 80.17%:  hear that? It sounds like an
-   1401 80.10%:  hear that? It's dinosaur yokel
-   1402 79.83%:  hear that? It's a dino ro
-   1403 79.77%:  hear that? It's not you
-   1404 79.72%:  hear that? It's okay to
-   1405 79.67%:  hear that? It's a siren and we
-   1406 79.67%:  hear that? It's hard.
-   1407 79.63%:  hear that? It's like a whale or
-   1408 79.48%:  hear that? It's only the sound
-   1409 79.46%:  hear that? Is that you
-   1410 79.44%:  hear that? It's this new
-   1411 79.38%:  hear that? It's always there
-   1412 79.31%:  hear that? It's this loud
-   1413 79.14%:  hear that? It's all in
-   1414 79.05%:  hear that? It's a dinosaur yel
-   1415 79.03%:  hear that? It's always like
-   1416 79.03%:  hear that? It's what you
-   1417 79.00%:  hear that? It's dinosaur on all the
-   1418 78.98%:  hear that? It's always in
-   1419 78.89%:  hear that? It's always on
-   1420 78.89%:  hear that? It sounds like they
-   1421 78.89%:  hear that? It's an old
-   1422 78.84%:  hear that? It's hard not
-   1423 78.80%:  hear that? It's not so
-   1424 78.78%:  hear that? It's your own
-   1425 78.77%:  hear that? It's all so
-   1426 78.76%:  hear that? It's dinosaur yowl
-   1427 78.75%:  hear that? It sounds like he
-   1428 78.73%:  hear that? It's all a
-   1429 78.63%:  hear that? It's all you
-   1430 78.60%:  hear that? It's only when
-   1431 78.58%:  hear that? It's only like
-   1432 78.52%:  hear that? It's an o
-   1433 78.51%:  hear that? It's all this
-   1434 78.46%:  hear that? It's only one
-   1435 78.42%:  hear that? Is that an
-   1436 78.40%:  hear that? It's how it
-   1437 78.38%:  hear that? It's too hard
-   1438 78.37%:  hear that? It sounds like we
-   1439 78.36%:  hear that? It sounds like one
-   1440 78.34%:  hear that? It's way worse
-   1441 78.30%:  hear that? It's way down
-   1442 78.27%:  hear that? It's not your
-   1443 78.25%:  hear that? It's so hilar
-   1444 78.24%:  hear that? It's this really
-   1445 78.23%:  hear that? It's way lou
-   1446 92.84%:  hear that? It's way louder than we
-   1447 91.97%:  hear that? It's way louder than in
-   1448 82.20%:  hear that? It's way louder in
-   1449 80.59%:  hear that? It's way louder when
-   1450 78.22%:  hear that? It's not on
-   1451 78.18%:  hear that? It's only in
-   1452 78.18%:  hear that? It sounds like when
-   1453 78.17%:  hear that? It's what we
-   1454 78.17%:  hear that? It sounds like '
-   1455 78.14%:  hear that? It's not really
-   1456 78.12%:  hear that? It's what a
-   1457 78.09%:  hear that? It's not in
-   1458 78.08%:  hear that? It's not real
-   1459 78.05%:  hear that? Is that your
-   1460 78.05%:  hear that? It's our last
-   1461 78.04%:  hear that? It's not hard
-   1462 77.99%:  hear that? It's not as
-   1463 77.99%:  hear that? It's way to
-   1464 77.98%:  hear that? It's an aud
-   1465 77.97%:  hear that? It's all their
-   1466 77.93%:  hear that? It's all those
-   1467 77.91%:  hear that? It's all around
-   1468 77.90%:  hear that? It's all din
-   1469 86.75%:  hear that? It's all dinos
-   1470 86.07%:  hear that? It's all dinosaur.
-   1471 85.68%:  hear that? It's all dinosaur no
-   1472 81.66%:  hear that? It's all dinosaur on
-   1473 81.57%:  hear that? It's all dinosaur w
-   1474 81.56%:  hear that? It's all dinosaury
-   1475 81.54%:  hear that? It's all dinosaur now
-   1476 81.54%:  hear that? It's all dinosaur y
-   1477 81.48%:  hear that? It's all dinosaur n
-   1478 81.43%:  hear that? It's all dinosaur who
-   1479 77.89%:  hear that? It's so true
-   1480 77.88%:  hear that? It's an alien
-   1481 77.85%:  hear that? It's this one
-   1482 77.84%:  hear that? It's weird how
-   1483 77.83%:  hear that? It's not an
-   1484 77.80%:  hear that? It's in a
-   1485 77.80%:  hear that? It's what all
-   1486 77.78%:  hear that? It's not us
-   1487 77.75%:  hear that? It's all we
-   1488 77.74%:  hear that? It's all in your
-   1489 89.17%:  hear that? It's all in your head.
-   1490 77.74%:  hear that? It's our old
-   1491 77.73%:  hear that? It's a siren at 
-   1492 77.73%:  hear that? It's all your
-   1493 77.71%:  hear that? It's a whale in
-   1494 77.69%:  hear that? It's one word
-   1495 77.65%:  hear that? Is that our
-   1496 77.64%:  hear that? It's not one
-   1497 77.62%:  hear that? It's not all
-   1498 77.61%:  hear that? Is that like
-   1499 77.60%:  hear that? It's nothin
-   1500 77.59%:  hear that? It's the dinosaur yoke.
-   1501 77.59%:  hear that? It's so no
-   1502 77.59%:  hear that? It's so you
-   1503 77.59%:  hear that? It's not loud
-   1504 77.58%:  hear that? It's so rude
-   1505 77.57%:  hear that? It's in our
-   1506 77.55%:  hear that? It's not easy
-   1507 77.54%:  hear that? It's dinosaur hokey.
-   1508 77.53%:  hear that? It's not his
-   1509 77.52%:  hear that? It's not our
-   1510 77.50%:  hear that? Is that one
-   1511 77.50%:  hear that? It's too.
-   1512 77.49%:  hear that? It's your last
-   1513 77.49%:  hear that? It's weird to
-   1514 77.47%:  hear that? It's so low
-   1515 77.46%:  hear that? It's really a
-   1516 77.43%:  hear that? It's really the
-   1517 77.42%:  hear that? It's an answer
-   1518 77.42%:  hear that? It's so ha
-   1519 77.41%:  hear that? It's so they
-   1520 77.40%:  hear that? It's an un
-   1521 77.40%:  hear that? It's an insult
-   1522 77.40%:  hear that? It's dinosaur awwwk
-   1523 77.40%:  hear that? It's only on
-   1524 77.39%:  hear that? Is that sound
-   1525 77.38%:  hear that? It's so real
-   1526 77.37%:  hear that? It's dinosaur waww
-   1527 77.37%:  hear that? It's so eer
-   1528 77.37%:  hear that? It's your old
-   1529 77.37%:  hear that? Is that din
-   1530 100.88%:  hear that? Is that dinosaur no
-   1531 92.12%:  hear that? Is that dinosaur on
-   1532 91.76%:  hear that? Is that dinosaur'
-   1533 90.96%:  hear that? Is that dinosaur y
-   1534 90.91%:  hear that? Is that dinosaur we
-   1535 90.89%:  hear that? Is that dinosaur w
-   1536 83.08%:  hear that? Is that dinosaur we'
-   1537 77.84%:  hear that? Is that dinosa
-   1538 77.36%:  hear that? It's too weird
-   1539 77.36%:  hear that? It's so un
-   1540 77.35%:  hear that? Is that really
-   1541 77.33%:  hear that? It's so weak
-   1542 77.33%:  hear that? It's so like
-   1543 77.32%:  hear that? It's so he
-   1544 77.31%:  hear that? It's so we
-   1545 77.31%:  hear that? It's hard on
-   1546 77.30%:  hear that? It's so it
-   1547 77.29%:  hear that? It's so dark
-   1548 77.27%:  hear that? It's all his
-   1549 77.25%:  hear that? It's in there
-   1550 77.25%:  hear that? It's your new
-   1551 77.25%:  hear that? It's way loud
-   1552 77.23%:  hear that? It's one way
-   1553 77.23%:  hear that? It's all they
-   1554 77.22%:  hear that? It's always weird
-   1555 77.21%:  hear that? It's one din
-   1556 97.36%:  hear that? It's one dinosaur.
-   1557 90.76%:  hear that? It's one dinosaur y
-   1558 90.69%:  hear that? It's one dinosaur at
-   1559 90.63%:  hear that? It's one dinosaur a
-   1560 77.21%:  hear that? It's too easy
-   1561 77.19%:  hear that? It's one thousand
-   1562 77.19%:  hear that? It's way easier
-   1563 77.18%:  hear that? It's how our
-   1564 77.18%:  hear that? It's in all
-   1565 77.17%:  hear that? It's our own
-   1566 77.17%:  hear that? It's only us
-   1567 77.15%:  hear that? It's way worse than you
-   1568 77.12%:  hear that? It's always when
-   1569 77.12%:  hear that? It's weirdly
-   1570 77.09%:  hear that? It's way out
-   1571 77.07%:  hear that? It's our din
-   1572 77.06%:  hear that? It's all one
-   1573 77.05%:  hear that? It's a whale or
-   1574 77.03%:  hear that? It's an aster
-   1575 78.44%:  hear that? It's an asteroid.
-   1576 77.02%:  hear that? It's your d
-   1577 77.01%:  hear that? It's all there
-   1578 77.01%:  hear that? It's one sound
-   1579 77.00%:  hear that? It's what our
-   1580 76.98%:  hear that? It's an honest
-   1581 76.98%:  hear that? It's a dino.
-   1582 76.98%:  hear that? It's always you
-   1583 76.97%:  hear that? It's way easier to do
-   1584 76.96%:  hear that? I'
-   1585 76.96%:  hear that? It's all down
-   1586 76.95%:  hear that? It's only 
-   1587 76.94%:  hear that? It's an all
-   1588 76.94%:  hear that? It's in stere
-   1589 87.51%:  hear that? It's in stereo.
-   1590 76.93%:  hear that? It's all too
-   1591 76.93%:  hear that? It's an audio
-   1592 76.93%:  hear that? It's a whale sound
-   1593 76.92%:  hear that? It's way in
-   1594 76.92%:  hear that? It's this low
-   1595 76.92%:  hear that? It's an a
-   1596 76.92%:  hear that? It's what your
-   1597 76.91%:  hear that? It's how to
-   1598 76.91%:  hear that? It's an idea
-   1599 76.90%:  hear that? It's dinosaur nate.
-   1600 76.89%:  hear that? It's all d
-   1601 76.89%:  hear that? It's an in
-   1602 76.88%:  hear that? It's really not
-   1603 76.87%:  hear that? It's an aw
-   1604 76.87%:  hear that? It's all true
-   1605 76.87%:  hear that? It's an entire
-   1606 76.86%:  hear that? It's too early
-   1607 76.86%:  hear that? It's really easy
-   1608 76.96%:  hear that? It's really easy to do
-   1609 76.86%:  hear that? It's always one
-   1610 76.86%:  hear that? It's all he
-   1611 76.86%:  hear that? It's all on
-   1612 76.85%:  hear that? It's all an
-   1613 76.85%:  hear that? It's how din
-   1614 76.84%:  hear that? It's an ele
-   1615 76.84%:  hear that? It's way weird
-   1616 76.83%:  hear that? It's an inter
-   1617 76.83%:  hear that? It's an an
-   1618 76.82%:  hear that? It's your din
-   1619 76.81%:  hear that? It's one note
-   1620 76.81%:  hear that? It's always weird when you know
-   1621 76.79%:  hear that? It's an e
-   1622 76.79%:  hear that? It's only natural
-   1623 76.79%:  hear that? It's your so
-   1624 76.79%:  hear that? It's what din
-   1625 76.79%:  hear that? It's an hour
-   1626 76.78%:  hear that? It's all it
-   1627 76.78%:  hear that? It's one last
-   1628 76.77%:  hear that? It's always loud
-   1629 76.77%:  hear that? It's one.
-   1630 76.77%:  hear that? It's an at
-   1631 76.77%:  hear that? It's an air
-   1632 76.77%:  hear that? It's all hard
-   1633 76.77%:  hear that? It's really no
-   1634 87.29%:  hear that? It's really noisy.
-   1635 76.76%:  hear that? It's this old
-   1636 76.76%:  hear that? It's your only
-   1637 76.76%:  hear that? It's an under
-   1638 76.76%:  hear that? It's one day
-   1639 76.76%:  hear that? It's how loud
-   1640 76.76%:  hear that? It's what one
-   1641 76.76%:  hear that? It's an ins
-   1642 76.75%:  hear that? It's all weird
-   1643 76.75%:  hear that? It's weird when
-   1644 76.74%:  hear that? It's one with
-   1645 76.74%:  hear that? It's your dest
-   1646 76.73%:  hear that? It's one loud
-   1647 76.73%:  hear that? It's one o
-   1648 76.72%:  hear that? It's this un
-   1649 76.72%:  hear that? It's an out
-   1650 76.71%:  hear that? It's your son
-   1651 76.70%:  hear that? It's your holy
-   1652 76.70%:  hear that? It's an ad
-   1653 76.70%:  hear that? It's your one
-   1654 76.70%:  hear that? It's your idea
-   1655 76.69%:  hear that? It's way outside
-   1656 76.69%:  hear that? It's an endorse
-   1657 76.69%:  hear that? It's an ent
-   1658 77.53%:  hear that? It's an enthused o
-   1659 88.47%:  hear that? It's an enthused owl.
-   1660 77.50%:  hear that? It's an enthused y
-   1661 77.44%:  hear that? It's an enthused ro
-   1662 77.36%:  hear that? It's an enthused all
-   1663 77.34%:  hear that? It's an enthused or
-   1664 77.34%:  hear that? It's an enthused a
-   1665 76.69%:  hear that? It's one line
-   1666 76.69%:  hear that? It's this r
-   1667 76.69%:  hear that? It's an eer
-   1668 76.68%:  hear that? It's weird too
-   1669 76.68%:  hear that? It's an earth
-   1670 76.68%:  hear that? It's one or
-   1671 76.68%:  hear that? It's one in
-   1672 76.68%:  hear that? It's what d
-   1673 76.68%:  hear that? It's how all
-   1674 76.67%:  hear that? It's how a
-   1675 76.67%:  hear that? It's a whale on
-   1676 76.67%:  hear that? It's only din
-   1677 80.66%:  hear that? It's only dinos
-   1678 77.98%:  hear that? It's only dinosaur.
-   1679 76.66%:  hear that? It's an astr
-   1680 76.66%:  hear that? It's an 
-   1681 76.66%:  hear that? It's an ear
-   1682 76.66%:  hear that? It's an er
-   1683 76.66%:  hear that? It's one tiny
-   1684 76.66%:  hear that? It's way hard
-   1685 76.65%:  hear that? It's our only
-   1686 76.65%:  hear that? It's an on
-   1687 76.65%:  hear that? It's an ul
-   1688 86.23%:  hear that? It's an ultrason
-   1689 85.80%:  hear that? It's an ultrad
-   1690 83.15%:  hear that? It's an ultrah
-   1691 78.36%:  hear that? It's an ultrash
-   1692 76.65%:  hear that? It's an easy
-   1693 76.64%:  hear that? It's way we
-   1694 82.12%:  hear that? It's way weir
-   1695 76.64%:  hear that? It's this way
-   1696 76.63%:  hear that? It's hard out
-   1697 76.62%:  hear that? It's one hell
-   1698 76.62%:  hear that? It's only you
-   1699 76.61%:  hear that? It's a dinosaur who went
-   1700 76.60%:  hear that? It's our dest
-   1701 79.80%:  hear that? It's our destiny.
-   1702 76.59%:  hear that? It's what is
-   1703 76.59%:  hear that? It's our d
-   1704 76.59%:  hear that? It's this ro
-   1705 76.58%:  hear that? It's always your
-   1706 76.58%:  hear that? It's this d
-   1707 76.58%:  hear that? It's hard too
-   1708 76.58%:  hear that? It's only an
-   1709 76.58%:  hear that? It's our show
-   1710 76.57%:  hear that? It's way d
-   1711 76.57%:  hear that? It's this w
-   1712 76.57%:  hear that? It's inaud
-   1713 76.56%:  hear that? It's a dinosaur who y
-   1714 76.56%:  hear that? It's a siren and the
-   1715 76.56%:  hear that? It's hard as
-   1716 76.56%:  hear that? It's only now
-   1717 76.56%:  hear that? It's what was
-   1718 76.55%:  hear that? It's only at
-   1719 76.54%:  hear that? It's in here
-   1720 76.54%:  hear that? It's really an
-   1721 76.53%:  hear that? It's this de
-   1722 76.52%:  hear that? It's way way
-   1723 76.52%:  hear that? It's this no
-   1724 76.52%:  hear that? It's way under
-   1725 76.51%:  hear that? It's as loud
-   1726 76.50%:  hear that? It's hard in
-   1727 76.50%:  hear that? It's too dark
-   1728 76.50%:  hear that? It's this lady
-   1729 76.50%:  hear that? It's this o
-   1730 76.50%:  hear that? It's always weird when you y
-   1731 76.49%:  hear that? It's really sad
-   1732 76.49%:  hear that? It's always lou
-   1733 90.04%:  hear that? It's always louder when it
-   1734 83.72%:  hear that? It's always louder in
-   1735 81.80%:  hear that? It's always louder when no
-   1736 76.49%:  hear that? It's a dinosaur who we
-   1737 76.49%:  hear that? It's only to
-   1738 76.49%: 're on our
-   1739 76.48%:  hear that? It's really too
-   1740 76.48%:  hear that? It's our one
-   1741 76.48%:  hear that? It's a dinosaur who e
-   1742 76.47%:  hear that? It's only two
-   1743 76.47%:  don't want to see their
-   1744 76.47%:  don't hear that in
-   1745 76.47%:  hear that? It's ines
-   1746 76.46%:  hear that? It's dinosaurly on the
-   1747 76.46%:  hear that? It's how one
-   1748 76.45%:  hear that? It's way on
-   1749 76.44%:  hear that? It's really un
-   1750 76.44%:  hear that? It's okay it
-   1751 76.44%:  don't want that
-   1752 76.43%:  hear that? It's okay we
-   1753 76.42%:  hear that? It's really one
-   1754 76.42%:  hear that? It's our holy
-   1755 76.42%:  don't like when I swear
-   1756 76.42%:  don't see what I think you are
-   1757 76.42%:  don't want to write a re
-   1758 76.41%:  hear that? It's really unset
-   1759 76.41%:  hear that? It's our al
-   1760 76.41%:  hear that? It's only three
-   1761 76.41%:  hear that? It's howler
-   1762 76.40%:  hear that? It's a whale noise
-   1763 76.40%:  hear that? It's always with
-   1764 76.40%:  hear that? It's a whale outside
-   1765 76.40%:  hear that? It's too hilar
-   1766 76.40%:  hear that? It's howl
-   1767 76.40%:  hear that? It's our newest
-   1768 76.40%:  hear that? It's our de
-   1769 78.76%:  hear that? It's our deity.
-   1770 76.40%:  hear that? It's only this
-   1771 76.39%:  hear that? It's a whale s
-   1772 87.04%:  hear that? It's a whale siren on
-   1773 76.39%:  hear that? It's our line
-   1774 76.39%:  hear that? It's our heads
-   1775 76.39%:  hear that? It's really in
-   1776 76.39%: 're with us on the way
-   1777 76.39%:  hear that? It's a sireen
-   1778 76.39%:  hear that? It's okay with
-   1779 76.39%:  don't want these
-   1780 76.39%:  hear that? It's in tune
-   1781 76.39%:  hear that? It's okay you
-   1782 76.38%:  hear that? It's a whale sne
-   1783 76.38%:  hear that? It's only there
-   1784 76.38%:  hear that? It's only your
-   1785 76.38%:  hear that? It's only d
-   1786 76.38%:  know what? I don't see that
-   1787 76.37%:  hear that? It's in one
-   1788 76.37%:  hear that? It's wayyy
-   1789 76.37%:  hear that? It's way n
-   1790 76.37%:  hear that? It's way like
-   1791 76.37%:  hear that? It's way lower
-   1792 76.37%: 're a dinosaur at the show? It
-   1793 76.36%:  hear that? It's in real
-   1794 76.36%:  hear that? It's way hilar
-   1795 76.36%:  hear that? It's in 
-   1796 76.35%: 're an old
-   1797 76.35%:  hear that? It's too real
-   1798 76.35%:  hear that? It's in three
-   1799 76.34%:  hear that? It's inane
-   1800 76.34%:  hear that? It's way easy
-   1801 76.34%:  don't want to see his
-   1802 76.34%:  don't like when I steal
-   1803 76.34%:  are
-   1804 76.33%:  don't hear that either
-   1805 76.33%:  hear that? It's in you
-   1806 76.33%: 're an atheist? Is that new or
-   1807 76.33%:  hear that? It's only loud
-   1808 76.33%:  hear that? It's how your
-   1809 76.33%:  hear that? It's only our
-   1810 76.32%:  hear that? It's too like
-   1811 76.32%:  hear that? It's way sad
-   1812 76.32%:  don't want our
-   1813 76.32%:  hear that? It's only heard
-   1814 76.31%:  hear that? It's only true
-   1815 76.31%:  hear that? It's way so
-   1816 76.31%:  hear that? It's true and
-   1817 76.31%:  hear that? It's too d
-   1818 76.31%:  hear that? It's how do
-   1819 76.30%:  hear that? It's always no
-   1820 76.30%: 're always so
-   1821 76.30%:  hear that? It's always too
-   1822 76.30%:  know what? I don't see this
-   1823 76.30%:  hear that? It's way dark
-   1824 76.29%:  hear that? It's always 
-   1825 76.29%:  hear that? It's only sort
-   1826 76.29%: 're an atheist now? Is that why we all
-   1827 76.29%:  hear that? It's only sound
-   1828 76.29%: 're on your knees? It
-   1829 76.28%:  hear that? It's only so
-   1830 76.28%:  hear that? It's way late
-   1831 76.28%:  hear that? It's only aud
-   1832 76.27%:  hear that? It's way no
-   1833 88.18%:  hear that? It's way noisy
-   1834 76.27%:  hear that? It's way early
-   1835 76.26%:  don't like when I try
-   1836 76.26%:  hear that? It's only with
-   1837 76.26%:  hear that? It's hilarous
-   1838 76.26%:  hear that? It's always r
-   1839 76.26%:  hear that? It's always true
-   1840 76.26%:  hear that? It's only noise
-   1841 76.26%:  hear that? It's only those
-   1842 76.26%:  hear that? It's the new sound
-   1843 76.25%:  hear that? It's only his
-   1844 76.25%:  hear that? It's only what
-   1845 76.25%:  hear that? It's only words
-   1846 76.24%: 're an atheist? Is that all he
-   1847 76.23%:  hear that? It's only dinosaur talk
-   1848 76.22%: 're an atheist? Is that allowed now
-   1849 76.22%: 're an atheist now? Is that why all you
-   1850 76.21%:  hear that? It's a dinosaur on t
-   1851 76.21%:  don't see what I think you saw
-   1852 76.21%:  hear that? It's dinosaur on the way
-   1853 76.19%: 're an atheist and you talk
-   1854 76.19%:  don't know where they
-   1855 76.18%: 're the last one who thinks
-   1856 76.16%: 're allowed?
-   1857 76.16%:  hear that? It's like a whale sound
-   1858 76.15%: 're an atheist? Is that all.
-   1859 76.13%: 're always there
-   1860 76.12%:  hear that too
-   1861 76.12%: 're allowed to sneak in that way
-   1862 76.11%: 're the last one who said
-   1863 76.10%: 're not here to talk
-   1864 76.10%:  hear that? It's like a herd.
-   1865 76.10%:  want
-   1866 76.75%:  want to know
-   1867 86.44%:  want to know what's weird
-   1868 97.20%:  want to know what's weird? I
-   1869 89.06%:  want to know what's weird? It
-   1870 83.15%:  want to know what's really
-   1871 82.09%:  want to know what's hilar
-   1872 81.26%:  want to know what's weird? Is
-   1873 81.00%:  want to know what's hard
-   1874 83.36%:  want to know what's hard? It
-   1875 81.42%:  want to know what's hard? I
-   1876 79.89%:  want to know what's the
-   1877 78.31%:  want to know what's sad
-   1878 85.99%:  want to know what's sad? I
-   1879 80.52%:  want to know what's sad? It
-   1880 78.31%:  want to know what's a
-   1881 78.27%:  want to know what's h
-   1882 78.22%:  want to know what's harder
-   1883 78.17%:  want to know what's truly
-   1884 78.13%:  want to know what's silly
-   1885 83.53%:  want to know what's silly? I
-   1886 78.13%:  want to know what's it
-   1887 78.00%:  want to know what's silly? It
-   1888 76.09%:  hear that? It's like a whale on
-   1889 76.06%: 're on this
-   1890 76.05%: 're with us now? Is that what
-   1891 76.05%: 're an atheist and you hear
-   1892 76.05%:  hear that? It's a dinosaur yolk
-   1893 76.05%: 're an atheist now? I saw you at the d
-   1894 76.03%: 're with us? I wanted to know what
-   1895 76.02%:  hear that? I hear
-   1896 76.18%:  hear that? I hear it too and
-   1897 76.02%: 're allowed to say that in an
-   1898 75.99%: 're a dinosaur that wants
-   1899 75.99%: 're not allowed in
-   1900 75.99%: 're allowed to say that in any
-   1901 75.97%: 're an atheist now? It would
-   1902 75.95%:  hear that? It's like a whale s
-   1903 75.95%: 're an atheist now? Is he
-   1904 75.95%: 're not used to that
-   1905 75.94%: 're allowed to say that? I say it when
-   1906 75.94%:  don't hear what
-   1907 90.19%:  don't hear what I hear in
-   1908 90.14%:  don't hear what I hear.
-   1909 89.22%:  don't hear what I hear on
-   1910 89.15%:  don't hear what I hear at
-   1911 75.93%:  don't eat your
-   1912 75.93%: 're allowed to say that? I swear it
-   1913 75.93%:  don't want to kill the
-   1914 75.92%: 're a dinosaur? I totally want
-   1915 75.91%: 're always on
-   1916 75.91%: 're the real
-   1917 75.91%: 're allowed to say that? I say it 
-   1918 75.90%:  hear that? It's way louder now
-   1919 75.89%: 're the all
-   1920 75.87%: 're allowed to say that? I say it.
-   1921 75.87%:  hear that? It's a dinosaur yoke
-   1922 75.86%:  know what? I don't trust a
-   1923 75.85%:  hear that? It's dinosaur on the wall
-   1924 75.84%:  hear that? It's dinosaur on the walk
-   1925 75.84%:  don't hear that line
-   1926 75.84%:  hear that? It's way louder on
-   1927 75.84%: 're okay? Is this
-   1928 75.84%: 're the last one who has
-   1929 75.83%:  don't hear that so
-   1930 75.80%:  wanted
-   1931 82.14%:  wanted to see
-   1932 77.53%:  wanted to try
-   1933 76.70%:  wanted to hear
-   1934 76.15%:  wanted to know
-   1935 75.80%: 're the last one I want
-   1936 75.80%: 're the reason
-   1937 75.80%:  hear that? It's a dinosaur t.
-   1938 75.79%: 're with us at the show? It really
-   1939 75.79%: 're the last one who was
-   1940 75.79%: 're a dinosaur? I see no
-   1941 75.78%:  hear that? It's only dinosaur the
-   1942 75.77%: 're a dinosaur? I know that
-   1943 75.75%:  hear that? It's only dinosaur w
-   1944 75.74%:  hear that? It's the way you
-   1945 75.73%:  don't hear that as
-   1946 75.72%:  hear that? It's way easy to do
-   1947 75.72%: 're there too
-   1948 75.71%:  don't eat the
-   1949 75.71%:  looked
-   1950 75.71%: 're the din
-   1951 104.60%: 're the dinosaur?
-   1952 98.18%: 're the dinosaur that
-   1953 96.80%: 're the dinosaur who
-   1954 93.82%: 're the dinosaur on
-   1955 92.75%: 're the dinosaur one
-   1956 91.02%: 're the dinosaur on the last
-   1957 90.40%: 're the dinosaur.
-   1958 90.09%: 're the dinosaur I
-   1959 90.02%: 're the dinosaur on the wall
-   1960 89.97%: 're the dinosaur at
-   1961 88.98%: 're the dinosaur whose
-   1962 88.94%: 're the dinosaur we
-   1963 88.91%: 're the dinosaur to
-   1964 88.84%: 're the dinosaur now
-   1965 88.21%: 're the dinosaur on the t
-   1966 88.09%: 're the dinosaur on the s
-   1967 88.08%: 're the dinosaur on the 
-   1968 86.28%: 're the dinosaur now? I
-   1969 84.60%: 're the dinosaur at the show
-   1970 84.52%: 're the dinosaur at the last
-   1971 83.92%: 're the dinosaur now? Is
-   1972 88.98%: 're the dinosaur now? Is that why
-   1973 86.89%: 're the dinosaur now? Is that a
-   1974 85.99%: 're the dinosaur now? Is that what we
-   1975 84.90%: 're the dinosaur now? Is that the
-   1976 84.87%: 're the dinosaur now? Is that what all
-   1977 84.81%: 're the dinosaur now? Is that what a
-   1978 83.71%: 're the dinosaur now? It
-   1979 82.14%: 're the dinosaur at the show? I
-   1980 80.93%: 're the dinosaur? I
-   1981 79.56%: 're the dinosaur at the show? It
-   1982 78.81%: 're the dinosaur now? Is that all
-   1983 78.77%: 're the dinosaur? Is
-   1984 95.18%: 're the dinosaur? Is that why
-   1985 78.71%: 're the dinosaur? It
-   1986 78.60%: 're the dinosaur? Is that what we
-   1987 78.55%: 're the dinosaur to the
-   1988 78.46%: 're the dinosaur? Is that the
-   1989 77.68%: 're the dinosaur? Is that a
-   1990 77.44%: 're the dinosaur? Is that what a
-   1991 77.37%: 're the dinosaur? Is that what all
-   1992 77.21%: 're the dinosaur? Is that who
-   1993 76.66%: 're the dinosaur? Is that how
-   1994 76.24%: 're the dinosaur that was
-   1995 76.05%: 're the dinosaur that I
-   1996 75.70%: 're an atheist? I want to ask you why
-   1997 75.70%: 're an atheist now? It takes
-   1998 75.70%:  saw
-   1999 89.49%:  saw it too? I
-   2000 88.82%:  saw it too? It
-   2001 101.55%:  saw it too? It'
-   2002 99.85%:  saw it too? It's a
-   2003 99.83%:  saw it too? It's the
-   2004 97.56%:  saw it too? It's really
-   2005 97.53%:  saw it too? It's hard
-   2006 97.33%:  saw it too? It's all
-   2007 96.36%:  saw it too? It's true
-   2008 95.66%:  saw it too? It's what
-   2009 95.63%:  saw it too? It's an
-   2010 95.59%:  saw it too? It's way
-   2011 95.47%:  saw it too? It's un
-   2012 95.34%:  saw it too? It's terr
-   2013 83.31%:  saw it too? It was the
-   2014 83.13%:  saw it too? It's really hard
-   2015 82.69%:  saw it too? It was a
-   2016 81.94%:  saw it too? I'
-   2017 81.71%:  saw it too? It was really
-   2018 81.48%:  saw it too? It's true.
-   2019 81.18%:  saw it too? It's unreal
-   2020 80.40%:  saw it too? It was all
-   2021 79.71%:  saw it too? It was hard
-   2022 79.67%:  saw it too? It was way
-   2023 79.64%:  saw it too? It was an
-   2024 79.60%:  saw it too? It was un
-   2025 79.49%:  saw it too? It was terr
-   2026 79.47%:  saw it too? It was h
-   2027 78.23%:  saw it too? It's all the
-   2028 77.23%:  saw it too? It's a new
-   2029 76.62%:  saw it too? It'll
-   2030 76.42%:  saw it too? It'd
-   2031 75.84%:  saw it too? It's a real
-   2032 75.68%:  don't hear that on
-   2033 75.68%: 're with us at the show? It only
-   2034 75.67%:  don't hear that I
-   2035 75.67%: 're an atheist now? Is at
-   2036 75.65%:  don't hear that when
-   2037 79.45%:  don't hear that when I
-   2038 76.86%:  don't hear that when I say it.
-   2039 75.65%: 're not here to ask
-   2040 75.65%: 're the last one who list
-   2041 75.63%: 're an atheist now? It all
-   2042 75.63%: 're the last one who saw
-   2043 75.63%:  don't see how
-   2044 75.63%:  hear that? It's like a herd on
-   2045 75.63%: 're with us at the show? It all
-   2046 75.63%: 're the dinosaur one? I
-   2047 75.62%: 're an atheist now? It really
-   2048 75.61%:  saw it too? It's a really
-   2049 75.61%: 're an atheist now? It worked
-   2050 75.59%: 're the last one who is
-   2051 75.58%: 're the al
-   2052 75.57%:  there
-   2053 75.57%: 're an atheist and you hate
-   2054 75.56%: 're the last one who I
-   2055 75.56%: 're an atheist and you really
-   2056 75.56%: 're allowed to sneak in at a
-   2057 75.56%: 're not here to say
-   2058 75.56%: 're an atheist now? It used
-   2059 75.55%: 're the last one who hasn
-   2060 75.55%: 're with us? I need to talk to a
-   2061 75.54%: 're an atheist and you totally
-   2062 75.54%: 're an atheist and you saw
-   2063 75.54%:  hear that? It's so hard to nail
-   2064 75.54%: 're an atheist and you are
-   2065 75.54%:  don't hear that at
-   2066 75.53%: 're an atheist and you sw
-   2067 75.59%: 're an atheist and you swore at
-   2068 75.53%: 're in here? Is that
-   2069 75.53%:  don't want to ask the
-   2070 75.53%: 're here? Is that why
-   2071 75.52%:  know what I'll do when
-   2072 75.51%:  saw it too? It's all a
-   2073 75.50%: 're an atheist now? It sure
-   2074 75.50%:  don't like when I say the
-   2075 75.50%:  don't hear that noise
-   2076 75.49%: 're an atheist now? It works
-   2077 75.49%:  don't hear that you
-   2078 75.48%:  don't hear that nearly
-   2079 75.48%: 're an atheist and you wrote
-   2080 75.48%:  saw it too? It's a d
-   2081 75.48%:  don't hear that anywhere
-   2082 75.48%: 're the dinosaur that e
-   2083 75.47%:  don't hear that.
-   2084 75.47%:  hear that? It's like a howl or
-   2085 75.46%:  don't hear that here
-   2086 75.45%: 're not who I think
-   2087 75.45%: 're the last one who had
-   2088 75.44%: 're the last one who talks
-   2089 75.44%:  don't want to eat a
-   2090 75.42%:  knew
-   2091 75.42%:  don't hear that one
-   2092 75.40%:  don't know what we
-   2093 75.40%:  don't hear that like
-   2094 75.39%: 're the worst
-   2095 75.38%:  don't hear that any
-   2096 75.38%:  don't take it
-   2097 75.37%:  don't want to tell a
-   2098 75.36%:  don't hear that they
-   2099 75.36%:  saw it too? It's what we
-   2100 75.35%:  saw it too? It's the new
-   2101 75.34%:  don't hear that there
-   2102 75.34%:  saw it too? It's the d
-   2103 75.32%:  don't like to see
-   2104 75.32%:  don't see a
-   2105 75.31%:  hear that? It's a siren and you
-   2106 75.31%:  see
-   2107 79.80%:  see what I'
-   2108 75.31%: 're on a
-   2109 75.30%: 're still around? It
-   2110 75.29%:  weren
-   2111 92.81%:  weren't k
-   2112 89.84%:  weren't at
-   2113 113.52%:  weren't at the show? I
-   2114 110.36%:  weren't at the show? It
-   2115 109.83%:  weren't at the show? It was a
-   2116 109.60%:  weren't at the show? It was hilar
-   2117 109.24%:  weren't at the show.
-   2118 106.38%:  weren't at the show with
-   2119 106.61%:  weren't at the show with us? I
-   2120 105.90%:  weren't at the show and
-   2121 105.70%:  weren't at the show or
-   2122 105.65%:  weren't at the show so
-   2123 105.62%:  weren't at the show at
-   2124 129.73%:  weren't at the show at all? I
-   2125 124.01%:  weren't at the show at all? Is
-   2126 108.34%:  weren't at the show at all? I was
-   2127 105.46%:  weren't at the show I
-   2128 105.43%:  weren't at the show last
-   2129 104.57%:  weren't at the show with us.
-   2130 104.35%:  weren't at the show? It was way
-   2131 104.20%:  weren't at the show at all? I don
-   2132 104.06%:  weren't at the show? It was all
-   2133 103.93%:  weren't at the show? It was an
-   2134 103.87%:  weren't at the show? It was in
-   2135 103.84%:  weren't at the show? It was on
-   2136 103.76%:  weren't at the show? It was only
-   2137 103.74%:  weren't at the show? It was your
-   2138 103.73%:  weren't at the show? It was okay
-   2139 103.73%:  weren't at the show? It was h
-   2140 103.72%:  weren't at the show? It was rad
-   2141 103.67%:  weren't at the show? It was hard
-   2142 100.66%:  weren't at the show at all.
-   2143 100.48%:  weren't at the show with us and
-   2144 99.83%:  weren't at the show at all? I saw
-   2145 104.51%:  weren't at the show at all? I saw you in
-   2146 99.78%:  weren't at the show at all and
-   2147 99.24%:  weren't at the show at all so
-   2148 99.16%:  weren't at the show at all I
-   2149 98.82%:  weren't at the show at all? I had
-   2150 98.16%:  weren't at the show at all? I know
-   2151 97.88%:  weren't at the show at all? I said
-   2152 97.75%:  weren't at the show at all? I wasn
-   2153 97.43%:  weren't at the show at all? I kinda
-   2154 96.03%:  weren't at the show at all? Is your
-   2155 95.43%:  weren't at the show at all so I
-   2156 95.08%:  weren't at the show and I
-   2157 94.48%:  weren't at the show at all? I saw you.
-   2158 94.36%:  weren't at the show I was
-   2159 94.17%:  weren't at the show and you still
-   2160 94.08%:  weren't at the show. I
-   2161 94.03%:  weren't at the show and you say
-   2162 93.97%:  weren't at the show and you saw
-   2163 93.85%:  weren't at the show? I would
-   2164 93.35%:  weren't at the show? It was in a
-   2165 93.32%:  weren't at the show? I was
-   2166 93.25%:  weren't at the show at all? I saw you w
-   2167 93.14%:  weren't at the show at all? Is our
-   2168 91.19%:  weren't at the show with us and I
-   2169 90.38%:  weren't at the show? It was all din
-   2170 89.65%:  weren't in
-   2171 99.43%:  weren't in the show
-   2172 89.30%:  weren't on
-   2173 89.29%:  weren't the
-   2174 89.12%:  weren't serious
-   2175 89.03%:  weren't allowed
-   2176 100.52%:  weren't allowed to say
-   2177 99.28%:  weren't allowed to say that.
-   2178 97.50%:  weren't allowed to say that in
-   2179 94.74%:  weren't allowed to say that I
-   2180 94.66%:  weren't allowed to say that was
-   2181 93.65%:  weren't allowed to say that? I
-   2182 92.18%:  weren't allowed to say that? Is
-   2183 88.98%:  weren't?
-   2184 88.81%:  weren't really
-   2185 88.61%:  weren't around
-   2186 88.58%:  weren't one
-   2187 88.52%:  weren't a
-   2188 88.51%:  weren't that
-   2189 88.44%:  weren't e
-   2190 88.40%:  weren't aware
-   2191 88.39%:  weren't seriously
-   2192 88.38%:  weren't like
-   2193 88.37%:  weren't sure
-   2194 88.36%:  weren't already
-   2195 88.32%:  weren't at the show? I don
-   2196 88.30%:  weren't at the show and you saw it?
-   2197 88.29%:  weren't at the show at all and I
-   2198 88.05%:  weren't on the list
-   2199 87.35%:  weren't at the show? I saw
-   2200 87.20%:  weren't at the show so why
-   2201 86.84%:  weren't at the show with us. I
-   2202 86.74%:  weren't at the show? It was only a
-   2203 86.51%:  weren't aware that I
-   2204 86.40%:  weren't on the show
-   2205 86.22%:  weren't at the show? I think
-   2206 86.18%:  weren't at the show at all. I
-   2207 86.00%:  weren't at the show? I had
-   2208 85.93%:  weren't at the show? It was hilaa
-   2209 85.80%:  weren't at the show? I know
-   2210 85.56%:  weren't at the show? I said
-   2211 85.51%:  weren't at the show? I wasn
-   2212 85.44%:  weren't at the show? I told
-   2213 85.42%:  weren't at the show? I wouldn
-   2214 85.31%:  weren't at the show? I want
-   2215 85.30%:  weren't at the show? I should
-   2216 85.27%:  weren't at the show? I kinda
-   2217 84.92%:  weren't in the aud
-   2218 84.88%:  weren't at the show? It wasn
-   2219 84.65%:  weren't at the stand
-   2220 84.62%:  weren't at the show at all? I had no
-   2221 84.52%:  weren't at the show? It was an hour
-   2222 84.45%:  weren't at the show? I saw you in
-   2223 84.44%:  weren't at the din
-   2224 102.81%:  weren't at the dinosaur show? I
-   2225 100.07%:  weren't at the dinosaur show? It
-   2226 99.29%:  weren't at the dinosaur talk
-   2227 99.28%:  weren't at the dinosaur?
-   2228 99.13%:  weren't at the dinosaur.
-   2229 98.73%:  weren't at the dinosaur show.
-   2230 95.28%:  weren't at the dinosaur show at
-   2231 117.19%:  weren't at the dinosaur show at all? I
-   2232 95.18%:  weren't at the dinosaur show I
-   2233 91.54%:  weren't at the dinosaur show at all.
-   2234 89.56%:  weren't at the dinosaur show at all I
-   2235 84.44%:  weren't in the last
-   2236 84.38%:  weren't at the show? It was on a
-   2237 84.24%:  weren't in the d
-   2238 84.24%:  weren't in the dark
-   2239 84.24%:  weren't at the show? It was a din
-   2240 84.23%:  weren't at the show so it
-   2241 84.09%:  weren't at the show. It
-   2242 89.22%:  weren't at the show. It was a
-   2243 83.93%:  weren't at the show? It was hard.
-   2244 83.73%:  weren't allowed to?
-   2245 83.70%:  weren't allowed to think
-   2246 83.68%:  weren't allowed to start
-   2247 83.66%:  weren't allowed to sit
-   2248 83.63%:  weren't at the show I don
-   2249 83.62%:  weren't allowed to y
-   2250 83.62%:  weren't at the show? It would
-   2251 83.60%:  weren't allowed to stay
-   2252 83.51%:  weren't at the show? It was a d
-   2253 83.51%:  weren't at the dinosaur show. I
-   2254 83.42%:  weren't at the show with us? I don
-   2255 83.27%:  weren't at the show? It was in your
-   2256 83.18%:  weren't at the show? It was hilary
-   2257 83.12%:  weren't at the show? It had
-   2258 82.99%:  weren't at the show? It was hilara
-   2259 82.97%:  weren't at the show? It was a ri
-   2260 82.93%:  weren't at the show? It is
-   2261 82.92%:  weren't at the show and it
-   2262 82.87%:  weren't at the show with a
-   2263 82.74%:  weren't at the show so what
-   2264 82.63%:  weren't at the show I was?
-   2265 82.63%:  weren't at the show? It was a hilar
-   2266 82.61%:  weren't at the show? I saw a
-   2267 82.59%:  weren't at the show? It was a 
-   2268 82.58%:  weren't at the show? It was a ro
-   2269 82.57%:  weren't at the show? It was a h
-   2270 82.45%:  weren't at the show? It was all d
-   2271 82.23%:  weren't at the show at all I was
-   2272 82.05%:  weren't at the show. Is
-   2273 82.00%:  weren't at the show and so
-   2274 81.59%:  weren't at the dinosaur. I
-   2275 81.50%:  weren't at the show at all? I was on
-   2276 81.46%:  weren't at the show at all? I was k
-   2277 81.46%:  weren't at the show or I
-   2278 81.44%:  weren't at the show and this
-   2279 81.43%:  weren't at the show at all? I was in
-   2280 81.41%:  weren't at the show at all? I saw your
-   2281 81.41%:  weren't at the show I saw
-   2282 81.37%:  weren't at the show at all? I was y
-   2283 81.18%:  weren't at the show I think
-   2284 81.12%:  weren't at the show. It was hilar
-   2285 81.02%:  weren't at the show with your
-   2286 80.78%:  weren't at the show? It was a dino.
-   2287 80.65%:  weren't at the show at all? I had you
-   2288 80.62%:  weren't at the show. It was way
-   2289 80.60%:  weren't at the show with us? I know
-   2290 80.58%:  weren't at the show I know
-   2291 80.49%:  weren't at the show at all? I said you
-   2292 80.36%:  weren't allowed to say that I was
-   2293 80.36%:  weren't on the radio
-   2294 80.36%:  weren't at the show and I was
-   2295 80.26%:  weren't at the show? It was way hilar
-   2296 80.20%:  weren't at the show I was at.
-   2297 80.08%:  weren't at the show? I saw you at
-   2298 80.04%:  weren't at the show and your
-   2299 80.01%:  weren't at the show. It was in
-   2300 79.95%:  weren't at the show with an
-   2301 79.94%:  weren't at the show with all
-   2302 79.82%:  weren't at the show? It was only hilar
-   2303 79.79%:  weren't at the show. It was all
-   2304 79.78%:  weren't at the show and thus
-   2305 79.74%:  weren't on the d
-   2306 91.84%:  weren't on the dais?
-   2307 79.71%:  weren't allowed to say that in a
-   2308 79.65%:  weren't at the show at any
-   2309 79.64%:  weren't at the show or at
-   2310 79.64%:  weren't at the show and all
-   2311 79.61%:  weren't at the show. It was an
-   2312 79.59%:  weren't at the show and still
-   2313 79.57%:  weren't at the show and saw
-   2314 79.57%:  weren't at the show. It was on
-   2315 79.53%:  weren't at the show? It was way rad
-   2316 79.49%:  weren't at the show or it
-   2317 79.49%:  weren't at the show or this
-   2318 79.47%:  weren't at the show so?
-   2319 79.46%:  weren't at the show. It was only
-   2320 79.41%:  weren't at the show or in
-   2321 79.39%:  weren't at the show or any
-   2322 79.34%:  weren't at the show I said
-   2323 79.33%:  weren't at the show? It was an all
-   2324 79.30%:  weren't at the show I wasn
-   2325 79.29%:  weren't at the show? It was all you
-   2326 79.27%:  weren't at the show I had
-   2327 79.24%:  weren't at the show I sw
-   2328 79.24%:  weren't at the show? It was an okay
-   2329 79.22%:  weren't at the show I told
-   2330 79.21%:  weren't at the show? It was only 
-   2331 79.13%:  weren't at the show so I had
-   2332 79.10%:  weren't at the show. It was your
-   2333 79.06%:  weren't at the show. It was hard
-   2334 79.05%:  weren't at the show? It was all a
-   2335 79.01%:  weren't at the show. It was 
-   2336 79.00%:  weren't at the show. It was d
-   2337 78.99%:  weren't at the show. It was you
-   2338 78.98%:  weren't at the show. It was rad
-   2339 78.98%:  weren't at the show. It was loud
-   2340 78.97%:  weren't at the show. It was din
-   2341 78.96%:  weren't on the list?
-   2342 78.95%:  weren't at the show? It was on 
-   2343 78.95%:  weren't at the show. It was our
-   2344 78.91%:  weren't at the show so I think
-   2345 78.84%:  weren't at the show? It was your din
-   2346 78.80%:  weren't at the show? It was in 
-   2347 78.75%:  weren't at the show? It was an old
-   2348 78.72%:  weren't on the ro
-   2349 78.71%:  weren't at the show? It was an aw
-   2350 78.71%:  weren't at the show? It was all in
-   2351 78.68%:  weren't at the show? It was in our
-   2352 78.68%:  weren't on the way
-   2353 78.67%:  weren't at the dinosaur? I
-   2354 78.54%:  weren't on the short
-   2355 86.18%:  weren't on the short list?
-   2356 82.24%:  weren't on the shortlist
-   2357 78.54%:  weren't at the show at all I don
-   2358 78.52%:  weren't around?
-   2359 78.51%:  weren't at the show? It was a dino all
-   2360 78.51%:  weren't at the show? It was way d
-   2361 79.93%:  weren't at the show? It was way dino.
-   2362 78.46%:  weren't at the show? It was way h
-   2363 78.46%:  weren't at the show? It was wayyy
-   2364 78.45%:  weren't on the last
-   2365 78.45%:  weren't at the show? It was way hard
-   2366 78.43%:  weren't at the show? It was all your
-   2367 78.40%:  weren't at the show? It was a dino r
-   2368 78.38%:  weren't at the show? It was way n
-   2369 78.32%:  weren't in the show? I
-   2370 78.25%:  weren't at the show? It was only d
-   2371 78.24%:  weren't at the dinosaur show at all. I
-   2372 78.23%:  weren't at the show? It was hilar
-   2373 78.20%:  weren't at the show? It was all 
-   2374 78.18%:  weren't at the show? It was your d
-   2375 78.18%:  weren't at the show and you saw it all
-   2376 78.18%:  weren't at the show? It was all down
-   2377 78.17%:  weren't at the show? It was all on
-   2378 78.16%:  weren't at the show? It was all un
-   2379 78.14%:  weren't at the show? It was an 
-   2380 78.11%:  weren't at the show? It was your day
-   2381 78.11%:  weren't at the show? It was on.
-   2382 78.10%:  weren't at the show? It was an ok
-   2383 78.09%:  weren't at the show? It was an al
-   2384 78.09%:  weren't at the show? It was hard on
-   2385 78.08%:  weren't at the show? It was hilly
-   2386 78.07%:  weren't at the show? It was an aud
-   2387 78.07%:  weren't at the show? It was an or
-   2388 78.07%:  weren't at the show? It was an ad
-   2389 78.05%:  weren't at the show? It was inaud
-   2390 78.05%:  weren't at the show? It was your kid
-   2391 78.05%:  weren't at the show? It was your kind
-   2392 78.00%:  weren't at the show? It was on all
-   2393 77.94%:  weren't at the show? It was hull
-   2394 77.92%:  weren't at the show. I don
-   2395 77.91%:  weren't at the show? It was hu
-   2396 77.91%:  weren't at the show? It was hila
-   2397 77.89%:  weren't allowed to say that. I
-   2398 77.63%:  weren't at the dinosaur talk show
-   2399 77.31%:  weren't allowed to stay?
-   2400 77.25%:  weren't at the show at all and your
-   2401 77.00%:  weren't on the show? I
-   2402 76.97%:  weren't at the dinosaur talk.
-   2403 76.91%:  weren't at the show? I said you
-   2404 76.70%:  weren't allowed to say that? I was
-   2405 76.67%:  weren't in the show.
-   2406 76.63%:  weren't at the dinosaur. It
-   2407 76.62%:  weren't allowed to say it
-   2408 76.58%:  weren't at the show. I saw
-   2409 76.56%:  weren't at the show? It had a
-   2410 76.52%:  weren't on the dais.
-   2411 76.44%:  weren't at the dinosaur show. It
-   2412 76.43%:  weren't at the show at all so why?
-   2413 76.30%:  weren't on the dais at
-   2414 80.82%:  weren't on the dais at all? I
-   2415 77.38%:  weren't on the dais at all? It
-   2416 76.91%:  weren't on the dais at all? Is
-   2417 76.21%:  weren't at the show at all I saw
-   2418 76.21%:  weren't at the show at all? I saw no
-   2419 76.20%:  weren't on the short list.
-   2420 76.19%:  weren't in the show? It
-   2421 78.92%:  weren't in the show? It was a
-   2422 76.11%:  weren't in the show? Is
-   2423 76.07%:  weren't at the show. I saw you in
-   2424 75.86%:  weren't allowed to say his
-   2425 75.85%:  weren't at the show. I saw you at
-   2426 75.79%:  weren't at the show? I saw you.
-   2427 75.78%:  weren't allowed to start a
-   2428 75.70%:  weren't on the dais last
-   2429 75.68%:  weren't at the show at all. Is
-   2430 75.65%:  weren't at the show? It was hilary.
-   2431 75.63%:  weren't at the show with us and all
-   2432 75.63%:  weren't at the show at all. In
-   2433 75.59%:  weren't allowed to say what
-   2434 75.57%:  weren't aware that you
-   2435 75.49%:  weren't at the show I was at a
-   2436 75.46%:  weren't at the show I was at and
-   2437 75.36%:  weren't on the dais so
-   2438 75.35%:  weren't at the show at all? I had your
-   2439 75.33%:  weren't at the show. I was
-   2440 75.29%:  saw it too? It's the end
-   2441 75.29%:  weren't at the show? I saw you with
-   2442 75.29%: 're in our
-   2443 75.28%:  say
-   2444 75.28%: 're an atheist and a
-   2445 75.27%: 're here? Is this a way
-   2446 75.27%:  need
-   2447 78.53%:  need to tell
-   2448 78.31%:  need to know
-   2449 75.73%:  need to say
-   2450 75.27%:  hear that? It's dinosaur aeol
-   2451 75.27%:  wanna
-   2452 75.25%: 're allowed to say that. Is
-   2453 75.24%:  shouldn
-   2454 113.45%:  shouldn't say that.
-   2455 111.14%:  shouldn't say that in
-   2456 109.70%:  shouldn't say that there
-   2457 106.62%:  shouldn't say that here
-   2458 105.92%:  shouldn't say that on
-   2459 105.63%:  shouldn't say that?
-   2460 104.90%:  shouldn't say that to
-   2461 104.78%:  shouldn't say that when
-   2462 104.24%:  shouldn't say that at
-   2463 104.13%:  shouldn't say that I
-   2464 104.06%:  shouldn't say that while
-   2465 103.91%:  shouldn't say that like
-   2466 103.88%:  shouldn't say that or
-   2467 103.86%:  shouldn't say that where
-   2468 103.80%:  shouldn't say that with
-   2469 99.86%:  shouldn't listen
-   2470 97.56%:  shouldn't say that where I work
-   2471 96.17%:  shouldn't say that. It
-   2472 95.93%:  shouldn't swear
-   2473 90.86%:  shouldn't say that. I
-   2474 90.03%:  shouldn't say that to a
-   2475 90.02%:  shouldn't say that on the
-   2476 89.91%:  shouldn't talk
-   2477 89.29%:  shouldn't take
-   2478 89.06%:  shouldn't y
-   2479 88.90%:  shouldn't say that there.
-   2480 88.69%:  shouldn't e
-   2481 88.69%:  shouldn't know
-   2482 88.69%:  shouldn't say that in a
-   2483 88.64%:  shouldn't say that while we
-   2484 88.63%:  shouldn't write
-   2485 88.59%:  shouldn't say that on a
-   2486 88.56%:  shouldn't answer
-   2487 88.49%:  shouldn't try
-   2488 88.48%:  shouldn't start
-   2489 88.47%:  shouldn't worry
-   2490 88.44%:  shouldn't hear
-   2491 88.40%:  shouldn't stare
-   2492 88.32%:  shouldn't let
-   2493 88.32%:  shouldn't lie
-   2494 88.31%:  shouldn't see
-   2495 88.31%:  shouldn't sne
-   2496 88.31%:  shouldn't steal
-   2497 88.31%:  shouldn't te
-   2498 88.27%:  shouldn't try to e
-   2499 88.24%:  shouldn't say that with a lower
-   2500 87.45%:  shouldn't say that here.
-   2501 87.30%:  shouldn't tease the
-   2502 87.17%:  shouldn't say that in here
-   2503 87.17%:  shouldn't try to listen
-   2504 85.79%:  shouldn't tease a
-   2505 85.49%:  shouldn't say that in the
-   2506 85.20%:  shouldn't try to steal
-   2507 85.13%:  shouldn't say that in there
-   2508 84.96%:  shouldn't say that when we
-   2509 84.90%:  shouldn't try to take
-   2510 84.88%:  shouldn't try to talk
-   2511 84.82%:  shouldn't try to sne
-   2512 84.69%:  shouldn't try to hear
-   2513 84.56%:  shouldn't say that or we
-   2514 84.53%:  shouldn't say that in real
-   2515 84.37%:  shouldn't swear in
-   2516 84.36%:  shouldn't tease like
-   2517 86.57%:  shouldn't tease like that.
-   2518 83.93%:  shouldn't try to say
-   2519 83.69%:  shouldn't try to see
-   2520 83.47%:  shouldn't try to inter
-   2521 83.46%:  shouldn't write on the
-   2522 83.37%:  shouldn't try to lie
-   2523 83.28%:  shouldn't say the
-   2524 83.26%:  shouldn't say it
-   2525 83.23%:  shouldn't try to write
-   2526 83.13%:  shouldn't say oh
-   2527 83.11%:  shouldn't try to st
-   2528 83.11%:  shouldn't try to sit
-   2529 83.10%:  shouldn't try to answer
-   2530 83.09%:  shouldn't try to w
-   2531 83.08%:  shouldn't tease an
-   2532 83.07%:  shouldn't try to eat
-   2533 83.07%:  shouldn't try to stare
-   2534 83.06%:  shouldn't tease that
-   2535 83.06%:  shouldn't tease.
-   2536 82.94%:  shouldn't tease in
-   2537 82.93%:  shouldn't tease at
-   2538 82.90%:  shouldn't tease?
-   2539 82.80%:  shouldn't say that there?
-   2540 82.73%:  shouldn't say that when it
-   2541 82.65%:  shouldn't take that
-   2542 82.53%:  shouldn't say that there in
-   2543 82.24%:  shouldn't swear on
-   2544 82.16%:  shouldn't say that here?
-   2545 81.89%:  shouldn't say that or it
-   2546 81.45%:  shouldn't stare at the
-   2547 81.43%:  shouldn't know what
-   2548 81.29%:  shouldn't say that I think
-   2549 81.13%:  shouldn't hear that.
-   2550 81.09%:  shouldn't say that where we
-   2551 80.88%:  shouldn't swear like
-   2552 80.85%:  shouldn't say that? It
-   2553 80.84%:  shouldn't say that? I
-   2554 80.84%:  shouldn't tease like that?
-   2555 80.49%:  shouldn't say that with an
-   2556 80.49%:  shouldn't swear at
-   2557 80.40%:  shouldn't say that I know
-   2558 80.26%:  shouldn't try to sneak a
-   2559 80.17%:  shouldn't say that or they
-   2560 80.15%:  shouldn't say that here in
-   2561 80.07%:  shouldn't swear like that.
-   2562 79.95%:  shouldn't say that where I work.
-   2563 79.83%:  shouldn't say that on earth
-   2564 79.70%:  shouldn't talk to
-   2565 79.67%:  shouldn't try to sneakily
-   2566 79.66%:  shouldn't try to sneak it
-   2567 79.65%:  shouldn't try to sneak away
-   2568 79.60%:  shouldn't say that on here
-   2569 79.59%:  shouldn't say that on air
-   2570 79.59%:  shouldn't say that on t
-   2571 79.59%:  shouldn't say that on their
-   2572 79.53%:  shouldn't tease like that on
-   2573 79.46%:  shouldn't say that when a
-   2574 79.30%:  shouldn't tease like that or
-   2575 79.25%:  shouldn't say that to an
-   2576 79.22%:  shouldn't say that at work
-   2577 79.12%:  shouldn't stare at a
-   2578 79.06%:  shouldn't say that or the
-   2579 78.90%:  shouldn't say that while on
-   2580 78.88%:  shouldn't say that at an
-   2581 78.86%:  shouldn't say that where it
-   2582 78.82%:  shouldn't say that to hear
-   2583 78.77%:  shouldn't start with
-   2584 78.61%:  shouldn't say that I won
-   2585 78.59%:  shouldn't say that or there
-   2586 78.58%:  shouldn't say that I want
-   2587 78.57%:  shouldn't say that I hate
-   2588 78.55%:  shouldn't say that I hear
-   2589 78.53%:  shouldn't say that while a
-   2590 78.49%:  shouldn't say that like I
-   2591 78.44%:  shouldn't say that like a
-   2592 78.43%:  shouldn't say that I like
-   2593 78.37%:  shouldn't say that where a
-   2594 78.35%:  shouldn't say that or any
-   2595 78.33%:  shouldn't say that I write
-   2596 78.32%:  shouldn't say that at 
-   2597 78.28%:  shouldn't say that I wrote
-   2598 78.27%:  shouldn't say that or a
-   2599 78.26%:  shouldn't say that with no
-   2600 78.18%:  shouldn't say that while at
-   2601 78.18%:  shouldn't swear like that on
-   2602 78.13%:  shouldn't say that or at
-   2603 78.12%:  shouldn't say that or he
-   2604 78.10%:  shouldn't say that like there
-   2605 78.05%:  shouldn't say that where an
-   2606 77.65%:  shouldn't write that
-   2607 77.60%:  shouldn't swear like that?
-   2608 77.59%:  shouldn't take it
-   2609 77.37%:  shouldn't stare at other
-   2610 77.03%:  shouldn't stare at an
-   2611 76.99%:  shouldn't stare at it
-   2612 76.96%:  shouldn't know what I was
-   2613 76.73%:  shouldn't swear like that when
-   2614 76.72%:  shouldn't swear like that at
-   2615 76.37%:  shouldn't know this
-   2616 76.05%:  shouldn't see that.
-   2617 76.03%:  shouldn't swear like that to
-   2618 75.92%:  shouldn't take this
-   2619 75.77%:  shouldn't take the
-   2620 75.76%:  shouldn't lie to
-   2621 75.68%:  shouldn't listen at
-   2622 75.36%:  shouldn't say that when I talk
-   2623 75.23%: 're an atheist now? Is that why your a
-   2624 75.23%: 're with us now? Is that why
-   2625 75.23%:  weren't at the show I was at you
-   2626 75.22%:  weren't at the show I was at in
-   2627 75.22%:  shouldn't answer that.
-   2628 75.22%:  do
-   2629 75.22%: 're an atheist now? I saw you at the 
-   2630 75.21%:  sound
-   2631 75.21%:  don't know why these
-   2632 75.21%:  still
-   2633 75.20%: 're the author
-   2634 75.20%:  don't want to share with
-   2635 75.20%: 're still around? Is
-   2636 75.19%:  weren't at the dinosaur? It
-   2637 76.53%:  weren't at the dinosaur? It was a
-   2638 75.17%:  saw it too? It's a tr
-   2639 75.17%:  weren't at the dinosaur talk I
-   2640 75.16%:  weren't at the show at all and so
-   2641 75.16%:  really
-   2642 75.16%:  talk
-   2643 98.47%:  talkin' to the
-   2644 98.18%:  talkin' to a
-   2645 95.16%:  talkin' to you
-   2646 94.70%:  talkin' to us
-   2647 94.52%:  talkin' to your
-   2648 94.18%:  talkin' to an
-   2649 90.44%:  talkin' to you? I
-   2650 89.44%:  talkin' to us? I
-   2651 88.96%:  talkin' to us? It
-   2652 88.93%:  talkin' to us? Is
-   2653 79.56%:  talkin' to us? Is that a
-   2654 78.07%:  talkin' to an at
-   2655 77.48%:  talkin'?
-   2656 76.81%:  talk to
-   2657 76.10%:  talkin' to us? I don
-   2658 76.01%:  talkin' to an old
-   2659 75.69%:  talkin' at
-   2660 75.44%:  talkin' out
-   2661 75.36%:  talkin' the
-   2662 75.28%:  talkin' on
-   2663 75.27%:  talkin' too
-   2664 75.15%:  weren't on the dais that
-   2665 75.15%: ?
-   2666 75.15%:  don't hear what I hear on a
-   2667 75.15%: 're only a
-   2668 75.15%:  read
-   2669 75.15%:  hear that? It's a siren and they
-   2670 75.15%:  saw it too? It's the hard
-   2671 75.14%:  aren
-   2672 97.14%:  aren't allowed
-   2673 108.85%:  aren't allowed to say
-   2674 113.48%:  aren't allowed to say that?
-   2675 103.38%:  aren't allowed to say that in
-   2676 101.37%:  aren't allowed to say that.
-   2677 97.78%:  aren't allowed to say that I
-   2678 97.67%:  aren't allowed to say that when
-   2679 97.06%:  aren't allowed to say that is
-   2680 94.81%:  aren't allowed to use
-   2681 94.67%:  aren't allowed to hear
-   2682 93.54%:  aren't the
-   2683 93.07%:  aren't allowed to swear
-   2684 92.32%:  aren't one
-   2685 92.15%:  aren't a
-   2686 92.05%:  aren't allowed to e
-   2687 91.72%:  aren't allowed to think
-   2688 91.71%:  aren't allowed to write
-   2689 91.69%:  aren't allowed to y
-   2690 91.60%:  aren't allowed to take
-   2691 91.53%:  aren't allowed to inter
-   2692 91.47%:  aren't allowed to answer
-   2693 91.28%:  aren't allowed to sit
-   2694 91.24%:  aren't allowed to eat
-   2695 91.22%:  aren't allowed to he
-   2696 91.20%:  aren't allowed to hate
-   2697 89.02%:  aren't serious
-   2698 88.94%:  aren't on
-   2699 88.94%:  aren't here
-   2700 88.93%:  aren't?
-   2701 88.85%:  aren't really
-   2702 88.72%:  aren't seriously
-   2703 88.70%:  aren't in
-   2704 88.60%:  aren't still
-   2705 88.59%:  aren't real
-   2706 88.59%:  aren't like
-   2707 88.56%:  aren't that
-   2708 88.31%:  aren't an
-   2709 88.26%:  aren't k
-   2710 88.26%:  aren't around
-   2711 88.26%:  aren't who
-   2712 88.20%:  aren't d
-   2713 88.19%:  aren't used
-   2714 91.51%:  aren't used to the
-   2715 88.18%:  aren't you
-   2716 88.18%:  aren't this
-   2717 87.87%:  aren't allowed to answer that?
-   2718 86.46%:  aren't used to this
-   2719 86.45%:  aren't who I think
-   2720 106.29%:  aren't who I think you are.
-   2721 86.39%:  aren't the one
-   2722 91.25%:  aren't the one who said
-   2723 86.35%:  aren't allowed to say that? I
-   2724 85.96%:  aren't here to talk
-   2725 85.92%:  aren't here to ask
-   2726 85.81%:  aren't used to it
-   2727 85.66%:  aren't here to say
-   2728 85.51%:  aren't who I wanted
-   2729 101.28%:  aren't who I wanted to hear
-   2730 85.34%:  aren't allowed to say that? Is
-   2731 85.14%:  aren't used to that
-   2732 84.84%:  aren't the one who said that
-   2733 84.33%:  aren't who I was y
-   2734 84.22%:  aren't allowed to hear us
-   2735 83.98%:  aren't allowed to hear that?
-   2736 83.88%:  aren't here to show
-   2737 83.85%:  aren't here to do
-   2738 83.81%:  aren't who I asked
-   2739 83.73%:  aren't here to kill
-   2740 83.72%:  aren't who I said
-   2741 104.38%:  aren't who I said you were.
-   2742 88.05%:  aren't who I said you are
-   2743 83.66%:  aren't here to y
-   2744 83.65%:  aren't who I want
-   2745 103.19%:  aren't who I want to talk
-   2746 99.03%:  aren't who I want to hear
-   2747 91.62%:  aren't who I want to see.
-   2748 87.92%:  aren't who I want to see?
-   2749 87.41%:  aren't who I want to see at
-   2750 84.82%:  aren't who I want to see r
-   2751 84.80%:  aren't who I want to see this
-   2752 84.76%:  aren't who I want to see with
-   2753 83.63%:  aren't used to a
-   2754 83.61%:  aren't here to know
-   2755 83.59%:  aren't the one who was
-   2756 83.54%:  aren't here to insult
-   2757 83.38%:  aren't used to all
-   2758 83.43%:  aren't used to all this
-   2759 83.37%:  aren't who I would
-   2760 83.36%:  aren't used to how
-   2761 83.30%:  aren't here to kill us?
-   2762 83.18%:  aren't used to not
-   2763 83.01%:  aren't who I heard
-   2764 82.98%:  aren't who I need
-   2765 83.68%:  aren't who I need to
-   2766 82.97%:  aren't used to so
-   2767 82.92%:  aren't who I say
-   2768 103.60%:  aren't who I say you are.
-   2769 98.95%:  aren't who I say you are and
-   2770 97.67%:  aren't who I say you are in
-   2771 97.36%:  aren't who I say you are when
-   2772 82.90%:  aren't used to those
-   2773 82.88%:  aren't who I hear
-   2774 82.88%:  aren't used to lower
-   2775 82.86%:  aren't who I talk
-   2776 84.37%:  aren't who I talk to in
-   2777 83.89%:  aren't who I talk to when it
-   2778 83.01%:  aren't who I talk to when i
-   2779 82.85%:  aren't who I saw
-   2780 82.83%:  aren't who I talk to when the
-   2781 82.82%:  aren't used to an
-   2782 82.82%:  aren't used to other
-   2783 82.81%:  aren't used to any
-   2784 82.81%:  aren't used to sw
-   2785 82.80%:  aren't who I talk to?
-   2786 82.79%:  aren't used to their
-   2787 82.72%:  aren't who I talk to when we
-   2788 82.70%:  aren't the one who is
-   2789 82.45%:  aren't allowed to say the
-   2790 82.34%:  aren't in the
-   2791 82.28%:  aren't the one who has
-   2792 82.24%:  aren't the one who says
-   2793 82.16%:  aren't allowed to hear this
-   2794 82.12%:  aren't allowed to say his
-   2795 82.01%:  aren't a din
-   2796 118.50%:  aren't a dinosaur?
-   2797 100.99%:  aren't a dinosaur.
-   2798 96.97%:  aren't a dinosaur who
-   2799 96.91%:  aren't a dinosaur that
-   2800 96.34%:  aren't a dinosaur at
-   2801 96.28%:  aren't a dinosaur yet
-   2802 96.26%:  aren't a dinosaur so
-   2803 91.18%:  aren't a dinosaur? I
-   2804 89.02%:  aren't a dinosaur? It
-   2805 83.92%:  aren't a dinosaur at the
-   2806 81.93%:  aren't allowed to say it
-   2807 81.90%:  aren't allowed to say what
-   2808 81.76%:  aren't allowed to say this
-   2809 81.71%:  aren't the one who draws
-   2810 81.41%:  aren't who I say you are and this
-   2811 81.36%:  aren't the one who talks
-   2812 81.32%:  aren't who I think you were
-   2813 81.28%:  aren't the one who had
-   2814 81.21%:  aren't the one who saw
-   2815 81.15%:  aren't the one who h
-   2816 80.96%:  aren't a dinosaur that I
-   2817 80.45%:  aren't who I wanted to say
-   2818 80.18%:  aren't here to say that
-   2819 80.14%:  aren't allowed to swear in a
-   2820 80.13%:  aren't allowed to say that. I
-   2821 79.77%:  aren't who I say you were
-   2822 79.77%:  aren't allowed to answer that.
-   2823 79.62%:  aren't allowed to swear?
-   2824 79.16%:  aren't who I talk to.
-   2825 79.14%:  aren't who I talk to at
-   2826 78.74%:  aren't who I said you weren
-   2827 78.73%:  aren't who I wanted to hear.
-   2828 78.61%:  aren't who I said you where
-   2829 78.59%:  aren't who I want to say
-   2830 78.54%:  aren't who I want to share
-   2831 78.53%:  aren't who I want to write
-   2832 78.53%:  aren't who I want to take
-   2833 78.37%:  aren't a dinosaur. I
-   2834 78.24%:  aren't who I say you aren
-   2835 78.24%:  aren't who I talk to with
-   2836 78.23%:  aren't you?
-   2837 78.20%:  aren't who I talk to while
-   2838 78.13%:  aren't who I talk to any
-   2839 78.08%:  aren't who I wanted to hear?
-   2840 77.96%:  aren't who I talk to here
-   2841 77.84%:  aren't here to show us all
-   2842 77.83%:  aren't who I talk to and
-   2843 77.80%:  aren't who I talk to there
-   2844 77.80%:  aren't who I talk to are
-   2845 77.70%:  aren't the only
-   2846 77.47%:  aren't a dinosaur so why
-   2847 77.40%:  aren't here to show us a
-   2848 77.38%:  aren't a dinosaur so that
-   2849 77.22%:  aren't allowed to swear at
-   2850 77.11%:  aren't allowed in
-   2851 76.94%:  aren't who I talk to in real
-   2852 76.94%:  aren't who I wanted to hear it
-   2853 76.92%:  aren't around?
-   2854 76.87%:  aren't who I say you are and we
-   2855 76.84%:  aren't who you
-   2856 76.74%:  aren't who I wanted to hear at
-   2857 76.71%:  aren't who I wanted to hear this
-   2858 76.62%:  aren't here to show us what
-   2859 76.50%:  aren't allowed to hear us?
-   2860 76.41%:  aren't in here
-   2861 76.27%:  aren't a dinosaur. It
-   2862 76.18%:  aren't who I wanted to hear a
-   2863 76.13%:  aren't who I wanted to hear with
-   2864 76.07%:  aren't who I wanted to hear say
-   2865 75.91%:  aren't who I say you are in the
-   2866 75.85%:  aren't allowed to eat us
-   2867 75.80%:  aren't who I want to hear?
-   2868 75.65%:  aren't who I say you are and it
-   2869 75.47%:  aren't who I want to hear.
-   2870 75.45%:  aren't here to show us that
-   2871 75.40%:  aren't allowed to answer that I
-   2872 75.38%:  aren't here to show us why
-   2873 75.36%:  aren't allowed to hear what
-   2874 75.17%:  aren't a dinosaur yet.
-   2875 75.16%:  aren't who I say you are and the
-   2876 75.14%:  weren't at the show and you saw what
-   2877 75.14%:  weren't at the show. I know
-   2878 75.13%:  don't take us
-   2879 75.13%: 're an atheist now? Is that why your w
-   2880 75.13%: 're the reason I don
-   2881 75.12%:  don't like what?
-   2882 75.11%: 're the other
-   2883 75.11%:  saw it too? It's a hard
-   2884 75.11%:  won
-   2885 92.17%:  won't tell
-   2886 91.40%:  won't know
-   2887 91.14%:  won't?
-   2888 91.00%:  won't like
-   2889 90.71%:  won't let
-   2890 90.34%:  won't say
-   2891 89.49%:  won't hear
-   2892 89.22%:  won't hurt
-   2893 89.14%:  won't see
-   2894 89.07%:  won't think
-   2895 89.04%:  won't answer
-   2896 88.74%:  won't take
-   2897 88.73%:  won't talk
-   2898 95.76%:  won't talk to us
-   2899 88.65%:  won't steal
-   2900 88.60%:  won't do
-   2901 88.56%:  won't want
-   2902 101.28%:  won't want to hear
-   2903 91.48%:  won't want to hear it
-   2904 90.17%:  won't want to see
-   2905 89.41%:  won't want to hear what
-   2906 92.50%:  won't want to hear what I said
-   2907 91.52%:  won't want to hear what I say
-   2908 88.44%:  won't win
-   2909 88.39%:  won't need
-   2910 89.21%:  won't need to wait
-   2911 88.30%:  won't eat
-   2912 88.23%:  won't use
-   2913 88.22%:  won't deny
-   2914 93.97%:  won't deny that
-   2915 88.22%:  won't turn
-   2916 88.22%:  won't listen
-   2917 90.08%:  won't listen to us
-   2918 88.19%:  won't try
-   2919 101.43%:  won't try to tell
-   2920 88.19%:  won't send
-   2921 88.18%:  won't hold
-   2922 88.17%:  won't shut
-   2923 88.17%:  won't hit
-   2924 88.15%:  won't sue
-   2925 88.14%:  won't try to take
-   2926 87.60%:  won't need to say
-   2927 87.11%:  won't listen to a
-   2928 86.69%:  won't listen to the
-   2929 86.65%:  won't try to steal
-   2930 86.62%:  won't deny that I
-   2931 86.31%:  won't listen to what
-   2932 85.99%:  won't want to hear what I was
-   2933 85.04%:  won't want to tell
-   2934 84.96%:  won't want to say
-   2935 84.83%:  won't want to hear what I had
-   2936 84.81%:  won't talk to the
-   2937 84.71%:  won't need to hear
-   2938 84.59%:  won't want to hear what I heard
-   2939 84.46%:  won't need to tell
-   2940 84.46%:  won't try to sell
-   2941 84.37%:  won't want to take
-   2942 84.30%:  won't try to kill
-   2943 84.27%:  won't want to talk
-   2944 84.25%:  won't listen to what I say.
-   2945 84.16%:  won't want to eat
-   2946 84.07%:  won't talk to a
-   2947 84.05%:  won't say that?
-   2948 84.00%:  won't need to use
-   2949 83.98%:  won't want to hear what I really
-   2950 83.95%:  won't want to hear what I hear
-   2951 83.94%:  won't need to take
-   2952 83.83%:  won't need to ask
-   2953 83.77%:  won't need to write
-   2954 83.64%:  won't want to try
-   2955 83.63%:  won't want to steal
-   2956 83.63%:  won't try to tell us
-   2957 83.63%:  won't try to stand
-   2958 83.56%:  won't want to die
-   2959 83.54%:  won't need to eat
-   2960 83.52%:  won't want to share
-   2961 83.52%:  won't try to say
-   2962 83.48%:  won't want to date
-   2963 83.40%:  won't try to talk
-   2964 83.39%:  won't want to read
-   2965 83.39%:  won't need to kill
-   2966 83.37%:  won't want to hurt
-   2967 83.35%:  won't talk to her
-   2968 83.35%:  won't want to use
-   2969 83.34%:  won't talk to this
-   2970 83.32%:  won't want to?
-   2971 83.30%:  won't need to lie
-   2972 83.30%:  won't talk to any
-   2973 83.30%:  won't need to?
-   2974 83.29%:  won't want to stay
-   2975 83.28%:  won't need to talk
-   2976 83.26%:  won't want to sit
-   2977 83.21%:  won't try to answer
-   2978 83.20%:  won't try to send
-   2979 83.19%:  won't need to swear
-   2980 83.19%:  won't need to hire
-   2981 83.19%:  won't want to ask
-   2982 83.19%:  won't try to hurt
-   2983 83.16%:  won't want to kill
-   2984 83.16%:  won't try to re
-   2985 83.16%:  won't want to let
-   2986 83.15%:  won't need to y
-   2987 90.21%:  won't need to yell that
-   2988 88.53%:  won't need to yell at
-   2989 83.15%:  won't want to sue
-   2990 83.15%:  won't want to write
-   2991 83.13%:  won't try to eat
-   2992 83.09%:  won't try to turn
-   2993 83.09%:  won't need to re
-   2994 83.05%:  won't try to sue
-   2995 83.04%:  won't need to stay
-   2996 83.03%:  won't need to wash
-   2997 83.02%:  won't need to set
-   2998 83.01%:  won't need to sh
-   2999 83.00%:  won't need to wear
-   3000 83.00%:  won't try to kiss
+      1 420.29%: 're not
+      2 502.34%: 're not allowed
+      3 217.72%: 're the
+      4 282.69%: 're the one
+      5 1333.66%: 're the one who said
+      6 1091.52%: 're the one who said that
+      7 823.90%: 're the one who said I
+      8 646.02%: 're the one who said that?
+      9 595.58%: 're the one who said I was
+     10 687.68%: 're the one who said I was a
+     11 388.96%: 're the one who said that.
+     12 253.73%: 're the one who said that was
+     13 387.75%: 're the one who said that was a
+     14 236.23%: 're the only
+     15 515.10%: 're the only one that
+     16 447.39%: 're the only one I
+     17 170.16%: 're the one who said that I
+     18 166.67%: 're there
+     19 166.32%: 're the one who says
+     20 181.08%: 're the one who says that
+     21 153.46%: 're the one that
+     22 142.44%: 're not allowed in
+     23 129.69%: 're here
+     24 129.00%: 're the only one that says
+     25 203.30%: 're the only one that says it
+     26 121.84%: 're a
+     27 119.90%: 're the one that said
+     28 119.76%: 're the one who was
+     29 114.19%: 're the only one with
+     30 118.85%: 're the only one with that
+     31 111.64%: 're not the
+     32 138.01%: 're not the one
+     33 111.36%: 're the one who draws
+     34 110.87%: 're the one who thinks
+     35 118.59%: 're the one who thinks I
+     36 109.70%: 're in
+     37 108.16%: 're in here
+     38 102.53%: 're the one who said that. I
+     39 101.18%: 're the one who draws this
+     40 100.06%: 're not the one I
+     41 99.53%: 're not a
+     42 95.43%: 're the only one that says it.
+     43 94.71%: 're the one who wants
+     44 91.26%: 're the one who says I
+     45 87.99%: 're not a din
+     46 6427.39%: 're not a dinosaur?
+     47 1622.47%: 're not a dinosaur.
+     48 845.20%: 're not a dinosaur? I
+     49 486.48%: 're not a dinosaur? I was
+     50 263.84%: 're not a dinosaur. I
+     51 112.40%: 're not a dinosaur that
+     52 108.35%: 're not a dinosaur that I
+     53 87.32%: 're the one who said that I was
+     54 85.84%: 're the one who said that I was a
+     55 84.45%: 're the only one I talk
+     56 81.32%:  know
+     57 118.43%:  know what
+     58 425.33%:  know what I'd
+     59 518.14%:  know what I'd really
+     60 204.34%:  know what?
+     61 840.02%:  know what? I'd
+     62 1529.99%:  know what? I'd rather
+     63 739.26%:  know what? I'd rather not.
+     64 518.36%:  know what? I'll
+     65 482.51%:  know what? I'd rather you
+     66 427.14%:  know what? I don
+     67 7337.86%:  know what? I don't really
+     68 2290.30%:  know what? I don't see
+     69 3564.45%:  know what? I don't see why we
+     70 2048.52%:  know what? I don't see what
+     71 2026.99%:  know what? I don't see the
+     72 1781.23%:  know what? I don't really see
+     73 2145.86%:  know what? I don't really see why
+     74 1821.50%:  know what? I don't really see what
+     75 1379.77%:  know what? I don't see why it
+     76 1364.85%:  know what? I don't see why this
+     77 1294.86%:  know what? I don't see why they
+     78 1209.54%:  know what? I don't see why the
+     79 892.86%:  know what? I don't really see why this
+     80 694.63%:  know what? I don't see why that
+     81 665.98%:  know what? I don't see what all
+     82 516.84%:  know what? I don't trust
+     83 494.45%:  know what? I don't see a
+     84 494.07%:  know what? I don't see why a
+     85 486.69%:  know what? I don't really see why it
+     86 388.91%:  know what? I don't really see what this
+     87 386.18%:  know what? I don't really see a
+     88 639.80%:  know what? I don't really see a way
+     89 321.68%:  know what? I don't really see why that
+     90 319.46%:  know what? I don't hear
+     91 317.50%:  know what? I don't see why we all
+     92 307.82%:  know what? I'd rather not say
+     93 279.78%:  know what? I don't see what all this
+     94 278.90%:  know what? I'd really
+     95 268.82%:  know what? I don't see what they
+     96 253.76%:  know what? I'll say
+     97 2766.41%:  know what? I'll say it.
+     98 252.24%:  know what? I don't see why.
+     99 247.43%:  know what? I don't really see why.
+    100 233.10%:  know what? I don't really see why a
+    101 214.31%:  know what? I don't see it
+    102 364.43%:  know what? I don't see it.
+    103 201.98%:  know what? I don't see a way
+    104 195.64%:  know what? I don't really see what it
+    105 192.00%:  know what? I don't really see what it has
+    106 191.58%:  know what? I don't see what this
+    107 187.22%:  know what? I'd rather see
+    108 275.29%:  know what? I'd rather see a
+    109 184.76%:  know what? I don't see why all
+    110 281.56%:  know what? I don't see why all this
+    111 184.41%:  know what? I don't see why the tr
+    112 183.14%:  know what? I don't hear a
+    113 176.97%:  know what? I don't either
+    114 175.29%:  know what? I don't see why he
+    115 174.05%:  know what? I'd rather not see
+    116 168.31%:  know what? I don't see what was
+    117 163.77%:  know what? I'd rather stay
+    118 159.62%:  know what? I'd rather see you
+    119 156.59%:  know what? I don't really see that
+    120 147.83%:  know what? I don't really see this
+    121 146.74%:  know what? I don't really trust
+    122 145.62%:  know what? I don't see why we still
+    123 143.60%:  know what? I'd say
+    124 243.04%:  know what? I'd say the
+    125 142.14%:  know what? I'd rather see a show
+    126 138.92%:  know what? I don't really see it
+    127 163.78%:  know what? I don't really see it.
+    128 138.08%:  know what? I don't see what it
+    129 184.90%:  know what? I don't see what it has
+    130 135.52%:  know what I'd say
+    131 215.10%:  know what I'd say to
+    132 209.89%:  know what I'd say to a
+    133 206.81%:  know what I'd say to that
+    134 203.90%:  know what I'd say to the
+    135 138.35%:  know what I'd say?
+    136 133.50%:  know what? I don't really see what a
+    137 130.45%:  know what? I'd rather it
+    138 189.63%:  know what? I'd rather it was
+    139 129.88%:  know what? I'd say it
+    140 128.68%:  know what? I don't see that
+    141 125.19%:  know what? I'd rather not see a
+    142 124.93%:  know what? I don't see why it was
+    143 123.39%:  know what? I don't see a way that
+    144 123.03%:  know what? I'd say it was
+    145 119.99%:  know what? I don't really see what was
+    146 119.74%:  know what? I don't really see why that was
+    147 118.79%:  know what? I'd rather it stay
+    148 118.61%:  know what I'd hate
+    149 178.98%:  know what I'd hate to
+    150 294.20%:  know what I'd hate to hear
+    151 270.10%:  know what I'd hate to see
+    152 116.82%:  know what? I don't really see why it was
+    153 116.65%:  know what? I'd rather stay in
+    154 218.05%:  know what? I'd rather stay in the
+    155 116.06%:  know what? I'd rather it was a
+    156 114.67%:  know what? I don't see this
+    157 110.52%:  know what? I'd rather not see this
+    158 169.84%:  know what? I'd rather not see this.
+    159 106.67%:  know what? I'll do
+    160 212.81%:  know what? I'll do it.
+    161 105.68%:  know what? I'd rather listen
+    162 584.33%:  know what? I'd rather listen to a
+    163 105.66%:  know what? I'll say this
+    164 105.55%:  know what? I don't see why it has
+    165 104.16%:  know what? I'd rather they
+    166 101.08%:  know what? I'd rather stay at
+    167 99.99%:  know what? I don't really see what it was
+    168 98.74%:  know what? I'd say that
+    169 97.43%:  know what I was
+    170 96.02%:  know what? I'd rather not say it
+    171 172.00%:  know what? I'd rather not say it.
+    172 92.91%:  know what? I don't see what he
+    173 89.63%:  know what? I don't see why that is
+    174 88.26%:  know what? I'd rather not tell
+    175 87.43%:  know what? I don't see why that was
+    176 87.41%:  know what? I don't see what we
+    177 85.24%:  know what'
+    178 394.91%:  know what's weird
+    179 1384.28%:  know what's weird? I
+    180 743.60%:  know what's weird? It
+    181 465.64%:  know what's weird? I was
+    182 138.37%:  know what's weird? It was
+    183 137.69%:  know what's weird? I was totally
+    184 132.91%:  know what's weird? It turns
+    185 107.87%:  know what's weird? It was a
+    186 93.63%:  know what's weird? I really
+    187 168.47%:  know what's weird? I really want
+    188 154.20%:  know what's weird? I really want to say
+    189 93.29%:  know what's weird? Is
+    190 319.67%:  know what's weird? Is that you were
+    191 167.96%:  know what's weird? Is that the
+    192 155.60%:  know what's weird? Is that a
+    193 152.00%:  know what's weird? Is that you are
+    194 145.10%:  know what's weird? Is that you are a
+    195 136.55%:  know what's weird? Is that your
+    196 124.82%:  know what's weird? Is that they
+    197 109.11%:  know what's weird? Is that they all
+    198 91.07%:  know what's weird? I always
+    199 84.79%:  know what's hard
+    200 103.59%:  know what's hard? It
+    201 84.65%:  know what's weird? I totally
+    202 83.98%:  know what? I'll say what
+    203 83.03%:  know what? I don't hear the
+    204 81.46%:  know what's weird? It was the
+    205 81.43%:  know what's hilar
+    206 80.95%: 're the only other
+    207 80.32%: 're the one who says that?
+    208 79.89%:  know what? I don't hear it
+    209 77.89%:  know what? I'd totally
+    210 77.48%:  know what? I'd rather not see what
+    211 77.19%: 're still
+    212 84.04%: 're still there
+    213 76.15%: 're here? I
+    214 75.82%:  know what's weird? Is that you are the
+    215 75.48%: 're not one
+    216 75.08%:  know what? I should
+    217 104.02%:  know what? I should'
+    218 74.73%:  know what? I don't hear that
+    219 78.40%:  know what? I don't hear that.
+    220 73.41%:  know what? I don't see that as
+    221 72.91%: 're in the
+    222 72.76%:  know what? I'd rather say
+    223 71.81%:  know what's weird? Is that you want
+    224 71.71%:  know what? I don't see what a
+    225 71.47%:  know what? I'd rather it not
+    226 71.24%:  know what? I'd rather stay with
+    227 70.74%:  know what? I don't see what is
+    228 69.89%:  know what's hard? I
+    229 68.93%: 're the only one I trust
+    230 68.83%:  know what's really
+    231 68.51%: 're not the only
+    232 68.29%:  know what? I'd rather listen to a s
+    233 68.18%:  know what? I don't really see a way this
+    234 68.01%: 're the one who said that? I
+    235 67.61%: 're still there? I
+    236 67.29%:  know what? I was
+    237 67.03%: 're the one who has
+    238 75.57%: 're the one who has a
+    239 65.87%:  know what? I don't hear what
+    240 65.84%:  know what? I'd rather see you say
+    241 117.06%:  know what? I'd rather see you say that
+    242 141.94%:  know what? I'd rather see you say that in
+    243 85.23%:  know what? I'd rather see you say it
+    244 73.13%:  know what? I'd rather see you say it.
+    245 65.64%:  know what? I don't see why they all
+    246 64.37%:  know what? I don't see a way that we
+    247 63.72%: 're still here
+    248 91.89%: 're still here? I
+    249 63.55%:  know what? I'd rather say that
+    250 62.62%:  know what? I'd rather it was the
+    251 62.55%: 're not a dinosaur. It
+    252 62.54%: 're a din
+    253 1212.09%: 're a dinosaur? I
+    254 400.62%: 're a dinosaur.
+    255 357.31%: 're a dinosaur who
+    256 231.12%: 're a dinosaur now
+    257 213.05%: 're a dinosaur that
+    258 196.28%: 're a dinosaur? Is
+    259 2051.88%: 're a dinosaur? Is that what
+    260 722.80%: 're a dinosaur? Is that what the
+    261 556.96%: 're a dinosaur? Is that a
+    262 540.80%: 're a dinosaur? Is that why they
+    263 444.59%: 're a dinosaur? Is that why we
+    264 264.93%: 're a dinosaur? Is that the
+    265 259.37%: 're a dinosaur? Is that why the
+    266 216.44%: 're a dinosaur? Is that why he
+    267 199.22%: 're a dinosaur? Is that how
+    268 195.10%: 're a dinosaur? Is that what he
+    269 189.53%: 're a dinosaur now? I
+    270 179.62%: 're a dinosaur? Is that what they
+    271 165.07%: 're a dinosaur? I was
+    272 160.88%: 're a dinosaur? Is that a new
+    273 148.44%: 're a dinosaur who wants
+    274 130.59%: 're a dinosaur. I
+    275 125.52%: 're a dinosaur? Is that who
+    276 116.16%: 're a dinosaur? Is that what we
+    277 99.19%: 're a dinosaur? I want
+    278 192.76%: 're a dinosaur? I want to see
+    279 97.25%: 're a dinosaur? I want to see that
+    280 118.96%: 're a dinosaur? I want to see that.
+    281 83.70%: 're a dinosaur? It
+    282 81.59%: 're a dinosaur? I knew
+    283 88.56%: 're a dinosaur? I knew that
+    284 77.77%: 're a dinosaur? Is that the only
+    285 116.88%: 're a dinosaur? Is that the only way
+    286 71.53%: 're a dinosaur that wants
+    287 70.21%: 're a dinosaur? I want to see.
+    288 62.86%: 're a dinosaur? Is that how they
+    289 62.13%:  know what I'd say to a tr
+    290 62.03%:  know what? I don't see why they always
+    291 61.58%: 're the one that said you
+    292 61.44%: 're in here? I
+    293 61.07%:  know what? I'd rather not say what
+    294 60.78%:  know what? I'd say you
+    295 60.42%: 're the one who draws this?
+    296 60.19%:  know what's weird? Is that when
+    297 59.72%: 're there? I
+    298 59.37%: 're a dinosaur who has
+    299 92.44%: 're a dinosaur who has a
+    300 59.33%:  know what? I'd say this
+    301 59.30%:  know what I'd really hate
+    302 136.62%:  know what I'd really hate to
+    303 69.58%:  know what I'd really hate to hear is
+    304 58.38%:  know what? I don't really see that as
+    305 58.34%: 're the one that says
+    306 58.18%: 're on
+    307 70.73%: 're on the
+    308 76.78%: 're on the radio
+    309 57.83%: 're the one who draws it
+    310 75.73%: 're the one who draws it?
+    311 57.63%:  know what? I'd rather see you say it than
+    312 57.09%:  know what? I'd still
+    313 64.78%:  know what? I'd still rather
+    314 56.86%:  know what? I'll do it anyway
+    315 56.22%:  know what's so
+    316 56.13%: 're the one who wants us
+    317 55.80%: 're a dinosaur? I know
+    318 61.44%: 're a dinosaur? I know a
+    319 55.10%: 're not a dinosaur? It
+    320 55.08%: 're the one that said I
+    321 54.83%:  know what? I don't see what it was
+    322 54.80%: 're the one who says that all
+    323 54.43%: 're a dinosaur now? Is
+    324 398.53%: 're a dinosaur now? Is that why
+    325 210.22%: 're a dinosaur now? Is that what the
+    326 179.66%: 're a dinosaur now? Is that a
+    327 95.60%: 're a dinosaur now? Is that the
+    328 93.41%: 're a dinosaur now? Is that why we
+    329 68.18%: 're a dinosaur now? Is that why they
+    330 62.40%: 're a dinosaur now? Is that why the
+    331 53.62%: 're the one with
+    332 52.91%: 're the one who says it
+    333 52.88%:  know what? I'd rather see you than
+    334 52.71%:  know what? I don't trust a
+    335 52.67%:  know what? I'd rather not say this
+    336 52.56%:  know what's weird? I see
+    337 51.68%:  know what? I don't really see why that is
+    338 51.48%: 'd
+    339 51.06%:  know what I said
+    340 51.05%:  know what's weird? I was really
+    341 50.75%:  know what's the
+    342 57.61%:  know what's the worst
+    343 118.26%:  know what's the worst? I
+    344 117.82%:  know what's the worst? It
+    345 49.80%:  know what's weird? I swear
+    346 49.79%:  know what? I'd rather see you say that.
+    347 49.74%:  know what? I don't see why a tr
+    348 49.55%:  know what? I don't really see what is
+    349 49.42%:  know what? I'd say that was
+    350 49.36%: 're a dinosaur? I want to see a
+    351 48.82%: 're a dinosaur. I know
+    352 54.44%: 're a dinosaur. I know that
+    353 48.71%:  know what? I'd rather see you in
+    354 48.55%: 're the one who always
+    355 48.30%: 're the one who says that.
+    356 48.01%:  know what? I don't see why she
+    357 47.60%:  know what? I don't really see why that is.
+    358 47.47%: 're the only one that says it?
+    359 47.42%:  know what? I don't see what all the r
+    360 47.21%:  know what? I don't see why that was a
+    361 47.16%:  know what's worse
+    362 339.79%:  know what's worse than a
+    363 110.67%:  know what's worse?
+    364 124.82%:  know what's worse? I
+    365 46.80%:  know what's weird? I really want to use
+    366 46.77%:  know what I'd really want
+    367 289.30%:  know what I'd really want to see
+    368 347.14%:  know what I'd really want to see is
+    369 138.52%:  know what I'd really want to see is a tr
+    370 118.48%:  know what I'd really want to hear
+    371 69.02%:  know what I'd really want to hear is
+    372 60.12%:  know what I'd really want?
+    373 46.51%:  know what they
+    374 139.06%:  know what they say?
+    375 71.94%:  know what they'
+    376 57.29%:  know what they're all
+    377 46.21%:  know what? I'd rather stay in a
+    378 46.07%:  know what? I'd rather not say this.
+    379 45.92%:  know what I'd hate to see is
+    380 45.77%:  know what's weird? I say
+    381 60.42%:  know what's weird? I say that
+    382 45.66%: 're here? I don
+    383 45.47%:  know what's weird? It was a really
+    384 45.02%:  know what's weird? I want
+    385 45.00%:  know what? It
+    386 1167.35%:  know what? It's not
+    387 495.21%:  know what? It's true
+    388 348.12%:  know what? It's a
+    389 340.88%:  know what? It's hard
+    390 1347.76%:  know what? It's hard to tell
+    391 304.56%:  know what? It's hard to say
+    392 266.17%:  know what? It's hard to say what
+    393 257.84%:  know what? It's not as
+    394 266.95%:  know what? It's not as hard
+    395 251.57%:  know what? It's hard to say why
+    396 250.97%:  know what? It's not hard
+    397 244.78%:  know what? It's not a
+    398 240.41%:  know what? It's hard to tell when
+    399 234.99%:  know what? It's really
+    400 446.53%:  know what? It's really hard
+    401 410.98%:  know what? It's really hard to say
+    402 273.18%:  know what? It's really hard to see
+    403 231.04%:  know what? It's hard to see
+    404 336.72%:  know what? It's hard to see the
+    405 225.46%:  know what? It's really hard to say why
+    406 222.08%:  know what? It's hard to tell.
+    407 220.29%:  know what? It's really hard to say.
+    408 206.37%:  know what? It's hard to say.
+    409 203.23%:  know what? It's hard to hear
+    410 199.51%:  know what? It's hard to see why
+    411 196.88%:  know what? It's not the
+    412 189.30%:  know what? It's a little
+    413 186.52%:  know what? It's so
+    414 173.64%:  know what? It's hard to tell a
+    415 163.44%:  know what? It's really hard to see what
+    416 160.72%:  know what? It's not hard at
+    417 157.89%:  know what? It's really hard to see why
+    418 157.25%:  know what? It's not hard.
+    419 155.38%:  know what? It's so hard
+    420 150.18%:  know what? It's not really
+    421 141.28%:  know what? It's hard to write
+    422 173.19%:  know what? It's hard to write a
+    423 140.90%:  know what? It's the
+    424 136.80%:  know what? It's hard to tell why
+    425 133.08%:  know what? It's so hard that
+    426 130.37%:  know what? It's weird
+    427 179.58%:  know what? It's weird.
+    428 156.16%:  know what? It's weird that
+    429 130.68%:  know what? It's weird that you say
+    430 127.72%:  know what? It's hard to tell when a
+    431 121.10%:  know what? It's a lot
+    432 128.57%:  know what? It's a lot harder
+    433 120.93%:  know what? It's hard to see what
+    434 115.72%:  know what? It's all
+    435 112.53%:  know what? It's really weird
+    436 211.48%:  know what? It's really weird that you say
+    437 114.92%:  know what? It's really weird to
+    438 113.16%:  know what? It's really weird to say
+    439 111.52%:  know what? It's so weird
+    440 190.22%:  know what? It's so weird that
+    441 134.87%:  know what? It's so weird.
+    442 110.09%:  know what? It's a lot easier
+    443 107.32%:  know what? It's really not
+    444 104.49%:  know what? It's really hard.
+    445 104.07%:  know what? It's hard to say why.
+    446 88.42%:  know what? It's totally
+    447 86.54%:  know what? It's weird that you were
+    448 85.23%:  know what? It's weird to
+    449 108.11%:  know what? It's weird to see
+    450 97.77%:  know what? It's weird to see a
+    451 88.65%:  know what? It's weird to say
+    452 84.85%:  know what? It's hard.
+    453 83.22%:  know what? It's really easy
+    454 82.45%:  know what? It's not really a
+    455 78.17%:  know what? It's really weird.
+    456 76.56%:  know what? It's no
+    457 75.72%:  know what? It's really hard to say the
+    458 75.13%:  know what? It's weird to hear
+    459 73.80%:  know what? It's hard to tell in
+    460 71.84%:  know what? It's so hard.
+    461 69.40%:  know what? It's really hard to stay
+    462 68.16%:  know what? It's really hard to see a
+    463 67.44%:  know what? It's weird to hear a
+    464 67.38%:  know what? It's hard not
+    465 65.24%:  know what? It's really hard to stay in
+    466 65.04%:  know what? It's weird to say.
+    467 64.65%:  know what? It's still
+    468 63.67%:  know what? It's really hard to say why.
+    469 63.33%:  know what? It's so true
+    470 61.71%:  know what? It's the only
+    471 61.34%:  know what? It's really weird how
+    472 61.33%:  know what? It's really hard not
+    473 59.61%:  know what? It's a lot easier when
+    474 59.31%:  know what? It's really weird that we
+    475 57.79%:  know what? It's hard to stay
+    476 56.79%:  know what? It's a lot harder when
+    477 53.46%:  know what? It's all a
+    478 52.66%:  know what? It's not as hard a
+    479 50.94%:  know what? It's really weird when
+    480 526.95%:  know what? It's really weird when you say

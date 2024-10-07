@@ -303,11 +303,11 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
         report += &msg;
         report += "\n";
 
-        if cost > 400.0 {
+        if cost > 1200.0 {
             continue;
         }
 
-        search::practice_search(strip, model, Some(3000), &mut report)
+        search::practice_search(strip, model, Some(15000), &mut report)
     }
 
     std::fs::write(
