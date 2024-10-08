@@ -136,8 +136,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
         // The linear approximation for how much the anagram constraint helps is ill-behaved off
         // the end in *both* directions!  But I think it's pretty close for the range that actually
         // matters.
-        let filter_ratio = 0.05 + 0.2 * 0.55 * ((80.0 - chars_i) / 80.0);
-        prod = prod / filter_ratio as f64;
+        let filter_ratio = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        prod = 6.0 * prod / filter_ratio as f64;
 
         chars_i += 4.0;
     }
@@ -175,7 +175,7 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = generous_score(&res.tok_probs, res.chars_so_far);
+        let score = prob_score(&res.tok_probs, res.chars_so_far);
 
         Some((res, score))
     }

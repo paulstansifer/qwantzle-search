@@ -1,2243 +1,758 @@
 somehow managed to say that like it's a bad thing!
       0 100.00%: 
-      1 24.79%:  listened
-      2 24.61%:  honestly
-      3 24.00%:  listened to something
-      4 22.91%:  managed
-      5 22.76%:  somehow
-      6 25.19%:  somehow managed
-      7 22.59%:  managed to make
-      8 22.27%:  listened to me
-      9 22.22%:  listened to my
-     10 21.89%:  made
-     11 21.62%:  managed something
-     12 21.41%:  managed to somehow
-     13 21.39%:  honestly admitted
-     14 21.33%:  somehow managed to listen
-     15 21.31%:  listened to this
-     16 20.95%:  always
-     17 23.41%:  always been good
-     18 24.31%:  always been good at that
-     19 22.34%:  always been good at making
-     20 20.94%:  somehow made
-     21 20.76%:  gotten
-     22 20.72%:  talked
-     23 25.22%:  talked me into something
-     24 23.26%:  talked me into getting
-     25 22.92%:  talked me into staying
-     26 22.44%:  talked me into doing
-     27 22.11%:  talked me into being
-     28 21.90%:  talked me into saying
-     29 21.55%:  talked me into going
-     30 21.36%:  talked me into it
-     31 21.12%:  talked me into that
-     32 20.94%:  talked me into saying that
-     33 20.83%:  talked me into both
-     34 20.71%:  talked me into doing that
-     35 20.69%:  almost
-     36 20.68%:  stolen
-     37 20.61%:  always been so
-     38 21.26%:  always been so good at making
-     39 20.56%:  somehow managed to steal
-     40 20.46%:  always been so good at that
-     41 20.35%:  honestly managed
-     42 20.29%:  somehow managed to think
-     43 20.28%:  always been honest
-     44 20.26%:  gotten something
-     45 20.23%:  somehow managed to take
-     46 20.19%:  somehow listened
-     47 20.15%:  stolen something
-     48 20.07%:  honestly got
-     49 20.06%:  always been good at timing
-     50 20.04%:  talked me into this
-     51 20.00%:  always been good at taking
-     52 19.92%:  always been good at things
-     53 19.87%:  honestly managed to make
-     54 19.76%:  talked me into going with
-     55 19.70%:  almost made
-     56 19.70%:  talked me into the
-     57 19.69%:  always been so good at setting
-     58 19.67%:  somehow managed to talk
-     59 19.62%:  always been the
-     60 19.61%:  somehow managed to get
-     61 19.52%:  somehow managed to beat
-     62 19.51%:  listened to me this
-     63 19.47%:  talked me into some
-     64 19.44%:  honestly made
-     65 19.36%:  got
-     66 20.27%:  got something
-     67 19.30%:  always been good at that one
-     68 19.27%:  somehow managed to best
-     69 19.24%:  talked me into what
-     70 19.21%:  always been good at that!
-     71 19.03%:  done
-     72 20.81%:  done it again!
-     73 19.89%:  done something
-     74 19.03%:  always been good at those
-     75 19.00%:  listened to what
-     76 18.99%:  always been good at doing
-     77 18.97%:  gotta
-     78 20.21%:  gotta admit
-     79 18.97%:  talked me into not
-     80 18.94%:  always been a
-     81 18.93%:  talked me into something that
-     82 18.91%:  honestly gotten
-     83 18.90%:  always been good at this
-     84 18.88%:  honestly beaten
-     85 18.88%:  managed to steal
-     86 18.88%:  always been so good at taking
-     87 18.84%:  taken
-     88 19.17%:  taken something
-     89 18.81%:  always been so good at timing
-     90 18.80%:  always been so good at asking
-     91 18.79%:  somehow managed to say
-     92 18.78%:  talked me into my
-     93 18.76%:  honestly been
-     94 18.74%:  talked me into doing both
-     95 18.74%:  managed to think
-     96 18.72%:  managed to swing
-     97 18.72%:  managed to twist
-     98 18.70%:  asked
-     99 18.91%:  asked something
-    100 18.67%:  listened to the
-    101 18.63%:  named
-    102 19.09%:  named something
-    103 18.63%:  known
-    104 18.62%:  done it again with
-    105 18.61%:  blown
-    106 18.58%:  shown
-    107 18.57%:  talked me into a
-    108 18.56%:  always been good at doing that!
-    109 18.55%:  honestly gotta
-    110 18.54%:  blown my mind!
-    111 18.52%:  listened to both
-    112 18.48%:  listened to that
-    113 18.46%:  always been that
-    114 18.44%:  gotten me something
-    115 18.41%:  been
-    116 18.40%:  managed to take
-    117 18.37%:  talked me into saying this
-    118 18.35%:  always been good at it
-    119 18.30%:  honestly asked
-    120 18.22%:  stolen my best
-    121 18.21%:  somehow gotten
-    122 18.21%:  almost managed
-    123 18.21%:  somehow managed to set
-    124 18.21%:  somehow managed to ask
-    125 18.19%:  somehow managed to let
-    126 18.18%:  somehow managed to end
-    127 18.18%:  somehow managed to dis
-    128 18.17%:  somehow managed to hit
-    129 18.12%:  somehow talked
-    130 18.12%:  listened to some
-    131 18.09%:  talked me into one
-    132 18.09%:  somehow managed to say that
-    133 18.07%:  always been this
-    134 18.03%:  talked me into adm
-    135 18.03%:  talked me into him
-    136 18.00%:  talked me into this one
-    137 17.99%:  always been good at them
-    138 17.99%:  talked me into his
-    139 17.98%:  managed to talk
-    140 17.95%:  listened to them
-    141 17.94%:  somehow managed to end this
-    142 17.93%:  talked me into getting my
-    143 17.92%:  somehow beaten
-    144 17.90%:  named something that
-    145 17.89%:  always been good at math
-    146 17.87%:  honestly managed to make that
-    147 17.80%:  always been kind
-    148 17.80%:  managed to make that
-    149 17.80%:  talked me into getting a
-    150 17.76%:  always managed
-    151 17.76%:  always been so good at this
-    152 17.75%:  honestly asked me that
-    153 17.74%:  somehow managed to be
-    154 17.74%:  talked me into staying home
-    155 17.71%:  managed to beat
-    156 17.67%:  honestly taken
-    157 17.66%:  somehow managed to dislike
-    158 17.64%:  both
-    159 18.49%:  both nominated
-    160 17.64%:  somehow made talking
-    161 17.61%:  always managed to make
-    162 17.60%:  somehow missed
-    163 17.59%:  somehow stolen
-    164 17.59%:  managed to get
-    165 17.49%:  blown my mind this
-    166 17.49%:  managed to both
-    167 17.47%:  managed to sway
-    168 17.46%:  managed to make things
-    169 17.44%:  managed to look
-    170 17.44%:  always been good at making the
-    171 17.43%:  known me this
-    172 17.43%:  managed to show
-    173 17.43%:  managed to blow
-    174 17.41%:  managed to lose
-    175 17.40%:  managed to stay
-    176 17.40%:  managed to hold
-    177 17.37%:  got nothing
-    178 17.34%:  always been so insight
-    179 17.34%:  always been good at the
-    180 17.34%:  listened to him
-    181 17.33%:  both listened
-    182 17.32%:  talked me into something!
-    183 17.29%:  somehow managed both
-    184 17.28%:  made things
-    185 17.28%:  talked me into an
-    186 17.23%:  always been good at making those
-    187 17.21%:  honestly done
-    188 17.28%:  honestly done both
-    189 17.21%:  listened to one
-    190 17.20%:  managed to swing this
-    191 17.20%:  managed to say
-    192 17.44%:  managed to say something
-    193 17.17%:  listened to me so
-    194 17.15%:  said
-    195 18.41%:  said something
-    196 17.39%:  said something that
-    197 17.14%:  said nothing
-    198 17.13%:  done it again with the
-    199 17.11%:  honestly asked that
-    200 17.11%:  made me think
-    201 17.10%:  listened this
-    202 17.10%:  taken something that
-    203 17.09%:  talked me into getting him
-    204 17.07%:  somehow listened to this
-    205 17.06%:  done both
-    206 17.06%:  always been so good at it
-    207 17.05%:  always been one
-    208 17.04%:  honestly said
-    209 17.02%:  named the
-    210 17.02%:  talked me into doing this
-    211 17.02%:  been talking
-    212 16.99%:  somehow made that
-    213 16.99%:  always been good at not
-    214 16.93%:  always been so good at them
-    215 16.92%:  always been good at making that
-    216 16.91%:  listened to them both and
-    217 16.90%:  always been good at that and
-    218 16.89%:  always been good at ste
-    219 16.89%:  always been good at timing that
-    220 16.86%:  always been good at tim
-    221 16.84%:  always been so good at that!
-    222 16.84%:  shown me something
-    223 16.82%:  managed to make the
-    224 16.81%:  talked me into that too
-    225 16.81%:  known me almost
-    226 16.80%:  listened to my ideas
-    227 16.80%:  gone
-    228 16.79%:  somehow managed to think that
-    229 16.78%:  managed to take something
-    230 16.75%:  only
-    231 16.73%:  managed to make both
-    232 16.70%:  always seemed
-    233 16.65%:  listened to too
-    234 16.65%:  honestly gone
-    235 16.65%:  somehow taken
-    236 16.63%:  managed to win
-    237 16.63%:  told
-    238 17.88%:  told me something
-    239 16.61%:  talked me into being that
-    240 16.61%:  listened to his
-    241 16.60%:  always been too
-    242 16.60%:  almost gotten
-    243 16.60%:  been holding
-    244 16.58%:  listened to way
-    245 16.55%:  listened to and
-    246 16.55%:  seen
-    247 17.56%:  seen something
-    248 16.55%:  gotta imagine
-    249 16.55%:  told me something that
-    250 16.54%:  listened to how
-    251 16.54%:  always been so good at making the
-    252 16.53%:  listened to two
-    253 16.53%:  always gotten
-    254 16.53%:  somehow done
-    255 16.52%:  honestly done that
-    256 16.51%:  talked me down
-    257 16.49%:  been waiting
-    258 16.49%:  always been so good at making that
-    259 16.48%:  managed to say that
-    260 16.48%:  managed to say something that
-    261 16.48%:  always been this good
-    262 16.47%:  been looking
-    263 16.46%:  managed to twist this
-    264 16.46%:  sold
-    265 17.66%:  sold me on something
-    266 16.67%:  sold me on both
-    267 16.46%:  blown my mind so
-    268 16.43%:  talked me into admitting the
-    269 16.43%:  talked me into doing it
-    270 16.42%:  listened to me today
-    271 16.42%:  managed to make being
-    272 16.41%:  honestly made me think
-    273 16.41%:  sold me on something that
-    274 16.41%:  listened that
-    275 16.40%:  managed to make those
-    276 18.99%:  managed to make those two things
-    277 16.40%:  gotten me talking
-    278 16.39%:  gotten inside
-    279 18.68%:  gotten inside my head!
-    280 16.39%:  always been good at that one!
-    281 16.39%:  honestly both
-    282 16.38%:  somehow made things
-    283 16.37%:  listened to me again
-    284 16.37%:  always been good at making this
-    285 16.37%:  talked me into something so
-    286 16.36%:  listened with
-    287 16.36%:  always been so honest
-    288 16.35%:  been testing
-    289 16.34%:  been sitting
-    290 16.33%:  been getting
-    291 16.30%:  blown my mind too
-    292 16.30%:  always been good at making time
-    293 16.29%:  listened to so
-    294 16.28%:  talked me into doing the
-    295 16.27%:  somehow managed the
-    296 16.27%:  talked me into him being
-    297 16.25%:  managed to take the
-    298 16.25%:  somehow ended
-    299 16.24%:  somehow asked
-    300 16.22%:  always been so modest
-    301 16.21%:  somehow managed to end that
-    302 16.18%:  always been so good at the
-    303 16.18%:  almost beaten
-    304 16.16%:  honestly seen
-    305 16.16%:  managed to ask
-    306 16.16%:  talked me into being a
-    307 16.15%:  always been good at making them
-    308 16.13%:  honestly got to imagine
-    309 16.13%:  managed to set
-    310 16.13%:  managed to twist this into
-    311 16.12%:  always been so good at making this
-    312 16.12%:  talked me into it again
-    313 16.12%:  managed to hit
-    314 16.11%:  somehow managed to ask that
-    315 16.11%:  managed to one
-    316 16.11%:  gotten me looking
-    317 16.08%:  managed to ste
-    318 16.08%:  managed to dis
-    319 16.08%:  managed to let
-    320 16.08%:  managed to end
-    321 16.08%:  talked me into something that'
-    322 16.07%:  somehow managed to ask the
-    323 16.07%:  managed to sne
-    324 16.69%:  managed to sneak that
-    325 16.07%:  managed to not
-    326 16.07%:  done it again my
-    327 16.04%:  somehow made this
-    328 16.03%:  made me want
-    329 16.02%:  always been so good at ste
-    330 16.02%:  somehow managed to e
-    331 16.01%:  managed to make this
-    332 16.00%:  gotten me something that
-    333 16.00%:  talked me into staying with
-    334 15.98%:  stolen my ideas
-    335 15.98%:  always been an
-    336 15.97%:  somehow talked me into staying
-    337 15.97%:  always been so good at making time
-    338 15.97%:  told me nothing
-    339 15.97%:  honestly won
-    340 15.96%:  talked me into admitting how
-    341 15.96%:  managed to steal my best
-    342 15.95%:  always been the most
-    343 15.93%:  both managed
-    344 16.46%:  both managed to make
-    345 15.93%:  honestly got to be
-    346 15.89%:  somehow talked me into that
-    347 15.88%:  managed to do
-    348 15.88%:  always been so good at making them
-    349 15.85%:  managed to twist that
-    350 15.84%:  stolen my idea
-    351 15.81%:  almost got
-    352 16.56%:  almost got me thinking
-    353 15.80%:  always been that good
-    354 15.79%:  made today
-    355 15.77%:  managed to steal the
-    356 15.77%:  talked me into both those
-    357 15.86%:  talked me into both those things!
-    358 15.76%:  stolen my best idea
-    359 15.75%:  both somehow
-    360 17.60%:  both somehow managed
-    361 15.74%:  somehow managed to beat that
-    362 15.74%:  talked me into doing my
-    363 15.74%:  managed to take away
-    364 15.72%:  talked me into some things
-    365 15.71%:  somehow talked me into saying
-    366 15.79%:  somehow talked me into saying that
-    367 15.71%:  talked me into it being
-    368 15.71%:  made these
-    369 15.70%:  made this
-    370 15.67%:  somehow made the
-    371 15.66%:  gone against
-    372 15.66%:  done something that
-    373 15.65%:  gotta admit that
-    374 15.65%:  won
-    375 17.32%:  won something
-    376 15.62%:  managed to hit both
-    377 15.61%:  gone with
-    378 15.61%:  said that
-    379 15.58%:  listened so
-    380 15.55%:  sold me on the
-    381 15.54%:  gotta imagine how
-    382 15.53%:  asked the same
-    383 15.52%:  both listened to my
-    384 15.52%:  listened to me that
-    385 15.52%:  listened to my idea
-    386 15.52%:  talked me into going with that
-    387 15.51%:  always had
-    388 15.49%:  listened and
-    389 15.48%:  managed to dislike
-    390 15.47%:  made me look
-    391 15.46%:  been doing
-    392 15.74%:  been doing this
-    393 15.45%:  always been good at making him
-    394 15.45%:  listened in
-    395 15.44%:  somehow gone
-    396 15.43%:  talked me into doing what
-    397 15.43%:  talked me away
-    398 15.43%:  listened to me with
-    399 15.42%:  listened to me and
-    400 15.42%:  listened to a
-    401 15.42%:  managed to take something that
-    402 15.41%:  somehow talked me into a
-    403 15.41%:  always been good at making the most
-    404 15.41%:  honestly asked me this
-    405 15.41%:  talked me into him getting
-    406 15.41%:  managed to swing the
-    407 15.40%:  honestly got me
-    408 15.40%:  somehow been
-    409 15.39%:  made my
-    410 15.39%:  blown my mind to
-    411 15.39%:  asked the single
-    412 15.39%:  managed to make what
-    413 15.37%:  done things
-    414 15.37%:  somehow managed to steal his
-    415 15.35%:  managed that
-    416 15.34%:  listened to an
-    417 15.33%:  somehow made those
-    418 15.33%:  somehow managed to take that
-    419 15.33%:  got something to
-    420 15.32%:  listened to my time
-    421 15.32%:  made me wanna
-    422 15.30%:  known me eight
-    423 15.30%:  always been so good at timing that
-    424 15.30%:  somehow made being
-    425 15.30%:  talked me into getting him to
-    426 15.29%:  said the
-    427 15.29%:  somehow managed to say that in
-    428 15.29%:  honestly got to admit
-    429 15.28%:  managed to make best
-    430 15.28%:  somehow talked me into this
-    431 15.28%:  listened to my best
-    432 15.27%:  gotten inside my head so
-    433 15.27%:  taken something so
-    434 15.25%:  managed both
-    435 15.25%:  listened to it
-    436 15.24%:  talked me into going that
-    437 15.24%:  listened to my mind
-    438 15.24%:  made me want to listen
-    439 15.23%:  honestly done this
-    440 15.23%:  listened to no
-    441 15.22%:  got to
-    442 15.32%:  got to admit
-    443 15.22%:  been taking
-    444 15.21%:  always been good at those!
-    445 15.20%:  always been so good at making him
-    446 15.19%:  talked me into doing some
-    447 15.19%:  talked me into both things
-    448 15.18%:  always been on
-    449 15.17%:  managed to be
-    450 15.16%:  talked me into saying it
-    451 15.16%:  said something that's made
-    452 15.15%:  listened to something that
-    453 15.13%:  honestly not
-    454 15.12%:  gotta listen
-    455 15.12%:  talked me into this one!
-    456 15.12%:  always been so good at making me sad
-    457 15.10%:  only managed
-    458 16.17%:  only managed to make
-    459 15.09%:  somehow managed to take a
-    460 15.09%:  managed to go
-    461 15.09%:  stolen my mind
-    462 15.08%:  managed to talk me into both
-    463 15.07%:  been hiding
-    464 15.07%:  been making
-    465 15.06%:  managed this
-    466 15.05%:  been saying
-    467 15.21%:  been saying that
-    468 15.05%:  somehow stolen my best
-    469 15.05%:  listened too
-    470 15.05%:  talked me into being my
-    471 15.04%:  always hated
-    472 15.04%:  always been so good at te
-    473 15.03%:  always been good at making it
-    474 15.03%:  almost got me thinking that
-    475 15.02%:  gotten me almost
-    476 15.01%:  won this
-    477 15.01%:  managed to end this
-    478 15.01%:  listened the
-    479 15.00%:  been asking
-    480 15.00%:  somehow said
-    481 14.99%:  gone against my wishes
-    482 14.99%:  somehow taken the
-    483 14.98%:  somehow both
-    484 14.96%:  listened int
-    485 14.96%:  somehow best
-    486 14.96%:  somehow beat
-    487 14.95%:  somehow told
-    488 14.95%:  stolen my ideas again
-    489 14.95%:  blown my mind at
-    490 14.94%:  made me like
-    491 14.94%:  honestly had
-    492 14.94%:  almost taken
-    493 14.94%:  made that
-    494 14.94%:  always been good at timing this
-    495 14.94%:  been silent
-    496 14.94%:  blown my mind as
-    497 14.93%:  somehow made talking to
-    498 14.93%:  somehow made both
-    499 14.92%:  honestly made me want
-    500 14.92%:  honestly got to think
-    501 14.92%:  blown my minds
-    502 14.92%:  been eating
-    503 14.92%:  honestly set
-    504 14.92%:  gotten ahead
-    505 14.91%:  talked me into doing them
-    506 14.91%:  stolen my best ideas
-    507 14.91%:  honestly got to make
-    508 14.89%:  honestly managed to make both
-    509 14.89%:  always been this good at making
-    510 14.89%:  known me that
-    511 14.85%:  stolen my time
-    512 14.85%:  somehow made it
-    513 14.84%:  listened to my ideas so
-    514 14.83%:  always been good at making me sad
-    515 14.83%:  made the
-    516 14.82%:  managed to make it
-    517 14.82%:  always been so good at making it
-    518 14.82%:  named the two
-    519 14.82%:  honestly and
-    520 14.82%:  always been good at s
-    521 14.80%:  shown me something today
-    522 14.78%:  talked me into getting this
-    523 14.77%:  managed to take away something
-    524 14.77%:  talked me into going home
-    525 14.75%:  honestly made me think that
-    526 14.73%:  managed to make a
-    527 14.71%:  shown me the
-    528 17.57%:  shown me the limitations
-    529 14.71%:  both listened to this
-    530 14.71%:  talked me into it this
-    531 14.71%:  somehow said both
-    532 14.89%:  somehow said both things
-    533 14.70%:  somehow beaten my
-    534 14.70%:  named my
-    535 14.69%:  gone with the talking
-    536 14.68%:  almost got me wanting
-    537 14.67%:  somehow managed to take things
-    538 14.67%:  made some
-    539 14.66%:  always been good at things that
-    540 14.66%:  talked me into that being
-    541 14.66%:  always managed to make things
-    542 14.66%:  always been so good at that and
-    543 14.65%:  done this
-    544 14.65%:  said something that makes
-    545 14.65%:  always managed to make the
-    546 14.64%:  stolen both
-    547 14.62%:  managed to beat my
-    548 14.61%:  gotten me to imagine
-    549 14.60%:  both talked
-    550 16.17%:  both talked me into something
-    551 15.84%:  both talked me into it
-    552 15.40%:  both talked me into doing
-    553 14.80%:  both talked me into getting
-    554 14.60%:  always been good at timing those
-    555 14.60%:  managed to make one
-    556 14.59%:  set
-    557 14.59%:  listened to me again today
-    558 14.59%:  talked me into admitting to
-    559 14.59%:  told me things
-    560 14.59%:  honestly made that
-    561 14.59%:  talked me into that again
-    562 14.57%:  blown me
-    563 14.57%:  stolen my most
-    564 14.56%:  stolen my show
-    565 14.56%:  talked me into doing that with
-    566 14.56%:  always been so good at timing this
-    567 14.56%:  gotta know
-    568 14.54%:  always been so good at asking me
-    569 14.54%:  stolen my name
-    570 14.54%:  managed to take away the
-    571 14.53%:  honestly got to imagine that
-    572 14.52%:  somehow managed to let that
-    573 14.52%:  won tonight
-    574 14.50%:  both gotten
-    575 14.50%:  managed to take away something that
-    576 14.50%:  managed to talk me into that
-    577 14.50%:  gotten so
-    578 14.49%:  taken away
-    579 14.47%:  managed to end that
-    580 14.47%:  both stolen
-    581 14.47%:  managed to set aside
-    582 14.46%:  stolen the
-    583 14.46%:  talked me into staying the
-    584 14.46%:  done that
-    585 14.46%:  talked me into saying the
-    586 14.46%:  gotten me something so
-    587 14.45%:  talked me into my best
-    588 14.44%:  stolen that
-    589 14.42%:  hit
-    590 17.04%:  hit the sweet
-    591 14.59%:  hit the nail on its
-    592 14.41%:  named my weakness
-    593 14.41%:  both talked me into staying
-    594 14.41%:  managed to swing that
-    595 14.41%:  talked me into doing that this
-    596 14.40%:  managed to swing both
-    597 14.40%:  managed the
-    598 14.40%:  said things
-    599 14.40%:  managed to win this
-    600 14.39%:  now
-    601 17.53%:  now eliminated
-    602 14.93%:  now listened
-    603 14.88%:  now admitted
-    604 14.86%:  now imagined
-    605 14.39%:  talked me into doing that!
-    606 14.39%:  made both
-    607 14.39%:  talked me into staying home this
-    608 14.38%:  listened to this song
-    609 14.38%:  both sealed
-    610 14.38%:  had
-    611 14.38%:  let
-    612 18.81%:  let me down tonight
-    613 17.49%:  let me down today
-    614 16.97%:  let me down again
-    615 16.66%:  let me down this
-    616 15.33%:  let me down and
-    617 15.14%:  let me down in
-    618 15.13%:  let me down both
-    619 14.96%:  let me down that
-    620 14.74%:  let me down both times!
-    621 14.72%:  let me down so
-    622 14.37%:  listened to this idea
-    623 14.37%:  now managed
-    624 16.15%:  now managed to make
-    625 14.37%:  always said
-    626 14.60%:  always said that
-    627 14.36%:  managed to make two
-    628 14.36%:  always been a good time
-    629 14.36%:  made them
-    630 14.36%:  always been a good mate
-    631 14.36%:  named them
-    632 14.36%:  listened to both and
-    633 14.36%:  listened to me say
-    634 14.36%:  somehow managed to say the
-    635 14.35%:  both missed
-    636 14.35%:  gotta think
-    637 14.35%:  managed to talk me into the
-    638 14.35%:  somehow managed to take this
-    639 14.35%:  made it
-    640 14.35%:  talked me into staying that
-    641 14.34%:  listened to something so
-    642 14.34%:  talked me into doing that both
-    643 14.34%:  gotten that
-    644 14.34%:  always been good at it!
-    645 14.34%:  honestly managed to get
-    646 14.34%:  listened to this same
-    647 14.33%:  managed to do something
-    648 14.33%:  managed to make both those
-    649 16.22%:  managed to make both those things
-    650 14.33%:  honestly got some
-    651 14.33%:  talked me into admitting they
-    652 14.32%:  managed to make not
-    653 14.32%:  listened to this with
-    654 14.32%:  taken away something
-    655 14.31%:  talked me into being this
-    656 14.31%:  talked me into doing my best
-    657 14.30%:  managed to talk me into a
-    658 14.29%:  hit the nail dead
-    659 14.29%:  honestly got to hand
-    660 14.29%:  listened to me too
-    661 14.29%:  talked me into that one with
-    662 14.28%:  been talking to me this
-    663 14.28%:  taken the wind
-    664 14.27%:  stolen my own
-    665 14.26%:  listened to this many
-    666 14.26%:  listened to this show
-    667 14.26%:  somehow managed to steal that
-    668 14.25%:  listened to this this
-    669 14.25%:  managed to dislike both
-    670 14.24%:  always been good at those things
-    671 14.24%:  listened to me int
-    672 14.24%:  managed to make his
-    673 14.24%:  gotta listen to this
-    674 14.23%:  said things that
-    675 14.23%:  talked me into staying with the
-    676 14.22%:  got some
-    677 14.22%:  always been so good at it!
-    678 14.22%:  honestly gotta be
-    679 14.22%:  said something that has
-    680 14.22%:  managed to lose the
-    681 14.21%:  listened to me way
-    682 14.21%:  talked me into doing that both ways
-    683 14.21%:  made me wish
-    684 14.20%:  asked me
-    685 15.09%:  asked me something
-    686 14.20%:  sold me on making
-    687 14.20%:  managed to sway me to
-    688 14.19%:  managed to blow me
-    689 14.19%:  talked me into both sides
-    690 14.19%:  asked the thing
-    691 14.19%:  made time
-    692 14.19%:  talked me into being good
-    693 14.19%:  said almost
-    694 14.18%:  honestly got to weigh
-    695 14.18%:  talked me into being what
-    696 14.18%:  always been good at them!
-    697 14.17%:  always been so kind
-    698 14.17%:  honestly made this
-    699 14.17%:  listened to me att
-    700 14.17%:  listened to me now
-    701 14.16%:  now listened to my
-    702 14.16%:  somehow managed to ask that in
-    703 14.16%:  said nothing that
-    704 14.16%:  stolen his
-    705 14.15%:  gotten me so
-    706 14.15%:  managed to swing it both
-    707 14.15%:  listened to my tim
-    708 14.15%:  talked him
-    709 16.51%:  talked him into something
-    710 15.63%:  talked him into it
-    711 14.99%:  talked him into getting
-    712 14.54%:  talked him into staying
-    713 14.31%:  talked him into being
-    714 14.14%:  listened to both my
-    715 14.14%:  asked the same thing
-    716 14.14%:  always been good at making a
-    717 14.14%:  somehow managed to get that
-    718 14.14%:  talked me into that!
-    719 14.14%:  always been good in
-    720 14.14%:  listened to my one
-    721 14.14%:  listened to my own
-    722 14.14%:  talked me into saying that this
-    723 14.14%:  talked me into him being that
-    724 14.14%:  somehow got
-    725 14.13%:  listened to my mon
-    726 14.13%:  listened to my new
-    727 14.13%:  always been so good at them!
-    728 14.13%:  named the two things
-    729 14.12%:  managed to show me
-    730 14.12%:  talked me into both today
-    731 14.12%:  done it again with that
-    732 14.12%:  gotten good
-    733 15.81%:  gotten good at that
-    734 14.11%:  got to imagine
-    735 14.11%:  talked me into both again
-    736 14.10%:  always been so good at s
-    737 14.10%:  both talked me into going
-    738 14.10%:  always been so damn
-    739 14.10%:  talked me into saying that!
-    740 14.09%:  managed to end the
-    741 14.08%:  managed to win that
-    742 14.08%:  gotten away
-    743 14.08%:  talked me into it too
-    744 14.08%:  named the two best
-    745 14.66%:  named the two best things
-    746 14.08%:  always been good at making me do
-    747 14.25%:  always been good at making me do that
-    748 14.07%:  honestly got both
-    749 14.07%:  managed to do both things
-    750 14.06%:  gotten this
-    751 14.06%:  always been good at this timing
-    752 14.06%:  always managed to get
-    753 14.06%:  named the best
-    754 14.06%:  honestly got that
-    755 14.05%:  set the highest
-    756 14.05%:  managed to say both
-    757 14.05%:  honestly managed to take
-    758 14.04%:  listened to them both!
-    759 14.03%:  always been good to
-    760 14.03%:  always made
-    761 14.03%:  both made
-    762 14.02%:  managed to make an
-    763 14.02%:  known me less
-    764 14.02%:  known me both
-    765 14.02%:  managed to ask the
-    766 14.02%:  made me lose
-    767 14.01%:  said almost nothing today
-    768 14.00%:  talked me into staying a
-    769 14.00%:  always done
-    770 13.98%:  said the same
-    771 15.68%:  said the same thing almost
-    772 14.83%:  said the same thing two
-    773 16.08%:  said the same thing two days
-    774 14.70%:  said the same thing eight
-    775 14.31%:  said the same thing like
-    776 14.06%:  said the same thing both
-    777 14.05%:  said the same thing two times today
-    778 13.98%:  let me down too
-    779 14.35%:  let me down too many
-    780 13.97%:  won tonight's debate
-    781 13.97%:  said almost nothing this
-    782 13.96%:  made me into
-    783 13.95%:  listened to this one
-    784 13.95%:  honestly managed to make this
-    785 13.95%:  always been a stand
-    786 13.94%:  asked the best
-    787 13.94%:  managed to say that in
-    788 13.94%:  gotten into
-    789 13.93%:  done both things
-    790 13.93%:  listened to the things
-    791 13.93%:  let me down in both
-    792 13.93%:  almost made this
-    793 13.92%:  made me both
-    794 13.92%:  listened to me so int
-    795 13.92%:  always got
-    796 13.92%:  named two
-    797 13.92%:  gotten some
-    798 13.92%:  made me able
-    799 13.92%:  made me want to talk
-    800 13.92%:  said the same thing with
-    801 13.91%:  made me glad
-    802 13.91%:  listened to this and
-    803 13.91%:  always been good at math and
-    804 13.90%:  both won
-    805 13.90%:  somehow listened to that
-    806 13.90%:  always been the most insight
-    807 13.90%:  made me think that
-    808 13.90%:  talked me into his side
-    809 13.90%:  talked me into a new
-    810 13.90%:  sold me on something that'
-    811 13.90%:  almost gotten me to think
-    812 13.89%:  made me want to think
-    813 13.89%:  talked me into it and
-    814 13.89%:  made me want to thank
-    815 13.89%:  got something that
-    816 13.89%:  taken something that'
-    817 13.89%:  honestly done that with
-    818 13.89%:  always been good at doing this
-    819 13.89%:  talked me into admitting both
-    820 13.88%:  managed to somehow take
-    821 13.88%:  sold me on both things
-    822 13.88%:  honestly got me shaking
-    823 13.88%:  managed to ask that
-    824 13.88%:  said the same thing that
-    825 13.88%:  almost done
-    826 13.87%:  talked me into the most
-    827 13.87%:  honestly got the
-    828 13.86%:  always gotten that
-    829 13.86%:  somehow managed to think that'
-    830 13.85%:  talked him into that
-    831 13.85%:  made me think things
-    832 13.85%:  both talked me into doing this
-    833 13.85%:  always been so good at that in
-    834 13.85%:  let me down on
-    835 13.85%:  only been
-    836 13.84%:  somehow managed to let this
-    837 13.84%:  gotten what
-    838 13.84%:  both talked me into doing that
-    839 13.84%:  made me want to shake
-    840 13.84%:  talked me into staying!
-    841 13.83%:  made me want to stand
-    842 13.83%:  gotta admit they
-    843 13.82%:  managed to take something so
-    844 13.82%:  honestly no
-    845 15.26%:  honestly no idea what
-    846 13.82%:  gotta admit this
-    847 13.82%:  talked me into doing his
-    848 13.82%:  only gotten
-    849 13.82%:  gotta hand
-    850 18.31%:  gotta hand it to him
-    851 13.81%:  always had good
-    852 17.83%:  always had good taste in best
-    853 15.03%:  always had good taste in things
-    854 14.22%:  always had good taste in these
-    855 13.81%:  managed to stay on
-    856 13.81%:  taken this
-    857 13.81%:  somehow bested my
-    858 13.80%:  talked me into it now
-    859 13.80%:  said something that has made
-    860 13.80%:  said the same thing many
-    861 13.80%:  always been so good at making a
-    862 13.79%:  talked me into being his
-    863 13.79%:  managed to win both
-    864 14.02%:  managed to win both times
-    865 13.79%:  honestly got me beating
-    866 13.79%:  gone beyond
-    867 13.79%:  blown my mind a
-    868 13.79%:  gotten that good
-    869 13.79%:  done something today
-    870 13.78%:  always been so good at teasing that
-    871 13.78%:  somehow managed to think less
-    872 13.78%:  let me down yet
-    873 13.78%:  got some thinking
-    874 13.78%:  said the same thing when
-    875 13.78%:  managed to steal something
-    876 13.78%:  talked me into saying that too
-    877 13.78%:  said the same thing this
-    878 13.77%:  both talked me into this
-    879 13.77%:  got something like
-    880 13.77%:  let me down man
-    881 13.77%:  taken away something that
-    882 13.77%:  stolen some
-    883 13.77%:  somehow managed to say that talking
-    884 13.76%:  listened to this many times!
-    885 13.76%:  listened to me at
-    886 13.76%:  both somehow made
-    887 13.76%:  always got something
-    888 13.76%:  gotten me doing
-    889 13.76%:  honestly got to make that
-    890 13.76%:  said the same thing in
-    891 13.75%:  gotten me again
-    892 13.75%:  been lying
-    893 13.75%:  stolen this
-    894 13.74%:  talked me into saying what
-    895 13.74%:  somehow managed to steal a
-    896 13.74%:  talked me into doing way
-    897 13.74%:  made today awesome
-    898 13.74%:  gotta listen to me
-    899 13.74%:  almost made that
-    900 13.74%:  somehow managed to get this
-    901 13.73%:  named the single
-    902 13.87%:  named the single most
-    903 13.73%:  honestly gotta make
-    904 13.73%:  let me down one
-    905 13.72%:  got something else
-    906 13.72%:  talked me into him!
-    907 13.72%:  always been so good at this!
-    908 13.72%:  gone silent
-    909 13.72%:  talked me into being him
-    910 13.71%:  always seen
-    911 13.71%:  almost been
-    912 13.71%:  gotten both
-    913 13.71%:  gone behind
-    914 13.71%:  let me down yet again!
-    915 13.71%:  only wanted
-    916 13.70%:  talked me into that with
-    917 13.70%:  sold me on that
-    918 13.69%:  managed not
-    919 13.69%:  honestly managed to beat
-    920 13.69%:  taken that
-    921 13.69%:  taken these
-    922 13.69%:  seen inside
-    923 13.69%:  taken something that was
-    924 13.69%:  always been so good at making me a
-    925 13.68%:  seen me
-    926 13.68%:  managed to say both things
-    927 13.67%:  only waited
-    928 13.66%:  listened at
-    929 13.66%:  honestly said the
-    930 13.68%:  honestly said the most
-    931 13.66%:  taken my
-    932 13.65%:  talked me into that idea
-    933 13.65%:  taken those
-    934 13.65%:  taken sides
-    935 13.64%:  somehow made the ability
-    936 13.64%:  gotten me doing that
-    937 13.64%:  talked me into something this
-    938 13.64%:  let me down this time!
-    939 13.64%:  talked me into getting him a
-    940 13.64%:  honestly got to ask
-    941 13.63%:  managed to say something that'
-    942 13.63%:  managed to dislike my
-    943 13.63%:  said almost nothing today that
-    944 13.62%:  almost got me saying
-    945 13.62%:  managed to let down
-    946 13.62%:  somehow set
-    947 13.62%:  always been so good in
-    948 13.61%:  gotten them
-    949 13.61%:  talked with
-    950 13.61%:  talked him into saying
-    951 13.61%:  gone down
-    952 13.61%:  asked the most
-    953 13.60%:  talked me into admitting what
-    954 13.60%:  got the
-    955 17.15%:  got the best imagination
-    956 13.59%:  somehow said that
-    957 13.59%:  listened as
-    958 13.59%:  gone against the
-    959 13.59%:  made today the
-    960 13.58%:  stolen them
-    961 13.58%:  somehow let
-    962 13.57%:  gotten me something that'
-    963 13.57%:  somehow one
-    964 13.57%:  talked down
-    965 13.56%:  both talked me into saying
-    966 13.56%:  almost sway
-    967 14.16%:  almost swayed me to
-    968 13.65%:  almost swayed me!
-    969 13.56%:  talked him into doing
-    970 13.55%:  always had good taste in time
-    971 13.54%:  talked me into doing that way
-    972 13.54%:  honestly made the
-    973 13.54%:  seen things
-    974 13.54%:  talked me into being a good
-    975 13.54%:  talked both
-    976 13.54%:  asked me something that
-    977 13.53%:  talked into
-    978 13.53%:  managed to say both statements
-    979 13.53%:  honestly gotta ask
-    980 13.53%:  talked this
-    981 13.53%:  talked me into staying best
-    982 13.53%:  named the two biggest
-    983 13.53%:  talked some
-    984 13.53%:  named these
-    985 13.53%:  somehow talked me into saying this
-    986 13.52%:  honestly made me wish
-    987 13.52%:  talked me into something way
-    988 13.52%:  almost made it
-    989 13.52%:  honestly got no
-    990 14.67%:  honestly got no idea what
-    991 13.51%:  always been so damn good
-    992 14.72%:  always been so damn good at that
-    993 13.51%:  almost gone
-    994 13.51%:  managed to swing it so
-    995 13.61%:  managed to swing it so that both
-    996 13.51%:  always had good taste in that
-    997 13.51%:  been going
-    998 13.51%:  both talked me into things
-    999 13.51%:  almost said
-   1000 13.51%:  always been a good one
-   1001 13.50%:  talked me into a time
-   1002 13.50%:  managed to make being a
-   1003 13.50%:  managed to twist it
-   1004 13.50%:  been taken
-   1005 13.50%:  always been on the
-   1006 13.50%:  both talked me into saying that
-   1007 13.49%:  stolen away
-   1008 13.49%:  almost got me asking
-   1009 13.49%:  somehow managed to steal this
-   1010 13.49%:  talked me into staying this
-   1011 13.49%:  named the two highest
-   1012 13.49%:  got the best imagination today
-   1013 13.49%:  talked me into being way
-   1014 13.48%:  always had good taste in this
-   1015 13.48%:  been doing that
-   1016 13.48%:  both talked me into a
-   1017 13.48%:  managed to lose my
-   1018 13.47%:  honestly managed to make a
-   1019 13.47%:  always been a good man
-   1020 13.47%:  won something today
-   1021 13.47%:  always had good taste in both
-   1022 13.46%:  managed to twist that one
-   1023 13.46%:  both nominated me to
-   1024 13.46%:  managed to take something away
-   1025 13.46%:  shown signs
-   1026 13.46%:  let me down in the
-   1027 13.46%:  now admitted to being
-   1028 13.45%:  talked me into staying at
-   1029 13.44%:  honestly managed to make it
-   1030 13.44%:  always been that one
-   1031 13.44%:  always been a good and
-   1032 13.44%:  gotten me to listen
-   1033 13.44%:  gotten me into
-   1034 13.44%:  said almost nothing that
-   1035 13.44%:  talked me down to
-   1036 13.43%:  gotten the
-   1037 13.42%:  talked me into saying that'
-   1038 13.42%:  got something to think
-   1039 13.42%:  only asked
-   1040 13.42%:  blown my damn
-   1041 13.42%:  stolen my one
-   1042 13.41%:  listened to this too
-   1043 15.48%:  listened to this too many times!
-   1044 13.41%:  somehow talked me into it
-   1045 13.41%:  talked me into my own death
-   1046 13.41%:  now managed to make both
-   1047 13.41%:  managed to stay in
-   1048 13.41%:  honestly got to be asking
-   1049 13.41%:  talked me into that one way
-   1050 13.41%:  managed to steal his
-   1051 13.41%:  talked me into admitting those
-   1052 13.41%:  let me down on both
-   1053 13.40%:  talked me into a thing
-   1054 13.40%:  managed to say both those
-   1055 13.40%:  talked me into being who
-   1056 13.40%:  talked me into a tight
-   1057 13.40%:  somehow managed to set that
-   1058 13.39%:  almost taken the wind
-   1059 13.39%:  said the same thing at
-   1060 13.39%:  gotten me to admit
-   1061 13.39%:  always been good at this!
-   1062 13.39%:  honestly got to take
-   1063 13.39%:  listened to this way
-   1064 13.38%:  honestly got to imagine this
-   1065 13.38%:  talked me into this again
-   1066 13.38%:  done it this
-   1067 13.38%:  told me something that'
-   1068 13.37%:  managed to ask the same
-   1069 13.37%:  said the same thing at the
-   1070 13.36%:  managed to somehow get
-   1071 13.36%:  almost got me wanting to be
-   1072 13.36%:  always been so good at theming
-   1073 13.36%:  managed to talk me into it
-   1074 13.35%:  talked me into saying how
-   1075 13.34%:  somehow managed to think this
-   1076 13.34%:  listened to this the
-   1077 13.34%:  managed to ask me
-   1078 13.33%:  always been this good at it
-   1079 13.33%:  gotten me doing this
-   1080 13.33%:  talked me into something that is
-   1081 13.33%:  listened to this mon
-   1082 13.33%:  asked me the
-   1083 13.32%:  somehow listened to this and
-   1084 13.32%:  always been good at this thing
-   1085 13.32%:  gotten into my head!
-   1086 13.32%:  managed to make both things
-   1087 13.32%:  talked me into my own best
-   1088 13.32%:  honestly asked the
-   1089 13.31%:  named both
-   1090 13.31%:  done it again with those
-   1091 13.31%:  managed to do something that
-   1092 13.31%:  taken the time
-   1093 13.31%:  almost managed to get
-   1094 13.30%:  shown me things
-   1095 13.77%:  shown me things that
-   1096 13.30%:  listened to me say this
-   1097 13.30%:  blown my time
-   1098 13.30%:  known me both these
-   1099 13.30%:  blown my game
-   1100 13.29%:  done it again with the best
-   1101 13.29%:  honestly got me asking
-   1102 13.28%:  sold me on both these
-   1103 13.28%:  always been so good at timing!
-   1104 13.28%:  listened to this man
-   1105 13.27%:  talked me into admitting we
-   1106 13.27%:  stolen my idea and
-   1107 13.27%:  always been kind to
-   1108 13.27%:  always been good at making me a
-   1109 13.27%:  honestly got to be k
-   1110 16.65%:  honestly got to be kidding me with
-   1111 15.61%:  honestly got to be kidding me that
-   1112 15.00%:  honestly got to be kidding me!
-   1113 14.86%:  honestly got to be kidding with
-   1114 13.26%:  talked me into both them
-   1115 13.26%:  talked me into both this
-   1116 14.69%:  talked me into both this time and
-   1117 13.26%:  always been so good at timing them
-   1118 13.26%:  got me
-   1119 14.24%:  got me thinking
-   1120 13.26%:  listened to me in
-   1121 13.26%:  managed to twist something
-   1122 13.26%:  told me what
-   1123 13.25%:  sold me on being
-   1124 13.25%:  managed to sway me against
-   1125 13.25%:  said this
-   1126 13.25%:  managed to do both things at the
-   1127 13.25%:  talked me into going this
-   1128 13.24%:  talked him into that one
-   1129 13.24%:  managed to think that
-   1130 13.24%:  managed to hit both those
-   1131 13.23%:  talked him into going
-   1132 13.22%:  talked me into going easy
-   1133 13.22%:  gotta make
-   1134 13.22%:  talked me into getting both
-   1135 13.22%:  talked me into both that
-   1136 13.21%:  talked me into going away
-   1137 13.21%:  talked me into going both
-   1138 13.21%:  talked me into doing both this
-   1139 13.21%:  said the most
-   1140 13.21%:  talked him into that too
-   1141 13.21%:  always been good at timing them
-   1142 13.20%:  got something like that
-   1143 13.20%:  somehow managed to beat talking
-   1144 13.20%:  made me look at
-   1145 13.20%:  asked that
-   1146 13.19%:  listened to me so att
-   1147 13.19%:  listened to this so
-   1148 13.18%:  honestly got to want
-   1149 13.18%:  gone with the best
-   1150 13.18%:  sold me on both!
-   1151 13.18%:  talked me into doing both that
-   1152 13.18%:  always been so good at timing me
-   1153 13.18%:  honestly gone with that
-   1154 13.18%:  honestly gotta make that
-   1155 13.17%:  almost got me saying that
-   1156 13.17%:  said the same thing as
-   1157 13.17%:  talked me into getting away
-   1158 13.16%:  said something that honestly
-   1159 13.16%:  stolen my best ideas again
-   1160 13.16%:  managed to talk me into this
-   1161 13.16%:  seen my
-   1162 13.16%:  managed to make no
-   1163 13.16%:  listened to so many times
-   1164 13.20%:  listened to so many times that
-   1165 13.16%:  honestly made me this
-   1166 13.16%:  made me want to go
-   1167 13.16%:  honestly made me that
-   1168 13.15%:  honestly got to wait
-   1169 13.15%:  always been the kind
-   1170 13.15%:  managed to show that
-   1171 13.15%:  listened this time
-   1172 13.15%:  asked the only
-   1173 13.15%:  managed to somehow talk
-   1174 13.15%:  honestly done both!
-   1175 13.14%:  honestly got to adm
-   1176 13.14%:  talked me into getting what
-   1177 13.14%:  always been that good at making
-   1178 13.13%:  talked me into saying that's what
-   1179 13.13%:  always been the good
-   1180 13.13%:  done it both
-   1181 13.81%:  done it both ways
-   1182 13.13%:  managed to twist it into
-   1183 13.12%:  done it with
-   1184 13.12%:  listened to me go
-   1185 13.11%:  done it again with these
-   1186 13.11%:  listened to me as
-   1187 13.11%:  shown that
-   1188 13.11%:  somehow made his
-   1189 13.11%:  told some
-   1190 13.11%:  managed to do both these
-   1191 15.14%:  managed to do both these things at
-   1192 13.84%:  managed to do both these things!
-   1193 13.11%:  said the same thing in the
-   1194 13.10%:  always been so good at asking that
-   1195 13.10%:  always managed to make that
-   1196 13.10%:  managed to twist the
-   1197 13.10%:  listened to me on
-   1198 13.56%:  listened to me on this
-   1199 13.10%:  managed to do both while
-   1200 13.10%:  let me down this time too
-   1201 13.10%:  honestly made me want to go
-   1202 13.10%:  done it that
-   1203 13.09%:  gotten me looking at
-   1204 13.09%:  said the same things
-   1205 13.09%:  got that
-   1206 13.09%:  always been good at making those dist
-   1207 13.09%:  made things so
-   1208 13.09%:  talked me into this being
-   1209 13.08%:  always been good at taking a
-   1210 13.08%:  talked me into it being that
-   1211 13.08%:  managed to make that into
-   1212 13.08%:  somehow managed to say that things
-   1213 13.08%:  talked me into something with
-   1214 13.08%:  both taken
-   1215 13.08%:  always been that kind
-   1216 13.07%:  somehow made one
-   1217 13.07%:  said the same thing the
-   1218 13.07%:  gotten me some
-   1219 13.07%:  somehow managed to say things
-   1220 13.46%:  somehow managed to say things that
-   1221 13.07%:  talked me into saying both
-   1222 13.07%:  made me look inside
-   1223 13.06%:  managed to make that last
-   1224 13.06%:  got good
-   1225 15.37%:  got good taste in
-   1226 13.91%:  got good taste!
-   1227 13.06%:  talked me into going with both
-   1228 13.06%:  listened to me do
-   1229 13.06%:  named this
-   1230 13.05%:  listened to me wh
-   1231 13.05%:  named them both!
-   1232 13.05%:  talked me into a best
-   1233 13.04%:  both asked
-   1234 13.04%:  sold me on this
-   1235 13.04%:  said the same thing two times and
-   1236 13.04%:  said something so
-   1237 13.03%:  managed to take my
-   1238 13.03%:  sold me on both ideas
-   1239 13.03%:  talked me into getting him both
-   1240 13.03%:  sold me on these
-   1241 13.03%:  both gotta
-   1242 13.11%:  both gotta admit
-   1243 13.03%:  managed to swing this so
-   1244 13.03%:  sold me on those
-   1245 13.02%:  gotten into the
-   1246 13.02%:  gotta be
-   1247 13.02%:  got something to talk
-   1248 13.02%:  made me like that
-   1249 13.01%:  known this
-   1250 13.01%:  always managed to be
-   1251 13.01%:  somehow managed to ask this
-   1252 13.00%:  taken down
-   1253 13.00%:  sold me on going
-   1254 13.00%:  done something with
-   1255 13.00%:  sold me on doing
-   1256 13.00%:  asked this
-   1257 13.00%:  managed to say that while
-   1258 13.00%:  made him
-   1259 12.99%:  both got
-   1260 13.71%:  both got something
-   1261 12.99%:  honestly got to be kidding!
-   1262 12.99%:  gone behind the
-   1263 12.99%:  somehow managed to say that in the
-   1264 12.99%:  honestly gotta be the most
-   1265 12.99%:  honestly got to be kidding me that'
-   1266 12.98%:  managed to look at
-   1267 12.98%:  made me the
-   1268 12.98%:  talked me into admitting he
-   1269 12.98%:  listened to me so many
-   1270 12.98%:  managed to take a
-   1271 12.98%:  both named
-   1272 12.98%:  honestly won that
-   1273 12.98%:  made some good
-   1274 12.98%:  gotta admit it
-   1275 12.98%:  asked the last
-   1276 12.97%:  said the same thing now
-   1277 12.97%:  somehow managed to ask a
-   1278 12.97%:  got this
-   1279 12.97%:  gotten me this
-   1280 12.97%:  talked me into that one so
-   1281 12.96%:  let me down!
-   1282 12.96%:  both sides
-   1283 12.96%:  somehow made it so
-   1284 13.02%:  somehow made it so that talking
-   1285 12.96%:  won again
-   1286 12.96%:  managed to sway me in
-   1287 12.96%:  both shown
-   1288 12.95%:  talked me into going with them
-   1289 12.95%:  somehow missed the boat
-   1290 12.95%:  got to imagine how
-   1291 12.95%:  made me want to take
-   1292 12.94%:  talked me into saying that both
-   1293 12.94%:  said both
-   1294 13.40%:  said both things
-   1295 12.94%:  always been good at timing!
-   1296 12.94%:  got something new
-   1297 12.94%:  both talked me into staying home
-   1298 12.93%:  somehow gotten me talking
-   1299 12.93%:  almost made the
-   1300 12.93%:  blown my mind at the
-   1301 12.93%:  managed to make things less
-   1302 12.92%:  got them
-   1303 12.92%:  got like
-   1304 12.92%:  talked me into doing a
-   1305 12.92%:  got both
-   1306 12.91%:  talked me into doing so
-   1307 12.90%:  only managed to make that
-   1308 12.90%:  made me look insane
-   1309 12.90%:  managed to beat something
-   1310 12.90%:  made me want to like
-   1311 12.90%:  both listened to the
-   1312 12.90%:  won this time
-   1313 12.90%:  said the same thing too
-   1314 12.90%:  talked me into going the
-   1315 12.90%:  gotten into the habit
-   1316 12.90%:  listened to my ideas so att
-   1317 12.89%:  made me want to stay
-   1318 12.89%:  talked me into this!
-   1319 12.89%:  talked me into going to
-   1320 12.89%:  made me think again
-   1321 12.89%:  made me want to look
-   1322 12.89%:  known me too
-   1323 12.89%:  managed to beat the
-   1324 12.89%:  told me that
-   1325 12.88%:  talked me into doing that so
-   1326 12.88%:  listened to me do this
-   1327 12.88%:  both listened to me so
-   1328 12.88%:  made them both again
-   1329 12.88%:  honestly got to make the
-   1330 12.88%:  talked me in
-   1331 12.88%:  talked me into staying home with
-   1332 12.87%:  talked me into this so
-   1333 12.87%:  said the same thing and
-   1334 12.87%:  gotta listen to the
-   1335 12.87%:  listened to my ideas so int
-   1336 12.87%:  gotten me almost to
-   1337 12.87%:  talked me into him again
-   1338 12.87%:  managed to swing both sides
-   1339 12.87%:  almost swayed me to the
-   1340 12.87%:  made me want to hang
-   1341 12.87%:  done both today
-   1342 12.87%:  talked me into both things!
-   1343 12.87%:  somehow told me that
-   1344 12.87%:  always had good taste in men
-   1345 12.86%:  made me want to stab
-   1346 12.86%:  talked me into that way
-   1347 12.86%:  listened to the songs
-   1348 12.86%:  gotta listen to him
-   1349 12.85%:  always been so good at setting that
-   1350 12.85%:  gotten to
-   1351 12.85%:  let me down at
-   1352 12.85%:  got to admit that
-   1353 12.85%:  always had good taste!
-   1354 12.85%:  made me want to lose
-   1355 12.85%:  talked him into staying home
-   1356 12.84%:  made me want to kiss
-   1357 12.84%:  made me want to high
-   1358 12.84%:  talked him into both
-   1359 12.84%:  done it that time again
-   1360 12.84%:  talked me into saying that it
-   1361 12.83%:  listened to my idea so
-   1362 12.83%:  said the same thing to
-   1363 12.83%:  made me want to be
-   1364 12.83%:  only made
-   1365 12.82%:  sold me on both these things
-   1366 12.82%:  made me want to both
-   1367 12.82%:  said nothing that makes
-   1368 12.82%:  always been good at this time
-   1369 12.82%:  sold me on both sides
-   1370 12.82%:  been hiding it
-   1371 12.82%:  made me want to hold
-   1372 12.82%:  made me want to hate
-   1373 12.81%:  named something that is
-   1374 12.81%:  managed to make the thing
-   1375 12.81%:  managed to both make
-   1376 12.80%:  let me down this one
-   1377 12.80%:  talked me into doing that as
-   1378 12.80%:  always been so good at this thing
-   1379 12.80%:  always managed to make things so
-   1380 12.79%:  talked me to
-   1381 12.79%:  honestly got to be kidding with me
-   1382 12.79%:  talked me into my own side
-   1383 12.79%:  said those
-   1384 12.79%:  made me think today
-   1385 12.78%:  made me think that instead
-   1386 12.78%:  talked me into doing that at
-   1387 12.78%:  gotta be thinking
-   1388 12.78%:  managed to stay silent
-   1389 12.78%:  honestly done it
-   1390 12.77%:  made me want to listen to both
-   1391 12.77%:  somehow done the
-   1392 12.77%:  listened to me too many
-   1393 12.77%:  always had good taste in the
-   1394 12.77%:  managed to say that somehow
-   1395 12.76%:  talked me into doing this essay
-   1396 12.76%:  let me down this time and
-   1397 12.76%:  got some awesome
-   1398 12.76%:  known me the
-   1399 12.76%:  honestly won this debate
-   1400 12.76%:  gotten me to think
-   1401 12.76%:  named the thing
-   1402 12.76%:  talked me into staying with me
-   1403 12.76%:  talked me into doing that by
-   1404 12.75%:  talked me into it so
-   1405 12.75%:  got time
-   1406 14.42%:  got time to think
-   1407 12.75%:  managed to swing both those
-   1408 12.75%:  almost won
-   1409 12.74%:  managed to beat that
-   1410 12.74%:  gotta admit that'
-   1411 12.74%:  shown me the limits
-   1412 12.74%:  gotten me good
-   1413 12.73%:  named the only
-   1414 12.73%:  always been that good at it
-   1415 12.73%:  managed to take that
-   1416 12.73%:  almost gotten me to wish
-   1417 12.73%:  both talked me into something!
-   1418 12.73%:  managed to beat something that
-   1419 12.73%:  talked me into doing that to
-   1420 12.73%:  talked me into this thing
-   1421 12.73%:  no
-   1422 18.47%:  no idea how long
-   1423 17.32%:  no idea how many
-   1424 17.03%:  no idea how badly
-   1425 16.89%:  no idea how those
-   1426 16.85%:  no idea how these
-   1427 16.44%:  no idea what
-   1428 16.13%:  no idea how glad
-   1429 15.93%:  no idea how that
-   1430 15.78%:  no idea how this
-   1431 16.58%:  no idea how this makes
-   1432 15.64%:  no idea how easy
-   1433 18.29%:  no idea how easy it is to make
-   1434 15.67%:  no idea how easy it is to get
-   1435 14.47%:  no idea how easy it is to make that
-   1436 14.43%:  no idea how sad
-   1437 14.40%:  no idea how the
-   1438 14.36%:  no idea how big
-   1439 14.36%:  no idea how bad
-   1440 14.35%:  no idea how mad
-   1441 14.33%:  no idea how old
-   1442 14.10%:  no idea how easy this
-   1443 14.25%:  no idea how easy this makes
-   1444 13.97%:  no idea how these things
-   1445 13.87%:  no idea how easy that
-   1446 13.86%:  no idea how sad that
-   1447 15.13%:  no idea how sad that makes me!
-   1448 13.80%:  no idea how many times this
-   1449 13.76%:  no idea how many times that
-   1450 13.76%:  no idea what lengths
-   1451 13.60%:  no idea how easy it is to be
-   1452 13.53%:  no idea how that makes
-   1453 13.52%:  no idea when
-   1454 13.42%:  no idea how to
-   1455 13.30%:  no idea how it
-   1456 13.15%:  no idea how my
-   1457 13.10%:  no idea how he
-   1458 13.01%:  no idea!
-   1459 12.98%:  no idea how long that
-   1460 12.95%:  no idea how old this
-   1461 13.72%:  no idea how old this makes
-   1462 12.92%:  no idea how easy it is to talk
-   1463 12.85%:  no idea how long this
-   1464 12.73%:  asked them
-   1465 12.73%:  always been good at this kind
-   1466 12.73%:  said that almost
-   1467 12.73%:  always been so damn good at it
-   1468 12.72%:  managed it
-   1469 12.72%:  managed to hold both
-   1470 12.72%:  listened to that one
-   1471 12.72%:  talked him into being my
-   1472 12.71%:  listened to me again!
-   1473 12.71%:  let me down as
-   1474 12.71%:  talked me into that one as
-   1475 12.71%:  done some
-   1476 12.71%:  shown me something that
-   1477 12.71%:  made me sad
-   1478 12.71%:  managed to say that with
-   1479 12.71%:  listened to something this
-   1480 12.71%:  both managed to make this
-   1481 12.70%:  managed to twist this so
-   1482 12.70%:  somehow made that into
-   1483 12.70%:  gotten him
-   1484 12.70%:  always been good at that and it
-   1485 12.70%:  managed to make that both
-   1486 12.69%:  talked me into something that's way
-   1487 12.69%:  talked me into saying that the
-   1488 12.69%:  sold me again
-   1489 12.69%:  made me say
-   1490 12.69%:  talked me into saying it'
-   1491 12.69%:  talked me into getting him both ways
-   1492 12.69%:  managed to make two things
-   1493 12.69%:  talked me into a good
-   1494 12.69%:  gotten inside my head with
-   1495 12.69%:  somehow taken that
-   1496 12.68%:  managed to get me to say
-   1497 12.68%:  been talking this
-   1498 12.68%:  talked him into this
-   1499 12.68%:  made two
-   1500 12.68%:  taken away the
-   1501 12.68%:  gone with the least
-   1502 12.68%:  talked me into going to the
-   1503 12.68%:  listened to this idea so
-   1504 12.68%:  made me look at things
-   1505 12.67%:  managed to set the
-   1506 12.67%:  made one
-   1507 12.67%:  now made
-   1508 12.67%:  honestly got two
-   1509 12.67%:  blown this
-   1510 12.67%:  taken the best
-   1511 12.66%:  listened to me say that
-   1512 12.66%:  listened to 
-   1513 12.66%:  gotten me both
-   1514 12.65%:  managed to make that less
-   1515 12.65%:  gotten the best
-   1516 12.65%:  always been good at taking it
-   1517 12.65%:  got the best imagination!
-   1518 12.65%:  said the single
-   1519 12.65%:  gotten good at this time
-   1520 12.65%:  made me look within
-   1521 12.65%:  no idea how that'
-   1522 12.65%:  somehow talked him
-   1523 13.49%:  somehow talked him into being
-   1524 12.79%:  somehow talked him into getting
-   1525 12.65%:  said the same thing two nights
-   1526 12.64%:  always had good taste in tim
-   1527 12.64%:  managed to talk him
-   1528 12.64%:  said the same thing both times and
-   1529 12.64%:  managed to lose something
-   1530 12.63%:  named the title
-   1531 12.63%:  talked him into something that
-   1532 12.63%:  talked me into it being that way
-   1533 12.63%:  always been good at taking the st
-   1534 12.63%:  honestly won this time
-   1535 12.63%:  no idea how that statement
-   1536 12.63%:  won this debate
-   1537 12.63%:  gotta imagine the
-   1538 12.62%:  said these
-   1539 14.19%:  said these things
-   1540 12.62%:  honestly got one
-   1541 12.62%:  stolen one
-   1542 12.62%:  managed to sway me into
-   1543 12.62%:  said the same thing two months
-   1544 12.62%:  seen me talking
-   1545 12.62%:  listened!
-   1546 12.61%:  made me want to listen to this
-   1547 12.61%:  seen that
-   1548 12.61%:  been eating my
-   1549 12.61%:  listened to it this
-   1550 12.61%:  gotta admit the
-   1551 12.60%:  talked me into this today
-   1552 12.60%:  listened to this so many
-   1553 12.60%:  somehow managed to beat that last
-   1554 12.60%:  got that ability
-   1555 12.60%:  asked both
-   1556 12.60%:  talked me into that one at
-   1557 12.60%:  done both these
-   1558 14.32%:  done both these things today
-   1559 13.37%:  done both these things!
-   1560 12.60%:  somehow managed to take that ability
-   1561 12.59%:  both talked me into that
-   1562 12.59%:  said almost the
-   1563 12.91%:  said almost the same
-   1564 12.69%:  said almost the same thing in
-   1565 12.59%:  said almost the same thing in both
-   1566 12.59%:  stolen my best time
-   1567 12.59%:  honestly made me think this
-   1568 12.58%:  always done that!
-   1569 12.58%:  gotten me down
-   1570 12.58%:  managed to take the wind
-   1571 12.58%:  talked me into my own idea
-   1572 12.58%:  got what
-   1573 12.58%:  gotten me with
-   1574 12.58%:  somehow listened to a
-   1575 12.58%:  taken the last
-   1576 12.58%:  almost gotten me to say
-   1577 12.58%:  said things that make
-   1578 13.41%:  said things that make me want
-   1579 12.58%:  talked me into being so
-   1580 12.57%:  gotten me that
-   1581 12.57%:  no idea how long it
-   1582 12.57%:  almost got me doing
-   1583 13.52%:  almost got me doing that
-   1584 12.57%:  gotten me hook
-   1585 12.57%:  managed to do that
-   1586 12.57%:  talked me into both this time!
-   1587 12.57%:  managed to get inside
-   1588 12.56%:  been doing this the
-   1589 12.56%:  gotta hand it to me when
-   1590 12.56%:  done both those
-   1591 13.60%:  done both those things!
-   1592 12.56%:  said the same thing two things
-   1593 12.56%:  done it again with the tales
-   1594 12.56%:  talked him into those
-   1595 12.56%:  taken what
-   1596 12.56%:  done it again with the least
-   1597 12.56%:  managed to take away something that'
-   1598 12.56%:  always been good at timing me
-   1599 12.55%:  always been so good at timing the
-   1600 12.55%:  made me say that
-   1601 12.55%:  told me the
-   1602 12.55%:  somehow set the
-   1603 12.55%:  honestly got to imagine what
-   1604 12.55%:  stolen my best idea and
-   1605 12.55%:  both talked me into getting a
-   1606 12.55%:  always been good at this game
-   1607 12.55%:  shown some
-   1608 12.54%:  managed to let down the
-   1609 12.54%:  both asked the
-   1610 13.79%:  both asked the same thing
-   1611 12.54%:  let me down by
-   1612 12.54%:  done what
-   1613 12.54%:  said the things
-   1614 12.54%:  said the same thing two times!
-   1615 12.54%:  let me down my
-   1616 12.54%:  made me into a walking
-   1617 12.54%:  taken both
-   1618 13.14%:  taken both sides
-   1619 12.54%:  gotta take
-   1620 12.54%:  said the same thing in the last
-   1621 12.53%:  honestly said that to
-   1622 12.53%:  no idea how old that
-   1623 12.53%:  always been so good a
-   1624 12.53%:  honestly said both
-   1625 13.44%:  honestly said both those
-   1626 12.53%:  always been good at making the tim
-   1627 12.53%:  taken the high
-   1628 12.53%:  let me down both times today
-   1629 12.53%:  managed to make those both
-   1630 12.53%:  made me able to think
-   1631 12.53%:  no idea how big a deal
-   1632 12.64%:  no idea how big a deal that
-   1633 12.52%:  always been good at this mind
-   1634 12.52%:  managed to win the
-   1635 12.52%:  made this almost
-   1636 12.52%:  made this debate
-   1637 12.52%:  hit the nail on its head today
-   1638 12.52%:  taken the only
-   1639 12.52%:  taken the most
-   1640 12.52%:  managed to say something that's both
-   1641 12.52%:  talked me into staying at home
-   1642 12.51%:  managed to win that debate
-   1643 12.51%:  said the most awesome
-   1644 12.51%:  taken the same
-   1645 12.51%:  both managed to make the
-   1646 12.51%:  both missed my
-   1647 12.51%:  somehow managed to ask that in the
-   1648 12.51%:  talked me into him being a
-   1649 12.51%:  named what
-   1650 12.51%:  both talked me into saying this
-   1651 12.51%:  only taken
-   1652 12.50%:  somehow managed to beat this
-   1653 12.50%:  honestly got to see
-   1654 12.88%:  honestly got to see this
-   1655 12.50%:  both done
-   1656 12.50%:  managed to make those things
-   1657 12.50%:  talked me into staying a best
-   1658 12.50%:  listened to me do both
-   1659 12.50%:  gone ahead
-   1660 12.49%:  almost got me swing
-   1661 12.49%:  got nothing to say
-   1662 12.49%:  said the same thing in two
-   1663 12.49%:  taken me
-   1664 12.49%:  always been so good at taking me
-   1665 12.48%:  known me almost as
-   1666 12.48%:  somehow talked me into an
-   1667 12.48%:  said the same thing on
-   1668 12.78%:  said the same thing on both
-   1669 12.48%:  gotten me to thank
-   1670 12.48%:  let me down to
-   1671 12.48%:  gotta admit his
-   1672 12.48%:  honestly got no idea that
-   1673 12.48%:  done something that almost
-   1674 12.48%:  managed to make that one
-   1675 12.47%:  managed to lose that
-   1676 12.47%:  talked me into him doing
-   1677 12.47%:  managed to get me to think
-   1678 12.47%:  gotta like
-   1679 12.47%:  honestly no idea how that
-   1680 12.47%:  always been so good!
-   1681 12.47%:  named like
-   1682 12.47%:  made me into a talking
-   1683 12.47%:  stolen my best idea again
-   1684 12.47%:  talked me into a mind
-   1685 12.47%:  known that
-   1686 12.47%:  almost managed to sway
-   1687 12.47%:  talked down my time
-   1688 12.47%:  said the same thing this many
-   1689 12.46%:  now gotten
-   1690 12.46%:  done good
-   1691 12.46%:  gotta look
-   1692 12.46%:  no idea what that
-   1693 13.21%:  no idea what that means
-   1694 12.46%:  only said
-   1695 12.46%:  honestly got me beat
-   1696 12.46%:  both managed to make that
-   1697 12.45%:  sold me on the idea
-   1698 12.49%:  sold me on the idea that
-   1699 12.45%:  been hiding that
-   1700 12.45%:  somehow made that last
-   1701 12.45%:  managed to get me to say that
-   1702 12.45%:  honestly got me asking that
-   1703 12.45%:  managed to steal both
-   1704 12.45%:  asked the thing that
-   1705 12.45%:  both talked me into things today
-   1706 12.45%:  no idea how easy this is to make
-   1707 12.45%:  done something today that'
-   1708 12.44%:  gotta wait
-   1709 12.44%:  gotten way
-   1710 12.44%:  let me down by making
-   1711 12.44%:  managed to talk him into both
-   1712 12.44%:  almost managed to swing
-   1713 12.94%:  almost managed to swing this
-   1714 12.44%:  made me want to get
-   1715 12.44%:  no idea how to make
-   1716 12.44%:  talked me into a date
-   1717 12.43%:  talked me into that being a
-   1718 12.46%:  talked me into that being a good
-   1719 12.43%:  no idea how many times the
-   1720 12.43%:  taken into
-   1721 12.43%:  said the most awesome thing today
-   1722 12.43%:  done this somehow
-   1723 12.43%:  talked me into a head
-   1724 12.43%:  always managed to take
-   1725 12.43%:  gotten old
-   1726 12.42%:  somehow managed to take his
-   1727 12.42%:  always been so damn good at that!
-   1728 12.42%:  taken them
-   1729 14.45%:  taken them both away
-   1730 12.42%:  gotta admit they both
-   1731 12.42%:  got the ability
-   1732 12.42%:  somehow managed to get a
-   1733 12.42%:  somehow managed to say that being
-   1734 12.42%:  somehow managed to say that again
-   1735 12.41%:  no idea how big that
-   1736 13.16%:  no idea how big that makes
-   1737 13.13%:  no idea how big that smile
-   1738 12.41%:  gotta want
-   1739 12.41%:  set things
-   1740 12.41%:  managed to do both at
-   1741 12.41%:  managed to make a single
-   1742 12.41%:  somehow managed to say that thing
-   1743 12.41%:  got me wanting
-   1744 12.41%:  honestly got the best timing
-   1745 12.41%:  now admitted to both
-   1746 12.41%:  talked me into saying those
-   1747 12.40%:  always been so good at teasing it
-   1748 12.40%:  named two things
-   1749 12.58%:  named two things that
-   1750 12.40%:  honestly made it
-   1751 12.40%:  honestly got to get
-   1752 12.40%:  talked me into being as
-   1753 12.40%:  now talked
-   1754 12.40%:  listened to me so that
-   1755 12.40%:  talked me down again
-   1756 12.40%:  said something that somehow
-   1757 12.39%:  won this battle
-   1758 12.39%:  listened to this in
-   1759 12.39%:  managed to take things
-   1760 12.39%:  managed to say something while
-   1761 12.39%:  gotta wish
-   1762 12.39%:  gotta show
-   1763 12.39%:  taken some
-   1764 12.38%:  somehow made a
-   1765 12.38%:  always seemed to
-   1766 12.38%:  gotten into my head so
-   1767 12.38%:  stolen my ideas and
-   1768 12.38%:  honestly managed to beat that
-   1769 12.38%:  shown both
-   1770 12.38%:  both talked me into doing it
-   1771 12.38%:  told me both
-   1772 12.38%:  somehow made being a
-   1773 12.37%:  got the best timing
-   1774 12.37%:  managed to do both with
-   1775 12.37%:  no idea how mad this
-   1776 12.37%:  gotta be honest
-   1777 12.37%:  somehow made an
-   1778 12.37%:  taken time
-   1779 12.37%:  talked me into both the
-   1780 12.37%:  got the best taste
-   1781 12.36%:  made me able to stand
-   1782 12.36%:  now talked me into both
-   1783 12.36%:  got nothing to talk
-   1784 12.36%:  somehow managed to dislike that
-   1785 12.36%:  gone whole
-   1786 12.36%:  talked me down to something
-   1787 12.35%:  always been so good at the timing
-   1788 12.35%:  stolen that one
-   1789 12.35%:  talked me into both now
-   1790 12.35%:  honestly asked me that and
-   1791 12.35%:  managed to steal my own
-   1792 12.35%:  talked me into that idea too
-   1793 12.35%:  only wanted that
-   1794 12.34%:  talked me into getting his
-   1795 12.34%:  talked me into both and
-   1796 12.34%:  managed to lose both
-   1797 12.33%:  known him
-   1798 12.33%:  always adm
-   1799 12.33%:  listened to this at
-   1800 12.33%:  known me my
-   1801 12.33%:  always been good at the timing
-   1802 12.33%:  somehow managed to get his
-   1803 12.33%:  asked some
-   1804 12.33%:  honestly said that and
-   1805 12.33%:  asked what
-   1806 12.33%:  managed to talk someone
-   1807 12.32%:  managed to ask me that
-   1808 12.32%:  managed to talk me into what
-   1809 12.32%:  somehow managed to take an
-   1810 12.32%:  talked me into that so
-   1811 12.32%:  somehow taken my
-   1812 12.32%:  only named
-   1813 12.32%:  made me think long
-   1814 12.32%:  always been good at it and
-   1815 12.32%:  hit the limit
-   1816 12.32%:  honestly said the same
-   1817 12.71%:  honestly said the same thing two
-   1818 12.60%:  honestly said the same thing to
-   1819 12.31%:  got good taste and
-   1820 12.31%:  managed to say the
-   1821 12.31%:  managed to hold on
-   1822 12.31%:  named that
-   1823 12.31%:  listened to him this
-   1824 12.31%:  listened to so many that
-   1825 12.31%:  managed to dislike something
-   1826 12.31%:  talked me into that being my
-   1827 12.31%:  asked the same things
-   1828 12.31%:  honestly no idea how this
-   1829 12.86%:  honestly no idea how this makes
-   1830 12.31%:  seen this
-   1831 12.31%:  listened to so many time
-   1832 12.31%:  talked me into saying that's the
-   1833 12.30%:  gotta see
-   1834 12.30%:  no idea how it makes
-   1835 12.30%:  talked me into doing that both ways!
-   1836 12.30%:  made me like things
-   1837 12.30%:  listened to this as
-   1838 12.30%:  known me so
-   1839 12.29%:  managed to sneak a
-   1840 12.29%:  made this whole
-   1841 13.36%:  made this whole thing
-   1842 12.29%:  managed to talk me into sett
-   1843 12.29%:  gotten me to like
-   1844 12.29%:  honestly made me sad
-   1845 12.29%:  been saying this
-   1846 12.29%:  managed to make things that
-   1847 12.29%:  gotten me both ways
-   1848 12.29%:  managed my
-   1849 12.29%:  got the awesome
-   1850 12.28%:  always had good timing
-   1851 12.28%:  almost managed to twist
-   1852 12.55%:  almost managed to twist this
-   1853 12.28%:  gotten two
-   1854 12.28%:  honestly got to imagine that'
-   1855 12.27%:  somehow managed to dislike this
-   1856 12.27%:  gotten me to say
-   1857 13.04%:  gotten me to say something
-   1858 12.27%:  honestly got me st
-   1859 12.27%:  stolen my best shot
-   1860 12.27%:  only got
-   1861 12.27%:  always been good in the
-   1862 12.27%:  listened to this an
-   1863 12.27%:  honestly made me ask
-   1864 12.27%:  no idea how that one
-   1865 12.27%:  known both
-   1866 12.27%:  always gotten the
-   1867 12.26%:  shown good
-   1868 13.10%:  shown good taste in
-   1869 12.26%:  made today the longest
-   1870 12.26%:  made me want to shake hands
-   1871 12.26%:  gotten one
-   1872 12.26%:  been with
-   1873 12.26%:  always been good at making that time
-   1874 12.26%:  told those
-   1875 12.26%:  been doing this whole
-   1876 12.26%:  almost got me thinking that'
-   1877 12.26%:  said almost nothing that makes
-   1878 12.26%:  done something that's almost
-   1879 12.25%:  almost swayed me into
-   1880 12.25%:  no idea the
-   1881 12.25%:  always managed to make it
-   1882 12.25%:  talked me in to being
-   1883 12.25%:  talked me to death
-   1884 12.25%:  managed to get me to thank
-   1885 12.24%:  no idea how easy it is to make a
-   1886 12.24%:  no idea how these last
-   1887 12.24%:  almost gotten me to want
-   1888 12.24%:  always been so good at this time
-   1889 12.24%:  done something today that has
-   1890 12.24%:  said the same thing at least 
-   1891 12.24%:  managed to make that the
-   1892 12.24%:  no idea what it
-   1893 13.53%:  no idea what it's like to stand
-   1894 12.36%:  no idea what it's like to be that
-   1895 12.24%:  listened to him so
-   1896 12.23%:  told these
-   1897 12.23%:  known me both these days
-   1898 12.23%:  made me think this
-   1899 12.23%:  always managed to get the
-   1900 12.23%:  managed to do both this
-   1901 12.22%:  got something in
-   1902 12.22%:  talked me into something that was
-   1903 12.22%:  managed to say something that takes
-   1904 12.22%:  gotta hand it to this
-   1905 12.22%:  made things so easy
-   1906 12.22%:  listened to both sides
-   1907 12.22%:  shown this
-   1908 12.22%:  listened to me that many
-   1909 12.22%:  managed to do both that
-   1910 12.22%:  named some
-   1911 12.22%:  listened to the most
-   1912 12.22%:  both talked me into some
-   1913 12.21%:  listened to me!
-   1914 12.21%:  made me want to say
-   1915 12.21%:  somehow made it so that saying
-   1916 12.20%:  talked me into him going
-   1917 12.20%:  listened to something that'
-   1918 12.20%:  said nothing to
-   1919 12.20%:  honestly got to imagine the
-   1920 12.20%:  always been so good at this kind
-   1921 12.20%:  only managed to make this
-   1922 12.20%:  seen those
-   1923 12.20%:  got time to think things
-   1924 12.20%:  talked me into his being
-   1925 12.20%:  been away
-   1926 13.83%:  been away too long!
-   1927 12.20%:  always been so modest!
-   1928 12.19%:  talked the
-   1929 12.19%:  been that
-   1930 12.19%:  stolen my idea!
-   1931 12.19%:  gotten too
-   1932 12.19%:  gotta hand it to him!
-   1933 12.19%:  got nothing to make
-   1934 12.20%:  got nothing to make with
-   1935 12.19%:  somehow made that less
-   1936 12.19%:  almost had
-   1937 12.19%:  somehow managed to think that's a
-   1938 12.19%:  managed to make this whole
-   1939 12.19%:  no idea who
-   1940 12.18%:  hit the nail on its awesome
-   1941 12.18%:  got nothing to beat
-   1942 12.18%:  somehow in
-   1943 12.18%:  stolen two
-   1944 12.18%:  both talked me into this one
-   1945 12.18%:  done it again with both
-   1946 12.18%:  been waiting to
-   1947 12.18%:  blown that
-   1948 12.18%:  listened to something that was
-   1949 12.18%:  both talked me into the
-   1950 12.18%:  let me down both times and
-   1951 12.18%:  no idea what it's like to get
-   1952 12.18%:  got the best tastes
-   1953 12.18%:  no idea why
-   1954 12.18%:  managed to dislike something that
-   1955 12.18%:  made today the most
-   1956 12.17%:  talked me into some things that
-   1957 12.17%:  managed to sneak the
-   1958 12.17%:  no idea how easy it is to steal
-   1959 12.17%:  now gained
-   1960 12.17%:  somehow managed to best that
-   1961 12.16%:  always been a man
-   1962 12.16%:  told me this
-   1963 12.16%:  no idea how long this debate
-   1964 12.16%:  almost managed to win
-   1965 12.68%:  almost managed to win that
-   1966 12.16%:  hit the nail on my
-   1967 12.16%:  now sealed
-   1968 12.15%:  no idea the lengths
-   1969 12.15%:  known them
-   1970 12.15%:  talked me into saying that we
-   1971 12.15%:  done things with
-   1972 12.15%:  managed to make both sides
-   1973 12.15%:  now listened to the
-   1974 12.15%:  set the stage
-   1975 12.15%:  always been so good at taking it
-   1976 12.15%:  named only
-   1977 12.15%:  hit the nail so
-   1978 12.15%:  managed to let me down so
-   1979 12.14%:  managed to talk me down
-   1980 12.14%:  always been the man
-   1981 12.14%:  stolen my th
-   1982 12.14%:  talked me into my idea
-   1983 12.14%:  managed to take away both
-   1984 12.14%:  managed to lose that one
-   1985 12.14%:  been told
-   1986 12.13%:  managed to swing this debate
-   1987 12.13%:  always been that honest
-   1988 12.13%:  shown me that
-   1989 12.13%:  shown the
-   1990 12.13%:  been this
-   1991 12.13%:  made things easy
-   1992 12.13%:  said the most elegant
-   1993 13.51%:  said the most elegant thing
-   1994 12.91%:  said the most elegant things
-   1995 13.60%:  said the most elegant things today
-   1996 12.12%:  managed to let down both
-   1997 12.12%:  listened to both things
-   1998 12.12%:  managed to take something that was
-   1999 12.12%:  let me down a
-   2000 12.12%:  said almost the same thing two
-   2001 12.12%:  managed to make the last
-   2002 12.12%:  managed to make two things that
-   2003 12.11%:  honestly managed to make that a
-   2004 12.11%:  talked me into doing that a
-   2005 12.11%:  shown me again
-   2006 12.11%:  listened to them so
-   2007 12.11%:  managed to say that while making
-   2008 12.11%:  listened to me a
-   2009 12.11%:  let me down by making that
-   2010 12.11%:  always been so good at teasing him
-   2011 12.11%:  always been so good at taking a
-   2012 12.11%:  been like
-   2013 13.94%:  been like that
-   2014 12.11%:  said the most delight
-   2015 12.11%:  talked me into doing both at
-   2016 12.10%:  honestly got to make things
-   2017 12.10%:  said the same thing two times today!
-   2018 12.10%:  blown my mind too!
-   2019 12.10%:  always been good at that and that
-   2020 12.10%:  talked him into something!
-   2021 12.10%:  talked him into doing both
-   2022 12.10%:  somehow managed to think the
-   2023 12.09%:  managed to stay on the
-   2024 12.09%:  honestly made me want to both
-   2025 12.09%:  made them both into
-   2026 12.09%:  won the
-   2027 12.09%:  won today
-   2028 12.09%:  done it that way
-   2029 12.09%:  gotta admit that's awesome
-   2030 12.09%:  honestly got to take the
-   2031 12.09%:  managed to beat that one
-   2032 12.09%:  been mind
-   2033 12.09%:  been gone
-   2034 12.09%:  always been good at the making
-   2035 12.08%:  honestly said both things
-   2036 12.08%:  gotta imagine it
-   2037 12.08%:  managed to make '
-   2038 12.08%:  talked me into saying them
-   2039 12.08%:  said the same thing so
-   2040 12.08%:  gone into
-   2041 12.08%:  let me down as a best
-   2042 12.08%:  let me down to the
-   2043 12.08%:  managed to say the most
-   2044 12.07%:  gone with the less
-   2045 12.07%:  listened to the show
-   2046 12.07%:  always been so good at this game
-   2047 12.07%:  managed to make the only
-   2048 12.07%:  sold me on time
-   2049 12.07%:  said almost nothing to
-   2050 12.07%:  always been so good at making the tim
-   2051 12.07%:  been good
-   2052 12.07%:  always been good at the things
-   2053 12.07%:  managed to ask both
-   2054 12.07%:  asked the one
-   2055 12.06%:  somehow talked him into that
-   2056 12.06%:  talked me into doing this both
-   2057 12.58%:  talked me into doing this both ways!
-   2058 12.06%:  honestly got me doing
-   2059 12.22%:  honestly got me doing that
-   2060 12.06%:  named the most
-   2061 12.06%:  no idea how sad this
-   2062 13.92%:  no idea how sad this makes me!
-   2063 12.35%:  no idea how sad this makes me that
-   2064 12.06%:  managed to stay in the same
-   2065 12.05%:  made me want to say that
-   2066 12.05%:  got time to think these
-   2067 12.05%:  no idea how many tales
-   2068 12.05%:  talked me into both that one
-   2069 12.05%:  made things so awesome
-   2070 12.05%:  honestly got to be the kind
-   2071 12.05%:  got to admit these
-   2072 12.05%:  honestly managed to do
-   2073 12.25%:  honestly managed to do that
-   2074 12.05%:  been saying the
-   2075 12.05%:  no idea how many ideas
-   2076 12.05%:  managed to blow something
-   2077 12.04%:  said it
-   2078 12.04%:  gotta hand it to them
-   2079 12.04%:  said the same thing my
-   2080 12.04%:  stolen my show again
-   2081 12.04%:  made me glad that
-   2082 12.04%:  talked him into saying that!
-   2083 12.04%:  won both
-   2084 13.31%:  won both times
-   2085 12.04%:  told me things that
-   2086 12.04%:  sold me on some
-   2087 12.04%:  shown me that something
-   2088 12.04%:  managed to let that
-   2089 12.04%:  made this whole day something
-   2090 12.03%:  said the same thing we
-   2091 12.03%:  always been good at timing the
-   2092 12.03%:  talked me into doing this show
-   2093 12.03%:  somehow managed to say that the
-   2094 12.03%:  somehow made that both
-   2095 12.03%:  always been so honest!
-   2096 12.03%:  managed to sneak some
-   2097 12.03%:  told me something so
-   2098 12.02%:  almost managed to take
-   2099 13.30%:  almost managed to take the wind
-   2100 12.02%:  always been so good at timing that!
-   2101 12.02%:  no idea how many times he
-   2102 13.00%:  no idea how many times he's told
-   2103 12.02%:  told me something that doesn
-   2104 12.02%:  no idea what it's like to not
-   2105 12.02%:  no idea how this makes my
-   2106 12.01%:  blown my god
-   2107 12.01%:  only managed to make the
-   2108 12.01%:  both listened to me tonight
-   2109 12.00%:  made me like things that
-   2110 12.00%:  told me some
-   2111 12.00%:  always been good at taking sides
-   2112 12.00%:  named my best
-   2113 12.00%:  managed to say something both
-   2114 12.00%:  talked me into staying at this
-   2115 12.00%:  gotta see this
-   2116 12.00%:  named the two sides
-   2117 12.00%:  talked me into saying that with
-   2118 12.00%:  done it again with the most
-   2119 12.00%:  made me want to eat
-   2120 12.00%:  honestly gotten me to admit
-   2121 11.99%:  talked me into this idea
-   2122 11.99%:  listened so int
-   2123 11.99%:  managed to set aside my
-   2124 11.99%:  only made me want
-   2125 11.99%:  managed to twist things
-   2126 11.99%:  managed to win this debate
-   2127 11.99%:  said the sweet
-   2128 11.99%:  gotten me into this
-   2129 11.99%:  both somehow made this
-   2130 11.99%:  gotten me to imagine a
-   2131 11.99%:  always been so good at taking the st
-   2132 11.99%:  both nominated me as
-   2133 11.99%:  listened to my idea so int
-   2134 11.99%:  said the same thing no
-   2135 11.98%:  talked me into that as
-   2136 11.98%:  talked him into that somehow
-   2137 11.98%:  always been so on
-   2138 11.98%:  honestly made me think what
-   2139 11.98%:  somehow made it so talking
-   2140 11.98%:  named the game
-   2141 11.98%:  somehow made that idea
-   2142 11.98%:  honestly got me weigh
-   2143 11.98%:  made me think that things
-   2144 11.97%:  honestly got me kinda
-   2145 11.97%:  honestly got to make me
-   2146 11.97%:  talked me into saying that what
-   2147 11.97%:  no idea how big this
-   2148 11.97%:  said the same thing he
-   2149 11.97%:  managed to make the both
-   2150 11.97%:  somehow got me thinking
-   2151 11.97%:  managed to say that almost
-   2152 11.97%:  talked me into both those things as
-   2153 11.97%:  always been good at doing the
-   2154 11.97%:  talked me into staying home to
-   2155 11.97%:  got that ability too
-   2156 11.97%:  no idea what it's like to say
-   2157 11.97%:  no idea what it's like to say that
-   2158 11.97%:  always been so em
-   2159 11.97%:  said the same thing an
-   2160 11.97%:  listened to the book
-   2161 11.96%:  always been so in
-   2162 11.96%:  listened to too many bad
-   2163 11.96%:  both done something
-   2164 11.96%:  managed to steal my idea
-   2165 11.96%:  honestly got the best things
-   2166 11.96%:  both talked me into not
-   2167 11.96%:  honestly made me think both
-   2168 11.96%:  talked me into this time
-   2169 11.96%:  asked the two
-   2170 11.96%:  got the awesome ability
-   2171 11.95%:  honestly gotta make me
-   2172 11.95%:  always been so good at making that time
-   2173 11.95%:  no idea how my mind
-   2174 11.95%:  gotten me to make
-   2175 11.95%:  done both these things today!
-   2176 11.95%:  done it again with the same
-   2177 11.95%:  got a
-   2178 11.95%:  managed to say something so
-   2179 11.95%:  listened to the song
-   2180 11.95%:  gotten me looking at this
-   2181 11.95%:  managed to look at this
-   2182 11.94%:  made me so
-   2183 11.94%:  had me
-   2184 12.69%:  had me thinking
-   2185 11.94%:  both talked me into getting my
-   2186 11.94%:  said the same thing in almost
-   2187 11.94%:  managed to stay silent this
-   2188 11.94%:  sold me on them
-   2189 11.94%:  shown me the light
-   2190 11.93%:  always been so good in the
-   2191 11.93%:  made them both good
-   2192 11.93%:  said the same thing two times to
-   2193 11.93%:  honestly said the best
-   2194 11.96%:  honestly said the best thing to
-   2195 11.93%:  named the two most
-   2196 11.93%:  somehow made that the
-   2197 11.93%:  talked me into that in
-   2198 11.93%:  always had good taste in me
-   2199 11.93%:  always been good at things!
-   2200 11.93%:  sold me down
-   2201 11.93%:  talked me into admitting he was
-   2202 11.93%:  no idea what it means
-   2203 12.87%:  no idea what it means to me to
-   2204 11.93%:  made them both look
-   2205 11.93%:  talked me into one!
-   2206 11.92%:  sold me on what
-   2207 11.92%:  listened to the kind
-   2208 11.92%:  done it yet
-   2209 14.63%:  done it yet again!
-   2210 11.94%:  done it yet again with
-   2211 11.92%:  got something on
-   2212 11.92%:  almost got me thinking this
-   2213 11.92%:  honestly got to imagine it
-   2214 11.92%:  let me down at the
-   2215 11.92%:  made them both then
-   2216 11.91%:  somehow done that
-   2217 11.91%:  both said
-   2218 11.91%:  said the same thing at least two
-   2219 11.91%:  said the same thing two times at
-   2220 11.91%:  said the same thing two times on
-   2221 11.91%:  talked me into going with the '
-   2222 11.91%:  talked me into being good at this
-   2223 11.91%:  made me want to die
-   2224 11.91%:  told me the same
-   2225 11.91%:  gotten me something way
-   2226 11.91%:  honestly got a
-   2227 11.90%:  always been good at taking me
-   2228 11.90%:  got to imagine that
-   2229 11.90%:  almost got me thinking these
-   2230 11.90%:  done it again with that last
-   2231 11.90%:  always been so good at asking me that
-   2232 11.90%:  made them both this
-   2233 11.90%:  made me want to ask
-   2234 11.90%:  managed to make that not
-   2235 11.90%:  done it again with the talk
-   2236 11.90%:  made them both ways
-   2237 11.90%:  made them both that
-   2238 11.90%:  always been so good at making me sad!
-   2239 11.90%:  almost got me thinking those
-   2240 11.90%:  now managed to make the
-   2241 11.90%:  somehow managed to say that like
+      1 87.97%:  made
+      2 238.42%:  made me want
+      3 390.81%:  made me want to listen
+      4 247.46%:  made me want to go
+      5 217.76%:  made me want to be
+      6 190.29%:  made me think
+      7 188.20%:  made me think that
+      8 166.92%:  made me look
+      9 156.16%:  made me want to listen to a
+     10 116.62%:  made my
+     11 105.94%:  made me like
+     12 138.37%:  made me like that
+     13 99.06%:  made me want to talk
+     14 202.08%:  made me want to talk to
+     15 135.84%:  made me want to talk again
+     16 91.57%:  made me want to think
+     17 89.05%:  made me want to thank
+     18 85.47%:  got
+     19 181.04%:  got to
+     20 288.91%:  got to admit
+     21 260.29%:  got to admit that
+     22 126.22%:  got to admit that one
+     23 104.45%:  got me
+     24 264.43%:  got me thinking
+     25 171.92%:  got me thinking that
+     26 294.86%:  got me thinking that maybe
+     27 140.90%:  got me thinking that maybe this
+     28 86.93%:  got me thinking that maybe the
+     29 83.82%:  made it
+     30 83.11%:  made me think things
+     31 77.81%:  made me think so
+     32 76.48%:  got to know
+     33 71.45%:  made me think that the
+     34 96.90%:  made me think that the only
+     35 67.81%:  got me thinking this
+     36 71.22%:  got me thinking this whole
+     37 64.59%:  made me want to do
+     38 161.37%:  made me want to do both
+     39 144.78%:  made me want to do that
+     40 133.03%:  made me want to do that again
+     41 70.45%:  made me want to do that again so
+     42 64.30%:  made me want to listen to both
+     43 65.95%:  made me want to listen to both!
+     44 63.70%:  got to hand
+     45 176.60%:  got to hand it to him
+     46 134.48%:  got to hand it to him!
+     47 111.24%:  got to hand it to this
+     48 61.69%:  gotta
+     49 132.00%:  gotta admit
+     50 80.54%:  gotta admit that
+     51 61.62%:  made me think that the only good
+     52 61.38%:  made me want to do both things
+     53 126.48%:  made me want to do both things at
+     54 92.76%:  made me want to do both things!
+     55 61.38%:  got the
+     56 1350.79%:  got the best imagination
+     57 135.40%:  got the best imagination!
+     58 103.07%:  got the best taste
+     59 61.17%:  got the bestest
+     60 60.41%:  made me want to be that
+     61 58.06%:  got to know that
+     62 56.35%:  made me want to get
+     63 55.76%:  got me thinking that this
+     64 55.12%:  made a
+     65 54.87%:  got me thinking maybe
+     66 53.97%:  made a good
+     67 53.73%:  got to make
+     68 52.51%:  got to make that
+     69 51.50%:  made me think that it
+     70 49.80%:  always
+     71 661.38%:  always been good
+     72 5512.15%:  always been good at making
+     73 5462.03%:  always been good at making the
+     74 7596.24%:  always been good at making the most
+     75 1968.05%:  always been good at making that
+     76 1777.86%:  always been good at that
+     77 4039.29%:  always been good at that!
+     78 1735.03%:  always been good at that one
+     79 825.45%:  always been good at making those
+     80 737.74%:  always been good at making this
+     81 599.04%:  always been good at making time
+     82 549.17%:  always been good at making him
+     83 506.89%:  always been good at it
+     84 417.70%:  always been good at timing
+     85 461.22%:  always been good at timing that
+     86 411.14%:  always been good at that one!
+     87 368.31%:  always been good at those
+     88 311.93%:  always been good at making those dist
+     89 301.36%:  always been the
+     90 327.88%:  always been the most
+     91 299.05%:  always been good at making them
+     92 288.03%:  always been good at taking
+     93 282.95%:  always been good at doing
+     94 629.58%:  always been good at doing that!
+     95 190.79%:  always been good at timing this
+     96 167.70%:  always been good at making me do
+     97 566.55%:  always been good at making me do that
+     98 162.70%:  always been good at this
+     99 178.92%:  always been good at this!
+    100 159.10%:  always been good at making me sad
+    101 138.53%:  always been good at making me a
+    102 115.54%:  always been good at doing this
+    103 109.95%:  always been good at timing those
+    104 106.82%:  always been good at making this tim
+    105 104.77%:  always been good at making it
+    106 98.01%:  always been good at things
+    107 96.01%:  always been good at making a
+    108 95.05%:  always been good at making that time
+    109 86.38%:  always been good at it!
+    110 82.44%:  always been good at the
+    111 158.98%:  always been good at the timing
+    112 81.39%:  always been good at those things
+    113 78.56%:  always been good at timing them
+    114 78.01%:  always been good at making me do that!
+    115 70.12%:  always been good at making the m
+    116 69.40%:  always been good at this thing
+    117 63.12%:  always been good at those!
+    118 61.41%:  always been good at timing the
+    119 58.69%:  always been so
+    120 4182.11%:  always been so good at that
+    121 2362.77%:  always been so good at making
+    122 1776.63%:  always been so good at making the
+    123 864.95%:  always been so good at making me sad
+    124 841.53%:  always been so good at that!
+    125 706.26%:  always been so good at this
+    126 696.38%:  always been so good at making that
+    127 587.30%:  always been so good at making it
+    128 585.15%:  always been so good at setting
+    129 340.97%:  always been so good at making a
+    130 331.97%:  always been so good at making this
+    131 221.23%:  always been so good at the
+    132 200.39%:  always been so good at making him
+    133 195.31%:  always been so good at making time
+    134 182.51%:  always been so good at making that a
+    135 176.13%:  always been so good at making me sad that
+    136 158.01%:  always been so good at it
+    137 464.99%:  always been so good at it!
+    138 132.31%:  always been so good at taking
+    139 146.69%:  always been so good at taking the st
+    140 105.00%:  always been so good at making them
+    141 94.21%:  always been so good at making him the
+    142 91.19%:  always been so good at this!
+    143 87.73%:  always been so good at ste
+    144 87.14%:  always been so good at making me sad!
+    145 86.88%:  always been so good at making this a
+    146 84.25%:  always been so good at setting that
+    147 77.92%:  always been so good at making me a
+    148 73.70%:  always been so good at this time
+    149 73.48%:  always been so good at timing
+    150 66.74%:  always been so good at that and
+    151 63.46%:  always been so good at timing!
+    152 60.91%:  always been so good at them
+    153 60.70%:  always been so good at asking
+    154 67.58%:  always been so good at asking me
+    155 59.27%:  always been so good at this kind
+    156 58.31%:  always been so good at taking a
+    157 57.73%:  always been that
+    158 76.67%:  always been that good
+    159 189.75%:  always been that good at making
+    160 114.51%:  always been that good at making the
+    161 135.18%:  always been that good at making the most
+    162 57.08%:  always been that good at it
+    163 55.62%:  always been a
+    164 55.45%:  always been so good at timing that
+    165 85.46%:  always been so good at timing that!
+    166 55.04%:  always been so good at theming
+    167 54.90%:  always been so good at making this tim
+    168 53.09%:  always been good at making that tim
+    169 52.19%:  always been good at timing them that
+    170 50.14%:  always been one
+    171 50.11%:  always been good at making this time
+    172 48.82%:  always been good at making me do this
+    173 48.41%:  made me want to do that less
+    174 48.35%:  made the
+    175 47.90%:  got to admit that'
+    176 130.38%:  got to admit that's a
+    177 56.87%:  got to admit that's kinda
+    178 47.84%:  made me the
+    179 47.73%:  always been so good at taking me
+    180 46.48%:  made me want to shake
+    181 46.46%:  always been so good at the timing
+    182 46.29%:  always been that one
+    183 45.84%:  always been good at making this the
+    184 147.06%:  always been good at making this the most
+    185 45.65%:  got nothing
+    186 45.46%:  got my
+    187 55.61%:  got my attention
+    188 44.87%:  always been so good at making it that
+    189 44.74%:  taken
+    190 44.48%:  made me think that things
+    191 44.17%:  got to hand it to them
+    192 44.01%:  made me think that this
+    193 43.43%:  always been so good at this time thing
+    194 43.30%:  made me think long
+    195 43.26%:  always been so good at making the tim
+    196 43.20%:  made me want to do this
+    197 43.22%:  made me want to do this again
+    198 42.91%:  always been so good at asking me that
+    199 42.72%:  managed
+    200 619.03%:  managed to make
+    201 518.38%:  managed to make that
+    202 263.69%:  managed to make both
+    203 212.34%:  managed to make both those
+    204 728.74%:  managed to make both those things
+    205 127.18%:  managed to make this
+    206 98.47%:  managed to make both those things at
+    207 97.64%:  managed to make that into
+    208 93.18%:  managed to make that last
+    209 86.31%:  managed to take
+    210 361.75%:  managed to take something
+    211 651.12%:  managed to take something that
+    212 476.87%:  managed to take something that was
+    213 244.67%:  managed to take something away
+    214 235.24%:  managed to take something that's so
+    215 216.93%:  managed to take something away that
+    216 117.36%:  managed to take away
+    217 477.55%:  managed to take away something
+    218 1310.35%:  managed to take away something that
+    219 274.20%:  managed to take away something that'
+    220 298.90%:  managed to take away something that's so
+    221 69.39%:  managed to take away both
+    222 52.48%:  managed to talk
+    223 89.65%:  managed to talk me into the
+    224 84.80%:  managed to talk me into it
+    225 84.20%:  managed to talk me into both
+    226 65.07%:  managed to talk me into that
+    227 52.35%:  managed to make a
+    228 51.44%:  managed to take something that was so
+    229 48.99%:  managed to take something that has
+    230 47.37%:  managed to take something so
+    231 46.18%:  managed to make the
+    232 46.12%:  managed to make this whole
+    233 45.59%:  managed to make both things
+    234 42.67%:  got the best one
+    235 42.37%:  made me think that one
+    236 42.20%:  made me like this
+    237 41.94%:  made the same
+    238 41.63%:  always been good at making this shit
+    239 41.35%:  managed to make both those things a
+    240 41.00%:  always been good at things that
+    241 40.99%:  always had
+    242 62.84%:  always had good
+    243 726.80%:  always had good taste in best
+    244 78.89%:  always had good taste in things
+    245 51.27%:  always had good taste in these
+    246 45.44%:  always had good taste!
+    247 40.76%:  made me want to stand
+    248 40.64%:  got to admit that was
+    249 40.56%:  always been so honest
+    250 40.51%:  made me want to talk to the
+    251 40.03%:  always been so good at timing me
+    252 39.53%:  always been good at this timing
+    253 39.41%:  made me want to do both!
+    254 39.36%:  made me look bad
+    255 39.31%:  made me look at
+    256 335.83%:  made me look at things
+    257 167.23%:  made me look at things this
+    258 405.56%:  made me look at things this way!
+    259 129.35%:  made me look at things that
+    260 121.50%:  made me look at things with
+    261 96.32%:  made me look at things this way and
+    262 113.08%:  made me look at things this way and it
+    263 118.78%:  made me look at things this way and it has
+    264 75.86%:  made me look at things and
+    265 53.15%:  made me look at things this way again
+    266 49.10%:  made me look at the
+    267 54.85%:  made me look at the things
+    268 45.52%:  made me look at things in a way
+    269 108.56%:  made me look at things in a way that
+    270 194.25%:  made me look at things in a way that'
+    271 90.96%:  made me look at things in a way that is
+    272 84.83%:  made me look at things in a way that is both
+    273 51.59%:  made me look at things in a way that's both
+    274 43.42%:  made me look at things this way and that
+    275 41.08%:  made me look at things this way and that is
+    276 39.65%:  made me look at this
+    277 127.19%:  made me look at this thing
+    278 48.58%:  made me look at this thing with
+    279 46.17%:  made me look at this thing again
+    280 39.49%:  made me look at things that way and
+    281 55.22%:  made me look at things that way and it
+    282 66.41%:  made me look at things that way and it has
+    283 39.24%:  always been so good at taking it
+    284 38.69%:  made me look at things the
+    285 38.68%:  managed to make this whole thing so
+    286 38.48%:  made me want to shake hands
+    287 38.22%:  made the best
+    288 37.98%:  always been so good at timing this
+    289 42.27%:  always been so good at timing this!
+    290 37.42%:  managed to take that
+    291 51.98%:  managed to take that away
+    292 36.79%:  got the ability
+    293 36.74%:  done
+    294 360.94%:  done it again!
+    295 300.29%:  done something
+    296 277.46%:  done something that
+    297 348.02%:  done something that's almost
+    298 88.81%:  done it again with
+    299 249.29%:  done it again with the
+    300 155.19%:  done it again with the best
+    301 82.10%:  done it again my
+    302 57.06%:  done it again with that
+    303 55.84%:  done something with
+    304 50.08%:  done it again with that last
+    305 49.65%:  done both
+    306 60.54%:  done both today
+    307 46.92%:  done both things
+    308 37.61%:  done something today
+    309 182.98%:  done something today that has
+    310 52.21%:  done something today that makes
+    311 36.49%:  made me want to go and
+    312 36.19%:  made me think this
+    313 78.00%:  made me think this is
+    314 36.07%:  made me want to say
+    315 82.21%:  made me want to say things
+    316 163.59%:  made me want to say things that
+    317 129.22%:  made me want to say things like that!
+    318 116.86%:  made me want to say things like this
+    319 76.20%:  made me want to say that
+    320 50.44%:  made me want to say that again
+    321 168.21%:  made me want to say that again!
+    322 49.95%:  made me want to say that line
+    323 106.28%:  made me want to say that line so
+    324 37.44%:  made me want to say that so
+    325 36.08%:  made me want to say things like that so
+    326 35.94%:  gotta admit that one
+    327 35.56%:  made me look at this in
+    328 64.89%:  made me look at this in the
+    329 35.42%:  got the best imagination today
+    330 34.76%:  listened
+    331 238.06%:  listened to this
+    332 133.70%:  listened to the
+    333 67.45%:  listened to what
+    334 63.96%:  listened to me
+    335 105.80%:  listened to me so
+    336 131.02%:  listened to me so int
+    337 100.02%:  listened to me this
+    338 81.55%:  listened to me so att
+    339 63.34%:  listened to my
+    340 90.66%:  listened to my ideas
+    341 60.43%:  listened to something
+    342 52.11%:  listened to this one
+    343 49.20%:  listened to this and
+    344 47.72%:  listened to him
+    345 40.93%:  listened to both
+    346 46.03%:  listened to both and
+    347 40.50%:  listened to one
+    348 38.64%:  listened to that
+    349 34.48%:  got me thinking that maybe this was
+    350 34.36%:  managed to talk me into this
+    351 34.28%:  done something today that'
+    352 34.13%:  got some
+    353 33.98%:  made me like that again
+    354 33.83%:  managed to take something that is
+    355 33.83%:  always had good taste in things that
+    356 33.16%:  got to admit this
+    357 34.96%:  got to admit this is a
+    358 33.14%:  made me want to do that thing
+    359 33.10%:  made me look at things in a way that has
+    360 32.61%:  made me think it
+    361 32.38%:  always been so good at making this the
+    362 32.15%:  made me think that the ability
+    363 32.06%:  made me want to listen to this
+    364 32.02%:  made me want to do that less than
+    365 31.93%:  managed to beat
+    366 31.90%:  always been good at the making
+    367 31.78%:  always been good at making it so
+    368 46.50%:  always been good at making it so that
+    369 31.69%:  gotta know
+    370 31.58%:  made me wish
+    371 31.44%:  always been good at not
+    372 31.32%:  made me look at this in a way
+    373 60.64%:  made me look at this in a way that
+    374 48.72%:  made me look at this in a way that doesn
+    375 30.90%:  got me thinking this whole day
+    376 30.78%:  got something
+    377 49.24%:  got something to
+    378 54.00%:  got something to talk
+    379 37.95%:  got something to say
+    380 37.72%:  got something to think
+    381 30.66%:  managed to make a best
+    382 30.57%:  made me think that instead
+    383 30.46%:  always been good at making it so that the
+    384 30.43%:  made me want to do the
+    385 30.38%:  managed to make that into a bad
+    386 30.26%:  made me want to say that in
+    387 30.14%:  made this
+    388 112.21%:  made this whole
+    389 268.97%:  made this whole thing
+    390 101.40%:  made this whole thing into
+    391 103.13%:  made this whole thing into a met
+    392 78.66%:  made this whole day something
+    393 64.68%:  made this whole time
+    394 38.71%:  made this whole time thing
+    395 30.22%:  made this whole thing so
+    396 33.14%:  made this whole thing so easy
+    397 83.77%:  made this whole thing so easy!
+    398 36.42%:  made this whole thing so easy on
+    399 30.13%:  always been good at that and
+    400 30.12%:  always been this
+    401 55.97%:  always been this good
+    402 269.79%:  always been this good at making
+    403 163.46%:  always been this good at making the
+    404 146.65%:  always been this good at making the most
+    405 44.18%:  always been this good at it
+    406 31.24%:  always been this good at timing
+    407 29.71%:  managed to take something that is so
+    408 29.62%:  got to admit they
+    409 39.06%:  got to admit they both
+    410 29.56%:  done something with this
+    411 29.43%:  made me look at things this way that
+    412 29.42%:  always been so good at making this time
+    413 29.12%:  managed to make what
+    414 29.08%:  always had good taste in men
+    415 28.93%:  made me look inside
+    416 28.82%:  made me look at the things that
+    417 28.63%:  made me want to say things like that so bad
+    418 28.62%:  done it again with the most
+    419 28.45%:  managed to take something that's a
+    420 28.39%:  made me think that this is a
+    421 41.90%:  made me think that this is a good
+    422 50.63%:  made me think that this is a good way
+    423 28.37%:  got to be
+    424 1599.81%:  got to be kidding me!
+    425 283.75%:  got to be kidding me with
+    426 2845.85%:  got to be kidding me with that one!
+    427 673.18%:  got to be kidding me with that!
+    428 620.05%:  got to be kidding me with those
+    429 344.82%:  got to be kidding me with those last
+    430 165.29%:  got to be honest
+    431 138.49%:  got to be kidding me with the
+    432 103.13%:  got to be kidding!
+    433 69.91%:  got to be kidding me with the last
+    434 67.82%:  got to be honest with me and
+    435 174.45%:  got to be honest with me and say
+    436 45.26%:  got to be kidding with
+    437 543.72%:  got to be kidding with that one!
+    438 40.97%:  got to be honest with me and admit
+    439 31.37%:  got to be kidding me with that'
+    440 31.20%:  got to be the
+    441 72.20%:  got to be the only man
+    442 42.89%:  got to be the most
+    443 28.24%:  done something that's made
+    444 28.14%:  managed to take something bad
+    445 27.94%:  asked
+    446 27.87%:  always been good at making those tim
+    447 27.87%:  made me wish that
+    448 27.87%:  always had that
+    449 27.85%:  got to be honest with me and say this
+    450 27.83%:  made me think this way
+    451 27.79%:  got the ability to make
+    452 105.64%:  got the ability to make things
+    453 31.81%:  got the ability to make me
+    454 27.59%:  managed to make it
+    455 31.03%:  managed to make it so
+    456 104.20%:  managed to make it so that both
+    457 27.58%:  managed to take something that's way
+    458 27.56%:  always been good at that and it
+    459 27.53%:  got the bestest imagination
+    460 46.24%:  got the bestest imagination!
+    461 27.52%:  gotten
+    462 27.47%:  made me think this one
+    463 27.43%:  made me want to be that kind
+    464 27.36%:  got the same
+    465 88.38%:  got the same imagination
+    466 37.36%:  got the same taste
+    467 230.03%:  got the same taste in books
+    468 72.70%:  got the same taste as
+    469 68.96%:  got the same taste in books and
+    470 29.68%:  got the same imagination that
+    471 29.25%:  got the same tastes
+    472 60.27%:  got the same tastes in
+    473 27.29%:  been
+    474 141.03%:  been doing
+    475 399.17%:  been doing this
+    476 195.54%:  been doing that
+    477 175.13%:  been doing that this
+    478 156.73%:  been doing this whole
+    479 61.71%:  been doing this this
+    480 46.12%:  been talking
+    481 139.41%:  been talking to me this
+    482 40.74%:  been doing this the
+    483 32.29%:  been doing that with
+    484 29.82%:  been talking this
+    485 29.81%:  been doing this time
+    486 28.24%:  been talking me
+    487 28.13%:  been doing this with
+    488 27.21%:  made me want to be a
+    489 27.18%:  made me want to talk in
+    490 64.45%:  made me want to talk in the
+    491 27.13%:  always been so insight
+    492 27.09%:  managed to take away something that is
+    493 27.04%:  made me want to do that again!
+    494 27.02%:  got to admit they both seem
+    495 26.53%:  always been that kind
+    496 26.52%:  made me look at things with the
+    497 26.48%:  always been good at taking the st
+    498 26.45%:  got the ability to make me want
+    499 26.33%:  made me like that too
+    500 26.31%:  managed to take away something that is so
+    501 26.14%:  made me think that it's not
+    502 26.12%:  always been good at them
+    503 54.91%:  always been good at them!
+    504 26.07%:  made me think this is what
+    505 26.04%:  somehow
+    506 514.72%:  somehow managed
+    507 468.29%:  somehow managed to steal
+    508 183.99%:  somehow managed to get
+    509 140.74%:  somehow managed to steal that
+    510 119.96%:  somehow managed to take
+    511 184.14%:  somehow managed to take a
+    512 95.41%:  somehow managed to steal this
+    513 83.20%:  somehow managed to listen
+    514 82.86%:  somehow managed to think
+    515 84.88%:  somehow managed to think that
+    516 81.62%:  somehow managed to be
+    517 75.98%:  somehow managed to say
+    518 201.19%:  somehow managed to say that
+    519 432.00%:  somehow managed to say that in
+    520 75.02%:  somehow managed to get that
+    521 66.58%:  somehow managed to say that talking
+    522 65.73%:  somehow managed to take that
+    523 65.62%:  somehow managed to say that things
+    524 64.58%:  somehow managed to say the
+    525 54.72%:  somehow managed to say that in like
+    526 54.35%:  somehow managed to talk
+    527 52.83%:  somehow managed to say that the
+    528 48.27%:  somehow managed to take that as
+    529 47.48%:  somehow made
+    530 51.27%:  somehow made it
+    531 46.00%:  somehow managed to get this
+    532 45.86%:  somehow managed to say things
+    533 166.70%:  somehow managed to say things that
+    534 44.85%:  somehow managed to get that in
+    535 44.60%:  somehow made that
+    536 42.15%:  somehow made the
+    537 41.95%:  somehow managed to take this
+    538 42.25%:  somehow managed to take this thing
+    539 40.58%:  somehow managed to say that in the
+    540 39.52%:  somehow made talking
+    541 37.59%:  somehow managed to beat
+    542 35.71%:  somehow managed to take things
+    543 35.63%:  somehow gotten
+    544 34.43%:  somehow managed to take an
+    545 31.62%:  somehow managed to say that it
+    546 31.42%:  somehow managed to say that as
+    547 30.77%:  somehow talked
+    548 412.06%:  somehow talked me into saying
+    549 1433.02%:  somehow talked me into saying that
+    550 429.52%:  somehow talked me into saying this
+    551 364.34%:  somehow talked me into saying that this
+    552 76.49%:  somehow talked me into staying
+    553 74.33%:  somehow talked me into saying that'
+    554 67.48%:  somehow talked me into that
+    555 52.20%:  somehow talked me into this
+    556 49.29%:  somehow talked me into it
+    557 46.23%:  somehow talked me into saying that!
+    558 31.57%:  somehow talked me into an
+    559 30.57%:  somehow managed to beat that
+    560 29.59%:  somehow talked me into saying that it
+    561 29.51%:  somehow gotten me talking
+    562 29.49%:  somehow managed to say that and
+    563 28.82%:  somehow managed the
+    564 26.52%:  somehow made this
+    565 25.90%:  somehow managed to steal a
+    566 25.66%:  got to be kidding with the
+    567 25.09%:  somehow managed to steal his
+    568 25.01%:  done something that almost
+    569 24.57%:  made me think that we
+    570 24.55%:  made me want to be his
+    571 24.49%:  somehow managed to take this in
+    572 24.49%:  got to admit this one
+    573 24.47%:  always been good at making that a
+    574 24.41%:  listened to me so many
+    575 24.39%:  made me think that that
+    576 24.06%:  managed to take away the
+    577 66.51%:  managed to take away the thing
+    578 23.81%:  done it again with the same
+    579 23.69%:  made today
+    580 23.67%:  made this whole day so
+    581 23.62%:  made me think that that's a
+    582 42.12%:  made me think that that's a good
+    583 53.19%:  made me think that that's a good way
+    584 23.53%:  got some awesome
+    585 23.43%:  always been good at this time
+    586 188.09%:  always been good at this time thing
+    587 23.43%:  got to be honest with this
+    588 23.42%:  made me look at things with a
+    589 23.42%:  always been so good at making that time
+    590 29.85%:  always been so good at making that time!
+    591 23.38%:  made me look at this the
+    592 23.24%:  somehow managed to get it
+    593 23.19%:  taken away
+    594 31.41%:  taken away something
+    595 67.17%:  taken away something that
+    596 23.19%:  managed to take away something so
+    597 23.17%:  made me want to say that instead
+    598 22.85%:  managed to take this
+    599 22.85%:  listened to that one
+    600 22.84%:  managed to make being
+    601 22.72%:  been doing that with me this
+    602 22.71%:  got to admit this is the
+    603 22.66%:  listened to him this
+    604 22.56%:  made me want to listen to his
+    605 22.50%:  always been so good at making the m
+    606 22.48%:  done it again with the old
+    607 22.47%:  talked
+    608 883.52%:  talked me into something
+    609 706.32%:  talked me into doing
+    610 1686.94%:  talked me into doing that
+    611 908.16%:  talked me into doing both
+    612 575.24%:  talked me into being
+    613 544.81%:  talked me into something that
+    614 499.28%:  talked me into doing this
+    615 379.17%:  talked me into being that
+    616 373.66%:  talked me into going
+    617 830.05%:  talked me into going with
+    618 575.34%:  talked me into going with that
+    619 194.23%:  talked me into doing what
+    620 186.93%:  talked me into it
+    621 180.09%:  talked me into doing that with
+    622 166.00%:  talked me into going that
+    623 160.47%:  talked me into getting
+    624 231.12%:  talked me into getting my
+    625 136.46%:  talked me into going home
+    626 133.30%:  talked me into doing some
+    627 120.78%:  talked me into getting him
+    628 120.36%:  talked me into something that'
+    629 119.83%:  talked me into doing that!
+    630 110.84%:  talked me into a
+    631 109.41%:  talked me into saying
+    632 315.31%:  talked me into saying that
+    633 136.66%:  talked me into saying this
+    634 90.90%:  talked me into saying that too
+    635 82.54%:  talked me into doing that this
+    636 73.80%:  talked me into saying that this
+    637 73.40%:  talked me into being a
+    638 71.50%:  talked me into being a good
+    639 68.35%:  talked me into doing them
+    640 65.30%:  talked me into staying
+    641 63.64%:  talked me into my
+    642 90.07%:  talked me into my own best
+    643 63.57%:  talked me into doing it
+    644 62.02%:  talked me into something that's way
+    645 60.63%:  talked me into something!
+    646 57.37%:  talked me into getting him both
+    647 134.03%:  talked me into getting him both ways
+    648 55.46%:  talked me into that
+    649 71.11%:  talked me into that too
+    650 57.04%:  talked me into that!
+    651 54.81%:  talked me into something this
+    652 54.14%:  talked me into going with both
+    653 52.81%:  talked me into doing both this
+    654 51.30%:  talked me into saying that the
+    655 50.56%:  talked me into the
+    656 49.66%:  talked me into doing my
+    657 78.12%:  talked me into doing my best
+    658 48.15%:  talked me into staying home
+    659 47.07%:  talked me into my best
+    660 45.81%:  talked me into both
+    661 269.96%:  talked me into both those
+    662 293.51%:  talked me into both those things!
+    663 45.46%:  talked me into that one so
+    664 44.00%:  talked me into doing that both
+    665 127.38%:  talked me into doing that both ways
+    666 43.46%:  talked me into saying the
+    667 41.93%:  talked me into doing the
+    668 41.46%:  talked me into doing both that
+    669 41.19%:  talked me into a time
+    670 40.99%:  talked me into both things
+    671 39.06%:  talked me into saying that both
+    672 35.90%:  talked me into being this
+    673 35.33%:  talked me into staying home this
+    674 34.63%:  talked me into that being
+    675 33.78%:  talked me into being my
+    676 32.50%:  talked me into getting this
+    677 32.05%:  talked me into my own side
+    678 29.40%:  talked me into something so
+    679 28.95%:  talked me into doing this!
+    680 28.13%:  talked me into something that's so
+    681 28.02%:  talked me into getting him to
+    682 27.87%:  talked me into not
+    683 27.24%:  talked me into doing that both ways!
+    684 26.78%:  talked me into saying the most
+    685 26.50%:  talked me into saying how
+    686 25.64%:  talked me into getting him to do
+    687 24.58%:  talked me into both sides
+    688 24.28%:  talked me into staying with
+    689 48.08%:  talked me into staying with the
+    690 33.07%:  talked me into staying with me
+    691 24.02%:  talked me into getting a
+    692 23.50%:  talked me into something with
+    693 22.80%:  talked me into this
+    694 59.35%:  talked me into this again
+    695 57.09%:  talked me into this one
+    696 51.72%:  talked me into this being
+    697 22.77%:  talked me into a best
+    698 22.42%:  managed to make that a
+    699 22.40%:  got to know this
+    700 22.38%:  talked me into it again
+    701 22.34%:  managed to make it so that this
+    702 22.33%:  got to admit that's an
+    703 122.49%:  got to admit that's an awesome
+    704 22.30%:  managed to make that both
+    705 22.29%:  talked me into it too
+    706 22.27%:  always been so good at making a time
+    707 22.24%:  been taking
+    708 22.21%:  got no
+    709 215.71%:  got no idea what
+    710 117.04%:  got no idea what that
+    711 151.07%:  got no idea what that means
+    712 87.18%:  got no idea how badly
+    713 80.29%:  got no idea what that's like!
+    714 56.54%:  got no idea how many
+    715 608.22%:  got no idea how many times this
+    716 563.87%:  got no idea how many times that
+    717 139.28%:  got no idea how many times this has
+    718 74.64%:  got no idea how many times he
+    719 769.72%:  got no idea how many times he's said
+    720 419.27%:  got no idea how many times he's said that!
+    721 55.59%:  got no idea how many times that last
+    722 53.85%:  got no idea what this
+    723 218.47%:  got no idea what this means to me!
+    724 75.61%:  got no idea what this does
+    725 59.79%:  got no idea what this means to my
+    726 38.17%:  got no idea what that last
+    727 77.59%:  got no idea what that last one is
+    728 29.30%:  got no idea how many times this last
+    729 25.74%:  got no idea what it
+    730 390.13%:  got no idea what it's like to be my
+    731 387.62%:  got no idea what it's like to be a
+    732 207.16%:  got no idea what it's like to get
+    733 125.06%:  got no idea what it's like!
+    734 102.19%:  got no idea what it's done
+    735 72.15%:  got no idea what it's like to stand
+    736 64.07%:  got no idea what it's like to say
+    737 63.55%:  got no idea what it's like to be a man
+    738 36.36%:  got no idea what it's like to say the
+    739 35.95%:  got no idea what it's like to be an
+    740 34.76%:  got no idea what it's like to hang
+    741 29.86%:  got no idea what it's been
+    742 25.39%:  got no idea what a
+    743 24.49%:  got no idea what that's like at
+    744 24.23%:  got no idea how many ideas
+    745 23.50%:  got no idea how these
+    746 22.65%:  got no idea how many tales
+    747 22.12%:  got to hand it to me and
+    748 89.18%:  got to hand it to me and my sweet
+    749 22.11%:  talked me into doing my best at
+    750 22.28%:  talked me into doing my best at this
+    751 22.09%:  always been good at taking this
+    752 24.26%:  always been good at taking this the
+    753 22.06%:  talked me into the most
+    754 21.96%:  got no idea what kind
+    755 21.90%:  always had good timing
+    756 21.86%:  somehow managed to say that like

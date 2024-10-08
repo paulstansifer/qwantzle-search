@@ -1,464 +1,430 @@
 it looks like I'M never reading again
       0 100.00%: 
-      1 20.66%:  listen
-      2 19.20%:  I
-      3 18.89%:  looks
-      4 20.30%:  looks like dinner
-      5 19.98%:  looks like it
-      6 18.58%:  never
-      7 17.82%:  looks like I never
-      8 17.43%:  looks like I've earned
-      9 17.21%:  looks like I need
-     10 16.93%:  good
-     11 16.48%:  look
-     12 16.47%:  like
-     13 16.35%:  at
-     14 16.22%:  looks like I've eaten
-     15 15.76%:  like I said earlier
-     16 15.55%:  never again
-     17 15.34%:  good evening
-     18 15.33%:  it
-     19 15.32%:  looks like I get
-     20 15.25%:  looks like I ate
-     21 15.17%:  looks like I've read
-     22 14.83%:  never listen
-     23 14.80%:  let
-     24 14.79%:  all
-     25 14.75%:  not
-     26 14.50%:  it's looking
-     27 14.48%:  one
-     28 16.85%:  one advantage
-     29 14.38%:  too
-     30 14.35%:  don
-     31 14.14%:  I never
-     32 14.03%:  I still
-     33 13.78%:  I tried
-     34 13.73%:  looks like a
-     35 13.66%:  looks like I'd
-     36 13.55%:  never gonna
-     37 13.54%:  looks like I never get
-     38 13.54%:  looks like I never read
-     39 13.63%:  looks like I never read again
-     40 13.47%:  don't leave
-     41 13.27%:  looks like I've earned a
-     42 13.08%:  it looked
-     43 13.05%:  looks like I'M
-     44 12.98%:  let's never
-     45 12.97%:  let's agree
-     46 12.96%:  it looks
-     47 14.30%:  it looks like dinner
-     48 13.25%:  it looks like I've earned
-     49 12.88%:  in
-     50 12.76%:  to
-     51 12.70%:  in general
-     52 12.69%:  it's looking like
-     53 12.69%:  as
-     54 13.89%:  as long
-     55 12.60%:  no
-     56 12.60%:  looks like I need a
-     57 12.55%:  it's gonna
-     58 12.54%:  listen and
-     59 12.52%:  on
-     60 12.52%:  it looks like I never
-     61 12.37%:  so
-     62 13.08%:  so long
-     63 12.29%:  never read
-     64 12.28%:  one silver
-     65 12.25%:  one reader
-     66 12.23%:  one reason
-     67 12.19%:  al
-     68 12.17%:  I love
-     69 12.17%:  I need
-     70 12.13%:  never tell
-     71 12.13%:  never look
-     72 12.13%:  never does
-     73 12.12%:  never take
-     74 12.09%:  don't lose
-     75 12.09%:  don't give
-     76 12.08%:  I take
-     77 12.08%:  it's going
-     78 12.08%:  I like
-     79 11.98%:  looks like I've a
-     80 11.92%:  it's never
-     81 11.89%:  it's kinda
-     82 11.87%:  let's read
-     83 11.86%:  it looks like I need
-     84 11.79%:  I love reading
-     85 11.79%:  it doesn
-     86 11.72%:  let's look
-     87 11.68%:  let's give
-     88 11.50%:  it looked like I
-     89 11.49%:  it looks like I've read
-     90 11.44%:  one advantage is I
-     91 11.36%:  never let
-     92 11.34%:  it's good
-     93 11.32%:  I don
-     94 11.71%:  I don't see
-     95 11.32%:  good talk
-     96 11.27%:  no reason
-     97 11.25%:  not gonna
-     98 11.12%:  I'
-     99 11.11%:  no longer
-    100 11.09%:  not going
-    101 11.07%:  looks like it'd
-    102 10.97%:  one great
-    103 10.91%:  never too
-    104 10.90%:  looks like I never read a
-    105 10.81%:  looks like I've earned it
-    106 10.78%:  don't ask
-    107 10.78%:  never one
-    108 10.77%:  don't lie
-    109 10.76%:  like dogs
-    110 10.76%:  like real
-    111 10.76%:  I never asked
-    112 10.75%:  don't all
-    113 10.73%:  it's like
-    114 10.67%:  I never tried
-    115 10.65%:  I still kinda
-    116 10.64%:  it's looking kinda
-    117 10.63%:  it looks like I've earned a
-    118 10.58%:  I still never
-    119 10.57%:  it looks like dinner again
-    120 10.57%:  let's agree on
-    121 10.53%:  it's kind
-    122 10.52%:  I still never read
-    123 10.51%:  it's done
-    124 10.48%:  it's looking like a
-    125 10.45%:  I got
-    126 10.37%:  I see
-    127 12.28%:  I see no advantage
-    128 10.32%:  I don't even
-    129 10.27%:  let's go
-    130 10.26%:  I need to learn
-    131 10.26%:  I don't like
-    132 10.26%:  it does
-    133 10.24%:  like I said in
-    134 10.22%:  I need to raise
-    135 10.22%:  I like to
-    136 10.20%:  it looked like rain
-    137 10.20%:  it goes
-    138 10.19%:  I need to leave
-    139 10.15%:  I still read
-    140 10.13%:  not all
-    141 10.13%:  M
-    142 10.12%:  I don't love
-    143 10.08%:  a
-    144 10.04%:  like I said at
-    145 10.03%:  let's never read
-    146 11.10%:  let's never read again
-    147 10.02%:  I still need
-    148 10.01%:  like I said to
-    149 10.00%:  in order
-    150 10.00%:  it's looking like I
-    151 9.98%:  looks like I never eat
-    152 9.98%:  not like
-    153 9.97%:  like I said on
-    154 9.93%:  I never said
-    155 9.91%:  don't go
-    156 9.87%:  to avoid
-    157 9.87%:  all I need
-    158 9.85%:  one last
-    159 9.84%:  it's looking real
-    160 9.83%:  all good
-    161 9.81%:  I need to go
-    162 9.81%:  it's like reading
-    163 9.80%:  looks like I've earned an
-    164 9.80%:  looks like I never again
-    165 9.78%:  all dogs
-    166 9.79%:  all dogs are
-    167 9.78%:  it's like looking
-    168 9.76%:  looks like I never tried
-    169 9.75%:  let's agree on one
-    170 9.75%:  not even
-    171 9.71%:  looks like I've eaten a
-    172 9.68%:  I still give
-    173 9.65%:  looks at
-    174 9.64%:  it looks like I never read
-    175 9.94%:  it looks like I never read again
-    176 9.64%:  all I ever
-    177 9.61%:  never is
-    178 9.61%:  never in
-    179 9.59%:  let's do
-    180 9.59%:  it's all
-    181 9.59%:  never to
-    182 9.58%:  I love dogs
-    183 9.56%:  like I told
-    184 9.55%:  it's looking kind
-    185 9.54%:  one silver lining to
-    186 9.54%:  it looks like I never again
-    187 9.54%:  I never read
-    188 9.52%:  I still don
-    189 9.50%:  it's a
-    190 9.49%:  a reader
-    191 9.49%:  never do
-    192 9.47%:  looks like I've read a
-    193 9.47%:  looks like I've eaten again
-    194 9.47%:  don't I
-    195 9.46%:  never go
-    196 9.46%:  like and
-    197 9.46%:  I still kind
-    198 9.40%:  in general I
-    199 9.39%:  all I need to
-    200 9.38%:  looks like I'M reading
-    201 9.36%:  it's kinda like
-    202 9.35%:  one advantage I
-    203 9.31%:  not all readers
-    204 9.27%:  it's one
-    205 9.25%:  a good
-    206 9.24%:  it looks like a
-    207 9.23%:  I need to give
-    208 9.21%:  I need to live
-    209 9.17%:  it looks like i
-    210 9.14%:  I need to lose
-    211 9.14%:  it's never going
-    212 9.14%:  I need to sell
-    213 9.09%:  I like dogs
-    214 9.06%:  it looks like I'd
-    215 9.06%:  it looked like an
-    216 9.05%:  it's never gonna
-    217 9.01%:  looks like I get a
-    218 9.00%:  it looks like I need a
-    219 8.96%:  it looks like I'M
-    220 8.94%:  looks like dinner at
-    221 8.93%:  I don't env
-    222 8.92%:  a least
-    223 8.92%:  looks like I ate dinner
-    224 8.92%:  it's like living
-    225 8.92%:  no need
-    226 8.90%:  looks like I never get a
-    227 8.87%:  looks like a great
-    228 8.86%:  I do
-    229 8.85%:  I never asked to
-    230 8.79%:  it all
-    231 9.44%:  it all goes
-    232 8.79%:  it's a living
-    233 8.72%:  it's kinda gonna
-    234 8.72%:  it isn
-    235 8.71%:  it's kinda going
-    236 8.70%:  looks like I've read it
-    237 8.67%:  it looks like I've earned an
-    238 8.64%:  it's all over
-    239 8.63%:  in real
-    240 8.63%:  in good
-    241 8.63%:  looks like I'M eating
-    242 8.61%:  listen and I
-    243 8.54%:  I never said it
-    244 8.54%:  to read
-    245 8.54%:  to save
-    246 8.51%:  as good
-    247 8.51%:  not one
-    248 8.50%:  one dog
-    249 8.50%:  all I ask
-    250 8.49%:  like it
-    251 8.49%:  as near
-    252 8.48%:  a dog
-    253 8.48%:  looks like I ate a
-    254 8.47%:  a great
-    255 8.46%:  all I got
-    256 8.45%:  looks like I need an
-    257 8.45%:  no real
-    258 8.43%:  no idea
-    259 8.43%:  I never get
-    260 8.40%:  I like to live
-    261 8.54%:  I like to live danger
-    262 8.39%:  I like to learn
-    263 8.39%:  it is
-    264 8.37%:  it looks like dinner in
-    265 8.35%:  I like to avoid
-    266 8.35%:  looks I
-    267 8.35%:  I like to leave
-    268 8.30%:  it looks like I'M reading
-    269 8.30%:  I do regret
-    270 8.29%:  it's all good
-    271 8.29%:  I need to see
-    272 8.28%:  looks like I never ate
-    273 8.28%:  I like real
-    274 8.27%:  all dogs are great
-    275 8.27%:  aliens
-    276 8.23%:  like in
-    277 8.23%:  looks like I've earned a giant
-    278 8.22%:  Mister
-    279 8.22%:  it looked like I'
-    280 8.21%:  looks like I never die
-    281 8.21%:  looks like I've earned at
-    282 8.20%:  looks like I ate again
-    283 8.20%:  never a
-    284 8.18%:  like so
-    285 8.18%:  no one
-    286 8.18%:  it's no
-    287 8.36%:  it's no longer
-    288 8.16%:  a solid
-    289 8.16%:  looks like I'M in
-    290 8.16%:  never M
-    291 8.16%:  looks like I've eaten and
-    292 8.15%:  like to
-    293 8.15%:  I need to lie
-    294 8.14%:  like an
-    295 8.12%:  it's looking like I never
-    296 8.11%:  I need to ask
-    297 8.11%:  I need to rev
-    298 8.10%:  it looked like an average
-    299 8.08%:  I still never read a
-    300 8.08%:  I need a
-    301 8.08%:  it looks like I never die
-    302 8.05%:  it's looking like an
-    303 8.04%:  looks like a great evening
-    304 8.04%:  it's an
-    305 8.78%:  it's an original
-    306 8.97%:  it's an original idea
-    307 8.03%:  I like it
-    308 8.03%:  it looks like I never read a
-    309 8.02%:  good talkin
-    310 8.01%:  I need to go learn
-    311 8.00%:  it's in
-    312 8.00%:  so long and
-    313 8.00%:  it's on
-    314 7.98%:  it's never good
-    315 7.97%:  as it
-    316 7.97%:  it's looking like I need
-    317 7.96%:  it's like going
-    318 7.96%:  I do love
-    319 7.94%:  it's al
-    320 7.93%:  looks like I'M never
-    321 10.44%:  looks like I'M never reading
-    322 11.10%:  looks like I'M never reading again
-    323 8.59%:  looks like I'M never reading a
-    324 7.93%:  one silver lining at
-    325 7.91%:  looks like I've earned 
-    326 7.91%:  in all
-    327 7.89%:  it's never done
-    328 7.89%:  I do still
-    329 7.83%:  it's like I
-    330 7.83%:  I like to read
-    331 7.82%:  at le
-    332 7.82%:  I don't like living
-    333 7.80%:  it's like I learned
-    334 7.79%:  I love it
-    335 7.77%:  let's go read
-    336 7.77%:  I've
-    337 8.90%:  I've learned
-    338 7.80%:  I've earned
-    339 7.76%:  I'll
-    340 7.88%:  I'll never
-    341 7.75%:  looks like dinner I
-    342 7.74%:  it looks like dinner I
-    343 7.74%:  I don't even like
-    344 7.73%:  I need a reason
-    345 7.72%:  looks like I never again read
-    346 7.71%:  I need a strong
-    347 7.68%:  in ret
-    348 7.68%:  one advantage is no
-    349 7.67%:  all is
-    350 7.66%:  in its
-    351 7.66%:  to all
-    352 7.65%:  I need not
-    353 7.64%:  not in
-    354 7.62%:  I need to re
-    355 7.60%:  it'll
-    356 7.59%:  it's all going
-    357 7.58%:  it looks like I've read a
-    358 7.55%:  looks like I've a great
-    359 7.54%:  it looked like an easier
-    360 7.53%:  looks like I never again get
-    361 7.52%:  like a
-    362 7.53%:  like a good
-    363 7.52%:  it's kinda like going
-    364 7.51%:  it looks like i've earned
-    365 7.50%:  all I'
-    366 7.66%:  all I've got is
-    367 7.50%:  in general I'
-    368 7.50%:  it's kinda like real
-    369 7.50%:  it's looking like an average
-    370 7.49%:  I see no real
-    371 7.49%:  looks like I've eaten an
-    372 7.48%:  I like to give
-    373 7.48%:  looks like I get even
-    374 7.47%:  all it
-    375 7.46%:  one advantage I see
-    376 7.45%:  on one
-    377 7.43%:  I'll never read
-    378 7.45%:  I'll never read again
-    379 7.43%:  it's gonna end
-    380 7.42%:  looks like I never ate again
-    381 7.42%:  let's never read a
-    382 7.40%:  one silver lining I
-    383 7.39%:  not so
-    384 7.39%:  as one
-    385 7.36%:  looks like I never again reading
-    386 7.35%:  I got like
-    387 7.35%:  let's go on
-    388 7.35%:  all I do
-    389 7.34%:  it looked like an insane
-    390 7.34%:  it looks like I never die again
-    391 7.34%:  it looks like I never again reading
-    392 7.33%:  in one
-    393 7.33%:  in dog
-    394 7.32%:  as I
-    395 7.98%:  as I learned
-    396 7.32%:  I still do
-    397 7.30%:  I do like
-    398 7.30%:  to end
-    399 7.30%:  I love and
-    400 7.30%:  looks like I'M eating dinner
-    401 7.29%:  good I
-    402 7.29%:  I like to live in
-    403 7.28%:  don't go selling
-    404 7.28%:  as all
-    405 7.27%:  I like real dogs
-    406 7.27%:  it's all gonna
-    407 7.26%:  looks like I never read an
-    408 7.26%:  not on
-    409 7.26%:  it looks like I've earned 
-    410 7.26%:  I do love seeing
-    411 7.25%:  it's good I
-    412 7.24%:  to see
-    413 7.24%:  I got one
-    414 7.24%:  I take sol
-    415 7.24%:  all in
-    416 7.24%:  I need one
-    417 7.24%:  I need all
-    418 7.23%:  looks like I get an
-    419 7.23%:  looks like I never read again in
-    420 7.23%:  I need to go live
-    421 7.22%:  it looks like I never again read
-    422 7.20%:  looks like I've read 
-    423 7.20%:  not as
-    424 7.19%:  I need to live in
-    425 7.19%:  like I said earlier in
-    426 7.19%:  not a
-    427 7.19%:  a real
-    428 7.18%:  let's go order
-    429 7.18%:  I got over
-    430 7.18%:  listen and learn I
-    431 7.17%:  I need to go sign
-    432 7.17%:  I need to go kill
-    433 7.17%:  I need to go give
-    434 7.17%:  not an
-    435 7.17%:  one is
-    436 7.16%:  I like to live inside
-    437 7.16%:  no reg
-    438 7.16%:  let's never again
-    439 7.15%:  I never read a
-    440 7.15%:  let's never learn
-    441 7.14%:  I never get old
-    442 7.14%:  it's like real
-    443 7.13%:  it is a good
-    444 7.13%:  looks like I never die again
-    445 7.13%:  one reason I like
-    446 7.12%:  let's go learn
-    447 7.12%:  I've still
-    448 7.12%:  one in
-    449 7.11%:  a note
-    450 7.10%:  let's go on reading
-    451 7.10%:  like I said earlier on
-    452 7.08%:  it's looking a
-    453 7.08%:  let's never do
-    454 7.08%:  it looks like I've read in
-    455 7.07%:  a dog's gonna
-    456 7.07%:  it looks like I've read an
-    457 7.07%:  one silver lining'
-    458 7.06%:  I'll never again
-    459 7.05%:  so are
-    460 7.05%:  one reason I like reading
-    461 7.04%:  it looks like I'M never
-    462 9.13%:  it looks like I'M never reading
+      1 224.43%:  I
+      2 73.87%:  at
+      3 53.25%:  it
+      4 53.06%:  it's gonna
+      5 51.60%:  looks
+      6 69.41%:  looks like it
+      7 46.22%:  looks like I need
+      8 42.61%:  looks like I've earned
+      9 30.96%:  I'
+     10 30.39%:  it's a
+     11 19.44%:  it's going
+     12 18.62%:  it looks
+     13 120.53%:  it looks like I've earned
+     14 55.92%:  it looks like dinner
+     15 31.46%:  it looks like I never
+     16 19.61%:  it looks like I've earned a
+     17 17.57%:  I never
+     18 15.37%:  listen
+     19 15.35%:  it looks like I never read
+     20 25.47%:  it looks like I never read again
+     21 14.20%:  looks like I've earned it
+     22 14.01%:  it looks like I need
+     23 25.24%:  it looks like I need a
+     24 12.97%:  I still
+     25 12.94%:  never
+     26 11.24%:  in
+     27 11.03%:  looks like I never
+     28 10.38%:  looks like I've read
+     29 10.31%:  looks like I never get
+     30 9.44%:  looks like I've eaten
+     31 9.43%:  looks like I get
+     32 9.42%:  to
+     33 8.84%:  it's never
+     34 8.63%:  it looks like I'd
+     35 8.34%:  as
+     36 18.00%:  as long
+     37 7.88%:  it'll
+     38 7.77%:  looks like I've earned an
+     39 7.69%:  looks like dinner
+     40 7.33%:  let
+     41 7.19%:  all
+     42 7.02%:  it's kinda
+     43 7.01%:  no
+     44 6.92%:  good
+     45 6.92%:  I love
+     46 6.91%:  looks like I never read
+     47 12.70%:  looks like I never read again
+     48 6.84%:  I need
+     49 6.83%:  looks like I need a
+     50 6.70%:  not
+     51 5.96%:  it's good
+     52 7.77%:  it's good I
+     53 5.90%:  on
+     54 5.87%:  never again
+     55 5.85%:  looks like I've earned a
+     56 5.77%:  it looks like I'M
+     57 5.40%:  I need to go
+     58 5.18%:  I still don
+     59 4.92%:  it's kinda like
+     60 4.68%:  I don
+     61 58.23%:  I don't see
+     62 5.10%:  I don't even
+     63 4.62%:  looks like I ate
+     64 4.44%:  let's read
+     65 4.20%:  I've
+     66 9.54%:  I've got no
+     67 6.95%:  I've still
+     68 5.72%:  I've got one
+     69 4.18%:  looks like I'd
+     70 4.18%:  I'll
+     71 26.34%:  I'll never
+     72 26.55%:  I'll never read
+     73 22.21%:  I'll never read again
+     74 5.36%:  I'll never read a
+     75 4.94%:  I'll never read a non
+     76 4.13%:  I don't like
+     77 4.13%:  it looks like I've read
+     78 3.74%:  so
+     79 6.83%:  so long
+     80 3.46%:  I'd
+     81 3.38%:  it's looking
+     82 4.28%:  it's looking like
+     83 3.36%:  good evening
+     84 3.30%:  I take
+     85 3.28%:  I've tried
+     86 3.18%:  not all
+     87 3.18%:  I like
+     88 3.16%:  I love dogs
+     89 3.12%:  one
+     90 3.60%:  one advantage
+     91 3.11%:  not all readers
+     92 3.09%:  I tried
+     93 2.98%:  it looks like I never read a
+     94 2.97%:  it's all
+     95 3.24%:  it's all over
+     96 2.79%:  it doesn
+     97 2.79%:  I still read
+     98 2.72%:  it's all good
+     99 2.64%:  I've done
+    100 2.42%:  I don't even like
+    101 2.35%:  I never said
+    102 2.32%:  all I'
+    103 2.32%:  I've learned
+    104 2.32%:  I still need
+    105 2.30%:  I've got a
+    106 2.28%:  it's kinda like real
+    107 2.17%:  it looks like I've earned an
+    108 2.16%:  it's no
+    109 2.15%:  I don't see a
+    110 2.13%:  no one
+    111 2.08%:  it looks like I never again
+    112 2.08%:  in all
+    113 2.08%:  let's look
+    114 2.08%:  one advantage is I
+    115 2.06%:  M
+    116 2.02%:  it does
+    117 1.96%:  one advantage I
+    118 1.92%:  I don't love
+    119 1.87%:  looks like I never eat
+    120 1.87%:  looks like a
+    121 1.86%:  let's go
+    122 2.31%:  let's go on
+    123 1.83%:  it is
+    124 9.56%:  it is a good
+    125 2.17%:  it is kinda
+    126 1.77%:  I'll never again
+    127 2.04%:  I'll never again read
+    128 1.75%:  looks like I'M
+    129 1.73%:  it all
+    130 3.56%:  it all goes
+    131 1.72%:  in general
+    132 1.71%:  too
+    133 1.68%:  it's like
+    134 3.58%:  it's like I
+    135 1.60%:  I'M
+    136 2.25%:  I'M looking
+    137 1.75%:  I'M not
+    138 7.58%:  I'M not reading
+    139 1.72%:  I'M not going
+    140 1.50%:  it's never going
+    141 1.48%:  let's give
+    142 1.43%:  I've got a long
+    143 1.42%:  it's a real
+    144 1.62%:  it's a real good
+    145 1.41%:  in ret
+    146 1.41%:  a
+    147 1.40%:  looks like it'd
+    148 1.40%:  listen and
+    149 1.39%:  I've got like
+    150 1.36%:  in its
+    151 1.35%:  it looks like I'M reading
+    152 1.34%:  I'M going
+    153 6.97%:  I'M going to read
+    154 1.42%:  I'M going to read all
+    155 1.34%:  I've learned a great
+    156 1.33%:  I've done it all
+    157 1.33%:  it's a dog
+    158 1.33%:  don
+    159 1.30%:  it's no longer
+    160 3.29%:  it's no longer a
+    161 1.29%:  it's good I never
+    162 1.29%:  look
+    163 1.27%:  to all
+    164 1.27%:  I've got no idea
+    165 1.27%:  I've learned one
+    166 1.26%:  looks like I never read a
+    167 1.25%:  it goes
+    168 1.23%:  I don't env
+    169 1.22%:  al
+    170 1.22%:  it looks like I've earned 
+    171 1.21%:  no one ever
+    172 1.21%:  it is going
+    173 1.21%:  I'M telling
+    174 1.19%:  it's looking like an
+    175 1.19%:  it looks like dinner again
+    176 1.18%:  looks like I'M never
+    177 2.86%:  looks like I'M never reading
+    178 97.54%:  looks like I'M never reading again
+    179 6.43%:  looks like I'M never reading a
+    180 1.18%:  it's never gonna
+    181 1.17%:  I've got an
+    182 3.39%:  I've got an idea
+    183 1.16%:  like
+    184 1.74%:  like I said earlier
+    185 1.14%:  I need a
+    186 1.13%:  let's never
+    187 1.13%:  I'M glad
+    188 1.12%:  all is
+    189 1.10%:  looks like I've earned a giant
+    190 1.09%:  I've learned a lot in
+    191 1.08%:  I still give
+    192 1.08%:  a good
+    193 1.07%:  it's an
+    194 1.06%:  no one said
+    195 1.05%:  I'd like
+    196 1.05%:  I'll never get
+    197 1.05%:  it's looking like a
+    198 1.05%:  I've learned to
+    199 1.03%:  let's go read
+    200 1.02%:  not in
+    201 1.00%:  I'll never get a
+    202 0.99%:  it looks like I need an
+    203 0.98%:  let's agree
+    204 0.98%:  I've got all
+    205 0.97%:  I'll never get a good
+    206 0.96%:  no need
+    207 0.95%:  I do
+    208 0.95%:  I'M going to need
+    209 0.95%:  not all dogs
+    210 0.94%:  it's all in
+    211 0.94%:  looks like I'M in
+    212 0.93%:  it's like living
+    213 0.93%:  I like dogs
+    214 0.90%:  as I
+    215 0.90%:  no one ever said I
+    216 0.90%:  I'll never take
+    217 0.88%:  I've got a solid
+    218 0.88%:  it is kinda like
+    219 0.87%:  looks like I've a
+    220 0.87%:  one silver
+    221 1.10%:  one silver lining to
+    222 0.87%:  let's do
+    223 0.85%:  looks like I never read an
+    224 0.84%:  it'll give
+    225 0.83%:  I'll get
+    226 1.43%:  I'll get over
+    227 0.82%:  it's looking like I
+    228 0.82%:  it's in
+    229 0.82%:  it's a living
+    230 0.82%:  it's a long
+    231 0.80%:  I'll never need
+    232 0.78%:  I'M going to die
+    233 0.78%:  it's like reading
+    234 0.77%:  I like to
+    235 0.76%:  it's on
+    236 0.75%:  it isn
+    237 0.75%:  it's one
+    238 0.75%:  no one tell
+    239 0.75%:  I never asked
+    240 1.45%:  I never asked to
+    241 0.75%:  all it
+    242 0.75%:  all I've got is
+    243 1.08%:  all I've got is a
+    244 0.74%:  let's never read
+    245 1.64%:  let's never read again
+    246 0.74%:  I've still read
+    247 0.74%:  no one else
+    248 0.74%:  I need to re
+    249 0.73%:  no one asked
+    250 0.72%:  I do love
+    251 0.71%:  I do it
+    252 0.71%:  all I've got are
+    253 0.71%:  it looks like a
+    254 0.70%:  I've earned
+    255 0.70%:  it looks like I never again reading
+    256 0.70%:  I've kinda
+    257 0.70%:  it's good I like
+    258 0.67%:  it's gonna go
+    259 0.67%:  looks like I've earned at
+    260 0.67%:  I'M not gonna
+    261 1.10%:  I'M not gonna read
+    262 0.67%:  I've taken
+    263 0.65%:  on one
+    264 0.65%:  so long and
+    265 0.65%:  looks like I never again
+    266 0.61%:  I'M not reading real
+    267 0.61%:  I've got an original
+    268 1.46%:  I've got an original idea
+    269 0.61%:  it's like reading a novel
+    270 0.61%:  one reader
+    271 0.61%:  looks like I never get a
+    272 0.60%:  it looked
+    273 5.57%:  it looked like I
+    274 0.72%:  it looked like I'
+    275 0.69%:  it looked like an
+    276 0.64%:  it looked like an average
+    277 0.60%:  I'll read
+    278 0.81%:  I'll read it
+    279 0.60%:  it's never good
+    280 0.60%:  not so
+    281 0.60%:  it's going on
+    282 0.60%:  I'd still
+    283 0.60%:  looks like dinner at
+    284 0.60%:  like I told
+    285 0.59%:  I'd like to give
+    286 0.59%:  it all ends
+    287 0.59%:  as one
+    288 0.59%:  it looks like I never again read
+    289 0.58%:  I got
+    290 0.62%:  I got a
+    291 0.58%:  as it
+    292 0.58%:  never read
+    293 0.57%:  looks like I'M eating
+    294 0.56%:  I've done it one
+    295 0.56%:  it's a dogg
+    296 0.56%:  looks like I never ate
+    297 0.54%:  it's no longer a real
+    298 0.54%:  it's all going
+    299 0.53%:  I'M still
+    300 6.75%:  I'M still going
+    301 3.85%:  I'M still reading
+    302 2.38%:  I'M still gonna
+    303 4.69%:  I'M still gonna read
+    304 0.72%:  I'M still doing
+    305 0.53%:  it's all gone
+    306 0.53%:  it is a dog
+    307 0.53%:  I don't even like real
+    308 0.52%:  I've got one idea
+    309 0.52%:  I'M reading
+    310 0.52%:  it's like looking
+    311 0.51%:  looks like I've read a
+    312 0.51%:  looks like I get a
+    313 0.51%:  not like
+    314 0.51%:  I've learned a lot on
+    315 0.50%:  I'M gonna
+    316 1.26%:  I'M gonna go
+    317 1.56%:  I'M gonna go read
+    318 0.62%:  I'M gonna go and
+    319 0.49%:  looks like I'M a
+    320 0.49%:  one advantage is I no
+    321 0.49%:  let's go on a reading
+    322 0.48%:  no one ever said it
+    323 0.48%:  I'M glad it
+    324 0.48%:  I never said it
+    325 0.48%:  I still kinda
+    326 0.47%:  good talk
+    327 0.55%:  good talkin
+    328 0.47%:  looks like I never tried
+    329 0.47%:  it is gonna
+    330 0.46%:  it's all I
+    331 0.46%:  don't I
+    332 0.46%:  it's like a
+    333 0.45%:  I love it
+    334 0.45%:  I've said
+    335 1.01%:  I've said too
+    336 0.44%:  I'll go
+    337 0.44%:  it's looking like I never
+    338 0.44%:  I love reading
+    339 0.44%:  looks like I've earned 
+    340 0.44%:  I've done it all again
+    341 0.44%:  looks like I'M reading
+    342 0.43%:  one reason
+    343 0.42%:  good I
+    344 0.41%:  it is an
+    345 0.41%:  it's kind
+    346 0.41%:  I do like
+    347 0.54%:  I do like to
+    348 0.41%:  as a
+    349 1.08%:  as a general
+    350 0.41%:  I'll never read M
+    351 0.40%:  one silver lining at
+    352 0.40%:  looks like I never again reading
+    353 0.40%:  I'll never read an
+    354 0.39%:  I'll never go
+    355 0.61%:  I'll never go to
+    356 0.39%:  I've no
+    357 0.39%:  no reason
+    358 0.38%:  I'M not one
+    359 0.38%:  I'll do
+    360 0.38%:  I'M not gonna lie
+    361 0.38%:  it's al
+    362 0.38%:  I'M going to lie
+    363 0.37%:  I'M not leaving
+    364 0.37%:  I'M going to live
+    365 0.37%:  never gonna
+    366 0.37%:  looks like I never again get
+    367 0.37%:  I've got no real
+    368 0.37%:  it's looking real
+    369 0.37%:  I'll give
+    370 0.85%:  I'll give it
+    371 0.54%:  I'll give it a read
+    372 0.50%:  I'll give it a go
+    373 0.36%:  I've got a dog
+    374 0.36%:  not gonna
+    375 0.36%:  not on
+    376 0.36%:  looks like I never read again in
+    377 0.36%:  it's going in
+    378 0.35%:  it's a real learning
+    379 0.35%:  I'M gonna read
+    380 0.59%:  I'M gonna read it
+    381 0.35%:  in a
+    382 0.35%:  I've done a
+    383 0.34%:  looks like I've eaten and
+    384 0.34%:  no reason I
+    385 0.34%:  in general I
+    386 0.34%:  I'll never see
+    387 0.37%:  I'll never see a
+    388 0.34%:  I've done a great
+    389 0.34%:  all I need
+    390 1.20%:  all I need to
+    391 0.46%:  all I need is one
+    392 0.34%:  looks like I've eaten a
+    393 0.34%:  as a dog
+    394 0.33%:  looks like a great
+    395 0.96%:  looks like a great evening
+    396 0.45%:  looks like a great dinner
+    397 0.33%:  I'M glad to
+    398 0.33%:  it'll never
+    399 0.32%:  I've read
+    400 0.33%:  I've read a
+    401 0.32%:  it's never done
+    402 0.32%:  I got no
+    403 0.32%:  it is a real
+    404 0.34%:  it is a real good
+    405 0.32%:  I'M gonna go lie
+    406 0.32%:  I've got a reason
+    407 0.32%:  no one'
+    408 0.31%:  it's kinda like I
+    409 0.31%:  I'M going on
+    410 0.31%:  I like to live
+    411 2.47%:  I like to live danger
+    412 0.70%:  I like to live in
+    413 0.58%:  I like to live on
+    414 0.31%:  looks like I'M never reading an
+    415 0.31%:  I love a
+    416 0.31%:  I'M not reading a
+    417 0.77%:  I'M not reading a single
+    418 0.54%:  I'M not reading a single real
+    419 0.48%:  I'M not reading a real
+    420 0.31%:  as all
+    421 0.31%:  I'll take
+    422 0.30%:  as a reader
+    423 0.30%:  I'M going to need several
+    424 0.30%:  it's no longer a valid
+    425 0.30%:  it's no longer valid
+    426 0.30%:  I'M going to read a
+    427 0.30%:  it looks like I'M never
+    428 8.39%:  it looks like I'M never reading
