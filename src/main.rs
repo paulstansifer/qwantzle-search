@@ -292,33 +292,57 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let mut stats = Stats::default();
     let mut report = String::new();
 
+    let report_filename = format!(
+        "reports/cc-{}-by-{}.txt",
+        char_max,
+        (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+    );
+
+    std::io::Write::write(
+        &mut std::fs::OpenOptions::new()
+            .write(true)
+            .truncate(true)
+            .create(true)
+            .open(&report_filename)
+            .unwrap(),
+        b"",
+    )
+    .unwrap();
+
     for strip in small_strips.iter().take(30) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
-        let msg = format!(
+        println!(
             "Estimated steps: {}. Avg. prob: {:.1}%",
             cost,
             avg_prob * 100.0
         );
-        println!("{}", msg);
-        report += &msg;
-        report += "\n";
 
         if cost > 1200.0 {
             continue;
         }
 
-        search::practice_search(strip, model, Some(15000), &mut report)
+        let search_res = search::practice_search(strip, model, Some(15000), &mut report);
+        let result_msg = format!(
+            "{} ==> ({:}/{:.1}%: [{}] {:} ({:.1}) {:.0}s)\n",
+            strip.id,
+            cost,
+            avg_prob * 100.0,
+            if search_res.found { "+" } else { " " },
+            search_res.steps,
+            search_res.steps as f64 / cost,
+            search_res.seconds
+        );
+        print!("{}", result_msg);
+        std::io::Write::write(
+            &mut std::fs::OpenOptions::new()
+                .write(true)
+                .append(true)
+                .open(&report_filename)
+                .unwrap(),
+            result_msg.as_bytes(),
+        )
+        .unwrap();
     }
-
-    std::fs::write(
-        format!(
-            "reports/cc-{}-by-{}.txt",
-            char_max,
-            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
-        ),
-        report,
-    )
-    .unwrap();
 
     std::fs::write(
         format!(

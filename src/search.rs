@@ -9,6 +9,7 @@ use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
+use regex::SubCaptureMatches;
 use tracing_subscriber::filter;
 
 use crate::{llm, pool::LetterPool, strip::Strip};
@@ -129,14 +130,16 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     // }
 
     let mut prod: f64 = probs.iter().product();
-    for tok_i in 0..probs.len() {
-        let chars_i = chars_so_far as f32 * tok_i as f32 / probs.len() as f32;
 
-        // The linear approximation for how much the anagram constraing helps is ill-behaved off
+    let mut chars_i = 0.0;
+    while chars_i < chars_so_far as f32 {
+        // The linear approximation for how much the anagram constraint helps is ill-behaved off
         // the end in *both* directions!  But I think it's pretty close for the range that actually
         // matters.
         let filter_ratio = 0.05 + 0.2 * 0.55 * ((80.0 - chars_i) / 80.0);
         prod = prod / filter_ratio as f64;
+
+        chars_i += 4.0;
     }
 
     Score(prod)
@@ -223,6 +226,7 @@ impl Node {
 
         for cand in candidates {
             if cand.p < MIN_TOK_P {
+                // TODO: use cumulative probability
                 break;
             }
 
@@ -257,12 +261,18 @@ impl Node {
     }
 }
 
+pub struct SearchResult {
+    pub found: bool,
+    pub steps: usize,
+    pub seconds: f32,
+}
+
 pub fn practice_search(
     strip: &Strip,
     model: &LlamaModel,
     steps_limit: Option<usize>,
     report: &mut String,
-) {
+) -> SearchResult {
     let mut q = Q::new();
     q.push(Node::new(&strip.punchline), Score(1.0));
 
@@ -298,6 +308,7 @@ pub fn practice_search(
     FF_ADVANCE_TIME.replace(0);
     PREDICT_TIME.replace(0);
     MISC_TIME.replace(0);
+    let mut success = false;
     let mut step = 0;
     let mut log = String::new();
     loop {
@@ -319,6 +330,7 @@ pub fn practice_search(
                     step,
                     p.0 * 100.0
                 );
+                success = true;
                 *report += &msg;
                 progress.abandon_with_message(msg);
                 break;
@@ -375,6 +387,12 @@ pub fn practice_search(
         format!("{}\n{}", strip.punchline, log),
     )
     .unwrap();
+
+    return SearchResult {
+        found: success,
+        steps: step,
+        seconds: search_start_time.elapsed().as_secs_f32(),
+    };
 }
 
 /*
