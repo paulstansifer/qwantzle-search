@@ -11,77 +11,87 @@ have failed to prove my point!
       9 37.12%:  have no
      10 26.92%:  have a
      11 20.88%:  have a friend
-     12 16.67%:  tried
-     13 15.47%:  never play
-     14 14.65%:  have no idea if
-     15 13.78%:  have to
-     16 13.74%:  hope
-     17 11.51%:  mean!
-     18 10.87%:  never have
-     19 10.86%:  never play that
-     20 10.13%:  have to admit
-     21 9.56%:  have no more
-     22 9.21%:  am
-     23 8.35%:  have played
-     24 8.19%:  never played
-     25 13.65%:  never played that
-     26 7.91%:  hate
-     27 11.53%:  hate it
-     28 8.29%:  hate people
-     29 7.50%:  never play video
-     30 7.31%:  find
-     31 15.30%:  find that
-     32 29.72%:  find that people
-     33 43.45%:  find that people are
-     34 12.57%:  find it
-     35 7.02%:  love
-     36 19.11%:  love video
-     37 6.91%:  have learned
-     38 6.44%:  am not
-     39 6.44%:  find it very
-     40 6.24%:  love it
-     41 6.01%:  find the
-     42 5.93%:  have often
-     43 5.73%:  have learned my
-     44 5.73%:  have tried
-     45 5.33%:  feel
-     46 5.30%:  have a pretty
-     47 5.30%:  love the
-     48 7.75%:  love the idea
-     49 10.51%:  love the idea of a
-     50 5.14%:  find there
-     51 5.10%:  have no idea if my
-     52 4.79%:  love my
-     53 4.68%:  find people
-     54 5.51%:  find people are
-     55 4.60%:  hope my
-     56 4.52%:  have a lot
-     57 19.33%:  have a lot of time
-     58 4.52%:  had
-     59 6.42%:  had a pretty
-     60 4.45%:  feel pretty
-     61 4.38%:  hope it
-     62 4.02%:  find that my
-     63 3.92%:  do
-     64 9.76%:  do that
-     65 3.91%:  hear
-     66 11.34%:  hear people
-     67 9.44%:  hear it
-     68 4.34%:  hear people do it
-     69 3.84%:  love that
-     70 5.30%:  love that movie
-     71 3.76%:  have a very
-     72 3.63%:  have learned to
-     73 3.61%:  had a point
-     74 3.60%:  never played it
-     75 3.48%:  tried to
-     76 3.44%:  have played too
-     77 3.36%:  feel that
-     78 3.35%:  heard it
-     79 3.25%:  hate to end
-     80 3.16%:  tried it
-     81 3.04%:  am the
-     82 2.99%:  love that video
-     83 2.93%:  have plenty
-     84 2.92%:  have failed
-     85 5.88%:  have failed to prove
+     12 20.41%:  definitely
+     13 16.67%:  tried
+     14 15.47%:  never play
+     15 14.76%:  have definitely
+     16 14.65%:  have no idea if
+     17 13.78%:  have to
+     18 13.74%:  hope
+     19 11.51%:  mean!
+     20 11.30%:  definitely have
+     21 10.87%:  never have
+     22 10.86%:  never play that
+     23 10.13%:  have to admit
+     24 9.56%:  have no more
+     25 9.21%:  am
+     26 8.35%:  have played
+     27 8.19%:  never played
+     28 13.65%:  never played that
+     29 7.91%:  hate
+     30 11.53%:  hate it
+     31 8.29%:  hate people
+     32 7.50%:  never play video
+     33 7.31%:  find
+     34 15.30%:  find that
+     35 29.72%:  find that people
+     36 43.45%:  find that people are
+     37 12.57%:  find it
+     38 7.02%:  love
+     39 19.11%:  love video
+     40 6.91%:  have learned
+     41 6.44%:  am not
+     42 6.44%:  find it very
+     43 6.24%:  love it
+     44 6.01%:  find the
+     45 5.93%:  have often
+     46 5.73%:  have learned my
+     47 5.73%:  have tried
+     48 5.33%:  feel
+     49 5.30%:  have a pretty
+     50 5.30%:  love the
+     51 7.75%:  love the idea
+     52 10.51%:  love the idea of a
+     53 5.14%:  find there
+     54 5.10%:  have no idea if my
+     55 4.79%:  love my
+     56 4.68%:  find people
+     57 5.51%:  find people are
+     58 4.60%:  hope my
+     59 4.52%:  have a lot
+     60 19.33%:  have a lot of time
+     61 4.52%:  had
+     62 6.42%:  had a pretty
+     63 4.45%:  feel pretty
+     64 4.39%:  learned
+     65 10.42%:  learned my
+     66 7.30%:  learned that
+     67 4.38%:  hope it
+     68 4.25%:  admit
+     69 4.08%:  already
+     70 4.02%:  find that my
+     71 3.92%:  do
+     72 9.76%:  do that
+     73 3.91%:  hear
+     74 11.34%:  hear people
+     75 9.44%:  hear it
+     76 4.34%:  hear people do it
+     77 3.84%:  love that
+     78 5.30%:  love that movie
+     79 3.76%:  have a very
+     80 3.63%:  have learned to
+     81 3.61%:  had a point
+     82 3.60%:  never played it
+     83 3.56%:  often
+     84 3.48%:  tried to
+     85 3.44%:  have played too
+     86 3.36%:  feel that
+     87 3.35%:  heard it
+     88 3.25%:  hate to end
+     89 3.16%:  tried it
+     90 3.04%:  played
+     91 3.04%:  am the
+     92 2.99%:  love that video
+     93 2.93%:  have plenty
+     94 2.92%:  have failed
+     95 5.88%:  have failed to prove

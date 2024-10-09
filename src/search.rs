@@ -9,8 +9,6 @@ use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
-use regex::SubCaptureMatches;
-use tracing_subscriber::filter;
 
 use crate::{llm, pool::LetterPool, strip::Strip};
 
@@ -54,11 +52,11 @@ type Q = PriorityQueue<Node, Score>;
 const TOK_BUFFER: u32 = 25;
 
 // How good does the best next token need to be to fast-forward it?
-// Performance seems very sensitive to this; maybe we need a better criterion?
+// Performance seems sensitive to this; maybe we need a better criterion?
 const FF_MIN_P: f32 = 0.25;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
-const MIN_TOK_P: f32 = 0.001; // REVISE DOWN
+const TOK_TOP_P: f32 = 0.999;
 
 // Token 0: (50%) 1.82%  (25%) 0.45%  (10%) 0.24%  (5%) 0.24% (1%) 0.10%
 // Token 1: (50%) 5.31%  (25%) 1.58%  (10%) 1.07%  (5%) 1.07% (1%) 0.35%
@@ -224,11 +222,12 @@ impl Node {
 
         let mut fast_forwarded = false;
 
+        let mut total_p = 0.0;
         for cand in candidates {
-            if cand.p < MIN_TOK_P {
-                // TODO: use cumulative probability
+            if total_p >= TOK_TOP_P {
                 break;
             }
+            total_p += cand.p;
 
             let avg_prob = f64::powf(
                 cand.p as f64 * self.probability,
