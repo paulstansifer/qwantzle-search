@@ -6,7 +6,7 @@ use std::{
 };
 
 use indicatif::ProgressBar;
-use llama_cpp::{LlamaModel, SessionParams, Token};
+use llama_cpp::{CacheType, LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
 
@@ -129,6 +129,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
 
     let mut prod: f64 = probs.iter().product();
 
+    // Credit for distance elapsed is measured in characters, not in tokens. This hurts things with
+    // digits in them a lot, but the Qwantzle has no digits!
     let mut chars_i = 0.0;
     while chars_i < chars_so_far as f32 {
         // The linear approximation for how much the anagram constraint helps is ill-behaved off
@@ -278,6 +280,7 @@ pub fn practice_search(
     let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
 
     let mut params = SessionParams::default();
+    params.defrag_threshold = 0.5;
     params.n_ctx = leadup_toks.len() as u32 + TOK_BUFFER;
 
     let strip_summary = format!(

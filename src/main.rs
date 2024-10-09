@@ -312,7 +312,8 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     for strip in small_strips.iter().take(30) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         println!(
-            "Estimated steps: {}. Avg. prob: {:.1}%",
+            "{}: Estimated steps: {}. Avg. prob: {:.1}%",
+            strip.id,
             cost,
             avg_prob * 100.0
         );
