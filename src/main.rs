@@ -280,13 +280,20 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 }
 
 fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
-    let char_min = 15;
-    let char_max = 55;
+    let char_min = 40;
+    let char_max = 65;
+
+    let excused_strips = [
+        1059, // Digits, being one-character tokens, make this one tough (1663 has no digits)
+        886,  // "JODIE FOSTER" is in all caps and she's not mentioned or aluded to in the leadup
+        2434, // Weird structure; I don't expect an LLM to figure this one out.
+    ];
 
     let small_strips: Vec<&Strip> = strips
         .iter()
         .filter(|s| s.punchline.len() > char_min && s.punchline.len() <= char_max)
-        .filter(|s| !s.punchline.contains(":"))
+        .filter(|s| !s.punchline.contains("\n"))
+        .filter(|s| !excused_strips.contains(&s.id))
         .collect();
 
     let mut stats = Stats::default();
@@ -318,11 +325,11 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
             avg_prob * 100.0
         );
 
-        if cost > 1200.0 {
+        if cost > 3000.0 {
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, Some(15000), &mut report);
+        let search_res = search::practice_search(strip, model, Some(30000), &mut report);
         let result_msg = format!(
             "{} ==> ({:}/{:.1}%: [{}] {:} ({:.1}) {:.0}s)\n",
             strip.id,

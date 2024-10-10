@@ -120,6 +120,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
+    // Try this, but probably way the heck weaker:
+
     // if probs.len() >= 1 {
     //     probs[0] += 0.07;
     //     if probs.len() >= 2 {
