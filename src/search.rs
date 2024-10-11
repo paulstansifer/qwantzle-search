@@ -138,10 +138,10 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
         // The linear approximation for how much the anagram constraint helps is ill-behaved off
         // the end in *both* directions!  But I think it's pretty close for the range that actually
         // matters.
-        let filter_ratio = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
-        prod = 6.0 * prod / filter_ratio as f64;
+        let filter_ratio: f32 = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        prod = f32::powf(6.0 / filter_ratio, 0.5) as f64 * prod;
 
-        chars_i += 4.0;
+        chars_i += 2.0;
     }
 
     Score(prod)
