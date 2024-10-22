@@ -10,10 +10,14 @@ use llama_cpp::{CacheType, LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
 
-use crate::{llm, pool::LetterPool, strip::Strip};
+use crate::{
+    corpus::Strip,
+    llm,
+    pool::{LetterPool, Vocab, VocabBuilder, WordState},
+};
 
 // Reversed ordering for the priority queue, and pretending to really be `Cmp`.
-#[derive(PartialOrd, PartialEq)]
+#[derive(PartialOrd, PartialEq, Clone, Copy)]
 struct Score(f64);
 
 impl Eq for Score {}
@@ -25,6 +29,7 @@ impl Ord for Score {
 
 struct Node {
     text: Vec<Token>,
+    word_state: WordState,
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
     tok_probs: Vec<f32>,
@@ -135,13 +140,12 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     // digits in them a lot, but the Qwantzle has no digits!
     let mut chars_i = 0.0;
     while chars_i < chars_so_far as f32 {
-        // The linear approximation for how much the anagram constraint helps is ill-behaved off
-        // the end in *both* directions!  But I think it's pretty close for the range that actually
-        // matters.
+        // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        // 6.0 is just made-up, though.
         prod = f32::powf(6.0 / filter_ratio, 0.5) as f64 * prod;
 
-        chars_i += 2.0;
+        chars_i += 2.0; // TODO: try stepping down to 0.25 / += 1.0
     }
 
     Score(prod)
@@ -151,6 +155,7 @@ impl Node {
     fn new(text: &str) -> Node {
         Node {
             text: vec![],
+            word_state: WordState::new_empty(),
             remaining: LetterPool::from_text(text),
             probability: 1.0,
             tok_probs: vec![],
@@ -163,12 +168,15 @@ impl Node {
         t: Token,
         prob: f32,
         model: &llama_cpp::LlamaModel,
+        vocab: &Vocab,
     ) -> Option<(Node, Score)> {
         let new_remaining = self.remaining.try_remove(t, model)?;
         // let done = new_remaining.size() == 0;
+        let new_word_state = self.word_state.add_tok(t, vocab)?;
 
         let mut res = Node {
             remaining: new_remaining,
+            word_state: new_word_state,
             text: self.text.clone(),
             probability: self.probability * prob as f64,
             tok_probs: self.tok_probs.clone(),
@@ -182,7 +190,7 @@ impl Node {
         Some((res, score))
     }
 
-    fn advance(&self, root_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
+    fn advance(&self, root_ctx: &mut llama_cpp::LlamaSession, q: &mut Q, vocab: &Vocab) {
         let orig_toks = root_ctx.context_size();
         {
             let before_advance = std::time::Instant::now();
@@ -192,7 +200,7 @@ impl Node {
             ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
         }
 
-        self.predict_with_ctx(root_ctx, q);
+        self.predict_with_ctx(root_ctx, q, vocab);
 
         {
             let before_truncate = std::time::Instant::now();
@@ -201,7 +209,7 @@ impl Node {
         }
     }
 
-    fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q) {
+    fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q, vocab: &Vocab) {
         if self.text.len() >= (TOK_BUFFER - 1) as usize {
             return;
         }
@@ -243,7 +251,7 @@ impl Node {
             }
 
             if let Some((next_node, score)) =
-                self.push_token(Token(cand.id), cand.p, &my_ctx.model())
+                self.push_token(Token(cand.id), cand.p, &my_ctx.model(), vocab)
             {
                 // Re-use the context right away, if the best candidate is good enough.
                 if cand.p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
@@ -254,7 +262,7 @@ impl Node {
                     FF_ADVANCE_TIME
                         .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
 
-                    next_node.predict_with_ctx(my_ctx, q);
+                    next_node.predict_with_ctx(my_ctx, q, vocab);
                     fast_forwarded = true;
                 } else {
                     q.push(next_node, score);
@@ -273,6 +281,7 @@ pub struct SearchResult {
 pub fn practice_search(
     strip: &Strip,
     model: &LlamaModel,
+    words: &Vec<String>,
     steps_limit: Option<usize>,
     report: &mut String,
 ) -> SearchResult {
@@ -306,6 +315,26 @@ pub fn practice_search(
     let mut root_ctx = model.create_session(params).unwrap();
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
+    // Set up vocabulary restrictions
+    let mut v_builder = VocabBuilder::default();
+
+    let mut longest_word_len = 0;
+    // If there are non-dictionary words, sneak 'em in:
+    for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
+        v_builder.add_word(word, model, /*vary_case=*/ false);
+        longest_word_len = std::cmp::max(longest_word_len, word.len());
+    }
+
+    for word in words {
+        // Simulate knowing that all words are shorter than the longest in the vocabulary.
+        if word.len() >= longest_word_len {
+            continue;
+        }
+        v_builder.add_word(word, model, /*vary_case=*/ true);
+    }
+
+    let vocab = v_builder.build();
+
     let search_start_time = std::time::Instant::now();
     COPY_TIME.replace(0);
     ADVANCE_TIME.replace(0);
@@ -314,6 +343,7 @@ pub fn practice_search(
     MISC_TIME.replace(0);
     let mut success = false;
     let mut step = 0;
+    let mut score_progress_info = "Score progression: ".to_string();
     let mut log = String::new();
     loop {
         progress.tick();
@@ -326,11 +356,11 @@ pub fn practice_search(
             }
         }
         if let Some((node, p)) = q.pop() {
-            if node.remaining.size() == 0
-                && model.decode_tokens(&node.text).trim() == strip.punchline.trim()
-            {
+            let cur_text = model.decode_tokens(&node.text);
+
+            if node.remaining.size() == 0 && cur_text.trim() == strip.punchline.trim() {
                 let msg = format!(
-                    "Search successful after {} steps. Prob: {:.2}%",
+                    "Search successful after {} steps. Score: {:.2}%",
                     step,
                     p.0 * 100.0
                 );
@@ -347,19 +377,20 @@ pub fn practice_search(
                 *report += &msg;
                 *report += "\n";
                 progress.println(msg);
+            } else if strip.punchline.trim().starts_with(cur_text.trim()) && !node.text.is_empty() {
+                score_progress_info += &format!(
+                    "'{}' {:.2}%  ",
+                    model.token_to_piece(*node.text.last().unwrap()),
+                    p.0 * 100.0
+                );
             }
 
-            let cur_str = format!(
-                "{:7} {:.2}%: {}",
-                step,
-                p.0 * 100.0,
-                model.decode_tokens(&node.text)
-            );
+            let cur_str = format!("{:7} {:.2}%: {}", step, p.0 * 100.0, cur_text);
             log.write_str(&format!("{}\n", cur_str)).unwrap();
 
             progress.set_message(cur_str);
 
-            node.advance(&mut root_ctx, &mut q);
+            node.advance(&mut root_ctx, &mut q, &vocab);
             step += 1;
         } else {
             let msg = format!("Exhausted all reasonable nodes at {} steps", step);
@@ -385,6 +416,10 @@ pub fn practice_search(
     *report += &time_info;
     *report += "\n";
     println!("{}", time_info);
+
+    *report += &score_progress_info;
+    *report += "\n";
+    println!("{}", score_progress_info);
 
     std::fs::write(
         format!("reports/search-{}.txt", strip.id),

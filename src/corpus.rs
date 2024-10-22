@@ -7,6 +7,19 @@ pub struct Strip {
     pub punchline: String,
 }
 
+pub fn get_words(path: &str) -> Vec<String> {
+    let file = std::fs::File::open(path).unwrap();
+    let mut reader = csv::ReaderBuilder::new().delimiter(b' ').from_reader(file);
+
+    let mut res = vec![];
+    for result in reader.records() {
+        let record = result.unwrap();
+
+        res.push(record.get(1).unwrap().trim().to_string());
+    }
+    return res;
+}
+
 pub fn get_strips(path: &str, prompt_prefix: &str) -> Vec<Strip> {
     let file = std::fs::File::open(path).unwrap();
     let mut reader = csv::Reader::from_reader(file);

@@ -9,12 +9,12 @@ use std::{
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
+mod corpus;
 mod llm;
 mod pool;
 mod search;
-mod strip;
 
-use strip::{get_strips, Strip};
+use corpus::Strip;
 
 fn init_tracing(args: &Args) {
     let format = tracing_subscriber::fmt::layer().compact();
@@ -279,7 +279,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     return (optimistic_cost, average_probability);
 }
 
-fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
+fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel, args: &Args) {
     let char_min = 40;
     let char_max = 65;
 
@@ -287,6 +287,9 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
         1059, // Digits, being one-character tokens, make this one tough (1663 has no digits)
         886,  // "JODIE FOSTER" is in all caps and she's not mentioned or aluded to in the leadup
         2434, // Weird structure; I don't expect an LLM to figure this one out.
+        1258, // TEMPORARY; WE SHOULD GET THIS
+        1827, // TEMPORARY; WE SHOULD GET THIS
+        1004, // TEMPORARY; WE SHOULD GET THIS
     ];
 
     let small_strips: Vec<&Strip> = strips
@@ -329,7 +332,7 @@ fn calibrate_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, Some(30000), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(30000), &mut report);
         let result_msg = format!(
             "{} ==> ({:}/{:.1}%: [{}] {:} ({:.1}) {:.0}s)\n",
             strip.id,
@@ -508,24 +511,18 @@ fn main() {
     let model =
         LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
 
+    let size = model.estimate_session_size(&SessionParams::default());
     println!(
-        "Estimated session size: {} / {}",
-        megabytes(
-            model
-                .estimate_session_size(&SessionParams::default())
-                .host_memory
-        ),
-        megabytes(
-            model
-                .estimate_session_size(&SessionParams::default())
-                .device_memory
-        )
+        "Est. size: {} / {}",
+        megabytes(size.host_memory),
+        megabytes(size.device_memory)
     );
 
-    let strips = get_strips("corpus/strips.csv", &args.prompt_prefix);
+    let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+    let words = corpus::get_words("corpus/allowed_words.txt");
 
     if args.calibrate_costs {
-        calibrate_costs(&strips, &model, &args);
+        calibrate_costs(&strips, &words, &model, &args);
     } else {
         measure_costs(&strips, &model, &args);
     }

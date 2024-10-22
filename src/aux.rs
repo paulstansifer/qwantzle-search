@@ -76,9 +76,18 @@ fn main() {
 
     let model = LlamaModel::load_from_file(args.model, model_params).expect("Could not load model");
 
-    check_truncation(&model, 0);
+    for word in vec!["the fish.", "fish", " fish", "fish "] {
+        let toks = model.tokenize_bytes(word, false, false).unwrap();
 
-    check_truncation(&model, 1);
+        for tok in toks {
+            print!("'{}' => {} |", model.decode_tokens(&[tok]), tok.0)
+        }
+        println!();
+    }
 
-    check_truncation(&model, 10);
+    // check_truncation(&model, 0);
+
+    // check_truncation(&model, 1);
+
+    // check_truncation(&model, 10);
 }

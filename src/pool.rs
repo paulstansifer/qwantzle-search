@@ -1,10 +1,249 @@
 use small_map::SmallMap;
 use std::cell::RefCell;
-use std::collections::HashMap;
+use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
+use trie_rs::{Trie, TrieBuilder};
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy)]
 struct Char(u8);
+
+// Token doesn't implement Ord or Hash, so we use the underlying i32.
+
+#[derive(Default)]
+pub struct VocabBuilder {
+    tb: TrieBuilder<i32>,
+    allowed_tokens: HashSet<i32>,
+    word_starters: HashSet<i32>,
+    word_enders: HashSet<i32>,
+    nonletters: HashSet<i32>,
+}
+
+enum TokenRole {
+    StartsWord,
+    EndsWord,
+    Continues,
+    NonLetter,
+}
+
+pub struct Vocab {
+    valid_words: Trie<i32>,
+    token_roles: HashMap<i32, TokenRole>,
+}
+
+impl VocabBuilder {
+    fn eval_token(&mut self, tok: i32, model: &llama_cpp::LlamaModel) {
+        if self.allowed_tokens.contains(&tok) {
+            return; // already processed
+        }
+        self.allowed_tokens.insert(tok);
+
+        let solo_token = model.token_to_piece(llama_cpp::Token(tok));
+
+        if !regex::Regex::new(r"[a-zA-Z]")
+            .unwrap()
+            .is_match(&solo_token)
+        {
+            self.nonletters.insert(tok);
+            return;
+        }
+
+        if solo_token.contains(" ") {
+            if solo_token.starts_with(" ") {
+                self.word_starters.insert(tok);
+            } else if solo_token.ends_with(" ") {
+                self.word_enders.insert(tok);
+            } else {
+                panic!("Space in the middle of a token?!?!?");
+            }
+        } else {
+            let xes = model
+                .tokenize_bytes("xxxxxxxxxxxxxxx", false, false)
+                .unwrap();
+            let mid_token = xes[xes.len() / 2];
+
+            // Does the token add a space when attached to something?
+            if model
+                .decode_tokens(&[mid_token, llama_cpp::Token(tok)])
+                .contains(" ")
+            {
+                self.word_starters.insert(tok);
+            }
+            if model
+                .decode_tokens(&[llama_cpp::Token(tok), mid_token])
+                .contains(" ")
+            {
+                self.word_enders.insert(tok);
+            }
+        }
+    }
+
+    pub fn add_word(&mut self, word: &str, model: &llama_cpp::LlamaModel, vary_case: bool) {
+        if word.is_empty() {
+            return; // Titlecasing would get unhappy.
+        }
+
+        // // If it starts with a letter, add a space.
+        // let word = if regex::Regex::new(r"^[a-zA-Z]").unwrap().is_match(word) {
+        //     format!(" {}", word)
+        // } else {
+        //     word.to_string()
+        // };
+
+        for word in [word.to_string(), format!(" {}", word)] {
+            self.add_literal_word(&word, model);
+
+            if vary_case {
+                self.add_literal_word(&word.to_ascii_lowercase(), model);
+                self.add_literal_word(&word.to_ascii_uppercase(), model);
+
+                let mut title_case = word.to_owned();
+                unsafe {
+                    title_case.as_bytes_mut()[0].make_ascii_uppercase();
+                }
+                self.add_literal_word(&title_case, model);
+            }
+        }
+    }
+    fn add_literal_word(&mut self, word: &str, model: &llama_cpp::LlamaModel) {
+        let toks: Vec<i32> = model
+            .tokenize_bytes(word, false, false)
+            .unwrap()
+            .into_iter()
+            .map(|t| t.0)
+            .collect();
+
+        self.tb.push(toks.clone());
+
+        for tok in toks {
+            self.eval_token(tok, model);
+        }
+    }
+
+    pub fn build(self) -> Vocab {
+        Vocab {
+            valid_words: self.tb.build(),
+            token_roles: self
+                .allowed_tokens
+                .iter()
+                .map(|t| {
+                    if self.nonletters.contains(t) {
+                        (*t, TokenRole::NonLetter)
+                    } else if self.word_starters.contains(t) {
+                        (*t, TokenRole::StartsWord)
+                    } else if self.word_enders.contains(t) {
+                        (*t, TokenRole::EndsWord)
+                    } else {
+                        (*t, TokenRole::Continues)
+                    }
+                })
+                .collect(),
+        }
+    }
+}
+
+pub struct WordState {
+    cur_word: Vec<i32>,
+}
+
+impl WordState {
+    pub fn new_empty() -> WordState {
+        WordState { cur_word: vec![] }
+    }
+
+    pub fn add_tok(&self, tok: llama_cpp::Token, voc: &Vocab) -> Option<WordState> {
+        match voc.token_roles.get(&tok.0) {
+            None => None,
+            Some(TokenRole::StartsWord) => {
+                if self.cur_word.is_empty() || voc.valid_words.exact_match(&self.cur_word) {
+                    Some(WordState {
+                        cur_word: vec![tok.0],
+                    })
+                } else {
+                    None
+                }
+            }
+            Some(TokenRole::NonLetter) => {
+                if self.cur_word.is_empty() || voc.valid_words.exact_match(&self.cur_word) {
+                    Some(WordState::new_empty())
+                } else {
+                    None
+                }
+            }
+            Some(TokenRole::EndsWord) => {
+                let mut full_word = self.cur_word.clone();
+                full_word.push(tok.0);
+                if voc.valid_words.exact_match(&full_word) {
+                    println!("Ending: {:?}", full_word);
+                    Some(WordState::new_empty())
+                } else {
+                    None
+                }
+            }
+            Some(TokenRole::Continues) => {
+                let mut lengthened_word = self.cur_word.clone();
+                lengthened_word.push(tok.0);
+                if voc.valid_words.exact_match(&lengthened_word)
+                    || voc.valid_words.is_prefix(&lengthened_word)
+                {
+                    Some(WordState {
+                        cur_word: lengthened_word,
+                    })
+                } else {
+                    None
+                }
+            }
+        }
+    }
+}
+
+impl Vocab {
+    pub fn summary(&self, model: &llama_cpp::LlamaModel) -> String {
+        let mut s = String::new();
+        let words: Vec<Vec<i32>> = self.valid_words.iter().collect();
+        for w in words.iter().take(15) {
+            s += &format!(
+                "({:?}) '{}'  ",
+                w,
+                model.decode_tokens(w.iter().map(|t| llama_cpp::Token(*t)).collect::<Vec<_>>())
+            );
+        }
+
+        s += &format!(" ({})\n", words.len());
+
+        for t in self.token_roles.iter().take(25) {
+            s += &format!(
+                "({}) '{}'  ",
+                t.0,
+                model.token_to_piece(llama_cpp::Token(*t.0))
+            );
+        }
+
+        s += &format!("{} tokens", self.token_roles.len());
+        return s;
+    }
+
+    pub fn check_expressibility(&self, text: &str, model: &llama_cpp::LlamaModel) {
+        let toks = model.tokenize_bytes(text, false, false).unwrap();
+        for tok in toks {
+            if !self.token_roles.contains_key(&tok.0) {
+                println!("Missing token: ({}) {}", tok.0, model.token_to_piece(tok));
+            }
+        }
+
+        for word in regex::Regex::new(r"\b").unwrap().split(text) {
+            let toks: Vec<i32> = model
+                .tokenize_bytes(&format!(" {}", word), false, false)
+                .unwrap()
+                .into_iter()
+                .map(|t| t.0)
+                .collect();
+
+            if !self.valid_words.exact_match(&toks) {
+                println!("Cannot find ({:?}) '{}'", toks, word);
+            }
+        }
+    }
+}
 
 #[derive(Clone)]
 pub struct LetterPool {
