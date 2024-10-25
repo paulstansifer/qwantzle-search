@@ -1,3 +1,5 @@
+#![allow(dead_code)]
+
 use std::{
     cell::Cell,
     cmp::Ordering,
@@ -6,7 +8,7 @@ use std::{
 };
 
 use indicatif::ProgressBar;
-use llama_cpp::{CacheType, LlamaModel, SessionParams, Token};
+use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
 
@@ -41,7 +43,6 @@ impl std::hash::Hash for Node {
         for t in &self.text {
             state.write_i32(t.0);
         }
-        state.finish();
     }
 }
 

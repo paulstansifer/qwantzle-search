@@ -1,8 +1,9 @@
+#![allow(dead_code)]
+
 use small_map::SmallMap;
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
-use trie_rs::{Trie, TrieBuilder};
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy)]
 struct Char(u8);
