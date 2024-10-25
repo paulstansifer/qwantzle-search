@@ -11,7 +11,7 @@ struct Char(u8);
 
 #[derive(Default)]
 pub struct VocabBuilder {
-    tb: TrieBuilder<i32>,
+    tb: HashSet<Vec<i32>>,
     allowed_tokens: HashSet<i32>,
     word_starters: HashSet<i32>,
     word_enders: HashSet<i32>,
@@ -26,7 +26,8 @@ enum TokenRole {
 }
 
 pub struct Vocab {
-    valid_words: Trie<i32>,
+    valid_words: HashSet<Vec<i32>>,
+    valid_prefixes: HashSet<Vec<i32>>,
     token_roles: HashMap<i32, TokenRole>,
     disabled: bool,
 }
@@ -113,7 +114,7 @@ impl VocabBuilder {
             .map(|t| t.0)
             .collect();
 
-        self.tb.push(toks.clone());
+        self.tb.insert(toks.clone());
 
         for tok in toks {
             self.eval_token(tok, model);
@@ -121,8 +122,15 @@ impl VocabBuilder {
     }
 
     pub fn build(self, disabled: bool) -> Vocab {
+        let mut valid_prefixes = self.tb.clone();
+        for word in self.tb.iter() {
+            for i in 1..word.len() {
+                valid_prefixes.insert(word[0..i].to_vec());
+            }
+        }
         Vocab {
-            valid_words: self.tb.build(),
+            valid_words: self.tb.clone(),
+            valid_prefixes: valid_prefixes,
             token_roles: self
                 .allowed_tokens
                 .iter()
@@ -159,7 +167,7 @@ impl WordState {
         match voc.token_roles.get(&tok.0) {
             None => None,
             Some(TokenRole::StartsWord) => {
-                if self.cur_word.is_empty() || voc.valid_words.exact_match(&self.cur_word) {
+                if self.cur_word.is_empty() || voc.valid_words.contains(&self.cur_word) {
                     Some(WordState {
                         cur_word: vec![tok.0],
                     })
@@ -168,7 +176,7 @@ impl WordState {
                 }
             }
             Some(TokenRole::NonLetter) => {
-                if self.cur_word.is_empty() || voc.valid_words.exact_match(&self.cur_word) {
+                if self.cur_word.is_empty() || voc.valid_words.contains(&self.cur_word) {
                     Some(WordState::new_empty())
                 } else {
                     None
@@ -177,7 +185,7 @@ impl WordState {
             Some(TokenRole::EndsWord) => {
                 let mut full_word = self.cur_word.clone();
                 full_word.push(tok.0);
-                if voc.valid_words.exact_match(&full_word) {
+                if voc.valid_words.contains(&full_word) {
                     println!("Ending: {:?}", full_word);
                     Some(WordState::new_empty())
                 } else {
@@ -187,9 +195,7 @@ impl WordState {
             Some(TokenRole::Continues) => {
                 let mut lengthened_word = self.cur_word.clone();
                 lengthened_word.push(tok.0);
-                if voc.valid_words.exact_match(&lengthened_word)
-                    || voc.valid_words.is_prefix(&lengthened_word)
-                {
+                if voc.valid_prefixes.contains(&lengthened_word) {
                     Some(WordState {
                         cur_word: lengthened_word,
                     })
@@ -204,7 +210,7 @@ impl WordState {
 impl Vocab {
     pub fn summary(&self, model: &llama_cpp::LlamaModel) -> String {
         let mut s = String::new();
-        let words: Vec<Vec<i32>> = self.valid_words.iter().collect();
+        let words: Vec<Vec<i32>> = self.valid_words.iter().cloned().collect();
         for w in words.iter().take(15) {
             s += &format!(
                 "({:?}) '{}'  ",
@@ -243,7 +249,7 @@ impl Vocab {
                 .map(|t| t.0)
                 .collect();
 
-            if !self.valid_words.exact_match(&toks) {
+            if !self.valid_words.contains(&toks) {
                 println!("Cannot find ({:?}) '{}'", toks, word);
             }
         }

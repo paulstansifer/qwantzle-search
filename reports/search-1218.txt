@@ -13,206 +13,151 @@ know what? It's really weird when you say that.
      11 148.26%:  know what? I don
      12 1073.20%:  know what? I don't really
      13 135.14%:  know what I really
-     14 680.40%:  know what I really wanted
-     15 1231.33%:  know what I really wanted to hear
-     16 823.50%:  know what I really wanted to say
-     17 678.91%:  know what I really want to
-     18 427.40%:  know what I really wanted was
-     19 262.33%:  know what I really want to hear
-     20 168.02%:  know what I really hate
-     21 131.61%:  know what I really wanted was the
-     22 125.97%:  know what? I don't really see
-     23 263.94%:  know what? I don't really see why
-     24 219.17%:  know what? I don't really see what
-     25 192.59%:  know what? I don't really see why this
-     26 120.87%:  know what'
-     27 485.27%:  know what's weird
-     28 122.48%:  know what's weird? I
-     29 120.32%:  know what I really want to see
-     30 118.92%:  know what I said
-     31 115.95%:  know the
-     32 111.96%:  know what I really wanted to hear this
-     33 111.93%:  know what I really wanted to say is
-     34 106.94%:  know what would
-     35 97.58%:  know what's hilar
-     36 93.05%:  know what they say around
-     37 104.24%:  know what they say around these
-     38 85.59%:  know what? I should
-     39 84.76%:  know what I really want is
-     40 81.81%:  know what's really
-     41 173.54%:  know what's really weird
-     42 79.70%:  know what? I don't really see what this
-     43 76.86%:  heard that too
-     44 76.63%:  know what? I totally
-     45 75.94%:  know this
-     46 72.83%:  were
-     47 71.16%:  know who
-     48 68.88%:  know what I want
-     49 67.56%:  know what? I don't really see why that
-     50 67.35%:  know what I really wanted was to use
-     51 67.22%:  know what I was
-     52 64.09%: 're there
-     53 63.83%:  know what? I totally want
-     54 61.78%:  know what's weird? It
-     55 63.83%:  know what's weird? It turns
-     56 60.43%:  know what? I should'
-     57 57.12%:  know those
-     58 56.19%:  think
-     59 103.04%:  think they
-     60 231.27%:  think they're really
-     61 117.25%:  think they're really that
-     62 69.70%:  think I should
-     63 65.19%:  think I should try
-     64 58.34%:  think they were
-     65 54.83%:  know what I really want is to hear
-     66 54.25%:  know what's worse
-     67 98.09%:  know what's worse than that
-     68 94.27%:  know what's worse than a
-     69 53.23%:  know what the
-     70 52.29%:  know what these
-     71 51.51%: 're not
-     72 1030.36%: 're not allowed
-     73 150.91%: 're not allowed in
-     74 51.37%:  know what's really weird? I
-     75 51.18%:  know what I really wanted you
-     76 50.63%:  know what's really hard
-     77 50.56%:  know what they say in
-     78 50.53%:  know what I want to
-     79 50.45%:  should
-     80 65.55%:  should see
-     81 52.79%:  should know
-     82 109.90%:  should know that
-     83 53.31%:  should know that these
-     84 51.39%:  should know these
-     85 50.38%:  know what I wanted
-     86 158.27%:  know what I wanted to say there
-     87 98.03%:  know what I wanted to say earlier
-     88 86.68%:  know what I wanted to say was
-     89 68.47%:  know what I wanted to tell
-     90 50.38%: 're here
-     91 50.07%:  know what I really wanted was to try
-     92 50.05%:  know what you
-     93 48.93%:  know this?
-     94 48.76%:  know what I'd
-     95 315.87%:  know what I'd really
-     96 62.95%:  know what I'd really hate
-     97 71.48%:  know what I'd really hate to
-     98 49.17%:  know what I'd really want
-     99 106.18%:  know what I'd really want to hear
-    100 71.11%:  know what I'd really want to see
-    101 48.61%:  know this already
-    102 48.39%:  know what I really want to say
-    103 47.39%:  don
-    104 205.35%:  don't like
-    105 170.18%:  don't think
-    106 474.30%:  don't think they
-    107 350.96%:  don't think they were
-    108 262.49%:  don't think these
-    109 168.56%:  don't think the
-    110 165.97%:  don't know
-    111 349.72%:  don't know what
-    112 210.95%:  don't know either
-    113 141.98%:  don't think that
-    114 137.58%:  don't know what they
-    115 135.96%:  don't think those
-    116 131.36%:  don't think those were
-    117 127.50%:  don't think they were all
-    118 123.70%:  don't think you
-    119 112.42%:  don't think that was
-    120 107.31%:  don't want
-    121 142.37%:  don't want to hear
-    122 103.00%:  don't think there
-    123 101.73%:  don't want to hear this
-    124 95.69%:  don't know what these
-    125 88.46%:  don't know what they were
-    126 87.19%:  don't want to hear what
-    127 87.11%:  don't want to tell
-    128 86.56%:  don't think that was really
-    129 73.92%:  don't like the
-    130 72.95%:  don't know these
-    131 70.75%:  don't like that
-    132 70.69%:  don't think I
-    133 68.95%:  don't know what it
-    134 66.26%:  don't think these are
-    135 65.83%:  don't want to talk
-    136 49.39%:  don't like these
-    137 48.09%:  don't want to tell us
-    138 46.64%: 're not seriously
-    139 46.27%:  know what's weird? I always
-    140 46.21%:  know what they say when
-    141 68.68%:  know what they say when you die
-    142 45.93%:  don't want to hear it
-    143 45.85%:  know what's weird? I really
-    144 141.88%:  know what's weird? I really want
-    145 45.17%:  should know that there
-    146 45.04%:  know what the worst
-    147 44.67%:  should know that I
-    148 44.15%:  know what's weird? I honestly
-    149 43.98%:  don't know what the
-    150 43.76%:  know what I really wanted?
-    151 43.36%:  don't know what I was
-    152 42.73%:  know what I'd really want to see is
-    153 42.66%:  heard what
-    154 42.57%:  know who they
-    155 42.47%:  know these din
-    156 44.82%:  know these dinos
-    157 41.90%:  know what I really need
-    158 41.51%:  know what's weird? I totally
-    159 41.23%:  don't know why
-    160 189.74%:  don't know why these
-    161 88.82%:  don't know why they
-    162 69.21%:  don't know why the
-    163 67.77%:  don't know why either
-    164 40.90%:  know what's worse than the
-    165 38.09%:  don't know the
-    166 38.00%:  know this one
-    167 37.99%:  know what? I really
-    168 112.23%:  know what? I really don
-    169 56.00%:  know what? I really wanted
-    170 65.72%:  know what? I really wanted to hear
-    171 64.94%:  know what? I really wanted to say
-    172 44.65%:  know what? I really don't see
-    173 139.30%:  know what? I really don't see why
-    174 107.84%:  know what? I really don't see why this
-    175 97.10%:  know what? I really don't see what
-    176 43.68%:  know what? I really wanted to try
-    177 38.51%:  know what? I really want
-    178 55.69%:  know what? I really want to see
-    179 80.59%:  know what? I really want to see what
-    180 47.18%:  know what? I really want to see this
-    181 37.50%:  know what I really don
-    182 37.28%:  know what? I don't really trust
-    183 37.23%:  don't want to see
-    184 48.85%:  don't want to see the
-    185 37.04%:  think they're all
-    186 36.78%:  don't want to hear what I really
-    187 36.59%:  don't want to hear what I was
-    188 36.47%:  think they're the
-    189 36.11%:  know what really
-    190 35.97%:  know what? I really don't see why that
-    191 35.44%:  don't know what?
-    192 35.05%:  should know that'
-    193 34.96%:  know what they say around here? It
-    194 46.08%:  know what they say around here? It's all
-    195 34.82%:  know what I said there
-    196 34.08%:  don't like that they
-    197 33.44%:  should say
-    198 67.68%:  should say that
-    199 32.96%:  know what they say when you're at
-    200 32.81%:  know what I wanted to hear
-    201 32.62%:  don't know what these are
-    202 32.53%:  know what I really wanted to try
-    203 104.68%:  know what I really wanted to try was
-    204 32.23%:  know what I'd really hate to hear is
-    205 32.20%:  know what? It
-    206 70.34%:  know what? It's really
-    207 227.24%:  know what? It's really hard
-    208 54.70%:  know what? It's really weird
-    209 151.29%:  know what? It's really weird that you say
-    210 52.92%:  know what? It's really weird how
-    211 47.81%:  know what? It's really hard to say
-    212 47.83%:  know what? It's really hard to say why
-    213 44.73%:  know what? It's true
-    214 43.54%:  know what? It's really easy
-    215 42.54%:  know what? It's really weird when
-    216 395.07%:  know what? It's really weird when you say
+     14 678.91%:  know what I really want to
+     15 262.33%:  know what I really want to hear
+     16 168.02%:  know what I really hate
+     17 125.97%:  know what? I don't really see
+     18 263.94%:  know what? I don't really see why
+     19 219.17%:  know what? I don't really see what
+     20 192.59%:  know what? I don't really see why this
+     21 120.87%:  know what'
+     22 485.27%:  know what's weird
+     23 122.48%:  know what's weird? I
+     24 120.32%:  know what I really want to see
+     25 118.92%:  know what I said
+     26 115.95%:  know the
+     27 106.94%:  know what would
+     28 84.76%:  know what I really want is
+     29 81.81%:  know what's really
+     30 173.54%:  know what's really weird
+     31 79.70%:  know what? I don't really see what this
+     32 76.86%:  heard that too
+     33 75.94%:  know this
+     34 72.83%:  were
+     35 71.16%:  know who
+     36 68.88%:  know what I want
+     37 67.56%:  know what? I don't really see why that
+     38 67.22%:  know what I was
+     39 64.09%: 're there
+     40 61.78%:  know what's weird? It
+     41 63.83%:  know what's weird? It turns
+     42 57.12%:  know those
+     43 56.19%:  think
+     44 103.04%:  think they
+     45 231.27%:  think they're really
+     46 117.25%:  think they're really that
+     47 58.34%:  think they were
+     48 54.83%:  know what I really want is to hear
+     49 54.25%:  know what's worse
+     50 98.09%:  know what's worse than that
+     51 94.27%:  know what's worse than a
+     52 53.23%:  know what the
+     53 52.29%:  know what these
+     54 51.51%: 're not
+     55 51.37%:  know what's really weird? I
+     56 50.63%:  know what's really hard
+     57 50.56%:  know what they say in
+     58 50.53%:  know what I want to
+     59 50.38%: 're here
+     60 50.05%:  know what you
+     61 48.93%:  know this?
+     62 48.76%:  know what I'd
+     63 315.87%:  know what I'd really
+     64 62.95%:  know what I'd really hate
+     65 71.48%:  know what I'd really hate to
+     66 49.17%:  know what I'd really want
+     67 106.18%:  know what I'd really want to hear
+     68 71.11%:  know what I'd really want to see
+     69 48.39%:  know what I really want to say
+     70 47.39%:  don
+     71 205.35%:  don't like
+     72 170.18%:  don't think
+     73 474.30%:  don't think they
+     74 350.96%:  don't think they were
+     75 262.49%:  don't think these
+     76 168.56%:  don't think the
+     77 165.97%:  don't know
+     78 349.72%:  don't know what
+     79 141.98%:  don't think that
+     80 137.58%:  don't know what they
+     81 135.96%:  don't think those
+     82 131.36%:  don't think those were
+     83 127.50%:  don't think they were all
+     84 123.70%:  don't think you
+     85 112.42%:  don't think that was
+     86 107.31%:  don't want
+     87 142.37%:  don't want to hear
+     88 103.00%:  don't think there
+     89 101.73%:  don't want to hear this
+     90 95.69%:  don't know what these
+     91 88.46%:  don't know what they were
+     92 87.19%:  don't want to hear what
+     93 87.11%:  don't want to tell
+     94 86.56%:  don't think that was really
+     95 73.92%:  don't like the
+     96 72.95%:  don't know these
+     97 70.75%:  don't like that
+     98 70.69%:  don't think I
+     99 68.95%:  don't know what it
+    100 66.26%:  don't think these are
+    101 65.83%:  don't want to talk
+    102 49.39%:  don't like these
+    103 48.09%:  don't want to tell us
+    104 46.21%:  know what they say when
+    105 68.68%:  know what they say when you die
+    106 45.93%:  don't want to hear it
+    107 45.85%:  know what's weird? I really
+    108 141.88%:  know what's weird? I really want
+    109 45.04%:  know what the worst
+    110 43.98%:  don't know what the
+    111 43.36%:  don't know what I was
+    112 42.73%:  know what I'd really want to see is
+    113 42.66%:  heard what
+    114 42.57%:  know who they
+    115 42.47%:  know these din
+    116 41.90%:  know what I really need
+    117 41.23%:  don't know why
+    118 189.74%:  don't know why these
+    119 88.82%:  don't know why they
+    120 69.21%:  don't know why the
+    121 40.90%:  know what's worse than the
+    122 38.09%:  don't know the
+    123 38.00%:  know this one
+    124 37.99%:  know what? I really
+    125 112.23%:  know what? I really don
+    126 44.65%:  know what? I really don't see
+    127 139.30%:  know what? I really don't see why
+    128 107.84%:  know what? I really don't see why this
+    129 97.10%:  know what? I really don't see what
+    130 38.51%:  know what? I really want
+    131 55.69%:  know what? I really want to see
+    132 80.59%:  know what? I really want to see what
+    133 47.18%:  know what? I really want to see this
+    134 37.50%:  know what I really don
+    135 37.28%:  know what? I don't really trust
+    136 37.23%:  don't want to see
+    137 48.85%:  don't want to see the
+    138 37.04%:  think they're all
+    139 36.78%:  don't want to hear what I really
+    140 36.59%:  don't want to hear what I was
+    141 36.47%:  think they're the
+    142 36.11%:  know what really
+    143 35.97%:  know what? I really don't see why that
+    144 35.44%:  don't know what?
+    145 34.82%:  know what I said there
+    146 34.08%:  don't like that they
+    147 32.96%:  know what they say when you're at
+    148 32.62%:  don't know what these are
+    149 32.23%:  know what I'd really hate to hear is
+    150 32.20%:  know what? It
+    151 70.34%:  know what? It's really
+    152 227.24%:  know what? It's really hard
+    153 54.70%:  know what? It's really weird
+    154 151.29%:  know what? It's really weird that you say
+    155 52.92%:  know what? It's really weird how
+    156 47.81%:  know what? It's really hard to say
+    157 47.83%:  know what? It's really hard to say why
+    158 44.73%:  know what? It's true
+    159 43.54%:  know what? It's really easy
+    160 42.54%:  know what? It's really weird when
+    161 395.07%:  know what? It's really weird when you say
