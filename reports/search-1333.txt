@@ -1,85 +1,395 @@
 has one man sucked on his fingers so much for so little
       0 100.00%: 
-      1 109.83%:  mind
-      2 87.88%:  again
-      3 37.01%: mind though
-      4 32.86%: mind that
-      5 28.06%:  has
-      6 14.95%:  has a single
-      7 11.78%:  has there
-      8 9.65%:  in
-      9 8.02%: mind the
-     10 12.79%: mind the fact
-     11 6.76%:  heard
-     12 6.34%: mind me
-     13 6.15%:  has a night
-     14 6.24%:  has a night seemed
-     15 7.57%:  has a night seemed so hell
-     16 5.29%:  mind that
-     17 5.23%:  has the
-     18 5.09%: mind it
-     19 4.90%:  has a night seemed more
-     20 4.78%:  heard of this
-     21 4.66%:  mind though
-     22 4.39%:  forget
-     23 4.63%:  forget the
-     24 4.39%:  in the
-     25 10.33%:  in the course
-     26 16.42%:  in the course of human
-     27 7.77%:  in the course of this
-     28 7.48%:  in the entire
-     29 19.00%:  in the entire course
-     30 36.13%:  in the entire course of human
-     31 5.11%:  in the course of dating
-     32 4.31%:  in the course of our
-     33 4.28%:  under
-     34 4.21%:  heard of this thing
-     35 4.16%:  has a night seemed so full
-     36 4.11%:  has a night seemed so much
-     37 4.07%:  has a night seemed so short
-     38 3.91%:  has a night seemed so much like it
-     39 3.84%:  tell
-     40 3.74%:  has such
-     41 3.73%: mind then
-     42 3.57%:  has this
-     43 4.10%:  has this date
-     44 11.96%:  has this date gone
-     45 4.33%:  has this date gone so sour
-     46 3.67%:  has this date gone so hor
-     47 3.54%:  let
-     48 3.43%:  in all
-     49 3.29%: mind the rest
-     50 3.26%:  heard that
-     51 3.26%:  heard of it
-     52 3.26%:  again should
-     53 3.23%:  has this date gone so sour so
-     54 3.23%:  has a child
-     55 3.00%:  tell me
-     56 4.62%:  tell me again
-     57 3.00%:  has this date gone more
-     58 2.92%: mind that one
-     59 2.89%:  gonna
-     60 2.81%:  has a night seemed so much less
-     61 2.67%:  heard of a
-     62 2.61%:  heard of that
-     63 2.50%:  has it
-     64 3.28%:  has it seemed
-     65 10.92%:  has it seemed so clear
-     66 8.64%:  has it seemed so clear to
-     67 7.36%:  has it seemed so true
-     68 7.22%:  has it seemed more
-     69 3.91%:  has it seemed so unfair
-     70 2.49%:  in the course of this dinner
-     71 2.47%:  has an
-     72 3.36%:  has an entire
-     73 2.47%:  use
-     74 2.46%:  in the course of dating has
-     75 2.38%: mind man
-     76 2.38%:  in the course of our dating
-     77 2.94%:  in the course of our dating has
-     78 2.32%:  date
-     79 2.30%:  has a night of
-     80 2.29%:  has one
-     81 4.68%:  has one man seemed
-     82 2.95%:  has one man sucked
-     83 15168.22%:  has one man sucked on his fingers so much for
+      1 146.35%:  mind
+      2 41.90%:  again
+      3 26.81%:  has
+      4 21.83%: mind me
+      5 21.48%:  has there
+      6 20.57%:  under
+      7 14.90%:  forget
+      8 15.21%:  forget the
+      9 10.15%:  trust
+     10 9.44%:  let
+     11 9.20%:  heard
+     12 9.19%:  heard that
+     13 8.70%:  in
+     14 8.12%: mind though
+     15 7.74%:  has the
+     16 7.38%:  listen
+     17 11.05%:  listen to me
+     18 41.10%:  listen to me again
+     19 9.32%:  listen to a
+     20 7.56%:  listen to a friend
+     21 6.87%:  heard that one
+     22 6.43%:  mind me
+     23 6.11%:  has such
+     24 10.15%:  has such little
+     25 5.95%:  heard that line
+     26 5.67%: mind man
+     27 5.45%:  forget this
+     28 4.98%:  in the
+     29 7.84%:  in the course
+     30 58.57%:  in the course of human
+     31 12.47%:  in the course of this
+     32 9.23%:  in the course of human action
+     33 6.76%:  in the course of dating
+     34 4.79%:  in the entire
+     35 16.35%:  in the entire course
+     36 76.74%:  in the entire course of human
+     37 4.78%: mind then
+     38 4.78%:  forget the lesson
+     39 4.69%:  call
+     40 8.06%:  call me after
+     41 6.91%:  call me after this
+     42 5.47%:  call me during
+     43 12.89%:  call me during the
+     44 4.59%:  call me during the month
+     45 4.53%:  let them
+     46 4.42%:  listen to a man
+     47 4.35%: mind that
+     48 4.27%: mind me though
+     49 4.08%:  date
+     50 4.05%:  has a single
+     51 4.00%:  has such a little
+     52 3.99%:  again should
+     53 3.82%:  in the course of our
+     54 3.73%:  has so
+     55 40.32%:  has so little
+     56 14.47%:  has so much effort
+     57 27.32%:  has so much effort gone
+     58 718.50%:  has so much effort gone into such
+     59 161.85%:  has so much effort gone into such an
+     60 153.24%:  has so much effort gone into so much
+     61 98.51%:  has so much effort gone into such small
+     62 65.07%:  has so much effort gone into so small
+     63 53.01%:  has so much effort gone into a
+     64 40.23%:  has so much effort gone into such a me
+     65 40.02%:  has so much effort gone into such a l
+     66 37.15%:  has so much effort gone into suck
+     67 29.00%:  has so much effort gone into such a dis
+     68 25.82%:  has so much effort gone into such an in
+     69 19.22%:  has so much effort gone into such a min
+     70 18.49%:  has so much effort gone into such me
+     71 17.91%:  has so much effort gone into a second
+     72 13.37%:  has so much effort gone into such small don
+     73 12.99%:  has so much effort gone into an
+     74 12.55%:  has so much effort gone into such so
+     75 11.34%:  has so much effort gone into one
+     76 11.01%:  has so much effort gone into a dinner
+     77 9.11%:  has so much effort gone into such a men
+     78 8.91%:  has so much suck
+     79 8.30%:  has so much effort gone into such an ill
+     80 8.21%:  has so much effort gone into such a slim
+     81 8.08%:  has so much effort gone into so much dis
+     82 6.96%:  has so much effort gone into so much ind
+     83 6.62%:  has so much effort gone into an under
+     84 6.42%:  has so much effort gone into such a non
+     85 6.15%:  has so much effort gone into such a mild
+     86 6.03%:  has so much effort gone into such a one
+     87 5.82%:  has so much effort gone into kiss
+     88 5.59%:  has so much good
+     89 7.72%:  has so much good come
+     90 5.48%:  has so much good come out
+     91 5.43%:  has so much effort gone into an hour
+     92 5.33%:  has so much effort gone into such dis
+     93 4.76%:  has so much effort gone into a mere
+     94 4.26%:  has so much effort gone into so much in
+     95 4.04%:  has so much effort gone into less
+     96 4.00%:  has so much effort gone into such a lim
+     97 3.93%:  has so much effort gone into such in
+     98 3.76%:  has so much effort gone into dinner
+     99 3.72%:  heard of the
+    100 3.63%:  has so much effort gone into so much re
+    101 3.63%:  gonna
+    102 3.57%:  in the course of this dinner
+    103 3.56%: mind it
+    104 3.50%:  heard that from
+    105 3.42%:  has so much effort gone into such an ind
+    106 3.37%:  has so much finger
+    107 3.24%:  has so much effort gone into such so small
+    108 3.20%:  has so much effort gone into so much diss
+    109 3.18%:  has so much come
+    110 3.17%:  seen
+    111 3.13%:  enough
+    112 5.34%:  enough for
+    113 4.38%:  enough for me
+    114 3.10%:  call me during the first
+    115 3.10%:  has such a little sum
+    116 3.09%:  has so much effort gone into one such
+    117 18.88%:  has so much effort gone into one such small
+    118 3.04%:  in the course of our date
+    119 3.15%:  in the course of our date has
+    120 3.03%:  has so much effort gone into so much less
+    121 3.02%:  has so much effort gone into such a mod
+    122 2.99%:  has so much effort gone into so l
+    123 2.87%:  has it
+    124 2.87%:  has so much good come of
+    125 2.85%:  in the course of dating has such
+    126 2.77%:  has so much effort gone into so much dinner
+    127 2.77%:  has so much effort gone into so much kiss
+    128 2.74%:  in the course of dating has one
+    129 2.69%:  has so much effort gone so
+    130 2.68%:  trust a friend
+    131 2.68%:  has so much effort gone into such slim
+    132 2.68%:  in the course of modern
+    133 2.67%:  has the sound
+    134 16.59%:  has the sound of fingers
+    135 9.11%:  has the sound of suck
+    136 7.81%:  has the sound of fingers sl
+    137 2.65%:  call me during a
+    138 2.65%:  has a night
+    139 2.60%:  tell
+    140 2.60%:  call the
+    141 2.59%:  fear
+    142 2.58%:  in the course of our dating
+    143 3.12%:  in the course of our dating has
+    144 2.56%:  has it seemed
+    145 8.72%:  has it seemed more
+    146 9.23%:  has it seemed more unfair
+    147 7.44%:  has it seemed so clear
+    148 6.53%:  has it seemed more unfair to
+    149 5.51%:  has it seemed so unfair
+    150 4.18%:  has it seemed so unfair to
+    151 2.55%:  has so much effort gone into such a los
+    152 2.54%:  has so little cash
+    153 2.53%:  has so much effort gone to
+    154 5.32%:  has so much effort gone to such
+    155 2.53%: mind the
+    156 3.09%: mind the suck
+    157 2.53%:  tell me
+    158 2.49%:  has this
+    159 2.45%:  has so much effort gone into a kiss
+    160 2.45%:  call me on
+    161 3.14%:  call me on the
+    162 2.45%:  has such a little sum seemed
+    163 2.44%:  in all
+    164 2.43%:  do
+    165 4.21%:  do this
+    166 3.59%:  do that
+    167 3.58%:  do this again unless
+    168 2.42%:  has so much effort gone into such a m
+    169 2.37%:  has suck
+    170 2.36%:  do this again unless it
+    171 2.35%:  has so much effort gone into such a des
+    172 2.34%:  mind then
+    173 2.27%:  call me during the course
+    174 4.98%:  call me during the course of the
+    175 3.68%:  call me during the course of this
+    176 2.24%:  in the course of human life
+    177 4.34%:  in the course of human life has so
+    178 2.22%:  has it seemed so unfair to me
+    179 2.22%:  has the line
+    180 2.20%:  has so little gone
+    181 8.83%:  has so little gone so far for
+    182 75.91%:  has so little gone so far for so much suck
+    183 5.14%:  has so little gone so far for so much in
+    184 4.33%:  has so little gone so far for such
+    185 4.24%:  has so little gone so far in
+    186 3.59%:  has so little gone so far for so much in such
+    187 2.19%:  mind me though
+    188 2.18%:  forget those
+    189 2.17%:  has an
+    190 2.17%:  listen to me during
+    191 2.17%:  kiss
+    192 2.14%:  forget our
+    193 2.13%:  seen that
+    194 4.57%:  seen that much
+    195 4.66%:  seen that much change
+    196 11.84%:  seen that much change in one
+    197 4.06%:  seen that much finger
+    198 2.13%:  has so much come out
+    199 2.12%:  has such a thing
+    200 2.09%:  heard it
+    201 2.08%:  has so much effort gone into so me
+    202 2.08%:  mind though
+    203 2.08%:  call me during the hours
+    204 2.06%:  forget the suck
+    205 2.06%:  again do
+    206 2.05%:  has so much effort gone into a dinner so
+    207 2.05%: ending
+    208 2.03%:  seen a
+    209 2.03%:  has the sound of fingers on
+    210 2.02%:  has so much effort gone into such a mis
+    211 2.02%:  has the sound of fingers on metal
+    212 1.96%:  has so much gone
+    213 6.34%:  has so much gone into
+    214 6.73%:  has so much gone into such
+    215 1.95%:  in the course of human social
+    216 1.94%:  has a first
+    217 1.94%:  let them hear
+    218 1.90%:  has so much effort gone into a second kiss
+    219 1.87%:  has so much effort gone into one man
+    220 1.86%:  listen to a girl
+    221 1.86%:  has this date
+    222 1.89%:  has this date gone
+    223 1.85%:  has that
+    224 1.84%:  had
+    225 1.82%:  has so much effort gone into such l
+    226 1.81%:  has so much effort gone into a one
+    227 1.81%:  seen that much finger sal
+    228 1.80%:  ask
+    229 1.79%:  has it seemed more tragic
+    230 1.79%:  in the course of normal
+    231 6.73%:  in the course of normal dating
+    232 3.94%:  in the course of normal human
+    233 1.78%:  has so much effort gone into one under
+    234 1.77%:  has so much effort gone into a hell
+    235 1.77%:  in the entire course of human social
+    236 1.77%:  has it felt
+    237 4.77%:  has it felt so good
+    238 3.47%:  has it felt more
+    239 1.76%:  has so much effort gone into one hell
+    240 1.76%:  heard of this
+    241 1.77%:  heard of this thing
+    242 1.76%:  kiss and
+    243 1.75%:  has so much effort gone into one small
+    244 1.73%:  has such an
+    245 1.72%:  in the course of dating has so
+    246 1.71%:  forget our date
+    247 1.71%:  mind man
+    248 1.70%:  done
+    249 4.20%:  done this
+    250 2.44%:  done it for
+    251 30.46%:  done it for less than like
+    252 4.07%:  done it for less than 
+    253 3.62%:  done it for less than a
+    254 1.70%:  listen to me again if
+    255 1.69%:  has so much effort gone into one such small kiss
+    256 1.69%:  has so much effort gone into an un
+    257 1.69%:  seen that much cash
+    258 1.68%:  mind that
+    259 1.68%:  seen that much flesh
+    260 1.68%:  in a
+    261 1.67%:  in the course of our dating shall
+    262 1.65%:  has so much gone into so much
+    263 1.63%:  has so much effort gone into under
+    264 1.63%:  has so much effort gone into a less
+    265 1.63%:  heard of a
+    266 5.95%:  heard of a thing
+    267 3.21%:  heard of a little
+    268 1.62%:  take
+    269 1.61%:  has so much effort gone into a non
+    270 1.61%:  let the
+    271 1.59%:  has so little seemed
+    272 1.59%:  call me on a
+    273 1.59%:  tell a man
+    274 1.59%:  has so much hell
+    275 1.57%:  seen that much fingers
+    276 1.57%:  has so much effort gone into such mild
+    277 1.56%:  let me
+    278 2.84%:  let me hear
+    279 1.54%:  seen the
+    280 10.78%:  seen the inside
+    281 27.27%:  seen the inside of a church
+    282 12.24%:  seen the inside of a school
+    283 9.39%:  seen the inside of a court
+    284 9.60%:  seen the inside of a court room
+    285 8.33%:  seen the inside of a night
+    286 5.17%:  seen the inside of a church until
+    287 5.10%:  seen the inside of a mouth
+    288 5.10%:  seen the inside of an
+    289 3.97%:  seen the inside of a car
+    290 3.79%:  seen the inside of a school lunch
+    291 12.91%:  seen the inside of a school lunch room
+    292 3.28%:  seen the inside of a truck
+    293 2.97%:  seen the inside of a casino
+    294 2.07%:  seen the inside of a man
+    295 2.04%:  seen the inside of a school until
+    296 2.03%:  seen the inside of a ha
+    297 1.94%:  seen the inside of a train
+    298 1.91%:  seen the inside of this
+    299 1.83%:  seen the inside of a mouth so
+    300 1.77%:  seen the inside of a school for
+    301 1.58%:  seen the inside of a high
+    302 11.20%:  seen the inside of a high class
+    303 1.54%:  has a single kiss
+    304 1.53%:  has so much effort gone into seem
+    305 1.52%:  in the course of the
+    306 1.51%:  has a dinner
+    307 1.51%:  seen the inside of a lim
+    308 1.50%:  in the course of this hell
+    309 1.50%:  has a night seemed
+    310 2.21%:  has a night seemed more
+    311 1.81%:  has a night seemed so full
+    312 1.50%:  has so much gone into a
+    313 1.48%:  kiss me
+    314 9.46%:  kiss me again
+    315 1.47%:  seen that much suck
+    316 1.46%:  has a first kiss
+    317 1.46%:  has so much effort gone into such a dinner
+    318 1.45%:  seen that much flesh in
+    319 2.26%:  seen that much flesh in one room
+    320 1.45%:  since
+    321 1.44%:  listen to me and
+    322 1.44%:  has a single kiss seemed
+    323 1.44%:  has so much effort gone into so cr
+    324 1.44%:  has so much sucked
+    325 7.85%:  has so much sucked for so little in
+    326 3.14%:  has so much sucked for so little in so
+    327 1.77%:  has so much sucked for so little in one
+    328 1.74%:  has so much sucked for so little for
+    329 1.68%:  has so much sucked for so little on
+    330 1.44%:  call me during the season
+    331 1.44%:  has a night seemed so short
+    332 1.42%:  ending
+    333 1.42%:  has a first kiss seemed
+    334 2.82%:  has a first kiss seemed so much
+    335 1.46%:  has a first kiss seemed more
+    336 1.42%:  in the course of time
+    337 1.42%:  listen to an
+    338 1.42%:  has so much effort gone into so much desire
+    339 1.41%:  enough for this
+    340 1.41%:  has so little seemed so unfair
+    341 1.40%:  has so much come so
+    342 9.66%:  has so much come so little
+    343 1.39%:  do this again on
+    344 1.38%:  do this for
+    345 1.38%:  heard of that
+    346 1.37%:  seen such
+    347 1.37%:  has so much effort led
+    348 16.34%:  has so much effort led to so much
+    349 11.22%:  has so much effort led to such
+    350 1.72%:  has so much effort led to such an
+    351 1.63%:  has so much effort led to such a me
+    352 1.37%:  call me during the months
+    353 1.36%:  offer
+    354 1.35%:  done it for less than half
+    355 1.35%:  has it felt more like a
+    356 1.34%:  has it seemed less
+    357 1.34%:  has a dinner gone
+    358 2.11%:  has a dinner gone so sour
+    359 1.37%:  has a dinner gone so sour so
+    360 1.34%:  has the night
+    361 2.36%:  has the night seemed
+    362 3.24%:  has the night seemed so full
+    363 1.34%:  seen the inside of an or
+    364 1.34%:  has that line
+    365 1.33%: mind the rest
+    366 1.33%:  has so much sucked for so little has
+    367 1.33%:  seen that much sal
+    368 1.32%:  call me during office
+    369 1.32%:  seen the inside of a trash
+    370 1.31%:  heard of it
+    371 1.31%:  heard of the term
+    372 1.30%:  has it seemed so true
+    373 1.30%:  call me during the season of the
+    374 1.30%:  call me during the time
+    375 1.30%:  tell a man his fingers
+    376 2.01%:  tell a man his fingers suck
+    377 1.29%:  seen that much change for
+    378 1.29%:  do this again if
+    379 1.28%:  has so much sucked for so little from
+    380 1.46%:  has so much sucked for so little from one
+    381 1.28%:  again on
+    382 1.28%:  tell me there
+    383 1.28%:  has so much effort gone into sed
+    384 1.28%:  has the term
+    385 1.28%:  call me on a second
+    386 1.28%:  call me that
+    387 1.28%:  done it for free
+    388 1.27%:  once
+    389 1.27%:  listen to me on
+    390 1.27%:  has such little cash
+    391 1.27%:  has one
+    392 1.81%:  has one man
+    393 3.30%:  has one man sucked
