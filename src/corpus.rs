@@ -7,15 +7,30 @@ pub struct Strip {
     pub punchline: String,
 }
 
-pub fn get_words(path: &str) -> Vec<String> {
-    let file = std::fs::File::open(path).unwrap();
+pub fn get_words(allowed: &str, forbidden: Option<&str>) -> Vec<String> {
+    let mut non_words = std::collections::HashSet::new();
+
+    if let Some(forbidden) = forbidden {
+        let forbidden_file = std::fs::File::open(forbidden).unwrap();
+        let mut reader = csv::ReaderBuilder::new()
+            .delimiter(b' ')
+            .from_reader(forbidden_file);
+        for result in reader.records() {
+            non_words.insert(result.unwrap().get(0).unwrap().trim().to_string());
+        }
+    }
+
+    let file = std::fs::File::open(allowed).unwrap();
     let mut reader = csv::ReaderBuilder::new().delimiter(b' ').from_reader(file);
 
     let mut res = vec![];
     for result in reader.records() {
         let record = result.unwrap();
+        let word = record.get(1).unwrap().trim().to_string();
 
-        res.push(record.get(1).unwrap().trim().to_string());
+        if !non_words.contains(&word) {
+            res.push(word);
+        }
     }
     return res;
 }

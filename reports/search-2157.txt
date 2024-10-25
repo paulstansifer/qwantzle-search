@@ -357,77 +357,75 @@ T-Rex (punchline): Why are you doing this to me
     355 0.01%:  T-Rex dies
     356 0.01%:  your opinion
     357 0.01%:  T-Rex needs to get la
-    358 0.01%:  uhh
-    359 0.01%:  Why do you hate us
-    360 0.01%:  Why are you pushing the limit
-    361 0.01%:  Why are you shooting the
-    362 0.01%:  Why are you in
-    363 0.01%:  Why are you pointing to
-    364 0.01%:  oh my gosh it
-    365 0.01%: l
-    366 0.01%: a
-    367 0.01%:  can someone
-    368 0.01%:  Why are you doing this th
-    369 0.01%:  T-Rex is not a
-    370 0.01%:  children
-    371 0.01%:  Why are you so nice
-    372 0.01%:  i
-    373 0.01%:  is the
-    374 0.01%:  oh my gosh you ruined
-    375 0.01%:  Why are you doing this to me u-
-    376 0.01%:  Why are you holding me up
-    377 0.01%:  Why are you doing it in
-    378 0.02%:  Why are you doing it in such
-    379 0.01%:  Why are you doing it in the
-    380 0.01%:  come
-    381 0.01%:  come here
-    382 0.01%:  T-Rex can
-    383 0.01%:  man this
-    384 0.01%:  Why are you hitting on
-    385 0.01%:  Why are you sitting in
-    386 0.01%:  Why are you doing such
-    387 0.01%:  Why are you putting me in so
-    388 0.01%:  another
-    389 0.01%:  oh my gosh can
-    390 0.01%:  T-Rex straight up couldn
-    391 0.01%:  Why are you sitting on me
-    392 0.01%:  good
-    393 0.01%:  good times
-    394 0.01%:  Why do you hate our
-    395 0.01%:  holy sm
-    396 0.01%:  Why are you not shouting
-    397 0.01%:  alright so the
-    398 0.01%:  T-Rex is a
-    399 0.01%:  Why are you doing this to me e
-    400 0.01%:  oh my god you
-    401 0.01%:  Why are you doing this to me ple
-    402 0.01%:  good story
-    403 0.01%:  Why is it
-    404 0.01%:  you guys are not
-    405 0.01%:  nothing could
-    406 0.01%:  T-Rex is coming to
-    407 0.01%:  Why are you coming out
-    408 0.01%:  ahhh
-    409 0.01%:  you are
-    410 0.01%:  T-Rex (
-    411 2.64%:  T-Rex (punchline): that
-    412 0.45%:  T-Rex (punchline): this
-    413 0.43%:  T-Rex (punchline): that one
-    414 0.41%:  T-Rex (punchline): that is
-    415 0.38%:  T-Rex (punchline): you
-    416 0.31%:  T-Rex (punchline): you are
-    417 0.31%:  T-Rex (punchline): there
-    418 0.26%:  T-Rex (punchline): my
-    419 0.23%:  T-Rex (punchline): the
-    420 0.29%:  T-Rex (punchline): the author
-    421 0.23%:  T-Rex (punchline): it
-    422 0.23%:  T-Rex (punchline): the sound
-    423 0.22%:  T-Rex (punchline): the story
-    424 0.19%:  T-Rex (punchline): oh
-    425 0.27%:  T-Rex (punchline): oh my god
-    426 0.29%:  T-Rex (punchline): oh my god that
-    427 0.22%:  T-Rex (punchline): oh my god that one
-    428 0.18%:  T-Rex (punchline): that reminds
-    429 0.15%:  T-Rex (punchline): there is
-    430 0.15%:  T-Rex (punchline): Why
-    431 11.41%:  T-Rex (punchline): Why are you doing
+    358 0.01%:  Why do you hate us
+    359 0.01%:  Why are you pushing the limit
+    360 0.01%:  Why are you shooting the
+    361 0.01%:  Why are you in
+    362 0.01%:  Why are you pointing to
+    363 0.01%:  oh my gosh it
+    364 0.01%: l
+    365 0.01%: a
+    366 0.01%:  can someone
+    367 0.01%:  Why are you doing this th
+    368 0.01%:  T-Rex is not a
+    369 0.01%:  children
+    370 0.01%:  Why are you so nice
+    371 0.01%:  i
+    372 0.01%:  is the
+    373 0.01%:  oh my gosh you ruined
+    374 0.01%:  Why are you holding me up
+    375 0.01%:  Why are you doing it in
+    376 0.02%:  Why are you doing it in such
+    377 0.01%:  Why are you doing it in the
+    378 0.01%:  come
+    379 0.01%:  come here
+    380 0.01%:  T-Rex can
+    381 0.01%:  man this
+    382 0.01%:  Why are you hitting on
+    383 0.01%:  Why are you sitting in
+    384 0.01%:  Why are you doing such
+    385 0.01%:  Why are you putting me in so
+    386 0.01%:  another
+    387 0.01%:  oh my gosh can
+    388 0.01%:  T-Rex straight up couldn
+    389 0.01%:  Why are you sitting on me
+    390 0.01%:  good
+    391 0.01%:  good times
+    392 0.01%:  Why do you hate our
+    393 0.01%:  holy sm
+    394 0.01%:  Why are you not shouting
+    395 0.01%:  alright so the
+    396 0.01%:  T-Rex is a
+    397 0.01%:  Why are you doing this to me e
+    398 0.01%:  oh my god you
+    399 0.01%:  Why are you doing this to me ple
+    400 0.01%:  good story
+    401 0.01%:  Why is it
+    402 0.01%:  you guys are not
+    403 0.01%:  nothing could
+    404 0.01%:  T-Rex is coming to
+    405 0.01%:  Why are you coming out
+    406 0.01%:  ahhh
+    407 0.01%:  you are
+    408 0.01%:  T-Rex (
+    409 2.64%:  T-Rex (punchline): that
+    410 0.45%:  T-Rex (punchline): this
+    411 0.43%:  T-Rex (punchline): that one
+    412 0.41%:  T-Rex (punchline): that is
+    413 0.38%:  T-Rex (punchline): you
+    414 0.31%:  T-Rex (punchline): you are
+    415 0.31%:  T-Rex (punchline): there
+    416 0.26%:  T-Rex (punchline): my
+    417 0.23%:  T-Rex (punchline): the
+    418 0.29%:  T-Rex (punchline): the author
+    419 0.23%:  T-Rex (punchline): it
+    420 0.23%:  T-Rex (punchline): the sound
+    421 0.22%:  T-Rex (punchline): the story
+    422 0.19%:  T-Rex (punchline): oh
+    423 0.27%:  T-Rex (punchline): oh my god
+    424 0.29%:  T-Rex (punchline): oh my god that
+    425 0.22%:  T-Rex (punchline): oh my god that one
+    426 0.18%:  T-Rex (punchline): that reminds
+    427 0.15%:  T-Rex (punchline): there is
+    428 0.15%:  T-Rex (punchline): Why
+    429 11.41%:  T-Rex (punchline): Why are you doing

@@ -287,6 +287,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         1059, // Digits, being one-character tokens, make this one tough (1663 has no digits)
         886,  // "JODIE FOSTER" is in all caps and she's not mentioned or aluded to in the leadup
         2434, // Weird structure; I don't expect an LLM to figure this one out.
+        2255, // "dillweed" as the second word is basically unguessable.
         1258, // TEMPORARY; WE SHOULD GET THIS
         1827, // TEMPORARY; WE SHOULD GET THIS
         1004, // TEMPORARY; WE SHOULD GET THIS
@@ -519,7 +520,8 @@ fn main() {
     );
 
     let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
-    let words = corpus::get_words("corpus/allowed_words.txt");
+    // Can use "corpus/dictionary_filter.txt", but it's not worth it.
+    let words = corpus::get_words("corpus/allowed_words.txt", None);
 
     if args.calibrate_costs {
         calibrate_costs(&strips, &words, &model, &args);
