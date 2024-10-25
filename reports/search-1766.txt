@@ -1,49 +1,191 @@
 somehow managed to say that like it's a bad thing!
       0 100.00%: 
-      1 152.89%:  managed
-      2 644.53%:  managed to make
-      3 137.70%:  managed to make that
-      4 99.53%:  managed to make the
-      5 99.21%:  somehow
-      6 906.50%:  somehow managed
-      7 892.63%:  somehow managed to get
-      8 646.65%:  somehow managed to talk
-      9 634.94%:  somehow managed to steal
-     10 546.66%:  somehow managed to say
-     11 1110.01%:  somehow managed to say that
-     12 551.70%:  somehow managed to say that in
-     13 506.39%:  somehow managed to take
-     14 388.88%:  somehow managed to be
-     15 229.27%:  somehow managed to best
-     16 225.03%:  somehow managed to say that in the
-     17 184.41%:  somehow managed to get that
-     18 173.56%:  somehow managed to take a
-     19 162.27%:  somehow managed to say the
-     20 182.71%:  somehow managed to say the thing
-     21 151.78%:  somehow managed to take that
-     22 150.59%:  somehow managed to say that last
-     23 149.79%:  somehow managed to say that things
-     24 149.38%:  somehow managed to think
-     25 194.00%:  somehow managed to think that
-     26 147.41%:  somehow managed to say that last thing
-     27 133.10%:  somehow managed to set
-     28 126.73%:  somehow managed to get this
-     29 122.42%:  somehow made
-     30 117.32%:  somehow managed to steal this
-     31 109.88%:  somehow managed to say that being
-     32 109.55%:  somehow managed to beat
-     33 107.53%:  somehow managed to dis
-     34 98.84%:  somehow managed to ask
-     35 98.35%:  somehow managed to say that the
-     36 97.78%:  somehow managed to steal that
-     37 95.34%:  somehow managed to alien
-     38 89.92%:  somehow managed to take that last
-     39 80.81%:  somehow managed to say that in like
-     40 79.34%:  managed to talk
-     41 486.16%:  managed to talk me into
-     42 199.03%:  managed to talk me down
-     43 115.23%:  managed to talk me into both
-     44 79.01%:  somehow managed to take this
-     45 77.48%:  somehow managed to let
-     46 75.46%:  somehow managed to ask that
-     47 74.03%:  somehow managed to say that like
+      1 88.13%:  made
+      2 197.20%:  made me think
+      3 193.60%:  made me think that
+      4 88.03%:  got
+      5 73.73%:  made me want
+      6 120.97%:  made me want to listen
+      7 106.42%:  made me want to talk
+      8 73.34%:  made me want to go
+      9 67.99%:  made me want to listen to both
+     10 67.09%:  made me want to be
+     11 65.29%:  made me want to talk to
+     12 58.71%:  made me want to get
+     13 56.21%:  got to
+     14 89.72%:  got to admit
+     15 80.12%:  got to admit that
+     16 50.88%:  got to admit that'
+     17 49.59%:  made the
+     18 48.68%:  made me look
+     19 47.18%:  made me think that this
+     20 46.58%:  made me want to listen to a
+     21 46.33%:  made the same
+     22 46.17%:  made me think long
+     23 44.12%:  managed
+     24 191.13%:  managed to make
+     25 157.00%:  managed to make that
+     26 77.96%:  managed to make both
+     27 62.26%:  managed to make both those
+     28 794.91%:  managed to make both those things
+     29 49.47%:  managed to make both things
+     30 48.66%:  managed to make the
+     31 40.70%:  made me want to talk again
+     32 39.16%:  managed to make this
+     33 39.14%:  got to admit that's a
+     34 39.05%:  made me look at
+     35 95.71%:  made me look at things
+     36 50.47%:  made me look at the
+     37 47.80%:  made me look at things this
+     38 118.38%:  made me look at things this way!
+     39 101.30%:  made me look at things this way and
+     40 46.12%:  made me look at things this way and that
+     41 45.68%:  made me look at things in a way
+     42 109.14%:  made me look at things in a way that
+     43 50.26%:  made me look at things in a way that'
+     44 38.79%:  got to admit that one
+     45 38.50%:  made me look at this
+     46 38.28%:  made me think this
+     47 38.00%:  made the best
+     48 37.52%:  made me look at things that
+     49 42.84%:  made me look at things that way and
+     50 36.70%:  made me want to say
+     51 77.44%:  made me want to say that
+     52 54.80%:  made me want to say that again
+     53 51.08%:  made me want to say that line
+     54 48.95%:  made me want to say that again!
+     55 36.50%:  listened
+     56 74.10%:  listened to this
+     57 69.24%:  listened to something
+     58 66.72%:  listened to my
+     59 66.13%:  listened to me
+     60 105.97%:  listened to me this
+     61 43.32%:  listened to the
+     62 36.28%:  made my
+     63 35.92%:  done
+     64 381.71%:  done it again!
+     65 95.64%:  done it again with
+     66 85.97%:  done something
+     67 79.26%:  done something that
+     68 103.62%:  done something that's almost
+     69 77.40%:  done it again with the
+     70 63.65%:  done it again with that
+     71 55.81%:  done it again with that last
+     72 47.87%:  done it again with the best
+     73 47.52%:  done both
+     74 35.25%:  made me want to listen to this
+     75 35.20%:  got some
+     76 33.80%:  made me look at this thing
+     77 33.41%:  made me look at things in a way that has
+     78 33.33%:  made me look at things with
+     79 32.86%:  got me
+     80 81.51%:  got me thinking
+     81 50.63%:  got me thinking that
+     82 83.61%:  got me thinking that maybe
+     83 38.68%:  got me thinking that maybe this
+     84 32.23%:  made me like
+     85 40.77%:  made me like that
+     86 32.17%:  made me like that again
+     87 31.71%:  got something
+     88 31.48%:  made this
+     89 35.03%:  made this whole
+     90 84.84%:  made this whole thing
+     91 34.51%:  made this whole thing so
+     92 35.93%:  made this whole thing so easy
+     93 31.08%:  made this whole thing into
+     94 30.97%:  done something that's made
+     95 30.51%:  listened to me so
+     96 37.28%:  listened to me so int
+     97 30.22%:  made this whole day
+     98 30.21%:  made this whole thing into a met
+     99 30.08%:  made me look at things this way and it
+    100 31.92%:  made me look at things this way and it has
+    101 29.49%:  made me want to say that line so
+    102 29.45%:  managed to make it
+    103 29.30%:  made me look inside
+    104 28.08%:  got to be
+    105 451.48%:  got to be kidding me!
+    106 291.70%:  got to be kidding me with
+    107 3052.29%:  got to be kidding me with that one!
+    108 192.24%:  got to be kidding me with that!
+    109 179.27%:  got to be kidding me with those
+    110 140.32%:  got to be kidding me with the
+    111 112.33%:  got to be kidding!
+    112 95.10%:  got to be kidding me with those last
+    113 76.66%:  got to be kidding me with the last
+    114 51.95%:  got to be honest
+    115 28.07%:  made me want to be a
+    116 27.81%:  managed to make that last
+    117 27.52%:  managed to make that into
+    118 27.33%:  managed to make both those things at
+    119 27.24%:  made me want to think
+    120 27.07%:  managed to take
+    121 109.77%:  managed to take something
+    122 193.37%:  managed to take something that
+    123 139.74%:  managed to take something that was
+    124 78.11%:  managed to take something away
+    125 71.34%:  managed to take something away that
+    126 68.31%:  managed to take something that's so
+    127 59.24%:  managed to take something that was so
+    128 51.22%:  managed to take something so
+    129 37.86%:  managed to take away
+    130 151.78%:  managed to take away something
+    131 394.61%:  managed to take away something that
+    132 325.43%:  managed to take away something that'
+    133 90.31%:  managed to take away something that's so
+    134 37.52%:  managed to take something that is
+    135 31.77%:  managed to take away something that is
+    136 31.18%:  managed to take something that's way
+    137 29.18%:  managed to take away something so
+    138 27.03%:  managed to take away the
+    139 26.95%:  been
+    140 46.83%:  been talking
+    141 143.29%:  been talking to me this
+    142 44.64%:  been doing
+    143 121.32%:  been doing this
+    144 60.78%:  been doing that
+    145 53.94%:  been doing that this
+    146 45.66%:  been doing this whole
+    147 43.34%:  been doing this the
+    148 30.63%:  been talking this
+    149 26.81%:  listened to my ideas
+    150 26.70%:  made me want to thank
+    151 26.62%:  somehow
+    152 156.41%:  somehow managed
+    153 195.34%:  somehow managed to get
+    154 138.24%:  somehow managed to steal
+    155 129.68%:  somehow managed to take
+    156 83.11%:  somehow managed to get that
+    157 81.77%:  somehow managed to establish
+    158 115.79%:  somehow managed to establish that
+    159 79.54%:  somehow managed to say
+    160 208.84%:  somehow managed to say that
+    161 117.89%:  somehow managed to say that in
+    162 75.64%:  somehow managed to take that
+    163 58.71%:  somehow managed to talk
+    164 53.24%:  somehow managed to take a
+    165 49.87%:  somehow managed to get this
+    166 48.84%:  somehow made
+    167 47.35%:  somehow made that
+    168 44.84%:  somehow managed to take this
+    169 42.68%:  somehow managed to say that in the
+    170 42.10%:  somehow managed to beat
+    171 40.54%:  somehow managed to steal that
+    172 36.17%:  somehow managed to beat that
+    173 27.95%:  somehow managed to steal this
+    174 27.71%:  somehow managed to steal his
+    175 27.41%:  somehow made this
+    176 26.39%:  made me think that that
+    177 26.33%:  done something that almost
+    178 25.58%:  made me think things
+    179 25.49%:  somehow managed to take that last
+    180 25.10%:  made it
+    181 24.98%:  done it again my
+    182 24.90%:  made this whole thing so easy!
+    183 24.87%:  made me want to listen to his
+    184 24.62%:  somehow managed to think
+    185 24.61%:  somehow managed to be
+    186 24.54%:  somehow managed to think that
+    187 24.35%:  got me thinking that maybe the
+    188 24.04%:  somehow managed to listen
+    189 23.99%:  somehow managed to say that like

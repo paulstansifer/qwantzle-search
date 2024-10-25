@@ -28,6 +28,7 @@ enum TokenRole {
 pub struct Vocab {
     valid_words: Trie<i32>,
     token_roles: HashMap<i32, TokenRole>,
+    disabled: bool,
 }
 
 impl VocabBuilder {
@@ -119,7 +120,7 @@ impl VocabBuilder {
         }
     }
 
-    pub fn build(self) -> Vocab {
+    pub fn build(self, disabled: bool) -> Vocab {
         Vocab {
             valid_words: self.tb.build(),
             token_roles: self
@@ -137,6 +138,7 @@ impl VocabBuilder {
                     }
                 })
                 .collect(),
+            disabled: disabled,
         }
     }
 }
@@ -151,6 +153,9 @@ impl WordState {
     }
 
     pub fn add_tok(&self, tok: llama_cpp::Token, voc: &Vocab) -> Option<WordState> {
+        if voc.disabled {
+            return Some(WordState { cur_word: vec![] });
+        }
         match voc.token_roles.get(&tok.0) {
             None => None,
             Some(TokenRole::StartsWord) => {

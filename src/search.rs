@@ -333,7 +333,7 @@ pub fn practice_search(
         v_builder.add_word(word, model, /*vary_case=*/ true);
     }
 
-    let vocab = v_builder.build();
+    let vocab = v_builder.build(/*disabled=*/ true);
 
     let search_start_time = std::time::Instant::now();
     COPY_TIME.replace(0);
