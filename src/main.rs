@@ -280,10 +280,13 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 }
 
 fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel, args: &Args) {
-    let char_min = 40;
-    let char_max = 65;
+    let char_min = 45;
+    let char_max = 70;
 
     let excused_strips = [
+        1833, // Punchline has digits
+        1743, // Formally weird; the leadup basically is just "Spring BREAAAAAAAAAAAA-"
+        2258, // "double-down refill" is a very weird phrase
         1059, // Digits, being one-character tokens, make this one tough (1663 has no digits)
         886,  // "JODIE FOSTER" is in all caps and she's not mentioned or aluded to in the leadup
         2434, // Weird structure; I don't expect an LLM to figure this one out.
@@ -320,6 +323,12 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     )
     .unwrap();
 
+    let mut append_to_report = std::fs::OpenOptions::new()
+        .write(true)
+        .append(true)
+        .open(&report_filename)
+        .unwrap();
+
     for strip in small_strips.iter().take(30) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         println!(
@@ -329,14 +338,27 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             avg_prob * 100.0
         );
 
-        if cost > 3000.0 {
+        if cost > 10000.0 {
+            std::io::Write::write(
+                &mut append_to_report,
+                format!(
+                    "{: >4} {} ==> ({: >6}/{:.1}%)\n",
+                    strip.id,
+                    strip.punchline.len(),
+                    cost,
+                    avg_prob
+                )
+                .as_bytes(),
+            )
+            .unwrap();
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, words, Some(30000), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(50000), &mut report);
         let result_msg = format!(
-            "{} ==> ({:}/{:.1}%: [{}] {:} ({:.1}) {:.0}s)\n",
+            "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,
+            strip.punchline.len(),
             cost,
             avg_prob * 100.0,
             if search_res.found { "+" } else { " " },
@@ -345,15 +367,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             search_res.seconds
         );
         print!("{}", result_msg);
-        std::io::Write::write(
-            &mut std::fs::OpenOptions::new()
-                .write(true)
-                .append(true)
-                .open(&report_filename)
-                .unwrap(),
-            result_msg.as_bytes(),
-        )
-        .unwrap();
+        std::io::Write::write(&mut append_to_report, result_msg.as_bytes()).unwrap();
     }
 
     std::fs::write(
@@ -519,7 +533,7 @@ fn main() {
         megabytes(size.device_memory)
     );
 
-    let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+    let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
     // Can use "corpus/dictionary_filter.txt", but it's not worth it.
     let words = corpus::get_words("corpus/allowed_words.txt", None);
 
