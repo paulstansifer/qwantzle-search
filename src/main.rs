@@ -12,6 +12,7 @@ use tracing_subscriber::util::SubscriberInitExt;
 mod corpus;
 mod llm;
 mod pool;
+mod remaining_letters_neural_net;
 mod search;
 
 use corpus::Strip;
@@ -338,7 +339,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             avg_prob * 100.0
         );
 
-        if cost > 10000.0 {
+        if cost > 5000.0 {
             std::io::Write::write(
                 &mut append_to_report,
                 format!(
@@ -354,7 +355,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, words, Some(50000), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(10000), &mut report);
         let result_msg = format!(
             "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,
