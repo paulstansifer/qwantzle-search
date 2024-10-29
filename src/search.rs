@@ -386,10 +386,10 @@ pub fn practice_search(
                 );
             }
 
-            let cur_str = format!("{:.2}%: {}", step, p.0 * 100.0, cur_text);
+            let cur_str = format!("{:.2}%: {}", p.0 * 100.0, cur_text);
             log.write_str(&format!("{}\n", cur_str)).unwrap();
 
-            progress.set_message(format!("{:7} {}", cur_str));
+            progress.set_message(format!("{:7} {}", step, cur_str));
 
             node.advance(&mut root_ctx, &mut q, &vocab);
             step += 1;
