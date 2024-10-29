@@ -16,6 +16,7 @@ use crate::{
     corpus::Strip,
     llm,
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
+    remaining_letters_neural_net::LetterNet,
 };
 
 // Reversed ordering for the priority queue, and pretending to really be `Cmp`.
@@ -122,7 +123,7 @@ fn compromise_score(probs: &Vec<f32>) -> Score {
     Score(f64::powf(prod, 1.0 / (f64::powf(probs.len() as f64, 0.5))))
 }
 
-fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
+fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
@@ -149,7 +150,7 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
         chars_i += 2.0; // TODO: try stepping down to 0.25 / += 1.0
     }
 
-    Score(prod)
+    Score(prod * rlnn_mult as f64)
 }
 
 impl Node {
@@ -170,10 +171,13 @@ impl Node {
         prob: f32,
         model: &llama_cpp::LlamaModel,
         vocab: &Vocab,
+        rlnn: &LetterNet,
     ) -> Option<(Node, Score)> {
         let new_remaining = self.remaining.try_remove(t, model)?;
         // let done = new_remaining.size() == 0;
         let new_word_state = self.word_state.add_tok(t, vocab)?;
+
+        let rlnn_prob = rlnn.evaluate(&new_remaining);
 
         let mut res = Node {
             remaining: new_remaining,
@@ -186,12 +190,18 @@ impl Node {
         res.text.push(t);
         res.tok_probs.push(prob);
 
-        let score = prob_score(&res.tok_probs, res.chars_so_far);
+        let score = prob_score(&res.tok_probs, res.chars_so_far, rlnn_prob);
 
         Some((res, score))
     }
 
-    fn advance(&self, root_ctx: &mut llama_cpp::LlamaSession, q: &mut Q, vocab: &Vocab) {
+    fn advance(
+        &self,
+        root_ctx: &mut llama_cpp::LlamaSession,
+        q: &mut Q,
+        vocab: &Vocab,
+        rlnn: &LetterNet,
+    ) {
         let orig_toks = root_ctx.context_size();
         {
             let before_advance = std::time::Instant::now();
@@ -201,7 +211,7 @@ impl Node {
             ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
         }
 
-        self.predict_with_ctx(root_ctx, q, vocab);
+        self.predict_with_ctx(root_ctx, q, vocab, rlnn);
 
         {
             let before_truncate = std::time::Instant::now();
@@ -210,7 +220,13 @@ impl Node {
         }
     }
 
-    fn predict_with_ctx(&self, my_ctx: &mut llama_cpp::LlamaSession, q: &mut Q, vocab: &Vocab) {
+    fn predict_with_ctx(
+        &self,
+        my_ctx: &mut llama_cpp::LlamaSession,
+        q: &mut Q,
+        vocab: &Vocab,
+        rlnn: &LetterNet,
+    ) {
         if self.text.len() >= (TOK_BUFFER - 1) as usize {
             return;
         }
@@ -252,7 +268,7 @@ impl Node {
             }
 
             if let Some((next_node, score)) =
-                self.push_token(Token(cand.id), cand.p, &my_ctx.model(), vocab)
+                self.push_token(Token(cand.id), cand.p, &my_ctx.model(), vocab, rlnn)
             {
                 // Re-use the context right away, if the best candidate is good enough.
                 if cand.p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
@@ -263,7 +279,7 @@ impl Node {
                     FF_ADVANCE_TIME
                         .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
 
-                    next_node.predict_with_ctx(my_ctx, q, vocab);
+                    next_node.predict_with_ctx(my_ctx, q, vocab, rlnn);
                     fast_forwarded = true;
                 } else {
                     q.push(next_node, score);
@@ -317,24 +333,29 @@ pub fn practice_search(
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
     // Set up vocabulary restrictions
-    let mut v_builder = VocabBuilder::default();
+    let vocab = {
+        let mut v_builder = VocabBuilder::default();
 
-    let mut longest_word_len = 0;
-    // If there are non-dictionary words, sneak 'em in:
-    for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
-        v_builder.add_word(word, model, /*vary_case=*/ false);
-        longest_word_len = std::cmp::max(longest_word_len, word.len());
-    }
-
-    for word in words {
-        // Simulate knowing that all words are shorter than the longest in the vocabulary.
-        if word.len() >= longest_word_len {
-            continue;
+        let mut longest_word_len = 0;
+        // If there are non-dictionary words, sneak 'em in:
+        for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
+            v_builder.add_word(word, model, /*vary_case=*/ false);
+            longest_word_len = std::cmp::max(longest_word_len, word.len());
         }
-        v_builder.add_word(word, model, /*vary_case=*/ true);
-    }
 
-    let vocab = v_builder.build(/*disabled=*/ false);
+        for word in words {
+            // Simulate knowing that all words are shorter than the longest in the vocabulary.
+            if word.len() >= longest_word_len {
+                continue;
+            }
+            v_builder.add_word(word, model, /*vary_case=*/ true);
+        }
+
+        v_builder.build(/*disabled=*/ false)
+    };
+
+    // Set up the letter pool
+    let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
 
     let search_start_time = std::time::Instant::now();
     COPY_TIME.replace(0);
@@ -391,7 +412,7 @@ pub fn practice_search(
 
             progress.set_message(format!("{:7} {}", step, cur_str));
 
-            node.advance(&mut root_ctx, &mut q, &vocab);
+            node.advance(&mut root_ctx, &mut q, &vocab, &rlnn);
             step += 1;
         } else {
             let msg = format!("Exhausted all reasonable nodes at {} steps", step);

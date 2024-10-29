@@ -10,7 +10,7 @@ use std::fs;
 use crate::pool::LetterPool;
 
 // Define a flexible neural network structure
-struct LetterNet {
+pub struct LetterNet {
     layers: Vec<candle_nn::Linear>,
 }
 
@@ -23,13 +23,6 @@ impl LetterNet {
         let model_bytes = fs::read(model_path)
             .with_context(|| format!("Failed to read model file: {}", model_path))?;
         let safetensors = SafeTensors::deserialize(&model_bytes)?;
-
-        // Print available tensor names and their shapes
-        println!("Available tensors in file:");
-        for name in safetensors.names() {
-            let tensor = safetensors.tensor(name)?;
-            println!("  {}: shape {:?}", name, tensor.shape());
-        }
 
         // Create a variable builder from the loaded weights
         let device = Device::Cpu;

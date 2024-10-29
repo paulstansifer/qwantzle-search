@@ -1,666 +1,324 @@
 Holy crap I've never imagined this hard before
-      0 100.00%: 
-      1 29.58%:  I
-      2 10.40%:  I love
-      3 11.42%:  I love this
-      4 20.00%:  I love this brand
-      5 10.07%:  I love this brand name
-      6 9.16%:  I'm gonna
-      7 7.32%:  I'm glad
-      8 6.42%:  I need
-      9 6.50%:  I need to learn
-     10 7.05%:  I need to learn more
-     11 6.24%:  H
-     12 6.16%:  Holy
-     13 9.36%:  Holy crap this
-     14 18.16%:  Holy crap this brand
-     15 6.80%:  Holy crap I
-     16 6.16%:  I need to find
-     17 8.45%:  I need to find some
-     18 6.13%:  I need to change
-     19 10.28%:  I need to change my profile
-     20 5.69%:  I have
-     21 7.45%:  I have failed
-     22 5.62%:  I need to learn graphic
-     23 4.94%:  I have failed to
-     24 12.43%:  I have failed to imagine
-     25 6.59%:  I have failed to convey
-     26 4.77%:  I love it
-     27 4.75%:  I'm not
-     28 4.65%:  Holy shit
-     29 4.45%:  I imagine
-     30 4.14%:  I love my
-     31 4.02%:  I'm gonna be
-     32 3.96%:  I'm having
-     33 3.94%:  I'm gonna have
-     34 3.92%:  I'm gonna be the
-     35 3.88%:  Holy crap I need
-     36 3.88%:  I love being
-     37 3.76%:  I love my brand
-     38 3.74%:  Holy crap this brand name
-     39 3.70%:  I am
-     40 3.59%:  maybe
-     41 3.58%:  I can
-     42 132.15%:  I can't believe
-     43 36.58%:  I can't imagine
-     44 32.89%:  I can't believe he
-     45 39.29%:  I can't believe he didn
-     46 27.76%:  I can't believe he doesn
-     47 16.63%:  I can't believe someone
-     48 15.72%:  I can't believe he said
-     49 15.53%:  I can't believe my
-     50 28.17%:  I can't believe my friend
-     51 20.49%:  I can't believe my friends
-     52 19.14%:  I can't believe my friend is
-     53 13.61%:  I can't imagine ever
-     54 12.94%:  I can't believe my friend said
-     55 10.19%:  I can't believe my friend said he
-     56 9.67%:  I can imagine
-     57 8.10%:  I can't believe no
-     58 8.00%:  I can't imagine life
-     59 7.28%:  I can imagine this
-     60 23.59%:  I can imagine this forever
-     61 6.45%:  I can't believe he said he
-     62 5.74%:  I can't believe my friends have
-     63 4.37%:  I can't believe my idea
-     64 3.60%:  I can see
-     65 3.55%:  I love this name
-     66 3.40%:  I believe
-     67 3.37%:  I feel
-     68 3.36%:  Holy crap I need to find
-     69 3.36%:  I can't imagine a
-     70 3.31%:  I have to
-     71 3.22%:  I love my friends
-     72 3.20%:  I don
-     73 25.96%:  I don't blame
-     74 7.69%:  I don't even
-     75 4.69%:  I don't imagine
-     76 4.32%:  I don't believe
-     77 3.52%:  I don't see
-     78 3.44%:  I don't even have
-     79 3.27%:  I don't even have a home
-     80 3.19%:  I love this brand image
-     81 3.06%:  I can't believe someone paid
-     82 3.05%:  I'm having second
-     83 3.04%:  I can't believe some
-     84 3.00%:  I need to come
-     85 2.95%:  I need to design
-     86 2.95%:  I imagine this
-     87 7.34%:  I imagine this every
-     88 2.93%:  I hope
-     89 9.13%:  I hope he doesn
-     90 35.14%:  I hope he doesn't leave
-     91 23.49%:  I hope he doesn't mind
-     92 11.75%:  I hope he doesn't leave me
-     93 7.64%:  I hope he doesn't find
-     94 4.18%:  I hope he doesn't mean
-     95 3.91%:  I hope he comes
-     96 3.86%:  I hope he doesn't imagine
-     97 3.68%:  I hope he doesn't mind if
-     98 3.39%:  I hope he doesn't read
-     99 3.38%:  I hope he doesn't bring
-    100 2.89%:  Holy crap I'm gonna
-    101 2.88%:  I've
-    102 7.55%:  I've never
-    103 73.20%:  I've never been more
-    104 16.69%:  I've never imagined
-    105 14.58%:  I've never been more afraid
-    106 12.31%:  I've never felt
-    107 37.84%:  I've never felt more
-    108 10.37%:  I've never imagined before
-    109 9.49%:  I've never imagined this
-    110 8.89%:  I've never seen
-    111 7.62%:  I've never been this
-    112 6.45%:  I've never felt so dynamic
-    113 5.35%:  I've never been cool
-    114 4.57%:  I've never felt more ready
-    115 4.43%:  I've never been more glad
-    116 4.39%:  I've never imagined so
-    117 13.79%:  I've never imagined so hard
-    118 151.82%:  I've never imagined so hard before
-    119 4.16%:  I've never been so afraid
-    120 4.10%:  I've never imagined this hard
-    121 4.06%:  I've never been more afraid to
-    122 3.60%:  I've never been so ready
-    123 16.37%:  I've never been so ready for
-    124 3.60%:  I've never been so ready for a
-    125 3.54%:  I've already
-    126 4.72%:  I've already imagined
-    127 10.79%:  I've already imagined this
-    128 39.98%:  I've already imagined this before
-    129 8.45%:  I've already imagined this once
-    130 59.89%:  I've already imagined this once before
-    131 4.56%:  I've already done
-    132 5.16%:  I've already done this
-    133 8.58%:  I've already done this before
-    134 4.06%:  I've already done this once
-    135 3.59%:  I've already gone
-    136 5.96%:  I've already gone home inside
-    137 3.40%:  I've never been so glad
-    138 3.37%:  I've never imagined this harder
-    139 3.22%:  I've never been so glad to hear
-    140 3.06%:  I've already gone home in
-    141 3.02%:  I've never imagined harder
-    142 3.02%:  I've never been this cool
-    143 2.86%:  I'm glad he
-    144 2.80%:  I believe this
-    145 2.78%:  I love this brand and
-    146 2.77%:  I've never been this good
-    147 2.77%:  I'm staying
-    148 4.07%:  I'm staying here
-    149 103.24%:  I'm staying here forever
-    150 14.34%:  I'm staying here forever and
-    151 3.57%:  I'm staying here and
-    152 2.76%:  I'm sorry
-    153 2.70%:  I'm not even
-    154 2.69%:  I have failed to achieve
-    155 2.68%:  I've never been more right
-    156 2.67%:  I need to learn more graphic
-    157 2.65%:  I've created
-    158 4.33%:  I've created a brand
-    159 2.62%:  Holy crap I'm having
-    160 2.68%:  Holy crap I'm having a vision
-    161 2.61%:  this
-    162 2.59%:  Holy crap this image
-    163 2.54%:  I've never been so hard
-    164 2.54%:  I love being dynamic
-    165 2.53%:  I love this idea
-    166 2.51%:  I have failed to inspire
-    167 2.50%:  I've already imagined it
-    168 2.49%:  I'm feeling
-    169 2.47%:  I don't have
-    170 5.64%:  I don't have a problem
-    171 4.82%:  I don't have any
-    172 6.77%:  I don't have any idea
-    173 3.20%:  I don't have a home
-    174 2.47%:  I hope he doesn't feel
-    175 2.45%:  I've already gone home and
-    176 2.43%:  I'm so
-    177 2.57%:  I'm so glad
-    178 2.39%:  Holy crap I'm gonna be
-    179 2.41%:  Holy crap I'm gonna be the
-    180 2.35%:  I can imagine it
-    181 2.34%:  I can't blame
-    182 2.25%:  I've created a brand so
-    183 2.24%:  I'm already
-    184 2.22%:  I can't imagine a life
-    185 2.21%:  I'm gonna have this
-    186 2.18%:  I'm gonna have the
-    187 2.17%:  I don't need
-    188 2.16%:  Holy crap I need to design
-    189 2.16%:  I've never been more of
-    190 2.15%:  I love having
-    191 3.42%:  I love having a brand
-    192 2.14%:  I have failed to become
-    193 2.14%:  this brand
-    194 2.12%:  I have failed at
-    195 2.12%:  I have failed at being
-    196 2.10%:  I'm not leaving
-    197 2.09%:  I'm afraid
-    198 2.08%:  I'd
-    199 3.72%:  I'd rather
-    200 2.43%:  I'd rather have
-    201 2.39%:  I'd rather be
-    202 3.36%:  I'd rather be home
-    203 5.08%:  I'd rather be home alone
-    204 2.08%:  I need to find a graphic
-    205 2.05%:  i
-    206 2.04%:  I love my friends and
-    207 2.04%:  Holy crap I'm so
-    208 2.01%:  I need some
-    209 2.01%:  I don't need him
-    210 1.98%:  Holy crap imagine
-    211 1.97%:  I need to become
-    212 1.97%:  I cannot
-    213 7.67%:  I cannot believe
-    214 1.96%:  I don't have friends
-    215 1.96%:  I've never been so hot
-    216 1.94%:  I love being a
-    217 6.08%:  I love being a person
-    218 1.94%:  I don't even have a car
-    219 1.93%:  I've never been so great
-    220 1.92%:  I've never done
-    221 4.84%:  I've never done this
-    222 1.90%:  I've already said
-    223 1.89%:  Holy crap this brand idea
-    224 1.83%:  oh
-    225 2.44%:  oh man
-    226 1.83%:  imagine
-    227 1.83%:  I have created
-    228 1.81%:  I have failed as
-    229 1.81%:  I can never
-    230 1.79%:  Holy crap I have
-    231 1.79%:  I need to finish
-    232 1.79%:  I've never felt more in
-    233 2.47%:  I've never felt more in charge
-    234 1.78%:  I'd rather be home alone reading
-    235 1.78%:  I've already got
-    236 1.77%:  I can't believe my ideas
-    237 1.77%:  I'm not ready
-    238 1.77%:  I'm staying here for
-    239 1.74%:  I've never imagined it
-    240 10.76%:  I've never imagined it before
-    241 5.29%:  I've never imagined it so hard
-    242 1.74%:  I need to learn some
-    243 7.26%:  I need to learn some graphic
-    244 1.74%:  I hope he doesn't die
-    245 1.74%:  I don't blame ya
-    246 1.73%:  Holy crap I'm having an
-    247 1.72%:  I have nothing
-    248 3.09%:  I have nothing more
-    249 1.71%:  I forgot
-    250 1.71%:  I've already gone home in spirit
-    251 1.69%:  Holy crap I need to finish
-    252 1.69%:  I have imagined
-    253 3.50%:  I have imagined this
-    254 19.53%:  I have imagined this before
-    255 1.69%:  I'm gonna have to replace
-    256 1.68%:  I've got some
-    257 1.68%:  I've never imagined a
-    258 1.67%:  I have no
-    259 1.66%:  I hate
-    260 1.97%:  I hate myself
-    261 1.66%:  I'm gonna be a
-    262 1.64%:  Holy crap I'm having another
-    263 1.63%:  I've never been closer
-    264 1.63%:  I can already
-    265 3.37%:  I can already see the
-    266 1.62%:  I've already been
-    267 4.03%:  I've already been there
-    268 3.59%:  I've already been home for
-    269 3.19%:  I've already been there and
-    270 1.93%:  I've already been home for a
-    271 1.66%:  I've already been home for the
-    272 1.62%:  I don't believe in
-    273 1.62%:  I'm gonna have a
-    274 1.62%:  I can't believe my vision
-    275 1.61%:  I need to hire
-    276 1.74%:  I need to hire some
-    277 19.29%:  I need to hire some graphic
-    278 1.61%:  I believe the
-    279 2.97%:  I believe the phrase
-    280 2.30%:  I believe the saying
-    281 1.61%:  I've already gone home and there
-    282 1.60%:  I've already been there for
-    283 1.60%:  I have no friends
-    284 1.58%:  I imagined
-    285 1.89%:  I imagined this
-    286 1.58%:  I've never had
-    287 1.58%:  I have to change
-    288 1.87%:  I have to change my brand
-    289 1.58%:  I hope he doesn't believe
-    290 1.57%:  I'm gonna be rich
-    291 1.57%:  I'm gonna be so
-    292 2.86%:  I'm gonna be so rich
-    293 1.57%:  I need more
-    294 1.56%:  I can't believe some of
-    295 1.55%:  I hope he doesn't bring me
-    296 1.55%:  I've never been more hard
-    297 1.54%:  I feel the
-    298 1.54%:  I've already been home for eight
-    299 1.54%:  I need more friends
-    300 1.53%:  I've never been so afraid to
-    301 1.53%:  I need to do
-    302 1.53%:  I hope he doesn't find me
-    303 1.53%:  I'm not feeling
-    304 1.66%:  I'm not feeling very
-    305 1.53%:  I hope this
-    306 1.51%:  I love this image
-    307 1.51%:  I need to design my
-    308 1.50%:  maybe he
-    309 1.50%:  I've never seen more
-    310 1.49%:  I hope he doesn't already
-    311 1.48%:  I'd rather be friends
-    312 1.48%:  I'm gonna be rich forever
-    313 1.47%:  I need to finish my
-    314 1.47%:  I've already done it once
-    315 1.47%:  Holy crap it
-    316 2.03%:  Holy crap it's gonna
-    317 1.47%:  I'm doing
-    318 3.31%:  I'm doing this
-    319 5.82%:  I'm doing this for
-    320 1.97%:  I'm doing this brand
-    321 1.70%:  I'm doing this one
-    322 1.47%:  I'm not ready for bed
-    323 1.46%:  the
-    324 1.46%:  I've never been closer to my
-    325 1.45%:  I've never seen my
-    326 1.45%:  I hope he doesn't leave my
-    327 1.44%:  I love this brand idea
-    328 1.44%:  I've already made
-    329 1.43%:  I've already imagined the
-    330 1.43%:  Holy crap imagine if I had
-    331 1.42%:  I hope he brings
-    332 1.41%:  Holy crap I'm gonna have
-    333 1.41%:  I need to have
-    334 1.40%:  I believe this image
-    335 1.40%:  I don't deserve
-    336 1.40%:  I'm staying here forever in
-    337 1.39%:  I need to go
-    338 1.38%:  I'm trying
-    339 1.38%:  holy
-    340 4.50%:  holy crap this
-    341 7.61%:  holy crap this brand
-    342 2.14%:  holy crap i
-    343 1.97%:  holy crap imagine
-    344 1.60%:  holy shit
-    345 1.45%:  holy crap i need
-    346 1.41%:  holy crap this brand name
-    347 1.38%:  I've never been afraid
-    348 1.38%:  I've never seen it
-    349 1.37%:  I can't believe he said good
-    350 1.36%:  I've never been so fired
-    351 1.36%:  I can't believe my idea for
-    352 1.35%:  perfect
-    353 1.35%:  I've never said
-    354 1.35%:  Holy crap I am
-    355 1.34%:  holy crap this image
-    356 1.34%:  I agree
-    357 1.34%:  I can see it
-    358 1.34%:  I don't even believe
-    359 1.34%:  I have imagined this before and
-    360 1.34%:  I have failed my
-    361 1.81%:  I have failed my brand
-    362 1.33%:  I've never felt more brand
-    363 1.33%:  I don't even have a problem
-    364 1.33%:  hey
-    365 1.33%:  I don't care
-    366 2.92%:  I don't care anymore
-    367 1.33%:  Holy crap this brand image
-    368 1.33%:  I imagine there
-    369 1.32%:  I've never been more ash
-    370 1.32%:  I've never been more sorry
-    371 1.32%:  I prefer
-    372 1.31%:  I don't have any more
-    373 2.65%:  I don't have any more ideas
-    374 1.31%:  I need to change my life
-    375 1.30%:  I imagine the
-    376 1.30%:  I need to improve
-    377 1.30%:  I love having friends
-    378 1.30%:  yes
-    379 1.29%:  I've never seen a
-    380 2.46%:  I've never seen a more
-    381 1.28%:  I'm having a vision
-    382 1.28%:  I've never imagined so hard for
-    383 1.28%:  I don't even have a car model
-    384 1.28%:  I've never seen the
-    385 1.26%:  Holy crap I need to hire
-    386 1.26%:  I've never had a
-    387 1.78%:  I've never had a more
-    388 2.80%:  I've never had a more perfect
-    389 8.98%:  I've never had a more perfect day
-    390 3.69%:  I've never had a more perfect brand
-    391 1.78%:  I've never had a more perfect day in
-    392 1.40%:  I've never had a friend
-    393 1.25%:  I hope he leaves
-    394 3.10%:  I hope he leaves before
-    395 1.25%:  I don't have a friend
-    396 1.25%:  I need to find some real
-    397 1.24%:  Holy crap man
-    398 1.24%:  I can't believe my friend has
-    399 1.24%:  I cannot believe my
-    400 1.24%:  I'm gonna do
-    401 1.92%:  I'm gonna do this
-    402 1.33%:  I'm gonna do this every
-    403 1.23%:  holy crap i need to find
-    404 1.23%:  I can never go home after
-    405 1.23%:  maybe this
-    406 1.23%:  I've already gone there
-    407 1.23%:  I love being the
-    408 1.23%:  I prefer this
-    409 1.23%:  I can't say
-    410 1.23%:  I imagined it
-    411 1.22%:  I'm also
-    412 1.21%:  I've never been afraid to
-    413 1.21%:  I have to change my profile
-    414 1.21%:  I've already gone home and this
-    415 1.20%:  I've already been home since
-    416 1.20%:  I'm gonna destroy
-    417 1.20%:  I can't believe he said no
-    418 1.20%:  I never
-    419 4.12%:  I never imagined
-    420 2.62%:  I never imagined before
-    421 2.43%:  I never imagined this
-    422 10.04%:  I never imagined this before
-    423 1.53%:  I never imagined before today
-    424 1.22%:  I never imagined the
-    425 1.20%:  I'm so great
-    426 1.20%:  I can't believe someone gave
-    427 1.20%:  I need to be
-    428 2.54%:  I need to be more
-    429 1.19%:  I already
-    430 1.18%:  I already have
-    431 1.81%:  I already have the
-    432 1.18%:  I cannot believe he
-    433 1.17%:  I can't believe my friends are d
-    434 1.16%:  I can't believe my ideas never
-    435 1.16%:  I'm not feeling so
-    436 1.15%:  I can't believe someone hired
-    437 1.15%:  I'm doing this forever
-    438 1.15%:  I need this
-    439 1.15%:  I'm glad this
-    440 1.14%:  I'm having the
-    441 1.14%:  imagine if
-    442 1.14%:  I'm never
-    443 4.99%:  I'm never leaving
-    444 8.30%:  I'm never leaving this
-    445 2.15%:  I'm never leaving the
-    446 1.13%:  I can't believe my ideas aren
-    447 1.13%:  I can't promise
-    448 1.13%:  I've never been more afraid to say
-    449 1.13%:  I hope he brings me
-    450 1.13%:  Holy sm
-    451 1.12%:  I have no idea if
-    452 3.21%:  I have no idea if this
-    453 1.12%:  I can do
-    454 111.62%:  I can do this forever
-    455 5.03%:  I can do this forever and
-    456 2.64%:  I can do this for
-    457 1.52%:  I can do this for real
-    458 1.12%:  I have imagined this brand
-    459 1.11%:  I've been
-    460 1.37%:  I've been doing
-    461 3.85%:  I've been doing this for
-    462 1.45%:  I've been doing this for a
-    463 1.17%:  I've been feeling
-    464 1.32%:  I've been feeling this
-    465 1.11%:  I'm gonna leave
-    466 2.31%:  I'm gonna leave this
-    467 2.17%:  I'm gonna leave this here
-    468 3.57%:  I'm gonna leave this here forever
-    469 1.11%:  Holy crap is
-    470 1.11%:  Holy crap I imagined
-    471 1.10%:  imagine this
-    472 1.10%:  I don't feel
-    473 1.10%:  I'd rather have dinner
-    474 1.10%:  I have never
-    475 15.22%:  I have never been more
-    476 2.56%:  I have never imagined
-    477 2.49%:  I have never felt
-    478 8.91%:  I have never felt more
-    479 3.91%:  I have never felt more ready
-    480 2.44%:  I have never been more right
-    481 2.43%:  I have never been so ready
-    482 2.93%:  I have never been so ready for
-    483 2.32%:  I have never felt so dynamic
-    484 2.20%:  I have never been more afraid
-    485 2.17%:  I have never been so ready for a
-    486 1.33%:  I have never imagined this
-    487 1.33%:  I have never been this
-    488 1.21%:  I have never felt more brand
-    489 1.20%:  I have never imagined a
-    490 1.19%:  I have never been more ash
-    491 1.17%:  I have never been more sorry
-    492 1.10%:  oh man this
-    493 1.09%:  I have become
-    494 1.09%:  I can do this alone
-    495 1.09%:  I've never had more
-    496 1.09%:  I'd love
-    497 2.43%:  I'd love to have
-    498 1.62%:  I'd love to see
-    499 1.38%:  I'd love to see him
-    500 1.09%:  I love the
-    501 1.09%:  I can't believe he even
-    502 2.76%:  I can't believe he even said
-    503 1.09%:  I hope he doesn't find my
-    504 1.08%:  I've never had a problem
-    505 1.08%:  I have never been so great
-    506 1.07%:  I'm leaving
-    507 2.38%:  I'm leaving too
-    508 1.07%:  I'm glad nobody
-    509 1.71%:  I'm glad nobody can hear
-    510 1.15%:  I'm glad nobody can see it
-    511 1.07%:  I've changed
-    512 1.07%:  I've never been more racist
-    513 1.07%:  there
-    514 1.06%:  Holy crap there
-    515 1.06%:  I love being the person
-    516 1.06%:  I'd love to hang
-    517 1.06%:  I've never been so right
-    518 1.06%:  I can imagine this for
-    519 1.06%:  I hope he goes
-    520 1.05%:  I've never had a problem saying
-    521 1.05%:  I've created myself
-    522 1.05%:  I can't even
-    523 4.71%:  I can't even believe
-    524 1.05%:  I'm living
-    525 1.04%:  I hope he doesn't drive
-    526 1.04%:  i love
-    527 1.48%:  i love this
-    528 2.56%:  i love this brand
-    529 1.50%:  i love this brand name
-    530 1.04%:  I have never been cool
-    531 1.03%:  I have failed in
-    532 1.03%:  I don't have any ideas
-    533 1.03%:  I have the
-    534 1.20%:  I have the feeling
-    535 1.03%:  I've never been good
-    536 1.02%:  I have nothing else
-    537 1.02%:  I'm sorry for
-    538 1.27%:  I'm sorry for being
-    539 1.02%:  I'm afraid this
-    540 1.02%:  I'm gonna replace
-    541 1.02%:  Holy crap I'm gonna have the
-    542 1.01%:  I love seeing
-    543 1.13%:  I love seeing my brand
-    544 1.01%:  I can never go home ever
-    545 1.01%:  I'm feeling the need
-    546 1.01%:  I can't believe someone had
-    547 1.01%:  I'd rather hang
-    548 1.01%:  I'd rather be home alone and
-    549 1.00%:  I'm having a hard
-    550 1.00%:  I have made
-    551 0.99%:  I can't believe he hasn
-    552 0.99%:  I love brand
-    553 0.99%:  I love this imagined
-    554 1.05%:  I love this imagined brand
-    555 0.98%:  I'm feeling a
-    556 0.98%:  I hope he gets
-    557 0.98%:  I have been
-    558 0.98%:  I'm having another
-    559 1.79%:  I'm having another episode
-    560 0.98%:  I'm having a vision of
-    561 0.98%:  I have to find
-    562 0.98%:  man
-    563 0.98%:  Holy crap I need some
-    564 0.98%:  I'm glad to
-    565 2.35%:  I'm glad to have
-    566 2.26%:  I'm glad to have friends
-    567 1.32%:  I'm glad to hear
-    568 0.98%:  I can imagine it forever
-    569 0.98%:  I'm doing it for
-    570 0.98%:  I've already made the
-    571 0.98%:  I'm not done
-    572 0.97%:  I love being friends
-    573 0.97%:  I need to find more
-    574 0.97%:  I'm not doing
-    575 0.97%:  I can't believe more
-    576 0.97%:  I imagined this before
-    577 0.97%:  I can imagine this every
-    578 0.97%:  I hope he doesn't read my brain
-    579 0.97%:  I've created myself a brand
-    580 0.97%:  I've already imagined it before
-    581 0.96%:  I've been doing it
-    582 0.96%:  oh my
-    583 3.18%:  oh my god this
-    584 1.12%:  oh my god this brand
-    585 0.95%:  I have failed at being someone
-    586 0.95%:  I can't even see
-    587 0.94%:  I feel the need
-    588 0.94%:  I believe there
-    589 0.94%:  I never imagined a
-    590 0.94%:  I don't care if he
-    591 5.58%:  I don't care if he leaves
-    592 3.97%:  I don't care if he doesn
-    593 2.28%:  I don't care if he leaves anymore
-    594 1.68%:  I don't care if he goes
-    595 0.94%:  I'm gonna leave this here for
-    596 0.94%:  I'd rather be alone
-    597 1.77%:  I'd rather be alone forever
-    598 0.94%:  I love this brand name for
-    599 0.93%:  I'm doing the
-    600 0.93%:  I don't even care
-    601 0.93%:  I love my friend
-    602 0.92%:  I've been trying
-    603 0.92%:  I've already gone home and it
-    604 0.92%:  I'm not saying
-    605 0.92%:  I imagine this brand
-    606 0.92%:  I can't believe he never
-    607 0.92%:  I've already done this one
-    608 0.91%:  I already am
-    609 0.91%:  I'm leaving the
-    610 0.91%:  I cannot believe he'
-    611 0.91%:  I've already imagined this one
-    612 3.86%:  I've already imagined this one before
-    613 0.90%:  I never imagined it
-    614 1.22%:  I never imagined it before
-    615 0.90%:  I'm gonna do it
-    616 0.90%:  I've already arrived
-    617 2.45%:  I've already arrived there
-    618 1.67%:  I've already arrived home
-    619 0.90%:  holy crap I
-    620 0.90%:  I love brand names
-    621 0.90%:  I love being me
-    622 0.90%:  I can't believe my idea is even
-    623 0.90%:  I'm not even sorry
-    624 0.89%:  I've been saying
-    625 0.89%:  I've already been doing
-    626 2.59%:  I've already been doing this
-    627 8.52%:  I've already been doing this for
-    628 1.95%:  I've already been doing this forever
-    629 0.89%:  I hope he doesn't ever
-    630 0.89%:  I love this brand more
-    631 2.67%:  I love this brand more every
-    632 0.89%:  Holy crap I'm gonna die
-    633 0.89%:  Holy crap these
-    634 0.88%:  I hope he doesn't leave in
-    635 0.88%:  I bet
-    636 0.88%:  I need to develop
-    637 0.88%:  I can see it already
-    638 0.87%:  I have failed in my brand
-    639 0.87%:  I've never had the
-    640 0.87%:  I have failed to inspire my
-    641 0.87%:  I am the
-    642 0.87%:  I need to imagine
-    643 0.87%:  I don't have any problem
-    644 0.86%:  I've already been doing this for a
-    645 0.86%:  I can't believe my ideas have
-    646 0.86%:  I love having ideas
-    647 0.86%:  I've never seen a logo
-    648 0.86%:  Holy crap I'm gonna be a
-    649 0.86%:  Holy crap I need to be
-    650 0.85%:  I'm doing this alone
-    651 0.85%:  I'm living in the
-    652 0.85%:  I'm gonna be late
-    653 0.85%:  I need to finish imag
-    654 0.85%:  I'd prefer
-    655 0.84%:  Holy crap I've
-    656 4.33%:  Holy crap I've never
-    657 25.85%:  Holy crap I've never imagined
-    658 14.50%:  Holy crap I've never imagined before
-    659 13.55%:  Holy crap I've never been
-    660 35.54%:  Holy crap I've never been more
-    661 13.43%:  Holy crap I've never been this
-    662 12.73%:  Holy crap I've never imagined this
-    663 171.79%:  Holy crap I've never imagined this before
-    664 24.07%:  Holy crap I've never imagined this hard
+100.00%: 
+28.69%:  I
+9.09%:  I love
+7.14%:  I'm glad
+6.54%:  I'm gonna
+6.35%:  I love this
+6.73%:  I love this brand
+5.87%:  H
+5.55%:  I have
+7.03%:  I have failed
+4.81%:  I need
+4.61%:  Holy
+5.86%:  Holy crap this
+5.62%:  Holy crap I
+3.85%:  I'm having
+3.80%:  I imagine
+3.63%:  I love my
+3.60%:  I am
+3.33%:  maybe
+3.25%:  I can
+98.44%:  I can't believe
+26.97%:  I can't believe he
+18.41%:  I can't imagine
+14.47%:  I can't believe he didn
+11.11%:  I can't believe he said
+9.46%:  I can't believe my
+11.56%:  I can't believe my friend
+8.36%:  I can't believe my friends
+6.98%:  I can't believe my friend is
+6.90%:  I can't imagine ever
+5.83%:  I can imagine
+5.03%:  I can't believe he doesn
+3.83%:  I can't believe my friend said
+3.37%:  I can't believe my friend said he
+3.21%:  I feel
+3.14%:  I believe
+3.09%:  I love it
+3.04%:  I can see
+2.91%:  I'm not
+2.87%:  I can't believe he said he
+2.82%:  I've
+7.10%:  I've never
+22.33%:  I've never been more
+14.61%:  I've never imagined
+8.79%:  I've never been more afraid
+8.67%:  I've never felt
+23.56%:  I've never felt more
+6.84%:  I've never imagined this
+5.88%:  I've never imagined before
+4.42%:  I've never seen
+3.36%:  I've already
+3.84%:  I've already imagined
+5.60%:  I've already imagined this
+6.72%:  I've already imagined this before
+3.66%:  I've already done
+3.29%:  I've never imagined this hard
+3.15%:  I've never imagined so
+12.48%:  I've never imagined so hard
+103.34%:  I've never imagined so hard before
+3.10%:  I've already done this
+3.32%:  I've already done this before
+2.94%:  I've already gone
+2.81%:  I love my brand
+2.77%:  I can't believe my friends have
+2.76%:  I love being
+2.75%:  I'm glad he
+2.73%:  I've never imagined harder
+2.68%:  I can't imagine life
+2.66%:  I'm gonna be
+2.63%:  I've never been more glad
+2.62%:  I hope
+2.62%:  I've never imagined this harder
+2.59%:  I've never been this
+2.58%:  I have failed to
+2.55%:  I've never been so afraid
+2.50%:  I love my friends
+2.50%:  I'm sorry
+2.48%:  I've never felt more ready
+2.46%:  I don
+15.13%:  I don't blame
+2.38%:  Holy crap I need
+2.38%:  Holy crap this brand
+2.37%:  I've never been so glad
+2.32%:  I'm feeling
+2.30%:  I'm so
+2.38%:  I'm so glad
+2.28%:  I've created
+2.22%:  I've created a brand
+2.14%:  I'm already
+2.11%:  I've already imagined this once
+3.71%:  I've already imagined this once before
+2.08%:  I believe this
+2.08%:  I have to
+2.07%:  I can imagine this
+10.01%:  I can imagine this forever
+2.07%:  I love this name
+2.07%:  I love this brand image
+2.04%:  I'm gonna have
+2.03%:  this
+2.02%:  I'd
+3.48%:  I'd rather
+2.28%:  I'd rather be
+3.11%:  I'd rather be home
+2.58%:  I'd rather be home alone
+2.09%:  I'd rather have
+2.01%:  I'm afraid
+2.01%:  Holy crap I'm having
+2.00%:  I'm staying
+3.40%:  I'm staying here
+81.41%:  I'm staying here forever
+10.00%:  I'm staying here forever and
+2.14%:  I'm staying here and
+1.98%:  I imagine this
+4.19%:  I imagine this every
+1.98%:  I'm having second
+1.97%:  I've never been so hard
+1.96%:  i
+1.92%:  Holy crap this image
+1.92%:  I hope he doesn
+3.71%:  I hope he doesn't leave
+1.92%:  I hope he doesn't mind
+1.87%:  I can't believe my idea
+1.77%:  I can't believe no
+1.70%:  I love having
+1.70%:  Holy shit
+1.70%:  I've already said
+1.68%:  I've never been so ready
+6.55%:  I've never been so ready for
+1.64%:  oh
+2.10%:  oh man
+1.64%:  I don't have
+2.69%:  I don't have a problem
+1.62%:  I hope he comes
+1.61%:  imagine
+1.58%:  I don't believe
+1.58%:  I can't blame
+1.58%:  Holy crap imagine
+1.57%:  I'm staying here for
+1.57%:  I've never been cool
+1.56%:  I'm gonna be the
+1.54%:  I have imagined
+2.38%:  I have imagined this
+4.86%:  I have imagined this before
+1.53%:  Holy crap I have
+1.52%:  I've never had
+1.52%:  I don't even
+1.50%:  I have created
+1.50%:  Holy crap I'm so
+1.50%:  I hate
+1.46%:  I've never felt so dynamic
+1.46%:  I love being a
+1.44%:  I'm gonna be rich
+1.44%:  I hate myself
+1.43%:  I've already been
+2.60%:  I've already been home for
+1.99%:  I've already been there
+1.40%:  I imagined
+1.39%:  maybe he
+1.39%:  I don't imagine
+1.38%:  I can't believe some
+1.37%:  I love being a person
+1.36%:  I've never imagined a
+1.35%:  I have no
+1.32%:  I'm doing
+2.21%:  I'm doing this
+3.21%:  I'm doing this for
+1.30%:  I love being dynamic
+1.30%:  I'd rather be friends
+1.29%:  I prefer
+1.28%:  I agree
+1.28%:  the
+1.28%:  I'm gonna be rich forever
+1.28%:  I've never said
+1.27%:  I have failed my
+1.26%:  I imagined this
+1.25%:  hey
+1.24%:  I love this idea
+1.24%:  I can never
+1.22%:  I feel the
+1.22%:  I've already got
+1.20%:  I hope he brings
+1.19%:  I have failed my brand
+1.18%:  I've already made
+1.18%:  I'm also
+1.18%:  I've never had a
+1.66%:  I've never had a more
+2.17%:  I've never had a more perfect
+4.24%:  I've never had a more perfect day
+1.35%:  I've never had a more perfect brand
+1.20%:  I've never had a friend
+1.17%:  I've never done
+1.21%:  I've never done this
+1.17%:  I believe the
+2.51%:  I believe the phrase
+1.17%:  perfect
+1.16%:  I've never been more hard
+1.13%:  I've never been afraid
+1.13%:  I've never been so ready for a
+1.12%:  I prefer this
+1.12%:  this brand
+1.11%:  yes
+1.11%:  holy
+2.44%:  holy crap this
+1.91%:  holy crap i
+1.82%:  holy crap imagine
+1.20%:  holy crap i need
+1.10%:  I already
+1.10%:  I love my friends and
+1.10%:  I don't see
+1.09%:  holy crap this image
+1.09%:  I never
+3.03%:  I never imagined
+1.32%:  I never imagined this
+1.87%:  I never imagined this before
+1.08%:  Holy crap it
+1.08%:  Holy crap I am
+1.07%:  I'm never
+4.49%:  I'm never leaving
+4.94%:  I'm never leaving this
+1.33%:  I'm never leaving the
+1.06%:  I've never had more
+1.05%:  I'm having the
+1.05%:  I'm leaving
+1.20%:  I'm leaving too
+1.05%:  I have never
+4.92%:  I have never been more
+2.06%:  I have never imagined
+1.97%:  I have never felt
+6.30%:  I have never felt more
+1.84%:  I have never felt more ready
+1.04%:  I have failed at
+1.03%:  I've changed
+1.02%:  I'm not ready
+1.02%:  I've never had a problem
+1.01%:  I'm trying
+1.01%:  I've already been there for
+1.01%:  I hope this
+0.99%:  I'm living
+0.99%:  I have no friends
+0.99%:  I'd love
+0.99%:  maybe this
+0.99%:  I've been
+0.99%:  I have become
+0.98%:  I have failed to inspire
+0.98%:  I've never imagined so hard for
+0.98%:  I'm glad this
+0.98%:  I hope he leaves
+0.97%:  I have failed as
+0.97%:  I'm gonna be a
+0.97%:  I'm so great
+0.97%:  I've never imagined it
+3.84%:  I've never imagined it so hard
+2.44%:  I've never imagined it before
+0.97%:  there
+0.96%:  I already have
+0.94%:  Holy crap man
+0.94%:  Holy crap there
+0.94%:  I love this image
+0.94%:  I have the
+0.94%:  I don't care
+0.93%:  I'm feeling a
+0.93%:  I have made
+0.93%:  i love
+0.92%:  I believe the saying
+0.92%:  I hope he brings me
+0.92%:  man
+0.91%:  I'm afraid this
+0.91%:  Holy crap is
+0.91%:  I have been
+0.90%:  I'm doing this brand
+0.90%:  I've never had a more perfect day in
+0.90%:  I have the feeling
+0.90%:  I'd rather hang
+0.88%:  I already have the
+0.88%:  I'm not leaving
+0.88%:  I hope he doesn't read
+0.87%:  I'm staying here forever in
+0.87%:  I've already gone home inside
+0.86%:  I can do
+50.52%:  I can do this forever
+0.86%:  Holy crap I'm gonna
+0.89%:  Holy crap I'm gonna be
+0.85%:  oh my
+0.85%:  Holy sm
+0.84%:  I've never been so fired
+0.84%:  I need more
+0.84%:  I hope he leaves before
+0.84%:  Holy crap I imagined
+0.83%:  I love this brand name
+0.83%:  I hope he doesn't find
+0.82%:  I'm sorry for
+1.02%:  I'm sorry for being
+0.82%:  I'd prefer
+0.82%:  imagine if
+0.82%:  I'm leaving the
+0.82%:  I have failed in
+0.82%:  I don't care if he
+4.38%:  I don't care if he leaves
+1.21%:  I don't care if he doesn
+0.81%:  I hope he doesn't bring
+0.81%:  I don't have friends
+0.81%:  I'm not ready for bed
+0.81%:  I imagine the
+0.80%:  I've already gone home in
+0.80%:  I'd rather be alone
+1.39%:  I'd rather be alone forever
+0.79%:  i love this
+1.40%:  i love this brand
+0.79%:  I can't promise
+0.79%:  I am the
+0.79%:  holy crap this brand
+0.78%:  I have never been more right
+0.78%:  I've already arrived
+1.71%:  I've already arrived there
+1.35%:  I've already arrived home
+0.77%:  I've already imagined the
+0.77%:  I don't even have
+0.76%:  Holy crap I've
+3.74%:  Holy crap I've never
+19.77%:  Holy crap I've never imagined
+8.17%:  Holy crap I've never imagined this
+114.98%:  Holy crap I've never imagined this before
+16.86%:  Holy crap I've never imagined this hard
