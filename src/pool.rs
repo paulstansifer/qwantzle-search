@@ -338,6 +338,10 @@ impl LetterPool {
         }
     }
 
+    pub fn char_count(&self, c: u8) -> u8 {
+        self.lookup(Char(c))
+    }
+
     pub fn from_text(text: &str) -> LetterPool {
         let mut res = LetterPool {
             lowercase: [0; 26],
@@ -387,6 +391,11 @@ impl LetterPool {
             let pt = ptc.get_tok(tok, model);
             self.remove_pt(pt)
         })
+    }
+
+    /// Panics if the letters aren't available.
+    pub fn remove_str(&mut self, s: &str) {
+        self.remove_pt(&PoolTok::from_str(s));
     }
 
     /// Creates a copy, unless it's not possible
