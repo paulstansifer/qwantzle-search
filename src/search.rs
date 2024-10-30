@@ -145,9 +145,9 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
         // 6.0 is just made-up, though.
-        prod = f32::powf(6.0 / filter_ratio, 0.5) as f64 * prod;
+        prod = f32::powf(6.0 / filter_ratio, 0.25) as f64 * prod;
 
-        chars_i += 2.0; // TODO: try stepping down to 0.25 / += 1.0
+        chars_i += 1.0;
     }
 
     Score(prod * rlnn_mult as f64)
