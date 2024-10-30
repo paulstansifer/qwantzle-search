@@ -301,6 +301,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         .iter()
         .filter(|s| s.punchline.len() > char_min && s.punchline.len() <= char_max)
         .filter(|s| !s.punchline.contains("\n"))
+        .filter(|s| !s.punchline.contains("(punchline)"))
         .filter(|s| !excused_strips.contains(&s.id))
         .collect();
 

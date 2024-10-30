@@ -294,6 +294,20 @@ impl PoolTok {
 }
 
 impl LetterPool {
+    pub fn empty_of_letters(&self) -> bool {
+        for count in self.lowercase {
+            if count > 0 {
+                return false;
+            }
+        }
+        for (ch, count) in &self.other_chars {
+            if count > 0 && ch.0 >= b'A' && ch.0 <= b'Z' {
+                return false;
+            }
+        }
+        return true;
+    }
+
     pub fn size(&self) -> usize {
         let mut res: usize = 0;
         for count in self.lowercase {
