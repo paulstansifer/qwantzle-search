@@ -340,7 +340,9 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             avg_prob * 100.0
         );
 
-        if cost > 50000000.0 {
+        // Add a couple of strips with known high estimates that are actually solveable quickly, to
+        // get more data:
+        if cost > 5000.0 && strip.id != 694 && strip.id != 1055 {
             std::io::Write::write(
                 &mut append_to_report,
                 format!(
@@ -356,7 +358,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, words, Some(30000), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(10000), &mut report);
         let result_msg = format!(
             "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,

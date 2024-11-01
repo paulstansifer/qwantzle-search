@@ -303,7 +303,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  that's not very
 0.01%:  that's not very funny
 0.00%:  that's not very funny!
-0.00%:  that's not gonna convince anyone
 0.00%:  One year
 0.00%:  that's not even serious
 0.00%:  you're not even in court are
@@ -350,7 +349,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  that's a great one
 0.00%:  you're not in court for
 0.00%:  One thing you can say for certain is no
-0.00%:  One thing you can say for certain: no conversation
 0.00%:  you're not even facing court
 0.00%:  that's gonna
 0.00%:  that's gonna cost you five
@@ -402,7 +400,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.03%:  One thing's for certain: your reaction
 0.03%:  One thing's for certain: you are a very
 0.03%:  One thing's for sure: you can never acc
-0.03%:  One thing's for certain: you can count on never
 0.03%:  One thing's for sure: you are one
 0.03%:  One thing's for sure!
 0.03%:  One thing's for certain: your actions are
@@ -418,20 +415,16 @@ One thing's for certain: you sure can carry on a conversation!
 0.02%:  One thing's for certain: you can convince
 0.02%:  One thing's for certain: you are not a serious
 0.02%:  One thing's for certain: you are not serious
-0.02%:  One thing's for certain: you cannot convince
-0.02%:  One thing's for certain: you cannot convince us
 0.02%:  One thing's for certain: your conscience
 0.02%:  One thing's for sure: you aren
 0.02%:  One thing's for certain: no one can
 0.03%:  One thing's for certain: no one can say your
-0.03%:  One thing's for certain: no one can say you aren
 0.02%:  One thing's for certain: no one can say your court
 0.02%:  One thing's for certain: no one can acc
 0.04%:  One thing's for certain: no one can accuse your
 0.02%:  One thing's for certain: you sure are an
 0.02%:  One thing's for certain: you are innocent
 0.02%:  One thing's for certain: you sure can convince
-0.02%:  One thing's for certain: your conversation concerns
 0.01%:  One thing's for certain: our
 0.05%:  One thing's for certain: our court
 0.05%:  One thing's for certain: our conversation
@@ -455,16 +448,13 @@ One thing's for certain: you sure can carry on a conversation!
 0.01%:  One thing's for sure: your conviction rate
 0.01%:  One thing's for certain: you sure as
 0.01%:  One thing's for sure: your reaction
-0.01%:  One thing's for certain: no one can say your convers
 0.01%:  One thing's for sure: you cannot
 0.02%:  One thing's for sure: you cannot convince
 0.01%:  One thing's for sure: you can convince
-0.01%:  One thing's for sure: you can convince anyone
 0.01%:  One thing's for certain: your story
 0.01%:  One thing's for certain: you can never count
 0.01%:  One thing's for certain: you are one conv
 0.01%:  One thing's for certain: your court case
-0.01%:  One thing's for certain: you can never count on a
 0.01%:  One thing's for certain: your reactions
 0.01%:  One thing's for certain: our court is
 0.01%:  One thing's for certain: even
@@ -505,7 +495,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.01%:  One thing's for certain: none
 0.01%:  One thing's for sure: your actions are
 0.01%:  One thing's for certain: you are a serious
-0.01%:  One thing's for certain: you can count on one
 0.01%:  One thing's for sure: no one can
 0.03%:  One thing's for sure: no one can say you aren
 0.01%:  One thing's for sure: no one can say your
@@ -528,12 +517,10 @@ One thing's for certain: you sure can carry on a conversation!
 0.01%:  One thing's for certain: you are a conversation
 0.01%:  One thing's for certain: you sure ain
 0.01%:  One thing's for certain: you can never un
-0.01%:  One thing's for certain: you cannot convince a
 0.01%:  One thing's for certain: your sent
 0.01%:  One thing's for certain: no one can accuse your story
 0.01%:  One thing's for certain: your ancestors
 0.01%:  One thing's for certain: you are not one
-0.01%:  One thing's for certain: no one can say your reactions
 0.01%:  One thing's for sure: you are not a
 0.01%:  One thing's for sure: you are not a very
 0.01%:  One thing's for certain: you can never say it
@@ -557,7 +544,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.01%:  One thing's for certain: your insurance
 0.01%:  One thing's for certain: you are in over
 0.01%:  One thing's for certain: you can never out
-0.00%:  One thing's for certain: you cannot convince your
 0.00%:  One thing's for sure: our
 0.02%:  One thing's for sure: our conversation
 0.00%:  One thing's for certain: our conversation can
@@ -570,7 +556,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: at
 0.00%:  One thing's for certain: no one can say your ver
 0.00%:  One thing's for certain: no one can say your case
-0.00%:  One thing's for certain: you can count on an
 0.00%:  One thing's for sure: you ain
 0.00%:  One thing's for certain: you are one un
 0.00%:  One thing's for certain: you sure are a conv
@@ -638,7 +623,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for sure: you are in
 0.00%:  One thing's for certain: you sure can say it conv
 0.00%:  One thing's for certain: your court is
-0.00%:  One thing's for certain: no one can say your reaction
 0.00%:  One thing's for sure: you cannot convince a
 0.00%:  One thing's for certain: you can stare
 0.00%:  One thing's for certain: your actions are un
@@ -659,7 +643,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: once
 0.00%:  One thing's for certain: your actions aren
 0.00%:  One thing's for sure: your convers
-0.00%:  One thing's for certain: no one can say your actions
 0.00%:  One thing's for certain: you are un
 0.00%:  One thing's for sure: your innocent
 0.00%:  One thing's for certain: you can conversation
@@ -714,7 +697,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: you are one court
 0.00%:  One thing's for certain: your reactions are conv
 0.00%:  One thing's for certain: your encounter
-0.00%:  One thing's for certain: you sure cannot convince
 0.00%:  One thing's for sure: none
 0.00%:  One thing's for certain: you are not as
 0.00%:  One thing's for sure: your conversation can
@@ -766,7 +748,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for sure: you are not a racist
 0.00%:  One thing's for certain: our society
 0.00%:  One thing's certain: you are one
-0.00%:  One thing's for certain: you are an innocent
 0.00%:  One thing's for certain: you sure can stare
 0.00%:  One thing's for sure: our conversation can
 0.00%:  One thing's for sure: you are not very
@@ -784,8 +765,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: you can say one
 0.00%:  One thing's for sure: your actions are no
 0.00%:  One thing's for sure: you are not an
-0.01%:  One thing's for sure: you are not an innocent
-0.00%:  One thing's for certain: you can count on no
 0.00%:  One thing's for certain: no one cares
 0.00%:  One thing's for sure: your conversation reaction
 0.00%:  One thing's for certain: every court
@@ -819,7 +798,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: you can never say no
 0.00%:  One thing's for certain: your case is an
 0.00%:  you're not hearing voices
-0.00%:  One thing's for certain: no one can say your version
 0.00%:  that's not a serious concern!
 0.00%:  One thing's for certain: your reasons
 0.00%:  you're not even in character
@@ -876,9 +854,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing you'
 0.00%:  One thing's for certain: one
 0.00%:  One thing's for certain: you are a very sinc
-0.00%:  One thing's for sure: no one can convince
-0.00%:  One thing's for sure: no one can convince you
-0.00%:  One thing's for sure: you can convince anyone to
 0.00%:  One thing's for certain: your in
 0.00%:  you're in court for having
 0.00%:  One thing's for sure: no one can say you can
@@ -931,7 +906,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for sure: our ver
 0.00%:  you're not even in court! this is a
 0.00%:  your court
-0.00%:  One thing's for certain: no one can say you can
 0.00%:  One thing you can say for sure: conversation'
 0.00%:  it turns
 0.00%:  One thing's for sure: court ain
@@ -942,7 +916,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing you can say for certain: courts never
 0.00%:  One thing's for sure: your voice carries
 0.00%:  One thing's for sure: every
-0.00%:  One thing's for certain: no conversation can
 0.00%:  One thing's for certain: your recent
 0.00%:  One thing's for sure: not even
 0.00%:  One thing's for certain: you ran
@@ -957,7 +930,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: you can rest your
 0.00%:  One thing's for certain: you can rest your case on
 0.00%:  One thing's for certain: you are one s
-0.00%:  One thing's for certain: you can convince any
 0.00%:  that's not funny sir
 0.00%:  everyone's gonna hate
 0.00%:  everyone's gonna hate you!
@@ -975,9 +947,7 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  you're such
 0.00%:  One thing's for certain: no one can say our
 0.01%:  One thing's for certain: no one can say our court
-0.00%:  One thing's for certain: no one can say our court isn
 0.00%:  One thing's for certain: no one can say our courts
-0.00%:  One thing's for certain: no one can say our courts are
 0.00%:  One in
 0.00%:  One thing's for sure: your sent
 0.00%:  everyone's in character
@@ -1008,7 +978,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  that's funny! everyone
 0.00%:  One thing's for certain: conversation can
 0.00%:  One thing's for sure: you can stare
-0.00%:  One thing you can say for certain: our conversation can
 0.00%:  you're in court for eating
 0.00%:  One thing's for certain: you ran over
 0.00%:  of course not! you can
@@ -1069,7 +1038,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  you can't even argue
 0.00%:  One thing's for certain: any
 0.01%:  One thing's for certain: any conversation
-0.00%:  One thing's for certain: any conversation you can
 0.00%:  there
 0.00%:  there's no court
 0.00%:  there's no court!
@@ -1115,7 +1083,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: our courts can never
 0.00%:  it's a reference to an
 0.00%:  One of your characters!
-0.00%:  One thing's for sure: you can convince anyone!
 0.00%:  One thing you can say for sure: it's convenient!
 0.00%:  court'
 0.00%:  court's over
@@ -1141,7 +1108,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  you're trying to convince the
 0.00%:  One thing's for certain: your career as an account
 0.00%:  your honour
-0.00%:  One thing's for certain: you can never say our nation
 0.00%:  it's a reference to our con
 0.00%:  One thing's for certain: you are in cont
 0.00%:  One thing's for certain: our country is
@@ -1168,15 +1134,12 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  o
 0.00%:  One thing's for certain: you are correct in your voc
 0.00%:  One thing's for certain: you are one unc
-0.00%:  One thing's for certain: you are one uncanny
 0.00%:  One thing's for certain: you never try
 0.00%:  One thing's for certain: your conversation re
 0.00%:  you're serious
 0.00%:  One thing's for certain: not every
 0.00%:  you're not even in court:
 0.00%:  you can't use that one
-0.00%:  One thing's for certain: you can not convince
-0.00%:  One thing's for certain: you can not convince us
 0.00%:  you can't even concentrate in
 0.00%:  you can't even concentrate in your
 0.00%:  One thing's for sure: you are certain
@@ -1242,10 +1205,7 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  One thing's for certain: our society can
 0.00%:  everyone's on
 0.00%:  One thing's for certain: you can carry
-0.03%:  One thing's for certain: you can carry on conversation
-0.01%:  One thing's for certain: you can carry on a conversation sure
 0.01%:  One thing's for certain: you can carry conversation
-0.00%:  One thing's for certain: you can carry on a conversation re
 0.00%:  serving
 0.00%:  One thing's for certain: your current scenario
 0.00%:  fun
@@ -1259,7 +1219,6 @@ One thing's for certain: you sure can carry on a conversation!
 0.00%:  that's not funny! everyone
 0.00%:  One thing's for certain: you are an unc
 0.00%:  One thing's for certain: it can never
-0.00%:  One thing's for certain: you can count on convers
 0.00%:  One thing's for certain: you are not on your
 0.00%:  One thing's for sure: our conversation cannot
 0.00%:  of course not! you're trying

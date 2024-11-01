@@ -8,6 +8,18 @@ use std::hash::Hash;
 #[derive(PartialEq, Eq, Hash, Clone, Copy)]
 struct Char(u8);
 
+impl Char {
+    fn is_lc_letter(self) -> bool {
+        self.0 >= b'a' && self.0 <= b'z'
+    }
+    fn is_uc_letter(self) -> bool {
+        self.0 >= b'A' && self.0 <= b'Z'
+    }
+    fn is_letter(self) -> bool {
+        self.is_lc_letter() || self.is_uc_letter()
+    }
+}
+
 // Token doesn't implement Ord or Hash, so we use the underlying i32.
 
 #[derive(Default)]
@@ -261,6 +273,7 @@ impl Vocab {
 pub struct LetterPool {
     lowercase: [u8; 26],
     other_chars: SmallMap<8, Char, u8>,
+    last_letter: Option<Char>,
 }
 
 #[derive(Default)]
@@ -291,21 +304,20 @@ impl PoolTok {
         }
         return res;
     }
+
+    fn size(&self) -> u8 {
+        let mut res = 0;
+        for (_, count) in &self.chars {
+            res += count;
+        }
+        return res;
+    }
 }
 
 impl LetterPool {
+    // TODO: use this, rather than `size`, to terminate search.
     pub fn empty_of_letters(&self) -> bool {
-        for count in self.lowercase {
-            if count > 0 {
-                return false;
-            }
-        }
-        for (ch, count) in &self.other_chars {
-            if *count > 0 && ch.0 >= b'A' && ch.0 <= b'Z' {
-                return false;
-            }
-        }
-        return true;
+        return self.letter_size() > 0;
     }
 
     pub fn size(&self) -> usize {
@@ -315,6 +327,20 @@ impl LetterPool {
         }
         for (_, count) in &self.other_chars {
             res += *count as usize;
+        }
+        return res;
+    }
+
+    // Number of letters remaining
+    pub fn letter_size(&self) -> usize {
+        let mut res: usize = 0;
+        for count in self.lowercase {
+            res += count as usize;
+        }
+        for (ch, count) in &self.other_chars {
+            if ch.is_uc_letter() {
+                res += *count as usize;
+            }
         }
         return res;
     }
@@ -360,6 +386,7 @@ impl LetterPool {
         let mut res = LetterPool {
             lowercase: [0; 26],
             other_chars: SmallMap::new(),
+            last_letter: None,
         };
 
         for byte in text.as_bytes() {
@@ -370,6 +397,9 @@ impl LetterPool {
             }
 
             *res.entry(c) += 1;
+            if c.is_letter() {
+                res.last_letter = Some(c);
+            }
         }
 
         return res;
@@ -377,8 +407,14 @@ impl LetterPool {
 
     fn has_pt(&self, tok: &PoolTok) -> bool {
         for (c, count) in &tok.chars {
-            if self.lookup(*c) < *count {
+            let available = self.lookup(*c);
+            if available < *count {
                 return false;
+            } else if Some(*c) == self.last_letter
+                && available == *count
+                && self.letter_size() > tok.size().into()
+            {
+                return false; // Used the last letter, but we're not the last word.
             }
         }
         return true;
@@ -450,6 +486,7 @@ fn pool_test() {
     assert!(pool.has_pt(&PoolTok::from_str("okay")));
     assert!(pool.has_pt(&PoolTok::from_str(" okay")));
     assert!(pool.has_pt(&PoolTok::from_str("disappoints")));
+    assert!(pool.has_pt(&PoolTok::from_str("level")));
     assert!(!pool.has_pt(&PoolTok::from_str("xerox")));
     for w in "an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!".split(" ") {
         assert!(pool.has_pt(&PoolTok::from_str(w)));
@@ -458,5 +495,12 @@ fn pool_test() {
 
     assert!(!pool.has_pt(&PoolTok::from_str("o")));
     assert!(!pool.has_pt(&PoolTok::from_str("e")));
-    assert_eq!(pool.size(), 0)
+    assert_eq!(pool.size(), 0);
+
+    let mut pool = LetterPool::from_text("haha wow!");
+    assert!(!pool.has_pt(&PoolTok::from_str("wow"))); // 'w' has to be the last letter.
+    assert!(pool.has_pt(&PoolTok::from_str("haha")));
+    pool.remove_pt(&PoolTok::from_str("haha"));
+    assert!(pool.has_pt(&PoolTok::from_str("wow")));
+    pool.remove_pt(&PoolTok::from_str("wow"));
 }
