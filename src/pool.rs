@@ -301,7 +301,7 @@ impl LetterPool {
             }
         }
         for (ch, count) in &self.other_chars {
-            if count > 0 && ch.0 >= b'A' && ch.0 <= b'Z' {
+            if *count > 0 && ch.0 >= b'A' && ch.0 <= b'Z' {
                 return false;
             }
         }

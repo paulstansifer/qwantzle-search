@@ -91,10 +91,10 @@ impl LetterNet {
                 );
             }
 
-            println!(
-                "Found layer '{}' with shape: {:?}",
-                layer_prefix, weight_shape
-            );
+            // println!(
+            //     "Found layer '{}' with shape: {:?}",
+            //     layer_prefix, weight_shape
+            // );
 
             // Create linear layer with dimensions from the weight matrix
             let layer = candle_nn::linear(
