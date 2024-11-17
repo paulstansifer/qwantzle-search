@@ -282,9 +282,10 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
 fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel, args: &Args) {
     let char_min = 45;
-    let char_max = 70;
+    let char_max = 80;
 
     let excused_strips = [
+        2199, // Ought to get it, though all-caps makes it harder (has trouble with "BUSTING")
         1833, // Punchline has digits
         1743, // Formally weird; the leadup basically is just "Spring BREAAAAAAAAAAAA-"
         2258, // "double-down refill" is a very weird phrase
@@ -331,7 +332,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         .open(&report_filename)
         .unwrap();
 
-    for strip in small_strips.iter().take(30) {
+    for strip in small_strips.iter().take(50) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         println!(
             "{}: Estimated steps: {}. Avg. prob: {:.1}%",
@@ -342,7 +343,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
 
         // Add a couple of strips with known high estimates that are actually solveable quickly, to
         // get more data:
-        if cost > 5000.0 && strip.id != 694 && strip.id != 1055 {
+        if cost > 3000000.0 && strip.id != 694 && strip.id != 1055 {
             std::io::Write::write(
                 &mut append_to_report,
                 format!(
@@ -358,7 +359,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             continue;
         }
 
-        let search_res = search::practice_search(strip, model, words, Some(10000), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(250000), &mut report);
         let result_msg = format!(
             "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,

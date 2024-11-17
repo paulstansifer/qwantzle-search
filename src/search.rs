@@ -56,6 +56,10 @@ impl Eq for Node {}
 
 type Q = PriorityQueue<Node, Score>;
 
+fn trim_queue(q: Q, elts: usize) -> Q {
+    Q::from_iter(q.into_sorted_iter().take(elts))
+}
+
 const TOK_BUFFER: u32 = 25;
 
 // How good does the best next token need to be to fast-forward it?
@@ -63,7 +67,8 @@ const TOK_BUFFER: u32 = 25;
 const FF_MIN_P: f32 = 0.25;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
-const TOK_TOP_P: f32 = 0.999;
+// In practice, it seems like we need to be more careful than that.
+const TOK_TOP_P: f32 = 0.9995;
 
 // Token 0: (50%) 1.82%  (25%) 0.45%  (10%) 0.24%  (5%) 0.24% (1%) 0.10%
 // Token 1: (50%) 5.31%  (25%) 1.58%  (10%) 1.07%  (5%) 1.07% (1%) 0.35%
@@ -376,6 +381,10 @@ pub fn practice_search(
                 progress.abandon_with_message(msg);
                 break;
             }
+        }
+        if step % 50000 == 0 {
+            progress.println(format!("Queue length is {}; trimming to 100k.", q.len()));
+            q = trim_queue(q, 100000);
         }
         if let Some((node, p)) = q.pop() {
             let cur_text = model.decode_tokens(&node.text);
