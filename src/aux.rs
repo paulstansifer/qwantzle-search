@@ -76,7 +76,7 @@ fn main() {
 
     let model = LlamaModel::load_from_file(args.model, model_params).expect("Could not load model");
 
-    for word in vec!["the fish.", "fish", " fish", "fish "] {
+    for word in vec!["fundamental", " fundamental"] {
         let toks = model.tokenize_bytes(word, false, false).unwrap();
 
         for tok in toks {

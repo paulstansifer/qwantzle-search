@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use small_map::SmallMap;
+use assoc::AssocExt;
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
@@ -220,65 +220,17 @@ impl WordState {
     }
 }
 
-impl Vocab {
-    pub fn summary(&self, model: &llama_cpp::LlamaModel) -> String {
-        let mut s = String::new();
-        let words: Vec<Vec<i32>> = self.valid_words.iter().cloned().collect();
-        for w in words.iter().take(15) {
-            s += &format!(
-                "({:?}) '{}'  ",
-                w,
-                model.decode_tokens(w.iter().map(|t| llama_cpp::Token(*t)).collect::<Vec<_>>())
-            );
-        }
-
-        s += &format!(" ({})\n", words.len());
-
-        for t in self.token_roles.iter().take(25) {
-            s += &format!(
-                "({}) '{}'  ",
-                t.0,
-                model.token_to_piece(llama_cpp::Token(*t.0))
-            );
-        }
-
-        s += &format!("{} tokens", self.token_roles.len());
-        return s;
-    }
-
-    pub fn check_expressibility(&self, text: &str, model: &llama_cpp::LlamaModel) {
-        let toks = model.tokenize_bytes(text, false, false).unwrap();
-        for tok in toks {
-            if !self.token_roles.contains_key(&tok.0) {
-                println!("Missing token: ({}) {}", tok.0, model.token_to_piece(tok));
-            }
-        }
-
-        for word in regex::Regex::new(r"\b").unwrap().split(text) {
-            let toks: Vec<i32> = model
-                .tokenize_bytes(&format!(" {}", word), false, false)
-                .unwrap()
-                .into_iter()
-                .map(|t| t.0)
-                .collect();
-
-            if !self.valid_words.contains(&toks) {
-                println!("Cannot find ({:?}) '{}'", toks, word);
-            }
-        }
-    }
-}
-
 #[derive(Clone)]
 pub struct LetterPool {
     lowercase: [u8; 26],
-    other_chars: SmallMap<8, Char, u8>,
+    other_chars: Vec<(Char, u8)>,
     last_letter: Option<Char>,
+    tie_sequences: Option<Vec<Vec<Char>>>, // if we need to save memory, do Option<[u8; 5]>
 }
 
 #[derive(Default)]
 struct PoolTok {
-    chars: SmallMap<8, Char, u8>,
+    chars: Vec<(Char, u8)>,
 }
 
 thread_local! {
@@ -297,7 +249,7 @@ impl PoolTok {
                 continue;
             }
             if res.chars.get(&c).is_none() {
-                res.chars.insert(c, 1);
+                res.chars.push((c, 1));
             } else {
                 *res.chars.get_mut(&c).unwrap() += 1;
             }
@@ -317,7 +269,11 @@ impl PoolTok {
 impl LetterPool {
     // TODO: use this, rather than `size`, to terminate search.
     pub fn empty_of_letters(&self) -> bool {
-        return self.letter_size() > 0;
+        return self.letter_size() == 0;
+    }
+
+    pub fn respects_ties(&self) -> bool {
+        self.tie_sequences.is_some()
     }
 
     pub fn size(&self) -> usize {
@@ -360,7 +316,7 @@ impl LetterPool {
             }
             None => {
                 if self.other_chars.get(&c).is_none() {
-                    self.other_chars.insert(c, 0);
+                    self.other_chars.push((c, 0));
                 }
                 return self.other_chars.get_mut(&c).unwrap();
             }
@@ -385,8 +341,9 @@ impl LetterPool {
     pub fn from_text(text: &str) -> LetterPool {
         let mut res = LetterPool {
             lowercase: [0; 26],
-            other_chars: SmallMap::new(),
+            other_chars: vec![],
             last_letter: None,
+            tie_sequences: None,
         };
 
         for byte in text.as_bytes() {
@@ -401,6 +358,27 @@ impl LetterPool {
                 res.last_letter = Some(c);
             }
         }
+
+        let mut tie_seqs = vec![vec![]; 7];
+
+        for occurences in 1..6 {
+            for byte in text.as_bytes() {
+                if *byte == b' '
+                    || !Char(*byte).is_lc_letter()
+                    || res.lowercase[(byte - b'a') as usize] != occurences
+                {
+                    continue;
+                }
+                let ch = Char(*byte);
+                if tie_seqs[occurences as usize].contains(&ch) {
+                    continue;
+                }
+                tie_seqs[occurences as usize].push(ch);
+            }
+        }
+        tie_seqs.retain(|v| !v.is_empty());
+
+        res.tie_sequences = Some(tie_seqs);
 
         return res;
     }
@@ -488,13 +466,18 @@ fn pool_test() {
     assert!(pool.has_pt(&PoolTok::from_str("disappoints")));
     assert!(pool.has_pt(&PoolTok::from_str("level")));
     assert!(!pool.has_pt(&PoolTok::from_str("xerox")));
-    for w in "an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!".split(" ") {
+    for w in "an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level !".split(" ") {
+        if w == "!" {
+            assert!(pool.empty_of_letters());
+        }
+
         assert!(pool.has_pt(&PoolTok::from_str(w)));
         pool.remove_pt(&PoolTok::from_str(w));
     }
 
     assert!(!pool.has_pt(&PoolTok::from_str("o")));
     assert!(!pool.has_pt(&PoolTok::from_str("e")));
+    assert!(pool.empty_of_letters());
     assert_eq!(pool.size(), 0);
 
     let mut pool = LetterPool::from_text("haha wow!");

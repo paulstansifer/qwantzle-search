@@ -150,10 +150,9 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
 
-        // Starts at 5.5, goes towards 4.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.5 + 2.0);
+        // This is unmotivated; purely empirical. Starts at 6.0, goes towards 4.0:
+        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0;
 
-        // 5.0 is just made-up, though.
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
         chars_i += 1.0;
@@ -341,15 +340,19 @@ pub fn practice_search(
     let mut root_ctx = model.create_session(params).unwrap();
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
+    let mut longest_word_len = 0;
+    let mut longest_word = None;
     // Set up vocabulary restrictions
     let vocab = {
         let mut v_builder = VocabBuilder::default();
 
-        let mut longest_word_len = 0;
         // If there are non-dictionary words, sneak 'em in:
         for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
             v_builder.add_word(word, model, /*vary_case=*/ false);
-            longest_word_len = std::cmp::max(longest_word_len, word.len());
+            if word.len() > longest_word_len {
+                longest_word_len = word.len();
+                longest_word = Some(word); // ties are arbitrarily broken
+            }
         }
 
         for word in words {
@@ -362,6 +365,24 @@ pub fn practice_search(
 
         v_builder.build(/*disabled=*/ false)
     };
+
+    let mut longest_word_as_token = None;
+    for word in [
+        longest_word.unwrap(),
+        &format!(" {}", longest_word.unwrap()),
+    ] {
+        let toks = model.tokenize_bytes(&word, false, false).unwrap();
+        if toks.len() == 1 {
+            longest_word_as_token = Some(toks.first().unwrap());
+        }
+        println!(
+            "LW toks: {:?}",
+            toks.iter()
+                .map(|t| model.decode_tokens(&[*t]))
+                .collect::<Vec<_>>()
+                .join("|")
+        );
+    }
 
     // Set up the letter pool
     let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
@@ -379,42 +400,49 @@ pub fn practice_search(
     loop {
         progress.tick();
         if let Some(lim) = steps_limit {
-            if step > lim {
+            if step >= lim {
                 let msg = format!("Hit step limit: {}", step);
                 *report += &msg;
                 progress.abandon_with_message(msg);
                 break;
             }
         }
-        if step % 50000 == 0 {
-            progress.println(format!("Queue length is {}; trimming to 100k.", q.len()));
-            q = trim_queue(q, 100000);
+        if q.len() >= 1_000_000 {
+            progress.println(format!("Queue length is {}; trimming to 500k.", q.len()));
+            q = trim_queue(q, 500_000);
         }
         if let Some((node, p)) = q.pop() {
             let cur_text = model.decode_tokens(&node.text);
 
-            if node.remaining.size() == 0 && cur_text.trim() == strip.punchline.trim() {
-                let msg = format!(
-                    "Search successful after {} steps. Score: {:.2}%",
-                    step,
-                    p.0 * 100.0
-                );
-                success = true;
-                *report += &msg;
-                progress.abandon_with_message(msg);
-                break;
-            } else if node.remaining.size() == 0 {
-                let msg = format!(
-                    "Non-answer: {} != {}",
-                    model.decode_tokens(&node.text).trim(),
-                    strip.punchline.trim()
-                );
-                *report += &msg;
-                *report += "\n";
-                progress.println(msg);
+            if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {
+                let mut cur_text_alpha = cur_text.clone();
+                let mut punchline_alpha = strip.punchline.clone();
+                cur_text_alpha.retain(|c| c.is_alphabetic());
+                punchline_alpha.retain(|c| c.is_alphabetic());
+
+                if cur_text_alpha == punchline_alpha {
+                    let msg = format!(
+                        "Search successful after {} steps. Score: {:.2}%",
+                        step,
+                        p.0 * 100.0
+                    );
+                    success = true;
+                    *report += &msg;
+                    progress.abandon_with_message(msg);
+                    break;
+                } else {
+                    let msg = format!(
+                        "Non-answer: {} != {}",
+                        model.decode_tokens(&node.text).trim(),
+                        strip.punchline.trim()
+                    );
+                    *report += &msg;
+                    *report += "\n";
+                    progress.println(msg);
+                }
             } else if strip.punchline.trim().starts_with(cur_text.trim()) && !node.text.is_empty() {
                 score_progress_info += &format!(
-                    "'{}' {:.2}%  ",
+                    "'{}' {:.3}%  ",
                     model.token_to_piece(*node.text.last().unwrap()),
                     p.0 * 100.0
                 );

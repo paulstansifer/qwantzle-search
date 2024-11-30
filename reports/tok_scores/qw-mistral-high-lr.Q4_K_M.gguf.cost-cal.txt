@@ -9,7 +9,7 @@ T-Rex (punchline): Man!
            78         0         0         7        82        43         1         0         1         0         1         0
             3         0         0         2        29        10         1         0         1         0         0         0
        88.96%     0.00%     0.00%    54.14%    87.72%    69.75%    71.91%     0.00%    79.82%     0.00%    51.92%     0.00%
-optimistic cost: 1.58e4  average probability: 7.2%  average tok time: 24338
+optimistic cost: 1.58e4  average probability: 7.2%  average tok time: 26344
 Padding the suffix with a space.
 T-Rex: Hey God, would the world be an even awesomer place if everyone named "Benjamin" instead went ...r man than the person I remember from our halcyon pre-pubescent days.
 Utahraptor: Sounds plausible!
@@ -21,7 +21,7 @@ T-Rex (punchline): And
             7         1         0         0         0         1        34         1         6         3         4         0       229         0         0        18
             7         1         0         0         0         1        15         0         6         3         1         0        29         0         0         2
        43.12%    64.22%     0.00%     0.00%     0.00%    35.70%    76.59%    34.38%    59.65%    52.14%    44.79%     0.00%    79.86%     0.00%     0.00%    81.66%
-optimistic cost: 2.58e6  average probability: 6.9%  average tok time: 23275
+optimistic cost: 2.58e6  average probability: 6.9%  average tok time: 25041
 Padding the suffix with a space.
 T-Rex: Buying a skeleton costs thousands of dollars! How are skeletons so expensive? EVERYONE GETS O...u" while slapping them with another skeleton's hand! Or "Aw man! RIBS AGAIN?" while punching a skeleton in the ribs!!
 T-Rex (punchline): ...Utahraptor
@@ -31,7 +31,7 @@ T-Rex (punchline): ...Utahraptor
            38         0         3         1         6         2        91         0         2         0       151        28         3         0         4         0         0         0
            21         0         1         0         1         1        21         0         0         0        14         5         2         0         3         0         0         0
        96.48%     0.00%    43.84%    23.20%    91.64%    54.46%    97.01%     0.00%    55.14%     0.00%    97.33%    84.32%    65.34%     0.00%    65.07%     0.00%     0.00%     0.00%
-optimistic cost: 4.18e6  average probability: 5.4%  average tok time: 23494
+optimistic cost: 4.18e6  average probability: 5.4%  average tok time: 24492
 Padding the suffix with a space.
 T-Rex: Today is the day I write an amazing sequel to somebody else's book. Oh yes. We've all read Or...eve I throw out revelations like this and nobody acts like it's amazing. I JUST MADE ALL HISTORY BOOKS SCIENCE FICTION PREQUELS.
 T-Rex (punchline): If
@@ -41,7 +41,7 @@ T-Rex (punchline): If
             4        22         0         1         0         0         4         0         0        17         2         1         0       694         0         1         3        17         0         2         1
             4        11         0         1         0         0         4         0         0        10         2         0         0        63         0         0         0         1         0         0         0
        71.00%    80.62%     0.00%    44.57%     0.00%     0.00%    75.15%     0.00%     0.00%    58.68%    33.79%    94.15%     0.00%    94.45%     0.00%    72.34%    54.97%    74.77%     0.00%    56.99%    45.70%
-optimistic cost: 2.53e6  average probability: 9.4%  average tok time: 23599
+optimistic cost: 2.53e6  average probability: 9.4%  average tok time: 23991
 Padding the suffix with a space.
 T-Rex: I hoped it wouldn't come to this, but here we are, and there's nothing left for me to do but ...n difficult, don't you?
 T-Rex: Yeah! Why do you think I walk around naked all the time??
@@ -53,7 +53,7 @@ T-Rex (punchline): I've
             0        11         1        28       449         1         0         1         0        11         0         0         0         0         4         0
             0         6         0         4        49         1         0         0         0         2         0         0         0         0         0         0
         0.00%    69.01%    20.72%    54.44%    90.71%    90.42%     0.00%    12.86%     0.00%    65.98%     0.00%     0.00%     0.00%     0.00%    77.56%     0.00%
-optimistic cost: 1.05e4  average probability: 10.4%  average tok time: 23918
+optimistic cost: 1.05e4  average probability: 10.4%  average tok time: 23824
 Padding the suffix with a space.
 [T-Rex's daydream]
 T-Rex: Having conversations can be hard! Sometimes you will not know what to say ...ATER:
@@ -66,7 +66,7 @@ Off panel: Hah!
           142        15         0         0         0         1         0         0         3         7        93         1         0         0         0
             5         3         0         0         0         1         0         0         1         1        10         1         0         0         0
        91.51%    67.11%     0.00%     0.00%     0.00%    70.01%     0.00%     0.00%    61.16%    52.45%    81.02%    86.45%     0.00%     0.00%     0.00%
-optimistic cost: 4.22e3  average probability: 9.9%  average tok time: 23810
+optimistic cost: 4.22e3  average probability: 9.9%  average tok time: 23704
 Padding the suffix with a space.
 Narrator: "HEY. HEY. YOU HAVE SOMETHING STUCK BETWEEN YOUR TEETH"
 Narrator: a web card
@@ -79,7 +79,7 @@ T-Rex (punchline): It's
             6        12        33         0         9       377         0        14        14         2         0         0
             4         8        12         0         2        88         0         3         1         1         0         0
        34.50%    65.85%    65.53%     0.00%    82.31%    82.62%     0.00%    49.69%    31.61%    73.55%     0.00%     0.00%
-optimistic cost: 2.50e6  average probability: 3.9%  average tok time: 23858
+optimistic cost: 2.50e6  average probability: 3.9%  average tok time: 23771
 Padding the suffix with a space.
 T-Rex: I'm no longer a mere person, cats and kittens. I'm a PERSONAL BRAND. Say goodbye to boring ol..., T-REX, I'm going home.
 T-Rex: [imagines SURGE written with blue bold letters on a background that looks like explosions]
@@ -90,7 +90,7 @@ T-Rex (punchline): [thinks]
            29         0         4         0         1         1         8         4         1         0
             4         0         0         0         1         1         4         2         0         0
        58.08%     0.00%    67.17%     0.00%    73.71%    24.30%    76.16%    67.72%    17.66%     0.00%
-optimistic cost: 3.00e2  average probability: 9.0%  average tok time: 24087
+optimistic cost: 3.00e2  average probability: 9.0%  average tok time: 23937
 Padding the suffix with a space.
 Narrator: T-REX AS: "THE COMPUTER SCIENTIST"
 T-Rex: Computers store information in binary code, whic...nce one can be transformed into another, copyright law is logically INCOHERENT.
@@ -103,7 +103,7 @@ T-Rex (punchline): But,
            88        47         0        30        22         0         0         8         0         0         0         0         0         0         0
            59        35         0        16         6         0         0         1         0         0         0         0         0         0         0
        88.18%    85.85%     0.00%    97.42%    68.00%     0.00%     0.00%    40.54%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 5.14e5  average probability: 10.9%  average tok time: 23985
+optimistic cost: 5.14e5  average probability: 10.9%  average tok time: 23799
 Padding the suffix with a space.
 T-Rex: I have invented a machine! A machine that lets you send emails...
 T-Rex: ...TO THE FUTURE!
@@ -117,7 +117,7 @@ T-Rex (punchline): Aw
             5         0         5        32         3         0         0         1         1         3        49         2         9
             4         0         4         4         1         0         0         0         0         0         1         0         1
        67.02%     0.00%    77.03%    96.33%    65.11%     0.00%     0.00%    21.32%    28.60%    44.76%    76.47%    60.55%    45.30%
-optimistic cost: 1.00e3  average probability: 5.6%  average tok time: 23995
+optimistic cost: 1.00e3  average probability: 5.6%  average tok time: 23747
 Padding the suffix with a space.
 T-Rex: Have you got an inbox full of emails, each demanding a response? Do you feel like "inbox zero...ry, I thought we were FIXING EMAIL here! SORRY if I fixed it too effectively and now you never have to deal with email again!!
 T-Rex (punchline): Geez
@@ -127,7 +127,7 @@ T-Rex (punchline): Geez
             8         0         0         0         0        13         0         2         0         0         0         0         0         0
             2         0         0         0         0         3         0         2         0         0         0         0         0         0
        85.68%     0.00%     0.00%     0.00%     0.00%    64.79%     0.00%    31.88%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 3.60e1  average probability: 35.8%  average tok time: 24065
+optimistic cost: 3.60e1  average probability: 35.8%  average tok time: 23735
 Padding the suffix with a space.
 T-Rex: Sometimes people who disagree on the future will make a public bet: I bet the ice caps will m...al".
 Utahraptor: You're ON. Thanks for the $1000!
@@ -141,7 +141,7 @@ T-Rex (punchline): I
             1         1         0         0         0        13         0         0         0         0        22         0         0        32         0         1         5
             1         1         0         0         0         6         0         0         0         0         3         0         0         2         0         0         0
        15.51%    44.80%     0.00%     0.00%     0.00%    70.29%     0.00%     0.00%     0.00%     0.00%    80.39%     0.00%     0.00%    79.64%     0.00%    28.65%    57.05%
-optimistic cost: 3.36e2  average probability: 17.1%  average tok time: 23914
+optimistic cost: 3.36e2  average probability: 17.1%  average tok time: 23607
 Padding the suffix with a space.
 Image description: The comic has cute images of baby dinosaurs and mostly follows the standard templ...E OLDER, YOU WILL LOOK BACK ON ALL THE DREAMS YOU HAVE YET TO FULFILL, WHILE I WHISTFULLY LOOK BACK UPON A FULFILLING LIFE OF STOMPING.
 Utahraptor: SO
@@ -151,7 +151,7 @@ Utahraptor: SO
            39         6         0         0         0         3         0         0         0         0        41         3         2         0         0         0         1
            32         6         0         0         0         2         0         0         0         0        21         1         0         0         0         0         0
        92.25%    51.47%     0.00%     0.00%     0.00%    46.87%     0.00%     0.00%     0.00%     0.00%    83.15%    96.93%    85.37%     0.00%     0.00%     0.00%    27.20%
-optimistic cost: 3.05e4  average probability: 18.8%  average tok time: 23863
+optimistic cost: 3.05e4  average probability: 18.8%  average tok time: 23592
 Padding the suffix with a space.
 Narrator: UPSIDES TO GENDERED NOUNS
 T-Rex: There are probably some, right? Right?
@@ -164,7 +164,7 @@ T-Rex (punchline): If
             3         0         0         0         1         1         0       201         1         2         0         0         0         1
             3         0         0         0         0         0         0        20         0         1         0         0         0         0
        52.35%     0.00%     0.00%     0.00%    28.24%    33.44%     0.00%    77.12%    16.09%    52.49%     0.00%     0.00%     0.00%    38.41%
-optimistic cost: 1.68e2  average probability: 16.4%  average tok time: 23845
+optimistic cost: 1.68e2  average probability: 16.4%  average tok time: 23602
 Padding the suffix with a space.
 T-Rex: God, do YOU like poutine?
 God: MAN DOES P EQUAL NP
@@ -177,7 +177,7 @@ T-Rex (punchline): ...Actually
             3         0         0       213         5         0         0         0         9         2         1         0         0        30         6         1         0         7
             2         0         0        78         2         0         0         0         2         0         0         0         0         3         1         0         0         1
        64.96%     0.00%     0.00%    94.67%    70.59%     0.00%     0.00%     0.00%    63.84%    53.54%    22.94%     0.00%     0.00%    96.60%    88.60%    20.39%     0.00%    88.82%
-optimistic cost: 3.41e4  average probability: 7.5%  average tok time: 23780
+optimistic cost: 3.41e4  average probability: 7.5%  average tok time: 23546
 Padding the suffix with a space.
 T-Rex: Seeing as I missed Thanksgiving last month, I am celebrating a new holiday today, one which I...Sounds great! I'll bring some of my famous pumpkin pie!
 Utahraptor: You can never have too much pie!
@@ -189,7 +189,7 @@ T-Rex (punchline): American
             0         0         0         0        90         1         0         0         0         0         0         0         0         0         1
             0         0         0         0        36         1         0         0         0         0         0         0         0         0         0
         0.00%     0.00%     0.00%     0.00%    86.94%    75.54%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    54.92%
-optimistic cost: 7.40e1  average probability: 47.2%  average tok time: 23830
+optimistic cost: 7.40e1  average probability: 47.2%  average tok time: 23518
 Padding the suffix with a space.
 Heading: A MYSTERY STORY
 Text: Once upon a time there was guy who "knocked over" (broke into) a bank...er Prize-winning author Michael Chabon?
@@ -201,7 +201,7 @@ T-Rex (punchline): I
             6         0         0         1         2         2         4         0         0         0         0         0         0         3         0         0         0         0         0         0         1
             5         0         0         1         1         0         2         0         0         0         0         0         0         1         0         0         0         0         0         0         0
        41.34%     0.00%     0.00%    24.95%    40.38%    37.85%    50.56%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    48.21%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    55.61%
-optimistic cost: 1.44e2  average probability: 39.6%  average tok time: 23831
+optimistic cost: 1.44e2  average probability: 39.6%  average tok time: 23463
 Padding the suffix with a space.
 T-Rex: Shakespeare was a famous writer guy, but we know basically nothing about him! There's only a ...OW WHERE MY CAR KEYS ARE, SHAKESSPEARE
 Off panel: alack me! i'm trying to write some sonnets here, t-rex!
@@ -213,7 +213,7 @@ T-Rex (punchline): I
             7         0         0         0         2         0        28         0         0        32         0         0         0         0         3         2         0         0         0         4         0         0
             4         0         0         0         2         0        19         0         0        14         0         0         0         0         2         1         0         0         0         0         0         0
        56.85%     0.00%     0.00%     0.00%    62.12%     0.00%    96.79%     0.00%     0.00%    89.90%     0.00%     0.00%     0.00%     0.00%    63.70%    45.16%     0.00%     0.00%     0.00%    68.64%     0.00%     0.00%
-optimistic cost: 2.70e4  average probability: 27.1%  average tok time: 23911
+optimistic cost: 2.70e4  average probability: 27.1%  average tok time: 23380
 Padding the suffix with a space.
 T-Rex: In Super Mario Brothers, a mushroom turns you from Mario into Super Mario! You double in size...ts of extra lives and can do it all over again, so really if you don't live life to its fullest just try harder next time.
 T-Rex (punchline): Building
@@ -223,7 +223,7 @@ T-Rex (punchline): Building
            48         9       298         0         1         0         2         0         1         9         0
            19         4        82         0         0         0         0         0         0         0         0
        73.80%    46.58%    94.22%     0.00%    58.89%     0.00%    29.53%     0.00%    29.44%    68.73%     0.00%
-optimistic cost: 8.30e3  average probability: 5.8%  average tok time: 23969
+optimistic cost: 8.30e3  average probability: 5.8%  average tok time: 23462
 Padding the suffix with a space.
 T-Rex: Guys, guys! Check out my awesome trick!
 T-Rex: I'm a statue!
@@ -238,7 +238,7 @@ Off panel: Utahraptor
          4812         0         0        58         3         2         0         5        20         2         4
          1433         0         0         9         0         0         0         2         3         0         0
        99.76%     0.00%     0.00%    51.55%    77.54%    24.24%     0.00%    69.74%    93.55%    44.00%    40.83%
-optimistic cost: 1.72e5  average probability: 2.3%  average tok time: 24033
+optimistic cost: 1.72e5  average probability: 2.3%  average tok time: 23478
 Padding the suffix with a space.
 T-Rex: You know who's never been drunk? NOT EVER? NOT EVEN ONCE??
 God: IS IT YOU
@@ -252,7 +252,7 @@ T-Rex (punchline): Being
             1         1         0         1       187         1         0         0         0         2        28        15         0         0        13         1
             0         1         0         1        59         1         0         0         0         0         9         0         0         0         0         0
        63.10%    78.47%     0.00%    19.14%    89.45%    32.73%     0.00%     0.00%     0.00%    58.97%    92.57%    59.28%     0.00%     0.00%    38.55%    34.98%
-optimistic cost: 4.80e3  average probability: 8.7%  average tok time: 23961
+optimistic cost: 4.80e3  average probability: 8.7%  average tok time: 23442
 Padding the suffix with a space.
 T-Rex: I have come up with an excellent way to be happy! Every time someone says a sentence, I simpl... (punchline): "In the beginning God created the Heaven and the Earth. In my opinion, I mean, and I'm probably totally wrong!"
 God: SEE T-REX
@@ -263,7 +263,7 @@ God: THIS
             0         1         0         0         0         0         0        12         0         0        26         0         0         6         0         0         4         0         0         3       115         2         2         0         0
             0         1         0         0         0         0         0         5         0         0        17         0         0         2         0         0         0         0         0         0        23         0         0         0         0
         0.00%    46.94%     0.00%     0.00%     0.00%     0.00%     0.00%    64.82%     0.00%     0.00%    75.19%     0.00%     0.00%    30.83%     0.00%     0.00%    75.94%     0.00%     0.00%    50.94%    96.42%    69.90%    77.27%     0.00%     0.00%
-optimistic cost: 1.56e4  average probability: 19.0%  average tok time: 23751
+optimistic cost: 1.56e4  average probability: 19.0%  average tok time: 23268
 Padding the suffix with a space.
 Sign: ASK PROFESSOR SCIENCE
 T-Rex: Our first letter comes from "Chuggy G", who writes -
@@ -275,7 +275,7 @@ T-Rex (punchline): It's
            90        36         8         2         0         0         0         0         2         3         0
            24        10         3         0         0         0         0         0         0         0         0
        86.32%    80.16%    71.06%    14.45%     0.00%     0.00%     0.00%     0.00%    42.82%    89.03%     0.00%
-optimistic cost: 1.10e3  average probability: 7.2%  average tok time: 23806
+optimistic cost: 1.10e3  average probability: 7.2%  average tok time: 23337
 Padding the suffix with a space.
 Narrator: THE DAY T-REX INVENTED SOME NEW SLANG okay, the COMIC about the day t-rex invented some ne... the same food.
 Utahraptor: Geez.
@@ -288,7 +288,7 @@ T-Rex (punchline): I
           159        24         0         1         1         0        15         2         0         9         0         0         0         1         0         0         1
            72        14         0         1         0         0         7         0         0         1         0         0         0         0         0         0         0
        92.65%    91.15%     0.00%    14.54%    51.41%     0.00%    50.64%    29.37%     0.00%    60.44%     0.00%     0.00%     0.00%    54.65%     0.00%     0.00%    27.71%
-optimistic cost: 3.50e4  average probability: 15.2%  average tok time: 23746
+optimistic cost: 3.50e4  average probability: 15.2%  average tok time: 23300
 Padding the suffix with a space.
 T-Rex: Turns out, we're members of a social species! We need to see other people and if we don't we ...pect there to be SOME side effects, so why are you surprised to see 'em when we're running on FAT and BLOOD and WEIRD JUICES??
 T-Rex (punchline): Okay
@@ -298,7 +298,7 @@ T-Rex (punchline): Okay
             0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
             0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0         0
         0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 1.00e0  average probability: 99.1%  average tok time: 23643
+optimistic cost: 1.00e0  average probability: 99.1%  average tok time: 23218
 Padding the suffix with a space.
 T-Rex: So let's say I'm a painter, and I've studied really hard and I've worked really hard and I've...s. And I'm pretty sure Leonardo could have painted it better. And I'm pretty sure I'm talking about the Ninja Turtle there.
 T-Rex (punchline): Aaaaand
@@ -308,7 +308,7 @@ T-Rex (punchline): Aaaaand
             9         0         0         0        25         4         0         2         1         3        46         0         0         2         0        45         4
             3         0         0         0         5         3         0         0         0         0        13         0         0         0         0         2         0
        73.97%     0.00%     0.00%     0.00%    56.36%    62.86%     0.00%    60.03%    92.67%    41.56%    70.68%     0.00%     0.00%    73.56%     0.00%    97.73%    73.75%
-optimistic cost: 4.03e3  average probability: 6.9%  average tok time: 23604
+optimistic cost: 4.03e3  average probability: 6.9%  average tok time: 23206
 Padding the suffix with a space.
 T-Rex: Dang girl, you know I wanna kiss you baby!
 T-Rex: Girl you know if I get your consent I'm gon...those excretion covered lips all up against you.
@@ -320,7 +320,7 @@ T-Rex (punchline): Girl
            18        35         2         0         0         2        13         0        17         5         0        12         0         2
            11        19         1         0         0         0         2         0         0         3         0         2         0         1
        93.55%    55.65%    43.11%     0.00%     0.00%    46.61%    80.99%     0.00%    72.28%    81.37%     0.00%    92.11%     0.00%    86.05%
-optimistic cost: 3.46e4  average probability: 5.5%  average tok time: 23588
+optimistic cost: 3.46e4  average probability: 5.5%  average tok time: 23205
 Padding the suffix with a space.
 T-Rex: In Scrabble, you and your friends pretend that you're unable to speak OR write, but luckily, ... The players, having survived their ordeal, are brought closer together. It is, in the full sense of the word, a beautiful game.
 T-Rex (punchline): Oh
@@ -330,7 +330,7 @@ T-Rex (punchline): Oh
            36         5         0        12         0        21         3         3         1         1         0       200         4        61        10         1         0
            19         3         0         5         0        14         2         0         1         0         0        17         0         3         0         0         0
        94.42%    36.43%     0.00%    51.41%     0.00%    58.65%    77.81%    68.65%    47.88%    37.90%     0.00%    92.54%    78.88%    96.98%    53.07%    49.14%     0.00%
-optimistic cost: 3.11e6  average probability: 3.7%  average tok time: 23571
+optimistic cost: 3.11e6  average probability: 3.7%  average tok time: 23196
 Padding the suffix with a space.
 T-Rex: The buds of a young sunflower turn towards the sun, following its course throughout the day. ...errific! So the only thing to argue for consciousness is that it lets us practice intentional self harm? YAY FOR SELF AWARENESS??
 T-Rex (punchline): I
@@ -340,7 +340,7 @@ T-Rex (punchline): I
           708         3         6         0        14         0         2        10         0        24         0         0         1        31         0         0
           362         3         5         0         7         0         1         2         0         7         0         0         0         3         0         0
        98.81%    44.70%    58.24%     0.00%    84.45%     0.00%    33.53%    45.28%     0.00%    65.00%     0.00%     0.00%    17.75%    79.41%     0.00%     0.00%
-optimistic cost: 1.34e7  average probability: 5.2%  average tok time: 23534
+optimistic cost: 1.34e7  average probability: 5.2%  average tok time: 23185
 Padding the suffix with a space.
 T-Rex: My last attempt to be a motivational speaker didn't go so well. But this time I have a plan: ...ase, keep what you tame."
 Off panel: Nurses?
@@ -352,7 +352,7 @@ T-Rex (punchline): Okay,
            39         2         4         2         0         6         4       443         0         0       593        15         1
            28         1         2         0         0         2         0        37         0         0        24         0         0
        79.82%    49.73%    72.42%    34.18%     0.00%    26.74%    32.77%    99.67%     0.00%     0.00%    98.60%    55.80%    27.84%
-optimistic cost: 4.96e5  average probability: 2.0%  average tok time: 23588
+optimistic cost: 4.96e5  average probability: 2.0%  average tok time: 23242
 Padding the suffix with a space.
 T-Rex: Turns out that Bachelor Chow exists! All you need to do is eat...
 T-Rex: PET FOOD
@@ -365,7 +365,7 @@ T-Rex (punchline): How
             1         0        45         0         0         0         0         0         3         2         0         9         1         8         0        43         0         3
             0         0        28         0         0         0         0         0         0         2         0         3         0         3         0         1         0         1
        32.52%     0.00%    79.93%     0.00%     0.00%     0.00%     0.00%     0.00%    29.92%    58.88%     0.00%    79.05%    28.12%    65.50%     0.00%    66.33%     0.00%    64.40%
-optimistic cost: 5.57e3  average probability: 11.8%  average tok time: 23527
+optimistic cost: 5.57e3  average probability: 11.8%  average tok time: 23198
 Padding the suffix with a space.
 T-Rex: Man, I'm amazing! I'm a machine that turns FOOD into IDEAS!
 Narrator: T-REX IN: "MAN, I'M AMA...labour (summing two numbers). It was a revolutionary idea!
@@ -378,7 +378,7 @@ T-Rex (punchline): I
            34         7         2        17        33         0         0         0         0         0         0         3         0         0         0       648         0         0       950         0
            15         4         1         5         7         0         0         0         0         0         0         1         0         0         0        13         0         0         4         0
        81.98%    42.67%    17.30%    68.78%    94.20%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    28.70%     0.00%     0.00%     0.00%    87.94%     0.00%     0.00%    93.85%     0.00%
-optimistic cost: 1.08e6  average probability: 8.5%  average tok time: 23437
+optimistic cost: 1.08e6  average probability: 8.5%  average tok time: 23125
 Padding the suffix with a space.
 T-Rex: It's been three days and neither "Life of Crime" nor "Meet Someone who Doesn't Suck" have mad...E BECAUSE OF TRANSLATION ISSUES
 T-Rex (punchline): Hey everyone! You know what needs more jokes? ONLY EVERY RELIGIOUS TEXT EVER!!
@@ -390,7 +390,7 @@ God: NOW
             9         0         1         0         0         0         0         0         1         0         0         0         4        31         0         0         0         0
             7         0         0         0         0         0         0         0         0         0         0         0         2        17         0         0         0         0
        85.19%     0.00%    34.51%     0.00%     0.00%     0.00%     0.00%     0.00%    47.45%     0.00%     0.00%     0.00%    26.84%    94.90%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 4.32e2  average probability: 31.2%  average tok time: 23406
+optimistic cost: 4.32e2  average probability: 31.2%  average tok time: 23099
 Padding the suffix with a space.
 Narrator: DINOSAUR COMICS PRESENTS: "DEGREES OF INFORMATION"
 Narrator: FIRST HAND:
@@ -402,7 +402,7 @@ T-Rex (punchline): Okay
             5         1        17         8         0         0         0         0         0         0         0         0         4
             2         0         9         5         0         0         0         0         0         0         0         0         1
        56.62%    21.39%    85.80%    60.42%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    79.97%
-optimistic cost: 3.60e2  average probability: 22.2%  average tok time: 23427
+optimistic cost: 3.60e2  average probability: 22.2%  average tok time: 23134
 Padding the suffix with a space.
 God: T-REX YOU'RE SO DOWN ON THESE OLD FAIRY TALES WHY DON'T YOU TRY WRITING ONE
 T-Rex: The ability ...le. I need to let him know this without hurting his feelings - or do I? Could it be best to let him make his own mistakes?"
@@ -413,7 +413,7 @@ T-Rex (punchline): Because
             1         0         0         0         0         3         2       141         0         0         0         1         5         0         0         0         0
             1         0         0         0         0         0         1        16         0         0         0         0         0         0         0         0         0
        25.59%     0.00%     0.00%     0.00%     0.00%    89.19%    69.96%    91.91%     0.00%     0.00%     0.00%    25.24%    48.08%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 6.80e1  average probability: 23.5%  average tok time: 23422
+optimistic cost: 6.80e1  average probability: 23.5%  average tok time: 23139
 Padding the suffix with a space.
 T-Rex: Hello world! I have the following announcements to make!
 T-Rex: The first announcement is tha...ty!
@@ -427,4 +427,4 @@ God: DUDE
             4         0         0         9         0         0        23         0         1         0         0         0         4         0         8         0         0         0         0         0         0
             1         0         0         9         0         0        19         0         1         0         0         0         1         0         2         0         0         0         0         0         0
        61.95%     0.00%     0.00%    59.22%     0.00%     0.00%    90.37%     0.00%    44.69%     0.00%     0.00%     0.00%    66.06%     0.00%    77.35%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
-optimistic cost: 4.80e3  average probability: 31.2%  average tok time: 23343
+optimistic cost: 4.80e3  average probability: 31.2%  average tok time: 23067
