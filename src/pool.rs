@@ -1,11 +1,12 @@
 #![allow(dead_code)]
 
 use assoc::AssocExt;
+use serde::{Deserialize, Serialize};
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
 
-#[derive(PartialEq, Eq, Hash, Clone, Copy)]
+#[derive(PartialEq, Eq, Hash, Clone, Copy, Deserialize, Serialize)]
 struct Char(u8);
 
 impl Char {
@@ -164,6 +165,7 @@ impl VocabBuilder {
     }
 }
 
+#[derive(Deserialize, Serialize, Clone)]
 pub struct WordState {
     cur_word: Vec<i32>,
 }
@@ -220,7 +222,7 @@ impl WordState {
     }
 }
 
-#[derive(Clone)]
+#[derive(Clone, Deserialize, Serialize)]
 pub struct LetterPool {
     lowercase: [u8; 26],
     other_chars: Vec<(Char, u8)>,

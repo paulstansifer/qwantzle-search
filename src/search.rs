@@ -11,6 +11,7 @@ use indicatif::ProgressBar;
 use llama_cpp::{LlamaModel, SessionParams, Token};
 use llama_cpp_sys::llama_token_data;
 use priority_queue::PriorityQueue;
+use serde::{Deserialize, Serialize};
 
 use crate::{
     corpus::Strip,
@@ -20,7 +21,7 @@ use crate::{
 };
 
 // Reversed ordering for the priority queue, and pretending to really be `Cmp`.
-#[derive(PartialOrd, PartialEq, Clone, Copy)]
+#[derive(PartialOrd, PartialEq, Clone, Copy, Serialize, Deserialize)]
 struct Score(f64);
 
 impl Eq for Score {}
@@ -37,6 +38,39 @@ struct Node {
     probability: f64, // f32 is not quite precise enough!
     tok_probs: Vec<f32>,
     chars_so_far: u8,
+}
+
+#[derive(Serialize, Deserialize)]
+struct SerNode {
+    text: Vec<i32>,
+    word_state: WordState,
+    remaining: LetterPool,
+    probability: f64, // f32 is not quite precise enough!
+    tok_probs: Vec<f32>,
+    chars_so_far: u8,
+}
+
+impl SerNode {
+    fn from(n: &Node) -> SerNode {
+        SerNode {
+            text: n.text.iter().map(|t| t.0).collect(),
+            word_state: n.word_state.clone(),
+            remaining: n.remaining.clone(),
+            probability: n.probability,
+            tok_probs: n.tok_probs.clone(),
+            chars_so_far: n.chars_so_far,
+        }
+    }
+    fn to(&self) -> Node {
+        Node {
+            text: self.text.iter().map(|i| Token(*i)).collect(),
+            word_state: self.word_state.clone(),
+            remaining: self.remaining.clone(),
+            probability: self.probability,
+            tok_probs: self.tok_probs.clone(),
+            chars_so_far: self.chars_so_far,
+        }
+    }
 }
 
 impl std::hash::Hash for Node {
@@ -58,6 +92,18 @@ type Q = PriorityQueue<Node, Score>;
 
 fn trim_queue(q: Q, elts: usize) -> Q {
     Q::from_iter(q.into_sorted_iter().take(elts))
+}
+
+fn save_queue(q: &Q) {
+    let srs: Vec<SerNode> = q.iter().map(|n| SerNode::from(&n.0)).collect();
+    let serialized: Vec<u8> = bincode::serialize(&srs).unwrap();
+
+    println!(
+        "Serializing {} elements would use {} bytes ({} MB)",
+        q.len(),
+        serialized.len(),
+        serialized.len() / (1024 * 1024)
+    );
 }
 
 const TOK_BUFFER: u32 = 25;
@@ -407,9 +453,11 @@ pub fn practice_search(
                 break;
             }
         }
+
         if q.len() >= 1_000_000 {
             progress.println(format!("Queue length is {}; trimming to 500k.", q.len()));
             q = trim_queue(q, 500_000);
+            // save_queue(&q);
         }
         if let Some((node, p)) = q.pop() {
             let cur_text = model.decode_tokens(&node.text);
