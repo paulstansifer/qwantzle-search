@@ -232,6 +232,7 @@ pub struct LetterPool {
 
 #[derive(Default)]
 struct PoolTok {
+    /// Stored in order of first occurrence
     chars: Vec<(Char, u8)>,
 }
 
@@ -413,6 +414,26 @@ impl LetterPool {
             let entry = self.entry(*c);
             *entry -= *count; // panics if this was invalid
         }
+
+        // Do we still respect tied-letter order?
+        let mut ties_invalidated = false;
+        if let Some(ties) = self.tie_sequences.as_mut() {
+            'char_in_tok: for c in tok.chars.keys() {
+                for occ_list in &mut *ties {
+                    if occ_list.first() == Some(c) {
+                        occ_list.remove(0); // Great, the letter we were hoping for.
+                        break; // Only one occ_list could be affected.
+                    } else if occ_list.contains(c) {
+                        ties_invalidated = true;
+                        break 'char_in_tok;
+                    }
+                }
+            }
+        }
+
+        if ties_invalidated {
+            self.tie_sequences = None;
+        }
     }
 
     /// Panics if the letters aren't available.
@@ -474,6 +495,7 @@ fn pool_test() {
         }
 
         assert!(pool.has_pt(&PoolTok::from_str(w)));
+        assert!(pool.respects_ties());
         pool.remove_pt(&PoolTok::from_str(w));
     }
 
@@ -488,4 +510,53 @@ fn pool_test() {
     pool.remove_pt(&PoolTok::from_str("haha"));
     assert!(pool.has_pt(&PoolTok::from_str("wow")));
     pool.remove_pt(&PoolTok::from_str("wow"));
+}
+
+#[test]
+fn ties_test() {
+    let abcdef_pool = LetterPool::from_text("aaa bbb ccc dd ee ff x");
+    assert!(abcdef_pool.respects_ties());
+
+    {
+        let mut pool = abcdef_pool.clone();
+        pool.remove_str("abc");
+        assert!(pool.respects_ties());
+        pool.remove_str("def");
+        assert!(pool.respects_ties());
+        pool.remove_str("x");
+        assert!(pool.respects_ties());
+    }
+
+    {
+        // Letters that occur different numbers of times can happen in any order:
+        let mut pool = abcdef_pool.clone();
+        pool.remove_str("x");
+        assert!(pool.respects_ties());
+        pool.remove_str("def");
+        assert!(pool.respects_ties());
+        pool.remove_str("abc");
+        assert!(pool.respects_ties());
+    }
+
+    {
+        let mut pool = abcdef_pool.clone();
+        pool.remove_str("cba");
+        assert!(!pool.respects_ties());
+    }
+
+    {
+        let mut pool = abcdef_pool.clone();
+        pool.remove_str("b");
+        assert!(!pool.respects_ties());
+    }
+
+    {
+        let mut pool = abcdef_pool.clone();
+        pool.remove_str("abc");
+        assert!(pool.respects_ties());
+        pool.remove_str("cba");
+        assert!(pool.respects_ties()); // Only the first letters matter!
+        pool.remove_str("f");
+        assert!(!pool.respects_ties()); // But we still know d->e->f!
+    }
 }

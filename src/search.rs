@@ -228,6 +228,9 @@ impl Node {
         rlnn: &LetterNet,
     ) -> Option<(Node, Score)> {
         let new_remaining = self.remaining.try_remove(t, model)?;
+        if !new_remaining.respects_ties() {
+            return None;
+        }
         // let done = new_remaining.size() == 0;
         let new_word_state = self.word_state.add_tok(t, vocab)?;
 

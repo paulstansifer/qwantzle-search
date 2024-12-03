@@ -359,8 +359,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             continue;
         }
 
-        let search_res =
-            search::practice_search(strip, model, words, Some(10_000 /*250000*/), &mut report);
+        let search_res = search::practice_search(strip, model, words, Some(250000), &mut report);
         let result_msg = format!(
             "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,
