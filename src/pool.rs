@@ -6,7 +6,7 @@ use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
 
-#[derive(PartialEq, Eq, Hash, Clone, Copy, Deserialize, Serialize)]
+#[derive(PartialEq, Eq, Hash, Clone, Copy, Deserialize, Serialize, Debug)]
 struct Char(u8);
 
 impl Char {
@@ -226,6 +226,7 @@ impl WordState {
 pub struct LetterPool {
     lowercase: [u8; 26],
     other_chars: Vec<(Char, u8)>,
+    long_tok: Option<i32>,
     last_letter: Option<Char>,
     tie_sequences: Option<Vec<Vec<Char>>>, // if we need to save memory, do Option<[u8; 5]>
 }
@@ -341,10 +342,12 @@ impl LetterPool {
         self.lookup(Char(c))
     }
 
-    pub fn from_text(text: &str) -> LetterPool {
+    // Add the model as an optional for finding the longest token.
+    pub fn from_text(text: &str, look_at_ties: bool) -> LetterPool {
         let mut res = LetterPool {
             lowercase: [0; 26],
             other_chars: vec![],
+            long_tok: None,
             last_letter: None,
             tie_sequences: None,
         };
@@ -360,6 +363,10 @@ impl LetterPool {
             if c.is_letter() {
                 res.last_letter = Some(c);
             }
+        }
+
+        if !look_at_ties {
+            return res;
         }
 
         let mut tie_seqs = vec![vec![]; 7];
@@ -386,6 +393,23 @@ impl LetterPool {
         return res;
     }
 
+    pub fn set_longest_tok_from(&mut self, text: &str, model: &llama_cpp::LlamaModel) {
+        let toks = model.tokenize_bytes(text, false, false).unwrap();
+        let mut longest_tok_len = 0;
+        let mut longest_tok = toks[0];
+        for t in toks {
+            let t_len = model.detokenize(t).len();
+            if t_len > longest_tok_len {
+                longest_tok_len = t_len;
+                longest_tok = t;
+            }
+        }
+
+        self.remove(longest_tok, model); // need to do this before the next line!
+        self.long_tok = Some(longest_tok.0);
+    }
+
+    /// Does not respect `.long_tok`!
     fn has_pt(&self, tok: &PoolTok) -> bool {
         for (c, count) in &tok.chars {
             let available = self.lookup(*c);
@@ -402,6 +426,11 @@ impl LetterPool {
     }
 
     pub fn has(&self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> bool {
+        if Some(tok.0) == self.long_tok {
+            // the theory of ties doesn't affect `has`!
+            return true;
+        }
+
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.has_pt(pt)
@@ -409,13 +438,17 @@ impl LetterPool {
     }
 
     /// Panics if the letters aren't available.
-    fn remove_pt(&mut self, tok: &PoolTok) {
-        for (c, count) in &tok.chars {
-            let entry = self.entry(*c);
-            *entry -= *count; // panics if this was invalid
+    fn remove_pt(&mut self, tok: &PoolTok, is_the_long_tok: bool) {
+        if is_the_long_tok {
+            self.long_tok = None;
+        } else {
+            for (c, count) in &tok.chars {
+                let entry = self.entry(*c);
+                *entry -= *count; // panics if this was invalid
+            }
         }
 
-        // Do we still respect tied-letter order?
+        // Do we still respect tied-letter order?  (It matters even if this is the long token.)
         let mut ties_invalidated = false;
         if let Some(ties) = self.tie_sequences.as_mut() {
             'char_in_tok: for c in tok.chars.keys() {
@@ -440,20 +473,22 @@ impl LetterPool {
     pub fn remove(&mut self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
-            self.remove_pt(pt)
+            self.remove_pt(pt, Some(tok.0) == self.long_tok)
         })
     }
 
+    /// Intended for testing.
     /// Panics if the letters aren't available.
     pub fn remove_str(&mut self, s: &str) {
-        self.remove_pt(&PoolTok::from_str(s));
+        assert!(self.long_tok == None); // Can't respect this, if present!
+        self.remove_pt(&PoolTok::from_str(s), false);
     }
 
     /// Creates a copy, unless it's not possible
-    fn try_remove_pt(&self, tok: &PoolTok) -> Option<Self> {
-        if self.has_pt(tok) {
+    fn try_remove_pt(&self, tok: &PoolTok, is_the_long_tok: bool) -> Option<Self> {
+        if is_the_long_tok || self.has_pt(tok) {
             let mut res = (*self).clone();
-            res.remove_pt(tok);
+            res.remove_pt(tok, is_the_long_tok);
             return Some(res);
         }
         return None;
@@ -462,7 +497,7 @@ impl LetterPool {
     pub fn try_remove(&self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> Option<Self> {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
-            self.try_remove_pt(pt)
+            self.try_remove_pt(pt, Some(tok.0) == self.long_tok)
         })
     }
 }
@@ -482,7 +517,7 @@ impl TokCache {
 
 #[test]
 fn pool_test() {
-    let mut pool = LetterPool::from_text("an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!");
+    let mut pool = LetterPool::from_text("an okay story, but as a Terminator sequel, it profoundly disappoints on every conceivable level!", true);
 
     assert!(pool.has_pt(&PoolTok::from_str("okay")));
     assert!(pool.has_pt(&PoolTok::from_str(" okay")));
@@ -496,7 +531,7 @@ fn pool_test() {
 
         assert!(pool.has_pt(&PoolTok::from_str(w)));
         assert!(pool.respects_ties());
-        pool.remove_pt(&PoolTok::from_str(w));
+        pool.remove_pt(&PoolTok::from_str(w), /*is_the_long_tok*/ false);
     }
 
     assert!(!pool.has_pt(&PoolTok::from_str("o")));
@@ -504,17 +539,25 @@ fn pool_test() {
     assert!(pool.empty_of_letters());
     assert_eq!(pool.size(), 0);
 
-    let mut pool = LetterPool::from_text("haha wow!");
+    let mut pool = LetterPool::from_text("haha wow!", false);
     assert!(!pool.has_pt(&PoolTok::from_str("wow"))); // 'w' has to be the last letter.
     assert!(pool.has_pt(&PoolTok::from_str("haha")));
-    pool.remove_pt(&PoolTok::from_str("haha"));
+    pool.remove_pt(&PoolTok::from_str("haha"), false);
     assert!(pool.has_pt(&PoolTok::from_str("wow")));
-    pool.remove_pt(&PoolTok::from_str("wow"));
+    pool.remove_pt(&PoolTok::from_str("wow"), false);
+
+    let mut pool_1663 = LetterPool::from_text("ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIIrrrfffbbwwkcmvg:,!!", false);
+
+    for w in "I have the fundamental theories that you study final toenail: I doubt null, I hold you frog ditty tons stoic break yes wow!!".split(" ") {
+        pool_1663.remove_str(w);
+    }
+    assert!(pool_1663.empty_of_letters());
+    assert!(!pool_1663.respects_ties());
 }
 
 #[test]
 fn ties_test() {
-    let abcdef_pool = LetterPool::from_text("aaa bbb ccc dd ee ff x");
+    let abcdef_pool = LetterPool::from_text("aaa bbb ccc dd ee ff x", /*look_at_ties=*/ true);
     assert!(abcdef_pool.respects_ties());
 
     {

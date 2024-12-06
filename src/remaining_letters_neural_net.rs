@@ -133,7 +133,7 @@ impl LetterNet {
 fn model_distrusts_toenails() {
     let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
 
-    let mut pool_1663 = LetterPool::from_text("ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!");
+    let mut pool_1663 = LetterPool::from_text("ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!", /*look_at_ties=*/ false);
 
     // Ignore starting score; for all we know, the string does contain "toenails" once!
     pool_1663.remove_str("toenails");
@@ -154,14 +154,15 @@ fn model_distrusts_toenails() {
 
     let no_vowels = LetterPool::from_text(
         "ttttttttttttllllllnnnnnnuuuuuusssssdddddhhhhhyyyyyrrrfffbbwwkcmvg:,!!",
+        /*look_at_ties=*/ false,
     );
-    let no_vowels_short = LetterPool::from_text("ttttt!!");
+    let no_vowels_short = LetterPool::from_text("ttttt!!", /*look_at_ties=*/ false);
 
     assert!(rlnn.evaluate(&no_vowels) < 0.01);
     assert!(rlnn.evaluate(&no_vowels_short) < 0.01);
 
     // Empty string *ought* to be alright, but it's an edge case...
-    assert!(rlnn.evaluate(&LetterPool::from_text("")) > 0.25);
+    assert!(rlnn.evaluate(&LetterPool::from_text("", /*look_at_ties=*/ false)) > 0.25);
 
     let sentence = [
         "I", "am", "saying", "a", "normal", "thing", "for", "a", "T-Rex", "to", "say!!",
@@ -170,10 +171,16 @@ fn model_distrusts_toenails() {
     for i in 0..sentence.len() {
         assert!(
             rlnn.evaluate(&LetterPool::from_text(
-                &sentence[i..sentence.len()].join("")
+                &sentence[i..sentence.len()].join(""),
+                /*look_at_ties=*/ false
             )) > 0.65 // In practice, I saw this bottom out at 7.8.
         );
     }
 
-    assert!(rlnn.evaluate(&LetterPool::from_text("Sphinx of qwartz, judge my vow!!")) < 0.2);
+    assert!(
+        rlnn.evaluate(&LetterPool::from_text(
+            "Sphinx of qwartz, judge my vow!!",
+            /*look_at_ties=*/ false
+        )) < 0.2
+    );
 }

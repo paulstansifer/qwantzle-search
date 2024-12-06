@@ -88,22 +88,82 @@ impl PartialEq for Node {
 }
 impl Eq for Node {}
 
-type Q = PriorityQueue<Node, Score>;
-
-fn trim_queue(q: Q, elts: usize) -> Q {
-    Q::from_iter(q.into_sorted_iter().take(elts))
+struct Q {
+    ties_respecting: PriorityQueue<Node, Score>,
+    non_ties_respecting: PriorityQueue<Node, Score>,
 }
 
-fn save_queue(q: &Q) {
-    let srs: Vec<SerNode> = q.iter().map(|n| SerNode::from(&n.0)).collect();
-    let serialized: Vec<u8> = bincode::serialize(&srs).unwrap();
+impl Q {
+    fn new() -> Q {
+        Q {
+            ties_respecting: PriorityQueue::<Node, Score>::new(),
+            non_ties_respecting: PriorityQueue::<Node, Score>::new(),
+        }
+    }
+    fn trim(self, elts: usize) -> Q {
+        Q {
+            ties_respecting: PriorityQueue::<Node, Score>::from_iter(
+                self.ties_respecting.into_sorted_iter().take(elts),
+            ),
+            non_ties_respecting: PriorityQueue::<Node, Score>::from_iter(
+                self.non_ties_respecting.into_sorted_iter().take(elts),
+            ),
+        }
+    }
 
-    println!(
-        "Serializing {} elements would use {} bytes ({} MB)",
-        q.len(),
-        serialized.len(),
-        serialized.len() / (1024 * 1024)
-    );
+    fn len(&self) -> usize {
+        self.ties_respecting.len() + self.non_ties_respecting.len()
+    }
+
+    fn save(&self) {
+        let mut bytes = 0;
+        let mut elts = 0;
+        for priority_queue in [&self.ties_respecting, &self.non_ties_respecting] {
+            let srs: Vec<SerNode> = priority_queue.iter().map(|n| SerNode::from(&n.0)).collect();
+            let serialized: Vec<u8> = bincode::serialize(&srs).unwrap();
+            elts += priority_queue.len();
+            bytes += serialized.len();
+        }
+
+        println!(
+            "Serializing {} elements would use {} bytes ({} MB)",
+            elts,
+            bytes,
+            bytes / (1024 * 1024)
+        );
+    }
+
+    fn push(&mut self, n: Node, s: Score) {
+        if n.remaining.respects_ties() {
+            self.ties_respecting.push(n, s);
+        } else {
+            self.non_ties_respecting.push(n, s);
+        }
+    }
+
+    fn pop(&mut self, require_tie_respecting: bool) -> Option<(Node, Score)> {
+        if require_tie_respecting {
+            return self
+                .ties_respecting
+                .pop()
+                .or_else(|| self.non_ties_respecting.pop());
+        }
+
+        if let (Some((_, t_score)), Some((_, n_score))) =
+            (self.ties_respecting.peek(), self.non_ties_respecting.peek())
+        {
+            if t_score < n_score {
+                // `Scores` compare lower-is-better.
+                self.ties_respecting.pop()
+            } else {
+                self.non_ties_respecting.pop()
+            }
+        } else {
+            self.ties_respecting
+                .pop()
+                .or_else(|| self.non_ties_respecting.pop())
+        }
+    }
 }
 
 const TOK_BUFFER: u32 = 25;
@@ -212,11 +272,16 @@ impl Node {
         Node {
             text: vec![],
             word_state: WordState::new_empty(),
-            remaining: LetterPool::from_text(text),
+            remaining: LetterPool::from_text(text, /*look_at_ties=*/ false),
             probability: 1.0,
             tok_probs: vec![],
             chars_so_far: 0,
         }
+    }
+    fn new_with_longest_word(text: &str, model: &LlamaModel) -> Node {
+        let mut res = Node::new(text);
+        res.remaining.set_longest_tok_from(text, model);
+        res
     }
 
     fn push_token(
@@ -228,9 +293,6 @@ impl Node {
         rlnn: &LetterNet,
     ) -> Option<(Node, Score)> {
         let new_remaining = self.remaining.try_remove(t, model)?;
-        if !new_remaining.respects_ties() {
-            return None;
-        }
         // let done = new_remaining.size() == 0;
         let new_word_state = self.word_state.add_tok(t, vocab)?;
 
@@ -360,7 +422,11 @@ pub fn practice_search(
     report: &mut String,
 ) -> SearchResult {
     let mut q = Q::new();
-    q.push(Node::new(&strip.punchline), Score(1.0));
+    q.push(
+        //Node::new_with_longest_word(&strip.punchline, model),
+        Node::new(&strip.punchline),
+        Score(1.0),
+    );
 
     let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
 
@@ -390,7 +456,6 @@ pub fn practice_search(
     root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
 
     let mut longest_word_len = 0;
-    let mut longest_word = None;
     // Set up vocabulary restrictions
     let vocab = {
         let mut v_builder = VocabBuilder::default();
@@ -400,7 +465,6 @@ pub fn practice_search(
             v_builder.add_word(word, model, /*vary_case=*/ false);
             if word.len() > longest_word_len {
                 longest_word_len = word.len();
-                longest_word = Some(word); // ties are arbitrarily broken
             }
         }
 
@@ -414,24 +478,6 @@ pub fn practice_search(
 
         v_builder.build(/*disabled=*/ false)
     };
-
-    let mut longest_word_as_token = None;
-    for word in [
-        longest_word.unwrap(),
-        &format!(" {}", longest_word.unwrap()),
-    ] {
-        let toks = model.tokenize_bytes(&word, false, false).unwrap();
-        if toks.len() == 1 {
-            longest_word_as_token = Some(toks.first().unwrap());
-        }
-        println!(
-            "LW toks: {:?}",
-            toks.iter()
-                .map(|t| model.decode_tokens(&[*t]))
-                .collect::<Vec<_>>()
-                .join("|")
-        );
-    }
 
     // Set up the letter pool
     let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
@@ -457,12 +503,15 @@ pub fn practice_search(
             }
         }
 
-        if q.len() >= 1_000_000 {
-            progress.println(format!("Queue length is {}; trimming to 500k.", q.len()));
-            q = trim_queue(q, 500_000);
+        if q.len() >= 3_000_000 {
+            progress.println(format!(
+                "Queue length is {}; trimming to 500k each.",
+                q.len()
+            ));
+            q = q.trim(500_000);
             // save_queue(&q);
         }
-        if let Some((node, p)) = q.pop() {
+        if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ step % 4 == 0) {
             let cur_text = model.decode_tokens(&node.text);
 
             if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {

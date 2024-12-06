@@ -163,7 +163,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     //     stats.truncate_times.push(before_trn.elapsed());
     // }
 
-    let mut letter_pool = pool::LetterPool::from_text(&strip.punchline);
+    let mut letter_pool = pool::LetterPool::from_text(&strip.punchline, /*ties*/ false);
 
     write!(
         stats.details,
@@ -283,6 +283,10 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel, args: &Args) {
     let char_min = 45;
     let char_max = 80;
+
+    let _quick_check_strips = [
+        694, 1096, 205, 2231, 1518, 1916, 206, 1084, 1055, 1375, 1073,
+    ];
 
     let excused_strips = [
         2199, // Ought to get it, though all-caps makes it harder (has trouble with "BUSTING")
