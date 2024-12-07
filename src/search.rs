@@ -278,7 +278,7 @@ impl Node {
             chars_so_far: 0,
         }
     }
-    fn new_with_longest_word(text: &str, model: &LlamaModel) -> Node {
+    fn new_with_longest_tok(text: &str, model: &LlamaModel) -> Node {
         let mut res = Node::new(text);
         res.remaining.set_longest_tok_from(text, model);
         res
@@ -423,8 +423,8 @@ pub fn practice_search(
 ) -> SearchResult {
     let mut q = Q::new();
     q.push(
-        //Node::new_with_longest_word(&strip.punchline, model),
-        Node::new(&strip.punchline),
+        Node::new_with_longest_tok(&strip.punchline, model),
+        // Node::new(&strip.punchline),
         Score(1.0),
     );
 
