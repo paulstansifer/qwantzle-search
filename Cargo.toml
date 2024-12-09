@@ -15,8 +15,8 @@ name = "aux"
 path = "src/aux.rs"
 
 [dependencies]
-llama_cpp = { path = "../lcr-bumped/crates/llama_cpp" }
-llama_cpp_sys = { path = "../lcr-bumped/crates/llama_cpp_sys" }
+llama_cpp = { path = "../llama_cpp-rs/crates/llama_cpp" }
+llama_cpp_sys = { path = "../llama_cpp-rs/crates/llama_cpp_sys" }
 csv = "1.1"
 indicatif = "0.17"
 clap = { version = "4.5.18", features = ["derive"] }
