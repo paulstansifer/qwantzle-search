@@ -38,6 +38,7 @@ struct Node {
     probability: f64, // f32 is not quite precise enough!
     tok_probs: Vec<f32>,
     chars_so_far: u8,
+    depth_at_pruning: u32,
 }
 
 #[derive(Serialize, Deserialize)]
@@ -48,6 +49,7 @@ struct SerNode {
     probability: f64, // f32 is not quite precise enough!
     tok_probs: Vec<f32>,
     chars_so_far: u8,
+    depth_at_pruning: u32,
 }
 
 impl SerNode {
@@ -59,6 +61,7 @@ impl SerNode {
             probability: n.probability,
             tok_probs: n.tok_probs.clone(),
             chars_so_far: n.chars_so_far,
+            depth_at_pruning: n.depth_at_pruning,
         }
     }
     fn to(&self) -> Node {
@@ -69,6 +72,7 @@ impl SerNode {
             probability: self.probability,
             tok_probs: self.tok_probs.clone(),
             chars_so_far: self.chars_so_far,
+            depth_at_pruning: self.depth_at_pruning,
         }
     }
 }
@@ -103,10 +107,24 @@ impl Q {
     fn trim(self, elts: usize) -> Q {
         Q {
             ties_respecting: PriorityQueue::<Node, Score>::from_iter(
-                self.ties_respecting.into_sorted_iter().take(elts),
+                self.ties_respecting
+                    .into_sorted_iter()
+                    .enumerate()
+                    .map(|(i, (mut node, score))| {
+                        node.depth_at_pruning = std::cmp::max(node.depth_at_pruning, i as u32);
+                        (node, score)
+                    })
+                    .take(elts),
             ),
             non_ties_respecting: PriorityQueue::<Node, Score>::from_iter(
-                self.non_ties_respecting.into_sorted_iter().take(elts),
+                self.non_ties_respecting
+                    .into_sorted_iter()
+                    .enumerate()
+                    .map(|(i, (mut node, score))| {
+                        node.depth_at_pruning = std::cmp::max(node.depth_at_pruning, i as u32);
+                        (node, score)
+                    })
+                    .take(elts),
             ),
         }
     }
@@ -276,6 +294,7 @@ impl Node {
             probability: 1.0,
             tok_probs: vec![],
             chars_so_far: 0,
+            depth_at_pruning: 0,
         }
     }
     fn new_with_longest_tok(text: &str, model: &LlamaModel) -> Node {
@@ -305,6 +324,7 @@ impl Node {
             probability: self.probability * prob as f64,
             tok_probs: self.tok_probs.clone(),
             chars_so_far: self.chars_so_far + model.decode_tokens(&[t]).trim().len() as u8,
+            depth_at_pruning: self.depth_at_pruning,
         };
         res.text.push(t);
         res.tok_probs.push(prob);
@@ -492,6 +512,7 @@ pub fn practice_search(
     let mut step = 0;
     let mut score_progress_info = "Score progression: ".to_string();
     let mut log = String::new();
+    let mut deepest_node_accessed = 0;
     loop {
         progress.tick();
         if let Some(lim) = steps_limit {
@@ -512,6 +533,7 @@ pub fn practice_search(
             // save_queue(&q);
         }
         if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ step % 4 == 0) {
+            deepest_node_accessed = std::cmp::max(deepest_node_accessed, node.depth_at_pruning);
             let cur_text = model.decode_tokens(&node.text);
 
             if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {
@@ -583,6 +605,9 @@ pub fn practice_search(
     *report += &score_progress_info;
     *report += "\n";
     println!("{}", score_progress_info);
+
+    *report += &format!("Deepest node accessed: {deepest_node_accessed}\n");
+    println!("Deepest node accessed: {deepest_node_accessed}");
 
     std::fs::write(
         format!("reports/search-{}.txt", strip.id),

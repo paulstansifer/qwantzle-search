@@ -284,9 +284,31 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     let char_min = 45;
     let char_max = 80;
 
-    let _quick_check_strips = [
-        694, 1096, 205, 2231, 1518, 1916, 206, 1084, 1055, 1375, 1073,
-    ];
+    let get_strip = |id| strips.iter().find(|s| s.id == id).unwrap();
+
+    // From way back in the first round of testing: they were in the training set then, but are
+    // hold-outs in 3550!
+    let round_1_exemplars = vec![
+        1938, 876, 1218, 1575, 1737, 698, 1132, 1333, 1319, 392, 982, 1830, 1234, 1825, 1766, 1085,
+        1567, 1374, 177, 2169, 1056, 1006, 2406, 2157, 1216, 1562, 1510, 787, 2363, 287,
+    ]
+    .into_iter()
+    .map(get_strip)
+    .collect::<Vec<_>>();
+
+    // Hold-outs used in the first round of testing, retained for the 3550 models.
+    let round_2_exemplars = vec![
+        694, 2199, 819, 1977, 123, 1855, 1067, 1607, 1687, 353, 755, 2417, 2231, 1518, 1073, 1916,
+        1907, 206, 606, 1199, 2463, 1323, 1055, 1650, 1898, 2188, 1375, 1395, 2390, 2337,
+    ]
+    .into_iter()
+    .map(get_strip)
+    .collect::<Vec<_>>();
+
+    // Not necessarily holdouts in 3550.
+    // let _quick_check_strips = [
+    //     694, 1096, 205, 2231, 1518, 1916, 206, 1084, 1055, 1375, 1073,
+    // ];
 
     let excused_strips = [
         2199, // Ought to get it, though all-caps makes it harder (has trouble with "BUSTING")
@@ -302,12 +324,14 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         1004, // TEMPORARY; WE SHOULD GET THIS
     ];
 
-    let small_strips: Vec<&Strip> = strips
+    let exemplars: Vec<&Strip> = round_1_exemplars
         .iter()
+        .chain(round_2_exemplars.iter())
         .filter(|s| s.punchline.len() > char_min && s.punchline.len() <= char_max)
         .filter(|s| !s.punchline.contains("\n"))
         .filter(|s| !s.punchline.contains("(punchline)"))
         .filter(|s| !excused_strips.contains(&s.id))
+        .cloned()
         .collect();
 
     let mut stats = Stats::default();
@@ -336,7 +360,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         .open(&report_filename)
         .unwrap();
 
-    for strip in small_strips.iter().take(50) {
+    for strip in exemplars.iter().take(50) {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         println!(
             "{}: Estimated steps: {}. Avg. prob: {:.1}%",
