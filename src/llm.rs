@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use lazy_static::lazy_static;
 use llama_cpp_2::context::params::LlamaContextParams;
 use llama_cpp_2::context::LlamaContext;
@@ -5,7 +6,6 @@ use llama_cpp_2::llama_backend::LlamaBackend;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::AddBos;
 use llama_cpp_2::model::{params::LlamaModelParams, LlamaModel};
-use llama_cpp_2::sampling::LlamaSampler;
 use llama_cpp_2::token::LlamaToken;
 
 lazy_static! {
@@ -23,8 +23,8 @@ pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> Llama
 
 pub fn tok_to_str(t: LlamaToken, model: &LlamaModel) -> String {
     model
-        .token_to_str(t, llama_cpp_2::model::Special::Tokenize)
-        .expect("stringifying token")
+        .token_to_str(t, llama_cpp_2::model::Special::Plaintext)
+        .unwrap_or("<???>".to_string())
 }
 
 pub fn toks_to_str(t: &[LlamaToken], model: &LlamaModel) -> String {
@@ -127,10 +127,10 @@ impl<'a> Session<'a> {
                 }
             }
             if elts_needed == 0 {
-                panic!("Unable to find {top_p} total probability.");
+                println!("Warning: Unable to find {top_p} total probability.");
+            } else {
+                candidates.truncate(elts_needed);
             }
-
-            candidates.truncate(elts_needed);
         }
         self.score_time += before_score.elapsed().as_micros();
 

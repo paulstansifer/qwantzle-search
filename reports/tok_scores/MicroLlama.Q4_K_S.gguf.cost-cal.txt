@@ -1,0 +1,11 @@
+Not padding the suffix with a space.
+God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my ...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+T-Rex: NEVER
+T-Rex (punchline): -
+          has        an      anal       ogy      been        so  accurate       and personally       dam     aging
+        0.00%     1.49%     0.12%    99.03%     0.02%     0.78%     0.78%     0.79%     0.00%     0.09%    53.62%
+         1519        13       142         0       161        17        17         7      1413       122         0
+          242         7        59         0        56        11         4         2       207         4         0
+       91.82%    54.26%    72.04%     0.00%    95.96%    44.60%    31.00%    89.40%    96.52%    78.19%     0.00%
+optimistic cost: 1.24e12  average probability: 0.3%  average tok time: 5552

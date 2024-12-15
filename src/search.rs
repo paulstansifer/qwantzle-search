@@ -465,8 +465,8 @@ pub fn practice_search(
     loop {
         progress.tick();
 
-        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::Relaxed) {
-            println!("TODO: actually save and load");
+        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst) {
+            progress.abandon_with_message("TODO: actually save and load");
             break;
         }
 

@@ -1,14 +1,9 @@
 use clap::Parser;
 use indicatif::ProgressIterator;
-use llama_cpp_2::context::LlamaContext;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
-use llm::Session;
-use num_traits::sign;
-use std::cell::Cell;
 use std::fmt::Write;
-use std::os::unix::thread;
 use std::sync::atomic::AtomicBool;
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
@@ -77,11 +72,14 @@ struct Stats {
     strip_avg_probs: Vec<Vec<f64>>,
 }
 
-fn percentile<T: PartialOrd + Copy, U: num_traits::ToPrimitive>(
+fn percentile<T: PartialOrd + Copy + Default, U: num_traits::ToPrimitive>(
     samples: &Vec<T>,
     position: U,
     reverse: bool,
 ) -> T {
+    if samples.is_empty() {
+        return T::default();
+    }
     let mut samples_sorted = samples.clone();
     samples_sorted.sort_by(|a, b| a.partial_cmp(b).unwrap());
     if reverse {
@@ -358,6 +356,9 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         // }
 
         let search_res = search::practice_search(strip, model, words, Some(250000), &mut report);
+        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst) {
+            break;
+        }
         let result_msg = format!(
             "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) {:.0}s\n",
             strip.id,
@@ -386,7 +387,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
 fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let representative_strips: Vec<&Strip> = strips
         .iter()
-        .filter(|s| s.punchline.len() > 95 && s.punchline.len() < 120)
+        .filter(|s| s.punchline.len() > 70 && s.punchline.len() < 120)
         .collect();
 
     // for strip in representative_strips.iter().progress() {
@@ -402,21 +403,22 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     //     )
     // }
 
-    let exemplars: Vec<usize> = vec![
-        540, 2281, 2369, 2370, 1923, 2038, 811, 371, 1543, 2064, 1587, 2368, 951, 2297,
-    ];
+    // let exemplars: Vec<usize> = vec![
+    //     540, 2281, 2369, 2370, 1923, 2038, 811, 371, 1543, 2064, 1587, 2368, 951, 2297,
+    // ];
     // Some other proposed exemplars: 1448, 1699, 1551, 1392, 1959
 
     let mut stats = Stats::default();
     let mut costs = vec![];
     let mut avg_probs = vec![];
-    for strip in strips.iter().progress() {
-        if !exemplars.contains(&strip.id) {
-            continue;
-        }
+    for strip in representative_strips.iter().progress() {
         let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
         costs.push(cost);
         avg_probs.push(avg_prob);
+
+        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst) {
+            break;
+        }
     }
     std::fs::write(
         format!(
@@ -477,27 +479,28 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
         )
     );
 
+    print!("Token running average probs (2/1%): ");
+
     for tok_id in 0..10 {
         let mut tok_avg_probs = vec![];
         for sap in &stats.strip_avg_probs {
+            if sap.len() <= tok_id {
+                continue;
+            }
             tok_avg_probs.push(sap[tok_id]);
         }
-        println!(
-            "Token {} running average probability: {}",
-            tok_id,
-            percentile_table_2_digits_percentage!(
-                &tok_avg_probs,
-                (50, 25, 20, 10, 5, 2, 1),
-                "{:.2}",
-                false
-            )
+
+        print!(
+            "{tok_id}: {:.2}%/{:.2}%   ",
+            percentile(&tok_avg_probs, 2, false) * 100.0,
+            percentile(&tok_avg_probs, 1, false) * 100.0
         );
     }
 
     println!();
 
     println!(
-        "Average token time: {:.0}",
+        "Average token time: {:.0}ms",
         stats.tok_times.iter().sum::<u128>() as f32 / stats.tok_times.len() as f32,
     );
 }
@@ -571,7 +574,7 @@ fn main() {
 
     std::thread::spawn(move || {
         for _ in signals.forever() {
-            TIME_TO_QUIT.store(false, std::sync::atomic::Ordering::Relaxed);
+            TIME_TO_QUIT.store(true, std::sync::atomic::Ordering::SeqCst);
         }
     });
 
@@ -597,8 +600,8 @@ fn main() {
             complete(&pfx, 200, &model);
         }
     } else {
-        // For consistency (not withheld from training!)
-        let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+        // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
+        let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
         measure_costs(&strips, &model, &args);
     }
 
