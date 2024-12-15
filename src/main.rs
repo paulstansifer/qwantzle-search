@@ -1,11 +1,15 @@
 use clap::Parser;
 use indicatif::ProgressIterator;
-use llama_cpp::{LlamaModel, LlamaParams, SessionParams, Token};
-use llama_cpp_sys::llama_token_data;
-use std::{
-    fmt::Write,
-    sync::{Arc, Mutex},
-};
+use llama_cpp_2::context::LlamaContext;
+use llama_cpp_2::llama_batch::LlamaBatch;
+use llama_cpp_2::model::LlamaModel;
+use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
+use llm::Session;
+use num_traits::sign;
+use std::cell::Cell;
+use std::fmt::Write;
+use std::os::unix::thread;
+use std::sync::atomic::AtomicBool;
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
@@ -57,21 +61,18 @@ struct Args {
 
     #[arg(short, long, default_value("1"))]
     workers: u8,
-}
 
-fn megabytes(bytes: usize) -> usize {
-    return bytes >> 20;
+    /// Just complete a prefix, using a sensible sampler
+    #[arg(long)]
+    complete: Option<String>,
 }
 
 #[derive(Default)]
 struct Stats {
     details: String,
-    tok_times: Vec<std::time::Duration>,
-    ctx_cpy_times: Vec<std::time::Duration>,
-    truncate_times: Vec<std::time::Duration>,
+    tok_times: Vec<u128>,
     aheads: Vec<u32>,
     prob_aheads: Vec<f32>,
-    logits: Vec<f32>,
     probs: Vec<f32>,
     strip_avg_probs: Vec<Vec<f64>>,
 }
@@ -117,37 +118,23 @@ macro_rules! percentile_table_2_digits_percentage {
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
 fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
     let toks_needed = model
-        .tokenize_bytes(&strip.leadup, true, false)
+        .str_to_token(&strip.leadup, llama_cpp_2::model::AddBos::Always)
         .unwrap()
-        .len()
+        .len() as u32
         + model
-            .tokenize_bytes(&strip.punchline, false, false)
+            .str_to_token(&strip.punchline, llama_cpp_2::model::AddBos::Never)
             .unwrap()
-            .len()
+            .len() as u32
         + 2;
-    let mut params = SessionParams::default();
-    params.n_ctx = toks_needed as u32;
+    let mut sess = llm::Session::new(model, toks_needed);
+    let mut candidates = sess.advance_and_predict_str(&strip.leadup, Some(0.99995));
 
-    let mut ctx = model
-        .create_session(params)
-        .expect("Failed to create session");
+    let (punch_toks, space) = llm::str_to_tokens_maybe_with_prefix_space(&strip.punchline, model);
 
-    ctx.set_context(&strip.leadup).unwrap();
-
-    let toks_without_space = model
-        .tokenize_bytes(&strip.punchline, false, false)
-        .unwrap();
-
-    let toks_with_space = model
-        .tokenize_bytes(&format!(" {}", strip.punchline), false, false)
-        .unwrap();
-
-    let punch_toks = if toks_with_space.len() <= toks_without_space.len() {
+    if space {
         writeln!(stats.details, "Padding the suffix with a space.").unwrap();
-        toks_with_space
     } else {
         writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
-        toks_without_space
     };
 
     // {
@@ -182,7 +169,6 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
     let mut ahead_s = "   ".to_string();
     let mut ahead_pv_s = "   ".to_string();
     let mut prob_ahead_s = "   ".to_string();
-    let mut logit_s = "   ".to_string();
     let mut prob_s = "   ".to_string();
 
     let mut optimistic_cost = 1.0;
@@ -190,61 +176,44 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     let mut punchline: String = String::new();
     for tok in &punch_toks {
-        let candidates = Arc::new(Mutex::new(vec![]));
-        let peek_sampler = llm::PeekSampler {
-            eos: ctx.model().eos(),
-            candidates: candidates.clone(),
-        };
-
-        let before = std::time::Instant::now();
-        let mut completion_res = ctx
-            .start_completing_with(peek_sampler, 1)
-            .expect("Completion error!");
-        let _ = completion_res.next_token();
-        stats.tok_times.push(before.elapsed());
-
-        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
-
+        stats.tok_times.push(sess.predict_time);
+        sess.predict_time = 0;
         let mut ahead = 0;
         let mut ahead_and_pool_valid = 0;
         let mut prob_ahead = 0.0;
         let mut found_cand = None;
-        for cand in candidates.iter() {
-            if Token(cand.id) == *tok {
-                found_cand = Some(cand);
+        for (cand_tok, prob) in candidates.iter() {
+            if cand_tok == tok {
+                found_cand = Some((cand_tok, prob));
                 break;
             }
             ahead += 1;
-            if letter_pool.has(Token(cand.id), model) {
+            if letter_pool.has(*cand_tok, model) {
                 ahead_and_pool_valid += 1;
             }
 
-            prob_ahead += cand.p;
+            prob_ahead += prob;
         }
 
-        write!(tok_s, "{:>10}", ctx.model().decode_tokens(&[*tok])).unwrap();
+        write!(tok_s, "{:>10}", llm::tok_to_str(*tok, model)).unwrap();
 
-        if let Some(cand) = found_cand {
+        if let Some((_, prob)) = found_cand {
             write!(ahead_s, "{:>10}", ahead).unwrap();
             write!(ahead_pv_s, "{:>10}", ahead_and_pool_valid).unwrap();
             write!(prob_ahead_s, "{:>9.2}%", prob_ahead * 100.0).unwrap();
-            write!(logit_s, "{:>10.2}", cand.logit).unwrap();
-            write!(prob_s, "{:>9.2}%", cand.p * 100.0).unwrap();
+            write!(prob_s, "{:>9.2}%", prob * 100.0).unwrap();
             stats.aheads.push(ahead);
-            stats.probs.push(cand.p);
+            stats.probs.push(*prob);
             stats.prob_aheads.push(prob_ahead);
-            stats.logits.push(cand.logit);
-            overall_probability *= cand.p as f64;
+            overall_probability *= *prob as f64;
         } else {
             write!(ahead_s, " -------- ").unwrap();
             write!(ahead_pv_s, " -------- ").unwrap();
             write!(prob_ahead_s, " -------- ").unwrap();
-            write!(logit_s, " -------- ").unwrap();
             write!(prob_s, " -------- ").unwrap();
             stats.aheads.push(10000);
             stats.probs.push(0.0001);
             stats.prob_aheads.push(0.9999);
-            stats.logits.push(-9999.9);
             overall_probability *= 0.0001 as f64;
         }
 
@@ -259,9 +228,10 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
         optimistic_cost *= ahead_and_pool_valid as f64 + 1.0;
 
-        ctx.advance_context_with_tokens(&[*tok])
-            .expect("Advancement error!");
-        punchline.push_str(&model.decode_tokens([*tok].iter()));
+        candidates = sess.advance_and_predict(&[*tok], Some(0.99995));
+
+        punchline.push(' ');
+        punchline.push_str(&llm::tok_to_str(*tok, model));
         letter_pool.remove(*tok, &model);
     }
     assert!(letter_pool.size() == 0);
@@ -270,9 +240,9 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     write!(
         stats.details,
-        "{tok_s}\n{logit_s}\n{prob_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
+        "{tok_s}\n{prob_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
         optimistic_cost,  average_probability * 100.0,
-        stats.tok_times.iter().map(|d| d.as_micros()).sum::<u128>() as f64 /
+        stats.tok_times.iter().sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
     )
     .unwrap();
@@ -369,23 +339,23 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             avg_prob * 100.0
         );
 
-        // Add a couple of strips with known high estimates that are actually solveable quickly, to
-        // get more data:
-        if cost > 3_000_000.0 && strip.id != 694 && strip.id != 1055 {
-            std::io::Write::write(
-                &mut append_to_report,
-                format!(
-                    "{: >4} {} ==> ({: >6}/{:.1}%)\n",
-                    strip.id,
-                    strip.punchline.len(),
-                    cost,
-                    avg_prob
-                )
-                .as_bytes(),
-            )
-            .unwrap();
-            continue;
-        }
+        // // Add a couple of strips with known high estimates that are actually solveable quickly, to
+        // // get more data:
+        // if cost > 3_000_000.0 && strip.id != 694 && strip.id != 1055 {
+        //     std::io::Write::write(
+        //         &mut append_to_report,
+        //         format!(
+        //             "{: >4} {} ==> ({: >6}/{:.1}%)\n",
+        //             strip.id,
+        //             strip.punchline.len(),
+        //             cost,
+        //             avg_prob
+        //         )
+        //         .as_bytes(),
+        //     )
+        //     .unwrap();
+        //     continue;
+        // }
 
         let search_res = search::practice_search(strip, model, words, Some(250000), &mut report);
         let result_msg = format!(
@@ -440,7 +410,7 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let mut stats = Stats::default();
     let mut costs = vec![];
     let mut avg_probs = vec![];
-    for strip in representative_strips.iter().progress() {
+    for strip in strips.iter().progress() {
         if !exemplars.contains(&strip.id) {
             continue;
         }
@@ -476,7 +446,6 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
             "microseconds",
             "tokens ahead",
             "probability ahead",
-            "logit score",
             "probability score",
         ])
         .unwrap();
@@ -484,10 +453,9 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     for i in 0..stats.tok_times.len() {
         stats_csv
             .serialize((
-                stats.tok_times[i].as_micros(),
+                stats.tok_times[i],
                 stats.aheads[i],
                 stats.prob_aheads[i],
-                stats.logits[i],
                 stats.probs[i],
             ))
             .unwrap();
@@ -527,52 +495,110 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     }
 
     println!();
+
     println!(
-        "Average token time: {:.0}  Average truncation time: {:.0}  Average copy time: {:.0}",
-        stats
-            .tok_times
-            .iter()
-            .map(std::time::Duration::as_micros)
-            .sum::<u128>() as f32
-            / stats.tok_times.len() as f32,
-        stats
-            .truncate_times
-            .iter()
-            .map(std::time::Duration::as_micros)
-            .sum::<u128>() as f32
-            / stats.tok_times.len() as f32,
-        stats
-            .ctx_cpy_times
-            .iter()
-            .map(std::time::Duration::as_micros)
-            .sum::<u128>() as f32
-            / stats.tok_times.len() as f32
+        "Average token time: {:.0}",
+        stats.tok_times.iter().sum::<u128>() as f32 / stats.tok_times.len() as f32,
     );
 }
 
+fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
+    print!("{prefix}>>>");
+    let prefix_tokens = model
+        .str_to_token(prefix, llama_cpp_2::model::AddBos::Always)
+        .unwrap();
+    let n_toks = prefix_tokens.len() as u32 + max_new_toks;
+
+    let params = llama_cpp_2::context::params::LlamaContextParams::default()
+        .with_n_ctx(std::num::NonZero::new(n_toks));
+
+    let mut ctx = {
+        let _stderr_gag = gag::Gag::stderr().unwrap();
+        model.new_context(&llm::BACKEND, params).unwrap()
+    };
+
+    let mut batch = LlamaBatch::new(n_toks as usize, 1);
+    for (i, tok) in prefix_tokens.iter().enumerate() {
+        batch
+            .add(*tok, i as i32, &[0], i + 1 == prefix_tokens.len())
+            .unwrap()
+    }
+
+    // This is suuuuuper ad-hoc.
+    let mut sampler = llama_cpp_2::sampling::LlamaSampler::new(
+        LlamaSamplerChainParams::default().with_no_perf(true),
+    )
+    .unwrap()
+    .add_penalties(100, 9999, 9998, 150, 1.05, 1.05, 1.05, true, false)
+    .add_mirostat_v2(0, 0.1, 5.0);
+
+    for i in 0..max_new_toks {
+        ctx.decode(&mut batch).expect("failed to eval");
+        let token = sampler.sample(&ctx, batch.n_tokens() - 1);
+
+        sampler.accept(token);
+
+        if token == model.token_eos() {
+            eprintln!();
+            break;
+        }
+
+        let output_str = model
+            .token_to_str(token, llama_cpp_2::model::Special::Tokenize)
+            .unwrap();
+
+        print!("{output_str}");
+        std::io::Write::flush(&mut std::io::stdout()).unwrap();
+
+        batch.clear();
+        batch
+            .add(token, prefix_tokens.len() as i32 + i as i32, &[0], true)
+            .unwrap();
+    }
+}
+
+static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
+
 fn main() {
+    use signal_hook::{
+        consts::{SIGINT, SIGTERM},
+        iterator::Signals,
+    };
     let args = Args::parse();
-    init_tracing(&args);
+    init_tracing(&args); // TODO: no longer has any effect, I think.
 
-    let mut model_params = LlamaParams::default();
-    model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
-    let model =
-        LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
+    let mut signals = Signals::new(&[SIGTERM, SIGINT]).unwrap();
 
-    let size = model.estimate_session_size(&SessionParams::default());
-    println!(
-        "Est. size: {} / {}",
-        megabytes(size.host_memory),
-        megabytes(size.device_memory)
-    );
+    std::thread::spawn(move || {
+        for _ in signals.forever() {
+            TIME_TO_QUIT.store(false, std::sync::atomic::Ordering::Relaxed);
+        }
+    });
 
-    let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
+    let model = llm::model_from_gguf(&args.model, !args.no_gpu);
+
     // Can use "corpus/dictionary_filter.txt", but it's not worth it.
     let words = corpus::get_words("corpus/allowed_words.txt", None);
 
     if args.calibrate_costs {
+        let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
+
         calibrate_costs(&strips, &words, &model, &args);
+    } else if let Some(pfx) = args.complete {
+        if let Ok(id) = pfx.parse::<usize>() {
+            let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+            for strip in strips {
+                if strip.id == id {
+                    complete(&strip.leadup, 200, &model);
+                    break;
+                }
+            }
+        } else {
+            complete(&pfx, 200, &model);
+        }
     } else {
+        // For consistency (not withheld from training!)
+        let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
         measure_costs(&strips, &model, &args);
     }
 

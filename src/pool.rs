@@ -1,10 +1,14 @@
 #![allow(dead_code)]
 
 use assoc::AssocExt;
+use llama_cpp_2::model::LlamaModel;
+use llama_cpp_2::token::LlamaToken;
 use serde::{Deserialize, Serialize};
 use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
+
+use crate::llm;
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy, Deserialize, Serialize, Debug)]
 struct Char(u8);
@@ -21,8 +25,8 @@ impl Char {
     }
 }
 
+// TODO: no longer true; use it!
 // Token doesn't implement Ord or Hash, so we use the underlying i32.
-
 #[derive(Default)]
 pub struct VocabBuilder {
     tb: HashSet<Vec<i32>>,
@@ -47,13 +51,13 @@ pub struct Vocab {
 }
 
 impl VocabBuilder {
-    fn eval_token(&mut self, tok: i32, model: &llama_cpp::LlamaModel) {
+    fn eval_token(&mut self, tok: i32, model: &LlamaModel) {
         if self.allowed_tokens.contains(&tok) {
             return; // already processed
         }
         self.allowed_tokens.insert(tok);
 
-        let solo_token = model.token_to_piece(llama_cpp::Token(tok));
+        let solo_token = llm::tok_to_str(LlamaToken(tok), model);
 
         if !regex::Regex::new(r"[a-zA-Z]")
             .unwrap()
@@ -72,28 +76,20 @@ impl VocabBuilder {
                 panic!("Space in the middle of a token?!?!?");
             }
         } else {
-            let xes = model
-                .tokenize_bytes("xxxxxxxxxxxxxxx", false, false)
-                .unwrap();
+            let xes = llm::str_to_tokens("xxxxxxxxxxxxxxx", model);
             let mid_token = xes[xes.len() / 2];
 
             // Does the token add a space when attached to something?
-            if model
-                .decode_tokens(&[mid_token, llama_cpp::Token(tok)])
-                .contains(" ")
-            {
+            if llm::toks_to_str(&[mid_token, LlamaToken(tok)], model).contains(" ") {
                 self.word_starters.insert(tok);
             }
-            if model
-                .decode_tokens(&[llama_cpp::Token(tok), mid_token])
-                .contains(" ")
-            {
+            if llm::toks_to_str(&[LlamaToken(tok), mid_token], model).contains(" ") {
                 self.word_enders.insert(tok);
             }
         }
     }
 
-    pub fn add_word(&mut self, word: &str, model: &llama_cpp::LlamaModel, vary_case: bool) {
+    pub fn add_word(&mut self, word: &str, model: &LlamaModel, vary_case: bool) {
         if word.is_empty() {
             return; // Titlecasing would get unhappy.
         }
@@ -120,10 +116,8 @@ impl VocabBuilder {
             }
         }
     }
-    fn add_literal_word(&mut self, word: &str, model: &llama_cpp::LlamaModel) {
-        let toks: Vec<i32> = model
-            .tokenize_bytes(word, false, false)
-            .unwrap()
+    fn add_literal_word(&mut self, word: &str, model: &LlamaModel) {
+        let toks: Vec<i32> = llm::str_to_tokens(word, model)
             .into_iter()
             .map(|t| t.0)
             .collect();
@@ -175,7 +169,7 @@ impl WordState {
         WordState { cur_word: vec![] }
     }
 
-    pub fn add_tok(&self, tok: llama_cpp::Token, voc: &Vocab) -> Option<WordState> {
+    pub fn add_tok(&self, tok: LlamaToken, voc: &Vocab) -> Option<WordState> {
         if voc.disabled {
             return Some(WordState { cur_word: vec![] });
         }
@@ -393,12 +387,12 @@ impl LetterPool {
         return res;
     }
 
-    pub fn set_longest_tok_from(&mut self, text: &str, model: &llama_cpp::LlamaModel) {
-        let toks = model.tokenize_bytes(text, false, false).unwrap();
+    pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
+        let toks = llm::str_to_tokens(text, model);
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
-            let t_len = model.detokenize(t).len();
+            let t_len = llm::tok_to_str(t, model).len();
             if t_len > longest_tok_len {
                 longest_tok_len = t_len;
                 longest_tok = t;
@@ -425,7 +419,7 @@ impl LetterPool {
         return true;
     }
 
-    pub fn has(&self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> bool {
+    pub fn has(&self, tok: LlamaToken, model: &LlamaModel) -> bool {
         if Some(tok.0) == self.long_tok {
             // the theory of ties doesn't affect `has`!
             return true;
@@ -470,7 +464,7 @@ impl LetterPool {
     }
 
     /// Panics if the letters aren't available.
-    pub fn remove(&mut self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) {
+    pub fn remove(&mut self, tok: LlamaToken, model: &LlamaModel) {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.remove_pt(pt, Some(tok.0) == self.long_tok)
@@ -494,7 +488,7 @@ impl LetterPool {
         return None;
     }
 
-    pub fn try_remove(&self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> Option<Self> {
+    pub fn try_remove(&self, tok: LlamaToken, model: &LlamaModel) -> Option<Self> {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.try_remove_pt(pt, Some(tok.0) == self.long_tok)
@@ -508,10 +502,10 @@ struct TokCache {
 }
 
 impl TokCache {
-    fn get_tok(&mut self, tok: llama_cpp::Token, model: &llama_cpp::LlamaModel) -> &PoolTok {
+    fn get_tok(&mut self, tok: LlamaToken, model: &LlamaModel) -> &PoolTok {
         self.toks
             .entry(tok.0)
-            .or_insert(PoolTok::from_str(&model.decode_tokens([tok])))
+            .or_insert(PoolTok::from_str(&llm::tok_to_str(tok, model)))
     }
 }
 

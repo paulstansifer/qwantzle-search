@@ -1,6 +1,6 @@
 use regex;
 
-#[derive(PartialEq, Eq, Hash, Clone)]
+#[derive(PartialEq, Eq, Hash, Clone, Debug)]
 pub struct Strip {
     pub id: usize,
     pub leadup: String,

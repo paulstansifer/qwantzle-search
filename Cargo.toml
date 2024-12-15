@@ -15,8 +15,6 @@ name = "aux"
 path = "src/aux.rs"
 
 [dependencies]
-llama_cpp = { path = "../llama_cpp-rs/crates/llama_cpp" }
-llama_cpp_sys = { path = "../llama_cpp-rs/crates/llama_cpp_sys" }
 csv = "1.1"
 indicatif = "0.17"
 clap = { version = "4.5.18", features = ["derive"] }
@@ -34,6 +32,7 @@ safetensors = "0.4.5"
 assoc = "0.1.3"
 serde = { version = "1.0.215", features = ["derive"] }
 bincode = "1.3.3"
-
-[features]
-cuda = ["llama_cpp/cuda", "llama_cpp_sys/cuda"]
+llama-cpp-2 = { version = "0.1.85", features = ["cuda"] }
+lazy_static = "1.5.0"
+gag = "1.0.0"
+signal-hook = "0.3.17"

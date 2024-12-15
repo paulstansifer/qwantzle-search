@@ -1,23 +1,18 @@
 #![allow(dead_code)]
 
-use std::{
-    cell::Cell,
-    cmp::Ordering,
-    fmt::Write,
-    sync::{Arc, Mutex},
-};
+use std::{cell::Cell, cmp::Ordering, fmt::Write};
 
 use indicatif::ProgressBar;
-use llama_cpp::{LlamaModel, SessionParams, Token};
-use llama_cpp_sys::llama_token_data;
+use llama_cpp_2::{model::LlamaModel, token::LlamaToken};
 use priority_queue::PriorityQueue;
 use serde::{Deserialize, Serialize};
 
 use crate::{
     corpus::Strip,
-    llm,
+    llm::{tok_to_str, toks_to_str, Session},
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
     remaining_letters_neural_net::LetterNet,
+    TIME_TO_QUIT,
 };
 
 // Reversed ordering for the priority queue, and pretending to really be `Cmp`.
@@ -32,7 +27,7 @@ impl Ord for Score {
 }
 
 struct Node {
-    text: Vec<Token>,
+    text: Vec<LlamaToken>,
     word_state: WordState,
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
@@ -66,7 +61,7 @@ impl SerNode {
     }
     fn to(&self) -> Node {
         Node {
-            text: self.text.iter().map(|i| Token(*i)).collect(),
+            text: self.text.iter().map(|i| LlamaToken(*i)).collect(),
             word_state: self.word_state.clone(),
             remaining: self.remaining.clone(),
             probability: self.probability,
@@ -209,8 +204,7 @@ const TOK_TOP_P: f32 = 0.9995;
 // Perhaps we want some sort of grace period instead of setting this so low?
 const MIN_AVG_P: f64 = 0.01;
 
-// Note that `ctx.model()` clones the whole model! It's just an `Arc` plus a bunch of `usize`s, so it's not too bad, but it's an optimization opportunity.
-
+// TODO: remove most of these
 thread_local! {
     pub static COPY_TIME : Cell<u128> = Cell::<u128>::default();
     pub static ADVANCE_TIME : Cell<u128> = Cell::<u128>::default();
@@ -305,9 +299,9 @@ impl Node {
 
     fn push_token(
         &self,
-        t: Token,
+        t: LlamaToken,
         prob: f32,
-        model: &llama_cpp::LlamaModel,
+        model: &LlamaModel,
         vocab: &Vocab,
         rlnn: &LetterNet,
     ) -> Option<(Node, Score)> {
@@ -323,7 +317,7 @@ impl Node {
             text: self.text.clone(),
             probability: self.probability * prob as f64,
             tok_probs: self.tok_probs.clone(),
-            chars_so_far: self.chars_so_far + model.decode_tokens(&[t]).trim().len() as u8,
+            chars_so_far: self.chars_so_far + tok_to_str(t, model).trim().len() as u8,
             depth_at_pruning: self.depth_at_pruning,
         };
         res.text.push(t);
@@ -334,71 +328,31 @@ impl Node {
         Some((res, score))
     }
 
-    fn advance(
-        &self,
-        root_ctx: &mut llama_cpp::LlamaSession,
-        q: &mut Q,
-        vocab: &Vocab,
-        rlnn: &LetterNet,
-    ) {
-        let orig_toks = root_ctx.context_size();
-        {
-            let before_advance = std::time::Instant::now();
-            root_ctx
-                .advance_context_with_tokens(&self.text)
-                .expect("Failed to advance context");
-            ADVANCE_TIME.replace(ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
-        }
-
-        self.predict_with_ctx(root_ctx, q, vocab, rlnn);
-
-        {
-            let before_truncate = std::time::Instant::now();
-            root_ctx.truncate_context(orig_toks).unwrap();
-            MISC_TIME.replace(MISC_TIME.get() + before_truncate.elapsed().as_micros());
-        }
-    }
-
-    fn predict_with_ctx(
-        &self,
-        my_ctx: &mut llama_cpp::LlamaSession,
-        q: &mut Q,
-        vocab: &Vocab,
-        rlnn: &LetterNet,
-    ) {
+    fn advance(&self, root_sess: &mut Session, q: &mut Q, vocab: &Vocab, rlnn: &LetterNet) {
         if self.text.len() >= (TOK_BUFFER - 1) as usize {
             return;
         }
 
-        let candidates = Arc::new(Mutex::new(vec![]));
-        let peek_sampler = llm::PeekSampler {
-            eos: my_ctx.model().eos(),
-            candidates: candidates.clone(),
-        };
+        let candidates = root_sess.advance_and_predict(&self.text, Some(TOK_TOP_P));
 
-        {
-            let before_predict = std::time::Instant::now();
+        self.consider_candidates(candidates, root_sess, q, vocab, rlnn);
 
-            let mut completion_res = my_ctx
-                .start_completing_with(peek_sampler, 1)
-                .expect("Completion error!");
-            let _ = completion_res.next_token();
-            PREDICT_TIME.replace(PREDICT_TIME.get() + before_predict.elapsed().as_micros());
-        }
+        root_sess.truncate_to_prompt();
+    }
 
-        let candidates: &Vec<llama_token_data> = &candidates.lock().unwrap();
-
+    fn consider_candidates(
+        &self,
+        candidates: Vec<(LlamaToken, f32)>,
+        sess: &mut Session,
+        q: &mut Q,
+        vocab: &Vocab,
+        rlnn: &LetterNet,
+    ) {
         let mut fast_forwarded = false;
 
-        let mut total_p = 0.0;
-        for cand in candidates {
-            if total_p >= TOK_TOP_P {
-                break;
-            }
-            total_p += cand.p;
-
+        for (tok, p) in candidates {
             let avg_prob = f64::powf(
-                cand.p as f64 * self.probability,
+                p as f64 * self.probability,
                 1.0 / (self.text.len() as f64 + 1.0),
             );
 
@@ -406,19 +360,14 @@ impl Node {
                 break;
             }
 
-            if let Some((next_node, score)) =
-                self.push_token(Token(cand.id), cand.p, &my_ctx.model(), vocab, rlnn)
-            {
+            if let Some((next_node, score)) = self.push_token(tok, p, &sess.model(), vocab, rlnn) {
                 // Re-use the context right away, if the best candidate is good enough.
-                if cand.p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
+                if p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
                     let before_advance = std::time::Instant::now();
-                    my_ctx
-                        .advance_context_with_tokens(&[Token(cand.id)])
-                        .unwrap();
+                    let ff_candidates = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
                     FF_ADVANCE_TIME
                         .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
-
-                    next_node.predict_with_ctx(my_ctx, q, vocab, rlnn);
+                    next_node.consider_candidates(ff_candidates, sess, q, vocab, rlnn);
                     fast_forwarded = true;
                 } else {
                     q.push(next_node, score);
@@ -442,17 +391,10 @@ pub fn practice_search(
     report: &mut String,
 ) -> SearchResult {
     let mut q = Q::new();
-    q.push(
-        Node::new_with_longest_tok(&strip.punchline, model),
-        // Node::new(&strip.punchline),
-        Score(1.0),
-    );
 
-    let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
-
-    let mut params = SessionParams::default();
-    params.defrag_threshold = 0.5;
-    params.n_ctx = leadup_toks.len() as u32 + TOK_BUFFER;
+    let leadup_toks = model
+        .str_to_token(&strip.leadup, llama_cpp_2::model::AddBos::Always)
+        .unwrap();
 
     let strip_summary = format!(
         "...{} >>{}<<\n",
@@ -472,8 +414,7 @@ pub fn practice_search(
 
     progress.set_message(format!("Loading context"));
 
-    let mut root_ctx = model.create_session(params).unwrap();
-    root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
+    let mut root_sess = Session::new(model, leadup_toks.len() as u32 + TOK_BUFFER);
 
     let mut longest_word_len = 0;
     // Set up vocabulary restrictions
@@ -513,8 +454,22 @@ pub fn practice_search(
     let mut score_progress_info = "Score progression: ".to_string();
     let mut log = String::new();
     let mut deepest_node_accessed = 0;
+
+    let root_node = Node::new_with_longest_tok(&strip.punchline, model);
+
+    // Kinda a hack; I don't let you advance without predicting...
+    let first_cands = root_sess.advance_and_predict(&leadup_toks, Some(TOK_TOP_P));
+    root_sess.save_prompt();
+    root_node.consider_candidates(first_cands, &mut root_sess, &mut q, &vocab, &rlnn);
+
     loop {
         progress.tick();
+
+        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::Relaxed) {
+            println!("TODO: actually save and load");
+            break;
+        }
+
         if let Some(lim) = steps_limit {
             if step >= lim {
                 let msg = format!("Hit step limit: {}", step);
@@ -534,7 +489,7 @@ pub fn practice_search(
         }
         if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ step % 4 == 0) {
             deepest_node_accessed = std::cmp::max(deepest_node_accessed, node.depth_at_pruning);
-            let cur_text = model.decode_tokens(&node.text);
+            let cur_text = toks_to_str(&node.text, model);
 
             if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {
                 let mut cur_text_alpha = cur_text.clone();
@@ -555,7 +510,7 @@ pub fn practice_search(
                 } else {
                     let msg = format!(
                         "Non-answer: {} != {}",
-                        model.decode_tokens(&node.text).trim(),
+                        toks_to_str(&node.text, model),
                         strip.punchline.trim()
                     );
                     *report += &msg;
@@ -565,7 +520,7 @@ pub fn practice_search(
             } else if strip.punchline.trim().starts_with(cur_text.trim()) && !node.text.is_empty() {
                 score_progress_info += &format!(
                     "'{}' {:.3}%  ",
-                    model.token_to_piece(*node.text.last().unwrap()),
+                    tok_to_str(*node.text.last().unwrap(), model),
                     p.0 * 100.0
                 );
             }
@@ -575,7 +530,7 @@ pub fn practice_search(
 
             progress.set_message(format!("{:7} {}", step, cur_str));
 
-            node.advance(&mut root_ctx, &mut q, &vocab, &rlnn);
+            node.advance(&mut root_sess, &mut q, &vocab, &rlnn);
             step += 1;
         } else {
             let msg = format!("Exhausted all reasonable nodes at {} steps", step);
@@ -610,7 +565,7 @@ pub fn practice_search(
     println!("Deepest node accessed: {deepest_node_accessed}");
 
     std::fs::write(
-        format!("reports/search-{}.txt", strip.id),
+        format!("reports/search-logs/search-{}.txt", strip.id),
         format!("{}\n{}", strip.punchline, log),
     )
     .unwrap();
@@ -667,14 +622,14 @@ fn () {
     // let mut params = SessionParams::default();
     // params.n_ctx = leadup_toks.len() as u32 + 25;
 
-    // let mut root_ctx = model.create_session(params).unwrap();
-    // root_ctx.set_context_to_tokens(&leadup_toks).unwrap();
+    // let mut root_sess = model.create_session(params).unwrap();
+    // root_sess.set_context_to_tokens(&leadup_toks).unwrap();
 
     // loop {
     //     match q.pop() {
     //         Some((node, p)) => {
     //             println!("{:.2}%: {}", p.0 * 100.0, model.decode_tokens(&node.text));
-    //             node.advance(&root_ctx, &mut q);
+    //             node.advance(&root_sess, &mut q);
     //         }
     //         None => {
     //             break;
