@@ -105,15 +105,15 @@ impl<'a> Session<'a> {
 
         let max_logit = candidates.first().unwrap().1;
 
-        let mut total_weight = 0.0;
+        let mut total_weight: f64 = 0.0;
         for (_, ref mut logit) in &mut candidates {
             *logit = f32::exp(*logit - max_logit);
-            total_weight += *logit;
+            total_weight += *logit as f64;
         }
 
         // Scale so it sums to zero:
         for (_, ref mut weight) in &mut candidates {
-            *weight /= total_weight;
+            *weight /= total_weight as f32;
         }
 
         if let Some(top_p) = top_p {
@@ -127,7 +127,11 @@ impl<'a> Session<'a> {
                 }
             }
             if elts_needed == 0 {
-                println!("Warning: Unable to find {top_p} total probability.");
+                println!("Warning: Unable to find {top_p} total probability; got {total_p:.5} with {} candidates. Total weight was {total_weight:.3}", candidates.len());
+                for (t, p) in candidates.iter().take(20) {
+                    print!("{} => {:.2}  ", tok_to_str(*t, self.model()), p * 100.0);
+                }
+                println!();
             } else {
                 candidates.truncate(elts_needed);
             }
