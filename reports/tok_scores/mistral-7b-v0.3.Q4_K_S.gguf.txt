@@ -1,0 +1,303 @@
+Not padding the suffix with a space.
+Text: For we can always see and feel much that the people in old photos and newsreels
+T-Rex: I have ...generations to see!
+Utahraptor: Oh man, I want in! Let's make a documentary about our lives!
+T-Rex: That's a great idea!
+Text: and gone.
+Text: -Robert
+        Rosen     stone         ,         "       Vis      ions        of       the      Past         "         
+         T         -         R        ex         (         p      unch      line        ):        We         '        ll      live   forever         !
+        0.02%     0.04%    47.47%    22.23%     0.18%    94.45%    94.83%    33.14%    80.10%    49.32%    49.85%    18.55%    99.12%    99.81%   100.00%     0.49%     0.60%     0.93%     8.69%    86.70%     2.51%    37.39%    40.79%     0.74%    84.89%    70.65%
+          386        61         0         0        70         0         0         0         0         0         0         2         0         0         0         2        24        21         1         0         4         0         1        17         0         0
+           59        23         0         0        23         0         0         0         0         0         0         0         0         0         0         1         6         1         0         0         0         0         1         0         0         0
+       92.76%    94.52%     0.00%     0.00%    81.48%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    47.22%     0.00%     0.00%     0.00%    97.87%    50.42%    78.84%    82.29%     0.00%    19.77%     0.00%    50.68%    74.99%     0.00%     0.00%
+optimistic cost: 1.94e6  average probability: 10.7%  average tok time: 5478
+Not padding the suffix with a space.
+T-Rex: My sinister raccoon and cephalopod neighbours are having a sleep-over party. Okay! That's inn...r NEIGHBOURS.
+Narrator: THAT NIGHT:
+Off panel: COME TO OUR SLUMBER PARTY, NEIGHBOUR?
+T-Rex: I'm sorry, I - I think I'm busy that night!
+Off panel: YOU
+          CAN         S        LE        EP        IN        MY        RO        OM         ,         T         -        RE         X         .         
+       Off     panel         (         p      unch      line        ):         I         J       UST         W       ANT        TO         T       AST         E       YOU
+        4.10%     4.35%    80.08%    99.48%    41.76%    11.47%     8.17%    98.29%    25.00%     1.46%    71.62%    89.11%    99.23%    20.50%    52.13%    13.39%    97.91%     0.07%     0.40%     2.09%    27.88%    86.89%    17.25%     0.96%    98.93%    36.77%    83.64%    50.96%     4.38%     0.55%    99.13%    21.87%
+            5         4         0         0         0         2         2         0         1         9         0         0         0         1         0         1         0         1        49         7         1         0         0        14         0         0         0         0         6         6         0         1
+            3         1         0         0         0         1         0         0         0         5         0         0         0         0         0         1         0         1         9         1         0         0         0         3         0         0         0         0         1         1         0         0
+       69.72%    65.14%     0.00%     0.00%     0.00%    53.94%    47.83%     0.00%    33.70%    74.18%     0.00%     0.00%     0.00%    68.48%     0.00%    66.17%     0.00%    99.68%    58.35%    44.02%    31.39%     0.00%     0.00%    78.26%     0.00%     0.00%     0.00%     0.00%    57.07%    95.04%     0.00%    63.83%
+optimistic cost: 1.23e5  average probability: 16.0%  average tok time: 3144
+Not padding the suffix with a space.
+T-Rex: I know one thing that puts us (living people made out of meat) above machine intelligences.
+T...guing small points about them?
+T-Rex: Well, I -
+Narrator: EARLIER:
+Off panel: T-REX IF YOU TELL ANYONE ABOUT US THEN YOU WILL BE ELIMINATED
+T-Rex: But
+         come        on         !       You      have        to     admit      that        we         '        re       the     super         i         -         
+       Off     panel         (         p      unch      line        ):         E         -         L        IM         -       MIN         -         N        AT         -        ED
+        0.02%    80.90%    23.04%     6.31%     4.32%    79.78%    71.98%    42.99%     9.75%    26.26%    92.00%    26.08%     0.73%     7.57%    34.83%    70.91%    36.65%    94.58%     0.06%     0.38%    11.03%     1.77%    81.15%     3.20%     0.64%     8.96%    45.28%    35.50%     0.11%    57.56%     1.04%     2.67%    91.20%    76.70%
+          198         0         1         2         5         0         0         0         1         1         0         0        12         2         0         0         0         0         2        38         0         5         0         4        14         1         1         1        21         0         6         2         0         0
+          118         0         0         2         3         0         0         0         0         1         0         0         1         1         0         0         0         0         2         7         0         1         0         2         4         1         1         1        12         0         3         2         0         0
+       96.14%     0.00%    61.68%    23.72%    64.45%     0.00%     0.00%     0.00%    12.30%    29.53%     0.00%     0.00%    85.07%    68.19%     0.00%     0.00%     0.00%     0.00%    99.61%    54.30%     0.00%    88.88%     0.00%    26.77%    80.87%    11.21%    51.73%    49.23%    95.55%     0.00%    92.07%    93.84%     0.00%     0.00%
+optimistic cost: 1.03e10  average probability: 9.3%  average tok time: 2343
+Not padding the suffix with a space.
+God: HEY T-REX HOW COME YOU ALWAYS SLEEP ON YOUR LEFT SIDE
+T-Rex: Because it rules?
+Narrator: COMICS...structed. I'll also use decades of ads to convince the public that this item is absolutely necessary to express true love.
+T-Rex (punchline): [thinks]
+            A       ren         '         t    analog       ies   usually       non         -   literal         ?        He         '         s   clearly       the       gem   diamond     trade         .
+        0.47%     4.76%    99.55%    99.99%     0.00%    87.66%     3.12%     0.04%    82.80%    13.13%    77.14%     0.03%    31.99%    97.96%     0.79%     0.99%     5.42%    62.87%    89.08%    51.99%
+           27         3         0         0       816         0         4       183         0         2         0        70         0         0        22        17         1         0         0         0
+            4         1         0         0       366         0         1        67         0         1         0         4         0         0         6         5         1         0         0         0
+       73.03%    38.35%     0.00%     0.00%    99.49%     0.00%    43.48%    89.21%     0.00%    43.21%     0.00%    97.16%     0.00%     0.00%    70.30%    72.56%    50.03%     0.00%     0.00%     0.00%
+optimistic cost: 4.19e8  average probability: 5.6%  average tok time: 2180
+Not padding the suffix with a space.
+Narrator: T-REX VISITS A GHOST TOWN.
+T-Rex: Attention, any ghosts that can hear me! I have one thing...It's okay, I guess. It's mostly just a bunch of crappy buildings!
+T-Rex: Don't even, Utahraptor!
+Off panel: Don't even what?
+T-Rex (punchline): Don't
+         even         -       don         '         t      even      tell        me       you       don         '         t appreciate       the     stark      aest       het       ics       and    beauty        of     decay
+       74.22%     0.05%     0.74%    98.41%    99.93%    77.13%     1.58%    77.91%    17.27%    15.16%    99.91%    99.95%     0.64%    22.31%     0.06%     0.04%    99.32%    99.55%     5.40%     0.92%    85.83%    12.37%
+            0       174        16         0         0         0        15         0         0         1         0         0        16         0       217       186         0         0         1        10         0         2
+            0        92         7         0         0         0         8         0         0         1         0         0         4         0        63        29         0         0         1         0         0         1
+        0.00%    85.66%    35.12%     0.00%     0.00%     0.00%    52.50%     0.00%     0.00%    34.22%     0.00%     0.00%    92.89%     0.00%    79.33%    90.07%     0.00%     0.00%    85.13%    30.13%     0.00%    35.19%
+optimistic cost: 5.14e8  average probability: 9.1%  average tok time: 2125
+Not padding the suffix with a space.
+Narrator: INTERNET ARGUMENT COMICS
+Narrator: NAZI ACCUSATIONS
+T-Rex: Can we accept that everyone on ..." IS SHORT FOR "YOU ARE A *F*RIEND I RESPECT; *A*S SUCH I *G*REATLY LOOK FORWARD TO COMMUNICATING WITH YOU IN AN HONEST WAY IN THE FUTURE"
+T-Rex: Man,
+         here         I   thought        it     stood       for         "         F     ellow   Against       Gal       act       oph        ag      ists         "         !         
+         T         -         R        ex         (         p      unch      line        ):       She       esh
+        0.02%    25.75%    35.11%    42.97%     4.80%    99.71%    80.92%    28.91%     1.30%     0.14%     0.52%    16.12%     4.50%     5.43%     7.97%    48.98%     8.14%    86.53%     9.43%    97.04%    99.63%   100.00%     0.07%     0.31%     9.70%     1.91%    65.93%     0.02%    62.59%
+          204         1         1         0         2         0         0         0        10        67        17         1         3         4         2         0         1         0         2         0         0         0         2        43         0         2         0       365         0
+          114         0         1         0         1         0         0         0         4        27         7         1         2         3         1         0         1         0         0         0         0         0         1        11         0         1         0         8         0
+       94.36%    31.48%    36.16%     0.00%    86.60%     0.00%     0.00%     0.00%    47.49%    82.12%    83.75%    23.37%    48.87%    73.04%    64.97%     0.00%    74.52%     0.00%    85.01%     0.00%     0.00%     0.00%    99.56%    65.05%     0.00%    94.83%     0.00%    93.31%     0.00%
+optimistic cost: 2.14e10  average probability: 6.9%  average tok time: 2006
+Not padding the suffix with a space.
+Narrator: LITERARY TECHNIQUE COMICS today's technique DELETED AFFAIR
+T-Rex: A deleted affair is when...-Rex: Shakespeare, we need more sequels! You've got to come back with me!
+Off panel: back where
+T-Rex: Back... TO THE FUTURE!
+T-Rex (punchline): You'd
+          get      that reference        if       you      came      back      with        me        to       the    future         , Shakespeare        !!
+        1.20%     0.41%    19.18%    21.35%    70.51%     1.38%    69.20%    42.28%    78.55%     8.51%    79.53%    73.59%    22.06%    16.52%     0.77%
+           10        21         0         1         0        12         0         0         0         3         0         0         1         0         6
+            6        14         0         1         0         3         0         0         0         2         0         0         1         0         2
+       77.59%    80.38%     0.00%    43.00%     0.00%    81.65%     0.00%     0.00%     0.00%    76.74%     0.00%     0.00%    41.91%     0.00%    97.46%
+optimistic cost: 1.51e4  average probability: 13.2%  average tok time: 2080
+Not padding the suffix with a space.
+Narrator: EVERYTHING YOU NEED TO KNOW ABOUT KITCHENS
+T-Rex: Kitchens! There's a lot to know about ki...nd the sink.
+T-Rex: ARGH
+Narrator: LATER:
+T-Rex: Man! This is THE WORST Friday morning I've ever had! In three weeks. Involving kitchens.
+T-Rex: ...Is
+         what         I         '         d       say        if        it     weren         '         t       for    Friday       two     weeks       ago         
+         T         -         R        ex         (         p      unch      line        ):         *         s       igh         *
+        1.62%    81.32%    26.76%    22.82%    35.28%    47.44%     2.43%    31.84%    99.82%   100.00%    68.71%     0.14%     0.01%    92.22%    92.18%     0.30%    52.77%    99.35%    99.87%   100.00%     0.06%     0.46%     1.85%     2.74%    71.36%     0.61%     6.25%    79.50%    92.05%
+            8         0         0         2         0         0         4         0         0         0         0        31       207         0         0        14         0         0         0         0         3        28         8         2         0        35         0         0         0
+            7         0         0         0         0         0         3         0         0         0         0        17        47         0         0         2         0         0         0         0         1         6         0         2         0         0         0         0         0
+       83.20%     0.00%     0.00%    68.00%     0.00%     0.00%    78.20%     0.00%     0.00%     0.00%     0.00%    91.26%    95.98%     0.00%     0.00%    97.33%     0.00%     0.00%     0.00%     0.00%    99.60%    58.66%    65.58%    92.02%     0.00%    64.48%     0.00%     0.00%     0.00%
+optimistic cost: 3.48e6  average probability: 10.4%  average tok time: 1977
+Not padding the suffix with a space.
+T-Rex: The buds of a young sunflower turn towards the sun, following its course throughout the day. ...errific! So the only thing to argue for consciousness is that it lets us practice intentional self harm? YAY FOR SELF AWARENESS??
+T-Rex (punchline): I
+        slept        in        on   purpose   because         I       was    afraid        of    facing       the       day         , therefore         I        am
+        0.00%     4.84%     1.70%     9.69%     0.77%    76.67%     9.80%     2.36%    55.39%     0.67%    52.11%    43.85%     5.37%     0.12%    58.22%    31.17%
+          696         3        13         3        15         0         2         6         0        17         0         0         2        57         0         0
+          350         2         6         2         8         0         1         2         0         6         0         0         0        10         0         0
+       99.06%    68.28%    75.62%    56.33%    90.42%     0.00%    34.58%    51.16%     0.00%    66.37%     0.00%     0.00%    76.25%    85.87%     0.00%     0.00%
+optimistic cost: 9.19e7  average probability: 4.4%  average tok time: 1990
+Not padding the suffix with a space.
+T-Rex: When Mary and Denise Apple fall in love with handsome twin brothers from the hated Orange fam...e may well be the last Earthling left alive. Now, she's taking down the aliens, alone, piece by piece. That's... The Last Straw.
+T-Rex (punchline): Oh
+            W         O         W        do         I      wish         I       had       the     drive       and     focus        to      make        my     ideas    become   reality         !
+        0.01%    58.71%    91.18%     0.12%    66.36%     3.82%    59.43%    16.86%     2.53%     0.04%    16.35%     3.88%    68.20%    12.17%     4.81%     2.57%     1.20%    43.65%    15.37%
+          136         0         0        23         0         5         0         2         8       275         1         5         0         1         3         3         9         0         1
+           76         0         0        14         0         5         0         1         6       120         1         1         0         1         1         1         3         0         0
+       97.89%     0.00%     0.00%    95.34%     0.00%    56.26%     0.00%    42.98%    57.78%    78.87%    67.39%    41.90%     0.00%    19.84%    39.55%    64.86%    85.19%     0.00%    51.03%
+optimistic cost: 1.50e9  average probability: 5.5%  average tok time: 1993
+Not padding the suffix with a space.
+T-Rex: One day little Timmy got one wish from a genie. But we don't care about him anymore because h... that's way better
+Narrator: LATER, T-REX GETS SERVED WITH SEVERAL COPYRIGHT AND TRADEMARK INFRINGEMENT LAWSUITS:
+T-Rex: Man!!
+T-Rex (punchline): It's
+         only   because         I       had      some   illegal  thoughts         ,       and      then         ,         I     wrote      down       the   illegal  thoughts
+        0.70%     2.82%    35.83%     1.27%     0.69%     0.05%     0.48%     3.56%    10.42%     5.94%     1.52%    22.61%     0.66%     2.25%    10.10%     6.73%    78.52%
+           23         5         0        10        15       245        34         4         1         3         9         0        25         5         3         2         0
+           15         3         0         7        13        69         8         0         0         2         4         0         7         2         0         0         0
+       62.53%    49.42%     0.00%    57.34%    72.32%    73.97%    42.62%    63.62%    11.67%    43.32%    69.23%     0.00%    65.31%    84.28%    46.43%    20.75%     0.00%
+optimistic cost: 1.63e9  average probability: 3.0%  average tok time: 1997
+Not padding the suffix with a space.
+T-Rex: Maybe the best way to understand a computer is to describe them as a person! Yes: MY COMPUTER...ds spy on you.
+Utahraptor: Huh.
+T-Rex: Also, when she gets sick she trashes your shit and only wants to show you porn.
+T-Rex: I -
+T-Rex (punchline): I
+        spend     hours      each       day      just   staring      into       her      face       and     being       end    lessly    entert     ained         ,       and         I       can         '         t   imagine      life   without       her
+        0.02%     4.86%     1.35%    65.70%     6.73%     1.08%     5.18%    41.88%     7.06%    19.40%     0.46%     0.03%    99.15%     9.85%    99.98%     4.14%    24.12%    26.16%     6.23%    64.81%    99.98%    13.11%    22.99%    96.13%    96.89%
+          200         6        10         0         1        13         1         0         1         1        30       251         0         3         0         3         0         0         2         0         0         1         0         0         0
+           85         6         8         0         1         9         1         0         1         1        20       125         0         0         0         0         0         0         1         0         0         1         0         0         0
+       96.05%    52.96%    54.81%     0.00%    16.31%    63.62%    87.91%     0.00%    31.66%    32.26%    68.80%    91.65%     0.00%    49.41%     0.00%    82.38%     0.00%     0.00%    27.19%     0.00%     0.00%    19.18%     0.00%     0.00%     0.00%
+optimistic cost: 9.18e9  average probability: 9.0%  average tok time: 1952
+Not padding the suffix with a space.
+Narrator: LET'S FIX ALL THE PROBLEMS
+T-Rex: The world is hella sweet, but it's full of problems too!...or: I know, I know! I'll get my problems under control. Today. HONEST.
+Narrator: LATER, THE OCEANS BOIL AS THE EARTH TURNS TO FIRE:
+T-Rex: UTAHRAPTOR,
+          you      said       you         '         d       get      this     under   control        !!         
+       Off     panel         (         p      unch      line        ):         I         K        NO         W         ,         I         '         M         S        OR         R         Y         I         '         M         S        OR         R         Y
+        1.62%     9.14%    81.11%    52.56%    98.63%    55.15%     2.35%    62.88%    99.28%     2.88%    72.74%     0.00%     0.02%     0.57%     0.19%     0.66%     2.37%    64.45%     8.11%     2.16%    76.93%    95.79%    42.33%    78.31%     7.20%    85.16%    34.80%    98.50%    99.49%    99.55%     2.58%    70.34%    90.63%    72.34%    99.40%    99.53%    99.28%
+           12         2         0         0         0         0         1         0         0         4         0       177        46         3        66        21         4         0         0         5         0         0         0         0         1         0         0         0         0         0         7         0         0         0         0         0         0
+            3         1         0         0         0         0         0         0         0         2         0        26         7         2        13         0         1         0         0         1         0         0         0         0         0         0         0         0         0         0         1         0         0         0         0         0         0
+       72.54%    28.55%     0.00%     0.00%     0.00%     0.00%    88.70%     0.00%     0.00%    81.83%     0.00%    99.03%    98.36%    92.77%    73.74%    77.13%    84.50%     0.00%     0.00%    48.99%     0.00%     0.00%     0.00%     0.00%    88.06%     0.00%     0.00%     0.00%     0.00%     0.00%    89.28%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%
+optimistic cost: 1.74e6  average probability: 14.5%  average tok time: 1859
+Not padding the suffix with a space.
+T-Rex: Babies! Everyone is always having them all the time. This is not an exaggeration.
+God: T-REX
+...ry baby used to justify expensive purchases" scenarios do both require me to be loaded enough to pay for 'em.
+Off panel: Yeah.
+T-Rex (punchline): Dude
+            I       don         '         t     wanna     sound     weird        or  anything       but         M        AN        it      must        be        so       fun        to        be      rich sometimes         !
+        1.96%     4.73%    99.72%    99.98%     2.64%     1.24%     0.82%    25.39%    80.85%    54.10%     0.04%    21.63%     1.66%     2.11%    71.18%     3.42%     3.67%    77.29%    38.56%     8.93%     0.39%    18.57%
+            3         3         0         0         7        13        12         1         0         0       140         1        12         7         0         6         7         0         0         2        13         1
+            1         2         0         0         3         8         7         1         0         0        31         0         2         3         0         1         2         0         0         0         2         0
+       87.34%    44.71%     0.00%     0.00%    80.16%    73.66%    70.71%    34.45%     0.00%     0.00%    94.40%    56.09%    62.63%    86.31%     0.00%    50.78%    49.27%     0.00%     0.00%    36.39%    93.10%    54.65%
+optimistic cost: 2.39e7  average probability: 7.4%  average tok time: 1854
+Not padding the suffix with a space.
+T-Rex: Today I answer the question that has stymied generations of our greatest minds. What is the m... around with a performance-enhancing LIFESTYLE.
+Utahraptor: I'm not sneaking! How can I be inconspicuous with THESE massive pipes??
+Off panel: ...come
+           on      dude         ,  everyone      with       big       arm   muscles     knows      that         "         p      ipes         "        is        sl       ang       for       big       arm   muscles         !         
+         T         -         R        ex         (         p      unch      line        ):         O        HH        HH        HH        HH         H
+       54.42%     0.55%    54.00%     0.59%     0.20%     3.93%     0.41%    95.97%     5.85%    25.70%     0.30%     2.49%    93.13%    98.15%    60.04%     6.30%    99.92%    97.03%     3.41%    39.75%    99.23%     3.47%    78.39%    41.19%    99.02%    99.84%   100.00%     0.06%     0.41%     9.12%     0.52%    69.05%     2.10%     1.69%    77.17%    43.84%    49.54%    19.56%
+            0        12         0        30        25         4         6         0         3         0        33         6         0         0         0         4         0         0         4         0         0         4         0         1         0         0         0         1        27         1         2         0         6        14         0         0         0         1
+            0         9         0        25        17         2         6         0         3         0        10         4         0         0         0         1         0         0         2         0         0         1         0         0         0         0         0         1         6         0         1         0         0         1         0         0         0         0
+        0.00%    91.84%     0.00%    79.86%    94.38%    48.63%    96.15%     0.00%    46.80%     0.00%    78.31%    25.01%     0.00%     0.00%     0.00%    58.62%     0.00%     0.00%    62.77%     0.00%     0.00%    93.12%     0.00%    42.70%     0.00%     0.00%     0.00%    99.69%    66.14%    16.61%    95.68%     0.00%    26.06%    86.35%     0.00%     0.00%     0.00%    54.08%
+optimistic cost: 1.45e10  average probability: 10.8%  average tok time: 1751
+Not padding the suffix with a space.
+God: T-REX WHAT WOULD YOU DO IF YOU DIDN'T NEED MONEY
+T-Rex: Wait. I need money?
+T-Rex: WAIT.
+T-Rex:...arrator: LATER:
+God: T-REX I MEANT MY QUESTION IN THE HEY WHAT WOULD YOUR DREAM ACTIVITY BE SENSE
+T-Rex: Oh! Hah! MY MISTAKE.
+T-Rex (punchline): Okay!
+         Well         ,         I     think        my    answer         H        AS        to        be       ...         "         w        ow         ,  whatever       the  opposite        is        of      what         I       did      this   morning         "        ??
+        3.13%    60.58%    36.61%     5.31%    10.79%     2.40%     0.01%    87.42%    31.64%    83.39%     2.26%     1.50%     0.30%     0.35%    34.96%     0.10%     4.71%     6.55%     3.89%    80.61%     2.05%    43.64%     3.59%     2.34%    41.51%    17.16%     0.55%
+            3         0         0         3         1         4       140         0         0         0         8         3        63        36         0        87         6         2         1         0         6         0         4        11         0         1         8
+            2         0         0         0         1         2        54         0         0         0         5         1        17        14         0        39         4         0         1         0         3         0         1         2         0         0         1
+       45.41%     0.00%     0.00%    46.64%    42.04%    72.73%    98.34%     0.00%     0.00%     0.00%    47.54%    35.26%    54.05%    88.72%     0.00%    86.06%    47.12%    38.79%    94.50%     0.00%    47.14%     0.00%    66.88%    71.31%     0.00%    26.61%    88.19%
+optimistic cost: 6.16e10  average probability: 5.0%  average tok time: 1729
+Not padding the suffix with a space.
+T-Rex: Who watches the watchers?
+T-Rex: BETTER QUESTION: who polices the police?
+T-Rex: Who militari...orers? Who cremates the cremators? WHO BONES THE BONERS?
+Utahraptor: I DO. On occasion.
+Utahraptor: FOR SELECTED BONERS ONLY.
+[no text]
+Off panel: For
+          who     among        us       has       not       bon        ed         a       few       bon       ers         ?         
+         T         -         R        ex         (         p      unch      line        ):      Fair    enough
+        0.34%     0.20%    80.85%    37.69%    82.20%     3.10%    99.55%    45.27%     2.21%    53.48%    99.76%    50.54%    84.02%    24.17%    94.48%    99.46%    99.99%     0.09%     0.54%     3.39%    19.65%    81.01%     0.01%    44.75%
+           32        37         0         0         0         5         0         0         3         0         0         0         0         0         0         0         0         3        24         9         1         0       538         0
+           21        26         0         0         0         2         0         0         2         0         0         0         0         0         0         0         0         1         7         2         1         0        18         0
+       59.01%    83.89%     0.00%     0.00%     0.00%    33.24%     0.00%     0.00%    83.66%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    99.33%    55.46%    48.61%    71.79%     0.00%    96.11%     0.00%
+optimistic cost: 9.75e6  average probability: 11.4%  average tok time: 1689
+Not padding the suffix with a space.
+T-Rex: Hey God! Quick question!
+God: HIT ME UP MY DUDE
+T-Rex: How come I can't shoot lasers out of m...our eyes, no?
+Utahraptor: Huh.
+God: T-REX I'M SHOOTING LASERS OUT OF MY EYES RIGHT NOW AND I GOTTA SAY YOU ARE 100% CORRECT ON IT BEING AWESOME
+God: I
+          CAN         '         T         B        EL        IE        VE         I         W       AST        ED         L      ITER       ALL         Y        IN       FIN       ITY         Y       EAR         S        BE      FORE        TR         Y       ING      THIS         
+         T         -         R        ex         (         p      unch      line        ):        aw       man         i         K       NEW        it
+        4.11%    40.79%    99.94%    56.30%    99.37%    99.18%    99.92%    66.86%     4.71%     7.09%    99.31%     0.56%    58.82%    68.99%    99.79%     0.31%    97.58%    43.54%    49.90%    99.93%    99.80%     5.58%    42.80%     0.50%    93.47%    99.87%    29.26%    39.12%    25.42%    95.48%    98.92%   100.00%     0.10%     0.60%     6.42%     0.05%    49.98%     0.01%    13.40%     3.49%     0.03%    86.99%    38.16%
+            4         0         0         0         0         0         0         0         4         2         0        18         0         0         0        26         0         1         0         0         0         3         1        19         0         0         1         0         1         0         0         0         3        26         2         9         0       658         1         4       146         0         0
+            2         0         0         0         0         0         0         0         3         2         0        15         0         0         0        19         0         1         0         0         0         3         1        10         0         0         1         0         0         0         0         0         1         8         0         2         0        18         0         0         1         0         0
+       49.45%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    73.17%    83.60%     0.00%    92.45%     0.00%     0.00%     0.00%    94.84%     0.00%    53.44%     0.00%     0.00%     0.00%    57.96%    56.21%    88.82%     0.00%     0.00%    57.21%     0.00%    32.04%     0.00%     0.00%     0.00%    99.37%    46.68%    20.67%    99.15%     0.00%    97.12%    23.21%    58.68%    95.86%     0.00%     0.00%
+optimistic cost: 8.32e9  average probability: 14.0%  average tok time: 1637
+Not padding the suffix with a space.
+T-Rex: Okay, so remember how in the past everyone thought we'd get flying cars?
+T-Rex: And then late... dreams became so small and petty?
+Utahraptor: Your point?
+T-Rex: My point? MY POINT? My POINT, Utahraptor, is -
+T-Rex: ...
+T-Rex (punchline): ...Wait
+            I      just  realized    planes       can      taxi        on       run      ways        so technically      they         '        re   already    flying      cars         ,     never      mind         ,        we         '        re      good      here
+        0.70%     3.69%    22.09%     0.00%     3.94%     0.01%    23.73%     7.82%    98.16%     3.22%     2.34%    12.38%    25.54%    93.69%    19.96%    39.63%    54.40%     6.60%     0.61%    52.37%     3.83%     2.68%    53.92%    80.55%    16.55%     3.73%
+           11         7         0       231         5       131         0         1         0         8        10         1         0         0         0         0         0         4        26         0         4         7         0         0         1         5
+            6         7         0       134         5        76         0         1         0         3         7         1         0         0         0         0         0         0         4         0         1         0         0         0         0         1
+       88.37%    64.33%     0.00%    98.17%    60.26%    98.20%     0.00%    72.08%     0.00%    65.57%    56.34%    33.67%     0.00%     0.00%     0.00%     0.00%     0.00%    60.55%    72.20%     0.00%    76.24%    44.17%     0.00%     0.00%    17.12%    84.48%
+optimistic cost: 8.94e9  average probability: 6.4%  average tok time: 1624
+Not padding the suffix with a space.
+Narrator: T-REX HAS EATEN TOO MUCH ICE CREAM.
+T-Rex: Dang, I really gotta stop this. I've got a prob...
+T-Rex: THAT SAID, I will absolutely overdose on ice cream to see if it helps.
+Off panel: No, you're right, it's not gonna help.
+T-Rex (punchline): No
+           no         ,       let         '         s       not        be       too         h      asty         ,      they        do      home  delivery       and         I         '        ve   already   ordered                   5         0    things        of       ice     cream        on        my     phone
+        0.90%    45.53%     0.20%    47.07%    99.96%    20.47%     6.72%     6.18%    30.95%    99.60%     9.38%     0.21%     1.16%     0.00%     0.74%     2.69%    24.52%    36.89%    49.26%     3.60%     8.12%     4.89%    15.23%    53.01%     0.04%     6.59%    52.01%    98.86%     1.07%    24.06%     5.54%
+           15         0        31         0         0         0         3         2         0         0         3        47        15      1063        11         5         0         0         0         3         1         3         2         0        88         3         0         0        12         0         3
+           10         0        18         0         0         0         3         2         0         0         1        29        12       555         7         1         0         0         0         1         1         2         0         0        26         0         0         0         0         0         0
+       81.90%     0.00%    87.90%     0.00%     0.00%     0.00%    28.13%    20.72%     0.00%     0.00%    65.94%    78.19%    78.14%    98.70%    70.12%    77.69%     0.00%     0.00%     0.00%    77.24%    47.73%    31.64%    47.88%     0.00%    94.19%    48.20%     0.00%     0.00%    82.40%     0.00%    46.69%
+optimistic cost: 5.64e12  average probability: 5.8%  average tok time: 1611
+Not padding the suffix with a space.
+Narrator: MEANWHILE, IN THE UNIVERSE WHERE EVERYONE IS IMMORTAL:
+T-Rex: Ah yes, another day here in ... anyone worries, Utahraptor's not referring to degenerate neurological diseases, which don't exist here. Phew, am I right?
+T-Rex: I am right.
+T-Rex: I
+         have       had         a  thousand       lif        et      imes        to    become     right         .         
+         N       arr      ator         (         p      unch      line        ):       THE       END
+        1.76%     0.58%    27.24%     0.06%     1.52%    97.55%    99.96%    42.36%     1.67%     8.84%    55.94%    80.96%     0.42%    97.69%    99.89%     0.07%     0.20%     1.82%    50.65%    82.86%     1.56%     1.70%
+            7        22         0       196         2         0         0         0        12         2         0         0         5         0         0         2        69        14         0         0        14         9
+            3        17         0       125         1         0         0         0         5         2         0         0         1         0         0         1         8         0         0         0         1         0
+       69.94%    71.57%     0.00%    82.47%    60.59%     0.00%     0.00%     0.00%    70.19%    22.95%     0.00%     0.00%    88.67%     0.00%     0.00%    99.54%    63.83%    61.42%     0.00%     0.00%    39.72%    58.13%
+optimistic cost: 2.35e7  average probability: 5.9%  average tok time: 1622
+Not padding the suffix with a space.
+T-Rex: Earth's water isn't constantly being created or destroyed. Rather, it's mostly just moving ar...t's - that's beautiful, man!
+Off panel: It also means they'll technically be drinking our pee.
+T-Rex: That's... somewhat less beautiful.
+Off panel: My
+           po       ops       are      also    pretty     water         y       now      that         I     think     about        it         .         
+         T         -         R        ex         (         p      unch      line        ):         P     LEASE        DO       NOT
+        0.14%     4.47%    20.25%     3.96%     2.73%     0.71%    60.48%     0.34%    62.02%    76.45%    88.14%    74.42%    99.16%    75.31%    72.14%    52.01%    98.49%    99.78%    99.96%     0.07%     0.54%     5.06%     0.78%    76.70%     0.57%     0.88%     1.10%    93.39%
+           41         2         0         2         6        18         0        13         0         0         0         0         0         0         0         0         0         0         0         3        21         6         2         0        33        12        15         0
+           13         2         0         1         3         4         0         5         0         0         0         0         0         0         0         0         0         0         0         1         4         0         1         0         5         1         2         0
+       81.53%    91.98%     0.00%    12.61%    46.04%    72.26%     0.00%    96.33%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    99.57%    63.46%    53.74%    96.14%     0.00%    61.03%    74.67%    78.32%     0.00%
+optimistic cost: 7.26e6  average probability: 9.2%  average tok time: 1607
+Not padding the suffix with a space.
+T-Rex: All right everyone, it's time to learn some facts about VEGETABLES!
+T-Rex: Fact one: if you o...g I'm a HERO for ENCOURAGING media literacy by spreading misinformation REQUIRING a critical eye to understand it, but -
+Off panel (punchline): T-Rex,
+     everyone   stopped    eating vegetables       and       now        we       all      have     const        ip      ated        sc        ur        vy
+        0.22%     0.03%    13.65%    77.34%     9.78%     9.97%    11.41%     4.02%    57.05%     0.03%    99.83%     1.36%     0.57%    89.55%    99.93%
+           48       135         1         0         2         2         1         1         0       208         0         1        27         0         0
+           35        74         1         0         0         1         0         0         0        29         0         0         1         0         0
+       71.55%    95.24%    54.66%     0.00%    34.13%    22.54%    50.47%    82.09%     0.00%    91.25%     0.00%    98.20%    57.82%     0.00%     0.00%
+optimistic cost: 6.48e5  average probability: 5.0%  average tok time: 1627
+Not padding the suffix with a space.
+T-Rex: Sam and Samuel: A Scifi Epic. Ahem.
+T-Rex: One day Sam met Samuel - a man who was in all resp... and time", Sam said. "And also affection, as we are currently making out some more". Samuel nodded.
+T-Rex: ATTENTION, LISTENERS!
+T-Rex (punchline): I
+         know         I      sold      this        as         a        sc       ifi      epic       but        it         '         s     gonna       get         M        AD         E        RO         T        IC    before       the       rob       ots      show        up        !!
+        3.23%     7.51%     0.03%    38.17%    37.82%    75.20%    43.39%    74.34%    70.84%    20.54%    37.32%    75.52%    99.82%     0.31%     1.43%     0.25%     0.13%     0.39%    40.22%    99.32%    99.89%     1.54%    15.94%     0.01%    97.22%    23.83%    99.24%     7.38%
+            4         4       132         0         0         0         0         0         0         1         0         0         0        19         4        42        16        47         0         0         0        16         2       219         0         0         0         3
+            2         3        55         0         0         0         0         0         0         0         0         0         0         6         1         8         6         5         0         0         0         4         1        14         0         0         0         1
+       40.71%    55.70%    94.68%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    39.16%     0.00%     0.00%     0.00%    90.66%    86.04%    75.02%    96.34%    56.29%     0.00%     0.00%     0.00%    62.49%    48.37%    97.38%     0.00%     0.00%     0.00%    63.71%
+optimistic cost: 1.07e9  average probability: 8.4%  average tok time: 1611
+Not padding the suffix with a space.
+Image description: The image is animated and some of God's lines change after some time; the transcr...ust an A+ bird all around, and a personal favourite with ol' Utahraptor.
+God: OKAY MINE'S KORI BUSTARD TOO
+T-Rex: You can't steal his choice!!
+God: NO
+            I         J       UST         W       ENT         B       ACK        IN      TIME       AND        MA        DE        IT        SO      THIS         W        AS        AL       WAY         S        MY         C        HO       ICE         
+       God         (         p      unch      line        ):         G        OD        AL       WAY         S         W       INS         B        AB         Y
+       27.44%     4.59%    99.40%    11.83%     1.21%     6.09%    77.37%     9.26%    78.34%    48.61%    15.02%    99.33%    18.40%     3.85%     0.32%    32.63%    76.69%    32.50%    92.34%    99.93%    38.89%     4.94%    98.15%    99.95%    62.04%     5.76%     0.29%     0.37%     0.61%     3.87%    77.76%     0.68%    45.41%     0.72%    42.79%    99.83%    39.50%    90.76%     0.53%     5.39%    90.59%
+            0         6         0         1         3         3         0         2         0         0         0         0         0         5        28         0         0         0         0         0         0         2         0         0         0         2         4        42        27         2         0        38         0        27         0         0         0         0        13         2         0
+            0         5         0         1         3         3         0         2         0         0         0         0         0         4        19         0         0         0         0         0         0         1         0         0         0         0         1         6         0         1         0        13         0         8         0         0         0         0         1         0         0
+        0.00%    61.52%     0.00%    16.45%    94.73%    50.06%     0.00%    73.36%     0.00%     0.00%     0.00%     0.00%     0.00%    47.13%    91.54%     0.00%     0.00%     0.00%     0.00%     0.00%     0.00%    86.63%     0.00%     0.00%     0.00%    79.96%    97.50%    57.20%    78.52%    92.34%     0.00%    61.07%     0.00%    76.59%     0.00%     0.00%     0.00%     0.00%    89.28%    75.83%     0.00%
+optimistic cost: 8.13e8  average probability: 14.0%  average tok time: 1589

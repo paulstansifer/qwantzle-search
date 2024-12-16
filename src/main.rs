@@ -3,6 +3,7 @@ use indicatif::ProgressIterator;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
+use search::practice_search;
 use std::fmt::Write;
 use std::sync::atomic::AtomicBool;
 use tracing_subscriber::layer::SubscriberExt;
@@ -60,6 +61,14 @@ struct Args {
     /// Just complete a prefix, using a sensible sampler
     #[arg(long)]
     complete: Option<String>,
+
+    /// Score tokens for the given strip ID
+    #[arg(long)]
+    tok_score: Option<usize>,
+
+    /// Perform a search on the given strip ID
+    #[arg(long)]
+    search_one: Option<usize>,
 }
 
 #[derive(Default)]
@@ -479,7 +488,7 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
         )
     );
 
-    print!("Token running average probs (2/1%): ");
+    print!("Token running average probs (5/2%): ");
 
     for tok_id in 0..10 {
         let mut tok_avg_probs = vec![];
@@ -492,8 +501,8 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
 
         print!(
             "{tok_id}: {:.2}%/{:.2}%   ",
-            percentile(&tok_avg_probs, 2, false) * 100.0,
-            percentile(&tok_avg_probs, 1, false) * 100.0
+            percentile(&tok_avg_probs, 5, false) * 100.0,
+            percentile(&tok_avg_probs, 2, false) * 100.0
         );
     }
 
@@ -562,6 +571,16 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
 
 static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
 
+fn get_strip(id: usize, args: &Args) -> Strip {
+    let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+    for strip in strips {
+        if strip.id == id {
+            return strip;
+        }
+    }
+    panic!("Strip with id {id} not found!");
+}
+
 fn main() {
     use signal_hook::{
         consts::{SIGINT, SIGTERM},
@@ -587,18 +606,19 @@ fn main() {
         let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
 
         calibrate_costs(&strips, &words, &model, &args);
-    } else if let Some(pfx) = args.complete {
+    } else if let Some(ref pfx) = args.complete {
         if let Ok(id) = pfx.parse::<usize>() {
-            let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
-            for strip in strips {
-                if strip.id == id {
-                    complete(&strip.leadup, 200, &model);
-                    break;
-                }
-            }
+            complete(&get_strip(id, &args).leadup, 200, &model);
         } else {
             complete(&pfx, 200, &model);
         }
+    } else if let Some(id) = args.tok_score {
+        let mut stats = Stats::default();
+        predict_strip(&get_strip(id, &args), &model, &mut stats);
+        println!("{}", stats.details);
+    } else if let Some(id) = args.search_one {
+        let mut report = String::new();
+        let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
     } else {
         // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
         let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);

@@ -26,8 +26,9 @@ impl Ord for Score {
     }
 }
 
+#[derive(Serialize, Deserialize)]
 struct Node {
-    text: Vec<LlamaToken>,
+    text: Vec<i32>,
     word_state: WordState,
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
@@ -36,7 +37,6 @@ struct Node {
     depth_at_pruning: u32,
 }
 
-#[derive(Serialize, Deserialize)]
 struct SerNode {
     text: Vec<i32>,
     word_state: WordState,
@@ -47,35 +47,10 @@ struct SerNode {
     depth_at_pruning: u32,
 }
 
-impl SerNode {
-    fn from(n: &Node) -> SerNode {
-        SerNode {
-            text: n.text.iter().map(|t| t.0).collect(),
-            word_state: n.word_state.clone(),
-            remaining: n.remaining.clone(),
-            probability: n.probability,
-            tok_probs: n.tok_probs.clone(),
-            chars_so_far: n.chars_so_far,
-            depth_at_pruning: n.depth_at_pruning,
-        }
-    }
-    fn to(&self) -> Node {
-        Node {
-            text: self.text.iter().map(|i| LlamaToken(*i)).collect(),
-            word_state: self.word_state.clone(),
-            remaining: self.remaining.clone(),
-            probability: self.probability,
-            tok_probs: self.tok_probs.clone(),
-            chars_so_far: self.chars_so_far,
-            depth_at_pruning: self.depth_at_pruning,
-        }
-    }
-}
-
 impl std::hash::Hash for Node {
     fn hash<H: std::hash::Hasher>(&self, state: &mut H) {
         for t in &self.text {
-            state.write_i32(t.0);
+            state.write_i32(*t);
         }
     }
 }
@@ -87,6 +62,7 @@ impl PartialEq for Node {
 }
 impl Eq for Node {}
 
+#[derive(Serialize, Deserialize)]
 struct Q {
     ties_respecting: PriorityQueue<Node, Score>,
     non_ties_respecting: PriorityQueue<Node, Score>,
@@ -132,8 +108,7 @@ impl Q {
         let mut bytes = 0;
         let mut elts = 0;
         for priority_queue in [&self.ties_respecting, &self.non_ties_respecting] {
-            let srs: Vec<SerNode> = priority_queue.iter().map(|n| SerNode::from(&n.0)).collect();
-            let serialized: Vec<u8> = bincode::serialize(&srs).unwrap();
+            let serialized = bincode::serialize(&priority_queue).unwrap();
             elts += priority_queue.len();
             bytes += serialized.len();
         }
@@ -291,6 +266,11 @@ impl Node {
             depth_at_pruning: 0,
         }
     }
+
+    fn tokens(&self) -> Vec<LlamaToken> {
+        self.text.iter().map(|t| LlamaToken(*t)).collect()
+    }
+
     fn new_with_longest_tok(text: &str, model: &LlamaModel) -> Node {
         let mut res = Node::new(text);
         res.remaining.set_longest_tok_from(text, model);
@@ -320,7 +300,7 @@ impl Node {
             chars_so_far: self.chars_so_far + tok_to_str(t, model).trim().len() as u8,
             depth_at_pruning: self.depth_at_pruning,
         };
-        res.text.push(t);
+        res.text.push(t.0);
         res.tok_probs.push(prob);
 
         let score = prob_score(&res.tok_probs, res.chars_so_far, rlnn_prob);
@@ -333,7 +313,7 @@ impl Node {
             return;
         }
 
-        let candidates = root_sess.advance_and_predict(&self.text, Some(TOK_TOP_P));
+        let candidates = root_sess.advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
 
         self.consider_candidates(candidates, root_sess, q, vocab, rlnn);
 
@@ -489,7 +469,7 @@ pub fn practice_search(
         }
         if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ step % 4 == 0) {
             deepest_node_accessed = std::cmp::max(deepest_node_accessed, node.depth_at_pruning);
-            let cur_text = toks_to_str(&node.text, model);
+            let cur_text = toks_to_str(&node.tokens(), model);
 
             if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {
                 let mut cur_text_alpha = cur_text.clone();
@@ -510,7 +490,7 @@ pub fn practice_search(
                 } else {
                     let msg = format!(
                         "Non-answer: {} != {}",
-                        toks_to_str(&node.text, model),
+                        toks_to_str(&node.tokens(), model),
                         strip.punchline.trim()
                     );
                     *report += &msg;
@@ -520,7 +500,7 @@ pub fn practice_search(
             } else if strip.punchline.trim().starts_with(cur_text.trim()) && !node.text.is_empty() {
                 score_progress_info += &format!(
                     "'{}' {:.3}%  ",
-                    tok_to_str(*node.text.last().unwrap(), model),
+                    tok_to_str(*node.tokens().last().unwrap(), model),
                     p.0 * 100.0
                 );
             }
