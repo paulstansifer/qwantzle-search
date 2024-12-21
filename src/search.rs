@@ -1,17 +1,18 @@
 #![allow(dead_code)]
 
-use std::{cell::Cell, cmp::Ordering, fmt::Write};
+use std::{cell::Cell, cmp::Ordering, fmt::Write, fs, io::Write as _, time::Duration};
 
 use indicatif::ProgressBar;
 use llama_cpp_2::{model::LlamaModel, token::LlamaToken};
 use priority_queue::PriorityQueue;
 use serde::{Deserialize, Serialize};
+use thousands::Separable;
 
 use crate::{
     corpus::Strip,
-    llm::{tok_to_str, toks_to_str, Session},
+    llm::{self, str_to_tokens, tok_to_str, toks_to_str, Session, SessionTimers},
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
-    remaining_letters_neural_net::LetterNet,
+    remaining_letters_neural_net::{self, LetterNet},
     TIME_TO_QUIT,
 };
 
@@ -26,18 +27,8 @@ impl Ord for Score {
     }
 }
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone)]
 struct Node {
-    text: Vec<i32>,
-    word_state: WordState,
-    remaining: LetterPool,
-    probability: f64, // f32 is not quite precise enough!
-    tok_probs: Vec<f32>,
-    chars_so_far: u8,
-    depth_at_pruning: u32,
-}
-
-struct SerNode {
     text: Vec<i32>,
     word_state: WordState,
     remaining: LetterPool,
@@ -62,7 +53,7 @@ impl PartialEq for Node {
 }
 impl Eq for Node {}
 
-#[derive(Serialize, Deserialize)]
+#[derive(Serialize, Deserialize, Clone, Default)]
 struct Q {
     ties_respecting: PriorityQueue<Node, Score>,
     non_ties_respecting: PriorityQueue<Node, Score>,
@@ -104,23 +95,6 @@ impl Q {
         self.ties_respecting.len() + self.non_ties_respecting.len()
     }
 
-    fn save(&self) {
-        let mut bytes = 0;
-        let mut elts = 0;
-        for priority_queue in [&self.ties_respecting, &self.non_ties_respecting] {
-            let serialized = bincode::serialize(&priority_queue).unwrap();
-            elts += priority_queue.len();
-            bytes += serialized.len();
-        }
-
-        println!(
-            "Serializing {} elements would use {} bytes ({} MB)",
-            elts,
-            bytes,
-            bytes / (1024 * 1024)
-        );
-    }
-
     fn push(&mut self, n: Node, s: Score) {
         if n.remaining.respects_ties() {
             self.ties_respecting.push(n, s);
@@ -154,7 +128,360 @@ impl Q {
     }
 }
 
-const TOK_BUFFER: u32 = 25;
+#[derive(Serialize, Deserialize, Clone)]
+pub struct Hints {
+    leadup: String,
+    goal: Option<String>,
+    id: usize,
+    letter_pool: LetterPool,
+    vocab: Vocab,
+    longest_word_len: Option<u8>,
+    longest_token: Option<i32>, // instead of LLamaToken, for serializability
+    token_size: usize,
+}
+
+impl Hints {
+    pub fn from_strip(
+        strip: &Strip,
+        words: &Vec<String>,
+        look_at_ties: bool,
+        llm: &LlamaModel,
+    ) -> Hints {
+        let mut longest_word_len = 0;
+        let vocab = {
+            let mut v_builder = VocabBuilder::default();
+
+            // If there are non-dictionary words, sneak 'em in:
+            for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
+                v_builder.add_word(word, llm, /*vary_case=*/ false);
+                if word.len() > longest_word_len {
+                    longest_word_len = word.len();
+                }
+            }
+
+            for word in words {
+                // Simulate knowing that all words are shorter than the longest in the vocabulary.
+                if word.len() >= longest_word_len {
+                    continue;
+                }
+                v_builder.add_word(word, llm, /*vary_case=*/ true);
+            }
+
+            v_builder.build(/*disabled=*/ false)
+        };
+
+        let toks = llm::str_to_tokens(&strip.punchline, llm);
+        let mut longest_tok_len = 0;
+        let mut longest_tok = toks[0];
+        for t in toks {
+            let t_len = llm::tok_to_str(t, llm).len();
+            if t_len > longest_tok_len {
+                longest_tok_len = t_len;
+                longest_tok = t;
+            }
+        }
+
+        let mut letter_pool = LetterPool::from_text(&strip.punchline, look_at_ties);
+        letter_pool.set_longest_tok_from(&strip.punchline, llm);
+
+        Hints {
+            leadup: strip.leadup.clone(),
+            id: strip.id,
+            goal: Some(strip.punchline.clone()),
+            letter_pool: letter_pool,
+            vocab,
+            longest_word_len: Some(longest_word_len as u8),
+            longest_token: Some(longest_tok.0),
+            token_size: str_to_tokens(&strip.leadup, llm).len() + TOK_BUFFER as usize,
+        }
+    }
+
+    pub fn for_1663(words: &Vec<String>, look_at_ties: bool, llm: &LlamaModel) -> Hints {
+        let vocab = {
+            let mut v_builder = VocabBuilder::default();
+            for word in words {
+                v_builder.add_word(word, llm, /*vary_case=*/ true);
+            }
+
+            v_builder.build(/*disabled=*/ false)
+        };
+
+        let long_word_toks = llm::str_to_tokens(" fundamental", llm);
+        if long_word_toks.len() != 1 {
+            panic!("' fundamental' isn't one token");
+        }
+
+        let leadup = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
+        let token_size = str_to_tokens(&leadup, llm).len() + TOK_BUFFER as usize;
+
+        Hints {
+            leadup: leadup,
+            id: 1663,
+            goal: None, //  Find this!!
+            letter_pool: LetterPool::from_text(
+                "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!",
+                look_at_ties,
+            ),
+            vocab,
+            longest_word_len: Some(8),
+            longest_token: Some(long_word_toks.first().unwrap().0),
+            token_size: token_size,
+        }
+    }
+}
+
+pub struct SearchState<'a> {
+    q: Q,
+
+    llm: &'a LlamaModel,
+    rlnn: LetterNet,
+    sess: llm::Session<'a>,
+
+    hints: Hints,
+
+    search_time: Duration,
+    step: usize,
+    max_search: Option<usize>,
+    deepest_node_accessed: u32,
+    report: String,
+    hall_of_fame: Vec<Node>,
+    progress: ProgressBar,
+}
+
+#[derive(Serialize, Deserialize)]
+struct SearchStateSerializable {
+    q: Q,
+    sess_timers: SessionTimers,
+    hints: Hints,
+    search_time: Duration,
+    step: usize,
+    deepest_node_accessed: u32,
+    report: String,
+    max_search: Option<usize>,
+    hall_of_fame: Vec<Node>,
+}
+
+impl SearchState<'_> {
+    pub fn new(llm: &LlamaModel, hints: Hints, max_search: Option<usize>) -> SearchState {
+        let token_size = hints.token_size as u32;
+
+        let mut q = Q::new();
+        let rlnn = remaining_letters_neural_net::LetterNet::new_from_file(
+            "corpus/letter_pool.safetensors",
+        )
+        .unwrap();
+
+        let root_node = Node::root_from_hints(&hints);
+        let mut sess = Session::new(llm, token_size);
+        let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
+        sess.save_prompt();
+
+        root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
+
+        SearchState {
+            q,
+            llm,
+            rlnn,
+
+            hints,
+
+            sess: sess,
+            search_time: Duration::from_nanos(0),
+            step: 0,
+            deepest_node_accessed: 0,
+            report: String::new(),
+            max_search: max_search,
+            hall_of_fame: vec![],
+
+            progress: ProgressBar::new_spinner(),
+        }
+    }
+
+    pub fn save(&self, filename: &str) {
+        let sss = SearchStateSerializable {
+            q: self.q.clone(),
+            sess_timers: self.sess.timers,
+            hints: self.hints.clone(),
+            search_time: self.search_time,
+            step: self.step,
+            deepest_node_accessed: self.deepest_node_accessed,
+            report: self.report.clone(),
+            max_search: self.max_search,
+            hall_of_fame: self.hall_of_fame.clone(),
+        };
+
+        let bytes = bincode::serialize(&sss).unwrap();
+        fs::write(filename, &bytes).unwrap();
+    }
+
+    pub fn load<'a>(filename: &str, llm: &'a LlamaModel) -> SearchState<'a> {
+        let bytes = fs::read(filename).unwrap();
+        let sss: SearchStateSerializable = bincode::deserialize(&bytes).unwrap();
+        let token_size = sss.hints.token_size as u32;
+
+        println!("Loaded search queue with {} elements.", sss.q.len());
+
+        let mut sess = Session::new(llm, token_size);
+        // TODO: should probably have `advance` without `predict`
+        let _ = sess.advance_and_predict_str(&sss.hints.leadup, Some(0.0));
+        sess.save_prompt();
+        sess.timers = sss.sess_timers;
+
+        SearchState {
+            q: sss.q,
+            llm: llm,
+            rlnn: LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap(),
+
+            hints: sss.hints,
+
+            sess: sess,
+            search_time: sss.search_time,
+            step: sss.step,
+            report: sss.report,
+            deepest_node_accessed: sss.deepest_node_accessed,
+            max_search: sss.max_search,
+            hall_of_fame: sss.hall_of_fame,
+
+            progress: ProgressBar::new_spinner(),
+        }
+    }
+
+    fn time_report(&mut self) {
+        let per_step = |n: u128| (n as f32 / self.step as f32) / 1000.0;
+        let report = format!("Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Score: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}ms.",
+            self.search_time.as_secs(),
+            (self.search_time.as_micros() - self.sess.timers.score_time +self.sess.timers.advance_time + self.sess.timers.predict_time + self.sess.timers.truncate_time) as f32 / 1_000_000.0,
+            per_step(self.sess.timers.score_time),
+            per_step(self.sess.timers.advance_time),
+            per_step(self.sess.timers.predict_time),
+            per_step(self.sess.timers.truncate_time),
+        );
+        self.log_ln(&report);
+    }
+
+    fn log_ln(&mut self, s: &str) {
+        self.report += s;
+        self.report += "\n";
+        self.progress.println(s);
+    }
+
+    fn full_string_complete(&mut self, text: &str, score: Score) -> bool {
+        match &self.hints.goal {
+            None => {
+                self.log_ln(&format!(
+                    "Possible solution! '{}!!' ({:.2}%)",
+                    text,
+                    score.0 * 100.0
+                ));
+                let mut file = fs::OpenOptions::new()
+                    .create(true)
+                    .append(true)
+                    .open("/home/paul/qwantzle_completions.txt")
+                    .unwrap();
+                let _ = writeln!(&mut file, "{}!! ({:.2}%)", text, score.0 * 100.0);
+
+                false // keep going!
+            }
+            Some(goal_text) => {
+                let mut text_alpha = text.to_owned();
+                let mut goal_alpha = goal_text.clone();
+                text_alpha.retain(|c| c.is_alphabetic());
+                goal_alpha.retain(|c| c.is_alphabetic());
+
+                if goal_text.trim() == text.trim() {
+                    self.log_ln(&format!("'{}' ({:.2}%)", text, score.0 * 100.0));
+                    self.log_ln(&format!(
+                        "Search successful after {} steps. Deepest node accessed: {}",
+                        self.step.separate_with_commas(),
+                        self.deepest_node_accessed.separate_with_commas()
+                    ));
+
+                    true
+                } else {
+                    self.log_ln(&format!(
+                        "Non-answer: {} ({:.2}%) != {}",
+                        text,
+                        score.0 * 100.0,
+                        goal_text
+                    ));
+                    false
+                }
+            }
+        }
+    }
+
+    fn search_step(&mut self) -> bool {
+        self.progress.tick();
+        let step_start = std::time::Instant::now();
+
+        if let Some((node, p)) = self.q.pop(/*require_tie_respecting=*/ self.step % 4 == 0) {
+            self.deepest_node_accessed =
+                std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
+            let cur_text = toks_to_str(&node.tokens(), &self.llm);
+
+            if node.remaining.empty_of_letters() {
+                return self.full_string_complete(&cur_text, p);
+            }
+
+            // let cur_str = format!("{:.2}%: {}", p.0 * 100.0, cur_text);
+            // log.write_str(&format!("{}\n", cur_str)).unwrap();
+
+            self.progress.set_message(format!(
+                "{:9} {:.3}% {}",
+                self.step.separate_with_commas(),
+                p.0 * 100.0,
+                cur_text
+            ));
+
+            node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
+            self.step += 1;
+        } else {
+            let msg = format!(
+                "Exhausted all reasonable nodes at {} steps",
+                self.step.separate_with_commas()
+            );
+            self.log_ln(&msg);
+
+            self.progress.abandon_with_message(msg);
+            return true;
+        }
+
+        let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
+
+        if self.q.len() > 3_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(500_000);
+        }
+
+        self.search_time += step_start.elapsed();
+
+        if quit_now {
+            self.progress.set_message("Saving...");
+            let filename = format!(
+                "/home/paul/.qwantzle/{}-{}.search",
+                self.hints.id, self.step
+            );
+            self.save(&filename);
+            self.progress
+                .abandon_with_message(format!("Saved to {}", filename));
+            return true;
+        }
+
+        // Have we reached the end?
+        if let Some(limit) = self.max_search {
+            limit >= self.step
+        } else {
+            false
+        }
+    }
+
+    pub fn search(&mut self) {
+        while !self.search_step() {}
+
+        self.time_report();
+    }
+}
+
+const TOK_BUFFER: u32 = 65;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems sensitive to this; maybe we need a better criterion?
@@ -255,6 +582,19 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
 }
 
 impl Node {
+    fn root_from_hints(hints: &Hints) -> Node {
+        Node {
+            text: vec![],
+            word_state: WordState::new_empty(),
+            remaining: hints.letter_pool.clone(),
+            probability: 1.0,
+            tok_probs: vec![],
+            chars_so_far: 0,
+            depth_at_pruning: 0,
+        }
+    }
+
+    // TODO: get rid of this one
     fn new(text: &str) -> Node {
         Node {
             text: vec![],
@@ -322,7 +662,7 @@ impl Node {
 
     fn consider_candidates(
         &self,
-        candidates: Vec<(LlamaToken, f32)>,
+        candidates: Vec<(LlamaToken, f64)>,
         sess: &mut Session,
         q: &mut Q,
         vocab: &Vocab,
@@ -340,9 +680,11 @@ impl Node {
                 break;
             }
 
-            if let Some((next_node, score)) = self.push_token(tok, p, &sess.model(), vocab, rlnn) {
+            if let Some((next_node, score)) =
+                self.push_token(tok, p as f32, &sess.model(), vocab, rlnn)
+            {
                 // Re-use the context right away, if the best candidate is good enough.
-                if p > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
+                if p as f32 > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
                     let before_advance = std::time::Instant::now();
                     let ff_candidates = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
                     FF_ADVANCE_TIME

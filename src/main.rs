@@ -3,7 +3,9 @@ use indicatif::ProgressIterator;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
-use search::practice_search;
+use llama_cpp_2::token_type::LlamaTokenAttr;
+use llm::tok_to_str;
+use search::SearchState;
 use std::fmt::Write;
 use std::sync::atomic::AtomicBool;
 use tracing_subscriber::layer::SubscriberExt;
@@ -69,6 +71,10 @@ struct Args {
     /// Perform a search on the given strip ID
     #[arg(long)]
     search_one: Option<usize>,
+
+    /// Display the tokenization of the given string
+    #[arg(long)]
+    tokenize: Option<String>,
 }
 
 #[derive(Default)]
@@ -183,8 +189,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     let mut punchline: String = String::new();
     for tok in &punch_toks {
-        stats.tok_times.push(sess.predict_time);
-        sess.predict_time = 0;
+        stats.tok_times.push(sess.timers.predict_time);
+        sess.timers.predict_time = 0;
         let mut ahead = 0;
         let mut ahead_and_pool_valid = 0;
         let mut prob_ahead = 0.0;
@@ -210,8 +216,8 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
             write!(prob_ahead_s, "{:>9.2}%", prob_ahead * 100.0).unwrap();
             write!(prob_s, "{:>9.2}%", prob * 100.0).unwrap();
             stats.aheads.push(ahead);
-            stats.probs.push(*prob);
-            stats.prob_aheads.push(prob_ahead);
+            stats.probs.push(*prob as f32);
+            stats.prob_aheads.push(prob_ahead as f32);
             overall_probability *= *prob as f64;
         } else {
             write!(ahead_s, " -------- ").unwrap();
@@ -617,8 +623,37 @@ fn main() {
         predict_strip(&get_strip(id, &args), &model, &mut stats);
         println!("{}", stats.details);
     } else if let Some(id) = args.search_one {
-        let mut report = String::new();
-        let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
+        // let mut report = String::new();
+        // let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
+        let hints = if id == 1663 {
+            search::Hints::for_1663(&words, false, &model)
+        } else {
+            search::Hints::from_strip(&get_strip(id, &args), &words, false, &model)
+        };
+
+        let mut search = SearchState::new(&model, hints, None);
+        search.search();
+    } else if let Some(s) = args.tokenize {
+        let toks = llm::str_to_tokens(&s, &model);
+        let mut s_top = String::new();
+        let mut s_bot = String::new();
+        for tok in toks {
+            let tok_str = tok_to_str(tok, &model).replace("\n", "\\n");
+            s_top += &format!("'{}' ", tok_str);
+            s_bot += &format!(" {}", tok.0);
+
+            if model.token_attr(tok).contains(LlamaTokenAttr::Control) {
+                s_bot += "[C]"
+            }
+
+            while s_bot.len() < s_top.len() {
+                s_bot += " ";
+            }
+            while s_top.len() < s_bot.len() {
+                s_top += " ";
+            }
+        }
+        print!("{s_top}\n{s_bot}\n");
     } else {
         // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
         let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);

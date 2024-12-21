@@ -36,6 +36,7 @@ pub struct VocabBuilder {
     nonletters: HashSet<i32>,
 }
 
+#[derive(Serialize, Deserialize, Clone, Copy)]
 enum TokenRole {
     StartsWord,
     EndsWord,
@@ -43,6 +44,7 @@ enum TokenRole {
     NonLetter,
 }
 
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Vocab {
     valid_words: HashSet<Vec<i32>>,
     valid_prefixes: HashSet<Vec<i32>>,

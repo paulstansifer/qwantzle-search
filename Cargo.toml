@@ -36,3 +36,4 @@ llama-cpp-2 = { version = "0.1.85", features = ["cuda"] }
 lazy_static = "1.5.0"
 gag = "1.0.0"
 signal-hook = "0.3.17"
+thousands = "0.2.0"

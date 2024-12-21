@@ -7,6 +7,7 @@ use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::AddBos;
 use llama_cpp_2::model::{params::LlamaModelParams, LlamaModel};
 use llama_cpp_2::token::LlamaToken;
+use serde::{Deserialize, Serialize};
 
 lazy_static! {
     pub static ref BACKEND: LlamaBackend = LlamaBackend::init().unwrap();
@@ -59,15 +60,20 @@ pub struct Session<'a> {
     // batch: LlamaBatch,
     prompt_toks: Option<usize>,
     empty: bool,
-    pub advance_time: u128,
-    pub predict_time: u128,
-    pub score_time: u128,
-    pub truncate_time: u128,
     toks: usize,
+    pub timers: SessionTimers,
 }
 
 static PROMPT_SEQ_ID: i32 = 0;
 static OTHER_SEQ_ID: i32 = 1;
+
+#[derive(Serialize, Deserialize, Default, Clone, Copy)]
+pub struct SessionTimers {
+    pub advance_time: u128,
+    pub predict_time: u128,
+    pub score_time: u128,
+    pub truncate_time: u128,
+}
 
 impl<'a> Session<'a> {
     pub fn new(model: &'a LlamaModel, toks: u32) -> Session<'a> {
@@ -85,20 +91,20 @@ impl<'a> Session<'a> {
             // batch: LlamaBatch::new(toks as usize, 2),
             prompt_toks: None,
             empty: true,
-            advance_time: 0,
-            predict_time: 0,
-            score_time: 0,
-            truncate_time: 0,
             toks: 0,
+            timers: SessionTimers::default(),
         }
     }
 
     // Only mutable to update the time
-    fn candidates(&mut self, top_p: Option<f32>) -> Vec<(LlamaToken, f32)> {
+    fn candidates(&mut self, top_p: Option<f32>) -> Vec<(LlamaToken, f64)> {
         let before_score = std::time::Instant::now();
 
-        let mut candidates: Vec<(LlamaToken, f32)> =
-            self.ctx.candidates().map(|c| (c.id(), c.logit())).collect();
+        let mut candidates: Vec<(LlamaToken, f64)> = self
+            .ctx
+            .candidates()
+            .map(|c| (c.id(), c.logit() as f64))
+            .collect();
 
         // Reversed; we want largest-first:
         candidates.sort_by(|l, r| r.1.partial_cmp(&l.1).unwrap());
@@ -107,13 +113,13 @@ impl<'a> Session<'a> {
 
         let mut total_weight: f64 = 0.0;
         for (_, ref mut logit) in &mut candidates {
-            *logit = f32::exp(*logit - max_logit);
-            total_weight += *logit as f64;
+            *logit = f64::exp(*logit - max_logit);
+            total_weight += *logit;
         }
 
         // Scale so it sums to zero:
-        for (_, ref mut weight) in &mut candidates {
-            *weight /= total_weight as f32;
+        for (_, ref mut logit) in &mut candidates {
+            *logit /= total_weight;
         }
 
         if let Some(top_p) = top_p {
@@ -121,7 +127,7 @@ impl<'a> Session<'a> {
             let mut elts_needed = 0;
             for (i, (_, p)) in candidates.iter().enumerate() {
                 total_p += p;
-                if total_p > top_p {
+                if total_p > top_p as f64 {
                     elts_needed = i + 1;
                     break;
                 }
@@ -136,7 +142,7 @@ impl<'a> Session<'a> {
                 candidates.truncate(elts_needed);
             }
         }
-        self.score_time += before_score.elapsed().as_micros();
+        self.timers.score_time += before_score.elapsed().as_micros();
 
         candidates
     }
@@ -145,7 +151,7 @@ impl<'a> Session<'a> {
         &mut self,
         text: &str,
         top_p: Option<f32>,
-    ) -> Vec<(LlamaToken, f32)> {
+    ) -> Vec<(LlamaToken, f64)> {
         let toks = self
             .ctx
             .model
@@ -165,7 +171,7 @@ impl<'a> Session<'a> {
         &mut self,
         toks: &[LlamaToken],
         top_p: Option<f32>,
-    ) -> Vec<(LlamaToken, f32)> {
+    ) -> Vec<(LlamaToken, f64)> {
         if toks.is_empty() {
             panic!("No tokens!!");
         }
@@ -191,12 +197,12 @@ impl<'a> Session<'a> {
         //     .expect("advancing context");
         self.empty = false;
 
-        self.advance_time += before_advance.elapsed().as_micros();
+        self.timers.advance_time += before_advance.elapsed().as_micros();
         {
-            let _stderr_gag = gag::Gag::stderr().unwrap();
+            //let _stderr_gag = gag::Gag::stderr().unwrap();
             let before_predict = std::time::Instant::now();
             self.ctx.decode(&mut batch).expect("predicting");
-            self.predict_time += before_predict.elapsed().as_micros();
+            self.timers.predict_time += before_predict.elapsed().as_micros();
         }
 
         let res = self.candidates(top_p);
@@ -217,7 +223,7 @@ impl<'a> Session<'a> {
         self.ctx
             .clear_kv_cache_seq(None, Some(self.prompt_toks.unwrap() as u32), None)
             .unwrap();
-        self.truncate_time += before_truncate.elapsed().as_micros();
+        self.timers.truncate_time += before_truncate.elapsed().as_micros();
 
         self.toks = self.prompt_toks.expect("prompt saved");
     }
