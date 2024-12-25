@@ -226,6 +226,7 @@ impl<'a> Session<'a> {
         self.timers.truncate_time += before_truncate.elapsed().as_micros();
 
         self.toks = self.prompt_toks.expect("prompt saved");
+        // self.ctx.kv_cache_defrag();
     }
 
     pub fn model(&self) -> &LlamaModel {

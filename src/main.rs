@@ -578,7 +578,7 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
 static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
 
 fn get_strip(id: usize, args: &Args) -> Strip {
-    let strips = corpus::get_strips("corpus/strips.csv", &args.prompt_prefix);
+    let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
     for strip in strips {
         if strip.id == id {
             return strip;
@@ -626,9 +626,9 @@ fn main() {
         // let mut report = String::new();
         // let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
         let hints = if id == 1663 {
-            search::Hints::for_1663(&words, false, &model)
+            search::Hints::for_1663(&words, true, &model)
         } else {
-            search::Hints::from_strip(&get_strip(id, &args), &words, false, &model)
+            search::Hints::from_strip(&get_strip(id, &args), &words, true, &model)
         };
 
         let mut search = SearchState::new(&model, hints, None);

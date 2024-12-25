@@ -200,9 +200,11 @@ impl Hints {
         let vocab = {
             let mut v_builder = VocabBuilder::default();
             for word in words {
-                v_builder.add_word(word, llm, /*vary_case=*/ true);
+                if word.len() <= 8 {
+                    v_builder.add_word(word, llm, /*vary_case=*/ true);
+                }
             }
-
+            v_builder.add_word("fundamental", llm, false);
             v_builder.build(/*disabled=*/ false)
         };
 
@@ -213,21 +215,32 @@ impl Hints {
 
         let leadup = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
         let token_size = str_to_tokens(&leadup, llm).len() + TOK_BUFFER as usize;
+        let mut letter_pool = LetterPool::from_text(
+            "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!",
+            look_at_ties,
+        );
+        letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
+        letter_pool.set_last_letter(b'w');
 
         Hints {
             leadup: leadup,
             id: 1663,
             goal: None, //  Find this!!
-            letter_pool: LetterPool::from_text(
-                "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!",
-                look_at_ties,
-            ),
+            letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(8),
             longest_token: Some(long_word_toks.first().unwrap().0),
             token_size: token_size,
         }
     }
+}
+
+#[derive(Serialize, Deserialize, Clone, Default)]
+
+struct HallOfFame {
+    initial_nodes: Vec<String>,
+    modulo_nodes: Vec<String>,
+    high_score_nodes: PriorityQueue<String, Score>,
 }
 
 pub struct SearchState<'a> {
@@ -244,7 +257,7 @@ pub struct SearchState<'a> {
     max_search: Option<usize>,
     deepest_node_accessed: u32,
     report: String,
-    hall_of_fame: Vec<Node>,
+    hall_of_fame: HallOfFame,
     progress: ProgressBar,
 }
 
@@ -258,7 +271,7 @@ struct SearchStateSerializable {
     deepest_node_accessed: u32,
     report: String,
     max_search: Option<usize>,
-    hall_of_fame: Vec<Node>,
+    hall_of_fame: HallOfFame,
 }
 
 impl SearchState<'_> {
@@ -291,7 +304,7 @@ impl SearchState<'_> {
             deepest_node_accessed: 0,
             report: String::new(),
             max_search: max_search,
-            hall_of_fame: vec![],
+            hall_of_fame: HallOfFame::default(),
 
             progress: ProgressBar::new_spinner(),
         }
@@ -388,7 +401,7 @@ impl SearchState<'_> {
                 text_alpha.retain(|c| c.is_alphabetic());
                 goal_alpha.retain(|c| c.is_alphabetic());
 
-                if goal_text.trim() == text.trim() {
+                if text_alpha == goal_alpha {
                     self.log_ln(&format!("'{}' ({:.2}%)", text, score.0 * 100.0));
                     self.log_ln(&format!(
                         "Search successful after {} steps. Deepest node accessed: {}",
@@ -410,6 +423,44 @@ impl SearchState<'_> {
         }
     }
 
+    fn hof_update(&mut self, desc: String, p: Score) {
+        if self.hall_of_fame.initial_nodes.len() < 2_000 {
+            self.hall_of_fame.initial_nodes.push(desc.clone());
+        }
+        if self.step <= 2_000 && self.step % 500 == 0 {
+            std::fs::write("/tmp/hof-init", self.hall_of_fame.initial_nodes.join("\n")).unwrap();
+        }
+
+        if self.step % 500 == 0 {
+            self.hall_of_fame.modulo_nodes.push(desc.clone());
+        }
+
+        self.hall_of_fame.high_score_nodes.push(desc, p);
+
+        if self.hall_of_fame.high_score_nodes.len() > 10_000 {
+            self.hall_of_fame.high_score_nodes = PriorityQueue::<String, Score>::from_iter(
+                self.hall_of_fame
+                    .high_score_nodes
+                    .clone()
+                    .into_sorted_iter()
+                    .take(5_000),
+            )
+        }
+
+        if self.step % 10_000 == 0 {
+            std::fs::write("/tmp/hof-mod", self.hall_of_fame.modulo_nodes.join("\n")).unwrap();
+            std::fs::write(
+                "/tmp/hof-best",
+                self.hall_of_fame
+                    .high_score_nodes
+                    .clone()
+                    .into_sorted_vec()
+                    .join("\n"),
+            )
+            .unwrap();
+        }
+    }
+
     fn search_step(&mut self) -> bool {
         self.progress.tick();
         let step_start = std::time::Instant::now();
@@ -420,18 +471,29 @@ impl SearchState<'_> {
             let cur_text = toks_to_str(&node.tokens(), &self.llm);
 
             if node.remaining.empty_of_letters() {
-                return self.full_string_complete(&cur_text, p);
+                if self.full_string_complete(&cur_text, p) {
+                    return true;
+                }
             }
 
             // let cur_str = format!("{:.2}%: {}", p.0 * 100.0, cur_text);
             // log.write_str(&format!("{}\n", cur_str)).unwrap();
 
-            self.progress.set_message(format!(
-                "{:9} {:.3}% {}",
+            let desc = format!(
+                "{:9} {} {:.3}% {}",
                 self.step.separate_with_commas(),
+                if node.remaining.respects_ties() {
+                    "T"
+                } else {
+                    "-"
+                },
                 p.0 * 100.0,
                 cur_text
-            ));
+            );
+
+            self.progress.set_message(desc.clone());
+
+            self.hof_update(desc, p);
 
             node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
             self.step += 1;
@@ -449,7 +511,7 @@ impl SearchState<'_> {
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
         if self.q.len() > 3_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(500_000);
+            self.q = std::mem::take(&mut self.q).trim(700_000);
         }
 
         self.search_time += step_start.elapsed();
@@ -481,7 +543,7 @@ impl SearchState<'_> {
     }
 }
 
-const TOK_BUFFER: u32 = 65;
+const TOK_BUFFER: u32 = 25;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems sensitive to this; maybe we need a better criterion?
@@ -568,7 +630,7 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
     let mut chars_i = 0.0;
     while chars_i < chars_so_far as f32 {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
-        let filter_ratio: f32 = 0.05 + 0.55 * ((80.0 - chars_i) / 80.0);
+        let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
         // This is unmotivated; purely empirical. Starts at 6.0, goes towards 4.0:
         let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0;
@@ -736,7 +798,7 @@ pub fn practice_search(
 
     progress.set_message(format!("Loading context"));
 
-    let mut root_sess = Session::new(model, leadup_toks.len() as u32 + TOK_BUFFER);
+    let mut root_sess = Session::new(model, leadup_toks.len() as u32 + TOK_BUFFER + 100);
 
     let mut longest_word_len = 0;
     // Set up vocabulary restrictions

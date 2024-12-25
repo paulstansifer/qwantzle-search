@@ -269,7 +269,7 @@ impl PoolTok {
 impl LetterPool {
     // TODO: use this, rather than `size`, to terminate search.
     pub fn empty_of_letters(&self) -> bool {
-        return self.letter_size() == 0;
+        return self.long_tok == None && self.letter_size() == 0;
     }
 
     pub fn respects_ties(&self) -> bool {
@@ -338,6 +338,7 @@ impl LetterPool {
         self.lookup(Char(c))
     }
 
+    // TODO TODO TODO: set last letter correctly
     // Add the model as an optional for finding the longest token.
     pub fn from_text(text: &str, look_at_ties: bool) -> LetterPool {
         let mut res = LetterPool {
@@ -387,6 +388,16 @@ impl LetterPool {
         res.tie_sequences = Some(tie_seqs);
 
         return res;
+    }
+
+    // HUGE HACK; should pull this concept out of `from_text`
+    pub fn set_last_letter(&mut self, b: u8) {
+        self.last_letter = Some(Char(b))
+    }
+
+    pub fn set_longest_tok(&mut self, longest_tok: LlamaToken, model: &LlamaModel) {
+        self.remove(longest_tok, model);
+        self.long_tok = Some(longest_tok.0);
     }
 
     pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
