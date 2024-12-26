@@ -75,6 +75,10 @@ struct Args {
     /// Display the tokenization of the given string
     #[arg(long)]
     tokenize: Option<String>,
+
+    /// Don't care about whether the theory of ties is respected
+    #[arg(long, action = clap::ArgAction::SetTrue)]
+    ignore_ties: bool,
 }
 
 #[derive(Default)]
@@ -626,9 +630,9 @@ fn main() {
         // let mut report = String::new();
         // let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
         let hints = if id == 1663 {
-            search::Hints::for_1663(&words, true, &model)
+            search::Hints::for_1663(&words, !args.ignore_ties, &model)
         } else {
-            search::Hints::from_strip(&get_strip(id, &args), &words, true, &model)
+            search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
         };
 
         let mut search = SearchState::new(&model, hints, None);

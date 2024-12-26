@@ -16,14 +16,14 @@ use crate::{
     TIME_TO_QUIT,
 };
 
-// Reversed ordering for the priority queue, and pretending to really be `Cmp`.
+// Pretent to really be `Cmp`.
 #[derive(PartialOrd, PartialEq, Clone, Copy, Serialize, Deserialize)]
 struct Score(f64);
 
 impl Eq for Score {}
 impl Ord for Score {
     fn cmp(&self, other: &Self) -> Ordering {
-        self.0.partial_cmp(&other.0).unwrap().reverse()
+        self.partial_cmp(other).unwrap()
     }
 }
 
@@ -114,8 +114,7 @@ impl Q {
         if let (Some((_, t_score)), Some((_, n_score))) =
             (self.ties_respecting.peek(), self.non_ties_respecting.peek())
         {
-            if t_score < n_score {
-                // `Scores` compare lower-is-better.
+            if t_score > n_score {
                 self.ties_respecting.pop()
             } else {
                 self.non_ties_respecting.pop()
@@ -215,12 +214,13 @@ impl Hints {
 
         let leadup = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
         let token_size = str_to_tokens(&leadup, llm).len() + TOK_BUFFER as usize;
-        let mut letter_pool = LetterPool::from_text(
-            "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!",
-            look_at_ties,
-        );
+        let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
+        let mut letter_pool = LetterPool::just_letters_from_text(letters);
         letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
         letter_pool.set_last_letter(b'w');
+        if look_at_ties {
+            letter_pool.set_ties(letters);
+        }
 
         Hints {
             leadup: leadup,
@@ -432,7 +432,11 @@ impl SearchState<'_> {
         }
 
         if self.step % 500 == 0 {
-            self.hall_of_fame.modulo_nodes.push(desc.clone());
+            self.hall_of_fame.modulo_nodes.push(format!(
+                "{}   - {}",
+                desc.clone(),
+                self.deepest_node_accessed
+            ));
         }
 
         self.hall_of_fame.high_score_nodes.push(desc, p);

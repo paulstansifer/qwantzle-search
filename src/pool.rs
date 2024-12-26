@@ -338,9 +338,31 @@ impl LetterPool {
         self.lookup(Char(c))
     }
 
-    // TODO TODO TODO: set last letter correctly
-    // Add the model as an optional for finding the longest token.
-    pub fn from_text(text: &str, look_at_ties: bool) -> LetterPool {
+    /// This must be called after `set_longest_tok` (TODO: fix or enforce!)
+    pub fn set_ties(&mut self, text: &str) {
+        let mut tie_seqs = vec![vec![]; 7];
+
+        for occurences in 1..6 {
+            for byte in text.as_bytes() {
+                if *byte == b' '
+                    || !Char(*byte).is_lc_letter()
+                    || self.lowercase[(byte - b'a') as usize] != occurences
+                {
+                    continue;
+                }
+                let ch = Char(*byte);
+                if tie_seqs[occurences as usize].contains(&ch) {
+                    continue;
+                }
+                tie_seqs[occurences as usize].push(ch);
+            }
+        }
+        tie_seqs.retain(|v| !v.is_empty());
+
+        self.tie_sequences = Some(tie_seqs);
+    }
+
+    pub fn just_letters_from_text(text: &str) -> LetterPool {
         let mut res = LetterPool {
             lowercase: [0; 26],
             other_chars: vec![],
@@ -357,35 +379,25 @@ impl LetterPool {
             }
 
             *res.entry(c) += 1;
+        }
+        res
+    }
+
+    // TODO TODO: Don't use this
+    // Add the model as an optional for finding the longest token.
+    pub fn from_text(text: &str, look_at_ties: bool) -> LetterPool {
+        let mut res = Self::just_letters_from_text(text);
+
+        for byte in text.as_bytes() {
+            let c = Char(*byte);
             if c.is_letter() {
                 res.last_letter = Some(c);
             }
         }
 
-        if !look_at_ties {
-            return res;
+        if look_at_ties {
+            res.set_ties(text);
         }
-
-        let mut tie_seqs = vec![vec![]; 7];
-
-        for occurences in 1..6 {
-            for byte in text.as_bytes() {
-                if *byte == b' '
-                    || !Char(*byte).is_lc_letter()
-                    || res.lowercase[(byte - b'a') as usize] != occurences
-                {
-                    continue;
-                }
-                let ch = Char(*byte);
-                if tie_seqs[occurences as usize].contains(&ch) {
-                    continue;
-                }
-                tie_seqs[occurences as usize].push(ch);
-            }
-        }
-        tie_seqs.retain(|v| !v.is_empty());
-
-        res.tie_sequences = Some(tie_seqs);
 
         return res;
     }
