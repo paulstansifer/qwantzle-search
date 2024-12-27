@@ -68,6 +68,10 @@ struct Args {
     #[arg(long)]
     tok_score: Option<usize>,
 
+    // For tok-score, use a different suffix.
+    #[arg(long)]
+    suffix: Option<String>,
+
     /// Perform a search on the given strip ID
     #[arg(long)]
     search_one: Option<usize>,
@@ -133,20 +137,36 @@ macro_rules! percentile_table_2_digits_percentage {
 }
 
 //fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
-fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, f64) {
+fn predict_strip(
+    strip: &Strip,
+    alt_punch: Option<&str>,
+    model: &LlamaModel,
+    stats: &mut Stats,
+) -> (f64, f64) {
+    let rlnn =
+        remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
+            .unwrap();
+
+    let punchline_to_examine = if let Some(alt_punch) = alt_punch {
+        alt_punch
+    } else {
+        &strip.punchline
+    };
+
     let toks_needed = model
         .str_to_token(&strip.leadup, llama_cpp_2::model::AddBos::Always)
         .unwrap()
         .len() as u32
         + model
-            .str_to_token(&strip.punchline, llama_cpp_2::model::AddBos::Never)
+            .str_to_token(&punchline_to_examine, llama_cpp_2::model::AddBos::Never)
             .unwrap()
             .len() as u32
         + 2;
     let mut sess = llm::Session::new(model, toks_needed);
     let mut candidates = sess.advance_and_predict_str(&strip.leadup, Some(0.99995));
 
-    let (punch_toks, space) = llm::str_to_tokens_maybe_with_prefix_space(&strip.punchline, model);
+    let (punch_toks, space) =
+        llm::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
 
     if space {
         writeln!(stats.details, "Padding the suffix with a space.").unwrap();
@@ -154,19 +174,7 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
         writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
     };
 
-    // {
-    //     // Determine how long copy and truncation take.
-    //     let before_cpy = std::time::Instant::now();
-    //     let mut copied_ctx = ctx.deep_copy().unwrap();
-    //     stats.ctx_cpy_times.push(before_cpy.elapsed());
-
-    //     let before_trn = std::time::Instant::now();
-    //     copied_ctx
-    //         .truncate_context(ctx.context_size() - 10)
-    //         .unwrap();
-    //     stats.truncate_times.push(before_trn.elapsed());
-    // }
-
+    // Use the original punchline for the letter pool!
     let mut letter_pool = pool::LetterPool::from_text(&strip.punchline, /*ties*/ false);
 
     write!(
@@ -183,10 +191,16 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
 
     stats.strip_avg_probs.push(vec![]);
     let mut tok_s = "   ".to_string();
+    let mut filter_s = "   ".to_string();
+    let mut chars_s = "   ".to_string();
+    let mut tok_score_s = "   ".to_string();
     let mut ahead_s = "   ".to_string();
     let mut ahead_pv_s = "   ".to_string();
     let mut prob_ahead_s = "   ".to_string();
     let mut prob_s = "   ".to_string();
+
+    let mut chars_i = 0.0;
+    let mut overall_bonus: f64 = 1.0;
 
     let mut optimistic_cost = 1.0;
     let mut overall_probability: f64 = 1.0;
@@ -212,22 +226,46 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
             prob_ahead += prob;
         }
 
-        write!(tok_s, "{:>10}", llm::tok_to_str(*tok, model)).unwrap();
+        let tok_as_string = llm::tok_to_str(*tok, model);
+
+        write!(tok_s, "{:>12}", tok_as_string).unwrap();
+
+        let mut filter_bonus = 1.0;
+        let mut char_bonus = 1.0;
+
+        for _ in 0..tok_as_string.trim().bytes().len() {
+            filter_bonus *=
+                (1.0 / (0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75))).powf(0.25);
+            char_bonus *= (f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0 + 1.0).powf(0.25);
+
+            chars_i += 1.0;
+        }
+
+        write!(filter_s, "{:>12.2}", filter_bonus).unwrap();
+        write!(chars_s, "{:>12.2}", char_bonus).unwrap();
+        overall_bonus *= (filter_bonus * char_bonus) as f64;
 
         if let Some((_, prob)) = found_cand {
-            write!(ahead_s, "{:>10}", ahead).unwrap();
-            write!(ahead_pv_s, "{:>10}", ahead_and_pool_valid).unwrap();
-            write!(prob_ahead_s, "{:>9.2}%", prob_ahead * 100.0).unwrap();
-            write!(prob_s, "{:>9.2}%", prob * 100.0).unwrap();
+            write!(ahead_s, "{:>12}", ahead).unwrap();
+            write!(ahead_pv_s, "{:>12}", ahead_and_pool_valid).unwrap();
+            write!(prob_ahead_s, "{:>11.2}%", prob_ahead * 100.0).unwrap();
+            write!(prob_s, "{:>11.3}%", prob * 100.0).unwrap();
+            write!(
+                tok_score_s,
+                "{:>11.3}%",
+                prob * filter_bonus as f64 * char_bonus as f64 * 100.0
+            )
+            .unwrap();
             stats.aheads.push(ahead);
             stats.probs.push(*prob as f32);
             stats.prob_aheads.push(prob_ahead as f32);
             overall_probability *= *prob as f64;
         } else {
-            write!(ahead_s, " -------- ").unwrap();
-            write!(ahead_pv_s, " -------- ").unwrap();
-            write!(prob_ahead_s, " -------- ").unwrap();
-            write!(prob_s, " -------- ").unwrap();
+            write!(ahead_s, " ---------- ").unwrap();
+            write!(ahead_pv_s, " ---------- ").unwrap();
+            write!(prob_ahead_s, " ---------- ").unwrap();
+            write!(prob_s, " ---------- ").unwrap();
+            write!(tok_score_s, " ---------- ").unwrap();
             stats.aheads.push(10000);
             stats.probs.push(0.0001);
             stats.prob_aheads.push(0.9999);
@@ -251,16 +289,29 @@ fn predict_strip(strip: &Strip, model: &LlamaModel, stats: &mut Stats) -> (f64, 
         punchline.push_str(&llm::tok_to_str(*tok, model));
         letter_pool.remove(*tok, &model);
     }
-    assert!(letter_pool.size() == 0);
+    if alt_punch.is_none() {
+        assert!(letter_pool.size() == 0);
+    }
 
     let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
 
     write!(
         stats.details,
-        "{tok_s}\n{prob_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0}\n",
+        "{tok_s}\n{prob_s}\n{filter_s}\n{chars_s}\n{tok_score_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0} ",
         optimistic_cost,  average_probability * 100.0,
         stats.tok_times.iter().sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
+    )
+    .unwrap();
+
+    let rlnn_score = rlnn.evaluate(&letter_pool) as f64;
+    let overall_score = overall_probability * rlnn_score * overall_bonus;
+    write!(
+        stats.details,
+        "score: {:.2e}% * {:.2}% * {overall_bonus:.2e} = {:.4}%\n",
+        overall_probability * 100.0,
+        rlnn_score * 100.0,
+        overall_score * 100.0
     )
     .unwrap();
 
@@ -348,7 +399,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         .unwrap();
 
     for strip in exemplars.iter().take(50) {
-        let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
+        let (cost, avg_prob) = predict_strip(&strip, None, &model, &mut stats);
         println!(
             "{}: Estimated steps: {}. Avg. prob: {:.1}%",
             strip.id,
@@ -431,7 +482,7 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let mut costs = vec![];
     let mut avg_probs = vec![];
     for strip in representative_strips.iter().progress() {
-        let (cost, avg_prob) = predict_strip(&strip, &model, &mut stats);
+        let (cost, avg_prob) = predict_strip(&strip, None, &model, &mut stats);
         costs.push(cost);
         avg_probs.push(avg_prob);
 
@@ -582,6 +633,13 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
 static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
 
 fn get_strip(id: usize, args: &Args) -> Strip {
+    if id == 1663 {
+        return Strip {
+            leadup: String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap(),
+            punchline: "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!".to_owned(),
+            id: 1663,
+        };
+    }
     let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
     for strip in strips {
         if strip.id == id {
@@ -624,7 +682,8 @@ fn main() {
         }
     } else if let Some(id) = args.tok_score {
         let mut stats = Stats::default();
-        predict_strip(&get_strip(id, &args), &model, &mut stats);
+        let strip = get_strip(id, &args);
+        predict_strip(&strip, args.suffix.as_deref(), &model, &mut stats);
         println!("{}", stats.details);
     } else if let Some(id) = args.search_one {
         // let mut report = String::new();

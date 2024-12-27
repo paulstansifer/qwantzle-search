@@ -17,7 +17,7 @@ use crate::{
 };
 
 // Pretent to really be `Cmp`.
-#[derive(PartialOrd, PartialEq, Clone, Copy, Serialize, Deserialize)]
+#[derive(PartialOrd, PartialEq, Clone, Copy, Serialize, Deserialize, Debug)]
 struct Score(f64);
 
 impl Eq for Score {}
@@ -241,6 +241,7 @@ struct HallOfFame {
     initial_nodes: Vec<String>,
     modulo_nodes: Vec<String>,
     high_score_nodes: PriorityQueue<String, Score>,
+    possible_completions: Vec<String>,
 }
 
 pub struct SearchState<'a> {
@@ -381,11 +382,9 @@ impl SearchState<'_> {
     fn full_string_complete(&mut self, text: &str, score: Score) -> bool {
         match &self.hints.goal {
             None => {
-                self.log_ln(&format!(
-                    "Possible solution! '{}!!' ({:.2}%)",
-                    text,
-                    score.0 * 100.0
-                ));
+                let desc = format!("==> '{}!!' ({:.2}%)", text, score.0 * 100.0);
+                self.log_ln(&desc);
+                self.hall_of_fame.possible_completions.push(desc);
                 let mut file = fs::OpenOptions::new()
                     .create(true)
                     .append(true)
@@ -453,13 +452,18 @@ impl SearchState<'_> {
 
         if self.step % 10_000 == 0 {
             std::fs::write("/tmp/hof-mod", self.hall_of_fame.modulo_nodes.join("\n")).unwrap();
+
             std::fs::write(
                 "/tmp/hof-best",
-                self.hall_of_fame
-                    .high_score_nodes
-                    .clone()
-                    .into_sorted_vec()
-                    .join("\n"),
+                format!(
+                    "{}\n====\n{}",
+                    self.hall_of_fame.possible_completions.join("\n---\n"),
+                    self.hall_of_fame
+                        .high_score_nodes
+                        .clone()
+                        .into_sorted_vec()
+                        .join("\n")
+                ),
             )
             .unwrap();
         }
@@ -469,7 +473,10 @@ impl SearchState<'_> {
         self.progress.tick();
         let step_start = std::time::Instant::now();
 
-        if let Some((node, p)) = self.q.pop(/*require_tie_respecting=*/ self.step % 4 == 0) {
+        if let Some((node, p)) = self
+            .q
+            .pop(/*require_tie_respecting=*/ (self.step / 100) % 4 == 0)
+        {
             self.deepest_node_accessed =
                 std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
             let cur_text = toks_to_str(&node.tokens(), &self.llm);
@@ -480,19 +487,17 @@ impl SearchState<'_> {
                 }
             }
 
-            // let cur_str = format!("{:.2}%: {}", p.0 * 100.0, cur_text);
-            // log.write_str(&format!("{}\n", cur_str)).unwrap();
-
             let desc = format!(
-                "{:9} {} {:.3}% {}",
+                "{:>10} {}{} {:.3}% {}  ",
                 self.step.separate_with_commas(),
+                self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
                     "T"
                 } else {
-                    "-"
+                    "*"
                 },
                 p.0 * 100.0,
-                cur_text
+                cur_text,
             );
 
             self.progress.set_message(desc.clone());
@@ -875,7 +880,7 @@ pub fn practice_search(
             q = q.trim(500_000);
             // save_queue(&q);
         }
-        if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ step % 4 == 0) {
+        if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ (step / 100) % 4 == 0) {
             deepest_node_accessed = std::cmp::max(deepest_node_accessed, node.depth_at_pruning);
             let cur_text = toks_to_str(&node.tokens(), model);
 
