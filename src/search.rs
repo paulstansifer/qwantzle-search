@@ -203,6 +203,8 @@ impl Hints {
                     v_builder.add_word(word, llm, /*vary_case=*/ true);
                 }
             }
+            v_builder.add_word(":", llm, false);
+            v_builder.add_word(",", llm, false);
             v_builder.add_word("fundamental", llm, false);
             v_builder.build(/*disabled=*/ false)
         };
@@ -364,7 +366,7 @@ impl SearchState<'_> {
         let per_step = |n: u128| (n as f32 / self.step as f32) / 1000.0;
         let report = format!("Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Score: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}ms.",
             self.search_time.as_secs(),
-            (self.search_time.as_micros() - self.sess.timers.score_time +self.sess.timers.advance_time + self.sess.timers.predict_time + self.sess.timers.truncate_time) as f32 / 1_000_000.0,
+            (self.search_time.as_micros() - (self.sess.timers.score_time + self.sess.timers.advance_time + self.sess.timers.predict_time + self.sess.timers.truncate_time)) as f32 / 1_000_000.0,
             per_step(self.sess.timers.score_time),
             per_step(self.sess.timers.advance_time),
             per_step(self.sess.timers.predict_time),
@@ -426,7 +428,7 @@ impl SearchState<'_> {
         if self.hall_of_fame.initial_nodes.len() < 2_000 {
             self.hall_of_fame.initial_nodes.push(desc.clone());
         }
-        if self.step <= 2_000 && self.step % 500 == 0 {
+        if self.step > 1 && self.step <= 2_000 && self.step % 500 == 0 {
             std::fs::write("/tmp/hof-init", self.hall_of_fame.initial_nodes.join("\n")).unwrap();
         }
 
@@ -488,7 +490,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.3}% {}  ",
+                "{:>10} {}{} {:.3}% {}             {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -498,6 +500,7 @@ impl SearchState<'_> {
                 },
                 p.0 * 100.0,
                 cur_text,
+                node.remaining.print()
             );
 
             self.progress.set_message(desc.clone());
@@ -552,7 +555,7 @@ impl SearchState<'_> {
     }
 }
 
-const TOK_BUFFER: u32 = 25;
+const TOK_BUFFER: u32 = 35;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems sensitive to this; maybe we need a better criterion?
@@ -739,7 +742,7 @@ impl Node {
         vocab: &Vocab,
         rlnn: &LetterNet,
     ) {
-        let mut fast_forwarded = false;
+        let mut fast_forwarded = true; // TODO: why does fast-forwarding cause NoKvCacheSlot?
 
         for (tok, p) in candidates {
             let avg_prob = f64::powf(
@@ -969,66 +972,3 @@ pub fn practice_search(
         seconds: search_start_time.elapsed().as_secs_f32(),
     };
 }
-
-/*
-fn () {
-    let args = Args::parse();
-    init_tracing(&args);
-
-    let mut model_params = LlamaParams::default();
-    model_params.n_gpu_layers = if args.no_gpu { 0 } else { 1000000 };
-    let model =
-        LlamaModel::load_from_file(&args.model, model_params).expect("Could not load model");
-
-    let strips = get_strips("corpus/strips.csv", &args.prompt_prefix);
-
-    let mut strip_with_right_size: Option<Strip> = None;
-    for strip in &strips {
-        if !strip.punchline.contains("\n")
-            && !strip.punchline.contains(":")
-            && !strip.punchline.contains("tricky")
-            // && !strip.punchline.contains("flossing")
-            // && !strip.punchline.contains("TOES THAT HURT")
-            // && !strip.punchline.contains("get that ALL")
-            // && !strip.punchline.contains("just a little closer")
-            // && !strip.punchline.contains("them my story, Utah")
-            // && !strip.punchline.contains("you should quit")
-            && strip.punchline.len() > 20
-            && strip.punchline.len() <= 25
-        {
-            strip_with_right_size = Some(strip.clone());
-            break;
-        }
-    }
-    let strip = strip_with_right_size.expect("Unable to find a strip with the right size.");
-
-    search(&strip, &model, Some(1e8 as usize));
-
-    // let mut q = Q::new();
-    // println!("{}", strip.leadup);
-
-    // println!(">> {} <<", strip.punchline);
-    // q.push(Node::new(&strip.punchline), Score(1.0));
-
-    // let leadup_toks = model.tokenize_bytes(&strip.leadup, true, false).unwrap();
-
-    // let mut params = SessionParams::default();
-    // params.n_ctx = leadup_toks.len() as u32 + 25;
-
-    // let mut root_sess = model.create_session(params).unwrap();
-    // root_sess.set_context_to_tokens(&leadup_toks).unwrap();
-
-    // loop {
-    //     match q.pop() {
-    //         Some((node, p)) => {
-    //             println!("{:.2}%: {}", p.0 * 100.0, model.decode_tokens(&node.text));
-    //             node.advance(&root_sess, &mut q);
-    //         }
-    //         None => {
-    //             break;
-    //         }
-    //     }
-    // }
-    // println!("Search complete.");
-}
-*/

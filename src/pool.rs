@@ -267,6 +267,26 @@ impl PoolTok {
 }
 
 impl LetterPool {
+    pub fn print(&self) -> String {
+        let mut res = String::new();
+        for i in 0..26 {
+            if self.lowercase[i] > 0 {
+                res.push((b'a' + i as u8) as char);
+                res.push_str(&self.lowercase[i].to_string());
+            }
+        }
+        for (ch, count) in &self.other_chars {
+            res.push(ch.0 as char);
+            res.push_str(&count.to_string());
+        }
+
+        if let Some(last_letter) = self.last_letter {
+            res.push_str(&format!(" <{}$>", last_letter.0 as char));
+        }
+
+        res
+    }
+
     // TODO: use this, rather than `size`, to terminate search.
     pub fn empty_of_letters(&self) -> bool {
         return self.long_tok == None && self.letter_size() == 0;
@@ -454,6 +474,10 @@ impl LetterPool {
             let pt = ptc.get_tok(tok, model);
             self.has_pt(pt)
         })
+    }
+
+    pub fn has_str(&self, _s: &str, _model: &LlamaModel) -> bool {
+        todo!()
     }
 
     /// Panics if the letters aren't available.

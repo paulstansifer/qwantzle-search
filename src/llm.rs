@@ -1,4 +1,6 @@
 #![allow(dead_code)]
+use core::f64;
+
 use lazy_static::lazy_static;
 use llama_cpp_2::context::params::LlamaContextParams;
 use llama_cpp_2::context::LlamaContext;
@@ -99,17 +101,21 @@ impl<'a> Session<'a> {
     // Only mutable to update the time
     fn candidates(&mut self, top_p: Option<f32>) -> Vec<(LlamaToken, f64)> {
         let before_score = std::time::Instant::now();
+        let mut max_logit = f32::MIN;
 
         let mut candidates: Vec<(LlamaToken, f64)> = self
             .ctx
             .candidates()
-            .map(|c| (c.id(), c.logit() as f64))
+            .map(|c| {
+                max_logit = max_logit.max(c.logit());
+                (c.id(), c.logit() as f64)
+            })
             .collect();
+
+        let max_logit = max_logit as f64;
 
         // Reversed; we want largest-first:
         candidates.sort_by(|l, r| r.1.partial_cmp(&l.1).unwrap());
-
-        let max_logit = candidates.first().unwrap().1;
 
         let mut total_weight: f64 = 0.0;
         for (_, ref mut logit) in &mut candidates {
@@ -121,6 +127,11 @@ impl<'a> Session<'a> {
         for (_, ref mut logit) in &mut candidates {
             *logit /= total_weight;
         }
+
+        // Lazy sort doesn't seem to improve performance, but needs more investigation...
+        // let sorted_candidates = candidates
+        //     .iter()
+        //     .sorted_by(|l, r| r.1.partial_cmp(&l.1).unwrap());
 
         if let Some(top_p) = top_p {
             let mut total_p = 0.0;

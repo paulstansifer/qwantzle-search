@@ -64,7 +64,7 @@ struct Args {
     #[arg(long)]
     complete: Option<String>,
 
-    /// Score tokens for the given strip ID
+    /// Score tokens for the given strip ID.
     #[arg(long)]
     tok_score: Option<usize>,
 
@@ -72,9 +72,9 @@ struct Args {
     #[arg(long)]
     suffix: Option<String>,
 
-    /// Perform a search on the given strip ID
+    /// Perform a search on the given strip ID, or loading a saved search
     #[arg(long)]
-    search_one: Option<usize>,
+    search_one: Option<String>,
 
     /// Display the tokenization of the given string
     #[arg(long)]
@@ -289,10 +289,6 @@ fn predict_strip(
         punchline.push_str(&llm::tok_to_str(*tok, model));
         letter_pool.remove(*tok, &model);
     }
-    if alt_punch.is_none() {
-        assert!(letter_pool.size() == 0);
-    }
-
     let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
 
     write!(
@@ -314,6 +310,21 @@ fn predict_strip(
         overall_score * 100.0
     )
     .unwrap();
+
+    if alt_punch.is_none() {
+        assert!(letter_pool.size() == 0);
+    } else {
+        for (cand_tok, prob) in candidates.iter().take(10) {
+            write!(
+                stats.details,
+                "'{}' {:.3}%   ",
+                tok_to_str(*cand_tok, model),
+                prob * 100.0,
+            )
+            .unwrap();
+        }
+        writeln!(stats.details).unwrap();
+    }
 
     return (optimistic_cost, average_probability);
 }
@@ -685,17 +696,19 @@ fn main() {
         let strip = get_strip(id, &args);
         predict_strip(&strip, args.suffix.as_deref(), &model, &mut stats);
         println!("{}", stats.details);
-    } else if let Some(id) = args.search_one {
-        // let mut report = String::new();
-        // let report = practice_search(&get_strip(id, &args), &model, &words, None, &mut report);
-        let hints = if id == 1663 {
-            search::Hints::for_1663(&words, !args.ignore_ties, &model)
+    } else if let Some(ref search) = args.search_one {
+        if let Ok(id) = search.parse::<usize>() {
+            let hints = if id == 1663 {
+                search::Hints::for_1663(&words, !args.ignore_ties, &model)
+            } else {
+                search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
+            };
+            let mut search = SearchState::new(&model, hints, None);
+            search.search();
         } else {
-            search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
-        };
-
-        let mut search = SearchState::new(&model, hints, None);
-        search.search();
+            let mut search = SearchState::load(&search, &model);
+            search.search();
+        }
     } else if let Some(s) = args.tokenize {
         let toks = llm::str_to_tokens(&s, &model);
         let mut s_top = String::new();
