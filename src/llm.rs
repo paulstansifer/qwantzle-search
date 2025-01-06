@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 use core::f64;
+use std::collections::HashMap;
 
 use lazy_static::lazy_static;
 use llama_cpp_2::context::params::LlamaContextParams;
@@ -59,11 +60,11 @@ pub fn str_to_tokens_maybe_with_prefix_space(
 
 pub struct Session<'a> {
     ctx: LlamaContext<'a>,
-    // batch: LlamaBatch,
     prompt_toks: Option<usize>,
     empty: bool,
     toks: usize,
     pub timers: SessionTimers,
+    boost_toks: HashMap<LlamaToken, f64>,
 }
 
 static PROMPT_SEQ_ID: i32 = 0;
@@ -95,7 +96,12 @@ impl<'a> Session<'a> {
             empty: true,
             toks: 0,
             timers: SessionTimers::default(),
+            boost_toks: HashMap::new(),
         }
+    }
+
+    pub fn boost(&mut self, tok: LlamaToken, boost: f64) {
+        self.boost_toks.insert(tok, boost);
     }
 
     // Only mutable to update the time
@@ -118,8 +124,8 @@ impl<'a> Session<'a> {
         candidates.sort_by(|l, r| r.1.partial_cmp(&l.1).unwrap());
 
         let mut total_weight: f64 = 0.0;
-        for (_, ref mut logit) in &mut candidates {
-            *logit = f64::exp(*logit - max_logit);
+        for (tok, ref mut logit) in &mut candidates {
+            *logit = f64::exp(*logit - max_logit) * self.boost_toks.get(tok).unwrap_or(&1.0);
             total_weight += *logit;
         }
 

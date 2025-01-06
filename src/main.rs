@@ -735,33 +735,6 @@ fn main() {
         let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
         measure_costs(&strips, &model, &args);
     }
-
-    // let mut toks_of_strips = vec![];
-    // for strip in &strips {
-    //     toks_of_strips.push(
-    //         model
-    //             .tokenize_bytes(&strip.leadup, true, false)
-    //             .unwrap()
-    //             .len()
-    //             + model
-    //                 .tokenize_bytes(&strip.punchline, true, false)
-    //                 .unwrap()
-    //                 .len(),
-    //     );
-    // }
-    // toks_of_strips.sort();
-
-    // println!(
-    //     "(Percentile) tokens in a strip: (75) {}  (90) {}  (95) {}  (99) {}  (max) {}",
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.75).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.90).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.95).floor() as usize],
-    //     toks_of_strips[((toks_of_strips.len() - 1) as f32 * 0.99).floor() as usize],
-    //     toks_of_strips.last().unwrap(),
-    // );
-
-    // Result:
-    // (Percentile) tokens in a strip: (75) 371  (90) 398  (95) 418  (99) 454  (max) 580
 }
 
 /*
@@ -787,57 +760,3 @@ fn main() {
        }
        print!("{}\n{}\n{}\n", tok_s, prb_s, lgt_s);
 */
-
-/*
-
-let p_limit = 0.97;
-let aheads_limit = aheads[((aheads.len() - 1) as f32 * p_limit).floor() as usize];
-let prob_aheads_limit =
-    prob_aheads[((prob_aheads.len() - 1) as f32 * p_limit).floor() as usize];
-let logits_limit = logits[((logits.len() - 1) as f32 * p_limit).floor() as usize];
-let probs_limit = probs[((probs.len() - 1) as f32 * p_limit).floor() as usize];
-
-println!(
-    "At {:.3}%, aheads is {}, prob_aheads is {:.4} logits is {:.2}, prob is {:.7}",
-    p_limit, aheads_limit, prob_aheads_limit, logits_limit, probs_limit
-);
-
-let mut needed = 20;
-for strip in strips.iter() {
-    if strip.punchline.len() > 85 && strip.punchline.len() < 115 {
-        needed -= 1;
-        let (a, pa, l, p) = price_out_strip(
-            strip,
-            &model,
-            aheads_limit,
-            prob_aheads_limit,
-            logits_limit,
-            probs_limit,
-        );
-
-        println!(
-            "...{} | {}",
-            strip
-                .leadup
-                .chars()
-                .skip(strip.leadup.len() - 150)
-                .collect::<String>(),
-            strip.punchline
-        );
-        println!(
-            "Strip punchline length: {} chars, {} tokens",
-            strip.punchline.len(),
-            model
-                .tokenize_bytes(strip.punchline.to_string(), false, false)
-                .unwrap()
-                .len()
-        );
-        println!(
-            "Aheads: {:.2e}   Prob aheads: {:.2e}   Logits: {:.2e}   Probs: {:.2e}",
-            a, pa, l, p
-        );
-    }
-    if needed <= 0 {
-        break;
-    }
-} */

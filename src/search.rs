@@ -166,7 +166,7 @@ impl Hints {
                 v_builder.add_word(word, llm, /*vary_case=*/ true);
             }
 
-            v_builder.build(/*disabled=*/ false)
+            v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
         };
 
         let toks = llm::str_to_tokens(&strip.punchline, llm);
@@ -205,8 +205,9 @@ impl Hints {
             }
             v_builder.add_word(":", llm, false);
             v_builder.add_word(",", llm, false);
+            v_builder.add_word("!!", llm, false);
             v_builder.add_word("fundamental", llm, false);
-            v_builder.build(/*disabled=*/ false)
+            v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ true)
         };
 
         let long_word_toks = llm::str_to_tokens(" fundamental", llm);
@@ -243,6 +244,7 @@ struct HallOfFame {
     initial_nodes: Vec<String>,
     modulo_nodes: Vec<String>,
     high_score_nodes: PriorityQueue<String, Score>,
+    long_nodes: PriorityQueue<String, usize>,
     possible_completions: Vec<String>,
 }
 
@@ -424,7 +426,7 @@ impl SearchState<'_> {
         }
     }
 
-    fn hof_update(&mut self, desc: String, p: Score) {
+    fn hof_update(&mut self, desc: String, len: usize, p: Score) {
         if self.hall_of_fame.initial_nodes.len() < 2_000 {
             self.hall_of_fame.initial_nodes.push(desc.clone());
         }
@@ -440,16 +442,24 @@ impl SearchState<'_> {
             ));
         }
 
-        self.hall_of_fame.high_score_nodes.push(desc, p);
+        self.hall_of_fame.high_score_nodes.push(desc.clone(), p);
+        self.hall_of_fame.long_nodes.push(desc, len);
 
-        if self.hall_of_fame.high_score_nodes.len() > 10_000 {
+        if self.hall_of_fame.high_score_nodes.len() > 20_000 || self.step % 10_000 == 0 {
             self.hall_of_fame.high_score_nodes = PriorityQueue::<String, Score>::from_iter(
                 self.hall_of_fame
                     .high_score_nodes
                     .clone()
                     .into_sorted_iter()
                     .take(5_000),
-            )
+            );
+            self.hall_of_fame.long_nodes = PriorityQueue::<String, usize>::from_iter(
+                self.hall_of_fame
+                    .long_nodes
+                    .clone()
+                    .into_sorted_iter()
+                    .take(5_000),
+            );
         }
 
         if self.step % 10_000 == 0 {
@@ -466,6 +476,15 @@ impl SearchState<'_> {
                         .into_sorted_vec()
                         .join("\n")
                 ),
+            )
+            .unwrap();
+            std::fs::write(
+                "/tmp/hof-long",
+                self.hall_of_fame
+                    .long_nodes
+                    .clone()
+                    .into_sorted_vec()
+                    .join("\n"),
             )
             .unwrap();
         }
@@ -490,7 +509,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.3}% {}             {}",
+                "{:>10} {}{} {:.3}% {:<125} {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -505,7 +524,8 @@ impl SearchState<'_> {
 
             self.progress.set_message(desc.clone());
 
-            self.hof_update(desc, p);
+            // TODO: don't count spaces
+            self.hof_update(desc, cur_text.len(), p);
 
             node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
             self.step += 1;
@@ -528,15 +548,19 @@ impl SearchState<'_> {
 
         self.search_time += step_start.elapsed();
 
-        if quit_now {
+        if quit_now || self.step % 500_000 == 0 {
+            self.time_report();
             self.progress.set_message("Saving...");
             let filename = format!(
                 "/home/paul/.qwantzle/{}-{}.search",
                 self.hints.id, self.step
             );
             self.save(&filename);
-            self.progress
-                .abandon_with_message(format!("Saved to {}", filename));
+            self.progress.set_message(format!("Saved to {}", filename));
+        }
+
+        if quit_now {
+            self.progress.abandon();
             return true;
         }
 
@@ -550,7 +574,6 @@ impl SearchState<'_> {
 
     pub fn search(&mut self) {
         while !self.search_step() {}
-
         self.time_report();
     }
 }
@@ -644,8 +667,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
-        // This is unmotivated; purely empirical. Starts at 6.0, goes towards 4.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0;
+        // This is unmotivated; purely empirical. Starts at 5.0, goes towards 3.0:
+        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 2.0;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
@@ -833,7 +856,7 @@ pub fn practice_search(
             v_builder.add_word(word, model, /*vary_case=*/ true);
         }
 
-        v_builder.build(/*disabled=*/ false)
+        v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
     };
 
     // Set up the letter pool

@@ -29,14 +29,14 @@ impl Char {
 // Token doesn't implement Ord or Hash, so we use the underlying i32.
 #[derive(Default)]
 pub struct VocabBuilder {
-    tb: HashSet<Vec<i32>>,
+    word_lengths: HashMap<Vec<i32>, u8>,
     allowed_tokens: HashSet<i32>,
     word_starters: HashSet<i32>,
     word_enders: HashSet<i32>,
     nonletters: HashSet<i32>,
 }
 
-#[derive(Serialize, Deserialize, Clone, Copy)]
+#[derive(Serialize, Deserialize, Clone, Copy, Debug)]
 enum TokenRole {
     StartsWord,
     EndsWord,
@@ -46,9 +46,10 @@ enum TokenRole {
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Vocab {
-    valid_words: HashSet<Vec<i32>>,
+    valid_word_lengths: HashMap<Vec<i32>, u8>,
     valid_prefixes: HashSet<Vec<i32>>,
     token_roles: HashMap<i32, TokenRole>,
+    enforce_8_11: bool,
     disabled: bool,
 }
 
@@ -96,50 +97,49 @@ impl VocabBuilder {
             return; // Titlecasing would get unhappy.
         }
 
-        // // If it starts with a letter, add a space.
-        // let word = if regex::Regex::new(r"^[a-zA-Z]").unwrap().is_match(word) {
-        //     format!(" {}", word)
-        // } else {
-        //     word.to_string()
-        // };
-
-        for word in [word.to_string(), format!(" {}", word)] {
-            self.add_literal_word(&word, model);
+        for word in [word.to_string(), format!(" {}", word), format!("@{}", word)] {
+            let pop_front_tok = word.starts_with("@");
+            self.add_literal_word(&word, model, pop_front_tok);
 
             if vary_case {
-                self.add_literal_word(&word.to_ascii_lowercase(), model);
-                self.add_literal_word(&word.to_ascii_uppercase(), model);
+                self.add_literal_word(&word.to_ascii_lowercase(), model, pop_front_tok);
+                self.add_literal_word(&word.to_ascii_uppercase(), model, pop_front_tok);
 
                 let mut title_case = word.to_owned();
                 unsafe {
                     title_case.as_bytes_mut()[0].make_ascii_uppercase();
                 }
-                self.add_literal_word(&title_case, model);
+                self.add_literal_word(&title_case, model, pop_front_tok);
             }
         }
     }
-    fn add_literal_word(&mut self, word: &str, model: &LlamaModel) {
-        let toks: Vec<i32> = llm::str_to_tokens(word, model)
+    fn add_literal_word(&mut self, word: &str, model: &LlamaModel, pop_front_tok: bool) {
+        let mut toks: Vec<i32> = llm::str_to_tokens(word, model)
             .into_iter()
             .map(|t| t.0)
             .collect();
 
-        self.tb.insert(toks.clone());
+        if pop_front_tok {
+            toks.remove(0);
+        }
+
+        self.word_lengths
+            .insert(toks.clone(), word.trim().len() as u8);
 
         for tok in toks {
             self.eval_token(tok, model);
         }
     }
 
-    pub fn build(self, disabled: bool) -> Vocab {
-        let mut valid_prefixes = self.tb.clone();
-        for word in self.tb.iter() {
-            for i in 1..word.len() {
+    pub fn build(self, disabled: bool, enforce_8_11: bool) -> Vocab {
+        let mut valid_prefixes = HashSet::new();
+        for word in self.word_lengths.keys() {
+            for i in 1..word.len() + 1 {
                 valid_prefixes.insert(word[0..i].to_vec());
             }
         }
         Vocab {
-            valid_words: self.tb.clone(),
+            valid_word_lengths: self.word_lengths.clone(),
             valid_prefixes: valid_prefixes,
             token_roles: self
                 .allowed_tokens
@@ -157,6 +157,7 @@ impl VocabBuilder {
                 })
                 .collect(),
             disabled: disabled,
+            enforce_8_11: enforce_8_11,
         }
     }
 }
@@ -164,31 +165,74 @@ impl VocabBuilder {
 #[derive(Deserialize, Serialize, Clone)]
 pub struct WordState {
     cur_word: Vec<i32>,
+    seen_8: bool,
+    seen_11: bool,
 }
 
 impl WordState {
     pub fn new_empty() -> WordState {
-        WordState { cur_word: vec![] }
+        WordState {
+            cur_word: vec![],
+            seen_8: false,
+            seen_11: false,
+        }
+    }
+
+    fn finish_with_length(
+        ws: &WordState,
+        toks: Vec<i32>,
+        len: u8,
+        vocab: &Vocab,
+    ) -> Option<WordState> {
+        let mut res = WordState {
+            cur_word: toks,
+            seen_8: ws.seen_8,
+            seen_11: ws.seen_11,
+        };
+        if !vocab.enforce_8_11 {
+            return Some(res);
+        }
+        if len == 11 && ws.seen_11 || len == 8 && ws.seen_8 {
+            return None; // Only one of each
+        }
+        if ws.seen_11 && ws.seen_8 {
+            return Some(res); // Already done
+        }
+        if (ws.seen_11 || ws.seen_8) && len != 11 && len != 8 {
+            return None; // Must be consecutive
+        }
+
+        res.seen_11 |= len == 11;
+        res.seen_8 |= len == 8;
+        Some(res)
     }
 
     pub fn add_tok(&self, tok: LlamaToken, voc: &Vocab) -> Option<WordState> {
         if voc.disabled {
-            return Some(WordState { cur_word: vec![] });
+            return Some(self.clone());
         }
         match voc.token_roles.get(&tok.0) {
             None => None,
             Some(TokenRole::StartsWord) => {
-                if self.cur_word.is_empty() || voc.valid_words.contains(&self.cur_word) {
-                    Some(WordState {
-                        cur_word: vec![tok.0],
-                    })
+                let prev_word_len = if self.cur_word.is_empty() {
+                    Some(0)
+                } else {
+                    voc.valid_word_lengths.get(&self.cur_word).cloned()
+                };
+                if let Some(len) = prev_word_len {
+                    WordState::finish_with_length(self, vec![tok.0], len, voc)
                 } else {
                     None
                 }
             }
             Some(TokenRole::NonLetter) => {
-                if self.cur_word.is_empty() || voc.valid_words.contains(&self.cur_word) {
-                    Some(WordState::new_empty())
+                let prev_word_len = if self.cur_word.is_empty() {
+                    Some(0)
+                } else {
+                    voc.valid_word_lengths.get(&self.cur_word).cloned()
+                };
+                if let Some(len) = prev_word_len {
+                    WordState::finish_with_length(self, vec![], len, voc)
                 } else {
                     None
                 }
@@ -196,9 +240,9 @@ impl WordState {
             Some(TokenRole::EndsWord) => {
                 let mut full_word = self.cur_word.clone();
                 full_word.push(tok.0);
-                if voc.valid_words.contains(&full_word) {
-                    println!("Ending: {:?}", full_word);
-                    Some(WordState::new_empty())
+
+                if let Some(word_len) = voc.valid_word_lengths.get(&full_word) {
+                    WordState::finish_with_length(self, full_word, *word_len, voc)
                 } else {
                     None
                 }
@@ -209,6 +253,8 @@ impl WordState {
                 if voc.valid_prefixes.contains(&lengthened_word) {
                     Some(WordState {
                         cur_word: lengthened_word,
+                        seen_8: self.seen_8,
+                        seen_11: self.seen_11,
                     })
                 } else {
                     None
@@ -645,4 +691,43 @@ fn ties_test() {
         pool.remove_str("f");
         assert!(!pool.respects_ties()); // But we still know d->e->f!
     }
+}
+
+#[test]
+fn word_state_test() {
+    let mut vb = VocabBuilder::default();
+    let model = llm::model_from_gguf("maykeye-tl.gguf", false);
+    vb.add_word("!", &model, false);
+    vb.add_word("the", &model, false);
+    vb.add_word("fundamental", &model, false);
+    vb.add_word("theories", &model, false);
+    vb.add_word("frog", &model, false); // 2 tokens
+    vb.add_word("loripels", &model, false); // 8 letters, 2 tokens
+    let vocab = vb.build(/*disabled=*/ false, /*enforce_8_11=*/ true);
+
+    let seq_is_ok = |seq: &str| {
+        let mut ws_or = Some(WordState::new_empty());
+        for tok in llm::str_to_tokens(&format!("{}!", seq), &model) {
+            if let Some(ws) = ws_or {
+                ws_or = ws.add_tok(LlamaToken(tok.0), &vocab);
+            } else {
+                return false;
+            }
+        }
+        ws_or.is_some()
+    };
+
+    assert!(seq_is_ok("the"));
+    assert!(seq_is_ok("frog"));
+    assert!(!seq_is_ok("forp")); // non-word
+    assert!(!seq_is_ok("theories theories")); // two 8-letter words
+    assert!(seq_is_ok("fundamental theories"));
+    assert!(seq_is_ok("the fundamental theories the"));
+    assert!(seq_is_ok("the fundamental loripels the"));
+    assert!(!seq_is_ok("fundamental the theories"));
+    assert!(seq_is_ok("the theories fundamental"));
+    assert!(seq_is_ok("the theories fundamental frog"));
+    assert!(seq_is_ok("frog loripels fundamental frog"));
+    assert!(!seq_is_ok("frog loripels the fundamental frog"));
+    assert!(!seq_is_ok("frog loripels frog fundamental frog"));
 }
