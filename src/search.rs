@@ -557,7 +557,7 @@ impl SearchState<'_> {
 
         self.search_time += step_start.elapsed();
 
-        if quit_now || self.step % 500_000 == 0 {
+        if quit_now || self.step % 1_000_000 == 0 {
             self.time_report();
             self.progress.set_message("Saving...");
             let filename = format!(

@@ -106,12 +106,17 @@ impl<'a> Session<'a> {
 
     // Only mutable to update the time
     fn candidates(&mut self, top_p: Option<f32>) -> Vec<(LlamaToken, f64)> {
-        let before_score = std::time::Instant::now();
         let mut max_logit = f32::MIN;
 
-        let mut candidates: Vec<(LlamaToken, f64)> = self
-            .ctx
-            .candidates()
+        // TODO: we might be at least curious about the split between `decode()` and `candidates()`
+        // ...but changing the serializable timing data invalidates save files.
+        let before_predict = std::time::Instant::now();
+        let raw_candidates = self.ctx.candidates();
+        self.timers.predict_time += before_predict.elapsed().as_micros();
+
+        let before_score = std::time::Instant::now();
+
+        let mut candidates: Vec<(LlamaToken, f64)> = raw_candidates
             .map(|c| {
                 max_logit = max_logit.max(c.logit());
                 (c.id(), c.logit() as f64)
