@@ -317,17 +317,15 @@ impl LetterPool {
         let mut res = String::new();
         for i in 0..26 {
             if self.lowercase[i] > 0 {
-                res.push((b'a' + i as u8) as char);
-                res.push_str(&self.lowercase[i].to_string());
+                for _ in 0..self.lowercase[i] {
+                    res.push((b'a' + i as u8) as char);
+                }
             }
         }
         for (ch, count) in &self.other_chars {
-            res.push(ch.0 as char);
-            res.push_str(&count.to_string());
-        }
-
-        if let Some(last_letter) = self.last_letter {
-            res.push_str(&format!(" <{}$>", last_letter.0 as char));
+            for _ in 0..*count {
+                res.push(ch.0 as char);
+            }
         }
 
         res

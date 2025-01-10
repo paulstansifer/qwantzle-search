@@ -291,6 +291,12 @@ impl SearchState<'_> {
 
         let root_node = Node::root_from_hints(&hints);
         let mut sess = Session::new(llm, token_size);
+
+        // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
+        // synced between this and `load`)
+        let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+        sess.boost(colon_tok, 35.0);
+
         let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
         sess.save_prompt();
 
@@ -340,6 +346,10 @@ impl SearchState<'_> {
         println!("Loaded search queue with {} elements.", sss.q.len());
 
         let mut sess = Session::new(llm, token_size);
+
+        let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+        sess.boost(colon_tok, 35.0);
+
         // TODO: should probably have `advance` without `predict`
         let _ = sess.advance_and_predict_str(&sss.hints.leadup, Some(0.0));
         sess.save_prompt();
@@ -524,8 +534,7 @@ impl SearchState<'_> {
 
             self.progress.set_message(desc.clone());
 
-            // TODO: don't count spaces
-            self.hof_update(desc, cur_text.len(), p);
+            self.hof_update(desc, 101 - node.remaining.size(), p);
 
             node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
             self.step += 1;
@@ -543,7 +552,7 @@ impl SearchState<'_> {
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
         if self.q.len() > 3_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(700_000);
+            self.q = std::mem::take(&mut self.q).trim(1_200_000);
         }
 
         self.search_time += step_start.elapsed();
