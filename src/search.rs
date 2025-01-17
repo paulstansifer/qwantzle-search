@@ -129,14 +129,14 @@ impl Q {
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Hints {
-    leadup: String,
-    goal: Option<String>,
-    id: usize,
-    letter_pool: LetterPool,
-    vocab: Vocab,
-    longest_word_len: Option<u8>,
-    longest_token: Option<i32>, // instead of LLamaToken, for serializability
-    token_size: usize,
+    pub leadup: String,
+    pub goal: Option<String>,
+    pub id: usize,
+    pub letter_pool: LetterPool,
+    pub vocab: Vocab,
+    pub longest_word_len: Option<u8>,
+    pub longest_token: Option<i32>, // instead of LLamaToken, for serializability
+    pub token_size: usize,
 }
 
 impl Hints {
@@ -244,6 +244,7 @@ struct HallOfFame {
     initial_nodes: Vec<String>,
     modulo_nodes: Vec<String>,
     high_score_nodes: PriorityQueue<String, Score>,
+    high_score_tie_nodes: PriorityQueue<String, Score>,
     long_nodes: PriorityQueue<String, usize>,
     possible_completions: Vec<String>,
 }
@@ -436,7 +437,7 @@ impl SearchState<'_> {
         }
     }
 
-    fn hof_update(&mut self, desc: String, len: usize, p: Score) {
+    fn hof_update(&mut self, desc: String, len: usize, p: Score, respects_ties: bool) {
         if self.hall_of_fame.initial_nodes.len() < 2_000 {
             self.hall_of_fame.initial_nodes.push(desc.clone());
         }
@@ -453,12 +454,22 @@ impl SearchState<'_> {
         }
 
         self.hall_of_fame.high_score_nodes.push(desc.clone(), p);
+        if respects_ties {
+            self.hall_of_fame.high_score_tie_nodes.push(desc.clone(), p);
+        }
         self.hall_of_fame.long_nodes.push(desc, len);
 
         if self.hall_of_fame.high_score_nodes.len() > 20_000 || self.step % 10_000 == 0 {
             self.hall_of_fame.high_score_nodes = PriorityQueue::<String, Score>::from_iter(
                 self.hall_of_fame
                     .high_score_nodes
+                    .clone()
+                    .into_sorted_iter()
+                    .take(5_000),
+            );
+            self.hall_of_fame.high_score_tie_nodes = PriorityQueue::<String, Score>::from_iter(
+                self.hall_of_fame
+                    .high_score_tie_nodes
                     .clone()
                     .into_sorted_iter()
                     .take(5_000),
@@ -486,6 +497,15 @@ impl SearchState<'_> {
                         .into_sorted_vec()
                         .join("\n")
                 ),
+            )
+            .unwrap();
+            std::fs::write(
+                "/tmp/hof-best-ties",
+                self.hall_of_fame
+                    .high_score_tie_nodes
+                    .clone()
+                    .into_sorted_vec()
+                    .join("\n"),
             )
             .unwrap();
             std::fs::write(
@@ -534,7 +554,12 @@ impl SearchState<'_> {
 
             self.progress.set_message(desc.clone());
 
-            self.hof_update(desc, 101 - node.remaining.size(), p);
+            self.hof_update(
+                desc,
+                101 - node.remaining.size(),
+                p,
+                node.remaining.respects_ties(),
+            );
 
             node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
             self.step += 1;
@@ -676,8 +701,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
-        // This is unmotivated; purely empirical. Starts at 5.0, goes towards 3.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 2.0;
+        // This is unmotivated; purely empirical. Starts at 4.0, goes towards 3.0:
+        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 2.0;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
@@ -1003,4 +1028,71 @@ pub fn practice_search(
         steps: step,
         seconds: search_start_time.elapsed().as_secs_f32(),
     };
+}
+
+pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
+    let rlnn =
+        remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
+            .unwrap();
+
+    let mut sess = Session::new(llm, hints.token_size as u32);
+
+    let mut node = Node::root_from_hints(&hints);
+
+    let mut cands = sess.advance_and_predict_str(&(hints.leadup.clone() + prefix), Some(TOK_TOP_P));
+
+    for tok in str_to_tokens(&prefix, llm) {
+        print!("[{}]", node.remaining.print_ties_info());
+        print!("'{}' ", tok_to_str(tok, llm));
+
+        let mut p = 0.0;
+        for (possible_tok, possible_p) in &cands {
+            if *possible_tok == tok {
+                p = *possible_p;
+                break;
+            }
+        }
+
+        if let Some((next_node, score)) = node.push_token(tok, p as f32, llm, &hints.vocab, &rlnn) {
+            print!(
+                "({}{:.3}%) ",
+                if next_node.remaining.respects_ties() {
+                    "T"
+                } else {
+                    ""
+                },
+                score.0 * 100.0
+            );
+            node = next_node;
+        } else {
+            print!("------");
+        }
+        cands = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
+    }
+
+    println!();
+
+    let mut ok_s = String::new();
+    let mut not_ok_s = String::new();
+
+    for (tok, p) in cands.iter().take(60) {
+        let node_or = node.push_token(*tok, *p as f32, llm, &hints.vocab, &rlnn);
+        if let Some((possible_node, score)) = node_or {
+            ok_s += &format!(
+                "'{}' {:.2}%->{}{:.3}%  ",
+                tok_to_str(*tok, llm),
+                p * 100.0,
+                if possible_node.remaining.respects_ties() {
+                    "T"
+                } else {
+                    ""
+                },
+                score.0 * 100.0
+            );
+        } else {
+            not_ok_s += &format!("'{}' {:.2}%  ", tok_to_str(*tok, llm), p * 100.0);
+        }
+    }
+
+    println!("{}\n{}", ok_s, not_ok_s);
 }

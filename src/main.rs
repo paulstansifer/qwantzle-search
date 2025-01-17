@@ -5,8 +5,9 @@ use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
 use llama_cpp_2::token_type::LlamaTokenAttr;
 use llm::tok_to_str;
-use search::SearchState;
+use search::{manual_search, SearchState};
 use std::fmt::Write;
+use std::io::{BufRead as _, Write as _};
 use std::sync::atomic::AtomicBool;
 use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
@@ -75,6 +76,9 @@ struct Args {
     /// Perform a search on the given strip ID, or loading a saved search
     #[arg(long)]
     search_one: Option<String>,
+
+    #[arg(long)]
+    search_manual: Option<usize>,
 
     /// Display the tokenization of the given string
     #[arg(long)]
@@ -708,6 +712,29 @@ fn main() {
         } else {
             let mut search = SearchState::load(&search, &model);
             search.search();
+        }
+    } else if let Some(id) = args.search_manual {
+        let hints = if id == 1663 {
+            search::Hints::for_1663(&words, !args.ignore_ties, &model)
+        } else {
+            search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
+        };
+        println!("{}", &hints.leadup);
+
+        print!("> ");
+        std::io::stdout().flush().unwrap();
+        let reader = std::io::BufReader::new(std::io::stdin());
+        for line in reader.lines() {
+            match line {
+                Ok(line) => {
+                    manual_search(&model, hints.clone(), &line);
+                }
+                Err(err) => {
+                    panic!("{:?}", err);
+                }
+            }
+            print!("> ");
+            std::io::stdout().flush().unwrap();
         }
     } else if let Some(s) = args.tokenize {
         let toks = llm::str_to_tokens(&s, &model);

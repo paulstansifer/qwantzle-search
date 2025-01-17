@@ -331,6 +331,21 @@ impl LetterPool {
         res
     }
 
+    pub fn print_ties_info(&self) -> String {
+        if let Some(ties) = &self.tie_sequences {
+            let mut res = String::new();
+            for tie in ties {
+                for ch in tie {
+                    res.push(ch.0 as char);
+                }
+                res.push_str(" ");
+            }
+            return res;
+        } else {
+            return "No ties".to_string();
+        }
+    }
+
     // TODO: use this, rather than `size`, to terminate search.
     pub fn empty_of_letters(&self) -> bool {
         return self.long_tok == None && self.letter_size() == 0;
@@ -406,11 +421,19 @@ impl LetterPool {
     pub fn set_ties(&mut self, text: &str) {
         let mut tie_seqs = vec![vec![]; 7];
 
-        for occurences in 1..6 {
+        let mut text_occurences = [0; 26];
+        for byte in text.as_bytes() {
+            if *byte == b' ' || !Char(*byte).is_lc_letter() {
+                continue;
+            }
+            text_occurences[(*byte - b'a') as usize] += 1;
+        }
+
+        for occurences in 1..7 {
             for byte in text.as_bytes() {
                 if *byte == b' '
                     || !Char(*byte).is_lc_letter()
-                    || self.lowercase[(byte - b'a') as usize] != occurences
+                    || text_occurences[(byte - b'a') as usize] != occurences
                 {
                     continue;
                 }
@@ -644,6 +667,8 @@ fn pool_test() {
 
 #[test]
 fn ties_test() {
+    use crate::llm::{self, str_to_tokens};
+
     let abcdef_pool = LetterPool::from_text("aaa bbb ccc dd ee ff x", /*look_at_ties=*/ true);
     assert!(abcdef_pool.respects_ties());
 
@@ -688,6 +713,32 @@ fn ties_test() {
         assert!(pool.respects_ties()); // Only the first letters matter!
         pool.remove_str("f");
         assert!(!pool.respects_ties()); // But we still know d->e->f!
+    }
+
+    let model = llm::model_from_gguf("maykeye-tl.gguf", false);
+
+    let letters_for_1663 = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
+    let mut pool_for_1663 = LetterPool::just_letters_from_text(&letters_for_1663);
+    pool_for_1663.set_longest_tok(
+        *str_to_tokens(" fundamental", &model).last().unwrap(),
+        &model,
+    );
+    pool_for_1663.set_ties(&letters_for_1663);
+    pool_for_1663.set_last_letter(b'w');
+
+    assert_eq!(pool_for_1663.print_ties_info(), "kcmvg bw rf isdhy lnu ");
+
+    {
+        let mut pool = pool_for_1663.clone();
+        assert!(pool.respects_ties());
+        pool.remove(*str_to_tokens(" bet", &model).last().unwrap(), &model);
+        assert!(pool.respects_ties());
+    }
+    {
+        let mut pool = pool_for_1663.clone();
+        assert!(pool.respects_ties());
+        pool.remove(*str_to_tokens(" can", &model).last().unwrap(), &model);
+        assert!(!pool.respects_ties());
     }
 }
 
