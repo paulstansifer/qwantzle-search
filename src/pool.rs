@@ -740,6 +740,42 @@ fn ties_test() {
         pool.remove(*str_to_tokens(" can", &model).last().unwrap(), &model);
         assert!(!pool.respects_ties());
     }
+
+    // "fundamental" needs to come after some things to work
+    {
+        let mut pool = pool_for_1663.clone();
+        assert!(pool.respects_ties());
+        pool.remove(
+            *str_to_tokens(" fundamental", &model).last().unwrap(),
+            &model,
+        );
+        assert!(!pool.respects_ties());
+    }
+
+    {
+        let mut pool = pool_for_1663.clone();
+        assert!(pool.respects_ties());
+        pool.remove(*str_to_tokens(" r", &model).last().unwrap(), &model);
+        assert!(pool.respects_ties());
+        for tok in str_to_tokens(" ln", &model) {
+            pool.remove(tok, &model);
+            assert!(pool.respects_ties());
+        }
+        for tok in str_to_tokens(" is", &model) {
+            pool.remove(tok, &model);
+            assert!(pool.respects_ties());
+        }
+        for tok in str_to_tokens(" kc", &model) {
+            pool.remove(tok, &model);
+            assert!(pool.respects_ties());
+        }
+        assert!(pool.respects_ties());
+        pool.remove(
+            *str_to_tokens(" fundamental", &model).last().unwrap(),
+            &model,
+        );
+        assert!(pool.respects_ties());
+    }
 }
 
 #[test]

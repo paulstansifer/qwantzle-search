@@ -539,7 +539,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.3}% {:<125} {}",
+                "{:>10} {}{} {:.5}% {:<125} {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -1039,10 +1039,10 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
 
     let mut node = Node::root_from_hints(&hints);
 
-    let mut cands = sess.advance_and_predict_str(&(hints.leadup.clone() + prefix), Some(TOK_TOP_P));
+    let mut cands = sess.advance_and_predict_str(&hints.leadup, None);
 
-    for tok in str_to_tokens(&prefix, llm) {
-        print!("[{}]", node.remaining.print_ties_info());
+    let spaced_prefix = format!(" {}", prefix.trim());
+    for tok in str_to_tokens(&spaced_prefix, llm) {
         print!("'{}' ", tok_to_str(tok, llm));
 
         let mut p = 0.0;
@@ -1064,10 +1064,20 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
                 score.0 * 100.0
             );
             node = next_node;
+        } else if p > 0.0 {
+            if node.remaining.try_remove(tok, llm).is_none() {
+                print!("(pool-invalid '{}'", node.remaining.print());
+            } else if node.word_state.add_tok(tok, &hints.vocab).is_none() {
+                print!("(word-invalid ");
+            } else {
+                print!("(can't happen!? ");
+            }
+
+            print!(" {:.2}%)", p * 100.0);
         } else {
-            print!("------");
+            print!("(unavailable token??)");
         }
-        cands = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
+        cands = sess.advance_and_predict(&[tok], None);
     }
 
     println!();
