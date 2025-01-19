@@ -281,7 +281,12 @@ struct SearchStateSerializable {
 }
 
 impl SearchState<'_> {
-    pub fn new(llm: &LlamaModel, hints: Hints, max_search: Option<usize>) -> SearchState {
+    pub fn new(
+        llm: &LlamaModel,
+        hints: Hints,
+        max_search: Option<usize>,
+        start_prefixes: Vec<String>,
+    ) -> SearchState {
         let token_size = hints.token_size as u32;
 
         let mut q = Q::new();
@@ -298,10 +303,35 @@ impl SearchState<'_> {
         let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
         sess.boost(colon_tok, 35.0);
 
+        println!("Colon is boosted!");
+
         let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
         sess.save_prompt();
 
-        root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
+        if start_prefixes.is_empty() {
+            root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
+        } else {
+            for prefix in start_prefixes {
+                if prefix.trim().is_empty() {
+                    continue;
+                }
+                let mut pfx_node = root_node.clone();
+                let mut score = Score(1.0);
+                for tok in llm::str_to_tokens(&prefix.trim_end(), llm) {
+                    if let Some((next_node, next_score)) =
+                        pfx_node.push_token(tok, 0.12, llm, &hints.vocab, &rlnn)
+                    {
+                        pfx_node = next_node;
+                        score = next_score;
+                    } else {
+                        panic!("Invalid prefix: {}", prefix);
+                    }
+                }
+                println!("(Score {:.5}%) --> {:?} ", score.0 * 100.0, pfx_node.text);
+                q.push(pfx_node, score);
+            }
+            println!("{}", q.len());
+        }
 
         SearchState {
             q,
@@ -524,9 +554,8 @@ impl SearchState<'_> {
         self.progress.tick();
         let step_start = std::time::Instant::now();
 
-        if let Some((node, p)) = self
-            .q
-            .pop(/*require_tie_respecting=*/ (self.step / 100) % 4 == 0)
+        if let Some((node, p)) = self.q.pop(/*require_tie_respecting=*/ true)
+        //(self.step / 100) % 4 == 0)
         {
             self.deepest_node_accessed =
                 std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);

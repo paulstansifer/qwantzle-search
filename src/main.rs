@@ -77,6 +77,11 @@ struct Args {
     #[arg(long)]
     search_one: Option<String>,
 
+    /// Start the search from the prefixes in the given file, instead of the empty prefix.
+    #[arg(long)]
+    prefix_file: Option<String>,
+
+    /// Interactively manually examine completions for the given strip ID.
     #[arg(long)]
     search_manual: Option<usize>,
 
@@ -707,7 +712,18 @@ fn main() {
             } else {
                 search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
             };
-            let mut search = SearchState::new(&model, hints, None);
+
+            let prefixes = if let Some(prefix_file) = args.prefix_file.as_ref() {
+                std::fs::read_to_string(prefix_file)
+                    .unwrap()
+                    .split("\n")
+                    .map(|s| s.to_owned())
+                    .collect()
+            } else {
+                vec![]
+            };
+
+            let mut search = SearchState::new(&model, hints, None, prefixes);
             search.search();
         } else {
             let mut search = SearchState::load(&search, &model);
