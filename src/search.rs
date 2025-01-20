@@ -1072,6 +1072,9 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
 
     let spaced_prefix = format!(" {}", prefix.trim());
     for tok in str_to_tokens(&spaced_prefix, llm) {
+        if spaced_prefix.contains("#") {
+            continue;
+        }
         print!("'{}' ", tok_to_str(tok, llm));
 
         let mut p = 0.0;
