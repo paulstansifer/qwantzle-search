@@ -312,7 +312,7 @@ impl SearchState<'_> {
             root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
         } else {
             for prefix in start_prefixes {
-                if prefix.trim().is_empty() {
+                if prefix.trim().is_empty() || prefix.contains("#") {
                     continue;
                 }
                 let mut pfx_node = root_node.clone();
@@ -554,8 +554,9 @@ impl SearchState<'_> {
         self.progress.tick();
         let step_start = std::time::Instant::now();
 
-        if let Some((node, p)) = self.q.pop(/*require_tie_respecting=*/ true)
-        //(self.step / 100) % 4 == 0)
+        if let Some((node, p)) = self
+            .q
+            .pop(/*require_tie_respecting=*/ (self.step / 100) % 4 == 0)
         {
             self.deepest_node_accessed =
                 std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
@@ -1072,9 +1073,6 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
 
     let spaced_prefix = format!(" {}", prefix.trim());
     for tok in str_to_tokens(&spaced_prefix, llm) {
-        if spaced_prefix.contains("#") {
-            continue;
-        }
         print!("'{}' ", tok_to_str(tok, llm));
 
         let mut p = 0.0;
