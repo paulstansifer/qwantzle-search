@@ -268,7 +268,7 @@ impl WordState {
 pub struct LetterPool {
     lowercase: [u8; 26],
     other_chars: Vec<(Char, u8)>,
-    long_tok: Option<i32>,
+    long_tok: Option<(i32, u8)>,
     last_letter: Option<Char>,
     tie_sequences: Option<Vec<Vec<Char>>>, // if we need to save memory, do Option<[u8; 5]>
 }
@@ -315,6 +315,11 @@ impl PoolTok {
 impl LetterPool {
     pub fn print(&self) -> String {
         let mut res = String::new();
+        if let Some((_, lt_len)) = self.long_tok {
+            for _ in 0..lt_len {
+                res.push('-');
+            }
+        }
         for i in 0..26 {
             if self.lowercase[i] > 0 {
                 for _ in 0..self.lowercase[i] {
@@ -363,6 +368,9 @@ impl LetterPool {
         for (_, count) in &self.other_chars {
             res += *count as usize;
         }
+        if let Some((_, lt_len)) = self.long_tok {
+            res += lt_len as usize;
+        }
         return res;
     }
 
@@ -376,6 +384,9 @@ impl LetterPool {
             if ch.is_uc_letter() {
                 res += *count as usize;
             }
+        }
+        if let Some((_, lt_len)) = self.long_tok {
+            res += lt_len as usize;
         }
         return res;
     }
@@ -496,7 +507,8 @@ impl LetterPool {
 
     pub fn set_longest_tok(&mut self, longest_tok: LlamaToken, model: &LlamaModel) {
         self.remove(longest_tok, model);
-        self.long_tok = Some(longest_tok.0);
+        let lt_len = llm::tok_to_str(longest_tok, model).trim().len() as u8;
+        self.long_tok = Some((longest_tok.0, lt_len));
     }
 
     pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
@@ -512,7 +524,8 @@ impl LetterPool {
         }
 
         self.remove(longest_tok, model); // need to do this before the next line!
-        self.long_tok = Some(longest_tok.0);
+        let lt_len = llm::tok_to_str(longest_tok, model).trim().len() as u8;
+        self.long_tok = Some((longest_tok.0, lt_len));
     }
 
     /// Does not respect `.long_tok`!
@@ -532,7 +545,7 @@ impl LetterPool {
     }
 
     pub fn has(&self, tok: LlamaToken, model: &LlamaModel) -> bool {
-        if Some(tok.0) == self.long_tok {
+        if Some(tok.0) == self.long_tok.map(|(tok, _)| tok) {
             // the theory of ties doesn't affect `has`!
             return true;
         }
@@ -583,7 +596,7 @@ impl LetterPool {
     pub fn remove(&mut self, tok: LlamaToken, model: &LlamaModel) {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
-            self.remove_pt(pt, Some(tok.0) == self.long_tok)
+            self.remove_pt(pt, Some(tok.0) == self.long_tok.map(|(tok, _)| tok))
         })
     }
 
@@ -607,7 +620,7 @@ impl LetterPool {
     pub fn try_remove(&self, tok: LlamaToken, model: &LlamaModel) -> Option<Self> {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
-            self.try_remove_pt(pt, Some(tok.0) == self.long_tok)
+            self.try_remove_pt(pt, Some(tok.0) == self.long_tok.map(|(tok, _)| tok))
         })
     }
 }
