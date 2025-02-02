@@ -199,20 +199,23 @@ fn predict_strip(
     .unwrap();
 
     stats.strip_avg_probs.push(vec![]);
-    let mut tok_s = "   ".to_string();
-    let mut filter_s = "   ".to_string();
-    let mut chars_s = "   ".to_string();
-    let mut tok_score_s = "   ".to_string();
-    let mut ahead_s = "   ".to_string();
-    let mut ahead_pv_s = "   ".to_string();
-    let mut prob_ahead_s = "   ".to_string();
-    let mut prob_s = "   ".to_string();
+    let mut tok_s = "          ".to_string();
+    let mut filter_s = "flt bns   ".to_string();
+    let mut chars_s = "chr bns   ".to_string();
+    let mut tok_score_s = "tok scr   ".to_string();
+    let mut overall_score_s = "pfx scr   ".to_string(); // TODO: still needs the RLNN! Just invoke `prob_score`!
+    let mut ahead_s = "tok ahd   ".to_string();
+    let mut ahead_pv_s = "val ahd   ".to_string();
+    let mut prob_ahead_s = "prb ahd   ".to_string();
+    let mut prob_s = "prb       ".to_string();
 
     let mut chars_i = 0.0;
     let mut overall_bonus: f64 = 1.0;
 
     let mut optimistic_cost = 1.0;
     let mut overall_probability: f64 = 1.0;
+
+    let mut overall_score: f64 = 1.0;
 
     let mut punchline: String = String::new();
     for tok in &punch_toks {
@@ -255,26 +258,28 @@ fn predict_strip(
         overall_bonus *= (filter_bonus * char_bonus) as f64;
 
         if let Some((_, prob)) = found_cand {
+            let tok_score = prob * filter_bonus as f64 * char_bonus as f64;
+            overall_score *= tok_score;
+
             write!(ahead_s, "{:>12}", ahead).unwrap();
             write!(ahead_pv_s, "{:>12}", ahead_and_pool_valid).unwrap();
             write!(prob_ahead_s, "{:>11.2}%", prob_ahead * 100.0).unwrap();
             write!(prob_s, "{:>11.3}%", prob * 100.0).unwrap();
-            write!(
-                tok_score_s,
-                "{:>11.3}%",
-                prob * filter_bonus as f64 * char_bonus as f64 * 100.0
-            )
-            .unwrap();
+            write!(tok_score_s, "{:>11.3}%", tok_score * 100.0).unwrap();
+            write!(overall_score_s, "{:>11.3}%", overall_score * 100.0).unwrap();
             stats.aheads.push(ahead);
             stats.probs.push(*prob as f32);
             stats.prob_aheads.push(prob_ahead as f32);
             overall_probability *= *prob as f64;
         } else {
+            overall_score = 0.0;
+
             write!(ahead_s, " ---------- ").unwrap();
             write!(ahead_pv_s, " ---------- ").unwrap();
             write!(prob_ahead_s, " ---------- ").unwrap();
             write!(prob_s, " ---------- ").unwrap();
             write!(tok_score_s, " ---------- ").unwrap();
+            write!(overall_score_s, " ---------- ").unwrap();
             stats.aheads.push(10000);
             stats.probs.push(0.0001);
             stats.prob_aheads.push(0.9999);
@@ -302,7 +307,7 @@ fn predict_strip(
 
     write!(
         stats.details,
-        "{tok_s}\n{prob_s}\n{filter_s}\n{chars_s}\n{tok_score_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0} ",
+        "{tok_s}\n{prob_s}\n{filter_s}\n{chars_s}\n{tok_score_s}\n{overall_score_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0} ",
         optimistic_cost,  average_probability * 100.0,
         stats.tok_times.iter().sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
@@ -369,6 +374,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     // ];
 
     let excused_strips = [
+        1575, // Gemma1 at least has no hope of getting this one
         2199, // Ought to get it, though all-caps makes it harder (has trouble with "BUSTING")
         1833, // Punchline has digits
         1743, // Formally weird; the leadup basically is just "Spring BREAAAAAAAAAAAA-"
@@ -427,23 +433,23 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             avg_prob * 100.0
         );
 
-        // // Add a couple of strips with known high estimates that are actually solveable quickly, to
-        // // get more data:
-        // if cost > 3_000_000.0 && strip.id != 694 && strip.id != 1055 {
-        //     std::io::Write::write(
-        //         &mut append_to_report,
-        //         format!(
-        //             "{: >4} {} ==> ({: >6}/{:.1}%)\n",
-        //             strip.id,
-        //             strip.punchline.len(),
-        //             cost,
-        //             avg_prob
-        //         )
-        //         .as_bytes(),
-        //     )
-        //     .unwrap();
-        //     continue;
-        // }
+        // Add a couple of strips with known high estimates that are actually solveable quickly, to
+        // get more data:
+        if cost > 3_000_000.0 && strip.id != 694 && strip.id != 1055 {
+            std::io::Write::write(
+                &mut append_to_report,
+                format!(
+                    "{: >4} {} ==> ({: >6}/{:.1}%)\n",
+                    strip.id,
+                    strip.punchline.len(),
+                    cost,
+                    avg_prob
+                )
+                .as_bytes(),
+            )
+            .unwrap();
+            continue;
+        }
 
         let search_res = search::practice_search(strip, model, words, Some(250000), &mut report);
         if TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst) {

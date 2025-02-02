@@ -1,6 +1,6 @@
 #![allow(dead_code)]
 
-use std::{cell::Cell, cmp::Ordering, fmt::Write, fs, io::Write as _, time::Duration};
+use std::{cell::Cell, cmp::Ordering, fs, io::Write as _, time::Duration};
 
 use indicatif::ProgressBar;
 use llama_cpp_2::{model::LlamaModel, token::LlamaToken};
@@ -468,11 +468,23 @@ impl SearchState<'_> {
     }
 
     fn hof_update(&mut self, desc: String, len: usize, p: Score, respects_ties: bool) {
-        if self.hall_of_fame.initial_nodes.len() < 2_000 {
+        let initial_node_limit = if self.hints.goal.is_none() {
+            2_000
+        } else {
+            500_000
+        };
+
+        if self.hall_of_fame.initial_nodes.len() < initial_node_limit {
             self.hall_of_fame.initial_nodes.push(desc.clone());
-        }
-        if self.step > 1 && self.step <= 2_000 && self.step % 500 == 0 {
-            std::fs::write("/tmp/hof-init", self.hall_of_fame.initial_nodes.join("\n")).unwrap();
+
+            if self.step == 500
+                || self.step == 1_000
+                || self.step == 2_000
+                || self.step % 100_000 == 0
+            {
+                std::fs::write("/tmp/hof-init", self.hall_of_fame.initial_nodes.join("\n"))
+                    .unwrap();
+            }
         }
 
         if self.step % 500 == 0 {
@@ -556,7 +568,7 @@ impl SearchState<'_> {
 
         if let Some((node, p)) = self
             .q
-            .pop(/*require_tie_respecting=*/ (self.step / 100) % 4 == 0)
+            .pop(/*require_tie_respecting=*/ (self.step / 100) % 8 == 0)
         {
             self.deepest_node_accessed =
                 std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
@@ -606,21 +618,29 @@ impl SearchState<'_> {
 
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
-        if self.q.len() > 3_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(1_200_000);
+        if self.q.len() > 4_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(1_600_000);
         }
 
         self.search_time += step_start.elapsed();
 
-        if quit_now || self.step % 1_000_000 == 0 {
-            self.time_report();
-            self.progress.set_message("Saving...");
-            let filename = format!(
-                "/home/paul/.qwantzle/{}-{}.search",
-                self.hints.id, self.step
-            );
-            self.save(&filename);
-            self.progress.set_message(format!("Saved to {}", filename));
+        // Only save for 1663.
+        if self.hints.goal.is_none() {
+            if quit_now || self.step % 1_000_000 == 0 {
+                self.time_report();
+                self.progress.set_message("Saving...");
+                let filename = format!(
+                    "/home/paul/.qwantzle/{}-{}.search",
+                    self.hints.id,
+                    if quit_now {
+                        "in_progress"
+                    } else {
+                        "checkpoint"
+                    }
+                );
+                self.save(&filename);
+                self.progress.set_message(format!("Saved to {}", filename));
+            }
         }
 
         if quit_now {
@@ -630,7 +650,7 @@ impl SearchState<'_> {
 
         // Have we reached the end?
         if let Some(limit) = self.max_search {
-            limit >= self.step
+            self.step >= limit
         } else {
             false
         }
@@ -731,8 +751,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
-        // This is unmotivated; purely empirical. Starts at 4.0, goes towards 3.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 2.0;
+        // This is unmotivated; purely empirical. Starts at 6.0, goes towards 4.0:
+        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
@@ -873,12 +893,6 @@ pub fn practice_search(
     steps_limit: Option<usize>,
     report: &mut String,
 ) -> SearchResult {
-    let mut q = Q::new();
-
-    let leadup_toks = model
-        .str_to_token(&strip.leadup, llama_cpp_2::model::AddBos::Always)
-        .unwrap();
-
     let strip_summary = format!(
         "...{} >>{}<<\n",
         strip
@@ -893,170 +907,32 @@ pub fn practice_search(
     print!("{}", strip_summary);
     *report += &strip_summary;
 
-    let progress = ProgressBar::new_spinner();
-
-    progress.set_message(format!("Loading context"));
-
-    let mut root_sess = Session::new(model, leadup_toks.len() as u32 + TOK_BUFFER + 100);
-
-    let mut longest_word_len = 0;
-    // Set up vocabulary restrictions
-    let vocab = {
-        let mut v_builder = VocabBuilder::default();
-
-        // If there are non-dictionary words, sneak 'em in:
-        for word in regex::Regex::new(r"\b").unwrap().split(&strip.punchline) {
-            v_builder.add_word(word, model, /*vary_case=*/ false);
-            if word.len() > longest_word_len {
-                longest_word_len = word.len();
-            }
-        }
-
-        for word in words {
-            // Simulate knowing that all words are shorter than the longest in the vocabulary.
-            if word.len() >= longest_word_len {
-                continue;
-            }
-            v_builder.add_word(word, model, /*vary_case=*/ true);
-        }
-
-        v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
+    let hints = if strip.id == 1663 {
+        Hints::for_1663(&words, /*look_at_ties=*/ false, &model)
+    } else {
+        Hints::from_strip(strip, &words, /*look_at_ties=*/ false, &model)
     };
 
-    // Set up the letter pool
-    let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
+    let mut search = SearchState::new(&model, hints, steps_limit, vec![]);
+    search.search();
 
-    let search_start_time = std::time::Instant::now();
-    COPY_TIME.replace(0);
-    ADVANCE_TIME.replace(0);
-    FF_ADVANCE_TIME.replace(0);
-    PREDICT_TIME.replace(0);
-    MISC_TIME.replace(0);
-    let mut success = false;
-    let mut step = 0;
-    let mut score_progress_info = "Score progression: ".to_string();
-    let mut log = String::new();
-    let mut deepest_node_accessed = 0;
-
-    let root_node = Node::new_with_longest_tok(&strip.punchline, model);
-
-    // Kinda a hack; I don't let you advance without predicting...
-    let first_cands = root_sess.advance_and_predict(&leadup_toks, Some(TOK_TOP_P));
-    root_sess.save_prompt();
-    root_node.consider_candidates(first_cands, &mut root_sess, &mut q, &vocab, &rlnn);
-
-    loop {
-        progress.tick();
-
-        if TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst) {
-            progress.abandon_with_message("TODO: actually save and load");
-            break;
-        }
-
-        if let Some(lim) = steps_limit {
-            if step >= lim {
-                let msg = format!("Hit step limit: {}", step);
-                *report += &msg;
-                progress.abandon_with_message(msg);
-                break;
-            }
-        }
-
-        if q.len() >= 3_000_000 {
-            progress.println(format!(
-                "Queue length is {}; trimming to 500k each.",
-                q.len()
-            ));
-            q = q.trim(500_000);
-            // save_queue(&q);
-        }
-        if let Some((node, p)) = q.pop(/*require_tie_respecting=*/ (step / 100) % 4 == 0) {
-            deepest_node_accessed = std::cmp::max(deepest_node_accessed, node.depth_at_pruning);
-            let cur_text = toks_to_str(&node.tokens(), model);
-
-            if node.remaining.empty_of_letters() && cur_text.trim() == strip.punchline.trim() {
-                let mut cur_text_alpha = cur_text.clone();
-                let mut punchline_alpha = strip.punchline.clone();
-                cur_text_alpha.retain(|c| c.is_alphabetic());
-                punchline_alpha.retain(|c| c.is_alphabetic());
-
-                if cur_text_alpha == punchline_alpha {
-                    let msg = format!(
-                        "Search successful after {} steps. Score: {:.2}%",
-                        step,
-                        p.0 * 100.0
-                    );
-                    success = true;
-                    *report += &msg;
-                    progress.abandon_with_message(msg);
-                    break;
-                } else {
-                    let msg = format!(
-                        "Non-answer: {} != {}",
-                        toks_to_str(&node.tokens(), model),
-                        strip.punchline.trim()
-                    );
-                    *report += &msg;
-                    *report += "\n";
-                    progress.println(msg);
-                }
-            } else if strip.punchline.trim().starts_with(cur_text.trim()) && !node.text.is_empty() {
-                score_progress_info += &format!(
-                    "'{}' {:.3}%  ",
-                    tok_to_str(*node.tokens().last().unwrap(), model),
-                    p.0 * 100.0
-                );
-            }
-
-            let cur_str = format!("{:.2}%: {}", p.0 * 100.0, cur_text);
-            log.write_str(&format!("{}\n", cur_str)).unwrap();
-
-            progress.set_message(format!("{:7} {}", step, cur_str));
-
-            node.advance(&mut root_sess, &mut q, &vocab, &rlnn);
-            step += 1;
-        } else {
-            let msg = format!("Exhausted all reasonable nodes at {} steps", step);
-            *report += &msg;
-            progress.abandon_with_message(msg);
-            break;
-        }
-    }
-    *report += "\n";
-    let per_step = |n: u128| (n as f32 / step as f32) / 1000.0;
-
-    let time_info = format!(
-        "Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Copy: {:.0}ms  Advance: {:.0}ms  FF advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}.",
-        search_start_time.elapsed().as_secs_f32(),
-        (search_start_time.elapsed().as_micros() - (COPY_TIME.get() + ADVANCE_TIME.get() + FF_ADVANCE_TIME.get() + PREDICT_TIME.get() + MISC_TIME.get())) as f32 / 1000000.0,
-        per_step(COPY_TIME.get()),
-        per_step(ADVANCE_TIME.get()),
-        per_step(FF_ADVANCE_TIME.get()),
-        per_step(PREDICT_TIME.get()),
-        per_step(MISC_TIME.get()),
-    );
-
-    *report += &time_info;
-    *report += "\n";
-    println!("{}", time_info);
-
-    *report += &score_progress_info;
-    *report += "\n";
-    println!("{}", score_progress_info);
-
-    *report += &format!("Deepest node accessed: {deepest_node_accessed}\n");
-    println!("Deepest node accessed: {deepest_node_accessed}");
+    *report += &format!("Deepest node accessed: {}\n", search.deepest_node_accessed);
+    println!("Deepest node accessed: {}", search.deepest_node_accessed);
 
     std::fs::write(
         format!("reports/search-logs/search-{}.txt", strip.id),
-        format!("{}\n{}", strip.punchline, log),
+        format!(
+            "{}\n{}",
+            strip.punchline,
+            search.hall_of_fame.initial_nodes.join("\n")
+        ),
     )
     .unwrap();
 
     return SearchResult {
-        found: success,
-        steps: step,
-        seconds: search_start_time.elapsed().as_secs_f32(),
+        found: search.report.contains("Search successful after"), // hack, but it works!
+        steps: search.step,
+        seconds: search.search_time.as_secs_f32(),
     };
 }
 
