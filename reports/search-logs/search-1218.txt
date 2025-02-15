@@ -1,408 +1,333 @@
 know what? It's really weird when you say that.
-         0 0* 98.83605%  know                                                                                                                         ------aaadeehhhinorssttttuwwwyy?I'.
-         1 0* 250.15143%  know what                                                                                                                    ------aadeehhinorsstttuwwyy?I'.
-         2 0* 190.03103%  know what?                                                                                                                   ------aadeehhinorsstttuwwyyI'.
-         3 0* 98.07602%  know what I                                                                                                                  ------aadeehhinorsstttuwwyy?'.
-         4 0* 78.73204%  know what? I                                                                                                                 ------aadeehhinorsstttuwwyy'.
-         5 0* 53.08381%  know what they                                                                                                               ------aadehinorssttuwwy?I'.
-         6 0* 152.07101%  know what they are                                                                                                           ------adhinossttuwwy?I'.
-         7 0* 104.44347%  know what they are?                                                                                                          ------adhinossttuwwyI'.
-         8 0* 72.60610%  know what they say                                                                                                           ------adehinorsttuww?I'.
-         9 0* 42.82592%  know what you                                                                                                                ------aadeehhinrsstttwwy?I'.
-        10 0* 37.17249%  know how                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
-        11 0* 36.45194%  know what I said                                                                                                             ------aeehhnorstttuwwyy?'.
-        12 0* 36.45017%  know what? I'                                                                                                                ------aadeehhinorsstttuwwyy.
-        13 0* 33.99354%  know what I said?                                                                                                            ------aeehhnorstttuwwyy'.
-        14 0* 32.71628% '                                                                                                                             ------aaadeehhhiknnoorssttttuwwwwyy?I.
-        15 0* 88.37954% 're                                                                                                                           ------aaadehhhiknnoossttttuwwwwyy?I.
-        16 0* 125.49600% 're not                                                                                                                       ------aaadehhhiknosstttuwwwwyy?I.
-        17 0* 29.24731%  know what I'                                                                                                                 ------aadeehhinorsstttuwwyy?.
-        18 0* 27.88991%  were                                                                                                                         ------aaadhhhiknnoossttttuwwwyy?I'.
-        19 0* 27.58317%  don                                                                                                                          ------aaaeehhhiknorssttttuwwwwyy?I'.
-        20 0* 51.16193%  don'                                                                                                                         ------aaaeehhhiknorssttttuwwwwyy?I.
-        21 0* 88.91079%  don't                                                                                                                        ------aaaeehhhiknorsstttuwwwwyy?I.
-        22 0* 88.06800%  don't want                                                                                                                   ------aaeehhhikorssttuwwwyy?I.
-        23 0* 74.14756%  don't want to                                                                                                                ------aaeehhhikrsstuwwwyy?I.
-        24 0* 229.50545%  don't want to hear                                                                                                           ------aehhiksstuwwwyy?I.
-        25 0* 68.48007%  don't think                                                                                                                  ------aaaeehhorssttuwwwwyy?I.
-        26 0* 57.56384%  don't know                                                                                                                   ------aaaeehhhirsstttuwwwyy?I.
-        27 0* 104.54248%  don't know what                                                                                                              ------aaeehhirssttuwwyy?I.
-        28 0* 59.10643%  don't know what I                                                                                                            ------aaeehhirssttuwwyy?.
-        29 0* 50.19131%  don't think they                                                                                                             ------aaaehorsstuwwwwy?I.
-        30 0* 37.62283%  don't want to hear?                                                                                                          ------aehhiksstuwwwyyI.
-        31 0* 30.16296%  don't really                                                                                                                 aaaeehhhiknorsstttuwwwwyy?I.
-        32 0* 45.83437%  don't really think                                                                                                           aaaeehhorssttuwwwwyy?I.
-        33 0* 44.56477%  don't really want                                                                                                            aaeehhhikorssttuwwwyy?I.
-        34 0* 27.90140%  don't think I                                                                                                                ------aaaeehhorssttuwwwwyy?.
-        35 0* 27.30516%  know what? I don                                                                                                             ------aaeehhirsstttuwwyy'.
-        36 0* 56.74478%  know what? I don'                                                                                                            ------aaeehhirsstttuwwyy.
-        37 0* 99.33416%  know what? I don't                                                                                                           ------aaeehhirssttuwwyy.
-        38 0* 62.15050%  know what? I don't really                                                                                                    aaeehhirssttuwwyy.
-        39 0* 26.06125%  don't think you                                                                                                              ------aaaeehhrssttwwwwy?I.
-        40 0* 25.35086%  don't know what they                                                                                                         ------aaehirsstuwwy?I.
-        41 0* 138.11630%  don't know what they are                                                                                                     ------ahisstuwwy?I.
-        42 0* 224.51364%  don't know what they are?                                                                                                    ------ahisstuwwyI.
-        43 0* 24.79687%  don't know what these                                                                                                        ------aahirstuwwyy?I.
-        44 0* 24.56842%  know you                                                                                                                     ------aaadeehhhinrssttttwwwy?I'.
-        45 0* 24.47369%  want                                                                                                                         ------aadeehhhiknoorsstttuwwwyy?I'.
-        46 0* 33.18899%  want to                                                                                                                      ------aadeehhhiknorssttuwwwyy?I'.
-        47 0* 23.94552%  know what it                                                                                                                 ------aadeehhnorssttuwwyy?I'.
-        48 0* 23.45808%  know those                                                                                                                   ------aaadehhinrstttuwwwyy?I'.
-        49 0* 22.42138%  know who                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
-        50 0* 21.89168% 're the                                                                                                                       ------aaadhhiknnoosstttuwwwwyy?I.
-        51 0* 21.82361%  don't really think I                                                                                                         aaaeehhorssttuwwwwyy?.
-        52 0* 20.96047%  don't know?                                                                                                                  ------aaaeehhhirsstttuwwwyyI.
-        53 0* 20.55649%  know that                                                                                                                    ------aadeehhinorssttuwwwyy?I'.
-        54 0* 20.09119%  don't think there                                                                                                            ------aaahosstuwwwwyy?I.
-        55 0* 20.07322% 're not really                                                                                                                aaadehhhiknosstttuwwwwyy?I.
-        56 0* 19.80475%  know what they are.                                                                                                          ------adhinossttuwwy?I'
-        57 0* 19.37770%  know what I really                                                                                                           aadeehhinorsstttuwwyy?'.
-        58 0* 62.56765%  know what I really want                                                                                                      adeehhiorssttuwyy?'.
-        59 0* 44.69050%  know what I really want?                                                                                                     adeehhiorssttuwyy'.
-        60 0* 20.92433%  know what I really want to                                                                                                   adeehhirsstuwyy?'.
-        61 0* 19.37545%  don't know where                                                                                                             ------aaahhisstttuwwyy?I.
-        62 0* 18.12357%  know the                                                                                                                     ------aaadehhinorsstttuwwwyy?I'.
-        63 0* 17.77492%  know what? It                                                                                                                ------aadeehhinorssttuwwyy'.
-        64 0* 23.54847%  know what? It doesn                                                                                                          ------aaehhirsttuwwyy'.
-        65 0* 53.04553%  know what? It doesn'                                                                                                         ------aaehhirsttuwwyy.
-        66 0* 80.56953%  know what? It doesn't                                                                                                        ------aaehhirstuwwyy.
-        67 0* 79.08660%  know what? It doesn't really                                                                                                 aaehhirstuwwyy.
-        68 0* 18.39235%  know what? It turns                                                                                                          ------aadeehhiostwwyy'.
-        69 0* 17.72274%  know what I really hate                                                                                                      adehinorssttuwwyy?'.
-        70 0* 26.72210%  know what I really hate?                                                                                                     adehinorssttuwwyy'.
-        71 0* 17.29540%  know what you need                                                                                                           ------aahhirsstttwwy?I'.
-        72 0* 17.41060%  know what you need?                                                                                                          ------aahhirsstttwwyI'.
-        73 0* 16.15420%  don't know what the                                                                                                          ------aaehirsstuwwyy?I.
-        74 0* 15.81411%  know what? It'                                                                                                               ------aadeehhinorssttuwwyy.
-        75 0* 27.92811%  know what? It's                                                                                                              ------aadeehhinorsttuwwyy.
-        76 0* 21.21395%  know what? It's not                                                                                                          ------aadeehhirstuwwyy.
-        77 0* 15.49798%  want to hear                                                                                                                 ------adehhiknossttuwwwyy?I'.
-        78 0* 15.42495%  don't know what a                                                                                                            ------aeehhirssttuwwyy?I.
-        79 0* 15.36089%  know what? I really                                                                                                          aadeehhinorsstttuwwyy'.
-        80 0* 15.10952%  don't know the                                                                                                               ------aaaehhirssttuwwwyy?I.
-        81 0* 14.91002%  don't know why                                                                                                               ------aaaeehhirsstttuwwy?I.
-        82 0* 18.96074%  don't know why they                                                                                                          ------aaaehirssttuww?I.
-        83 0* 14.72330%  know what I was                                                                                                              ------adeehhinorstttuwyy?'.
-        84 0* 14.53086%  know how hard                                                                                                                ------aaeehinssttttuwwyy?I'.
-        85 0* 29.54709%  know how hard it                                                                                                             ------aaeehnsstttuwwyy?I'.
-        86 0* 14.13179%  heard                                                                                                                        ------aaehhiknnoossttttuwwwwyy?I'.
-        87 0* 16.77703%  heard that                                                                                                                   ------aehiknnoossttuwwwwyy?I'.
-        88 0* 20.13068%  heard that?                                                                                                                  ------aehiknnoossttuwwwwyyI'.
-        89 0* 14.05234%  know how they                                                                                                                ------aaadehinrsstttuwwy?I'.
-        90 0* 13.52236%  know what this                                                                                                               ------aadeehnorsttuwwyy?I'.
-        91 0* 13.47373%  sound                                                                                                                        ------aaaeehhhiknorsttttwwwwyy?I'.
-        92 0* 13.43281%  know where                                                                                                                   ------aaadhhinossttttuwwyy?I'.
-        93 0* 13.30447%  know where I                                                                                                                 ------aaadhhinossttttuwwyy?'.
-        94 0* 13.15824%  want to write                                                                                                                ------aadehhhknosstuwwyy?I'.
-        95 0* 12.94226%  said                                                                                                                         ------aaeehhhknnoorsttttuwwwwyy?I'.
-        96 0* 27.85899%  said that                                                                                                                    ------aeehhknnoorsttuwwwwyy?I'.
-        97 0* 15.81594%  said that really                                                                                                             aeehhknnoorsttuwwwwyy?I'.
-        98 0* 12.61142%  don't think the                                                                                                              ------aaaehorsstuwwwwyy?I.
-        99 0* 12.42773%  think                                                                                                                        ------aaadeehhnoorsstttuwwwwyy?I'.
-       100 0* 13.81807%  think you                                                                                                                    ------aaadeehhnorsstttwwwwy?I'.
-       101 0* 12.27758%  don't really want to                                                                                                         aaeehhhikrsstuwwwyy?I.
-       102 0* 37.67004%  don't really want to hear                                                                                                    aehhiksstuwwwyy?I.
-       103 0* 12.19963%  don't really think they                                                                                                      aaaehorsstuwwwwy?I.
-       104 0* 12.17715%  know what these                                                                                                              ------aadhinorsttuwwyy?I'.
-       105 0* 11.70037%  know how when                                                                                                                ------aaadehirssttttuwyy?I'.
-       106 0* 11.48640% 're not a                                                                                                                     ------aadehhhiknosstttuwwwwyy?I.
-       107 0* 11.34538%  know what'                                                                                                                   ------aadeehhinorsstttuwwyy?I.
-       108 0* 19.91188%  know what's                                                                                                                  ------aadeehhinorstttuwwyy?I.
-       109 0* 24.23165%  know what's really                                                                                                           aadeehhinorstttuwwyy?I.
-       110 0* 20.68610%  know what's really weird                                                                                                     aaehhnostttuwyy?I.
-       111 0* 29.78657%  know what's really weird?                                                                                                    aaehhnostttuwyyI.
-       112 0* 16.96178%  know what's really hard                                                                                                      aeehinostttuwwyy?I.
-       113 0* 23.57789%  know what's really hard?                                                                                                     aeehinostttuwwyyI.
-       114 0* 16.24783%  know what's weird                                                                                                            ------aaehhnostttuwyy?I.
-       115 0* 20.13465%  know what's weird?                                                                                                           ------aaehhnostttuwyyI.
-       116 0* 11.33483%  know how it                                                                                                                  ------aaadeehhnrsstttuwwyy?I'.
-       117 0* 11.31456%  think they                                                                                                                   ------aaadehnoorssttuwwwwy?I'.
-       118 0* 14.44787%  think they'                                                                                                                  ------aaadehnoorssttuwwwwy?I.
-       119 0* 37.15829%  think they're                                                                                                                ------aaadhnoossttuwwwwy?I.
-       120 0* 11.14955%  don't want to see                                                                                                            ------aahhhikrstuwwwyy?I.
-       121 0* 11.05902%  want to see                                                                                                                  ------aadhhhiknorsttuwwwyy?I'.
-       122 0* 10.85134% 're not the                                                                                                                   ------aaadhhiknossttuwwwwyy?I.
-       123 0* 10.80735%  know what? I really want                                                                                                     adeehhiorssttuwyy'.
-       124 0* 10.79771%  know what you'                                                                                                               ------aadeehhinrsstttwwy?I.
-       125 0* 28.26160%  know what you're                                                                                                             ------aadehhinsstttwwy?I.
-       126 0* 10.78146%  know what? I really want to                                                                                                  adeehhirsstuwyy'.
-       127 0* 10.70500%  don't really know                                                                                                            aaaeehhhirsstttuwwwyy?I.
-       128 0* 25.90036%  don't really know what                                                                                                       aaeehhirssttuwwyy?I.
-       129 0* 12.13594%  don't really know what I                                                                                                     aaeehhirssttuwwyy?.
-       130 0* 10.48826%  know you'                                                                                                                    ------aaadeehhhinrssttttwwwy?I.
-       131 0* 26.05571%  know you're                                                                                                                  ------aaadehhhinssttttwwwy?I.
-       132 0* 10.39540%  don't know where this                                                                                                        ------aaahsttuwwyy?I.
-       133 0* 10.37811%  know where this                                                                                                              ------aaadhnostttuwwyy?I'.
-       134 0* 10.22511%  know what I really wish                                                                                                      aadeehnorstttuwyy?'.
-       135 0* 15.17963%  know what I really wish you                                                                                                  aadeehnrstttwy?'.
-       136 0* 12.96507%  know what I really wish you'                                                                                                 aadeehnrstttwy?.
-       137 0* 24.83787%  know what I really wish you'd                                                                                                aaeehnrstttwy?.
-       138 0* 10.18692%  know what? It was                                                                                                            ------adeehhinorsttuwyy'.
-       139 0* 11.88272%  know what? It was really                                                                                                     adeehhinorsttuwyy'.
-       140 0* 10.08754%  don't know what it                                                                                                           ------aaeehhrsstuwwyy?I.
-       141 0* 10.01189% 're not a stand                                                                                                               ------aehhhikosttuwwwwyy?I.
-       142 0* 9.80137%  don't want to say                                                                                                            ------aeehhhikrstuwwwy?I.
-       143 0* 9.66471%  know what's really weird? I                                                                                                  aaehhnostttuwyy.
-       144 0* 9.41203%  know what? I hate                                                                                                            ------adehinorssttuwwyy'.
-       145 0* 9.28907%  don't want to share                                                                                                          ------aehhikstuwwwyy?I.
-       146 0* 9.09179%  don't want us                                                                                                                ------aaeehhhikorsttwwwyy?I.
-       147 0* 13.71681%  don't want us to                                                                                                             ------aaeehhhikrstwwwyy?I.
-       148 0* 9.03180%  know what? I really don                                                                                                      aaeehhirsstttuwwyy'.
-       149 0* 25.51241%  know what? I really don'                                                                                                     aaeehhirsstttuwwyy.
-       150 0* 41.73942%  know what? I really don't                                                                                                    aaeehhirssttuwwyy.
-       151 0* 8.94697%  know what's worse                                                                                                            ------aadehhintttuwyy?I.
-       152 0* 56.54972%  know what's worse than                                                                                                       ------adehittuwyy?I.
-       153 0* 9.09712%  know what's worse than a                                                                                                     ------dehittuwyy?I.
-       154 0* 8.77055%  don't know what they are? I                                                                                                  ------ahisstuwwy.
-       155 0* 8.67117%  know what the                                                                                                                ------aadehinorssttuwwyy?I'.
-       156 0* 8.60361%  think they're really                                                                                                         aaadhnoossttuwwwwy?I.
-       157 0* 8.56780%  don't really know what they                                                                                                  aaehirsstuwwy?I.
-       158 0* 18.94431%  don't really know what they are                                                                                              ahisstuwwy?I.
-       159 0* 20.50276%  don't really know what they are?                                                                                             ahisstuwwyI.
-       160 0* 8.52038%  said you                                                                                                                     ------aaeehhhknnorsttttwwwwy?I'.
-       161 0* 17.81412%  said you were                                                                                                                ------aahhhknnosttttwwwy?I'.
-       162 0* 8.49808%  know this                                                                                                                    ------aaadeehhnorstttuwwwyy?I'.
-       163 0* 8.35229%  know what's weird? I                                                                                                         ------aaehhnostttuwyy.
-       164 0* 8.34815%  know what? I hate stand                                                                                                      ------ehiorstuwwyy'.
-       165 0* 8.32415%  know these                                                                                                                   ------aaadhhinorstttuwwwyy?I'.
-       166 0* 8.26909% 're not that                                                                                                                  ------aadehhiknosstuwwwwyy?I.
-       167 0* 8.24391%  said that?                                                                                                                   ------aeehhknnoorsttuwwwwyyI'.
-       168 0* 8.13300%  know what you said                                                                                                           ------aeehhnrstttwwy?I'.
-       169 0* 8.70879%  know what you said?                                                                                                          ------aeehhnrstttwwyI'.
-       170 0* 8.13238%  okay                                                                                                                         ------aadeehhhinnorssttttuwwwwy?I'.
-       171 0* 8.09494%  know what they'                                                                                                              ------aadehinorssttuwwy?I.
-       172 0* 25.35752%  know what they're                                                                                                            ------aadhinossttuwwy?I.
-       173 0* 8.05903%  heard what                                                                                                                   ------aehiknnoosstttuwwwyy?I'.
-       174 0* 11.28321%  heard what I                                                                                                                 ------aehiknnoosstttuwwwyy?'.
-       175 0* 8.00606% 're really                                                                                                                    aaadehhhiknnoossttttuwwwwyy?I.
-       176 0* 7.86236%  know what the worst                                                                                                          ------aadehinstuwyy?I'.
-       177 0* 7.79292%  know what those                                                                                                              ------aadehinrsttuwwyy?I'.
-       178 0* 19.72674%  know what those are                                                                                                          ------adhinsttuwwyy?I'.
-       179 0* 14.75638%  know what those are?                                                                                                         ------adhinsttuwwyyI'.
-       180 0* 7.61848%  know what? I hate this                                                                                                       ------adenorstuwwyy'.
-       181 0* 7.53166%  want to know                                                                                                                 ------aadeehhhirssttuwwyy?I'.
-       182 0* 16.94987%  want to know what                                                                                                            ------adeehhirsstuwyy?I'.
-       183 0* 7.48232%  know what's worse than the                                                                                                   ------adituwyy?I.
-       184 0* 7.43596%  know it                                                                                                                      ------aaadeehhhnorsstttuwwwyy?I'.
-       185 0* 7.36068%  know what it says                                                                                                            ------adeehhnorttuwwy?I'.
-       186 0* 7.28462%  know what? It's really                                                                                                       aadeehhinorsttuwwyy.
-       187 0* 12.04105%  know what? It's really hard                                                                                                  aeehinosttuwwyy.
-       188 0* 18.92554%  know what? It's really hard to                                                                                               aeehinstuwwyy.
-       189 0* 7.24599%  know what it'                                                                                                                ------aadeehhnorssttuwwyy?I.
-       190 0* 12.69844%  know what it's                                                                                                               ------aadeehhnorsttuwwyy?I.
-       191 0* 6.99606%  don't think we                                                                                                               ------aaaehhorssttuwwwyy?I.
-       192 0* 6.99021%  know what? I hate you                                                                                                        ------adehinrssttwwy'.
-       193 0* 6.92715%  know you're the                                                                                                              ------aaadhhinsstttwwwy?I.
-       194 0* 6.76305%  wanna                                                                                                                        ------adeehhhikoorssttttuwwwyy?I'.
-       195 0* 6.70702%  know what they are? It                                                                                                       ------adhinosstuwwy'.
-       196 0* 11.39666%  know what they are? It'                                                                                                      ------adhinosstuwwy.
-       197 0* 21.00577%  know what they are? It's                                                                                                     ------adhinostuwwy.
-       198 0* 6.70421%  don't know where I                                                                                                           ------aaahhisstttuwwyy?.
-       199 0* 6.68991%  don't really think you                                                                                                       aaaeehhrssttwwwwy?I.
-       200 0* 6.68366%  know what? I really wish                                                                                                     aadeehnorstttuwyy'.
-       201 0* 12.18948%  know what? I really wish you                                                                                                 aadeehnrstttwy'.
-       202 0* 6.60531%  know what? It was worth                                                                                                      ------adeehinstuyy'.
-       203 0* 6.59554%  okay?                                                                                                                        ------aadeehhhinnorssttttuwwwwyI'.
-       204 0* 6.58694%  sound really                                                                                                                 aaaeehhhiknorsttttwwwwyy?I'.
-       205 0* 6.48119%  know the ones                                                                                                                ------aaadhhirstttuwwwyy?I'.
-       206 0* 6.40285%  know what you are                                                                                                            ------adehhinsstttwwy?I'.
-       207 0* 6.40077%  know what? It's not really                                                                                                   aadeehhirstuwwyy.
-       208 0* 6.36697%  know what I really need                                                                                                      aahhiorsstttuwwyy?'.
-       209 0* 6.69866%  know what I really need?                                                                                                     aahhiorsstttuwwyy'.
-       210 0* 6.33551%  know what you are?                                                                                                           ------adehhinsstttwwyI'.
-       211 0* 6.32777%  don't think these                                                                                                            ------aaahorstuwwwwyy?I.
-       212 0* 6.23234%  want to try                                                                                                                  ------aadeehhhiknosstuwwwy?I'.
-       213 0* 6.22315%  know what I want                                                                                                             ------adeehhiorssttuwyy?'.
-       214 0* 6.19829%  know what that                                                                                                               ------adeehinorsstuwwyy?I'.
-       215 0* 6.18474%  know?                                                                                                                        ------aaadeehhhinorssttttuwwwyyI'.
-       216 0* 6.11977% 're a                                                                                                                         ------aadehhhiknnoossttttuwwwwyy?I.
-       217 0* 6.06757%  know what it says?                                                                                                           ------adeehhnorttuwwyI'.
-       218 0* 6.03502%  know who'                                                                                                                    ------aaadeehhinrssttttuwwyy?I.
-       219 0* 10.66195%  know who's                                                                                                                   ------aaadeehhinrsttttuwwyy?I.
-       220 0* 11.53241%  know who's really                                                                                                            aaadeehhinrsttttuwwyy?I.
-       221 0* 6.03501%  know what you were                                                                                                           ------aadhhinsstttwy?I'.
-       222 0* 6.01557%  know what? I really wish you'                                                                                                aadeehnrstttwy.
-       223 0* 11.37275%  know what? I really wish you'd                                                                                               aaeehnrstttwy.
-       224 0* 5.99065%  know how they say                                                                                                            ------aadehinrstttuww?I'.
-       225 0* 5.82852%  wanna hear                                                                                                                   ------dehhikoossttttuwwwyy?I'.
-       226 0* 5.79395%  know what I really want is                                                                                                   adeehhorsttuwyy?'.
-       227 0* 5.78674%  know what I want?                                                                                                            ------adeehhiorssttuwyy'.
-       228 0* 5.70816%  know I                                                                                                                       ------aaadeehhhinorssttttuwwwyy?'.
-       229 0* 5.69817%  know what you're really                                                                                                      aadehhinsstttwwy?I.
-       230 0* 5.64151%  okay there                                                                                                                   ------aadhhinnosstttuwwwwy?I'.
-       231 0* 5.62324%  don't want these                                                                                                             ------aahhikorstuwwwyy?I.
-       232 0* 5.60602%  don't know that                                                                                                              ------aaeehhirsstuwwwyy?I.
-       233 0* 5.58859%  don't want this                                                                                                              ------aaeehhkorstuwwwyy?I.
-       234 0* 5.57017%  know what they are? I                                                                                                        ------adhinossttuwwy'.
-       235 0* 5.56950%  know what? I want                                                                                                            ------adeehhiorssttuwyy'.
-       236 0* 8.43610%  know what? I want to                                                                                                         ------adeehhirsstuwyy'.
-       237 0* 5.49807%  don't want to hear why                                                                                                       ------aehiksstuwwy?I.
-       238 0* 5.44474%  know who says                                                                                                                ------aadeehhinrttttuwwy?I'.
-       239 0* 24.06667%  know who says that                                                                                                           ------adeehinrttuwwy?I'.
-       240 0* 35.25930%  know who says that?                                                                                                          ------adeehinrttuwwyI'.
-       241 0* 8.67357%  know who says that when                                                                                                      ------adeirttuwy?I'.
-       242 0* 5.44034%  know they                                                                                                                    ------aaadehhinorsstttuwwwy?I'.
-       243 0* 5.33715%  know where I'                                                                                                                ------aaadhhinossttttuwwyy?.
-       244 0* 5.32913%  really                                                                                                                       aaadeehhhiknnoorssttttuwwwwyy?I'.
-       245 0* 5.81617%  really want                                                                                                                  aadeehhhiknoorsstttuwwwyy?I'.
-       246 0* 5.32806%  know what you want                                                                                                           ------adeehhirssttwy?I'.
-       247 0* 5.30625%  know it'                                                                                                                     ------aaadeehhhnorsstttuwwwyy?I.
-       248 0* 8.93166%  know it's                                                                                                                    ------aaadeehhhnorstttuwwwyy?I.
-       249 0* 6.15926%  know it's hard                                                                                                               ------aaeehhnostttuwwwyy?I.
-       250 0* 10.18602%  know it's hard when                                                                                                          ------aaehostttuwwyy?I.
-       251 0* 10.18361%  know it's hard when you                                                                                                      ------aaehstttwwy?I.
-       252 0* 6.29503%  know it's hard to                                                                                                            ------aaeehhnsttuwwwyy?I.
-       253 0* 5.58233%  know it's hard when you say                                                                                                  ------aehtttww?I.
-       254 0* 5.29562%  know they'                                                                                                                   ------aaadehhinorsstttuwwwy?I.
-       255 0* 14.15939%  know they're                                                                                                                 ------aaadhhinosstttuwwwy?I.
-       256 0* 5.68244%  know they're not                                                                                                             ------aaadhhissttuwwwy?I.
-       257 0* 5.41548%  know they're really                                                                                                          aaadhhinosstttuwwwy?I.
-       258 0* 5.26713%  know who that                                                                                                                ------aadeehinrssttuwwyy?I'.
-       259 0* 6.42157%  know who that was                                                                                                            ------adeehinrsttuwyy?I'.
-       260 0* 9.84555%  know who that was?                                                                                                           ------adeehinrsttuwyyI'.
-       261 0* 5.24749%  don't want to share?                                                                                                         ------aehhikstuwwwyyI.
-       262 0* 5.23118%  want to see what                                                                                                             ------adhhiknorstuwwyy?I'.
-       263 0* 5.22300%  think you'                                                                                                                   ------aaadeehhnorsstttwwwwy?I.
-       264 0* 10.70493%  think you're                                                                                                                 ------aaadehhnosstttwwwwy?I.
-       265 0* 5.19551%  know what? I was                                                                                                             ------adeehhinorstttuwyy'.
-       266 0* 5.17535%  don't know why?                                                                                                              ------aaaeehhirsstttuwwyI.
-       267 0* 5.10828%  know the one                                                                                                                 ------aaadhhirsstttuwwwyy?I'.
-       268 0* 6.81213%  know the one with                                                                                                            ------aaadhrssttuwwyy?I'.
-       269 0* 5.07664%  know you want                                                                                                                ------aadeehhhirsstttwwy?I'.
-       270 0* 5.07416%  know how this                                                                                                                ------aaadeehnrstttuwwyy?I'.
-       271 0* 5.97058%  know how this ends                                                                                                           ------aaaehrtttuwwyy?I'.
-       272 0* 5.02445%  know what? It's really easy                                                                                                  adehhinorttuwwy.
-       273 0* 5.02351%  don't know where that                                                                                                        ------aahisstuwwyy?I.
-       274 0* 5.02023%  know it's not                                                                                                                ------aaadeehhhrsttuwwwyy?I.
-       275 0* 4.99672%  said that out                                                                                                                ------aeehhknnorstwwwwyy?I'.
-       276 0* 4.97755%  know how there                                                                                                               ------aaadhinsstttuwwyy?I'.
-       277 0* 8.72388%  know how there'                                                                                                              ------aaadhinsstttuwwyy?I.
-       278 0* 15.91565%  know how there's                                                                                                             ------aaadhinstttuwwyy?I.
-       279 0* 10.49037%  know how there's this                                                                                                        ------aaadnttuwwyy?I.
-       280 0* 7.28626%  know how there's a                                                                                                           ------aadhinstttuwwyy?I.
-       281 0* 7.10838%  know how there's that                                                                                                        ------aadinstuwwyy?I.
-       282 0* 4.93409%  know how stand                                                                                                               ------aaeehhirstttuwwyy?I'.
-       283 0* 4.91828%  don't really think there                                                                                                     aaahosstuwwwwyy?I.
-       284 0* 4.90191%  know what I really hate is                                                                                                   adehnorsttuwwyy?'.
-       285 0* 21.57159%  know what I really hate is when                                                                                              adorsttuwyy?'.
-       286 0* 16.83456%  know what I really hate is when you                                                                                          adrsttwy?'.
-       287 0* 9.15930%  know what I really hate is when you'                                                                                         adrsttwy?.
-       288 0* 7.71431%  know what I really hate is when you say                                                                                      drttw?'.
-       289 0* 4.88136%  know who said                                                                                                                ------aaeehhnrsttttuwwyy?I'.
-       290 0* 31.53551%  know who said that                                                                                                           ------aeehnrsttuwwyy?I'.
-       291 0* 61.00206%  know who said that?                                                                                                          ------aeehnrsttuwwyyI'.
-       292 0* 7.38749%  know who said that? It                                                                                                       ------aeehnrstuwwyy'.
-       293 0* 23.60446%  know who said that? It was                                                                                                   ------eehnrtuwyy'.
-       294 0* 4.86350%  don't really think I was                                                                                                     aaeehhorsttuwwwyy?.
-       295 0* 4.86313%  want to know what'                                                                                                           ------adeehhirsstuwyy?I.
-       296 0* 8.26269%  want to know what's                                                                                                          ------adeehhirstuwyy?I.
-       297 0* 7.68584%  want to know what's really                                                                                                   adeehhirstuwyy?I.
-       298 0* 13.92676%  want to know what's really weird                                                                                             aehhstuyy?I.
-       299 0* 26.73958%  want to know what's really weird?                                                                                            aehhstuyyI.
-       300 0* 13.24307%  want to know what's really hard                                                                                              eehistuwyy?I.
-       301 0* 26.43125%  want to know what's really hard?                                                                                             eehistuwyyI.
-       302 0* 6.81047%  want to know what's hard                                                                                                     ------eehistuwyy?I.
-       303 0* 12.08060%  want to know what's hard?                                                                                                    ------eehistuwyyI.
-       304 0* 5.77574%  want to know what's really weird? I                                                                                          aehhstuyy.
-       305 0* 4.84407%  really want to                                                                                                               aadeehhhiknorssttuwwwyy?I'.
-       306 0* 6.64898%  really want to hear                                                                                                          adehhiknossttuwwwyy?I'.
-       307 0* 4.80217%  know what I don                                                                                                              ------aaeehhirsstttuwwyy?'.
-       308 0* 10.44618%  know what I don'                                                                                                             ------aaeehhirsstttuwwyy?.
-       309 0* 17.85762%  know what I don't                                                                                                            ------aaeehhirssttuwwyy?.
-       310 0* 4.75835%  don't know what this                                                                                                         ------aaeehrstuwwyy?I.
-       311 0* 4.69383% 're a stand                                                                                                                   ------aehhhiknoostttuwwwwyy?I.
-       312 0* 4.67575%  don't really know where                                                                                                      aaahhisstttuwwyy?I.
-       313 0* 4.66170%  know how I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
-       314 0* 4.66005%  know how they'                                                                                                               ------aaadehinrsstttuwwy?I.
-       315 0* 11.91547%  know how they're                                                                                                             ------aaadhinsstttuwwy?I.
-       316 0* 6.57937%  know how they're really                                                                                                      aaadhinsstttuwwy?I.
-       317 0* 4.64689%  know what? It was really easy                                                                                                dehhinorttuwy'.
-       318 0* 4.61121%  don't know these                                                                                                             ------aaahhirsttuwwwyy?I.
-       319 0* 4.60739%  know what's really sad                                                                                                       aeehhinortttuwwyy?I.
-       320 0* 8.07707%  know what's really sad?                                                                                                      aeehhinortttuwwyyI.
-       321 0* 4.59639%  need                                                                                                                         ------aaahhhiknoorssttttuwwwwyy?I'.
-       322 0* 6.14058%  need to                                                                                                                      ------aaahhhiknorsstttuwwwwyy?I'.
-       323 0* 4.56220%  know what I heard                                                                                                            ------aehinosstttuwwyy?'.
-       324 0* 4.55819%  know where you                                                                                                               ------aaadhhinssttttwwy?I'.
-       325 0* 4.55425%  know what? I really hate                                                                                                     adehinorssttuwwyy'.
-       326 0* 4.51784%  know what it was                                                                                                             ------adeehhnorsttuwyy?I'.
-       327 0* 5.97901%  know what it was?                                                                                                            ------adeehhnorsttuwyyI'.
-       328 0* 4.46942%  don't really want to hear?                                                                                                   aehhiksstuwwwyyI.
-       329 0* 4.40356%  know what's hard                                                                                                             ------aeehinostttuwwyy?I.
-       330 0* 6.39616%  know what's hard?                                                                                                            ------aeehinostttuwwyyI.
-       331 0* 4.37153%  know what? I really wish you were                                                                                            aadhnsttty'.
-       332 0* 4.34537%  know how I said                                                                                                              ------aaeehhnrsttttuwwyy?'.
-       333 0* 4.33724%  know what they said                                                                                                          ------aehnorsttuwwy?I'.
-       334 0* 4.32811%  don't really want to hear why                                                                                                aehiksstuwwy?I.
-       335 0* 4.30836%  know the ones with                                                                                                           ------aaadhrsttuwwyy?I'.
-       336 0* 4.28641%  don't hate                                                                                                                   ------aaehhiknorssttuwwwwyy?I.
-       337 0* 4.25884%  know what? I need                                                                                                            ------aahhiorsstttuwwyy'.
-       338 0* 5.44421%  know what? I need to                                                                                                         ------aahhirssttuwwyy'.
-       339 0* 4.22166%  don't say                                                                                                                    ------aaeehhhiknorstttuwwwwy?I.
-       340 0* 4.21188%  really think                                                                                                                 aaadeehhnoorsstttuwwwwyy?I'.
-       341 0* 4.20504%  think there                                                                                                                  ------aaadhnoossttuwwwwyy?I'.
-       342 0* 6.74031%  think there'                                                                                                                 ------aaadhnoossttuwwwwyy?I.
-       343 0* 9.90166%  think there's                                                                                                                ------aaadhnoosttuwwwwyy?I.
-       344 0* 6.27121%  think there's a                                                                                                              ------aadhnoosttuwwwwyy?I.
-       345 0* 4.47356%  think there's a way                                                                                                          ------adhnoosttuwwwy?I.
-       346 0* 4.75045%  think there's a way to                                                                                                       ------adhnostuwwwy?I.
-       347 0* 4.20119%  know how hard it was                                                                                                         ------aeehnstttuwyy?I'.
-       348 0* 4.17197%  don't know what?                                                                                                             ------aaeehhirssttuwwyyI.
-       349 0* 4.17133%  knew                                                                                                                         ------aaadehhhinoorssttttuwwwyy?I'.
-       350 0* 6.49935%  knew this                                                                                                                    ------aaadehhnoorstttuwwwyy?I'.
-       351 0* 22.41552%  knew this was                                                                                                                ------aadehhnoortttuwwyy?I'.
-       352 0* 4.11196%  know what I said.                                                                                                            ------aeehhnorstttuwwyy?'
-       353 0* 4.10857%  want to know what I                                                                                                          ------adeehhirsstuwyy?'.
-       354 0* 4.09417%  know you were                                                                                                                ------aaadhhhinssttttwwy?I'.
-       355 0* 4.06623%  know they're not really                                                                                                      aaadhhissttuwwwy?I.
-       356 0* 4.06185%  think that                                                                                                                   ------aadeehnoorsstuwwwwyy?I'.
-       357 0* 4.79554%  think that was                                                                                                               ------adeehnoorstuwwwyy?I'.
-       358 0* 4.05870%  know those?                                                                                                                  ------aaadehhinrstttuwwwyyI'.
-       359 0* 4.04270%  know what I hate                                                                                                             ------adehinorssttuwwyy?'.
-       360 0* 5.51216%  know what I hate?                                                                                                            ------adehinorssttuwwyy'.
-       361 0* 4.04167%  are                                                                                                                          ------aadehhhiknnoossttttuwwwwyy?I'.
-       362 0* 4.01700%  know what? It's hard                                                                                                         ------aeehinosttuwwyy.
-       363 0* 5.25206%  know what? It's hard to                                                                                                      ------aeehinstuwwyy.
-       364 0* 4.01358%  know what they are? It's a                                                                                                   ------dhinostuwwy.
-       365 0* 3.98663%  don't want the                                                                                                               ------aaehhikorsstuwwwyy?I.
-       366 0* 3.98023%  know what? I'd                                                                                                               ------aaeehhinorsstttuwwyy.
-       367 0* 5.48981%  know what? I'd really                                                                                                        aaeehhinorsstttuwwyy.
-       368 0* 3.93694%  don't really want this                                                                                                       aaeehhkorstuwwwyy?I.
-       369 0* 3.91257%  don't trust                                                                                                                  ------aaaeehhhiknostwwwwyy?I.
-       370 0* 3.90081%  know what they said?                                                                                                         ------aehnorsttuwwyI'.
-       371 0* 3.89800%  know who has                                                                                                                 ------aadeehinrsttttuwwyy?I'.
-       372 0* 3.89062%  know what that was                                                                                                           ------deehinorstuwyy?I'.
-       373 0* 4.70545%  know what that was?                                                                                                          ------deehinorstuwyyI'.
-       374 0* 3.88358%  know what? I tried                                                                                                           ------aaehhnossttuwwyy'.
-       375 0* 3.87936%  know what? It's not hard                                                                                                     ------aeehistuwwyy.
-       376 0* 3.85127%  know what I really wish there                                                                                                aadnosttuwyy?'.
-       377 0* 10.71151%  know what I really wish there was                                                                                            adnottuyy?'.
-       378 0* 7.13814%  know what I really wish there was?                                                                                           adnottuyy'.
-       379 0* 3.84291%  want to know what's weird                                                                                                    ------aehhstuyy?I.
-       380 0* 5.95479%  want to know what's weird?                                                                                                   ------aehhstuyyI.
-       381 0* 3.81664%  really want to hear what                                                                                                     dehiknosstuwwyy?I'.
-       382 0* 3.80786%  know what I really don                                                                                                       aaeehhirsstttuwwyy?'.
-       383 0* 12.66789%  know what I really don'                                                                                                      aaeehhirsstttuwwyy?.
-       384 0* 19.48993%  know what I really don't                                                                                                     aaeehhirssttuwwyy?.
-       385 0* 3.79762%  really think that                                                                                                            aadeehnoorsstuwwwwyy?I'.
-       386 0* 3.79099%  want to hear the                                                                                                             ------adhiknosstuwwwyy?I'.
-       387 0* 3.74096%  know what I heard?                                                                                                           ------aehinosstttuwwyy'.
-       388 0* 3.73044%  don't really want us                                                                                                         aaeehhhikorsttwwwyy?I.
-       389 0* 3.72142%  know what? I really need                                                                                                     aahhiorsstttuwwyy'.
-       390 0* 3.71478%  don't think there was                                                                                                        ------aahostuwwwyy?I.
-       391 0* 3.66767%  don't really write                                                                                                           aaaehhhknossttuwwwyy?I.
-       392 0* 3.66633%  know who I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
-       393 0* 3.65511%  know what you want?                                                                                                          ------adeehhirssttwyI'.
-       394 0* 3.58931%  knew that                                                                                                                    ------aadehhinoorssttuwwwyy?I'.
-       395 0* 6.84476%  knew that was                                                                                                                ------adehhinoorsttuwwyy?I'.
-       396 0* 3.58930%  know what they're really                                                                                                     aadhinossttuwwy?I.
-       397 0* 3.57917%  want to know why                                                                                                             ------aadeehhirssttuwy?I'.
-       398 0* 4.78086%  want to know why they                                                                                                        ------aadehirsstuw?I'.
-       399 0* 8.13478%  want to know why they'                                                                                                       ------aadehirsstuw?I.
-       400 0* 24.96334%  want to know why they're                                                                                                     ------aadhisstuw?I.
-       401 0* 3.57891%  don't think they are                                                                                                         ------aahosstuwwwwy?I.
-       402 0* 3.56250%  know how hard they                                                                                                           ------aaeinsstttuwwy?I'.
-       403 0* 3.55893%  know what? It's really weird                                                                                                 aaehhnosttuwyy.
-       404 0* 3.84832%  know what? It's really weird when                                                                                            aahosttuyy.
-       405 0* 16.27000%  know what? It's really weird when you                                                                                        aahstty.
-       406 0* 34.48449%  know what? It's really weird when you say                                                                                    ahtt.
+         0 0* 91.47095%  know                                                                                                                         ------aaadeehhhinorssttttuwwwyy?I'.
+         1 0* 239.29595%  know what                                                                                                                    ------aadeehhinorsstttuwwyy?I'.
+         2 0* 183.58634%  know what?                                                                                                                   ------aadeehhinorsstttuwwyyI'.
+         3 0* 92.14294%  know what I                                                                                                                  ------aadeehhinorsstttuwwyy?'.
+         4 0* 75.43932%  know what? I                                                                                                                 ------aadeehhinorsstttuwwyy'.
+         5 0* 49.36588%  know what they                                                                                                               ------aadehinorssttuwwy?I'.
+         6 0* 137.38870%  know what they are                                                                                                           ------adhinossttuwwy?I'.
+         7 0* 97.27021%  know what they are?                                                                                                          ------adhinossttuwwyI'.
+         8 0* 63.92157%  know what they say                                                                                                           ------adehinorsttuww?I'.
+         9 0* 39.73196%  know what you                                                                                                                ------aadeehhinrsstttwwy?I'.
+        10 0* 35.43926%  know what? I'                                                                                                                ------aadeehhinorsstttuwwyy.
+        11 0* 32.30924%  know how                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
+        12 0* 31.58049% '                                                                                                                             ------aaadeehhhiknnoorssttttuwwwwyy?I.
+        13 0* 80.44677% 're                                                                                                                           ------aaadehhhiknnoossttttuwwwwyy?I.
+        14 0* 100.69896% 're not                                                                                                                       ------aaadehhhiknosstttuwwwwyy?I.
+        15 0* 30.80828%  know what I said                                                                                                             ------aeehhnorstttuwwyy?'.
+        16 0* 30.67159%  know what I said?                                                                                                            ------aeehhnorstttuwwyy'.
+        17 0* 28.29374%  know what I'                                                                                                                 ------aadeehhinorsstttuwwyy?.
+        18 0* 24.40681%  don                                                                                                                          ------aaaeehhhiknorssttttuwwwwyy?I'.
+        19 0* 47.09114%  don'                                                                                                                         ------aaaeehhhiknorssttttuwwwwyy?I.
+        20 0* 79.33050%  don't                                                                                                                        ------aaaeehhhiknorsstttuwwwwyy?I.
+        21 0* 78.18018%  don't want                                                                                                                   ------aaeehhhikorssttuwwwyy?I.
+        22 0* 47.01733%  don't think                                                                                                                  ------aaaeehhorssttuwwwwyy?I.
+        23 0* 43.17274%  don't know                                                                                                                   ------aaaeehhhirsstttuwwwyy?I.
+        24 0* 88.24513%  don't know what                                                                                                              ------aaeehhirssttuwwyy?I.
+        25 0* 48.59422%  don't know what I                                                                                                            ------aaeehhirssttuwwyy?.
+        26 0* 31.84814%  don't want to                                                                                                                ------aaeehhhikrsstuwwwyy?I.
+        27 0* 135.51647%  don't want to hear                                                                                                           ------aehhiksstuwwwyy?I.
+        28 0* 26.92448%  don't want to hear?                                                                                                          ------aehhiksstuwwwyyI.
+        29 0* 24.30326%  don't really                                                                                                                 aaaeehhhiknorsstttuwwwwyy?I.
+        30 0* 29.47912%  don't really think                                                                                                           aaaeehhorssttuwwwwyy?I.
+        31 0* 28.34077%  don't really want                                                                                                            aaeehhhikorssttuwwwyy?I.
+        32 0* 23.76763%  want                                                                                                                         ------aadeehhhiknoorsstttuwwwyy?I'.
+        33 0* 28.67845%  want to                                                                                                                      ------aadeehhhiknorssttuwwwyy?I'.
+        34 0* 23.39011%  were                                                                                                                         ------aaadhhhiknnoossttttuwwwyy?I'.
+        35 0* 21.47602%  know what? I don                                                                                                             ------aaeehhirsstttuwwyy'.
+        36 0* 50.78064%  know what? I don'                                                                                                            ------aaeehhirsstttuwwyy.
+        37 0* 84.80713%  know what? I don't                                                                                                           ------aaeehhirssttuwwyy.
+        38 0* 42.60627%  know what? I don't really                                                                                                    aaeehhirssttuwwyy.
+        39 0* 21.12200%  know what it                                                                                                                 ------aadeehhnorssttuwwyy?I'.
+        40 0* 20.90571%  know you                                                                                                                     ------aaadeehhhinrssttttwwwy?I'.
+        41 0* 20.23457%  don't think I                                                                                                                ------aaaeehhorssttuwwwwyy?.
+        42 0* 19.65320%  don't think they                                                                                                             ------aaaehorsstuwwwwy?I.
+        43 0* 19.48800%  know who                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
+        44 0* 18.62754% 're the                                                                                                                       ------aaadhhiknnoosstttuwwwwyy?I.
+        45 0* 18.40009%  know that                                                                                                                    ------aadeehhinorssttuwwwyy?I'.
+        46 0* 18.11866%  know what they are.                                                                                                          ------adhinossttuwwy?I'
+        47 0* 17.07118%  don't know what they                                                                                                         ------aaehirsstuwwy?I.
+        48 0* 102.33913%  don't know what they are                                                                                                     ------ahisstuwwy?I.
+        49 0* 189.98838%  don't know what they are?                                                                                                    ------ahisstuwwyI.
+        50 0* 16.69100%  don't know?                                                                                                                  ------aaaeehhhirsstttuwwwyyI.
+        51 0* 16.46007%  know what? It                                                                                                                ------aadeehhinorssttuwwyy'.
+        52 0* 16.28186%  know what I really                                                                                                           aadeehhinorsstttuwwyy?'.
+        53 0* 49.48638%  know what I really want                                                                                                      adeehhiorssttuwyy?'.
+        54 0* 38.22039%  know what I really want?                                                                                                     adeehhiorssttuwyy'.
+        55 0* 15.23799%  know what? It'                                                                                                               ------aadeehhinorssttuwwyy.
+        56 0* 26.66635%  know what? It's                                                                                                              ------aadeehhinorsttuwwyy.
+        57 0* 15.20291%  know what? It's not                                                                                                          ------aadeehhirstuwwyy.
+        58 0* 15.08724%  know what? It doesn                                                                                                          ------aaehhirsttuwwyy'.
+        59 0* 41.60495%  know what? It doesn'                                                                                                         ------aaehhirsttuwwyy.
+        60 0* 51.88685%  know what? It doesn't                                                                                                        ------aaehhirstuwwyy.
+        61 0* 27.87980%  know what? It doesn't really                                                                                                 aaehhirstuwwyy.
+        62 0* 14.98802%  know the                                                                                                                     ------aaadehhinorsstttuwwwyy?I'.
+        63 0* 13.82151%  know what I was                                                                                                              ------adeehhinorstttuwyy?'.
+        64 0* 13.56791%  know what? I really                                                                                                          aadeehhinorsstttuwwyy'.
+        65 0* 13.38136%  don't really think I                                                                                                         aaaeehhorssttuwwwwyy?.
+        66 0* 13.28776%  don't know what a                                                                                                            ------aeehhirssttuwwyy?I.
+        67 0* 13.24270%  don't think you                                                                                                              ------aaaeehhrssttwwwwy?I.
+        68 0* 12.98245%  heard                                                                                                                        ------aaehhiknnoossttttuwwwwyy?I'.
+        69 0* 14.23520%  heard that                                                                                                                   ------aehiknnoossttuwwwwyy?I'.
+        70 0* 18.53801%  heard that?                                                                                                                  ------aehiknnoossttuwwwwyyI'.
+        71 0* 12.81507%  know what? It turns                                                                                                          ------aadeehhiostwwyy'.
+        72 0* 12.80605%  know what you need                                                                                                           ------aahhirsstttwwy?I'.
+        73 0* 12.99731%  know what you need?                                                                                                          ------aahhirsstttwwyI'.
+        74 0* 12.64925%  want to hear                                                                                                                 ------adehhiknossttuwwwyy?I'.
+        75 0* 12.63857%  don't know why                                                                                                               ------aaaeehhirsstttuwwy?I.
+        76 0* 13.83293%  don't know why they                                                                                                          ------aaaehirssttuww?I.
+        77 0* 12.39396%  don't know what these                                                                                                        ------aahirstuwwyy?I.
+        78 0* 12.36436%  know how hard                                                                                                                ------aaeehinssttttuwwyy?I'.
+        79 0* 21.74807%  know how hard it                                                                                                             ------aaeehnsstttuwwyy?I'.
+        80 0* 12.17607%  don't know where                                                                                                             ------aaahhisstttuwwyy?I.
+        81 0* 12.09687%  sound                                                                                                                        ------aaaeehhhiknorsttttwwwwyy?I'.
+        82 0* 11.85992% 're not really                                                                                                                aaadehhhiknosstttuwwwwyy?I.
+        83 0* 11.76142%  know those                                                                                                                   ------aaadehhinrstttuwwwyy?I'.
+        84 0* 11.23354%  know what this                                                                                                               ------aadeehnorsttuwwyy?I'.
+        85 0* 11.22649%  know where                                                                                                                   ------aaadhhinossttttuwwyy?I'.
+        86 0* 11.22366%  think                                                                                                                        ------aaadeehhnoorsstttuwwwwyy?I'.
+        87 0* 11.29742%  think you                                                                                                                    ------aaadeehhnorsstttwwwwy?I'.
+        88 0* 11.07643%  know what'                                                                                                                   ------aadeehhinorsstttuwwyy?I.
+        89 0* 19.28935%  know what's                                                                                                                  ------aadeehhinorstttuwwyy?I.
+        90 0* 22.19472%  know what's really                                                                                                           aadeehhinorstttuwwyy?I.
+        91 0* 15.94275%  know what's really weird                                                                                                     aaehhnostttuwyy?I.
+        92 0* 24.74917%  know what's really weird?                                                                                                    aaehhnostttuwyyI.
+        93 0* 14.78021%  know what's really hard                                                                                                      aeehinostttuwwyy?I.
+        94 0* 20.99347%  know what's really hard?                                                                                                     aeehinostttuwwyyI.
+        95 0* 14.52227%  know what's weird                                                                                                            ------aaehhnostttuwyy?I.
+        96 0* 18.24384%  know what's weird?                                                                                                           ------aaehhnostttuwyyI.
+        97 0* 11.03042%  know what I really hate                                                                                                      adehinorssttuwwyy?'.
+        98 0* 18.66206%  know what I really hate?                                                                                                     adehinorssttuwwyy'.
+        99 0* 10.74204%  know where I                                                                                                                 ------aaadhhinossttttuwwyy?'.
+       100 0* 10.58130%  said                                                                                                                         ------aaeehhhknnoorsttttuwwwwyy?I'.
+       101 0* 16.31612%  said that                                                                                                                    ------aeehhknnoorsttuwwwwyy?I'.
+       102 0* 10.43388%  don't know what the                                                                                                          ------aaehirsstuwwyy?I.
+       103 0* 10.40151%  know how they                                                                                                                ------aaadehinrsstttuwwy?I'.
+       104 0* 10.33007%  know what you'                                                                                                               ------aadeehhinrsstttwwy?I.
+       105 0* 25.81611%  know what you're                                                                                                             ------aadehhinsstttwwy?I.
+       106 0* 10.06255% 're not a                                                                                                                     ------aadehhhiknosstttuwwwwyy?I.
+       107 0* 9.61693%  know you'                                                                                                                    ------aaadeehhhinrssttttwwwy?I.
+       108 0* 20.84349%  know you're                                                                                                                  ------aaadehhhinssttttwwwy?I.
+       109 0* 9.56316%  know what these                                                                                                              ------aadhinorsttuwwyy?I'.
+       110 0* 9.49274%  know what? It was                                                                                                            ------adeehhinorsttuwyy'.
+       111 0* 10.53113%  know what? It was really                                                                                                     adeehhinorsttuwyy'.
+       112 0* 9.43598%  know what I really wish                                                                                                      aadeehnorstttuwyy?'.
+       113 0* 11.79833%  know what I really wish you                                                                                                  aadeehnrstttwy?'.
+       114 0* 10.41226%  know what I really wish you'                                                                                                 aadeehnrstttwy?.
+       115 0* 20.57440%  know what I really wish you'd                                                                                                aaeehnrstttwy?.
+       116 0* 9.24271%  know what? I really want                                                                                                     adeehhiorssttuwyy'.
+       117 0* 9.02723%  know how it                                                                                                                  ------aaadeehhnrsstttuwwyy?I'.
+       118 0* 8.91901%  don't know the                                                                                                               ------aaaehhirssttuwwwyy?I.
+       119 0* 8.90331%  think they                                                                                                                   ------aaadehnoorssttuwwwwy?I'.
+       120 0* 12.60997%  think they'                                                                                                                  ------aaadehnoorssttuwwwwy?I.
+       121 0* 27.16633%  think they're                                                                                                                ------aaadhnoossttuwwwwy?I.
+       122 0* 8.58996%  know what? I hate                                                                                                            ------adehinorssttuwwyy'.
+       123 0* 8.49201%  know how when                                                                                                                ------aaadehirssttttuwyy?I'.
+       124 0* 8.44711%  know what's really weird? I                                                                                                  aaehhnostttuwyy.
+       125 0* 8.08337%  don't want us                                                                                                                ------aaeehhhikorsttwwwyy?I.
+       126 0* 7.94864%  know what's worse                                                                                                            ------aadehhintttuwyy?I.
+       127 0* 45.84897%  know what's worse than                                                                                                       ------adehittuwyy?I.
+       128 0* 7.85332%  know what the                                                                                                                ------aadehinorssttuwwyy?I'.
+       129 0* 7.79046%  know what they'                                                                                                              ------aadehinorssttuwwy?I.
+       130 0* 23.51553%  know what they're                                                                                                            ------aadhinossttuwwy?I.
+       131 0* 7.66785%  know what's weird? I                                                                                                         ------aaehhnostttuwyy.
+       132 0* 7.49633%  want to write                                                                                                                ------aadehhhknosstuwwyy?I'.
+       133 0* 7.39908%  heard what                                                                                                                   ------aehiknnoosstttuwwwyy?I'.
+       134 0* 10.46082%  heard what I                                                                                                                 ------aehiknnoosstttuwwwyy?'.
+       135 0* 7.37051%  okay                                                                                                                         ------aadeehhhinnorssttttuwwwwy?I'.
+       136 0* 7.30338%  don't know what they are? I                                                                                                  ------ahisstuwwy.
+       137 0* 7.28626%  don't want us to                                                                                                             ------aaeehhhikrstwwwyy?I.
+       138 0* 6.97133% 're not a stand                                                                                                               ------aehhhikosttuwwwwyy?I.
+       139 0* 6.86736%  know this                                                                                                                    ------aaadeehhnorstttuwwwyy?I'.
+       140 0* 6.81513%  know what it'                                                                                                                ------aadeehhnorssttuwwyy?I.
+       141 0* 11.62825%  know what it's                                                                                                               ------aadeehhnorsttuwwyy?I.
+       142 0* 6.79968%  don't think there                                                                                                            ------aaahosstuwwwwyy?I.
+       143 0* 6.79154%  know what? It's really                                                                                                       aadeehhinorsttuwwyy.
+       144 0* 10.96836%  know what? It's really hard                                                                                                  aeehinosttuwwyy.
+       145 0* 13.04433%  know what? It's really hard to                                                                                               aeehinstuwwyy.
+       146 0* 6.74485% 're not the                                                                                                                   ------aaadhhiknossttuwwwwyy?I.
+       147 0* 6.67864%  know what's worse than a                                                                                                     ------dehittuwyy?I.
+       148 0* 6.60688% 're not that                                                                                                                  ------aadehhiknosstuwwwwyy?I.
+       149 0* 6.50810%  wanna                                                                                                                        ------adeehhhikoorssttttuwwwyy?I'.
+       150 0* 6.49656%  know where this                                                                                                              ------aaadhnostttuwwyy?I'.
+       151 0* 6.43174%  don't think the                                                                                                              ------aaaehorsstuwwwwyy?I.
+       152 0* 6.41401%  don't know what it                                                                                                           ------aaeehhrsstuwwyy?I.
+       153 0* 6.24952%  okay?                                                                                                                        ------aadeehhhinnorssttttuwwwwyI'.
+       154 0* 6.17226%  know it                                                                                                                      ------aaadeehhhnorsstttuwwwyy?I'.
+       155 0* 6.13990%  know what? I really wish                                                                                                     aadeehnorstttuwyy'.
+       156 0* 9.92268%  know what? I really wish you                                                                                                 aadeehnrstttwy'.
+       157 0* 6.10703%  said that?                                                                                                                   ------aeehhknnoorsttuwwwwyyI'.
+       158 0* 6.09815%  know what you said                                                                                                           ------aeehhnrstttwwy?I'.
+       159 0* 7.43175%  know what you said?                                                                                                          ------aeehhnrstttwwyI'.
+       160 0* 6.01063% 're really                                                                                                                    aaadehhhiknnoossttttuwwwwyy?I.
+       161 0* 5.93633%  know what they are? It                                                                                                       ------adhinosstuwwy'.
+       162 0* 10.63549%  know what they are? It'                                                                                                      ------adhinosstuwwy.
+       163 0* 19.47289%  know what they are? It's                                                                                                     ------adhinostuwwy.
+       164 0* 5.92474%  said that really                                                                                                             aeehhknnoorsttuwwwwyy?I'.
+       165 0* 5.90698%  said you                                                                                                                     ------aaeehhhknnorsttttwwwwy?I'.
+       166 0* 6.31032%  said you were                                                                                                                ------aahhhknnosttttwwwy?I'.
+       167 0* 5.84518%  know?                                                                                                                        ------aaadeehhhinorssttttuwwwyyI'.
+       168 0* 5.79692%  know what it says                                                                                                            ------adeehhnorttuwwy?I'.
+       169 0* 5.70462%  know what? I hate this                                                                                                       ------adenorstuwwyy'.
+       170 0* 5.64729% 're a                                                                                                                         ------aadehhhiknnoossttttuwwwwyy?I.
+       171 0* 5.57836%  know who'                                                                                                                    ------aaadeehhinrssttttuwwyy?I.
+       172 0* 9.89755%  know who's                                                                                                                   ------aaadeehhinrsttttuwwyy?I.
+       173 0* 9.15217%  know who's really                                                                                                            aaadeehhinrsttttuwwyy?I.
+       174 0* 5.54556%  don't really know                                                                                                            aaaeehhhirsstttuwwwyy?I.
+       175 0* 16.19974%  don't really know what                                                                                                       aaeehhirssttuwwyy?I.
+       176 0* 6.85556%  don't really know what I                                                                                                     aaeehhirssttuwwyy?.
+       177 0* 5.44028%  know what you are                                                                                                            ------adehhinsstttwwy?I'.
+       178 0* 5.66967%  know what you are?                                                                                                           ------adehhinsstttwwyI'.
+       179 0* 5.41708%  know what? I hate you                                                                                                        ------adehinrssttwwy'.
+       180 0* 5.40041%  know what I want                                                                                                             ------adeehhiorssttuwyy?'.
+       181 0* 5.33077%  know what it says?                                                                                                           ------adeehhnorttuwwyI'.
+       182 0* 5.33071%  know what those                                                                                                              ------aadehinrsttuwwyy?I'.
+       183 0* 10.07686%  know what those are                                                                                                          ------adhinsttuwwyy?I'.
+       184 0* 9.95618%  know what those are?                                                                                                         ------adhinsttuwwyyI'.
+       185 0* 5.26043%  know what I want?                                                                                                            ------adeehhiorssttuwyy'.
+       186 0* 5.23764%  know I                                                                                                                       ------aaadeehhhinorssttttuwwwyy?'.
+       187 0* 5.19883%  want to see                                                                                                                  ------aadhhhiknorsttuwwwyy?I'.
+       188 0* 5.16351%  know these                                                                                                                   ------aaadhhinorstttuwwwyy?I'.
+       189 0* 5.10569%  know what? It was worth                                                                                                      ------adeehinstuyy'.
+       190 0* 5.09917%  know what they are? I                                                                                                        ------adhinossttuwwy'.
+       191 0* 5.09538%  know what you were                                                                                                           ------aadhhinsstttwy?I'.
+       192 0* 5.07521%  know what? I really wish you'                                                                                                aadeehnrstttwy.
+       193 0* 9.77651%  know what? I really wish you'd                                                                                               aaeehnrstttwy.
+       194 0* 5.06295%  know what? I want                                                                                                            ------adeehhiorssttuwyy'.
+       195 0* 5.04821%  sound really                                                                                                                 aaaeehhhiknorsttttwwwwyy?I'.
+       196 0* 5.01925%  know what? I want to                                                                                                         ------adeehhirsstuwyy'.
+       197 0* 4.97442%  don't think we                                                                                                               ------aaaehhorssttuwwwyy?I.
+       198 0* 4.97210%  know what? I was                                                                                                             ------adeehhinorstttuwyy'.
+       199 0* 4.96212%  don't really know what they                                                                                                  aaehirsstuwwy?I.
+       200 0* 7.70187%  don't really know what they are                                                                                              ahisstuwwy?I.
+       201 0* 11.30826%  don't really know what they are?                                                                                             ahisstuwwyI.
+       202 0* 4.94112%  know what that                                                                                                               ------adeehinorsstuwwyy?I'.
+       203 0* 4.92643%  want to try                                                                                                                  ------aadeehhhiknosstuwwwy?I'.
+       204 0* 4.86087%  know who says                                                                                                                ------aadeehhinrttttuwwy?I'.
+       205 0* 15.94950%  know who says that                                                                                                           ------adeehinrttuwwy?I'.
+       206 0* 28.73540%  know who says that?                                                                                                          ------adeehinrttuwwyI'.
+       207 0* 5.35940%  know who says that when                                                                                                      ------adeirttuwy?I'.
+       208 0* 4.70730%  know what the worst                                                                                                          ------aadehinstuwyy?I'.
+       209 0* 4.69966%  know it'                                                                                                                     ------aaadeehhhnorsstttuwwwyy?I.
+       210 0* 7.52279%  know it's                                                                                                                    ------aaadeehhhnorstttuwwwyy?I.
+       211 0* 5.38091%  know it's hard                                                                                                               ------aaeehhnostttuwwwyy?I.
+       212 0* 8.70888%  know it's hard when                                                                                                          ------aaehostttuwwyy?I.
+       213 0* 8.87528%  know it's hard when you                                                                                                      ------aaehstttwwy?I.
+       214 0* 4.82288%  know it's hard when you say                                                                                                  ------aehtttww?I.
+       215 0* 4.69528%  know how they say                                                                                                            ------aadehinrstttuww?I'.
+       216 0* 4.66653%  think you'                                                                                                                   ------aaadeehhnorsstttwwwwy?I.
+       217 0* 8.00402%  think you're                                                                                                                 ------aaadehhnosstttwwwwy?I.
+       218 0* 4.66434%  wanna hear                                                                                                                   ------dehhikoossttttuwwwyy?I'.
+       219 0* 4.64718%  know what you want                                                                                                           ------adeehhirssttwy?I'.
+       220 0* 4.64202%  know they                                                                                                                    ------aaadehhinorsstttuwwwy?I'.
+       221 0* 4.84169%  know they'                                                                                                                   ------aaadehhinorsstttuwwwy?I.
+       222 0* 11.29271%  know they're                                                                                                                 ------aaadhhinosstttuwwwy?I.
+       223 0* 4.63762%  know what? I really don                                                                                                      aaeehhirsstttuwwyy'.
+       224 0* 19.93933%  know what? I really don'                                                                                                     aaeehhirsstttuwwyy.
+       225 0* 28.61379%  know what? I really don't                                                                                                    aaeehhirssttuwwyy.
+       226 0* 4.58256%  really                                                                                                                       aaadeehhhiknnoorssttttuwwwwyy?I'.
+       227 0* 5.06796%  really want                                                                                                                  aadeehhhiknoorsstttuwwwyy?I'.
+       228 0* 4.56979%  know where I'                                                                                                                ------aaadhhinossttttuwwyy?.
+       229 0* 4.51348%  know what's worse than the                                                                                                   ------adituwyy?I.
+       230 0* 4.46552%  don't know why?                                                                                                              ------aaaeehhirsstttuwwyI.
+       231 0* 4.43880%  know you want                                                                                                                ------aadeehhhirsstttwwy?I'.
+       232 0* 4.42102%  don't know where this                                                                                                        ------aaahsttuwwyy?I.
+       233 0* 4.38375%  know what? It's really easy                                                                                                  adehhinorttuwwy.
+       234 0* 4.30761%  know who that                                                                                                                ------aadeehinrssttuwwyy?I'.
+       235 0* 5.25003%  know who that was                                                                                                            ------adeehinrsttuwyy?I'.
+       236 0* 8.55059%  know who that was?                                                                                                           ------adeehinrsttuwyyI'.
+       237 0* 4.30575%  know you're the                                                                                                              ------aaadhhinsstttwwwy?I.
+       238 0* 4.30543%  know what I really want to                                                                                                   adeehhirsstuwyy?'.
+       239 0* 4.27745%  want to know                                                                                                                 ------aadeehhhirssttuwwyy?I'.
+       240 0* 9.39686%  want to know what                                                                                                            ------adeehhirsstuwyy?I'.
+       241 0* 4.27017%  know what you're really                                                                                                      aadehhinsstttwwy?I.
+       242 0* 4.23829% 're a stand                                                                                                                   ------aehhhiknoostttuwwwwyy?I.
+       243 0* 4.17902%  know it's hard to                                                                                                            ------aaeehhnsttuwwwyy?I.
+       244 0* 4.10672%  don't want to hear why                                                                                                       ------aehiksstuwwy?I.
+       245 0* 4.05445%  know what's hard                                                                                                             ------aeehinostttuwwyy?I.
+       246 0* 5.98073%  know what's hard?                                                                                                            ------aeehinostttuwwyyI.
+       247 0* 4.04500%  don't know where I                                                                                                           ------aaahhisstttuwwyy?.
+       248 0* 4.02290%  know what I heard                                                                                                            ------aehinosstttuwwyy?'.
+       249 0* 4.01314%  know what I really want is                                                                                                   adeehhorsttuwyy?'.
+       250 0* 3.98767%  don't want to share                                                                                                          ------aehhikstuwwwyy?I.
+       251 0* 3.96910%  know how they'                                                                                                               ------aaadehinrsstttuwwy?I.
+       252 0* 8.22693%  know how they're                                                                                                             ------aaadhinsstttuwwy?I.
+       253 0* 3.96115%  want to know what'                                                                                                           ------adeehhirsstuwyy?I.
+       254 0* 6.24461%  want to know what's                                                                                                          ------adeehhirstuwyy?I.
+       255 0* 4.72455%  want to know what's hard                                                                                                     ------eehistuwyy?I.
+       256 0* 9.17069%  want to know what's hard?                                                                                                    ------eehistuwyyI.
+       257 0* 3.94782%  know how I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
+       258 0* 3.93037%  knew                                                                                                                         ------aaadehhhinoorssttttuwwwyy?I'.
+       259 0* 5.50595%  knew this                                                                                                                    ------aaadehhnoorstttuwwwyy?I'.
+       260 0* 20.18358%  knew this was                                                                                                                ------aadehhnoortttuwwyy?I'.
+       261 0* 3.88892%  know how stand                                                                                                               ------aaeehhirstttuwwyy?I'.
+       262 0* 3.87290%  know what it was                                                                                                             ------adeehhnorsttuwyy?I'.
+       263 0* 5.43841%  know what it was?                                                                                                            ------adeehhnorsttuwyyI'.
+       264 0* 3.84037%  know what? I'd                                                                                                               ------aaeehhinorsstttuwwyy.
+       265 0* 5.17277%  know what? I'd really                                                                                                        aaeehhinorsstttuwwyy.
+       266 0* 3.81334%  know how this                                                                                                                ------aaadeehnrstttuwwyy?I'.
+       267 0* 3.78735%  don't really think I was                                                                                                     aaeehhorsttuwwwyy?.
+       268 0* 3.77905%  know what? I hate stand                                                                                                      ------ehiorstuwwyy'.
+       269 0* 3.71526%  don't want to say                                                                                                            ------aeehhhikrstuwwwy?I.
+       270 0* 3.70278%  need                                                                                                                         ------aaahhhiknoorssttttuwwwwyy?I'.
+       271 0* 3.70237%  know what they are? It's a                                                                                                   ------dhinostuwwy.
+       272 0* 3.69731%  don't say                                                                                                                    ------aaeehhhiknorstttuwwwwy?I.
+       273 0* 3.69012%  know what? It's hard                                                                                                         ------aeehinosttuwwyy.
+       274 0* 3.97819%  know what? It's hard to                                                                                                      ------aeehinstuwwyy.
+       275 0* 3.69003%  know who said                                                                                                                ------aaeehhnrsttttuwwyy?I'.
+       276 0* 19.43301%  know who said that                                                                                                           ------aeehnrsttuwwyy?I'.
+       277 0* 47.12057%  know who said that?                                                                                                          ------aeehnrsttuwwyyI'.
+       278 0* 3.89209%  know who said that? It                                                                                                       ------aeehnrstuwwyy'.
+       279 0* 7.79946%  know who said that? It was                                                                                                   ------eehnrtuwyy'.
+       280 0* 3.65531%  are                                                                                                                          ------aadehhhiknnoossttttuwwwwyy?I'.
+       281 0* 3.63390%  know what's really sad                                                                                                       aeehhinortttuwwyy?I.
+       282 0* 7.11711%  know what's really sad?                                                                                                      aeehhinortttuwwyyI.
+       283 0* 3.60267%  don't know what?                                                                                                             ------aaeehhirssttuwwyyI.
+       284 0* 3.57593%  really think                                                                                                                 aaadeehhnoorsstttuwwwwyy?I'.
+       285 0* 3.53991%  know what I don                                                                                                              ------aaeehhirsstttuwwyy?'.
+       286 0* 9.19675%  know what I don'                                                                                                             ------aaeehhirsstttuwwyy?.
+       287 0* 14.68160%  know what I don't                                                                                                            ------aaeehhirssttuwwyy?.
+       288 0* 3.52477%  don't want this                                                                                                              ------aaeehhkorstuwwwyy?I.
+       289 0* 3.50970%  know what? I need                                                                                                            ------aahhiorsstttuwwyy'.
+       290 0* 3.49451%  don't hate                                                                                                                   ------aaehhiknorssttuwwwwyy?I.
+       291 0* 3.49206%  know what? It was really easy                                                                                                dehhinorttuwy'.
+       292 0* 3.49094%  know what I hate                                                                                                             ------adehinorssttuwwyy?'.
+       293 0* 5.03071%  know what I hate?                                                                                                            ------adehinorssttuwwyy'.
+       294 0* 3.48635%  want to know what's really                                                                                                   adeehhirstuwyy?I.
+       295 0* 8.01197%  want to know what's really weird                                                                                             aehhstuyy?I.
+       296 0* 19.60073%  want to know what's really weird?                                                                                            aehhstuyyI.
+       297 0* 5.86552%  want to know what's really hard                                                                                              eehistuwyy?I.
+       298 0* 14.37192%  want to know what's really hard?                                                                                             eehistuwyyI.
+       299 0* 4.15000%  want to know what's really weird? I                                                                                          aehhstuyy.
+       300 0* 3.44674%  know what? I really want to                                                                                                  adeehhirsstuwyy'.
+       301 0* 3.43059%  know what I said.                                                                                                            ------aeehhnorstttuwwyy?'
+       302 0* 3.40991%  know who has                                                                                                                 ------aadeehinrsttttuwwyy?I'.
+       303 0* 3.40144%  know what? I tried                                                                                                           ------aaehhnossttuwwyy'.
+       304 0* 3.39683%  know they're really                                                                                                          aaadhhinosstttuwwwy?I.
+       305 0* 3.37157%  don't want these                                                                                                             ------aahhikorstuwwwyy?I.
+       306 0* 3.36002%  knew that                                                                                                                    ------aadehhinoorssttuwwwyy?I'.
+       307 0* 6.48097%  knew that was                                                                                                                ------adehhinoorsttuwwyy?I'.
+       308 0* 3.35688%  don't know that                                                                                                              ------aaeehhirsstuwwwyy?I.
+       309 0* 3.34557%  know how they're really                                                                                                      aaadhinsstttuwwy?I.
+       310 0* 3.33184%  know what you want?                                                                                                          ------adeehhirssttwyI'.
+       311 0* 3.30472%  know what I heard?                                                                                                           ------aehinosstttuwwyy'.
+       312 0* 3.26466%  okay there                                                                                                                   ------aadhhinnosstttuwwwwy?I'.
+       313 0* 3.26004%  think that                                                                                                                   ------aadeehnoorsstuwwwwyy?I'.
+       314 0* 3.62718%  think that was                                                                                                               ------adeehnoorstuwwwyy?I'.
+       315 0* 3.19325%  know what? It's really weird                                                                                                 aaehhnosttuwyy.
+       316 0* 3.18743%  know how I said                                                                                                              ------aaeehhnrsttttuwwyy?'.
+       317 0* 3.18058%  know what? I really hate                                                                                                     adehinorssttuwwyy'.
+       318 0* 3.15248%  know what? It's not really                                                                                                   aadeehhirstuwwyy.
+       319 0* 3.11781%  know what they said                                                                                                          ------aehnorsttuwwy?I'.
+       320 0* 3.23912%  know what they said?                                                                                                         ------aehnorsttuwwyI'.
+       321 0* 3.10726%  know why                                                                                                                     ------aaadeehhinorssttttuwwy?I'.
+       322 0* 3.56501%  know why they                                                                                                                ------aaadehinorsstttuww?I'.
+       323 0* 4.85287%  know why they'                                                                                                               ------aaadehinorsstttuww?I.
+       324 0* 12.72485%  know why they're                                                                                                             ------aaadhinosstttuww?I.
+       325 0* 7.68453%  know why they're so                                                                                                          ------aaadhinstttuww?I.
+       326 0* 3.10488%  know who I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
+       327 0* 3.09935%  don't want to share?                                                                                                         ------aehhikstuwwwyyI.
+       328 0* 3.06718%  don't want the                                                                                                               ------aaehhikorsstuwwwyy?I.
+       329 0* 3.04260%  know what? It's really weird when                                                                                            aahosttuyy.
+       330 0* 12.59754%  know what? It's really weird when you                                                                                        aahstty.
+       331 0* 25.70855%  know what? It's really weird when you say                                                                                    ahtt.
