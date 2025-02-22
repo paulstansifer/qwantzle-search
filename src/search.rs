@@ -305,7 +305,13 @@ impl SearchState<'_> {
 
         println!("Colon is boosted!");
 
-        let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
+        let first_candidates = sess
+            .advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P))
+            .iter()
+            .filter(|(tok, _)| *tok != LlamaToken(7464) && *tok != LlamaToken(1612))
+            .cloned()
+            .collect::<Vec<_>>();
+        println!("' guess' and ' look' are forbidden as first tokens!");
         sess.save_prompt();
 
         if start_prefixes.is_empty() {
@@ -428,6 +434,7 @@ impl SearchState<'_> {
         match &self.hints.goal {
             None => {
                 let desc = format!("==> '{}!!' ({:.2}%)", text, score.0 * 100.0);
+                self.log_ln("!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 self.log_ln(&desc);
                 self.hall_of_fame.possible_completions.push(desc);
                 let mut file = fs::OpenOptions::new()
@@ -618,8 +625,8 @@ impl SearchState<'_> {
 
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
-        if self.q.len() > 4_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(1_600_000);
+        if self.q.len() > 5_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(2_000_000);
         }
 
         self.search_time += step_start.elapsed();
@@ -751,8 +758,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
         let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
-        // This is unmotivated; purely empirical. Starts at 6.0, goes towards 4.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0;
+        // This is unmotivated; purely empirical. Starts at 5.0, goes towards 4.0:
+        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 3.0;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
