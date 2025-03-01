@@ -92,6 +92,9 @@ struct Args {
     /// Don't care about whether the theory of ties is respected
     #[arg(long, action = clap::ArgAction::SetTrue)]
     ignore_ties: bool,
+
+    #[arg(long, default_value("1"))]
+    threads: usize,
 }
 
 #[derive(Default)]
@@ -729,11 +732,11 @@ fn main() {
                 vec![]
             };
 
-            let mut search = SearchState::new(&model, hints, None, prefixes);
-            search.search();
+            let search = SearchState::new(&model, hints, None, prefixes);
+            search.search(args.threads);
         } else {
-            let mut search = SearchState::load(&search, &model);
-            search.search();
+            let search = SearchState::load(&search, &model);
+            search.search(args.threads);
         }
     } else if let Some(id) = args.search_manual {
         let hints = if id == 1663 {
