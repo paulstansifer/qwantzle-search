@@ -1,14 +1,6 @@
 #![allow(dead_code)]
 
-use std::{
-    cell::Cell,
-    cmp::Ordering,
-    fmt::Debug,
-    fs,
-    io::Write as _,
-    sync::{Arc, Mutex, RwLock},
-    time::Duration,
-};
+use std::{cell::Cell, cmp::Ordering, fs, io::Write as _, time::Duration};
 
 use indicatif::ProgressBar;
 use llama_cpp_2::{model::LlamaModel, token::LlamaToken};
@@ -262,6 +254,7 @@ pub struct SearchState<'a> {
 
     llm: &'a LlamaModel,
     rlnn: LetterNet,
+    sess: llm::Session<'a>,
 
     hints: Hints,
 
@@ -272,21 +265,6 @@ pub struct SearchState<'a> {
     report: String,
     hall_of_fame: HallOfFame,
     progress: ProgressBar,
-}
-
-impl<'a> Debug for SearchState<'a> {
-    fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
-        f.debug_struct("SearchState")
-            .field("q [size]", &self.q.len())
-            .field("llm", &self.llm)
-            .field("search_time", &self.search_time)
-            .field("step", &self.step)
-            .field("max_search", &self.max_search)
-            .field("deepest_node_accessed", &self.deepest_node_accessed)
-            .field("report", &self.report)
-            .field("progress", &self.progress)
-            .finish()
-    }
 }
 
 #[derive(Serialize, Deserialize)]
@@ -300,12 +278,6 @@ struct SearchStateSerializable {
     report: String,
     max_search: Option<usize>,
     hall_of_fame: HallOfFame,
-}
-
-struct SearchThreadLocal<'a> {
-    sess: llm::Session<'a>,
-    hints: Hints, // Immutable, so let's only copy it at the start
-    rlnn: LetterNet,
 }
 
 impl SearchState<'_> {
@@ -333,15 +305,17 @@ impl SearchState<'_> {
 
         println!("Colon is boosted!");
 
-        let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
+        let first_candidates = sess
+            .advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P))
+            .iter()
+            .filter(|(tok, _)| *tok != LlamaToken(7464) && *tok != LlamaToken(1612))
+            .cloned()
+            .collect::<Vec<_>>();
+        println!("' guess' and ' look' are forbidden as first tokens!");
         sess.save_prompt();
 
         if start_prefixes.is_empty() {
-            for (node, score) in
-                root_node.consider_candidates(first_candidates, &mut sess, &hints.vocab, &rlnn)
-            {
-                q.push(node, score);
-            }
+            root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
         } else {
             for prefix in start_prefixes {
                 if prefix.trim().is_empty() || prefix.contains("#") {
@@ -372,6 +346,7 @@ impl SearchState<'_> {
 
             hints,
 
+            sess: sess,
             search_time: Duration::from_nanos(0),
             step: 0,
             deepest_node_accessed: 0,
@@ -383,22 +358,10 @@ impl SearchState<'_> {
         }
     }
 
-    pub fn save(&self, quit_now: bool) {
-        self.progress.set_message("Saving...");
-
-        let filename = format!(
-            "/home/paul/.qwantzle/{}-{}.search",
-            self.hints.id,
-            if quit_now {
-                "in_progress"
-            } else {
-                "checkpoint"
-            }
-        );
-
+    pub fn save(&self, filename: &str) {
         let sss = SearchStateSerializable {
             q: self.q.clone(),
-            sess_timers: SessionTimers::default(), // TODO; don't save these at all!
+            sess_timers: self.sess.timers,
             hints: self.hints.clone(),
             search_time: self.search_time,
             step: self.step,
@@ -409,8 +372,7 @@ impl SearchState<'_> {
         };
 
         let bytes = bincode::serialize(&sss).unwrap();
-        fs::write(&filename, &bytes).unwrap();
-        self.progress.set_message(format!("Saved to {}", filename));
+        fs::write(filename, &bytes).unwrap();
     }
 
     pub fn load<'a>(filename: &str, llm: &'a LlamaModel) -> SearchState<'a> {
@@ -437,6 +399,7 @@ impl SearchState<'_> {
 
             hints: sss.hints,
 
+            sess: sess,
             search_time: sss.search_time,
             step: sss.step,
             report: sss.report,
@@ -448,15 +411,15 @@ impl SearchState<'_> {
         }
     }
 
-    fn time_report(&mut self, sess_timers: &SessionTimers) {
+    fn time_report(&mut self) {
         let per_step = |n: u128| (n as f32 / self.step as f32) / 1000.0;
         let report = format!("Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Score: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}ms.",
             self.search_time.as_secs(),
-            (self.search_time.as_micros() - (sess_timers.score_time + sess_timers.advance_time + sess_timers.predict_time + sess_timers.truncate_time)) as f32 / 1_000_000.0,
-            per_step(sess_timers.score_time),
-            per_step(sess_timers.advance_time),
-            per_step(sess_timers.predict_time),
-            per_step(sess_timers.truncate_time),
+            (self.search_time.as_micros() - (self.sess.timers.score_time + self.sess.timers.advance_time + self.sess.timers.predict_time + self.sess.timers.truncate_time)) as f32 / 1_000_000.0,
+            per_step(self.sess.timers.score_time),
+            per_step(self.sess.timers.advance_time),
+            per_step(self.sess.timers.predict_time),
+            per_step(self.sess.timers.truncate_time),
         );
         self.log_ln(&report);
     }
@@ -606,33 +569,28 @@ impl SearchState<'_> {
         }
     }
 
-    fn process_node(state: Arc<RwLock<SearchState>>, local: &mut SearchThreadLocal) -> bool {
-        let (node, p, step) = {
-            let mut write_state = state.write().unwrap();
-            write_state.step += 1;
+    fn search_step(&mut self) -> bool {
+        self.progress.tick();
+        let step_start = std::time::Instant::now();
 
-            let require_tie_respecting = (write_state.step / 100) % 8 == 0;
+        if let Some((node, p)) = self
+            .q
+            .pop(/*require_tie_respecting=*/ (self.step / 100) % 8 == 0)
+        {
+            self.deepest_node_accessed =
+                std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
+            let cur_text = toks_to_str(&node.tokens(), &self.llm);
 
-            let (node, p) = match write_state.q.pop(require_tie_respecting) {
-                Some(x) => x,
-                None => {
-                    let msg = format!(
-                        "Exhausted all reasonable nodes at {} steps",
-                        write_state.step.separate_with_commas()
-                    );
-                    write_state.log_ln(&msg);
-
-                    write_state.progress.abandon_with_message(msg);
+            if node.remaining.empty_of_letters() {
+                if self.full_string_complete(&cur_text, p) {
                     return true;
                 }
-            };
-
-            let cur_text = toks_to_str(&node.tokens(), &write_state.llm);
+            }
 
             let desc = format!(
                 "{:>10} {}{} {:.5}% {:<125} {}",
-                write_state.step.separate_with_commas(),
-                write_state.hall_of_fame.possible_completions.len(),
+                self.step.separate_with_commas(),
+                self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
                     "T"
                 } else {
@@ -643,108 +601,79 @@ impl SearchState<'_> {
                 node.remaining.print()
             );
 
-            write_state.progress.set_message(desc.clone());
+            self.progress.set_message(desc.clone());
 
-            write_state.hof_update(
+            self.hof_update(
                 desc,
                 101 - node.remaining.size(),
                 p,
                 node.remaining.respects_ties(),
             );
-            write_state.deepest_node_accessed =
-                std::cmp::max(write_state.deepest_node_accessed, node.depth_at_pruning);
 
-            (node, p, write_state.step)
-        };
-        // We have to use `step` after this point, because `write_state.step` may have changed.
+            node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
+            self.step += 1;
+        } else {
+            let msg = format!(
+                "Exhausted all reasonable nodes at {} steps",
+                self.step.separate_with_commas()
+            );
+            self.log_ln(&msg);
 
-        if node.remaining.empty_of_letters() {
-            let mut write_state = state.write().unwrap();
-            let full_string = &toks_to_str(&node.tokens(), &write_state.llm);
-            if write_state.full_string_complete(full_string, p) {
-                // HACK to make the other threads quit:
-                TIME_TO_QUIT.store(true, std::sync::atomic::Ordering::SeqCst);
-                return true;
+            self.progress.abandon_with_message(msg);
+            return true;
+        }
+
+        let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
+
+        if self.q.len() > 5_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(2_000_000);
+        }
+
+        self.search_time += step_start.elapsed();
+
+        // Only save for 1663.
+        if self.hints.goal.is_none() {
+            if quit_now || self.step % 1_000_000 == 0 {
+                self.time_report();
+                self.progress.set_message("Saving...");
+                let filename = format!(
+                    "/home/paul/.qwantzle/{}-{}.search",
+                    self.hints.id,
+                    if quit_now {
+                        "in_progress"
+                    } else {
+                        "checkpoint"
+                    }
+                );
+                self.save(&filename);
+                self.progress.set_message(format!("Saved to {}", filename));
             }
         }
 
-        let new_nodes = node.advance(&mut local.sess, &local.hints.vocab, &local.rlnn);
+        if quit_now {
+            self.progress.abandon();
+            return true;
+        }
 
-        {
-            let mut write_state = state.write().unwrap();
-
-            for (new_node, score) in new_nodes {
-                write_state.q.push(new_node, score);
-            }
-
-            let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst)
-                || write_state.max_search.map(|l| step >= l).unwrap_or(false);
-
-            if write_state.q.len() > Q_MAX_LEN || quit_now {
-                write_state.q = std::mem::take(&mut write_state.q).trim(Q_MIN_LEN);
-            }
-
-            if step % 1_000_000 == 0 {
-                // This will lose nodes in flight in other threads, which is not ideal. Ctrl-C is
-                // safe, though.
-                write_state.save(/*quit_now=*/ false);
-            }
-
-            return quit_now;
+        // Have we reached the end?
+        if let Some(limit) = self.max_search {
+            self.step >= limit
+        } else {
+            false
         }
     }
 
-    pub fn search(self, num_threads: usize) -> Self {
-        self.progress.set_message("Beginning search...");
-        let state = Arc::new(RwLock::new(self));
-
-        let search_time_start = std::time::Instant::now();
-        let total_timer = Arc::new(Mutex::new(SessionTimers::default()));
-
-        let state_copy = state.clone();
-
-        std::thread::scope(move |scope| {
-            let mut threads = vec![];
-
-            for _ in 0..num_threads {
-                let state = state.clone();
-                let total_timer = total_timer.clone();
-                threads.push(scope.spawn(move || {
-                    let mut thread_local = {
-                        let read_state = state.read().unwrap();
-                        SearchThreadLocal {
-                            sess: Session::new_with_prompt(
-                                read_state.llm,
-                                read_state.hints.token_size as u32,
-                                &read_state.hints.leadup,
-                            ),
-                            hints: read_state.hints.clone(),
-                            rlnn: read_state.rlnn.clone(),
-                        }
-                    };
-
-                    while !SearchState::process_node(state.clone(), &mut thread_local) {} // Search!
-
-                    total_timer.lock().unwrap().add(&thread_local.sess.timers);
-                }));
-            }
-
-            for t in threads {
-                t.join().unwrap();
-            }
-
-            let mut state_write = state.write().unwrap();
-            state_write.search_time += search_time_start.elapsed();
-            state_write.time_report(&total_timer.lock().unwrap());
-
-            state_write.save(/*quit_now=*/ true);
-        });
-
-        Arc::try_unwrap(state_copy).unwrap().into_inner().unwrap()
+    pub fn search(&mut self) {
+        while !self.search_step() {}
+        self.time_report();
     }
 }
 
 const TOK_BUFFER: u32 = 35;
+
+// How good does the best next token need to be to fast-forward it?
+// Performance seems sensitive to this; maybe we need a better criterion?
+const FF_MIN_P: f32 = 0.25;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 // In practice, it seems like we need to be more careful than that.
@@ -764,9 +693,6 @@ const TOK_TOP_P: f32 = 0.9995;
 // Average at the end tends to be 5%, but it bounces around some, especially at the beginning.
 // Perhaps we want some sort of grace period instead of setting this so low?
 const MIN_AVG_P: f64 = 0.01;
-
-const Q_MAX_LEN: usize = 5_000_000;
-const Q_MIN_LEN: usize = 2_000_000;
 
 // TODO: remove most of these
 thread_local! {
@@ -910,33 +836,28 @@ impl Node {
         Some((res, score))
     }
 
-    fn advance(
-        &self,
-        root_sess: &mut Session,
-        vocab: &Vocab,
-        rlnn: &LetterNet,
-    ) -> Vec<(Node, Score)> {
+    fn advance(&self, root_sess: &mut Session, q: &mut Q, vocab: &Vocab, rlnn: &LetterNet) {
         if self.text.len() >= (TOK_BUFFER - 1) as usize {
-            return vec![];
+            return;
         }
 
         let candidates = root_sess.advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
 
-        let res = self.consider_candidates(candidates, root_sess, vocab, rlnn);
+        self.consider_candidates(candidates, root_sess, q, vocab, rlnn);
 
         root_sess.truncate_to_prompt();
-
-        res
     }
 
     fn consider_candidates(
         &self,
         candidates: Vec<(LlamaToken, f64)>,
-        sess: &Session,
+        sess: &mut Session,
+        q: &mut Q,
         vocab: &Vocab,
         rlnn: &LetterNet,
-    ) -> Vec<(Node, Score)> {
-        let mut res = vec![];
+    ) {
+        let mut fast_forwarded = true; // TODO: why does fast-forwarding cause NoKvCacheSlot?
+
         for (tok, p) in candidates {
             let avg_prob = f64::powf(
                 p as f64 * self.probability,
@@ -947,12 +868,22 @@ impl Node {
                 break;
             }
 
-            if let Some(node_and_score) = self.push_token(tok, p as f32, &sess.model(), vocab, rlnn)
+            if let Some((next_node, score)) =
+                self.push_token(tok, p as f32, &sess.model(), vocab, rlnn)
             {
-                res.push(node_and_score);
+                // Re-use the context right away, if the best candidate is good enough.
+                if p as f32 > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
+                    let before_advance = std::time::Instant::now();
+                    let ff_candidates = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
+                    FF_ADVANCE_TIME
+                        .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
+                    next_node.consider_candidates(ff_candidates, sess, q, vocab, rlnn);
+                    fast_forwarded = true;
+                } else {
+                    q.push(next_node, score);
+                }
             }
         }
-        res
     }
 }
 
@@ -989,8 +920,8 @@ pub fn practice_search(
         Hints::from_strip(strip, &words, /*look_at_ties=*/ false, &model)
     };
 
-    let search = SearchState::new(&model, hints, steps_limit, vec![]);
-    let search = search.search(/*threads=*/ 3);
+    let mut search = SearchState::new(&model, hints, steps_limit, vec![]);
+    search.search();
 
     *report += &format!("Deepest node accessed: {}\n", search.deepest_node_accessed);
     println!("Deepest node accessed: {}", search.deepest_node_accessed);

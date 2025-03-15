@@ -9,7 +9,7 @@ use std::fs;
 
 use crate::pool::LetterPool;
 
-#[derive(Clone)]
+// Define a flexible neural network structure
 pub struct LetterNet {
     layers: Vec<candle_nn::Linear>,
 }

@@ -78,15 +78,6 @@ pub struct SessionTimers {
     pub truncate_time: u128,
 }
 
-impl SessionTimers {
-    pub fn add(&mut self, other: &SessionTimers) {
-        self.advance_time += other.advance_time;
-        self.predict_time += other.predict_time;
-        self.score_time += other.score_time;
-        self.truncate_time += other.truncate_time;
-    }
-}
-
 impl<'a> Session<'a> {
     pub fn new(model: &'a LlamaModel, toks: u32) -> Session<'a> {
         let params: LlamaContextParams =
@@ -107,13 +98,6 @@ impl<'a> Session<'a> {
             timers: SessionTimers::default(),
             boost_toks: HashMap::new(),
         }
-    }
-
-    pub fn new_with_prompt(model: &'a LlamaModel, toks: u32, prompt: &str) -> Session<'a> {
-        let mut sess = Session::new(model, toks);
-        let _ = sess.advance_and_predict_str(prompt, None);
-        sess.save_prompt();
-        sess
     }
 
     pub fn boost(&mut self, tok: LlamaToken, boost: f64) {
