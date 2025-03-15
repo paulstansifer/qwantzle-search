@@ -305,13 +305,7 @@ impl SearchState<'_> {
 
         println!("Colon is boosted!");
 
-        let first_candidates = sess
-            .advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P))
-            .iter()
-            .filter(|(tok, _)| *tok != LlamaToken(7464) && *tok != LlamaToken(1612))
-            .cloned()
-            .collect::<Vec<_>>();
-        println!("' guess' and ' look' are forbidden as first tokens!");
+        let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
         sess.save_prompt();
 
         if start_prefixes.is_empty() {
