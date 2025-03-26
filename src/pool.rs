@@ -53,6 +53,16 @@ pub struct Vocab {
     disabled: bool,
 }
 
+pub fn no_vocab() -> Vocab {
+    Vocab {
+        valid_word_lengths: HashMap::new(),
+        valid_prefixes: HashSet::new(),
+        token_roles: HashMap::new(),
+        enforce_8_11: false,
+        disabled: true,
+    }
+}
+
 impl VocabBuilder {
     fn eval_token(&mut self, tok: i32, model: &LlamaModel) {
         if self.allowed_tokens.contains(&tok) {

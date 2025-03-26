@@ -5,6 +5,7 @@ use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
 use llama_cpp_2::token_type::LlamaTokenAttr;
 use llm::tok_to_str;
+use pool::LetterPool;
 use search::{manual_search, SearchState};
 use std::fmt::Write;
 use std::io::{BufRead as _, Write as _};
@@ -88,6 +89,10 @@ struct Args {
     /// Display the tokenization of the given string
     #[arg(long)]
     tokenize: Option<String>,
+
+    /// Find a pangram for the given prefix
+    #[arg(long)]
+    pangram: Option<String>,
 
     /// Don't care about whether the theory of ties is respected
     #[arg(long, action = clap::ArgAction::SetTrue)]
@@ -779,6 +784,21 @@ fn main() {
             }
         }
         print!("{s_top}\n{s_bot}\n");
+    } else if let Some(prefix) = args.pangram {
+        let pangram_hints = search::Hints {
+            leadup: prefix.clone(),
+            id: 0,
+            goal: None,
+            letter_pool: LetterPool::just_letters_from_text(
+                "abcdefghijklmnopqrstuvwxyz,,,,...!!??::;;''''\"\"\"\"&**//----",
+            ),
+            vocab: pool::no_vocab(),
+            longest_word_len: None,
+            longest_token: None,
+            token_size: 1000,
+        };
+        let mut search = SearchState::new(&model, pangram_hints, None, vec![]);
+        search.search();
     } else {
         // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
         let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
