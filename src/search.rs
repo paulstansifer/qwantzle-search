@@ -129,7 +129,7 @@ impl Q {
 
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Hints {
-    pub leadup: String,
+    pub context: String,
     pub goal: Option<String>,
     pub id: usize,
     pub letter_pool: LetterPool,
@@ -184,14 +184,14 @@ impl Hints {
         letter_pool.set_longest_tok_from(&strip.punchline, llm);
 
         Hints {
-            leadup: strip.leadup.clone(),
+            context: strip.context(),
             id: strip.id,
             goal: Some(strip.punchline.clone()),
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(longest_word_len as u8),
             longest_token: Some(longest_tok.0),
-            token_size: str_to_tokens(&strip.leadup, llm).len() + TOK_BUFFER as usize,
+            token_size: str_to_tokens(&strip.context(), llm).len() + TOK_BUFFER as usize,
         }
     }
 
@@ -215,8 +215,8 @@ impl Hints {
             panic!("' fundamental' isn't one token");
         }
 
-        let leadup = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
-        let token_size = str_to_tokens(&leadup, llm).len() + TOK_BUFFER as usize;
+        let context = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
+        let token_size = str_to_tokens(&context, llm).len() + TOK_BUFFER as usize;
         let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
         let mut letter_pool = LetterPool::just_letters_from_text(letters);
         letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
@@ -226,7 +226,7 @@ impl Hints {
         }
 
         Hints {
-            leadup: leadup,
+            context: context,
             id: 1663,
             goal: None, //  Find this!!
             letter_pool: letter_pool,
@@ -305,7 +305,7 @@ impl SearchState<'_> {
 
         println!("Colon is boosted!");
 
-        let first_candidates = sess.advance_and_predict_str(&hints.leadup, Some(TOK_TOP_P));
+        let first_candidates = sess.advance_and_predict_str(&hints.context, Some(TOK_TOP_P));
         sess.save_prompt();
 
         if start_prefixes.is_empty() {
@@ -382,7 +382,7 @@ impl SearchState<'_> {
         sess.boost(colon_tok, 35.0);
 
         // TODO: should probably have `advance` without `predict`
-        let _ = sess.advance_and_predict_str(&sss.hints.leadup, Some(0.0));
+        let _ = sess.advance_and_predict_str(&sss.hints.context, Some(0.0));
         sess.save_prompt();
         sess.timers = sss.sess_timers;
 
@@ -897,9 +897,9 @@ pub fn practice_search(
     let strip_summary = format!(
         "...{} >>{}<<\n",
         strip
-            .leadup
+            .context()
             .chars()
-            .skip(strip.leadup.len() - 50)
+            .skip(strip.context().len() - 50)
             .collect::<String>()
             .replace("\n", "  "),
         strip.punchline
@@ -946,7 +946,7 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
 
     let mut node = Node::root_from_hints(&hints);
 
-    let mut cands = sess.advance_and_predict_str(&hints.leadup, None);
+    let mut cands = sess.advance_and_predict_str(&hints.context, None);
 
     let spaced_prefix = format!(" {}", prefix.trim());
     for tok in str_to_tokens(&spaced_prefix, llm) {

@@ -54,10 +54,13 @@ struct Args {
     #[arg(long, action = clap::ArgAction::SetTrue)]
     calibrate_costs: bool,
 
-    /// String to prepend to every strip. Use "l" to add a message about what the longest word in
-    /// the punchline is.
+    /// String to prepend to every strip.
     #[arg(short, long, default_value(""))]
     prompt_prefix: String,
+
+    // Filename to load a prompt from
+    #[arg(long)]
+    prompt_file: Option<String>,
 
     #[arg(short, long, default_value("1"))]
     workers: u8,
@@ -167,8 +170,10 @@ fn predict_strip(
         &strip.punchline
     };
 
+    let context = strip.context();
+
     let toks_needed = model
-        .str_to_token(&strip.leadup, llama_cpp_2::model::AddBos::Always)
+        .str_to_token(&context, llama_cpp_2::model::AddBos::Always)
         .unwrap()
         .len() as u32
         + model
@@ -177,7 +182,7 @@ fn predict_strip(
             .len() as u32
         + 2;
     let mut sess = llm::Session::new(model, toks_needed);
-    let mut candidates = sess.advance_and_predict_str(&strip.leadup, Some(0.99995));
+    let mut candidates = sess.advance_and_predict_str(&context, Some(0.99995));
 
     let (punch_toks, space) =
         llm::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
@@ -193,7 +198,8 @@ fn predict_strip(
 
     write!(
         stats.details,
-        "{}...{}\n",
+        "[{}] {}...{}\n",
+        context.chars().take(50).collect::<String>(),
         strip.leadup.chars().take(100).collect::<String>(),
         strip
             .leadup
@@ -663,15 +669,16 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
 
 static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
 
-fn get_strip(id: usize, args: &Args) -> Strip {
+fn get_strip(id: usize, prompt: std::rc::Rc<String>) -> Strip {
     if id == 1663 {
         return Strip {
             leadup: String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap(),
+            prompt: prompt,
             punchline: "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!".to_owned(),
             id: 1663,
         };
     }
-    let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
+    let strips = corpus::get_strips("corpus/validation_strips.csv", prompt);
     for strip in strips {
         if strip.id == id {
             return strip;
@@ -701,19 +708,24 @@ fn main() {
     // Can use "corpus/dictionary_filter.txt", but it's not worth it.
     let words = corpus::get_words("corpus/allowed_words.txt", None);
 
+    let prompt = std::rc::Rc::new(match args.prompt_file {
+        Some(ref file) => std::fs::read_to_string(file).unwrap(),
+        None => args.prompt_prefix.clone(),
+    });
+
     if args.calibrate_costs {
-        let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
+        let strips = corpus::get_strips("corpus/validation_strips.csv", prompt);
 
         calibrate_costs(&strips, &words, &model, &args);
     } else if let Some(ref pfx) = args.complete {
         if let Ok(id) = pfx.parse::<usize>() {
-            complete(&get_strip(id, &args).leadup, 200, &model);
+            complete(&get_strip(id, prompt).leadup, 200, &model);
         } else {
             complete(&pfx, 200, &model);
         }
     } else if let Some(id) = args.tok_score {
         let mut stats = Stats::default();
-        let strip = get_strip(id, &args);
+        let strip = get_strip(id, prompt);
         predict_strip(&strip, args.suffix.as_deref(), &model, &mut stats);
         println!("{}", stats.details);
     } else if let Some(ref search) = args.search_one {
@@ -721,7 +733,7 @@ fn main() {
             let hints = if id == 1663 {
                 search::Hints::for_1663(&words, !args.ignore_ties, &model)
             } else {
-                search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
+                search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
             };
 
             let prefixes = if let Some(prefix_file) = args.prefix_file.as_ref() {
@@ -744,9 +756,9 @@ fn main() {
         let hints = if id == 1663 {
             search::Hints::for_1663(&words, !args.ignore_ties, &model)
         } else {
-            search::Hints::from_strip(&get_strip(id, &args), &words, !args.ignore_ties, &model)
+            search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
         };
-        println!("{}", &hints.leadup);
+        //println!("{}", &hints.context.chars());  //TODOTODOTODO
 
         print!("> ");
         std::io::stdout().flush().unwrap();
@@ -786,7 +798,7 @@ fn main() {
         print!("{s_top}\n{s_bot}\n");
     } else if let Some(prefix) = args.pangram {
         let pangram_hints = search::Hints {
-            leadup: prefix.clone(),
+            context: prefix.clone(),
             id: 0,
             goal: None,
             letter_pool: LetterPool::just_letters_from_text(
@@ -801,7 +813,7 @@ fn main() {
         search.search();
     } else {
         // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
-        let strips = corpus::get_strips("corpus/validation_strips.csv", &args.prompt_prefix);
+        let strips = corpus::get_strips("corpus/validation_strips.csv", prompt);
         measure_costs(&strips, &model, &args);
     }
 }

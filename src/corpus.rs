@@ -1,10 +1,26 @@
-use regex;
+use std::rc::Rc;
 
 #[derive(PartialEq, Eq, Hash, Clone, Debug)]
 pub struct Strip {
     pub id: usize,
+    pub prompt: Rc<String>,
     pub leadup: String,
     pub punchline: String,
+}
+
+impl Strip {
+    pub fn context(&self) -> String {
+        format!(
+            "{}{}{}",
+            self.prompt,
+            if self.prompt.ends_with("\n") {
+                ""
+            } else {
+                "\n"
+            },
+            self.leadup
+        )
+    }
 }
 
 pub fn get_words(allowed: &str, forbidden: Option<&str>) -> Vec<String> {
@@ -35,7 +51,7 @@ pub fn get_words(allowed: &str, forbidden: Option<&str>) -> Vec<String> {
     return res;
 }
 
-pub fn get_strips(path: &str, prompt_prefix: &str) -> Vec<Strip> {
+pub fn get_strips(path: &str, prompt: Rc<String>) -> Vec<Strip> {
     let file = std::fs::File::open(path).unwrap();
     let mut reader = csv::Reader::from_reader(file);
 
@@ -60,28 +76,10 @@ pub fn get_strips(path: &str, prompt_prefix: &str) -> Vec<Strip> {
             if let Some((punchline_first_word, punchline_rest)) =
                 punchline.split_once(char::is_whitespace)
             {
-                let prompt_prefix_formatted = if prompt_prefix.is_empty() {
-                    "".to_owned()
-                } else if prompt_prefix == "l" {
-                    let mut words: Vec<&str> = regex::Regex::new(r"\W+")
-                        .unwrap()
-                        .split(punchline_rest)
-                        .collect();
-                    words.sort_by(|a, b| a.len().cmp(&b.len()));
-                    format!(
-                        "The longest word in the punchline is \"{}\".\n---\n",
-                        words.last().unwrap()
-                    )
-                } else {
-                    format!("{}\n---\n", prompt_prefix)
-                };
-
                 let strip = Strip {
                     id: str::parse::<usize>(record.get(0).unwrap()).unwrap(),
-                    leadup: format!(
-                        "{}{}\n{}: {}",
-                        prompt_prefix_formatted, leadup, speaker, punchline_first_word
-                    ),
+                    prompt: prompt.clone(),
+                    leadup: format!("{}\n{}: {}", leadup, speaker, punchline_first_word),
                     punchline: punchline_rest.to_owned(),
                 };
 
