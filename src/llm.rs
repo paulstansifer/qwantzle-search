@@ -80,7 +80,6 @@ pub struct SessionTimers {
 
 impl<'a> Session<'a> {
     pub fn new(model: &'a LlamaModel, toks: u32) -> Session<'a> {
-        println!("### TOKS {}", toks);
         let params: LlamaContextParams =
             LlamaContextParams::default().with_n_ctx(std::num::NonZero::new(toks));
 
