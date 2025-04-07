@@ -13,7 +13,7 @@ struct Args {
     model: String,
 }
 
-fn display_top_toks(model: &LlamaModel, s: &str) {
+fn _display_top_toks(model: &LlamaModel, s: &str) {
     let mut sess = Session::new(model, 1000);
 
     let candidates = sess.advance_and_predict_str(s, Some(0.995));

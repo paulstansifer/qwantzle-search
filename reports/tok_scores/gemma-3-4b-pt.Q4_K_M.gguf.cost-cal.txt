@@ -1,0 +1,35 @@
+Padding the suffix with a space.
+[
+God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES I] God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my ...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+T-Rex: NEVER
+T-Rex (punchline): -
+                   has          an     analogy        been          so    accurate         and  personally    damaging
+prb             0.010%      2.339%      0.457%      0.034%      0.724%      0.057%      5.989%      0.005%      0.574%
+flt bns           1.48        1.32        2.89        1.97        1.43        4.62        1.78        6.87        4.67
+chr bns           3.82        2.44       21.94        5.73        2.38       31.02        3.57       65.58       26.52
+tok scr         0.055%      7.506%     28.988%      0.389%      2.472%      8.154%     38.143%      2.155%     71.189%
+pfx scr         0.055%      0.004%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd            806           6          29          90          18         232           3         912          17
+val ahd            162           4          11          37           7          70           1          90           0
+prb ahd         88.04%      39.95%      64.35%      94.77%      67.97%      74.76%      57.53%      95.46%      64.79%
+optimistic cost: 3.84e10  average probability: 0.2%  average tok time: 484183 score: 2.41e-23% * 68.26% * 2.27e12 = 0.0000%
+Padding the suffix with a space.
+[
+T-Rex: A few months ago I said I wanted to be a s] T-Rex: A few months ago I said I wanted to be a stand-up comedian. It turns out it's a lot of work?
+...ps.
+Utahraptor: Comedy's hard, I guess!
+T-Rex: I just can't figure out these... these Dinosaur Comics.
+God: OH GOD
+T-Rex: What?
+T-Rex (punchline): You
+                  know        what           ?          It           '           s      really       weird        when         you         say        that           .
+prb            11.223%     30.438%     18.416%      4.288%     67.010%     98.067%      0.846%      0.707%      5.095%     27.471%      3.170%      9.326%     30.639%
+flt bns           1.70        1.78        1.16        1.37        1.18        1.18        2.89        2.61        2.16        1.78        1.78        2.16        1.21
+chr bns           5.97        5.89        1.55        2.41        1.55        1.55       13.57        8.58        5.49        3.55        3.52        5.29        1.51
+tok scr       113.633%    318.922%     33.320%     14.134%    122.099%    179.124%     33.157%     15.849%     60.475%    173.993%     19.914%    106.667%     56.212%
+pfx scr       113.633%    362.403%    120.752%     17.067%     20.839%     37.328%     12.377%      1.962%      1.186%      2.064%      0.411%      0.438%      0.246%
+tok ahd              1           0           0           3           0           0          21          23           6           0           3           3           0
+val ahd              1           0           0           1           0           0           9           7           3           0           0           0           0
+prb ahd         29.48%       0.00%       0.00%      45.68%       0.00%       0.00%      66.38%      71.50%      72.80%       0.00%      47.84%      45.51%       0.00%
+optimistic cost: 1.28e3  average probability: 10.2%  average tok time: 386682 score: 1.35e-11% * 68.26% * 1.83e10 = 0.1682%

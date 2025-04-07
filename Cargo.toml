@@ -32,7 +32,7 @@ safetensors = "0.4.5"
 assoc = "0.1.3"
 serde = { version = "1.0.215", features = ["derive"] }
 bincode = "1.3.3"
-llama-cpp-2 = { version = "0.1.85", features = ["cuda"] }
+llama-cpp-2 = { git = "https://github.com/utilityai/llama-cpp-rs.git", features = ["cuda"] }
 lazy_static = "1.5.0"
 gag = "1.0.0"
 signal-hook = "0.3.17"
