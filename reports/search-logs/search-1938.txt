@@ -1,525 +1,66 @@
 has an analogy been so accurate and personally damaging
-         0 0* 2.84420% mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
-         1 0* 2.87742% mind you                                                                                                                      ----------aaaaaaaaabccdeeeggghlnnnnorsst
-         2 0* 0.90818%  again                                                                                                                        ----------aaaaaaabccddeeegghlmnnnnoorsstuy
-         3 0* 0.38612%  mind                                                                                                                         ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
-         4 0* 0.33777%  mind you                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnorsst
-         5 0* 0.25311% again                                                                                                                         ----------aaaaaaabccddeeegghlmnnnnoorsstuy
-         6 0* 0.12776%  change                                                                                                                       ----------aaaaaaaabcddeeggilmnnnnoorsstuy
-         7 0* 0.12462%  and                                                                                                                          ----------aaaaaaaabccdeeeggghilmnnnnoorsstuy
-         8 0* 0.11468%  say                                                                                                                          ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
-         9 0* 0.09377%  under                                                                                                                        ----------aaaaaaaaabccdeeggghilmnnnnoossty
-        10 0* 0.08092%  let                                                                                                                          ----------aaaaaaaaabccddeeggghimnnnnnoorssuy
-        11 0* 0.08677%  let anyone                                                                                                                   ----------aaaaaaaabccddeggghimnnnorssu
-        12 0* 0.07593%  because                                                                                                                      ----------aaaaaaaacddeggghilmnnnnnoorsty
-        13 0* 0.06977% under                                                                                                                         ----------aaaaaaaaabccdeeggghilmnnnnoossty
-        14 0* 0.06942%  let me                                                                                                                       ----------aaaaaaaaabccddeggghinnnnnoorssuy
-        15 0* 0.06507%  abandon                                                                                                                      ----------aaaaaaaccdeeeggghilmnnnorsstuy
-        16 0* 0.13783%  abandon me                                                                                                                   ----------aaaaaaaccdeeggghilnnnorsstuy
-        17 0* 1.25976%  abandon me again                                                                                                             ----------aaaaaccdeegghlnnorsstuy
-        18 0* 0.06019% mind the                                                                                                                      ----------aaaaaaaaabccdeeggglnnnnoorssuy
-        19 0* 0.19732% mind the anal                                                                                                                 ----------aaaaaaabccdeegggnnnoorssuy
-        20 0* 0.52490% mind the analogy                                                                                                              ----------aaaaaaabccdeeggnnnorssu
-        21 0* 0.34055% mind the analogy because                                                                                                      ----------aaaaaacdggnnnors
-        22 0* 0.19582% mind the language                                                                                                             ----------aaaaaaabccdegnnnoorssy
-        23 0* 0.05977% mind you heard                                                                                                                ----------aaaaaaaabcceeggglnnnnosst
-        24 0* 0.05537%  in                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnoorsstuy
-        25 0* 0.05683%  in a                                                                                                                         ----------aaaaaaaabccddeeeggghlmnnnnoorsstuy
-        26 0* 0.05466%  has                                                                                                                          ----------aaaaaaaabccddeeegggilmnnnnnoorstuy
-        27 0* 0.05508%  has been                                                                                                                     ----------aaaaaaaaccddegggilmnnnnoorstuy
-        28 0* 0.05278%  change your                                                                                                                  ----------aaaaaaaabcddeeggilmnnnnosst
-        29 0* 0.09825%  change your mind                                                                                                             ----------aaaaaaaabcdeegglnnnosst
-        30 0* 0.06832%  change your name                                                                                                             ----------aaaaaaabcddeggilnnnosst
-        31 0* 0.05233%  buy                                                                                                                          ----------aaaaaaaaaccddeeeggghilmnnnnnoorsst
-        32 0* 0.05106% mind language                                                                                                                 ----------aaaaaaabccdeeghnnnoorssty
-        33 0* 0.05030%  a                                                                                                                            ----------aaaaaaaabccddeeeggghilmnnnnnoorsstuy
-        34 0* 0.04936%  change your name to                                                                                                          ----------aaaaaaabcddeggilnnnss
-        35 0* 0.04855% ending                                                                                                                        ----------aaaaaaaaabccdeegghlmnnnoorsstuy
-        36 0* 0.04703%  in a thousand                                                                                                                ----------aaaaaaabccdeeeggglmnnnorsy
-        37 0* 0.36488%  in a thousand years                                                                                                          ----------aaaaaabccdeeggglmnnno
-        38 0* 0.04505%  but                                                                                                                          ----------aaaaaaaaaccddeeeggghilmnnnnnoorssy
-        39 0* 0.04354%  change your name again                                                                                                       ----------aaaaabcddeglnnosst
-        40 0* 0.04310% change                                                                                                                        ----------aaaaaaaabcddeeggilmnnnnoorsstuy
-        41 0* 0.04265%  do                                                                                                                           ----------aaaaaaaaabccdeeeggghilmnnnnnorsstuy
-        42 0* 0.04170% mind the analog                                                                                                               ----------aaaaaaabccdeeggnnnorssuy
-        43 0* 0.04129%  said                                                                                                                         ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
-        44 0* 0.04293%  said anyone                                                                                                                  ----------aaaaaaabccdeeggghlmnnnorstu
-        45 0* 0.04124% mind a                                                                                                                        ----------aaaaaaaabccdeeeggghlnnnnoorsstuy
-        46 0* 0.03741%  associate                                                                                                                    ----------aaaaaaabcddeeggghlmnnnnnoruy
-        47 0* 0.03811%  associate language                                                                                                           ----------aaaaabcddeghmnnnnory
-        48 0* 0.03716%  has anyone                                                                                                                   ----------aaaaaaabccddeegggilmnnnorstu
-        49 0* 0.03684%  abandon language                                                                                                             ----------aaaaaccdeeghimnnorssty
-        50 0* 0.03646%  mention                                                                                                                      ----------aaaaaaaaabccddeeggghlnnnorssuy
-        51 0* 0.03566%  again say                                                                                                                    ----------aaaaaabccddeeegghlmnnnnoorstu
-        52 0* 0.03501%  you                                                                                                                          ----------aaaaaaaaabccddeeeggghilmnnnnnorsst
-        53 0* 0.03437% ment                                                                                                                          ----------aaaaaaaaabccddeeggghilnnnnoorssuy
-        54 0* 0.03661% mentioned                                                                                                                     ----------aaaaaaaaabccdeggghlnnnorssuy
-        55 0* 0.03404% because                                                                                                                       ----------aaaaaaaacddeggghilmnnnnnoorsty
-        56 0* 0.03139%  abandoned                                                                                                                    ----------aaaaaaacceeggghilmnnnorsstuy
-        57 0* 0.03016%  go                                                                                                                           ----------aaaaaaaaabccddeeegghilmnnnnnorsstuy
-        58 0* 0.03005% language                                                                                                                      ----------aaaaaaabccddeeghimnnnnoorssty
-        59 0* 0.03004% changing                                                                                                                      ----------aaaaaaaabcddeeeglmnnnoorsstuy
-        60 0* 0.02971% say                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
-        61 0* 0.02944% mention                                                                                                                       ----------aaaaaaaaabccddeeggghlnnnorssuy
-        62 0* 0.02808% minds                                                                                                                         ----------aaaaaaaaabccdeeeggghlnnnnoorstuy
-        63 0* 0.04842% minds changed                                                                                                                 ----------aaaaaaaabceegglnnnoorstuy
-        64 0* 0.02689%  mentioned                                                                                                                    ----------aaaaaaaaabccdeggghlnnnorssuy
-        65 0* 0.02606% mind anyone                                                                                                                   ----------aaaaaaaabccdeeggghlnnorsstu
-        66 0* 0.02584%  had                                                                                                                          ----------aaaaaaaabccdeeegggilmnnnnnoorsstuy
-        67 0* 0.02511%  let me hear                                                                                                                  ----------aaaaaaaabccddggginnnnnoossuy
-        68 0* 0.02502% mind your                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnosst
-        69 0* 0.04299% mind your anal                                                                                                                ----------aaaaaaabccdeeeggghnnnosst
-        70 0* 0.02440%  in a thousand years am                                                                                                       ----------aaaaabccdeeggglnnno
-        71 0* 0.02430%  changing                                                                                                                     ----------aaaaaaaabcddeeeglmnnnoorsstuy
-        72 0* 0.02383%  abandoned me                                                                                                                 ----------aaaaaaacceggghilnnnorsstuy
-        73 0* 0.02329%  change a                                                                                                                     ----------aaaaaaabcddeeggilmnnnnoorsstuy
-        74 0* 0.02277% mind your analog                                                                                                              ----------aaaaaaabccdeeegghnnnsst
-        75 0* 0.02270%  change my                                                                                                                    ----------aaaaaaaabcddeeggilnnnnoorsstu
-        76 0* 0.02259% mind the analogy and                                                                                                          ----------aaaaaabcceeggnnorssu
-        77 0* 0.02240%  has anyone made                                                                                                              ----------aaaaaabccdegggilnnnorstu
-        78 0* 0.03960%  has anyone made a                                                                                                            ----------aaaaabccdegggilnnnorstu
-        79 0* 0.02231%  should                                                                                                                       ----------aaaaaaaaabccdeeegggimnnnnnorsty
-        80 0* 0.02197%  let me say                                                                                                                   ----------aaaaaaaabccddeggghinnnnnoorsu
-        81 0* 0.02183%  change a single                                                                                                              ----------aaaaaaabcddegmnnnoorstuy
-        82 0* 0.02158%  assume                                                                                                                       ----------aaaaaaaabccddeeggghilnnnnnoorty
-        83 0* 0.02148% mind you seen                                                                                                                 ----------aaaaaaaaabccdeggghlnnnorst
-        84 0* 0.02120%  use                                                                                                                          ----------aaaaaaaaabccddeeggghilmnnnnnoorsty
-        85 0* 0.04632%  use analog                                                                                                                   ----------aaaaaaabccddeegghimnnnnorsty
-        86 0* 0.07411%  use analogies                                                                                                                ----------aaaaaaabccddegghmnnnnorty
-        87 0* 0.02158%  use anal                                                                                                                     ----------aaaaaaabccddeeggghimnnnnoorsty
-        88 0* 0.04484%  use analogy                                                                                                                  ----------aaaaaaabccddeegghimnnnnorst
-        89 0* 0.53206%  use analogy again                                                                                                            ----------aaaaabccddeeghmnnnorst
-        90 0* 0.02088%  again go                                                                                                                     ----------aaaaaaabccddeeeghlmnnnnorsstuy
-        91 0* 0.02799%  again go home                                                                                                                ----------aaaaaaabccddeeglnnnnrsstuy
-        92 0* 0.08005%  again go home sad                                                                                                            ----------aaaaaabccdeeglnnnnrstuy
-        93 0* 0.28611%  again go home sad and                                                                                                        ----------aaaaabcceeglnnnrstuy
-        94 0* 0.02087%  in my                                                                                                                        ----------aaaaaaaaabccddeeeggghlnnnnoorsstu
-        95 0* 0.04033%  in my language                                                                                                               ----------aaaaaaabccddeeghnnnoorsst
-        96 0* 0.02027%  has made                                                                                                                     ----------aaaaaaabccdeegggilnnnnnoorstuy
-        97 0* 0.02023%  introduce                                                                                                                    ----------aaaaaaaaabcdeeggghlmnnnnossy
-        98 0* 0.02008% mind because                                                                                                                  ----------aaaaaaaacdeggghlnnnnoorsty
-        99 0* 0.02004% s                                                                                                                             ----------aaaaaaaaabccddeeeggghilmnnnnnoorstuy
-       100 0* 0.09529% said                                                                                                                          ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
-       101 0* 0.03633% said the                                                                                                                      ----------aaaaaaaabccdeeggglmnnnnnoorsuy
-       102 0* 0.14051% said the man                                                                                                                  ----------aaaaaaabccdeeggglnnnnoorsuy
-       103 0* 0.03469% said anyone                                                                                                                   ----------aaaaaaabccdeeggghlmnnnorstu
-       104 0* 0.02748% said no                                                                                                                       ----------aaaaaaaabccdeeeggghlmnnnnorstuy
-       105 0* 0.04068% said no language                                                                                                              ----------aaaaaabccdeeghmnnnorsty
-       106 0* 0.02650% said no man                                                                                                                   ----------aaaaaaabccdeeeggghlnnnorstuy
-       107 0* 0.01997%  the                                                                                                                          ----------aaaaaaaaabccddeegggilmnnnnnoorssuy
-       108 0* 0.03097%  the anal                                                                                                                     ----------aaaaaaabccddeegggimnnnnoorssuy
-       109 0* 0.05747%  the analogy                                                                                                                  ----------aaaaaaabccddeeggimnnnnorssu
-       110 0* 0.04449%  the analogy again                                                                                                            ----------aaaaabccddeegmnnnorssu
-       111 0* 0.03087%  the same                                                                                                                     ----------aaaaaaaabccddegggilnnnnnoorsuy
-       112 0* 0.41069%  the same again                                                                                                               ----------aaaaaabccddegglnnnnoorsuy
-       113 0* 0.01983%  can                                                                                                                          ----------aaaaaaaabcddeeeggghilmnnnnoorsstuy
-       114 0* 0.01954%  introduce me                                                                                                                 ----------aaaaaaaaabcdeggghlnnnnossy
-       115 0* 0.01928% change your                                                                                                                   ----------aaaaaaaabcddeeggilmnnnnosst
-       116 0* 0.03473% change your mind                                                                                                              ----------aaaaaaaabcdeegglnnnosst
-       117 0* 0.01914%  language                                                                                                                     ----------aaaaaaabccddeeghimnnnnoorssty
-       118 0* 0.01864%  as                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorstuy
-       119 0* 0.01849% going                                                                                                                         ----------aaaaaaaaabccddeeeghlmnnnnorsstuy
-       120 0* 0.01848%  said a                                                                                                                       ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
-       121 0* 0.05270%  said a man                                                                                                                   ----------aaaaaabccdeeeggghlnnnnoorstuy
-       122 0* 0.01842%  again buy                                                                                                                    ----------aaaaaaaccddeeegghlmnnnnoorsst
-       123 0* 0.01833%  gonna                                                                                                                        ----------aaaaaaaabccddeeegghilmnnnorsstuy
-       124 0* 0.01788%  could                                                                                                                        ----------aaaaaaaaabcdeeeggghimnnnnnorssty
-       125 0* 0.01774%  the analogy made                                                                                                             ----------aaaaaabccdegginnnnorssu
-       126 0* 0.01765%  associate me                                                                                                                 ----------aaaaaaabcddeggghlnnnnnoruy
-       127 0* 0.01764% a                                                                                                                             ----------aaaaaaaabccddeeeggghilmnnnnnoorsstuy
-       128 0* 0.01731%  the same anal                                                                                                                ----------aaaaaabccddeggginnnnoorsuy
-       129 0* 0.02647%  the same analogy                                                                                                             ----------aaaaaabccddegginnnnorsu
-       130 0* 0.29595%  the same analogy again                                                                                                       ----------aaaabccddegnnnorsu
-       131 0* 0.01696%  assume analog                                                                                                                ----------aaaaaabccddeegghinnnnorty
-       132 0* 0.01680% m                                                                                                                             ----------aaaaaaaaabccddeeeggghilnnnnnoorsstuy
-       133 0* 0.01663% mind you eat                                                                                                                  ----------aaaaaaaabccdeeggghlnnnnorss
-       134 0* 0.01631%  has been more                                                                                                                ----------aaaaaaaaccddgggilnnnnostuy
-       135 0* 0.01629%  accused                                                                                                                      ----------aaaaaaaabdeeggghilmnnnnnoorsty
-       136 0* 0.02248%  accused anyone                                                                                                               ----------aaaaaaabdeggghilmnnnorst
-       137 0* 0.01628%  let me say again                                                                                                             ----------aaaaaabccddegghnnnnoorsu
-       138 0* 0.01622% let                                                                                                                           ----------aaaaaaaaabccddeeggghimnnnnnoorssuy
-       139 0* 0.01622%  bring                                                                                                                        ----------aaaaaaaaaccddeeegghlmnnnnoosstuy
-       140 0* 0.01618% said the language                                                                                                             ----------aaaaaabccdegmnnnnoorsy
-       141 0* 0.01616%  abandoned again                                                                                                              ----------aaaaacceegghlmnnorsstuy
-       142 0* 0.01614%  and you                                                                                                                      ----------aaaaaaaabccdeeeggghilmnnnnorsst
-       143 0* 0.01610%  buying                                                                                                                       ----------aaaaaaaaaccddeeegghlmnnnnoorsst
-       144 0* 0.01597% and                                                                                                                           ----------aaaaaaaabccdeeeggghilmnnnnoorsstuy
-       145 0* 0.01595% change my                                                                                                                     ----------aaaaaaaabcddeeggilnnnnoorsstu
-       146 0* 0.01583%  according                                                                                                                    ----------aaaaaaaabdeeegghlmnnnnosstuy
-       147 0* 0.01798%  according to                                                                                                                 ----------aaaaaaaabdeeegghlmnnnnssuy
-       148 0* 0.01582%  u                                                                                                                            ----------aaaaaaaaabccddeeeggghilmnnnnnoorssty
-       149 0* 0.01581% mind you had                                                                                                                  ----------aaaaaaaabcceeeggglnnnnorsst
-       150 0* 0.01571%  against                                                                                                                      ----------aaaaaaabccddeeegghlmnnnnoorsuy
-       151 0* 0.01567%  is                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnnoorstuy
-       152 0* 0.01561%  buy another                                                                                                                  ----------aaaaaaaaccddeegggilmnnnnoss
-       153 0* 0.01557% said the guy                                                                                                                  ----------aaaaaaaabccdeegglmnnnnnoors
-       154 0* 0.01538% related                                                                                                                       ----------aaaaaaaabccdeggghimnnnnnoossuy
-       155 0* 0.01527% said no one                                                                                                                   ----------aaaaaaaabccdeeggghlmnnnrstuy
-       156 0* 0.01524% in                                                                                                                            ----------aaaaaaaaabccddeeeggghlmnnnnoorsstuy
-       157 0* 0.01511%  said a man about                                                                                                             ----------aaaaaccdeeeggghlnnnnorsy
-       158 0* 0.01492%  had a                                                                                                                        ----------aaaaaaabccdeeegggilmnnnnnoorsstuy
-       159 0* 0.01474%  bought                                                                                                                       ----------aaaaaaaaaccddeeeggilmnnnnnorssy
-       160 0* 0.01507%  bought a                                                                                                                     ----------aaaaaaaaccddeeeggilmnnnnnorssy
-       161 0* 0.01471%  the language                                                                                                                 ----------aaaaaaabccddegimnnnnoorssy
-       162 0* 0.01439% made                                                                                                                          ----------aaaaaaaabccdeeggghilnnnnnoorsstuy
-       163 0* 0.01437%  uh                                                                                                                           ----------aaaaaaaaabccddeeegggilmnnnnnoorssty
-       164 0* 0.01401%  in language                                                                                                                  ----------aaaaaaabccddeeghmnnnoorssty
-       165 0* 0.01396% mind you are                                                                                                                  ----------aaaaaaaabccdeeggghlnnnnosst
-       166 0* 0.01391%  buy a                                                                                                                        ----------aaaaaaaaccddeeeggghilmnnnnnoorsst
-       167 0* 0.01388% mind you a                                                                                                                    ----------aaaaaaaabccdeeeggghlnnnnorsst
-       168 0* 0.01385% mind has                                                                                                                      ----------aaaaaaaabccdeeeggglnnnnoorstuy
-       169 0* 0.04790% mind has been                                                                                                                 ----------aaaaaaaaccdeggglnnnoorstuy
-       170 0* 0.01366%  has a                                                                                                                        ----------aaaaaaabccddeeegggilmnnnnnoorstuy
-       171 0* 0.01365% mind you see                                                                                                                  ----------aaaaaaaaabccdeggghlnnnnorst
-       172 0* 0.01354%  eat                                                                                                                          ----------aaaaaaaabccddeeggghilmnnnnnoorssuy
-       173 0* 0.01350%  go to                                                                                                                        ----------aaaaaaaaabccddeeegghilmnnnnnrssuy
-       174 0* 0.01345% mind you hear                                                                                                                 ----------aaaaaaaabccdeeggglnnnnosst
-       175 0* 0.01320%  changed                                                                                                                      ----------aaaaaaaabcdeeggilmnnnnoorsstuy
-       176 0* 0.01313%  has anyone made an                                                                                                           ----------aaaaabccdegggilnnorstu
-       177 0* 0.04460%  has anyone made an actual                                                                                                    ----------aaabcdeggginnors
-       178 0* 0.03962%  has anyone made an accurate                                                                                                  ----------aaabdgggilnnos
-       179 0* 0.02868%  has anyone made an action                                                                                                    ----------aaaabcdeggglnrsu
-       180 0* 0.01308%  has been a                                                                                                                   ----------aaaaaaaccddegggilmnnnnoorstuy
-       181 0* 0.01306%  listen                                                                                                                       ----------aaaaaaaaabccddeeggghmnnnnoorsuy
-       182 0* 0.01305%  am                                                                                                                           ----------aaaaaaaabccddeeeggghilnnnnnoorsstuy
-       183 0* 0.01293%  let me hear you                                                                                                              ----------aaaaaaaabccddggginnnnnoss
-       184 0* 0.01286%  change again                                                                                                                 ----------aaaaaabcddeeglmnnnoorsstuy
-       185 0* 0.01257% mind you has                                                                                                                  ----------aaaaaaaabccdeeeggglnnnnorst
-       186 0* 0.01256%  abandon your                                                                                                                 ----------aaaaaaaccdeeeggghilmnnnsst
-       187 0* 0.01253%  in a hundred                                                                                                                 ----------aaaaaaaabcceeggglmnnnoossty
-       188 0* 0.01239% has                                                                                                                           ----------aaaaaaaabccddeeegggilmnnnnnoorstuy
-       189 0* 0.01431% has been                                                                                                                      ----------aaaaaaaaccddegggilmnnnnoorstuy
-       190 0* 0.01231%  read                                                                                                                         ----------aaaaaaaabccdeeggghilmnnnnnoosstuy
-       191 0* 0.01231%  made                                                                                                                         ----------aaaaaaaabccdeeggghilnnnnnoorsstuy
-       192 0* 0.01227%  you can                                                                                                                      ----------aaaaaaaabcddeeeggghilmnnnnorsst
-       193 0* 0.01221%  relate                                                                                                                       ----------aaaaaaaabccddeggghimnnnnnoossuy
-       194 0* 0.01209%  come                                                                                                                         ----------aaaaaaaaabcddeeggghilnnnnnorsstuy
-       195 0* 0.01209% let me                                                                                                                        ----------aaaaaaaaabccddeggghinnnnnoorssuy
-       196 0* 0.01204% more                                                                                                                          ----------aaaaaaaaabccddeeggghilnnnnnosstuy
-       197 0* 0.01183%  again encounter                                                                                                              ----------aaaaaaabcddegghlmnnossy
-       198 0* 0.01176% mind these                                                                                                                    ----------aaaaaaaaabccdeggglnnnnoorsuy
-       199 0* 0.09754% mind these analog                                                                                                             ----------aaaaaaabccdeggnnnorsuy
-       200 0* 0.01175%  mind you heard                                                                                                               ----------aaaaaaaabcceeggglnnnnosst
-       201 0* 0.01170%  mind the                                                                                                                     ----------aaaaaaaaabccdeeggglnnnnoorssuy
-       202 0* 0.01872%  mind the anal                                                                                                                ----------aaaaaaabccdeegggnnnoorssuy
-       203 0* 0.04980%  mind the analogy                                                                                                             ----------aaaaaaabccdeeggnnnorssu
-       204 0* 0.03601%  mind the analogy because                                                                                                     ----------aaaaaacdggnnnors
-       205 0* 0.01164%  are                                                                                                                          ----------aaaaaaaabccddeeggghilmnnnnnoosstuy
-       206 0* 0.01156%  buy action                                                                                                                   ----------aaaaaaaacddeeeggghlmnnnnorss
-       207 0* 0.01141%  once                                                                                                                         ----------aaaaaaaaabcddeeggghilmnnnnorsstuy
-       208 0* 0.25977%  once again                                                                                                                   ----------aaaaaaabcddeegghlmnnnorsstuy
-       209 0* 0.01128%  been                                                                                                                         ----------aaaaaaaaaccddeggghilmnnnnoorsstuy
-       210 0* 0.01125%  learn                                                                                                                        ----------aaaaaaaabccddeeggghimnnnnoosstuy
-       211 0* 0.01115%  and again                                                                                                                    ----------aaaaaabccdeeegghlmnnnoorsstuy
-       212 0* 0.01111%  gonna buy                                                                                                                    ----------aaaaaaaaccddeeegghilmnnnorsst
-       213 0* 0.01079%  assemble                                                                                                                     ----------aaaaaaaaccddeggghinnnnnoortuy
-       214 0* 0.01077% mind you seen a                                                                                                               ----------aaaaaaaabccdeggghlnnnorst
-       215 0* 0.01284% mind you seen a real                                                                                                          ----------aaaaaaabccdggghnnnost
-       216 0* 0.01075% listen                                                                                                                        ----------aaaaaaaaabccddeeggghmnnnnoorsuy
-       217 0* 0.01064%  hear                                                                                                                         ----------aaaaaaaabccddeegggilmnnnnnoosstuy
-       218 0* 0.01049%  changes                                                                                                                      ----------aaaaaaaabcddeeggilmnnnnoorstuy
-       219 0* 0.01038%  has been so                                                                                                                  ----------aaaaaaaaccddegggilmnnnnortuy
-       220 0* 0.29183%  has been so accurate                                                                                                         ----------aaaaaaddgggilmnnnnoy
-       221 0* 0.07342%  has been so accurate a                                                                                                       ----------aaaaaddgggilmnnnnoy
-       222 0* 0.05957%  has been so accurate an                                                                                                      ----------aaaaaddgggilmnnnoy
-       223 0* 0.76043%  has been so accurate an anal                                                                                                 ----------aaaddgggimnnoy
-       224 0* 3.42177%  has been so accurate an analogy                                                                                              ----------aaaddggimnn
-       225 0* 0.23663%  has been so accurate an analogy in                                                                                           ----------aaaddggmn
-       226 0* 0.06188%  has been so accurate an analogy again                                                                                        ----------addgmn
-       227 0* 0.05780%  has been so accurate and                                                                                                     ----------aaaaadgggilmnnnoy
-       228 0* 0.04031%  has been so accurate an analogy and                                                                                          ----------aadggimn
-       229 0* 0.02301%  has been so accurate an analog                                                                                               ----------aaaddggimnny
-       230 0* 0.02017%  has been so accurate in                                                                                                      ----------aaaaaaddggglmnnnoy
-       231 0* 0.01037%  but also                                                                                                                     ----------aaaaaaaaccddeeeggghimnnnnnorsy
-       232 0* 0.01034%  assume again                                                                                                                 ----------aaaaaabccddeegghlnnnnoorty
-       233 0* 0.01033%  let anyone acc                                                                                                               ----------aaaaaaabddeggghimnnnorssu
-       234 0* 0.03966%  let anyone accuse                                                                                                            ----------aaaaaaabddggghimnnnors
-       235 0* 0.01023%  again use                                                                                                                    ----------aaaaaaabccddeegghlmnnnnoorsty
-       236 0* 0.01023% changing my                                                                                                                   ----------aaaaaaaabcddeeeglnnnoorsstu
-       237 0* 0.01014% minds are                                                                                                                     ----------aaaaaaaabccdeeggghlnnnnoostuy
-       238 0* 0.05001% minds are changed                                                                                                             ----------aaaaaaabcegglnnnoostuy
-       239 0* 0.01013%  encourage                                                                                                                    ----------aaaaaaaabcddegghilmnnnnossty
-       240 0* 0.01010%  this                                                                                                                         ----------aaaaaaaaabccddeeeggglmnnnnnoorsuy
-       241 0* 0.01222%  this anal                                                                                                                    ----------aaaaaaabccddeeegggmnnnnoorsuy
-       242 0* 0.02667%  this analogy                                                                                                                 ----------aaaaaaabccddeeeggmnnnnorsu
-       243 0* 0.01006%  an                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnoorsstuy
-       244 0* 0.03125%  an anal                                                                                                                      ----------aaaaaabccddeeeggghimnnnoorsstuy
-       245 0* 0.08201%  an analogy                                                                                                                   ----------aaaaaabccddeeegghimnnnorsstu
-       246 0* 0.01990%  an analogy again                                                                                                             ----------aaaabccddeeeghmnnorsstu
-       247 0* 0.01003%  and you can                                                                                                                  ----------aaaaaaabcdeeeggghilmnnnorsst
-       248 0* 0.01000% mind you as                                                                                                                   ----------aaaaaaaabccdeeeggghlnnnnorst
-       249 0* 0.01017% mind you as a                                                                                                                 ----------aaaaaaabccdeeeggghlnnnnorst
-       250 0* 0.00995%  personally                                                                                                                   aaaaaaaaabccddeeeggghilmnnnnnoorsstuy
-       251 0* 0.00986%  can be                                                                                                                       ----------aaaaaaaacddeeggghilmnnnnoorsstuy
-       252 0* 0.00978% ing                                                                                                                           ----------aaaaaaaaabccddeeegghlmnnnnoorsstuy
-       253 0* 0.00975%  saying                                                                                                                       ----------aaaaaaaabccddeeegghlmnnnnoorstu
-       254 0* 0.00968%  let a                                                                                                                        ----------aaaaaaaabccddeeggghimnnnnnoorssuy
-       255 0* 0.02245%  let a man                                                                                                                    ----------aaaaaaabccddeeggghinnnnoorssuy
-       256 0* 0.00960%  changed my                                                                                                                   ----------aaaaaaaabcdeeggilnnnnoorsstu
-       257 0* 0.00954% b                                                                                                                             ----------aaaaaaaaaccddeeeggghilmnnnnnoorsstuy
-       258 0* 0.01297% bought                                                                                                                        ----------aaaaaaaaaccddeeeggilmnnnnnorssy
-       259 0* 0.01112% buy                                                                                                                           ----------aaaaaaaaaccddeeeggghilmnnnnnoorsst
-       260 0* 0.01016% bought a                                                                                                                      ----------aaaaaaaaccddeeeggilmnnnnnorssy
-       261 0* 0.00953%  say again                                                                                                                    ----------aaaaaabccddeeegghlmnnnnoorstu
-       262 0* 0.00942%  related                                                                                                                      ----------aaaaaaaabccdeggghimnnnnnoossuy
-       263 0* 0.00935%  ment                                                                                                                         ----------aaaaaaaaabccddeeggghilnnnnoorssuy
-       264 0* 0.00934%  did                                                                                                                          ----------aaaaaaaaabcceeeggghlmnnnnnoorsstuy
-       265 0* 0.00930%  again am                                                                                                                     ----------aaaaaabccddeeegghlnnnnoorsstuy
-       266 0* 0.00929%  let anyone use                                                                                                               ----------aaaaaaaabccddggghimnnnors
-       267 0* 0.00929%  be                                                                                                                           ----------aaaaaaaaaccddeeggghilmnnnnnoorsstuy
-       268 0* 0.00927%  encourage me                                                                                                                 ----------aaaaaaaabcddgghilnnnnossty
-       269 0* 0.00926% said a                                                                                                                        ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
-       270 0* 0.02495% said a man                                                                                                                    ----------aaaaaabccdeeeggghlnnnnoorstuy
-       271 0* 0.00924% minds change                                                                                                                  ----------aaaaaaaabcdeegglnnnoorstuy
-       272 0* 0.00922% mind those                                                                                                                    ----------aaaaaaaaabccdeeggglnnnnorsuy
-       273 0* 0.01229% mind those analog                                                                                                             ----------aaaaaaabccdeeggnnnrsuy
-       274 0* 0.00920% let anyone                                                                                                                    ----------aaaaaaaabccddeggghimnnnorssu
-       275 0* 0.00917%  mind a                                                                                                                       ----------aaaaaaaabccdeeeggghlnnnnoorsstuy
-       276 0* 0.00909%  bring me                                                                                                                     ----------aaaaaaaaaccddeegghlnnnnoosstuy
-       277 0* 0.00904%  has been sad                                                                                                                 ----------aaaaaaaccdegggilmnnnnoortuy
-       278 0* 0.00892%  said the                                                                                                                     ----------aaaaaaaabccdeeggglmnnnnnoorsuy
-       279 0* 0.03079%  said the man                                                                                                                 ----------aaaaaaabccdeeggglnnnnoorsuy
-       280 0* 0.00885%  has been sadder                                                                                                              ----------aaaaaaaccgggilmnnnnootuy
-       281 0* 0.00877%  mind language                                                                                                                ----------aaaaaaabccdeeghnnnoorssty
-       282 0* 0.00876%  minds                                                                                                                        ----------aaaaaaaaabccdeeeggghlnnnnoorstuy
-       283 0* 0.00875%  see                                                                                                                          ----------aaaaaaaaabccddeggghilmnnnnnoorstuy
-       284 0* 0.00871%  an accurate                                                                                                                  ----------aaaaaabddeeggghilmnnnnoossy
-       285 0* 0.00854%  said an                                                                                                                      ----------aaaaaaabccdeeeggghlmnnnnoorstuy
-       286 0* 0.01835%  said an actual                                                                                                               ----------aaaaabcdeeeggghmnnnnoorsy
-       287 0* 0.01074%  said an anal                                                                                                                 ----------aaaaabccdeeeggghmnnnoorstuy
-       288 0* 0.02799%  said an analogy                                                                                                              ----------aaaaabccdeeegghmnnnorstu
-       289 0* 0.00853%  again made                                                                                                                   ----------aaaaaabccdeegghlnnnnoorsstuy
-       290 0* 0.00852%  argue                                                                                                                        ----------aaaaaaaabccddeegghilmnnnnnoossty
-       291 0* 0.00946%  argue against                                                                                                                ----------aaaaaabccddeeghlmnnnnoosy
-       292 0* 0.00850%  buy them                                                                                                                     ----------aaaaaaaaaccddeegggilnnnnnoorss
-       293 0* 0.16606%  buy them again                                                                                                               ----------aaaaaaaccddeegglnnnnoorss
-       294 0* 0.00848%  do anything                                                                                                                  ----------aaaaaaaabccdeeegglmnnnorssu
-       295 0* 0.00841% mind you go                                                                                                                   ----------aaaaaaaaabccdeeegghlnnnnrsst
-       296 0* 0.00840%  oh                                                                                                                           ----------aaaaaaaaabccddeeegggilmnnnnnorsstuy
-       297 0* 0.00837%  miss                                                                                                                         ----------aaaaaaaaabccddeeeggghlnnnnnoortuy
-       298 0* 0.00827% mind you gonna                                                                                                                ----------aaaaaaaabccdeeegghlnnrsst
-       299 0* 0.00826%  assume a                                                                                                                     ----------aaaaaaabccddeeggghilnnnnnoorty
-       300 0* 0.00824%  at                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorssuy
-       301 0* 0.00821%  again let                                                                                                                    ----------aaaaaaabccddeegghmnnnnoorssuy
-       302 0* 0.01408%  again let me                                                                                                                 ----------aaaaaaabccddegghnnnnoorssuy
-       303 0* 0.02058%  again let me assure                                                                                                          ----------aaaaaabccddgghnnnnooy
-       304 0* 0.01138%  again let me say                                                                                                             ----------aaaaaabccddegghnnnnoorsu
-       305 0* 0.00819% mind these anal                                                                                                               ----------aaaaaaabccdegggnnnoorsuy
-       306 0* 0.01180% mind these analogy                                                                                                            ----------aaaaaaabccdeggnnnorsu
-       307 0* 0.00818%  assuming                                                                                                                     ----------aaaaaaaabccddeeegghlnnnnoorty
-       308 0* 0.00805%  anger                                                                                                                        ----------aaaaaaaabccddeegghilmnnnnoosstuy
-       309 0* 0.00797% go                                                                                                                            ----------aaaaaaaaabccddeeegghilmnnnnnorsstuy
-       310 0* 0.00793%  anger again                                                                                                                  ----------aaaaaabccddeeghlmnnnoosstuy
-       311 0* 0.00783% mind an                                                                                                                       ----------aaaaaaaabccdeeeggghlnnnoorsstuy
-       312 0* 0.03317% mind an anal                                                                                                                  ----------aaaaaabccdeeeggghnnoorsstuy
-       313 0* 0.09598% mind an analogy                                                                                                               ----------aaaaaabccdeeegghnnorsstu
-       314 0* 0.02337% mind an analogy about                                                                                                         ----------aaaaaccdeeegghnnrss
-       315 0* 0.00783% said no actual                                                                                                                ----------aaaaaabcdeeeggghmnnnnorsy
-       316 0* 0.00777%  change your name and                                                                                                         ----------aaaaaabcdeggilnnosst
-       317 0* 0.00776% mind a second                                                                                                                 ----------aaaaaaaabceeggghlnnnorstuy
-       318 0* 0.06453% mind a second language                                                                                                        ----------aaaaaabceghnnorsty
-       319 0* 0.01648% mind a second anal                                                                                                            ----------aaaaaabceeggghnnorstuy
-       320 0* 0.04118% mind a second analogy                                                                                                         ----------aaaaaabceegghnnrstu
-       321 0* 0.00776%  heard                                                                                                                        ----------aaaaaaaabccdeegggilmnnnnnoosstuy
-       322 0* 0.00771%  cancel                                                                                                                       ----------aaaaaaaabddeeggghimnnnnoorsstuy
-       323 0* 0.00768%  because they                                                                                                                 ----------aaaaaaaacddgggilmnnnnnoors
-       324 0* 0.00767%  an analogy has                                                                                                               ----------aaaaabccddeeeggimnnnorstu
-       325 0* 0.02208%  an analogy has been                                                                                                          ----------aaaaaccddeggimnnorstu
-       326 0* 0.03903%  an analogy has been made                                                                                                     ----------aaaaccdgginnorstu
-       327 0* 0.02831%  an analogy has been used                                                                                                     ----------aaaaaccdggimnnort
-       328 0* 0.01753%  an analogy has been ruined                                                                                                   ----------aaaaaccdggmnost
-       329 0* 0.01656%  an analogy has made                                                                                                          ----------aaaabccdeegginnnorstu
-       330 0* 0.01544%  an analogy has been accurate                                                                                                 ----------aaaddggimnnos
-       331 0* 0.00765% end                                                                                                                           ----------aaaaaaaaabccdeeggghilmnnnnoorsstuy
-       332 0* 0.00765% going to                                                                                                                      ----------aaaaaaaaabccddeeeghlmnnnnrssuy
-       333 0* 0.00765% name                                                                                                                          ----------aaaaaaaabccddeeggghilnnnnoorsstuy
-       334 0* 0.00763%  again say the                                                                                                                ----------aaaaaabccddeegglmnnnnoorsu
-       335 0* 0.04903%  again say the same                                                                                                           ----------aaaaabccddegglnnnnooru
-       336 0* 0.01816%  again say the name                                                                                                           ----------aaaaabccddegglnnnoorsu
-       337 0* 0.00760% let me hear                                                                                                                   ----------aaaaaaaabccddggginnnnnoossuy
-       338 0* 0.00758%  see again                                                                                                                    ----------aaaaaaabccddegghlmnnnnoorstuy
-       339 0* 0.00756%  buy an                                                                                                                       ----------aaaaaaaaccddeeeggghilmnnnnoorsst
-       340 0* 0.04638%  buy an action                                                                                                                ----------aaaaaaacddeeeggghlmnnnorss
-       341 0* 0.00755%  changing my                                                                                                                  ----------aaaaaaaabcddeeeglnnnoorsstu
-       342 0* 0.00753%  the analogy again because                                                                                                    ----------aaaacddgmnnnors
-       343 0* 0.00749%  accused me                                                                                                                   ----------aaaaaaaabdeggghilnnnnnoorsty
-       344 0* 0.00749%  touch                                                                                                                        ----------aaaaaaaaabcddeeegggilmnnnnnorssy
-       345 0* 0.00748%  used                                                                                                                         ----------aaaaaaaaabccdeeggghilmnnnnnoorsty
-       346 0* 0.00740%  let a man say                                                                                                                ----------aaaaaabccddeeggghinnnnoorsu
-       347 0* 0.00740%  do this                                                                                                                      ----------aaaaaaaaabccdeeeggglmnnnnnorsuy
-       348 0* 0.00730% said any                                                                                                                      ----------aaaaaaabccdeeeggghlmnnnnoorstu
-       349 0* 0.00902% said any language                                                                                                             ----------aaaaabccdeeghmnnnoorst
-       350 0* 0.00833% said any man                                                                                                                  ----------aaaaaabccdeeeggghlnnnoorstu
-       351 0* 0.00730%  um                                                                                                                           ----------aaaaaaaaabccddeeeggghilnnnnnoorssty
-       352 0* 0.00728% but                                                                                                                           ----------aaaaaaaaaccddeeeggghilmnnnnnoorssy
-       353 0* 0.00721% acc                                                                                                                           ----------aaaaaaaabddeeeggghilmnnnnnoorsstuy
-       354 0* 0.02087% accuse                                                                                                                        ----------aaaaaaaabddeeggghilmnnnnnoorsty
-       355 0* 0.02285% accuse me                                                                                                                     ----------aaaaaaaabddeggghilnnnnnoorsty
-       356 0* 0.01305% accuse me again                                                                                                               ----------aaaaaabddegghlnnnnoorsty
-       357 0* 0.00715% touch                                                                                                                         ----------aaaaaaaaabcddeeegggilmnnnnnorssy
-       358 0* 0.00706% t                                                                                                                             ----------aaaaaaaaabccddeeeggghilmnnnnnoorssuy
-       359 0* 0.00700%  assume anything                                                                                                              ----------aaaaaaabccddeegglnnnoor
-       360 0* 0.00700% minds changed about                                                                                                           ----------aaaaaaaceegglnnnorsy
-       361 0* 0.00698% land                                                                                                                          ----------aaaaaaaabccdeeeggghimnnnnoorsstuy
-       362 0* 0.00697%  abandon languages                                                                                                            ----------aaaaaccdeeghimnnorsty
-       363 0* 0.00697%  in a thousand years can                                                                                                      ----------aaaaabcdeeggglmnno
-       364 0* 0.00696%  in the                                                                                                                       ----------aaaaaaaaabccddeeggglmnnnnoorssuy
-       365 0* 0.00814%  in the same                                                                                                                  ----------aaaaaaaabccddeggglnnnnoorsuy
-       366 0* 0.03448%  in the same language                                                                                                         ----------aaaaaabccddgnnnoorsy
-       367 0* 0.00695%  actual                                                                                                                       ----------aaaaaaabcddeeeggghimnnnnnoorssy
-       368 0* 0.00691%  dare                                                                                                                         ----------aaaaaaaabccdeeggghilmnnnnnoosstuy
-       369 0* 0.00690%  come again                                                                                                                   ----------aaaaaaabcddeegghlnnnnorsstuy
-       370 0* 0.00683% mind you heard a                                                                                                              ----------aaaaaaabcceeggglnnnnosst
-       371 0* 0.00681% based                                                                                                                         ----------aaaaaaaaccdeeggghilmnnnnnoorstuy
-       372 0* 0.01651% based analog                                                                                                                  ----------aaaaaaccdeegghimnnnnorstuy
-       373 0* 0.04031% based analogies                                                                                                               ----------aaaaaaccdegghmnnnnortuy
-       374 0* 0.01429% based analogies are                                                                                                           ----------aaaaaccdgghmnnnnotuy
-       375 0* 0.01060% based language                                                                                                                ----------aaaaaaccdeghimnnnnoorsty
-       376 0* 0.00981% based analogies can                                                                                                           ----------aaaaacdegghmnnnortuy
-       377 0* 0.00863% based languages                                                                                                               ----------aaaaaaccdeghimnnnnoorty
-       378 0* 0.00770% based analogies can change                                                                                                    ----------aaaadgmnnortuy
-       379 0* 0.01389% based analogies can change my                                                                                                 ----------aaaadgnnortu
-       380 0* 0.00672% mind you change                                                                                                               ----------aaaaaaaabcdeegglnnnorsst
-       381 0* 0.00669% g                                                                                                                             ----------aaaaaaaaabccddeeegghilmnnnnnoorsstuy
-       382 0* 0.00667%  again go to                                                                                                                  ----------aaaaaaabccddeeeghlmnnnnrssuy
-       383 0* 0.00667%  this analogy made                                                                                                            ----------aaaaaabccdeeggnnnnorsu
-       384 0* 0.00664%  has been said                                                                                                                ----------aaaaaaaccdeggglmnnnnoortuy
-       385 0* 0.00662%  name                                                                                                                         ----------aaaaaaaabccddeeggghilnnnnoorsstuy
-       386 0* 0.00861%  name a                                                                                                                       ----------aaaaaaabccddeeggghilnnnnoorsstuy
-       387 0* 0.00660%  consider                                                                                                                     ----------aaaaaaaaabcdeeggghlmnnnnostuy
-       388 0* 0.00667%  consider language                                                                                                            ----------aaaaaaabcdeghmnnnosty
-       389 0* 0.00658%  had an                                                                                                                       ----------aaaaaaabccdeeegggilmnnnnoorsstuy
-       390 0* 0.04522%  had an anal                                                                                                                  ----------aaaaabccdeeegggimnnnoorsstuy
-       391 0* 0.13453%  had an analogy                                                                                                               ----------aaaaabccdeeeggimnnnorsstu
-       392 0* 0.01887%  had an analogy more                                                                                                          ----------aaaaabccdeegginnnsstu
-       393 0* 0.02010%  had an analogy more personally                                                                                               aaaaabccdeegginnnsstu
-       394 0* 0.01434%  had an analogy describe                                                                                                      ----------aaaaaceggmnnnostu
-       395 0* 0.01132%  had an analogy about                                                                                                         ----------aaaaccdeeeggimnnnrss
-       396 0* 0.01014%  had an analogy describe me                                                                                                   ----------aaaaacggnnnostu
-       397 0* 0.00900%  had an action                                                                                                                ----------aaaaaabcdeeeggglmnnnorssuy
-       398 0* 0.00884%  had an analogy so                                                                                                            ----------aaaaabccdeeeggimnnnrstu
-       399 0* 0.32786%  had an analogy so accurate                                                                                                   ----------aaabdeeggimnnns
-       400 0* 0.13939%  had an analogy so accurate and                                                                                               ----------aabeeggimnns
-       401 0* 0.16783%  had an analogy so accurate and personally                                                                                    aabeeggimnns
-       402 0* 0.06187%  had an analogy so accurate in                                                                                                ----------aaabdeeggmnns
-       403 0* 0.02118%  had an analogy so accurate again                                                                                             ----------abdeegmnns
-       404 0* 0.00657%  could be                                                                                                                     ----------aaaaaaaaacdeeggghimnnnnnorssty
-       405 0* 0.00656% said no language teacher                                                                                                      ----------aaaaabcdgmnnnosy
-       406 0* 0.00655% name a                                                                                                                        ----------aaaaaaabccddeeggghilnnnnoorsstuy
-       407 0* 0.00653%  say no                                                                                                                       ----------aaaaaaaabccddeeeggghilmnnnnorstu
-       408 0* 0.00649%  let you                                                                                                                      ----------aaaaaaaaabccddeeggghimnnnnnorss
-       409 0* 0.00641% based analogies are gonna                                                                                                     ----------aaaaccdghmnntuy
-       410 0* 0.00639%  has been sad and                                                                                                             ----------aaaaaaccegggilmnnnoortuy
-       411 0* 0.00637%  in my house                                                                                                                  ----------aaaaaaaaabccddeeggglnnnnorst
-       412 0* 0.00637%  under any                                                                                                                    ----------aaaaaaaabccdeeggghilmnnnoosst
-       413 0* 0.00636% said nobody                                                                                                                   ----------aaaaaaaacceeeggghlmnnnnrstu
-       414 0* 0.00633%  assumed                                                                                                                      ----------aaaaaaaabccdeeggghilnnnnnoorty
-       415 0* 0.00632%  trade                                                                                                                        ----------aaaaaaaabccdeeggghilmnnnnnoossuy
-       416 0* 0.00632%  going                                                                                                                        ----------aaaaaaaaabccddeeeghlmnnnnorsstuy
-       417 0* 0.00630% com                                                                                                                           ----------aaaaaaaaabcddeeeggghilnnnnnorsstuy
-       418 0* 0.00628%  has been a more                                                                                                              ----------aaaaaaaccddgggilnnnnostuy
-       419 0* 0.00627% landed                                                                                                                        ----------aaaaaaaabcceeggghimnnnnoorsstuy
-       420 0* 0.00627%  hearing                                                                                                                      ----------aaaaaaaabccddeegglmnnnnoosstuy
-       421 0* 0.00626% mind an analogy because                                                                                                       ----------aaaaacdegghnnorst
-       422 0* 0.00624% mind languages                                                                                                                ----------aaaaaaabccdeeghnnnoorsty
-       423 0* 0.00621%  has anyone made an accurate and                                                                                              ----------aabgggilnos
-       424 0* 0.00619%  and you are                                                                                                                  ----------aaaaaaabccdeeggghilmnnnnosst
-       425 0* 0.00619%  an analog                                                                                                                    ----------aaaaaabccddeeegghimnnnorsstuy
-       426 0* 0.00617% again say                                                                                                                     ----------aaaaaabccddeeegghlmnnnnoorstu
-       427 0* 0.00615%  to                                                                                                                           ----------aaaaaaaaabccddeeeggghilmnnnnnorssuy
-       428 0* 0.00615%  change an                                                                                                                    ----------aaaaaaabcddeeggilmnnnoorsstuy
-       429 0* 0.00611%  the analogy ends                                                                                                             ----------aaaaaaabccdeggimnnnorsu
-       430 0* 0.00610%  brought                                                                                                                      ----------aaaaaaaaaccddeeeggilmnnnnnossy
-       431 0* 0.00601% mind you get                                                                                                                  ----------aaaaaaaaabccdeegghlnnnnorss
-       432 0* 0.00599%  name another                                                                                                                 ----------aaaaaaabccddegggilnnnossuy
-       433 0* 0.00599%  an analogy has been used to                                                                                                  ----------aaaaaccdggimnnr
-       434 0* 0.00597%  the analog                                                                                                                   ----------aaaaaaabccddeeggimnnnnorssuy
-       435 0* 0.01038%  the analogies                                                                                                                ----------aaaaaaabccddeggmnnnnorsuy
-       436 0* 0.00595% use                                                                                                                           ----------aaaaaaaaabccddeeggghilmnnnnnoorsty
-       437 0* 0.00887% use analog                                                                                                                    ----------aaaaaaabccddeegghimnnnnorsty
-       438 0* 0.01417% use analogies                                                                                                                 ----------aaaaaaabccddegghmnnnnorty
-       439 0* 0.00594% end again                                                                                                                     ----------aaaaaaabccdeegghlmnnnoorsstuy
-       440 0* 0.00592%  get                                                                                                                          ----------aaaaaaaaabccddeegghilmnnnnnoorssuy
-       441 0* 0.00591% said anyone named                                                                                                             ----------aaaaaabcceggghlnnorstu
-       442 0* 0.00591%  go to a                                                                                                                      ----------aaaaaaaabccddeeegghilmnnnnnrssuy
-       443 0* 0.00590% mind you and                                                                                                                  ----------aaaaaaaabcceeeggghlnnnorsst
-       444 0* 0.00589%  announced                                                                                                                    ----------aaaaaaaabcdeeggghilmnnorssty
-       445 0* 0.00589% read                                                                                                                          ----------aaaaaaaabccdeeggghilmnnnnnoosstuy
-       446 0* 0.00586%  has anyone said                                                                                                              ----------aaaaaabccdeeggglmnnnortu
-       447 0* 0.00585% had                                                                                                                           ----------aaaaaaaabccdeeegggilmnnnnnoorsstuy
-       448 0* 0.00584%  as long                                                                                                                      ----------aaaaaaaabccddeeegghimnnnnorstuy
-       449 0* 0.02141%  as long as                                                                                                                   ----------aaaaaaabccddeeegghimnnnnortuy
-       450 0* 0.00798%  as long as you                                                                                                               ----------aaaaaaabccddeeegghimnnnnrt
-       451 0* 0.00584%  dream                                                                                                                        ----------aaaaaaaabccdeeggghilnnnnnoosstuy
-       452 0* 0.01685%  dream again                                                                                                                  ----------aaaaaabccdeegghlnnnnoosstuy
-       453 0* 0.00587%  dreamed                                                                                                                      ----------aaaaaaaabcceggghilnnnnnoosstuy
-       454 0* 0.00584% associ                                                                                                                        ----------aaaaaaaabcddeeeggghlmnnnnnortuy
-       455 0* 0.02466% associate                                                                                                                     ----------aaaaaaabcddeeggghlmnnnnnoruy
-       456 0* 0.00947% associate me                                                                                                                  ----------aaaaaaabcddeggghlnnnnnoruy
-       457 0* 0.00584%  change your name again and                                                                                                   ----------aaaabcdeglnosst
-       458 0* 0.00583%  let me change                                                                                                                ----------aaaaaaaabcddgginnnnoorssuy
-       459 0* 0.00583% said anyone about                                                                                                             ----------aaaaaaccdeeggghlmnnnrs
-       460 0* 0.00580%  eat a                                                                                                                        ----------aaaaaaabccddeeggghilmnnnnnoorssuy
-       461 0* 0.00578%  dis                                                                                                                          ----------aaaaaaaaabccdeeeggghlmnnnnnoorstuy
-       462 0* 0.00576% should                                                                                                                        ----------aaaaaaaaabccdeeegggimnnnnnorsty
-       463 0* 0.00576%  admit                                                                                                                        ----------aaaaaaaabccdeeeggghlnnnnnoorssuy
-       464 0* 0.00575% act                                                                                                                           ----------aaaaaaaabcddeeeggghilmnnnnnoorssuy
-       465 0* 0.00574%  let anyone hear                                                                                                              ----------aaaaaaabccddgggimnnnossu
-       466 0* 0.00570% h                                                                                                                             ----------aaaaaaaaabccddeeegggilmnnnnnoorsstuy
-       467 0* 0.00569% do                                                                                                                            ----------aaaaaaaaabccdeeeggghilmnnnnnorsstuy
-       468 0* 0.00565% said a man about                                                                                                              ----------aaaaaccdeeeggghlnnnnorsy
-       469 0* 0.00564% you                                                                                                                           ----------aaaaaaaaabccddeeeggghilmnnnnnorsst
-       470 0* 0.00564% mind you the                                                                                                                  ----------aaaaaaaaabccdeeggglnnnnorss
-       471 0* 0.01913% mind you the anal                                                                                                             ----------aaaaaaabccdeegggnnnorss
-       472 0* 0.00564%  let me buy                                                                                                                   ----------aaaaaaaaaccddeggghinnnnnoorss
-       473 0* 0.00563%  once said                                                                                                                    ----------aaaaaaaabcdeeggghlmnnnnorstuy
-       474 0* 0.00563%  let a man go                                                                                                                 ----------aaaaaaabccddeegghinnnnorssuy
-       475 0* 0.00657%  let a man go hungry                                                                                                          ----------aaaaaaabccddeeginnnoss
-       476 0* 0.00562% same                                                                                                                          ----------aaaaaaaabccddeeggghilnnnnnoorstuy
-       477 0* 0.03393% same again                                                                                                                    ----------aaaaaabccddeegghlnnnnoorstuy
-       478 0* 0.00560%  mind anyone                                                                                                                  ----------aaaaaaaabccdeeggghlnnorsstu
-       479 0* 0.00560% mind any                                                                                                                      ----------aaaaaaaabccdeeeggghlnnnoorsstu
-       480 0* 0.00558%  use analogy against                                                                                                          ----------aaaaabccddeeghmnnnor
-       481 0* 0.02816%  use analogy against me                                                                                                       ----------aaaaabccddeghnnnor
-       482 0* 0.00558%  had an analogy so personally                                                                                                 aaaaabccdeeeggimnnnrstu
-       483 0* 0.14711%  had an analogy so personally accurate                                                                                        aaabdeeggimnnns
-       484 0* 0.03079%  had an analogy so personally accurate and                                                                                    aabeeggimnns
-       485 0* 0.02422%  had an analogy so personally accurate again                                                                                  abdeegmnns
-       486 0* 0.02381%  had an analogy so personally accurate in                                                                                     aaabdeeggmnns
-       487 0* 0.00554%  buying a                                                                                                                     ----------aaaaaaaaccddeeegghlmnnnnoorsst
-       488 0* 0.00553%  or                                                                                                                           ----------aaaaaaaaabccddeeeggghilmnnnnnosstuy
-       489 0* 0.00552%  miss a                                                                                                                       ----------aaaaaaaabccddeeeggghlnnnnnoortuy
-       490 0* 0.05898%  miss a chance                                                                                                                ----------aaaaaaabddeeggglnnnnoortuy
-       491 0* 0.07232%  miss a chance to                                                                                                             ----------aaaaaaabddeeggglnnnnoruy
-       492 0* 0.03008%  miss a chance to buy                                                                                                         ----------aaaaaaaddeeggglnnnnor
-       493 0* 0.03677%  miss a chance to buy a                                                                                                       ----------aaaaaaddeeggglnnnnor
-       494 0* 0.02480%  miss a chance to learn                                                                                                       ----------aaaaaabddegggnnnouy
-       495 0* 0.02514%  miss a chance to learn a                                                                                                     ----------aaaaabddegggnnnouy
-       496 0* 0.01221%  miss a chance to buy an                                                                                                      ----------aaaaaaddeeggglnnnor
-       497 0* 0.01065%  miss a chance at                                                                                                             ----------aaaaaabddeeggglnnnnooruy
-       498 0* 0.00803%  miss a chance to argue                                                                                                       ----------aaaaaabddegglnnnnoy
-       499 0* 0.00686%  miss a chance at language                                                                                                    ----------aaaabddegnnnoory
-       500 0* 0.00557%  miss a chance to be                                                                                                          ----------aaaaaaaddeggglnnnnoruy
-       501 0* 0.00552% mind you been                                                                                                                 ----------aaaaaaaaaccdeggghlnnnorsst
-       502 0* 0.00551%  as long as there                                                                                                             ----------aaaaaaabccddeggimnnnnouy
-       503 0* 0.00551% changed                                                                                                                       ----------aaaaaaaabcdeeggilmnnnnoorsstuy
-       504 0* 0.00550%  buying another                                                                                                               ----------aaaaaaaaccddeegglmnnnoss
-       505 0* 0.00549%  had an analogy personally                                                                                                    aaaaabccdeeeggimnnnorsstu
-       506 0* 0.00548% said no language the                                                                                                          ----------aaaaaabccdegmnnnorsy
-       507 0* 0.00872% said no language theor                                                                                                        ----------aaaaaabccdegmnnnsy
-       508 0* 0.00548%  change analog                                                                                                                ----------aaaaaabcddeegimnnnorsstuy
-       509 0* 0.00548%  laughed                                                                                                                      ----------aaaaaaaabccdeeggimnnnnnoorssty
-       510 0* 0.00543% mind you has been                                                                                                             ----------aaaaaaaaccdeggglnnnorst
-       511 0* 0.00543%  has an                                                                                                                       ----------aaaaaaabccddeeegggilmnnnnoorstuy
-       512 0* 0.00954%  has an action                                                                                                                ----------aaaaaabcddeeeggglmnnnorsuy
-       513 0* 0.00607%  has an anal                                                                                                                  ----------aaaaabccddeeegggimnnnoorstuy
-       514 0* 0.01676%  has an analogy                                                                                                               ----------aaaaabccddeeeggimnnnorstu
-       515 0* 0.02970%  has an analogy been                                                                                                          ----------aaaaaccddeggimnnorstu
-       516 0* 0.04530%  has an analogy been more                                                                                                     ----------aaaaaccddgginnstu
-       517 0* 0.01273%  has an analogy made                                                                                                          ----------aaaabccdeegginnnorstu
-       518 0* 0.01208%  has an analogy been so                                                                                                       ----------aaaaaccddeggimnnrtu
-       519 0* 0.74480%  has an analogy been so accurate                                                                                              ----------aaaddggimnn
-       520 0* 0.41534%  has an analogy been so accurate and                                                                                          ----------aadggimn
-       521 0* 0.13146%  has an analogy been so accurate and personally                                                                               aadggimn
-       522 0* 0.06268%  has an analogy been so accurate in                                                                                           ----------aaaddggmn
-       523 0* 0.01383%  has an analogy been so accurate and personally dam                                                                           aggin
+         0 0* 3.12251% again                                                                                                                         ----------aaaaaaabccddeeegghlmnnnnoorsstuy
+         1 0* 0.29122%  again                                                                                                                        ----------aaaaaaabccddeeegghlmnnnnoorsstuy
+         2 0* 0.11271% has                                                                                                                           ----------aaaaaaaabccddeeegggilmnnnnnoorstuy
+         3 0* 0.14100% has anyone                                                                                                                    ----------aaaaaaabccddeegggilmnnnorstu
+         4 0* 0.14605% has anyone made                                                                                                               ----------aaaaaabccdegggilnnnorstu
+         5 0* 0.09680% touch                                                                                                                         ----------aaaaaaaaabcddeeegggilmnnnnnorssy
+         6 0* 0.07223% touch again                                                                                                                   ----------aaaaaaabcddeeegglmnnnnorssy
+         7 0* 0.07106% has anyone said                                                                                                               ----------aaaaaabccdeeggglmnnnortu
+         8 0* 0.07052% gonna                                                                                                                         ----------aaaaaaaabccddeeegghilmnnnorsstuy
+         9 0* 0.07001% has anyone described                                                                                                          ----------aaaaaaacggglmnnnotu
+        10 0* 0.05871% use                                                                                                                           ----------aaaaaaaaabccddeeggghilmnnnnnoorsty
+        11 0* 0.40025% use analogies                                                                                                                 ----------aaaaaaabccddegghmnnnnorty
+        12 0* 0.05793% mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
+        13 0* 0.05648% has language                                                                                                                  ----------aaaaaabccddeegimnnnnoorsty
+        14 0* 0.05351% a                                                                                                                             ----------aaaaaaaabccddeeeggghilmnnnnnoorsstuy
+        15 0* 0.05295% has anyone made a                                                                                                             ----------aaaaabccdegggilnnnorstu
+        16 0* 0.05671% has anyone made a language                                                                                                    ----------aaabccdginnorst
+        17 0* 0.05147% has anyone said language                                                                                                      ----------aaaabccdegmnnort
+        18 0* 0.04760% touch a                                                                                                                       ----------aaaaaaaabcddeeegggilmnnnnnorssy
+        19 0* 0.04275% has a                                                                                                                         ----------aaaaaaabccddeeegggilmnnnnnoorstuy
+        20 0* 0.42834% has a language                                                                                                                ----------aaaaabccddeegimnnnnoorsty
+        21 0* 0.68326% has a language made                                                                                                           ----------aaaabccdeginnnnoorsty
+        22 0* 0.61022% has a language been                                                                                                           ----------aaaaaccddgimnnnoorsty
+        23 0* 0.39357% has a language been so                                                                                                        ----------aaaaaccddgimnnnorty
+        24 0* 0.06797% has a language made anyone                                                                                                    ----------aaabccdginnorst
+        25 0* 0.15723% has a language made anyone sad                                                                                                ----------aabccginnort
+        26 0* 0.04528% has a language been sad                                                                                                       ----------aaaaccdgimnnnoorty
+        27 0* 0.04743% has a language been sad and                                                                                                   ----------aaaccgimnnoorty
+        28 0* 0.04211% has anyone used                                                                                                               ----------aaaaaaabccdegggilmnnnort
+        29 0* 0.04070% again say                                                                                                                     ----------aaaaaabccddeeegghlmnnnnoorstu
+        30 0* 0.04016% has anyone made analogies                                                                                                     ----------aaaabccdggnnrtu
+        31 0* 0.03464% read                                                                                                                          ----------aaaaaaaabccdeeggghilmnnnnnoosstuy
+        32 0* 0.03221% again use                                                                                                                     ----------aaaaaaabccddeegghlmnnnnoorsty
+        33 0* 0.03140% mentioned                                                                                                                     ----------aaaaaaaaabccdeggghlnnnorssuy
+        34 0* 0.03046% heard                                                                                                                         ----------aaaaaaaabccdeegggilmnnnnnoosstuy
+        35 0* 0.03014% ending                                                                                                                        ----------aaaaaaaaabccdeegghlmnnnoorsstuy
+        36 0* 0.03005% again use the                                                                                                                 ----------aaaaaaabccddegglmnnnnoorsy
+        37 0* 0.04535% again use the analogy                                                                                                         ----------aaaaabccddegmnnnors
+        38 0* 0.02903% say                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
+        39 0* 0.02900% has a language so                                                                                                             ----------aaaaabccddeegimnnnnorty
+        40 0* 0.02879% in                                                                                                                            ----------aaaaaaaaabccddeeeggghlmnnnnoorsstuy
+        41 0* 0.02736% touch me                                                                                                                      ----------aaaaaaaaabcddeegggilnnnnnorssy
+        42 0* 1.65272% touch me again                                                                                                                ----------aaaaaaabcddeegglnnnnorssy
+        43 0* 0.02713% has a sentence                                                                                                                ----------aaaaaaabcddgggilmnnnooruy
+        44 0* 0.02616% has a language described                                                                                                      ----------aaaaacgmnnnnooty
+        45 0* 0.02614% buy                                                                                                                           ----------aaaaaaaaaccddeeeggghilmnnnnnoorsst
+        46 0* 0.05770% buy another                                                                                                                   ----------aaaaaaaaccddeegggilmnnnnoss
+        47 0* 0.02612% has a man                                                                                                                     ----------aaaaaabccddeeegggilnnnnoorstuy
+        48 0* 0.05820% has a man sounded                                                                                                             ----------aaaaaabcceegggilnnnorty
+        49 0* 0.02589% has a man been                                                                                                                ----------aaaaaaccddegggilnnnoorstuy
+        50 0* 0.02582% going                                                                                                                         ----------aaaaaaaaabccddeeeghlmnnnnorsstuy
+        51 0* 0.02522% had                                                                                                                           ----------aaaaaaaabccdeeegggilmnnnnnoorsstuy
+        52 0* 0.02414% you                                                                                                                           ----------aaaaaaaaabccddeeeggghilmnnnnnorsst
+        53 0* 0.02394% again am                                                                                                                      ----------aaaaaabccddeeegghlnnnnoorsstuy
+        54 0* 0.02381% has an                                                                                                                        ----------aaaaaaabccddeeegggilmnnnnoorstuy
+        55 0* 0.48905% has an analogy                                                                                                                ----------aaaaabccddeeeggimnnnorstu
+        56 0* 1.21250% has an analogy made                                                                                                           ----------aaaabccdeegginnnorstu
+        57 0* 0.99190% has an analogy been                                                                                                           ----------aaaaaccddeggimnnorstu
+        58 0* 2.21984% has an analogy been more                                                                                                      ----------aaaaaccddgginnstu
+        59 0* 0.51796% has an analogy been more personally                                                                                           aaaaaccddgginnstu
+        60 0* 0.31400% has an analogy been so                                                                                                        ----------aaaaaccddeggimnnrtu
+        61 0* 15.73072% has an analogy been so accurate                                                                                               ----------aaaddggimnn
+        62 0* 5.86929% has an analogy been so accurate and                                                                                           ----------aadggimn
+        63 0* 1.21347% has an analogy been so accurate in                                                                                            ----------aaaddggmn
+        64 0* 0.92989% has an analogy been so accurate and personally                                                                                aadggimn
