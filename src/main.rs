@@ -633,13 +633,15 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
             .unwrap()
     }
 
-    use llama_cpp_2::sampling::LlamaSampler;
+    use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
 
     // This is suuuuuper ad-hoc.
-    let mut sampler = LlamaSampler::chain_simple([
-        LlamaSampler::temp(0.1),
-        LlamaSampler::mirostat_v2(0, 0.1, 5.0),
-    ]);
+    let mut sampler = llama_cpp_2::sampling::LlamaSampler::new(
+        LlamaSamplerChainParams::default().with_no_perf(true),
+    )
+    .unwrap()
+    .add_penalties(100, 9999, 9998, 150, 1.05, 1.05, 1.05, true, false)
+    .add_mirostat_v2(0, 0.1, 5.0);
 
     for i in 0..max_new_toks {
         ctx.decode(&mut batch).expect("failed to eval");
