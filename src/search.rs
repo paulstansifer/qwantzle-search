@@ -753,7 +753,8 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
         let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
 
         // This is unmotivated; purely empirical. Starts at 5.0, goes towards 4.0:
-        let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 3.0;
+        //let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 3.0;
+        let len_bonus = 3.5;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
