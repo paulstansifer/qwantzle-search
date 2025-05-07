@@ -1,3 +1,18 @@
 {
-    "cSpell.enabled": false
+    "cSpell.enabled": false,
+    "rust-analyzer.runnables.extraEnv": {
+        "CC": "/usr/bin/gcc-12",
+        "CXX": "/usr/bin/gcc-12",
+        "CPATH": "/usr/lib/gcc/x86_64-linux-gnu/12/include"
+    },
+    "rust-analyzer.server.extraEnv": {
+        "CC": "/usr/bin/gcc-12",
+        "CXX": "/usr/bin/gcc-12",
+        "CPATH": "/usr/lib/gcc/x86_64-linux-gnu/12/include"
+    },
+    "rust-analyzer.check.extraEnv": {
+        "CC": "/usr/bin/gcc-12",
+        "CXX": "/usr/bin/gcc-12",
+        "CPATH": "/usr/lib/gcc/x86_64-linux-gnu/12/include"
+    }
 }
