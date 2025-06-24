@@ -1,6 +1,8 @@
 # qwantzle-search
 
-Uses an LLM to search for a solution to the Qwantzle (the punchline to [Dinosaur Comics strip 1663](https://www.qwantz.com/index.php?comic=1663)). The [solution tester](https://www.afifthofnothing.com/anacryptogram.html) has a rundown of the hints. I believe that the fact that the longest word was "fundamental" is an official hint, however, I can't find any *direct* evidence of this! Ryan North periodically deletes old tweets, so I'm hoping my memory is correct.
+The punchline to [Dinosaur Comics strip 1663](https://www.qwantz.com/index.php?comic=1663) was given in anagram form. It's now known as the "Qwantzle", and people have been trying to unscramble it since it was published in 2010. 
+
+The [solution tester](https://www.afifthofnothing.com/anacryptogram.html) has a rundown of the hints that Ryan North has provided. I believe that the fact that the longest word was "fundamental" is an official hint, however, I can't find any *direct* evidence of this! Ryan North periodically deletes old tweets, so my best guess it that I remember seeing it at the time.
 
 ## How it works
 
@@ -10,9 +12,11 @@ Thanks to the fact that pushing tokens onto the context and (with a little bit o
 
 I've successfully unscrambled some Dinosaur Comics with punchlines that have 50-60 letters in a few hours this way. (I don't have too many examples, because I wanted to use as many comics as possible in the training set for fine-tuning!) The Qwantzle has 97 letters, so it may still be out of reach.
 
+Some people have noticed that the letters that occur the same number of times in the Qwantzle punchline are not given in alphabetical order. If they are listed in order of first occurrence, it's a huge hint (much larger than most of the ones Ryan North provided explicitly, based on my experiments with other comics with shorter punchlines). The solver keeps two priority queues, one for prefixes whose first letter occurences respect that ordering and one for ones that don't. It ensures that at least a certain proportion of its time is spent examining prefixes that respect the "theory of ties".
+
 ## How to use it
 
-Install Cargo, and download an LLM in gguf format. ([I've got some suggestions](https://huggingface.co/paul-stansifer))
+Install Cargo, and download an LLM in gguf format. ([I've got some LLMs fine-tuned on the Dinosaur Comics corpus](https://huggingface.co/paul-stansifer)).
 
 Then set some environment variables. On my Ubuntu machine, it's 
 ```
