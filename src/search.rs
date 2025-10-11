@@ -259,6 +259,10 @@ pub struct SearchState<'a> {
     hints: Hints,
 
     search_time: Duration,
+    // Total probability mass that doesn't fit the formal restrictions:
+    discard_prob_letters: f64,
+    // Total probability mass that was too unlikely and got dropped:
+    discard_prob_dregs: f64,
     step: usize,
     max_search: Option<usize>,
     deepest_node_accessed: u32,
@@ -273,6 +277,10 @@ struct SearchStateSerializable {
     sess_timers: SessionTimers,
     hints: Hints,
     search_time: Duration,
+    #[serde(default)]
+    discard_prob_letters: f64,
+    #[serde(default)]
+    discard_prob_dregs: f64,
     step: usize,
     deepest_node_accessed: u32,
     report: String,
@@ -289,7 +297,7 @@ impl SearchState<'_> {
     ) -> SearchState {
         let token_size = hints.token_size as u32;
 
-        let mut q = Q::new();
+        let q = Q::new();
         let rlnn = remaining_letters_neural_net::LetterNet::new_from_file(
             "corpus/letter_pool.safetensors",
         )
@@ -308,32 +316,7 @@ impl SearchState<'_> {
         let first_candidates = sess.advance_and_predict_str(&hints.context, Some(TOK_TOP_P));
         sess.save_prompt();
 
-        if start_prefixes.is_empty() {
-            root_node.consider_candidates(first_candidates, &mut sess, &mut q, &hints.vocab, &rlnn);
-        } else {
-            for prefix in start_prefixes {
-                if prefix.trim().is_empty() || prefix.contains("#") {
-                    continue;
-                }
-                let mut pfx_node = root_node.clone();
-                let mut score = Score(1.0);
-                for tok in llm::str_to_tokens(&prefix.trim_end(), llm) {
-                    if let Some((next_node, next_score)) =
-                        pfx_node.push_token(tok, 0.12, llm, &hints.vocab, &rlnn)
-                    {
-                        pfx_node = next_node;
-                        score = next_score;
-                    } else {
-                        panic!("Invalid prefix: {}", prefix);
-                    }
-                }
-                println!("(Score {:.5}%) --> {:?} ", score.0 * 100.0, pfx_node.text);
-                q.push(pfx_node, score);
-            }
-            println!("{}", q.len());
-        }
-
-        SearchState {
+        let mut search_state = SearchState {
             q,
             llm,
             rlnn,
@@ -342,6 +325,8 @@ impl SearchState<'_> {
 
             sess: sess,
             search_time: Duration::from_nanos(0),
+            discard_prob_letters: 0.0,
+            discard_prob_dregs: 0.0,
             step: 0,
             deepest_node_accessed: 0,
             report: String::new(),
@@ -349,7 +334,38 @@ impl SearchState<'_> {
             hall_of_fame: HallOfFame::default(),
 
             progress: ProgressBar::new_spinner(),
+        };
+
+        if start_prefixes.is_empty() {
+            root_node.consider_candidates(first_candidates, &mut search_state);
+        } else {
+            for prefix in start_prefixes {
+                if prefix.trim().is_empty() || prefix.contains("#") {
+                    continue;
+                }
+                let mut pfx_node = root_node.clone();
+                let mut score = Score(1.0);
+                for tok in llm::str_to_tokens(&prefix.trim_end(), llm) {
+                    if let Some((next_node, next_score)) = pfx_node.push_token(
+                        tok,
+                        0.12,
+                        llm,
+                        &search_state.hints.vocab,
+                        &search_state.rlnn,
+                    ) {
+                        pfx_node = next_node;
+                        score = next_score;
+                    } else {
+                        panic!("Invalid prefix: {}", prefix);
+                    }
+                }
+                println!("(Score {:.5}%) --> {:?} ", score.0 * 100.0, pfx_node.text);
+                search_state.q.push(pfx_node, score);
+            }
+            println!("{}", search_state.q.len());
         }
+
+        search_state
     }
 
     pub fn save(&self, filename: &str) {
@@ -358,6 +374,8 @@ impl SearchState<'_> {
             sess_timers: self.sess.timers,
             hints: self.hints.clone(),
             search_time: self.search_time,
+            discard_prob_letters: self.discard_prob_letters,
+            discard_prob_dregs: self.discard_prob_dregs,
             step: self.step,
             deepest_node_accessed: self.deepest_node_accessed,
             report: self.report.clone(),
@@ -395,6 +413,8 @@ impl SearchState<'_> {
 
             sess: sess,
             search_time: sss.search_time,
+            discard_prob_letters: sss.discard_prob_letters,
+            discard_prob_dregs: sss.discard_prob_dregs,
             step: sss.step,
             report: sss.report,
             deepest_node_accessed: sss.deepest_node_accessed,
@@ -582,7 +602,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.5}% {:<125} {}",
+                "{:>10} {}{} {:.5}% ({:.4}%/{:.4}%)  {:<125} {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -591,6 +611,8 @@ impl SearchState<'_> {
                     "*"
                 },
                 p.0 * 100.0,
+                self.discard_prob_letters * 100.0,
+                self.discard_prob_dregs * 100.0,
                 cur_text,
                 node.remaining.print()
             );
@@ -604,7 +626,7 @@ impl SearchState<'_> {
                 node.remaining.respects_ties(),
             );
 
-            node.advance(&mut self.sess, &mut self.q, &self.hints.vocab, &self.rlnn);
+            node.advance(self);
             self.step += 1;
         } else {
             let msg = format!(
@@ -754,7 +776,7 @@ fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
 
         // This is unmotivated; purely empirical. Starts at 5.0, goes towards 4.0:
         //let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 3.0;
-        let len_bonus = 3.5;
+        let len_bonus = 4.5;
 
         prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
 
@@ -831,27 +853,28 @@ impl Node {
         Some((res, score))
     }
 
-    fn advance(&self, root_sess: &mut Session, q: &mut Q, vocab: &Vocab, rlnn: &LetterNet) {
+    fn advance(&self, search_state: &mut SearchState) {
         if self.text.len() >= (TOK_BUFFER - 1) as usize {
             return;
         }
 
-        let candidates = root_sess.advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
+        let candidates = search_state
+            .sess
+            .advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
 
-        self.consider_candidates(candidates, root_sess, q, vocab, rlnn);
+        self.consider_candidates(candidates, search_state);
 
-        root_sess.truncate_to_prompt();
+        search_state.sess.truncate_to_prompt();
     }
 
     fn consider_candidates(
         &self,
         candidates: Vec<(LlamaToken, f64)>,
-        sess: &mut Session,
-        q: &mut Q,
-        vocab: &Vocab,
-        rlnn: &LetterNet,
+        search_state: &mut SearchState,
     ) {
         let mut fast_forwarded = true; // TODO: why does fast-forwarding cause NoKvCacheSlot?
+
+        let mut remaining_prob: f64 = 1.0;
 
         for (tok, p) in candidates {
             let avg_prob = f64::powf(
@@ -860,23 +883,34 @@ impl Node {
             );
 
             if avg_prob < MIN_AVG_P && self.text.len() >= 2 {
+                search_state.discard_prob_dregs += self.probability * remaining_prob;
                 break;
             }
 
-            if let Some((next_node, score)) =
-                self.push_token(tok, p as f32, &sess.model(), vocab, rlnn)
-            {
+            remaining_prob -= p;
+
+            if let Some((next_node, score)) = self.push_token(
+                tok,
+                p as f32,
+                &search_state.sess.model(),
+                &search_state.hints.vocab,
+                &search_state.rlnn,
+            ) {
                 // Re-use the context right away, if the best candidate is good enough.
                 if p as f32 > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
                     let before_advance = std::time::Instant::now();
-                    let ff_candidates = sess.advance_and_predict(&[tok], Some(TOK_TOP_P));
+                    let ff_candidates = search_state
+                        .sess
+                        .advance_and_predict(&[tok], Some(TOK_TOP_P));
                     FF_ADVANCE_TIME
                         .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
-                    next_node.consider_candidates(ff_candidates, sess, q, vocab, rlnn);
+                    next_node.consider_candidates(ff_candidates, search_state);
                     fast_forwarded = true;
                 } else {
-                    q.push(next_node, score);
+                    search_state.q.push(next_node, score);
                 }
+            } else {
+                search_state.discard_prob_letters += self.probability * p;
             }
         }
     }
@@ -886,6 +920,8 @@ pub struct SearchResult {
     pub found: bool,
     pub steps: usize,
     pub seconds: f32,
+    pub prob_letters: f64,
+    pub prob_dregs: f64,
 }
 
 pub fn practice_search(
@@ -935,6 +971,8 @@ pub fn practice_search(
         found: search.report.contains("Search successful after"), // hack, but it works!
         steps: search.step,
         seconds: search.search_time.as_secs_f32(),
+        prob_letters: search.discard_prob_letters,
+        prob_dregs: search.discard_prob_dregs,
     };
 }
 
