@@ -16,7 +16,7 @@ pfx scr         1.132%      0.006%      0.003%      0.001%      0.000%      0.00
 tok ahd            191          86           1           0          75           0           0           0           0           0           0           1           0           0           0           0           0           0          10           1           0          75           0           0
 val ahd             22          24           1           0          11           0           0           0           0           0           0           1           0           0           0           0           0           0           0           0           0           0           0           0
 prb ahd         77.68%      95.21%      57.53%       0.00%      71.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      37.76%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      34.34%      37.24%       0.00%      93.98%       0.00%       0.00%
-optimistic cost: 2.76e4  average probability: 15.5%  average tok time: 26708 score: 3.89e-18% * 68.26% * 2.88e16 = 0.0764%
+optimistic cost: 2.76e4  average probability: 15.5%  average tok time: 30267 score: 3.89e-18% * 68.26% * 2.88e16 = 0.0764%
 Padding the suffix with a space.
 [
 T-Rex: My sinister raccoon and cephalopod neighbo] T-Rex: My sinister raccoon and cephalopod neighbours are having a sleep-over party. Okay! That's inn...r NEIGHBOURS.
@@ -34,7 +34,7 @@ pfx scr        61.534%    133.784%     22.350%      6.332%      6.725%      2.46
 tok ahd              2           2           2           2           1           0           2           0           0           0           0           1           0           1           0           0           0           1           7           0           0          42           0           1
 val ahd              1           0           0           1           0           0           0           0           0           0           0           1           0           1           0           0           0           1           0           0           0           2           0           0
 prb ahd         30.86%      31.51%      81.70%      77.18%      19.98%       0.00%      40.00%       0.00%       0.00%       0.00%       0.00%      60.76%       0.00%      60.23%       0.00%       0.00%       0.00%      13.60%      52.10%       0.00%       0.00%      83.50%       0.00%      48.99%
-optimistic cost: 9.60e1  average probability: 21.7%  average tok time: 25802 score: 1.15e-14% * 68.26% * 1.61e16 = 125.7615%
+optimistic cost: 9.60e1  average probability: 21.7%  average tok time: 28224 score: 1.15e-14% * 68.26% * 1.61e16 = 125.7615%
 Padding the suffix with a space.
 [
 T-Rex: I know one thing that puts us (living peop] T-Rex: I know one thing that puts us (living people made out of meat) above machine intelligences.
@@ -53,4 +53,383 @@ pfx scr         1.053%      3.191%      1.866%      0.570%      0.189%      0.26
 tok ahd             65           0           1           2           4           0           0           0           0           0           0           4          36         654           0           0           0           0           1           0           0           0          81           2           0           0         261           0         418           0           0
 val ahd             42           0           0           2           3           0           0           0           0           0           0           0           3          55           0           0           0           0           1           0           0           0          11           1           0           0          47           0          32           0           0
 prb ahd         91.44%       0.00%      51.29%      37.00%      67.36%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      42.86%      87.46%      95.92%       0.00%       0.00%       0.00%       0.00%      60.57%       0.00%       0.00%       0.00%      74.54%      21.71%       0.00%       0.00%      99.48%       0.00%      99.39%       0.00%       0.00%
-optimistic cost: 8.79e9  average probability: 8.2%  average tok time: 25040 score: 2.29e-32% * 68.26% * 5.10e19 = 0.0000%
+optimistic cost: 8.79e9  average probability: 8.2%  average tok time: 26841 score: 2.29e-32% * 68.26% * 5.10e19 = 0.0000%
+Padding the suffix with a space.
+[
+God: HEY T-REX HOW COME YOU ALWAYS SLEEP ON YOUR ] God: HEY T-REX HOW COME YOU ALWAYS SLEEP ON YOUR LEFT SIDE
+T-Rex: Because it rules?
+Narrator: COMICS...structed. I'll also use decades of ads to convince the public that this item is absolutely necessary to express true love.
+T-Rex (punchline): [thinks]
+                  Aren           '           t   analogies     usually         non           -     literal           ?          He           '           s     clearly         the         gem     diamond       trade           .
+prb             0.010%     99.660%     99.976%      0.002%      0.834%      0.026%     88.214%     10.704%     85.578%      0.078%     37.045%     98.657%      1.635%      1.572%      7.010%     46.050%     91.440%     19.685%
+flt bns           1.70        1.15        1.15        4.16        3.65        1.78        1.21        3.86        1.21        1.47        1.21        1.21        3.86        1.78        1.78        3.86        2.62        1.21
+chr bns           5.97        1.56        1.56       52.20       20.64        3.61        1.53       19.25        1.52        2.30        1.52        1.51       17.79        3.38        3.35       16.25        7.10        1.48
+tok scr         0.106%    178.713%    179.670%      0.419%     62.845%      0.165%    163.814%    794.462%    157.750%      0.263%     68.095%    181.174%    112.139%      9.483%     41.921%   2885.332%   1703.289%     35.221%
+pfx scr         0.106%      0.189%      0.340%      0.001%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd            571           0           0         600          24         216           0           0           0          23           0           0          10           7           1           0           0           1
+val ahd            112           0           0         287          11          79           0           0           0           1           0           0           3           3           1           0           0           0
+prb ahd         89.65%       0.00%       0.00%      97.53%      77.25%      90.91%       0.00%       0.00%       0.00%      96.16%       0.00%       0.00%      46.38%      64.51%      28.28%       0.00%       0.00%      22.10%
+optimistic cost: 2.00e9  average probability: 4.2%  average tok time: 26697 score: 1.48e-23% * 68.26% * 5.16e16 = 0.0000%
+Padding the suffix with a space.
+[
+Narrator: T-REX VISITS A GHOST TOWN.
+T-Rex: Atten] Narrator: T-REX VISITS A GHOST TOWN.
+T-Rex: Attention, any ghosts that can hear me! I have one thing...It's okay, I guess. It's mostly just a bunch of crappy buildings!
+T-Rex: Don't even, Utahraptor!
+Off panel: Don't even what?
+T-Rex (punchline): Don't
+                  even           -         don           '           t        even        tell          me         you         don           '           t  appreciate         the       stark  aesthetics         and      beauty          of       decay
+prb            93.265%      1.735%     14.179%     99.867%     99.962%     94.995%      0.776%     68.740%     44.795%     11.124%     99.935%     99.990%      2.232%     34.643%      0.083%      0.020%      4.066%      0.282%     87.579%     10.294%
+flt bns           1.70        1.15        1.55        1.16        1.17        1.92        2.03        1.45        1.78        1.78        1.21        1.21        6.87        1.78        2.62        6.87        1.78        3.18        1.47        2.62
+chr bns           5.97        1.56        3.78        1.55        1.55        5.77        5.69        2.37        3.63        3.60        1.53        1.53       66.19        3.45        7.74       55.61        3.27       10.42        2.17        6.77
+tok scr       944.285%      3.111%     82.850%    180.686%    181.278%   1052.288%      8.952%    237.205%    289.983%     71.427%    185.411%    185.344%   1015.639%    213.318%      1.681%      7.709%     23.730%      9.347%    278.888%    182.798%
+pfx scr       944.285%     29.376%     24.338%     43.975%     79.717%    838.856%     75.098%    178.137%    516.569%    368.969%    684.108%   1267.951%  12877.807%  27470.663%    461.709%     35.594%      8.446%      0.789%      2.202%      4.025%
+tok ahd              0           9           0           0           0           0          21           0           0           1           0           0           9           0         172         207           1          42           0           2
+val ahd              0           6           0           0           0           0          10           0           0           1           0           0           4           0          32          16           1           0           0           0
+prb ahd          0.00%      33.98%       0.00%       0.00%       0.00%       0.00%      53.75%       0.00%       0.00%      33.86%       0.00%       0.00%      77.83%       0.00%      70.37%      93.41%      81.71%      52.99%       0.00%      39.93%
+optimistic cost: 8.64e5  average probability: 9.9%  average tok time: 26923 score: 7.72e-19% * 68.26% * 5.21e18 = 2.7473%
+Padding the suffix with a space.
+[
+Narrator: INTERNET ARGUMENT COMICS
+Narrator: NAZI] Narrator: INTERNET ARGUMENT COMICS
+Narrator: NAZI ACCUSATIONS
+T-Rex: Can we accept that everyone on ..." IS SHORT FOR "YOU ARE A *F*RIEND I RESPECT; *A*S SUCH I *G*REATLY LOOK FORWARD TO COMMUNICATING WITH YOU IN AN HONEST WAY IN THE FUTURE"
+T-Rex: Man,
+                  here           I     thought          it       stood         for           "      Fellow     Against         Gal          ac         top         hag        ists          "!           
+           T           -         Rex           (       punch        line          ):         She         esh
+prb             0.095%      9.139%     45.508%     16.129%     16.923%     99.410%     73.573%      0.749%      0.792%      0.154%      2.679%      1.981%      0.647%     10.418%      9.332%     87.379%     29.324%     99.999%     99.997%     51.153%     99.938%     99.961%     99.990%      0.040%     97.621%
+flt bns           1.70        1.15        2.89        1.39        2.44        1.78        1.21        3.18        3.86        1.78        1.47        1.78        1.78        2.16        1.47        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        1.78        1.78
+chr bns           5.97        1.56       21.94        2.40        8.77        3.64        1.54       12.86       18.88        3.47        2.28        3.42        3.39        5.03        2.23        1.00        1.49        1.49        3.28        1.48        7.07        4.69        2.15        3.13        3.10
+tok scr         0.965%     16.388%   2889.642%     53.943%    362.051%    642.883%    136.997%     30.620%     57.671%      0.957%      8.991%     12.094%      3.917%    113.304%     30.593%     87.379%     53.013%    180.597%    585.418%     92.003%   1851.896%   1013.652%    316.366%      0.223%    539.585%
+pfx scr         0.965%      0.158%      4.569%      2.464%      8.923%     57.362%     78.584%     24.063%     13.877%      0.133%      0.012%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.002%      0.017%      0.052%      0.000%      0.001%
+tok ahd             86           2           0           1           1           0           0          23          17          74           5           4          18           0           3           0           1           0           0           0           0           0           0         235           0
+val ahd             46           1           0           0           1           0           0           3           7          26           2           3          11           0           1           0           0           0           0           0           0           0           0           2           0
+prb ahd         86.31%      71.15%       0.00%      23.87%      58.77%       0.00%       0.00%      40.90%      49.38%      80.86%      51.65%      92.13%      76.04%       0.00%      76.49%       0.00%      62.74%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      85.63%       0.00%
+optimistic cost: 1.40e8  average probability: 10.1%  average tok time: 26928 score: 1.23e-23% * 68.26% * 5.10e19 = 0.0004%
+Padding the suffix with a space.
+[
+Narrator: LITERARY TECHNIQUE COMICS today's techn] Narrator: LITERARY TECHNIQUE COMICS today's technique DELETED AFFAIR
+T-Rex: A deleted affair is when...-Rex: Shakespeare, we need more sequels! You've got to come back with me!
+Off panel: back where
+T-Rex: Back... TO THE FUTURE!
+T-Rex (punchline): You'd
+                   get        that   reference          if         you        came        back        with          me          to         the      future           , Shakespeare          !!
+prb             2.725%      0.342%     12.574%     66.542%     92.199%      2.470%     74.463%     77.110%     93.673%      2.386%     79.936%     93.171%     20.568%     44.365%     26.038%
+flt bns           1.48        1.76        4.28        1.43        1.76        2.16        2.16        2.16        1.47        1.47        1.78        3.18        1.21        8.34        1.47
+chr bns           3.82        5.91       51.80        2.38        3.65        5.55        5.47        5.39        2.31        2.30        3.46       11.69        1.50       81.75        2.20
+tok scr        15.417%      3.548%   2787.000%    227.154%    593.483%     29.644%    880.663%    898.638%    317.997%      8.071%    493.635%   3461.853%     37.443%  30231.437%     84.144%
+pfx scr        15.417%      0.547%     15.243%     34.625%    205.493%     60.916%    536.465%   4820.882%  15330.247%   1237.295%   6107.722% 211440.314%  79170.309%23934322.341%20139310.910%
+tok ahd              7          26           1           0           0           8           0           0           0           5           0           0           1           0           2
+val ahd              3          17           1           0           0           2           0           0           0           3           0           0           0           0           1
+prb ahd         70.45%      82.78%      42.84%       0.00%       0.00%      74.00%       0.00%       0.00%       0.00%      88.70%       0.00%       0.00%      30.26%       0.00%      61.30%
+optimistic cost: 3.46e3  average probability: 20.3%  average tok time: 27341 score: 4.03e-9% * 68.26% * 5.00e15 = 13747118.9587%
+Padding the suffix with a space.
+[
+Narrator: EVERYTHING YOU NEED TO KNOW ABOUT KITCH] Narrator: EVERYTHING YOU NEED TO KNOW ABOUT KITCHENS
+T-Rex: Kitchens! There's a lot to know about ki...nd the sink.
+T-Rex: ARGH
+Narrator: LATER:
+T-Rex: Man! This is THE WORST Friday morning I've ever had! In three weeks. Involving kitchens.
+T-Rex: ...Is
+                  what           I           '           d         say          if          it       weren           '           t         for      Friday         two       weeks         ago           
+           T           -         Rex           (       punch        line          ):           *        sigh           *
+prb            25.176%     76.081%     23.144%     65.036%     57.267%     76.934%     11.738%     39.771%     99.990%     99.998%     28.716%      0.285%      0.144%     60.092%     85.372%      0.672%     82.265%     99.999%     99.996%     86.003%     99.936%     99.965%     99.985%      1.151%     41.424%     99.402%
+flt bns           1.70        1.15        1.15        1.16        1.58        1.38        1.39        2.44        1.21        1.21        1.78        3.18        1.78        2.62        1.78        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        1.21        2.16        1.21
+chr bns           5.97        1.56        1.56        1.56        3.76        2.41        2.40        8.77        1.54        1.54        3.62       12.79        3.53        8.04        3.45        1.00        1.51        1.51        3.40        1.50        7.51        4.93        2.21        1.48        4.79        1.48
+tok scr       254.904%    136.431%     41.593%    117.137%    339.182%    254.812%     39.257%    850.867%    185.999%    186.536%    185.391%     11.598%      0.910%   1266.967%    525.695%      0.672%    150.493%    182.760%    606.874%    156.567%   1968.797%   1065.558%    324.446%      2.069%    429.011%    177.853%
+pfx scr       254.904%    347.769%    144.649%    169.437%    574.700%   1464.405%    574.885%   4891.509%   9098.158%  16971.304%  31463.274%   3649.029%     33.194%    420.554%   2210.831%     14.857%     22.359%     40.863%    247.988%    388.267%   7644.195%  81453.348% 264272.428%   5468.787%  23461.679%  41727.397%
+tok ahd              0           0           1           0           0           0           2           0           0           0           0          21          45           0           0          10           0           0           0           0           0           0           0          17           0           0
+val ahd              0           0           1           0           0           0           1           0           0           0           0          11          10           0           0           1           0           0           0           0           0           0           0           0           0           0
+prb ahd          0.00%       0.00%      43.40%       0.00%       0.00%       0.00%      51.05%       0.00%       0.00%       0.00%       0.00%      84.07%      84.01%       0.00%       0.00%      94.19%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      57.04%       0.00%       0.00%
+optimistic cost: 1.06e3  average probability: 28.7%  average tok time: 27149 score: 8.09e-13% * 68.26% * 5.16e16 = 28483.1751%
+Padding the suffix with a space.
+[
+T-Rex: The buds of a young sunflower turn towards] T-Rex: The buds of a young sunflower turn towards the sun, following its course throughout the day. ...errific! So the only thing to argue for consciousness is that it lets us practice intentional self harm? YAY FOR SELF AWARENESS??
+T-Rex (punchline): I
+                 slept          in          on     purpose     because           I         was      afraid          of      facing         the         day           ,   therefore           I          am
+prb             0.004%     19.142%      0.867%      5.442%      3.215%     75.699%      9.610%      0.396%     70.046%      0.179%     35.687%     14.274%     11.071%      1.061%     48.126%     62.708%
+flt bns           1.95        1.33        1.35        3.17        3.72        1.21        1.78        3.18        1.47        3.18        1.78        1.78        1.21        5.67        1.21        1.47
+chr bns           9.31        2.43        2.42       21.42       20.51        1.53        3.59       12.58        2.31       12.03        3.42        3.39        1.50       36.71        1.48        2.20
+tok scr         0.075%     61.959%      2.833%    369.290%    245.131%    140.828%     61.541%     15.848%    237.788%      6.842%    217.854%     86.376%     20.135%    220.836%     86.648%    202.647%
+pfx scr         0.075%      0.046%      0.001%      0.005%      0.012%      0.017%      0.010%      0.002%      0.004%      0.000%      0.001%      0.001%      0.000%      0.000%      0.000%      0.000%
+tok ahd            560           0          20           5           8           0           1          32           0          61           0           0           3          10           0           0
+val ahd            208           0          12           2           4           0           1           6           0           9           0           0           0           1           0           0
+prb ahd         97.23%       0.00%      79.91%      65.80%      61.02%       0.00%      14.43%      77.26%       0.00%      78.36%       0.00%       0.00%      47.12%      57.07%       0.00%       0.00%
+optimistic cost: 1.14e7  average probability: 4.8%  average tok time: 27244 score: 7.83e-20% * 68.26% * 5.00e15 = 0.0003%
+Padding the suffix with a space.
+[
+T-Rex: When Mary and Denise Apple fall in love wi] T-Rex: When Mary and Denise Apple fall in love with handsome twin brothers from the hated Orange fam...e may well be the last Earthling left alive. Now, she's taking down the aliens, alone, piece by piece. That's... The Last Straw.
+T-Rex (punchline): Oh
+                   WOW          do           I        wish           I         had         the       drive         and       focus          to        make          my       ideas      become     reality           !
+prb             0.059%      0.172%     67.794%      6.690%     46.712%     25.704%      3.040%      0.004%     20.807%      5.741%     74.065%     14.553%      2.314%      3.068%      1.528%     16.925%     11.160%
+flt bns           1.48        1.32        1.15        1.82        1.17        1.64        1.69        2.57        1.78        2.62        1.47        2.16        1.47        2.62        3.18        3.86        1.21
+chr bns           3.82        2.44        1.56        5.85        1.55        3.72        3.69        8.65        3.61        8.35        2.32        5.33        2.30        7.85       11.48       16.48        1.49
+tok scr         0.336%      0.552%    121.835%     71.367%     84.910%    156.638%     18.951%      0.093%    133.968%    125.627%    252.842%    167.715%      7.810%     63.170%     55.791%   1075.623%     20.114%
+pfx scr         0.336%      0.002%      0.002%      0.002%      0.001%      0.002%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd             54          29           0           4           0           0           6         660           1           1           0           1           7           3           7           2           2
+val ahd             26          20           0           4           0           0           3         249           1           0           0           0           1           0           3           1           0
+prb ahd         96.77%      92.95%       0.00%      47.98%       0.00%       0.00%      58.10%      95.19%      65.19%      13.31%       0.00%      19.37%      77.06%      68.68%      85.51%      57.08%      55.41%
+optimistic cost: 9.07e7  average probability: 4.0%  average tok time: 27398 score: 1.87e-22% * 68.26% * 8.59e14 = 0.0000%
+Padding the suffix with a space.
+[
+T-Rex: One day little Timmy got one wish from a g] T-Rex: One day little Timmy got one wish from a genie. But we don't care about him anymore because h... that's way better
+Narrator: LATER, T-REX GETS SERVED WITH SEVERAL COPYRIGHT AND TRADEMARK INFRINGEMENT LAWSUITS:
+T-Rex: Man!!
+T-Rex (punchline): It's
+                  only     because           I         had        some     illegal    thoughts           ,         and        then           ,           I       wrote        down         the     illegal    thoughts
+prb             0.631%      2.724%     38.259%      1.512%      1.617%      0.049%      3.561%     10.932%      2.132%     13.792%      1.076%     17.354%      9.008%      4.252%      9.312%     42.950%     96.783%
+flt bns           1.70        2.83        1.18        1.66        2.06        3.84        4.67        1.21        1.78        2.16        1.21        1.21        2.62        2.16        1.78        3.86        4.67
+chr bns           5.97       22.07        1.55        3.71        5.67       20.13       29.27        1.52        3.48        5.21        1.51        1.51        7.63        4.99        3.30       15.68       21.81
+tok scr         6.388%    170.219%     69.712%      9.280%     18.849%      3.760%    487.271%     20.133%     13.244%    155.363%      1.966%     31.686%    180.113%     45.879%     54.851%   2596.136%   9866.637%
+pfx scr         6.388%     10.873%      7.580%      0.703%      0.133%      0.005%      0.024%      0.005%      0.001%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.007%
+tok ahd             20           4           0          10           7         148           2           3           8           1          13           0           1           2           3           0           0
+val ahd             14           3           0           7           5          25           1           0           5           1           6           0           0           0           0           0           0
+prb ahd         68.40%      45.65%       0.00%      58.18%      67.26%      81.84%      22.83%      56.25%      58.52%      24.06%      68.82%       0.00%      10.65%      76.44%      69.24%       0.00%       0.00%
+optimistic cost: 1.26e7  average probability: 4.7%  average tok time: 27459 score: 2.48e-21% * 68.26% * 2.94e18 = 0.0050%
+Padding the suffix with a space.
+[
+T-Rex: Maybe the best way to understand a compute] T-Rex: Maybe the best way to understand a computer is to describe them as a person! Yes: MY COMPUTER...ds spy on you.
+Utahraptor: Huh.
+T-Rex: Also, when she gets sick she trashes your shit and only wants to show you porn.
+T-Rex: I -
+T-Rex (punchline): I
+                 spend       hours        each         day        just     staring        into         her        face         and       being   endlessly entertained           ,         and           I         can           '           t     imagine        life     without         her
+prb             0.015%      0.837%      2.570%     81.127%      6.379%      3.315%      4.125%     43.943%      8.578%     19.007%      0.994%      0.009%      0.751%      4.501%      7.241%     31.309%      6.457%     61.054%     99.897%     10.728%      6.811%     84.588%     92.164%
+flt bns           1.95        2.10        1.92        1.69        2.12        3.86        2.16        1.78        2.16        1.78        2.62        5.67        8.34        1.21        1.78        1.21        1.78        1.21        1.21        3.86        2.16        3.86        1.78
+chr bns           9.31        9.12        5.77        3.69        5.63       19.88        5.41        3.51        5.27        3.44        7.70       37.04       73.85        1.47        3.15        1.46        3.11        1.46        1.45       13.37        4.29       12.22        2.87
+tok scr         0.276%     16.042%     28.470%    505.713%     75.969%    254.042%     48.251%    275.242%     97.737%    116.702%     20.063%      1.962%    462.303%      8.019%     40.686%     55.541%     35.808%    107.830%    176.236%    552.826%     63.178%   3984.604%    471.758%
+pfx scr         0.276%      0.044%      0.013%      0.064%      0.048%      0.123%      0.059%      0.163%      0.160%      0.186%      0.037%      0.001%      0.003%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.006%      0.027%
+tok ahd            274          14           7           0           2           2           1           0           2           1          21         340          13           3           2           0           2           0           0           1           3           0           0
+val ahd            142          10           5           0           1           1           1           0           2           1          13         138           2           0           0           0           1           0           0           0           0           0           0
+prb ahd         95.53%      82.61%      52.11%       0.00%      34.54%      42.64%      88.99%       0.00%      24.96%      22.78%      63.67%      95.89%      78.00%      76.41%      19.59%       0.00%      29.61%       0.00%       0.00%      14.10%      50.12%       0.00%       0.00%
+optimistic cost: 5.29e9  average probability: 5.7%  average tok time: 27380 score: 2.64e-27% * 68.26% * 1.04e25 = 0.0187%
+Padding the suffix with a space.
+[
+Narrator: LET'S FIX ALL THE PROBLEMS
+T-Rex: The w] Narrator: LET'S FIX ALL THE PROBLEMS
+T-Rex: The world is hella sweet, but it's full of problems too!...or: I know, I know! I'll get my problems under control. Today. HONEST.
+Narrator: LATER, THE OCEANS BOIL AS THE EARTH TURNS TO FIRE:
+T-Rex: UTAHRAPTOR,
+                   you        said         you           '           d         get        this       under     control          !!           
+         Off       panel           (       punch        line          ):           I        KNOW           ,           I           '           M       SORRY           I           '           M       SORRY
+prb             1.355%      2.579%     82.998%     57.666%     98.381%     30.452%      1.018%     68.553%     99.362%     15.311%     90.941%     32.434%     99.932%      9.643%     97.024%     99.899%     99.968%     21.166%      9.603%     28.452%     55.895%      3.860%     71.197%     30.086%      1.481%     28.451%     86.235%      6.672%
+flt bns           1.48        1.76        1.58        1.17        1.18        1.66        2.06        2.61        3.86        1.47        1.00        1.78        2.62        1.21        2.62        2.16        1.47        1.21        2.16        1.21        1.21        1.21        1.21        2.62        1.21        1.21        1.21        2.62
+chr bns           3.82        5.91        3.76        1.55        1.55        3.71        5.67        8.58       19.50        2.32        1.00        3.50        7.93        1.51        7.70        5.03        2.23        1.49        4.89        1.48        1.48        1.48        1.48        6.96        1.47        1.47        1.47        6.66
+tok scr         7.666%     26.791%    491.581%    104.822%    179.260%    186.960%     11.860%   1535.754%   7470.355%     52.171%     90.941%    202.581%   2077.168%     17.642%   1959.157%   1086.461%    327.704%     38.265%    101.535%     51.173%    100.428%      6.927%    127.656%    548.775%      2.639%     50.636%    153.308%    116.555%
+pfx scr         7.666%      2.054%     10.096%     10.582%     18.970%     35.466%      4.206%     64.598%   4825.701%   2517.607%   2289.547%   4638.181%  96342.828%  16996.454% 332987.247%3617778.092%11855591.818%4536551.113%4606203.887%2357128.625%2367209.174% 163986.852% 209338.404%1148796.579%  30320.231%  15352.840%  23537.168%  27433.839%
+tok ahd             12           9           0           0           0           0           8           0           0           2           0           1           0           1           0           0           0           0           2           1           0           1           0           0           4           0           0           2
+val ahd              2           5           0           0           0           0           4           0           0           1           0           0           0           1           0           0           0           0           1           0           0           0           0           0           0           0           0           1
+prb ahd         70.32%      42.98%       0.00%       0.00%       0.00%       0.00%      90.76%       0.00%       0.00%      39.38%       0.00%      46.10%       0.00%      90.13%       0.00%       0.00%       0.00%       0.00%      27.22%      35.09%       0.00%      90.31%       0.00%       0.00%      88.32%       0.00%       0.00%      50.70%
+optimistic cost: 1.44e3  average probability: 24.7%  average tok time: 27239 score: 9.49e-16% * 68.26% * 2.89e19 = 18726.3739%
+Padding the suffix with a space.
+[
+T-Rex: Babies! Everyone is always having them all] T-Rex: Babies! Everyone is always having them all the time. This is not an exaggeration.
+God: T-REX
+...ry baby used to justify expensive purchases" scenarios do both require me to be loaded enough to pay for 'em.
+Off panel: Yeah.
+T-Rex (punchline): Dude
+                     I         don           '           t       wanna       sound       weird          or    anything         but         MAN          it        must          be          so         fun          to          be        rich   sometimes           !
+prb             3.696%      3.763%     99.613%     99.924%      1.788%      4.556%      3.135%      4.817%     83.365%     81.878%      0.074%      1.969%      1.471%     76.566%      2.220%      0.441%     58.259%     63.506%     20.129%      4.673%      2.716%
+flt bns           1.14        1.49        1.15        1.15        2.14        2.32        2.53        1.47        4.67        1.78        1.78        1.47        2.16        1.47        1.47        1.78        1.47        1.47        2.16        5.67        1.21
+chr bns           1.57        3.81        1.56        1.56        9.08        8.88        8.69        2.36       29.92        3.52        3.49        2.29        5.19        2.26        2.26        3.36        2.23        2.22        4.89       33.46        1.47
+tok scr         6.572%     21.424%    178.629%    179.578%     34.669%     93.807%     68.897%     16.717%  11660.100%    514.289%      0.462%      6.633%     16.509%    254.998%      7.365%      2.643%    191.363%    207.758%    212.821%    886.366%      4.838%
+pfx scr         6.572%      1.408%      2.515%      4.516%      1.566%      1.469%      1.012%      0.169%     19.725%    101.443%      0.469%      0.031%      0.005%      0.013%      0.001%      0.000%      0.000%      0.000%      0.000%      0.002%      0.000%
+tok ahd              4           2           0           0           7           3           4           2           0           0          97           7           6           0           4          13           0           0           1           4           4
+val ahd              1           2           0           0           3           2           2           1           0           0          18           0           3           0           1           2           0           0           0           1           0
+prb ahd         77.57%      40.43%       0.00%       0.00%      83.29%      37.27%      49.07%      85.90%       0.00%       0.00%      91.46%      67.71%      85.87%       0.00%      79.84%      92.24%       0.00%       0.00%      28.97%      81.26%      85.98%
+optimistic cost: 3.94e5  average probability: 7.4%  average tok time: 27251 score: 1.77e-22% * 68.26% * 5.23e17 = 0.0001%
+Padding the suffix with a space.
+[
+T-Rex: Today I answer the question that has stymi] T-Rex: Today I answer the question that has stymied generations of our greatest minds. What is the m... around with a performance-enhancing LIFESTYLE.
+Utahraptor: I'm not sneaking! How can I be inconspicuous with THESE massive pipes??
+Off panel: ...come
+                    on        dude           ,    everyone        with         big         arm     muscles       knows        that           "       pipes           "          is       slang         for         big         arm     muscles           !           
+           T           -         Rex           (       punch        line          ):           O    HHHHHHHH           H
+prb            35.423%      2.169%     39.975%      0.371%      0.224%      4.745%      0.063%     86.359%     17.618%      8.430%      0.733%     26.101%     98.758%     60.888%     25.923%     95.221%      3.268%     68.186%     98.880%      4.927%     83.643%     86.749%     99.999%     99.996%     26.300%     99.832%     99.958%     99.986%      0.208%     16.095%     18.153%
+flt bns           1.29        1.74        1.16        3.59        2.06        1.78        1.78        3.86        2.62        2.16        1.21        2.62        1.21        1.47        2.62        1.78        1.78        1.78        3.86        1.21        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        1.21        4.67        1.21
+chr bns           2.45        5.93        1.56       33.52        5.67        3.64        3.61       19.38        8.08        5.23        1.51        7.70        1.50        2.24        7.40        3.28        3.25        3.22       14.78        1.46        1.00        1.46        1.46        3.09        1.45        6.37        4.31        2.06        1.43       17.05        1.42
+tok scr       112.248%     22.332%     72.000%     44.697%      2.610%     30.685%      0.405%   6451.150%    373.208%     95.332%      1.341%    527.041%    179.611%    200.799%    503.086%    557.456%     18.956%    391.798%   5633.915%      8.741%     83.643%    153.718%    177.004%    550.879%     46.346%   1667.957%    931.489%    303.094%      0.361%   1283.232%     31.207%
+pfx scr       112.248%     25.067%     18.049%      8.067%      0.211%      0.065%      0.000%      0.017%      0.063%      0.060%      0.001%      0.004%      0.008%      0.015%      0.077%      0.429%      0.081%      0.319%     17.966%      1.570%      1.314%      2.019%      3.574%     19.688%      9.125%    152.193%   1417.665%   4296.854%     15.515%    199.097%     62.133%
+tok ahd              0           6           0          28          24           2          22           0           1           2          16           0           0           0           0           0           2           0           0           3           0           0           0           0           1           0           0           0          72           1           1
+val ahd              0           5           0          22          18           2          19           0           1           1           3           0           0           0           0           0           0           0           0           1           0           0           0           0           1           0           0           0           2           1           0
+prb ahd          0.00%      87.01%       0.00%      84.03%      94.81%      25.81%      95.88%       0.00%      20.02%      36.80%      73.80%       0.00%       0.00%       0.00%       0.00%       0.00%      41.53%       0.00%       0.00%      85.43%       0.00%       0.00%       0.00%       0.00%      71.68%       0.00%       0.00%       0.00%      75.10%      16.92%      32.28%
+optimistic cost: 6.04e7  average probability: 15.1%  average tok time: 26937 score: 3.48e-24% * 68.26% * 1.78e25 = 42.4119%
+Padding the suffix with a space.
+[
+God: T-REX WHAT WOULD YOU DO IF YOU DIDN'T NEED M] God: T-REX WHAT WOULD YOU DO IF YOU DIDN'T NEED MONEY
+T-Rex: Wait. I need money?
+T-Rex: WAIT.
+T-Rex:...arrator: LATER:
+God: T-REX I MEANT MY QUESTION IN THE HEY WHAT WOULD YOUR DREAM ACTIVITY BE SENSE
+T-Rex: Oh! Hah! MY MISTAKE.
+T-Rex (punchline): Okay!
+                  Well           ,           I       think          my      answer         HAS          to          be         ...           "         wow           ,    whatever         the    opposite          is          of        what           I         did        this     morning           "          ??
+prb             3.693%     60.395%     28.051%      1.586%     21.740%      9.193%      0.015%     43.983%     96.626%      5.059%      7.185%      0.011%     26.477%      0.221%      5.589%     25.786%      1.021%     87.879%      4.885%     29.521%      1.316%      1.364%     58.221%      8.731%     32.404%
+flt bns           1.70        1.15        1.15        2.14        1.39        2.89        1.78        1.47        1.47        1.78        1.21        1.78        1.21        4.67        1.78        4.67        1.47        1.47        2.16        1.21        1.78        2.16        3.86        1.21        1.47
+chr bns           5.97        1.56        1.56        9.08        2.40       13.57        3.64        2.36        2.35        3.57        1.53        3.53        1.52       27.56        3.41       25.30        2.22        2.21        4.83        1.48        3.21        4.67       14.23        1.45        2.11
+tok scr        37.389%    108.302%     50.411%     30.758%     72.352%    360.116%      0.098%    152.361%    333.513%     32.218%     13.294%      0.067%     48.807%     28.476%     34.020%   3049.670%      3.334%    285.749%     51.014%     52.931%      7.537%     13.768%   3193.692%     15.403%    100.515%
+pfx scr        37.389%     40.493%     20.413%      6.279%      4.543%     16.359%      0.016%      0.024%      0.082%      0.026%      0.003%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd              5           0           0           5           1           1          78           0           0           1           0        1238           1          65           3           1           1           0           4           0           6          13           0           3           1
+val ahd              2           0           0           1           1           1          37           0           0           1           0         257           0          29           2           0           1           0           2           0           1           2           0           0           0
+prb ahd         45.73%       0.00%       0.00%      72.71%      38.82%      72.83%      98.70%       0.00%       0.00%      28.50%       0.00%      74.93%      32.57%      72.99%      39.56%      26.58%      98.51%       0.00%      36.91%       0.00%      86.45%      82.23%       0.00%      47.03%      52.31%
+optimistic cost: 1.52e9  average probability: 5.9%  average tok time: 26821 score: 1.58e-29% * 68.26% * 2.79e20 = 0.0000%
+Padding the suffix with a space.
+[
+T-Rex: Who watches the watchers?
+T-Rex: BETTER QU] T-Rex: Who watches the watchers?
+T-Rex: BETTER QUESTION: who polices the police?
+T-Rex: Who militari...orers? Who cremates the cremators? WHO BONES THE BONERS?
+Utahraptor: I DO. On occasion.
+Utahraptor: FOR SELECTED BONERS ONLY.
+[no text]
+Off panel: For
+                   who       among          us         has         not         bon          ed           a         few         bon         ers           ?           
+           T           -         Rex           (       punch        line          ):        Fair      enough
+prb             0.345%      0.009%     90.101%     25.557%     88.031%      2.775%     88.698%     28.722%      0.117%     52.672%     99.111%     58.685%     83.075%     59.428%     99.991%     99.980%     13.988%     99.916%     99.955%     99.983%      0.005%     44.663%
+flt bns           1.48        2.04        1.36        1.62        1.67        1.73        1.47        1.21        1.78        1.78        1.78        1.21        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        2.16        3.18
+chr bns           3.82        9.20        2.41        3.73        3.70        3.67        2.37        1.54        3.61        3.58        3.55        1.52        1.00        1.52        1.52        3.49        1.51        7.85        5.11        2.25        4.99       10.81
+tok scr         1.949%      0.177%    295.626%    154.610%    544.556%     17.573%    307.777%     53.530%      0.752%    336.380%    627.748%    108.379%     83.075%    109.649%    184.318%    622.710%     25.689%   2057.028%   1104.358%    330.383%      0.049%   1535.427%
+pfx scr         1.949%      0.003%      0.010%      0.016%      0.086%      0.015%      0.046%      0.025%      0.000%      0.001%      0.004%      0.004%      0.004%      0.004%      0.007%      0.045%      0.011%      0.236%      2.612%      8.628%      0.004%      0.065%
+tok ahd             29         399           0           0           0           5           0           0          10           0           0           0           0           0           0           0           1           0           0           0         944           0
+val ahd             19         259           0           0           0           3           0           0           5           0           0           0           0           0           0           0           1           0           0           0          17           0
+prb ahd         67.39%      91.71%       0.00%       0.00%       0.00%      23.49%       0.00%       0.00%      92.73%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      82.46%       0.00%       0.00%       0.00%      93.82%       0.00%
+optimistic cost: 4.49e6  average probability: 14.2%  average tok time: 26620 score: 2.35e-17% * 68.26% * 2.78e15 = 0.0446%
+Padding the suffix with a space.
+[
+T-Rex: Hey God! Quick question!
+God: HIT ME UP MY] T-Rex: Hey God! Quick question!
+God: HIT ME UP MY DUDE
+T-Rex: How come I can't shoot lasers out of m...our eyes, no?
+Utahraptor: Huh.
+God: T-REX I'M SHOOTING LASERS OUT OF MY EYES RIGHT NOW AND I GOTTA SAY YOU ARE 100% CORRECT ON IT BEING AWESOME
+God: I
+                   CAN           '           T     BELIEVE           I           W         AST          ED       LITER        ALLY       INFIN         ITY       YEARS      BEFORE         TRY         ING        THIS           
+           T           -         Rex           (       punch        line          ):          aw         man           i           K         NEW          it
+prb             5.687%     24.997%     98.686%      7.082%     39.007%      0.150%     92.768%     99.686%      0.192%     98.130%      4.596%     13.850%     52.722%      0.720%      6.012%     99.618%     35.588%     68.996%     26.403%    100.000%     99.927%     12.129%     99.864%     99.933%     99.987%      0.036%     36.205%      5.835%      0.111%     99.823%     36.679%
+flt bns           1.48        1.15        1.15        2.89        1.18        1.18        1.69        1.44        2.61        2.16        2.62        1.78        2.62        3.18        1.78        1.78        2.16        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        1.47        1.78        1.21        1.21        1.78        1.47
+chr bns           3.82        1.56        1.56       21.94        1.55        1.55        3.69        2.38        8.58        5.49        8.23        3.50        7.93       11.62        3.36        3.33        4.91        1.00        1.48        1.48        3.24        1.48        6.92        4.61        2.13        2.12        3.07        1.45        1.45        3.02        2.08
+tok scr        32.178%     44.730%    176.968%    449.667%     71.247%      0.275%    578.280%    342.124%      4.305%   1164.823%     99.196%     86.503%   1095.866%     26.614%     36.056%    592.140%    377.809%     68.996%     47.537%    179.859%    577.799%     21.724%   1811.882%    996.076%    313.612%      0.114%    198.124%     10.260%      0.194%    537.045%    111.971%
+pfx scr        32.178%     14.393%     25.471%    114.536%     81.604%      0.224%      1.296%      4.434%      0.191%      2.224%      2.206%      1.908%     20.911%      5.565%      2.007%     11.882%     44.892%     30.974%     14.724%     26.482%    153.015%     33.241%    602.295%   5999.310%  18814.576%     21.372%     42.342%      4.344%      0.008%      0.045%      0.051%
+tok ahd              3           0           0           3           0          25           0           0          23           0           5           1           0          15           3           0           0           0           1           0           0           1           0           0           0         250           0           3          81           0           0
+val ahd              1           0           0           2           0          10           0           0          14           0           2           1           0          10           1           0           0           0           0           0           0           1           0           0           0           6           0           0           0           0           0
+prb ahd         34.85%       0.00%       0.00%      45.79%       0.00%      94.01%       0.00%       0.00%      94.52%       0.00%      58.74%      81.67%       0.00%      79.67%      23.85%       0.00%       0.00%       0.00%      69.02%       0.00%       0.00%      86.05%       0.00%       0.00%       0.00%      86.52%       0.00%      65.56%      91.88%       0.00%       0.00%
+optimistic cost: 1.83e6  average probability: 15.1%  average tok time: 26536 score: 3.58e-24% * 68.26% * 1.42e22 = 0.0347%
+Padding the suffix with a space.
+[
+T-Rex: Okay, so remember how in the past everyone] T-Rex: Okay, so remember how in the past everyone thought we'd get flying cars?
+T-Rex: And then late... dreams became so small and petty?
+Utahraptor: Your point?
+T-Rex: My point? MY POINT? My POINT, Utahraptor, is -
+T-Rex: ...
+T-Rex (punchline): ...Wait
+                     I        just    realized      planes         can        taxi          on     runways          so technically        they           '          re     already      flying        cars           ,       never        mind           ,          we           '          re        good        here
+prb             3.813%      3.474%     33.462%      0.000%      2.595%      0.037%     19.882%      0.510%      3.003%      1.518%     10.935%     25.522%     89.189%     16.473%     66.638%     93.521%      4.451%     10.761%     51.009%      1.978%      4.321%     36.850%     77.056%      5.168%      6.081%
+flt bns           1.14        1.72        3.41        2.89        1.78        2.16        1.47        3.86        1.47        8.34        2.16        1.21        1.47        3.86        3.18        2.16        1.21        2.62        2.16        1.21        1.47        1.21        1.47        2.16        2.16
+chr bns           1.57        5.95       33.99       13.57        3.64        5.53        2.34       19.00        2.30       91.14        5.01        1.49        2.22       15.79       10.22        4.61        1.46        6.55        4.41        1.45        2.08        1.44        2.07        4.21        4.13
+tok scr         6.780%     35.467%   3880.846%      0.006%     16.781%      0.445%     68.376%     37.362%     10.157%   1153.175%    118.451%     46.185%    291.192%   1002.979%   2165.539%    932.164%      7.887%    184.916%    486.376%      3.466%     13.220%     64.347%    234.134%     47.045%     54.303%
+pfx scr         6.780%      2.405%     93.324%      0.005%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.004%      0.000%      0.001%      0.003%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd              3           7           0        1601           5          83           0           6           8          13           1           0           0           1           0           0           4           1           0           4           5           0           0           2           2
+val ahd              2           6           0         977           5          47           0           6           4          10           1           0           0           1           0           0           0           0           0           0           0           0           0           0           0
+prb ahd         74.01%      70.16%       0.00%      99.58%      71.46%      95.68%       0.00%      92.91%      55.64%      67.40%      50.95%       0.00%       0.00%      28.88%       0.00%       0.00%      75.89%      11.19%       0.00%      87.92%      38.58%       0.00%       0.00%      34.42%      76.39%
+optimistic cost: 9.11e9  average probability: 5.3%  average tok time: 26465 score: 1.38e-30% * 68.26% * 3.50e24 = 0.0000%
+Padding the suffix with a space.
+[
+Narrator: T-REX HAS EATEN TOO MUCH ICE CREAM.
+T-R] Narrator: T-REX HAS EATEN TOO MUCH ICE CREAM.
+T-Rex: Dang, I really gotta stop this. I've got a prob...
+T-Rex: THAT SAID, I will absolutely overdose on ice cream to see if it helps.
+Off panel: No, you're right, it's not gonna help.
+T-Rex (punchline): No
+                    no           ,         let           '           s         not          be         too       hasty           ,        they          do        home    delivery         and           I           '          ve     already     ordered                       5           0      things          of         ice       cream          on          my       phone
+prb             1.678%     42.752%      0.746%     43.292%     99.976%      3.279%      7.590%      3.719%     65.707%      8.172%      0.017%      2.025%      0.001%     16.821%      1.502%     36.166%     21.630%     32.261%     12.150%      7.628%      8.147%      9.597%     32.915%      0.021%     12.958%     79.710%     98.810%      0.348%     15.547%     66.864%
+flt bns           1.29        1.14        1.52        1.16        1.16        1.59        1.39        1.67        2.53        1.21        2.16        1.47        2.16        4.67        1.78        1.21        1.21        1.47        3.86        3.86        1.00        1.21        1.21        3.18        1.47        1.78        2.62        1.47        1.47        2.62
+chr bns           2.45        1.56        3.80        1.56        1.56        3.75        2.40        3.70        8.69        1.54        5.53        2.34        5.41       27.98        3.43        1.51        1.50        2.26       16.72       15.91        1.00        1.48        1.48       10.16        2.15        3.12        6.52        2.10        2.09        6.19
+tok scr         5.317%     76.339%      4.300%     77.973%    180.473%     19.556%     25.261%     23.009%   1443.847%     15.230%      0.199%      6.965%      0.014%   2200.470%      9.194%     66.033%     39.455%    107.024%    783.095%    467.787%      8.147%     17.208%     58.954%      0.693%     40.910%    443.506%   1688.495%      1.075%     47.789%   1085.499%
+pfx scr         5.317%      4.059%      0.175%      0.136%      0.246%      0.048%      0.012%      0.003%      0.040%      0.006%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd              7           0          16           1           0           6           0           3           0           5         181          10        1434           0          14           0           0           1           2           1           1           3           0         181           0           0           0          19           1           0
+val ahd              4           0          11           1           0           4           0           3           0           1          98           8         606           0           7           0           0           1           1           1           1           0           0          42           0           0           0           0           0           0
+prb ahd         66.07%       0.00%      80.30%      53.01%       0.00%      76.40%       0.00%      43.12%       0.00%      69.23%      94.60%      61.07%      97.73%       0.00%      82.94%       0.00%       0.00%      47.12%      44.52%      40.46%       9.68%      66.93%       0.00%      92.29%       0.00%       0.00%       0.00%      91.21%      39.25%       0.00%
+optimistic cost: 1.43e13  average probability: 5.7%  average tok time: 26425 score: 5.54e-36% * 68.26% * 4.30e22 = 0.0000%
+Padding the suffix with a space.
+[
+Narrator: MEANWHILE, IN THE UNIVERSE WHERE EVERYO] Narrator: MEANWHILE, IN THE UNIVERSE WHERE EVERYONE IS IMMORTAL:
+T-Rex: Ah yes, another day here in ... anyone worries, Utahraptor's not referring to degenerate neurological diseases, which don't exist here. Phew, am I right?
+T-Rex: I am right.
+T-Rex: I
+                  have         had           a    thousand   lifetimes          to      become       right           .           
+    Narrator           (       punch        line          ):         THE         END
+prb             1.287%      0.370%     15.066%      0.125%      6.890%     23.751%      2.812%     20.472%     50.306%     92.218%     17.692%     16.546%     99.932%     99.888%     99.964%     39.047%     95.407%
+flt bns           1.70        1.53        1.16        3.69        5.47        1.47        3.18        2.62        1.21        1.00        4.67        1.21        2.62        2.16        1.47        1.78        1.78
+chr bns           5.97        3.79        1.56       33.29       48.24        2.34       12.58        8.04        1.51        1.00       26.52        1.50        7.48        4.91        2.20        3.24        3.21
+tok scr        13.035%      2.150%     27.197%     15.357%   1816.824%     81.829%    112.486%    431.634%     92.294%     92.218%   2193.446%     30.091%   1958.931%   1060.425%    323.713%    225.781%    546.482%
+pfx scr        13.035%      0.280%      0.076%      0.012%      0.213%      0.174%      0.196%      0.845%      0.780%      0.719%     15.776%      4.747%     92.996%    986.150%   3192.296%   7207.588%  39388.187%
+tok ahd              4          38           0          91           1           0           7           0           0           0           1           1           0           0           0           0           0
+val ahd              1          21           0          56           0           0           3           0           0           0           1           1           0           0           0           0           0
+prb ahd         76.00%      69.94%       0.00%      76.18%      57.70%       0.00%      41.95%       0.00%       0.00%       0.00%      72.41%      83.22%       0.00%       0.00%       0.00%       0.00%       0.00%
+optimistic cost: 4.01e4  average probability: 14.3%  average tok time: 26480 score: 4.27e-13% * 68.26% * 9.22e16 = 26886.4326%
+Padding the suffix with a space.
+[
+T-Rex: Earth's water isn't constantly being creat] T-Rex: Earth's water isn't constantly being created or destroyed. Rather, it's mostly just moving ar...t's - that's beautiful, man!
+Off panel: It also means they'll technically be drinking our pee.
+T-Rex: That's... somewhat less beautiful.
+Off panel: My
+                   poo          ps         are        also      pretty      watery         now        that           I       think       about          it           .           
+           T           -         Rex           (       punch        line          ):      PLEASE          DO         NOT
+prb             0.053%      8.940%      9.189%     12.666%      0.893%      0.085%      0.038%     10.659%     66.414%     83.232%     76.108%     98.832%     59.391%     89.678%     90.233%     99.999%     99.999%     47.277%     99.929%     99.970%     99.987%      0.014%      3.903%     94.275%
+flt bns           1.48        1.32        1.55        1.87        2.83        3.14        1.78        2.16        1.21        2.62        2.62        1.47        1.21        1.00        1.21        1.21        1.78        1.21        2.62        2.16        1.47        3.18        1.47        1.78
+chr bns           3.82        2.44        3.78        5.81       13.64       13.22        3.59        5.43        1.52        8.08        7.89        2.27        1.50        1.00        1.50        1.50        3.36        1.50        7.36        4.85        2.19       10.22        2.15        3.13
+tok scr         0.299%     28.686%     53.693%    137.641%     34.441%      3.523%      0.244%    125.137%    122.653%   1763.112%   1574.430%    329.795%    108.333%     89.678%    164.430%    182.048%    599.766%     85.726%   1929.521%   1048.325%    321.777%      0.453%     12.349%    526.269%
+pfx scr         0.299%      0.086%      0.046%      0.063%      0.022%      0.001%      0.000%      0.000%      0.000%      0.000%      0.001%      0.003%      0.003%      0.003%      0.004%      0.008%      0.046%      0.039%      0.760%      7.967%     25.635%      0.116%      0.014%      0.075%
+tok ahd            101           1           2           0          15          92          28           2           0           0           0           0           0           0           0           0           0           1           0           0           0         427           3           0
+val ahd             36           1           2           0           6          18          11           1           0           0           0           0           0           0           0           0           0           1           0           0           0          18           1           0
+prb ahd         88.59%      36.60%      56.52%       0.00%      60.01%      83.99%      98.87%      62.25%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      51.49%       0.00%       0.00%       0.00%      91.32%      57.63%       0.00%
+optimistic cost: 5.39e7  average probability: 12.0%  average tok time: 26463 score: 8.17e-21% * 68.26% * 9.24e18 = 0.0515%
+Padding the suffix with a space.
+[
+T-Rex: All right everyone, it's time to learn som] T-Rex: All right everyone, it's time to learn some facts about VEGETABLES!
+T-Rex: Fact one: if you o...g I'm a HERO for ENCOURAGING media literacy by spreading misinformation REQUIRING a critical eye to understand it, but -
+Off panel (punchline): T-Rex,
+              everyone     stopped      eating  vegetables         and         now          we         all        have        cons         tip        ated        scur          vy
+prb             0.162%      0.092%      7.424%     91.772%      2.767%     28.868%     36.820%      9.560%     42.666%      0.001%     98.573%     77.472%      0.011%     91.606%
+flt bns           3.02        3.10        3.01        6.87        1.78        1.78        1.47        1.78        2.16        2.16        1.78        2.16        2.16        1.47
+chr bns          35.16       21.55       13.43       70.61        3.52        3.49        2.29        3.44        5.13        5.05        3.33        4.91        4.83        2.18
+tok scr        17.208%      6.170%    300.216%  44545.296%     17.381%    179.801%    124.054%     58.700%    473.241%      0.013%    585.927%    822.452%      0.111%    294.190%
+pfx scr        17.208%      1.062%      3.187%   1419.871%    246.789%    443.729%    550.464%    323.125%   1529.159%      0.203%      1.188%      9.768%      0.011%      0.032%
+tok ahd             42          69           3           0           9           0           0           1           0        2937           0           0         562           0
+val ahd             32          45           2           0           3           0           0           0           0         322           0           0           7           0
+prb ahd         90.40%      91.44%      77.92%       0.00%      51.95%       0.00%       0.00%      74.14%       0.00%      95.89%       0.00%       0.00%      87.10%       0.00%
+optimistic cost: 4.71e7  average probability: 3.8%  average tok time: 26549 score: 1.10e-18% * 68.26% * 2.88e16 = 0.0217%
+Padding the suffix with a space.
+[
+T-Rex: Sam and Samuel: A Scifi Epic. Ahem.
+T-Rex:] T-Rex: Sam and Samuel: A Scifi Epic. Ahem.
+T-Rex: One day Sam met Samuel - a man who was in all resp... and time", Sam said. "And also affection, as we are currently making out some more". Samuel nodded.
+T-Rex: ATTENTION, LISTENERS!
+T-Rex (punchline): I
+                  know           I        sold        this          as           a          sc         ifi        epic         but          it           '           s       gonna         get         MAD           E         ROT          IC      before         the      robots        show          up          !!
+prb             0.648%     10.644%      0.041%     51.186%     33.655%     53.934%     31.116%     99.587%     62.853%     61.841%     28.158%     53.507%     99.904%      0.195%      6.780%      0.006%      0.069%     85.637%     88.448%      1.393%      9.615%      0.003%     46.752%     99.563%     16.326%
+flt bns           1.70        1.15        1.80        1.89        1.40        1.19        1.43        1.76        2.16        1.78        1.47        1.21        1.21        2.62        1.78        1.78        1.21        1.78        1.47        3.18        1.78        3.18        2.16        1.47        1.47
+chr bns           5.97        1.56        5.87        5.79        2.39        1.55        2.38        3.65        5.55        3.58        2.33        1.52        1.52        8.08        3.46        3.43        1.51        3.39        2.25       11.08        3.28       10.48        4.69        2.15        2.14
+tok scr         6.559%     19.088%      0.431%    561.553%    113.123%     99.260%    106.223%    641.043%    754.227%    394.934%     96.482%     98.908%    184.502%      4.126%     41.869%      0.036%      0.126%    518.210%    292.266%     49.055%     56.292%      0.094%    474.084%    315.015%     51.432%
+pfx scr         6.559%      1.252%      0.005%      0.030%      0.034%      0.034%      0.036%      0.232%      1.748%      6.903%      6.660%      6.588%     12.155%      0.501%      0.210%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd             21           2         147           0           0           0           0           0           0           0           0           0           0          32           3         475         161           0           0          14           3         339           0           0           1
+val ahd              5           1          58           0           0           0           0           0           0           0           0           0           0           7           1          54           9           0           0           1           1           9           0           0           0
+prb ahd         64.16%      43.77%      91.99%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      90.07%      73.65%      96.01%      78.95%       0.00%       0.00%      73.29%      73.53%      97.81%       0.00%       0.00%      46.37%
+optimistic cost: 2.49e8  average probability: 6.8%  average tok time: 26520 score: 5.56e-28% * 68.26% * 5.21e18 = 0.0000%
+Padding the suffix with a space.
+[
+Image description: The image is animated and some] Image description: The image is animated and some of God's lines change after some time; the transcr...ust an A+ bird all around, and a personal favourite with ol' Utahraptor.
+God: OKAY MINE'S KORI BUSTARD TOO
+T-Rex: You can't steal his choice!!
+God: NO
+                     I        JUST        WENT        BACK          IN        TIME         AND        MADE          IT          SO        THIS         WAS      ALWAYS          MY      CHOICE           
+         God           (       punch        line          ):         GOD      ALWAYS        WINS        BABY
+prb            20.828%     11.592%      0.200%      0.129%     17.596%     89.258%     54.705%      4.736%     32.555%     77.108%      0.487%      8.820%     10.494%     25.773%     16.736%     70.809%     59.239%     30.110%     99.909%     99.920%     99.985%      0.171%      0.683%     70.604%      0.170%
+flt bns           1.14        1.72        1.80        1.89        1.40        2.06        1.78        2.16        1.47        1.47        2.16        1.78        3.18        1.47        3.18        1.00        1.78        1.21        2.62        2.16        1.47        1.78        3.18        2.16        2.16
+chr bns           1.57        5.95        5.87        5.79        2.39        5.67        3.64        5.53        2.34        2.33        5.37        3.49       11.89        2.26       11.35        1.00        3.32        1.49        7.22        4.77        2.17        3.17        9.77        4.47        4.39
+tok scr        37.038%    118.351%      2.115%      1.417%     59.144%   1040.256%    353.779%     56.631%    111.958%    264.205%      5.658%     54.935%    396.741%     85.837%    603.829%     70.809%    351.059%     54.378%   1890.178%   1030.519%    319.071%      0.969%     21.200%    682.365%      1.611%
+pfx scr        37.038%     43.834%      0.927%      0.013%      0.008%      0.081%      0.286%      0.162%      0.181%      0.479%      0.027%      0.015%      0.059%      0.051%      0.306%      0.217%      0.761%      0.414%      7.823%     80.621%    257.237%      2.494%      0.529%      3.608%      0.058%
+tok ahd              0           3          61          20           1           0           0           2           0           0          20           4           2           1           1           0           0           1           0           0           0          82          19           0          26
+val ahd              0           2          39          11           1           0           0           2           0           0          12           1           1           0           0           0           0           1           0           0           0          23           4           0           0
+prb ahd          0.00%      62.86%      83.18%      97.21%      46.97%       0.00%       0.00%      34.04%       0.00%       0.00%      87.50%      49.57%      63.44%      48.85%      20.82%       0.00%       0.00%      68.55%       0.00%       0.00%       0.00%      77.81%      58.80%       0.00%      89.82%
+optimistic cost: 1.08e8  average probability: 10.3%  average tok time: 26530 score: 2.19e-23% * 68.26% * 2.65e21 = 0.0397%
