@@ -134,7 +134,7 @@ impl<'a> Session<'a> {
             total_weight += *logit;
         }
 
-        // Scale so it sums to zero:
+        // Scale so it sums to one:
         for (_, ref mut logit) in &mut candidates {
             *logit /= total_weight;
         }
