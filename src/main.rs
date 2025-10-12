@@ -99,6 +99,9 @@ struct Args {
     /// Don't care about whether the theory of ties is respected
     #[arg(long, action = clap::ArgAction::SetTrue)]
     ignore_ties: bool,
+
+    #[command(flatten)]
+    score_params: crate::search::ScoreArgs,
 }
 
 #[derive(Default)]
@@ -578,7 +581,8 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     prob_aheads.sort_by(|a, b| a.partial_cmp(b).unwrap()); // higher is harder
 
     println!(
-        "Calibration: {}",
+        "Calibration (n={}): {}",
+        prob_aheads.len(),
         percentile_table_2_digits_percentage!(
             &prob_aheads,
             (50, 75, 80, 90, 95, 98, 99, 99.5),
@@ -762,6 +766,8 @@ fn main() {
             search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
         };
         //println!("{}", &hints.context.chars());  //TODOTODOTODO
+
+        manual_search(&model, hints.clone(), "");
 
         print!("> ");
         std::io::stdout().flush().unwrap();

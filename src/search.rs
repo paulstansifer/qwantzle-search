@@ -752,6 +752,31 @@ fn compromise_score(probs: &Vec<f32>) -> Score {
     Score(f64::powf(prod, 1.0 / (f64::powf(probs.len() as f64, 0.5))))
 }
 
+#[derive(clap::Parser, Debug)]
+pub struct ScoreArgs {
+    /// Exponent to apply to the probability from the RLNN
+    #[arg(long, default_value("1.0"))]
+    pub rlnn_strength: f32,
+
+    /// By default, we apply an approximate adjustment that gives credit to longer strings
+    /// for the fact that they've survived this far without being invalidated
+    /// by the anagram constraint; this turns that off.
+    ///
+    /// There's presumably no need to adjust the strength of this, because it
+    /// follows the same curve as the bonus_exponent.
+    #[arg(long, action = clap::ArgAction::SetTrue)]
+    pub no_filter_strenth: bool,
+
+    /// An exponential bonus for length (value at the beginning of the sequence)
+    /// (For backwards-compatibility, this is measured per 4 characters, even though )
+    #[arg(long, default_value("4.5"))]
+    pub bonus_exponent_initial: f32,
+
+    /// An exponential bonus for length (value at character 100 (the "end"))
+    #[arg(long, default_value("4.5"))]
+    pub bonus_exponent_final: f32,
+}
+
 fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
