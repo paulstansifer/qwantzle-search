@@ -702,7 +702,7 @@ const FF_MIN_P: f32 = 0.25;
 
 // 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
 // In practice, it seems like we need to be more careful than that.
-const TOK_TOP_P: f32 = 0.9995;
+const TOK_TOP_P: f32 = 0.9996;
 
 // Token 0: (50%) 1.82%  (25%) 0.45%  (10%) 0.24%  (5%) 0.24% (1%) 0.10%
 // Token 1: (50%) 5.31%  (25%) 1.58%  (10%) 1.07%  (5%) 1.07% (1%) 0.35%
@@ -718,8 +718,9 @@ const TOK_TOP_P: f32 = 0.9995;
 // Average at the end tends to be 5%, but it bounces around some, especially at the beginning.
 // Perhaps we want some sort of grace period instead of setting this so low?
 // TODO: raising this too high seems to mean that we take *longer* to get to the point we realize
-// that we've discarded the critical token. Why is that?
-const MIN_AVG_P: f64 = 0.01;
+// that we've discarded the critical token that we took to solve it originally. Why is that?
+const MIN_AVG_P_EARLY: f64 = 0.002;
+const MIN_AVG_P_LATE: f64 = 0.03;
 
 // TODO: remove most of these
 thread_local! {
@@ -925,21 +926,11 @@ impl Node {
                 1.0 / (self.text.len() as f64 + 1.0),
             );
 
-            if avg_prob < MIN_AVG_P && self.text.len() >= 2 {
-                search_state.discard_prob_dregs += self.probability * remaining_prob;
-
-                if let Some(critial_tok) = critial_tok {
-                    // During practice, just give up if a critical token was dropped!
-                    let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
-                    toks.push(LlamaToken(critial_tok));
-
-                    search_state.progress.abandon_with_message(format!(
-                        "Critical token DISCARDED! '{}'",
-                        toks_to_str(&toks, &search_state.sess.model())
-                    ));
-                    search_state.max_search = Some(search_state.step);
-                }
-
+            // For the first layer, TOK_TOP_P is the only protection against accepting all the
+            // tokens.
+            if ((2..=4).contains(&self.text.len()) && avg_prob < MIN_AVG_P_EARLY)
+                || (self.text.len() > 5 && avg_prob < MIN_AVG_P_LATE)
+            {
                 break;
             }
 
@@ -980,6 +971,20 @@ impl Node {
                 }
                 search_state.discard_prob_letters += self.probability * p;
             }
+        }
+
+        search_state.discard_prob_dregs += self.probability * remaining_prob;
+
+        if let Some(critial_tok) = critial_tok {
+            // During practice, just give up if a critical token was dropped!
+            let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
+            toks.push(LlamaToken(critial_tok));
+
+            search_state.progress.abandon_with_message(format!(
+                "Critical token DISCARDED! '{}'",
+                toks_to_str(&toks, &search_state.sess.model())
+            ));
+            search_state.max_search = Some(search_state.step);
         }
     }
 }
