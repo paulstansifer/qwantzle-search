@@ -131,6 +131,7 @@ impl Q {
 pub struct Hints {
     pub context: String,
     pub goal: Option<String>,
+    pub goal_toks: Option<Vec<i32>>,
     pub id: usize,
     pub letter_pool: LetterPool,
     pub vocab: Vocab,
@@ -187,6 +188,12 @@ impl Hints {
             context: strip.context(),
             id: strip.id,
             goal: Some(strip.punchline.clone()),
+            goal_toks: Some(
+                str_to_tokens(&strip.punchline, llm)
+                    .into_iter()
+                    .map(|t| t.0)
+                    .collect(),
+            ),
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(longest_word_len as u8),
@@ -229,6 +236,7 @@ impl Hints {
             context: context,
             id: 1663,
             goal: None, //  Find this!!
+            goal_toks: None,
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(8),
@@ -602,7 +610,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.5}% ({:.4}%/{:.4}%)  {:<125} {}",
+                "{:>10} {}{} {:.5}% ({:.3}% {:.3}% {:.3}%)  {:<125} {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -613,6 +621,7 @@ impl SearchState<'_> {
                 p.0 * 100.0,
                 self.discard_prob_letters * 100.0,
                 self.discard_prob_dregs * 100.0,
+                (1.0 - self.discard_prob_letters - self.discard_prob_dregs) * 100.0,
                 cur_text,
                 node.remaining.print()
             );
@@ -708,6 +717,8 @@ const TOK_TOP_P: f32 = 0.9995;
 
 // Average at the end tends to be 5%, but it bounces around some, especially at the beginning.
 // Perhaps we want some sort of grace period instead of setting this so low?
+// TODO: raising this too high seems to mean that we take *longer* to get to the point we realize
+// that we've discarded the critical token. Why is that?
 const MIN_AVG_P: f64 = 0.01;
 
 // TODO: remove most of these
@@ -901,6 +912,13 @@ impl Node {
 
         let mut remaining_prob: f64 = 1.0;
 
+        let mut critial_tok = None;
+        if let Some(goal_toks) = &search_state.hints.goal_toks {
+            if goal_toks.starts_with(&self.text) {
+                critial_tok = Some(goal_toks[self.text.len()]);
+            }
+        }
+
         for (tok, p) in candidates {
             let avg_prob = f64::powf(
                 p as f64 * self.probability,
@@ -909,7 +927,24 @@ impl Node {
 
             if avg_prob < MIN_AVG_P && self.text.len() >= 2 {
                 search_state.discard_prob_dregs += self.probability * remaining_prob;
+
+                if let Some(critial_tok) = critial_tok {
+                    // During practice, just give up if a critical token was dropped!
+                    let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
+                    toks.push(LlamaToken(critial_tok));
+
+                    search_state.progress.abandon_with_message(format!(
+                        "Critical token DISCARDED! '{}'",
+                        toks_to_str(&toks, &search_state.sess.model())
+                    ));
+                    search_state.max_search = Some(search_state.step);
+                }
+
                 break;
+            }
+
+            if Some(tok.0) == critial_tok {
+                critial_tok = None;
             }
 
             remaining_prob -= p;
@@ -935,6 +970,14 @@ impl Node {
                     search_state.q.push(next_node, score);
                 }
             } else {
+                if critial_tok == Some(tok.0) {
+                    let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
+                    toks.push(tok);
+                    panic!(
+                        "The critical token is somehow not valid! '{}'",
+                        toks_to_str(&toks, &search_state.sess.model())
+                    )
+                }
                 search_state.discard_prob_letters += self.probability * p;
             }
         }

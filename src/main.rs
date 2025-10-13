@@ -469,7 +469,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             break;
         }
         let result_msg = format!(
-            "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) ({:.3}%/{:.3}%) {:.0}s \n",
+            "{: >4} {} ==> ({: >6}/{:.1}%): [{}] {:} ({:.1}) ({:.3}% {:.3}% {:.3}%) {:.0}s \n",
             strip.id,
             strip.punchline.len(),
             cost,
@@ -479,6 +479,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
             search_res.steps as f64 / cost,
             search_res.prob_letters * 100.0,
             search_res.prob_dregs * 100.0,
+            (1.0 - search_res.prob_letters - search_res.prob_dregs) * 100.0,
             search_res.seconds
         );
         print!("{}", result_msg);
@@ -810,6 +811,7 @@ fn main() {
             context: prefix.clone(),
             id: 0,
             goal: None,
+            goal_toks: None,
             letter_pool: LetterPool::just_letters_from_text(
                 "abcdefghijklmnopqrstuvwxyz,,,,...!!??::;;''''\"\"\"\"&**//----",
             ),
