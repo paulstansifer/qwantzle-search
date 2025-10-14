@@ -21,7 +21,7 @@
 
 ARG CUDA_VERSION=12.3.1
 ARG UBUNTU_VERSION=22.04
-FROM nvcr.io/nvidia/cuda:${CUDA_VERSION}-devel-ubuntu${UBUNTU_VERSION} as base-cuda
+FROM nvcr.io/nvidia/cuda:${CUDA_VERSION}-devel-ubuntu${UBUNTU_VERSION} AS base-cuda
 
 RUN DEBIAN_FRONTEND=noninteractive apt update -y && apt install -y curl llvm-dev libclang-dev clang pkg-config libssl-dev
 RUN curl https://sh.rustup.rs -sSf | bash -s -- -y
@@ -29,7 +29,7 @@ ENV PATH=/root/.cargo/bin:$PATH
 
 # Possibly redundant
 RUN apt-get update && apt-get install -y python3 python3-pip
-RUN apt-get install -y git zile nano netcat
+RUN apt-get install -y git cmake gcc-12 g++-12 zile nano netcat
 
 # Install requirements for the llama.cpp converter (possibly redundant)
 RUN pip3 install "numpy~=1.26.4"
@@ -46,17 +46,20 @@ WORKDIR /app
 
 RUN git clone https://github.com/paulstansifer/qwantzle-search.git
 WORKDIR /app/qwantzle-search
-RUN cargo build --release --features "cuda"
+ENV CC=/usr/bin/gcc-12
+ENV CXX=/usr/bin/gcc-12
+ENV CPATH=/usr/lib/gcc/x86_64-linux-gnu/12/include
+ENV LIBRARY_PATH=/usr/lib/x86_64-linux-gnu/
+RUN RUSTFLAGS="-L native=$LIBRARY_PATH" cargo build --release
 
 WORKDIR /app
 RUN git clone https://github.com/ggerganov/llama.cpp
 
 
 # Copy the shell script into the container
-COPY start_build.sh .
 COPY evaluate_models.sh .
 
-RUN chmod +x start_build.sh evaluate_models.sh
+RUN chmod +x evaluate_models.sh
 
 ENV TYPE=f16
 # shell variables:
@@ -66,5 +69,5 @@ ENV TYPE=f16
 # * $HF_TOKEN
 
 # Set the entrypoint to the shell script
-ENTRYPOINT ["./start_build.sh"]
+#ENTRYPOINT ["./start_build.sh"]
 
