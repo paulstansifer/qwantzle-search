@@ -160,7 +160,7 @@ fn predict_strip(
     strip: &Strip,
     alt_punch: Option<&str>,
     model: &LlamaModel,
-    stats: &mut Stats,
+    stats: &mut Stats, // This accumulates between runs, confusingly!  Maybe remove!
 ) -> (f64, f64) {
     let rlnn =
         remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
@@ -186,23 +186,24 @@ fn predict_strip(
     let mut sess = llm::Session::new(model, toks_needed);
     let mut candidates = sess.advance_and_predict_str(&context, Some(0.99995));
 
-    let (punch_toks, space) =
+    let (punch_toks, _space) =
         llm::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
 
-    if space {
-        writeln!(stats.details, "Padding the suffix with a space.").unwrap();
-    } else {
-        writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
-    };
+    // if space {
+    //     writeln!(stats.details, "Padding the suffix with a space.").unwrap();
+    // } else {
+    //     writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
+    // };
+    writeln!(stats.details).unwrap();
 
     // Use the original punchline for the letter pool!
     let mut letter_pool = pool::LetterPool::from_text(&strip.punchline, /*ties*/ false);
 
     write!(
         stats.details,
-        "[{}] {}...{}\n",
-        context.chars().take(50).collect::<String>(),
-        strip.leadup.chars().take(100).collect::<String>(),
+        "{}:  {}...{}\n",
+        strip.id,
+        strip.leadup.chars().take(100).collect::<String>().trim(),
         strip
             .leadup
             .chars()
@@ -213,22 +214,17 @@ fn predict_strip(
 
     stats.strip_avg_probs.push(vec![]);
     let mut tok_s = "          ".to_string();
-    let mut filter_s = "flt bns   ".to_string();
-    let mut chars_s = "chr bns   ".to_string();
-    let mut tok_score_s = "tok scr   ".to_string();
-    let mut overall_score_s = "pfx scr   ".to_string(); // TODO: still needs the RLNN! Just invoke `prob_score`!
+    let mut rlnn_s = "rln scr   ".to_string();
+    let mut overall_score_s = "pfx scr   ".to_string();
     let mut ahead_s = "tok ahd   ".to_string();
     let mut ahead_pv_s = "val ahd   ".to_string();
     let mut prob_ahead_s = "prb ahd   ".to_string();
     let mut prob_s = "prb       ".to_string();
-
-    let mut chars_i = 0.0;
-    let mut overall_bonus: f64 = 1.0;
+    let mut probs = vec![];
 
     let mut optimistic_cost = 1.0;
     let mut overall_probability: f64 = 1.0;
-
-    let mut overall_score: f64 = 1.0;
+    let mut min_score: f64 = f64::INFINITY;
 
     let mut punchline: String = String::new();
     for tok in &punch_toks {
@@ -255,49 +251,52 @@ fn predict_strip(
 
         write!(tok_s, "{:>12}", tok_as_string).unwrap();
 
-        let mut filter_bonus = 1.0;
-        let mut char_bonus = 1.0;
+        // let mut filter_bonus = 1.0;
+        // let mut char_bonus = 1.0;
 
-        for _ in 0..tok_as_string.trim().bytes().len() {
-            filter_bonus *=
-                (1.0 / (0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75))).powf(0.25);
-            char_bonus *= (f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0 + 1.0).powf(0.25);
+        // for _ in 0..tok_as_string.trim().bytes().len() {
+        //     filter_bonus *=
+        //         (1.0 / (0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75))).powf(0.25);
+        //     char_bonus *= (f32::max(0.0, ((100.0 - chars_i) / 100.0) * 2.0) + 3.0 + 1.0).powf(0.25);
 
-            chars_i += 1.0;
-        }
+        //     chars_i += 1.0;
+        // }
 
-        write!(filter_s, "{:>12.2}", filter_bonus).unwrap();
-        write!(chars_s, "{:>12.2}", char_bonus).unwrap();
-        overall_bonus *= (filter_bonus * char_bonus) as f64;
+        punchline.push(' ');
+        punchline.push_str(&llm::tok_to_str(*tok, model));
+        letter_pool.remove(*tok, &model);
+
+        let rlnn_mult = rlnn.evaluate(&letter_pool);
+
+        write!(rlnn_s, "{:>11.3}%", rlnn_mult * 100.0).unwrap();
 
         if let Some((_, prob)) = found_cand {
-            let tok_score = prob * filter_bonus as f64 * char_bonus as f64;
-            overall_score *= tok_score;
-
             write!(ahead_s, "{:>12}", ahead).unwrap();
             write!(ahead_pv_s, "{:>12}", ahead_and_pool_valid).unwrap();
             write!(prob_ahead_s, "{:>11.2}%", prob_ahead * 100.0).unwrap();
             write!(prob_s, "{:>11.3}%", prob * 100.0).unwrap();
-            write!(tok_score_s, "{:>11.3}%", tok_score * 100.0).unwrap();
-            write!(overall_score_s, "{:>11.3}%", overall_score * 100.0).unwrap();
             stats.aheads.push(ahead);
             stats.probs.push(*prob as f32);
+            probs.push(*prob as f32);
             stats.prob_aheads.push(prob_ahead as f32);
             overall_probability *= *prob as f64;
         } else {
-            overall_score = 0.0;
-
             write!(ahead_s, " ---------- ").unwrap();
             write!(ahead_pv_s, " ---------- ").unwrap();
             write!(prob_ahead_s, " ---------- ").unwrap();
             write!(prob_s, " ---------- ").unwrap();
-            write!(tok_score_s, " ---------- ").unwrap();
-            write!(overall_score_s, " ---------- ").unwrap();
             stats.aheads.push(10000);
             stats.probs.push(0.0001);
+            probs.push(0.0001);
             stats.prob_aheads.push(0.9999);
             overall_probability *= 0.0001 as f64;
         }
+
+        let chars_so_far = punchline.replace(" ", "").len() as u8;
+
+        let score = crate::search::prob_score(&probs, chars_so_far, rlnn_mult);
+        write!(overall_score_s, "{:>11.3}%", score.0 * 100.0).unwrap();
+        min_score = f64::min(min_score, score.0);
 
         let toks_so_far = stats.strip_avg_probs.last().unwrap().len() + 1;
         stats
@@ -311,30 +310,16 @@ fn predict_strip(
         optimistic_cost *= ahead_and_pool_valid as f64 + 1.0;
 
         candidates = sess.advance_and_predict(&[*tok], Some(0.99995));
-
-        punchline.push(' ');
-        punchline.push_str(&llm::tok_to_str(*tok, model));
-        letter_pool.remove(*tok, &model);
     }
     let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
 
     write!(
         stats.details,
-        "{tok_s}\n{prob_s}\n{filter_s}\n{chars_s}\n{tok_score_s}\n{overall_score_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\noptimistic cost: {:.2e}  average probability: {:.1}%  average tok time: {:.0} ",
-        optimistic_cost,  average_probability * 100.0,
+        "{tok_s}\n{prob_s}\n{rlnn_s}\n{overall_score_s}\n{ahead_s}\n{ahead_pv_s}\n{prob_ahead_s}\nmin score: {:.4}%  optimistic cost: {:.2e}  average prob: {:.1}%  overall_prob: {:.2e}%  average tok time: {:.0} ",
+        min_score * 100.0,
+        optimistic_cost,  average_probability * 100.0, overall_probability * 100.0,
         stats.tok_times.iter().sum::<u128>() as f64 /
              (stats.tok_times.len()) as f64
-    )
-    .unwrap();
-
-    let rlnn_score = rlnn.evaluate(&letter_pool) as f64;
-    let overall_score = overall_probability * rlnn_score * overall_bonus;
-    write!(
-        stats.details,
-        "score: {:.2e}% * {:.2}% * {overall_bonus:.2e} = {:.4}%\n",
-        overall_probability * 100.0,
-        rlnn_score * 100.0,
-        overall_score * 100.0
     )
     .unwrap();
 
@@ -365,8 +350,8 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     // From way back in the first round of testing: they were in the training set then, but are
     // hold-outs in 3550!
     let round_1_exemplars = vec![
-        1938, 876, 1218, 1575, 1737, 698, 1132, 1333, 1319, 392, 982, 1830, 1234, 1825, 1766, 1085,
-        1567, 1374, 177, 2169, 1056, 1006, 2406, 2157, 1216, 1562, 1510, 787, 2363, 287,
+        1938, 876, 1218, 1575, 1737, 1132, 1333, 1319, 392, 982, 1830, 1234, 1825, 1766, 1085,
+        1567, 1374, 177, 2169, 1056, 698, 1006, 2406, 2157, 1216, 1562, 1510, 787, 2363, 287,
     ]
     .into_iter()
     .map(get_strip)
@@ -484,16 +469,16 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         );
         print!("{}", result_msg);
         std::io::Write::write(&mut append_to_report, result_msg.as_bytes()).unwrap();
-    }
 
-    std::fs::write(
-        format!(
-            "reports/tok_scores/{}.cost-cal.txt",
-            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
-        ),
-        stats.details,
-    )
-    .unwrap();
+        std::fs::write(
+            format!(
+                "reports/tok_scores/{}.cost-cal.txt",
+                (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+            ),
+            &stats.details,
+        )
+        .unwrap();
+    }
 }
 
 fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
