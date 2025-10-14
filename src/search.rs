@@ -18,7 +18,7 @@ use crate::{
 
 // Pretent to really be `Cmp`.
 #[derive(PartialOrd, PartialEq, Clone, Copy, Serialize, Deserialize, Debug)]
-struct Score(f64);
+pub struct Score(pub f64);
 
 impl Eq for Score {}
 impl Ord for Score {
@@ -314,12 +314,13 @@ impl SearchState<'_> {
         let root_node = Node::root_from_hints(&hints);
         let mut sess = Session::new(llm, token_size);
 
-        // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
-        // synced between this and `load`)
-        let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
-        sess.boost(colon_tok, 35.0);
-
-        println!("Colon is boosted!");
+        if hints.id == 1663 {
+            // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
+            // synced between this and `load`)
+            let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+            sess.boost(colon_tok, 35.0);
+            println!("Colon is boosted!");
+        }
 
         let first_candidates = sess.advance_and_predict_str(&hints.context, Some(TOK_TOP_P));
         sess.save_prompt();
@@ -404,8 +405,10 @@ impl SearchState<'_> {
 
         let mut sess = Session::new(llm, token_size);
 
-        let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
-        sess.boost(colon_tok, 35.0);
+        if sss.hints.id == 1663 {
+            let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+            sess.boost(colon_tok, 35.0);
+        }
 
         // TODO: should probably have `advance` without `predict`
         let _ = sess.advance_and_predict_str(&sss.hints.context, Some(0.0));
@@ -789,7 +792,7 @@ pub struct ScoreArgs {
     pub bonus_exponent_final: f32,
 }
 
-fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
+pub fn prob_score(probs: &Vec<f32>, chars_so_far: u8, rlnn_mult: f32) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
 
@@ -920,15 +923,17 @@ impl Node {
             }
         }
 
-        for (tok, p) in candidates {
+        for (tok, p) in &candidates {
+            let tok = *tok;
+            let p = *p;
             let avg_prob = f64::powf(
                 p as f64 * self.probability,
                 1.0 / (self.text.len() as f64 + 1.0),
             );
 
-            // For the first layer, TOK_TOP_P is the only protection against accepting all the
+            // For the first two layers, TOK_TOP_P is the only protection against accepting all the
             // tokens.
-            if ((2..=4).contains(&self.text.len()) && avg_prob < MIN_AVG_P_EARLY)
+            if ((3..=4).contains(&self.text.len()) && avg_prob < MIN_AVG_P_EARLY)
                 || (self.text.len() > 5 && avg_prob < MIN_AVG_P_LATE)
             {
                 break;
@@ -980,10 +985,26 @@ impl Node {
             let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
             toks.push(LlamaToken(critial_tok));
 
-            search_state.progress.abandon_with_message(format!(
+            let mut msg = format!(
                 "Critical token DISCARDED! '{}'",
                 toks_to_str(&toks, &search_state.sess.model())
-            ));
+            );
+
+            for (tok, p) in candidates {
+                if tok.0 == critial_tok {
+                    msg += format!(
+                        "self.prob = {}, p = {p}, avg_prob = {}",
+                        self.probability,
+                        f64::powf(
+                            p as f64 * self.probability,
+                            1.0 / (self.text.len() as f64 + 1.0),
+                        )
+                    )
+                    .as_str();
+                }
+            }
+
+            search_state.progress.abandon_with_message(msg);
             search_state.max_search = Some(search_state.step);
         }
     }
