@@ -10,7 +10,10 @@ use thousands::Separable;
 
 use crate::{
     corpus::Strip,
-    llm::{self, str_to_tokens, tok_to_str, toks_to_str, Session, SessionTimers},
+    llm::{
+        self, str_to_tokens, str_to_tokens_maybe_with_prefix_space, tok_to_str, toks_to_str,
+        Session, SessionTimers,
+    },
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
     remaining_letters_neural_net::{self, LetterNet},
     TIME_TO_QUIT,
@@ -184,16 +187,21 @@ impl Hints {
         let mut letter_pool = LetterPool::from_text(&strip.punchline, look_at_ties);
         letter_pool.set_longest_tok_from(&strip.punchline, llm);
 
+        // TODO: Not sure this is reliable; may cause immediate failure (step count == 1) for some
+        // tokenizers.
+        let goal_toks = Some(
+            str_to_tokens_maybe_with_prefix_space(&format!(" {}", strip.punchline), llm)
+                .0
+                .into_iter()
+                .map(|t| t.0)
+                .collect(),
+        );
+
         Hints {
             context: strip.context(),
             id: strip.id,
             goal: Some(strip.punchline.clone()),
-            goal_toks: Some(
-                str_to_tokens(&strip.punchline, llm)
-                    .into_iter()
-                    .map(|t| t.0)
-                    .collect(),
-            ),
+            goal_toks,
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(longest_word_len as u8),
