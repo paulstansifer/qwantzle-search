@@ -1,4 +1,17 @@
 Wow! No wonder people like capitalism so much!!
+Step 0 (remaining mass 39.272%): Next token is ' Wow', score is 0.989% (0.690%, 26.955%, 3)
+Step 9 (remaining mass 2.480%): Next token is '!', score is 0.608% (41.668%, 22.669%, 4)
+Step 12 (remaining mass 1.378%): Next token is ' No', score is 0.008% (0.292%, 33.737%, 6)
+Step 75 (remaining mass 0.199%): Next token is ' wonder', score is 0.186% (70.556%, 33.485%, 12)
+Step 76 (remaining mass 0.199%): Next token is ' people', score is 1.066% (8.112%, 64.780%, 18)
+Step 77 (remaining mass 0.198%): Next token is ' like', score is 0.812% (8.540%, 49.103%, 22)
+Step 78 (remaining mass 0.198%): Next token is ' capitalism', score is 5.988% (2.834%, 26.201%, 32)
+Step 79 (remaining mass 0.198%): Next token is ' so', score is 3.884% (40.409%, 12.195%, 34)
+Step 81 (remaining mass 0.198%): Next token is ' much', score is 267.528% (98.967%, 71.374%, 38)
+' Wow! No wonder people like capitalism so much' (267.53%)
+Search successful after 82 steps. Deepest node accessed: 0
+Search time: 1s.  (Non-ML: infs)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 22ms  Truncate: 0ms.
+
          0 0* 3.79062% (94.778% 0.040% 5.182%)   No                                                                                                                           ----------cdeeeehikllmnoooopprsuwwW!!!
          1 0* 2.02210% (97.424% 0.041% 2.534%)   No wonder                                                                                                                    ----------ceeehikllmoooppsuwW!!!
          2 0* 8.31339% (97.474% 0.041% 2.484%)   No wonder people                                                                                                             ----------cehiklmoosuwW!!!

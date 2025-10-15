@@ -12,7 +12,7 @@ Step 693 (remaining mass 3.311%): Next token is ' dam', score is 0.061% (1.732%,
 Step 695 (remaining mass 3.311%): Next token is 'aging', score is 0.475% (38.866%, 68.260%, 47)
 ' has an analogy been so accurate and personally damaging' (0.47%)
 Search successful after 696 steps. Deepest node accessed: 0
-Search time: 19s.  (Non-ML: 4s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 21ms  Truncate: 0ms.
+Search time: 17s.  (Non-ML: 3s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 19ms  Truncate: 0ms.
 
          0 0* 3.14600% (87.230% 0.040% 12.730%)  mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
          1 0* 3.57673% (90.029% 0.042% 9.929%)  mind you                                                                                                                      ----------aaaaaaaaabccdeeeggghlnnnnorsst

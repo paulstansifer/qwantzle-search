@@ -663,6 +663,7 @@ impl SearchState<'_> {
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
         if self.q.len() > 5_000_000 || quit_now {
+            self.log_ln(&format!("Queue length is {}; trimming.", self.q.len()));
             self.q = std::mem::take(&mut self.q).trim(2_000_000);
         }
 
@@ -960,8 +961,8 @@ impl Node {
                 if Some(tok.0) == critial_tok {
                     critial_tok = None; // Okay; we haven't lost it!
                     search_state.log_ln(&format!(
-                        "Step {} (remaining mass {:.3}%): Next token is '{}', score is {:.3}% ({:.3}%, {:.3}%, {})",
-                        search_state.step,
+                        "Step {:>10} (remaining mass {:.3}%): Next token is '{}', score is {:.5}% ({:.3}%, {:.3}%, {})",
+                        search_state.step.separate_with_commas(),
                         (1.0 - search_state.discard_prob_dregs - search_state.discard_prob_letters) * 100.0,
                         tok_to_str(tok, search_state.sess.model()),
                         score.0 * 100.0,
@@ -986,12 +987,7 @@ impl Node {
                 }
             } else {
                 if critial_tok == Some(tok.0) {
-                    let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
-                    toks.push(tok);
-                    panic!(
-                        "The critical token is somehow not valid! '{}'",
-                        toks_to_str(&toks, &search_state.sess.model())
-                    )
+                    panic!("The critical token is somehow not valid!")
                 }
                 search_state.discard_prob_letters += self.probability * p;
             }

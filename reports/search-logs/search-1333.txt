@@ -13,7 +13,7 @@ Step 2267 (remaining mass 0.634%): Next token is ' so', score is 179.256% (60.29
 Step 2268 (remaining mass 0.634%): Next token is ' little', score is 11080.341% (94.358%, 68.260%, 44)
 ' has one man sucked on his fingers so much for so little' (11080.34%)
 Search successful after 2,269 steps. Deepest node accessed: 0
-Search time: 58s.  (Non-ML: 6s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 22ms  Truncate: 0ms.
+Search time: 53s.  (Non-ML: 5s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 21ms  Truncate: 0ms.
 
          0 0* 256.29985% (7.621% 0.040% 92.339%)  mind                                                                                                                          -------aacceeefhhhikllmnnooooorsssssttuu
          1 0* 190.04855% (57.555% 0.060% 42.385%)   mind                                                                                                                         -------aacceeefhhhikllmnnooooorsssssttuu

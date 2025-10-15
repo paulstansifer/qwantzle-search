@@ -438,6 +438,17 @@ impl LetterPool {
         self.lookup(Char(c))
     }
 
+    // pub fn char_count_incl_longest(&self, c: u8) -> u8 {
+    //     let mut res = self.lookup(Char(c));
+    //     match self.long_tok {
+    //         Some((_, _)) => {
+    //             panic!();
+    //         }
+    //         None => {}
+    //     }
+    //     res
+    // }
+
     /// This must be called after `set_longest_tok` (TODO: fix or enforce!)
     pub fn set_ties(&mut self, text: &str) {
         let mut tie_seqs = vec![vec![]; 7];
@@ -515,12 +526,21 @@ impl LetterPool {
         self.last_letter = Some(Char(b))
     }
 
+    // HACK: should do this after setting `last_letter`
     pub fn set_longest_tok(&mut self, longest_tok: LlamaToken, model: &LlamaModel) {
         self.remove(longest_tok, model);
-        let lt_len = llm::tok_to_str(longest_tok, model).trim().len() as u8;
+        let tok_str = llm::tok_to_str(longest_tok, model);
+        let lt_len = tok_str.trim().len() as u8;
         self.long_tok = Some((longest_tok.0, lt_len));
+
+        if let Some(ll) = self.last_letter {
+            if tok_str.trim().ends_with(ll.0 as char) {
+                self.last_letter = None;
+            }
+        }
     }
 
+    // HACK: should do this after setting `last_letter`
     pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
         let toks = llm::str_to_tokens_maybe_with_prefix_space(text, model).0;
         let mut longest_tok_len = 0;
@@ -534,8 +554,14 @@ impl LetterPool {
         }
 
         self.remove(longest_tok, model); // need to do this before the next line!
-        let lt_len = llm::tok_to_str(longest_tok, model).trim().len() as u8;
-        self.long_tok = Some((longest_tok.0, lt_len));
+        let longest_tok_str = llm::tok_to_str(longest_tok, model);
+        self.long_tok = Some((longest_tok.0, longest_tok_str.trim().len() as u8));
+
+        if let Some(ll) = self.last_letter {
+            if longest_tok_str.trim().ends_with(ll.0 as char) {
+                self.last_letter = None;
+            }
+        }
     }
 
     /// Does not respect `.long_tok`!

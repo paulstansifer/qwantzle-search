@@ -15,7 +15,7 @@ Step 6272 (remaining mass 1.299%): Next token is ' good', score is 0.490% (3.177
 Step 6273 (remaining mass 1.299%): Next token is ' times', score is 0.108% (1.180%, 68.260%, 46)
 ' because i don't like being fat and pooping is good times' (0.11%)
 Search successful after 6,274 steps. Deepest node accessed: 0
-Search time: 169s.  (Non-ML: 12s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 24ms  Truncate: 0ms.
+Search time: 157s.  (Non-ML: 9s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 23ms  Truncate: 0ms.
 
          0 0* 21.03958% (90.401% 0.040% 9.559%)   because                                                                                                                      aabdddeeefgggiiiiiiklmnnnnoooooppssttt'
          1 0* 4.91998% (90.969% 0.040% 8.991%)   because if                                                                                                                   aabdddeeegggiiiiiklmnnnnoooooppssttt'
