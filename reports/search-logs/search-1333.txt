@@ -1,4 +1,20 @@
 has one man sucked on his fingers so much for so little
+Step 0 (remaining mass 95.451%): Next token is ' has', score is 0.760% (0.187%, 76.503%, 3)
+Step 11 (remaining mass 3.505%): Next token is ' one', score is 0.042% (0.908%, 86.148%, 6)
+Step 397 (remaining mass 1.047%): Next token is ' man', score is 0.037% (15.842%, 84.941%, 9)
+Step 535 (remaining mass 0.959%): Next token is ' sucked', score is 0.012% (0.918%, 86.073%, 15)
+Step 2209 (remaining mass 0.634%): Next token is ' on', score is 0.017% (41.492%, 89.896%, 17)
+Step 2262 (remaining mass 0.634%): Next token is ' his', score is 0.081% (85.434%, 79.175%, 20)
+Step 2263 (remaining mass 0.634%): Next token is ' fingers', score is 5.534% (92.840%, 76.557%, 27)
+Step 2264 (remaining mass 0.634%): Next token is ' so', score is 11.794% (61.710%, 76.672%, 29)
+Step 2265 (remaining mass 0.634%): Next token is ' much', score is 61.512% (46.733%, 71.957%, 33)
+Step 2266 (remaining mass 0.634%): Next token is ' for', score is 142.764% (36.853%, 70.765%, 36)
+Step 2267 (remaining mass 0.634%): Next token is ' so', score is 179.256% (60.299%, 42.731%, 38)
+Step 2268 (remaining mass 0.634%): Next token is ' little', score is 11080.341% (94.358%, 68.260%, 44)
+' has one man sucked on his fingers so much for so little' (11080.34%)
+Search successful after 2,269 steps. Deepest node accessed: 0
+Search time: 58s.  (Non-ML: 6s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 22ms  Truncate: 0ms.
+
          0 0* 256.29985% (7.621% 0.040% 92.339%)  mind                                                                                                                          -------aacceeefhhhikllmnnooooorsssssttuu
          1 0* 190.04855% (57.555% 0.060% 42.385%)   mind                                                                                                                         -------aacceeefhhhikllmnnooooorsssssttuu
          2 0* 2.96939% (94.553% 0.075% 5.372%)  mind me                                                                                                                       -------aacceefhhhikllnnooooorsssssttuu

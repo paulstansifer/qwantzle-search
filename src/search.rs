@@ -173,7 +173,7 @@ impl Hints {
             v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
         };
 
-        let toks = llm::str_to_tokens(&strip.punchline, llm);
+        let toks = llm::str_to_tokens_maybe_with_prefix_space(&strip.punchline, llm).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
@@ -185,6 +185,7 @@ impl Hints {
         }
 
         let mut letter_pool = LetterPool::from_text(&strip.punchline, look_at_ties);
+        // TODO: I think this messes up RLNN!
         letter_pool.set_longest_tok_from(&strip.punchline, llm);
 
         // TODO: Not sure this is reliable; may cause immediate failure (step count == 1) for some
@@ -947,10 +948,6 @@ impl Node {
                 break;
             }
 
-            if Some(tok.0) == critial_tok {
-                critial_tok = None;
-            }
-
             remaining_prob -= p;
 
             if let Some((next_node, score)) = self.push_token(
@@ -960,6 +957,20 @@ impl Node {
                 &search_state.hints.vocab,
                 &search_state.rlnn,
             ) {
+                if Some(tok.0) == critial_tok {
+                    critial_tok = None; // Okay; we haven't lost it!
+                    search_state.log_ln(&format!(
+                        "Step {} (remaining mass {:.3}%): Next token is '{}', score is {:.3}% ({:.3}%, {:.3}%, {})",
+                        search_state.step,
+                        (1.0 - search_state.discard_prob_dregs - search_state.discard_prob_letters) * 100.0,
+                        tok_to_str(tok, search_state.sess.model()),
+                        score.0 * 100.0,
+                        p * 100.0,
+                        search_state.rlnn.evaluate(&next_node.remaining) * 100.0,
+                        next_node.chars_so_far,
+                    ));
+                }
+
                 // Re-use the context right away, if the best candidate is good enough.
                 if p as f32 > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
                     let before_advance = std::time::Instant::now();
@@ -1001,18 +1012,18 @@ impl Node {
             for (tok, p) in candidates {
                 if tok.0 == critial_tok {
                     msg += format!(
-                        "self.prob = {}, p = {p}, avg_prob = {}",
-                        self.probability,
+                        " self.prob = {:.2}%, p = {:.2}%, avg_prob = {:.2}%",
+                        self.probability * 100.0,
+                        p * 100.0,
                         f64::powf(
                             p as f64 * self.probability,
                             1.0 / (self.text.len() as f64 + 1.0),
-                        )
+                        ) * 100.0
                     )
                     .as_str();
                 }
             }
-
-            search_state.progress.abandon_with_message(msg);
+            search_state.log_ln(&msg);
             search_state.max_search = Some(search_state.step);
         }
     }
@@ -1062,8 +1073,9 @@ pub fn practice_search(
     std::fs::write(
         format!("reports/search-logs/search-{}.txt", strip.id),
         format!(
-            "{}\n{}",
+            "{}\n{}\n{}",
             strip.punchline,
+            search.report,
             search.hall_of_fame.initial_nodes.join("\n")
         ),
     )

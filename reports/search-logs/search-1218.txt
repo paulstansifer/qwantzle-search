@@ -1,4 +1,20 @@
 know what? It's really weird when you say that.
+Step 0 (remaining mass 100.000%): Next token is ' know', score is 54.134% (6.271%, 92.548%, 4)
+Step 5 (remaining mass 60.287%): Next token is ' what', score is 121.066% (22.114%, 95.660%, 8)
+Step 6 (remaining mass 57.756%): Next token is '?', score is 63.230% (29.015%, 96.609%, 9)
+Step 8 (remaining mass 57.154%): Next token is ' It', score is 5.034% (2.590%, 92.603%, 11)
+Step 226 (remaining mass 12.935%): Next token is ''', score is 6.185% (65.614%, 96.357%, 12)
+Step 227 (remaining mass 12.934%): Next token is 's', score is 10.855% (98.100%, 95.482%, 13)
+Step 228 (remaining mass 12.931%): Next token is ' really', score is 5.386% (1.365%, 93.231%, 19)
+Step 230 (remaining mass 12.928%): Next token is ' weird', score is 2.913% (2.554%, 89.725%, 24)
+Step 364 (remaining mass 11.666%): Next token is ' when', score is 1.492% (4.889%, 79.063%, 28)
+Step 687 (remaining mass 7.870%): Next token is ' you', score is 4.789% (51.181%, 77.428%, 31)
+Step 688 (remaining mass 7.870%): Next token is ' say', score is 3.412% (11.554%, 74.551%, 34)
+Step 689 (remaining mass 7.870%): Next token is ' that', score is 4.357% (10.843%, 73.836%, 38)
+' know what? It's really weird when you say that' (4.36%)
+Search successful after 690 steps. Deepest node accessed: 0
+Search time: 17s.  (Non-ML: 1s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 22ms  Truncate: 0ms.
+
          0 0* 54.91646% (38.240% 0.040% 61.720%)   think                                                                                                                        ------aaadeehhnoorsstttuwwwwyy?I'.
          1 0* 62.66148% (39.248% 0.041% 60.710%)   think they                                                                                                                   ------aaadehnoorssttuwwwwy?I'.
          2 0* 114.08731% (39.282% 0.042% 60.676%)   think they'                                                                                                                  ------aaadehnoorssttuwwwwy?I.

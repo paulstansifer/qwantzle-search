@@ -522,7 +522,7 @@ impl LetterPool {
     }
 
     pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
-        let toks = llm::str_to_tokens(text, model);
+        let toks = llm::str_to_tokens_maybe_with_prefix_space(text, model).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
