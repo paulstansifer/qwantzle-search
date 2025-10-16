@@ -1,155 +1,125 @@
 looking forward to being an old guy over here!
-Step 0 (remaining mass 10.350%): Next token is ' looking', score is 0.708% (0.015%, 94.634%, 7)
-Step 84 (remaining mass 2.922%): Next token is ' forward', score is 34.945% (83.620%, 93.462%, 14)
-Step 85 (remaining mass 2.922%): Next token is ' to', score is 104.553% (99.745%, 84.553%, 16)
-Step 86 (remaining mass 2.919%): Next token is ' being', score is 363.642% (16.390%, 84.257%, 21)
-Step 87 (remaining mass 2.912%): Next token is ' an', score is 161.255% (34.236%, 31.647%, 23)
-Step 89 (remaining mass 2.911%): Next token is ' old', score is 206.270% (18.016%, 35.088%, 26)
-Step 91 (remaining mass 2.911%): Next token is ' guy', score is 158.731% (5.904%, 71.420%, 29)
-Step 92 (remaining mass 2.911%): Next token is ' over', score is 1.294% (0.071%, 69.209%, 33)
-Step 140 (remaining mass 2.910%): Next token is ' here', score is 11.664% (73.408%, 71.458%, 37)
-' looking forward to being an old guy over here' (11.66%)
-Search successful after 141 steps. Deepest node accessed: 0
-Search time: 3s.  (Non-ML: 0s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 24ms  Truncate: 0ms.
+Step          0 (remaining mass 14.296%): Next token is ' looking', score is 0.25444% (0.005%, 94.634%, 7)
+Step         97 (remaining mass 0.797%): Next token is ' forward', score is 12.19306% (81.157%, 93.462%, 14)
+Step         98 (remaining mass 0.797%): Next token is ' to', score is 36.31087% (99.280%, 84.553%, 16)
+Step         99 (remaining mass 0.796%): Next token is ' being', score is 79.81482% (10.359%, 84.257%, 21)
+Step        100 (remaining mass 0.793%): Next token is ' an', score is 45.60412% (44.113%, 31.647%, 23)
+Step        101 (remaining mass 0.793%): Next token is ' old', score is 3.35631% (1.037%, 35.088%, 26)
+Step        112 (remaining mass 0.793%): Next token is ' guy', score is 5.39083% (12.322%, 71.420%, 29)
+Critical token DISCARDED! ' looking forward to being an old guy over' self.prob = 0.00%, p = 0.02%, avg_prob = 2.82%
+Search time: 4s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
 
-         0 0* 34.93452% (92.660% 0.040% 7.300%)   worth                                                                                                                        -------aabddeeeefggilnnooorrruvy!
-         1 0* 42.50365% (94.928% 0.041% 5.031%)   worth being                                                                                                                  -------aaddeeefglnooorrruvy!
-         2 0* 78.72389% (94.975% 0.041% 4.984%)   worth being old                                                                                                              -------aadeeefgnoorrruvy!
-         3 0* 35.27479% (95.031% 0.041% 4.928%)   worth being old!                                                                                                             -------aadeeefgnoorrruvy
-         4 0* 27.69365% (95.055% 0.041% 4.904%)   worth being old for                                                                                                          -------aadeeegnorruvy!
-         5 0* 8.74779% (95.059% 0.041% 4.900%)   worth being an                                                                                                               -------addeeefglooorrruvy!
-         6 0* 25.91422% (95.062% 0.041% 4.897%)   worth being an old                                                                                                           -------adeeefgoorrruvy!
-         7 0* 8.63667% (95.070% 0.041% 4.889%)   worth being old and                                                                                                          -------aeeefgoorrruvy!
-         8 0* 7.21963% (95.072% 0.041% 4.887%)   worth being old for!                                                                                                         -------aadeeegnorruvy
-         9 0* 6.91722% (95.073% 0.041% 4.886%)   worth being an old guy                                                                                                       -------adeeefoorrrv!
-        10 0* 5.69616% (95.073% 0.041% 4.886%)   worth being older                                                                                                            -------aadeefgnoorruvy!
-        11 0* 5.30213% (95.074% 0.041% 4.885%)   worth going                                                                                                                  -------aabddeeeeflnoorrruvy!
-        12 0* 5.25807% (95.096% 0.041% 4.863%)   worth being over                                                                                                             -------aaddeefglnoorruy!
-        13 0* 5.15943% (95.096% 0.041% 4.862%)   worth being an elder                                                                                                         -------adefgooorruvy!
-        14 0* 4.79111% (95.097% 0.041% 4.862%)   worth being                                                                                                                  -------aaddeeefglnooorrruvy!
-        15 0* 4.65066% (95.119% 0.041% 4.840%)   worth being old for a                                                                                                        -------adeeegnorruvy!
-        16 0* 8.80136% (95.119% 0.041% 4.840%)   worth being old for a day                                                                                                    -------eeegnorruv!
-        17 0* 4.34206% (95.119% 0.041% 4.839%)   worth looking                                                                                                                aabddeeeefggilnnooorrruvy!
-        18 0* 4.20367% (95.123% 0.041% 4.835%)   worth being old for a day!                                                                                                   -------eeegnorruv
-        19 0* 3.90646% (95.123% 0.041% 4.835%)   not                                                                                                                          -------aabddeeeefgghilnooorrrruvwy!
-        20 0* 3.64555% (95.933% 0.042% 4.025%)   worth being over                                                                                                             -------aaddeefglnoorruy!
-        21 0* 3.35677% (95.935% 0.042% 4.024%)   unfair                                                                                                                       -------abddeeeegghlnoooorrrtvwy!
-        22 0* 3.27448% (96.056% 0.042% 3.902%)   worth being a                                                                                                                -------addeeefglnooorrruvy!
-        23 0* 3.25743% (96.063% 0.042% 3.895%)   worth looking older                                                                                                          aabdeeefgginnoorruvy!
-        24 0* 2.98853% (96.064% 0.042% 3.895%)   worth being around                                                                                                           -------adeeefgloorrvy!
-        25 0* 3.35327% (96.064% 0.042% 3.894%)   worth being around for                                                                                                       -------adeeeglorvy!
-        26 0* 2.61685% (96.064% 0.042% 3.894%)   worth being an old guy!                                                                                                      -------adeeefoorrrv
-        27 0* 2.52449% (96.064% 0.042% 3.894%)   worth being older!                                                                                                           -------aadeefgnoorruvy
-        28 0* 2.52109% (96.064% 0.042% 3.894%)   worth being one                                                                                                              -------aaddeefgloorrruvy!
-        29 0* 2.50778% (96.066% 0.042% 3.893%)   worth looking old                                                                                                            aabdeeeefgginnoorrruvy!
-        30 0* 2.29088% (96.066% 0.042% 3.892%)   not fair                                                                                                                     -------abddeeeegghlnooorrruvwy!
-        31 0* 2.23317% (96.126% 0.042% 3.832%)   worth being a grand                                                                                                          -------deeeflooorruvy!
-        32 0* 2.10113% (96.126% 0.042% 3.832%)   worth being one of                                                                                                           -------aaddeeglorrruvy!
-        33 0* 1.95573% (96.127% 0.042% 3.831%)   the                                                                                                                          -------aabddeeefggilnnoooorrrruvwy!
-        34 0* 1.77150% (96.537% 0.042% 3.421%)   worth being an old f                                                                                                         -------adeeegoorrruvy!
-        35 0* 1.56667% (96.538% 0.042% 3.420%)   worth being dead                                                                                                             -------aeefglnooorrruvy!
-        36 0* 2.37892% (96.539% 0.042% 3.419%)   worth being dead for                                                                                                         -------aeeglnoorruvy!
-        37 0* 1.56303% (96.539% 0.042% 3.419%)   worth doing                                                                                                                  -------aabdeeeefglnoorrruvy!
-        38 0* 1.54006% (96.547% 0.042% 3.411%)   worth being an old guy for                                                                                                   -------adeeeorrv!
-        39 0* 1.50594% (96.547% 0.042% 3.411%)   worth being an older                                                                                                         -------adeefgoorruvy!
-        40 0* 1.33734% (96.548% 0.042% 3.411%)   worth being older for                                                                                                        -------aadeegnoruvy!
-        41 0* 1.33083% (96.548% 0.042% 3.410%)   worth being old and grey                                                                                                     -------aeefoorruv!
-        42 0* 1.32317% (96.548% 0.042% 3.410%)   worth going over                                                                                                             -------aabddeeeflnorruy!
-        43 0* 1.28622% (96.548% 0.042% 3.410%)   worth aging                                                                                                                  -------abddeeeeflnooorrruvy!
-        44 0* 1.28586% (96.552% 0.042% 3.406%)   worth being dead for longer                                                                                                  -------aeoruvy!
-        45 0* 1.20552% (96.552% 0.042% 3.406%)   going                                                                                                                        -------aabddeeeefhlnooorrrrtuvwy!
-        46 0* 1.60366% (96.566% 0.042% 3.392%)   going to                                                                                                                     -------aabddeeeefhlnoorrrruvwy!
-        47 0* 1.17971% (96.594% 0.042% 3.364%)   worth dying                                                                                                                  -------aabdeeeefglnooorrruv!
-        48 0* 1.67222% (96.600% 0.042% 3.358%)   worth dying for                                                                                                              -------aabdeeeeglnoorruv!
-        49 0* 1.15706% (96.602% 0.042% 3.356%)   worth being an                                                                                                               -------addeeefglooorrruvy!
-        50 0* 1.12374% (96.604% 0.042% 3.354%)   worth looking older!                                                                                                         aabdeeefgginnoorruvy
-        51 0* 1.10469% (96.604% 0.042% 3.354%)   worth looking old and                                                                                                        abeeeefgginoorrruvy!
-        52 0* 1.09650% (96.605% 0.042% 3.353%)   worth looking older for                                                                                                      aabdeeegginnoruvy!
-        53 0* 1.08184% (96.605% 0.042% 3.353%)   worth being nearly                                                                                                           -------addeefgooorruv!
-        54 0* 1.81015% (96.605% 0.042% 3.353%)   worth being nearly dead                                                                                                      -------efgooorruv!
-        55 0* 1.92838% (96.605% 0.042% 3.353%)   worth being nearly dead for                                                                                                  -------egooruv!
-        56 0* 1.02989% (96.605% 0.042% 3.353%)   worth looking older and                                                                                                      abeeefgginoorruvy!
-        57 0* 0.98948% (96.605% 0.042% 3.353%)   worth being nearly dead!                                                                                                     -------efgooorruv
-        58 0* 0.96154% (96.605% 0.042% 3.353%)   going to be                                                                                                                  -------aaddeeefhlnoorrrruvwy!
-        59 0* 0.95751% (96.609% 0.042% 3.349%)   worth looking old for                                                                                                        aabdeeeegginnorruvy!
-        60 0* 0.91793% (96.609% 0.042% 3.349%)   worth being an old for                                                                                                       -------adeeegorruvy!
-        61 0* 0.89867% (96.609% 0.042% 3.349%)   en                                                                                                                           -------aabddeeefgghilnoooorrrrtuvwy!
-        62 0* 0.89461% (96.936% 0.042% 3.022%)   worth being old for a day or                                                                                                 -------eeegnruv!
-        63 0* 0.88027% (96.936% 0.042% 3.022%)   going for                                                                                                                    -------aabddeeeehlnoorrrtuvwy!
-        64 0* 0.87067% (96.946% 0.042% 3.012%)   worth being one!                                                                                                             -------aaddeefgloorrruvy
-        65 0* 0.85779% (96.946% 0.042% 3.012%)   worth looking old!                                                                                                           aabdeeeefgginnoorrruvy
-        66 0* 0.84039% (96.946% 0.042% 3.011%)   gonna                                                                                                                        -------abddeeeefghilooorrrrtuvwy!
-        67 0* 0.82888% (96.980% 0.042% 2.977%)   worth being dead for a                                                                                                       -------eeglnoorruvy!
-        68 0* 0.82832% (96.981% 0.042% 2.977%)   worth a                                                                                                                      -------abddeeeefggilnnooorrruvy!
-        69 0* 0.82534% (97.010% 0.042% 2.948%)   worth looking old and boring                                                                                                 aeeeefgorruvy!
-        70 0* 1.02498% (97.010% 0.042% 2.948%)   worth looking old and boring for                                                                                             aeeeegruvy!
-        71 0* 0.81676% (97.010% 0.042% 2.948%)   worth adding                                                                                                                 -------abeeeefglnooorrruvy!
-        72 0* 0.79226% (97.012% 0.042% 2.945%)   worth being an old for a                                                                                                     -------deeegorruvy!
-        73 0* 0.79192% (97.012% 0.042% 2.945%)   unfair!                                                                                                                      -------abddeeeegghlnoooorrrtvwy
-        74 0* 0.78928% (97.032% 0.042% 2.925%)   worth being old and looking                                                                                                  aeeefgoorrruvy!
-        75 0* 0.73864% (97.032% 0.042% 2.925%)   worth being old for one                                                                                                      -------aadeegrruvy!
-        76 0* 2.35914% (97.032% 0.042% 2.925%)   worth being old for one day                                                                                                  -------aeegrruv!
-        77 0* 1.23587% (97.032% 0.042% 2.925%)   worth being old for one day!                                                                                                 -------aeegrruv
-        78 0* 0.73197% (97.032% 0.042% 2.925%)   going there                                                                                                                  -------aabddeeflnooorrruvwy!
-        79 0* 0.72595% (97.035% 0.042% 2.922%)   worth looking older and being                                                                                                aeefgoorruvy!
-        80 0* 0.71803% (97.035% 0.042% 2.922%)   worth being an old!                                                                                                          -------adeeefgoorrruvy
-        81 0* 0.70850% (97.035% 0.042% 2.922%)   worth being old one                                                                                                          -------aadeefgorrruvy!
-        82 0* 2.35841% (97.036% 0.042% 2.922%)   worth being old one day                                                                                                      -------aeefgorrruv!
-        83 0* 1.04604% (97.036% 0.042% 2.922%)   worth being old one day!                                                                                                     -------aeefgorrruv
-        84 0* 0.70774% (97.036% 0.042% 2.922%)   looking                                                                                                                      aabddeeeefgghilnnoooorrrrtuvwy!
-        85 0* 34.94489% (97.036% 0.042% 2.922%)   looking forward                                                                                                              abdeeeegghilnnooorrtuvy!
-        86 0* 104.55319% (97.036% 0.042% 2.922%)   looking forward to                                                                                                           abdeeeegghilnnoorruvy!
-        87 0* 363.64224% (97.045% 0.042% 2.912%)   looking forward to being                                                                                                     adeeeghlnoorruvy!
-        88 0* 333.97271% (97.046% 0.042% 2.912%)   looking forward to being one                                                                                                 adeeghlorruvy!
-        89 0* 161.25492% (97.046% 0.042% 2.912%)   looking forward to being an                                                                                                  deeeghloorruvy!
-        90 0* 971.68423% (97.047% 0.042% 2.911%)   looking forward to being an elder                                                                                            eghooruvy!
-        91 0* 206.27018% (97.047% 0.042% 2.911%)   looking forward to being an old                                                                                              eeeghorruvy!
-        92 0* 158.73064% (97.047% 0.042% 2.911%)   looking forward to being an old guy                                                                                          eeehorrv!
-        93 0* 127.65766% (97.047% 0.042% 2.911%)   looking forward to being old                                                                                                 aeeeghnorruvy!
-        94 0* 147.90733% (97.047% 0.042% 2.911%)   looking forward to being old enough                                                                                          aeerrvy!
-        95 0* 63.60921% (97.047% 0.042% 2.911%)   looking forward to being elder                                                                                               aeghnooruvy!
-        96 0* 51.85753% (97.047% 0.042% 2.911%)   looking forward to being one!                                                                                                adeeghlorruvy
-        97 0* 48.76060% (97.047% 0.042% 2.911%)   looking forward to being an old guy!                                                                                         eeehorrv
-        98 0* 45.95461% (97.047% 0.042% 2.911%)   looking forward to being old!                                                                                                aeeeghnorruvy
-        99 0* 36.18295% (97.047% 0.042% 2.911%)   looking forward to being an older                                                                                            eeghoruvy!
-       100 0* 28.23996% (97.047% 0.042% 2.911%)   looking forward to being older                                                                                               aeeghnoruvy!
-       101 0* 19.05224% (97.047% 0.042% 2.911%)   looking forward to being an old!                                                                                             eeeghorruvy
-       102 0* 18.77438% (97.047% 0.042% 2.911%)   looking forward to being an older guy                                                                                        eehorv!
-       103 0* 14.70167% (97.047% 0.042% 2.911%)   looking forward to doing                                                                                                     abeeeeghlnorruvy!
-       104 0* 13.66802% (97.047% 0.042% 2.911%)   looking forward to being a                                                                                                   deeeghlnoorruvy!
-       105 0* 12.86417% (97.047% 0.042% 2.910%)   looking forward to aging                                                                                                     bdeeeehlnoorruvy!
-       106 0* 9.55122% (97.047% 0.042% 2.910%)   looking forward to being                                                                                                     adeeeghlnoorruvy!
-       107 0* 8.73859% (97.047% 0.042% 2.910%)   looking forward to being older!                                                                                              aeeghnoruvy
-       108 0* 8.36930% (97.047% 0.042% 2.910%)   looking forward to going                                                                                                     abdeeeehlnorruvy!
-       109 0* 8.16656% (97.048% 0.042% 2.910%)   looking forward to having                                                                                                    bdeeeeglnoorruy!
-       110 0* 7.43009% (97.048% 0.042% 2.910%)   looking forward to being old one                                                                                             aeeghrruvy!
-       111 0* 6.67382% (97.048% 0.042% 2.910%)   looking forward to being an older guy!                                                                                       eehorv
-       112 0* 6.57391% (97.048% 0.042% 2.910%)   looking forward to being an el                                                                                               deeghoorruvy!
-       113 0* 5.13191% (97.048% 0.042% 2.910%)   looking forward to being over                                                                                                adeeghlnoruy!
-       114 0* 4.98540% (97.048% 0.042% 2.910%)   looking forward to being around                                                                                              eeeghlorvy!
-       115 0* 4.82945% (97.048% 0.042% 2.910%)   looking forward to dinner                                                                                                    abeeegghlooruvy!
-       116 0* 4.59991% (97.048% 0.042% 2.910%)   looking forward to old                                                                                                       abeeeegghinnorruvy!
-       117 0* 25.06051% (97.048% 0.042% 2.910%)   looking forward to old age                                                                                                   beeeghinnorruvy!
-       118 0* 6.06530% (97.048% 0.042% 2.910%)   looking forward to old age!                                                                                                  beeeghinnorruvy
-       119 0* 4.58951% (97.048% 0.042% 2.910%)   looking forward to being an old gr                                                                                           eeehoruvy!
-       120 0* 4.27952% (97.048% 0.042% 2.910%)   looking forward to being an old g                                                                                            eeehorruvy!
-       121 0* 4.66506% (97.048% 0.042% 2.910%)   looking forward to being an old gee                                                                                          ehorruvy!
-       122 0* 4.26487% (97.048% 0.042% 2.910%)   looking forward to being one day                                                                                             eeghlorruv!
-       123 0* 4.14023% (97.048% 0.042% 2.910%)   looking forward to having elder                                                                                              beegnooruy!
-       124 0* 3.68624% (97.048% 0.042% 2.910%)   looking forward to dying                                                                                                     abeeeeghlnoorruv!
-       125 0* 3.29828% (97.048% 0.042% 2.910%)   looking forward to being on                                                                                                  adeeeghlorruvy!
-       126 0* 2.85258% (97.048% 0.042% 2.910%)   looking forward to being over                                                                                                adeeghlnoruy!
-       127 0* 2.79360% (97.048% 0.042% 2.910%)   looking forward to old age here                                                                                              beginnoruvy!
-       128 0* 2.75081% (97.048% 0.042% 2.910%)   looking forward to age                                                                                                       bdeeeghilnnoorruvy!
-       129 0* 2.35743% (97.048% 0.042% 2.910%)   looking forward to aging!                                                                                                    bdeeeehlnoorruvy
-       130 0* 2.26706% (97.048% 0.042% 2.910%)   looking forward to being an                                                                                                  deeeghloorruvy!
-       131 0* 2.07544% (97.048% 0.042% 2.910%)   looking forward to being an elder!                                                                                           eghooruvy
-       132 0* 1.89444% (97.048% 0.042% 2.910%)   looking forward to our                                                                                                       abdeeeegghilnnorvy!
-       133 0* 1.74948% (97.048% 0.042% 2.910%)   looking forward to elder                                                                                                     abeegghinnooruvy!
-       134 0* 1.73718% (97.048% 0.042% 2.910%)   looking forward to old age over                                                                                              beeghinnruy!
-       135 0* 1.63012% (97.048% 0.042% 2.910%)   looking forward to going over                                                                                                abdeeehlnruy!
-       136 0* 1.56746% (97.048% 0.042% 2.910%)   looking forward to being young                                                                                               adeeehlorrv!
-       137 0* 1.43647% (97.048% 0.042% 2.910%)   looking forward to being an old guy here                                                                                     eorv!
-       138 0* 1.42181% (97.048% 0.042% 2.910%)   looking forward to our golden                                                                                                abeeeghinrvy!
-       139 0* 1.30830% (97.048% 0.042% 2.910%)   looking forward to going old                                                                                                 abeeeehnrruvy!
-       140 0* 1.29404% (97.048% 0.042% 2.910%)   looking forward to being an old guy over                                                                                     eehr!
+         0 0* 123.92234% (89.024% 0.040% 10.936%)   worth                                                                                                                        -------aabddeeeefggilnnooorrruvy!
+         1 0* 13.83207% (98.122% 0.044% 1.834%)   worth being                                                                                                                  -------aaddeeefglnooorrruvy!
+         2 0* 12.11289% (98.151% 0.044% 1.805%)   worth being old                                                                                                              -------aadeeefgnoorrruvy!
+         3 0* 10.43108% (98.161% 0.044% 1.795%)   worth being old for                                                                                                          -------aadeeegnorruvy!
+         4 0* 4.94069% (98.163% 0.044% 1.794%)   worth looking                                                                                                                aabddeeeefggilnnooorrruvy!
+         5 0* 4.38423% (98.167% 0.044% 1.789%)   worth being around                                                                                                           -------adeeefgloorrvy!
+         6 0* 4.12442% (98.168% 0.044% 1.788%)   worth being older                                                                                                            -------aadeefgnoorruvy!
+         7 0* 3.92643% (98.169% 0.044% 1.787%)   worth being an                                                                                                               -------addeeefglooorrruvy!
+         8 0* 13.38843% (98.171% 0.044% 1.785%)   worth being an elder                                                                                                         -------adefgooorruvy!
+         9 0* 4.81219% (98.174% 0.044% 1.783%)   worth being an old                                                                                                           -------adeeefgoorrruvy!
+        10 0* 3.37548% (98.175% 0.044% 1.781%)   worth being around for                                                                                                       -------adeeeglorvy!
+        11 0* 2.74537% (98.175% 0.044% 1.781%)   worth being old for!                                                                                                         -------aadeeegnorruvy
+        12 0* 2.62018% (98.175% 0.044% 1.781%)   worth going                                                                                                                  -------aabddeeeeflnoorrruvy!
+        13 0* 2.38602% (98.186% 0.044% 1.770%)   worth looking old                                                                                                            aabdeeeefgginnoorrruvy!
+        14 0* 8.61624% (98.186% 0.044% 1.770%)   worth looking old for                                                                                                        aabdeeeegginnorruvy!
+        15 0* 2.35989% (98.187% 0.044% 1.770%)   worth looking old for!                                                                                                       aabdeeeegginnorruvy
+        16 0* 2.31868% (98.187% 0.044% 1.770%)   worth being old!                                                                                                             -------aadeeefgnoorrruvy
+        17 0* 2.20765% (98.188% 0.044% 1.768%)   the                                                                                                                          -------aabddeeefggilnnoooorrrruvwy!
+        18 0* 1.98339% (98.612% 0.044% 1.344%)   worth being an old guy                                                                                                       -------adeeefoorrrv!
+        19 0* 1.96539% (98.612% 0.044% 1.344%)   worth looking older                                                                                                          aabdeeefgginnoorruvy!
+        20 0* 5.18184% (98.612% 0.044% 1.344%)   worth looking older for                                                                                                      aabdeeegginnoruvy!
+        21 0* 1.89354% (98.612% 0.044% 1.344%)   worth aging                                                                                                                  -------abddeeeeflnooorrruvy!
+        22 0* 3.71551% (98.616% 0.044% 1.340%)   worth aging for                                                                                                              -------abddeeeelnoorruvy!
+        23 0* 1.75114% (98.619% 0.044% 1.337%)   worth being around older                                                                                                     -------aeefgorvy!
+        24 0* 1.70032% (98.619% 0.044% 1.337%)   worth being around elder                                                                                                     -------aefgoorvy!
+        25 0* 1.67835% (98.619% 0.044% 1.337%)   worth looking older for!                                                                                                     aabdeeegginnoruvy
+        26 0* 1.66211% (98.619% 0.044% 1.337%)   worth being over                                                                                                             -------aaddeefglnoorruy!
+        27 0* 1.39337% (98.619% 0.044% 1.337%)   worth being                                                                                                                  -------aaddeeefglnooorrruvy!
+        28 0* 1.37592% (98.625% 0.044% 1.331%)   worth every                                                                                                                  -------aabddeefggilnnooorru!
+        29 0* 1.27892% (98.632% 0.044% 1.324%)   worth never                                                                                                                  -------aabddeefggilnooorruy!
+        30 0* 1.62796% (98.637% 0.044% 1.319%)   worth never being                                                                                                            -------aaddefglooorruy!
+        31 0* 4.01962% (98.637% 0.044% 1.319%)   worth never being good                                                                                                       -------aadeflorruy!
+        32 0* 1.24649% (98.637% 0.044% 1.319%)   worth being an older                                                                                                         -------adeefgoorruvy!
+        33 0* 1.22570% (98.637% 0.044% 1.319%)   worth aging for!                                                                                                             -------abddeeeelnoorruvy
+        34 0* 1.21387% (98.638% 0.044% 1.318%)   worth dying                                                                                                                  -------aabdeeeefglnooorrruv!
+        35 0* 4.27657% (98.641% 0.044% 1.315%)   worth dying for                                                                                                              -------aabdeeeeglnoorruv!
+        36 0* 1.15133% (98.647% 0.044% 1.309%)   worth being a                                                                                                                -------addeeefglnooorrruvy!
+        37 0* 1.15288% (98.649% 0.044% 1.307%)   worth being a ger                                                                                                            -------addeeflnooorruvy!
+        38 0* 1.10828% (98.649% 0.044% 1.307%)   worth being older for                                                                                                        -------aadeegnoruvy!
+        39 0* 0.99473% (98.649% 0.044% 1.307%)   worth dying for!                                                                                                             -------aabdeeeeglnoorruv
+        40 0* 0.97791% (98.650% 0.044% 1.305%)   gonna                                                                                                                        -------abddeeeefghilooorrrrtuvwy!
+        41 0* 0.96484% (98.701% 0.044% 1.255%)   worth being an elder for                                                                                                     -------adegooruvy!
+        42 0* 0.90197% (98.701% 0.044% 1.255%)   going                                                                                                                        -------aabddeeeefhlnooorrrrtuvwy!
+        43 0* 1.86049% (98.707% 0.044% 1.249%)   going to                                                                                                                     -------aabddeeeefhlnoorrrruvwy!
+        44 0* 0.87942% (98.749% 0.044% 1.207%)   worth being an old guy for                                                                                                   -------adeeeorrv!
+        45 0* 0.79069% (98.749% 0.044% 1.207%)   worth going over                                                                                                             -------aabddeeeflnorruy!
+        46 0* 0.76772% (98.750% 0.044% 1.206%)   worth being older!                                                                                                           -------aadeefgnoorruvy
+        47 0* 0.76495% (98.750% 0.044% 1.206%)   worth being around for!                                                                                                      -------adeeeglorvy
+        48 0* 0.75754% (98.750% 0.044% 1.206%)   worth being over                                                                                                             -------aaddeefglnoorruy!
+        49 0* 0.70493% (98.750% 0.044% 1.206%)   the new                                                                                                                      -------aabddeefggilnoooorrrruvy!
+        50 0* 0.69810% (98.786% 0.044% 1.170%)   worth being around old                                                                                                       -------aeeefgorrvy!
+        51 0* 0.68896% (98.786% 0.044% 1.170%)   worth doing                                                                                                                  -------aabdeeeefglnoorrruvy!
+        52 0* 0.66647% (98.789% 0.044% 1.167%)   worth being young                                                                                                            -------aaddeeefloorrrv!
+        53 0* 1.19568% (98.789% 0.044% 1.166%)   worth being young for                                                                                                        -------aaddeeelorrv!
+        54 0* 0.64525% (98.789% 0.044% 1.166%)   rad                                                                                                                          -------abdeeeefgghilnnoooorrrtuvwy!
+        55 0* 0.64486% (98.906% 0.044% 1.050%)   worth going deaf                                                                                                             -------abdeeelnoorrruvy!
+        56 0* 0.61331% (98.906% 0.044% 1.050%)   worth adding                                                                                                                 -------abeeeefglnooorrruvy!
+        57 0* 0.59405% (98.908% 0.044% 1.048%)   worth being an older guy                                                                                                     -------adeefoorrv!
+        58 0* 0.56720% (98.908% 0.044% 1.048%)   worth going bald                                                                                                             -------adeeeefnoorrruvy!
+        59 0* 1.30370% (98.908% 0.044% 1.047%)   worth going bald for                                                                                                         -------adeeeenorruvy!
+        60 0* 0.88573% (98.909% 0.044% 1.047%)   worth going bald over                                                                                                        -------adeeefnorruy!
+        61 0* 0.55702% (98.909% 0.044% 1.047%)   win                                                                                                                          -------aabddeeeefgghlnoooorrrrtuvy!
+        62 0* 0.59830% (99.000% 0.044% 0.956%)   win for                                                                                                                      -------aabddeeeegghlnooorrrtuvy!
+        63 0* 0.76720% (99.013% 0.044% 0.943%)   win for the                                                                                                                  -------aabddeeegglnooorrruvy!
+        64 0* 1.34439% (99.016% 0.044% 0.939%)   win for the elder                                                                                                            -------aabdeggnooorruvy!
+        65 0* 0.55330% (99.017% 0.044% 0.938%)   worth going deaf over                                                                                                        -------abdeelnorruy!
+        66 0* 0.48942% (99.018% 0.044% 0.938%)   the winner                                                                                                                   -------aabddeefggloooorrruvy!
+        67 0* 0.55875% (99.026% 0.044% 0.930%)   the winner of                                                                                                                -------aabddeegglooorrruvy!
+        68 0* 0.48849% (99.029% 0.044% 0.927%)   win for the over                                                                                                             -------aabddeegglnoorruy!
+        69 0* 0.45754% (99.029% 0.044% 0.927%)   worth being an old!                                                                                                          -------adeeefgoorrruvy
+        70 0* 0.44854% (99.029% 0.044% 0.927%)   worth a                                                                                                                      -------abddeeeefggilnnooorrruvy!
+        71 0* 0.44058% (99.047% 0.044% 0.908%)   worth being around!                                                                                                          -------adeeefgloorrvy
+        72 0* 0.42849% (99.047% 0.044% 0.908%)   worth an                                                                                                                     -------abddeeeefggilnooorrruvy!
+        73 0* 0.40533% (99.057% 0.044% 0.898%)   worth being over a                                                                                                           -------addeefglnoorruy!
+        74 0* 0.39534% (99.057% 0.044% 0.898%)   going to be                                                                                                                  -------aaddeeefhlnoorrrruvwy!
+        75 0* 0.39496% (99.060% 0.044% 0.895%)   worth looking older over                                                                                                     aabdeefgginnoruy!
+        76 0* 0.37642% (99.060% 0.044% 0.895%)   worth going bald for!                                                                                                        -------adeeeenorruvy
+        77 0* 0.37605% (99.060% 0.044% 0.895%)   worth being an elder!                                                                                                        -------adefgooorruvy
+        78 0* 0.36250% (99.060% 0.044% 0.895%)   worth being young for!                                                                                                       -------aaddeeelorrv
+        79 0* 0.34551% (99.060% 0.044% 0.895%)   worth                                                                                                                        -------aabddeeeefggilnnooorrruvy!
+        80 0* 0.32682% (99.086% 0.044% 0.869%)   worth being older for!                                                                                                       -------aadeegnoruvy
+        81 0* 0.31885% (99.086% 0.044% 0.869%)   worth being an old guy!                                                                                                      -------adeeefoorrrv
+        82 0* 0.29757% (99.086% 0.044% 0.869%)   worth looking over                                                                                                           aabddeeefggilnnoorruy!
+        83 0* 0.29407% (99.086% 0.044% 0.869%)   win for the old                                                                                                              -------aabdeeeggnoorrruvy!
+        84 0* 0.29360% (99.087% 0.044% 0.869%)   worth being old and                                                                                                          -------aeeefgoorrruvy!
+        85 0* 0.29187% (99.087% 0.044% 0.869%)   worth looking for                                                                                                            aabddeeeeggilnnoorruvy!
+        86 0* 0.28899% (99.087% 0.044% 0.869%)   worth being an old for                                                                                                       -------adeeegorruvy!
+        87 0* 0.28446% (99.087% 0.044% 0.869%)   gonna be                                                                                                                     -------addeeefghilooorrrrtuvwy!
+        88 0* 0.27767% (99.092% 0.044% 0.864%)   worth being nearly                                                                                                           -------addeefgooorruv!
+        89 0* 0.27510% (99.092% 0.044% 0.864%)   worth being an elder for!                                                                                                    -------adegooruvy
+        90 0* 0.27060% (99.092% 0.044% 0.864%)   worth going bald over!                                                                                                       -------adeeefnorruy
+        91 0* 0.26978% (99.092% 0.044% 0.864%)   worth over                                                                                                                   -------aabddeeefggilnnoorruy!
+        92 0* 0.26964% (99.094% 0.044% 0.862%)   not                                                                                                                          -------aabddeeeefgghilnooorrrruvwy!
+        93 0* 0.25879% (99.149% 0.044% 0.807%)   worth being nearly dead                                                                                                      -------efgooorruv!
+        94 0* 0.69707% (99.149% 0.044% 0.807%)   worth being nearly dead for                                                                                                  -------egooruv!
+        95 0* 0.31275% (99.149% 0.044% 0.807%)   worth being nearly dead for!                                                                                                 -------egooruv
+        96 0* 0.25555% (99.149% 0.044% 0.807%)   unfair                                                                                                                       -------abddeeeegghlnoooorrrtvwy!
+        97 0* 0.25444% (99.159% 0.044% 0.797%)   looking                                                                                                                      aabddeeeefgghilnnoooorrrrtuvwy!
+        98 0* 12.19306% (99.159% 0.044% 0.797%)   looking forward                                                                                                              abdeeeegghilnnooorrtuvy!
+        99 0* 36.31087% (99.159% 0.044% 0.797%)   looking forward to                                                                                                           abdeeeegghilnnoorruvy!
+       100 0* 79.81482% (99.162% 0.044% 0.793%)   looking forward to being                                                                                                     adeeeghlnoorruvy!
+       101 0* 45.60412% (99.162% 0.044% 0.793%)   looking forward to being an                                                                                                  deeeghloorruvy!
+       102 0* 919.65250% (99.162% 0.044% 0.793%)   looking forward to being an elder                                                                                            eghooruvy!
+       103 0* 43.71510% (99.163% 0.044% 0.793%)   looking forward to being one                                                                                                 adeeghlorruvy!
+       104 0* 26.21128% (99.163% 0.044% 0.793%)   looking forward to being elder                                                                                               aeghnooruvy!
+       105 0* 13.36344% (99.163% 0.044% 0.793%)   looking forward to being old                                                                                                 aeeeghnorruvy!
+       106 0* 16.86730% (99.163% 0.044% 0.793%)   looking forward to being old enough                                                                                          aeerrvy!
+       107 0* 5.99940% (99.163% 0.044% 0.793%)   looking forward to being older                                                                                               aeeghnoruvy!
+       108 0* 5.73691% (99.163% 0.044% 0.793%)   looking forward to being one!                                                                                                adeeghlorruvy
+       109 0* 4.78275% (99.163% 0.044% 0.793%)   looking forward to being an older                                                                                            eeghoruvy!
+       110 0* 4.46097% (99.163% 0.044% 0.793%)   looking forward to being an older guy                                                                                        eehorv!
+       111 0* 3.74912% (99.163% 0.044% 0.793%)   looking forward to elder                                                                                                     abeegghinnooruvy!
+       112 0* 3.35631% (99.163% 0.044% 0.793%)   looking forward to being an old                                                                                              eeeghorruvy!
+       113 0* 5.39083% (99.163% 0.044% 0.793%)   looking forward to being an old guy                                                                                          eeehorrv!
