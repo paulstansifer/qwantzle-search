@@ -1,0 +1,222 @@
+
+1938:  God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+T-Rex: NEVER
+T-Rex (punchline): -
+                   has          an        anal         ogy        been          so    accurate         and  personally         dam       aging
+prb             0.069%      0.731%     11.062%     99.908%      9.045%     13.017%     10.921%     13.350%      0.145%      1.987%     45.746%
+rln scr        10.959%     28.924%     72.994%     63.564%     58.166%     33.992%     62.143%     76.632%     69.175%     75.077%     68.260%
+pfx scr         0.040%      0.002%      0.007%      0.033%      0.030%      0.008%      0.213%      0.224%      0.143%      0.020%      0.181%
+tok ahd            123          23           1           0           1           1           1           2         103          11           1
+val ahd             18           8           1           0           0           1           0           0          24           0           0
+prb ahd         87.96%      75.09%      23.71%       0.00%      13.94%      17.81%      13.02%      33.67%      75.52%      58.60%      53.80%
+min score: 0.0024%  optimistic cost: 1.71e4  average prob: 4.4%  overall_prob: 1.26e-13%  average tok time: 35446 
+1218:  T-Rex: A few months ago I said I wanted to be a stand-up comedian. It turns out it's a lot of work?...ps.
+Utahraptor: Comedy's hard, I guess!
+T-Rex: I just can't figure out these... these Dinosaur Comics.
+God: OH GOD
+T-Rex: What?
+T-Rex (punchline): You
+                  know        what           ?          It           '           s      really       weird        when         you         say        that           .
+prb             7.664%     36.705%     44.053%      5.079%     71.887%     97.001%      2.193%      0.865%      2.554%     39.827%     40.362%     30.565%     25.147%
+rln scr        60.502%     68.755%     78.337%     57.337%     80.066%     78.918%     93.231%     89.725%     79.063%     77.428%     74.551%     73.836%     68.260%
+pfx scr        43.254%    176.525%    157.919%     18.828%     34.014%     58.719%     56.645%     10.376%      2.777%      6.936%     17.261%     62.137%     26.825%
+tok ahd              1           0           0           3           0           0           7          19           7           0           0           0           0
+val ahd              1           0           0           1           0           0           2           7           3           0           0           0           0
+prb ahd         28.23%       0.00%       0.00%      53.07%       0.00%       0.00%      57.96%      68.75%      73.37%       0.00%       0.00%       0.00%       0.00%
+min score: 2.7769%  optimistic cost: 3.84e2  average prob: 15.4%  overall_prob: 2.63e-9%  average tok time: 30182 
+1737:  T-Rex: So uh, it turns out that the fluoride in toothpaste is, um, TOXIC. POISONOUS. There's enough... immunity works like in the movies! And also assuming that, rather than swallowing the poison, I just rub it all over my teeth.
+T-Rex (punchline): And
+                   the        best        part          is           :        that           '           s        what           I         was          AL        READ           Y    planning          to          do      anyway           !
+prb             1.150%      2.312%     82.480%     63.537%      8.734%      1.235%     47.386%     97.486%      4.900%     38.388%      2.453%      4.175%     83.121%     99.992%      0.850%     63.043%     98.918%      5.487%     43.199%
+rln scr         4.797%      5.172%     13.828%      3.934%      7.180%     11.931%     12.739%     10.412%     12.503%     17.932%     10.910%     19.114%     41.148%     52.549%     81.791%     66.323%     48.868%     71.458%     68.260%
+pfx scr         0.293%      0.071%      1.581%      0.929%      0.268%      0.061%      0.057%      0.084%      0.059%      0.060%      0.006%      0.001%      0.031%      0.073%      0.137%      0.242%      0.609%      2.003%      1.535%
+tok ahd             10           7           0           0           2          16           0           0           3           0           2           3           0           0           3           0           0           4           0
+val ahd              4           5           0           0           1           5           0           0           2           0           1           1           0           0           1           0           0           1           0
+prb ahd         68.22%      27.52%       0.00%       0.00%      70.18%      67.19%       0.00%       0.00%      22.53%       0.00%      82.80%      64.88%       0.00%       0.00%      94.38%       0.00%       0.00%      82.14%       0.00%
+min score: 0.0015%  optimistic cost: 1.73e4  average prob: 14.6%  overall_prob: 1.40e-14%  average tok time: 27908 
+1132:  T-Rex: Dear body! Here are some things you need to stop doing!
+T-Rex: Aging?
+T-Rex: Also, making wei...d poop more instead of putting on weight.
+Off panel: Okay! I'm done with this conversation.
+T-Rex: No, seriously! Because -
+T-Rex (punchline): [small]
+               because           i         don           '           t        like       being         fat         and          po          op         ing          is        good       times
+prb             1.540%      7.667%      5.476%     98.773%     99.770%      6.370%      6.091%     30.723%      8.610%      0.265%     58.204%     82.250%     25.167%      4.611%      0.043%
+rln scr        54.519%     70.667%     49.823%     54.374%     48.228%     68.857%     64.776%     56.663%     14.971%     29.916%     50.856%     43.207%     35.331%     80.455%     68.260%
+pfx scr        43.127%      7.615%      1.681%      3.260%      5.209%      5.209%      6.448%     11.097%      1.616%      0.030%      0.101%      0.451%      0.320%      0.399%      0.003%
+tok ahd              9           1           1           0           0           4           5           0           1          41           0           0           0           4          58
+val ahd              2           0           1           0           0           0           2           0           0           6           0           0           0           0           3
+prb ahd         31.40%      17.58%      26.55%       0.00%       0.00%      57.36%      38.96%       0.00%      55.84%      78.00%       0.00%       0.00%       0.00%      30.67%      96.80%
+min score: 0.0032%  optimistic cost: 5.04e2  average prob: 8.1%  overall_prob: 4.12e-15%  average tok time: 27121 
+1333:  T-Rex: I have come up with an excellent way to celebrate Hallowe'en: a date auction!
+T-Rex: Featurin...on your fingers, T-Rex. "I", "I", "I", "I", "I".
+T-Rex: Aw, come on! You only bid like $20!
+Off panel: So?
+T-Rex: It's just -
+T-Rex (punchline): Never
+                   has         one         man          su          ck          ed          on         his     fingers          so        much         for          so      little
+prb             0.064%      1.616%     10.823%      0.524%     99.081%     99.302%     31.287%     79.845%     93.049%     59.677%     35.204%     27.615%     80.793%     96.937%
+rln scr        92.003%     92.721%     74.939%     84.390%     86.579%     78.119%     68.994%     87.149%     76.557%     76.672%     71.957%     70.765%     42.731%     68.260%
+pfx scr         0.312%      0.028%      0.014%      0.000%      0.001%      0.003%      0.002%      0.015%      0.912%      1.879%      7.383%     12.840%     21.602%   1371.775%
+tok ahd             29          13           0          21           0           0           0           0           0           0           0           0           0           0
+val ahd             18           8           0           4           0           0           0           0           0           0           0           0           0           0
+prb ahd         95.40%      73.74%       0.00%      66.72%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%
+min score: 0.0003%  optimistic cost: 8.55e2  average prob: 18.6%  overall_prob: 6.09e-9%  average tok time: 27402 
+1319:  T-Rex: Everyone!
+T-Rex: Guess what?
+T-Rex: I'm pretty great!
+T-Rex: I'm serious! I was thinking abou... come up with a clean, safe, cheap, efficient and powerful, renewable, reliable energy source THAT CURES CANCER.
+T-Rex: LATER
+T-Rex (punchline): AFTER
+                     I          GO          HO          ME         AND          SU         CCE          ED          AT          TH          IN           K         ING          OF           A           B          ET         TER          CO          ME           B         ACK
+prb            34.166%      1.649%      7.115%     99.092%     64.745%      0.200%     12.899%     94.842%     80.829%     10.465%      0.090%     98.572%     98.974%     41.632%     41.268%     11.260%     94.938%     99.982%      1.263%     36.488%     95.816%     99.987%
+rln scr        92.126%     81.095%     67.799%     75.598%     81.963%     84.322%     94.414%     95.519%     95.401%     95.597%     93.235%     85.012%     59.323%     67.178%     65.677%     79.358%     87.601%     85.979%     84.333%     80.770%     78.792%     68.260%
+pfx scr        54.768%      2.427%      0.446%      1.542%      6.129%      0.041%      0.035%      0.112%      0.306%      0.110%      0.000%      0.001%      0.002%      0.004%      0.003%      0.001%      0.003%      0.017%      0.001%      0.001%      0.002%      0.009%
+tok ahd              0          14           3           0           0          58           1           0           0           1           9           0           0           0           0           0           0           0           8           1           0           0
+val ahd              0          11           3           0           0          43           1           0           0           1           7           0           0           0           0           0           0           0           0           0           0           0
+prb ahd          0.00%      69.68%      58.43%       0.00%       0.00%      92.27%      53.10%       0.00%       0.00%      21.33%      99.50%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      69.89%      37.20%       0.00%       0.00%
+min score: 0.0003%  optimistic cost: 6.76e4  average prob: 19.9%  overall_prob: 3.80e-14%  average tok time: 26351 
+392:  Narrator: I THINK WE SHOULD BREAK UP
+Narrator: a web card
+T-Rex: Dear recipient of this comic:
+T-Rex...without this person!
+Utahraptor: Me too!
+T-Rex and Utahraptor: Dear recipient of this comic: You're better off without this jerk!
+T-Rex (punchline): I
+                 would       still        like          to        hear       about         the         sex           ,     however           !
+prb             0.801%      0.212%     40.850%     65.480%      3.760%      3.763%      8.425%     11.374%     17.312%      4.272%     31.267%
+rln scr        95.807%     92.826%     83.836%     74.723%     84.260%     50.327%     38.534%     25.654%     57.534%     71.458%     68.260%
+pfx scr        12.596%      0.459%      1.787%      3.459%      1.682%      0.835%      0.345%      0.167%      0.121%      0.487%      0.270%
+tok ahd             19          49           0           0           5           5           1           1           1           1           1
+val ahd              6          14           0           0           2           2           0           0           0           0           0
+prb ahd         67.32%      84.34%       0.00%       0.00%      43.35%      72.44%      55.86%      13.16%      25.52%      80.15%      31.84%
+min score: 0.1205%  optimistic cost: 9.45e2  average prob: 6.8%  overall_prob: 1.43e-11%  average tok time: 26089 
+982:  Narrator: T-REX HAS A HOUSEGUEST:
+T-Rex: Sure do! I have a friend who is visiting from INTERNET. He'...with this, you simply bought new carpets after he left? Yes! You can solve your emotional problems just by SPENDING MONEY!
+T-Rex (punchline): [thinks]
+                     W          ow           !          No      wonder      people        like     capital         ism          so        much          !!
+prb             1.425%     53.208%     38.402%      0.234%     48.464%      7.773%      7.342%      0.435%     94.328%     29.893%     99.033%     17.865%
+rln scr        61.387%     78.544%     79.265%     81.069%     76.251%     68.209%     64.863%     53.202%     26.201%     12.195%     71.374%     68.260%
+pfx scr         1.522%      3.164%      2.153%      0.016%      0.236%      0.599%      0.492%      0.134%      0.398%      0.191%     13.158%      7.753%
+tok ahd             16           0           1          47           0           1           1          16           0           1           0           1
+val ahd              1           0           0           1           0           0           0           3           0           1           0           1
+prb ahd         47.44%       0.00%      43.00%      81.83%       0.00%      23.12%      15.40%      84.91%       0.00%      40.34%       0.00%      62.29%
+min score: 0.0160%  optimistic cost: 6.40e1  average prob: 11.2%  overall_prob: 4.09e-10%  average tok time: 26330 
+1830:  T-Rex: Have you lied about liking a sport and now you're being called out on that lie? Okay. Lucky f... And he's a one-man team that prefers collective pronouns? I'm surprised you missed it; it was in all the papers.
+T-Rex: So!
+T-Rex (punchline): ...You
+                 still     believe          me        when           I           '           m     talking          to         you           ,         yes           ?
+prb             1.098%      0.317%     10.194%      0.935%     87.107%      2.977%     94.230%      8.339%      3.420%     41.982%     45.371%      2.180%     91.674%
+rln scr        43.707%     71.801%     83.475%     53.624%     56.405%     73.325%     68.172%     51.428%     48.270%     51.759%     72.461%     73.074%     68.260%
+pfx scr         7.877%      2.349%      0.911%      0.061%      0.103%      0.007%      0.012%      0.057%      0.006%      0.018%      0.022%      0.003%      0.005%
+tok ahd             16          34           1           9           0           3           0           2           2           0           0           6           0
+val ahd             10          20           1           3           0           1           0           2           0           0           0           0           0
+prb ahd         65.31%      81.99%      28.22%      90.92%       0.00%      81.84%       0.00%      40.02%      82.07%       0.00%       0.00%      84.79%       0.00%
+min score: 0.0030%  optimistic cost: 1.11e4  average prob: 8.3%  overall_prob: 8.81e-13%  average tok time: 26330 
+1234:  Narrator: JOKES FOR OFFICE WORKERS
+T-Rex: What is the deal with accidentally hitting "reply all" whe... oh god
+T-Rex: Maybe they could send us chocolates instead of email! Because we all hate spam!
+Off panel: T-Rex, this is -
+T-Rex (punchline): Laughing
+                    in recognition          is         fun           !          We         all      should          do          it       right         now           !
+prb             1.763%      0.014%      2.825%      0.808%     14.458%      0.731%     16.195%      3.845%     71.569%     72.125%      0.036%     81.222%     53.677%
+rln scr        95.363%     78.024%     81.498%     81.727%     80.729%     61.830%     77.734%     83.054%     82.195%     79.473%     71.996%     71.458%     68.260%
+pfx scr         5.105%      0.322%      0.031%      0.002%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd             11         246           7          21           1           4           1           8           0           0          43           0           0
+val ahd              5          96           4          10           0           0           1           1           0           0           4           0           0
+prb ahd         70.47%      94.23%      83.86%      62.90%      51.57%      88.68%      44.26%      69.46%       0.00%       0.00%      98.84%       0.00%       0.00%
+min score: 0.0000%  optimistic cost: 6.40e5  average prob: 3.8%  overall_prob: 2.92e-17%  average tok time: 26183 
+1825:  T-Rex: Dromiceiomimus, we've been friends for over 10 years!
+T-Rex: When you think about it, we've b...ered by our platonic love and also sometimes our sexytimes love too! He says only one thing: "ERROR: I'M GLAD I'M SO AWESOME"
+T-Rex (punchline): Let's
+                 spend     another          de        cade      making          it          so          it         can         say       other       stuff         too           ,        okay           ?
+prb             1.276%      8.996%      3.655%     99.980%      3.628%      9.865%      0.218%      2.186%     37.137%     59.647%      6.138%      8.357%     45.679%     13.291%     48.551%     63.281%
+rln scr        97.959%     89.745%     84.187%     78.625%     67.915%     62.746%     74.047%     48.855%     51.522%     26.255%     18.006%     30.389%     76.367%     79.879%     73.074%     68.260%
+pfx scr        20.522%     96.701%     10.846%    112.897%    143.518%     45.107%      0.400%      0.020%      0.050%      0.097%      0.090%      0.282%      2.070%      0.534%      2.822%      3.098%
+tok ahd             17           3           2           0           6           1          29           7           0           0           2           1           0           3           0           0
+val ahd             12           3           1           0           2           0           6           3           0           0           0           0           0           0           0           0
+prb ahd         58.14%      65.55%      89.70%       0.00%      64.50%      50.88%      87.07%      82.31%       0.00%       0.00%      64.45%      80.56%       0.00%      73.50%       0.00%       0.00%
+min score: 0.0199%  optimistic cost: 8.74e3  average prob: 10.3%  overall_prob: 1.52e-14%  average tok time: 26040 
+1766:  T-Rex: On their wedding day, my dad got cold feet, almost standing my mother up until someone talked...r a best friend who can tell interesting stories without making them science fiction author insertion epics?
+T-Rex: Amazing!
+T-Rex (punchline): You've
+               somehow     managed          to         say        that        like          it           '           s           a         bad       thing           !
+prb             0.438%     17.885%     95.782%      1.955%      7.056%      0.228%     42.404%     91.229%     99.841%     59.533%     40.688%     99.166%     37.923%
+rln scr        60.612%     51.899%     44.895%     52.853%     83.871%     62.407%     59.878%     65.328%     72.607%     67.992%     78.497%     71.458%     68.260%
+pfx scr        13.626%    124.766%    342.759%     48.882%     64.845%      1.311%      1.839%      3.400%      7.005%      7.252%     21.816%    434.903%    292.565%
+tok ahd             41           0           0           4           4          52           0           0           0           0           0           0           0
+val ahd             11           0           0           2           1          11           0           0           0           0           0           0           0
+prb ahd         61.77%       0.00%       0.00%      28.83%      53.40%      82.28%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%
+min score: 1.3109%  optimistic cost: 8.64e2  average prob: 16.8%  overall_prob: 8.31e-9%  average tok time: 26038 
+1085:  T-Rex: The best part of my mystery story was obviously the chase scene. Therefore, I've written a ne...h our spacesuits rapidly heating up! Will this fight end in victory... or in fiery death for us both? FIND OUT IN MY NEXT BOOK!
+T-Rex (punchline): The
+                  book          is      called           ,           "           A          Pl         ane         Sav          ed          Th          em           ,         And         You      Should        Have          Se          en          It          ."
+prb             3.957%     25.853%     48.349%      4.459%     71.235%      3.532%      0.045%     42.764%      0.008%     83.457%      0.709%     98.953%      5.670%      6.705%      0.832%      3.115%      2.961%      8.888%     99.553%     24.535%      2.691%
+rln scr         9.108%      2.018%      4.244%      5.929%      6.188%     11.672%     13.403%     31.061%     43.356%     46.627%     23.614%     23.403%     32.593%     43.360%     70.090%     75.890%     73.504%     81.332%     78.355%     75.590%     68.260%
+pfx scr         3.362%      0.599%     19.709%      2.217%      2.985%      0.362%      0.001%      0.004%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd              4           0           0           1           0           3         252           0         545           0          12           0           5           1          13           5           5           1           0           0           6
+val ahd              2           0           0           1           0           2          28           0          52           0           1           0           2           0           3           1           1           0           0           0           2
+prb ahd         40.10%       0.00%       0.00%      82.54%       0.00%      24.00%      83.19%       0.00%      96.01%       0.00%      82.85%       0.00%      55.17%      22.06%      74.54%      59.95%      68.21%      15.57%       0.00%       0.00%      78.59%
+min score: 0.0000%  optimistic cost: 7.97e6  average prob: 5.8%  overall_prob: 8.98e-25%  average tok time: 25649 
+1567:  T-Rex: Attention everyone! I have some terrible news!
+T-Rex: It turns out that we never get good at... paid the bill perfectly!
+Off panel: Holy crap!
+T-Rex: I know! AND they get to be referred to by the mass noun "elderlies"!
+T-Rex (punchline): TOTALLY
+               looking     forward          to       being          an         old          gu           y        over        here           !
+prb             0.005%     72.062%     99.673%      9.502%     11.419%      1.289%     10.916%     99.992%      0.026%     20.351%     20.023%
+rln scr        94.634%     93.462%     84.553%     84.257%     31.647%     35.088%     63.234%     71.420%     69.209%     71.458%     68.260%
+pfx scr         0.236%     10.038%     30.011%     60.513%      8.950%      0.819%      0.556%      1.165%      0.003%      0.009%      0.003%
+tok ahd            329           0           0           1           1           2           4           0          79           0           2
+val ahd             79           0           0           0           1           1           0           0           5           0           0
+prb ahd         98.13%       0.00%       0.00%      25.87%      19.29%      96.30%      74.19%       0.00%      97.18%       0.00%      58.69%
+min score: 0.0031%  optimistic cost: 1.92e3  average prob: 5.1%  overall_prob: 5.62e-13%  average tok time: 25750 
+177:  Narrator: THINGS I'VE READ ON THE INTERNET COMICS
+Narrator: also featuring: mild anti-vegetarian sen...whole Internet and you look up salads?
+Utahraptor: You don't understand! It's a really good salad!
+T-Rex: Is it meat salad?
+T-Rex (punchline): Because
+                    if         not        then           I       doubt          it       would          be           a        very        good         sal          ad           !
+prb            19.029%      1.312%      6.972%     34.118%      0.077%     43.919%      4.326%     59.893%      3.815%      7.473%     76.417%     89.345%     99.688%     13.064%
+rln scr        87.973%     79.263%     23.298%     24.838%     43.707%     26.799%     44.007%     29.507%     35.855%     22.399%     52.986%     73.761%     71.458%     68.260%
+pfx scr        50.830%      3.249%      0.660%      0.429%      0.011%      0.010%      0.015%      0.021%      0.002%      0.001%      0.022%      0.175%      0.581%      0.135%
+tok ahd              1           3           2           0          84           0           3           0           7           3           0           0           0           2
+val ahd              1           3           1           0          18           0           0           0           2           1           0           0           0           0
+prb ahd         23.93%      93.06%      78.47%       0.00%      94.17%       0.00%      70.86%       0.00%      48.81%      50.45%       0.00%       0.00%       0.00%      60.03%
+min score: 0.0010%  optimistic cost: 1.82e3  average prob: 12.0%  overall_prob: 1.32e-11%  average tok time: 25472 
+2169:  Narrator: HOW TO WIN AT CHESS
+T-Rex: First, you start a game of chess with Dromiceiomimus where she... that explicitly says a horse can't play chess, but that doesn't mean -
+T-Rex: UTAHRAPTOR I HAVE TO GO
+T-Rex: TO THE STABLES
+T-Rex (punchline): FOR...
+                   FOR          WH          AT           I           C          AN          ON          LY        DESC          RI          BE          AS           "          AW          ES           O          ME          RE           A         SON           S           "
+prb             0.681%      0.863%     85.219%     23.158%      8.228%     87.881%     62.123%     99.937%     30.511%     99.894%     99.821%     94.131%     25.923%      0.148%     53.857%     95.557%     99.771%      4.314%     49.144%     99.893%     98.263%     96.477%
+rln scr        18.351%      6.967%      3.016%      1.089%      1.180%      3.093%      5.393%      9.436%     21.756%     14.045%     13.260%     30.253%     32.223%     33.308%     50.874%     62.024%     62.421%     66.673%     72.437%     72.274%     70.392%     68.260%
+pfx scr         0.664%      0.007%      0.008%      0.001%      0.000%      0.001%      0.005%      0.027%      0.218%      0.483%      1.570%     11.630%      5.963%      0.032%      0.090%      0.194%      0.670%      0.107%      0.106%      0.674%      1.198%      2.082%
+tok ahd             19          12           0           0           2           0           0           0           0           0           0           0           0          97           0           0           0           1           0           0           0           0
+val ahd             17          10           0           0           0           0           0           0           0           0           0           0           0          25           0           0           0           1           0           0           0           0
+prb ahd         82.62%      80.85%       0.00%       0.00%      35.95%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      87.56%       0.00%       0.00%       0.00%      26.72%       0.00%       0.00%       0.00%       0.00%
+min score: 0.0002%  optimistic cost: 1.03e4  average prob: 27.8%  overall_prob: 5.91e-11%  average tok time: 25427 
+1056:  T-Rex: Ah, what a busy day. Time for me to go to bed and be naked and unconscious for, oh, about eig...techno music stopped!
+T-Rex: KNIFE to meet you, gentlemen!! Sorry if I flew off the HANDLE. And now, I BLADE you adieu!
+Off panel (punchline): Guys!!
+                   Nob         ody         but         the          gu           y         who         did          it       could        make        such         pun           s           !
+prb             0.091%     99.923%      0.159%      3.198%      7.269%     99.415%     22.434%      1.982%     23.610%      7.124%      1.324%      1.298%      6.401%     98.440%     24.300%
+rln scr        43.938%     56.877%     59.164%     29.934%     42.912%     33.949%     60.555%     49.771%     11.097%     24.837%     11.743%     44.754%     70.460%     71.458%     68.260%
+pfx scr         0.213%      1.504%      0.014%      0.001%      0.000%      0.001%      0.002%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd             72           0          75           4           1           0           0           9           1           2           9          13           3           0           1
+val ahd              1           0          46           3           0           0           0           1           1           0           0           1           0           0           0
+prb ahd         93.23%       0.00%      84.19%      72.69%       8.04%       0.00%       0.00%      42.71%      37.07%      23.90%      79.12%      76.42%      44.20%       0.00%      24.82%
+min score: 0.0000%  optimistic cost: 3.01e3  average prob: 6.1%  overall_prob: 6.59e-17%  average tok time: 25555 
+698:  T-Rex: Is it possible to have adventures in today's modern world? I mean real adventures, like ones...east part of Everest yourself. Okay, you're right!
+Narrator: MEANWHILE, IN THE UNIVERSE WHERE EVERYONE SNOWBOARDS EVERYWHERE:
+T-Rex (punchline): Guys,
+                     I          RE         ALL           Y        just         don           '           t       think           I           '           m          as        into        snow       board         ing          as           I        used          to          be           .
+prb            31.390%      0.178%     78.882%     99.974%      0.620%      2.268%     99.890%     99.981%      9.571%     17.033%     45.915%     81.546%      0.523%     13.597%     33.369%     97.831%     99.621%     94.974%     52.701%     28.036%     99.919%     94.427%     16.481%
+rln scr        78.782%     81.295%     90.181%     91.754%     96.772%     96.671%     96.682%     97.135%     87.849%     87.796%     88.789%     83.556%     91.491%     81.486%     81.556%     85.461%     79.199%     69.906%     75.631%     78.740%     75.815%     73.836%     68.260%
+pfx scr        43.030%      0.241%      1.153%      2.077%      0.138%      0.018%      0.033%      0.061%      0.113%      0.036%      0.031%      0.044%      0.001%      0.001%      0.005%      0.112%      0.662%      1.915%      2.027%      7.036%     23.344%     74.031%     20.947%
+tok ahd              0          49           0           0          28           4           0           0           4           1           0           0          23           2           0           0           0           0           0           1           0           0           2
+val ahd              0          25           0           0          11           3           0           0           4           0           0           0           6           1           0           0           0           0           0           0           0           0           0
+prb ahd          0.00%      86.98%       0.00%       0.00%      84.44%      81.06%       0.00%       0.00%      56.19%      24.84%       0.00%       0.00%      82.66%      34.40%       0.00%       0.00%       0.00%       0.00%       0.00%      46.04%       0.00%       0.00%      57.87%
+min score: 0.0009%  optimistic cost: 8.74e4  average prob: 22.9%  overall_prob: 1.91e-13%  average tok time: 25368 
