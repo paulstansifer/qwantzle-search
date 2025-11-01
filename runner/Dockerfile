@@ -9,7 +9,7 @@
 # ENV PATH=/root/.cargo/bin:$PATH
 
 # COPY .. .
-# RUN cargo build --bin qwantzle-search --features cuda
+# RUN cargo build --bin idiom-scour-scan --features cuda
 
 # FROM nvcr.io/nvidia/cuda:${CUDA_VERSION}-runtime-ubuntu${UBUNTU_VERSION} as base-cuda-runtime
 
@@ -44,8 +44,8 @@ RUN pip3 install -U "huggingface_hub[cli]"
 # Set the working directory in the container
 WORKDIR /app
 
-RUN git clone https://github.com/paulstansifer/qwantzle-search.git
-WORKDIR /app/qwantzle-search
+RUN git clone https://github.com/paulstansifer/idiom-scour-scan.git
+WORKDIR /app/idiom-scour-scan
 ENV CC=/usr/bin/gcc-12
 ENV CXX=/usr/bin/gcc-12
 ENV CPATH=/usr/lib/gcc/x86_64-linux-gnu/12/include

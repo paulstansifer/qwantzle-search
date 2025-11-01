@@ -1,10 +1,12 @@
-# qwantzle-search
+# Idiom Scour/Scan
 
-The punchline to [Dinosaur Comics strip 1663](https://www.qwantz.com/index.php?comic=1663) was given in anagram form. It's now known as the "Qwantzle", and people have been trying to unscramble it since it was published in 2010. 
+The punchline to [Dinosaur Comics strip 1663](https://www.qwantz.com/index.php?comic=1663) was given in anagram form. It's now known as the "Qwantzle", and people have been trying to figure out the punchline since it was published in 2010. 
+
+Idiom Scour/Scan is a tool to try to unscramble it by doing a search that broadly examines possible sentence beginnings and deeply investigates promising leads, all while trying to fit the context and authorial voice.  (Also, "Idiom Scour/Scan" is an anagram of "Dinosaur Comics".)
 
 ## How it works
 
-For a given prefix, an LLM will give you the probabilities of each possible next token; these probabilites turn out to be pretty well-calibrated in practice. `qwantzle-search` does a tree search over possible completions of a Dinosaur Comics strip, using those probabilities to determine which token sequences are the most promising. Anything that uses unavailable letters is ruled out, of course, but I also use a small regular old neural net to score the "quality" of the remaining letter pool (this keeps us from exploring branches where we're almost out of vowels, for example).
+For a given prefix, an LLM will give you the probabilities of each possible next token; these probabilites turn out to be pretty well-calibrated in practice. `idiom-scour-scan` does a tree search over possible completions of a Dinosaur Comics strip, using those probabilities to determine which token sequences are the most promising. Anything that uses unavailable letters is ruled out, of course, but I also use a small regular old neural net to score the "quality" of the remaining letter pool (this keeps us from exploring branches where we're almost out of vowels, for example).
 
 Thanks to the fact that pushing tokens onto the context and (with a little bit of low-level muckery with the KV cache) popping them off is basically free in llama.cpp; the time taken to reset the state of the model is almost nothing compared to the ~100ms it takes to generate logits from a particular prefix. This means that we can do an ordinary tree search, simply sticking all possible completions into a priority queue. The priority queue gets very large; it's necessary to prune it occasionally. If you want to run a search for a week, it needs to have at least a couple of gigabytes of RAM just to store the priority queue.
 
