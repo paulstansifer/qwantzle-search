@@ -662,9 +662,10 @@ impl SearchState<'_> {
 
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
-        if self.q.len() > 5_000_000 || quit_now {
+        if self.q.len() > 10_000_000 || quit_now {
             self.log_ln(&format!("Queue length is {}; trimming.", self.q.len()));
-            self.q = std::mem::take(&mut self.q).trim(2_000_000);
+            // must be less than half the threshold!
+            self.q = std::mem::take(&mut self.q).trim(4_000_000);
         }
 
         self.search_time += step_start.elapsed();
