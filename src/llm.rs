@@ -17,7 +17,8 @@ lazy_static! {
 }
 
 pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> LlamaModel {
-    if let Err(e) = gag::Gag::stderr() {
+    let gag_or = gag::Gag::stderr();
+    if let Err(e) = gag_or {
         println!("Trouble silencing stderr: {e}");
     }
     let params: LlamaModelParams =
