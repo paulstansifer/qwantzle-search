@@ -860,15 +860,6 @@ pub fn prob_score(
     while chars_i < chars_so_far {
         prod *= ilerp(chars_i, &sched) as f64;
 
-        // // The linear approximation for how much the anagram helps things is rough, but seems about accurate in practice.
-        // let filter_ratio: f32 = 0.05 + 0.55 * f32::max((80.0 - chars_i) / 80.0, 0.75);
-
-        // // This is unmotivated; purely empirical. Starts at 5.0, goes towards 4.0:
-        // //let len_bonus = f32::max(0.0, ((100.0 - chars_i) / 100.0) * 1.0) + 3.0;
-        // let len_bonus = 4.5;
-
-        // prod = f32::powf((1.0 + len_bonus) / filter_ratio, 0.25) as f64 * prod;
-
         chars_i += 1;
     }
 
