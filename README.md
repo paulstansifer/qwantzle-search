@@ -14,7 +14,7 @@ I've successfully unscrambled some Dinosaur Comics with punchlines that have 50-
 
 ## Constraints
 
-The [solution tester](https://www.afifthofnothing.com/anacryptogram.html) has a rundown of the hints that Ryan North has provided; the solver implements all of them (and generates the corresponding hints when test-solving other comics). I believe that the fact that the longest word was "fundamental" is an official hint, however, I can't find any direct evidence of this! Ryan North periodically deletes old tweets, so my best guess it that it got deleted.
+The [solution tester](https://www.afifthofnothing.com/anacryptogram.html) has a rundown of the hints that Ryan North has provided; the solver implements all of them (and generates the corresponding hints when test-solving other comics). It omits that "fundamental" is the longest word; this was [revealed somewhat later](https://www.qwantz.com/index.php?comic=1695), and for a long time I was wondering whether I had been imagining it!
 
 ### The theory of ties
 
