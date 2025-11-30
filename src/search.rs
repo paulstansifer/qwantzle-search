@@ -673,7 +673,6 @@ impl SearchState<'_> {
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
         if self.q.len() > 9_000_000 || quit_now {
-            self.log_ln(&format!("Queue length is {}; trimming.", self.q.len()));
             self.q = std::mem::take(&mut self.q).trim(7_000_000);
         }
 
