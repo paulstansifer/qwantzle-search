@@ -61,6 +61,12 @@ pub fn str_to_tokens_maybe_with_prefix_space(
     }
 }
 
+#[derive(Default, Clone)]
+struct CacheEntry {
+    toks: Vec<LlamaToken>,
+    last_used: u32,
+}
+
 pub struct Session<'a> {
     ctx: LlamaContext<'a>,
     prompt_toks: Option<usize>,
@@ -68,10 +74,14 @@ pub struct Session<'a> {
     toks: usize,
     pub timers: SessionTimers,
     boost_toks: HashMap<LlamaToken, f64>,
+    prefix_cache: Vec<CacheEntry>,
+    current_step: usize,
 }
 
 static PROMPT_SEQ_ID: i32 = 0;
 static OTHER_SEQ_ID: i32 = 1;
+// TODO: we should just take a prefix size and a suffix size as input and not make this public.
+pub static PREFIX_CACHE_SIZE: i32 = 20;
 
 #[derive(Serialize, Deserialize, Default, Clone, Copy)]
 pub struct SessionTimers {
@@ -100,6 +110,8 @@ impl<'a> Session<'a> {
             toks: 0,
             timers: SessionTimers::default(),
             boost_toks: HashMap::new(),
+            prefix_cache: vec![CacheEntry::default(); PREFIX_CACHE_SIZE as usize],
+            current_step: 0,
         }
     }
 
@@ -192,27 +204,90 @@ impl<'a> Session<'a> {
         self.advance_and_predict(&toks, top_p)
     }
 
+    pub fn reset_to_and_predict(
+        &mut self,
+        toks: &[LlamaToken],
+        top_p: Option<f32>,
+    ) -> Vec<(LlamaToken, f64)> {
+        let before_truncate = std::time::Instant::now();
+
+        let mut best = None;
+        for (i, cached_toks) in self.prefix_cache.iter().enumerate() {
+            let common_toks = toks
+                .iter()
+                .zip(cached_toks.toks.iter())
+                .take_while(|(a, b)| a == b)
+                .count();
+
+            if let Some((_, best_common_toks)) = best {
+                if common_toks > best_common_toks {
+                    best = Some((i, common_toks));
+                }
+            } else {
+                best = Some((i, common_toks));
+            }
+        }
+        let mut best = best.unwrap();
+
+        if best.0 == 0 {
+            let lru_idx = self
+                .prefix_cache
+                .iter()
+                .enumerate()
+                .min_by_key(|entry| entry.1.last_used)
+                .unwrap()
+                .0;
+            best = (lru_idx, 0);
+        }
+
+        let (seq_id, toks_in_common) = best;
+
+        self.ctx
+            .clear_kv_cache_seq(
+                Some(seq_id as u32),
+                Some((self.prompt_toks.unwrap() + toks_in_common) as u32),
+                None,
+            )
+            .unwrap();
+
+        self.timers.truncate_time += before_truncate.elapsed().as_micros();
+        // TODO: `self.toks` is probably a bad way of doing things now...
+        self.toks = self.prompt_toks.unwrap() + toks_in_common;
+
+        self.current_step += 1;
+        self.prefix_cache[seq_id as usize] = CacheEntry {
+            toks: toks.to_vec(),
+            last_used: self.current_step as u32,
+        };
+
+        // I think that `llama_cpp_2` sometimes uses i32 and sometimes u32 for sequence IDs!
+        self.advance_and_predict_in_seq(&toks[toks_in_common..], top_p, seq_id as i32)
+    }
+
     pub fn advance_and_predict(
         &mut self,
         toks: &[LlamaToken],
         top_p: Option<f32>,
     ) -> Vec<(LlamaToken, f64)> {
+        self.advance_and_predict_in_seq(toks, top_p, OTHER_SEQ_ID)
+    }
+
+    pub fn advance_and_predict_in_seq(
+        &mut self,
+        toks: &[LlamaToken],
+        top_p: Option<f32>,
+        seq_id: i32,
+    ) -> Vec<(LlamaToken, f64)> {
         if toks.is_empty() {
             panic!("No tokens!!");
         }
-        // let seq_ids = if self.prompt_toks.is_none() {
-        //     vec![PROMPT_SEQ_ID, OTHER_SEQ_ID]
-        // } else {
-        //     vec![OTHER_SEQ_ID]
-        // };
-        let seq_ids = vec![OTHER_SEQ_ID];
 
         let before_advance = std::time::Instant::now();
         let mut batch = LlamaBatch::new(toks.len() as usize, 2);
 
         for (i, t) in toks.iter().enumerate() {
             batch
-                .add(*t, self.toks as i32, &seq_ids, i + 1 == toks.len())
+                .add(*t, self.toks as i32, &[seq_id], i + 1 == toks.len())
                 .unwrap();
             self.toks += 1;
         }

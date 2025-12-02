@@ -214,7 +214,8 @@ impl Hints {
             vocab,
             longest_word_len: Some(longest_word_len as u8),
             longest_token: Some(longest_tok.0),
-            token_size: str_to_tokens(&strip.context(), llm).len() + TOK_BUFFER as usize,
+            token_size: str_to_tokens(&strip.context(), llm).len()
+                + TOK_BUFFER as usize * crate::llm::PREFIX_CACHE_SIZE as usize,
         }
     }
 
@@ -239,7 +240,8 @@ impl Hints {
         }
 
         let context = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
-        let token_size = str_to_tokens(&context, llm).len() + TOK_BUFFER as usize;
+        let token_size = str_to_tokens(&context, llm).len()
+            + TOK_BUFFER as usize * crate::llm::PREFIX_CACHE_SIZE as usize;
         let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
         let mut letter_pool = LetterPool::just_letters_from_text(letters);
         letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
@@ -944,11 +946,9 @@ impl Node {
 
         let candidates = search_state
             .sess
-            .advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
+            .reset_to_and_predict(&self.tokens(), Some(TOK_TOP_P));
 
         self.consider_candidates(candidates, search_state);
-
-        search_state.sess.truncate_to_prompt();
     }
 
     fn consider_candidates(
