@@ -474,8 +474,7 @@ impl SearchState<'_> {
     fn full_string_complete(&mut self, text: &str, score: Score) -> bool {
         match &self.hints.goal {
             None => {
-                let desc = format!("==> '{}!!' ({:.2}%)", text, score.0 * 100.0);
-                self.log_ln("!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+                let desc = format!("====> 'I{}!!' ({:.5}%)", text, score.0 * 100.0);
                 self.log_ln(&desc);
                 self.hall_of_fame.possible_completions.push(desc);
                 let mut file = fs::OpenOptions::new()
@@ -483,7 +482,7 @@ impl SearchState<'_> {
                     .append(true)
                     .open("/home/paul/qwantzle_completions.txt")
                     .unwrap();
-                let _ = writeln!(&mut file, "{}!! ({:.2}%)", text, score.0 * 100.0);
+                let _ = writeln!(&mut file, "I{}!! ({:.5}%)", text, score.0 * 100.0);
 
                 false // keep going!
             }
@@ -614,6 +613,7 @@ impl SearchState<'_> {
         }
     }
 
+    // Returns `true` if it's time to stop the search
     fn search_step(&mut self) -> bool {
         self.progress.tick();
         let step_start = std::time::Instant::now();
@@ -626,9 +626,8 @@ impl SearchState<'_> {
             let cur_text = toks_to_str(&node.tokens(), &self.llm);
 
             if node.remaining.empty_of_letters() {
-                if self.full_string_complete(&cur_text, p) {
-                    return true;
-                }
+                // There's no point continuing this node, but the search might or might not be done:
+                return self.full_string_complete(&cur_text, p);
             }
 
             let desc = format!(
