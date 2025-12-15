@@ -283,10 +283,10 @@ pub struct LetterPool {
     tie_sequences: Option<Vec<Vec<Char>>>, // if we need to save memory, do Option<[u8; 5]>
 }
 
-#[derive(Default)]
 struct PoolTok {
     /// Stored in order of first occurrence
     chars: Vec<(Char, u8)>,
+    last_letter: Char,
 }
 
 thread_local! {
@@ -297,9 +297,13 @@ static LOWERCASE: std::ops::Range<u8> = b'a'..b'z';
 
 impl PoolTok {
     fn from_str(s: &str) -> PoolTok {
-        let mut res = PoolTok::default();
+        let mut res = PoolTok {
+            chars: vec![],
+            last_letter: Char(0),
+        };
         for b in s.as_bytes() {
             let c = Char(*b);
+            res.last_letter = c;
 
             if *b == b' ' {
                 continue;
@@ -570,11 +574,15 @@ impl LetterPool {
             let available = self.lookup(*c);
             if available < *count {
                 return false;
-            } else if Some(*c) == self.last_letter
-                && available == *count
-                && self.letter_size() > tok.size().into()
-            {
-                return false; // Used the last letter, but we're not the last word.
+            } else if Some(*c) == self.last_letter && available == *count {
+                // Used the last letter...
+                if self.letter_size() > tok.size().into() {
+                    return false; // ...but we're not the last word
+                } else {
+                    if Some(tok.last_letter) != self.last_letter {
+                        return false; // ...and we're the last word, but it's not our last letter.
+                    }
+                }
             }
         }
         return true;
