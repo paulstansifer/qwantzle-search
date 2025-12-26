@@ -671,8 +671,8 @@ impl SearchState<'_> {
 
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
-        if self.q.len() > 9_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(7_000_000);
+        if self.q.len() > 11_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(9_000_000);
         }
 
         self.search_time += step_start.elapsed();
