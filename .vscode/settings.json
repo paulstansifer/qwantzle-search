@@ -14,5 +14,6 @@
         "CC": "/usr/bin/gcc-12",
         "CXX": "/usr/bin/gcc-12",
         "CPATH": "/usr/lib/gcc/x86_64-linux-gnu/12/include"
-    }
+    },
+    "python-envs.pythonProjects": []
 }

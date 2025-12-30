@@ -38,3 +38,4 @@ gag = "1.0.0"
 signal-hook = "0.3.17"
 thousands = "0.2.0"
 lazysort = "0.2.1"
+pyo3 = { version = "0.27", features = ["auto-initialize"] }

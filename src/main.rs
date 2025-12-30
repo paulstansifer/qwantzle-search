@@ -17,6 +17,7 @@ mod llm;
 mod pool;
 mod remaining_letters_neural_net;
 mod search;
+mod vllm;
 
 use corpus::Strip;
 
