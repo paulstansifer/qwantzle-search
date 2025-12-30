@@ -8,7 +8,7 @@ use std::cell::RefCell;
 use std::collections::{HashMap, HashSet};
 use std::hash::Hash;
 
-use crate::llm;
+use crate::llamacpp;
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy, Deserialize, Serialize, Debug)]
 struct Char(u8);
@@ -70,7 +70,7 @@ impl VocabBuilder {
         }
         self.allowed_tokens.insert(tok);
 
-        let solo_token = llm::tok_to_str(LlamaToken(tok), model);
+        let solo_token = llamacpp::tok_to_str(LlamaToken(tok), model);
 
         if !regex::Regex::new(r"[a-zA-Z]")
             .unwrap()
@@ -89,14 +89,14 @@ impl VocabBuilder {
                 panic!("Space in the middle of a token?!?!?");
             }
         } else {
-            let xes = llm::str_to_tokens("xxxxxxxxxxxxxxx", model);
+            let xes = llamacpp::str_to_tokens("xxxxxxxxxxxxxxx", model);
             let mid_token = xes[xes.len() / 2];
 
             // Does the token add a space when attached to something?
-            if llm::toks_to_str(&[mid_token, LlamaToken(tok)], model).contains(" ") {
+            if llamacpp::toks_to_str(&[mid_token, LlamaToken(tok)], model).contains(" ") {
                 self.word_starters.insert(tok);
             }
-            if llm::toks_to_str(&[LlamaToken(tok), mid_token], model).contains(" ") {
+            if llamacpp::toks_to_str(&[LlamaToken(tok), mid_token], model).contains(" ") {
                 self.word_enders.insert(tok);
             }
         }
@@ -124,7 +124,7 @@ impl VocabBuilder {
         }
     }
     fn add_literal_word(&mut self, word: &str, model: &LlamaModel, pop_front_tok: bool) {
-        let mut toks: Vec<i32> = llm::str_to_tokens(word, model)
+        let mut toks: Vec<i32> = llamacpp::str_to_tokens(word, model)
             .into_iter()
             .map(|t| t.0)
             .collect();
@@ -533,7 +533,7 @@ impl LetterPool {
     // HACK: should do this after setting `last_letter`
     pub fn set_longest_tok(&mut self, longest_tok: LlamaToken, model: &LlamaModel) {
         self.remove(longest_tok, model);
-        let tok_str = llm::tok_to_str(longest_tok, model);
+        let tok_str = llamacpp::tok_to_str(longest_tok, model);
         let lt_len = tok_str.trim().len() as u8;
         self.long_tok = Some((longest_tok.0, lt_len));
 
@@ -546,11 +546,11 @@ impl LetterPool {
 
     // HACK: should do this after setting `last_letter`
     pub fn set_longest_tok_from(&mut self, text: &str, model: &LlamaModel) {
-        let toks = llm::str_to_tokens_maybe_with_prefix_space(text, model).0;
+        let toks = llamacpp::str_to_tokens_maybe_with_prefix_space(text, model).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
-            let t_len = llm::tok_to_str(t, model).len();
+            let t_len = llamacpp::tok_to_str(t, model).len();
             if t_len > longest_tok_len {
                 longest_tok_len = t_len;
                 longest_tok = t;
@@ -558,7 +558,7 @@ impl LetterPool {
         }
 
         self.remove(longest_tok, model); // need to do this before the next line!
-        let longest_tok_str = llm::tok_to_str(longest_tok, model);
+        let longest_tok_str = llamacpp::tok_to_str(longest_tok, model);
         self.long_tok = Some((longest_tok.0, longest_tok_str.trim().len() as u8));
 
         if let Some(ll) = self.last_letter {
@@ -678,7 +678,7 @@ impl TokCache {
     fn get_tok(&mut self, tok: LlamaToken, model: &LlamaModel) -> &PoolTok {
         self.toks
             .entry(tok.0)
-            .or_insert(PoolTok::from_str(&llm::tok_to_str(tok, model)))
+            .or_insert(PoolTok::from_str(&llamacpp::tok_to_str(tok, model)))
     }
 }
 
@@ -724,7 +724,7 @@ fn pool_test() {
 
 #[test]
 fn ties_test() {
-    use crate::llm::{self, str_to_tokens};
+    use crate::llamacpp::{self, str_to_tokens};
 
     let abcdef_pool = LetterPool::from_text("aaa bbb ccc dd ee ff x", /*look_at_ties=*/ true);
     assert!(abcdef_pool.respects_ties());
@@ -772,7 +772,7 @@ fn ties_test() {
         assert!(!pool.respects_ties()); // But we still know d->e->f!
     }
 
-    let model = llm::model_from_gguf("maykeye-tl.gguf", false);
+    let model = llamacpp::model_from_gguf("maykeye-tl.gguf", false);
 
     let letters_for_1663 = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
     let mut pool_for_1663 = LetterPool::just_letters_from_text(&letters_for_1663);
@@ -838,7 +838,7 @@ fn ties_test() {
 #[test]
 fn word_state_test() {
     let mut vb = VocabBuilder::default();
-    let model = llm::model_from_gguf("maykeye-tl.gguf", false);
+    let model = llamacpp::model_from_gguf("maykeye-tl.gguf", false);
     vb.add_word("!", &model, false);
     vb.add_word("the", &model, false);
     vb.add_word("fundamental", &model, false);
@@ -849,7 +849,7 @@ fn word_state_test() {
 
     let seq_is_ok = |seq: &str| {
         let mut ws_or = Some(WordState::new_empty());
-        for tok in llm::str_to_tokens(&format!("{}!", seq), &model) {
+        for tok in llamacpp::str_to_tokens(&format!("{}!", seq), &model) {
             if let Some(ws) = ws_or {
                 ws_or = ws.add_tok(LlamaToken(tok.0), &vocab);
             } else {

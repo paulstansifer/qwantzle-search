@@ -10,10 +10,11 @@ use thousands::Separable;
 
 use crate::{
     corpus::Strip,
-    llm::{
+    llamacpp::{
         self, str_to_tokens, str_to_tokens_maybe_with_prefix_space, tok_to_str, toks_to_str,
-        Session, SessionTimers,
+        LlamaCppSession,
     },
+    llm::SessionTimers,
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
     remaining_letters_neural_net::{self, LetterNet},
     TIME_TO_QUIT,
@@ -180,11 +181,11 @@ impl Hints {
             v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
         };
 
-        let toks = llm::str_to_tokens_maybe_with_prefix_space(&strip.punchline, llm).0;
+        let toks = llamacpp::str_to_tokens_maybe_with_prefix_space(&strip.punchline, llm).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
-            let t_len = llm::tok_to_str(t, llm).len();
+            let t_len = llamacpp::tok_to_str(t, llm).len();
             if t_len > longest_tok_len {
                 longest_tok_len = t_len;
                 longest_tok = t;
@@ -233,7 +234,7 @@ impl Hints {
             v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ true)
         };
 
-        let long_word_toks = llm::str_to_tokens(" fundamental", llm);
+        let long_word_toks = llamacpp::str_to_tokens(" fundamental", llm);
         if long_word_toks.len() != 1 {
             panic!("' fundamental' isn't one token");
         }
@@ -278,7 +279,7 @@ pub struct SearchState<'a> {
 
     llm: &'a LlamaModel,
     rlnn: LetterNet,
-    sess: llm::Session<'a>,
+    sess: LlamaCppSession<'a>,
 
     hints: Hints,
 
@@ -328,12 +329,12 @@ impl SearchState<'_> {
         .unwrap();
 
         let root_node = Node::root_from_hints(&hints);
-        let mut sess = Session::new(llm, token_size);
+        let mut sess = LlamaCppSession::new(llm, token_size);
 
         if hints.id == 1663 {
             // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
             // synced between this and `load`)
-            let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+            let colon_tok = *llamacpp::str_to_tokens("totally:", llm).last().unwrap();
             sess.boost(colon_tok, 35.0);
             println!("Colon is boosted!");
         }
@@ -370,7 +371,7 @@ impl SearchState<'_> {
                 }
                 let mut pfx_node = root_node.clone();
                 let mut score = Score(1.0);
-                for tok in llm::str_to_tokens(&prefix.trim_end(), llm) {
+                for tok in llamacpp::str_to_tokens(&prefix.trim_end(), llm) {
                     if let Some((next_node, next_score)) = pfx_node.push_token(
                         tok,
                         0.12,
@@ -419,10 +420,10 @@ impl SearchState<'_> {
 
         println!("Loaded search queue with {} elements.", sss.q.len());
 
-        let mut sess = Session::new(llm, token_size);
+        let mut sess = LlamaCppSession::new(llm, token_size);
 
         if sss.hints.id == 1663 {
-            let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
+            let colon_tok = *llamacpp::str_to_tokens("totally:", llm).last().unwrap();
             sess.boost(colon_tok, 35.0);
         }
 
@@ -1124,7 +1125,7 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
         remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
             .unwrap();
 
-    let mut sess = Session::new(llm, hints.token_size as u32);
+    let mut sess = LlamaCppSession::new(llm, hints.token_size as u32);
 
     let mut node = Node::root_from_hints(&hints);
 

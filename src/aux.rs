@@ -1,10 +1,11 @@
 // TODO: need to do some more refactoring to make this actually work in its own file.
 
+mod llamacpp;
 mod llm;
 
 use clap::Parser;
 use llama_cpp_2::model::LlamaModel;
-use llm::Session;
+use llamacpp::LlamaCppSession;
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -14,12 +15,12 @@ struct Args {
 }
 
 fn _display_top_toks(model: &LlamaModel, s: &str) {
-    let mut sess = Session::new(model, 1000);
+    let mut sess = LlamaCppSession::new(model, 1000);
 
     let candidates = sess.advance_and_predict_str(s, Some(0.995));
 
     for (t, p) in candidates.iter().take(15) {
-        let t_string = llm::tok_to_str(*t, model)
+        let t_string = llamacpp::tok_to_str(*t, model)
             .replace('\n', "\\n")
             .replace('\r', "\\r");
         print!("{:.2}%: {}  ", p * 100.0, t_string)
@@ -28,14 +29,14 @@ fn _display_top_toks(model: &LlamaModel, s: &str) {
 }
 
 fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
-    let mut sess = Session::new(model, 1000);
+    let mut sess = LlamaCppSession::new(model, 1000);
 
     let candidates = sess.advance_and_predict_str(prompt, Some(0.995));
     sess.save_prompt();
 
     print!("prompt: '{prompt}'   ---   ");
     for (t, p) in candidates.iter().take(15) {
-        print!("{:.2}%: {}  ", p * 100.0, llm::tok_to_str(*t, model))
+        print!("{:.2}%: {}  ", p * 100.0, llamacpp::tok_to_str(*t, model))
     }
     println!();
 
@@ -43,7 +44,7 @@ fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
         print!("suffix: '{suffix}'   ---   ");
         let candidates = sess.advance_and_predict_str(suffix, Some(0.995));
         for (t, p) in candidates.iter().take(15) {
-            print!("{:.2}%: {}  ", p * 100.0, llm::tok_to_str(*t, model))
+            print!("{:.2}%: {}  ", p * 100.0, llamacpp::tok_to_str(*t, model))
         }
         println!();
         sess.truncate_to_prompt();
@@ -83,7 +84,7 @@ fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
 fn main() {
     let args = Args::parse();
 
-    let model = llm::model_from_gguf(args.model, true);
+    let model = llamacpp::model_from_gguf(args.model, true);
 
     truncate_and_try(
         &model,

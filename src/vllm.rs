@@ -1,20 +1,20 @@
 use std::collections::HashMap;
 
 use anyhow::Result;
-use llama_cpp_2::token::LlamaToken;
 use pyo3::intern;
+use pyo3::prelude::*;
 use pyo3::types::{PyDict, PyList};
-use pyo3::{prelude::*, PyClass};
-use serde::{Deserialize, Serialize};
+
+use crate::llm::{Model, Session, SessionTimers, Token};
 
 #[derive(PartialEq, Eq, Hash, Clone, Copy)]
 pub struct VllmToken(i64);
+
 pub struct VllmModel {
     vllm: Py<PyModule>,
     model: Py<PyAny>,
     tokenizer: Py<PyAny>,
     dec_cache: HashMap<VllmToken, String>,
-    //    enc_cache: HashMap<String, Vec<VllmToken>>,
 }
 
 pub fn tok_to_str(t: VllmToken, model: &mut VllmModel) -> String {
@@ -102,25 +102,39 @@ impl VllmModel {
     }
 }
 
-#[derive(Serialize, Deserialize, Default, Clone, Copy)]
-pub struct SessionTimers {
-    pub advance_time: u128,
-    pub predict_time: u128,
-    pub score_time: u128,
-    pub truncate_time: u128,
+impl Model for VllmModel {
+    fn str_to_tokens(&mut self, s: &str) -> Vec<Token> {
+        str_to_tokens(s, self)
+            .into_iter()
+            .map(|VllmToken(t)| t as i32)
+            .collect()
+    }
+
+    fn toks_to_str(&mut self, toks: &[Token]) -> String {
+        let vllm_toks: Vec<VllmToken> = toks.iter().map(|&t| VllmToken(t as i64)).collect();
+        toks_to_str(&vllm_toks, self)
+    }
+
+    fn tok_to_str(&mut self, tok: Token) -> String {
+        tok_to_str(VllmToken(tok as i64), self)
+    }
+
+    fn new_session<'b>(&'b mut self, prompt: &str) -> Box<dyn crate::llm::Session<'b> + 'b> {
+        Box::new(VllmSession::new(self, prompt))
+    }
 }
 
-pub struct Session {
-    model: VllmModel,
+pub struct VllmSession<'a> {
+    model: &'a VllmModel,
     boost_toks: HashMap<VllmToken, f64>,
     pub timers: SessionTimers,
     pfx: Vec<VllmToken>,
 }
 
-impl Session {
-    pub fn new(model: VllmModel, pfx: &str) -> Session {
-        let pfx = str_to_tokens(pfx, &model);
-        Session {
+impl<'a> VllmSession<'a> {
+    pub fn new(model: &'a VllmModel, pfx: &str) -> VllmSession<'a> {
+        let pfx = str_to_tokens(pfx, model);
+        VllmSession {
             model,
             boost_toks: HashMap::new(),
             timers: SessionTimers::default(),
@@ -132,7 +146,16 @@ impl Session {
         self.boost_toks.insert(tok, boost);
     }
 
-    pub fn predict(&mut self, toks: &[VllmToken], top_p: Option<f32>) -> Vec<(VllmToken, f64)> {
+    pub fn predict_str(&mut self, text: &str, top_p: Option<f32>) -> Vec<(VllmToken, f64)> {
+        let toks = str_to_tokens(text, &self.model);
+        self.predict_internal(&toks, top_p)
+    }
+
+    pub fn predict_internal(
+        &mut self,
+        toks: &[VllmToken],
+        top_p: Option<f32>,
+    ) -> Vec<(VllmToken, f64)> {
         Python::attach(|py| -> anyhow::Result<Vec<(VllmToken, f64)>> {
             let sampling_params_class = self.model.vllm.getattr(py, "SamplingParams").unwrap();
 
@@ -184,5 +207,34 @@ impl Session {
             Ok(results)
         })
         .unwrap()
+    }
+}
+
+impl<'a> Session<'a> for VllmSession<'a> {
+    fn boost(&mut self, tok: Token, boost: f64) {
+        self.boost_toks.insert(VllmToken(tok as i64), boost);
+    }
+
+    fn timers(&self) -> &SessionTimers {
+        &self.timers
+    }
+
+    fn predict_str(&mut self, text: &str, top_p: Option<f32>) -> Vec<(Token, f64)> {
+        let toks = str_to_tokens(text, self.model);
+        self.predict(
+            &toks
+                .into_iter()
+                .map(|VllmToken(t)| t as i32)
+                .collect::<Vec<_>>(),
+            top_p,
+        )
+    }
+
+    fn predict(&mut self, toks: &[Token], top_p: Option<f32>) -> Vec<(Token, f64)> {
+        let vllm_toks: Vec<VllmToken> = toks.iter().map(|&t| VllmToken(t as i64)).collect();
+        self.predict_internal(&vllm_toks, top_p)
+            .into_iter()
+            .map(|(VllmToken(t), p)| (t as i32, p))
+            .collect()
     }
 }

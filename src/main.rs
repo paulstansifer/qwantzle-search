@@ -3,7 +3,7 @@ use indicatif::ProgressIterator;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::LlamaModel;
 use llama_cpp_2::token_type::LlamaTokenAttr;
-use llm::tok_to_str;
+use llamacpp::tok_to_str;
 use pool::LetterPool;
 use search::{manual_search, SearchState};
 use std::fmt::Write;
@@ -13,6 +13,7 @@ use tracing_subscriber::layer::SubscriberExt;
 use tracing_subscriber::util::SubscriberInitExt;
 
 mod corpus;
+mod llamacpp;
 mod llm;
 mod pool;
 mod remaining_letters_neural_net;
@@ -188,11 +189,11 @@ fn predict_strip(
             .unwrap()
             .len() as u32
         + 2;
-    let mut sess = llm::Session::new(model, toks_needed);
+    let mut sess = llamacpp::LlamaCppSession::new(model, toks_needed);
     let mut candidates = sess.advance_and_predict_str(&context, Some(0.99995));
 
     let (punch_toks, _space) =
-        llm::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
+        llamacpp::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
 
     // if space {
     //     writeln!(stats.details, "Padding the suffix with a space.").unwrap();
@@ -252,7 +253,7 @@ fn predict_strip(
             prob_ahead += prob;
         }
 
-        let tok_as_string = llm::tok_to_str(*tok, model);
+        let tok_as_string = llamacpp::tok_to_str(*tok, model);
 
         write!(tok_s, "{:>12}", tok_as_string).unwrap();
 
@@ -268,7 +269,7 @@ fn predict_strip(
         // }
 
         punchline.push(' ');
-        punchline.push_str(&llm::tok_to_str(*tok, model));
+        punchline.push_str(&llamacpp::tok_to_str(*tok, model));
         letter_pool.remove(*tok, &model);
 
         let rlnn_mult = rlnn.evaluate(&letter_pool);
@@ -621,7 +622,7 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
 
     let mut ctx = {
         let _stderr_gag = gag::Gag::stderr().unwrap();
-        model.new_context(&llm::BACKEND, params).unwrap()
+        model.new_context(&llamacpp::BACKEND, params).unwrap()
     };
 
     let mut batch = LlamaBatch::new(n_toks as usize, 1);
@@ -702,7 +703,7 @@ fn main() {
         }
     });
 
-    let model = llm::model_from_gguf(&args.model, !args.no_gpu);
+    let model = llamacpp::model_from_gguf(&args.model, !args.no_gpu);
 
     // Can use "corpus/dictionary_filter.txt", but it's not worth it.
     let words = corpus::get_words("corpus/allowed_words.txt", None);
@@ -780,7 +781,7 @@ fn main() {
             std::io::stdout().flush().unwrap();
         }
     } else if let Some(s) = args.tokenize {
-        let toks = llm::str_to_tokens(&s, &model);
+        let toks = llamacpp::str_to_tokens(&s, &model);
         let mut s_top = String::new();
         let mut s_bot = String::new();
         for tok in toks {
