@@ -15,10 +15,10 @@ pub struct SessionTimers {
 #[allow(dead_code)]
 pub trait Model {
     /// Convert a string to tokens
-    fn str_to_tokens(&mut self, s: &str) -> Vec<Token>;
+    fn str_to_tokens(&self, s: &str) -> Vec<Token>;
 
     /// Convert tokens back to a string
-    fn toks_to_str(&mut self, toks: &[Token]) -> String;
+    fn toks_to_str(&self, toks: &[Token]) -> String;
 
     /// Convert a single token to a string
     fn tok_to_str(&mut self, tok: Token) -> String;

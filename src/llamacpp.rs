@@ -30,11 +30,11 @@ pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> Llama
 }
 
 impl Model for LlamaModel {
-    fn str_to_tokens(&mut self, s: &str) -> Vec<Token> {
+    fn str_to_tokens(&self, s: &str) -> Vec<Token> {
         str_to_tokens(s, self).into_iter().map(|t| t.0).collect()
     }
 
-    fn toks_to_str(&mut self, toks: &[Token]) -> String {
+    fn toks_to_str(&self, toks: &[Token]) -> String {
         let llama_toks: Vec<LlamaToken> = toks.iter().map(|&t| LlamaToken(t)).collect();
         toks_to_str(&llama_toks, self)
     }
