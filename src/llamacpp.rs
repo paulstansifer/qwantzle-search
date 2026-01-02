@@ -7,7 +7,6 @@ use llama_cpp_2::context::params::LlamaContextParams;
 use llama_cpp_2::context::LlamaContext;
 use llama_cpp_2::llama_backend::LlamaBackend;
 use llama_cpp_2::llama_batch::LlamaBatch;
-use llama_cpp_2::model::AddBos;
 use llama_cpp_2::model::{params::LlamaModelParams, LlamaModel};
 use llama_cpp_2::token::LlamaToken;
 
@@ -30,8 +29,8 @@ pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> Llama
 }
 
 impl Model for LlamaModel {
-    fn str_to_tokens(&self, s: &str) -> Vec<Token> {
-        str_to_tokens(s, self).into_iter().map(|t| t.0).collect()
+    fn str_to_tokens_bos(&self, s: &str, bos: bool) -> Vec<Token> {
+        str_to_tokens_bos(s, bos, self)
     }
 
     fn toks_to_str(&self, toks: &[Token]) -> String {
@@ -39,49 +38,61 @@ impl Model for LlamaModel {
         toks_to_str(&llama_toks, self)
     }
 
-    fn tok_to_str(&mut self, tok: Token) -> String {
+    fn tok_to_str(&self, tok: Token) -> String {
         tok_to_str(LlamaToken(tok), self)
     }
 
-    fn new_session<'b>(&'b mut self, _prompt: &str) -> Box<dyn crate::llm::Session<'b> + 'b> {
-        // Note: LlamaCppSession requires a lifetime tied to the model, and we can't easily
-        // convert a prompt into tokens before creating the session without a context.
-        // For now, this remains a limitation of the llama-cpp-2 API.
-        todo!("LlamaCppSession creation from Model trait requires context initialization")
+    fn new_session<'b>(
+        &'b self,
+        prompt: &str,
+        extra_toks: usize,
+    ) -> Box<dyn crate::llm::Session<'b> + 'b> {
+        let prompt_toks = self.str_to_tokens_bos(prompt, true);
+
+        let mut sess = LlamaCppSession::new(self, (prompt_toks.len() + extra_toks) as u32);
+        let first_candidates = sess.advance_and_predict(&prompt_toks, Some(0.9996));
+
+        sess.first_candidates = first_candidates;
+
+        sess.save_prompt();
+
+        Box::new(sess)
     }
 }
 
-pub fn tok_to_str(t: LlamaToken, model: &LlamaModel) -> String {
+// TODO: inline these!
+fn tok_to_str(t: LlamaToken, model: &LlamaModel) -> String {
     model
         .token_to_str(t, llama_cpp_2::model::Special::Plaintext)
         .unwrap_or("<???>".to_string())
 }
 
-pub fn toks_to_str(t: &[LlamaToken], model: &LlamaModel) -> String {
+fn toks_to_str(t: &[LlamaToken], model: &LlamaModel) -> String {
     model
         .tokens_to_str(t, llama_cpp_2::model::Special::Tokenize)
         .expect("stringifying tokens")
 }
 
-pub fn str_to_tokens(s: &str, model: &LlamaModel) -> Vec<LlamaToken> {
+fn str_to_tokens(s: &str, model: &LlamaModel) -> Vec<LlamaToken> {
     model
         .str_to_token(s, llama_cpp_2::model::AddBos::Never)
         .unwrap()
 }
 
-pub fn str_to_tokens_maybe_with_prefix_space(
-    s: &str,
-    model: &LlamaModel,
-) -> (Vec<LlamaToken>, bool) {
-    let toks_without_space = str_to_tokens(s, model);
-
-    let toks_with_space = str_to_tokens(&format!(" {s}"), model);
-
-    if toks_without_space.len() < toks_with_space.len() {
-        (toks_without_space, false)
-    } else {
-        (toks_with_space, true)
-    }
+fn str_to_tokens_bos(s: &str, bos: bool, model: &LlamaModel) -> Vec<Token> {
+    model
+        .str_to_token(
+            s,
+            if bos {
+                llama_cpp_2::model::AddBos::Always
+            } else {
+                llama_cpp_2::model::AddBos::Never
+            },
+        )
+        .unwrap()
+        .into_iter()
+        .map(|t| t.0)
+        .collect()
 }
 
 pub struct LlamaCppSession<'a> {
@@ -90,7 +101,8 @@ pub struct LlamaCppSession<'a> {
     empty: bool,
     toks: usize,
     pub timers: SessionTimers,
-    boost_toks: HashMap<LlamaToken, f64>,
+    boost_toks: HashMap<Token, f64>,
+    first_candidates: Vec<(Token, f64)>,
 }
 
 static PROMPT_SEQ_ID: i32 = 0;
@@ -115,15 +127,16 @@ impl<'a> LlamaCppSession<'a> {
             toks: 0,
             timers: SessionTimers::default(),
             boost_toks: HashMap::new(),
+            first_candidates: vec![], // TODO: this should be set here; pass in the prompt!
         }
     }
 
-    pub fn boost(&mut self, tok: LlamaToken, boost: f64) {
+    pub fn boost(&mut self, tok: Token, boost: f64) {
         self.boost_toks.insert(tok, boost);
     }
 
     // Only mutable to update the time
-    fn candidates(&mut self, top_p: Option<f32>) -> Vec<(LlamaToken, f64)> {
+    fn candidates(&mut self, top_p: Option<f32>) -> Vec<(Token, f64)> {
         let mut max_logit = f32::MIN;
 
         // TODO: we might be at least curious about the split between `decode()` and `candidates()`
@@ -134,10 +147,10 @@ impl<'a> LlamaCppSession<'a> {
 
         let before_score = std::time::Instant::now();
 
-        let mut candidates: Vec<(LlamaToken, f64)> = raw_candidates
+        let mut candidates: Vec<(Token, f64)> = raw_candidates
             .map(|c| {
                 max_logit = max_logit.max(c.logit());
-                (c.id(), c.logit() as f64)
+                (c.id().0, c.logit() as f64)
             })
             .collect();
 
@@ -175,7 +188,7 @@ impl<'a> LlamaCppSession<'a> {
             if elts_needed == 0 {
                 println!("Warning: Unable to find {top_p} total probability; got {total_p:.5} with {} candidates. Total weight was {total_weight:.3}", candidates.len());
                 for (t, p) in candidates.iter().take(20) {
-                    print!("{} => {:.2}  ", tok_to_str(*t, self.model()), p * 100.0);
+                    print!("{} => {:.2}  ", self.model().tok_to_str(*t), p * 100.0);
                 }
                 println!();
             } else {
@@ -187,31 +200,12 @@ impl<'a> LlamaCppSession<'a> {
         candidates
     }
 
-    pub fn advance_and_predict_str(
-        &mut self,
-        text: &str,
-        top_p: Option<f32>,
-    ) -> Vec<(LlamaToken, f64)> {
-        let toks = self
-            .ctx
-            .model
-            .str_to_token(
-                text,
-                if self.empty {
-                    AddBos::Always
-                } else {
-                    AddBos::Never
-                },
-            )
-            .unwrap();
+    pub fn advance_and_predict_str(&mut self, text: &str, top_p: Option<f32>) -> Vec<(Token, f64)> {
+        let toks = str_to_tokens_bos(text, self.empty, self.model());
         self.advance_and_predict(&toks, top_p)
     }
 
-    pub fn advance_and_predict(
-        &mut self,
-        toks: &[LlamaToken],
-        top_p: Option<f32>,
-    ) -> Vec<(LlamaToken, f64)> {
+    pub fn advance_and_predict(&mut self, toks: &[Token], top_p: Option<f32>) -> Vec<(Token, f64)> {
         if toks.is_empty() {
             panic!("No tokens!!");
         }
@@ -227,7 +221,12 @@ impl<'a> LlamaCppSession<'a> {
 
         for (i, t) in toks.iter().enumerate() {
             batch
-                .add(*t, self.toks as i32, &seq_ids, i + 1 == toks.len())
+                .add(
+                    LlamaToken(*t),
+                    self.toks as i32,
+                    &seq_ids,
+                    i + 1 == toks.len(),
+                )
                 .unwrap();
             self.toks += 1;
         }
@@ -276,26 +275,30 @@ impl<'a> LlamaCppSession<'a> {
 
 impl<'a> Session<'a> for LlamaCppSession<'a> {
     fn boost(&mut self, tok: Token, boost: f64) {
-        self.boost_toks.insert(LlamaToken(tok), boost);
+        self.boost_toks.insert(tok, boost);
     }
 
     fn timers(&self) -> &SessionTimers {
         &self.timers
     }
 
+    fn timers_mut(&mut self) -> &mut SessionTimers {
+        &mut self.timers
+    }
+
     fn predict_str(&mut self, text: &str, top_p: Option<f32>) -> Vec<(Token, f64)> {
-        self.advance_and_predict_str(text, top_p)
-            .into_iter()
-            .map(|(t, p)| (t.0, p))
-            .collect()
+        self.predict(&self.model().str_to_tokens(text), top_p)
     }
 
     fn predict(&mut self, toks: &[Token], top_p: Option<f32>) -> Vec<(Token, f64)> {
-        let llama_toks: Vec<LlamaToken> = toks.iter().map(|&t| LlamaToken(t)).collect();
-        self.advance_and_predict(&llama_toks, top_p)
-            .into_iter()
-            .map(|(t, p)| (t.0, p))
-            .collect()
+        if toks.is_empty() {
+            // Llama.cpp doesn't like an empty advance.
+            return self.first_candidates.clone();
+        }
+        let res = self.advance_and_predict(&toks, top_p);
+
+        self.truncate_to_prompt();
+        res
     }
 }
 

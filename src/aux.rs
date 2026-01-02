@@ -5,7 +5,7 @@ mod llm;
 
 use clap::Parser;
 use llama_cpp_2::model::LlamaModel;
-use llamacpp::LlamaCppSession;
+use crate::llm::Model;
 
 #[derive(Parser, Debug)]
 struct Args {
@@ -14,13 +14,14 @@ struct Args {
     model: String,
 }
 
-fn _display_top_toks(model: &LlamaModel, s: &str) {
-    let mut sess = LlamaCppSession::new(model, 1000);
+fn _display_top_toks<M: Model>(model: &mut M, s: &str) {
+    let mut sess = model.new_session("", 1000);
 
-    let candidates = sess.advance_and_predict_str(s, Some(0.995));
+    let candidates = sess.predict_str(s, Some(0.995));
 
     for (t, p) in candidates.iter().take(15) {
-        let t_string = llamacpp::tok_to_str(*t, model)
+        let t_string = model
+            .tok_to_str(*t)
             .replace('\n', "\\n")
             .replace('\r', "\\r");
         print!("{:.2}%: {}  ", p * 100.0, t_string)
@@ -29,14 +30,14 @@ fn _display_top_toks(model: &LlamaModel, s: &str) {
 }
 
 fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
-    let mut sess = LlamaCppSession::new(model, 1000);
+    let mut sess = llamacpp::LlamaCppSession::new(model, 1000);
 
     let candidates = sess.advance_and_predict_str(prompt, Some(0.995));
     sess.save_prompt();
 
     print!("prompt: '{prompt}'   ---   ");
     for (t, p) in candidates.iter().take(15) {
-        print!("{:.2}%: {}  ", p * 100.0, llamacpp::tok_to_str(*t, model))
+        print!("{:.2}%: {}  ", p * 100.0, model.tok_to_str(*t))
     }
     println!();
 
@@ -44,7 +45,7 @@ fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
         print!("suffix: '{suffix}'   ---   ");
         let candidates = sess.advance_and_predict_str(suffix, Some(0.995));
         for (t, p) in candidates.iter().take(15) {
-            print!("{:.2}%: {}  ", p * 100.0, llamacpp::tok_to_str(*t, model))
+            print!("{:.2}%: {}  ", p * 100.0, model.tok_to_str(*t))
         }
         println!();
         sess.truncate_to_prompt();

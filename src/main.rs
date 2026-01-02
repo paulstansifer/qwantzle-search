@@ -2,8 +2,6 @@ use clap::Parser;
 use indicatif::ProgressIterator;
 use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::LlamaModel;
-use llama_cpp_2::token_type::LlamaTokenAttr;
-use llamacpp::tok_to_str;
 use pool::LetterPool;
 use search::{manual_search, SearchState};
 use std::fmt::Write;
@@ -21,6 +19,8 @@ mod search;
 mod vllm;
 
 use corpus::Strip;
+
+use crate::llm::Model;
 
 fn init_tracing(args: &Args) {
     let format = tracing_subscriber::fmt::layer().compact();
@@ -161,11 +161,10 @@ macro_rules! percentile_table_2_digits_percentage {
     };
 }
 
-//fn predict_strip(strip: &Strip, ctx: &mut LlamaSession) {
-fn predict_strip(
+fn predict_strip<M: Model>(
     strip: &Strip,
     alt_punch: Option<&str>,
-    model: &LlamaModel,
+    model: &M,
     stats: &mut Stats, // This accumulates between runs, confusingly!  Maybe remove!
 ) -> (f64, f64) {
     let rlnn =
@@ -180,26 +179,16 @@ fn predict_strip(
 
     let context = strip.context();
 
-    let toks_needed = model
-        .str_to_token(&context, llama_cpp_2::model::AddBos::Always)
-        .unwrap()
-        .len() as u32
-        + model
-            .str_to_token(&punchline_to_examine, llama_cpp_2::model::AddBos::Never)
-            .unwrap()
-            .len() as u32
-        + 2;
-    let mut sess = llamacpp::LlamaCppSession::new(model, toks_needed);
-    let mut candidates = sess.advance_and_predict_str(&context, Some(0.99995));
+    let mut sess = model.new_session(&context, 100);
 
-    let (punch_toks, _space) =
-        llamacpp::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
+    let (punch_toks, space) =
+        llm::str_to_tokens_maybe_with_prefix_space(&punchline_to_examine, model);
 
-    // if space {
-    //     writeln!(stats.details, "Padding the suffix with a space.").unwrap();
-    // } else {
-    //     writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
-    // };
+    if space {
+        writeln!(stats.details, "Padding the suffix with a space.").unwrap();
+    } else {
+        writeln!(stats.details, "Not padding the suffix with a space.").unwrap();
+    };
     writeln!(stats.details).unwrap();
 
     // Use the original punchline for the letter pool!
@@ -233,9 +222,11 @@ fn predict_strip(
     let mut min_score: f64 = f64::INFINITY;
 
     let mut punchline: String = String::new();
-    for tok in &punch_toks {
-        stats.tok_times.push(sess.timers.predict_time);
-        sess.timers.predict_time = 0;
+    for (i, tok) in punch_toks.iter().enumerate() {
+        let candidates = sess.predict(&punch_toks[0..i], Some(0.99995));
+
+        stats.tok_times.push(sess.timers().predict_time);
+        sess.timers_mut().predict_time = 0;
         let mut ahead = 0;
         let mut ahead_and_pool_valid = 0;
         let mut prob_ahead = 0.0;
@@ -253,7 +244,7 @@ fn predict_strip(
             prob_ahead += prob;
         }
 
-        let tok_as_string = llamacpp::tok_to_str(*tok, model);
+        let tok_as_string = model.tok_to_str(*tok);
 
         write!(tok_s, "{:>12}", tok_as_string).unwrap();
 
@@ -269,8 +260,8 @@ fn predict_strip(
         // }
 
         punchline.push(' ');
-        punchline.push_str(&llamacpp::tok_to_str(*tok, model));
-        letter_pool.remove(*tok, &model);
+        punchline.push_str(&model.tok_to_str(*tok));
+        letter_pool.remove(*tok, model);
 
         let rlnn_mult = rlnn.evaluate(&letter_pool);
 
@@ -315,8 +306,6 @@ fn predict_strip(
         // let anagram_restriction = 0.8 - (0.75 * (tok_i as f64 / (punch_toks.len() as f64)));
 
         optimistic_cost *= ahead_and_pool_valid as f64 + 1.0;
-
-        candidates = sess.advance_and_predict(&[*tok], Some(0.99995));
     }
     let average_probability = f64::powf(overall_probability, 1.0 / punch_toks.len() as f64);
 
@@ -333,11 +322,12 @@ fn predict_strip(
     if alt_punch.is_none() {
         assert!(letter_pool.size() == 0);
     } else {
+        let candidates = sess.predict(&punch_toks, Some(0.99995));
         for (cand_tok, prob) in candidates.iter().take(10) {
             write!(
                 stats.details,
                 "'{}' {:.3}%   ",
-                tok_to_str(*cand_tok, model),
+                model.tok_to_str(*cand_tok),
                 prob * 100.0,
             )
             .unwrap();
@@ -430,7 +420,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         .unwrap();
 
     for strip in exemplars.iter().take(50) {
-        let (cost, avg_prob) = predict_strip(&strip, None, &model, &mut stats);
+        let (cost, avg_prob) = predict_strip(&strip, None, model, &mut stats);
         println!(
             "{}: Estimated steps: {}. Avg. prob: {:.1}%",
             strip.id,
@@ -516,7 +506,7 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     let mut costs = vec![];
     let mut avg_probs = vec![];
     for strip in representative_strips.iter().progress() {
-        let (cost, avg_prob) = predict_strip(&strip, None, &model, &mut stats);
+        let (cost, avg_prob) = predict_strip(&strip, None, model, &mut stats);
         costs.push(cost);
         avg_probs.push(avg_prob);
 
@@ -781,17 +771,17 @@ fn main() {
             std::io::stdout().flush().unwrap();
         }
     } else if let Some(s) = args.tokenize {
-        let toks = llamacpp::str_to_tokens(&s, &model);
+        let toks = model.str_to_tokens(&s);
         let mut s_top = String::new();
         let mut s_bot = String::new();
         for tok in toks {
-            let tok_str = tok_to_str(tok, &model).replace("\n", "\\n");
+            let tok_str = model.tok_to_str(tok).replace("\n", "\\n");
             s_top += &format!("'{}' ", tok_str);
-            s_bot += &format!(" {}", tok.0);
+            s_bot += &format!(" {}", tok);
 
-            if model.token_attr(tok).contains(LlamaTokenAttr::Control) {
-                s_bot += "[C]"
-            }
+            // if model.token_attr(tok).contains(LlamaTokenAttr::Control) {
+            //     s_bot += "[C]"
+            // }
 
             while s_bot.len() < s_top.len() {
                 s_bot += " ";
@@ -813,7 +803,6 @@ fn main() {
             vocab: pool::no_vocab(),
             longest_word_len: None,
             longest_token: None,
-            token_size: 1000,
         };
         let mut search = SearchState::new(&model, pangram_hints, None, vec![]);
         search.search();

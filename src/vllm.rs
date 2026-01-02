@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::collections::HashMap;
 
 use anyhow::Result;
@@ -11,19 +12,7 @@ pub struct VllmModel {
     vllm: Py<PyModule>,
     model: Py<PyAny>,
     tokenizer: Py<PyAny>,
-    dec_cache: HashMap<Token, String>,
-}
-
-pub fn str_to_tokens_maybe_with_prefix_space(s: &str, model: &VllmModel) -> (Vec<Token>, bool) {
-    let toks_without_space = model.str_to_tokens(s);
-
-    let toks_with_space = model.str_to_tokens(&format!(" {s}"));
-
-    if toks_without_space.len() < toks_with_space.len() {
-        (toks_without_space, false)
-    } else {
-        (toks_with_space, true)
-    }
+    dec_cache: std::sync::Mutex<std::cell::RefCell<HashMap<Token, String>>>,
 }
 
 impl VllmModel {
@@ -47,14 +36,15 @@ impl VllmModel {
                 vllm: vllm.unbind(),
                 model: model.unbind(),
                 tokenizer: tokenizer.unbind(),
-                dec_cache: HashMap::new(),
+                dec_cache: std::sync::Mutex::new(std::cell::RefCell::new(HashMap::new())),
             })
         })
     }
 }
 
 impl Model for VllmModel {
-    fn str_to_tokens(&self, s: &str) -> Vec<Token> {
+    fn str_to_tokens_bos(&self, s: &str, _bos: bool) -> Vec<Token> {
+        // TODO: maybe look at bos?
         Python::attach(|py| {
             self.tokenizer
                 .call_method1(py, intern!(py, "encode"), (s,))
@@ -68,6 +58,7 @@ impl Model for VllmModel {
     }
 
     fn toks_to_str(&self, toks: &[Token]) -> String {
+        // TODO: use `dec_cache`
         Python::attach(|py| {
             self.tokenizer
                 .call_method1(py, intern!(py, "decode"), (toks,))
@@ -77,8 +68,11 @@ impl Model for VllmModel {
         })
     }
 
-    fn tok_to_str(&mut self, tok: Token) -> String {
+    fn tok_to_str(&self, tok: Token) -> String {
         self.dec_cache
+            .lock()
+            .unwrap()
+            .borrow_mut()
             .entry(tok)
             .or_insert_with(|| {
                 Python::attach(|py| {
@@ -92,7 +86,8 @@ impl Model for VllmModel {
             .clone()
     }
 
-    fn new_session<'b>(&'b mut self, prompt: &str) -> Box<dyn crate::llm::Session<'b> + 'b> {
+    // TODO: set context length correctly!
+    fn new_session<'b>(&'b self, prompt: &str, _extra_toks: usize) -> Box<dyn Session<'b> + 'b> {
         Box::new(VllmSession::new(self, prompt))
     }
 }
@@ -127,6 +122,10 @@ impl<'a> Session<'a> for VllmSession<'a> {
 
     fn timers(&self) -> &SessionTimers {
         &self.timers
+    }
+
+    fn timers_mut(&mut self) -> &mut SessionTimers {
+        &mut self.timers
     }
 
     fn predict_str(&mut self, text: &str, top_p: Option<f32>) -> Vec<(Token, f64)> {
@@ -174,7 +173,10 @@ impl<'a> Session<'a> for VllmSession<'a> {
             let mut results: Vec<(Token, f64)> = tokens
                 .into_iter()
                 .zip(logprobs.into_iter())
-                .map(|(token, logprob)| (token as Token, logprob.exp()))
+                .map(|(token, logprob)| {
+                    let t = token as Token;
+                    (t, logprob.exp() * self.boost_toks.get(&t).unwrap_or(&1.0))
+                })
                 .collect();
 
             results.sort_by(|a, b| b.1.partial_cmp(&a.1).unwrap_or(std::cmp::Ordering::Equal));

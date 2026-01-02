@@ -3,18 +3,14 @@
 use std::{cell::Cell, cmp::Ordering, fs, io::Write as _, time::Duration};
 
 use indicatif::ProgressBar;
-use llama_cpp_2::{model::LlamaModel, token::LlamaToken};
+use llama_cpp_2::model::LlamaModel;
 use priority_queue::PriorityQueue;
 use serde::{Deserialize, Serialize};
 use thousands::Separable;
 
 use crate::{
     corpus::Strip,
-    llamacpp::{
-        self, str_to_tokens, str_to_tokens_maybe_with_prefix_space, tok_to_str, toks_to_str,
-        LlamaCppSession,
-    },
-    llm::SessionTimers,
+    llm::{Model, Session, SessionTimers, Token},
     pool::{LetterPool, Vocab, VocabBuilder, WordState},
     remaining_letters_neural_net::{self, LetterNet},
     TIME_TO_QUIT,
@@ -147,8 +143,7 @@ pub struct Hints {
     pub letter_pool: LetterPool,
     pub vocab: Vocab,
     pub longest_word_len: Option<u8>,
-    pub longest_token: Option<i32>, // instead of LLamaToken, for serializability
-    pub token_size: usize,
+    pub longest_token: Option<i32>, // instead of Token, for serializability
 }
 
 impl Hints {
@@ -181,11 +176,11 @@ impl Hints {
             v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ false)
         };
 
-        let toks = llamacpp::str_to_tokens_maybe_with_prefix_space(&strip.punchline, llm).0;
+        let toks = crate::llm::str_to_tokens_maybe_with_prefix_space(&strip.punchline, llm).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
         for t in toks {
-            let t_len = llamacpp::tok_to_str(t, llm).len();
+            let t_len = llm.tok_to_str(t).len();
             if t_len > longest_tok_len {
                 longest_tok_len = t_len;
                 longest_tok = t;
@@ -199,11 +194,11 @@ impl Hints {
         // TODO: Not sure this is reliable; may cause immediate failure (step count == 1) for some
         // tokenizers.
         let goal_toks = Some(
-            str_to_tokens_maybe_with_prefix_space(&format!(" {}", strip.punchline), llm)
-                .0
-                .into_iter()
-                .map(|t| t.0)
-                .collect(),
+            crate::llm::str_to_tokens_maybe_with_prefix_space(
+                &format!(" {}", strip.punchline),
+                llm,
+            )
+            .0,
         );
 
         Hints {
@@ -214,8 +209,7 @@ impl Hints {
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(longest_word_len as u8),
-            longest_token: Some(longest_tok.0),
-            token_size: str_to_tokens(&strip.context(), llm).len() + TOK_BUFFER as usize,
+            longest_token: Some(longest_tok),
         }
     }
 
@@ -234,13 +228,12 @@ impl Hints {
             v_builder.build(/*disabled=*/ false, /*enforce_8_11=*/ true)
         };
 
-        let long_word_toks = llamacpp::str_to_tokens(" fundamental", llm);
+        let long_word_toks = llm.str_to_tokens(" fundamental");
         if long_word_toks.len() != 1 {
             panic!("' fundamental' isn't one token");
         }
 
         let context = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
-        let token_size = str_to_tokens(&context, llm).len() + TOK_BUFFER as usize;
         let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
         let mut letter_pool = LetterPool::just_letters_from_text(letters);
         letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
@@ -257,8 +250,7 @@ impl Hints {
             letter_pool: letter_pool,
             vocab,
             longest_word_len: Some(8),
-            longest_token: Some(long_word_toks.first().unwrap().0),
-            token_size: token_size,
+            longest_token: Some(*long_word_toks.first().unwrap()),
         }
     }
 }
@@ -279,7 +271,7 @@ pub struct SearchState<'a> {
 
     llm: &'a LlamaModel,
     rlnn: LetterNet,
-    sess: LlamaCppSession<'a>,
+    sess: Box<dyn Session<'a> + 'a>,
 
     hints: Hints,
 
@@ -320,8 +312,6 @@ impl SearchState<'_> {
         max_search: Option<usize>,
         start_prefixes: Vec<String>,
     ) -> SearchState<'_> {
-        let token_size = hints.token_size as u32;
-
         let q = Q::new();
         let rlnn = remaining_letters_neural_net::LetterNet::new_from_file(
             "corpus/letter_pool.safetensors",
@@ -329,18 +319,17 @@ impl SearchState<'_> {
         .unwrap();
 
         let root_node = Node::root_from_hints(&hints);
-        let mut sess = LlamaCppSession::new(llm, token_size);
+        let mut sess = llm.new_session(&hints.context, TOK_BUFFER);
 
         if hints.id == 1663 {
             // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
             // synced between this and `load`)
-            let colon_tok = *llamacpp::str_to_tokens("totally:", llm).last().unwrap();
+            let colon_tok = *llm.str_to_tokens("totally:").last().unwrap();
             sess.boost(colon_tok, 35.0);
             println!("Colon is boosted!");
         }
 
-        let first_candidates = sess.advance_and_predict_str(&hints.context, Some(TOK_TOP_P));
-        sess.save_prompt();
+        let first_candidates = sess.predict(&[], Some(TOK_TOP_P));
 
         let mut search_state = SearchState {
             q,
@@ -371,7 +360,7 @@ impl SearchState<'_> {
                 }
                 let mut pfx_node = root_node.clone();
                 let mut score = Score(1.0);
-                for tok in llamacpp::str_to_tokens(&prefix.trim_end(), llm) {
+                for tok in llm.str_to_tokens(&prefix.trim_end()) {
                     if let Some((next_node, next_score)) = pfx_node.push_token(
                         tok,
                         0.12,
@@ -388,7 +377,7 @@ impl SearchState<'_> {
                 println!("(Score {:.5}%) --> {:?} ", score.0 * 100.0, pfx_node.text);
                 search_state.q.push(pfx_node, score);
             }
-            println!("{}", search_state.q.len());
+            println!("Starting with {} prefixes.", search_state.q.len());
         }
 
         search_state
@@ -397,7 +386,7 @@ impl SearchState<'_> {
     pub fn save(&self, filename: &str) {
         let sss = SearchStateSerializable {
             q: self.q.clone(),
-            sess_timers: self.sess.timers,
+            sess_timers: *self.sess.timers(),
             hints: self.hints.clone(),
             search_time: self.search_time,
             discard_prob_letters: self.discard_prob_letters,
@@ -416,21 +405,17 @@ impl SearchState<'_> {
     pub fn load<'a>(filename: &str, llm: &'a LlamaModel) -> SearchState<'a> {
         let bytes = fs::read(filename).unwrap();
         let sss: SearchStateSerializable = bincode::deserialize(&bytes).unwrap();
-        let token_size = sss.hints.token_size as u32;
 
         println!("Loaded search queue with {} elements.", sss.q.len());
 
-        let mut sess = LlamaCppSession::new(llm, token_size);
+        let mut sess = llm.new_session(&sss.hints.context, TOK_BUFFER);
 
         if sss.hints.id == 1663 {
-            let colon_tok = *llamacpp::str_to_tokens("totally:", llm).last().unwrap();
+            let colon_tok = *llm.str_to_tokens("totally:").last().unwrap();
             sess.boost(colon_tok, 35.0);
         }
 
-        // TODO: should probably have `advance` without `predict`
-        let _ = sess.advance_and_predict_str(&sss.hints.context, Some(0.0));
-        sess.save_prompt();
-        sess.timers = sss.sess_timers;
+        *sess.timers_mut() = sss.sess_timers;
 
         SearchState {
             q: sss.q,
@@ -457,11 +442,11 @@ impl SearchState<'_> {
         let per_step = |n: u128| (n as f32 / self.step as f32) / 1000.0;
         let report = format!("Search time: {:.0}s.  (Non-ML: {:.0}s)  Per-step times: Score: {:.0}ms  Advance: {:.0}ms  Predict: {:.0}ms  Truncate: {:.0}ms.",
             self.search_time.as_secs(),
-            (self.search_time.as_micros() - (self.sess.timers.score_time + self.sess.timers.advance_time + self.sess.timers.predict_time + self.sess.timers.truncate_time)) as f32 / 1_000_000.0,
-            per_step(self.sess.timers.score_time),
-            per_step(self.sess.timers.advance_time),
-            per_step(self.sess.timers.predict_time),
-            per_step(self.sess.timers.truncate_time),
+            (self.search_time.as_micros() - (self.sess.timers().score_time + self.sess.timers().advance_time + self.sess.timers().predict_time + self.sess.timers().truncate_time)) as f32 / 1_000_000.0,
+            per_step(self.sess.timers().score_time),
+            per_step(self.sess.timers().advance_time),
+            per_step(self.sess.timers().predict_time),
+            per_step(self.sess.timers().truncate_time),
         );
         self.log_ln(&report);
     }
@@ -624,7 +609,7 @@ impl SearchState<'_> {
         ) {
             self.deepest_node_accessed =
                 std::cmp::max(self.deepest_node_accessed, node.depth_at_pruning);
-            let cur_text = toks_to_str(&node.tokens(), &self.llm);
+            let cur_text = self.llm.toks_to_str(&node.tokens());
 
             if node.remaining.empty_of_letters() {
                 // There's no point continuing this node, but the search might or might not be done:
@@ -716,7 +701,7 @@ impl SearchState<'_> {
     }
 }
 
-const TOK_BUFFER: u32 = 35;
+const TOK_BUFFER: usize = 35;
 
 // How good does the best next token need to be to fast-forward it?
 // Performance seems sensitive to this; maybe we need a better criterion?
@@ -756,7 +741,6 @@ thread_local! {
 fn generous_score(probs: &Vec<f32>, chars_so_far: u8) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
-
     if probs.len() >= 1 {
         probs[0] += 0.07;
         if probs.len() >= 2 {
@@ -851,6 +835,7 @@ pub fn prob_score(
     let late = len.saturating_sub(20);
     let v_late = len.saturating_sub(10); // Start of late push to find anything that fits!
 
+    // I think `late` should probably be bumped up to 2.25 or something
     let sched = vec![(0, 1.6), (mid, 1.6), (late, 1.75), (v_late, 3.), (len, 5.)];
 
     // Credit for distance elapsed is measured in characters, not in tokens. This hurts things with
@@ -891,8 +876,8 @@ impl Node {
         }
     }
 
-    fn tokens(&self) -> Vec<LlamaToken> {
-        self.text.iter().map(|t| LlamaToken(*t)).collect()
+    fn tokens(&self) -> &[Token] {
+        &self.text
     }
 
     fn new_with_longest_tok(text: &str, model: &LlamaModel) -> Node {
@@ -903,7 +888,7 @@ impl Node {
 
     fn push_token(
         &self,
-        t: LlamaToken,
+        t: Token,
         prob: f32,
         model: &LlamaModel,
         vocab: &Vocab,
@@ -921,10 +906,10 @@ impl Node {
             text: self.text.clone(),
             probability: self.probability * prob as f64,
             tok_probs: self.tok_probs.clone(),
-            chars_so_far: self.chars_so_far + tok_to_str(t, model).trim().len() as u8,
+            chars_so_far: self.chars_so_far + model.tok_to_str(t).trim().len() as u8,
             depth_at_pruning: self.depth_at_pruning,
         };
-        res.text.push(t.0);
+        res.text.push(t);
         res.tok_probs.push(prob);
 
         let score = prob_score(
@@ -942,21 +927,13 @@ impl Node {
             return;
         }
 
-        let candidates = search_state
-            .sess
-            .advance_and_predict(&self.tokens(), Some(TOK_TOP_P));
+        let candidates = search_state.sess.predict(&self.tokens(), Some(TOK_TOP_P));
 
         self.consider_candidates(candidates, search_state);
-
-        search_state.sess.truncate_to_prompt();
     }
 
-    fn consider_candidates(
-        &self,
-        candidates: Vec<(LlamaToken, f64)>,
-        search_state: &mut SearchState,
-    ) {
-        let mut fast_forwarded = true; // TODO: why does fast-forwarding cause NoKvCacheSlot?
+    fn consider_candidates(&self, candidates: Vec<(Token, f64)>, search_state: &mut SearchState) {
+        let mut _fast_forwarded = true; // TODO: why does fast-forwarding cause NoKvCacheSlot?
 
         let mut remaining_prob: f64 = 1.0;
 
@@ -988,17 +965,17 @@ impl Node {
             if let Some((next_node, score)) = self.push_token(
                 tok,
                 p as f32,
-                &search_state.sess.model(),
+                &search_state.llm,
                 &search_state.hints.vocab,
                 &search_state.rlnn,
             ) {
-                if Some(tok.0) == critial_tok {
+                if Some(tok) == critial_tok {
                     critial_tok = None; // Okay; we haven't lost it!
                     search_state.log_ln(&format!(
                         "Step {:>10} (remaining mass {:.3}%): Next token is '{}', score is {:.5}% ({:.3}%, {:.3}%, {})",
                         search_state.step.separate_with_commas(),
                         (1.0 - search_state.discard_prob_dregs - search_state.discard_prob_letters) * 100.0,
-                        tok_to_str(tok, search_state.sess.model()),
+                        search_state.llm.tok_to_str(tok),
                         score.0 * 100.0,
                         p * 100.0,
                         search_state.rlnn.evaluate(&next_node.remaining) * 100.0,
@@ -1007,20 +984,21 @@ impl Node {
                 }
 
                 // Re-use the context right away, if the best candidate is good enough.
-                if p as f32 > FF_MIN_P && !fast_forwarded && next_node.remaining.size() > 0 {
-                    let before_advance = std::time::Instant::now();
-                    let ff_candidates = search_state
-                        .sess
-                        .advance_and_predict(&[tok], Some(TOK_TOP_P));
-                    FF_ADVANCE_TIME
-                        .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
-                    next_node.consider_candidates(ff_candidates, search_state);
-                    fast_forwarded = true;
+                if p as f32 > FF_MIN_P && !_fast_forwarded && next_node.remaining.size() > 0 {
+                    panic!()
+                    // let before_advance = std::time::Instant::now();
+                    // let ff_candidates = search_state
+                    //     .sess
+                    //     .advance_and_predict(&[tok], Some(TOK_TOP_P));
+                    // FF_ADVANCE_TIME
+                    //     .replace(FF_ADVANCE_TIME.get() + before_advance.elapsed().as_micros());
+                    // next_node.consider_candidates(ff_candidates, search_state);
+                    // fast_forwarded = true;
                 } else {
                     search_state.q.push(next_node, score);
                 }
             } else {
-                if critial_tok == Some(tok.0) {
+                if critial_tok == Some(tok) {
                     panic!("The critical token is somehow not valid!")
                 }
                 search_state.discard_prob_letters += self.probability * p;
@@ -1031,16 +1009,16 @@ impl Node {
 
         if let Some(critial_tok) = critial_tok {
             // During practice, just give up if a critical token was dropped!
-            let mut toks: Vec<_> = self.text.iter().map(|t| LlamaToken(*t)).collect();
-            toks.push(LlamaToken(critial_tok));
+            let mut toks: Vec<_> = self.text.clone();
+            toks.push(critial_tok);
 
             let mut msg = format!(
                 "Critical token DISCARDED! '{}'",
-                toks_to_str(&toks, &search_state.sess.model())
+                search_state.llm.toks_to_str(&toks)
             );
 
             for (tok, p) in candidates {
-                if tok.0 == critial_tok {
+                if tok == critial_tok {
                     msg += format!(
                         " self.prob = {:.2}%, p = {:.2}%, avg_prob = {:.2}%",
                         self.probability * 100.0,
@@ -1125,15 +1103,18 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
         remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
             .unwrap();
 
-    let mut sess = LlamaCppSession::new(llm, hints.token_size as u32);
+    let mut sess = llm.new_session(&hints.context, TOK_BUFFER);
 
     let mut node = Node::root_from_hints(&hints);
 
-    let mut cands = sess.advance_and_predict_str(&hints.context, None);
+    let mut cands = sess.predict(&[], None);
 
     let spaced_prefix = format!(" {}", prefix.trim());
-    for tok in str_to_tokens(&spaced_prefix, llm) {
-        print!("'{}' ", tok_to_str(tok, llm));
+
+    let mut toks = vec![];
+    for tok in llm.str_to_tokens(&spaced_prefix) {
+        cands = sess.predict(&toks, None);
+        print!("'{}' ", llm.tok_to_str(tok));
 
         let mut p = 0.0;
         for (possible_tok, possible_p) in &cands {
@@ -1167,7 +1148,7 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
         } else {
             print!("(unavailable token??)");
         }
-        cands = sess.advance_and_predict(&[tok], None);
+        toks.push(tok);
     }
 
     println!();
@@ -1180,7 +1161,7 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
         if let Some((possible_node, score)) = node_or {
             ok_s += &format!(
                 "'{}' {:.2}%->{}{:.3}%  ",
-                tok_to_str(*tok, llm),
+                llm.tok_to_str(*tok),
                 p * 100.0,
                 if possible_node.remaining.respects_ties() {
                     "T"
@@ -1190,7 +1171,7 @@ pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
                 score.0 * 100.0
             );
         } else {
-            not_ok_s += &format!("'{}' {:.2}%  ", tok_to_str(*tok, llm), p * 100.0);
+            not_ok_s += &format!("'{}' {:.2}%  ", llm.tok_to_str(*tok), p * 100.0);
         }
     }
 

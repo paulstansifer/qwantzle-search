@@ -1,25 +1,792 @@
 Thanksgiving is similar, but distinct, from regular Thanksgiving.
-         0 0* 39.77764% (0.978% 0.040% 98.982%)   Thank                                                                                                                        --------aaabefggggghiiiiiiikllmmnnnorrrrsssstuuvvT,,.
-         1 0* 218.21089% (1.058% 0.057% 98.884%)   Thanksg                                                                                                                      --------aaabefgggghiiiiiiikllmmnnnorrrrssstuuvvT,,.
-         2 0* 5064.54567% (4.539% 0.096% 95.366%)   Thanksgiving                                                                                                                 --------aaabefggghiiiiikllmmnnorrrrssstuuvT,,.
-         3 0* 7459.91692% (35.853% 0.134% 64.013%)   Thanksgiving is                                                                                                              --------aaabefggghiiiikllmmnnorrrrsstuuvT,,.
-         4 0* 4083.96849% (59.160% 0.154% 40.686%)   Thanksgiving is great                                                                                                        --------aabfgghiiiikllmmnnorrrssuuvT,,.
-         5 0* 3742.93557% (61.533% 0.155% 38.312%)   Thanksgiving rules                                                                                                           --------aaabfggghiiiiiklmmnnorrrsstuvT,,.
-         6 0* 3522.75279% (63.693% 0.156% 36.151%)   Thanksgiving is great,                                                                                                       --------aabfgghiiiikllmmnnorrrssuuvT,.
-         7 0* 1917.79634% (64.062% 0.157% 35.782%)   Thanksgiving is a                                                                                                            --------aabefggghiiiikllmmnnorrrrsstuuvT,,.
-         8 0* 2610.12759% (68.105% 0.160% 31.735%)   Thanksgiving is a great                                                                                                      --------abfgghiiiikllmmnnorrrssuuvT,,.
-         9 0* 1814.61228% (69.673% 0.160% 30.167%)   Thanksgiving has                                                                                                             --------aabefgggiiiiikllmmnnorrrrsstuuvT,,.
-        10 0* 1026.70451% (73.244% 0.162% 26.594%)   Thanksgiving is the                                                                                                          --------aaabfgggiiiikllmmnnorrrrssuuvT,,.
-        11 0* 958.97499% (82.414% 0.166% 17.421%)   Thanksgiving rules,                                                                                                          --------aaabfggghiiiiiklmmnnorrrsstuvT,.
-        12 0* 915.64212% (82.510% 0.166% 17.324%)   Thanksgiving is a regular                                                                                                    --------abfgghiiiiklmmnnorrsstuvT,,.
-        13 0* 6051.03485% (82.514% 0.166% 17.320%)   Thanksgiving is a regular Thank                                                                                              --------bfggiiiilmmnorrsstuv,,.
-        14 0* 39065.04787% (82.514% 0.166% 17.320%)   Thanksgiving is a regular Thanksg                                                                                            --------bfgiiiilmmnorrstuv,,.
-        15 0* 688.43198% (82.526% 0.166% 17.308%)   Thanksgiving is similar                                                                                                      --------aabefggghiiklmnnorrrstuuvT,,.
-        16 0* 1354.81852% (82.527% 0.166% 17.307%)   Thanksgiving is similar,                                                                                                     --------aabefggghiiklmnnorrrstuuvT,.
-        17 0* 7653.89487% (82.527% 0.166% 17.307%)   Thanksgiving is similar, but                                                                                                 --------aaefggghiiklmnnorrrsuvT,.
-        18 0* 622110.23380% (82.528% 0.166% 17.306%)   Thanksgiving is similar, but distinct                                                                                        aaefggghiiklmnnorrrsuvT,.
-        19 0* 2871095.65909% (82.528% 0.166% 17.306%)   Thanksgiving is similar, but distinct,                                                                                       aaefggghiiklmnnorrrsuvT.
-        20 0* 49433659.10781% (82.529% 0.166% 17.306%)   Thanksgiving is similar, but distinct, from                                                                                  aaeggghiiklnnrrsuvT.
-        21 0* 2981947142.12284% (82.531% 0.166% 17.303%)   Thanksgiving is similar, but distinct, from regular                                                                          agghiiknnsvT.
-        22 0* 60134098803.31200% (82.532% 0.166% 17.303%)   Thanksgiving is similar, but distinct, from regular Thank                                                                    ggiinsv.
-        23 0* 345443132434.71191% (82.532% 0.166% 17.303%)   Thanksgiving is similar, but distinct, from regular Thanksg                                                                  giinv.
+Step          0 (remaining mass 100.000%): Next token is ' Thanksgiving', score is 940.96094% (94.008%, 3.556%, 12)
+Step          0 (remaining mass 2.322%): Next token is ' is', score is 2.67011% (0.094%, 4.187%, 14)
+Step          7 (remaining mass 0.888%): Next token is ' similar', score is 0.07941% (0.035%, 13.045%, 21)
+Step        120 (remaining mass 0.211%): Next token is ',', score is 0.00086% (0.315%, 27.713%, 22)
+Non-answer:  Thanksgiving is similar from regular Thanksgiving, but distinct (4333214.40%) != Thanksgiving is similar, but distinct, from regular Thanksgiving.
+Non-answer:  Thanksgiving is, similar, but distinct Thanksgiving from regular (320899.05%) != Thanksgiving is similar, but distinct, from regular Thanksgiving.
+' Thanksgiving is, similar, but distinct from regular Thanksgiving' (3972986369.31%)
+Search successful after 781 steps. Deepest node accessed: 0
+Search time: 30s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 29ms  Truncate: 0ms.
+
+         0 0* 940.96094% (5.537% -0.000% 94.463%)   Thanksgiving                                                                                                                 aaabcdefggghiiiiiiikllmmnnnorrrrsssstttuuvT,,.
+         1 0* 9.49632% (98.952% 0.038% 1.010%)   Thanksgiving Thanksgiving                                                                                                    aabcdefgiiiiillmmnorrrrssstttuu,,.
+         2 0* 3.48699% (98.953% 0.038% 1.009%)   Thanksgiving for                                                                                                             aaabcdeggghiiiiiiikllmmnnnrrrsssstttuuvT,,.
+         3 0* 14.63288% (98.997% 0.038% 0.966%)   Thanksgiving for Thanksgiving                                                                                                aabcdegiiiiillmmnrrrssstttuu,,.
+         4 0* 3.34792% (98.997% 0.038% 0.965%)   Thanksgiving brings                                                                                                          aaacdefgghiiiiiikllmmnnorrrssstttuuvT,,.
+         5 0* 6.15330% (99.000% 0.038% 0.962%)   Thanksgiving brings Thanksgiving                                                                                             aacdefiiiillmmorrrsstttuu,,.
+         6 0* 3.14433% (99.000% 0.038% 0.962%)   Thanksgiving brilliance                                                                                                      aadfggghiiiiikmmnnorrrsssstttuuvT,,.
+         7 0* 2.67011% (99.002% 0.038% 0.960%)   Thanksgiving is                                                                                                              aaabcdefggghiiiiiikllmmnnnorrrrssstttuuvT,,.
+         8 0* 2.18171% (99.077% 0.038% 0.885%)   Thanksgiving.                                                                                                                aaabcdefggghiiiiiiikllmmnnnorrrrsssstttuuvT,,
+         9 0* 1.85240% (99.165% 0.038% 0.797%)   Thanksgiving consists                                                                                                        aaabdefggghiiiiiikllmmnnrrrrsttuuvT,,.
+        10 0* 1.11796% (99.176% 0.038% 0.786%)   Thanksgiving is Thanksgiving                                                                                                 aabcdefgiiiillmmnorrrrsstttuu,,.
+        11 0* 1.81681% (99.176% 0.038% 0.786%)   Thanksgiving is Thanksgiving is                                                                                              aabcdefgiiillmmnorrrrstttuu,,.
+        12 0* 1.01944% (99.176% 0.038% 0.786%)   Thanksgiving for the                                                                                                         aaabcdgggiiiiiiikllmmnnnrrrssssttuuvT,,.
+        13 0* 0.92983% (99.219% 0.038% 0.744%)   Thanksgiving,                                                                                                                aaabcdefggghiiiiiiikllmmnnnorrrrsssstttuuvT,.
+        14 0* 4.09584% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrssstttuu,.
+        15 0* 6.12845% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving,                                                                                                  aabcdefgiiiiillmmnorrrrssstttuu.
+        16 0* 3.51194% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving last                                                                                              abcdefgiiiiilmmnorrrrssttuu,.
+        17 0* 3.07198% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving, from                                                                                             aabcdegiiiiillmnrrrssstttuu.
+        18 0* 66.15649% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving, from regular                                                                                     abcdiiiiilmnrssstttu.
+        19 0* 1.00328% (99.242% 0.038% 0.720%)   Thanksgiving, Thanksgiving, last                                                                                             abcdefgiiiiilmmnorrrrssttuu.
+        20 0* 0.86681% (99.242% 0.038% 0.720%)   Thanksgiving brilliant                                                                                                       aacdefggghiiiiikmmnnorrrssssttuuvT,,.
+        21 0* 1.29683% (99.243% 0.038% 0.720%)   Thanksgiving brilliant Thanksgiving                                                                                          acdefgiiimmorrrsssttuu,,.
+        22 0* 0.82642% (99.243% 0.038% 0.720%)   Thanksgiving. Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrssstttuu,,
+        23 0* 0.74042% (99.243% 0.038% 0.720%)   Thanksgiving brings Thanksgiving to                                                                                          aacdefiiiillmmrrrssttuu,,.
+        24 0* 0.71061% (99.243% 0.038% 0.720%)   Thanksgiving giving                                                                                                          aaabcdefghiiiiikllmmnnorrrrsssstttuuT,,.
+        25 0* 0.54592% (99.244% 0.038% 0.719%)   Thanksgiving gives                                                                                                           aaabcdfgghiiiiiikllmmnnnorrrrssstttuuT,,.
+        26 0* 0.54029% (99.246% 0.038% 0.716%)   thanks                                                                                                                       ------------aabcdefgggiiiiiiillmmnnorrrrsssttuuvT,,.
+        27 0* 2.77332% (99.385% 0.038% 0.577%)   thanks giving                                                                                                                ------------aabcdefgiiiiillmmnorrrrsssttuuT,,.
+        28 0* 0.90783% (99.424% 0.038% 0.538%)   thanks giving com                                                                                                            ------------aabdefgiiiiillmnrrrrsssttuuT,,.
+        29 0* 0.49385% (99.430% 0.038% 0.532%)   Thanksgiving brilliance from                                                                                                 aadggghiiiiikmnnrrsssstttuuvT,,.
+        30 0* 1.94889% (99.430% 0.038% 0.532%)   Thanksgiving brilliance from Thanksgiving                                                                                    adgiiimrrssstttuu,,.
+        31 0* 0.47322% (99.430% 0.038% 0.532%)   Thanksgiving from                                                                                                            aaabcdeggghiiiiiiikllmnnnrrrsssstttuuvT,,.
+        32 0* 1.78013% (99.433% 0.038% 0.530%)   Thanksgiving from Thanksgiving                                                                                               aabcdegiiiiillmnrrrssstttuu,,.
+        33 0* 0.45463% (99.433% 0.038% 0.529%)   Thanksgiving for Thanksgiving,                                                                                               aabcdegiiiiillmmnrrrssstttuu,.
+        34 0* 0.45410% (99.433% 0.038% 0.529%)   Thanksgiving thank                                                                                                           aabcdefgggiiiiiiillmmnnorrrrssssttuuvT,,.
+        35 0* 0.44355% (99.440% 0.038% 0.522%)   Thanksgiving thankful                                                                                                        aabcdegggiiiiiiilmmnnorrrrssssttuvT,,.
+        36 0* 0.31189% (99.441% 0.038% 0.522%)   Thanksgiving from regular                                                                                                    aabcdgghiiiiiiiklmnnnrsssstttuvT,,.
+        37 0* 624.12616% (99.441% 0.038% 0.522%)   Thanksgiving from regular Thanksgiving                                                                                       abcdiiiiilmnrssstttu,,.
+        38 0* 12.32505% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving,                                                                                      abcdiiiiilmnrssstttu,.
+        39 0* 5.36510% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving.                                                                                      abcdiiiiilmnrssstttu,,
+        40 0* 3.83196% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but                                                                                  acdiiiiilmnrssstt,.
+        41 0* 1981.72786% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but distinct                                                                         aiiilmrss,.
+        42 0* 5879.68450% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but distinct,                                                                        aiiilmrss.
+        43 0* 30.23866% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but distinct.                                                                        aiiilmrss,
+        44 0* 10.54359% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but distinct, as                                                                     iiilmrs.
+        45 0* 3.14560% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving but                                                                                   acdiiiiilmnrssstt,,.
+        46 0* 113.80151% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving but distinct                                                                          aiiilmrss,,.
+        47 0* 870.03898% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving but distinct,                                                                         aiiilmrss,.
+        48 0* 2.93551% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving in                                                                                    abcdiiiilmrssstttu,,.
+        49 0* 2.61512% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving but similar                                                                           cdiiinsstt,,.
+        50 0* 1.55854% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving, but distinct,                                                                        aiiilmrss.
+        51 0* 0.70953% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving in similar                                                                            bcdiisstttu,,.
+        52 0* 0.68935% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving and                                                                                   bciiiiilmrssstttu,,.
+        53 0* 0.49152% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving turn                                                                                  abcdiiiiilmssstt,,.
+        54 0* 0.47745% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving islands                                                                               bciiiimrstttu,,.
+        55 0* 0.43511% (99.441% 0.038% 0.521%)   Thanksgiving from regular Thanksgiving                                                                                       abcdiiiiilmnrssstttu,,.
+        56 0* 0.27522% (99.441% 0.038% 0.521%)   Thanksgiving thanks                                                                                                          aabcdefgggiiiiiiillmmnnorrrrsssttuuvT,,.
+        57 0* 2.09005% (99.442% 0.038% 0.520%)   Thanksgiving thanks giving                                                                                                   aabcdefgiiiiillmmnorrrrsssttuuT,,.
+        58 0* 0.30868% (99.442% 0.038% 0.520%)   Thanksgiving thanks giving brings                                                                                            aacdefiiiillmmorrrssttuuT,,.
+        59 0* 0.25635% (99.442% 0.038% 0.520%)   Thanksgiving means                                                                                                           aabcdfggghiiiiiiikllmnnorrrrssstttuuvT,,.
+        60 0* 0.29030% (99.466% 0.038% 0.496%)   Thanksgiving means Thanksgiving                                                                                              abcdfgiiiiillmorrrrsstttuu,,.
+        61 0* 0.24838% (99.466% 0.038% 0.496%)   Thanksgiving gives brings                                                                                                    aaacdfghiiiiikllmmnnorrrsstttuuT,,.
+        62 0* 0.22875% (99.466% 0.038% 0.496%)   Thanksgiving has                                                                                                             aabcdefgggiiiiiiikllmmnnnorrrrssstttuuvT,,.
+        63 0* 0.22591% (99.475% 0.038% 0.487%)   thank                                                                                                                        ------------aabcdefgggiiiiiiillmmnnorrrrssssttuuvT,,.
+        64 0* 0.52623% (99.623% 0.038% 0.339%)   thank giving                                                                                                                 ------------aabcdefgiiiiillmmnorrrrssssttuuT,,.
+        65 0* 0.22296% (99.635% 0.038% 0.327%)   Thanksgiving from regular Thanksgiving is                                                                                    abcdiiiilmnrsstttu,,.
+        66 0* 0.21778% (99.635% 0.038% 0.327%)   Thanksgiving for Thanksgiving.                                                                                               aabcdegiiiiillmmnrrrssstttuu,,
+        67 0* 0.20060% (99.635% 0.038% 0.327%)   Thanksgiving to                                                                                                              aaabcdefggghiiiiiiikllmmnnnrrrrssssttuuvT,,.
+        68 0* 1.39116% (99.692% 0.038% 0.270%)   Thanksgiving to Thanksgiving                                                                                                 aabcdefgiiiiillmmnrrrrsssttuu,,.
+        69 0* 0.19693% (99.693% 0.038% 0.269%)   Thanksgiving comes                                                                                                           aaabdfggghiiiiiiikllmnnnrrrrssstttuuvT,,.
+        70 0* 0.36422% (99.703% 0.038% 0.259%)   Thanksgiving comes Thanksgiving                                                                                              aabdfgiiiiillmnrrrrsstttuu,,.
+        71 0* 0.19591% (99.703% 0.038% 0.259%)   Thanksgiving for Thanksgiving last                                                                                           abcdegiiiiilmmnrrrssttuu,,.
+        72 0* 0.18211% (99.703% 0.038% 0.259%)   Thanksgiving from regular Thanksgiving turns                                                                                 abcdiiiiilmsstt,,.
+        73 0* 0.18182% (99.703% 0.038% 0.259%)   Thanksgiving brings Thanksgiving last                                                                                        acdefiiiilmmorrrsttuu,,.
+        74 0* 0.17876% (99.703% 0.038% 0.259%)   Thanksgiving, Thanksgiving, regular                                                                                          abcdfiiiiilmmnorrssstttu.
+        75 0* 0.17513% (99.703% 0.038% 0.259%)   Thanksgiving brilliance from Thanksgiving starts                                                                             dgiiimrstuu,,.
+        76 0* 0.17504% (99.703% 0.038% 0.259%)   Thanksgiving from regular Thanksgiving saints                                                                                bcdiiiilmrsttu,,.
+        77 0* 0.16887% (99.703% 0.038% 0.259%)   Thanksgiving                                                                                                                 aaabcdefggghiiiiiiikllmmnnnorrrrsssstttuuvT,,.
+        78 0* 0.15883% (99.720% 0.038% 0.242%)   Thanksgiving from regular Thanksgiving crisis                                                                                abdiiilmnstttu,,.
+        79 0* 0.15849% (99.720% 0.038% 0.242%)   Thanksgiving brought                                                                                                         aaacdefggiiiiiiikllmmnnnrrrssssttuvT,,.
+        80 0* 0.15136% (99.721% 0.038% 0.241%)   Thanksgiving murder                                                                                                          aaabcfggghiiiiiiikllmnnnorrsssstttuvT,,.
+        81 0* 0.14844% (99.722% 0.038% 0.240%)   Thanksgiving comes Thanksgiving brings                                                                                       aadfiiiillmrrrstttuu,,.
+        82 0* 0.14741% (99.722% 0.038% 0.240%)   Thanksgiving brings Thanksgiving.                                                                                            aacdefiiiillmmorrrsstttuu,,
+        83 0* 0.14235% (99.722% 0.038% 0.240%)   Thanksgiving Thanksgiving.                                                                                                   aabcdefgiiiiillmmnorrrrssstttuu,,
+        84 0* 0.13951% (99.722% 0.038% 0.240%)   Thanksgiving gives thanks                                                                                                    aabcdfggiiiiiillmmnnorrrrssttuuT,,.
+        85 0* 0.13767% (99.722% 0.038% 0.240%)  Thanksgiving                                                                                                                  ------------aabcdefgiiiiillmmnorrrrssstttuu,,.
+        86 0* 0.13453% (99.727% 0.038% 0.235%)   Thanksgiving for the similar                                                                                                 aabcdgggiiiiiklmnnnrrsssttuuvT,,.
+        87 0* 0.13244% (99.727% 0.038% 0.235%)   Thanksgiving, Thanksgiving for                                                                                               aabcdegiiiiillmmnrrrssstttuu,.
+        88 0* 0.13129% (99.727% 0.038% 0.235%)   Thanksgiving thank giving                                                                                                    aabcdefgiiiiillmmnorrrrssssttuuT,,.
+        89 0* 0.13090% (99.727% 0.038% 0.235%)   Thanksgiving brilliance Thanksgiving                                                                                         adfgiiimmorrrssstttuu,,.
+        90 0* 0.13028% (99.727% 0.038% 0.235%)   Thanksgiving murder Thanksgiving                                                                                             aabcfgiiiiillmnorrssstttu,,.
+        91 0* 0.12138% (99.727% 0.038% 0.235%)   Thanksgiving sounds                                                                                                          aaabcefggghiiiiiiikllmmnnrrrrsstttuvT,,.
+        92 0* 0.54410% (99.727% 0.038% 0.235%)   Thanksgiving sounds great                                                                                                    aabcfgghiiiiiiikllmmnnrrrssttuvT,,.
+        93 0* 0.11186% (99.729% 0.038% 0.233%)   Thanksgiving thanks giving for                                                                                               aabcdegiiiiillmmnrrrsssttuuT,,.
+        94 0* 0.23590% (99.729% 0.038% 0.233%)   Thanksgiving thanks giving for all                                                                                           abcdegiiiiimmnrrrsssttuuT,,.
+        95 0* 0.10436% (99.729% 0.038% 0.233%)   Thanksgiving from regular Thanksgiving bliss                                                                                 acdiiiimnrstttu,,.
+        96 0* 0.10393% (99.729% 0.038% 0.233%)   Thanksgiving, Thanksgiving last,                                                                                             abcdefgiiiiilmmnorrrrssttuu.
+        97 0* 0.10266% (99.729% 0.038% 0.233%)   Thanksgiving includes                                                                                                        aaabfggghiiiiiiklmmnnorrrrssstttuvT,,.
+        98 0* 0.09763% (99.730% 0.038% 0.232%)   Thanksgiving from regular Thanksgiving, similar                                                                              bcdiiinsstttu,.
+        99 0* 0.09463% (99.730% 0.038% 0.232%)   Thanksgiving from the                                                                                                        aaabcdgggiiiiiiikllmnnnrrrssssttuuvT,,.
+       100 0* 0.65384% (99.732% 0.038% 0.230%)   Thanksgiving from the similar                                                                                                aabcdgggiiiiiklnnnrrsssttuuvT,,.
+       101 0* 0.09446% (99.732% 0.038% 0.230%)   thankful                                                                                                                     ------------aabcdegggiiiiiiilmmnnorrrrssssttuvT,,.
+       102 0* 2.20579% (99.741% 0.038% 0.221%)   thankful Thanksgiving                                                                                                        aabcdegggiiiiiiilmmnnorrrrssssttuvT,,.
+       103 0* 0.09418% (99.745% 0.038% 0.217%)   Thanksgiving, Thanksgiving, for                                                                                              aabcdegiiiiillmmnrrrssstttuu.
+       104 0* 0.09373% (99.745% 0.038% 0.217%)   Thanksgiving from regular Thanksgiving and but                                                                               ciiiiilmrssstt,,.
+       105 0* 0.09372% (99.745% 0.038% 0.217%)   Thanksgiving is the                                                                                                          aaabcdfgggiiiiiikllmmnnnorrrrsssttuuvT,,.
+       106 0* 0.09319% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving in but                                                                                acdiiiilmrssstt,,.
+       107 0* 0.09035% (99.751% 0.038% 0.211%)   Thanksgiving from similar                                                                                                    aabcdeggghiiiiiklnnnrrssstttuuvT,,.
+       108 0* 16.44458% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving                                                                                       abcdegiiilnrrsstttuu,,.
+       109 0* 0.50681% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving last                                                                                  bcdegiiinrrsttuu,,.
+       110 0* 0.24290% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving,                                                                                      abcdegiiilnrrsstttuu,.
+       111 0* 0.21653% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving.                                                                                      abcdegiiilnrrsstttuu,,
+       112 0* 0.13532% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving but                                                                                   acdegiiilnrrssttu,,.
+       113 0* 1.75123% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving but distinct                                                                          aegilrrsu,,.
+       114 0* 0.10569% (99.751% 0.038% 0.211%)   Thanksgiving from similar Thanksgiving but regular                                                                           cdiiinsstt,,.
+       115 0* 0.08893% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving, it                                                                                   abcdiiiilmnrsssttu,.
+       116 0* 0.08728% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving starts                                                                                bcdiiiiilmnstu,,.
+       117 0* 0.08661% (99.751% 0.038% 0.211%)   Thanksgiving from Thanksgiving last                                                                                          abcdegiiiiilmnrrrssttuu,,.
+       118 0* 0.08136% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving in last                                                                               bcdiiiimrssttu,,.
+       119 0* 0.08114% (99.751% 0.038% 0.211%)   Thanksgiving includes Thanksgiving                                                                                           aabfgiiiilmmorrrrsstttu,,.
+       120 0* 0.07941% (99.751% 0.038% 0.211%)   Thanksgiving is similar                                                                                                      aabcdefggghiiiiklmnnnorrrsstttuuvT,,.
+       121 0* 0.07917% (99.751% 0.038% 0.211%)   Thanksgiving for all                                                                                                         aabcdeggghiiiiiiikmmnnnrrrsssstttuuvT,,.
+       122 0* 0.07893% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving biscuits                                                                              adiiilmnrstt,,.
+       123 0* 0.07735% (99.751% 0.038% 0.211%)   Thanksgiving brings millions                                                                                                 aaacdefgghiiiikmnrrrsstttuuvT,,.
+       124 0* 0.07666% (99.751% 0.038% 0.211%)   Thanksgiving Thanksgiving for                                                                                                aabcdegiiiiillmmnrrrssstttuu,,.
+       125 0* 0.07660% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving in,                                                                                   abcdiiiilmrssstttu,.
+       126 0* 0.07526% (99.751% 0.038% 0.211%)   Thanksgiving formula                                                                                                         aabcdeggghiiiiiiiklmnnnrrrsssstttuvT,,.
+       127 0* 0.06989% (99.751% 0.038% 0.211%)   Thanksgiving giving thanks                                                                                                   aabcdefgiiiiillmmnorrrrsssttuuT,,.
+       128 0* 0.06953% (99.751% 0.038% 0.211%)   Thanksgiving brilliance.                                                                                                     aadfggghiiiiikmmnnorrrsssstttuuvT,,
+       129 0* 0.06924% (99.751% 0.038% 0.211%)   Thanksgiving from regular Thanksgiving lasts                                                                                 bcdiiiiimnrsttu,,.
+       130 0* 0.06891% (99.751% 0.038% 0.211%)   Thanksgiving brings itself                                                                                                   aaacdgghiiiiiklmmnnorrrssttuuvT,,.
+       131 0* 0.49585% (99.751% 0.038% 0.211%)   Thanksgiving brings itself Thanksgiving                                                                                      aacdiiilmmorrrsttuu,,.
+       132 0* 0.06766% (99.751% 0.038% 0.211%)   Thanksgiving is a                                                                                                            aabcdefggghiiiiiikllmmnnnorrrrssstttuuvT,,.
+       133 0* 0.73658% (99.753% 0.038% 0.209%)   Thanksgiving is a Thanksgiving                                                                                               abcdefgiiiillmmnorrrrsstttuu,,.
+       134 0* 1.33807% (99.753% 0.038% 0.209%)   Thanksgiving is a Thanksgiving is                                                                                            abcdefgiiillmmnorrrrstttuu,,.
+       135 0* 0.35785% (99.753% 0.038% 0.209%)   Thanksgiving is a Thanksgiving is a                                                                                          bcdefgiiillmmnorrrrstttuu,,.
+       136 0* 0.06751% (99.753% 0.038% 0.209%)   Thanksgiving gives brings from                                                                                               aaacdghiiiiikllmnnrrsstttuuT,,.
+       137 0* 0.06745% (99.753% 0.038% 0.209%)   Thanksgiving sounds like                                                                                                     aaabcfggghiiiiiilmmnnrrrrsstttuvT,,.
+       138 0* 0.06498% (99.754% 0.038% 0.208%)   Thanksgiving is brilliant                                                                                                    aacdefggghiiiikmmnnorrrsssttuuvT,,.
+       139 0* 0.06362% (99.754% 0.038% 0.208%)   Thanksgiving begins                                                                                                          aaacdfgghiiiiiikllmmnnorrrrssstttuuvT,,.
+       140 0* 0.17879% (99.755% 0.038% 0.207%)   Thanksgiving begins Thanksgiving                                                                                             aacdfiiiillmmorrrrsstttuu,,.
+       141 0* 0.06361% (99.755% 0.038% 0.207%)   Thanksgiving is a Thanksgiving is a murder                                                                                   bcfgiiillmnorrstttu,,.
+       142 0* 0.12809% (99.755% 0.038% 0.207%)   Thanksgiving is a Thanksgiving is a murder is                                                                                bcfgiillmnorrtttu,,.
+       143 0* 0.06187% (99.755% 0.038% 0.207%)   Thanksgiving killing                                                                                                         aaabcdefgghiiiiimmnnorrrrsssstttuuvT,,.
+       144 0* 0.06031% (99.755% 0.038% 0.207%)   giving                                                                                                                       ------------aaabcdefghiiiiikllmmnnorrrrsssstttuuT,,.
+       145 0* 0.44203% (99.762% 0.038% 0.200%)   giving Thanksgiving                                                                                                          aaabcdefghiiiiikllmmnnorrrrsssstttuuT,,.
+       146 0* 0.05954% (99.763% 0.038% 0.199%)   Thanksgiving brings Thanksgiving for                                                                                         aacdeiiiillmmrrsstttuu,,.
+       147 0* 0.05875% (99.763% 0.038% 0.199%)   Thanksgiving for all Thanksgiving                                                                                            abcdegiiiiimmnrrrssstttuu,,.
+       148 0* 0.05872% (99.763% 0.038% 0.199%)   Thanksgiving brilliance to                                                                                                   aadfggghiiiiikmmnnrrrssssttuuvT,,.
+       149 0* 2.07325% (99.763% 0.038% 0.199%)   Thanksgiving brilliance to Thanksgiving                                                                                      adfgiiimmrrrsssttuu,,.
+       150 0* 0.06144% (99.763% 0.038% 0.199%)   Thanksgiving brilliance to Thanksgiving.                                                                                     adfgiiimmrrrsssttuu,,
+       151 0* 0.05868% (99.763% 0.038% 0.199%)   Thanksgiving is Thanksgiving is from                                                                                         aabcdegiiillmnrrrstttuu,,.
+       152 0* 1.99884% (99.763% 0.038% 0.199%)   Thanksgiving is Thanksgiving is from regular                                                                                 abcdiiilmnrstttu,,.
+       153 0* 0.05812% (99.763% 0.038% 0.199%)   Thanksgiving for bringing                                                                                                    aaacdeghiiiiikllmmnrrsssstttuuvT,,.
+       154 0* 0.05742% (99.763% 0.038% 0.199%)   Thanksgiving brilliance is                                                                                                   aadfggghiiiikmmnnorrrssstttuuvT,,.
+       155 0* 0.11375% (99.763% 0.038% 0.199%)   Thanksgiving brilliance is from                                                                                              aadggghiiiikmnnrrssstttuuvT,,.
+       156 0* 0.11318% (99.763% 0.038% 0.199%)   Thanksgiving brilliance is Thanksgiving                                                                                      adfgiimmorrrsstttuu,,.
+       157 0* 0.08732% (99.763% 0.038% 0.199%)   Thanksgiving brilliance is from Thanksgiving                                                                                 adgiimrrsstttuu,,.
+       158 0* 0.05636% (99.763% 0.038% 0.199%)   Thanksgiving from regular Thanksgiving mass                                                                                  bcdiiiiilnrstttu,,.
+       159 0* 0.05596% (99.763% 0.038% 0.199%)   Thanksgiving is similar from                                                                                                 aabcdeggghiiiiklnnnrrsstttuuvT,,.
+       160 0* 0.54583% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular                                                                                         abcdgghiiiiknnnsstttuvT,,.
+       161 0* 1309.03503% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving                                                                            bcdiinstttu,,.
+       162 0* 170.64268% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving.                                                                           bcdiinstttu,,
+       163 0* 52.18939% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving,                                                                           bcdiinstttu,.
+       164 0* 72.72057% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but                                                                       cdiinstt,.
+       165 0* 92.74670% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but dist                                                                  cint,.
+       166 0* 25.57251% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving in                                                                         bcdistttu,,.
+       167 0* 14.66563% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but it                                                                    cdinst,.
+       168 0* 26.32739% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but it is                                                                 cdnt,.
+       169 0* 6.82007% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving is                                                                         bcdintttu,,.
+       170 0* 1.80769% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving in,                                                                        bcdistttu,.
+       171 0* 1.78639% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, t                                                                         bcdiinsttu,.
+       172 0* 0.93108% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but it is.                                                                cdnt,
+       173 0* 0.46739% (99.763% 0.038% 0.199%)   Thanksgiving is similar from Thanksgiving                                                                                    abcdegiilnrrstttuu,,.
+       174 0* 0.45718% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving in.                                                                        bcdistttu,,
+       175 0* 0.26098% (99.763% 0.038% 0.199%)   Thanksgiving is similar from regular Thanksgiving, but it is,                                                                cdnt.
+       176 0* 0.07424% (99.763% 0.038% 0.199%)   Thanksgiving is similar from Thanksgiving last                                                                               bcdegiinrrttuu,,.
+       177 0* 0.05591% (99.763% 0.038% 0.199%)   Thanksgiving gifts                                                                                                           aaabcdegghiiiiiikllmmnnnorrrrsssttuuvT,,.
+       178 0* 0.05589% (99.763% 0.038% 0.199%)   Thanksgiving from regular Thanksgiving suits                                                                                 abcdiiiilmnrstt,,.
+       179 0* 0.05505% (99.763% 0.038% 0.199%)   Thanksgiving.com                                                                                                             aaabdefggghiiiiiiikllmnnnrrrrsssstttuuvT,,
+       180 0* 0.05459% (99.764% 0.038% 0.198%)   Thanksgiving is brilliant Thanksgiving                                                                                       acdefgiimmorrrssttuu,,.
+       181 0* 0.06692% (99.764% 0.038% 0.198%)   Thanksgiving is brilliant Thanksgiving is                                                                                    acdefgimmorrrsttuu,,.
+       182 0* 0.05340% (99.764% 0.038% 0.198%)   Thanksgiving for Thanksgiving, sure                                                                                          aabcdgiiiiillmmnrrsstttu,.
+       183 0* 0.05329% (99.764% 0.038% 0.198%)   Thanksgiving from regular Thanksgiving but,                                                                                  acdiiiiilmnrssstt,.
+       184 0* 0.05237% (99.764% 0.038% 0.198%)   Thanksgiving from regular Thanksgiving island                                                                                bciiiimrsstttu,,.
+       185 0* 0.05175% (99.764% 0.038% 0.198%)   Thanksgiving starts                                                                                                          aabcdefggghiiiiiiikllmmnnnorrrsstuuvT,,.
+       186 0* 0.05151% (99.764% 0.038% 0.198%)   Thanksgiving gives thanks for                                                                                                aabcdggiiiiiillmmnnrrrssttuuT,,.
+       187 0* 0.05043% (99.764% 0.038% 0.198%)   Thanksgiving bringing                                                                                                        aaacdefghiiiiikllmmnorrrsssstttuuvT,,.
+       188 0* 0.04930% (99.764% 0.038% 0.198%)   Thanksgiving to Thanksgiving,                                                                                                aabcdefgiiiiillmmnrrrrsssttuu,.
+       189 0* 0.04865% (99.764% 0.038% 0.198%)   Thanksgiving is similar to                                                                                                   aabcdefggghiiiiklmnnnrrrssttuuvT,,.
+       190 0* 0.48118% (99.764% 0.038% 0.198%)   Thanksgiving is similar to regular                                                                                           abcdfgghiiiikmnnnrssttuvT,,.
+       191 0* 2085.19717% (99.764% 0.038% 0.198%)   Thanksgiving is similar to regular Thanksgiving                                                                              bcdfiimnrsttu,,.
+       192 0* 464.38976% (99.764% 0.038% 0.198%)   Thanksgiving is similar to regular Thanksgiving.                                                                             bcdfiimnrsttu,,
+       193 0* 190.69451% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving,                                                                             bcdfiimnrsttu,.
+       194 0* 264.15655% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but                                                                         cdfiimnrst,.
+       195 0* 64.06780% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but dist                                                                    cfimnr,.
+       196 0* 63.19899% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving but                                                                          cdfiimnrst,,.
+       197 0* 60.36151% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in                                                                           bcdfimrsttu,,.
+       198 0* 11.89670% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving but dist                                                                     cfimnr,,.
+       199 0* 10.84054% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but it                                                                      cdfimnrs,.
+       200 0* 12.87513% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but it is                                                                   cdfmnr,.
+       201 0* 10.53286% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving is                                                                           bcdfimnrttu,,.
+       202 0* 2.17815% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, sir                                                                         bcdfimnttu,.
+       203 0* 1.73083% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, t                                                                           bcdfiimnrstu,.
+       204 0* 1.54278% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in,                                                                          bcdfimrsttu,.
+       205 0* 1.46253% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in but                                                                       cdfimrst,,.
+       206 0* 1.28154% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, it                                                                          bcdfimnrstu,.
+       207 0* 1.25086% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but is                                                                      cdfimnrt,.
+       208 0* 1.19547% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving                                                                              bcdfiimnrsttu,,.
+       209 0* 0.75054% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving but it                                                                       cdfimnrs,,.
+       210 0* 0.69617% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but,                                                                        cdfiimnrst.
+       211 0* 0.61109% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, sir.                                                                        bcdfimnttu,
+       212 0* 0.54849% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving but it is                                                                    cdfmnr,,.
+       213 0* 0.22854% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, um                                                                          bcdfiinrstt,.
+       214 0* 0.41280% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, um,                                                                         bcdfiinrstt.
+       215 0* 0.21988% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but in                                                                      cdfimrst,.
+       216 0* 0.21828% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, s                                                                           bcdfiimnrttu,.
+       217 0* 0.20286% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, is                                                                          bcdfimnrttu,.
+       218 0* 0.20167% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in, but                                                                      cdfimrst,.
+       219 0* 0.19813% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in its                                                                       bcdfmrtu,,.
+       220 0* 0.18368% (99.764% 0.038% 0.197%)   Thanksgiving is similar to Thanksgiving                                                                                      abcdefgiilmnrrrsttuu,,.
+       221 0* 0.17520% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, is,                                                                         bcdfimnrttu.
+       222 0* 0.17312% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in but,                                                                      cdfimrst,.
+       223 0* 0.16237% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, d                                                                           bcfiimnrsttu,.
+       224 0* 0.15423% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, s.                                                                          bcdfiimnrttu,
+       225 0* 0.13032% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving,                                                                             bcdfiimnrsttu,.
+       226 0* 0.12614% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but it isn                                                                  cdfmr,.
+       227 0* 0.11613% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, sir,                                                                        bcdfimnttu.
+       228 0* 0.13008% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, sir, but                                                                    cdfimnt.
+       229 0* 0.10725% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but it is.                                                                  cdfmnr,
+       230 0* 0.08577% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in.                                                                          bcdfimrsttu,,
+       231 0* 0.07885% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but it is,                                                                  cdfmnr.
+       232 0* 0.05957% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, it is                                                                       bcdfmnrtu,.
+       233 0* 0.05458% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving, but                                                                         cdfiimnrst,.
+       234 0* 0.05122% (99.764% 0.038% 0.197%)   Thanksgiving is similar to regular Thanksgiving in                                                                           bcdfimrsttu,,.
+       235 0* 0.04813% (99.764% 0.038% 0.197%)   Thanksgiving means Thanksgiving last                                                                                         bcdfgiiiiilmorrrrsttuu,,.
+       236 0* 0.04770% (99.764% 0.038% 0.197%)   Thanksgiving is for                                                                                                          aaabcdeggghiiiiiikllmmnnnrrrssstttuuvT,,.
+       237 0* 0.55861% (99.765% 0.038% 0.197%)   Thanksgiving is for Thanksgiving                                                                                             aabcdegiiiillmmnrrrsstttuu,,.
+       238 0* 0.39386% (99.765% 0.038% 0.197%)   Thanksgiving is for Thanksgiving last                                                                                        abcdegiiiilmmnrrrsttuu,,.
+       239 0* 0.34139% (99.765% 0.038% 0.197%)   Thanksgiving is for regular                                                                                                  aabcdgghiiiiiiklmmnnnrssstttuvT,,.
+       240 0* 506.79020% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving                                                                                     abcdiiiilmmnrsstttu,,.
+       241 0* 23.99442% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving.                                                                                    abcdiiiilmmnrsstttu,,
+       242 0* 14.68224% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving,                                                                                    abcdiiiilmmnrsstttu,.
+       243 0* 14.02092% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving is                                                                                  abcdiiilmmnrstttu,,.
+       244 0* 4.46681% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving in                                                                                  abcdiiilmmrsstttu,,.
+       245 0* 3.95920% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but                                                                                acdiiiilmmnrsstt,.
+       246 0* 2978.65202% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct                                                                       aiilmmrs,.
+       247 0* 11135.30279% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct,                                                                      aiilmmrs.
+       248 0* 26.91896% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct.                                                                      aiilmmrs,
+       249 0* 22.20342% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct as                                                                    iilmmr,.
+       250 0* 13.25148% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, sir                                                                  ailmm.
+       251 0* 12.62260% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, as                                                                   iilmmr.
+       252 0* 2.76138% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but                                                                                 acdiiiilmmnrsstt,,.
+       253 0* 282.05408% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct                                                                        aiilmmrs,,.
+       254 0* 1683.05419% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct,                                                                       aiilmmrs,.
+       255 0* 23.30161% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct, sir                                                                   ailmm,.
+       256 0* 18.14306% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct, sir,                                                                  ailmm.
+       257 0* 3.03704% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct, sir.                                                                  ailmm,
+       258 0* 2.08529% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, sir.                                                                 ailmm
+       259 0* 1.65990% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct,                                                                      aiilmmrs.
+       260 0* 1.58410% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving and                                                                                 bciiiilmmrsstttu,,.
+       261 0* 0.96302% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving but distinct,                                                                       aiilmmrs,.
+       262 0* 0.69870% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, s                                                                    aiilmmr.
+       263 0* 0.53019% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving                                                                                     abcdiiiilmmnrsstttu,,.
+       264 0* 0.50299% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but it                                                                             acdiiilmmnrsst,.
+       265 0* 0.44236% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but it is                                                                          acdiilmmnrst,.
+       266 0* 0.71092% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but it is similar                                                                  cdmnt,.
+       267 0* 1.88139% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but it is similar,                                                                 cdmnt.
+       268 0* 0.43515% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, a                                                                    iilmmrs.
+       269 0* 0.37141% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but dist                                                                           aciiilmmnrst,.
+       270 0* 0.33440% (99.765% 0.038% 0.197%)   Thanksgiving is for Thanksgiving is                                                                                          aabcdegiiillmmnrrrstttuu,,.
+       271 0* 0.28435% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, i                                                                    ailmmrs.
+       272 0* 0.24824% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, .                                                                    aiilmmrs
+       273 0* 0.23802% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving islands                                                                             bciiimmrtttu,,.
+       274 0* 0.20321% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct,                                                                      aiilmmrs.
+       275 0* 0.19009% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, sir                                                                                abcdiiilmmnstttu,.
+       276 0* 0.18697% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving and it                                                                              bciiilmmrssttu,,.
+       277 0* 0.17460% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving saints                                                                              bcdiiilmmrttu,,.
+       278 0* 0.16630% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving s                                                                                   abcdiiiilmmnrstttu,,.
+       279 0* 0.15737% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving and is                                                                              bciiilmmrstttu,,.
+       280 0* 0.15579% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, i.                                                                   ailmmrs
+       281 0* 0.14971% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but it is a                                                                        cdiilmmnrst,.
+       282 0* 0.13426% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, and                                                                                bciiiilmmrsstttu,.
+       283 0* 0.15576% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, and it                                                                             bciiilmmrssttu,.
+       284 0* 0.12571% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving mass                                                                                bcdiiiilmnrtttu,,.
+       285 0* 0.11956% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving turns                                                                               abcdiiiilmmstt,,.
+       286 0* 0.11928% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving in,                                                                                 abcdiiilmmrsstttu,.
+       287 0* 0.11619% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving crisis                                                                              abdiilmmntttu,,.
+       288 0* 0.10591% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, is                                                                                 abcdiiilmmnrstttu,.
+       289 0* 0.08908% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving it                                                                                  abcdiiilmmnrssttu,,.
+       290 0* 0.08766% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving and it is                                                                           bciilmmrsttu,,.
+       291 0* 0.07665% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, but distinct, s.                                                                   aiilmmr
+       292 0* 0.07031% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, and it is                                                                          bciilmmrsttu,.
+       293 0* 0.06795% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving last                                                                                bcdiiiimmnrsttu,,.
+       294 0* 0.06385% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving minds                                                                               abciiilmrstttu,,.
+       295 0* 0.06171% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving, and is                                                                             bciiilmmrstttu,.
+       296 0* 0.05873% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving starts                                                                              bcdiiiilmmntu,,.
+       297 0* 0.04952% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving turn                                                                                abcdiiiilmmsstt,,.
+       298 0* 0.04724% (99.765% 0.038% 0.197%)   Thanksgiving is Thanksgiving is a                                                                                            abcdefgiiillmmnorrrrstttuu,,.
+       299 0* 0.04666% (99.765% 0.038% 0.197%)   Thanksgiving from regular Thanksgiving but it                                                                                acdiiiilmnrssst,,.
+       300 0* 0.04657% (99.765% 0.038% 0.197%)   Thanksgiving is for regular Thanksgiving island                                                                              bciiimmrstttu,,.
+       301 0* 0.04567% (99.765% 0.038% 0.197%)   thankful giving                                                                                                              ------------aabcdegiiiiilmmnorrrrssssttuT,,.
+       302 0* 0.10828% (99.765% 0.038% 0.197%)   thankful giving Thanksgiving                                                                                                 aabcdegiiiiilmmnorrrrssssttuT,,.
+       303 0* 0.04449% (99.765% 0.038% 0.197%)   Thanksgiving over                                                                                                            aaabcdfggghiiiiiiikllmmnnnrrrsssstttuuT,,.
+       304 0* 0.04435% (99.766% 0.038% 0.196%)   Thanksgiving is similar from regular thanks                                                                                  bcdggiiiinnsttuvT,,.
+       305 0* 0.04380% (99.766% 0.038% 0.196%)   Thanksgiving is similar from Thanksgiving.                                                                                   abcdegiilnrrstttuu,,
+       306 0* 0.04358% (99.766% 0.038% 0.196%)   Thanksgiving is Thanksgiving is a time                                                                                       abcdfgiillmnorrrrsttuu,,.
+       307 0* 0.22907% (99.766% 0.038% 0.196%)   Thanksgiving is Thanksgiving is a time for                                                                                   abcdgiillmnrrrsttuu,,.
+       308 0* 0.66736% (99.766% 0.038% 0.196%)   Thanksgiving is Thanksgiving is a time for us                                                                                abcdgiillmnrrrttu,,.
+       309 0* 0.04310% (99.766% 0.038% 0.196%)   thanks giving com Thanksgiving                                                                                               aabdefgiiiiillmnrrrrsssttuuT,,.
+       310 0* 0.04310% (99.766% 0.038% 0.196%)   Thanksgiving is for regular Thanksgiving distinct                                                                            abiilmmrstu,,.
+       311 0* 0.04230% (99.766% 0.038% 0.196%)   Thanksgiving from regular Thanksgiving, sir                                                                                  abcdiiiilmnsstttu,.
+       312 0* 0.04228% (99.766% 0.038% 0.196%)   Thanksgiving murders                                                                                                         aaabcfggghiiiiiiikllmnnnorrssstttuvT,,.
+       313 0* 0.37311% (99.766% 0.038% 0.196%)   Thanksgiving murders Thanksgiving                                                                                            aabcfgiiiiillmnorrsstttu,,.
+       314 0* 0.04219% (99.766% 0.038% 0.196%)   thanks Thanksgiving                                                                                                          aabcdefgggiiiiiiillmmnnorrrrsssttuuvT,,.
+       315 0* 0.04344% (99.766% 0.038% 0.196%)   thanks Thanksgiving giving                                                                                                   aabcdefgiiiiillmmnorrrrsssttuuT,,.
+       316 0* 0.04192% (99.766% 0.038% 0.196%)   Thanksgiving is for regular Thanksgiving crumbs                                                                              adiiiilmnsttt,,.
+       317 0* 0.04190% (99.766% 0.038% 0.196%)   Thanksgiving com                                                                                                             aaabdefggghiiiiiiikllmnnnrrrrsssstttuuvT,,.
+       318 0* 0.11988% (99.768% 0.038% 0.194%)   Thanksgiving com Thanksgiving                                                                                                aabdefgiiiiillmnrrrrssstttuu,,.
+       319 0* 0.04188% (99.768% 0.038% 0.194%)   Thanksgiving and                                                                                                             aabcefggghiiiiiiikllmmnnorrrrsssstttuuvT,,.
+       320 0* 0.05755% (99.771% 0.038% 0.191%)   Thanksgiving and Thanksgiving                                                                                                abcefgiiiiillmmorrrrssstttuu,,.
+       321 0* 0.04188% (99.771% 0.038% 0.191%)   Thanksgiving villains                                                                                                        aabcdefggghiiiiikmmnnorrrrssstttuuT,,.
+       322 0* 0.04183% (99.771% 0.038% 0.191%)   Thanksgiving from regular Thanksgiving but dist                                                                              aciiiilmnrsst,,.
+       323 0* 0.04157% (99.771% 0.038% 0.191%)   Thanksgiving is similar to regular Thanksgiving.                                                                             bcdfiimnrsttu,,
+       324 0* 0.04152% (99.771% 0.038% 0.191%)   Thanksgiving from regular Thanksgiving last                                                                                  bcdiiiiimnrssttu,,.
+       325 0* 0.04141% (99.771% 0.038% 0.191%)   Thanksgiving for the killing                                                                                                 aaabcdggiiiiimmnnrrrssssttuuvT,,.
+       326 0* 0.04132% (99.771% 0.038% 0.191%)   Thanksgiving from regular Thanksgiving until                                                                                 abcdiiiimrssstt,,.
+       327 0* 0.04075% (99.771% 0.038% 0.191%)   Thanksgiving victories                                                                                                       aaabdfggghiiiiikllmmnnnrrrsssttuuT,,.
+       328 0* 0.04073% (99.771% 0.038% 0.191%)   thanks giving to                                                                                                             ------------aabcdefgiiiiillmmnrrrrssstuuT,,.
+       329 0* 0.04066% (99.772% 0.038% 0.190%)   Thanksgiving from regular Thanksgiving claims                                                                                bdiiiinrsstttu,,.
+       330 0* 0.04060% (99.772% 0.038% 0.190%)   Thanksgiving from the similar,                                                                                               aabcdgggiiiiiklnnnrrsssttuuvT,.
+       331 0* 0.15637% (99.772% 0.038% 0.190%)   Thanksgiving from the similar, but                                                                                           aacdgggiiiiiklnnnrrssstuvT,.
+       332 0* 0.04039% (99.772% 0.038% 0.190%)   Thanksgiving brings me                                                                                                       aaacdfgghiiiiiikllmnnorrrssstttuuvT,,.
+       333 0* 0.13701% (99.772% 0.038% 0.190%)   Thanksgiving brings me Thanksgiving                                                                                          aacdfiiiillmorrrsstttuu,,.
+       334 0* 0.04039% (99.772% 0.038% 0.190%)   Thanksgiving from regular Thanksgiving, distinct                                                                             abiiilmrsstu,.
+       335 0* 0.04032% (99.772% 0.038% 0.190%)   Thanksgiving brilliant Thanksgiving idea                                                                                     cfgiimmorrrsssttuu,,.
+       336 0* 0.03997% (99.772% 0.038% 0.190%)   Thanksgiving starts Thanksgiving                                                                                             abcdefgiiiiillmmnorrrstuu,,.
+       337 0* 0.03983% (99.772% 0.038% 0.190%)   Thanksgiving. Thanksgiving last                                                                                              abcdefgiiiiilmmnorrrrssttuu,,
+       338 0* 0.03920% (99.772% 0.038% 0.190%)   Thanksgiving is similar to regular Thanksgiving in t                                                                         bcdfimrstu,,.
+       339 0* 0.03899% (99.772% 0.038% 0.190%)   Thanksgiving is similar to Thanksgiving.                                                                                     abcdefgiilmnrrrsttuu,,
+       340 0* 0.03898% (99.772% 0.038% 0.190%)   Thanksgiving thanks giving.                                                                                                  aabcdefgiiiiillmmnorrrrsssttuuT,,
+       341 0* 0.03888% (99.772% 0.038% 0.190%)   Thanksgiving thanks for                                                                                                      aabcdegggiiiiiiillmmnnrrrsssttuuvT,,.
+       342 0* 0.03885% (99.772% 0.038% 0.190%)   Thanksgiving brilliance to Thanksgiving,                                                                                     adfgiiimmrrrsssttuu,.
+       343 0* 0.03843% (99.772% 0.038% 0.190%)   Thanksgiving is similar to regular thanks                                                                                    bcdfggiiiimnnrstuvT,,.
+       344 0* 0.03839% (99.772% 0.038% 0.190%)   Thanksgiving is Thanksgiving is great                                                                                        abcdfiiillmmnorrrsttuu,,.
+       345 0* 0.03807% (99.772% 0.038% 0.190%)   Thanksgiving gives brings thanks                                                                                             aacdfgiiiiillmmnorrrsttuuT,,.
+       346 0* 0.03802% (99.772% 0.038% 0.190%)   Thanksgiving is similar to Thanksgiving last                                                                                 bcdefgiimnrrrtuu,,.
+       347 0* 0.03774% (99.772% 0.038% 0.190%)   Thanksgiving is similar from Thanksgiving,                                                                                   abcdegiilnrrstttuu,.
+       348 0* 0.03770% (99.772% 0.038% 0.190%)   Thanksgiving is similar to Thanksgiving,                                                                                     abcdefgiilmnrrrsttuu,.
+       349 0* 0.03768% (99.772% 0.038% 0.190%)   Thanksgiving brings Thanksgiving,                                                                                            aacdefiiiillmmorrrsstttuu,.
+       350 0* 0.03716% (99.772% 0.038% 0.190%)   Thanksgiving from Thanksgiving,                                                                                              aabcdegiiiiillmnrrrssstttuu,.
+       351 0* 0.03685% (99.772% 0.038% 0.190%)   Thanksgiving is for regular Thanksgiving, man                                                                                bcdiiiilmrsstttu,.
+       352 0* 0.03614% (99.772% 0.038% 0.190%)   Thanksgiving from regular Thanksgiving distinct                                                                              abiiilmrsstu,,.
+       353 0* 0.03592% (99.772% 0.038% 0.190%)   Thanksgiving is for regular thanks                                                                                           abcdggiiiiiilmmnnrssttuvT,,.
+       354 0* 0.18592% (99.772% 0.038% 0.190%)   Thanksgiving is for regular thanks giving                                                                                    abcdiiiilmmnrssttuT,,.
+       355 0* 0.19480% (99.772% 0.038% 0.190%)   Thanksgiving is for regular thanks giving last                                                                               bcdiiiimmnrstuT,,.
+       356 0* 0.03577% (99.772% 0.038% 0.190%)   Thanksgiving brings the                                                                                                      aaacdfggiiiiiikllmmnnorrrsssttuuvT,,.
+       357 0* 0.03531% (99.772% 0.038% 0.190%)   Thanksgiving from regular Thanksgiving, t                                                                                    abcdiiiiilmnrsssttu,.
+       358 0* 0.03521% (99.772% 0.038% 0.190%)   Thanksgiving thanks giving for regular                                                                                       abcdiiiiilmmnrsssttuT,,.
+       359 0* 0.03508% (99.772% 0.038% 0.190%)   Thanksgiving million                                                                                                         aaabcdefggghiiiiikmnnrrrrsssstttuuvT,,.
+       360 0* 0.16282% (99.772% 0.038% 0.190%)   Thanksgiving million Thanksgiving                                                                                            aabcdefgiiimrrrrssstttuu,,.
+       361 0* 0.03484% (99.772% 0.038% 0.190%)   Thanksgiving is for regular Thanksgiving, s                                                                                  abcdiiiilmmnrstttu,.
+       362 0* 0.03472% (99.772% 0.038% 0.190%)   Thanksgiving from regular Thanksgiving insults                                                                               abcdiiiimrstt,,.
+       363 0* 0.03463% (99.772% 0.038% 0.190%)   Thanksgiving in                                                                                                              aaabcdefggghiiiiiikllmmnnorrrrsssstttuuvT,,.
+       364 0* 0.03424% (99.774% 0.038% 0.188%)   Thanksgiving brings to                                                                                                       aaacdefgghiiiiiikllmmnnrrrsssttuuvT,,.
+       365 0* 0.66882% (99.774% 0.038% 0.188%)   Thanksgiving brings to Thanksgiving                                                                                          aacdefiiiillmmrrrssttuu,,.
+       366 0* 0.25106% (99.774% 0.038% 0.188%)   Thanksgiving brings to regular                                                                                               aacdfghiiiiiiklmmnnrsssttuvT,,.
+       367 0* 0.03404% (99.774% 0.038% 0.188%)   Thanksgiving is for regular Thanksgiving biscuits                                                                            adiilmmnrtt,,.
+       368 0* 0.03392% (99.774% 0.038% 0.188%)   Thanksgiving begins Thanksgiving last                                                                                        acdfiiiilmmorrrrsttuu,,.
+       369 0* 0.03382% (99.774% 0.038% 0.188%)   Thanksgiving is for regular Thanksgiving, but,                                                                               acdiiiilmmnrsstt.
+       370 0* 0.03335% (99.774% 0.038% 0.188%)   Thanksgiving brings it                                                                                                       aaacdefgghiiiiikllmmnnorrrsssttuuvT,,.
+       371 0* 0.20959% (99.774% 0.038% 0.188%)   Thanksgiving brings it Thanksgiving                                                                                          aacdefiiillmmorrrssttuu,,.
+       372 0* 0.03315% (99.774% 0.038% 0.188%)   Thanksgiving the                                                                                                             aaabcdfgggiiiiiiikllmmnnnorrrrssssttuuvT,,.
+       373 0* 0.03313% (99.781% 0.038% 0.181%)   thanks giving Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrsssttuuT,,.
+       374 0* 0.03307% (99.781% 0.038% 0.181%)   Thanksgiving from regular Thanksgiving audits                                                                                bciiiilmnrsstt,,.
+       375 0* 0.03306% (99.781% 0.038% 0.181%)   Thanksgiving, Thanksgiving, murder                                                                                           aabcfgiiiiillmnorrssstttu.
+       376 0* 0.03306% (99.781% 0.038% 0.181%)   Thanksgiving is Thanksgiving,                                                                                                aabcdefgiiiillmmnorrrrsstttuu,.
+       377 0* 0.03265% (99.781% 0.038% 0.181%)   Thanksgiving brings,                                                                                                         aaacdefgghiiiiiikllmmnnorrrssstttuuvT,.
+       378 0* 0.03242% (99.781% 0.038% 0.181%)   Thanksgiving Thanksgiving is                                                                                                 aabcdefgiiiillmmnorrrrsstttuu,,.
+       379 0* 0.03237% (99.781% 0.038% 0.181%)   Thanksgiving Thanksgiving murder                                                                                             aabcfgiiiiillmnorrssstttu,,.
+       380 0* 0.03232% (99.781% 0.038% 0.181%)   Thanksgiving brainstorm                                                                                                      aacdefggghiiiiiikllmnnrrsssttuuvT,,.
+       381 0* 0.03223% (99.781% 0.038% 0.181%)   Thanksgiving from regular Thanksgiving minds                                                                                 abciiiilrsstttu,,.
+       382 0* 0.03171% (99.781% 0.038% 0.181%)   Thanksgiving is for regular Thanksgiving, is it                                                                              abcdiilmmnrsttu,.
+       383 0* 0.03166% (99.781% 0.038% 0.181%)   Thanksgiving giving brings                                                                                                   aaacdefhiiiikllmmnorrrssstttuuT,,.
+       384 0* 0.03163% (99.781% 0.038% 0.181%)   Thanksgiving is for regular Thanksgiving bliss                                                                               acdiiimmnrtttu,,.
+       385 0* 0.03149% (99.781% 0.038% 0.181%)   Thanksgiving brilliance to distinguish                                                                                       aafggiikmmnrrrsstuvT,,.
+       386 0* 0.03148% (99.781% 0.038% 0.181%)   Thanksgiving is for regular Thanksgiving as                                                                                  bcdiiiilmmnrstttu,,.
+       387 0* 0.03106% (99.781% 0.038% 0.181%)   Thanksgiving from regular Thanksgiving                                                                                       abcdiiiiilmnrssstttu,,.
+       388 0* 0.03102% (99.781% 0.038% 0.181%)   Thanksgiving is Thanksgiving for                                                                                             aabcdegiiiillmmnrrrsstttuu,,.
+       389 0* 0.03100% (99.781% 0.038% 0.181%)   Thanksgiving brings me,                                                                                                      aaacdfgghiiiiiikllmnnorrrssstttuuvT,.
+       390 0* 0.03097% (99.781% 0.038% 0.181%)   Thanksgiving from similar but                                                                                                aacdeggghiiiiiklnnnrrsssttuvT,,.
+       391 0* 0.29299% (99.781% 0.038% 0.181%)   Thanksgiving from similar but Thanksgiving                                                                                   acdegiiilnrrssttu,,.
+       392 0* 0.24874% (99.781% 0.038% 0.181%)   Thanksgiving from similar but distinct                                                                                       aaeggghiiiklnnrrssuvT,,.
+       393 0* 13.97231% (99.781% 0.038% 0.181%)   Thanksgiving from similar but distinct Thanksgiving                                                                          aegilrrsu,,.
+       394 0* 0.06274% (99.781% 0.038% 0.181%)   Thanksgiving from similar but distinct regular                                                                               agghiiiknnssvT,,.
+       395 0* 0.03079% (99.781% 0.038% 0.181%)   Thanksgiving is for regular Thanksgiving, sir.                                                                               abcdiiilmmnstttu,
+       396 0* 0.03057% (99.781% 0.038% 0.181%)   Thanksgiving from regular Thanksgiving sati                                                                                  bcdiiiilmnrssttu,,.
+       397 0* 0.03018% (99.781% 0.038% 0.181%)   Thanksgiving gifts Thanksgiving                                                                                              aabcdeiiiillmmnorrrrssttuu,,.
+       398 0* 0.02998% (99.781% 0.038% 0.181%)   Thanksgiving Thanksgiving to                                                                                                 aabcdefgiiiiillmmnrrrrsssttuu,,.
+       399 0* 0.02995% (99.781% 0.038% 0.181%)   Thanksgiving congrats                                                                                                        aabdefgghiiiiiiikllmmnnrrrsssttuuvT,,.
+       400 0* 0.02986% (99.781% 0.038% 0.181%)   Thanksgiving from similar Thanksgiving, but                                                                                  acdegiiilnrrssttu,.
+       401 0* 0.02963% (99.781% 0.038% 0.181%)   Thanksgiving murders Thanksgiving brings                                                                                     aacfiiiillmorstttu,,.
+       402 0* 0.02961% (99.781% 0.038% 0.181%)   Thanksgiving from similar Thanksgiving and                                                                                   bcegiiilrrsstttuu,,.
+       403 0* 0.02951% (99.781% 0.038% 0.181%)   Thanksgiving finds                                                                                                           aaabceggghiiiiiikllmmnnorrrrssstttuuvT,,.
+       404 0* 0.15571% (99.781% 0.038% 0.181%)   Thanksgiving finds Thanksgiving                                                                                              aabcegiiiillmmorrrrsstttuu,,.
+       405 0* 0.02944% (99.781% 0.038% 0.181%)   Thanksgiving blessing                                                                                                        aaacdfgghiiiiiiklmmnnorrrrsstttuuvT,,.
+       406 0* 0.02935% (99.781% 0.038% 0.181%)   Thanksgiving is from                                                                                                         aaabcdeggghiiiiiikllmnnnrrrssstttuuvT,,.
+       407 0* 0.32128% (99.781% 0.038% 0.181%)   Thanksgiving is from regular                                                                                                 aabcdgghiiiiiiklmnnnrssstttuvT,,.
+       408 0* 455.04518% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving                                                                                    abcdiiiilmnrsstttu,,.
+       409 0* 14.71449% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving.                                                                                   abcdiiiilmnrsstttu,,
+       410 0* 13.03438% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving,                                                                                   abcdiiiilmnrsstttu,.
+       411 0* 10.21529% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving is                                                                                 abcdiiilmnrstttu,,.
+       412 0* 4.95746% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but                                                                               acdiiiilmnrsstt,.
+       413 0* 5759.76847% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct                                                                      aiilmrs,.
+       414 0* 23509.13459% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct,                                                                     aiilmrs.
+       415 0* 163.80546% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct.                                                                     aiilmrs,
+       416 0* 118.78500% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, sir                                                                 ailm.
+       417 0* 53.01886% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, as                                                                  iilmr.
+       418 0* 38.55747% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct as                                                                   iilmr,.
+       419 0* 22.42562% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, sir.                                                                ailm
+       420 0* 10.70678% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, is                                                                  ailmr.
+       421 0* 6.87990% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, is a                                                                ilmr.
+       422 0* 6.67726% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct,                                                                     aiilmrs.
+       423 0* 4.77140% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but                                                                                acdiiiilmnrsstt,,.
+       424 0* 664.92204% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct                                                                       aiilmrs,,.
+       425 0* 4739.33568% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct,                                                                      aiilmrs,.
+       426 0* 114.47554% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct, sir                                                                  ailm,.
+       427 0* 145.35829% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct, sir,                                                                 ailm.
+       428 0* 20.03533% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct.                                                                      aiilmrs,,
+       429 0* 16.09011% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct, sir.                                                                 ailm,
+       430 0* 4.55528% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving in                                                                                 abcdiiilmrsstttu,,.
+       431 0* 3.46521% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving but distinct,                                                                      aiilmrs,.
+       432 0* 3.12355% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, s                                                                   aiilmr.
+       433 0* 2.28229% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, i                                                                   ailmrs.
+       434 0* 1.76369% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, a                                                                   iilmrs.
+       435 0* 1.64734% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, .                                                                   aiilmrs
+       436 0* 1.27066% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving and                                                                                bciiiilmrsstttu,,.
+       437 0* 1.04083% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, i.                                                                  ailmrs
+       438 0* 0.86485% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it                                                                            acdiiilmnrsst,.
+       439 0* 0.93353% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is                                                                         acdiilmnrst,.
+       440 0* 7.30207% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is similar                                                                 cdnt,.
+       441 0* 14.92665% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is similar,                                                                cdnt.
+       442 0* 0.79850% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct,                                                                     aiilmrs.
+       443 0* 0.74958% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving in,                                                                                abcdiiilmrsstttu,.
+       444 0* 0.57806% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving islands                                                                            bciiimrtttu,,.
+       445 0* 0.52025% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is a                                                                       cdiilmnrst,.
+       446 0* 0.46507% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving                                                                                    abcdiiiilmnrsstttu,,.
+       447 0* 0.29929% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving and it                                                                             bciiilmrssttu,,.
+       448 0* 0.29114% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but distinct, s.                                                                  aiilmr
+       449 0* 0.26708% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving distinct                                                                           abiilmrstu,,.
+       450 0* 0.20068% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving and is                                                                             bciiilmrstttu,,.
+       451 0* 0.19684% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving saints                                                                             bcdiiilmrttu,,.
+       452 0* 0.15781% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, t                                                                                 abcdiiiilmnrssttu,.
+       453 0* 0.14063% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving and it is                                                                          bciilmrsttu,,.
+       454 0* 0.13456% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving in, but                                                                            acdiiilmrsstt,.
+       455 0* 0.12762% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving island                                                                             bciiimrstttu,,.
+       456 0* 0.12143% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is similar.                                                                cdnt,
+       457 0* 0.11483% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving mass                                                                               bcdiiiilnrtttu,,.
+       458 0* 0.10809% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, and                                                                               bciiiilmrsstttu,.
+       459 0* 0.21702% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, and it                                                                            bciiilmrssttu,.
+       460 0* 0.13255% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, and it is                                                                         bciilmrsttu,.
+       461 0* 0.07922% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving starts                                                                             bcdiiiilmntu,,.
+       462 0* 0.07851% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving crisis                                                                             abdiilmntttu,,.
+       463 0* 0.07239% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, but it is similar, t                                                              cdn.
+       464 0* 0.07101% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving biscuits                                                                           adiilmnrtt,,.
+       465 0* 0.06631% (99.781% 0.038% 0.181%)   Thanksgiving is from Thanksgiving                                                                                            aabcdegiiiillmnrrrsstttuu,,.
+       466 0* 0.06582% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving until                                                                              abcdiiimrsstt,,.
+       467 0* 0.06561% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving it                                                                                 abcdiiilmnrssttu,,.
+       468 0* 0.06469% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving bliss                                                                              acdiiimnrtttu,,.
+       469 0* 0.05431% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving is a                                                                               bcdiiilmnrstttu,,.
+       470 0* 0.05239% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving s                                                                                  abcdiiiilmnrstttu,,.
+       471 0* 0.04954% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving minds                                                                              abciiilrstttu,,.
+       472 0* 0.04559% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving turn                                                                               abcdiiiilmsstt,,.
+       473 0* 0.03954% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving, and is                                                                            bciiilmrstttu,.
+       474 0* 0.03633% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving turns                                                                              abcdiiiilmstt,,.
+       475 0* 0.03579% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving brains                                                                             cdiiilmstttu,,.
+       476 0* 0.03495% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving mains                                                                              bcdiiilrstttu,,.
+       477 0* 0.03434% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving sati                                                                               bcdiiilmnrsttu,,.
+       478 0* 0.03146% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving lasts                                                                              bcdiiiimnrttu,,.
+       479 0* 0.02987% (99.781% 0.038% 0.181%)   Thanksgiving is from regular thanks                                                                                          abcdggiiiiiilmnnrssttuvT,,.
+       480 0* 0.16530% (99.781% 0.038% 0.181%)   Thanksgiving is from regular thanks giving                                                                                   abcdiiiilmnrssttuT,,.
+       481 0* 0.02925% (99.781% 0.038% 0.181%)   Thanksgiving is from regular Thanksgiving du                                                                                 abciiiilmnrssttt,,.
+       482 0* 0.02914% (99.781% 0.038% 0.181%)   Thanksgiving all                                                                                                             aabcdefggghiiiiiiikmmnnnorrrrsssstttuuvT,,.
+       483 0* 0.02882% (99.782% 0.038% 0.180%)   Thanksgiving for brilliance                                                                                                  aadggghiiiiikmmnnrrsssstttuuvT,,.
+       484 0* 0.09296% (99.782% 0.038% 0.180%)   Thanksgiving for brilliance Thanksgiving                                                                                     adgiiimmrrssstttuu,,.
+       485 0* 0.02870% (99.782% 0.038% 0.180%)   Thanksgiving. Thanksgiving for                                                                                               aabcdegiiiiillmmnrrrssstttuu,,
+       486 0* 0.02868% (99.782% 0.038% 0.180%)   Thanksgiving is thanks                                                                                                       aabcdefgggiiiiiillmmnnorrrrssttuuvT,,.
+       487 0* 0.90813% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving                                                                                                aabcdefgiiiillmmnorrrrssttuuT,,.
+       488 0* 1.58118% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving is                                                                                             aabcdefgiiillmmnorrrrsttuuT,,.
+       489 0* 0.16351% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving is a                                                                                           abcdefgiiillmmnorrrrsttuuT,,.
+       490 0* 0.04364% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving for                                                                                            aabcdegiiiillmmnrrrssttuuT,,.
+       491 0* 0.04144% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving is from                                                                                        aabcdegiiillmnrrrsttuuT,,.
+       492 0* 2.18319% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving is from regular                                                                                abcdiiilmnrsttuT,,.
+       493 0* 0.03904% (99.782% 0.038% 0.180%)   Thanksgiving is thanks giving for all                                                                                        abcdegiiiimmnrrrssttuuT,,.
+       494 0* 0.02835% (99.782% 0.038% 0.180%)   Thanksgiving is from regular Thanksgiving, but it is an                                                                      cdiilmrst,.
+       495 0* 0.02826% (99.782% 0.038% 0.180%)   Thanksgiving, brilliant                                                                                                      aacdefggghiiiiikmmnnorrrssssttuuvT,.
+       496 0* 0.81584% (99.782% 0.038% 0.180%)   Thanksgiving, brilliant Thanksgiving                                                                                         acdefgiiimmorrrsssttuu,.
+       497 0* 0.67195% (99.782% 0.038% 0.180%)   Thanksgiving, brilliant Thanksgiving,                                                                                        acdefgiiimmorrrsssttuu.
+       498 0* 0.10221% (99.782% 0.038% 0.180%)   Thanksgiving, brilliant Thanksgiving, great                                                                                  cdfiiimmorrssstuu.
+       499 0* 0.06735% (99.782% 0.038% 0.180%)   Thanksgiving, brilliant Thanksgiving, terrific                                                                               adgimmorssstuu.
+       500 0* 0.02806% (99.782% 0.038% 0.180%)   Thanksgiving from regular Thanksgiving, and                                                                                  bciiiiilmrssstttu,.
+       501 0* 0.02797% (99.782% 0.038% 0.180%)   Thanksgiving is for regular Thanksgiving mains                                                                               bcdiiilmrstttu,,.
+       502 0* 0.02797% (99.782% 0.038% 0.180%)   Thanksgiving brings itself Thanksgiving.                                                                                     aacdiiilmmorrrsttuu,,
+       503 0* 0.02792% (99.782% 0.038% 0.180%)   Thanksgiving brings itself,                                                                                                  aaacdgghiiiiiklmmnnorrrssttuuvT,.
+       504 0* 0.02784% (99.782% 0.038% 0.180%)   Thanksgiving                                                                                                                 aaabcdefggghiiiiiiikllmmnnnorrrrsssstttuuvT,,.
+       505 0* 0.02782% (99.785% 0.038% 0.177%)   Thanksgiving includes Thanksgiving last                                                                                      abfgiiiimmorrrrsttu,,.
+       506 0* 0.02779% (99.785% 0.038% 0.177%)   Thanksgiving fills                                                                                                           aaabcdeggghiiiiiikmmnnnorrrrssstttuuvT,,.
+       507 0* 0.05253% (99.785% 0.038% 0.177%)   Thanksgiving fills Thanksgiving                                                                                              aabcdegiiiimmnorrrrsstttuu,,.
+       508 0* 0.02777% (99.785% 0.038% 0.177%)   thanks giving for                                                                                                            ------------aabcdegiiiiillmmnrrrsssttuuT,,.
+       509 0* 0.33969% (99.785% 0.038% 0.177%)   thanks giving for Thanksgiving                                                                                               aabcdegiiiiillmmnrrrsssttuuT,,.
+       510 0* 0.43570% (99.785% 0.038% 0.177%)   thanks giving for Thanksgiving last                                                                                          abcdegiiiiilmmnrrrsstuuT,,.
+       511 0* 0.11477% (99.785% 0.038% 0.177%)   thanks giving for regular                                                                                                    ------------abcdiiiiilmmnrsssttuT,,.
+       512 0* 32.71197% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving                                                                                       abcdiiiiilmmnrsssttuT,,.
+       513 0* 1.64418% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving.                                                                                      abcdiiiiilmmnrsssttuT,,
+       514 0* 0.81487% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving,                                                                                      abcdiiiiilmmnrsssttuT,.
+       515 0* 0.45483% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving last                                                                                  bcdiiiiimmnrsstuT,,.
+       516 0* 0.23988% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving in                                                                                    abcdiiiilmmrsssttuT,,.
+       517 0* 0.15741% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving is                                                                                    abcdiiiilmmnrssttuT,,.
+       518 0* 0.11053% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving but                                                                                   acdiiiiilmmnrssstT,,.
+       519 0* 0.10409% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving, T                                                                                    abcdiiiiilmmnrsssttu,.
+       520 0* 0.08630% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving and                                                                                   bciiiiilmmrsssttuT,,.
+       521 0* 0.08609% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving, but                                                                                  acdiiiiilmmnrssstT,.
+       522 0* 0.06381% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving lasts                                                                                 bcdiiiiimmnrstuT,,.
+       523 0* 0.03883% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving crisis                                                                                abdiiilmmnsttuT,,.
+       524 0* 0.03029% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving                                                                                       abcdiiiiilmmnrsssttuT,,.
+       525 0* 0.02975% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving bliss                                                                                 acdiiiimmnrsttuT,,.
+       526 0* 0.02811% (99.785% 0.038% 0.177%)   thanks giving for regular Thanksgiving criminal                                                                              bdiiimsssttuT,,.
+       527 0* 0.02767% (99.785% 0.038% 0.177%)   thankful Thanksgiving.                                                                                                       aabcdegggiiiiiiilmmnnorrrrssssttuvT,,
+       528 0* 0.02745% (99.785% 0.038% 0.177%)   Thanksgiving, Thanksgiving for,                                                                                              aabcdegiiiiillmmnrrrssstttuu.
+       529 0* 0.08350% (99.785% 0.038% 0.177%)   Thanksgiving, Thanksgiving for, regular                                                                                      abcdiiiiilmmnrssstttu.
+       530 0* 0.02714% (99.785% 0.038% 0.177%)   Thanksgiving is from regular Thanksgiving                                                                                    abcdiiiilmnrsstttu,,.
+       531 0* 0.02714% (99.785% 0.038% 0.177%)   Thanksgiving for Thanksgiving is                                                                                             aabcdegiiiillmmnrrrsstttuu,,.
+       532 0* 0.02713% (99.785% 0.038% 0.177%)   Thanksgiving, Thanksgiving,                                                                                                  aabcdefgiiiiillmmnorrrrssstttuu.
+       533 0* 0.02712% (99.785% 0.038% 0.177%)   Thanksgiving makes                                                                                                           aabcdfggghiiiiiiillmnnnorrrrssstttuuvT,,.
+       534 0* 0.02702% (99.786% 0.038% 0.176%)   Thanksgiving itself                                                                                                          aaabcdggghiiiiiiklmmnnnorrrrsssttuuvT,,.
+       535 0* 0.02690% (99.786% 0.038% 0.176%)   thank giving for                                                                                                             ------------aabcdegiiiiillmmnrrrssssttuuT,,.
+       536 0* 0.38879% (99.787% 0.038% 0.175%)   thank giving for Thanksgiving                                                                                                aabcdegiiiiillmmnrrrssssttuuT,,.
+       537 0* 0.85109% (99.787% 0.038% 0.175%)   thank giving for Thanksgiving last                                                                                           abcdegiiiiilmmnrrrssstuuT,,.
+       538 0* 0.02671% (99.787% 0.038% 0.175%)   Thanksgiving from regular Thanksgiving s                                                                                     abcdiiiiilmnrsstttu,,.
+       539 0* 0.02657% (99.787% 0.038% 0.175%)   Thanksgiving for Thanksgiving, sure,                                                                                         aabcdgiiiiillmmnrrsstttu.
+       540 0* 0.02641% (99.787% 0.038% 0.175%)   Thanksgiving from regular Thanksgiving is but                                                                                acdiiiilmnrsstt,,.
+       541 0* 0.02638% (99.787% 0.038% 0.175%)   Thanksgiving is from regular Thanksgiving insults                                                                            abcdiiimrtt,,.
+       542 0* 0.02626% (99.787% 0.038% 0.175%)   Thanksgiving is for regular Thanksgiving trial                                                                               bcdiiimmnssttu,,.
+       543 0* 0.02619% (99.787% 0.038% 0.175%)   thankful Thanksgiving com                                                                                                    aabdegggiiiiiiilmnnrrrrssssttuvT,,.
+       544 0* 0.02606% (99.787% 0.038% 0.175%)   Thanksgiving from similar but Thanksgiving distinct                                                                          aegilrrsu,,.
+       545 0* 0.02601% (99.787% 0.038% 0.175%)   Thanksgiving gives thanks to                                                                                                 aabcdfggiiiiiillmmnnrrrrsstuuT,,.
+       546 0* 0.02595% (99.787% 0.038% 0.175%)   Thanksgiving finds Thanksgiving last                                                                                         abcegiiiilmmorrrrsttuu,,.
+       547 0* 0.02580% (99.787% 0.038% 0.175%)   Thanksgiving is similar to regular Thanksgiving, is it                                                                       bcdfmnrtu,.
+       548 0* 0.02578% (99.787% 0.038% 0.175%)   Thanksgiving, thank                                                                                                          aabcdefgggiiiiiiillmmnnorrrrssssttuuvT,.
+       549 0* 0.02552% (99.787% 0.038% 0.175%)   Thanksgiving is for regular Thanksgiving insults                                                                             abcdiiimmrtt,,.
+       550 0* 0.02551% (99.787% 0.038% 0.175%)   Thanksgiving brings to Thanksgiving,                                                                                         aacdefiiiillmmrrrssttuu,.
+       551 0* 0.02542% (99.787% 0.038% 0.175%)   Thanksgiving.com Thanksgiving                                                                                                aabdefgiiiiillmnrrrrssstttuu,,
+       552 0* 0.02534% (99.787% 0.038% 0.175%)   Thanksgiving is for regular Thanksgiving .                                                                                   abcdiiiilmmnrsstttu,,
+       553 0* 0.02526% (99.787% 0.038% 0.175%)   Thanksgiving from similar Thanksgiving but larger                                                                            cdiiinssttu,,.
+       554 0* 0.02517% (99.787% 0.038% 0.175%)   thanks giving.                                                                                                               ------------aabcdefgiiiiillmmnorrrrsssttuuT,,
+       555 0* 0.02510% (99.787% 0.038% 0.175%)   Thanksgiving is for regular Thanksgiving lasts                                                                               bcdiiiimmnrttu,,.
+       556 0* 0.02509% (99.787% 0.038% 0.175%)   Thanksgiving, Thanksgiving, from reg                                                                                         aabcdiiiiillmnrrssstttuu.
+       557 0* 0.02497% (99.787% 0.038% 0.175%)   Thanksgiving takes                                                                                                           aabcdfggghiiiiiiillmmnnnorrrrsssttuuvT,,.
+       558 0* 0.02493% (99.788% 0.038% 0.174%)   Thanksgiving brings thanks                                                                                                   aacdefggiiiiiillmmnorrrssttuuvT,,.
+       559 0* 0.07681% (99.788% 0.038% 0.174%)   Thanksgiving brings thanks giving                                                                                            aacdefiiiillmmorrrssttuuT,,.
+       560 0* 0.02479% (99.788% 0.038% 0.174%)   Thanksgiving to Thanksgiving murder                                                                                          aabcfgiiiiillmnrrsssttu,,.
+       561 0* 0.02477% (99.788% 0.038% 0.174%)   Thanksgiving from similar Thanksgiving in                                                                                    abcdegiilrrsstttuu,,.
+       562 0* 0.07421% (99.788% 0.038% 0.174%)   Thanksgiving from similar Thanksgiving in regular                                                                            bcdiisstttu,,.
+       563 0* 0.02803% (99.788% 0.038% 0.174%)   Thanksgiving from similar Thanksgiving in regards                                                                            bciilstttuu,,.
+       564 0* 0.02432% (99.788% 0.038% 0.174%)   Thanksgiving from similar Thanksgiving lasts                                                                                 bcdegiiinrrttuu,,.
+       565 0* 0.02430% (99.788% 0.038% 0.174%)   Thanksgiving is similar Thanksgiving                                                                                         abcdefgiilmnorrrstttuu,,.
+       566 0* 0.02427% (99.788% 0.038% 0.174%)   Thanksgiving Thanksgiving brings                                                                                             aacdefiiiillmmorrrsstttuu,,.
+       567 0* 0.02418% (99.788% 0.038% 0.174%)   Thanksgiving, Thanksgiving, brilliant                                                                                        acdefgiiimmorrrsssttuu.
+       568 0* 0.02403% (99.788% 0.038% 0.174%)   Thanksgiving brings me, T                                                                                                    aaacdfgghiiiiiikllmnnorrrssstttuuv,.
+       569 0* 0.02392% (99.788% 0.038% 0.174%)   Thanksgiving is for regular Thanksgiving carni                                                                               bdiiilmmsstttu,,.
+       570 0* 0.02392% (99.788% 0.038% 0.174%)   Thanksgiving brings itself, Thanksgiving                                                                                     aacdiiilmmorrrsttuu,.
+       571 0* 0.02391% (99.788% 0.038% 0.174%)   Thanksgiving is similar to regular Thanksgiving, t.                                                                          bcdfiimnrstu,
+       572 0* 0.02377% (99.788% 0.038% 0.174%)   Thanksgiving is from regular Thanksgiving criminal                                                                           bdiisstttu,,.
+       573 0* 0.02374% (99.788% 0.038% 0.174%)   Thanksgiving from regular Thanksgiving distinct,                                                                             abiiilmrsstu,.
+       574 0* 0.02358% (99.788% 0.038% 0.174%)   Thanksgiving is from regular Thanksgiving claims                                                                             bdiiinrstttu,,.
+       575 0* 0.02317% (99.788% 0.038% 0.174%)   Thanksgiving to the                                                                                                          aaabcdfgggiiiiiiikllmmnnnrrrrsssstuuvT,,.
+       576 0* 0.02305% (99.811% 0.038% 0.151%)   Thanksgiving from regular Thanksgiving criminals                                                                             bdiiisstttu,,.
+       577 0* 0.02297% (99.811% 0.038% 0.151%)   Thanksgiving brings.                                                                                                         aaacdefgghiiiiiikllmmnnorrrssstttuuvT,,
+       578 0* 0.02287% (99.811% 0.038% 0.151%)   thanks giving is                                                                                                             ------------aabcdefgiiiillmmnorrrrssttuuT,,.
+       579 0* 0.02282% (99.811% 0.038% 0.151%)   Thanksgiving is for regular Thanksgiving, is a                                                                               bcdiiilmmnrstttu,.
+       580 0* 0.02281% (99.811% 0.038% 0.151%)   giving thanks                                                                                                                ------------aabcdefgiiiiillmmnorrrrsssttuuT,,.
+       581 0* 1.48444% (99.811% 0.038% 0.151%)   giving thanks Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrsssttuuT,,.
+       582 0* 0.04897% (99.811% 0.038% 0.151%)   giving thanks Thanksgiving.                                                                                                  aabcdefgiiiiillmmnorrrrsssttuuT,,
+       583 0* 0.02270% (99.811% 0.038% 0.151%)   Thanksgiving from regular Thanksgiving criminal                                                                              bdiiissstttu,,.
+       584 0* 0.02270% (99.811% 0.038% 0.151%)   Thanksgiving thanking                                                                                                        aabcdefggiiiiiillmmnorrrrssssttuuvT,,.
+       585 0* 0.02259% (99.811% 0.038% 0.151%)   Thanksgiving from regular Thanksgiving ri                                                                                    abcdiiiilmnssstttu,,.
+       586 0* 0.02256% (99.811% 0.038% 0.151%)   Thanksgiving, congrats                                                                                                       aabdefgghiiiiiiikllmmnnrrrsssttuuvT,.
+       587 0* 0.08419% (99.811% 0.038% 0.151%)   Thanksgiving, congrats Thanksgiving                                                                                          abdefiiiiillmmrrrssttuu,.
+       588 0* 0.06910% (99.811% 0.038% 0.151%)   Thanksgiving, congrats Thanksgiving,                                                                                         abdefiiiiillmmrrrssttuu.
+       589 0* 0.02254% (99.811% 0.038% 0.151%)   Thanksgiving for killing                                                                                                     aaabcdegghiiiiimmnnrrrsssstttuuvT,,.
+       590 0* 0.02244% (99.811% 0.038% 0.151%)   Thanksgiving is for regular Thanksgiving                                                                                     abcdiiiilmmnrsstttu,,.
+       591 0* 0.02224% (99.811% 0.038% 0.151%)   Thanksgiving from similar Thanksgiving ideas                                                                                 bcgiilnrrstttuu,,.
+       592 0* 0.02213% (99.811% 0.038% 0.151%)   Thanksgiving of                                                                                                              aaabcdeggghiiiiiiikllmmnnnrrrrsssstttuuvT,,.
+       593 0* 0.08265% (99.813% 0.038% 0.148%)   Thanksgiving of Thanksgiving                                                                                                 aabcdegiiiiillmmnrrrrssstttuu,,.
+       594 0* 0.02200% (99.814% 0.038% 0.148%)   Thanksgiving, brilliant Thanksgiving, from                                                                                   acdegiiimrrsssttuu.
+       595 0* 0.02199% (99.814% 0.038% 0.148%)   Thanksgiving is for regular Thanksgiving a                                                                                   bcdiiiilmmnrsstttu,,.
+       596 0* 0.02193% (99.814% 0.038% 0.148%)   Thanksgiving brilliance from Thanksgiving,                                                                                   adgiiimrrssstttuu,.
+       597 0* 0.02193% (99.814% 0.038% 0.148%)   Thanksgiving thanks for regular                                                                                              abcdggiiiiiiilmmnnrsssttuvT,,.
+       598 0* 0.02180% (99.814% 0.038% 0.148%)   Thanksgiving is for regular Thanksgiving c                                                                                   abdiiiilmmnrsstttu,,.
+       599 0* 0.02172% (99.814% 0.038% 0.148%)   Thanksgiving for Thanksgiving in                                                                                             aabcdegiiiillmmrrrssstttuu,,.
+       600 0* 0.02150% (99.814% 0.038% 0.148%)   thanks giving for regular Thanksgiving turns                                                                                 abcdiiiiilmmsstT,,.
+       601 0* 0.02124% (99.814% 0.038% 0.148%)   Thanksgiving isn                                                                                                             aaabcdefggghiiiiiikllmmnnorrrrssstttuuvT,,.
+       602 0* 0.02121% (99.814% 0.038% 0.148%)   Thanksgiving from regular thanks                                                                                             abcdggiiiiiiilmnnrsssttuvT,,.
+       603 0* 0.30331% (99.814% 0.038% 0.148%)   Thanksgiving from regular thanks giving                                                                                      abcdiiiiilmnrsssttuT,,.
+       604 0* 0.02117% (99.814% 0.038% 0.148%)   Thanksgiving thanks gives                                                                                                    aabcdfggiiiiiillmmnnorrrrssttuuT,,.
+       605 0* 0.02108% (99.814% 0.038% 0.148%)   Thanksgiving in Thanksgiving                                                                                                 aabcdefgiiiillmmorrrrssstttuu,,.
+       606 0* 0.02091% (99.814% 0.038% 0.148%)   Thanksgiving is Thanksgiving is four                                                                                         aabcdegiiillmmnrrrstttu,,.
+       607 0* 0.02068% (99.814% 0.038% 0.148%)   Thanksgiving from regular Thanksgiving start                                                                                 bcdiiiiilmnsstu,,.
+       608 0* 0.02066% (99.814% 0.038% 0.148%)   Thanksgiving.comis                                                                                                           aaabdefggghiiiiiikllmnnnrrrrssstttuuvT,,
+       609 0* 0.02062% (99.814% 0.038% 0.148%)   Thanksgiving is from regular Thanksgiving as                                                                                 bcdiiiilmnrstttu,,.
+       610 0* 0.02060% (99.814% 0.038% 0.148%)   Thanksgiving brilliant Thanksgiving great                                                                                    cdfiiimmorrssstuu,,.
+       611 0* 0.02015% (99.814% 0.038% 0.148%)   Thanksgiving from similar Thanksgiving                                                                                       abcdegiiilnrrsstttuu,,.
+       612 0* 0.02006% (99.814% 0.038% 0.148%)   Thanksgiving  Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrssstttuu,,.
+       613 0* 0.02004% (99.814% 0.038% 0.148%)   Thanksgiving fits                                                                                                            aaabcdeggghiiiiiikllmmnnnorrrrsssttuuvT,,.
+       614 0* 0.02681% (99.814% 0.038% 0.148%)   Thanksgiving fits Thanksgiving                                                                                               aabcdegiiiillmmnorrrrssttuu,,.
+       615 0* 0.01992% (99.814% 0.038% 0.148%)   Thanksgiving from regular Thanksgiving subtract                                                                              diiiiilmnsst,,.
+       616 0* 0.01992% (99.814% 0.038% 0.148%)   Thanksgiving, thanks                                                                                                         aabcdefgggiiiiiiillmmnnorrrrsssttuuvT,.
+       617 0* 0.27784% (99.814% 0.038% 0.148%)   Thanksgiving, thanks giving                                                                                                  aabcdefgiiiiillmmnorrrrsssttuuT,.
+       618 0* 0.43727% (99.814% 0.038% 0.148%)   Thanksgiving, thanks giving last                                                                                             abcdefgiiiiilmmnorrrrsstuuT,.
+       619 0* 0.03900% (99.814% 0.038% 0.148%)   Thanksgiving, thanks giving,                                                                                                 aabcdefgiiiiillmmnorrrrsssttuuT.
+       620 0* 0.01982% (99.814% 0.038% 0.148%)   Thanksgiving is for Thanksgiving,                                                                                            aabcdegiiiillmmnrrrsstttuu,.
+       621 0* 0.01966% (99.814% 0.038% 0.148%)   Thanksgiving is from regular Thanksgiving status                                                                             bcdiiiilmnrt,,.
+       622 0* 0.01965% (99.814% 0.038% 0.148%)   Thanksgiving is similar to regular Thanksgiving, d,                                                                          bcfiimnrsttu.
+       623 0* 0.01965% (99.814% 0.038% 0.148%)   Thanksgiving is for regular Thanksgiving, and,                                                                               bciiiilmmrsstttu.
+       624 0* 0.01959% (99.814% 0.038% 0.148%)   Thanksgiving, brilliant Thanksgiving, murder                                                                                 acfgiiimorsssttu.
+       625 0* 0.01947% (99.814% 0.038% 0.148%)   Thanksgiving from similar Thanksgiving grace                                                                                 bdiiilnrsstttuu,,.
+       626 0* 0.01945% (99.814% 0.038% 0.148%)   Thanksgiving from regular Thanksgiving status                                                                                bcdiiiiilmnrst,,.
+       627 0* 0.01945% (99.814% 0.038% 0.148%)   Thanksgiving is similar to regular Thanksgiving, is it,                                                                      bcdfmnrtu.
+       628 0* 0.01939% (99.814% 0.038% 0.148%)   Thanksgiving Thanksgiving brilliance                                                                                         adfgiiimmorrrssstttuu,,.
+       629 0* 0.03313% (99.814% 0.038% 0.148%)   Thanksgiving Thanksgiving brilliance from                                                                                    adgiiimrrssstttuu,,.
+       630 0* 0.01925% (99.814% 0.038% 0.148%)   Thanksgiving is for regular Thanksgiving birds                                                                               aciiilmmnstttu,,.
+       631 0* 0.01920% (99.814% 0.038% 0.148%)   Thanksgiving is congrats                                                                                                     aabdefgghiiiiiikllmmnnrrrssttuuvT,,.
+       632 0* 0.01909% (99.814% 0.038% 0.148%)   Thanksgiving movies                                                                                                          aaabcdfggghiiiiiikllmnnnrrrrssstttuuT,,.
+       633 0* 0.01904% (99.814% 0.038% 0.147%)   Thanksgiving is similar to regular Thanksgiving, it is but                                                                   cdfmnr,.
+       634 0* 0.01897% (99.814% 0.038% 0.147%)   Thanksgiving is from regular Thanksgiving a                                                                                  bcdiiiilmnrsstttu,,.
+       635 0* 0.01884% (99.814% 0.038% 0.147%)   thank for                                                                                                                    ------------aabcdegggiiiiiiillmmnnrrrssssttuuvT,,.
+       636 0* 0.15629% (99.818% 0.038% 0.144%)   thank for Thanksgiving                                                                                                       aabcdegggiiiiiiillmmnnrrrssssttuuvT,,.
+       637 0* 0.11691% (99.818% 0.038% 0.143%)   thank for Thanksgiving last                                                                                                  abcdegggiiiiiiilmmnnrrrssstuuvT,,.
+       638 0* 0.01870% (99.819% 0.038% 0.143%)   Thanksgiving brings a                                                                                                        aacdefgghiiiiiikllmmnnorrrssstttuuvT,,.
+       639 0* 0.29043% (99.819% 0.038% 0.143%)   Thanksgiving brings a Thanksgiving                                                                                           acdefiiiillmmorrrsstttuu,,.
+       640 0* 0.02810% (99.819% 0.038% 0.143%)   Thanksgiving brings a Thanksgiving to                                                                                        acdefiiiillmmrrrssttuu,,.
+       641 0* 0.01866% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving as                                                                                    bcdiiiiilmnrsstttu,,.
+       642 0* 0.01848% (99.819% 0.038% 0.143%)   Thanksgiving lasts                                                                                                           aabcdefggghiiiiiiiklmmnnnorrrrssttuuvT,,.
+       643 0* 0.01842% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving sat                                                                                   bcdiiiiilmnrssttu,,.
+       644 0* 0.01833% (99.819% 0.038% 0.143%)   Thanksgiving is for regular Thanksgiving criminal                                                                            bdiimsstttu,,.
+       645 0* 0.01820% (99.819% 0.038% 0.143%)   Thanksgiving is Thanksgiving is brilliant                                                                                    acdefgimmorrrsttuu,,.
+       646 0* 0.01814% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving,                                                                                      abcdiiiiilmnrssstttu,.
+       647 0* 0.01803% (99.819% 0.038% 0.143%)   Thanksgiving gives brings to                                                                                                 aaacdfghiiiiikllmmnnrrrssttuuT,,.
+       648 0* 0.01789% (99.819% 0.038% 0.143%)   Thanksgiving brings, Thanksgiving                                                                                            aacdefiiiillmmorrrsstttuu,.
+       649 0* 0.03355% (99.819% 0.038% 0.143%)   Thanksgiving brings, Thanksgiving,                                                                                           aacdefiiiillmmorrrsstttuu.
+       650 0* 0.01786% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving brains                                                                                cdiiiilmsstttu,,.
+       651 0* 0.01784% (99.819% 0.038% 0.143%)   Thanksgiving brings itself, similar                                                                                          aacdgghiiikmnnorrsttuuvT,.
+       652 0* 0.37735% (99.819% 0.038% 0.143%)   Thanksgiving brings itself, similar Thanksgiving                                                                             acdimorrttuu,.
+       653 0* 0.03555% (99.819% 0.038% 0.143%)   Thanksgiving brings itself, similar,                                                                                         aacdgghiiikmnnorrsttuuvT.
+       654 0* 0.01777% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving is a                                                                                  bcdiiiilmnrsstttu,,.
+       655 0* 0.01749% (99.819% 0.038% 0.143%)   Thanksgiving is similar from Thanksgiving but                                                                                acdegiilnrrsttu,,.
+       656 0* 0.01737% (99.819% 0.038% 0.143%)   giving thanks Thanksgiving for                                                                                               aabcdegiiiiillmmnrrrsssttuuT,,.
+       657 0* 0.01715% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving is distinct                                                                           abiilmrstu,,.
+       658 0* 0.01714% (99.819% 0.038% 0.143%)   Thanksgiving for saving                                                                                                      aabcdegghiiiiiikllmmnnrrrssstttuuT,,.
+       659 0* 0.01712% (99.819% 0.038% 0.143%)   Thanksgiving begins Thanksgiving lasts                                                                                       acdfiiiilmmorrrrttuu,,.
+       660 0* 0.01704% (99.819% 0.038% 0.143%)   Thanksgiving to bring                                                                                                        aaacdefgghiiiiiikllmmnnrrrssssttuuvT,,.
+       661 0* 0.42815% (99.819% 0.038% 0.143%)   Thanksgiving to bring Thanksgiving                                                                                           aacdefiiiillmmrrrsssttuu,,.
+       662 0* 0.14099% (99.819% 0.038% 0.143%)   Thanksgiving to bring Thanksgiving last                                                                                      acdefiiiilmmrrrsstuu,,.
+       663 0* 0.01702% (99.819% 0.038% 0.143%)   Thanksgiving brings over                                                                                                     aaacdfgghiiiiiikllmmnnrrssstttuuT,,.
+       664 0* 0.01702% (99.819% 0.038% 0.143%)   Thanksgiving brilliant thanks                                                                                                acdefgggiiiiimmnorrrssstuuvT,,.
+       665 0* 0.01701% (99.819% 0.038% 0.143%)   Thanksgiving miracle                                                                                                         aabdfggghiiiiiiklmnnnorrrsssstttuuvT,,.
+       666 0* 0.01697% (99.819% 0.038% 0.143%)   Thanksgiving brilliant Thanksgiving.                                                                                         acdefgiiimmorrrsssttuu,,
+       667 0* 0.01690% (99.819% 0.038% 0.143%)   Thanksgiving falls                                                                                                           aabcdeggghiiiiiiikmmnnnorrrrssstttuuvT,,.
+       668 0* 0.01690% (99.819% 0.038% 0.143%)   Thanksgiving  Thanksgiving                                                                                                   aabcdefgiiiiillmmnorrrrssstttuu,,.
+       669 0* 0.01670% (99.819% 0.038% 0.143%)   Thanksgiving from regular Thanksgiving it                                                                                    abcdiiiilmnrsssttu,,.
+       670 0* 0.01669% (99.819% 0.038% 0.143%)   Thanksgiving is thankful                                                                                                     aabcdegggiiiiiilmmnnorrrrsssttuvT,,.
+       671 0* 0.01664% (99.819% 0.038% 0.143%)   Thanksgiving from similar Thanksgiving credits                                                                               abgiilnrsttuu,,.
+       672 0* 0.01660% (99.819% 0.038% 0.143%)   Thanksgiving is similar to regular Thanksgiving, s,                                                                          bcdfiimnrttu.
+       673 0* 0.01659% (99.819% 0.038% 0.143%)   Thanksgiving, Thanksgiving, great                                                                                            abcdfiiiiillmmnorrrsssttuu.
+       674 0* 0.01647% (99.819% 0.038% 0.143%)   Thanksgiving stinks                                                                                                          aaabcdefggghiiiiiillmmnnorrrrssttuuvT,,.
+       675 0* 0.01634% (99.819% 0.038% 0.143%)   Thanksgiving overall                                                                                                         aabcdfggghiiiiiiikmmnnnrrrsssstttuuT,,.
+       676 0* 0.01630% (99.819% 0.038% 0.143%)   Thanksgiving is for regular Thanksgiving brains                                                                              cdiiilmmstttu,,.
+       677 0* 0.01626% (99.819% 0.038% 0.143%)   Thanksgiving brings a Thanksgiving a                                                                                         cdefiiiillmmorrrsstttuu,,.
+       678 0* 0.01616% (99.819% 0.038% 0.143%)   Thanksgiving is for regular Thanksgiving sati                                                                                bcdiiilmmnrsttu,,.
+       679 0* 0.01615% (99.819% 0.038% 0.143%)   Thanksgiving from the similar but                                                                                            aacdgggiiiiiklnnnrrssstuvT,,.
+       680 0* 0.01614% (99.819% 0.038% 0.143%)   Thanksgiving brilliance for                                                                                                  aadggghiiiiikmmnnrrsssstttuuvT,,.
+       681 0* 0.21626% (99.819% 0.038% 0.143%)   Thanksgiving brilliance for Thanksgiving                                                                                     adgiiimmrrssstttuu,,.
+       682 0* 0.01608% (99.819% 0.038% 0.143%)   Thanksgiving brilliance is Thanksgiving is                                                                                   adfgimmorrrstttuu,,.
+       683 0* 0.01602% (99.819% 0.038% 0.143%)   Thanksgiving are                                                                                                             aabcdfggghiiiiiiikllmmnnnorrrsssstttuuvT,,.
+       684 0* 0.01599% (99.821% 0.038% 0.141%)   Thanksgiving villain                                                                                                         aabcdefggghiiiiikmmnnorrrrsssstttuuT,,.
+       685 0* 0.01592% (99.821% 0.038% 0.141%)   Thanksgiving is for regular Thanksgiving criminals                                                                           bdiimstttu,,.
+       686 0* 0.01585% (99.821% 0.038% 0.141%)   Thanksgiving for Thanksgiving brilliance                                                                                     adgiiimmrrssstttuu,,.
+       687 0* 0.01579% (99.821% 0.038% 0.141%)   Thanksgiving, brilliant Thanksgiving for                                                                                     acdegiiimmrrsssttuu,.
+       688 0* 0.01578% (99.821% 0.038% 0.141%)   Thanksgiving is Thanksgiving.                                                                                                aabcdefgiiiillmmnorrrrsstttuu,,
+       689 0* 0.01577% (99.821% 0.038% 0.141%)   Thanksgiving, Thanksgiving, from real                                                                                        abcdgiiiiilmnrrssstttuu.
+       690 0* 0.01570% (99.821% 0.038% 0.141%)   Thanksgiving is from regular Thanksgiving d                                                                                  abciiiilmnrsstttu,,.
+       691 0* 0.01569% (99.821% 0.038% 0.141%)   Thanksgiving thanks giving to                                                                                                aabcdefgiiiiillmmnrrrrssstuuT,,.
+       692 0* 0.01560% (99.821% 0.038% 0.141%)   Thanksgiving for Thanksgiving brings                                                                                         aacdeiiiillmmrrsstttuu,,.
+       693 0* 0.01553% (99.821% 0.038% 0.141%)   Thanksgiving, thanks giving for                                                                                              aabcdegiiiiillmmnrrrsssttuuT,.
+       694 0* 0.04182% (99.821% 0.038% 0.141%)   Thanksgiving, thanks giving for all                                                                                          abcdegiiiiimmnrrrsssttuuT,.
+       695 0* 0.01548% (99.821% 0.038% 0.141%)   Thanksgiving from regular Thanksgiving turn.                                                                                 abcdiiiiilmssstt,,
+       696 0* 0.01545% (99.821% 0.038% 0.141%)   Thanksgiving is Thanksgiving is for                                                                                          aabcdegiiillmmnrrrstttuu,,.
+       697 0* 0.01544% (99.821% 0.038% 0.141%)   Thanksgiving, Thanksgiving.                                                                                                  aabcdefgiiiiillmmnorrrrssstttuu,
+       698 0* 0.01538% (99.821% 0.038% 0.141%)   Thanksgiving from regular Thanksgiving brands                                                                                ciiiiilmsstttu,,.
+       699 0* 0.01528% (99.821% 0.038% 0.141%)   Thanksgiving contains                                                                                                        aabdefggghiiiiiikllmmnrrrrsssttuuvT,,.
+       700 0* 0.01524% (99.822% 0.038% 0.140%)   thanks giving,                                                                                                               ------------aabcdefgiiiiillmmnorrrrsssttuuT,.
+       701 0* 0.02172% (99.822% 0.038% 0.140%)   thanks giving, Thanksgiving                                                                                                  aabcdefgiiiiillmmnorrrrsssttuuT,.
+       702 0* 0.03064% (99.822% 0.038% 0.140%)   thanks giving, Thanksgiving last                                                                                             abcdefgiiiiilmmnorrrrsstuuT,.
+       703 0* 0.01581% (99.822% 0.038% 0.140%)   thanks giving, Thanksgiving,                                                                                                 aabcdefgiiiiillmmnorrrrsssttuuT.
+       704 0* 0.01523% (99.822% 0.038% 0.140%)   Thanksgiving vertical                                                                                                        aabdfggghiiiiiiklmmnnnorrrssssttuuT,,.
+       705 0* 0.01520% (99.822% 0.038% 0.140%)   Thanksgiving from regular Thanksgiving and it                                                                                bciiiilmrsssttu,,.
+       706 0* 0.01507% (99.822% 0.038% 0.140%)   thanking                                                                                                                     ------------aabcdefggiiiiiillmmnorrrrssssttuuvT,,.
+       707 0* 0.01501% (99.826% 0.038% 0.136%)   Thanksgiving brings Thanksgiving our                                                                                         aacdefiiiillmmrrsstttu,,.
+       708 0* 0.01500% (99.826% 0.038% 0.136%)   gives                                                                                                                        ------------aaabcdfgghiiiiiikllmmnnnorrrrssstttuuT,,.
+       709 0* 0.04846% (99.830% 0.038% 0.132%)   gives Thanksgiving                                                                                                           aaabcdfgghiiiiiikllmmnnnorrrrssstttuuT,,.
+       710 0* 0.01497% (99.831% 0.038% 0.131%)   Thanksgiving brings itself Thanksgiving com                                                                                  aadiiilmrrrsttuu,,.
+       711 0* 0.01494% (99.831% 0.038% 0.131%)   Thanksgiving thanks giving from                                                                                              aabcdegiiiiillmnrrrsssttuuT,,.
+       712 0* 0.60645% (99.831% 0.038% 0.131%)   Thanksgiving thanks giving from regular                                                                                      abcdiiiiilmnrsssttuT,,.
+       713 0* 0.01490% (99.831% 0.038% 0.131%)   Thanksgiving miracle Thanksgiving                                                                                            abdfgiiiilmnorrrssstttuu,,.
+       714 0* 0.01486% (99.831% 0.038% 0.131%)   Thanksgiving from regular Thanksgiving turn,                                                                                 abcdiiiiilmssstt,.
+       715 0* 0.01484% (99.831% 0.038% 0.131%)   Thanksgiving thanks giving all                                                                                               abcdefgiiiiimmnorrrrsssttuuT,,.
+       716 0* 0.01483% (99.831% 0.038% 0.131%)   Thanksgiving murder victims                                                                                                  aaabfggghiiiiikllnnnorrsssttuT,,.
+       717 0* 0.01479% (99.831% 0.038% 0.131%)   Thanksgiving, Thanksgiving, labor                                                                                            acdefgiiiiilmmnrrrssstttuu.
+       718 0* 0.01471% (99.831% 0.038% 0.131%)   Thanksgiving made                                                                                                            aabcfggghiiiiiiikllmnnnorrrrsssstttuuvT,,.
+       719 0* 0.06114% (99.834% 0.038% 0.128%)   Thanksgiving made Thanksgiving                                                                                               abcfgiiiiillmnorrrrssstttuu,,.
+       720 0* 0.01465% (99.834% 0.038% 0.128%)   Thanksgiving, brilliant Thanksgiving, time                                                                                   acdfgiimorrrssstuu.
+       721 0* 0.01464% (99.834% 0.038% 0.128%)   Thanksgiving brings to Thanksgiving.                                                                                         aacdefiiiillmmrrrssttuu,,
+       722 0* 0.01462% (99.834% 0.038% 0.128%)   Thanksgiving, Thanksgiving, a                                                                                                abcdefgiiiiillmmnorrrrssstttuu.
+       723 0* 0.02483% (99.834% 0.038% 0.128%)   Thanksgiving, Thanksgiving, a time                                                                                           abcdfgiiiillmnorrrrsssttuu.
+       724 0* 0.11286% (99.834% 0.038% 0.128%)   Thanksgiving, Thanksgiving, a time for                                                                                       abcdgiiiillmnrrrsssttuu.
+       725 0* 0.34602% (99.834% 0.038% 0.128%)   Thanksgiving, Thanksgiving, a time for us                                                                                    abcdgiiiillmnrrrssttu.
+       726 0* 0.01460% (99.834% 0.038% 0.128%)   Thanksgiving is from regular Thanksgiving .                                                                                  abcdiiiilmnrsstttu,,
+       727 0* 0.01451% (99.834% 0.038% 0.128%)   Thanksgiving is from regular Thanksgiving subtract                                                                           diiiilmnst,,.
+       728 0* 0.01447% (99.834% 0.038% 0.128%)   Thanksgiving brings five                                                                                                     aaacdgghiiiiikllmmnnorrrssstttuuT,,.
+       729 0* 0.01444% (99.834% 0.038% 0.128%)   Thanksgiving from regular Thanksgiving similar                                                                               bcdiiinsstttu,,.
+       730 0* 0.01435% (99.834% 0.038% 0.128%)   Thanksgiving found                                                                                                           aaabceggghiiiiiiikllmmnnrrrrsssstttuvT,,.
+       731 0* 0.04996% (99.834% 0.038% 0.128%)   Thanksgiving found,                                                                                                          aaabceggghiiiiiiikllmmnnrrrrsssstttuvT,.
+       732 0* 0.11961% (99.834% 0.038% 0.128%)   Thanksgiving found, Thanksgiving                                                                                             aabcegiiiiillmmrrrrssstttu,.
+       733 0* 0.18314% (99.834% 0.038% 0.128%)   Thanksgiving found, Thanksgiving last                                                                                        abcegiiiiilmmrrrrssttu,.
+       734 0* 0.04815% (99.834% 0.038% 0.128%)   Thanksgiving found, similar                                                                                                  aabceggghiiiiiklmnnrrrssstttuvT,.
+       735 0* 2.23629% (99.834% 0.038% 0.128%)   Thanksgiving found, similar Thanksgiving                                                                                     abcegiiilmrrrsstttu,.
+       736 0* 7.31209% (99.834% 0.038% 0.128%)   Thanksgiving found, similar Thanksgiving last                                                                                bcegiiimrrrsttu,.
+       737 0* 0.40604% (99.834% 0.038% 0.128%)   Thanksgiving found, similar Thanksgiving last,                                                                               bcegiiimrrrsttu.
+       738 0* 0.06547% (99.834% 0.038% 0.128%)   Thanksgiving found, similar,                                                                                                 aabceggghiiiiiklmnnrrrssstttuvT.
+       739 0* 0.88512% (99.834% 0.038% 0.128%)   Thanksgiving found, similar, Thanksgiving                                                                                    abcegiiilmrrrsstttu.
+       740 0* 0.95310% (99.834% 0.038% 0.128%)   Thanksgiving found, similar, Thanksgiving last                                                                               bcegiiimrrrsttu.
+       741 0* 0.10830% (99.834% 0.038% 0.128%)   Thanksgiving found, similar, but                                                                                             aaceggghiiiiiklmnnrrrsssttvT.
+       742 0* 0.04413% (99.834% 0.038% 0.128%)   Thanksgiving found, similar Thanksgiving,                                                                                    abcegiiilmrrrsstttu.
+       743 0* 0.03084% (99.834% 0.038% 0.128%)   Thanksgiving found, T                                                                                                        aaabceggghiiiiiiikllmmnnrrrrsssstttuv,.
+       744 0* 0.02903% (99.834% 0.038% 0.127%)   Thanksgiving found, Thanksgiving last,                                                                                       abcegiiiiilmmrrrrssttu.
+       745 0* 0.01429% (99.834% 0.038% 0.127%)   Thanksgiving brings to regular thanks                                                                                        acdfgiiiiiilmmnrsstuvT,,.
+       746 0* 0.01427% (99.834% 0.038% 0.127%)   Thanksgiving is similar Thanksgiving is                                                                                      abcdefgilmnorrrtttuu,,.
+       747 0* 0.02357% (99.834% 0.038% 0.127%)   Thanksgiving is similar Thanksgiving is from                                                                                 abcdegilnrrtttuu,,.
+       748 0* 0.01425% (99.834% 0.038% 0.127%)   Thanksgiving comes,                                                                                                          aaabdfggghiiiiiiikllmnnnrrrrssstttuuvT,.
+       749 0* 0.06395% (99.835% 0.038% 0.127%)   Thanksgiving comes, Thanksgiving                                                                                             aabdfgiiiiillmnrrrrsstttuu,.
+       750 0* 0.11767% (99.835% 0.038% 0.127%)   Thanksgiving comes, Thanksgiving,                                                                                            aabdfgiiiiillmnrrrrsstttuu.
+       751 0* 0.01617% (99.835% 0.038% 0.127%)   Thanksgiving comes, Thanksgiving, brings                                                                                     aadfiiiillmrrrstttuu.
+       752 0* 0.01421% (99.835% 0.038% 0.127%)   Thanksgiving hacking                                                                                                         aabdefggiiiiiillmmnnorrrrsssstttuuvT,,.
+       753 0* 0.01419% (99.835% 0.038% 0.127%)   Thanksgiving bring                                                                                                           aaacdefgghiiiiiikllmmnnorrrsssstttuuvT,,.
+       754 0* 0.02142% (99.835% 0.038% 0.127%)   Thanksgiving bring Thanksgiving                                                                                              aacdefiiiillmmorrrssstttuu,,.
+       755 0* 0.01418% (99.835% 0.038% 0.127%)   Thanksgiving for all the                                                                                                     aabcdgggiiiiiiikmmnnnrrrssssttuuvT,,.
+       756 0* 0.01413% (99.835% 0.038% 0.127%)   Thanksgiving is similar from regular thanking                                                                                bcdgiiinssttuvT,,.
+       757 0* 0.01413% (99.835% 0.038% 0.127%)   Thanksgiving is from regular Thanksgiving dist                                                                               abciiilmnrsttu,,.
+       758 0* 0.01412% (99.835% 0.038% 0.127%)   thanks giving for regular Thanksgiving turn                                                                                  abcdiiiiilmmssstT,,.
+       759 0* 0.01409% (99.835% 0.038% 0.127%)   Thanksgiving invincible                                                                                                      aaadfggghiiiiklmmnorrrrsssstttuuT,,.
+       760 0* 0.01404% (99.835% 0.038% 0.127%)   Thanksgiving from regular Thanksgiving insult                                                                                abcdiiiimrsstt,,.
+       761 0* 0.01398% (99.835% 0.038% 0.127%)   Thanksgiving bliss                                                                                                           aaacdefggghiiiiiiklmmnnnorrrrsstttuuvT,,.
+       762 0* 0.01398% (99.835% 0.038% 0.127%)   Thanksgiving is over                                                                                                         aaabcdfggghiiiiiikllmmnnnrrrssstttuuT,,.
+       763 0* 0.01396% (99.835% 0.038% 0.127%)   Thanksgiving is,                                                                                                             aaabcdefggghiiiiiikllmmnnnorrrrssstttuuvT,.
+       764 0* 0.08123% (99.835% 0.038% 0.127%)   Thanksgiving is, similar                                                                                                     aabcdefggghiiiiklmnnnorrrsstttuuvT,.
+       765 0* 0.51672% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving                                                                                        abcdefgiilmnorrrstttuu,.
+       766 0* 0.18122% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is                                                                                     abcdefgilmnorrrtttuu,.
+       767 0* 0.44178% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is,                                                                                    abcdefgilmnorrrtttuu.
+       768 0* 5.67168% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is, regular                                                                            bcdfimnortttu.
+       769 0* 1.48195% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is, from                                                                               abcdegilnrrtttuu.
+       770 0* 179.32294% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is, from regular                                                                       bcdintttu.
+       771 0* 0.60530% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is, from regular but                                                                   cdintt.
+       772 0* 0.20390% (99.835% 0.038% 0.127%)   Thanksgiving is, similar Thanksgiving is, from regular.                                                                      bcdintttu
+       773 0* 0.13378% (99.835% 0.038% 0.127%)   Thanksgiving is, similar,                                                                                                    aabcdefggghiiiiklmnnnorrrsstttuuvT.
+       774 0* 0.54154% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, Thanksgiving                                                                                       abcdefgiilmnorrrstttuu.
+       775 0* 0.35901% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but                                                                                                aacdefggghiiiiklmnnnorrrssttuvT.
+       776 0* 9.41908% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but distinct                                                                                       aaefggghiiklmnnorrrsuvT.
+       777 0* 3.76604% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but distinct Thanksgiving                                                                          aefglmorrru.
+       778 0* 57.58153% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but distinct Thanksgiving from                                                                     aeglrru.
+       779 0* 2.70047% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but distinct from                                                                                  aaeggghiiklnnrrsuvT.
+       780 0* 493.58655% (99.835% 0.038% 0.127%)   Thanksgiving is, similar, but distinct from regular                                                                          agghiiknnsvT.
