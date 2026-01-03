@@ -1,475 +1,182 @@
 know what? It's really weird when you say that.
-Step          0 (remaining mass 100.000%): Next token is ' know', score is 38.03414% (6.271%, 92.548%, 4)
-Step          3 (remaining mass 40.468%): Next token is ' what', score is 56.97456% (22.114%, 95.660%, 8)
-Step          4 (remaining mass 37.936%): Next token is '?', score is 26.71248% (29.015%, 96.609%, 9)
-Step          8 (remaining mass 32.530%): Next token is ' It', score is 1.71329% (2.590%, 92.603%, 11)
-Step        206 (remaining mass 10.815%): Next token is ''', score is 1.90666% (65.614%, 96.357%, 12)
-Step        207 (remaining mass 10.814%): Next token is 's', score is 3.04893% (98.100%, 95.482%, 13)
-Step        208 (remaining mass 10.811%): Next token is ' really', score is 0.97161% (1.365%, 93.231%, 19)
-Step        351 (remaining mass 8.444%): Next token is ' weird', score is 0.74930% (2.554%, 89.725%, 24)
-Step        453 (remaining mass 7.029%): Next token is ' when', score is 1.38345% (4.889%, 79.063%, 28)
-Step        455 (remaining mass 7.029%): Next token is ' you', score is 19.13861% (51.181%, 77.428%, 31)
-Step        456 (remaining mass 7.029%): Next token is ' say', score is 99.02564% (11.554%, 74.551%, 34)
-Step        457 (remaining mass 7.029%): Next token is ' that', score is 4897.29753% (10.843%, 100.000%, 38)
-' know what? It's really weird when you say that' (4897.30%)
-Search successful after 458 steps. Deepest node accessed: 0
-Search time: 10s.  (Non-ML: 1s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 20ms  Truncate: 0ms.
+Step          0 (remaining mass 100.000%): Next token is ' know', score is 46.48577% (7.664%, 92.548%, 4)
+Step          0 (remaining mass 61.475%): Next token is ' what', score is 115.58324% (36.705%, 95.660%, 8)
+Step          1 (remaining mass 58.401%): Next token is '?', score is 83.79798% (44.868%, 96.609%, 9)
+Step          2 (remaining mass 57.345%): Next token is ' It', score is 10.56266% (5.089%, 92.603%, 11)
+Step         29 (remaining mass 20.676%): Next token is ''', score is 12.97846% (72.444%, 96.357%, 12)
+Step         30 (remaining mass 20.668%): Next token is 's', score is 20.51970% (96.994%, 95.482%, 13)
+Step         31 (remaining mass 20.645%): Next token is ' really', score is 10.38650% (2.168%, 93.231%, 19)
+Step         33 (remaining mass 20.626%): Next token is ' weird', score is 2.69088% (0.858%, 89.725%, 24)
+Step        155 (remaining mass 15.324%): Next token is ' when', score is 2.60651% (2.565%, 79.063%, 28)
+Step        162 (remaining mass 15.323%): Next token is ' you', score is 27.85837% (39.542%, 77.428%, 31)
+Step        163 (remaining mass 15.323%): Next token is ' say', score is 499.17360% (40.011%, 74.551%, 34)
+Step        164 (remaining mass 15.323%): Next token is ' that', score is 68877.32763% (30.252%, 100.000%, 38)
+' know what? It's really weird when you say that' (68877.33%)
+Search successful after 165 steps. Deepest node accessed: 0
+Search time: 3s.  (Non-ML: 0s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 21ms  Truncate: 0ms.
 
-         0 0* 39.32874% (38.240% 0.040% 61.720%)  '                                                                                                                             ------aaadeehhhiknnoorssttttuwwwwyy?I.
-         1 0* 68.09829% (44.454% 0.050% 55.496%)  're                                                                                                                           ------aaadehhhiknnoossttttuwwwwyy?I.
-         2 0* 50.09477% (56.382% 0.057% 43.561%)  're not                                                                                                                       ------aaadehhhiknosstttuwwwwyy?I.
-         3 0* 38.03414% (59.474% 0.058% 40.468%)   know                                                                                                                         ------aaadeehhhinorssttttuwwwyy?I'.
-         4 0* 56.97456% (62.003% 0.061% 37.936%)   know what                                                                                                                    ------aadeehhinorsstttuwwyy?I'.
-         5 0* 35.06534% (62.245% 0.061% 37.693%)   think                                                                                                                        ------aaadeehhnoorsstttuwwwwyy?I'.
-         6 0* 29.50132% (63.253% 0.063% 36.684%)   know what I                                                                                                                  ------aadeehhinorsstttuwwyy?'.
-         7 0* 29.42702% (63.512% 0.063% 36.425%)   said                                                                                                                         ------aaeehhhknnoorsttttuwwwwyy?I'.
-         8 0* 26.71248% (67.306% 0.065% 32.629%)   know what?                                                                                                                   ------aadeehhinorsstttuwwyyI'.
-         9 0* 26.47215% (67.556% 0.066% 32.378%)   think they                                                                                                                   ------aaadehnoorssttuwwwwy?I'.
-        10 0* 43.12966% (67.590% 0.066% 32.344%)   think they'                                                                                                                  ------aaadehnoorssttuwwwwy?I.
-        11 0* 91.99889% (67.600% 0.066% 32.334%)   think they're                                                                                                                ------aaadhnoossttuwwwwy?I.
-        12 0* 24.06803% (67.969% 0.066% 31.965%)   said that                                                                                                                    ------aeehhknnoorsttuwwwwyy?I'.
-        13 0* 22.34244% (68.335% 0.066% 31.599%)   think they're really                                                                                                         aaadhnoossttuwwwwy?I.
-        14 0* 22.29963% (68.345% 0.066% 31.589%)   don                                                                                                                          ------aaaeehhhiknorssttttuwwwwyy?I'.
-        15 0* 37.07671% (68.350% 0.068% 31.582%)   don'                                                                                                                         ------aaaeehhhiknorssttttuwwwwyy?I.
-        16 0* 57.49707% (68.350% 0.069% 31.581%)   don't                                                                                                                        ------aaaeehhhiknorsstttuwwwwyy?I.
-        17 0* 70.84140% (72.753% 0.071% 27.176%)   don't think                                                                                                                  ------aaaeehhorssttuwwwwyy?I.
-        18 0* 102.55272% (73.058% 0.071% 26.871%)   don't think they                                                                                                             ------aaaehorsstuwwwwy?I.
-        19 0* 23.26970% (73.387% 0.072% 26.541%)   don't think I                                                                                                                ------aaaeehhorssttuwwwwyy?.
-        20 0* 20.98413% (73.566% 0.072% 26.363%)   were                                                                                                                         ------aaadhhhiknnoossttttuwwwyy?I'.
-        21 0* 20.72245% (77.166% 0.073% 22.760%)   don't know                                                                                                                   ------aaaeehhhirsstttuwwwyy?I.
-        22 0* 42.00633% (77.385% 0.073% 22.542%)   don't know what                                                                                                              ------aaeehhirssttuwwyy?I.
-        23 0* 20.34213% (77.425% 0.073% 22.502%)   think I                                                                                                                      ------aaadeehhnoorsstttuwwwwyy?'.
-        24 0* 18.91665% (77.929% 0.074% 21.997%)   think I'                                                                                                                     ------aaadeehhnoorsstttuwwwwyy?.
-        25 0* 18.09966% (78.657% 0.074% 21.268%)   don't know what a                                                                                                            ------aeehhirssttuwwyy?I.
-        26 0* 17.63196% (78.684% 0.074% 21.242%)   know what I'                                                                                                                 ------aadeehhinorsstttuwwyy?.
-        27 0* 17.55090% (78.845% 0.074% 21.081%)   know what they                                                                                                               ------aadehinorssttuwwy?I'.
-        28 0* 46.50006% (78.851% 0.074% 21.075%)   know what they say                                                                                                           ------adehinorsttuww?I'.
-        29 0* 15.71853% (78.884% 0.074% 21.042%)   said that really                                                                                                             aeehhknnoorsttuwwwwyy?I'.
-        30 0* 14.84235% (78.936% 0.074% 20.989%)   know what? I                                                                                                                 ------aadeehhinorsstttuwwyy'.
-        31 0* 14.62694% (78.998% 0.074% 20.927%)   don't know what they                                                                                                         ------aaehirsstuwwy?I.
-        32 0* 67.97502% (78.999% 0.074% 20.926%)   don't know what they are                                                                                                     ------ahisstuwwy?I.
-        33 0* 14.32205% (79.003% 0.074% 20.922%)   don't want                                                                                                                   ------aaeehhhikorssttuwwwyy?I.
-        34 0* 14.03744% (79.082% 0.074% 20.843%)   don't know what I                                                                                                            ------aaeehhirssttuwwyy?.
-        35 0* 12.87211% (79.104% 0.074% 20.822%)  're the                                                                                                                       ------aaadhhiknnoosstttuwwwwyy?I.
-        36 0* 11.93936% (79.995% 0.075% 19.930%)   don't know what they are?                                                                                                    ------ahisstuwwyI.
-        37 0* 10.98017% (79.995% 0.075% 19.930%)   know what they say?                                                                                                          ------adehinorsttuwwI'.
-        38 0* 10.86621% (80.000% 0.075% 19.925%)   think you                                                                                                                    ------aaadeehhnorsstttwwwwy?I'.
-        39 0* 10.74262% (80.135% 0.075% 19.790%)   don't want to                                                                                                                ------aaeehhhikrsstuwwwyy?I.
-        40 0* 22.12055% (80.236% 0.075% 19.689%)   don't want to hear                                                                                                           ------aehhiksstuwwwyy?I.
-        41 0* 10.37310% (80.262% 0.075% 19.663%)   think you'                                                                                                                   ------aaadeehhnorsstttwwwwy?I.
-        42 0* 18.25884% (80.290% 0.075% 19.635%)   think you're                                                                                                                 ------aaadehhnosstttwwwwy?I.
-        43 0* 10.23783% (80.380% 0.075% 19.545%)   don't think these                                                                                                            ------aaahorstuwwwwyy?I.
-        44 0* 9.22210% (80.408% 0.075% 19.517%)   know what? I'                                                                                                                ------aadeehhinorsstttuwwyy.
-        45 0* 8.77051% (80.459% 0.075% 19.466%)   don't know what these                                                                                                        ------aahirstuwwyy?I.
-        46 0* 8.70063% (80.462% 0.075% 19.463%)   think that                                                                                                                   ------aadeehnoorsstuwwwwyy?I'.
-        47 0* 9.02115% (80.504% 0.075% 19.421%)   think that'                                                                                                                  ------aadeehnoorsstuwwwwyy?I.
-        48 0* 13.01692% (80.504% 0.075% 19.421%)   think that's                                                                                                                 ------aadeehnoorstuwwwwyy?I.
-        49 0* 8.10006% (80.575% 0.075% 19.349%)   knew                                                                                                                         ------aaadehhhinoorssttttuwwwyy?I'.
-        50 0* 7.72152% (80.913% 0.076% 19.011%)   really                                                                                                                       aaadeehhhiknnoorssttttuwwwwyy?I'.
-        51 0* 8.78328% (81.203% 0.076% 18.721%)   really think                                                                                                                 aaadeehhnoorsstttuwwwwyy?I'.
-        52 0* 7.49721% (81.218% 0.076% 18.706%)  're not the                                                                                                                   ------aaadhhiknossttuwwwwyy?I.
-        53 0* 7.27896% (81.392% 0.076% 18.532%)   know what you                                                                                                                ------aadeehhinrsstttwwy?I'.
-        54 0* 7.08453% (81.415% 0.076% 18.509%)   said that out                                                                                                                ------aeehhknnorstwwwwyy?I'.
-        55 0* 7.04893% (81.685% 0.076% 18.239%)   think you're the                                                                                                             ------aaadhnossttwwwwy?I.
-        56 0* 7.02631% (81.702% 0.076% 18.222%)   know what they are                                                                                                           ------adhinossttuwwy?I'.
-        57 0* 6.68265% (81.706% 0.076% 18.218%)  're not a                                                                                                                     ------aadehhhiknosstttuwwwwyy?I.
-        58 0* 6.29304% (81.934% 0.076% 17.990%)   know what? I don                                                                                                             ------aaeehhirsstttuwwyy'.
-        59 0* 11.86883% (81.934% 0.076% 17.990%)   know what? I don'                                                                                                            ------aaeehhirsstttuwwyy.
-        60 0* 18.96268% (81.934% 0.076% 17.990%)   know what? I don't                                                                                                           ------aaeehhirssttuwwyy.
-        61 0* 12.92404% (81.950% 0.076% 17.974%)   know what? I don't really                                                                                                    aaeehhirssttuwwyy.
-        62 0* 5.93217% (81.950% 0.076% 17.973%)   heard                                                                                                                        ------aaehhiknnoossttttuwwwwyy?I'.
-        63 0* 5.92835% (82.512% 0.077% 17.412%)   know what'                                                                                                                   ------aadeehhinorsstttuwwyy?I.
-        64 0* 7.73151% (82.514% 0.077% 17.409%)   know what's                                                                                                                  ------aadeehhinorstttuwwyy?I.
-        65 0* 7.16745% (82.566% 0.077% 17.357%)   know what's really                                                                                                           aadeehhinorstttuwwyy?I.
-        66 0* 11.15922% (82.568% 0.077% 17.355%)   know what's really hard                                                                                                      aeehinostttuwwyy?I.
-        67 0* 13.93304% (82.569% 0.077% 17.355%)   know what's really hard?                                                                                                     aeehinostttuwwyyI.
-        68 0* 5.91529% (82.569% 0.077% 17.354%)   know the                                                                                                                     ------aaadehhinorsstttuwwwyy?I'.
-        69 0* 5.86390% (82.751% 0.077% 17.172%)   sound                                                                                                                        ------aaaeehhhiknorsttttwwwwyy?I'.
-        70 0* 5.69836% (83.300% 0.077% 16.623%)   don't think the                                                                                                              ------aaaehorsstuwwwwyy?I.
-        71 0* 5.48624% (83.323% 0.077% 16.600%)   really think that                                                                                                            aadeehnoorsstuwwwwyy?I'.
-        72 0* 5.44532% (83.325% 0.077% 16.598%)  're not really                                                                                                                aaadehhhiknosstttuwwwwyy?I.
-        73 0* 5.43818% (83.353% 0.077% 16.570%)   know what they'                                                                                                              ------aadehinorssttuwwy?I.
-        74 0* 14.11223% (83.353% 0.077% 16.570%)   know what they're                                                                                                            ------aadhinossttuwwy?I.
-        75 0* 5.43215% (83.364% 0.077% 16.559%)   know you                                                                                                                     ------aaadeehhhinrssttttwwwy?I'.
-        76 0* 5.41322% (83.483% 0.077% 16.440%)   know what's really hard to                                                                                                   aeehinsttuwwyy?I.
-        77 0* 5.24895% (83.483% 0.077% 16.440%)   really think that'                                                                                                           aadeehnoorsstuwwwwyy?I.
-        78 0* 7.73125% (83.483% 0.077% 16.440%)   really think that's                                                                                                          aadeehnoorstuwwwwyy?I.
-        79 0* 5.24807% (83.485% 0.077% 16.438%)   knew what                                                                                                                    ------aadehhinoorsstttuwwyy?I'.
-        80 0* 6.33117% (83.491% 0.077% 16.431%)   knew what I                                                                                                                  ------aadehhinoorsstttuwwyy?'.
-        81 0* 17.97584% (83.517% 0.077% 16.406%)   knew what I was                                                                                                              ------adehhinoorstttuwyy?'.
-        82 0* 4.97896% (83.582% 0.077% 16.341%)   think they're not                                                                                                            ------aaadhosstuwwwwy?I.
-        83 0* 4.93598% (83.601% 0.077% 16.322%)   know I                                                                                                                       ------aaadeehhhinorssttttuwwwyy?'.
-        84 0* 4.91050% (83.827% 0.078% 16.096%)   think these                                                                                                                  ------aaadhnoorsttuwwwwyy?I'.
-        85 0* 4.85292% (83.900% 0.078% 16.022%)   know what this                                                                                                               ------aadeehnorsttuwwyy?I'.
-        86 0* 4.83005% (83.919% 0.078% 16.003%)   don't think you                                                                                                              ------aaaeehhrssttwwwwy?I.
-        87 0* 4.81313% (83.939% 0.078% 15.983%)   know what you said                                                                                                           ------aeehhnrstttwwy?I'.
-        88 0* 4.77844% (83.942% 0.078% 15.980%)   don't really                                                                                                                 aaaeehhhiknorsstttuwwwwyy?I.
-        89 0* 11.50762% (83.963% 0.078% 15.959%)   don't really think                                                                                                           aaaeehhorssttuwwwwyy?I.
-        90 0* 5.80654% (83.966% 0.078% 15.956%)   don't really think I                                                                                                         aaaeehhorssttuwwwwyy?.
-        91 0* 4.57236% (83.969% 0.078% 15.954%)   think there                                                                                                                  ------aaadhnoossttuwwwwyy?I'.
-        92 0* 7.92095% (83.976% 0.078% 15.946%)   think there'                                                                                                                 ------aaadhnoossttuwwwwyy?I.
-        93 0* 10.27082% (83.977% 0.078% 15.945%)   think there's                                                                                                                ------aaadhnoosttuwwwwyy?I.
-        94 0* 8.13575% (84.005% 0.078% 15.917%)   think there's a                                                                                                              ------aadhnoosttuwwwwyy?I.
-        95 0* 4.53394% (84.026% 0.078% 15.896%)   don't think those                                                                                                            ------aaaehrstuwwwwyy?I.
-        96 0* 5.04277% (84.041% 0.078% 15.881%)   don't think those are                                                                                                        ------aahstuwwwwyy?I.
-        97 0* 4.45696% (84.046% 0.078% 15.876%)   really think I                                                                                                               aaadeehhnoorsstttuwwwwyy?'.
-        98 0* 4.34376% (84.055% 0.078% 15.867%)   say                                                                                                                          ------aadeehhhiknnoorsttttuwwwwy?I'.
-        99 0* 10.67208% (84.475% 0.078% 15.446%)   say that                                                                                                                     ------adeehhiknnoorsttuwwwwy?I'.
-       100 0* 4.33240% (84.796% 0.078% 15.126%)   know what they're really                                                                                                     aadhinossttuwwy?I.
-       101 0* 4.24137% (84.796% 0.078% 15.125%)   know what's really weird                                                                                                     aaehhnostttuwyy?I.
-       102 0* 6.61791% (84.796% 0.078% 15.125%)   know what's really weird?                                                                                                    aaehhnostttuwyyI.
-       103 0* 4.21284% (84.796% 0.078% 15.125%)   know what I said                                                                                                             ------aeehhnorstttuwwyy?'.
-       104 0* 4.14366% (84.801% 0.078% 15.121%)   really think they                                                                                                            aaadehnoorssttuwwwwy?I'.
-       105 0* 6.88301% (84.802% 0.078% 15.120%)   really think they'                                                                                                           aaadehnoorssttuwwwwy?I.
-       106 0* 11.11184% (84.802% 0.078% 15.120%)   really think they're                                                                                                         aaadhnoossttuwwwwy?I.
-       107 0* 4.13423% (84.807% 0.078% 15.115%)  're a                                                                                                                         ------aadehhhiknnoossttttuwwwwyy?I.
-       108 0* 3.96774% (85.387% 0.079% 14.534%)   know what they are?                                                                                                          ------adhinossttuwwyI'.
-       109 0* 3.93517% (85.389% 0.079% 14.532%)   know you'                                                                                                                    ------aaadeehhhinrssttttwwwy?I.
-       110 0* 7.52405% (85.401% 0.079% 14.520%)   know you're                                                                                                                  ------aaadehhhinssttttwwwy?I.
-       111 0* 3.88915% (85.475% 0.079% 14.446%)   don't think there                                                                                                            ------aaahosstuwwwwyy?I.
-       112 0* 3.87094% (85.484% 0.079% 14.438%)   know that                                                                                                                    ------aadeehhinorssttuwwwyy?I'.
-       113 0* 3.84063% (85.528% 0.079% 14.393%)   don't know what this                                                                                                         ------aaeehrstuwwyy?I.
-       114 0* 3.82491% (85.530% 0.079% 14.392%)  're really                                                                                                                    aaadehhhiknnoossttttuwwwwyy?I.
-       115 0* 3.73287% (85.586% 0.079% 14.335%)   know this                                                                                                                    ------aaadeehhnorstttuwwwyy?I'.
-       116 0* 3.63744% (85.674% 0.079% 14.247%)  're not a din                                                                                                                 ------aaehhhkosstttuwwwwyy?I.
-       117 0* 4.93917% (85.674% 0.079% 14.247%)  're not a dinos                                                                                                               ------aaehhhkstttuwwwwyy?I.
-       118 0* 3.56476% (85.719% 0.079% 14.202%)   know what you'                                                                                                               ------aadeehhinrsstttwwy?I.
-       119 0* 7.36613% (85.722% 0.079% 14.200%)   know what you're                                                                                                             ------aadehhinsstttwwy?I.
-       120 0* 3.52101% (85.731% 0.079% 14.190%)   said that?                                                                                                                   ------aeehhknnoorsttuwwwwyyI'.
-       121 0* 3.47359% (85.798% 0.079% 14.123%)   want                                                                                                                         ------aadeehhhiknoorsstttuwwwyy?I'.
-       122 0* 4.25916% (85.938% 0.079% 13.983%)   want to                                                                                                                      ------aadeehhhiknorssttuwwwyy?I'.
-       123 0* 3.43420% (86.141% 0.079% 13.780%)   knew this                                                                                                                    ------aaadehhnoorstttuwwwyy?I'.
-       124 0* 10.23550% (86.167% 0.079% 13.754%)   knew this was                                                                                                                ------aadehhnoortttuwwyy?I'.
-       125 0* 3.42349% (86.226% 0.079% 13.695%)   think that was                                                                                                               ------adeehnoorstuwwwyy?I'.
-       126 0* 3.38490% (86.237% 0.079% 13.684%)   know how                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
-       127 0* 3.34794% (86.314% 0.079% 13.606%)   knew I                                                                                                                       ------aaadehhhinoorssttttuwwwyy?'.
-       128 0* 8.25034% (86.356% 0.079% 13.565%)   knew I was                                                                                                                   ------aadehhhinoorsttttuwwyy?'.
-       129 0* 3.32864% (86.548% 0.080% 13.373%)   know what I said?                                                                                                            ------aeehhnorstttuwwyy'.
-       130 0* 3.32102% (86.552% 0.080% 13.368%)   really think I'                                                                                                              aaadeehhnoorsstttuwwwwyy?.
-       131 0* 3.31104% (86.559% 0.080% 13.361%)   think you're so                                                                                                              ------aaadehhnstttwwwwy?I.
-       132 0* 3.30405% (86.579% 0.080% 13.341%)   said you                                                                                                                     ------aaeehhhknnorsttttwwwwy?I'.
-       133 0* 3.29705% (86.686% 0.080% 13.235%)   think that's a                                                                                                               ------adeehnoorstuwwwwyy?I.
-       134 0* 3.13601% (86.699% 0.080% 13.222%)   think the                                                                                                                    ------aaadehnoorssttuwwwwyy?I'.
-       135 0* 3.07285% (86.779% 0.080% 13.141%)   think they're too                                                                                                            ------aaadhnsstuwwwwy?I.
-       136 0* 3.04833% (86.796% 0.080% 13.124%)   don't know what the                                                                                                          ------aaehirsstuwwyy?I.
-       137 0* 3.01450% (86.798% 0.080% 13.122%)   know what's really weird? I                                                                                                  aaehhnostttuwyy.
-       138 0* 2.96231% (86.798% 0.080% 13.122%)   know who                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
-       139 0* 2.94018% (86.857% 0.080% 13.063%)   wanna                                                                                                                        ------adeehhhikoorssttttuwwwyy?I'.
-       140 0* 2.93281% (87.051% 0.080% 12.869%)   know these                                                                                                                   ------aaadhhinorstttuwwwyy?I'.
-       141 0* 2.92004% (87.109% 0.080% 12.811%)   swear                                                                                                                        ------aadehhhiknnoosttttuwwwyy?I'.
-       142 0* 2.91950% (87.186% 0.080% 12.734%)   know what's weird                                                                                                            ------aaehhnostttuwyy?I.
-       143 0* 3.75571% (87.187% 0.080% 12.733%)   know what's weird?                                                                                                           ------aaehhnostttuwyyI.
-       144 0* 2.91946% (87.188% 0.080% 12.732%)   know I'                                                                                                                      ------aaadeehhhinorssttttuwwwyy?.
-       145 0* 2.81704% (87.360% 0.080% 12.560%)   really don                                                                                                                   aaaeehhhiknorssttttuwwwwyy?I'.
-       146 0* 5.28016% (87.360% 0.080% 12.560%)   really don'                                                                                                                  aaaeehhhiknorssttttuwwwwyy?I.
-       147 0* 8.06772% (87.360% 0.080% 12.560%)   really don't                                                                                                                 aaaeehhhiknorsstttuwwwwyy?I.
-       148 0* 9.15224% (87.399% 0.080% 12.521%)   really don't want                                                                                                            aaeehhhikorssttuwwwyy?I.
-       149 0* 4.06503% (87.401% 0.080% 12.519%)   really don't think                                                                                                           aaaeehhorssttuwwwwyy?I.
-       150 0* 3.70887% (87.402% 0.080% 12.517%)   really don't want to                                                                                                         aaeehhhikrsstuwwwyy?I.
-       151 0* 9.85688% (87.408% 0.080% 12.511%)   really don't want to hear                                                                                                    aehhiksstuwwwyy?I.
-       152 0* 2.73705% (87.410% 0.080% 12.510%)   don't really think they                                                                                                      aaaehorsstuwwwwy?I.
-       153 0* 2.71361% (87.411% 0.080% 12.509%)   think they're a                                                                                                              ------aadhnoossttuwwwwy?I.
-       154 0* 2.63537% (87.418% 0.080% 12.502%)   don't know the                                                                                                               ------aaaehhirssttuwwwyy?I.
-       155 0* 2.63500% (87.433% 0.080% 12.487%)   think that's really                                                                                                          aadeehnoorstuwwwwyy?I.
-       156 0* 2.60164% (87.434% 0.080% 12.486%)   said the                                                                                                                     ------aaehhknnoorstttuwwwwyy?I'.
-       157 0* 2.54932% (87.560% 0.080% 12.360%)   know what you said?                                                                                                          ------aeehhnrstttwwyI'.
-       158 0* 2.54129% (87.561% 0.080% 12.359%)   sound really                                                                                                                 aaaeehhhiknorsttttwwwwyy?I'.
-       159 0* 2.51514% (87.579% 0.080% 12.341%)   don't know why                                                                                                               ------aaaeehhirsstttuwwy?I.
-       160 0* 2.50851% (87.584% 0.080% 12.336%)   know what's hard                                                                                                             ------aeehinostttuwwyy?I.
-       161 0* 2.96061% (87.585% 0.080% 12.335%)   know what's hard?                                                                                                            ------aeehinostttuwwyyI.
-       162 0* 2.46581% (87.587% 0.080% 12.333%)   know what I really                                                                                                           aadeehhinorsstttuwwyy?'.
-       163 0* 3.68891% (87.588% 0.080% 12.332%)   know what I really want                                                                                                      adeehhiorssttuwyy?'.
-       164 0* 2.44600% (87.588% 0.080% 12.332%)   know what these                                                                                                              ------aadhinorsttuwwyy?I'.
-       165 0* 2.39595% (87.594% 0.080% 12.326%)   really think that was                                                                                                        adeehnoorstuwwwyy?I'.
-       166 0* 2.39295% (87.595% 0.080% 12.325%)   know what? I really                                                                                                          aadeehhinorsstttuwwyy'.
-       167 0* 2.36247% (87.595% 0.080% 12.324%)  'd                                                                                                                            ------aaaeehhhiknnoorssttttuwwwwyy?I.
-       168 0* 8.44192% (88.125% 0.081% 11.795%)  'd think                                                                                                                      ------aaaeehhnoorsstttuwwwwyy?I.
-       169 0* 6.40383% (88.252% 0.081% 11.667%)  'd think you                                                                                                                  ------aaaeehhnorsstttwwwwy?I.
-       170 0* 2.97196% (88.319% 0.081% 11.600%)  'd think that                                                                                                                 ------aaeehnoorsstuwwwwyy?I.
-       171 0* 2.35048% (88.336% 0.081% 11.583%)  'd think I                                                                                                                    ------aaaeehhnoorsstttuwwwwyy?.
-       172 0* 2.33756% (88.394% 0.081% 11.526%)   don't know why they                                                                                                          ------aaaehirssttuww?I.
-       173 0* 2.30249% (88.395% 0.081% 11.524%)   really think you                                                                                                             aaadeehhnorsstttwwwwy?I'.
-       174 0* 2.27152% (88.397% 0.081% 11.522%)   said you were                                                                                                                ------aahhhknnosttttwwwy?I'.
-       175 0* 2.25690% (88.429% 0.081% 11.490%)   think there's a way                                                                                                          ------adhnoosttuwwwy?I.
-       176 0* 2.91946% (88.429% 0.081% 11.490%)   think there's a way to                                                                                                       ------adhnostuwwwy?I.
-       177 0* 2.18777% (88.430% 0.081% 11.490%)   don't think those are really                                                                                                 aahstuwwwwyy?I.
-       178 0* 2.18526% (88.430% 0.081% 11.490%)   think stand                                                                                                                  ------aaeehhoorsttuwwwwyy?I'.
-       179 0* 2.15199% (88.458% 0.081% 11.462%)   really think you'                                                                                                            aaadeehhnorsstttwwwwy?I.
-       180 0* 3.12590% (88.458% 0.081% 11.461%)   really think you're                                                                                                          aaadehhnosstttwwwwy?I.
-       181 0* 2.14211% (88.459% 0.081% 11.460%)   don't know these                                                                                                             ------aaahhirsttuwwwyy?I.
-       182 0* 2.10506% (88.466% 0.081% 11.453%)   say that a                                                                                                                   ------deehhiknnoorsttuwwwwy?I'.
-       183 0* 2.09931% (88.548% 0.081% 11.371%)   really think that's a                                                                                                        adeehnoorstuwwwwyy?I.
-       184 0* 2.03413% (88.549% 0.081% 11.370%)   know what I was                                                                                                              ------adeehhinorstttuwyy?'.
-       185 0* 1.98922% (88.556% 0.081% 11.363%)   knew that                                                                                                                    ------aadehhinoorssttuwwwyy?I'.
-       186 0* 3.96610% (88.571% 0.081% 11.348%)   knew that was                                                                                                                ------adehhinoorsttuwwyy?I'.
-       187 0* 1.98363% (88.588% 0.081% 11.331%)   know that'                                                                                                                   ------aadeehhinorssttuwwwyy?I.
-       188 0* 3.00648% (88.588% 0.081% 11.331%)   know that's                                                                                                                  ------aadeehhinorsttuwwwyy?I.
-       189 0* 2.73541% (88.595% 0.081% 11.325%)   know that's not                                                                                                              ------aadeehhirstuwwwyy?I.
-       190 0* 1.96390% (88.602% 0.081% 11.317%)   know what the                                                                                                                ------aadehinorssttuwwyy?I'.
-       191 0* 1.95384% (88.612% 0.081% 11.307%)   don't know what it                                                                                                           ------aaeehhrsstuwwyy?I.
-       192 0* 1.94662% (88.615% 0.081% 11.304%)   think you're really                                                                                                          aaadehhnosstttwwwwy?I.
-       193 0* 1.91997% (88.616% 0.081% 11.304%)   read                                                                                                                         ------aaehhhiknnoossttttuwwwwyy?I'.
-       194 0* 1.91074% (88.877% 0.081% 11.042%)   think that's really hard                                                                                                     aeenoostuwwwwyy?I.
-       195 0* 2.10242% (88.877% 0.081% 11.042%)   think that's really hard?                                                                                                    aeenoostuwwwwyyI.
-       196 0* 1.83985% (88.877% 0.081% 11.042%)   know?                                                                                                                        ------aaadeehhhinorssttttuwwwyyI'.
-       197 0* 1.82174% (89.049% 0.081% 10.870%)   think those                                                                                                                  ------aaadehnorsttuwwwwyy?I'.
-       198 0* 1.81099% (89.073% 0.081% 10.845%)   don't know?                                                                                                                  ------aaaeehhhirsstttuwwwyyI.
-       199 0* 1.80536% (89.093% 0.081% 10.825%)   know what that                                                                                                               ------adeehinorsstuwwyy?I'.
-       200 0* 1.80508% (89.099% 0.081% 10.820%)   know what I really want to                                                                                                   adeehhirsstuwyy?'.
-       201 0* 1.79479% (89.099% 0.081% 10.820%)   know that's what                                                                                                             ------adeehinorstuwwyy?I.
-       202 0* 1.76476% (89.100% 0.081% 10.819%)   don't know where                                                                                                             ------aaahhisstttuwwyy?I.
-       203 0* 1.75832% (89.102% 0.081% 10.817%)   really don't know                                                                                                            aaaeehhhirsstttuwwwyy?I.
-       204 0* 5.62901% (89.103% 0.081% 10.816%)   really don't know what                                                                                                       aaeehhirssttuwwyy?I.
-       205 0* 2.24187% (89.103% 0.081% 10.816%)   really don't know what I                                                                                                     aaeehhirssttuwwyy?.
-       206 0* 1.71329% (89.103% 0.081% 10.815%)   know what? It                                                                                                                ------aadeehhinorssttuwwyy'.
-       207 0* 1.90666% (89.105% 0.081% 10.814%)   know what? It'                                                                                                               ------aadeehhinorssttuwwyy.
-       208 0* 3.04893% (89.105% 0.081% 10.814%)   know what? It's                                                                                                              ------aadeehhinorsttuwwyy.
-       209 0* 1.70400% (89.109% 0.081% 10.810%)   really don't think they                                                                                                      aaaehorsstuwwwwy?I.
-       210 0* 1.67093% (89.110% 0.081% 10.809%)   know you're the                                                                                                              ------aaadhhinsstttwwwy?I.
-       211 0* 1.66923% (89.115% 0.081% 10.803%)   know what they say in                                                                                                        ------adehorsttuww?I'.
-       212 0* 1.66354% (89.116% 0.081% 10.803%)   okay                                                                                                                         ------aadeehhhinnorssttttuwwwwy?I'.
-       213 0* 1.65087% (89.313% 0.081% 10.605%)   know what they said                                                                                                          ------aehnorsttuwwy?I'.
-       214 0* 1.63187% (89.314% 0.081% 10.605%)   don't think your                                                                                                             ------aaaeehhssttwwwwy?I.
-       215 0* 1.61962% (89.318% 0.081% 10.601%)  're in                                                                                                                        ------aaadehhhknoossttttuwwwwyy?I.
-       216 0* 1.61381% (89.451% 0.081% 10.468%)   don't say                                                                                                                    ------aaeehhhiknorstttuwwwwy?I.
-       217 0* 1.60447% (89.478% 0.081% 10.441%)  're a din                                                                                                                     ------aaehhhknoossttttuwwwwyy?I.
-       218 0* 3.21472% (89.478% 0.081% 10.441%)  're a dinos                                                                                                                   ------aaehhhknosttttuwwwwyy?I.
-       219 0* 1.60221% (89.546% 0.081% 10.373%)   know what I really want?                                                                                                     adeehhiorssttuwyy'.
-       220 0* 1.59190% (89.546% 0.081% 10.373%)   know what the worst                                                                                                          ------aadehinstuwyy?I'.
-       221 0* 1.58964% (89.547% 0.081% 10.371%)   know where                                                                                                                   ------aaadhhinossttttuwwyy?I'.
-       222 0* 1.57125% (89.553% 0.081% 10.366%)   know those                                                                                                                   ------aaadehhinrstttuwwwyy?I'.
-       223 0* 1.56965% (89.588% 0.081% 10.330%)   don't think they are                                                                                                         ------aahosstuwwwwy?I.
-       224 0* 1.54790% (89.589% 0.081% 10.329%)   know what's really weird? I was                                                                                              aehhnotttuyy.
-       225 0* 1.54562% (89.589% 0.081% 10.329%)   don't know this                                                                                                              ------aaaeehhrsttuwwwyy?I.
-       226 0* 1.54441% (89.595% 0.081% 10.323%)   know what's worse                                                                                                            ------aadehhintttuwyy?I.
-       227 0* 9.95563% (89.596% 0.081% 10.323%)   know what's worse than                                                                                                       ------adehittuwyy?I.
-       228 0* 3.01656% (89.596% 0.082% 10.322%)   know what's worse than a                                                                                                     ------dehittuwyy?I.
-       229 0* 1.54089% (89.597% 0.082% 10.322%)   know what I said there                                                                                                       ------ahnosttuwwyy?'.
-       230 0* 2.06019% (89.597% 0.082% 10.322%)   know what I said there?                                                                                                      ------ahnosttuwwyy'.
-       231 0* 1.53717% (89.597% 0.082% 10.322%)   know what? I really don                                                                                                      aaeehhirsstttuwwyy'.
-       232 0* 4.08813% (89.597% 0.082% 10.322%)   know what? I really don'                                                                                                     aaeehhirsstttuwwyy.
-       233 0* 6.72300% (89.597% 0.082% 10.322%)   know what? I really don't                                                                                                    aaeehhirssttuwwyy.
-       234 0* 1.52259% (89.597% 0.082% 10.321%)   don't know where that                                                                                                        ------aahisstuwwyy?I.
-       235 0* 1.51946% (89.598% 0.082% 10.321%)   knew I'                                                                                                                      ------aaadehhhinoorssttttuwwwyy?.
-       236 0* 2.40020% (89.599% 0.082% 10.320%)   knew I'd                                                                                                                     ------aaaehhhinoorssttttuwwwyy?.
-       237 0* 2.37361% (89.663% 0.082% 10.255%)   knew I'd say                                                                                                                 ------aaehhhinoorsttttuwwwy?.
-       238 0* 12.40346% (89.667% 0.082% 10.251%)   knew I'd say that                                                                                                            ------aehhinoorsttuwwwy?.
-       239 0* 10.14548% (89.675% 0.082% 10.244%)   knew I'd say that?                                                                                                           ------aehhinoorsttuwwwy.
-       240 0* 1.51564% (89.682% 0.082% 10.236%)   know what's weird? I                                                                                                         ------aaehhnostttuwyy.
-       241 0* 1.51192% (89.683% 0.082% 10.236%)   know what? It's not                                                                                                          ------aadeehhirstuwwyy.
-       242 0* 1.47303% (89.684% 0.082% 10.235%)   really need                                                                                                                  aaahhhiknoorssttttuwwwwyy?I'.
-       243 0* 1.45803% (89.686% 0.082% 10.233%)   know what'd                                                                                                                  ------aaeehhinorsstttuwwyy?I.
-       244 0* 1.44256% (89.699% 0.082% 10.219%)   know what I really hate                                                                                                      adehinorssttuwwyy?'.
-       245 0* 1.80529% (89.699% 0.082% 10.219%)   know what I really hate?                                                                                                     adehinorssttuwwyy'.
-       246 0* 1.43793% (89.699% 0.082% 10.219%)  're really not                                                                                                                aaadehhhiknosstttuwwwwyy?I.
-       247 0* 1.43265% (89.707% 0.082% 10.212%)   know what they say when                                                                                                      ------adiorsttuw?I'.
-       248 0* 1.42313% (89.707% 0.082% 10.212%)   are                                                                                                                          ------aadehhhiknnoossttttuwwwwyy?I'.
-       249 0* 1.42177% (89.935% 0.082% 9.983%)   don't really want                                                                                                            aaeehhhikorssttuwwwyy?I.
-       250 0* 1.41158% (89.935% 0.082% 9.983%)   really don't think I                                                                                                         aaaeehhorssttuwwwwyy?.
-       251 0* 1.40600% (89.936% 0.082% 9.982%)   think you're a                                                                                                               ------aadehhnosstttwwwwy?I.
-       252 0* 1.40217% (89.942% 0.082% 9.977%)   think your                                                                                                                   ------aaadeehhnosstttwwwwy?I'.
-       253 0* 1.39501% (89.965% 0.082% 9.954%)   know the ones                                                                                                                ------aaadhhirstttuwwwyy?I'.
-       254 0* 1.36744% (89.977% 0.082% 9.941%)   hate                                                                                                                         ------aadehhiknnoorsstttuwwwwyy?I'.
-       255 0* 1.36217% (90.150% 0.082% 9.768%)   think those are                                                                                                              ------aadhnosttuwwwwyy?I'.
-       256 0* 1.36202% (90.159% 0.082% 9.759%)   really said                                                                                                                  aaeehhhknnoorsttttuwwwwyy?I'.
-       257 0* 2.95741% (90.170% 0.082% 9.748%)   really said that                                                                                                             aeehhknnoorsttuwwwwyy?I'.
-       258 0* 2.04002% (90.171% 0.082% 9.747%)   really said that?                                                                                                            aeehhknnoorsttuwwwwyyI'.
-       259 0* 1.38852% (90.174% 0.082% 9.744%)   really said that out                                                                                                         aeehhknnorstwwwwyy?I'.
-       260 0* 1.35984% (90.180% 0.082% 9.738%)   know what's really weird? It                                                                                                 aaehhnosttuwyy.
-       261 0* 1.35225% (90.180% 0.082% 9.738%)   knew?                                                                                                                        ------aaadehhhinoorssttttuwwwyyI'.
-       262 0* 1.34581% (90.313% 0.082% 9.605%)   had                                                                                                                          ------aaeehhiknnoorssttttuwwwwyy?I'.
-       263 0* 1.32498% (90.392% 0.082% 9.526%)   knew that was a                                                                                                              ------dehhinoorsttuwwyy?I'.
-       264 0* 1.31601% (90.397% 0.082% 9.521%)   know what you need                                                                                                           ------aahhirsstttwwy?I'.
-       265 0* 1.26697% (90.397% 0.082% 9.520%)   know what's really weird? It was                                                                                             aehhnottuyy.
-       266 0* 2.73094% (90.397% 0.082% 9.520%)   know what's really weird? It was the                                                                                         ahnotuyy.
-       267 0* 1.26522% (90.397% 0.082% 9.520%)   said that when                                                                                                               ------aehknoorsttuwwwyy?I'.
-       268 0* 1.26397% (90.398% 0.082% 9.520%)  're not that                                                                                                                  ------aadehhiknosstuwwwwyy?I.
-       269 0* 1.23843% (90.411% 0.082% 9.507%)   know it                                                                                                                      ------aaadeehhhnorsstttuwwwyy?I'.
-       270 0* 1.23788% (90.443% 0.082% 9.475%)   really don't know what they                                                                                                  aaehirsstuwwy?I.
-       271 0* 5.91520% (90.443% 0.082% 9.475%)   really don't know what they are                                                                                              ahisstuwwy?I.
-       272 0* 11.43469% (90.443% 0.082% 9.475%)   really don't know what they are?                                                                                             ahisstuwwyI.
-       273 0* 1.23770% (90.443% 0.082% 9.475%)   know what I really want to hear                                                                                              dehisstuwyy?'.
-       274 0* 2.21136% (90.443% 0.082% 9.475%)   know what I really want to hear?                                                                                             dehisstuwyy'.
-       275 0* 1.23761% (90.443% 0.082% 9.475%)   said that when I                                                                                                             ------aehknoorsttuwwwyy?'.
-       276 0* 1.23192% (90.446% 0.082% 9.472%)   saw                                                                                                                          ------aadeehhhiknnoorsttttuwwwyy?I'.
-       277 0* 2.15083% (90.576% 0.082% 9.342%)   saw that                                                                                                                     ------adeehhiknnoorsttuwwwyy?I'.
-       278 0* 1.22460% (90.615% 0.082% 9.302%)   know I don                                                                                                                   ------aaaeehhhirssttttuwwwyy?'.
-       279 0* 2.32198% (90.615% 0.082% 9.302%)   know I don'                                                                                                                  ------aaaeehhhirssttttuwwwyy?.
-       280 0* 3.26612% (90.615% 0.082% 9.302%)   know I don't                                                                                                                 ------aaaeehhhirsstttuwwwyy?.
-       281 0* 1.22132% (90.653% 0.082% 9.265%)   know what's worse than the                                                                                                   ------adituwyy?I.
-       282 0* 1.22008% (90.653% 0.082% 9.265%)   know there                                                                                                                   ------aaadhhinosstttuwwwyy?I'.
-       283 0* 2.01035% (90.656% 0.082% 9.262%)   know there'                                                                                                                  ------aaadhhinosstttuwwwyy?I.
-       284 0* 3.01493% (90.656% 0.082% 9.262%)   know there's                                                                                                                 ------aaadhhinostttuwwwyy?I.
-       285 0* 2.33619% (90.663% 0.082% 9.254%)   know there's a                                                                                                               ------aadhhinostttuwwwyy?I.
-       286 0* 1.20841% (90.672% 0.082% 9.245%)   know where this                                                                                                              ------aaadhnostttuwwyy?I'.
-       287 0* 1.20227% (90.676% 0.082% 9.241%)   don't think I was                                                                                                            ------aaeehhorsttuwwwyy?.
-       288 0* 1.19722% (90.678% 0.082% 9.240%)   know it'                                                                                                                     ------aaadeehhhnorsstttuwwwyy?I.
-       289 0* 1.79596% (90.678% 0.082% 9.239%)   know it's                                                                                                                    ------aaadeehhhnorstttuwwwyy?I.
-       290 0* 2.90137% (90.696% 0.082% 9.221%)   know it's true                                                                                                               ------aaadehhhnosttwwwyy?I.
-       291 0* 1.19338% (90.711% 0.082% 9.207%)   don't say that                                                                                                               ------aeehhiknorstuwwwwy?I.
-       292 0* 1.18671% (90.717% 0.082% 9.200%)   know what you said when                                                                                                      ------aehrstttwy?I'.
-       293 0* 1.16968% (90.717% 0.082% 9.200%)   know what those                                                                                                              ------aadehinrsttuwwyy?I'.
-       294 0* 2.72235% (90.718% 0.082% 9.199%)   know what those are                                                                                                          ------adhinsttuwwyy?I'.
-       295 0* 2.44547% (90.720% 0.082% 9.198%)   know what those are?                                                                                                         ------adhinsttuwwyyI'.
-       296 0* 1.16833% (90.721% 0.082% 9.197%)   know that's what I                                                                                                           ------adeehinorstuwwyy?.
-       297 0* 1.15439% (90.722% 0.082% 9.196%)   swear a                                                                                                                      ------adehhhiknnoosttttuwwwyy?I'.
-       298 0* 1.15377% (90.799% 0.082% 9.118%)   think that's hard                                                                                                            ------aeenoostuwwwwyy?I.
-       299 0* 1.45901% (90.800% 0.082% 9.118%)   think that's hard?                                                                                                           ------aeenoostuwwwwyyI.
-       300 0* 1.15196% (90.801% 0.082% 9.117%)   think that was really                                                                                                        adeehnoorstuwwwyy?I'.
-       301 0* 1.14320% (90.801% 0.082% 9.117%)   really think these                                                                                                           aaadhnoorsttuwwwwyy?I'.
-       302 0* 1.13480% (90.802% 0.082% 9.115%)   want to try                                                                                                                  ------aadeehhhiknosstuwwwy?I'.
-       303 0* 1.13339% (90.822% 0.082% 9.096%)   need                                                                                                                         ------aaahhhiknoorssttttuwwwwyy?I'.
-       304 0* 1.11614% (90.888% 0.083% 9.029%)   know I don't really                                                                                                          aaaeehhhirsstttuwwwyy?.
-       305 0* 1.11519% (90.889% 0.083% 9.028%)   know what? I was                                                                                                             ------adeehhinorstttuwyy'.
-       306 0* 1.11389% (90.891% 0.083% 9.026%)   wish                                                                                                                         ------aaadeehhknnoorsttttuwwwyy?I'.
-       307 0* 2.00196% (90.916% 0.083% 9.001%)   wish you                                                                                                                     ------aaadeehhknnorsttttwwwy?I'.
-       308 0* 1.59761% (90.947% 0.083% 8.971%)   wish you were                                                                                                                ------aaadhhknnosttttwwy?I'.
-       309 0* 1.11178% (90.956% 0.083% 8.961%)   know they                                                                                                                    ------aaadehhinorsstttuwwwy?I'.
-       310 0* 1.31223% (90.963% 0.083% 8.955%)   know they'                                                                                                                   ------aaadehhinorsstttuwwwy?I.
-       311 0* 2.81908% (90.963% 0.083% 8.954%)   know they're                                                                                                                 ------aaadhhinosstttuwwwy?I.
-       312 0* 1.59239% (90.977% 0.083% 8.941%)   know they're really                                                                                                          aaadhhinosstttuwwwy?I.
-       313 0* 1.10918% (90.977% 0.083% 8.940%)  'd think a                                                                                                                    ------aaeehhnoorsstttuwwwwyy?I.
-       314 0* 1.10291% (91.004% 0.083% 8.913%)   don't know that                                                                                                              ------aaeehhirsstuwwwyy?I.
-       315 0* 1.09146% (91.008% 0.083% 8.909%)   know what it                                                                                                                 ------aadeehhnorssttuwwyy?I'.
-       316 0* 1.07633% (91.016% 0.083% 8.902%)   know where I                                                                                                                 ------aaadhhinossttttuwwyy?'.
-       317 0* 1.06853% (91.024% 0.083% 8.894%)  'd think the                                                                                                                  ------aaaehnoorssttuwwwwyy?I.
-       318 0* 1.06781% (91.035% 0.083% 8.883%)   know what this really                                                                                                        aadeehnorsttuwwyy?I'.
-       319 0* 1.46326% (91.035% 0.083% 8.883%)   know what this really needs                                                                                                  aahorttuwwyy?I'.
-       320 0* 2.93112% (91.035% 0.083% 8.883%)   know what this really needs?                                                                                                 aahorttuwwyyI'.
-       321 0* 1.06254% (91.035% 0.083% 8.883%)   wrote                                                                                                                        ------aaadehhhiknnosstttuwwwyy?I'.
-       322 0* 1.06219% (91.088% 0.083% 8.829%)   really need to                                                                                                               aaahhhiknorsstttuwwwwyy?I'.
-       323 0* 1.06108% (91.111% 0.083% 8.807%)   really think you're the                                                                                                      aaadhnossttwwwwy?I.
-       324 0* 1.05431% (91.111% 0.083% 8.806%)   think I need                                                                                                                 ------aaahhoorsstttuwwwwyy?'.
-       325 0* 1.05129% (91.114% 0.083% 8.803%)   don't want your                                                                                                              ------aaeehhhikssttwwwy?I.
-       326 0* 1.05040% (91.116% 0.083% 8.801%)   think they're as                                                                                                             ------aadhnoosttuwwwwy?I.
-       327 0* 1.05025% (91.118% 0.083% 8.799%)   know they're not                                                                                                             ------aaadhhissttuwwwy?I.
-       328 0* 1.14370% (91.121% 0.083% 8.796%)   know they're not really                                                                                                      aaadhhissttuwwwy?I.
-       329 0* 1.04565% (91.122% 0.083% 8.796%)   think there's an                                                                                                             ------aadhoosttuwwwwyy?I.
-       330 0* 1.04437% (91.123% 0.083% 8.794%)   wanna try                                                                                                                    ------adeehhhikoosstttuwwwy?I'.
-       331 0* 1.04314% (91.145% 0.083% 8.772%)   knew what this                                                                                                               ------aadehnoorsttuwwyy?I'.
-       332 0* 2.54417% (91.147% 0.083% 8.771%)   knew what this was                                                                                                           ------adehnoorttuwyy?I'.
-       333 0* 1.03001% (91.149% 0.083% 8.769%)   knew what was                                                                                                                ------adehhinoorstttuwyy?I'.
-       334 0* 1.02834% (91.154% 0.083% 8.763%)   were really                                                                                                                  aaadhhhiknnoossttttuwwwyy?I'.
-       335 0* 1.02738% (91.168% 0.083% 8.749%)   know what they say.                                                                                                          ------adehinorsttuww?I'
-       336 0* 1.02158% (91.169% 0.083% 8.748%)   swear?                                                                                                                       ------aadehhhiknnoosttttuwwwyyI'.
-       337 0* 1.01885% (91.232% 0.083% 8.685%)   said your                                                                                                                    ------aaeehhhknnosttttwwwwy?I'.
-       338 0* 1.01832% (91.264% 0.083% 8.653%)   know what they say in the                                                                                                    ------adorstuww?I'.
-       339 0* 1.01516% (91.264% 0.083% 8.653%)   said that when you                                                                                                           ------aehknorsttwwwy?I'.
-       340 0* 1.01458% (91.265% 0.083% 8.652%)   really want                                                                                                                  aadeehhhiknoorsstttuwwwyy?I'.
-       341 0* 1.01401% (91.268% 0.083% 8.649%)   don't want to see                                                                                                            ------aahhhikrstuwwwyy?I.
-       342 0* 0.99228% (91.275% 0.083% 8.642%)   hear                                                                                                                         ------aadehhiknnoossttttuwwwwyy?I'.
-       343 0* 2.10250% (91.361% 0.083% 8.556%)   hear that                                                                                                                    ------adehiknnoossttuwwwwyy?I'.
-       344 0* 1.36576% (91.391% 0.083% 8.526%)   hear that?                                                                                                                   ------adehiknnoossttuwwwwyyI'.
-       345 0* 0.99157% (91.409% 0.083% 8.508%)   okay there                                                                                                                   ------aadhhinnosstttuwwwwy?I'.
-       346 0* 0.98463% (91.431% 0.083% 8.486%)   know what I want                                                                                                             ------adeehhiorssttuwyy?'.
-       347 0* 0.98237% (91.432% 0.083% 8.485%)   don't really think you                                                                                                       aaaeehhrssttwwwwy?I.
-       348 0* 0.97835% (91.432% 0.083% 8.485%)  're in the                                                                                                                    ------aaadhhknoosstttuwwwwyy?I.
-       349 0* 0.97815% (91.460% 0.083% 8.457%)   know why                                                                                                                     ------aaadeehhinorssttttuwwy?I'.
-       350 0* 0.97228% (91.468% 0.083% 8.449%)   know I hate                                                                                                                  ------aadehhinorsstttuwwwyy?'.
-       351 0* 0.97161% (91.473% 0.083% 8.444%)   know what? It's really                                                                                                       aadeehhinorsttuwwyy.
-       352 0* 2.79415% (91.473% 0.083% 8.444%)   know what? It's really hard                                                                                                  aeehinosttuwwyy.
-       353 0* 8.10509% (91.473% 0.083% 8.444%)   know what? It's really hard to                                                                                               aeehinstuwwyy.
-       354 0* 2.81571% (91.473% 0.083% 8.444%)   know what? It's really hard to say                                                                                           eehintuwwy.
-       355 0* 2.75306% (91.473% 0.083% 8.444%)   know what? It's really hard to say when                                                                                      eituwy.
-       356 0* 0.96841% (91.473% 0.083% 8.444%)   need to                                                                                                                      ------aaahhhiknorsstttuwwwwyy?I'.
-       357 0* 0.96402% (91.574% 0.083% 8.343%)   don't know why I                                                                                                             ------aaaeehhirsstttuwwy?.
-       358 0* 0.94432% (91.576% 0.083% 8.340%)   really want to                                                                                                               aadeehhhiknorssttuwwwyy?I'.
-       359 0* 0.93581% (91.580% 0.083% 8.337%)   said you'                                                                                                                    ------aaeehhhknnorsttttwwwwy?I.
-       360 0* 0.93577% (91.605% 0.083% 8.312%)   know that's a                                                                                                                ------adeehhinorsttuwwwyy?I.
-       361 0* 0.93318% (91.610% 0.083% 8.307%)   don't know where I                                                                                                           ------aaahhisstttuwwyy?.
-       362 0* 0.93284% (91.612% 0.083% 8.305%)   wish you had                                                                                                                 ------aaeehknnorsttttwwwy?I'.
-       363 0* 0.93198% (91.619% 0.083% 8.298%)   do                                                                                                                           ------aaaeehhhiknnorssttttuwwwwyy?I'.
-       364 0* 0.93055% (91.838% 0.083% 8.079%)   really think you're that                                                                                                     aadehnosstwwwwy?I.
-       365 0* 0.92962% (91.838% 0.083% 8.079%)  'd think they                                                                                                                 ------aaaehnoorssttuwwwwy?I.
-       366 0* 0.92555% (91.844% 0.083% 8.072%)   know your                                                                                                                    ------aaadeehhhinssttttwwwy?I'.
-       367 0* 0.92226% (91.869% 0.083% 8.048%)   knew they                                                                                                                    ------aaadhhinoorsstttuwwwy?I'.
-       368 0* 0.92197% (91.888% 0.083% 8.028%)   know who I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
-       369 0* 0.92121% (91.901% 0.083% 8.016%)   think I need to                                                                                                              ------aaahhorssttuwwwwyy?'.
-       370 0* 0.91987% (91.912% 0.083% 8.004%)   know how I                                                                                                                   ------aaadeehhinrssttttuwwyy?'.
-       371 0* 0.91665% (91.929% 0.083% 7.988%)   knew what I said                                                                                                             ------aehhnoorstttuwwyy?'.
-       372 0* 0.90998% (91.930% 0.083% 7.986%)   know how they                                                                                                                ------aaadehinrsstttuwwy?I'.
-       373 0* 1.41001% (91.933% 0.083% 7.984%)   know how they say                                                                                                            ------aadehinrstttuww?I'.
-       374 0* 0.90381% (91.934% 0.083% 7.982%)   think they're so                                                                                                             ------aaadhnosttuwwwwy?I.
-       375 0* 0.90052% (91.937% 0.083% 7.979%)   really think that?                                                                                                           aadeehnoorsstuwwwwyyI'.
-       376 0* 0.89787% (91.938% 0.083% 7.979%)   know that's not a                                                                                                            ------adeehhirstuwwwyy?I.
-       377 0* 0.89479% (91.940% 0.083% 7.976%)   think I don                                                                                                                  ------aaaeehhorsstttuwwwwyy?'.
-       378 0* 1.59724% (91.940% 0.083% 7.976%)   think I don'                                                                                                                 ------aaaeehhorsstttuwwwwyy?.
-       379 0* 2.30714% (91.940% 0.083% 7.976%)   think I don't                                                                                                                ------aaaeehhorssttuwwwwyy?.
-       380 0* 0.89473% (91.957% 0.083% 7.959%)   don't want to say                                                                                                            ------aeehhhikrstuwwwy?I.
-       381 0* 0.89384% (91.960% 0.083% 7.956%)   really don't want to hear why                                                                                                aehiksstuwwy?I.
-       382 0* 0.95782% (91.960% 0.083% 7.956%)   really don't want to hear why I                                                                                              aehiksstuwwy?.
-       383 0* 0.89323% (91.960% 0.083% 7.956%)   know what? It doesn                                                                                                          ------aaehhirsttuwwyy'.
-       384 0* 1.86124% (91.960% 0.083% 7.956%)   know what? It doesn'                                                                                                         ------aaehhirsttuwwyy.
-       385 0* 2.62836% (91.960% 0.083% 7.956%)   know what? It doesn't                                                                                                        ------aaehhirstuwwyy.
-       386 0* 3.58081% (91.961% 0.083% 7.956%)   know what? It doesn't really                                                                                                 aaehhirstuwwyy.
-       387 0* 0.88849% (91.961% 0.083% 7.956%)  'd think there                                                                                                                ------aaahnoossttuwwwwyy?I.
-       388 0* 0.88838% (91.965% 0.083% 7.952%)   wrote this                                                                                                                   ------aaadehhknnosttuwwwyy?I'.
-       389 0* 0.88788% (91.982% 0.083% 7.935%)   really don't want to say                                                                                                     aeehhhikrstuwwwy?I.
-       390 0* 0.87926% (91.982% 0.083% 7.935%)   know what? I don't really see                                                                                                aahhirsttuwwyy.
-       391 0* 14.59608% (91.982% 0.083% 7.935%)   know what? I don't really see what                                                                                           ahirstuwyy.
-       392 0* 2.93833% (91.982% 0.083% 7.935%)   know what? I don't really see why                                                                                            aahirsttuwy.
-       393 0* 8.12189% (91.982% 0.083% 7.935%)   know what? I don't really see why this                                                                                       aartuwy.
-       394 0* 1.15263% (91.982% 0.083% 7.935%)   know what? I don't really see what was                                                                                       hirtuyy.
-       395 0* 0.94226% (91.982% 0.083% 7.935%)   know what? I don't really see why this war                                                                                   atuy.
-       396 0* 0.87266% (91.982% 0.083% 7.935%)   really don't know what this                                                                                                  aaeehrstuwwyy?I.
-       397 0* 0.86093% (91.982% 0.083% 7.935%)   know what that is                                                                                                            ------adeehnorstuwwyy?I'.
-       398 0* 0.91025% (91.983% 0.083% 7.934%)   know what that is?                                                                                                           ------adeehnorstuwwyyI'.
-       399 0* 0.85541% (91.984% 0.083% 7.933%)   wish you'                                                                                                                    ------aaadeehhknnorsttttwwwy?I.
-       400 0* 1.33921% (91.984% 0.083% 7.933%)   wish you'd                                                                                                                   ------aaaeehhknnorsttttwwwy?I.
-       401 0* 0.85265% (92.005% 0.083% 7.911%)   knew who                                                                                                                     ------aaadehhinorssttttuwwyy?I'.
-       402 0* 0.92807% (92.007% 0.083% 7.910%)   knew who I                                                                                                                   ------aaadehhinorssttttuwwyy?'.
-       403 0* 3.35710% (92.010% 0.083% 7.907%)   knew who I was                                                                                                               ------aadehhinorsttttuwyy?'.
-       404 0* 0.85189% (92.029% 0.083% 7.887%)   know that's what you                                                                                                         ------adeehinrstwwy?I.
-       405 0* 0.92878% (92.029% 0.083% 7.887%)   know that's what you were                                                                                                    ------adhinstwy?I.
-       406 0* 0.84859% (92.029% 0.083% 7.887%)   swear too                                                                                                                    ------aadehhhiknnstttuwwwyy?I'.
-       407 0* 0.84422% (92.076% 0.083% 7.841%)   really don't know what I was                                                                                                 aeehhirsttuwyy?.
-       408 0* 0.84021% (92.076% 0.083% 7.841%)   really need to work                                                                                                          aaahhhinsstttuwwwyy?I'.
-       409 0* 0.83932% (92.079% 0.083% 7.837%)   know you're really                                                                                                           aaadehhhinssttttwwwy?I.
-       410 0* 0.83301% (92.080% 0.083% 7.837%)  're on                                                                                                                        ------aaadehhhiknossttttuwwwwyy?I.
-       411 0* 0.83030% (92.133% 0.083% 7.784%)   don't think he                                                                                                               ------aaaehorssttuwwwwyy?I.
-       412 0* 0.82985% (92.136% 0.083% 7.780%)   said a                                                                                                                       ------aeehhhknnoorsttttuwwwwyy?I'.
-       413 0* 0.82442% (92.226% 0.084% 7.690%)   knew this was a                                                                                                              ------adehhnoortttuwwyy?I'.
-       414 0* 0.82143% (92.230% 0.084% 7.687%)  're so                                                                                                                        ------aaadehhhiknnosttttuwwwwyy?I.
-       415 0* 0.81462% (92.323% 0.084% 7.593%)  're okay                                                                                                                      ------aadehhhinnossttttuwwwwy?I.
-       416 0* 1.59393% (92.344% 0.084% 7.573%)  're okay with                                                                                                                 ------aadehhnnosstttuwwwy?I.
-       417 0* 0.80959% (92.353% 0.084% 7.564%)  're on the                                                                                                                    ------aaadhhiknosstttuwwwwyy?I.
-       418 0* 0.80938% (92.379% 0.084% 7.537%)   saw that?                                                                                                                    ------adeehhiknnoorsttuwwwyyI'.
-       419 0* 0.80866% (92.398% 0.084% 7.518%)   really don't know what these                                                                                                 aahirstuwwyy?I.
-       420 0* 0.80767% (92.398% 0.084% 7.518%)   know their                                                                                                                   ------aaadehhnosstttuwwwyy?I'.
-       421 0* 0.80628% (92.415% 0.084% 7.502%)   know what's the                                                                                                              ------aadehinorsttuwwyy?I.
-       422 0* 1.54048% (92.416% 0.084% 7.500%)   know what's the worst                                                                                                        ------aadehintuwyy?I.
-       423 0* 1.54918% (92.416% 0.084% 7.500%)   know what's the worst?                                                                                                       ------aadehintuwyyI.
-       424 0* 0.80380% (92.416% 0.084% 7.500%)   know what's not                                                                                                              ------aadeehhirsttuwwyy?I.
-       425 0* 0.80328% (92.418% 0.084% 7.498%)   think that's a really                                                                                                        adeehnoorstuwwwwyy?I.
-       426 0* 0.80077% (92.418% 0.084% 7.498%)  'd know                                                                                                                       ------aaaeehhhinorssttttuwwwyy?I.
-       427 0* 0.80046% (92.457% 0.084% 7.459%)   know these din                                                                                                               ------aaahhorstttuwwwyy?I'.
-       428 0* 0.79991% (92.460% 0.084% 7.456%)   know what you're really                                                                                                      aadehhinsstttwwy?I.
-       429 0* 0.79205% (92.461% 0.084% 7.456%)   don't want to hear a                                                                                                         ------ehhiksstuwwwyy?I.
-       430 0* 0.78514% (92.462% 0.084% 7.455%)   heard what                                                                                                                   ------aehiknnoosstttuwwwyy?I'.
-       431 0* 1.07020% (92.462% 0.084% 7.454%)   heard what I                                                                                                                 ------aehiknnoosstttuwwwyy?'.
-       432 0* 0.78449% (92.472% 0.084% 7.444%)   know who'                                                                                                                    ------aaadeehhinrssttttuwwyy?I.
-       433 0* 1.01361% (92.472% 0.084% 7.444%)   know who's                                                                                                                   ------aaadeehhinrsttttuwwyy?I.
-       434 0* 1.52116% (92.484% 0.084% 7.432%)   know who's really                                                                                                            aaadeehhinrsttttuwwyy?I.
-       435 0* 0.77814% (92.486% 0.084% 7.431%)   think that was a                                                                                                             ------deehnoorstuwwwyy?I'.
-       436 0* 0.77517% (92.489% 0.084% 7.428%)   know I hate that                                                                                                             ------adehinorsstuwwwyy?'.
-       437 0* 0.77444% (92.491% 0.084% 7.425%)   too                                                                                                                          ------aaadeehhhiknnrsstttuwwwwyy?I'.
-       438 0* 0.78817% (92.653% 0.084% 7.263%)   too?                                                                                                                         ------aaadeehhhiknnrsstttuwwwwyyI'.
-       439 0* 0.76961% (92.812% 0.084% 7.104%)   know the ones I                                                                                                              ------aaadhhirstttuwwwyy?'.
-       440 0* 1.43211% (92.816% 0.084% 7.100%)   know the ones I'                                                                                                             ------aaadhhirstttuwwwyy?.
-       441 0* 0.76954% (92.823% 0.084% 7.093%)   heard that                                                                                                                   ------aehiknnoossttuwwwwyy?I'.
-       442 0* 0.76679% (92.831% 0.084% 7.085%)   know who's really hard                                                                                                       aaeehinsttttuwwyy?I.
-       443 0* 0.76628% (92.832% 0.084% 7.085%)   had to                                                                                                                       ------aaeehhiknnorsstttuwwwwyy?I'.
-       444 0* 0.76507% (92.887% 0.084% 7.029%)   think there's a way I                                                                                                        ------adhnoosttuwwwy?.
-       445 0* 0.76208% (92.887% 0.084% 7.029%)   know what? It's true                                                                                                         ------aadehhinostwwyy.
-       446 0* 0.76165% (92.887% 0.084% 7.029%)   know what you said when I                                                                                                    ------aehrstttwy?'.
-       447 0* 1.51269% (92.887% 0.084% 7.029%)   know what you said when I was                                                                                                ------ehrttty?'.
-       448 0* 0.75104% (92.887% 0.084% 7.029%)   know what? It's really hard when                                                                                             aeiosttuwyy.
-       449 0* 8.28207% (92.887% 0.084% 7.029%)   know what? It's really hard when you                                                                                         aeisttwy.
-       450 0* 13.80063% (92.887% 0.084% 7.029%)   know what? It's really hard when you say                                                                                     eittw.
-       451 0* 111.85717% (92.887% 0.084% 7.029%)   know what? It's really hard when you say it                                                                                  etw.
-       452 0* 7.74477% (92.887% 0.084% 7.029%)   know what? It's really hard when you say it.                                                                                 etw
-       453 0* 0.74930% (92.887% 0.084% 7.029%)   know what? It's really weird                                                                                                 aaehhnosttuwyy.
-       454 0* 1.74828% (92.887% 0.084% 7.029%)   know what? It's really weird how                                                                                             aaehnsttuyy.
-       455 0* 1.38345% (92.887% 0.084% 7.029%)   know what? It's really weird when                                                                                            aahosttuyy.
-       456 0* 19.13861% (92.887% 0.084% 7.029%)   know what? It's really weird when you                                                                                        aahstty.
-       457 0* 99.02564% (92.887% 0.084% 7.029%)   know what? It's really weird when you say                                                                                    ahtt.
+         0 0* 46.48577% (38.485% 0.040% 61.475%)   know                                                                                                                         ------aaadeehhhinorssttttuwwwyy?I'.
+         1 0* 115.58324% (41.556% 0.043% 58.401%)   know what                                                                                                                    ------aadeehhinorsstttuwwyy?I'.
+         2 0* 83.79798% (42.333% 0.044% 57.623%)   know what?                                                                                                                   ------aadeehhinorsstttuwwyyI'.
+         3 0* 43.60406% (43.143% 0.045% 56.813%)  '                                                                                                                             ------aaadeehhhiknnoorssttttuwwwwyy?I.
+         4 0* 82.55741% (48.272% 0.055% 51.672%)  're                                                                                                                           ------aaadehhhiknnoossttttuwwwwyy?I.
+         5 0* 48.39695% (62.613% 0.064% 37.323%)  're not                                                                                                                       ------aaadehhhiknosstttuwwwwyy?I.
+         6 0* 40.69609% (65.558% 0.066% 34.377%)   know what? I                                                                                                                 ------aadeehhinorsstttuwwyy'.
+         7 0* 30.22393% (65.757% 0.066% 34.177%)   were                                                                                                                         ------aaadhhhiknnoossttttuwwwyy?I'.
+         8 0* 25.35061% (70.882% 0.068% 29.050%)   said                                                                                                                         ------aaeehhhknnoorsttttuwwwwyy?I'.
+         9 0* 25.14252% (74.091% 0.070% 25.839%)   know what I                                                                                                                  ------aadeehhinorsstttuwwyy?'.
+        10 0* 19.44336% (74.294% 0.070% 25.636%)   know what? I'                                                                                                                ------aadeehhinorsstttuwwyy.
+        11 0* 17.61709% (74.402% 0.070% 25.528%)   know what? I don                                                                                                             ------aaeehhirsstttuwwyy'.
+        12 0* 33.23470% (74.402% 0.070% 25.528%)   know what? I don'                                                                                                            ------aaeehhirsstttuwwyy.
+        13 0* 53.09438% (74.402% 0.070% 25.528%)   know what? I don't                                                                                                           ------aaeehhirssttuwwyy.
+        14 0* 99.13415% (74.443% 0.070% 25.487%)   know what? I don't really                                                                                                    aaeehhirssttuwwyy.
+        15 0* 16.74422% (74.447% 0.070% 25.483%)  're the                                                                                                                       ------aaadhhiknnoosstttuwwwwyy?I.
+        16 0* 14.46538% (75.557% 0.071% 24.372%)   know what they                                                                                                               ------aadehinorssttuwwy?I'.
+        17 0* 33.34064% (75.567% 0.071% 24.362%)   know what they say                                                                                                           ------adehinorsttuww?I'.
+        18 0* 13.99012% (75.594% 0.071% 24.335%)   don                                                                                                                          ------aaaeehhhiknorssttttuwwwwyy?I'.
+        19 0* 23.24083% (75.599% 0.072% 24.328%)   don'                                                                                                                         ------aaaeehhhiknorssttttuwwwwyy?I.
+        20 0* 36.03444% (75.599% 0.074% 24.327%)   don't                                                                                                                        ------aaaeehhhiknorsstttuwwwwyy?I.
+        21 0* 12.61010% (78.405% 0.075% 21.520%)   don't want                                                                                                                   ------aaeehhhikorssttuwwwyy?I.
+        22 0* 12.85822% (78.436% 0.075% 21.489%)   don't want to                                                                                                                ------aaeehhhikrsstuwwwyy?I.
+        23 0* 18.83490% (78.562% 0.075% 21.363%)   don't want to hear                                                                                                           ------aehhiksstuwwwyy?I.
+        24 0* 12.32961% (78.586% 0.075% 21.339%)   said you                                                                                                                     ------aaeehhhknnorsttttwwwwy?I'.
+        25 0* 11.26096% (78.934% 0.076% 20.990%)   know what I'                                                                                                                 ------aadeehhinorsstttuwwyy?.
+        26 0* 10.97291% (79.028% 0.076% 20.896%)   don't think                                                                                                                  ------aaaeehhorssttuwwwwyy?I.
+        27 0* 10.80524% (79.105% 0.076% 20.819%)   don't know                                                                                                                   ------aaaeehhhirsstttuwwwyy?I.
+        28 0* 14.44120% (79.229% 0.076% 20.695%)   don't know what                                                                                                              ------aaeehhirssttuwwyy?I.
+        29 0* 10.56266% (79.248% 0.076% 20.676%)   know what? It                                                                                                                ------aadeehhinorssttuwwyy'.
+        30 0* 12.97846% (79.257% 0.076% 20.668%)   know what? It'                                                                                                               ------aadeehhinorssttuwwyy.
+        31 0* 20.51970% (79.257% 0.076% 20.667%)   know what? It's                                                                                                              ------aadeehhinorsttuwwyy.
+        32 0* 10.46193% (79.295% 0.076% 20.630%)   know what? I really                                                                                                          aadeehhinorsstttuwwyy'.
+        33 0* 10.38650% (79.297% 0.076% 20.627%)   know what? It's really                                                                                                       aadeehhinorsttuwwyy.
+        34 0* 26.10693% (79.298% 0.076% 20.626%)   know what? It's really hard                                                                                                  aeehinosttuwwyy.
+        35 0* 77.64598% (79.298% 0.076% 20.626%)   know what? It's really hard to                                                                                               aeehinstuwwyy.
+        36 0* 45.51107% (79.298% 0.076% 20.626%)   know what? It's really hard to say                                                                                           eehintuwwy.
+        37 0* 120.11463% (79.298% 0.076% 20.626%)   know what? It's really hard to say when                                                                                      eituwy.
+        38 0* 20.95108% (79.298% 0.076% 20.626%)   know what? It's really hard to say when we                                                                                   ituy.
+        39 0* 10.74776% (79.298% 0.076% 20.626%)   know what? It's really hard to say.                                                                                          eehintuwwy
+        40 0* 10.12732% (79.298% 0.076% 20.626%)  're really                                                                                                                    aaadehhhiknnoossttttuwwwwyy?I.
+        41 0* 9.82869% (79.448% 0.076% 20.476%)   know what'                                                                                                                   ------aadeehhinorsstttuwwyy?I.
+        42 0* 14.66241% (79.449% 0.076% 20.475%)   know what's                                                                                                                  ------aadeehhinorstttuwwyy?I.
+        43 0* 17.77304% (79.537% 0.076% 20.387%)   know what's really                                                                                                           aadeehhinorstttuwwyy?I.
+        44 0* 32.81817% (79.542% 0.076% 20.382%)   know what's really hard                                                                                                      aeehinostttuwwyy?I.
+        45 0* 47.80969% (79.542% 0.076% 20.382%)   know what's really hard?                                                                                                     aeehinostttuwwyyI.
+        46 0* 9.17809% (79.544% 0.076% 20.380%)  're not the                                                                                                                   ------aaadhhiknossttuwwwwyy?I.
+        47 0* 8.13402% (79.738% 0.076% 20.186%)   know what's hard                                                                                                             ------aeehinostttuwwyy?I.
+        48 0* 10.67118% (79.740% 0.076% 20.184%)   know what's hard?                                                                                                            ------aeehinostttuwwyyI.
+        49 0* 8.09820% (79.748% 0.076% 20.176%)   don't say                                                                                                                    ------aaeehhhiknorstttuwwwwy?I.
+        50 0* 8.34629% (79.851% 0.076% 20.073%)   don't say that                                                                                                               ------aeehhiknorstuwwwwy?I.
+        51 0* 7.77104% (79.894% 0.076% 20.030%)   know what's really weird                                                                                                     aaehhnostttuwyy?I.
+        52 0* 11.50938% (79.894% 0.076% 20.030%)   know what's really weird?                                                                                                    aaehhnostttuwyyI.
+        53 0* 7.71281% (79.894% 0.076% 20.029%)   know what? It's really hard when                                                                                             aeiosttuwyy.
+        54 0* 78.73235% (79.894% 0.076% 20.029%)   know what? It's really hard when you                                                                                         aeisttwy.
+        55 0* 171.07013% (79.894% 0.076% 20.029%)   know what? It's really hard when you say                                                                                     eittw.
+        56 0* 187.67150% (79.894% 0.076% 20.029%)   know what? It's really hard when you say it                                                                                  etw.
+        57 0* 11.63655% (79.894% 0.076% 20.029%)   know what? It's really hard when you say it.                                                                                 etw
+        58 0* 7.69276% (79.894% 0.076% 20.029%)   know what I really                                                                                                           aadeehhinorsstttuwwyy?'.
+        59 0* 17.86461% (79.898% 0.076% 20.026%)   know what I really want                                                                                                      adeehhiorssttuwyy?'.
+        60 0* 9.80681% (79.898% 0.076% 20.026%)   know what I really want to                                                                                                   adeehhirsstuwyy?'.
+        61 0* 7.61607% (79.899% 0.076% 20.025%)   said you were                                                                                                                ------aahhhknnosttttwwwy?I'.
+        62 0* 7.59888% (80.008% 0.076% 19.916%)   know what? I don't really w                                                                                                  aaeehhirssttuwyy.
+        63 0* 7.43360% (80.008% 0.076% 19.916%)   know what? It's really hard to see                                                                                           ahintuwwyy.
+        64 0* 7.34565% (80.008% 0.076% 19.916%)   know what I really want?                                                                                                     adeehhiorssttuwyy'.
+        65 0* 7.22192% (80.008% 0.076% 19.915%)   know what? I really want                                                                                                     adeehhiorssttuwyy'.
+        66 0* 8.54546% (80.009% 0.076% 19.915%)   know what? I really want to                                                                                                  adeehhirsstuwyy'.
+        67 0* 7.18766% (80.009% 0.076% 19.915%)   know what's really hard to                                                                                                   aeehinsttuwwyy?I.
+        68 0* 6.78963% (80.009% 0.076% 19.915%)   know what? I really don                                                                                                      aaeehhirsstttuwwyy'.
+        69 0* 18.06885% (80.009% 0.076% 19.915%)   know what? I really don'                                                                                                     aaeehhirsstttuwwyy.
+        70 0* 29.71128% (80.009% 0.076% 19.915%)   know what? I really don't                                                                                                    aaeehhirssttuwwyy.
+        71 0* 6.70605% (80.010% 0.076% 19.914%)   want                                                                                                                         ------aadeehhhiknoorsstttuwwwyy?I'.
+        72 0* 8.14187% (80.379% 0.077% 19.544%)   want to                                                                                                                      ------aadeehhhiknorssttuwwwyy?I'.
+        73 0* 6.38011% (80.796% 0.077% 19.127%)  're not really                                                                                                                aaadehhhiknosstttuwwwwyy?I.
+        74 0* 6.28221% (80.829% 0.077% 19.094%)   don't really                                                                                                                 aaaeehhhiknorsstttuwwwwyy?I.
+        75 0* 7.66015% (80.859% 0.077% 19.064%)   don't really think                                                                                                           aaaeehhorssttuwwwwyy?I.
+        76 0* 6.26205% (80.862% 0.077% 19.062%)   know what I was                                                                                                              ------adeehhinorstttuwyy?'.
+        77 0* 6.22008% (80.884% 0.077% 19.039%)   know what you                                                                                                                ------aadeehhinrsstttwwy?I'.
+        78 0* 6.17836% (80.907% 0.077% 19.016%)   know what? It's really not                                                                                                   aadeehhirstuwwyy.
+        79 0* 6.13885% (80.907% 0.077% 19.016%)   think                                                                                                                        ------aaadeehhnoorsstttuwwwwyy?I'.
+        80 0* 6.00530% (81.151% 0.077% 18.772%)  're a                                                                                                                         ------aadehhhiknnoossttttuwwwwyy?I.
+        81 0* 5.95853% (81.874% 0.078% 18.049%)   know what? It's really hard to say why                                                                                       eeintuw.
+        82 0* 5.85036% (81.874% 0.078% 18.049%)   know how                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
+        83 0* 5.79166% (82.030% 0.078% 17.892%)   know what? It's really hard when you waste                                                                                   ity.
+        84 0* 5.71559% (82.030% 0.078% 17.892%)   said that                                                                                                                    ------aeehhknnoorsttuwwwwyy?I'.
+        85 0* 5.30340% (82.185% 0.078% 17.737%)   know what? It's really hard to use                                                                                           aehintwwyy.
+        86 0* 5.29272% (82.185% 0.078% 17.737%)   said you'                                                                                                                    ------aaeehhhknnorsttttwwwwy?I.
+        87 0* 5.24469% (82.330% 0.078% 17.592%)   know what? It's not                                                                                                          ------aadeehhirstuwwyy.
+        88 0* 4.94520% (82.333% 0.078% 17.589%)   really                                                                                                                       aaadeehhhiknnoorssttttuwwwwyy?I'.
+        89 0* 4.82165% (82.529% 0.078% 17.393%)   heard                                                                                                                        ------aaehhiknnoossttttuwwwwyy?I'.
+        90 0* 4.78475% (82.946% 0.078% 16.976%)   know that                                                                                                                    ------aadeehhinorssttuwwwyy?I'.
+        91 0* 4.76232% (83.027% 0.078% 16.895%)   don't know what they                                                                                                         ------aaehirsstuwwy?I.
+        92 0* 12.31043% (83.028% 0.078% 16.894%)   don't know what they are                                                                                                     ------ahisstuwwy?I.
+        93 0* 9.69883% (83.029% 0.078% 16.893%)   don't know what they are?                                                                                                    ------ahisstuwwyI.
+        94 0* 4.67822% (83.029% 0.078% 16.893%)   know what? It's really easy                                                                                                  adehhinorttuwwy.
+        95 0* 6.46737% (83.029% 0.078% 16.893%)   know what? It's really easy to                                                                                               adehhinrtuwwy.
+        96 0* 9.51823% (83.029% 0.078% 16.893%)   know what? It's really easy to draw                                                                                          ehhintuwy.
+        97 0* 4.61308% (83.029% 0.078% 16.893%)   know what? It's really hard to say in                                                                                        eehtuwwy.
+        98 0* 4.56484% (83.029% 0.078% 16.893%)   know what's weird                                                                                                            ------aaehhnostttuwyy?I.
+        99 0* 5.49953% (83.030% 0.078% 16.892%)   know what's weird?                                                                                                           ------aaehhnostttuwyyI.
+       100 0* 4.55667% (83.032% 0.078% 16.890%)   don't think they                                                                                                             ------aaaehorsstuwwwwy?I.
+       101 0* 4.52864% (83.047% 0.078% 16.875%)   know what's really weird? I                                                                                                  aaehhnostttuwyy.
+       102 0* 4.44719% (83.047% 0.078% 16.875%)  're not a                                                                                                                     ------aadehhhiknosstttuwwwwyy?I.
+       103 0* 4.43980% (83.176% 0.078% 16.746%)   don't know what I                                                                                                            ------aaeehhirssttuwwyy?.
+       104 0* 4.41290% (83.183% 0.078% 16.739%)   know what this                                                                                                               ------aadeehnorsttuwwyy?I'.
+       105 0* 4.27282% (83.199% 0.078% 16.722%)   know what? It's not really                                                                                                   aadeehhirstuwwyy.
+       106 0* 4.07264% (83.199% 0.078% 16.722%)   really think                                                                                                                 aaadeehhnoorsstttuwwwwyy?I'.
+       107 0* 4.04870% (83.209% 0.078% 16.712%)   said that really                                                                                                             aeehhknnoorsttuwwwwyy?I'.
+       108 0* 3.88367% (83.223% 0.078% 16.699%)   know what? It's really hard to see why                                                                                       aintuwy.
+       109 0* 3.87098% (83.223% 0.078% 16.699%)   know what? It's really easy when                                                                                             adhiorttuwy.
+       110 0* 62.77974% (83.223% 0.078% 16.699%)   know what? It's really easy when you                                                                                         adhirttw.
+       111 0* 24.30033% (83.223% 0.078% 16.699%)   know what? It's really easy when you draw                                                                                    hitt.
+       112 0* 32.72992% (83.223% 0.078% 16.699%)   know what? It's really easy when you draw it                                                                                 ht.
+       113 0* 27.86715% (83.223% 0.078% 16.699%)   know what? It's really easy when you draw it.                                                                                ht
+       114 0* 3.82641% (83.223% 0.078% 16.699%)   know who                                                                                                                     ------aaadeehhinrssttttuwwyy?I'.
+       115 0* 3.60107% (83.305% 0.078% 16.616%)   know what the                                                                                                                ------aadehinorssttuwwyy?I'.
+       116 0* 3.54635% (83.324% 0.078% 16.597%)  're not a din                                                                                                                 ------aaehhhkosstttuwwwwyy?I.
+       117 0* 3.52141% (83.369% 0.078% 16.553%)   know what they'                                                                                                              ------aadehinorssttuwwy?I.
+       118 0* 8.62655% (83.369% 0.078% 16.552%)   know what they're                                                                                                            ------aadhinossttuwwy?I.
+       119 0* 3.50887% (83.376% 0.078% 16.545%)  're a din                                                                                                                     ------aaehhhknoossttttuwwwwyy?I.
+       120 0* 3.50002% (83.525% 0.079% 16.396%)   know what they are                                                                                                           ------adhinossttuwwy?I'.
+       121 0* 3.48199% (83.527% 0.079% 16.395%)   really think that                                                                                                            aadeehnoorsstuwwwwyy?I'.
+       122 0* 3.46433% (83.528% 0.079% 16.393%)   know what? It doesn                                                                                                          ------aaehhirsttuwwyy'.
+       123 0* 7.22755% (83.528% 0.079% 16.393%)   know what? It doesn'                                                                                                         ------aaehhirsttuwwyy.
+       124 0* 10.20499% (83.528% 0.079% 16.393%)   know what? It doesn't                                                                                                        ------aaehhirstuwwyy.
+       125 0* 36.56554% (83.530% 0.079% 16.391%)   know what? It doesn't really                                                                                                 aaehhirstuwwyy.
+       126 0* 3.43312% (83.531% 0.079% 16.391%)   really think that'                                                                                                           aadeehnoorsstuwwwwyy?I.
+       127 0* 4.85700% (83.531% 0.079% 16.391%)   really think that's                                                                                                          aadeehnoorstuwwwwyy?I.
+       128 0* 3.42118% (83.532% 0.079% 16.390%)   are                                                                                                                          ------aadehhhiknnoossttttuwwwwyy?I'.
+       129 0* 3.41158% (84.092% 0.079% 15.829%)   know what? It turns                                                                                                          ------aadeehhiostwwyy'.
+       130 0* 3.38835% (84.094% 0.079% 15.827%)   know what I want                                                                                                             ------adeehhiorssttuwyy?'.
+       131 0* 3.36046% (84.096% 0.079% 15.825%)   know the                                                                                                                     ------aaadehhinorsstttuwwwyy?I'.
+       132 0* 3.32344% (84.215% 0.079% 15.706%)   know what? I don't really see                                                                                                aahhirsttuwwyy.
+       133 0* 47.18129% (84.215% 0.079% 15.706%)   know what? I don't really see what                                                                                           ahirstuwyy.
+       134 0* 8.59443% (84.215% 0.079% 15.706%)   know what? I don't really see why                                                                                            aahirsttuwy.
+       135 0* 25.82118% (84.215% 0.079% 15.706%)   know what? I don't really see why this                                                                                       aartuwy.
+       136 0* 3.47335% (84.215% 0.079% 15.706%)   know what? I don't really see what was                                                                                       hirtuyy.
+       137 0* 3.29141% (84.215% 0.079% 15.706%)   know what? It's really easy to draw when                                                                                     hituy.
+       138 0* 3.13722% (84.215% 0.079% 15.706%)   think you                                                                                                                    ------aaadeehhnorsstttwwwwy?I'.
+       139 0* 3.03547% (84.253% 0.079% 15.668%)   don't really want                                                                                                            aaeehhhikorssttuwwwyy?I.
+       140 0* 3.03523% (84.254% 0.079% 15.667%)   know what? It's really hard not                                                                                              aeehistuwwyy.
+       141 0* 3.01278% (84.254% 0.079% 15.667%)   don't say?                                                                                                                   ------aaeehhhiknorstttuwwwwyI.
+       142 0* 3.00811% (84.301% 0.079% 15.620%)  're really not                                                                                                                aaadehhhiknosstttuwwwwyy?I.
+       143 0* 2.99774% (84.317% 0.079% 15.604%)   think that                                                                                                                   ------aadeehnoorsstuwwwwyy?I'.
+       144 0* 3.09324% (84.330% 0.079% 15.591%)   think that'                                                                                                                  ------aadeehnoorsstuwwwwyy?I.
+       145 0* 4.39726% (84.330% 0.079% 15.591%)   think that's                                                                                                                 ------aadeehnoorstuwwwwyy?I.
+       146 0* 2.96168% (84.349% 0.079% 15.572%)   know what I said                                                                                                             ------aeehhnorstttuwwyy?'.
+       147 0* 2.95947% (84.354% 0.079% 15.567%)   think you'                                                                                                                   ------aaadeehhnorsstttwwwwy?I.
+       148 0* 4.55143% (84.364% 0.079% 15.557%)   think you're                                                                                                                 ------aaadehhnosstttwwwwy?I.
+       149 0* 2.91375% (84.389% 0.079% 15.532%)   don't know what these                                                                                                        ------aahirstuwwyy?I.
+       150 0* 2.90250% (84.390% 0.079% 15.531%)   know you                                                                                                                     ------aaadeehhhinrssttttwwwy?I'.
+       151 0* 2.86330% (84.448% 0.079% 15.472%)   know what that                                                                                                               ------adeehinorsstuwwyy?I'.
+       152 0* 2.79402% (84.456% 0.079% 15.464%)   don't think there                                                                                                            ------aaahosstuwwwwyy?I.
+       153 0* 2.71491% (84.463% 0.079% 15.458%)   don't think I                                                                                                                ------aaaeehhorssttuwwwwyy?.
+       154 0* 2.69842% (84.483% 0.079% 15.438%)   know I                                                                                                                       ------aaadeehhhinorssttttuwwwyy?'.
+       155 0* 2.69088% (84.597% 0.079% 15.324%)   know what? It's really weird                                                                                                 aaehhnosttuwyy.
+       156 0* 3.45261% (84.597% 0.079% 15.324%)   know what? It's really weird how                                                                                             aaehnsttuyy.
+       157 0* 2.64906% (84.597% 0.079% 15.324%)   know what I really want to hear                                                                                              dehisstuwyy?'.
+       158 0* 3.39891% (84.597% 0.079% 15.324%)   know what I really want to hear?                                                                                             dehisstuwyy'.
+       159 0* 2.64743% (84.597% 0.079% 15.324%)   know what's really weird? I was                                                                                              aehhnotttuyy.
+       160 0* 2.63344% (84.597% 0.079% 15.324%)   know what? I really don't w                                                                                                  aaeehhirssttuwyy.
+       161 0* 2.61689% (84.597% 0.079% 15.324%)   know what they say?                                                                                                          ------adehinorsttuwwI'.
+       162 0* 2.60651% (84.598% 0.079% 15.323%)   know what? It's really weird when                                                                                            aahosttuyy.
+       163 0* 27.85837% (84.598% 0.079% 15.323%)   know what? It's really weird when you                                                                                        aahstty.
+       164 0* 499.17360% (84.598% 0.079% 15.323%)   know what? It's really weird when you say                                                                                    ahtt.
