@@ -1,59 +1,83 @@
 Wow! No wonder people like capitalism so much!!
-Step          0 (remaining mass 55.346%): Next token is ' Wow', score is 1.60997% (1.458%, 26.955%, 3)
-Step          0 (remaining mass 1.801%): Next token is '!', score is 0.80680% (37.243%, 22.669%, 4)
-Step          1 (remaining mass 1.122%): Next token is ' No', score is 0.00738% (0.240%, 33.737%, 6)
-Step         39 (remaining mass 0.208%): Next token is ' wonder', score is 0.09025% (72.741%, 33.485%, 12)
-Step         40 (remaining mass 0.207%): Next token is ' people', score is 0.20315% (5.416%, 64.780%, 18)
-Step         41 (remaining mass 0.207%): Next token is ' like', score is 0.16391% (10.871%, 49.103%, 22)
-Step         42 (remaining mass 0.207%): Next token is ' capitalism', score is 30.31372% (3.064%, 26.201%, 32)
-Step         43 (remaining mass 0.207%): Next token is ' so', score is 102.50454% (59.356%, 12.195%, 34)
-Step         44 (remaining mass 0.207%): Next token is ' much', score is 234111.50715% (99.153%, 100.000%, 38)
-' Wow! No wonder people like capitalism so much' (234111.51%)
-Search successful after 45 steps. Deepest node accessed: 0
-Search time: 1s.  (Non-ML: 0s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
+Step          0 (remaining mass 39.272%): Next token is ' Wow', score is 0.76214% (0.690%, 26.955%, 3)
+Step          8 (remaining mass 2.480%): Next token is '!', score is 0.42731% (41.668%, 22.669%, 4)
+Step         11 (remaining mass 1.379%): Next token is ' No', score is 0.00476% (0.292%, 33.737%, 6)
+Step         63 (remaining mass 0.160%): Next token is ' wonder', score is 0.05640% (70.556%, 33.485%, 12)
+Step         64 (remaining mass 0.160%): Next token is ' people', score is 0.19012% (8.112%, 64.780%, 18)
+Step         65 (remaining mass 0.159%): Next token is ' like', score is 0.12051% (8.540%, 49.103%, 22)
+Step         66 (remaining mass 0.159%): Next token is ' capitalism', score is 20.61727% (2.834%, 26.201%, 32)
+Step         67 (remaining mass 0.159%): Next token is ' so', score is 47.46152% (40.409%, 12.195%, 34)
+Step         68 (remaining mass 0.159%): Next token is ' much', score is 108195.53839% (98.967%, 100.000%, 38)
+' Wow! No wonder people like capitalism so much' (108195.54%)
+Search successful after 69 steps. Deepest node accessed: 0
+Search time: 1s.  (Non-ML: infs)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 21ms  Truncate: 0ms.
 
-         0 0* 1.60997% (97.503% 0.040% 2.457%)   Wow                                                                                                                          ----------cdeeeehikllmnoooopprsuw!!!N
-         1 0* 0.80680% (98.392% 0.041% 1.568%)   Wow!                                                                                                                         ----------cdeeeehikllmnoooopprsuw!!N
-         2 0* 0.31778% (98.933% 0.041% 1.026%)   No                                                                                                                           ----------cdeeeehikllmnoooopprsuwwW!!!
-         3 0* 0.25175% (99.204% 0.041% 0.755%)   No wonder                                                                                                                    ----------ceeehikllmoooppsuwW!!!
-         4 0* 0.32242% (99.219% 0.041% 0.741%)   No wonder people                                                                                                             ----------cehiklmoosuwW!!!
-         5 0* 0.26629% (99.219% 0.041% 0.740%)   No wonder capitalism                                                                                                         ceeehikllmoooppsuwW!!!
-         6 0* 0.21739% (99.219% 0.041% 0.740%)   No wonder people like                                                                                                        ----------chmoosuwW!!!
-         7 0* 2.58129% (99.219% 0.041% 0.740%)   No wonder people like capitalism                                                                                             chmoosuwW!!!
-         8 0* 5.35713% (99.219% 0.041% 0.740%)   No wonder people like capitalism so                                                                                          chmouwW!!!
-         9 0* 3.77532% (99.219% 0.041% 0.740%)   No wonder people like capitalism!                                                                                            chmoosuwW!!
-        10 0* 2.89560% (99.219% 0.041% 0.740%)   No wonder people like capitalism!!                                                                                           chmoosuwW!
-        11 0* 0.09099% (99.219% 0.041% 0.740%)   woo                                                                                                                          ----------cdeeeehikllmnooopprsuwW!!!N
-        12 0* 0.08025% (99.248% 0.041% 0.711%)   No wonder capitalism keeps                                                                                                   cehillmooopuwW!!!
-        13 0* 0.06895% (99.248% 0.041% 0.711%)   No wonder people like capitalism so!                                                                                         chmouwW!!
-        14 0* 0.05769% (99.248% 0.041% 0.711%)   No more                                                                                                                      ----------cdeeehikllnoooppsuwwW!!!
-        15 0* 0.05275% (99.256% 0.041% 0.703%)   No wonder capitalism is                                                                                                      ceeehkllmoooppuwW!!!
-        16 0* 0.05181% (99.257% 0.041% 0.702%)   No one                                                                                                                       ----------cdeeehikllmooopprsuwwW!!!
-        17 0* 0.05156% (99.264% 0.041% 0.695%)   wow                                                                                                                          ----------cdeeeehikllmnoooopprsuW!!!N
-        18 0* 0.04948% (99.300% 0.041% 0.659%)   W                                                                                                                            ----------cdeeeehikllmnooooopprsuww!!!N
-        19 0* 0.03822% (99.549% 0.041% 0.410%)   Wow!!                                                                                                                        ----------cdeeeehikllmnoooopprsuw!N
-        20 0* 0.03372% (99.569% 0.041% 0.390%)   woo!                                                                                                                         ----------cdeeeehikllmnooopprsuwW!!N
-        21 0* 0.02976% (99.581% 0.041% 0.377%)   No!                                                                                                                          ----------cdeeeehikllmnoooopprsuwwW!!
-        22 0* 0.02503% (99.601% 0.041% 0.358%)   capitalism                                                                                                                   cdeeeehikllmnooooopprsuwwW!!!N
-        23 0* 0.02409% (99.602% 0.041% 0.356%)   No one will                                                                                                                  ----------cdeeehkmooopprsuwW!!!
-        24 0* 0.02369% (99.604% 0.041% 0.355%)   N                                                                                                                            ----------cdeeeehikllmnooooopprsuwwW!!!
-        25 0* 0.02356% (99.678% 0.041% 0.281%)   No one could                                                                                                                 ----------eeehiklmoopprswwW!!!
-        26 0* 0.01900% (99.678% 0.041% 0.281%)   Wow capitalism                                                                                                               cdeeeehikllmnoooopprsuw!!!N
-        27 0* 0.01692% (99.678% 0.041% 0.281%)   o                                                                                                                            ----------cdeeeehikllmnoooopprsuwwW!!!N
-        28 0* 0.01481% (99.707% 0.041% 0.252%)   woo woo                                                                                                                      ----------cdeeeehikllmnopprsuW!!!N
-        29 0* 0.01451% (99.708% 0.041% 0.250%)   No one would                                                                                                                 ----------ceeehiklmoopprswW!!!
-        30 0* 0.01368% (99.709% 0.041% 0.250%)   No wonder we                                                                                                                 ----------ceehikllmoooppsuW!!!
-        31 0* 0.01277% (99.709% 0.041% 0.250%)   Wow people                                                                                                                   ----------cdeehiklmnooorsuw!!!N
-        32 0* 0.01236% (99.709% 0.041% 0.250%)   or                                                                                                                           ----------cdeeeehikllmnooooppsuwwW!!!N
-        33 0* 0.01221% (99.730% 0.041% 0.228%)   wo                                                                                                                           ----------cdeeeehikllmnoooopprsuwW!!!N
-        34 0* 0.01183% (99.743% 0.041% 0.215%)   No need                                                                                                                      ----------ceehikllmoooopprsuwwW!!!
-        35 0* 0.01098% (99.747% 0.041% 0.212%)   No no                                                                                                                        ----------cdeeeehikllmooopprsuwwW!!!
-        36 0* 0.00833% (99.750% 0.041% 0.209%)   Wow capitalism sure                                                                                                          cdeeehikllmnooooppw!!!N
-        37 0* 0.00784% (99.750% 0.041% 0.209%)   wow capitalism                                                                                                               cdeeeehikllmnoooopprsuW!!!N
-        38 0* 0.00741% (99.750% 0.041% 0.209%)   Wow look                                                                                                                     ----------cdeeeehilmnoopprsuw!!!N
-        39 0* 0.00738% (99.751% 0.041% 0.208%)   Wow! No                                                                                                                      ----------cdeeeehikllmnooopprsuw!!
-        40 0* 0.09025% (99.751% 0.041% 0.208%)   Wow! No wonder                                                                                                               ----------ceeehikllmooppsu!!
-        41 0* 0.20315% (99.752% 0.041% 0.207%)   Wow! No wonder people                                                                                                        ----------cehiklmosu!!
-        42 0* 0.16391% (99.752% 0.041% 0.207%)   Wow! No wonder people like                                                                                                   ----------chmosu!!
-        43 0* 30.31372% (99.752% 0.041% 0.207%)   Wow! No wonder people like capitalism                                                                                        chmosu!!
-        44 0* 102.50454% (99.752% 0.041% 0.207%)   Wow! No wonder people like capitalism so                                                                                     chmu!!
+         0 0* 3.19590% (94.778% 0.040% 5.182%)   No                                                                                                                           ----------cdeeeehikllmnoooopprsuwwW!!!
+         1 0* 0.95162% (97.424% 0.041% 2.534%)   No wonder                                                                                                                    ----------ceeehikllmoooppsuwW!!!
+         2 0* 2.06224% (97.474% 0.041% 2.484%)   No wonder people                                                                                                             ----------cehiklmoosuwW!!!
+         3 0* 0.98833% (97.478% 0.041% 2.481%)   No wonder people like                                                                                                        ----------chmoosuwW!!!
+         4 0* 9.81028% (97.478% 0.041% 2.480%)   No wonder people like capitalism                                                                                             chmoosuwW!!!
+         5 0* 18.99091% (97.478% 0.041% 2.480%)   No wonder people like capitalism!                                                                                            chmoosuwW!!
+         6 0* 18.32050% (97.478% 0.041% 2.480%)   No wonder people like capitalism!!                                                                                           chmoosuwW!
+         7 0* 12.20287% (97.478% 0.041% 2.480%)   No wonder people like capitalism so                                                                                          chmouwW!!!
+         8 0* 0.76214% (97.478% 0.041% 2.480%)   Wow                                                                                                                          ----------cdeeeehikllmnoooopprsuw!!!N
+         9 0* 0.72449% (97.865% 0.042% 2.093%)   No!                                                                                                                          ----------cdeeeehikllmnoooopprsuwwW!!
+        10 0* 0.45886% (98.344% 0.042% 1.614%)   No wonder capitalism                                                                                                         ceeehikllmoooppsuwW!!!
+        11 0* 0.42731% (98.344% 0.042% 1.614%)   Wow!                                                                                                                         ----------cdeeeehikllmnoooopprsuw!!N
+        12 0* 0.36345% (98.630% 0.042% 1.328%)   No no                                                                                                                        ----------cdeeeehikllmooopprsuwwW!!!
+        13 0* 0.13335% (98.749% 0.042% 1.209%)   W                                                                                                                            ----------cdeeeehikllmnooooopprsuww!!!N
+        14 0* 0.12424% (99.421% 0.042% 0.537%)   No more                                                                                                                      ----------cdeeehikllnoooppsuwwW!!!
+        15 0* 0.12065% (99.438% 0.042% 0.520%)   No wonder we                                                                                                                 ----------ceehikllmoooppsuW!!!
+        16 0* 0.09779% (99.441% 0.042% 0.517%)   No wonder capitalism is                                                                                                      ceeehkllmoooppuwW!!!
+        17 0* 0.07283% (99.441% 0.042% 0.516%)   No wonder people come                                                                                                        ----------hiklosuwW!!!
+        18 0* 0.06136% (99.441% 0.042% 0.516%)   N                                                                                                                            ----------cdeeeehikllmnooooopprsuwwW!!!
+        19 0* 0.05352% (99.633% 0.042% 0.325%)   No one                                                                                                                       ----------cdeeehikllmooopprsuwwW!!!
+        20 0* 0.07274% (99.638% 0.042% 0.319%)   No one would                                                                                                                 ----------ceeehiklmoopprswW!!!
+        21 0* 0.05302% (99.639% 0.042% 0.319%)   No wonder people use                                                                                                         ----------chiklmoowW!!!
+        22 0* 0.05062% (99.639% 0.042% 0.319%)   No one will                                                                                                                  ----------cdeeehkmooopprsuwW!!!
+        23 0* 0.05057% (99.642% 0.042% 0.316%)   No wonder people like capitalism! W                                                                                          chmoosuw!!
+        24 0* 0.04594% (99.642% 0.042% 0.316%)   No need                                                                                                                      ----------ceehikllmoooopprsuwwW!!!
+        25 0* 0.04473% (99.655% 0.042% 0.303%)   No wonder capitalism keeps                                                                                                   cehillmooopuwW!!!
+        26 0* 0.04418% (99.655% 0.042% 0.303%)   No wonder people look                                                                                                        ----------cehimsuwW!!!
+        27 0* 0.03997% (99.655% 0.042% 0.303%)   No wonder some                                                                                                               ----------ceehikllooppuwW!!!
+        28 0* 0.70745% (99.655% 0.042% 0.303%)   No wonder some people                                                                                                        ----------chiklouwW!!!
+        29 0* 0.03892% (99.655% 0.042% 0.303%)   No one could                                                                                                                 ----------eeehiklmoopprswwW!!!
+        30 0* 0.02831% (99.655% 0.042% 0.302%)   No!!                                                                                                                         ----------cdeeeehikllmnoooopprsuwwW!
+        31 0* 0.02604% (99.668% 0.042% 0.289%)   Wow!!                                                                                                                        ----------cdeeeehikllmnoooopprsuw!N
+        32 0* 0.02231% (99.682% 0.042% 0.276%)   No wonder so                                                                                                                 ----------ceeehikllmooppuwW!!!
+        33 0* 0.02102% (99.683% 0.042% 0.275%)   No no!                                                                                                                       ----------cdeeeehikllmooopprsuwwW!!
+        34 0* 0.02029% (99.687% 0.042% 0.270%)   no                                                                                                                           ----------cdeeeehikllmoooopprsuwwW!!!N
+        35 0* 0.01746% (99.710% 0.042% 0.248%)   No wonder people use capitalism                                                                                              chiklmoowW!!!
+        36 0* 0.01808% (99.710% 0.042% 0.248%)   No wonder people use capitalism!                                                                                             chiklmoowW!!
+        37 0* 0.01551% (99.710% 0.042% 0.248%)   No wonder people like us                                                                                                     ----------chmoowW!!!
+        38 0* 0.01404% (99.710% 0.042% 0.248%)   No wonder we keep                                                                                                            ----------chillmooopsuW!!!
+        39 0* 0.01386% (99.710% 0.042% 0.248%)   No wonder people like us!                                                                                                    ----------chmoowW!!
+        40 0* 0.01001% (99.710% 0.042% 0.248%)   No wonder people use capitalism!!                                                                                            chiklmoowW!
+        41 0* 0.00966% (99.710% 0.042% 0.248%)   No wonder we like                                                                                                            ----------cehlmoooppsuW!!!
+        42 0* 0.10117% (99.710% 0.042% 0.248%)   No wonder we like capitalism                                                                                                 cehlmoooppsuW!!!
+        43 0* 0.20254% (99.710% 0.042% 0.248%)   No wonder we like capitalism so                                                                                              cehlmooppuW!!!
+        44 0* 0.07105% (99.710% 0.042% 0.248%)   No wonder we like capitalism!                                                                                                cehlmoooppsuW!!
+        45 0* 0.05580% (99.710% 0.042% 0.248%)   No wonder we like capitalism!!                                                                                               cehlmoooppsuW!
+        46 0* 0.00941% (99.710% 0.042% 0.248%)   No wonder people suck                                                                                                        ----------ehilmoowW!!!
+        47 0* 0.00941% (99.710% 0.042% 0.248%)   No W                                                                                                                         ----------cdeeeehikllmnoooopprsuww!!!
+        48 0* 0.00849% (99.718% 0.042% 0.239%)   w                                                                                                                            ----------cdeeeehikllmnooooopprsuwW!!!N
+        49 0* 0.02078% (99.721% 0.042% 0.237%)   wow                                                                                                                          ----------cdeeeehikllmnoooopprsuW!!!N
+        50 0* 0.01318% (99.735% 0.042% 0.222%)   woooo                                                                                                                        ----------cdeeeehikllmnopprsuwW!!!N
+        51 0* 0.00833% (99.738% 0.042% 0.220%)   o                                                                                                                            ----------cdeeeehikllmnoooopprsuwwW!!!N
+        52 0* 0.00818% (99.748% 0.042% 0.210%)   No don                                                                                                                       ----------ceeeehikllmooopprsuwwW!!!
+        53 0* 0.00811% (99.749% 0.042% 0.208%)   woo                                                                                                                          ----------cdeeeehikllmnooopprsuwW!!!N
+        54 0* 0.00764% (99.751% 0.042% 0.207%)   No wonder couples                                                                                                            ----------eehiklmoopwW!!!
+        55 0* 0.00722% (99.751% 0.042% 0.207%)   No wonder people like capitalism !!                                                                                          chmoosuwW!
+        56 0* 0.00676% (99.751% 0.042% 0.207%)   nooooo                                                                                                                       ----------cdeeeehikllmpprsuwwW!!!N
+        57 0* 0.00594% (99.759% 0.042% 0.199%)   No wonder capitalism looks                                                                                                   ceeehilmoppuwW!!!
+        58 0* 0.00558% (99.759% 0.042% 0.199%)   wooo                                                                                                                         ----------cdeeeehikllmnoopprsuwW!!!N
+        59 0* 0.00541% (99.760% 0.042% 0.198%)   No wonder people suck!                                                                                                       ----------ehilmoowW!!
+        60 0* 0.00515% (99.760% 0.042% 0.198%)                                                                                                                                ----------cdeeeehikllmnooooopprsuwwW!!!N
+        61 0* 0.00508% (99.790% 0.042% 0.168%)   um                                                                                                                           ----------cdeeeehikllnooooopprswwW!!!N
+        62 0* 0.00496% (99.798% 0.042% 0.160%)   No wonder people smoke                                                                                                       ----------chilouwW!!!
+        63 0* 0.00476% (99.798% 0.042% 0.160%)   Wow! No                                                                                                                      ----------cdeeeehikllmnooopprsuw!!
+        64 0* 0.05640% (99.798% 0.042% 0.160%)   Wow! No wonder                                                                                                               ----------ceeehikllmooppsu!!
+        65 0* 0.19012% (99.798% 0.042% 0.159%)   Wow! No wonder people                                                                                                        ----------cehiklmosu!!
+        66 0* 0.12051% (99.798% 0.042% 0.159%)   Wow! No wonder people like                                                                                                   ----------chmosu!!
+        67 0* 20.61727% (99.798% 0.042% 0.159%)   Wow! No wonder people like capitalism                                                                                        chmosu!!
+        68 0* 47.46152% (99.798% 0.042% 0.159%)   Wow! No wonder people like capitalism so                                                                                     chmu!!

@@ -1,426 +1,182 @@
 somehow managed to say that like it's a bad thing!
-Step          0 (remaining mass 40.623%): Next token is ' somehow', score is 2.18813% (0.134%, 60.612%, 7)
-Step         55 (remaining mass 8.040%): Next token is ' managed', score is 14.18575% (26.813%, 51.899%, 14)
-Step         56 (remaining mass 7.969%): Next token is ' to', score is 33.20919% (98.048%, 44.895%, 16)
-Step         57 (remaining mass 7.962%): Next token is ' say', score is 7.65424% (4.017%, 52.853%, 19)
-Step         58 (remaining mass 7.939%): Next token is ' that', score is 7.35666% (6.171%, 83.871%, 23)
-Step         59 (remaining mass 7.939%): Next token is ' like', score is 0.22525% (0.181%, 62.407%, 27)
-Step        403 (remaining mass 2.493%): Next token is ' it', score is 0.65844% (46.424%, 59.878%, 29)
-Step        404 (remaining mass 2.493%): Next token is ''', score is 1.80614% (91.427%, 65.328%, 30)
-Step        405 (remaining mass 2.493%): Next token is 's', score is 5.75961% (99.797%, 72.607%, 31)
-Step        406 (remaining mass 2.493%): Next token is ' a', score is 10.91055% (67.430%, 67.992%, 32)
-Step        407 (remaining mass 2.493%): Next token is ' bad', score is 247.97242% (50.261%, 78.497%, 35)
-Step        408 (remaining mass 2.493%): Next token is ' thing', score is 404700.15755% (99.147%, 100.000%, 40)
-' somehow managed to say that like it's a bad thing' (404700.16%)
-Search successful after 409 steps. Deepest node accessed: 0
-Search time: 15s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 27ms  Truncate: 0ms.
+Step          0 (remaining mass 58.993%): Next token is ' somehow', score is 13.55516% (0.833%, 60.612%, 7)
+Step          3 (remaining mass 19.618%): Next token is ' managed', score is 75.19171% (22.942%, 51.899%, 14)
+Step          4 (remaining mass 19.207%): Next token is ' to', score is 174.98283% (97.467%, 44.895%, 16)
+Step          5 (remaining mass 19.137%): Next token is ' say', score is 15.65488% (1.559%, 52.853%, 19)
+Step          9 (remaining mass 19.030%): Next token is ' that', score is 27.10331% (11.116%, 83.871%, 23)
+Step         10 (remaining mass 19.028%): Next token is ' like', score is 0.99494% (0.217%, 62.407%, 27)
+Step        159 (remaining mass 6.061%): Next token is ' it', score is 3.15171% (50.309%, 59.878%, 29)
+Step        160 (remaining mass 6.061%): Next token is ''', score is 8.67032% (91.692%, 65.328%, 30)
+Step        161 (remaining mass 6.061%): Next token is 's', score is 27.61480% (99.675%, 72.607%, 31)
+Step        162 (remaining mass 6.061%): Next token is ' a', score is 56.58736% (72.942%, 67.992%, 32)
+Step        163 (remaining mass 6.061%): Next token is ' bad', score is 1281.31380% (50.073%, 78.497%, 35)
+Step        164 (remaining mass 6.061%): Next token is ' thing', score is 2094661.82872% (99.314%, 100.000%, 40)
+' somehow managed to say that like it's a bad thing' (2094661.83%)
+Search successful after 165 steps. Deepest node accessed: 0
+Search time: 3s.  (Non-ML: 0s)  Per-step times: Score: 1ms  Advance: 0ms  Predict: 21ms  Truncate: 0ms.
 
-         0 0* 23.30582% (72.182% 0.040% 27.778%)   made                                                                                                                         -------aaaaabdegghhiiiklnnossttttty'!
-         1 0* 20.40535% (74.963% 0.042% 24.995%)   nailed                                                                                                                       -------aaaaabdegghhiikmnossttttty'!
-         2 0* 34.39356% (75.050% 0.042% 24.908%)   nailed it                                                                                                                    -------aaaaabdegghhikmnosstttty'!
-         3 0* 21.64261% (75.570% 0.043% 24.388%)   nailed it!                                                                                                                   -------aaaaabdegghhikmnosstttty'
-         4 0* 19.25807% (76.009% 0.043% 23.948%)   got                                                                                                                          -------aaaaaabddeeghhiiiklmnnsstttty'!
-         5 0* 18.07589% (79.189% 0.046% 20.765%)   managed                                                                                                                      -------aaaabdeghhiiiklnossttttty'!
-         6 0* 39.51142% (79.198% 0.046% 20.756%)   managed to                                                                                                                   -------aaaabdeghhiiiklnsstttty'!
-         7 0* 9.92667% (79.837% 0.046% 20.117%)   said                                                                                                                         -------aaaaabdeegghhiiklmnnosttttty'!
-         8 0* 11.63766% (80.286% 0.047% 19.667%)   said the                                                                                                                     -------aaaaabdegghiiklmnnostttty'!
-         9 0* 9.91854% (80.668% 0.047% 19.285%)   done                                                                                                                         -------aaaaaabdegghhiiiklmnssttttty'!
-        10 0* 24.06228% (80.823% 0.048% 19.129%)   done it                                                                                                                      -------aaaaaabdegghhiiklmnsstttty'!
-        11 0* 120.78246% (81.700% 0.049% 18.251%)   done it again                                                                                                                -------aaaabdeghhiklmsstttty'!
-        12 0* 41.30622% (82.491% 0.050% 17.460%)   done it again!                                                                                                               -------aaaabdeghhiklmsstttty'
-        13 0* 8.21546% (82.727% 0.050% 17.224%)   nailed it again                                                                                                              -------aaabdeghhkmosstttty'!
-        14 0* 8.20089% (82.750% 0.050% 17.200%)   managed to say                                                                                                               -------aaabdeghhiiiklnstttt'!
-        15 0* 7.04500% (82.777% 0.050% 17.173%)   taken                                                                                                                        -------aaaaabddegghhiiilmnosstttty'!
-        16 0* 6.79671% (82.989% 0.050% 16.961%)   been                                                                                                                         -------aaaaaaddgghhiiiklmnossttttty'!
-        17 0* 6.58403% (84.072% 0.051% 15.878%)   said it                                                                                                                      -------aaaaabdeegghhiklmnnostttty'!
-        18 0* 6.41925% (84.401% 0.051% 15.548%)   done it!                                                                                                                     -------aaaaaabdegghhiiklmnsstttty'
-        19 0* 5.90614% (84.850% 0.051% 15.099%)   got it                                                                                                                       -------aaaaaabddeeghhiiklmnnssttty'!
-        20 0* 5.40245% (85.407% 0.051% 14.541%)   taken the                                                                                                                    -------aaaaabddgghiiilmnossttty'!
-        21 0* 5.18501% (85.574% 0.051% 14.375%)   taken my                                                                                                                     -------aaaaabddegghhiiilnosstttt'!
-        22 0* 4.96650% (85.767% 0.051% 14.181%)   made a                                                                                                                       -------aaaabdegghhiiiklnnossttttty'!
-        23 0* 4.84815% (86.258% 0.052% 13.691%)   managed to be                                                                                                                -------aaaadghhiiiklnsstttty'!
-        24 0* 4.78841% (86.294% 0.052% 13.654%)   got that                                                                                                                     -------aaaaabddeeghiiiklmnnsstty'!
-        25 0* 4.66173% (86.508% 0.052% 13.441%)   got a                                                                                                                        -------aaaaabddeeghhiiiklmnnsstttty'!
-        26 0* 4.48339% (87.319% 0.052% 12.629%)   made the                                                                                                                     -------aaaaabdgghiiiklnnosstttty'!
-        27 0* 4.17538% (87.534% 0.052% 12.414%)   seen                                                                                                                         -------aaaaaabddgghhiiiklmnosttttty'!
-        28 0* 4.17396% (88.176% 0.053% 11.771%)   hit                                                                                                                          -------aaaaaabddeegghiiklmnnosstttty'!
-        29 0* 7.50991% (88.332% 0.053% 11.615%)   hit the                                                                                                                      -------aaaaaabddeggiiklmnnossttty'!
-        30 0* 29.57010% (88.464% 0.053% 11.483%)   hit the nail                                                                                                                 -------aaaaabddeggikmnossttty'!
-        31 0* 25.89697% (88.589% 0.054% 11.358%)   hit the nail on                                                                                                              -------aaaaabddeggikmssttty'!
-        32 0* 4.00765% (88.949% 0.054% 10.997%)   nailed the                                                                                                                   -------aaaaabdgghiikmnosstttty'!
-        33 0* 3.88695% (89.029% 0.054% 10.918%)   managed to say that                                                                                                          -------aabdeghiiiklnstt'!
-        34 0* 3.77093% (89.030% 0.054% 10.916%)   nailed it again!                                                                                                             -------aaabdeghhkmosstttty'
-        35 0* 3.76498% (89.039% 0.054% 10.907%)   got the                                                                                                                      -------aaaaaabddeghiiiklmnnssttty'!
-        36 0* 3.67898% (89.394% 0.054% 10.552%)   gotten                                                                                                                       -------aaaaaabddeghhiiiklmnssttty'!
-        37 0* 3.57046% (89.692% 0.054% 10.254%)   made it                                                                                                                      -------aaaaabdegghhiiklnnosstttty'!
-        38 0* 3.56203% (89.856% 0.054% 10.090%)   nailed my                                                                                                                    -------aaaaabdegghhiiknossttttt'!
-        39 0* 3.42112% (89.951% 0.054% 9.995%)   managed to take                                                                                                              -------aaabdghhiiilnssttty'!
-        40 0* 3.41134% (89.959% 0.054% 9.987%)   managed to say the                                                                                                           -------aaabdghiiiklnsttt'!
-        41 0* 3.31348% (89.962% 0.054% 9.984%)   said the most                                                                                                                -------aaaaabdegghiiklnnttty'!
-        42 0* 3.30718% (89.987% 0.054% 9.958%)   got me                                                                                                                       -------aaaaaabddeghhiiiklnnsstttty'!
-        43 0* 3.14431% (90.462% 0.054% 9.484%)   got my                                                                                                                       -------aaaaaabddeeghhiiiklnnsstttt'!
-        44 0* 3.05584% (90.908% 0.055% 9.038%)   almost                                                                                                                       -------aaaaabddeegghhiiiknnstttty'!
-        45 0* 2.86286% (91.120% 0.055% 8.825%)   got the best                                                                                                                 -------aaaaaaddghiiiklmnnstty'!
-        46 0* 2.74628% (91.205% 0.055% 8.740%)   made it easy                                                                                                                 -------aaaabdgghhiiklnnostttt'!
-        47 0* 2.61122% (91.227% 0.055% 8.718%)   said the thing                                                                                                               -------aaaaabdegiklmnosttty'!
-        48 0* 2.60961% (91.239% 0.055% 8.706%)   stolen                                                                                                                       -------aaaaaabddegghhiiikmnstttty'!
-        49 0* 4.85970% (91.269% 0.055% 8.676%)   stolen my                                                                                                                    -------aaaaaabddegghhiiiknstttt'!
-        50 0* 2.60053% (91.459% 0.055% 8.486%)   said it!                                                                                                                     -------aaaaabdeegghhiklmnnostttty'
-        51 0* 2.58051% (91.574% 0.055% 8.371%)   got it!                                                                                                                      -------aaaaaabddeeghhiiklmnnssttty'
-        52 0* 2.45758% (91.819% 0.055% 8.125%)   nailed it on                                                                                                                 -------aaaaabdegghhikmsstttty'!
-        53 0* 6.71730% (91.822% 0.055% 8.123%)   nailed it on the                                                                                                             -------aaaaabdgghikmssttty'!
-        54 0* 2.31767% (91.864% 0.055% 8.081%)   made this                                                                                                                    -------aaaaabdegghiiklnnostttty'!
-        55 0* 2.18813% (91.905% 0.055% 8.040%)   somehow                                                                                                                      aaaaaabddeegghhiiiklmnnossttttty'!
-        56 0* 14.18575% (91.975% 0.055% 7.969%)   somehow managed                                                                                                              aaaabdeghhiiiklnossttttty'!
-        57 0* 33.20919% (91.976% 0.055% 7.969%)   somehow managed to                                                                                                           aaaabdeghhiiiklnsstttty'!
-        58 0* 7.65424% (92.005% 0.055% 7.940%)   somehow managed to say                                                                                                       aaabdeghhiiiklnstttt'!
-        59 0* 7.35666% (92.006% 0.055% 7.939%)   somehow managed to say that                                                                                                  aabdeghiiiklnstt'!
-        60 0* 6.91364% (92.006% 0.055% 7.939%)   somehow managed to be                                                                                                        aaaadghhiiiklnsstttty'!
-        61 0* 4.31636% (92.009% 0.055% 7.936%)   somehow managed to say the                                                                                                   aaabdghiiiklnsttt'!
-        62 0* 3.14202% (92.009% 0.055% 7.936%)   somehow managed to take                                                                                                      aaabdghhiiilnssttty'!
-        63 0* 3.09108% (92.009% 0.055% 7.936%)   somehow managed to say that and                                                                                              abeghiiiklstt'!
-        64 0* 2.83188% (92.009% 0.055% 7.936%)   somehow managed to say that in                                                                                               aabdeghiiklstt'!
-        65 0* 2.87586% (92.009% 0.055% 7.936%)   somehow managed to say that in the                                                                                           aabdgiiklst'!
-        66 0* 2.06452% (92.009% 0.055% 7.936%)   nailed me                                                                                                                    -------aaaaabdgghhiiknossttttty'!
-        67 0* 1.98423% (92.041% 0.055% 7.904%)   said the same                                                                                                                -------aaaabdgghiiklnnotttty'!
-        68 0* 15.28357% (92.043% 0.055% 7.902%)   said the same thing                                                                                                          -------aaaabdgiklnottty'!
-        69 0* 1.93734% (92.053% 0.055% 7.892%)   somehow managed to steal                                                                                                     aaabdghhiiiknsttty'!
-        70 0* 1.90495% (92.053% 0.055% 7.892%)   gotta                                                                                                                        -------aaaaabddeeghhiiiklmnnssttty'!
-        71 0* 2.83363% (92.170% 0.055% 7.774%)   gotta admit                                                                                                                  -------aaaabdeeghhiiklnnsstty'!
-        72 0* 2.58144% (92.191% 0.055% 7.753%)   gotta admit that                                                                                                             -------aaabdeeghiiklnnssy'!
-        73 0* 2.25434% (92.194% 0.055% 7.751%)   gotta admit that'                                                                                                            -------aaabdeeghiiklnnssy!
-        74 0* 3.43879% (92.194% 0.055% 7.751%)   gotta admit that's                                                                                                           -------aaabdeeghiiklnnsy!
-        75 0* 1.88644% (92.195% 0.055% 7.750%)   both                                                                                                                         -------aaaaaaddeegghiiiklmnnsstttty'!
-        76 0* 1.88316% (92.565% 0.056% 7.379%)   said that                                                                                                                    -------aaaabdeegghiiklmnnosttty'!
-        77 0* 1.82810% (92.600% 0.056% 7.345%)   taken my best                                                                                                                -------aaaaaddgghhiiilnosttt'!
-        78 0* 1.82626% (92.613% 0.056% 7.331%)   somehow managed to say that in a                                                                                             abdeghiiklstt'!
-        79 0* 1.80619% (92.613% 0.056% 7.331%)   somehow managed to take this                                                                                                 aaabdghiilnstty'!
-        80 0* 1.76687% (92.613% 0.056% 7.331%)   managed to say that in                                                                                                       -------aabdeghiiklstt'!
-        81 0* 1.68856% (92.613% 0.056% 7.331%)   somehow managed to talk                                                                                                      aaabdeghhiiinssttty'!
-        82 0* 1.66057% (92.613% 0.056% 7.331%)   stated                                                                                                                       -------aaaaabdegghhiiiklmnnosttty'!
-        83 0* 1.60428% (92.642% 0.056% 7.302%)   nailed that                                                                                                                  -------aaaabdegghiikmnossttty'!
-        84 0* 2.60264% (92.647% 0.056% 7.297%)   nailed that one                                                                                                              -------aaaabdgghiikmssttty'!
-        85 0* 1.59972% (92.656% 0.056% 7.288%)   talked                                                                                                                       -------aaaaabdegghhiiimnnosstttty'!
-        86 0* 1.72713% (92.698% 0.056% 7.246%)   talked me                                                                                                                    -------aaaaabdgghhiiinnosstttty'!
-        87 0* 3.79118% (92.722% 0.056% 7.222%)   talked me into                                                                                                               -------aaaaabdgghhiinssttty'!
-        88 0* 3.25501% (92.734% 0.056% 7.210%)   talked me into it                                                                                                            -------aaaaabdgghhinsstty'!
-        89 0* 3.05065% (92.737% 0.056% 7.207%)   talked me into it!                                                                                                           -------aaaaabdgghhinsstty'
-        90 0* 1.55860% (92.743% 0.056% 7.201%)   been saying                                                                                                                  -------aaaaaddghhiiklmosttttt'!
-        91 0* 5.55510% (92.751% 0.056% 7.194%)   been saying that                                                                                                             -------aaaaddghiiklmosttt'!
-        92 0* 1.54912% (92.758% 0.056% 7.186%)   lost                                                                                                                         -------aaaaaabddeegghhiiikmnnstttty'!
-        93 0* 1.54554% (92.894% 0.056% 7.050%)   asked                                                                                                                        -------aaaaabdegghhiiilmnnosttttty'!
-        94 0* 2.34521% (92.921% 0.056% 7.023%)   asked the                                                                                                                    -------aaaaabdgghiiilmnnostttty'!
-        95 0* 1.54473% (92.979% 0.056% 6.965%)   talked me into this                                                                                                          -------aaaaabdgghinstty'!
-        96 0* 1.53212% (92.981% 0.056% 6.963%)   said the best                                                                                                                -------aaaaadgghiiklmnnottty'!
-        97 0* 5.82693% (92.986% 0.056% 6.958%)   said the best thing                                                                                                          -------aaaaadgiklmnotty'!
-        98 0* 1.51969% (92.991% 0.056% 6.953%)   seen my                                                                                                                      -------aaaaaabddgghhiiiklnosttttt'!
-        99 0* 1.49432% (93.118% 0.056% 6.826%)   made an                                                                                                                      -------aaaabdegghhiiiklnossttttty'!
-       100 0* 1.47919% (93.215% 0.056% 6.729%)   managed to talk                                                                                                              -------aaabdeghhiiinssttty'!
-       101 0* 1.47267% (93.219% 0.056% 6.725%)   managed to somehow                                                                                                           aaaabdeghhiiiklnsstttty'!
-       102 0* 1.47199% (93.220% 0.056% 6.724%)   sold                                                                                                                         -------aaaaaabdeegghhiiikmnnsttttty'!
-       103 0* 2.61054% (93.255% 0.056% 6.689%)   sold me                                                                                                                      -------aaaaaabdegghhiiiknnsttttty'!
-       104 0* 1.57405% (93.400% 0.056% 6.544%)   sold me!                                                                                                                     -------aaaaaabdegghhiiiknnsttttty'
-       105 0* 1.46747% (93.509% 0.056% 6.435%)   managed to steal                                                                                                             -------aaabdghhiiiknsttty'!
-       106 0* 1.45649% (93.511% 0.056% 6.433%)   said the same thing to                                                                                                       -------aaaabdgiklntty'!
-       107 0* 1.43071% (93.511% 0.056% 6.432%)   named                                                                                                                        -------aaaaabdegghhiiiklnossttttty'!
-       108 0* 1.41618% (93.615% 0.056% 6.329%)   gotta admit that's a                                                                                                         -------aabdeeghiiklnnsy!
-       109 0* 1.38949% (93.615% 0.056% 6.329%)   said both                                                                                                                    -------aaaaadeegghiiklmnnstttty'!
-       110 0* 1.91574% (93.635% 0.056% 6.309%)   said both things                                                                                                             -------aaaaadeegiklmnttty'!
-       111 0* 1.33806% (93.639% 0.056% 6.305%)   had                                                                                                                          -------aaaaabdeegghiiiklmnnossttttty'!
-       112 0* 1.30365% (93.747% 0.057% 6.196%)   been saying that a                                                                                                           -------aaaddghiiklmosttt'!
-       113 0* 4.48106% (93.747% 0.057% 6.196%)   been saying that a lot                                                                                                       -------aaaddghiikmstt'!
-       114 0* 1.30346% (93.748% 0.057% 6.195%)   only                                                                                                                         -------aaaaaabddeegghhiiikmnssttttt'!
-       115 0* 1.29892% (94.010% 0.057% 5.934%)   stated my                                                                                                                    -------aaaaabdegghhiiiklnnosttt'!
-       116 0* 1.24304% (94.043% 0.057% 5.901%)   somehow made                                                                                                                 aaaaabdegghhiiiklnnossttttty'!
-       117 0* 1.23591% (94.052% 0.057% 5.892%)   stated the                                                                                                                   -------aaaaabdgghiiiklmnnostty'!
-       118 0* 1.22330% (94.075% 0.057% 5.869%)   managed to say that in a                                                                                                     -------abdeghiiklstt'!
-       119 0* 1.15307% (94.075% 0.057% 5.868%)   talked me into that                                                                                                          -------aaaabdgghiinssty'!
-       120 0* 1.15086% (94.075% 0.057% 5.868%)   said the things                                                                                                              -------aaaaabdegiklmnottty'!
-       121 0* 1.14963% (94.079% 0.057% 5.864%)   somehow managed to say that last                                                                                             abdeghiiiknt'!
-       122 0* 1.59961% (94.079% 0.057% 5.864%)   somehow managed to say that last bit                                                                                         adeghiikn'!
-       123 0* 1.28872% (94.079% 0.057% 5.864%)   somehow managed to say that last bit in                                                                                      adeghik'!
-       124 0* 1.14339% (94.079% 0.057% 5.864%)   managed to think                                                                                                             -------aaaabdeghiilssttty'!
-       125 0* 1.10499% (94.082% 0.057% 5.862%)   done it this                                                                                                                 -------aaaaaabdegghiklmnsttty'!
-       126 0* 2.48772% (94.082% 0.057% 5.861%)   done it this time                                                                                                            -------aaaaaabdgghklnstty'!
-       127 0* 1.07515% (94.104% 0.057% 5.840%)   also                                                                                                                         -------aaaaabddeegghhiiikmnnsttttty'!
-       128 0* 1.07398% (94.281% 0.057% 5.662%)   nailed this                                                                                                                  -------aaaaabdegghikmnostttty'!
-       129 0* 1.07232% (94.288% 0.057% 5.655%)   asked me                                                                                                                     -------aaaaabdgghhiiilnnosttttty'!
-       130 0* 1.03340% (94.319% 0.057% 5.624%)   somehow managed to hit                                                                                                       aaaabdeghiiklnssttty'!
-       131 0* 1.02876% (94.319% 0.057% 5.624%)   managed to hit                                                                                                               -------aaaabdeghiiklnssttty'!
-       132 0* 1.02777% (94.323% 0.057% 5.620%)   met                                                                                                                          -------aaaaaabddegghhiiiklnnosstttty'!
-       133 0* 1.01927% (94.569% 0.057% 5.374%)   stolen my best                                                                                                               -------aaaaaaddgghhiiiknttt'!
-       134 0* 1.00819% (94.583% 0.057% 5.360%)   said the same thing in                                                                                                       -------aaaabdgklottty'!
-       135 0* 0.99901% (94.583% 0.057% 5.360%)   got it made                                                                                                                  -------aaaaabdeghhiiklnnssttty'!
-       136 0* 0.97324% (94.595% 0.057% 5.348%)   somehow managed to think                                                                                                     aaaabdeghiilssttty'!
-       137 0* 0.95777% (94.595% 0.057% 5.348%)   somehow managed to beat                                                                                                      aaadghhiiiklnssttty'!
-       138 0* 0.95550% (94.595% 0.057% 5.348%)   managed to say that and                                                                                                      -------abeghiiiklstt'!
-       139 0* 0.95357% (94.595% 0.057% 5.348%)   said the name                                                                                                                -------aaaabdgghiiklnostttty'!
-       140 0* 0.93277% (94.601% 0.057% 5.342%)   nailed me!                                                                                                                   -------aaaaabdgghhiiknossttttty'
-       141 0* 0.92909% (94.620% 0.057% 5.323%)   made that                                                                                                                    -------aaaabdegghiiiklnnossttty'!
-       142 0* 0.91843% (94.640% 0.057% 5.303%)   nailed this one                                                                                                              -------aaaaabdgghikmstttty'!
-       143 0* 0.91655% (94.645% 0.057% 5.298%)   said things                                                                                                                  -------aaaaabdeeghiklmnotttty'!
-       144 0* 2.15327% (94.650% 0.057% 5.293%)   said things that                                                                                                             -------aaaabdeegiklmnotty'!
-       145 0* 2.26703% (94.653% 0.057% 5.290%)   said things that make                                                                                                        -------aaabdegilnotty'!
-       146 0* 0.91199% (94.654% 0.057% 5.289%)   gotten me                                                                                                                    -------aaaaaabddghhiiiklnssttty'!
-       147 0* 0.91042% (94.718% 0.057% 5.225%)   been my                                                                                                                      -------aaaaaaddgghhiiiklnossttttt'!
-       148 0* 0.88425% (94.793% 0.057% 5.150%)   taken this                                                                                                                   -------aaaaabddegghiilmnosttty'!
-       149 0* 0.87252% (94.805% 0.057% 5.138%)   made this easy                                                                                                               -------aaaabdgghiiklnnotttt'!
-       150 0* 0.86431% (94.808% 0.057% 5.135%)   missed                                                                                                                       -------aaaaaabdegghhiiklnnottttty'!
-       151 0* 1.51987% (94.832% 0.057% 5.111%)   missed the                                                                                                                   -------aaaaaabdgghiiklnnotttty'!
-       152 0* 0.86264% (94.866% 0.057% 5.077%)   managed to take this                                                                                                         -------aaabdghiilnstty'!
-       153 0* 0.85395% (94.866% 0.057% 5.076%)   named both                                                                                                                   -------aaaaadegghiiiklnsstttty'!
-       154 0* 0.85246% (94.880% 0.057% 5.062%)   hit the nail on my                                                                                                           -------aaaaabddeggikssttt'!
-       155 0* 0.84778% (94.885% 0.057% 5.058%)   gotta be                                                                                                                     -------aaaaaddeghhiiiklmnnssttty'!
-       156 0* 0.84635% (94.911% 0.057% 5.032%)   got that nailed                                                                                                              -------aaaabdeghiikmnsstty'!
-       157 0* 0.84628% (94.913% 0.057% 5.030%)   hit on                                                                                                                       -------aaaaaabddeegghiiklmnsstttty'!
-       158 0* 0.83646% (94.962% 0.057% 4.980%)   asked the most                                                                                                               -------aaaaabdgghiiilnnttty'!
-       159 0* 0.83205% (94.967% 0.057% 4.975%)   somehow managed to take that                                                                                                 aabdghiiilnssty'!
-       160 0* 0.82463% (94.967% 0.057% 4.975%)   been a                                                                                                                       -------aaaaaddgghhiiiklmnossttttty'!
-       161 0* 0.81609% (95.057% 0.057% 4.886%)   only made                                                                                                                    -------aaaaabdegghhiiiknssttttt'!
-       162 0* 0.80902% (95.083% 0.057% 4.860%)   nailed that one!                                                                                                             -------aaaabdgghiikmssttty'
-       163 0* 0.80774% (95.085% 0.057% 4.858%)   managed to nail                                                                                                              -------aaabdeghhiiksstttty'!
-       164 0* 0.80658% (95.087% 0.057% 4.856%)   managed to take a                                                                                                            -------aabdghhiiilnssttty'!
-       165 0* 0.79777% (95.088% 0.057% 4.855%)   somehow managed to hate                                                                                                      aaabdghiiiklnssttty'!
-       166 0* 0.79619% (95.088% 0.057% 4.855%)   beaten                                                                                                                       -------aaaaaddgghhiiiklmnosstttty'!
-       167 0* 0.79045% (95.140% 0.057% 4.802%)   taken my idea                                                                                                                -------aaaabdgghhiilnosstttt'!
-       168 0* 1.90935% (95.142% 0.057% 4.801%)   taken my idea and                                                                                                            -------aaabgghhiilosstttt'!
-       169 0* 0.78966% (95.145% 0.057% 4.797%)   made it easy to                                                                                                              -------aaaabdgghhiiklnnsttt'!
-       170 0* 0.77679% (95.149% 0.057% 4.794%)   got this                                                                                                                     -------aaaaaabddeeghiiklmnnsttty'!
-       171 0* 0.77477% (95.191% 0.057% 4.752%)   managed to say that in the                                                                                                   -------aabdgiiklst'!
-       172 0* 0.76825% (95.191% 0.057% 4.752%)   got an                                                                                                                       -------aaaaabddeeghhiiiklmnsstttty'!
-       173 0* 0.76612% (95.283% 0.057% 4.660%)   lost me                                                                                                                      -------aaaaaabddegghhiiiknnstttty'!
-       174 0* 0.76286% (95.329% 0.057% 4.614%)   got a best                                                                                                                   -------aaaaaddeghhiiiklmnnsttty'!
-       175 0* 0.76082% (95.352% 0.057% 4.591%)   talked me into this!                                                                                                         -------aaaaabdgghinstty'
-       176 0* 0.75903% (95.352% 0.057% 4.590%)   made it so                                                                                                                   -------aaaaabdegghhiiklnnstttty'!
-       177 0* 1.24162% (95.365% 0.057% 4.578%)   made it so easy                                                                                                              -------aaaabdgghhiiklnntttt'!
-       178 0* 0.75898% (95.370% 0.057% 4.572%)   said it again                                                                                                                -------aaabdeeghhklmnostttty'!
-       179 0* 0.75758% (95.374% 0.057% 4.569%)   hit on the                                                                                                                   -------aaaaaabddeggiiklmnssttty'!
-       180 0* 0.75749% (95.420% 0.057% 4.522%)   done this                                                                                                                    -------aaaaaabdegghiiklmnstttty'!
-       181 0* 0.75351% (95.451% 0.057% 4.492%)   nailed my best                                                                                                               -------aaaaadgghhiiknostttt'!
-       182 0* 0.75062% (95.454% 0.058% 4.488%)   got me at                                                                                                                    -------aaaaabddeghhiiiklnnssttty'!
-       183 0* 0.74805% (95.486% 0.058% 4.457%)   got the same                                                                                                                 -------aaaaabddghiiiklnnsttty'!
-       184 0* 0.74690% (95.499% 0.058% 4.444%)   nailed it this                                                                                                               -------aaaaabdegghkmnosttty'!
-       185 0* 0.74670% (95.506% 0.058% 4.437%)   said the one                                                                                                                 -------aaaaabdgghiiklmnstttty'!
-       186 0* 3.62400% (95.509% 0.058% 4.434%)   said the one thing                                                                                                           -------aaaaabdgiklmsttty'!
-       187 0* 0.74489% (95.517% 0.058% 4.425%)   stolen my idea                                                                                                               -------aaaaabdgghhiiknstttt'!
-       188 0* 0.73121% (95.520% 0.058% 4.423%)   taken a                                                                                                                      -------aaaabddegghhiiilmnosstttty'!
-       189 0* 0.72950% (95.562% 0.058% 4.381%)   taken me                                                                                                                     -------aaaaabddgghhiiilnosstttty'!
-       190 0* 0.71426% (95.582% 0.058% 4.360%)   said my                                                                                                                      -------aaaaabdeegghhiiklnnosttttt'!
-       191 0* 0.71110% (95.626% 0.058% 4.317%)   got taste                                                                                                                    -------aaaaabddeghhiiiklmnnstty'!
-       192 0* 0.70767% (95.637% 0.058% 4.305%)   talked some                                                                                                                  -------aaaaabdgghhiiinnstttty'!
-       193 0* 0.70546% (95.647% 0.058% 4.296%)   somehow managed to state                                                                                                     aaabdghhiiiklnstty'!
-       194 0* 0.70461% (95.647% 0.058% 4.296%)   nailed me again                                                                                                              -------aaabdghhikossttttty'!
-       195 0* 0.69696% (95.649% 0.058% 4.294%)   lost the                                                                                                                     -------aaaaaabddegghiiikmnnsttty'!
-       196 0* 0.67586% (95.690% 0.058% 4.253%)   got a deal                                                                                                                   -------aaaabdeghhiiikmnnsstttty'!
-       197 0* 0.67518% (95.697% 0.058% 4.246%)   said this                                                                                                                    -------aaaaabdeegghiklmnnotttty'!
-       198 0* 0.66776% (95.714% 0.058% 4.229%)   somehow managed to say that the                                                                                              aabdgiiiklnst'!
-       199 0* 0.66387% (95.714% 0.058% 4.229%)   set                                                                                                                          -------aaaaaabddegghhiiiklmnnostttty'!
-       200 0* 0.66154% (95.765% 0.058% 4.177%)   listed                                                                                                                       -------aaaaaabdegghhiikmnnostttty'!
-       201 0* 0.66124% (95.788% 0.058% 4.154%)   said the least                                                                                                               -------aaaabdgghiikmnnottty'!
-       202 0* 0.65243% (95.791% 0.058% 4.152%)   somehow managed to diss                                                                                                      aaaabeghhiiklntttty'!
-       203 0* 0.65226% (95.791% 0.058% 4.151%)   somehow managed to say this                                                                                                  aaabdeghiiklnttt'!
-       204 0* 0.63949% (95.791% 0.058% 4.151%)   listed both                                                                                                                  -------aaaaaadegghiikmnnsttty'!
-       205 0* 0.63754% (95.797% 0.058% 4.145%)   gone                                                                                                                         -------aaaaaabddeghhiiiklmnssttttty'!
-       206 0* 0.86594% (95.954% 0.058% 3.988%)   gone and                                                                                                                     -------aaaaabdeghhiiiklmssttttty'!
-       207 0* 0.63666% (96.005% 0.058% 3.937%)   gotta admit that's kinda                                                                                                     -------aabeeghilnsy!
-       208 0* 0.63659% (96.005% 0.058% 3.937%)   taken my last                                                                                                                -------aaaabddegghhiiinosttt'!
-       209 0* 0.63549% (96.008% 0.058% 3.934%)   got a deal!                                                                                                                  -------aaaabdeghhiiikmnnsstttty'
-       210 0* 0.62901% (96.020% 0.058% 3.922%)   said the single                                                                                                              -------aaaaabdghikmnotttty'!
-       211 0* 0.62828% (96.023% 0.058% 3.919%)   managed to beat                                                                                                              -------aaadghhiiiklnssttty'!
-       212 0* 0.61811% (96.024% 0.058% 3.918%)   named the                                                                                                                    -------aaaaabdgghiiiklnosstttty'!
-       213 0* 0.61243% (96.044% 0.058% 3.899%)   hit me                                                                                                                       -------aaaaaabddegghiiklnnosstttty'!
-       214 0* 0.60670% (96.111% 0.058% 3.831%)   both made                                                                                                                    -------aaaaadegghiiiklnnsstttty'!
-       215 0* 0.60319% (96.127% 0.058% 3.815%)   done it again this                                                                                                           -------aaaabdeghklmsttty'!
-       216 0* 0.59972% (96.128% 0.058% 3.814%)   nailed both                                                                                                                  -------aaaaadegghiikmnsstttty'!
-       217 0* 0.59711% (96.134% 0.058% 3.808%)   somehow managed to steal this                                                                                                aaabdghiikntty'!
-       218 0* 0.59187% (96.134% 0.058% 3.808%)   got it made!                                                                                                                 -------aaaaabdeghhiiklnnssttty'
-       219 0* 0.58595% (96.142% 0.058% 3.800%)   told                                                                                                                         -------aaaaaabdeegghhiiikmnnsstttty'!
-       220 0* 0.88381% (96.162% 0.058% 3.780%)   told me                                                                                                                      -------aaaaaabdegghhiiiknnsstttty'!
-       221 0* 0.61164% (96.228% 0.058% 3.714%)   told me that                                                                                                                 -------aaaaabdegghiiiknnsstty'!
-       222 0* 0.58224% (96.236% 0.058% 3.706%)   somehow managed to say that and be                                                                                           aghiiiklstt'!
-       223 0* 0.58106% (96.236% 0.058% 3.706%)   managed to state                                                                                                             -------aaabdghhiiiklnstty'!
-       224 0* 0.57453% (96.237% 0.058% 3.705%)   talked me into that!                                                                                                         -------aaaabdgghiinssty'
-       225 0* 0.57035% (96.237% 0.058% 3.705%)   somehow managed to hit the                                                                                                   aaaabdgiiklnsstty'!
-       226 0* 2.47883% (96.237% 0.058% 3.705%)   somehow managed to hit the nail                                                                                              aaabdgiksstty'!
-       227 0* 0.56843% (96.237% 0.058% 3.705%)   somehow managed to take this and                                                                                             aabghiilstty'!
-       228 0* 0.56239% (96.237% 0.058% 3.705%)   hit my                                                                                                                       -------aaaaaabddeegghiiklnnosstttt'!
-       229 0* 0.55940% (96.297% 0.058% 3.645%)   managed the                                                                                                                  -------aaaabdghiiiklnosstttty'!
-       230 0* 0.55919% (96.304% 0.058% 3.638%)   managed to hit the                                                                                                           -------aaaabdgiiklnsstty'!
-       231 0* 1.65239% (96.304% 0.058% 3.638%)   managed to hit the nail                                                                                                      -------aaabdgiksstty'!
-       232 0* 0.54820% (96.304% 0.058% 3.638%)   stolen the                                                                                                                   -------aaaaaabddgghiiikmnsttty'!
-       233 0* 0.54246% (96.326% 0.058% 3.616%)   set the                                                                                                                      -------aaaaaabddgghiiiklmnnosttty'!
-       234 0* 0.54166% (96.378% 0.058% 3.564%)   done the                                                                                                                     -------aaaaaabdgghiiiklmnsstttty'!
-       235 0* 0.53999% (96.433% 0.058% 3.509%)   gotten my                                                                                                                    -------aaaaaabddeghhiiiklnssttt'!
-       236 0* 0.53780% (96.459% 0.058% 3.483%)   done that                                                                                                                    -------aaaaabdegghiiiklmnssttty'!
-       237 0* 0.53085% (96.474% 0.058% 3.468%)   somehow managed to take a                                                                                                    aabdghhiiilnssttty'!
-       238 0* 0.52842% (96.474% 0.058% 3.468%)   said both the                                                                                                                -------aaaaadeggiiklmnnsttty'!
-       239 0* 0.52459% (96.479% 0.058% 3.463%)   said the only                                                                                                                -------aaaaabdegghiikmnstttt'!
-       240 0* 1.66848% (96.481% 0.058% 3.461%)   said the only thing                                                                                                          -------aaaaabdegikmsttt'!
-       241 0* 0.51595% (96.483% 0.058% 3.458%)   somehow managed to nail                                                                                                      aaabdeghhiiksstttty'!
-       242 0* 0.50350% (96.483% 0.058% 3.458%)   seen this                                                                                                                    -------aaaaaabddgghiiklmnotttty'!
-       243 0* 0.49008% (96.502% 0.058% 3.440%)   seen into                                                                                                                    -------aaaaaabddgghhiiklmstttty'!
-       244 0* 0.66582% (96.511% 0.058% 3.431%)   seen into my                                                                                                                 -------aaaaaabddgghhiiklstttt'!
-       245 0* 0.48521% (96.531% 0.058% 3.411%)   missed the boat                                                                                                              -------aaaaadgghiiklnnttty'!
-       246 0* 0.48503% (96.532% 0.058% 3.410%)   said it again!                                                                                                               -------aaabdeeghhklmnostttty'
-       247 0* 0.48337% (96.534% 0.058% 3.407%)   taken my side                                                                                                                -------aaaaabdgghhiilnostttt'!
-       248 0* 0.48261% (96.536% 0.058% 3.406%)   gotta admit it                                                                                                               -------aaaabdeeghhiklnnssty'!
-       249 0* 0.48227% (96.537% 0.058% 3.405%)   asked me to                                                                                                                  -------aaaaabdgghhiiilnnstttty'!
-       250 0* 0.48142% (96.548% 0.058% 3.394%)   somehow managed to state that                                                                                                aabdghiiiklnsy'!
-       251 0* 0.47636% (96.548% 0.058% 3.394%)   said both things at                                                                                                          -------aaaadeegiklmntty'!
-       252 0* 0.47104% (96.548% 0.058% 3.394%)   gotta admit that's an                                                                                                        -------aabdeeghiiklnsy!
-       253 0* 0.46867% (96.548% 0.058% 3.394%)   had a                                                                                                                        -------aaaabdeegghiiiklmnnossttttty'!
-       254 0* 0.46687% (96.607% 0.058% 3.335%)   got taste!                                                                                                                   -------aaaaabddeghhiiiklmnnstty'
-       255 0* 0.46543% (96.617% 0.058% 3.325%)   hit the nail on its                                                                                                          -------aaaaabddeggkmstty'!
-       256 0* 0.46350% (96.620% 0.058% 3.322%)   gotta admit it'                                                                                                              -------aaaabdeeghhiklnnssty!
-       257 0* 0.69931% (96.620% 0.058% 3.322%)   gotta admit it's                                                                                                             -------aaaabdeeghhiklnnsty!
-       258 0* 0.46004% (96.621% 0.058% 3.321%)   somehow managed to say that this                                                                                             aabdegiiklnt'!
-       259 0* 0.53285% (96.621% 0.058% 3.321%)   somehow managed to say that this idea                                                                                        abgiklnt'!
-       260 0* 0.45941% (96.621% 0.058% 3.321%)   somehow managed to say that last bit in a                                                                                    deghik'!
-       261 0* 0.45926% (96.621% 0.058% 3.321%)   managed to hate                                                                                                              -------aaabdghiiiklnssttty'!
-       262 0* 0.45782% (96.622% 0.058% 3.320%)   taken that                                                                                                                   -------aaaabddegghiiilmnosstty'!
-       263 0* 0.45645% (96.628% 0.058% 3.314%)   made it so that                                                                                                              -------aaaabdegghiiklnnstty'!
-       264 0* 0.44811% (96.629% 0.058% 3.312%)   managed to nail it                                                                                                           -------aaabdeghhikssttty'!
-       265 0* 0.44193% (96.630% 0.058% 3.312%)   done it this time!                                                                                                           -------aaaaaabdgghklnstty'
-       266 0* 0.43786% (96.633% 0.058% 3.309%)   nailed it yet                                                                                                                -------aaaaabdgghhikmnossttt'!
-       267 0* 2.63003% (96.633% 0.058% 3.309%)   nailed it yet again                                                                                                          -------aaabdghhkmossttt'!
-       268 0* 1.68796% (96.636% 0.058% 3.306%)   nailed it yet again!                                                                                                         -------aaabdghhkmossttt'
-       269 0* 0.43549% (96.638% 0.058% 3.304%)   said some                                                                                                                    -------aaaaabdegghhiiklnnttttty'!
-       270 0* 0.43528% (96.650% 0.058% 3.291%)   managed to say that and somehow                                                                                              abeghiiiklstt'!
-       271 0* 0.43478% (96.650% 0.058% 3.291%)   said the same thing at                                                                                                       -------aaabdgiklnotty'!
-       272 0* 0.43428% (96.651% 0.058% 3.291%)   said the thing!                                                                                                              -------aaaaabdegiklmnosttty'
-       273 0* 0.42989% (96.652% 0.058% 3.290%)   managed to sneak                                                                                                             -------aaabdghhiiilstttty'!
-       274 0* 0.42504% (96.653% 0.058% 3.289%)   managed to stay                                                                                                              -------aaabdeghhiiiklnsttt'!
-       275 0* 0.42097% (96.654% 0.058% 3.288%)   made this so                                                                                                                 -------aaaaabdegghiiklnntttty'!
-       276 0* 0.41711% (96.658% 0.058% 3.283%)   hit the nail so                                                                                                              -------aaaaabddeggikmnsttty'!
-       277 0* 0.41269% (96.662% 0.058% 3.279%)   said the best thing any                                                                                                      -------aaaadgiklmott'!
-       278 0* 0.41209% (96.662% 0.058% 3.279%)   said the best thing a                                                                                                        -------aaaadgiklmnotty'!
-       279 0* 0.41202% (96.663% 0.058% 3.279%)   managed to land                                                                                                              -------aaabeghhiiiksstttty'!
-       280 0* 0.41146% (96.664% 0.058% 3.278%)   somehow managed to nail that                                                                                                 aabdeghiiksstty'!
-       281 0* 0.41051% (96.664% 0.058% 3.278%)   nailed it to                                                                                                                 -------aaaaabdegghhikmnssttty'!
-       282 0* 0.99661% (96.664% 0.058% 3.278%)   nailed it to the                                                                                                             -------aaaaabdgghikmnsstty'!
-       283 0* 0.40973% (96.669% 0.058% 3.273%)   managed to say this                                                                                                          -------aaabdeghiiklnttt'!
-       284 0* 0.40778% (96.669% 0.058% 3.273%)   been saying this                                                                                                             -------aaaaaddghiklmotttt'!
-       285 0* 0.40454% (96.670% 0.058% 3.272%)   met both                                                                                                                     -------aaaaaaddegghiiiklnnssttty'!
-       286 0* 0.39685% (96.689% 0.058% 3.253%)   gone and made                                                                                                                -------aaaabghhiiiklssttttty'!
-       287 0* 0.39364% (96.694% 0.058% 3.248%)   somehow managed to stay                                                                                                      aaabdeghhiiiklnsttt'!
-       288 0* 0.39043% (96.694% 0.058% 3.248%)   managed to nail the                                                                                                          -------aaabdghiikssttty'!
-       289 0* 0.38429% (96.694% 0.058% 3.247%)   got me beat                                                                                                                  -------aaaaaddghhiiiklnnssttty'!
-       290 0* 0.38385% (96.701% 0.058% 3.241%)   seen that                                                                                                                    -------aaaaabddgghiiiklmnosttty'!
-       291 0* 0.38110% (96.711% 0.058% 3.230%)   somehow managed to take that last                                                                                            abdghiiinsy'!
-       292 0* 0.37641% (96.711% 0.058% 3.230%)   somehow made this                                                                                                            aaaaabdegghiiklnnostttty'!
-       293 0* 0.37576% (96.712% 0.058% 3.230%)   made things                                                                                                                  -------aaaaabdeghiiklnostttty'!
-       294 0* 0.37416% (96.715% 0.058% 3.226%)   hit it                                                                                                                       -------aaaaaabddeegghiklmnnossttty'!
-       295 0* 0.37212% (96.749% 0.058% 3.193%)   somehow made both                                                                                                            aaaaadegghiiiklnnsstttty'!
-       296 0* 0.37009% (96.749% 0.058% 3.192%)   talked me into saying                                                                                                        -------aaaabdghhisttt'!
-       297 0* 0.64561% (96.749% 0.058% 3.192%)   talked me into saying that                                                                                                   -------aaabdghist'!
-       298 0* 0.38556% (96.749% 0.058% 3.192%)   talked me into saying that!                                                                                                  -------aaabdghist'
-       299 0* 0.36935% (96.749% 0.058% 3.192%)   stolen my idea!                                                                                                              -------aaaaabdgghhiiknstttt'
-       300 0* 0.36754% (96.751% 0.058% 3.191%)   gotten inside                                                                                                                -------aaaaaabdghhiklmsttty'!
-       301 0* 0.80836% (96.751% 0.058% 3.191%)   gotten inside my                                                                                                             -------aaaaaabdghhiklsttt'!
-       302 0* 0.36731% (96.756% 0.058% 3.186%)   got that last                                                                                                                -------aaaabddeeghiiikmnnsty'!
-       303 0* 0.36323% (96.759% 0.058% 3.183%)   been so                                                                                                                      -------aaaaaaddgghhiiiklmnsttttty'!
-       304 0* 0.36126% (96.796% 0.058% 3.146%)   nailed me to                                                                                                                 -------aaaaabdgghhiiknsstttty'!
-       305 0* 0.35864% (96.801% 0.058% 3.140%)   got it nailed                                                                                                                -------aaaaabdeghhikmnssttty'!
-       306 0* 0.35309% (96.803% 0.058% 3.138%)   somehow managed to land                                                                                                      aaabeghhiiiksstttty'!
-       307 0* 0.35234% (96.803% 0.058% 3.138%)   nailed me again!                                                                                                             -------aaabdghhikossttttty'
-       308 0* 0.35144% (96.804% 0.058% 3.138%)   somehow managed to be a                                                                                                      aaadghhiiiklnsstttty'!
-       309 0* 0.34432% (96.804% 0.058% 3.137%)   managed to take that                                                                                                         -------aabdghiiilnssty'!
-       310 0* 0.34420% (96.804% 0.058% 3.137%)   done a                                                                                                                       -------aaaaabdegghhiiiklmnssttttty'!
-       311 0* 0.34309% (96.848% 0.058% 3.094%)   made it easy!                                                                                                                -------aaaabdgghhiiklnnostttt'
-       312 0* 0.34286% (96.850% 0.058% 3.091%)   somehow made both things                                                                                                     aaaaadegiiklnsttty'!
-       313 0* 0.34277% (96.850% 0.058% 3.091%)   also made                                                                                                                    -------aaaabdegghhiiiknnsttttty'!
-       314 0* 0.33946% (96.857% 0.058% 3.085%)   had the                                                                                                                      -------aaaaabdeggiiiklmnnosstttty'!
-       315 0* 0.33720% (96.872% 0.058% 3.070%)   single                                                                                                                       -------aaaaaabddeghhiikmnosttttty'!
-       316 0* 0.33682% (96.898% 0.058% 3.043%)   got the last                                                                                                                 -------aaaaabddeghiiikmnnstty'!
-       317 0* 0.33118% (96.903% 0.058% 3.038%)   got that nailed!                                                                                                             -------aaaabdeghiikmnsstty'
-       318 0* 0.32859% (96.904% 0.058% 3.038%)   made a deal                                                                                                                  -------aaabgghhiiiknnossttttty'!
-       319 0* 0.32634% (96.910% 0.058% 3.032%)   got me!                                                                                                                      -------aaaaaabddeghhiiiklnnsstttty'
-       320 0* 0.32593% (96.952% 0.058% 2.989%)   made a list                                                                                                                  -------aaaabdegghhiiknnostttty'!
-       321 0* 0.32586% (96.956% 0.058% 2.985%)   met both kinds                                                                                                               -------aaaaaadegghiilnsttty'!
-       322 0* 0.32395% (96.958% 0.058% 2.983%)   somehow managed to nail it                                                                                                   aaabdeghhikssttty'!
-       323 0* 0.32291% (96.958% 0.058% 2.983%)   hit on my                                                                                                                    -------aaaaaabddeegghiiklnsstttt'!
-       324 0* 0.32234% (96.980% 0.058% 2.962%)   made this easy!                                                                                                              -------aaaabdgghiiklnnotttt'
-       325 0* 0.32178% (96.980% 0.058% 2.961%)   somehow made that                                                                                                            aaaabdegghiiiklnnossttty'!
-       326 0* 0.32118% (96.981% 0.058% 2.961%)   somehow managed to say this in                                                                                               aaabdeghiklttt'!
-       327 0* 0.32890% (96.981% 0.058% 2.961%)   somehow managed to say this in the                                                                                           aaabdgikltt'!
-       328 0* 0.32002% (96.981% 0.058% 2.961%)   managed to be a                                                                                                              -------aaadghhiiiklnsstttty'!
-       329 0* 0.31694% (96.982% 0.058% 2.959%)   taken me to                                                                                                                  -------aaaaabddgghhiiilnssttty'!
-       330 0* 0.31570% (96.989% 0.058% 2.953%)   been saying that a lot!                                                                                                      -------aaaddghiikmstt'
-       331 0* 0.31555% (96.989% 0.058% 2.952%)   lost this                                                                                                                    -------aaaaaabddeegghiikmnnttty'!
-       332 0* 0.46200% (97.001% 0.058% 2.941%)   lost this debate                                                                                                             -------aaaaadgghiikmnntty'!
-       333 0* 0.31389% (97.002% 0.058% 2.940%)   gotten the                                                                                                                   -------aaaaaabddghiiiklmnsstty'!
-       334 0* 0.31382% (97.021% 0.058% 2.920%)   gotta be the                                                                                                                 -------aaaaaddghiiiklmnnsstty'!
-       335 0* 0.31130% (97.027% 0.058% 2.915%)   managed to diss                                                                                                              -------aaaabeghhiiklntttty'!
-       336 0* 0.31057% (97.027% 0.058% 2.914%)   got my best                                                                                                                  -------aaaaaaddeghhiiiklnnsttt'!
-       337 0* 0.31056% (97.037% 0.058% 2.905%)   said both!                                                                                                                   -------aaaaadeegghiiklmnnstttty'
-       338 0* 0.30957% (97.042% 0.058% 2.899%)   managed to take an                                                                                                           -------aabdghhiiilssttty'!
-       339 0* 0.29886% (97.043% 0.058% 2.899%)   gotten a                                                                                                                     -------aaaaabddeghhiiiklmnssttty'!
-       340 0* 0.29854% (97.058% 0.058% 2.884%)   had the best                                                                                                                 -------aaaaadggiiiklmnnosttty'!
-       341 0* 0.29762% (97.061% 0.058% 2.880%)   stated both                                                                                                                  -------aaaaadegghiiiklmnnstty'!
-       342 0* 0.29478% (97.064% 0.058% 2.878%)   set me                                                                                                                       -------aaaaaabddgghhiiiklnnostttty'!
-       343 0* 0.29219% (97.097% 0.059% 2.844%)   somehow managed both                                                                                                         aaaadeghiiiklnsstttty'!
-       344 0* 0.29119% (97.097% 0.059% 2.844%)   said things that make it                                                                                                     -------aaabdeglnoty'!
-       345 0* 0.28887% (97.097% 0.059% 2.844%)   only been                                                                                                                    -------aaaaaaddgghhiiikmssttttt'!
-       346 0* 0.28757% (97.114% 0.059% 2.828%)   also managed                                                                                                                 -------aaabdeghhiiiknsttttty'!
-       347 0* 0.28499% (97.116% 0.059% 2.826%)   taken it                                                                                                                     -------aaaaabddegghhiilmnossttty'!
-       348 0* 0.28397% (97.124% 0.059% 2.817%)   made a solid                                                                                                                 -------aaaabegghhiiknnsttttty'!
-       349 0* 0.28295% (97.128% 0.059% 2.814%)   been making                                                                                                                  -------aaaaaddghhiilossttttty'!
-       350 0* 0.28261% (97.131% 0.059% 2.811%)   said the last                                                                                                                -------aaaabdegghiikmnnottty'!
-       351 0* 0.76675% (97.132% 0.059% 2.810%)   said the last thing                                                                                                          -------aaaabdegikmnotty'!
-       352 0* 0.28129% (97.132% 0.059% 2.809%)   said the line                                                                                                                -------aaaaabdgghikmnostttty'!
-       353 0* 0.29281% (97.134% 0.059% 2.807%)   said the line that                                                                                                           -------aaaabdggikmnostty'!
-       354 0* 0.27852% (97.135% 0.059% 2.807%)   got a talent                                                                                                                 -------aaaabddeghhiiikmnsstty'!
-       355 0* 0.27790% (97.138% 0.059% 2.804%)   taken the last                                                                                                               -------aaaabddgghiiimnostty'!
-       356 0* 0.27735% (97.139% 0.059% 2.803%)   made today                                                                                                                   -------aaaabegghhiiiklnnsstttt'!
-       357 0* 0.30821% (97.141% 0.059% 2.800%)   made today the                                                                                                               -------aaaabgghiiiklnnssttt'!
-       358 0* 0.27677% (97.143% 0.059% 2.799%)   had me                                                                                                                       -------aaaaabdegghiiiklnnossttttty'!
-       359 0* 0.27643% (97.165% 0.059% 2.776%)   had that                                                                                                                     -------aaaabdeeggiiiklmnnossttty'!
-       360 0* 0.27633% (97.173% 0.059% 2.768%)   hit a                                                                                                                        -------aaaaabddeegghiiklmnnosstttty'!
-       361 0* 0.27622% (97.208% 0.059% 2.734%)   somehow managed to nail the                                                                                                  aaabdghiikssttty'!
-       362 0* 0.27591% (97.208% 0.059% 2.734%)   done it again my                                                                                                             -------aaaabdeghhiklsstttt'!
-       363 0* 0.27005% (97.209% 0.059% 2.733%)   somehow managed to say this in a                                                                                             aabdeghiklttt'!
-       364 0* 0.26880% (97.209% 0.059% 2.733%)   taken my ideas                                                                                                               -------aaaabdgghhiilnostttt'!
-       365 0* 0.75489% (97.209% 0.059% 2.732%)   taken my ideas and                                                                                                           -------aaabgghhiilostttt'!
-       366 0* 0.26815% (97.210% 0.059% 2.732%)   lost me again                                                                                                                -------aaaabddeghhiiknstttty'!
-       367 0* 0.26566% (97.211% 0.059% 2.730%)   said yes                                                                                                                     -------aaaaabdegghhiiklmnnottttt'!
-       368 0* 0.52942% (97.212% 0.059% 2.729%)   said yes to                                                                                                                  -------aaaaabdegghhiiklmnntttt'!
-       369 0* 0.26517% (97.222% 0.059% 2.720%)   not                                                                                                                          -------aaaaaabddeegghhiiiklmnsstttty'!
-       370 0* 0.26374% (97.307% 0.059% 2.635%)   got a taste                                                                                                                  -------aaaabddeghhiiiklmnnstty'!
-       371 0* 0.26299% (97.311% 0.059% 2.631%)   stolen my idea and                                                                                                           -------aaaabgghhiikstttt'!
-       372 0* 0.26163% (97.311% 0.059% 2.630%)   asked the only                                                                                                               -------aaaaabdgghiiimnstttt'!
-       373 0* 0.26122% (97.313% 0.059% 2.629%)   got them                                                                                                                     -------aaaaaabddeghiiiklnnssttty'!
-       374 0* 0.26106% (97.334% 0.059% 2.607%)   made this the                                                                                                                -------aaaaabdggiiklnnosttty'!
-       375 0* 0.26033% (97.336% 0.059% 2.605%)   gotta admit that's kind                                                                                                      -------aaabeeghilnsy!
-       376 0* 0.25665% (97.336% 0.059% 2.605%)   somehow managed the                                                                                                          aaaabdghiiiklnosstttty'!
-       377 0* 0.25418% (97.336% 0.059% 2.605%)   somehow managed to hate this                                                                                                 aaabdgiiklnstty'!
-       378 0* 0.25208% (97.336% 0.059% 2.605%)   somehow managed to stab                                                                                                      aaadeghhiiiklnsttty'!
-       379 0* 0.25181% (97.336% 0.059% 2.605%)   got a sense                                                                                                                  -------aaaaabddghhiiiklmntttty'!
-       380 0* 0.25160% (97.342% 0.059% 2.599%)   managed to sneak that                                                                                                        -------aabdghiiilstty'!
-       381 0* 0.25066% (97.342% 0.059% 2.599%)   met the                                                                                                                      -------aaaaaabddgghiiiklnnossttty'!
-       382 0* 0.24846% (97.367% 0.059% 2.574%)   said that one                                                                                                                -------aaaabdegghiiklmnsttty'!
-       383 0* 0.24662% (97.369% 0.059% 2.572%)   stated a                                                                                                                     -------aaaabdegghhiiiklmnnosttty'!
-       384 0* 0.24486% (97.378% 0.059% 2.563%)   taken my side!                                                                                                               -------aaaaabdgghhiilnostttt'
-       385 0* 0.24439% (97.379% 0.059% 2.562%)   got him                                                                                                                      -------aaaaaabddeeghiiklnnsstttty'!
-       386 0* 0.24302% (97.397% 0.059% 2.545%)   almost said                                                                                                                  -------aaaabdeegghhiiknntttty'!
-       387 0* 0.24263% (97.398% 0.059% 2.543%)   made both                                                                                                                    -------aaaaadegghiiiklnnsstttty'!
-       388 0* 0.24263% (97.405% 0.059% 2.537%)   managed to somehow be                                                                                                        aaaadghhiiiklnsstttty'!
-       389 0* 0.24202% (97.405% 0.059% 2.537%)   been doing                                                                                                                   -------aaaaaadghhiiklmssttttty'!
-       390 0* 0.44704% (97.409% 0.059% 2.532%)   been doing that                                                                                                              -------aaaaadghiiklmssttty'!
-       391 0* 0.24110% (97.411% 0.059% 2.530%)   nailed it in                                                                                                                 -------aaaaabdegghhkmosstttty'!
-       392 0* 0.24107% (97.417% 0.059% 2.524%)   been saying that to                                                                                                          -------aaaaddghiiklmstt'!
-       393 0* 0.23823% (97.417% 0.059% 2.524%)   listed the                                                                                                                   -------aaaaaabdgghiikmnnosttty'!
-       394 0* 0.23805% (97.423% 0.059% 2.519%)   managed to alien                                                                                                             -------aaabdghhiiksstttty'!
-       395 0* 0.23722% (97.423% 0.059% 2.518%)   nailed the thing                                                                                                             -------aaaaabdgikmossttty'!
-       396 0* 0.23530% (97.424% 0.059% 2.517%)   somehow managed to think that                                                                                                aaabdegiilssty'!
-       397 0* 0.23523% (97.424% 0.059% 2.517%)   got it nailed!                                                                                                               -------aaaaabdeghhikmnssttty'
-       398 0* 0.22856% (97.425% 0.059% 2.516%)   made this a                                                                                                                  -------aaaabdegghiiklnnostttty'!
-       399 0* 0.22779% (97.428% 0.059% 2.513%)   made it so easy!                                                                                                             -------aaaabdgghhiiklnntttt'
-       400 0* 0.22778% (97.429% 0.059% 2.512%)   said a                                                                                                                       -------aaaabdeegghhiiklmnnosttttty'!
-       401 0* 0.22631% (97.445% 0.059% 2.496%)   taken both                                                                                                                   -------aaaaaddegghiiilmnssttty'!
-       402 0* 0.22613% (97.448% 0.059% 2.493%)   almost said the                                                                                                              -------aaaabdegghiiknnttty'!
-       403 0* 0.22525% (97.449% 0.059% 2.493%)   somehow managed to say that like                                                                                             aabdghiinstt'!
-       404 0* 0.65844% (97.449% 0.059% 2.493%)   somehow managed to say that like it                                                                                          aabdghinst'!
-       405 0* 1.80614% (97.449% 0.059% 2.493%)   somehow managed to say that like it'                                                                                         aabdghinst!
-       406 0* 5.75961% (97.449% 0.059% 2.493%)   somehow managed to say that like it's                                                                                        aabdghint!
-       407 0* 10.91055% (97.449% 0.059% 2.493%)   somehow managed to say that like it's a                                                                                      abdghint!
-       408 0* 247.97242% (97.449% 0.059% 2.493%)   somehow managed to say that like it's a bad                                                                                  ghint!
+         0 0* 32.91692% (74.838% 0.040% 25.122%)   made                                                                                                                         -------aaaaabdegghhiiiklnnossttttty'!
+         1 0* 30.15617% (79.247% 0.042% 20.711%)   managed                                                                                                                      -------aaaabdeghhiiiklnossttttty'!
+         2 0* 64.53952% (79.268% 0.043% 20.689%)   managed to                                                                                                                   -------aaaabdeghhiiiklnsstttty'!
+         3 0* 13.55516% (80.338% 0.043% 19.618%)   somehow                                                                                                                      aaaaaabddeegghhiiiklmnnossttttty'!
+         4 0* 75.19171% (80.749% 0.044% 19.207%)   somehow managed                                                                                                              aaaabdeghhiiiklnossttttty'!
+         5 0* 174.98283% (80.751% 0.044% 19.205%)   somehow managed to                                                                                                           aaaabdeghhiiiklnsstttty'!
+         6 0* 42.42204% (80.910% 0.044% 19.046%)   somehow managed to talk                                                                                                      aaabdeghhiiinssttty'!
+         7 0* 28.30806% (80.914% 0.044% 19.042%)   somehow managed to take                                                                                                      aaabdghhiiilnssttty'!
+         8 0* 23.09125% (80.918% 0.044% 19.039%)   somehow managed to be                                                                                                        aaaadghhiiiklnsstttty'!
+         9 0* 15.65488% (80.926% 0.044% 19.031%)   somehow managed to say                                                                                                       aaabdeghhiiiklnstttt'!
+        10 0* 27.10331% (80.928% 0.044% 19.028%)   somehow managed to say that                                                                                                  aabdeghiiiklnstt'!
+        11 0* 13.75984% (80.928% 0.044% 19.028%)   somehow managed to take that                                                                                                 aabdghiiilnssty'!
+        12 0* 13.59544% (80.928% 0.044% 19.028%)   somehow made                                                                                                                 aaaaabdegghhiiiklnnossttttty'!
+        13 0* 12.09512% (81.031% 0.044% 18.926%)   got                                                                                                                          -------aaaaaabddeeghhiiiklmnnsstttty'!
+        14 0* 11.96964% (83.125% 0.046% 16.829%)   somehow managed to take this                                                                                                 aaabdghiilnstty'!
+        15 0* 9.81916% (83.125% 0.046% 16.829%)   somehow managed to steal                                                                                                     aaabdghhiiiknsttty'!
+        16 0* 9.65421% (83.126% 0.046% 16.829%)   managed to talk                                                                                                              -------aaabdeghhiiinssttty'!
+        17 0* 9.58766% (83.151% 0.046% 16.803%)   talked                                                                                                                       -------aaaaabdegghhiiimnnosstttty'!
+        18 0* 18.67002% (83.251% 0.046% 16.703%)   talked me                                                                                                                    -------aaaaabdgghhiiinnosstttty'!
+        19 0* 37.88010% (83.528% 0.046% 16.426%)   talked me into                                                                                                               -------aaaaabdgghhiinssttty'!
+        20 0* 15.79916% (83.705% 0.046% 16.249%)   talked me into it                                                                                                            -------aaaaabdgghhinsstty'!
+        21 0* 11.40116% (83.728% 0.046% 16.226%)   talked me into it!                                                                                                           -------aaaaabdgghhinsstty'
+        22 0* 9.24170% (83.750% 0.046% 16.204%)   done                                                                                                                         -------aaaaaabdegghhiiiklmnssttttty'!
+        23 0* 21.57082% (83.962% 0.047% 15.991%)   done it                                                                                                                      -------aaaaaabdegghhiiklmnsstttty'!
+        24 0* 180.75550% (84.325% 0.048% 15.626%)   done it again                                                                                                                -------aaaabdeghhiklmsstttty'!
+        25 0* 92.47046% (85.334% 0.049% 14.617%)   done it again!                                                                                                               -------aaaabdeghhiklmsstttty'
+        26 0* 8.45180% (85.862% 0.049% 14.089%)   somehow managed to say that the                                                                                              aabdgiiiklnst'!
+        27 0* 7.60673% (85.862% 0.049% 14.089%)   been                                                                                                                         -------aaaaaaddgghhiiiklmnossttttty'!
+        28 0* 7.55042% (87.039% 0.050% 12.911%)   somehow managed to say that in                                                                                               aabdeghiiklstt'!
+        29 0* 8.91005% (87.040% 0.050% 12.911%)   somehow managed to say that in the                                                                                           aabdgiiklst'!
+        30 0* 7.50451% (87.040% 0.050% 12.911%)   made the                                                                                                                     -------aaaaabdgghiiiklnnosstttty'!
+        31 0* 6.48038% (87.398% 0.050% 12.552%)   managed to take                                                                                                              -------aaabdghhiiilnssttty'!
+        32 0* 6.47109% (87.413% 0.050% 12.537%)   managed to say                                                                                                               -------aaabdeghhiiiklnstttt'!
+        33 0* 6.24348% (87.434% 0.050% 12.516%)   somehow managed to take that last                                                                                            abdghiiinsy'!
+        34 0* 5.88712% (87.434% 0.050% 12.516%)   somehow managed to say the                                                                                                   aaabdghiiiklnsttt'!
+        35 0* 5.39746% (87.435% 0.050% 12.516%)   said                                                                                                                         -------aaaaabdeegghhiiklmnnosttttty'!
+        36 0* 5.31226% (87.904% 0.050% 12.046%)   somehow managed to take a                                                                                                    aabdghhiiilnssttty'!
+        37 0* 5.28554% (87.905% 0.050% 12.045%)   said the                                                                                                                     -------aaaaabdegghiiklmnnostttty'!
+        38 0* 5.12130% (88.047% 0.050% 11.903%)   somehow managed to best                                                                                                      aaaadghhiiiklnsttty'!
+        39 0* 5.03945% (88.047% 0.050% 11.903%)   managed to be                                                                                                                -------aaaadghhiiiklnsstttty'!
+        40 0* 4.89862% (88.084% 0.050% 11.866%)   somehow managed to say that in a                                                                                             abdeghiiklstt'!
+        41 0* 4.85477% (88.084% 0.050% 11.866%)   somehow managed to steal this                                                                                                aaabdghiikntty'!
+        42 0* 4.82774% (88.084% 0.050% 11.866%)   made this                                                                                                                    -------aaaaabdegghiiklnnostttty'!
+        43 0* 4.82077% (88.169% 0.050% 11.781%)   talked me into that                                                                                                          -------aaaabdgghiinssty'!
+        44 0* 4.36668% (88.172% 0.050% 11.777%)   somehow managed to take that as                                                                                              abdghiiilnsty'!
+        45 0* 4.34104% (88.172% 0.050% 11.777%)   somehow managed to take this and                                                                                             aabghiilstty'!
+        46 0* 4.23432% (88.172% 0.050% 11.777%)   talked me into this                                                                                                          -------aaaaabdgghinstty'!
+        47 0* 4.20346% (88.177% 0.050% 11.773%)   made it                                                                                                                      -------aaaaabdegghhiiklnnosstttty'!
+        48 0* 4.20144% (88.389% 0.050% 11.561%)   somehow made that                                                                                                            aaaabdegghiiiklnnossttty'!
+        49 0* 4.11840% (88.392% 0.050% 11.558%)   got a                                                                                                                        -------aaaaabddeeghhiiiklmnnsstttty'!
+        50 0* 3.97331% (89.090% 0.051% 10.859%)   taken                                                                                                                        -------aaaaabddegghhiiilmnosstttty'!
+        51 0* 4.87354% (89.218% 0.051% 10.731%)   taken the                                                                                                                    -------aaaaabddgghiiilmnossttty'!
+        52 0* 3.83238% (89.366% 0.051% 10.583%)   said the same                                                                                                                -------aaaabdgghiiklnnotttty'!
+        53 0* 27.31089% (89.372% 0.051% 10.577%)   said the same thing                                                                                                          -------aaaabdgiklnottty'!
+        54 0* 3.71681% (89.390% 0.051% 10.559%)   somehow made this                                                                                                            aaaaabdegghiiklnnostttty'!
+        55 0* 3.71597% (89.393% 0.051% 10.556%)   got the                                                                                                                      -------aaaaaabddeghiiiklmnnssttty'!
+        56 0* 3.61705% (89.690% 0.051% 10.259%)   managed to say that                                                                                                          -------aabdeghiiiklnstt'!
+        57 0* 3.60468% (89.691% 0.051% 10.257%)   talked me into a                                                                                                             -------aaaabdgghhiinssttty'!
+        58 0* 3.55007% (89.702% 0.051% 10.247%)   somehow talked                                                                                                               aaaaabdegghhiiimnnosstttty'!
+        59 0* 5.56989% (89.705% 0.051% 10.244%)   somehow talked me                                                                                                            aaaaabdgghhiiinnosstttty'!
+        60 0* 12.36973% (89.709% 0.051% 10.240%)   somehow talked me into                                                                                                       aaaaabdgghhiinssttty'!
+        61 0* 3.49661% (89.713% 0.051% 10.236%)   said the same thing to                                                                                                       -------aaaabdgiklntty'!
+        62 0* 3.46253% (89.714% 0.051% 10.235%)   got the same                                                                                                                 -------aaaaabddghiiiklnnsttty'!
+        63 0* 3.42197% (89.773% 0.051% 10.176%)   somehow managed to dis                                                                                                       aaaabeghhiiklnstttty'!
+        64 0* 3.27667% (89.774% 0.051% 10.175%)   got the best                                                                                                                 -------aaaaaaddghiiiklmnnstty'!
+        65 0* 3.26235% (89.870% 0.051% 10.079%)   somehow managed to say that this                                                                                             aabdegiiklnt'!
+        66 0* 3.11841% (89.870% 0.051% 10.079%)   done it!                                                                                                                     -------aaaaaabdegghhiiklmnsstttty'
+        67 0* 3.10520% (90.088% 0.051% 9.861%)   almost                                                                                                                       -------aaaaabddeegghhiiiknnstttty'!
+        68 0* 3.08996% (90.309% 0.051% 9.639%)   gotten                                                                                                                       -------aaaaaabddeghhiiiklmnssttty'!
+        69 0* 3.04399% (90.584% 0.052% 9.365%)   somehow managed to beat                                                                                                      aaadghhiiiklnssttty'!
+        70 0* 2.83984% (90.584% 0.052% 9.364%)   managed to somehow                                                                                                           aaaabdeghhiiiklnsstttty'!
+        71 0* 2.62187% (90.587% 0.052% 9.362%)   made that                                                                                                                    -------aaaabdegghiiiklnnossttty'!
+        72 0* 2.48842% (90.643% 0.052% 9.305%)   got me                                                                                                                       -------aaaaaabddeghhiiiklnnsstttty'!
+        73 0* 2.46328% (91.031% 0.052% 8.917%)   made a                                                                                                                       -------aaaabdegghhiiiklnnossttttty'!
+        74 0* 2.28394% (91.279% 0.052% 8.669%)   somehow managed to say that this idea                                                                                        abgiklnt'!
+        75 0* 2.28088% (91.279% 0.052% 8.669%)   both                                                                                                                         -------aaaaaaddeegghiiiklmnnsstttty'!
+        76 0* 2.25040% (91.720% 0.052% 8.228%)   somehow made the                                                                                                             aaaaabdgghiiiklnnosstttty'!
+        77 0* 2.13991% (91.726% 0.052% 8.222%)   managed to say the                                                                                                           -------aaabdghiiiklnsttt'!
+        78 0* 2.10250% (91.728% 0.052% 8.220%)   managed to steal                                                                                                             -------aaabdghhiiiknsttty'!
+        79 0* 2.08553% (91.731% 0.052% 8.216%)   managed the                                                                                                                  -------aaaabdghiiiklnosstttty'!
+        80 0* 2.04677% (91.757% 0.052% 8.191%)   named                                                                                                                        -------aaaaabdegghhiiiklnossttttty'!
+        81 0* 1.98286% (91.888% 0.052% 8.060%)   made this the                                                                                                                -------aaaaabdggiiklnnosttty'!
+        82 0* 1.93063% (91.904% 0.052% 8.044%)   single                                                                                                                       -------aaaaaabddeghhiikmnosttttty'!
+        83 0* 1.93012% (92.057% 0.052% 7.891%)   got that                                                                                                                     -------aaaaabddeeghiiiklmnnsstty'!
+        84 0* 1.88404% (92.141% 0.052% 7.807%)   somehow managed to steal that                                                                                                aabdghiiiknsty'!
+        85 0* 1.87445% (92.141% 0.052% 7.807%)   somehow managed to set                                                                                                       aaaabdghhiiiklnsttty'!
+        86 0* 1.81390% (92.141% 0.052% 7.806%)   somehow managed to say that that                                                                                             abdegiiiklns'!
+        87 0* 2.67565% (92.141% 0.052% 7.806%)   somehow managed to say that that'                                                                                            abdegiiiklns!
+        88 0* 4.45860% (92.141% 0.052% 7.806%)   somehow managed to say that that's                                                                                           abdegiiikln!
+        89 0* 1.71862% (92.141% 0.052% 7.806%)   managed to take a                                                                                                            -------aabdghhiiilnssttty'!
+        90 0* 1.71734% (92.144% 0.052% 7.804%)   somehow managed to be a                                                                                                      aaadghhiiiklnsstttty'!
+        91 0* 1.70549% (92.145% 0.052% 7.803%)   only                                                                                                                         -------aaaaaabddeegghhiiikmnssttttt'!
+        92 0* 1.67715% (92.464% 0.052% 7.483%)   somehow managed the                                                                                                          aaaabdghiiiklnosstttty'!
+        93 0* 1.67621% (92.465% 0.052% 7.482%)   named the                                                                                                                    -------aaaaabdgghiiiklnosstttty'!
+        94 0* 1.66153% (92.518% 0.052% 7.429%)   said the most                                                                                                                -------aaaaabdegghiiklnnttty'!
+        95 0* 1.55366% (92.531% 0.052% 7.417%)   somehow managed to let                                                                                                       aaaabdghhiiiknssttty'!
+        96 0* 1.54792% (92.531% 0.052% 7.417%)   somehow gotten                                                                                                               aaaaaabddeghhiiiklmnssttty'!
+        97 0* 1.48030% (92.536% 0.052% 7.411%)   talked me into it again                                                                                                      -------aaabdghhsstty'!
+        98 0* 1.47870% (92.536% 0.052% 7.411%)   somehow talked me into saying                                                                                                aaaabdghhisttt'!
+        99 0* 11.70474% (92.536% 0.052% 7.411%)   somehow talked me into saying that                                                                                           aaabdghist'!
+       100 0* 5.59136% (92.536% 0.052% 7.411%)   somehow talked me into saying that this                                                                                      aaabdg'!
+       101 0* 1.47859% (92.536% 0.052% 7.411%)   somehow managed to take that as an                                                                                           bdghiiilsty'!
+       102 0* 1.44956% (92.536% 0.052% 7.411%)   somehow made it                                                                                                              aaaaabdegghhiiklnnosstttty'!
+       103 0* 1.42948% (92.540% 0.052% 7.408%)   got a best                                                                                                                   -------aaaaaddeghhiiiklmnnsttty'!
+       104 0* 1.41808% (92.583% 0.053% 7.365%)   talked me into it again!                                                                                                     -------aaabdghhsstty'
+       105 0* 1.41772% (92.583% 0.053% 7.365%)   asked                                                                                                                        -------aaaaabdegghhiiilmnnosttttty'!
+       106 0* 1.85564% (92.622% 0.053% 7.325%)   asked the                                                                                                                    -------aaaaabdgghiiilmnnostttty'!
+       107 0* 1.41063% (92.671% 0.053% 7.276%)   somehow managed to think                                                                                                     aaaabdeghiilssttty'!
+       108 0* 2.29148% (92.671% 0.053% 7.276%)   somehow managed to think that                                                                                                aaabdegiilssty'!
+       109 0* 1.40991% (92.671% 0.053% 7.276%)   somehow managed to think that'                                                                                               aaabdegiilssty!
+       110 0* 3.61848% (92.671% 0.053% 7.276%)   somehow managed to think that's                                                                                              aaabdegiilsty!
+       111 0* 2.77743% (92.671% 0.053% 7.276%)   somehow managed to think that's a                                                                                            aabdegiilsty!
+       112 0* 2.87168% (92.671% 0.053% 7.276%)   somehow managed to think that's a bad                                                                                        aegiilsty!
+       113 0* 1.40747% (92.671% 0.053% 7.276%)   said that                                                                                                                    -------aaaabdeegghiiklmnnosttty'!
+       114 0* 1.38382% (92.698% 0.053% 7.250%)   been my                                                                                                                      -------aaaaaaddgghhiiiklnossttttt'!
+       115 0* 1.35879% (92.812% 0.053% 7.136%)   somehow managed to take that and                                                                                             abghiiilssty'!
+       116 0* 1.33073% (92.812% 0.053% 7.136%)   somehow managed to talk this                                                                                                 aaabdeghiinstty'!
+       117 0* 1.32447% (92.812% 0.053% 7.136%)   somehow managed to say that that is                                                                                          abdegiikln'!
+       118 0* 1.31105% (92.812% 0.053% 7.136%)   somehow talked me into this                                                                                                  aaaaabdgghinstty'!
+       119 0* 1.28751% (92.812% 0.053% 7.136%)   somehow managed to say that last                                                                                             abdeghiiiknt'!
+       120 0* 2.62059% (92.812% 0.053% 7.136%)   somehow managed to say that last bit                                                                                         adeghiikn'!
+       121 0* 1.50424% (92.812% 0.053% 7.136%)   somehow managed to say that last bit in                                                                                      adeghik'!
+       122 0* 1.27576% (92.812% 0.053% 7.136%)   gone                                                                                                                         -------aaaaaabddeghhiiiklmnssttttty'!
+       123 0* 1.72117% (93.121% 0.053% 6.826%)   gone and                                                                                                                     -------aaaaabdeghhiiiklmssttttty'!
+       124 0* 1.25241% (93.220% 0.053% 6.727%)   somehow managed to hit                                                                                                       aaaabdeghiiklnssttty'!
+       125 0* 1.23309% (93.220% 0.053% 6.727%)   somehow talked me into saying that'                                                                                          aaabdghist!
+       126 0* 4.02361% (93.220% 0.053% 6.727%)   somehow talked me into saying that's                                                                                         aaabdghit!
+       127 0* 3.32523% (93.220% 0.053% 6.727%)   somehow talked me into saying that's a                                                                                       aabdghit!
+       128 0* 8.65339% (93.220% 0.053% 6.727%)   somehow talked me into saying that's a bad                                                                                   aghit!
+       129 0* 1.21559% (93.220% 0.053% 6.727%)   somehow managed to say that and                                                                                              abeghiiiklstt'!
+       130 0* 1.21158% (93.220% 0.053% 6.727%)   somehow managed to stand                                                                                                     aaabeghhiiiklsttty'!
+       131 0* 1.21056% (93.220% 0.053% 6.727%)   somehow managed to listen                                                                                                    aaaabdghhiiksttty'!
+       132 0* 1.20731% (93.220% 0.053% 6.727%)   got my                                                                                                                       -------aaaaaabddeeghhiiiklnnsstttt'!
+       133 0* 1.18174% (93.391% 0.053% 6.556%)   somehow taken                                                                                                                aaaaabddegghhiiilmnosstttty'!
+       134 0* 1.18089% (93.394% 0.053% 6.553%)   talked me into saying                                                                                                        -------aaaabdghhisttt'!
+       135 0* 1.40170% (93.394% 0.053% 6.553%)   talked me into saying that                                                                                                   -------aaabdghist'!
+       136 0* 1.16655% (93.394% 0.053% 6.553%)   somehow managed not                                                                                                          aaaabdeghhiiiklsstttty'!
+       137 0* 1.15679% (93.395% 0.053% 6.552%)   somehow managed to state                                                                                                     aaabdghhiiiklnstty'!
+       138 0* 1.19879% (93.395% 0.053% 6.552%)   somehow managed to state that                                                                                                aabdghiiiklnsy'!
+       139 0* 1.15548% (93.395% 0.053% 6.552%)   somehow talked me into that                                                                                                  aaaabdgghiinssty'!
+       140 0* 1.14471% (93.395% 0.053% 6.552%)   hit                                                                                                                          -------aaaaaabddeegghiiklmnnosstttty'!
+       141 0* 1.13071% (93.476% 0.053% 6.471%)   made it so                                                                                                                   -------aaaaabdegghhiiklnnstttty'!
+       142 0* 1.32498% (93.500% 0.053% 6.447%)   made it so that                                                                                                              -------aaaabdegghiiklnnstty'!
+       143 0* 1.12478% (93.505% 0.053% 6.442%)   said the same thing in                                                                                                       -------aaaabdgklottty'!
+       144 0* 1.12006% (93.505% 0.053% 6.442%)   managed to say that in                                                                                                       -------aabdeghiiklstt'!
+       145 0* 1.11612% (93.505% 0.053% 6.442%)   taken my                                                                                                                     -------aaaaabddegghhiiilnosstttt'!
+       146 0* 1.11113% (93.548% 0.053% 6.399%)   somehow managed to be that                                                                                                   aaadghiiiklnsstty'!
+       147 0* 1.10919% (93.548% 0.053% 6.399%)   only been                                                                                                                    -------aaaaaaddgghhiiikmssttttt'!
+       148 0* 1.05674% (93.612% 0.053% 6.335%)   somehow talked me into saying this                                                                                           aaaabdghtt'!
+       149 0* 1.05580% (93.612% 0.053% 6.335%)   said the one                                                                                                                 -------aaaaabdgghiiklmnstttty'!
+       150 0* 5.87147% (93.615% 0.053% 6.332%)   said the one thing                                                                                                           -------aaaaabdgiklmsttty'!
+       151 0* 1.04469% (93.629% 0.053% 6.318%)   told                                                                                                                         -------aaaaaabdeegghhiiikmnnsstttty'!
+       152 0* 1.44946% (93.675% 0.053% 6.271%)   told me                                                                                                                      -------aaaaaabdegghhiiiknnsstttty'!
+       153 0* 1.04208% (93.795% 0.053% 6.152%)   said the thing                                                                                                               -------aaaaabdegiklmnosttty'!
+       154 0* 1.03420% (93.800% 0.053% 6.147%)   somehow gotten me                                                                                                            aaaaaabddghhiiiklnssttty'!
+       155 0* 1.02327% (93.805% 0.053% 6.142%)   hit the                                                                                                                      -------aaaaaabddeggiiklmnnossttty'!
+       156 0* 2.78983% (93.841% 0.053% 6.106%)   hit the nail                                                                                                                 -------aaaaabddeggikmnossttty'!
+       157 0* 2.21428% (93.856% 0.053% 6.090%)   hit the nail on                                                                                                              -------aaaaabddeggikmssttty'!
+       158 0* 1.00915% (93.885% 0.053% 6.061%)   talked me into that!                                                                                                         -------aaaabdgghiinssty'
+       159 0* 0.99494% (93.886% 0.053% 6.061%)   somehow managed to say that like                                                                                             aabdghiinstt'!
+       160 0* 3.15171% (93.886% 0.053% 6.061%)   somehow managed to say that like it                                                                                          aabdghinst'!
+       161 0* 8.67032% (93.886% 0.053% 6.061%)   somehow managed to say that like it'                                                                                         aabdghinst!
+       162 0* 27.61480% (93.886% 0.053% 6.061%)   somehow managed to say that like it's                                                                                        aabdghint!
+       163 0* 56.58736% (93.886% 0.053% 6.061%)   somehow managed to say that like it's a                                                                                      abdghint!
+       164 0* 1281.31380% (93.886% 0.053% 6.061%)   somehow managed to say that like it's a bad                                                                                  ghint!
