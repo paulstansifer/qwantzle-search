@@ -11,7 +11,7 @@ pub struct SessionTimers {
     pub truncate_time: u128,
 }
 
-pub fn str_to_tokens_maybe_with_prefix_space<M: Model>(s: &str, model: &M) -> (Vec<Token>, bool) {
+pub fn str_to_tokens_maybe_with_prefix_space(s: &str, model: &dyn Model) -> (Vec<Token>, bool) {
     let toks_without_space = model.str_to_tokens(s);
 
     let toks_with_space = model.str_to_tokens(&format!(" {s}"));

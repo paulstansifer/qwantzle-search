@@ -63,7 +63,7 @@ pub fn no_vocab() -> Vocab {
 }
 
 impl VocabBuilder {
-    fn eval_token<M: Model>(&mut self, tok: Token, model: &M) {
+    fn eval_token(&mut self, tok: Token, model: &dyn Model) {
         if self.allowed_tokens.contains(&tok) {
             return; // already processed
         }
@@ -101,7 +101,7 @@ impl VocabBuilder {
         }
     }
 
-    pub fn add_word<M: Model>(&mut self, word: &str, model: &M, vary_case: bool) {
+    pub fn add_word(&mut self, word: &str, model: &dyn Model, vary_case: bool) {
         if word.is_empty() {
             return; // Titlecasing would get unhappy.
         }
@@ -122,7 +122,7 @@ impl VocabBuilder {
             }
         }
     }
-    fn add_literal_word<M: Model>(&mut self, word: &str, model: &M, pop_front_tok: bool) {
+    fn add_literal_word(&mut self, word: &str, model: &dyn Model, pop_front_tok: bool) {
         let mut toks: Vec<Token> = model.str_to_tokens(word);
 
         if pop_front_tok {
@@ -527,7 +527,7 @@ impl LetterPool {
     }
 
     // HACK: should do this after setting `last_letter`
-    pub fn set_longest_tok<M: Model>(&mut self, longest_tok: Token, model: &M) {
+    pub fn set_longest_tok(&mut self, longest_tok: Token, model: &dyn Model) {
         self.remove(longest_tok, model);
         let tok_str = model.tok_to_str(longest_tok);
         let lt_len = tok_str.trim().len() as u8;
@@ -541,7 +541,7 @@ impl LetterPool {
     }
 
     // HACK: should do this after setting `last_letter`
-    pub fn set_longest_tok_from<M: Model>(&mut self, text: &str, model: &M) {
+    pub fn set_longest_tok_from(&mut self, text: &str, model: &dyn Model) {
         let toks = str_to_tokens_maybe_with_prefix_space(text, model).0;
         let mut longest_tok_len = 0;
         let mut longest_tok = toks[0];
@@ -584,7 +584,7 @@ impl LetterPool {
         return true;
     }
 
-    pub fn has<M: Model>(&self, tok: Token, model: &M) -> bool {
+    pub fn has(&self, tok: Token, model: &dyn Model) -> bool {
         if Some(tok) == self.long_tok.map(|(tok, _)| tok) {
             // the theory of ties doesn't affect `has`!
             return true;
@@ -596,7 +596,7 @@ impl LetterPool {
         })
     }
 
-    pub fn has_str<M: Model>(&self, _s: &str, _model: &M) -> bool {
+    pub fn has_str(&self, _s: &str, _model: &dyn Model) -> bool {
         todo!()
     }
 
@@ -633,7 +633,7 @@ impl LetterPool {
     }
 
     /// Panics if the letters aren't available.
-    pub fn remove<M: Model>(&mut self, tok: Token, model: &M) {
+    pub fn remove(&mut self, tok: Token, model: &dyn Model) {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.remove_pt(pt, Some(tok) == self.long_tok.map(|(tok, _)| tok))
@@ -657,7 +657,7 @@ impl LetterPool {
         return None;
     }
 
-    pub fn try_remove<M: Model>(&self, tok: Token, model: &M) -> Option<Self> {
+    pub fn try_remove(&self, tok: Token, model: &dyn Model) -> Option<Self> {
         POOL_TOK_CACHE.with_borrow_mut(|ptc| {
             let pt = ptc.get_tok(tok, model);
             self.try_remove_pt(pt, Some(tok) == self.long_tok.map(|(tok, _)| tok))
@@ -671,7 +671,7 @@ struct TokCache {
 }
 
 impl TokCache {
-    fn get_tok<M: Model>(&mut self, tok: Token, model: &M) -> &PoolTok {
+    fn get_tok(&mut self, tok: Token, model: &dyn Model) -> &PoolTok {
         self.toks
             .entry(tok)
             .or_insert(PoolTok::from_str(&model.tok_to_str(tok)))

@@ -1,7 +1,5 @@
 use clap::Parser;
 use indicatif::ProgressIterator;
-use llama_cpp_2::llama_batch::LlamaBatch;
-use llama_cpp_2::model::LlamaModel;
 use pool::LetterPool;
 use search::{manual_search, SearchState};
 use std::fmt::Write;
@@ -40,9 +38,13 @@ fn init_tracing(args: &Args) {
 
 #[derive(Parser, Debug)]
 struct Args {
-    /// Path to the .gguf model file
+    /// Use llama.cpp: Path to the .gguf model file
     #[arg(short, long)]
-    model: String,
+    llcc: Option<String>,
+
+    /// Use vLLM: Huggingface model ID
+    #[arg(short, long)]
+    vllm: Option<String>,
 
     #[arg(short, long, action = clap::ArgAction::Count)]
     verbose: u8,
@@ -110,6 +112,17 @@ struct Args {
     score_params: crate::search::ScoreArgs,
 }
 
+fn short_model_name(args: &Args) -> String {
+    args.llcc
+        .as_ref()
+        .unwrap_or_else(|| args.vllm.as_ref().expect("Need one of 'llcc' and 'vllm'"))
+        .split('/')
+        .last()
+        .unwrap()
+        .to_owned()
+        + if args.llcc.is_some() { "-l" } else { "-v" }
+}
+
 #[derive(Default)]
 struct Stats {
     details: String,
@@ -161,10 +174,10 @@ macro_rules! percentile_table_2_digits_percentage {
     };
 }
 
-fn predict_strip<M: Model>(
+fn predict_strip(
     strip: &Strip,
     alt_punch: Option<&str>,
-    model: &M,
+    model: &dyn Model,
     stats: &mut Stats, // This accumulates between runs, confusingly!  Maybe remove!
 ) -> (f64, f64) {
     let rlnn =
@@ -338,7 +351,7 @@ fn predict_strip<M: Model>(
     return (optimistic_cost, average_probability);
 }
 
-fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel, args: &Args) {
+fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &dyn Model, args: &Args) {
     let char_min = 45;
     let char_max = 80;
 
@@ -399,7 +412,10 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     let report_filename = format!(
         "reports/cc-{}-by-{}.txt",
         char_max,
-        (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+        (format!("/{}", short_model_name(args)))
+            .rsplit_once("/")
+            .unwrap()
+            .1
     );
 
     std::io::Write::write(
@@ -470,7 +486,10 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         std::fs::write(
             format!(
                 "reports/tok_scores/{}.cost-cal.txt",
-                (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+                (format!("/{}", short_model_name(args)))
+                    .rsplit_once("/")
+                    .unwrap()
+                    .1
             ),
             &stats.details,
         )
@@ -478,7 +497,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     }
 }
 
-fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
+fn measure_costs(strips: &Vec<Strip>, model: &dyn Model, args: &Args) {
     let representative_strips: Vec<&Strip> = strips
         .iter()
         .filter(|s| s.punchline.len() > 70 && s.punchline.len() < 120)
@@ -517,7 +536,10 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     std::fs::write(
         format!(
             "reports/tok_scores/{}.txt",
-            (format!("/{}", &args.model)).rsplit_once("/").unwrap().1
+            (format!("/{}", short_model_name(args)))
+                .rsplit_once("/")
+                .unwrap()
+                .1
         ),
         stats.details,
     )
@@ -600,61 +622,29 @@ fn measure_costs(strips: &Vec<Strip>, model: &LlamaModel, args: &Args) {
     );
 }
 
-fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
+fn complete(prefix: &str, max_new_toks: u32, model: &dyn Model) {
     print!("{prefix}>>>");
-    let prefix_tokens = model
-        .str_to_token(prefix, llama_cpp_2::model::AddBos::Always)
-        .unwrap();
-    let n_toks = prefix_tokens.len() as u32 + max_new_toks;
+    let prefix_tokens = model.str_to_tokens_bos(prefix, true);
+    let mut session = model.new_session("", prefix_tokens.len() + max_new_toks as usize);
 
-    let params = llama_cpp_2::context::params::LlamaContextParams::default()
-        .with_n_ctx(std::num::NonZero::new(n_toks));
+    let mut current_tokens = prefix_tokens.clone();
+    for _ in 0..max_new_toks {
+        let candidates = session.predict(&current_tokens, Some(0.9));
 
-    let mut ctx = {
-        let _stderr_gag = gag::Gag::stderr().unwrap();
-        model.new_context(&llamacpp::BACKEND, params).unwrap()
-    };
-
-    let mut batch = LlamaBatch::new(n_toks as usize, 1);
-    for (i, tok) in prefix_tokens.iter().enumerate() {
-        batch
-            .add(*tok, i as i32, &[0], i + 1 == prefix_tokens.len())
-            .unwrap()
-    }
-
-    use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
-
-    // This is suuuuuper ad-hoc.
-    let mut sampler = llama_cpp_2::sampling::LlamaSampler::new(
-        LlamaSamplerChainParams::default().with_no_perf(true),
-    )
-    .unwrap()
-    .add_penalties(100, 9999, 9998, 150, 1.05, 1.05, 1.05, true, false)
-    .add_mirostat_v2(0, 0.1, 5.0);
-
-    for i in 0..max_new_toks {
-        ctx.decode(&mut batch).expect("failed to eval");
-        let token = sampler.sample(&ctx, batch.n_tokens() - 1);
-
-        sampler.accept(token);
-
-        if token == model.token_eos() {
-            eprintln!();
+        if candidates.is_empty() {
             break;
         }
 
-        let output_str = model
-            .token_to_str(token, llama_cpp_2::model::Special::Tokenize)
-            .unwrap();
+        // Take the highest probability token
+        let (next_token, _prob) = candidates[0];
 
-        print!("{output_str}");
+        let token_str = model.tok_to_str(next_token);
+        print!("{}", token_str);
         std::io::Write::flush(&mut std::io::stdout()).unwrap();
 
-        batch.clear();
-        batch
-            .add(token, prefix_tokens.len() as i32 + i as i32, &[0], true)
-            .unwrap();
+        current_tokens.push(next_token);
     }
+    println!();
 }
 
 static TIME_TO_QUIT: std::sync::atomic::AtomicBool = AtomicBool::new(false);
@@ -693,7 +683,13 @@ fn main() {
         }
     });
 
-    let model = llamacpp::model_from_gguf(&args.model, !args.no_gpu);
+    let model: Box<dyn Model> = if let Some(gguf_path) = args.llcc.as_ref() {
+        Box::new(llamacpp::model_from_gguf(gguf_path.clone(), !args.no_gpu))
+    } else if let Some(vllm_mod) = args.vllm.as_ref() {
+        Box::new(vllm::VllmModel::new(&vllm_mod).unwrap())
+    } else {
+        panic!()
+    };
 
     // Can use "corpus/dictionary_filter.txt", but it's not worth it.
     let words = corpus::get_words("corpus/allowed_words.txt", None);
@@ -706,24 +702,29 @@ fn main() {
     if args.calibrate_costs {
         let strips = corpus::get_strips("corpus/validation_strips.csv", prompt);
 
-        calibrate_costs(&strips, &words, &model, &args);
+        calibrate_costs(&strips, &words, &*model, &args);
     } else if let Some(ref pfx) = args.complete {
         if let Ok(id) = pfx.parse::<usize>() {
-            complete(&get_strip(id, prompt).leadup, 200, &model);
+            complete(&get_strip(id, prompt).leadup, 200, &*model);
         } else {
-            complete(&pfx, 200, &model);
+            complete(&pfx, 200, &*model);
         }
     } else if let Some(id) = args.tok_score {
         let mut stats = Stats::default();
         let strip = get_strip(id, prompt);
-        predict_strip(&strip, args.suffix.as_deref(), &model, &mut stats);
+        predict_strip(&strip, args.suffix.as_deref(), &*model, &mut stats);
         println!("{}", stats.details);
     } else if let Some(ref search) = args.search_one {
         if let Ok(id) = search.parse::<usize>() {
             let hints = if id == 1663 {
-                search::Hints::for_1663(&words, !args.ignore_ties, &model)
+                search::Hints::for_1663(&words, !args.ignore_ties, &*model)
             } else {
-                search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
+                search::Hints::from_strip(
+                    &get_strip(id, prompt),
+                    &words,
+                    !args.ignore_ties,
+                    &*model,
+                )
             };
 
             let prefixes = if let Some(prefix_file) = args.prefix_file.as_ref() {
@@ -736,24 +737,24 @@ fn main() {
                 vec![]
             };
 
-            let mut search = SearchState::new(&model, hints, None, prefixes);
+            let mut search = SearchState::new(&*model, hints, None, prefixes);
             search.search();
         } else {
-            let mut search = SearchState::load(&search, &model);
+            let mut search = SearchState::load(&search, &*model);
             search.search();
         }
-    } else if let Some(hof_file) = args.recover_hof {
-        let search = SearchState::load(&hof_file, &model);
+    } else if let Some(hof_file) = args.recover_hof.as_ref() {
+        let search = SearchState::load(&hof_file, &*model);
         search.hof_write();
     } else if let Some(id) = args.search_manual {
         let hints = if id == 1663 {
-            search::Hints::for_1663(&words, !args.ignore_ties, &model)
+            search::Hints::for_1663(&words, !args.ignore_ties, &*model)
         } else {
-            search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
+            search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &*model)
         };
         //println!("{}", &hints.context.chars());  //TODOTODOTODO
 
-        manual_search(&model, hints.clone(), "");
+        manual_search(&*model, hints.clone(), "");
 
         print!("> ");
         std::io::stdout().flush().unwrap();
@@ -761,7 +762,7 @@ fn main() {
         for line in reader.lines() {
             match line {
                 Ok(line) => {
-                    manual_search(&model, hints.clone(), &line);
+                    manual_search(&*model, hints.clone(), &line);
                 }
                 Err(err) => {
                     panic!("{:?}", err);
@@ -770,7 +771,7 @@ fn main() {
             print!("> ");
             std::io::stdout().flush().unwrap();
         }
-    } else if let Some(s) = args.tokenize {
+    } else if let Some(s) = args.tokenize.as_ref() {
         let toks = model.str_to_tokens(&s);
         let mut s_top = String::new();
         let mut s_bot = String::new();
@@ -791,7 +792,7 @@ fn main() {
             }
         }
         print!("{s_top}\n{s_bot}\n");
-    } else if let Some(prefix) = args.pangram {
+    } else if let Some(prefix) = args.pangram.as_ref() {
         let pangram_hints = search::Hints {
             context: prefix.clone(),
             id: 0,
@@ -804,12 +805,12 @@ fn main() {
             longest_word_len: None,
             longest_token: None,
         };
-        let mut search = SearchState::new(&model, pangram_hints, None, vec![]);
+        let mut search = SearchState::new(&*model, pangram_hints, None, vec![]);
         search.search();
     } else {
         // Strips withheld from the 3550 corpus. Pre-3550 models may perform better because of memorization.
         let strips = corpus::get_strips("corpus/validation_strips.csv", prompt);
-        measure_costs(&strips, &model, &args);
+        measure_costs(&strips, &*model, &args);
     }
 }
 

@@ -17,20 +17,37 @@ pub struct VllmModel {
 
 impl VllmModel {
     pub fn new(model_name: &str) -> Result<VllmModel> {
-        Python::attach(|py| -> Result<VllmModel> {
-            let vllm = py.import("vllm")?;
+        // use std::env;
+        // // let torch_lib_path =
+        // //     "/home/paul/.venv/lib/python3.12/site-packages/nvidia/cuda_runtime/lib/";
+        // let torch_lib_path = "/usr/lib/x86_64-linux-gnu/";
 
-            let llm_class = vllm.getattr("LLM")?;
+        // env::set_var(
+        //     "LD_LIBRARY_PATH",
+        //     format!(
+        //         "{}:{}",
+        //         torch_lib_path,
+        //         env::var("LD_LIBRARY_PATH").unwrap_or("".to_string())
+        //     ),
+        // );
+
+        Python::initialize();
+
+        Python::attach(|py| -> Result<VllmModel> {
+            let _ = py.import("torch").unwrap();
+            let vllm = py.import("vllm").unwrap();
+
+            let llm_class = vllm.getattr("LLM").unwrap();
 
             let kwargs = PyDict::new(py);
-            kwargs.set_item("model", model_name)?;
-            kwargs.set_item("enable_prefix_caching", true)?;
+            kwargs.set_item("model", model_name).unwrap();
+            kwargs.set_item("enable_prefix_caching", true).unwrap();
             // Needs to be tweakable:
-            kwargs.set_item("gpu_memory_utilization", 0.75)?;
-            kwargs.set_item("max_logprobs", -1)?;
-            let model = llm_class.call((), Some(&kwargs))?;
+            kwargs.set_item("gpu_memory_utilization", 0.75).unwrap();
+            kwargs.set_item("max_logprobs", -1).unwrap();
+            let model = llm_class.call((), Some(&kwargs)).unwrap();
 
-            let tokenizer = model.getattr("get_tokenizer")?.call0()?;
+            let tokenizer = model.getattr("get_tokenizer").unwrap().call0().unwrap();
 
             Ok(VllmModel {
                 vllm: vllm.unbind(),
@@ -164,8 +181,8 @@ impl<'a> Session<'a> for VllmSession<'a> {
                 .get_item(/*batch index*/ 0)?
                 .getattr("outputs")?
                 .get_item(/*always 0 for us*/ 0)?;
-            let cand_tokens: Bound<PyList> = output.getattr("token_ids")?.extract().unwrap();
-            let cand_logprobs: Bound<PyList> = output.getattr("logprobs")?.extract().unwrap();
+            let cand_tokens: Bound<PyAny> = output.getattr("logprobs")?.getattr("token_ids")?;
+            let cand_logprobs: Bound<PyAny> = output.getattr("logprobs")?.getattr("logprobs")?;
 
             let tokens: Vec<i64> = cand_tokens.extract().unwrap();
             let logprobs: Vec<f64> = cand_logprobs.extract().unwrap();

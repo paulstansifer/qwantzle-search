@@ -3,7 +3,6 @@
 use std::{cell::Cell, cmp::Ordering, fs, io::Write as _, time::Duration};
 
 use indicatif::ProgressBar;
-use llama_cpp_2::model::LlamaModel;
 use priority_queue::PriorityQueue;
 use serde::{Deserialize, Serialize};
 use thousands::Separable;
@@ -151,7 +150,7 @@ impl Hints {
         strip: &Strip,
         words: &Vec<String>,
         look_at_ties: bool,
-        llm: &LlamaModel,
+        llm: &dyn Model,
     ) -> Hints {
         let mut longest_word_len = 0;
         let vocab = {
@@ -213,7 +212,7 @@ impl Hints {
         }
     }
 
-    pub fn for_1663(words: &Vec<String>, look_at_ties: bool, llm: &LlamaModel) -> Hints {
+    pub fn for_1663(words: &Vec<String>, look_at_ties: bool, llm: &dyn Model) -> Hints {
         let vocab = {
             let mut v_builder = VocabBuilder::default();
             for word in words {
@@ -269,7 +268,7 @@ struct HallOfFame {
 pub struct SearchState<'a> {
     q: Q,
 
-    llm: &'a LlamaModel,
+    llm: &'a dyn Model,
     rlnn: LetterNet,
     sess: Box<dyn Session<'a> + 'a>,
 
@@ -305,13 +304,13 @@ struct SearchStateSerializable {
     hall_of_fame: HallOfFame,
 }
 
-impl SearchState<'_> {
+impl<'a> SearchState<'a> {
     pub fn new(
-        llm: &LlamaModel,
+        llm: &'a dyn Model,
         hints: Hints,
         max_search: Option<usize>,
         start_prefixes: Vec<String>,
-    ) -> SearchState<'_> {
+    ) -> SearchState<'a> {
         let q = Q::new();
         let rlnn = remaining_letters_neural_net::LetterNet::new_from_file(
             "corpus/letter_pool.safetensors",
@@ -402,7 +401,7 @@ impl SearchState<'_> {
         fs::write(filename, &bytes).unwrap();
     }
 
-    pub fn load<'a>(filename: &str, llm: &'a LlamaModel) -> SearchState<'a> {
+    pub fn load(filename: &str, llm: &'a dyn Model) -> SearchState<'a> {
         let bytes = fs::read(filename).unwrap();
         let sss: SearchStateSerializable = bincode::deserialize(&bytes).unwrap();
 
@@ -880,7 +879,7 @@ impl Node {
         &self.text
     }
 
-    fn new_with_longest_tok(text: &str, model: &LlamaModel) -> Node {
+    fn new_with_longest_tok(text: &str, model: &dyn Model) -> Node {
         let mut res = Node::new(text);
         res.remaining.set_longest_tok_from(text, model);
         res
@@ -890,7 +889,7 @@ impl Node {
         &self,
         t: Token,
         prob: f32,
-        model: &LlamaModel,
+        model: &dyn Model,
         vocab: &Vocab,
         rlnn: &LetterNet,
     ) -> Option<(Node, Score)> {
@@ -965,7 +964,7 @@ impl Node {
             if let Some((next_node, score)) = self.push_token(
                 tok,
                 p as f32,
-                &search_state.llm,
+                search_state.llm,
                 &search_state.hints.vocab,
                 &search_state.rlnn,
             ) {
@@ -1047,7 +1046,7 @@ pub struct SearchResult {
 
 pub fn practice_search(
     strip: &Strip,
-    model: &LlamaModel,
+    model: &dyn Model,
     words: &Vec<String>,
     steps_limit: Option<usize>,
     report: &mut String,
@@ -1067,12 +1066,12 @@ pub fn practice_search(
     *report += &strip_summary;
 
     let hints = if strip.id == 1663 {
-        Hints::for_1663(&words, /*look_at_ties=*/ false, &model)
+        Hints::for_1663(&words, /*look_at_ties=*/ false, model)
     } else {
-        Hints::from_strip(strip, &words, /*look_at_ties=*/ false, &model)
+        Hints::from_strip(strip, &words, /*look_at_ties=*/ false, model)
     };
 
-    let mut search = SearchState::new(&model, hints, steps_limit, vec![]);
+    let mut search = SearchState::new(model, hints, steps_limit, vec![]);
     search.search();
 
     *report += &format!("Deepest node accessed: {}\n", search.deepest_node_accessed);
@@ -1098,7 +1097,7 @@ pub fn practice_search(
     };
 }
 
-pub fn manual_search(llm: &LlamaModel, hints: Hints, prefix: &str) {
+pub fn manual_search(llm: &dyn Model, hints: Hints, prefix: &str) {
     let rlnn =
         remaining_letters_neural_net::LetterNet::new_from_file("corpus/letter_pool.safetensors")
             .unwrap();

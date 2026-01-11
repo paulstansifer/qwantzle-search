@@ -1,0 +1,29 @@
+Padding the suffix with a space.
+
+1938:  God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+T-Rex: NEVER
+T-Rex (punchline): -
+                   has          an     analogy        been          so    accurate         and  personally    damaging
+prb             0.034%      4.001%     42.679%     16.770%     29.921%      8.844%      8.232%      0.027%      1.176%
+rln scr        10.959%     28.924%     63.564%     58.166%     33.992%     62.143%     76.632%     69.175%    100.000%
+pfx scr         0.015%      0.004%      0.102%      0.105%      0.049%      0.533%      0.309%      0.839%   1083.303%
+tok ahd            224           5           0           0           1           0           1         271          12
+val ahd             28           3           0           0           1           0           0          29           0
+prb ahd         84.63%      58.76%       0.00%       0.00%      42.55%       0.00%      44.62%      88.91%      70.49%
+min score: 0.0041%  optimistic cost: 6.96e3  average prob: 2.7%  overall_prob: 6.56e-13%  average tok time: 47367 Padding the suffix with a space.
+
+1218:  T-Rex: A few months ago I said I wanted to be a stand-up comedian. It turns out it's a lot of work?...ps.
+Utahraptor: Comedy's hard, I guess!
+T-Rex: I just can't figure out these... these Dinosaur Comics.
+God: OH GOD
+T-Rex: What?
+T-Rex (punchline): You
+                  know        what           ?          It           '           s      really       weird        when         you         say        that           .
+prb             9.295%     29.072%     54.785%      2.959%     51.821%     99.075%      0.488%      1.888%      6.088%     58.959%     26.879%     16.154%     25.385%
+rln scr        60.502%     68.755%     78.337%     57.337%     80.066%     78.918%     93.231%     89.725%     79.063%     77.428%     74.551%    100.000%    100.000%
+pfx scr        36.855%     79.795%     79.693%      4.459%      5.260%      8.449%      1.164%      0.663%      1.526%     24.314%    292.668%  21563.528%  26275.082%
+tok ahd              1           0           0           6           0           0          31          13           4           0           0           1           1
+val ahd              1           0           0           1           0           0          11           4           2           0           0           0           0
+prb ahd         25.23%       0.00%       0.00%      60.05%       0.00%       0.00%      74.24%      59.12%      50.31%       0.00%       0.00%      33.30%      27.21%
+min score: 0.6635%  optimistic cost: 7.20e2  average prob: 14.0%  overall_prob: 8.19e-10%  average tok time: 38539 
