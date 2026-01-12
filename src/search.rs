@@ -830,7 +830,7 @@ pub fn prob_score(
     probs: &Vec<f32>,
     chars_so_far: u8,
     chars_remaining: u8,
-    rlnn_mult: f32,
+    rlnn_prob: f32,
 ) -> Score {
     let mut probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
     probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
@@ -860,6 +860,16 @@ pub fn prob_score(
 
         chars_i += 1;
     }
+
+    let rlnn_sched = vec![
+        (0, 1.0),
+        (len.saturating_sub(40), 1.0),
+        (len.saturating_sub(20), 1.0),
+        (len, 1.0),
+    ];
+    let rlnn_mult = (rlnn_prob + 0.0).powf(ilerp(chars_so_far, &rlnn_sched));
+
+    assert_eq!(rlnn_mult, rlnn_prob);
 
     Score(prod * rlnn_mult as f64)
 }
@@ -1205,4 +1215,18 @@ fn ilerp_check() {
     assert_eq!(ilerp(11, &sched), 100.0);
     assert_eq!(ilerp(12, &sched), 150.0);
     assert_eq!(ilerp(13, &sched), 200.0);
+
+    let flat_sched = vec![
+        (0, 1.0),
+        ((50 as u8).saturating_sub(40), 1.0),
+        ((50 as u8).saturating_sub(20), 1.0),
+        (50, 1.0),
+    ];
+
+    assert_eq!(ilerp(0, &flat_sched), 1.0);
+    assert_eq!(ilerp(20, &flat_sched), 1.0);
+    assert_eq!(ilerp(40, &flat_sched), 1.0);
+    assert_eq!(ilerp(50, &flat_sched), 1.0);
+
+    assert_eq!((0.25 as f32).powf(1.0), 0.25)
 }
