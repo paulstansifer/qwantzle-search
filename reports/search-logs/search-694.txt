@@ -2,7 +2,7 @@ EVERYONE has better reasons for being here than me!
 Step          0 (remaining mass 5.631%): Next token is ' EVERYONE', score is 0.76628% (0.025%, 83.476%, 8)
 Step          0 (remaining mass 0.127%): Next token is ' has', score is 0.13791% (4.629%, 80.488%, 11)
 Step          9 (remaining mass 0.112%): Next token is ' better', score is 0.00612% (0.247%, 76.640%, 17)
-Step        234 (remaining mass 0.021%): Next token is ' reasons', score is 0.00101% (0.463%, 64.435%, 24)
+Step        233 (remaining mass 0.024%): Next token is ' reasons', score is 0.00101% (0.463%, 64.435%, 24)
 Step        847 (remaining mass 0.011%): Next token is ' for', score is 0.00140% (19.765%, 53.173%, 27)
 Step        848 (remaining mass 0.011%): Next token is ' being', score is 0.07441% (40.613%, 57.760%, 32)
 Critical token DISCARDED! ' EVERYONE has better reasons for being here' self.prob = 0.00%, p = 13.61%, avg_prob = 2.04%
@@ -61,25 +61,25 @@ Search time: 33s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
         50 0* 0.02826% (99.875% 0.040% 0.085%)   EVERYONE there is                                                                                                            aaabbeeeeefghhmnnnoorrrsstt!
         51 0* 0.02432% (99.875% 0.040% 0.085%)   EVERYONE here has this                                                                                                       aabbeeeeefgmnnnoorrrstt!
         52 0* 0.02335% (99.875% 0.040% 0.085%)   EVERYONE has been                                                                                                            aabeeeeefghhimnnoorrrrssttt!
-        53 0* 0.02308% (99.875% 0.040% 0.085%)                                                                                                                                --------aaabbeeeeeeefghhhimnnnoorrrrsssttt!
-        54 0* 0.02292% (99.905% 0.040% 0.055%)   being                                                                                                                        --------aaabeeeeeefhhhmnnoorrrrsssttt!
-        55 0* 0.02275% (99.908% 0.040% 0.052%)   EVERYONE has a                                                                                                               abbeeeeeeefghhimnnnoorrrrssttt!
-        56 0* 0.02264% (99.908% 0.040% 0.052%)   thirst                                                                                                                       --------aaabbeeeeeeefghhmnnnoorrrsst!
-        57 0* 0.02252% (99.918% 0.040% 0.042%)   EVERYONE here gets                                                                                                           aaabbeeeefhhimnnnoorrrsstt!
-        58 0* 0.02243% (99.918% 0.040% 0.042%)   EVERYONE here has been so great                                                                                              abeefhimnnorrstt!
-        59 0* 0.02264% (99.918% 0.040% 0.042%)   EVERYONE here has been so great!                                                                                             abeefhimnnorrstt
-        60 0* 0.02167% (99.918% 0.040% 0.042%)   EVERYONE has the same thirst for                                                                                             abbeeeeegnnnorr!
-        61 0* 0.02166% (99.918% 0.040% 0.042%)   EVERYONE is so                                                                                                               aaabbeeeeeeefghhhmnnnorrrrsttt!
-        62 0* 0.02154% (99.919% 0.040% 0.041%)   EVERYONE here has a strong                                                                                                   abbeeeeefhimnnorrstt!
-        63 0* 0.03866% (99.919% 0.040% 0.041%)   EVERYONE here has a strong thirst                                                                                            abbeeeeefmnnor!
-        64 0* 0.04676% (99.919% 0.040% 0.041%)   EVERYONE here has a strong thirst!                                                                                           abbeeeeefmnnor
-        65 0* 0.03528% (99.919% 0.040% 0.041%)   EVERYONE here has a strong thirst for                                                                                        abbeeeeemnn!
-        66 0* 0.02131% (99.919% 0.040% 0.041%)   EVERYONE here hates                                                                                                          aabbeeeefghimnnnoorrrsstt!
-        67 0* 0.04386% (99.919% 0.040% 0.041%)   EVERYONE here hates me                                                                                                       aabbeeefghinnnoorrrsstt!
-        68 0* 0.03838% (99.919% 0.040% 0.041%)   EVERYONE here hates me!                                                                                                      aabbeeefghinnnoorrrsstt
-        69 0* 0.02129% (99.919% 0.040% 0.041%)   EVERYONE here has got                                                                                                        aabbeeeeefhimnnnorrrsstt!
-        70 0* 0.02106% (99.919% 0.040% 0.041%)   EVERYONE here has the same strong                                                                                            abbeeefinnorrt!
-        71 0* 0.02026% (99.919% 0.040% 0.041%)   EVERYONE in                                                                                                                  aaabbeeeeeeefghhhmnnoorrrrsssttt!
+        53 0* 0.02292% (99.875% 0.040% 0.085%)   being                                                                                                                        --------aaabeeeeeefhhhmnnoorrrrsssttt!
+        54 0* 0.02275% (99.878% 0.040% 0.082%)   EVERYONE has a                                                                                                               abbeeeeeeefghhimnnnoorrrrssttt!
+        55 0* 0.02264% (99.878% 0.040% 0.082%)   thirst                                                                                                                       --------aaabbeeeeeeefghhmnnnoorrrsst!
+        56 0* 0.02252% (99.888% 0.040% 0.072%)   EVERYONE here gets                                                                                                           aaabbeeeefhhimnnnoorrrsstt!
+        57 0* 0.02243% (99.888% 0.040% 0.072%)   EVERYONE here has been so great                                                                                              abeefhimnnorrstt!
+        58 0* 0.02264% (99.888% 0.040% 0.072%)   EVERYONE here has been so great!                                                                                             abeefhimnnorrstt
+        59 0* 0.02167% (99.888% 0.040% 0.072%)   EVERYONE has the same thirst for                                                                                             abbeeeeegnnnorr!
+        60 0* 0.02166% (99.888% 0.040% 0.072%)   EVERYONE is so                                                                                                               aaabbeeeeeeefghhhmnnnorrrrsttt!
+        61 0* 0.02154% (99.889% 0.040% 0.071%)   EVERYONE here has a strong                                                                                                   abbeeeeefhimnnorrstt!
+        62 0* 0.03866% (99.889% 0.040% 0.071%)   EVERYONE here has a strong thirst                                                                                            abbeeeeefmnnor!
+        63 0* 0.04676% (99.889% 0.040% 0.071%)   EVERYONE here has a strong thirst!                                                                                           abbeeeeefmnnor
+        64 0* 0.03528% (99.889% 0.040% 0.071%)   EVERYONE here has a strong thirst for                                                                                        abbeeeeemnn!
+        65 0* 0.02131% (99.889% 0.040% 0.071%)   EVERYONE here hates                                                                                                          aabbeeeefghimnnnoorrrsstt!
+        66 0* 0.04386% (99.889% 0.040% 0.071%)   EVERYONE here hates me                                                                                                       aabbeeefghinnnoorrrsstt!
+        67 0* 0.03838% (99.889% 0.040% 0.071%)   EVERYONE here hates me!                                                                                                      aabbeeefghinnnoorrrsstt
+        68 0* 0.02129% (99.889% 0.040% 0.071%)   EVERYONE here has got                                                                                                        aabbeeeeefhimnnnorrrsstt!
+        69 0* 0.02106% (99.889% 0.040% 0.071%)   EVERYONE here has the same strong                                                                                            abbeeefinnorrt!
+        70 0* 0.02026% (99.889% 0.040% 0.071%)   EVERYONE in                                                                                                                  aaabbeeeeeeefghhhmnnoorrrrsssttt!
+        71 0* 0.02021% (99.889% 0.040% 0.071%)                                                                                                                                --------aaabbeeeeeeefghhhimnnnoorrrrsssttt!
         72 0* 0.01965% (99.919% 0.040% 0.041%)   EVERYONE here has to                                                                                                         aabbeeeeefghimnnnorrrsstt!
         73 0* 0.01898% (99.919% 0.040% 0.041%)   EVERYONE here has some                                                                                                       aabbeeeefghinnnorrrsttt!
         74 0* 0.01841% (99.919% 0.040% 0.041%)   EVERYONE here has a great                                                                                                    bbeeeefhimnnnoorrsstt!
@@ -180,46 +180,46 @@ Search time: 33s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
        169 0* 0.05383% (99.920% 0.040% 0.040%)   EVERYONE here tastes the same                                                                                                abbeefghinnnoorrr!
        170 0* 0.07534% (99.920% 0.040% 0.040%)   EVERYONE here tastes the same!                                                                                               abbeefghinnnoorrr
        171 0* 0.00870% (99.920% 0.040% 0.040%)   EVERYONE here has a thirst for me to                                                                                         abbeeeegnnnrs!
-       172 0* 0.00856% (99.920% 0.040% 0.040%)   is                                                                                                                           --------aaabbeeeeeeefghhhmnnnoorrrrssttt!
-       173 0* 0.00849% (99.925% 0.040% 0.035%)   EVERYONE gets to                                                                                                             aaabbeeeeeefhhhimnnnorrrrsst!
-       174 0* 0.00845% (99.925% 0.040% 0.035%)   EVERYONE has great                                                                                                           abbeeeeeefhhimnnnoorrrsstt!
-       175 0* 0.00864% (99.925% 0.040% 0.035%)   EVERYONE has great teeth                                                                                                     abbeeeefhimnnnoorrrss!
-       176 0* 0.02248% (99.925% 0.040% 0.035%)   EVERYONE has great teeth here                                                                                                abbeefimnnnoorrss!
-       177 0* 0.02983% (99.925% 0.040% 0.035%)   EVERYONE has great teeth here!                                                                                               abbeefimnnnoorrss
-       178 0* 0.00833% (99.925% 0.040% 0.035%)   EVERYONE here tastes great                                                                                                   abbeeefhhimnnnoorrs!
-       179 0* 0.01049% (99.925% 0.040% 0.035%)   EVERYONE here tastes great!                                                                                                  abbeeefhhimnnnoorrs
-       180 0* 0.00829% (99.925% 0.040% 0.035%)   the                                                                                                                          --------aaabbeeeeeefghhimnnnoorrrrssstt!
-       181 0* 0.00813% (99.927% 0.040% 0.033%)   EVERYONE here has a thirst strong                                                                                            abbeeeeefmnnor!
-       182 0* 0.00808% (99.927% 0.040% 0.033%)   EVERYONE there has safe                                                                                                      abbeeeeghimnnnoorrrstt!
-       183 0* 0.00801% (99.927% 0.040% 0.033%)   EVERYONE here has a great sense of time                                                                                      bbehnnorrt!
-       184 0* 0.01805% (99.927% 0.040% 0.033%)   EVERYONE here has a great sense of time!                                                                                     bbehnnorrt
-       185 0* 0.00795% (99.927% 0.040% 0.033%)   is there                                                                                                                     --------aaabbeeeeefghhmnnnoorrrsstt!
-       186 0* 0.00787% (99.928% 0.040% 0.032%)   it                                                                                                                           --------aaabbeeeeeeefghhhmnnnoorrrrssstt!
-       187 0* 0.00785% (99.936% 0.040% 0.024%)   EVERYONE here seems to be thirst                                                                                             aaabeefghnnnorr!
-       188 0* 0.00781% (99.936% 0.040% 0.024%)   EVERYONE here is gonna                                                                                                       aabbeeeeefhhmnorrrssttt!
-       189 0* 0.01332% (99.936% 0.040% 0.024%)   EVERYONE here is gonna be                                                                                                    aabeeeefhhmnorrrssttt!
-       190 0* 0.00769% (99.936% 0.040% 0.024%)   EVERYONE here is so great                                                                                                    aabbeeeefhhmnnnorrstt!
-       191 0* 0.00933% (99.936% 0.040% 0.024%)   EVERYONE here is so great!                                                                                                   aabbeeeefhhmnnnorrstt
-       192 0* 0.00765% (99.936% 0.040% 0.024%)   EVERYONE here has some great                                                                                                 abbeeefhinnnorrstt!
-       193 0* 0.13833% (99.936% 0.040% 0.024%)   EVERYONE here has some great thirst                                                                                          abbeeefnnnor!
-       194 0* 0.12598% (99.936% 0.040% 0.024%)   EVERYONE here has some great thirst!                                                                                         abbeeefnnnor
-       195 0* 0.00759% (99.936% 0.040% 0.024%)   EVERYONE here has the most boring                                                                                            aabeeeefnnrrst!
-       196 0* 0.00746% (99.936% 0.040% 0.024%)   EVERYONE get a                                                                                                               aabbeeeeeefhhhimnnnoorrrrssstt!
-       197 0* 0.00720% (99.936% 0.040% 0.024%)   EVERYONE here has great thirst for                                                                                           abbeeeemnnnos!
-       198 0* 0.00714% (99.936% 0.040% 0.024%)   EVERYONE has been so great                                                                                                   abeeeefhhimnnorrrstt!
-       199 0* 0.00711% (99.936% 0.040% 0.024%)   EVERYONE here has a better reason                                                                                            beefghimnnorst!
-       200 0* 0.01323% (99.936% 0.040% 0.024%)   EVERYONE here has a better reason to                                                                                         beefghimnnrs!
-       201 0* 0.06854% (99.936% 0.040% 0.024%)   EVERYONE here has a better reason to be                                                                                      efghimnnrs!
-       202 0* 0.00710% (99.936% 0.040% 0.024%)   EVERYONE in these                                                                                                            aaabbeeeeefghhmnnoorrrrsstt!
-       203 0* 0.00696% (99.936% 0.040% 0.024%)   EVERYONE here hates me for                                                                                                   aabbeeeghinnnorrsstt!
-       204 0* 0.03277% (99.936% 0.040% 0.024%)   EVERYONE here hates me for being                                                                                             aabeehnnorrsstt!
-       205 0* 0.01070% (99.936% 0.040% 0.024%)   EVERYONE here hates me for being so                                                                                          aabeehnnrrstt!
-       206 0* 0.00685% (99.936% 0.040% 0.024%)   EVERYONE here has been nothing                                                                                               aabeeefmorrrsstt!
-       207 0* 0.00684% (99.936% 0.040% 0.024%)   EVERYONE here has strong                                                                                                     aabbeeeeefhimnnorrstt!
-       208 0* 0.00677% (99.936% 0.040% 0.024%)   EVERYONE has the same taste                                                                                                  bbeeeefghinnnoorrrr!
-       209 0* 0.01550% (99.936% 0.040% 0.024%)   EVERYONE has the same taste in                                                                                               bbeeeefghnnoorrrr!
-       210 0* 0.00676% (99.936% 0.040% 0.024%)   EVERYONE gets a                                                                                                              aabbeeeeeefhhhimnnnoorrrrsstt!
-       211 0* 0.00675% (99.936% 0.040% 0.024%)   EVERYONE better get                                                                                                          aaabeeeefhhhimnnnoorrrsss!
+       172 0* 0.00849% (99.920% 0.040% 0.040%)   EVERYONE gets to                                                                                                             aaabbeeeeeefhhhimnnnorrrrsst!
+       173 0* 0.00845% (99.920% 0.040% 0.040%)   EVERYONE has great                                                                                                           abbeeeeeefhhimnnnoorrrsstt!
+       174 0* 0.00864% (99.920% 0.040% 0.040%)   EVERYONE has great teeth                                                                                                     abbeeeefhimnnnoorrrss!
+       175 0* 0.02248% (99.920% 0.040% 0.040%)   EVERYONE has great teeth here                                                                                                abbeefimnnnoorrss!
+       176 0* 0.02983% (99.920% 0.040% 0.040%)   EVERYONE has great teeth here!                                                                                               abbeefimnnnoorrss
+       177 0* 0.00833% (99.920% 0.040% 0.040%)   EVERYONE here tastes great                                                                                                   abbeeefhhimnnnoorrs!
+       178 0* 0.01049% (99.920% 0.040% 0.040%)   EVERYONE here tastes great!                                                                                                  abbeeefhhimnnnoorrs
+       179 0* 0.00829% (99.920% 0.040% 0.040%)   the                                                                                                                          --------aaabbeeeeeefghhimnnnoorrrrssstt!
+       180 0* 0.00813% (99.922% 0.040% 0.038%)   EVERYONE here has a thirst strong                                                                                            abbeeeeefmnnor!
+       181 0* 0.00808% (99.922% 0.040% 0.038%)   EVERYONE there has safe                                                                                                      abbeeeeghimnnnoorrrstt!
+       182 0* 0.00801% (99.922% 0.040% 0.038%)   EVERYONE here has a great sense of time                                                                                      bbehnnorrt!
+       183 0* 0.01805% (99.922% 0.040% 0.038%)   EVERYONE here has a great sense of time!                                                                                     bbehnnorrt
+       184 0* 0.00785% (99.922% 0.040% 0.038%)   EVERYONE here seems to be thirst                                                                                             aaabeefghnnnorr!
+       185 0* 0.00781% (99.922% 0.040% 0.038%)   EVERYONE here is gonna                                                                                                       aabbeeeeefhhmnorrrssttt!
+       186 0* 0.01332% (99.922% 0.040% 0.038%)   EVERYONE here is gonna be                                                                                                    aabeeeefhhmnorrrssttt!
+       187 0* 0.00769% (99.922% 0.040% 0.038%)   EVERYONE here is so great                                                                                                    aabbeeeefhhmnnnorrstt!
+       188 0* 0.00933% (99.922% 0.040% 0.038%)   EVERYONE here is so great!                                                                                                   aabbeeeefhhmnnnorrstt
+       189 0* 0.00766% (99.922% 0.040% 0.038%)   is                                                                                                                           --------aaabbeeeeeeefghhhmnnnoorrrrssttt!
+       190 0* 0.00795% (99.927% 0.040% 0.033%)   is there                                                                                                                     --------aaabbeeeeefghhmnnnoorrrsstt!
+       191 0* 0.00765% (99.928% 0.040% 0.032%)   EVERYONE here has some great                                                                                                 abbeeefhinnnorrstt!
+       192 0* 0.13833% (99.928% 0.040% 0.032%)   EVERYONE here has some great thirst                                                                                          abbeeefnnnor!
+       193 0* 0.12598% (99.928% 0.040% 0.032%)   EVERYONE here has some great thirst!                                                                                         abbeeefnnnor
+       194 0* 0.00759% (99.928% 0.040% 0.032%)   EVERYONE here has the most boring                                                                                            aabeeeefnnrrst!
+       195 0* 0.00746% (99.928% 0.040% 0.032%)   EVERYONE get a                                                                                                               aabbeeeeeefhhhimnnnoorrrrssstt!
+       196 0* 0.00720% (99.928% 0.040% 0.032%)   EVERYONE here has great thirst for                                                                                           abbeeeemnnnos!
+       197 0* 0.00714% (99.928% 0.040% 0.032%)   EVERYONE has been so great                                                                                                   abeeeefhhimnnorrrstt!
+       198 0* 0.00711% (99.928% 0.040% 0.032%)   EVERYONE here has a better reason                                                                                            beefghimnnorst!
+       199 0* 0.01323% (99.928% 0.040% 0.032%)   EVERYONE here has a better reason to                                                                                         beefghimnnrs!
+       200 0* 0.06854% (99.928% 0.040% 0.032%)   EVERYONE here has a better reason to be                                                                                      efghimnnrs!
+       201 0* 0.00710% (99.928% 0.040% 0.032%)   EVERYONE in these                                                                                                            aaabbeeeeefghhmnnoorrrrsstt!
+       202 0* 0.00696% (99.928% 0.040% 0.032%)   EVERYONE here hates me for                                                                                                   aabbeeeghinnnorrsstt!
+       203 0* 0.03277% (99.928% 0.040% 0.032%)   EVERYONE here hates me for being                                                                                             aabeehnnorrsstt!
+       204 0* 0.01070% (99.928% 0.040% 0.032%)   EVERYONE here hates me for being so                                                                                          aabeehnnrrstt!
+       205 0* 0.00685% (99.928% 0.040% 0.032%)   EVERYONE here has been nothing                                                                                               aabeeefmorrrsstt!
+       206 0* 0.00684% (99.928% 0.040% 0.032%)   EVERYONE here has strong                                                                                                     aabbeeeeefhimnnorrstt!
+       207 0* 0.00677% (99.928% 0.040% 0.032%)   EVERYONE has the same taste                                                                                                  bbeeeefghinnnoorrrr!
+       208 0* 0.01550% (99.928% 0.040% 0.032%)   EVERYONE has the same taste in                                                                                               bbeeeefghnnoorrrr!
+       209 0* 0.00676% (99.928% 0.040% 0.032%)   EVERYONE gets a                                                                                                              aabbeeeeeefhhhimnnnoorrrrsstt!
+       210 0* 0.00675% (99.928% 0.040% 0.032%)   EVERYONE better get                                                                                                          aaabeeeefhhhimnnnoorrrsss!
+       211 0* 0.00666% (99.928% 0.040% 0.032%)   it                                                                                                                           --------aaabbeeeeeeefghhhmnnnoorrrrssstt!
        212 0* 0.00666% (99.936% 0.040% 0.024%)   EVERYONE here tastes so                                                                                                      aabbeeeefghhimnnnorrrt!
        213 0* 0.00659% (99.936% 0.040% 0.024%)   EVERYONE here has strong thirst                                                                                              aabbeeeeefmnnor!
        214 0* 0.00721% (99.936% 0.040% 0.024%)   EVERYONE here has strong thirst!                                                                                             aabbeeeeefmnnor
@@ -228,23 +228,23 @@ Search time: 33s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
        217 0* 0.00639% (99.936% 0.040% 0.024%)   EVERYONE here has got thirst                                                                                                 aabbeeeeefmnnnorrs!
        218 0* 0.00636% (99.936% 0.040% 0.024%)   EVERYONE has the same taste in beer                                                                                          beefghnnoorrr!
        219 0* 0.01304% (99.936% 0.040% 0.024%)   EVERYONE has the same taste in beer!                                                                                         beefghnnoorrr
-       220 0* 0.00633% (99.936% 0.040% 0.024%)   am                                                                                                                           --------aabbeeeeeeefghhhinnnoorrrrsssttt!
-       221 0* 0.00633% (99.939% 0.040% 0.021%)   EVERYONE here agrees                                                                                                         aabbeeefhhimnnnoorrssttt!
-       222 0* 0.02868% (99.939% 0.040% 0.021%)   EVERYONE here agrees that                                                                                                    abbeeefhimnnnoorrsst!
-       223 0* 0.00926% (99.939% 0.040% 0.021%)   EVERYONE here agrees that this                                                                                               abbeeefmnnnoorrs!
-       224 0* 0.00702% (99.939% 0.040% 0.021%)   EVERYONE here agrees that there                                                                                              abbefimnnnoorss!
-       225 0* 0.00640% (99.939% 0.040% 0.021%)   EVERYONE here agrees that the                                                                                                abbeefimnnnoorrss!
-       226 0* 0.00631% (99.939% 0.040% 0.021%)   EVERYONE is here                                                                                                             aaabbeeeeefghhmnnnoorrrssttt!
-       227 0* 0.00622% (99.939% 0.040% 0.021%)   EVERYONE has the same rights                                                                                                 abbeeeeefnnnoorrrt!
-       228 0* 0.00622% (99.939% 0.040% 0.021%)   EVERYONE there is so                                                                                                         aaabbeeeeefghhmnnnorrrstt!
-       229 0* 0.00620% (99.939% 0.040% 0.021%)   EVERYONE has a thirst here                                                                                                   abbeeeeefgmnnnoorrst!
-       230 0* 0.00616% (99.939% 0.040% 0.021%)   EVERYONE here is better at                                                                                                   aabeeefghhmnnnoorrss!
-       231 0* 0.00613% (99.939% 0.040% 0.021%)   EVERYONE has great thirst                                                                                                    abbeeeeeefhmnnnoorrs!
-       232 0* 0.05128% (99.939% 0.040% 0.021%)   EVERYONE has great thirst here                                                                                               abbeeeefmnnnoors!
-       233 0* 0.06870% (99.939% 0.040% 0.021%)   EVERYONE has great thirst here!                                                                                              abbeeeefmnnnoors
-       234 0* 0.00612% (99.939% 0.040% 0.021%)   EVERYONE has better                                                                                                          aabeeeeefghhimnnnoorrrsst!
-       235 0* 0.00611% (99.939% 0.040% 0.021%)   EVERYONE here gets a                                                                                                         aabbeeeefhhimnnnoorrrsstt!
-       236 0* 0.00610% (99.939% 0.040% 0.021%)   EVERYONE has better things                                                                                                   aabeeeeefhmnnoorrrs!
+       220 0* 0.00633% (99.936% 0.040% 0.024%)   EVERYONE here agrees                                                                                                         aabbeeefhhimnnnoorrssttt!
+       221 0* 0.02868% (99.936% 0.040% 0.024%)   EVERYONE here agrees that                                                                                                    abbeeefhimnnnoorrsst!
+       222 0* 0.00926% (99.936% 0.040% 0.024%)   EVERYONE here agrees that this                                                                                               abbeeefmnnnoorrs!
+       223 0* 0.00702% (99.936% 0.040% 0.024%)   EVERYONE here agrees that there                                                                                              abbefimnnnoorss!
+       224 0* 0.00640% (99.936% 0.040% 0.024%)   EVERYONE here agrees that the                                                                                                abbeefimnnnoorrss!
+       225 0* 0.00631% (99.936% 0.040% 0.024%)   EVERYONE is here                                                                                                             aaabbeeeeefghhmnnnoorrrssttt!
+       226 0* 0.00622% (99.936% 0.040% 0.024%)   EVERYONE has the same rights                                                                                                 abbeeeeefnnnoorrrt!
+       227 0* 0.00622% (99.936% 0.040% 0.024%)   EVERYONE there is so                                                                                                         aaabbeeeeefghhmnnnorrrstt!
+       228 0* 0.00620% (99.936% 0.040% 0.024%)   EVERYONE has a thirst here                                                                                                   abbeeeeefgmnnnoorrst!
+       229 0* 0.00616% (99.936% 0.040% 0.024%)   EVERYONE here is better at                                                                                                   aabeeefghhmnnnoorrss!
+       230 0* 0.00613% (99.936% 0.040% 0.024%)   EVERYONE has great thirst                                                                                                    abbeeeeeefhmnnnoorrs!
+       231 0* 0.05128% (99.936% 0.040% 0.024%)   EVERYONE has great thirst here                                                                                               abbeeeefmnnnoors!
+       232 0* 0.06870% (99.936% 0.040% 0.024%)   EVERYONE has great thirst here!                                                                                              abbeeeefmnnnoors
+       233 0* 0.00612% (99.936% 0.040% 0.024%)   EVERYONE has better                                                                                                          aabeeeeefghhimnnnoorrrsst!
+       234 0* 0.00611% (99.936% 0.040% 0.024%)   EVERYONE here gets a                                                                                                         aabbeeeefhhimnnnoorrrsstt!
+       235 0* 0.00610% (99.936% 0.040% 0.024%)   EVERYONE has better things                                                                                                   aabeeeeefhmnnoorrrs!
+       236 0* 0.00608% (99.936% 0.040% 0.024%)   am                                                                                                                           --------aabbeeeeeeefghhhinnnoorrrrsssttt!
        237 0* 0.00608% (99.939% 0.040% 0.021%)   EVERYONE here hates me for reasons                                                                                           abbeeghinnrtt!
        238 0* 0.00596% (99.939% 0.040% 0.021%)   EVERYONE here hates me for being a                                                                                           abeehnnorrsstt!
        239 0* 0.00592% (99.939% 0.040% 0.021%)   EVERYONE agrees                                                                                                              aabbeeeeefhhhimnnnoorrrssttt!
@@ -387,71 +387,71 @@ Search time: 33s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
        376 0* 0.00333% (99.941% 0.040% 0.019%)   EVERYONE here is great at                                                                                                    abbeeeefhhmnnnoorrsst!
        377 0* 0.00333% (99.941% 0.040% 0.019%)   EVERYONE is better                                                                                                           aaabeeeeefghhhmnnnoorrrsst!
        378 0* 0.00331% (99.941% 0.040% 0.019%)   EVERYONE here has got thirst!                                                                                                aabbeeeeefmnnnorrs
-       379 0* 0.00330% (99.941% 0.040% 0.019%)   i                                                                                                                            --------aaabbeeeeeeefghhhmnnnoorrrrsssttt!
-       380 0* 0.00330% (99.944% 0.040% 0.016%)   EVERYONE here has a sense of their                                                                                           abbeegmnnorrtt!
-       381 0* 0.00329% (99.944% 0.040% 0.016%)   EVERYONE here agrees that their                                                                                              abbeefmnnnoorss!
-       382 0* 0.00325% (99.944% 0.040% 0.016%)   EVERYONE here is on                                                                                                          aaabbeeeeefghhmnnorrrssttt!
-       383 0* 0.00599% (99.944% 0.040% 0.016%)   EVERYONE here is on the                                                                                                      aaabbeeeefghmnnorrrsstt!
-       384 0* 0.02397% (99.944% 0.040% 0.016%)   EVERYONE here is on the same                                                                                                 aabbeeefghnnorrrstt!
-       385 0* 0.00385% (99.944% 0.040% 0.016%)   EVERYONE here is on the same boat                                                                                            abeeefghnnrrrst!
-       386 0* 0.00554% (99.944% 0.040% 0.016%)   EVERYONE here is on the same boat!                                                                                           abeeefghnnrrrst
-       387 0* 0.00323% (99.944% 0.040% 0.016%)   EVERYONE!                                                                                                                    aaabbeeeeeeefghhhimnnnoorrrrsssttt
-       388 0* 0.00319% (99.944% 0.040% 0.016%)   EVERYONE here gets safe                                                                                                      aabbeeehhimnnnoorrrstt!
-       389 0* 0.00317% (99.944% 0.040% 0.016%)   EVERYONE here better get                                                                                                     aaabeefhhimnnnoorrsss!
-       390 0* 0.00316% (99.944% 0.040% 0.016%)   EVERYONE there has the same great                                                                                            bbeefinnnoorrs!
-       391 0* 0.00314% (99.944% 0.040% 0.016%)   EVERYONE here has got a                                                                                                      abbeeeeefhimnnnorrrsstt!
-       392 0* 0.00417% (99.944% 0.040% 0.016%)   EVERYONE here has got a thirst                                                                                               abbeeeeefmnnnorrs!
-       393 0* 0.00494% (99.944% 0.040% 0.016%)   EVERYONE here has got a thirst for                                                                                           abbeeeeemnnnrs!
-       394 0* 0.00443% (99.944% 0.040% 0.016%)   EVERYONE here has got a thirst for me                                                                                        abbeeeennnrs!
-       395 0* 0.00615% (99.944% 0.040% 0.016%)   EVERYONE here has got a thirst for me!                                                                                       abbeeeennnrs
-       396 0* 0.00313% (99.944% 0.040% 0.016%)   EVERYONE has a right                                                                                                         abbeeeeeeefhmnnnoorrrsstt!
-       397 0* 0.00312% (99.944% 0.040% 0.016%)   EVERYONE here has a right                                                                                                    abbeeeeefmnnnoorrsstt!
-       398 0* 0.00519% (99.944% 0.040% 0.016%)   EVERYONE here has a right to                                                                                                 abbeeeeefmnnnorrsst!
-       399 0* 0.00529% (99.944% 0.040% 0.016%)   EVERYONE here has a right to safe                                                                                            bbeeeemnnnorrst!
-       400 0* 0.00309% (99.944% 0.040% 0.016%)   EVERYONE is better than                                                                                                      aabeeeeefghhmnnoorrrss!
-       401 0* 0.01661% (99.944% 0.040% 0.016%)   EVERYONE is better than me                                                                                                   aabeeeefghhnnoorrrss!
-       402 0* 0.00996% (99.944% 0.040% 0.016%)   EVERYONE is better than me!                                                                                                  aabeeeefghhnnoorrrss
-       403 0* 0.00405% (99.944% 0.040% 0.016%)   EVERYONE is better than me here                                                                                              aabeefghnnoorrss!
-       404 0* 0.00549% (99.944% 0.040% 0.016%)   EVERYONE is better than me here!                                                                                             aabeefghnnoorrss
-       405 0* 0.00307% (99.944% 0.040% 0.016%)   EVERYONE here has the same innate                                                                                            bbeefgnoorrrst!
-       406 0* 0.00307% (99.944% 0.040% 0.016%)   EVERYONE here has a thirst to                                                                                                abbeeeeefgmnnnorrs!
-       407 0* 0.00307% (99.944% 0.040% 0.016%)   EVERYONE here better not                                                                                                     aaabeeefghhimnnorrsss!
-       408 0* 0.00558% (99.944% 0.040% 0.016%)   EVERYONE here better not be                                                                                                  aaaeefghhimnnorrsss!
-       409 0* 0.00306% (99.944% 0.040% 0.016%)   EVERYONE is a                                                                                                                aabbeeeeeeefghhhmnnnoorrrrssttt!
-       410 0* 0.00305% (99.944% 0.040% 0.016%)   EVERYONE here either has a                                                                                                   abbeeefgmnnnoorrsstt!
-       411 0* 0.00305% (99.944% 0.040% 0.016%)   EVERYONE has great thirst!                                                                                                   abbeeeeeefhmnnnoorrs
-       412 0* 0.00304% (99.944% 0.040% 0.016%)   EVERYONE here has a thirst of                                                                                                abbeeeeegmnnnorrst!
-       413 0* 0.00301% (99.944% 0.040% 0.016%)   EVERYONE here has been eating                                                                                                abeefhmnoorrrsstt!
-       414 0* 0.00300% (99.944% 0.040% 0.016%)   EVERYONE agrees this                                                                                                         aabbeeeeefhhmnnnoorrrstt!
-       415 0* 0.00292% (99.944% 0.040% 0.016%)   EVERYONE here is a better                                                                                                    aabeeefghhmnnnoorrsst!
-       416 0* 0.00291% (99.944% 0.040% 0.016%)   EVERYONE has a better sense of the                                                                                           abeeghimnnorrr!
-       417 0* 0.00290% (99.944% 0.040% 0.016%)   there                                                                                                                        --------aaabbeeeeefghhimnnnoorrrssstt!
-       418 0* 0.00289% (99.945% 0.040% 0.015%)   EVERYONE here has some of                                                                                                    aabbeeeeghinnnrrrsttt!
-       419 0* 0.01384% (99.945% 0.040% 0.015%)   EVERYONE here has some of the                                                                                                aabbeeeginnnrrrstt!
-       420 0* 0.06500% (99.945% 0.040% 0.015%)   EVERYONE here has some of the best                                                                                           aabeeginnnrrrt!
-       421 0* 0.00289% (99.945% 0.040% 0.015%)   EVERYONE here is gonna be so                                                                                                 aabeeeefhhmnrrrsttt!
-       422 0* 0.00289% (99.945% 0.040% 0.015%)   EVERYONE has the same thirst before                                                                                          abeeegnnnorr!
-       423 0* 0.00288% (99.945% 0.040% 0.015%)   EVERYONE here has a strong thirst for a                                                                                      bbeeeeemnn!
-       424 0* 0.00287% (99.945% 0.040% 0.015%)   EVERYONE here has been great!                                                                                                abeefhimnnoorrsstt
-       425 0* 0.00284% (99.945% 0.040% 0.015%)   EVERYONE here has boring                                                                                                     aabeeeeefhmnnorrssttt!
-       426 0* 0.00283% (99.945% 0.040% 0.015%)   EVERYONE here has more                                                                                                       aabbeeeefghinnnorrssttt!
-       427 0* 0.00881% (99.945% 0.040% 0.015%)   EVERYONE here has more thirst                                                                                                aabbeeeefgnnnorst!
-       428 0* 0.00278% (99.945% 0.040% 0.015%)   EVERYONE here has thirst for me                                                                                              aabbeeeegnnnorst!
-       429 0* 0.00279% (99.945% 0.040% 0.015%)   EVERYONE here has thirst for me to                                                                                           aabbeeeegnnnrs!
-       430 0* 0.00277% (99.945% 0.040% 0.015%)   EVERYONE here is the same age                                                                                                abbeefhnnnoorrrstt!
-       431 0* 0.00285% (99.945% 0.040% 0.015%)   EVERYONE here is the same age as                                                                                             bbeefhnnnoorrrtt!
-       432 0* 0.00277% (99.945% 0.040% 0.015%)   EVERYONE has their reasons for the                                                                                           abbeeeegmnnrt!
-       433 0* 0.00276% (99.945% 0.040% 0.015%)   EVERYONE here has the same tasting                                                                                           bbeeefnnoorrr!
-       434 0* 0.00275% (99.945% 0.040% 0.015%)   EVERYONE here has thirst on                                                                                                  aabbeeeeefgmnnorrst!
-       435 0* 0.00270% (99.945% 0.040% 0.015%)   EVERYONE there has the same frig                                                                                             abbeeennnoorrst!
-       436 0* 0.00270% (99.945% 0.040% 0.015%)   EVERYONE has so                                                                                                              aabbeeeeeeefghhimnnnorrrrsttt!
-       437 0* 0.00269% (99.945% 0.040% 0.015%)   EVERYONE here has the same neat                                                                                              bbeefginnoorrrst!
-       438 0* 0.00269% (99.945% 0.040% 0.015%)   EVERYONE is gonna                                                                                                            aabbeeeeeeefhhhmnorrrrssttt!
-       439 0* 0.00480% (99.945% 0.040% 0.015%)   EVERYONE is gonna be                                                                                                         aabeeeeeefhhhmnorrrrssttt!
-       440 0* 0.00269% (99.945% 0.040% 0.015%)   EVERYONE here has one                                                                                                        aabbeeeefghimnnorrrssttt!
-       441 0* 0.00266% (99.945% 0.040% 0.015%)   EVERYONE here has the same reason                                                                                            bbeefginnorrtt!
-       442 0* 0.00264% (99.945% 0.040% 0.015%)   EVERYONE here seems to hate                                                                                                  aabbeefghinnnorrrst!
-       443 0* 0.00264% (99.945% 0.040% 0.015%)   is there a                                                                                                                   --------aabbeeeeefghhmnnnoorrrsstt!
+       379 0* 0.00330% (99.941% 0.040% 0.019%)   EVERYONE here has a sense of their                                                                                           abbeegmnnorrtt!
+       380 0* 0.00329% (99.941% 0.040% 0.019%)   EVERYONE here agrees that their                                                                                              abbeefmnnnoorss!
+       381 0* 0.00325% (99.941% 0.040% 0.019%)   EVERYONE here is on                                                                                                          aaabbeeeeefghhmnnorrrssttt!
+       382 0* 0.00599% (99.941% 0.040% 0.019%)   EVERYONE here is on the                                                                                                      aaabbeeeefghmnnorrrsstt!
+       383 0* 0.02397% (99.941% 0.040% 0.019%)   EVERYONE here is on the same                                                                                                 aabbeeefghnnorrrstt!
+       384 0* 0.00385% (99.941% 0.040% 0.019%)   EVERYONE here is on the same boat                                                                                            abeeefghnnrrrst!
+       385 0* 0.00554% (99.941% 0.040% 0.019%)   EVERYONE here is on the same boat!                                                                                           abeeefghnnrrrst
+       386 0* 0.00323% (99.941% 0.040% 0.019%)   EVERYONE!                                                                                                                    aaabbeeeeeeefghhhimnnnoorrrrsssttt
+       387 0* 0.00319% (99.941% 0.040% 0.019%)   EVERYONE here gets safe                                                                                                      aabbeeehhimnnnoorrrstt!
+       388 0* 0.00317% (99.941% 0.040% 0.019%)   EVERYONE here better get                                                                                                     aaabeefhhimnnnoorrsss!
+       389 0* 0.00316% (99.941% 0.040% 0.019%)   EVERYONE there has the same great                                                                                            bbeefinnnoorrs!
+       390 0* 0.00314% (99.941% 0.040% 0.019%)   EVERYONE here has got a                                                                                                      abbeeeeefhimnnnorrrsstt!
+       391 0* 0.00417% (99.941% 0.040% 0.019%)   EVERYONE here has got a thirst                                                                                               abbeeeeefmnnnorrs!
+       392 0* 0.00494% (99.941% 0.040% 0.019%)   EVERYONE here has got a thirst for                                                                                           abbeeeeemnnnrs!
+       393 0* 0.00443% (99.941% 0.040% 0.019%)   EVERYONE here has got a thirst for me                                                                                        abbeeeennnrs!
+       394 0* 0.00615% (99.941% 0.040% 0.019%)   EVERYONE here has got a thirst for me!                                                                                       abbeeeennnrs
+       395 0* 0.00313% (99.941% 0.040% 0.019%)   EVERYONE has a right                                                                                                         abbeeeeeeefhmnnnoorrrsstt!
+       396 0* 0.00312% (99.941% 0.040% 0.019%)   EVERYONE here has a right                                                                                                    abbeeeeefmnnnoorrsstt!
+       397 0* 0.00519% (99.941% 0.040% 0.019%)   EVERYONE here has a right to                                                                                                 abbeeeeefmnnnorrsst!
+       398 0* 0.00529% (99.941% 0.040% 0.019%)   EVERYONE here has a right to safe                                                                                            bbeeeemnnnorrst!
+       399 0* 0.00309% (99.941% 0.040% 0.019%)   EVERYONE is better than                                                                                                      aabeeeeefghhmnnoorrrss!
+       400 0* 0.01661% (99.941% 0.040% 0.019%)   EVERYONE is better than me                                                                                                   aabeeeefghhnnoorrrss!
+       401 0* 0.00996% (99.941% 0.040% 0.019%)   EVERYONE is better than me!                                                                                                  aabeeeefghhnnoorrrss
+       402 0* 0.00405% (99.941% 0.040% 0.019%)   EVERYONE is better than me here                                                                                              aabeefghnnoorrss!
+       403 0* 0.00549% (99.941% 0.040% 0.019%)   EVERYONE is better than me here!                                                                                             aabeefghnnoorrss
+       404 0* 0.00307% (99.941% 0.040% 0.019%)   EVERYONE here has the same innate                                                                                            bbeefgnoorrrst!
+       405 0* 0.00307% (99.941% 0.040% 0.019%)   EVERYONE here has a thirst to                                                                                                abbeeeeefgmnnnorrs!
+       406 0* 0.00307% (99.941% 0.040% 0.019%)   EVERYONE here better not                                                                                                     aaabeeefghhimnnorrsss!
+       407 0* 0.00558% (99.941% 0.040% 0.019%)   EVERYONE here better not be                                                                                                  aaaeefghhimnnorrsss!
+       408 0* 0.00306% (99.941% 0.040% 0.019%)   EVERYONE is a                                                                                                                aabbeeeeeeefghhhmnnnoorrrrssttt!
+       409 0* 0.00305% (99.941% 0.040% 0.019%)   EVERYONE here either has a                                                                                                   abbeeefgmnnnoorrsstt!
+       410 0* 0.00305% (99.941% 0.040% 0.019%)   EVERYONE has great thirst!                                                                                                   abbeeeeeefhmnnnoorrs
+       411 0* 0.00304% (99.941% 0.040% 0.019%)   EVERYONE here has a thirst of                                                                                                abbeeeeegmnnnorrst!
+       412 0* 0.00301% (99.941% 0.040% 0.019%)   EVERYONE here has been eating                                                                                                abeefhmnoorrrsstt!
+       413 0* 0.00300% (99.941% 0.040% 0.019%)   EVERYONE agrees this                                                                                                         aabbeeeeefhhmnnnoorrrstt!
+       414 0* 0.00292% (99.941% 0.040% 0.019%)   EVERYONE here is a better                                                                                                    aabeeefghhmnnnoorrsst!
+       415 0* 0.00291% (99.941% 0.040% 0.019%)   EVERYONE has a better sense of the                                                                                           abeeghimnnorrr!
+       416 0* 0.00290% (99.941% 0.040% 0.019%)   there                                                                                                                        --------aaabbeeeeefghhimnnnoorrrssstt!
+       417 0* 0.00289% (99.941% 0.040% 0.019%)   EVERYONE here has some of                                                                                                    aabbeeeeghinnnrrrsttt!
+       418 0* 0.01384% (99.941% 0.040% 0.019%)   EVERYONE here has some of the                                                                                                aabbeeeginnnrrrstt!
+       419 0* 0.06500% (99.941% 0.040% 0.019%)   EVERYONE here has some of the best                                                                                           aabeeginnnrrrt!
+       420 0* 0.00289% (99.941% 0.040% 0.019%)   EVERYONE here is gonna be so                                                                                                 aabeeeefhhmnrrrsttt!
+       421 0* 0.00289% (99.941% 0.040% 0.019%)   EVERYONE has the same thirst before                                                                                          abeeegnnnorr!
+       422 0* 0.00288% (99.941% 0.040% 0.019%)   EVERYONE here has a strong thirst for a                                                                                      bbeeeeemnn!
+       423 0* 0.00287% (99.941% 0.040% 0.019%)   EVERYONE here has been great!                                                                                                abeefhimnnoorrsstt
+       424 0* 0.00284% (99.941% 0.040% 0.019%)   EVERYONE here has boring                                                                                                     aabeeeeefhmnnorrssttt!
+       425 0* 0.00283% (99.941% 0.040% 0.019%)   EVERYONE here has more                                                                                                       aabbeeeefghinnnorrssttt!
+       426 0* 0.00881% (99.941% 0.040% 0.019%)   EVERYONE here has more thirst                                                                                                aabbeeeefgnnnorst!
+       427 0* 0.00278% (99.941% 0.040% 0.019%)   EVERYONE here has thirst for me                                                                                              aabbeeeegnnnorst!
+       428 0* 0.00279% (99.941% 0.040% 0.019%)   EVERYONE here has thirst for me to                                                                                           aabbeeeegnnnrs!
+       429 0* 0.00277% (99.941% 0.040% 0.019%)   EVERYONE here is the same age                                                                                                abbeefhnnnoorrrstt!
+       430 0* 0.00285% (99.941% 0.040% 0.019%)   EVERYONE here is the same age as                                                                                             bbeefhnnnoorrrtt!
+       431 0* 0.00277% (99.941% 0.040% 0.019%)   EVERYONE has their reasons for the                                                                                           abbeeeegmnnrt!
+       432 0* 0.00276% (99.941% 0.040% 0.019%)   EVERYONE here has the same tasting                                                                                           bbeeefnnoorrr!
+       433 0* 0.00275% (99.941% 0.040% 0.019%)   EVERYONE here has thirst on                                                                                                  aabbeeeeefgmnnorrst!
+       434 0* 0.00270% (99.941% 0.040% 0.019%)   EVERYONE there has the same frig                                                                                             abbeeennnoorrst!
+       435 0* 0.00270% (99.941% 0.040% 0.019%)   EVERYONE has so                                                                                                              aabbeeeeeeefghhimnnnorrrrsttt!
+       436 0* 0.00269% (99.941% 0.040% 0.019%)   EVERYONE here has the same neat                                                                                              bbeefginnoorrrst!
+       437 0* 0.00269% (99.941% 0.040% 0.019%)   EVERYONE is gonna                                                                                                            aabbeeeeeeefhhhmnorrrrssttt!
+       438 0* 0.00480% (99.941% 0.040% 0.019%)   EVERYONE is gonna be                                                                                                         aabeeeeeefhhhmnorrrrssttt!
+       439 0* 0.00269% (99.941% 0.040% 0.019%)   EVERYONE here has one                                                                                                        aabbeeeefghimnnorrrssttt!
+       440 0* 0.00266% (99.941% 0.040% 0.019%)   EVERYONE here has the same reason                                                                                            bbeefginnorrtt!
+       441 0* 0.00264% (99.941% 0.040% 0.019%)   EVERYONE here seems to hate                                                                                                  aabbeefghinnnorrrst!
+       442 0* 0.00264% (99.941% 0.040% 0.019%)   is there a                                                                                                                   --------aabbeeeeefghhmnnnoorrrsstt!
+       443 0* 0.00263% (99.941% 0.040% 0.019%)   i                                                                                                                            --------aaabbeeeeeeefghhhmnnnoorrrrsssttt!
        444 0* 0.00262% (99.945% 0.040% 0.015%)   EVERYONE here has frig                                                                                                       aabbeeeeehmnnnoorrssttt!
        445 0* 0.00262% (99.945% 0.040% 0.015%)   EVERYONE hates it                                                                                                            aabbeeeeeefghhmnnnoorrrrsst!
        446 0* 0.00261% (99.945% 0.040% 0.015%)   EVERYONE here has the benefit                                                                                                aabeegmnnoorrrsst!
@@ -503,49 +503,49 @@ Search time: 33s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
        492 0* 0.00229% (99.946% 0.040% 0.014%)   EVERYONE there seems                                                                                                         aaabbeeefghhinnnoorrrstt!
        493 0* 0.00267% (99.946% 0.040% 0.014%)   EVERYONE there seems to                                                                                                      aaabbeeefghhinnnorrrst!
        494 0* 0.00400% (99.946% 0.040% 0.014%)   EVERYONE there seems to be                                                                                                   aaabeefghhinnnorrrst!
-       495 0* 0.00229% (99.946% 0.040% 0.014%)   if                                                                                                                           --------aaabbeeeeeeeghhhmnnnoorrrrsssttt!
-       496 0* 0.00229% (99.947% 0.040% 0.012%)   EVERYONE has it                                                                                                              aabbeeeeeeefghhmnnnoorrrrsstt!
-       497 0* 0.00229% (99.947% 0.040% 0.012%)   EVERYONE hates it here                                                                                                       aabbeeeefghmnnnoorrrsst!
-       498 0* 0.00227% (99.947% 0.040% 0.012%)   EVERYONE thirst                                                                                                              aaabbeeeeeeefghhmnnnoorrrsst!
-       499 0* 0.00771% (99.947% 0.040% 0.012%)   EVERYONE thirst here                                                                                                         aaabbeeeeefghmnnnoorrsst!
-       500 0* 0.00736% (99.947% 0.040% 0.012%)   EVERYONE thirst here!                                                                                                        aaabbeeeeefghmnnnoorrsst
-       501 0* 0.00225% (99.947% 0.040% 0.012%)   EVERYONE here has some intense                                                                                               aabbeefghnorrrtt!
-       502 0* 0.00224% (99.947% 0.040% 0.012%)   EVERYONE here is too                                                                                                         aaabbeeeeefghhmnnnrrrsstt!
-       503 0* 0.00224% (99.947% 0.040% 0.012%)   EVERYONE here has a strange                                                                                                  bbeeeefhimnnoorrstt!
-       504 0* 0.00859% (99.947% 0.040% 0.012%)   EVERYONE here has a strange thirst                                                                                           bbeeeefmnnoor!
-       505 0* 0.00869% (99.947% 0.040% 0.012%)   EVERYONE here has a strange thirst!                                                                                          bbeeeefmnnoor
-       506 0* 0.00224% (99.947% 0.040% 0.012%)   EVERYONE hates it here!                                                                                                      aabbeeeefghmnnnoorrrsst
-       507 0* 0.00222% (99.947% 0.040% 0.012%)   EVERYONE here shares the same innate                                                                                         bbefgnoorrt!
-       508 0* 0.00222% (99.947% 0.040% 0.012%)   EVERYONE here has no safe                                                                                                    abbeeeeghimnnorrrsttt!
-       509 0* 0.00222% (99.947% 0.040% 0.012%)   EVERYONE has to be                                                                                                           aabeeeeeefghhimnnnorrrrsstt!
-       510 0* 0.00220% (99.947% 0.040% 0.012%)   EVERYONE here gets the                                                                                                       aaabbeeefhimnnnoorrrsst!
-       511 0* 0.00372% (99.947% 0.040% 0.012%)   EVERYONE here gets the same                                                                                                  aabbeefhinnnoorrrst!
-       512 0* 0.00220% (99.947% 0.040% 0.012%)   EVERYONE has a great                                                                                                         bbeeeeeefhhimnnnoorrrsstt!
-       513 0* 0.00480% (99.948% 0.040% 0.012%)   EVERYONE has a great sense                                                                                                   bbeeeefhhimnnoorrrtt!
-       514 0* 0.00840% (99.948% 0.040% 0.012%)   EVERYONE has a great sense of                                                                                                bbeeeehhimnnorrrtt!
-       515 0* 0.00252% (99.948% 0.040% 0.012%)   EVERYONE has a great thirst                                                                                                  bbeeeeeefhmnnnoorrs!
-       516 0* 0.00881% (99.948% 0.040% 0.012%)   EVERYONE has a great thirst here                                                                                             bbeeeefmnnnoors!
-       517 0* 0.01596% (99.948% 0.040% 0.012%)   EVERYONE has a great thirst here!                                                                                            bbeeeefmnnnoors
-       518 0* 0.00218% (99.948% 0.040% 0.012%)   EVERYONE hates me for being there                                                                                            aabeehnnorrsst!
-       519 0* 0.00218% (99.948% 0.040% 0.012%)   EVERYONE has the same rights!                                                                                                abbeeeeefnnnoorrrt
-       520 0* 0.00218% (99.948% 0.040% 0.012%)   EVERYONE seems so                                                                                                            aaabbeeeeefghhhinnnorrrrttt!
-       521 0* 0.00217% (99.948% 0.040% 0.012%)   EVERYONE get in                                                                                                              aaabbeeeeeefhhhmnnoorrrrssstt!
-       522 0* 0.00224% (99.948% 0.040% 0.012%)   EVERYONE get in here                                                                                                         aaabbeeeefhhmnnoorrrssstt!
-       523 0* 0.00217% (99.948% 0.040% 0.012%)   EVERYONE here has great tastes                                                                                               bbeeefhimnnnoorr!
-       524 0* 0.00944% (99.948% 0.040% 0.012%)   EVERYONE here has great tastes in                                                                                            bbeeefhmnnoorr!
-       525 0* 0.00214% (99.948% 0.040% 0.012%)   EVERYONE here has got some intense                                                                                           aabbeefhnrrrt!
-       526 0* 0.00214% (99.948% 0.040% 0.012%)   EVERYONE has the means                                                                                                       abbeeeeefghinnoorrrrstt!
-       527 0* 0.00351% (99.948% 0.040% 0.012%)   EVERYONE has the means to                                                                                                    abbeeeeefghinnorrrrst!
-       528 0* 0.00213% (99.948% 0.040% 0.012%)   EVERYONE here gets fresh                                                                                                     aaabbeeehimnnnoorrstt!
-       529 0* 0.00213% (99.948% 0.040% 0.012%)   EVERYONE here has gotten the                                                                                                 aabbeeefimnnorrrss!
-       530 0* 0.00216% (99.948% 0.040% 0.012%)   EVERYONE here has gotten the same                                                                                            abbeefinnorrrs!
-       531 0* 0.00211% (99.948% 0.040% 0.012%)   EVERYONE here hates their                                                                                                    aabbeeefgmnnnoorrsst!
-       532 0* 0.00210% (99.948% 0.040% 0.012%)   EVERYONE better not                                                                                                          aaabeeeeefghhhimnnorrrsss!
-       533 0* 0.00354% (99.948% 0.040% 0.012%)   EVERYONE better not be                                                                                                       aaaeeeefghhhimnnorrrsss!
-       534 0* 0.00209% (99.948% 0.040% 0.012%)   EVERYONE here has an intense                                                                                                 abbeeefghmoorrrstt!
-       535 0* 0.00208% (99.948% 0.040% 0.012%)   EVERYONE agrees that there                                                                                                   abbeeefhimnnnoorrss!
-       536 0* 0.00207% (99.948% 0.040% 0.012%)   EVERYONE agrees that the                                                                                                     abbeeeefhimnnnoorrrss!
-       537 0* 0.00207% (99.948% 0.040% 0.012%)   EVERYONE here agrees that the reason                                                                                         bbefimnnors!
+       495 0* 0.00229% (99.946% 0.040% 0.014%)   EVERYONE has it                                                                                                              aabbeeeeeeefghhmnnnoorrrrsstt!
+       496 0* 0.00229% (99.946% 0.040% 0.014%)   EVERYONE hates it here                                                                                                       aabbeeeefghmnnnoorrrsst!
+       497 0* 0.00227% (99.946% 0.040% 0.014%)   EVERYONE thirst                                                                                                              aaabbeeeeeeefghhmnnnoorrrsst!
+       498 0* 0.00771% (99.946% 0.040% 0.014%)   EVERYONE thirst here                                                                                                         aaabbeeeeefghmnnnoorrsst!
+       499 0* 0.00736% (99.946% 0.040% 0.014%)   EVERYONE thirst here!                                                                                                        aaabbeeeeefghmnnnoorrsst
+       500 0* 0.00225% (99.946% 0.040% 0.014%)   EVERYONE here has some intense                                                                                               aabbeefghnorrrtt!
+       501 0* 0.00224% (99.946% 0.040% 0.014%)   EVERYONE here is too                                                                                                         aaabbeeeeefghhmnnnrrrsstt!
+       502 0* 0.00224% (99.946% 0.040% 0.014%)   EVERYONE here has a strange                                                                                                  bbeeeefhimnnoorrstt!
+       503 0* 0.00859% (99.946% 0.040% 0.014%)   EVERYONE here has a strange thirst                                                                                           bbeeeefmnnoor!
+       504 0* 0.00869% (99.946% 0.040% 0.014%)   EVERYONE here has a strange thirst!                                                                                          bbeeeefmnnoor
+       505 0* 0.00224% (99.946% 0.040% 0.014%)   EVERYONE hates it here!                                                                                                      aabbeeeefghmnnnoorrrsst
+       506 0* 0.00222% (99.946% 0.040% 0.014%)   EVERYONE here shares the same innate                                                                                         bbefgnoorrt!
+       507 0* 0.00222% (99.946% 0.040% 0.014%)   EVERYONE here has no safe                                                                                                    abbeeeeghimnnorrrsttt!
+       508 0* 0.00222% (99.946% 0.040% 0.014%)   EVERYONE has to be                                                                                                           aabeeeeeefghhimnnnorrrrsstt!
+       509 0* 0.00220% (99.946% 0.040% 0.014%)   EVERYONE here gets the                                                                                                       aaabbeeefhimnnnoorrrsst!
+       510 0* 0.00372% (99.946% 0.040% 0.014%)   EVERYONE here gets the same                                                                                                  aabbeefhinnnoorrrst!
+       511 0* 0.00220% (99.946% 0.040% 0.014%)   EVERYONE has a great                                                                                                         bbeeeeeefhhimnnnoorrrsstt!
+       512 0* 0.00480% (99.946% 0.040% 0.014%)   EVERYONE has a great sense                                                                                                   bbeeeefhhimnnoorrrtt!
+       513 0* 0.00840% (99.946% 0.040% 0.014%)   EVERYONE has a great sense of                                                                                                bbeeeehhimnnorrrtt!
+       514 0* 0.00252% (99.946% 0.040% 0.014%)   EVERYONE has a great thirst                                                                                                  bbeeeeeefhmnnnoorrs!
+       515 0* 0.00881% (99.946% 0.040% 0.014%)   EVERYONE has a great thirst here                                                                                             bbeeeefmnnnoors!
+       516 0* 0.01596% (99.946% 0.040% 0.014%)   EVERYONE has a great thirst here!                                                                                            bbeeeefmnnnoors
+       517 0* 0.00218% (99.946% 0.040% 0.014%)   EVERYONE hates me for being there                                                                                            aabeehnnorrsst!
+       518 0* 0.00218% (99.946% 0.040% 0.014%)   EVERYONE has the same rights!                                                                                                abbeeeeefnnnoorrrt
+       519 0* 0.00218% (99.946% 0.040% 0.014%)   EVERYONE seems so                                                                                                            aaabbeeeeefghhhinnnorrrrttt!
+       520 0* 0.00217% (99.946% 0.040% 0.014%)   EVERYONE get in                                                                                                              aaabbeeeeeefhhhmnnoorrrrssstt!
+       521 0* 0.00224% (99.946% 0.040% 0.014%)   EVERYONE get in here                                                                                                         aaabbeeeefhhmnnoorrrssstt!
+       522 0* 0.00217% (99.946% 0.040% 0.014%)   EVERYONE here has great tastes                                                                                               bbeeefhimnnnoorr!
+       523 0* 0.00944% (99.946% 0.040% 0.014%)   EVERYONE here has great tastes in                                                                                            bbeeefhmnnoorr!
+       524 0* 0.00214% (99.946% 0.040% 0.014%)   EVERYONE here has got some intense                                                                                           aabbeefhnrrrt!
+       525 0* 0.00214% (99.946% 0.040% 0.014%)   EVERYONE has the means                                                                                                       abbeeeeefghinnoorrrrstt!
+       526 0* 0.00351% (99.946% 0.040% 0.014%)   EVERYONE has the means to                                                                                                    abbeeeeefghinnorrrrst!
+       527 0* 0.00213% (99.946% 0.040% 0.014%)   EVERYONE here gets fresh                                                                                                     aaabbeeehimnnnoorrstt!
+       528 0* 0.00213% (99.946% 0.040% 0.014%)   EVERYONE here has gotten the                                                                                                 aabbeeefimnnorrrss!
+       529 0* 0.00216% (99.946% 0.040% 0.014%)   EVERYONE here has gotten the same                                                                                            abbeefinnorrrs!
+       530 0* 0.00211% (99.946% 0.040% 0.014%)   EVERYONE here hates their                                                                                                    aabbeeefgmnnnoorrsst!
+       531 0* 0.00210% (99.946% 0.040% 0.014%)   EVERYONE better not                                                                                                          aaabeeeeefghhhimnnorrrsss!
+       532 0* 0.00354% (99.946% 0.040% 0.014%)   EVERYONE better not be                                                                                                       aaaeeeefghhhimnnorrrsss!
+       533 0* 0.00209% (99.946% 0.040% 0.014%)   EVERYONE here has an intense                                                                                                 abbeeefghmoorrrstt!
+       534 0* 0.00208% (99.946% 0.040% 0.014%)   EVERYONE agrees that there                                                                                                   abbeeefhimnnnoorrss!
+       535 0* 0.00207% (99.946% 0.040% 0.014%)   EVERYONE agrees that the                                                                                                     abbeeeefhimnnnoorrrss!
+       536 0* 0.00207% (99.946% 0.040% 0.014%)   EVERYONE here agrees that the reason                                                                                         bbefimnnors!
+       537 0* 0.00207% (99.946% 0.040% 0.014%)   if                                                                                                                           --------aaabbeeeeeeeghhhmnnnoorrrrsssttt!
        538 0* 0.00207% (99.948% 0.040% 0.012%)   EVERYONE here has boring tastes                                                                                              abeeeefhmnnorrt!
        539 0* 0.00206% (99.948% 0.040% 0.012%)   EVERYONE here are                                                                                                            aabbeeeefghhimnnnoorrsssttt!
        540 0* 0.00206% (99.948% 0.040% 0.012%)   EVERYONE has gotten                                                                                                          aabbeeeeeefhhimnnorrrrsst!

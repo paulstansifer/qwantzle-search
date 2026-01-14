@@ -11,7 +11,7 @@ Step        409 (remaining mass 1.347%): Next token is ',', score is 0.12578% (2
 Step        410 (remaining mass 1.347%): Next token is ' however', score is 68.88909% (3.046%, 100.000%, 39)
 ' would still like to hear about the sex, however' (68.89%)
 Search successful after 411 steps. Deepest node accessed: 0
-Search time: 15s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 27ms  Truncate: 0ms.
+Search time: 16s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 28ms  Truncate: 0ms.
 
          0 0* 18.92959% (87.439% 0.040% 12.521%)   should                                                                                                                       -------aabeeeehiikllloorsttttuwx,!
          1 0* 7.32480% (88.585% 0.041% 11.374%)   would                                                                                                                        -------aabeeeehhiikllloorssttttux,!

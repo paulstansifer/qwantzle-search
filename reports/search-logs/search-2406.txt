@@ -14,7 +14,7 @@ Step      2,190 (remaining mass 3.018%): Next token is ' DOOM', score is 136.142
 Step      2,191 (remaining mass 3.018%): Next token is 'ED', score is 3146.50904% (99.967%, 100.000%, 38)
 ' OTHERWISE, AS I SAY, WE ARE ALL TOTALLY DOOMED' (3146.51%)
 Search successful after 2,192 steps. Deepest node accessed: 0
-Search time: 85s.  (Non-ML: 2s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 31ms  Truncate: 0ms.
+Search time: 85s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
 
          0 0* 3.01083% (71.671% 0.040% 28.289%)   OTHERWISE                                                                                                                    OOOTTEEERWISS,,AAAAAYYLLLLDDM
          1 0* 2.14836% (73.470% 0.041% 26.489%)   OTHERWISE,                                                                                                                   OOOTTEEERWISS,AAAAAYYLLLLDDM

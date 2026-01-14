@@ -862,7 +862,7 @@ pub fn prob_score(
     }
 
     let rlnn_sched = vec![
-        (0, 2.0),
+        (0, 3.0),
         (len.saturating_sub(40), 2.0),
         (len.saturating_sub(20), 1.5),
         (len, 0.0),

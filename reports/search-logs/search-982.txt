@@ -10,7 +10,7 @@ Step         44 (remaining mass 0.228%): Next token is ' so', score is 326.09921
 Step         45 (remaining mass 0.228%): Next token is ' much', score is 234111.50715% (99.153%, 100.000%, 38)
 ' Wow! No wonder people like capitalism so much' (234111.51%)
 Search successful after 46 steps. Deepest node accessed: 0
-Search time: 1s.  (Non-ML: 0s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 31ms  Truncate: 0ms.
+Search time: 1s.  (Non-ML: infs)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 32ms  Truncate: 0ms.
 
          0 0* 0.47881% (97.503% 0.040% 2.457%)   Wow                                                                                                                          ----------cdeeeehikllmnoooopprsuw!!!N
          1 0* 0.21215% (98.392% 0.041% 1.568%)   Wow!                                                                                                                         ----------cdeeeehikllmnoooopprsuw!!N

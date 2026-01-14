@@ -13,7 +13,7 @@ Step        489 (remaining mass 6.016%): Next token is ' say', score is 43.25829
 Step        490 (remaining mass 6.016%): Next token is ' that', score is 5149.62277% (31.359%, 100.000%, 38)
 ' know what? It's really weird when you say that' (5149.62%)
 Search successful after 491 steps. Deepest node accessed: 0
-Search time: 19s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 29ms  Truncate: 0ms.
+Search time: 20s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 31ms  Truncate: 0ms.
 
          0 0* 61.66341% (30.888% 0.040% 69.072%)  '                                                                                                                             ------aaadeehhhiknnoorssttttuwwwwyy?I.
          1 0* 124.94288% (35.346% 0.056% 64.598%)  're                                                                                                                           ------aaadehhhiknnoossttttuwwwwyy?I.
