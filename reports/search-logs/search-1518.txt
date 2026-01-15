@@ -1,116 +1,120 @@
 should've bet that, in ten years, he'd win the bet.
-Step          0 (remaining mass 95.646%): Next token is ' should', score is 9.67749% (4.308%, 34.706%, 6)
-Step          0 (remaining mass 35.290%): Next token is ''', score is 11.19563% (41.353%, 46.099%, 7)
-Step          1 (remaining mass 34.419%): Next token is 've', score is 36.43002% (99.257%, 51.682%, 9)
-Step          2 (remaining mass 34.417%): Next token is ' bet', score is 83.51040% (30.980%, 70.439%, 12)
-Step          3 (remaining mass 33.322%): Next token is ' that', score is 153.06648% (24.751%, 70.567%, 16)
-Step          4 (remaining mass 33.131%): Next token is ',', score is 2.37847% (0.830%, 75.375%, 17)
+Step          0 (remaining mass 95.646%): Next token is ' should', score is 49.33986% (4.308%, 34.706%, 6)
+Step          0 (remaining mass 35.290%): Next token is ''', score is 43.72621% (41.353%, 46.099%, 7)
+Step         12 (remaining mass 33.255%): Next token is 've', score is 125.94831% (99.257%, 51.682%, 9)
+Step         13 (remaining mass 33.253%): Next token is ' bet', score is 223.66677% (30.980%, 70.439%, 12)
+Step         14 (remaining mass 32.158%): Next token is ' that', score is 380.97616% (24.751%, 70.567%, 16)
+Step         15 (remaining mass 31.967%): Next token is ',', score is 5.59337% (0.830%, 75.375%, 17)
 ' should've bet that in ten years he'd win the bet' (1324.32%)
-Search successful after 105 steps. Deepest node accessed: 0
+Search successful after 109 steps. Deepest node accessed: 0
 Search time: 4s.  (Non-ML: 0s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 32ms  Truncate: 0ms.
 
-         0 0* 9.67749% (64.670% 0.040% 35.290%)   should                                                                                                                       aabbdeeeeeeehhhiinnnrsttttttvwy'',,.
-         1 0* 11.19563% (65.539% 0.042% 34.419%)   should'                                                                                                                      aabbdeeeeeeehhhiinnnrsttttttvwy',,.
-         2 0* 36.43002% (65.540% 0.042% 34.417%)   should've                                                                                                                    aabbdeeeeeehhhiinnnrsttttttwy',,.
-         3 0* 83.51040% (66.434% 0.043% 33.523%)   should've bet                                                                                                                aabdeeeeehhhiinnnrstttttwy',,.
-         4 0* 153.06648% (66.780% 0.043% 33.177%)   should've bet that                                                                                                           abdeeeeehhiinnnrstttwy',,.
-         5 0* 68.22473% (66.861% 0.043% 33.096%)   should've bet that the                                                                                                       abdeeeehiinnnrsttwy',,.
-         6 0* 48.34427% (66.872% 0.043% 33.085%)   should've bet that in                                                                                                        abdeeeeehhinnrstttwy',,.
-         7 0* 171.52372% (66.872% 0.043% 33.084%)   should've bet that in ten                                                                                                    abdeeeehhinrsttwy',,.
-         8 0* 2289.33495% (66.872% 0.043% 33.084%)   should've bet that in ten years                                                                                              bdeeehhinttw',,.
-         9 0* 2195.95636% (66.881% 0.043% 33.075%)   should've bet that in ten years,                                                                                             bdeeehhinttw',.
-        10 0* 2937.64294% (66.885% 0.043% 33.072%)   should've bet that in ten years, the                                                                                         bdeehintw',.
-        11 0* 1851.32356% (66.885% 0.043% 33.072%)   should've bet that in ten years we                                                                                           bdeehhintt',,.
-        12 0* 6966.79621% (66.885% 0.043% 33.072%)   should've bet that in ten years we'                                                                                          bdeehhintt,,.
-        13 0* 13939.41517% (66.885% 0.043% 33.071%)   should've bet that in ten years we'd                                                                                         beehhintt,,.
-        14 0* 18272.53793% (66.886% 0.043% 33.070%)   should've bet that in ten years we'd be                                                                                      ehhintt,,.
-        15 0* 2281.99527% (66.887% 0.043% 33.070%)   should've bet that in ten years we'd be in                                                                                   ehhtt,,.
-        16 0* 20146.14929% (66.887% 0.043% 33.070%)   should've bet that in ten years we'd be in the                                                                               ht,,.
-        17 0* 2161.87024% (66.887% 0.043% 33.070%)   should've bet that in ten years we'd be the                                                                                  hint,,.
-        18 0* 1635.65048% (66.887% 0.043% 33.070%)   should've bet that in ten years the                                                                                          bdeehintw',,.
-        19 0* 914.18940% (66.887% 0.043% 33.069%)   should've bet that in ten years, we                                                                                          bdeehhintt',.
-        20 0* 2998.31107% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'                                                                                         bdeehhintt,.
-        21 0* 5531.04178% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'd                                                                                        beehhintt,.
-        22 0* 6280.37938% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'd be                                                                                     ehhintt,.
-        23 0* 1409.34185% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'd be the                                                                                 hint,.
-        24 0* 1376.69090% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'd be in                                                                                  ehhtt,.
-        25 0* 13137.30164% (66.887% 0.043% 33.069%)   should've bet that in ten years, we'd be in the                                                                              ht,.
-        26 0* 741.93789% (66.887% 0.043% 33.069%)   should've bet that in ten years we'd be in the                                                                               ht,,.
-        27 0* 692.03814% (66.887% 0.043% 33.069%)   should've bet that in ten years, the new                                                                                     bdehit',.
-        28 0* 550.33028% (66.887% 0.043% 33.069%)   should've bet that in ten years, when                                                                                        bdeehitt',.
-        29 0* 678.10343% (66.888% 0.043% 33.069%)   should've bet that in ten years, when the                                                                                    bdeit',.
-        30 0* 410.26725% (66.888% 0.043% 33.069%)   should've bet that in ten years, we'd be in the                                                                              ht,.
-        31 0* 398.90055% (66.888% 0.043% 33.069%)   should've bet that in ten years the new                                                                                      bdehit',,.
-        32 0* 240.39010% (66.888% 0.043% 33.069%)   should've bet that in ten years the web                                                                                      dehint',,.
-        33 0* 237.31754% (66.888% 0.043% 33.069%)   should've bet that in ten years, the web                                                                                     dehint',.
-        34 0* 125.68131% (66.888% 0.043% 33.069%)   should've bet that in ten years we'd be,                                                                                     ehhintt,.
-        35 0* 96.98283% (66.888% 0.043% 33.069%)   should've bet that in ten years we'd be hit                                                                                  ehnt,,.
-        36 0* 80.19785% (66.888% 0.043% 33.069%)   should've bet that in ten years we'd been                                                                                    hhitt,,.
-        37 0* 53.99161% (66.888% 0.043% 33.069%)   should've bet that in ten years, when it                                                                                     bdeeht',.
-        38 0* 126.97640% (66.888% 0.043% 33.069%)   should've bet that in ten years, when it'                                                                                    bdeeht,.
-        39 0* 52.33268% (66.888% 0.043% 33.069%)   should've bet that in ten years, we'd been                                                                                   hhitt,.
-        40 0* 47.32097% (66.888% 0.043% 33.069%)   should've bet that in ten years, we'd be hit                                                                                 ehnt,.
-        41 0* 41.91607% (66.888% 0.043% 33.069%)   should've bet that in ten years when                                                                                         bdeehitt',,.
-        42 0* 41.14830% (66.888% 0.043% 33.069%)   should've bet that in ten years, white                                                                                       bdeehnt',.
-        43 0* 40.77821% (66.888% 0.043% 33.069%)   should've bet that in ten years, web                                                                                         deehhintt',.
-        44 0* 38.87836% (66.888% 0.043% 33.069%)   should've bet that there                                                                                                     abdeeehiinnnsttwy',,.
-        45 0* 51.36483% (66.888% 0.043% 33.068%)   should've bet that there'                                                                                                    abdeeehiinnnsttwy,,.
-        46 0* 65.92560% (66.889% 0.043% 33.068%)   should've bet that there'd                                                                                                   abeeehiinnnsttwy,,.
-        47 0* 255.89613% (66.889% 0.043% 33.068%)   should've bet that there'd be                                                                                                aeehiinnnsttwy,,.
-        48 0* 100.14487% (66.889% 0.043% 33.067%)   should've bet that there'd be a                                                                                              eehiinnnsttwy,,.
-        49 0* 188.66215% (66.890% 0.043% 33.067%)   should've bet that there'd be a new                                                                                          ehiinnstty,,.
-        50 0* 45.87572% (66.890% 0.043% 33.067%)   should've bet that there'd be an                                                                                             eehiinnsttwy,,.
-        51 0* 31.93251% (66.890% 0.043% 33.067%)   should've bet that in ten years when the                                                                                     bdeit',,.
-        52 0* 30.16211% (66.890% 0.043% 33.067%)   should've bet that in ten years, we'd be,                                                                                    ehhintt.
-        53 0* 29.04523% (66.890% 0.043% 33.067%)   should've bet that in ten years he                                                                                           bdeehinttw',,.
-        54 0* 95.91729% (66.890% 0.043% 33.067%)   should've bet that in ten years he'                                                                                          bdeehinttw,,.
-        55 0* 247.18187% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd                                                                                         beehinttw,,.
-        56 0* 715.44713% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be                                                                                      ehinttw,,.
-        57 0* 788.71607% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be the                                                                                  intw,,.
-        58 0* 138.69328% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be in                                                                                   ehttw,,.
-        59 0* 641.90584% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be in the                                                                               tw,,.
-        60 0* 46.65409% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be with                                                                                 ent,,.
-        61 0* 31.00459% (66.890% 0.043% 33.067%)   should've bet that in ten years he'd be white                                                                                nt,,.
-        62 0* 28.53290% (66.890% 0.043% 33.067%)   should've bet that in ten years we'd been hit                                                                                ht,,.
-        63 0* 28.52925% (66.890% 0.043% 33.067%)   should've bet that in ten years, the web'                                                                                    dehint,.
-        64 0* 28.08880% (66.890% 0.043% 33.067%)   should've bet that in ten years it                                                                                           bdeeehhntw',,.
-        65 0* 172.76592% (66.890% 0.043% 33.067%)   should've bet that in ten years it'                                                                                          bdeeehhntw,,.
-        66 0* 140.51447% (66.890% 0.043% 33.067%)   should've bet that in ten years it'd                                                                                         beeehhntw,,.
-        67 0* 1421.52286% (66.890% 0.043% 33.066%)   should've bet that in ten years it'd be                                                                                      eehhntw,,.
-        68 0* 78.52390% (66.890% 0.043% 33.066%)   should've bet that in ten years it'd be when                                                                                 eht,,.
-        69 0* 75.27466% (66.890% 0.043% 33.066%)   should've bet that in ten years it'd be,                                                                                     eehhntw,.
-        70 0* 27.87896% (66.890% 0.043% 33.066%)   should've bet that in ten years the web'                                                                                     dehint,,.
-        71 0* 26.77186% (66.890% 0.043% 33.066%)   should've bet that in ten years we'd be                                                                                      ehhintt,,.
-        72 0* 26.74238% (66.890% 0.043% 33.066%)   should've bet that in ten years, it                                                                                          bdeeehhntw',.
-        73 0* 128.94002% (66.890% 0.043% 33.066%)   should've bet that in ten years, it'                                                                                         bdeeehhntw,.
-        74 0* 99.57953% (66.890% 0.043% 33.066%)   should've bet that in ten years, it'd                                                                                        beeehhntw,.
-        75 0* 919.68972% (66.890% 0.043% 33.066%)   should've bet that in ten years, it'd be                                                                                     eehhntw,.
-        76 0* 46.84473% (66.890% 0.043% 33.066%)   should've bet that in ten years, it'd be when                                                                                eht,.
-        77 0* 24.73469% (66.890% 0.043% 33.066%)   should've bet that in ten years, the end                                                                                     behitw',.
-        78 0* 23.08354% (66.890% 0.043% 33.066%)   should've bet the                                                                                                            aabdeeeehhiinnnrsttttwy',,.
-        79 0* 22.14125% (66.920% 0.043% 33.037%)   should've bet that in ten years, he                                                                                          bdeehinttw',.
-        80 0* 56.04668% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'                                                                                         bdeehinttw,.
-        81 0* 118.41854% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd                                                                                        beehinttw,.
-        82 0* 349.71533% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd be                                                                                     ehinttw,.
-        83 0* 698.08116% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd be the                                                                                 intw,.
-        84 0* 63.67395% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd be in                                                                                  ehttw,.
-        85 0* 427.48605% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd be in the                                                                              tw,.
-        86 0* 28.66537% (66.920% 0.043% 33.037%)   should've bet that in ten years, he'd be with                                                                                ent,.
-        87 0* 22.12399% (66.920% 0.043% 33.037%)   should've bet that we                                                                                                        abdeeeehhiinnnrsttty',,.
-        88 0* 31.78117% (66.921% 0.043% 33.036%)   should've bet that we'                                                                                                       abdeeeehhiinnnrsttty,,.
-        89 0* 44.07075% (66.921% 0.043% 33.035%)   should've bet that we'd                                                                                                      abeeeehhiinnnrsttty,,.
-        90 0* 21.47182% (66.926% 0.043% 33.031%)   should've bet that in ten years, the new,                                                                                    bdehit'.
-        91 0* 21.39634% (66.926% 0.043% 33.031%)   should've bet that in ten years, the wind                                                                                    beeht',.
-        92 0* 20.81990% (66.926% 0.043% 33.031%)   should've bet that in ten years we'd be ten                                                                                  hhit,,.
-        93 0* 20.55235% (66.926% 0.043% 33.031%)   should've bet that in ten years we'd hit                                                                                     beehnt,,.
-        94 0* 19.67706% (66.926% 0.043% 33.031%)   should've bet that in ten years, we'd been hit                                                                               ht,.
-        95 0* 18.79677% (66.926% 0.043% 33.031%)   should've bet that we'd be                                                                                                   aeeehhiinnnrsttty,,.
-        96 0* 18.48158% (66.926% 0.043% 33.030%)   should've bet that there'd be way                                                                                            eehiinnnstt,,.
-        97 0* 17.18501% (66.926% 0.043% 33.030%)   should've bet that in ten years web                                                                                          deehhintt',,.
-        98 0* 16.93934% (66.926% 0.043% 33.030%)   should've bet that in ten years, when he                                                                                     bdeitt',.
-        99 0* 16.46642% (66.926% 0.043% 33.030%)   should've bet that in ten years, we'd be ten                                                                                 hhit,.
-       100 0* 16.07439% (66.926% 0.043% 33.030%)   should've bet that in ten years, the                                                                                         bdeehintw',.
-       101 0* 15.87096% (66.926% 0.043% 33.030%)   should've bet that in ten years, new                                                                                         bdeehhitt',.
-       102 0* 15.70802% (66.926% 0.043% 33.030%)   should've bet that there'd be new                                                                                            aehiinnstty,,.
-       103 0* 15.53777% (66.926% 0.043% 33.030%)   should've bet that in ten years he'd win                                                                                     beehtt,,.
-       104 0* 285.39730% (66.926% 0.043% 33.030%)   should've bet that in ten years he'd win the                                                                                 bet,,.
+         0 0* 49.33986% (64.670% 0.040% 35.290%)   should                                                                                                                       aabbdeeeeeeehhhiinnnrsttttttvwy'',,.
+         1 0* 64.68500% (65.539% 0.042% 34.419%)   should have                                                                                                                  abbdeeeeeehhiinnnrsttttttwy'',,.
+         2 0* 175.60922% (66.316% 0.042% 33.641%)   should have bet                                                                                                              abdeeeeehhiinnnrstttttwy'',,.
+         3 0* 172.18570% (66.583% 0.042% 33.374%)   should have bet that                                                                                                         bdeeeeehiinnnrstttwy'',,.
+         4 0* 69.28972% (66.653% 0.043% 33.304%)   should have bet that the                                                                                                     bdeeeeiinnnrsttwy'',,.
+         5 0* 62.69621% (66.663% 0.043% 33.294%)   should have bet that in                                                                                                      bdeeeeehinnrstttwy'',,.
+         6 0* 253.61840% (66.664% 0.043% 33.294%)   should have bet that in ten                                                                                                  bdeeeehinrsttwy'',,.
+         7 0* 48.38474% (66.677% 0.043% 33.280%)   should have bet the                                                                                                          abdeeeehiinnnrsttttwy'',,.
+         8 0* 44.97232% (66.700% 0.043% 33.257%)   should have bet that there                                                                                                   bdeeeiinnnsttwy'',,.
+         9 0* 67.52710% (66.701% 0.043% 33.256%)   should have bet that there'                                                                                                  bdeeeiinnnsttwy',,.
+        10 0* 95.77641% (66.701% 0.043% 33.256%)   should have bet that there'd                                                                                                 beeeiinnnsttwy',,.
+        11 0* 430.18313% (66.702% 0.043% 33.256%)   should have bet that there'd be                                                                                              eeiinnnsttwy',,.
+        12 0* 43.72621% (66.702% 0.043% 33.255%)   should'                                                                                                                      aabbdeeeeeeehhhiinnnrsttttttvwy',,.
+        13 0* 125.94831% (66.704% 0.043% 33.253%)   should've                                                                                                                    aabbdeeeeeehhhiinnnrsttttttwy',,.
+        14 0* 223.66677% (67.597% 0.044% 32.359%)   should've bet                                                                                                                aabdeeeeehhhiinnnrstttttwy',,.
+        15 0* 380.97616% (67.943% 0.044% 32.013%)   should've bet that                                                                                                           abdeeeeehhiinnnrstttwy',,.
+        16 0* 159.90784% (68.024% 0.044% 31.932%)   should've bet that the                                                                                                       abdeeeehiinnnrsttwy',,.
+        17 0* 129.99074% (68.035% 0.044% 31.921%)   should've bet that in                                                                                                        abdeeeeehhinnrstttwy',,.
+        18 0* 465.00729% (68.036% 0.044% 31.920%)   should've bet that in ten                                                                                                    abdeeeehhinrsttwy',,.
+        19 0* 8424.87479% (68.036% 0.044% 31.920%)   should've bet that in ten years                                                                                              bdeeehhinttw',,.
+        20 0* 5984.78613% (68.045% 0.044% 31.911%)   should've bet that in ten years the                                                                                          bdeehintw',,.
+        21 0* 5733.34994% (68.045% 0.044% 31.910%)   should've bet that in ten years,                                                                                             bdeeehhinttw',.
+        22 0* 5802.51365% (68.049% 0.044% 31.907%)   should've bet that in ten years, the                                                                                         bdeehintw',.
+        23 0* 5432.52460% (68.049% 0.044% 31.907%)   should've bet that in ten years we                                                                                           bdeehhintt',,.
+        24 0* 13927.81119% (68.049% 0.044% 31.907%)   should've bet that in ten years we'                                                                                          bdeehhintt,,.
+        25 0* 26288.55632% (68.050% 0.044% 31.906%)   should've bet that in ten years we'd                                                                                         beehhintt,,.
+        26 0* 27204.26836% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be                                                                                      ehhintt,,.
+        27 0* 4287.03580% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be in                                                                                   ehhtt,,.
+        28 0* 27732.81342% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be in the                                                                               ht,,.
+        29 0* 3147.68612% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be the                                                                                  hint,,.
+        30 0* 1950.44622% (68.051% 0.044% 31.905%)   should've bet that in ten years, we                                                                                          bdeehhintt',.
+        31 0* 4835.19600% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'                                                                                         bdeehhintt,.
+        32 0* 8273.83238% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd                                                                                        beehhintt,.
+        33 0* 7720.20622% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd be                                                                                     ehhintt,.
+        34 0* 1817.34353% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd be in                                                                                  ehhtt,.
+        35 0* 14805.88396% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd be in the                                                                              ht,.
+        36 0* 1660.92096% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd be the                                                                                 hint,.
+        37 0* 1582.43636% (68.051% 0.044% 31.905%)   should've bet that in ten years the new                                                                                      bdehit',,.
+        38 0* 1500.94560% (68.051% 0.044% 31.905%)   should've bet that in ten years, when                                                                                        bdeehitt',.
+        39 0* 1487.00015% (68.051% 0.044% 31.905%)   should've bet that in ten years, the new                                                                                     bdehit',.
+        40 0* 1288.05921% (68.051% 0.044% 31.905%)   should've bet that in ten years, when the                                                                                    bdeit',.
+        41 0* 1021.33786% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be in the                                                                               ht,,.
+        42 0* 462.37572% (68.051% 0.044% 31.905%)   should've bet that in ten years, we'd be in the                                                                              ht,.
+        43 0* 398.40438% (68.051% 0.044% 31.905%)   should've bet that in ten years the web                                                                                      dehint',,.
+        44 0* 347.13582% (68.051% 0.044% 31.905%)   should've bet that in ten years it                                                                                           bdeeehhntw',,.
+        45 0* 659.26831% (68.051% 0.044% 31.905%)   should've bet that in ten years it'                                                                                          bdeeehhntw,,.
+        46 0* 503.07126% (68.051% 0.044% 31.905%)   should've bet that in ten years it'd                                                                                         beeehhntw,,.
+        47 0* 3773.17622% (68.051% 0.044% 31.905%)   should've bet that in ten years it'd be                                                                                      eehhntw,,.
+        48 0* 316.43518% (68.051% 0.044% 31.905%)   should've bet that in ten years, the web                                                                                     dehint',.
+        49 0* 197.64980% (68.051% 0.044% 31.905%)   should've bet that in ten years when                                                                                         bdeehitt',,.
+        50 0* 162.59464% (68.051% 0.044% 31.905%)   should've bet that in ten years, when it                                                                                     bdeeht',.
+        51 0* 217.31079% (68.051% 0.044% 31.905%)   should've bet that in ten years, when it'                                                                                    bdeeht,.
+        52 0* 158.86158% (68.051% 0.044% 31.905%)   should've bet that in ten years, it                                                                                          bdeeehhntw',.
+        53 0* 315.30499% (68.051% 0.044% 31.905%)   should've bet that in ten years, it'                                                                                         bdeeehhntw,.
+        54 0* 220.33890% (68.051% 0.044% 31.905%)   should've bet that in ten years, it'd                                                                                        beeehhntw,.
+        55 0* 1635.59078% (68.051% 0.044% 31.905%)   should've bet that in ten years, it'd be                                                                                     eehhntw,.
+        56 0* 154.49475% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be,                                                                                     ehhintt,.
+        57 0* 147.82166% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd be hit                                                                                  ehnt,,.
+        58 0* 133.86965% (68.051% 0.044% 31.905%)   should've bet that in ten years it'd be,                                                                                     eehhntw,.
+        59 0* 132.89360% (68.051% 0.044% 31.905%)   should've bet that in ten years we'd been                                                                                    hhitt,,.
+        60 0* 126.82333% (68.051% 0.044% 31.905%)   should've bet that in ten years when the                                                                                     bdeit',,.
+        61 0* 103.17945% (68.051% 0.044% 31.905%)   should've bet that in ten years it'd be when                                                                                 eht,,.
+        62 0* 93.55694% (68.051% 0.044% 31.905%)   should've bet that in ten years, white                                                                                       bdeehnt',.
+        63 0* 93.07757% (68.051% 0.044% 31.905%)   should've bet that there                                                                                                     abdeeehiinnnsttwy',,.
+        64 0* 116.93571% (68.052% 0.044% 31.904%)   should've bet that there'                                                                                                    abdeeehiinnnsttwy,,.
+        65 0* 148.84486% (68.052% 0.044% 31.904%)   should've bet that there'd                                                                                                   abeeehiinnnsttwy,,.
+        66 0* 500.99810% (68.052% 0.044% 31.903%)   should've bet that there'd be                                                                                                aeehiinnnsttwy,,.
+        67 0* 264.77963% (68.053% 0.044% 31.903%)   should've bet that there'd be a                                                                                              eehiinnnsttwy,,.
+        68 0* 407.58759% (68.053% 0.044% 31.902%)   should've bet that there'd be a new                                                                                          ehiinnstty,,.
+        69 0* 92.69405% (68.053% 0.044% 31.902%)   should've bet that there'd be an                                                                                             eehiinnsttwy,,.
+        70 0* 89.29734% (68.054% 0.044% 31.902%)   should've bet that in ten years he                                                                                           bdeehinttw',,.
+        71 0* 200.77536% (68.054% 0.044% 31.902%)   should've bet that in ten years he'                                                                                          bdeehinttw,,.
+        72 0* 434.64754% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd                                                                                         beehinttw,,.
+        73 0* 1016.04636% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd be                                                                                      ehinttw,,.
+        74 0* 1299.54182% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd be the                                                                                  intw,,.
+        75 0* 235.55864% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd be in                                                                                   ehttw,,.
+        76 0* 995.63063% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd be in the                                                                               tw,,.
+        77 0* 71.15448% (68.054% 0.044% 31.902%)   should've bet that in ten years, web                                                                                         deehhintt',.
+        78 0* 66.64777% (68.054% 0.044% 31.902%)   should've bet that in ten years, we'd been                                                                                   hhitt,.
+        79 0* 62.19057% (68.054% 0.044% 31.902%)   should've bet that in ten years he'd be with                                                                                 ent,,.
+        80 0* 57.42176% (68.054% 0.044% 31.902%)   should've bet that in ten years, we'd be hit                                                                                 ehnt,.
+        81 0* 56.63062% (68.054% 0.044% 31.902%)   should've bet that in ten years, when he                                                                                     bdeitt',.
+        82 0* 56.22092% (68.054% 0.044% 31.902%)   should've bet the                                                                                                            aabdeeeehhiinnnrsttttwy',,.
+        83 0* 53.97658% (68.083% 0.044% 31.873%)   should've bet that we                                                                                                        abdeeeehhiinnnrsttty',,.
+        84 0* 76.60609% (68.084% 0.044% 31.872%)   should've bet that we'                                                                                                       abdeeeehhiinnnrsttty,,.
+        85 0* 108.14059% (68.085% 0.044% 31.871%)   should've bet that we'd                                                                                                      abeeeehhiinnnrsttty,,.
+        86 0* 51.99439% (68.089% 0.044% 31.867%)   should've bet that in ten years, the end                                                                                     behitw',.
+        87 0* 51.89236% (68.089% 0.044% 31.867%)   should've bet that in ten years, it'd be when                                                                                eht,.
+        88 0* 50.95486% (68.089% 0.044% 31.867%)   should've bet that in ten years, new                                                                                         bdeehhitt',.
+        89 0* 50.55976% (68.089% 0.044% 31.867%)   should've bet that in ten years the wind                                                                                     beeht',,.
+        90 0* 47.97270% (68.089% 0.044% 31.867%)   should've bet that in ten years, he                                                                                          bdeehinttw',.
+        91 0* 95.00916% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'                                                                                         bdeehinttw,.
+        92 0* 178.58501% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'd                                                                                        beehinttw,.
+        93 0* 416.56798% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'd be                                                                                     ehinttw,.
+        94 0* 850.96351% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'd be the                                                                                 intw,.
+        95 0* 83.31978% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'd be in                                                                                  ehttw,.
+        96 0* 497.15270% (68.089% 0.044% 31.867%)   should've bet that in ten years, he'd be in the                                                                              tw,.
+        97 0* 46.89529% (68.089% 0.044% 31.867%)   should've bet that there'd be way                                                                                            eehiinnnstt,,.
+        98 0* 45.30486% (68.089% 0.044% 31.867%)   should've bet that in ten years, in                                                                                          bdeeehhttw',.
+        99 0* 178.01637% (68.089% 0.044% 31.867%)   should've bet that in ten years, in the                                                                                      bdeehtw',.
+       100 0* 44.85258% (68.089% 0.044% 31.867%)   should've bet that in ten years, the wind                                                                                    beeht',.
+       101 0* 44.77873% (68.089% 0.044% 31.867%)   should've bet that in ten years he'd be white                                                                                nt,,.
+       102 0* 40.64047% (68.089% 0.044% 31.867%)   should've bet that we'd be                                                                                                   aeeehhiinnnrsttty,,.
+       103 0* 40.62283% (68.090% 0.044% 31.866%)   should've said                                                                                                               abbeeeeeehhhinnnrttttttwy',,.
+       104 0* 39.85812% (68.270% 0.044% 31.686%)   should've bet that in ten years we'd be                                                                                      ehhintt,,.
+       105 0* 39.27786% (68.270% 0.044% 31.686%)   should've bet that in ten years we'd been hit                                                                                ht,,.
+       106 0* 38.99586% (68.270% 0.044% 31.686%)   should've bet that in ten years we'd hit                                                                                     beehnt,,.
+       107 0* 38.98321% (68.270% 0.044% 31.686%)   should've bet that in ten years he'd win                                                                                     beehtt,,.
+       108 0* 442.08634% (68.270% 0.044% 31.686%)   should've bet that in ten years he'd win the                                                                                 bet,,.

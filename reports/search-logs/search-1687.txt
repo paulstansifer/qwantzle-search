@@ -1,202 +1,241 @@
 Holy crap I've never imagined this hard before
-Step          0 (remaining mass 47.256%): Next token is ' Holy', score is 1.16830% (0.437%, 62.312%, 4)
-Step         17 (remaining mass 5.275%): Next token is ' crap', score is 6.97050% (53.686%, 81.408%, 8)
-Step         18 (remaining mass 4.970%): Next token is ' I', score is 0.58591% (5.351%, 80.319%, 9)
-Step         30 (remaining mass 3.989%): Next token is ''', score is 0.30705% (27.903%, 87.792%, 10)
-Step         61 (remaining mass 3.519%): Next token is 've', score is 0.08667% (10.139%, 90.391%, 12)
-Step        182 (remaining mass 2.018%): Next token is ' never', score is 0.24705% (21.306%, 90.487%, 17)
-Step        183 (remaining mass 2.018%): Next token is ' imagined', score is 2.06440% (4.265%, 76.465%, 25)
-Step        184 (remaining mass 2.018%): Next token is ' this', score is 2.09528% (2.058%, 64.196%, 29)
-Step        185 (remaining mass 2.018%): Next token is ' hard', score is 7.36831% (2.520%, 70.020%, 33)
-Step        186 (remaining mass 2.018%): Next token is ' before', score is 39808.62381% (74.202%, 100.000%, 39)
+Step          0 (remaining mass 47.256%): Next token is ' Holy', score is 3.73451% (0.437%, 62.312%, 4)
+Step         13 (remaining mass 5.503%): Next token is ' crap', score is 17.77178% (53.686%, 81.408%, 8)
+Step         14 (remaining mass 5.197%): Next token is ' I', score is 1.47465% (5.351%, 80.319%, 9)
+Step         34 (remaining mass 3.945%): Next token is ''', score is 0.72478% (27.903%, 87.792%, 10)
+Step         81 (remaining mass 3.013%): Next token is 've', score is 0.19367% (10.139%, 90.391%, 12)
+Step        221 (remaining mass 1.560%): Next token is ' never', score is 0.49794% (21.306%, 90.487%, 17)
+Step        222 (remaining mass 1.560%): Next token is ' imagined', score is 3.15021% (4.265%, 76.465%, 25)
+Step        223 (remaining mass 1.560%): Next token is ' this', score is 2.92155% (2.058%, 64.196%, 29)
+Step        224 (remaining mass 1.560%): Next token is ' hard', score is 8.65004% (2.520%, 70.020%, 33)
+Step        225 (remaining mass 1.560%): Next token is ' before', score is 39808.62381% (74.202%, 100.000%, 39)
 ' Holy crap I've never imagined this hard before' (39808.62%)
-Search successful after 187 steps. Deepest node accessed: 0
-Search time: 7s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 28ms  Truncate: 0ms.
+Search successful after 226 steps. Deepest node accessed: 0
+Search time: 9s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 29ms  Truncate: 0ms.
 
-         0 0* 16.91321% (84.014% 0.040% 15.946%)   I                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyH'
-         1 0* 8.64000% (90.311% 0.045% 9.644%)   I'                                                                                                                           --------aabcdeeeeefhhilnooprrrrstvvyH
-         2 0* 2.59835% (93.460% 0.047% 6.493%)   I can                                                                                                                        --------abdeeeeefhhilooprrrrstvvyH'
-         3 0* 2.98632% (93.606% 0.047% 6.347%)   I can'                                                                                                                       --------abdeeeeefhhilooprrrrstvvyH
-         4 0* 2.91272% (93.606% 0.047% 6.347%)   I can't                                                                                                                      --------abdeeeeefhhilooprrrrsvvyH
-         5 0* 13.71803% (93.826% 0.047% 6.127%)   I can't believe                                                                                                              --------adeefhhooprrrrsvyH
-         6 0* 5.84954% (93.887% 0.047% 6.066%)   I can't believe he                                                                                                           --------adefhooprrrrsvyH
-         7 0* 2.29310% (93.899% 0.047% 6.054%)   I have                                                                                                                       --------abcdeeeefhilnooprrrrstvyH'
-         8 0* 1.95686% (93.993% 0.047% 5.960%)   I've                                                                                                                         --------aabcdeeeefhhilnooprrrrstvyH
-         9 0* 2.15001% (94.220% 0.047% 5.733%)   I've never                                                                                                                   --------aabcdeefhhilooprrrstyH
-        10 0* 2.43561% (94.243% 0.047% 5.710%)   I've never felt                                                                                                              --------aabcdehhiooprrrsyH
-        11 0* 2.61984% (94.248% 0.047% 5.705%)   I've never felt so                                                                                                           --------aabcdehhioprrryH
-        12 0* 1.87183% (94.251% 0.047% 5.702%)   I love                                                                                                                       --------aabcdeeeefhhinoprrrrstvyH'
-        13 0* 1.56290% (94.449% 0.047% 5.503%)   I've never imagined                                                                                                          aabcdeefhhilooprrrstyH
-        14 0* 1.31444% (94.450% 0.047% 5.503%)   I feel                                                                                                                       --------aabcdeeehhinooprrrrstvvyH'
-        15 0* 1.22572% (94.585% 0.048% 5.367%)   I hope                                                                                                                       --------aabcdeeeefhilnorrrrstvvyH'
-        16 0* 1.16865% (94.669% 0.048% 5.284%)   I have never                                                                                                                 --------abcdeefhilooprrrstyH'
-        17 0* 1.16830% (94.677% 0.048% 5.275%)   Holy                                                                                                                         --------aabcdeeeeefhhinoprrrrstvvI'
-        18 0* 6.97050% (94.819% 0.048% 5.133%)   Holy crap                                                                                                                    --------abdeeeeefhhinorrrstvvI'
-        19 0* 1.15108% (95.029% 0.048% 4.923%)   I have never felt                                                                                                            --------abcdehiooprrrsyH'
-        20 0* 0.99138% (95.031% 0.048% 4.921%)   I hope he                                                                                                                    --------aabcdeeefilnorrrrstvvyH'
-        21 0* 0.96260% (95.082% 0.048% 4.870%)   I don                                                                                                                        --------aabceeeeefhhiloprrrrstvvyH'
-        22 0* 3.68736% (95.084% 0.048% 4.868%)   I don'                                                                                                                       --------aabceeeeefhhiloprrrrstvvyH
-        23 0* 3.24407% (95.084% 0.048% 4.867%)   I don't                                                                                                                      --------aabceeeeefhhiloprrrrsvvyH
-        24 0* 1.90068% (95.539% 0.049% 4.413%)   I don't care                                                                                                                 --------abeeeefhhiloprrrsvvyH
-        25 0* 0.88827% (95.570% 0.049% 4.381%)   I have never felt so                                                                                                         --------abcdehioprrryH'
-        26 0* 0.81310% (95.571% 0.049% 4.380%)   I never                                                                                                                      --------aabcdeeefhhilooprrrstvyH'
-        27 0* 1.36057% (95.623% 0.049% 4.328%)   I never imagined                                                                                                             aabcdeeefhhilooprrrstvyH'
-        28 0* 0.80793% (95.625% 0.049% 4.326%)   oh                                                                                                                           --------aabcdeeeeefhilnoprrrrstvvyHI'
-        29 0* 0.71037% (95.953% 0.049% 3.998%)   I don't have                                                                                                                 --------abceeeefhiloprrrrsvyH
-        30 0* 0.58591% (95.963% 0.049% 3.989%)   Holy crap I                                                                                                                  --------abdeeeeefhhinorrrstvv'
-        31 0* 0.57093% (95.970% 0.049% 3.981%)   I can't help                                                                                                                 --------abdeeeefhioorrrrsvvyH
-        32 0* 0.56293% (95.978% 0.049% 3.973%)   I have never imagined                                                                                                        abcdeefhilooprrrstyH'
-        33 0* 0.54556% (95.978% 0.049% 3.973%)   I believe                                                                                                                    --------aacdeefhhnooprrrrstvyH'
-        34 0* 0.54003% (96.005% 0.049% 3.946%)   I've already                                                                                                                 --------bceeefhhinooprrrstvH
-        35 0* 0.52651% (96.009% 0.049% 3.942%)   I have the                                                                                                                   --------abcdeeefilnooprrrrsvyH'
-        36 0* 0.49240% (96.030% 0.049% 3.921%)   I'd                                                                                                                          --------aabceeeeefhhilnooprrrrstvvyH
-        37 0* 0.56950% (96.129% 0.049% 3.822%)   I'd rather                                                                                                                   --------abceeeefhilnooprrsvvyH
-        38 0* 0.52448% (96.134% 0.049% 3.817%)   I'd rather be                                                                                                                --------aceeefhilnooprrsvvyH
-        39 0* 0.48619% (96.137% 0.049% 3.814%)   I hate                                                                                                                       --------abcdeeeefhilnooprrrrsvvyH'
-        40 0* 0.46453% (96.221% 0.049% 3.730%)   I haven                                                                                                                      --------abcdeeeefhilooprrrrstvyH'
-        41 0* 0.45839% (96.255% 0.049% 3.696%)   I hope he'                                                                                                                   --------aabcdeeefilnorrrrstvvyH
-        42 0* 0.62427% (96.257% 0.049% 3.694%)   I hope he's                                                                                                                  --------aabcdeeefilnorrrrtvvyH
-        43 0* 0.45525% (96.266% 0.049% 3.685%)   I've already imagined                                                                                                        bceeefhhinooprrrstvH
-        44 0* 0.43127% (96.266% 0.049% 3.685%)   I have to                                                                                                                    --------abcdeeeefhilnoprrrrsvyH'
-        45 0* 0.40099% (96.297% 0.049% 3.654%)   I've never imagined this                                                                                                     aabcdeefhlooprrryH
-        46 0* 0.39752% (96.297% 0.049% 3.654%)   I've never had                                                                                                               --------abceefhilooprrrstyH
-        47 0* 0.38157% (96.297% 0.049% 3.654%)   I can't believe she                                                                                                          --------adefhooprrrrvyH
-        48 0* 0.36698% (96.298% 0.049% 3.653%)   I've created                                                                                                                 --------abeefhhilnooprrrsvyH
-        49 0* 0.36440% (96.299% 0.049% 3.652%)   I can hear                                                                                                                   --------bdeeeefhilooprrrstvvyH'
-        50 0* 0.35797% (96.306% 0.049% 3.645%)   I never imagined this                                                                                                        aabcdeeefhlooprrrvyH'
-        51 0* 0.35319% (96.306% 0.049% 3.645%)   he                                                                                                                           --------aabcdeeeefhilnooprrrrstvvyHI'
-        52 0* 0.34631% (96.377% 0.049% 3.574%)   I've never heard                                                                                                             --------abcefhilooprrstyH
-        53 0* 0.34295% (96.377% 0.049% 3.574%)   I don't care if                                                                                                              --------abeeeehhloprrrsvvyH
-        54 0* 0.37264% (96.379% 0.049% 3.572%)   I don't care if he                                                                                                           --------abeeehloprrrsvvyH
-        55 0* 0.71684% (96.379% 0.049% 3.572%)   I don't care if he leaves                                                                                                    --------behoprrrvyH
-        56 0* 0.34277% (96.379% 0.049% 3.572%)   I have no                                                                                                                    --------abcdeeeefhiloprrrrstvyH'
-        57 0* 0.34263% (96.390% 0.049% 3.561%)   I prefer                                                                                                                     --------aabcdeeehhilnoorrstvvyH'
-        58 0* 0.31619% (96.397% 0.049% 3.554%)   I have created                                                                                                               --------beefhilnooprrrsvyH'
-        59 0* 0.31284% (96.400% 0.049% 3.551%)   I've been                                                                                                                    --------aacdeefhhilooprrrrstvyH
-        60 0* 0.30932% (96.409% 0.049% 3.542%)   I have a                                                                                                                     --------bcdeeeefhilnooprrrrstvyH'
-        61 0* 0.30705% (96.429% 0.049% 3.522%)   Holy crap I'                                                                                                                 --------abdeeeeefhhinorrrstvv
-        62 0* 0.30286% (96.432% 0.049% 3.519%)   I don't feel                                                                                                                 --------aabceeehhioprrrrsvvyH
-        63 0* 0.30258% (96.437% 0.049% 3.514%)   I bet                                                                                                                        --------aacdeeeefhhilnooprrrrsvvyH'
-        64 0* 0.29257% (96.488% 0.049% 3.463%)   I see                                                                                                                        --------aabcdeeefhhilnooprrrrtvvyH'
-        65 0* 0.28168% (96.558% 0.049% 3.393%)   I've never imagined a                                                                                                        abcdeefhhilooprrrstyH
-        66 0* 0.27156% (96.558% 0.049% 3.392%)   I don't believe                                                                                                              --------aaceefhhoprrrrsvyH
-        67 0* 0.27093% (96.562% 0.049% 3.389%)   I love this                                                                                                                  --------aabcdeeeefhnoprrrrvyH'
-        68 0* 0.28502% (96.583% 0.049% 3.368%)   I love this brand                                                                                                            --------aceeeefhoprrrvyH'
-        69 0* 0.26498% (96.585% 0.049% 3.366%)   this                                                                                                                         --------aabcdeeeeefhlnooprrrrvvyHI'
-        70 0* 0.26446% (96.724% 0.049% 3.227%)   I can't hear                                                                                                                 --------bdeeeefhilooprrrsvvyH
-        71 0* 0.26438% (96.727% 0.049% 3.224%)   I can hear the                                                                                                               --------bdeeefilooprrrsvvyH'
-        72 0* 0.26375% (96.731% 0.049% 3.220%)   I already                                                                                                                    --------bceeeefhhinooprrrstvvH'
-        73 0* 0.26246% (96.744% 0.049% 3.207%)   he'                                                                                                                          --------aabcdeeeefhilnooprrrrstvvyHI
-        74 0* 0.32276% (96.757% 0.049% 3.194%)   he's                                                                                                                         --------aabcdeeeefhilnooprrrrtvvyHI
-        75 0* 0.26170% (96.795% 0.049% 3.155%)   I bet he                                                                                                                     --------aacdeeefhilnooprrrrsvvyH'
-        76 0* 0.39457% (96.809% 0.049% 3.141%)   I bet he'                                                                                                                    --------aacdeeefhilnooprrrrsvvyH
-        77 0* 0.49004% (96.813% 0.049% 3.137%)   I bet he's                                                                                                                   --------aacdeeefhilnooprrrrvvyH
-        78 0* 0.26108% (96.828% 0.049% 3.122%)   I love the                                                                                                                   --------aabcdeeefhinoprrrrsvyH'
-        79 0* 0.23726% (96.845% 0.049% 3.105%)   I've never heard of                                                                                                          --------abcehiloprrstyH
-        80 0* 0.23622% (96.846% 0.049% 3.105%)   I've never heard of this                                                                                                     --------abceloprryH
-        81 0* 0.23482% (96.846% 0.049% 3.105%)   I can't believe he had                                                                                                       --------efooprrrrsvyH
-        82 0* 0.23420% (96.846% 0.049% 3.105%)   I've done                                                                                                                    --------aabceeefhhiloprrrrstvyH
-        83 0* 0.22927% (96.847% 0.049% 3.103%)   I hear                                                                                                                       --------abcdeeeefhilnooprrrstvvyH'
-        84 0* 0.22825% (96.867% 0.049% 3.083%)   I need                                                                                                                       --------aabceeefhhilooprrrrstvvyH'
-        85 0* 0.22441% (96.885% 0.049% 3.066%)   I've created a                                                                                                               --------beefhhilnooprrrsvyH
-        86 0* 0.22334% (96.886% 0.049% 3.064%)   I'd rather have                                                                                                              --------bceeefilnooprrsvyH
-        87 0* 0.22313% (96.887% 0.049% 3.064%)   I'd rather be alone                                                                                                          --------ceefhioprrsvvyH
-        88 0* 0.21893% (96.887% 0.049% 3.063%)   I had                                                                                                                        --------abceeeeefhilnooprrrrstvvyH'
-        89 0* 0.21088% (96.902% 0.049% 3.048%)   I have reached                                                                                                               --------beefilnooprrrstvyH'
-        90 0* 0.21054% (96.903% 0.049% 3.047%)   I can see                                                                                                                    --------abdeeefhhilooprrrrtvvyH'
-        91 0* 0.20976% (96.924% 0.049% 3.027%)   I can do                                                                                                                     --------abeeeeefhhiloprrrrstvvyH'
-        92 0* 0.21154% (96.932% 0.049% 3.018%)   I can do this                                                                                                                --------abeeeeefhloprrrrvvyH'
-        93 0* 0.46645% (96.958% 0.050% 2.992%)   I can do this forever                                                                                                        --------abeeehlprrvyH'
-        94 0* 0.20857% (96.959% 0.050% 2.992%)   I've already imagined this                                                                                                   bceeefhnooprrrvH
-        95 0* 0.28491% (96.959% 0.050% 2.992%)   I've already imagined this before                                                                                            cehnoprrvH
-        96 0* 0.20766% (96.959% 0.050% 2.992%)   I heard                                                                                                                      --------abceeeefhilnooprrrstvvyH'
-        97 0* 0.19595% (96.973% 0.050% 2.978%)   '                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyHI
-        98 0* 0.19566% (97.081% 0.050% 2.869%)   I can't believe he has                                                                                                       --------defooprrrrvyH
-        99 0* 0.18964% (97.081% 0.050% 2.869%)   and                                                                                                                          --------abceeeeefhhilooprrrrstvvyHI'
-       100 0* 0.18882% (97.113% 0.050% 2.837%)   I can feel                                                                                                                   --------abdeeehhiooprrrrstvvyH'
-       101 0* 0.18742% (97.117% 0.050% 2.834%)   I never imagined this day                                                                                                    abceeefhlooprrrvH'
-       102 0* 0.18738% (97.117% 0.050% 2.834%)   I've never had a                                                                                                             --------bceefhilooprrrstyH
-       103 0* 0.18671% (97.117% 0.050% 2.833%)   I've never imagined this hard                                                                                                abceeflooprryH
-       104 0* 0.18197% (97.117% 0.050% 2.833%)   H                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyI'
-       105 0* 0.18069% (97.270% 0.050% 2.680%)   yes                                                                                                                          --------aabcdeeeefhhilnooprrrrtvvHI'
-       106 0* 0.18015% (97.342% 0.050% 2.609%)   I hope he's not                                                                                                              --------aabcdeeefilrrrrvvyH
-       107 0* 0.16889% (97.346% 0.050% 2.605%)   I've reached                                                                                                                 --------abeefhilnooprrrstvyH
-       108 0* 0.17750% (97.346% 0.050% 2.604%)   I've reached the                                                                                                             --------abefilnooprrrsvyH
-       109 0* 0.16800% (97.347% 0.050% 2.604%)   oh snap                                                                                                                      --------abcdeeeeefhilorrrrtvvyHI'
-       110 0* 0.16761% (97.362% 0.050% 2.588%)   I have arrived                                                                                                               --------bceeefhlnooprrstyH'
-       111 0* 0.16408% (97.363% 0.050% 2.587%)   I feel so                                                                                                                    --------aabcdeeehhinoprrrrtvvyH'
-       112 0* 0.16384% (97.377% 0.050% 2.574%)   I've heard                                                                                                                   --------abceeefhilnooprrrstvyH
-       113 0* 0.16297% (97.378% 0.050% 2.572%)   never                                                                                                                        --------aabcdeeefhhilooprrrstvyHI'
-       114 0* 0.16158% (97.395% 0.050% 2.556%)   I prefer the                                                                                                                 --------aabcdeehilnoorrsvvyH'
-       115 0* 0.15720% (97.396% 0.050% 2.554%)   perfect                                                                                                                      --------aabdeeehhilnoorrrsvvyHI'
-       116 0* 0.15654% (97.404% 0.050% 2.547%)   I've never felt so bad                                                                                                       --------acehhioprrryH
-       117 0* 0.15294% (97.404% 0.050% 2.546%)   there                                                                                                                        --------aabcdeeefhilnooprrrsvvyHI'
-       118 0* 0.15154% (97.413% 0.050% 2.537%)   I don't hear                                                                                                                 --------abceeeefhiloprrrsvvyH
-       119 0* 0.14927% (97.415% 0.050% 2.536%)   I also                                                                                                                       --------abcdeeeeefhhinoprrrrtvvyH'
-       120 0* 0.14745% (97.435% 0.050% 2.515%)   I have failed                                                                                                                --------bceeehnooprrrrstvyH'
-       121 0* 0.14583% (97.437% 0.050% 2.513%)   I don't have a                                                                                                               --------bceeeefhiloprrrrsvyH
-       122 0* 0.14306% (97.438% 0.050% 2.512%)   I prefer this                                                                                                                --------aabcdeeehlnoorrvvyH'
-       123 0* 0.14119% (97.439% 0.050% 2.511%)   I can hardly                                                                                                                 --------beeeeefhiooprrrstvvH'
-       124 0* 0.14084% (97.442% 0.050% 2.509%)   I don't feel so                                                                                                              --------aabceeehhiprrrrvvyH
-       125 0* 0.13889% (97.445% 0.050% 2.505%)   holy                                                                                                                         --------aabcdeeeeefhinoprrrrstvvHI'
-       126 0* 0.63555% (97.456% 0.050% 2.494%)   holy crap                                                                                                                    --------abdeeeeefhinorrrstvvHI'
-       127 0* 0.13438% (97.469% 0.050% 2.481%)   I can't lose                                                                                                                 --------abdeeeefhhioprrrrvvyH
-       128 0* 0.13424% (97.472% 0.050% 2.478%)   i                                                                                                                            --------aabcdeeeeefhhlnooprrrrstvvyHI'
-       129 0* 0.13375% (97.559% 0.050% 2.391%)   I never said                                                                                                                 --------abceeefhhlooprrrtvyH'
-       130 0* 0.13178% (97.562% 0.050% 2.388%)   there'                                                                                                                       --------aabcdeeefhilnooprrrsvvyHI
-       131 0* 0.19366% (97.562% 0.050% 2.388%)   there's                                                                                                                      --------aabcdeeefhilnooprrrvvyHI
-       132 0* 0.13065% (97.567% 0.050% 2.383%)   I feel a                                                                                                                     --------abcdeeehhinooprrrrstvvyH'
-       133 0* 0.12955% (97.578% 0.050% 2.372%)   Holy crap he                                                                                                                 --------abdeeeefhinorrrstvvI'
-       134 0* 0.12907% (97.579% 0.050% 2.372%)   I have been                                                                                                                  --------acdeefhilooprrrrstvyH'
-       135 0* 0.12860% (97.582% 0.050% 2.369%)   ah                                                                                                                           --------abcdeeeeefhilnooprrrrstvvyHI'
-       136 0* 0.12773% (97.635% 0.050% 2.316%)   I've already imagined the                                                                                                    bceefhinooprrrsvH
-       137 0* 0.12720% (97.635% 0.050% 2.316%)   I can live                                                                                                                   --------abdeeeefhhooprrrrstvyH'
-       138 0* 0.12632% (97.639% 0.050% 2.311%)   I also have                                                                                                                  --------bcdeeeefhinoprrrrtvyH'
-       139 0* 0.12497% (97.640% 0.050% 2.310%)   I love brand                                                                                                                 --------aceeeefhhioprrrstvyH'
-       140 0* 0.12429% (97.642% 0.050% 2.308%)   I've never said                                                                                                              --------abceefhhlooprrrtyH
-       141 0* 0.12428% (97.642% 0.050% 2.308%)   I have never had                                                                                                             --------bceefilooprrrstyH'
-       142 0* 0.12403% (97.643% 0.050% 2.307%)   later                                                                                                                        --------abcdeeeefhhinooprrrsvvyHI'
-       143 0* 0.12209% (97.658% 0.050% 2.292%)   I love it                                                                                                                    --------aabcdeeeefhhnoprrrrsvyH'
-       144 0* 0.11740% (97.687% 0.050% 2.263%)   Holy crap this                                                                                                               --------abdeeeeefhnorrrvvI'
-       145 0* 0.11713% (97.690% 0.050% 2.260%)   I've never had this                                                                                                          --------abceeflooprrryH
-       146 0* 0.11558% (97.690% 0.050% 2.260%)   Holy crap he'                                                                                                                --------abdeeeefhinorrrstvvI
-       147 0* 0.18246% (97.691% 0.050% 2.260%)   Holy crap he's                                                                                                               --------abdeeeefhinorrrtvvI
-       148 0* 0.11538% (97.691% 0.050% 2.259%)   I've never hated                                                                                                             --------abcefhilooprrrsyH
-       149 0* 0.11474% (97.691% 0.050% 2.259%)   yeah                                                                                                                         --------abcdeeeefhilnooprrrrstvvHI'
-       150 0* 0.11308% (97.715% 0.050% 2.235%)   I bet he's already                                                                                                           --------ceefhinooprrrvvH
-       151 0* 0.10985% (97.715% 0.050% 2.235%)   oh no                                                                                                                        --------aabcdeeeeefhilprrrrstvvyHI'
-       152 0* 0.10903% (97.779% 0.050% 2.171%)   I'd rather be here                                                                                                           --------acefilnooprsvvyH
-       153 0* 0.10622% (97.779% 0.050% 2.171%)   Holy cra                                                                                                                     --------abdeeeeefhhinoprrrstvvI'
-       154 0* 0.10597% (97.783% 0.050% 2.167%)   I never imagined it                                                                                                          aabcdeeefhhlooprrrsvyH'
-       155 0* 0.10534% (97.783% 0.050% 2.167%)   he's not                                                                                                                     --------aabcdeeeefhiloprrrrvvyHI
-       156 0* 0.10503% (97.790% 0.050% 2.160%)   there's no                                                                                                                   --------aabcdeeefhiloprrrvvyHI
-       157 0* 0.10361% (97.792% 0.050% 2.158%)   I do                                                                                                                         --------aabceeeeefhhilnoprrrrstvvyH'
-       158 0* 0.10257% (97.822% 0.050% 2.128%)   I feel bad                                                                                                                   --------aceeehhinooprrrrstvvyH'
-       159 0* 0.10206% (97.827% 0.050% 2.123%)   I don't see                                                                                                                  --------aabceeefhhiloprrrrvvyH
-       160 0* 0.10181% (97.845% 0.050% 2.105%)   I don't feel very                                                                                                            --------aabceehhioprrrsvH
-       161 0* 0.10160% (97.845% 0.050% 2.105%)   I never imagined the                                                                                                         aabcdeefhilooprrrsvyH'
-       162 0* 0.10134% (97.845% 0.050% 2.105%)   I have never imagined this                                                                                                   abcdeeflooprrryH'
-       163 0* 0.10095% (97.845% 0.050% 2.105%)   oh crap                                                                                                                      --------abdeeeeefhilnorrrstvvyHI'
-       164 0* 0.10027% (97.851% 0.050% 2.099%)   I've never imagined the                                                                                                      aabcdefhilooprrrsyH
-       165 0* 0.09883% (97.851% 0.050% 2.099%)   I also imagined                                                                                                              abcdeeeeefhhinoprrrrtvvyH'
-       166 0* 0.09808% (97.851% 0.050% 2.099%)   I don't ever                                                                                                                 --------aabceeefhhiloprrrsvyH
-       167 0* 0.09705% (97.853% 0.050% 2.097%)   I'd say                                                                                                                      --------abceeeeefhhilnooprrrrtvvH
-       168 0* 0.09655% (97.859% 0.050% 2.091%)   Holy craps                                                                                                                   --------abdeeeeefhhinorrrtvvI'
-       169 0* 0.09578% (97.861% 0.050% 2.088%)   I can't be                                                                                                                   --------adeeeefhhilooprrrrsvvyH
-       170 0* 0.09533% (97.865% 0.050% 2.085%)   I already imagined                                                                                                           bceeeefhhinooprrrstvvH'
-       171 0* 0.09530% (97.865% 0.050% 2.084%)   holy crap I                                                                                                                  --------abdeeeeefhinorrrstvvH'
-       172 0* 0.09518% (97.867% 0.050% 2.083%)   I've never had the                                                                                                           --------abcefilooprrrsyH
-       173 0* 0.09477% (97.867% 0.050% 2.083%)   I have never heard                                                                                                           --------bcefilooprrstyH'
-       174 0* 0.09268% (97.867% 0.050% 2.083%)   oh yeah                                                                                                                      --------abcdeeeefilnoprrrrstvvHI'
-       175 0* 0.09258% (97.880% 0.050% 2.070%)   I've learned                                                                                                                 --------abceefhhiooprrrstvyH
-       176 0* 0.09128% (97.881% 0.050% 2.069%)   I also have the                                                                                                              --------bcdeeefinoprrrrvyH'
-       177 0* 0.09124% (97.883% 0.050% 2.067%)   I had a                                                                                                                      --------bceeeeefhilnooprrrrstvvyH'
-       178 0* 0.09081% (97.895% 0.050% 2.055%)   I prefer to                                                                                                                  --------aabcdeeehhilnorrsvvyH'
-       179 0* 0.08924% (97.896% 0.050% 2.054%)   I'd rather be imagined                                                                                                       aceeefhilnooprrsvvyH
-       180 0* 0.08890% (97.896% 0.050% 2.054%)   I've never had so                                                                                                            --------abceefhiloprrrtyH
-       181 0* 0.08692% (97.897% 0.050% 2.053%)   see                                                                                                                          --------aabcdeeefhhilnooprrrrtvvyHI'
-       182 0* 0.08667% (97.932% 0.050% 2.018%)   Holy crap I've                                                                                                               --------abdeeeefhhinorrrstv
-       183 0* 0.24705% (97.932% 0.050% 2.018%)   Holy crap I've never                                                                                                         --------abdeefhhiorrst
-       184 0* 2.06440% (97.932% 0.050% 2.018%)   Holy crap I've never imagined                                                                                                abdeefhhiorrst
-       185 0* 2.09528% (97.932% 0.050% 2.018%)   Holy crap I've never imagined this                                                                                           abdeefhorr
-       186 0* 7.36831% (97.932% 0.050% 2.018%)   Holy crap I've never imagined this hard                                                                                      beefor
+         0 0* 47.38235% (84.014% 0.040% 15.946%)   I                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyH'
+         1 0* 23.09874% (90.311% 0.045% 9.644%)   I'                                                                                                                           --------aabcdeeeeefhhilnooprrrrstvvyH
+         2 0* 7.17251% (93.460% 0.047% 6.493%)   I can                                                                                                                        --------abdeeeeefhhilooprrrrstvvyH'
+         3 0* 7.63658% (93.606% 0.047% 6.347%)   I can'                                                                                                                       --------abdeeeeefhhilooprrrrstvvyH
+         4 0* 8.33576% (93.606% 0.047% 6.347%)   I can't                                                                                                                      --------abdeeeeefhhilooprrrrsvvyH
+         5 0* 39.61622% (93.826% 0.047% 6.127%)   I can't believe                                                                                                              --------adeefhhooprrrrsvyH
+         6 0* 16.89700% (93.887% 0.047% 6.066%)   I can't believe he                                                                                                           --------adefhooprrrrsvyH
+         7 0* 5.85986% (93.899% 0.047% 6.054%)   I have                                                                                                                       --------abcdeeeefhilnooprrrrstvyH'
+         8 0* 5.17441% (93.993% 0.047% 5.960%)   I love                                                                                                                       --------aabcdeeeefhhinoprrrrstvyH'
+         9 0* 5.01175% (94.191% 0.047% 5.761%)   I've                                                                                                                         --------aabcdeeeefhhilnooprrrrstvyH
+        10 0* 5.02525% (94.418% 0.047% 5.534%)   I've never                                                                                                                   --------aabcdeefhhilooprrrstyH
+        11 0* 5.91951% (94.441% 0.047% 5.511%)   I've never felt                                                                                                              --------aabcdehhiooprrrsyH
+        12 0* 5.89984% (94.447% 0.047% 5.506%)   I've never felt so                                                                                                           --------aabcdehhioprrryH
+        13 0* 3.73451% (94.449% 0.047% 5.503%)   Holy                                                                                                                         --------aabcdeeeeefhhinoprrrrstvvI'
+        14 0* 17.77178% (94.591% 0.048% 5.361%)   Holy crap                                                                                                                    --------abdeeeeefhhinorrrstvvI'
+        15 0* 3.57818% (94.802% 0.048% 5.151%)   I feel                                                                                                                       --------aabcdeeehhinooprrrrstvvyH'
+        16 0* 3.56361% (94.937% 0.048% 5.015%)   I don                                                                                                                        --------aabceeeeefhhiloprrrrstvvyH'
+        17 0* 10.08428% (94.939% 0.048% 5.013%)   I don'                                                                                                                       --------aabceeeeefhhiloprrrrstvvyH
+        18 0* 10.54278% (94.939% 0.048% 5.013%)   I don't                                                                                                                      --------aabceeeeefhhiloprrrrsvvyH
+        19 0* 5.19571% (95.393% 0.048% 4.559%)   I don't care                                                                                                                 --------abeeeefhhiloprrrsvvyH
+        20 0* 3.48031% (95.425% 0.048% 4.527%)   I hope                                                                                                                       --------aabcdeeeefhilnorrrrstvvyH'
+        21 0* 3.20535% (95.508% 0.049% 4.443%)   I've never imagined                                                                                                          aabcdeefhhilooprrrstyH
+        22 0* 3.05075% (95.509% 0.049% 4.443%)   I hope he                                                                                                                    --------aabcdeeefilnorrrrstvvyH'
+        23 0* 2.70376% (95.560% 0.049% 4.391%)   I have never                                                                                                                 --------abcdeefhilooprrrstyH'
+        24 0* 2.96315% (95.568% 0.049% 4.383%)   I have never felt                                                                                                            --------abcdehiooprrrsyH'
+        25 0* 2.33486% (95.570% 0.049% 4.381%)   oh                                                                                                                           --------aabcdeeeeefhilnoprrrrstvvyHI'
+        26 0* 2.27391% (95.898% 0.049% 4.053%)   I have never felt so                                                                                                         --------abcdehioprrryH'
+        27 0* 2.09244% (95.899% 0.049% 4.052%)   I never                                                                                                                      --------aabcdeeefhhilooprrrstvyH'
+        28 0* 3.25744% (95.951% 0.049% 4.000%)   I never imagined                                                                                                             aabcdeeefhhilooprrrstvyH'
+        29 0* 1.84231% (95.953% 0.049% 3.998%)   I don't have                                                                                                                 --------abceeeefhiloprrrrsvyH
+        30 0* 1.67444% (95.963% 0.049% 3.989%)   I believe                                                                                                                    --------aacdeefhhnooprrrrstvyH'
+        31 0* 1.65935% (95.990% 0.049% 3.961%)   I hope he doesn                                                                                                              --------aabceefilrrrrtvvyH'
+        32 0* 4.80123% (95.990% 0.049% 3.961%)   I hope he doesn'                                                                                                             --------aabceefilrrrrtvvyH
+        33 0* 6.45352% (95.990% 0.049% 3.961%)   I hope he doesn't                                                                                                            --------aabceefilrrrrvvyH
+        34 0* 1.47465% (96.007% 0.049% 3.945%)   Holy crap I                                                                                                                  --------abdeeeeefhhinorrrstvv'
+        35 0* 1.42278% (96.014% 0.049% 3.937%)   I have the                                                                                                                   --------abcdeeefilnooprrrrsvyH'
+        36 0* 1.40552% (96.036% 0.049% 3.915%)   I hate                                                                                                                       --------abcdeeeefhilnooprrrrsvvyH'
+        37 0* 1.39131% (96.119% 0.049% 3.832%)   I can't help                                                                                                                 --------abdeeeefhioorrrrsvvyH
+        38 0* 1.33033% (96.127% 0.049% 3.824%)   I have to                                                                                                                    --------abcdeeeefhilnoprrrrsvyH'
+        39 0* 1.31070% (96.157% 0.049% 3.794%)   I'd                                                                                                                          --------aabceeeeefhhilnooprrrrstvvyH
+        40 0* 1.37259% (96.256% 0.049% 3.695%)   I'd rather                                                                                                                   --------abceeeefhilnooprrsvvyH
+        41 0* 1.24138% (96.261% 0.049% 3.690%)   I've already                                                                                                                 --------bceeefhhinooprrrstvH
+        42 0* 1.24108% (96.265% 0.049% 3.686%)   I'd rather be                                                                                                                --------aceeefhilnooprrsvvyH
+        43 0* 1.22408% (96.268% 0.049% 3.683%)   I don't believe                                                                                                              --------aaceefhhoprrrrsvyH
+        44 0* 1.20814% (96.271% 0.049% 3.680%)   I love this                                                                                                                  --------aabcdeeeefhnoprrrrvyH'
+        45 0* 1.32881% (96.292% 0.049% 3.659%)   I love this brand                                                                                                            --------aceeeefhoprrrvyH'
+        46 0* 1.18739% (96.295% 0.049% 3.656%)   I hope he'                                                                                                                   --------aabcdeeefilnorrrrstvvyH
+        47 0* 1.58684% (96.297% 0.049% 3.654%)   I hope he's                                                                                                                  --------aabcdeeefilnorrrrtvvyH
+        48 0* 1.18486% (96.306% 0.049% 3.645%)   I have never imagined                                                                                                        abcdeefhilooprrrstyH'
+        49 0* 1.17753% (96.306% 0.049% 3.645%)   I haven                                                                                                                      --------abcdeeeefhilooprrrrstvyH'
+        50 0* 1.07685% (96.340% 0.049% 3.611%)   I need                                                                                                                       --------aabceeefhhilooprrrrstvvyH'
+        51 0* 1.01709% (96.357% 0.049% 3.594%)   I don't feel                                                                                                                 --------aabceeehhioprrrrsvvyH
+        52 0* 0.99316% (96.362% 0.049% 3.589%)   I have created                                                                                                               --------beefhilnooprrrsvyH'
+        53 0* 0.97481% (96.366% 0.049% 3.585%)   he                                                                                                                           --------aabcdeeeefhilnooprrrrstvvyHI'
+        54 0* 0.97326% (96.436% 0.049% 3.515%)   I never imagined this                                                                                                        aabcdeeefhlooprrrvyH'
+        55 0* 0.97304% (96.436% 0.049% 3.515%)   this                                                                                                                         --------aabcdeeeeefhlnooprrrrvvyHI'
+        56 0* 0.94769% (96.575% 0.049% 3.376%)   I can't believe she                                                                                                          --------adefhooprrrrvyH
+        57 0* 0.94748% (96.575% 0.049% 3.375%)   I can hear                                                                                                                   --------bdeeeefhilooprrrstvvyH'
+        58 0* 0.94049% (96.582% 0.049% 3.368%)   I don't care if                                                                                                              --------abeeeehhloprrrsvvyH
+        59 0* 0.93653% (96.584% 0.049% 3.367%)   I don't care if he                                                                                                           --------abeeehloprrrsvvyH
+        60 0* 1.47693% (96.585% 0.049% 3.366%)   I don't care if he leaves                                                                                                    --------behoprrrvyH
+        61 0* 0.93368% (96.585% 0.049% 3.366%)   I've already imagined                                                                                                        bceeefhhinooprrrstvH
+        62 0* 0.92380% (96.585% 0.049% 3.366%)   I bet                                                                                                                        --------aacdeeeefhhilnooprrrrsvvyH'
+        63 0* 0.91995% (96.636% 0.049% 3.315%)   I have no                                                                                                                    --------abcdeeeefhiloprrrrstvyH'
+        64 0* 0.87844% (96.646% 0.049% 3.304%)   I've created                                                                                                                 --------abeefhhilnooprrrsvyH
+        65 0* 0.87566% (96.648% 0.049% 3.303%)   I've never had                                                                                                               --------abceefhilooprrrstyH
+        66 0* 0.86297% (96.648% 0.049% 3.302%)   I see                                                                                                                        --------aabcdeeefhhilnooprrrrtvvyH'
+        67 0* 0.86261% (96.719% 0.049% 3.232%)   I need to                                                                                                                    --------aabceeefhhiloprrrrsvvyH'
+        68 0* 0.85467% (96.819% 0.049% 3.132%)   I love the                                                                                                                   --------aabcdeeefhinoprrrrsvyH'
+        69 0* 0.83775% (96.836% 0.049% 3.115%)   I bet he                                                                                                                     --------aacdeeefhilnooprrrrsvvyH'
+        70 0* 1.02326% (96.850% 0.049% 3.101%)   I bet he'                                                                                                                    --------aacdeeefhilnooprrrrsvvyH
+        71 0* 1.24864% (96.853% 0.049% 3.097%)   I bet he's                                                                                                                   --------aacdeeefhilnooprrrrvvyH
+        72 0* 0.83395% (96.869% 0.049% 3.082%)   I hope he's not                                                                                                              --------aabcdeeefilrrrrvvyH
+        73 0* 0.83055% (96.873% 0.049% 3.078%)   I prefer                                                                                                                     --------aabcdeeehhilnoorrstvvyH'
+        74 0* 0.79421% (96.880% 0.049% 3.071%)   I can hear the                                                                                                               --------bdeeefilooprrrsvvyH'
+        75 0* 0.79279% (96.883% 0.049% 3.067%)   I've never imagined this                                                                                                     aabcdeefhlooprrryH
+        76 0* 0.79223% (96.884% 0.049% 3.067%)   I've been                                                                                                                    --------aacdeefhhilooprrrrstvyH
+        77 0* 0.78739% (96.892% 0.049% 3.058%)   I have a                                                                                                                     --------bcdeeeefhilnooprrrrstvyH'
+        78 0* 0.75532% (96.912% 0.049% 3.039%)   I already                                                                                                                    --------bceeeefhhinooprrrstvvH'
+        79 0* 0.74167% (96.925% 0.049% 3.026%)   I have no idea                                                                                                               --------bceeefhloprrrrstvyH'
+        80 0* 0.73042% (96.934% 0.049% 3.016%)   I've never heard                                                                                                             --------abcefhilooprrstyH
+        81 0* 0.72478% (96.934% 0.049% 3.016%)   Holy crap I'                                                                                                                 --------abdeeeeefhhinorrrstvv
+        82 0* 0.70626% (96.937% 0.049% 3.013%)   I can do                                                                                                                     --------abeeeeefhhiloprrrrstvvyH'
+        83 0* 1.56347% (96.946% 0.049% 3.005%)   I can do this                                                                                                                --------abeeeeefhloprrrrvvyH'
+        84 0* 1.68365% (96.972% 0.049% 2.978%)   I can do this forever                                                                                                        --------abeeehlprrvyH'
+        85 0* 0.69988% (96.973% 0.049% 2.978%)   I don't see                                                                                                                  --------aabceeefhhiloprrrrvvyH
+        86 0* 0.69257% (96.991% 0.049% 2.960%)   I can see                                                                                                                    --------abdeeefhhilooprrrrtvvyH'
+        87 0* 0.69073% (97.011% 0.049% 2.940%)   he'                                                                                                                          --------aabcdeeeefhilnooprrrrstvvyHI
+        88 0* 0.83792% (97.024% 0.050% 2.927%)   he's                                                                                                                         --------aabcdeeeefhilnooprrrrtvvyHI
+        89 0* 0.68984% (97.063% 0.050% 2.888%)   I don't feel so                                                                                                              --------aabceeehhiprrrrvvyH
+        90 0* 0.66639% (97.066% 0.050% 2.884%)   I never imagined this day                                                                                                    abceeefhlooprrrvH'
+        91 0* 0.64810% (97.066% 0.050% 2.884%)   I can't hear                                                                                                                 --------bdeeeefhilooprrrsvvyH
+        92 0* 0.61376% (97.070% 0.050% 2.881%)   I've done                                                                                                                    --------aabceeefhhiloprrrrstvyH
+        93 0* 0.59968% (97.071% 0.050% 2.879%)   I can't believe he had                                                                                                       --------efooprrrrsvyH
+        94 0* 0.59935% (97.071% 0.050% 2.879%)   I had                                                                                                                        --------abceeeeefhilnooprrrrstvvyH'
+        95 0* 0.59517% (97.086% 0.050% 2.864%)   Holy crap this                                                                                                               --------abdeeeeefhnorrrvvI'
+        96 0* 0.59282% (97.089% 0.050% 2.861%)   I hear                                                                                                                       --------abcdeeeefhilnooprrrstvvyH'
+        97 0* 0.59056% (97.110% 0.050% 2.841%)   I've never imagined a                                                                                                        abcdeefhhilooprrrstyH
+        98 0* 0.58983% (97.110% 0.050% 2.841%)   I've created a                                                                                                               --------beefhhilnooprrrsvyH
+        99 0* 0.58929% (97.111% 0.050% 2.839%)   I love it                                                                                                                    --------aabcdeeeefhhnoprrrrsvyH'
+       100 0* 0.55657% (97.140% 0.050% 2.810%)   I'd rather be alone                                                                                                          --------ceefhioprrsvvyH
+       101 0* 0.54721% (97.140% 0.050% 2.810%)   I heard                                                                                                                      --------abceeeefhilnooprrrstvvyH'
+       102 0* 0.54413% (97.154% 0.050% 2.796%)   I have reached                                                                                                               --------beefilnooprrrstvyH'
+       103 0* 0.53877% (97.156% 0.050% 2.795%)   and                                                                                                                          --------abceeeeefhhilooprrrrstvvyHI'
+       104 0* 0.53461% (97.188% 0.050% 2.762%)   '                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyHI
+       105 0* 0.52522% (97.296% 0.050% 2.654%)   I can feel                                                                                                                   --------abdeeehhiooprrrrstvvyH'
+       106 0* 0.52318% (97.300% 0.050% 2.651%)   yes                                                                                                                          --------aabcdeeeefhhilnooprrrrtvvHI'
+       107 0* 0.52024% (97.371% 0.050% 2.579%)   H                                                                                                                            --------aabcdeeeeefhhilnooprrrrstvvyI'
+       108 0* 0.50434% (97.524% 0.050% 2.426%)   I'd rather have                                                                                                              --------bceeefilnooprrsvyH
+       109 0* 0.50291% (97.524% 0.050% 2.426%)   I never imagined it                                                                                                          aabcdeeefhhlooprrrsvyH'
+       110 0* 0.50021% (97.525% 0.050% 2.425%)   I feel so                                                                                                                    --------aabcdeeehhinoprrrrtvvyH'
+       111 0* 0.48480% (97.538% 0.050% 2.412%)   Holy shit                                                                                                                    --------aabcdeeeeefhnoprrrrvvI'
+       112 0* 0.48369% (97.570% 0.050% 2.381%)   I've never heard of                                                                                                          --------abcehiloprrstyH
+       113 0* 0.46583% (97.570% 0.050% 2.380%)   I've already imagined this                                                                                                   bceeefhnooprrrvH
+       114 0* 1.08545% (97.570% 0.050% 2.380%)   I've already imagined this before                                                                                            cehnoprrvH
+       115 0* 0.46131% (97.570% 0.050% 2.380%)   oh snap                                                                                                                      --------abcdeeeeefhilorrrrtvvyHI'
+       116 0* 0.45799% (97.585% 0.050% 2.365%)   I have failed                                                                                                                --------bceeehnooprrrrstvyH'
+       117 0* 0.45575% (97.587% 0.050% 2.363%)   I can't believe he has                                                                                                       --------defooprrrrvyH
+       118 0* 0.45282% (97.587% 0.050% 2.363%)   I've never heard of this                                                                                                     --------abceloprryH
+       119 0* 0.44205% (97.587% 0.050% 2.363%)   I also                                                                                                                       --------abcdeeeeefhhinoprrrrtvvyH'
+       120 0* 0.43583% (97.608% 0.050% 2.343%)   I have arrived                                                                                                               --------bceeefhlnooprrstyH'
+       121 0* 0.43143% (97.609% 0.050% 2.342%)   oh no                                                                                                                        --------aabcdeeeeefhilprrrrstvvyHI'
+       122 0* 0.42238% (97.673% 0.050% 2.277%)   there                                                                                                                        --------aabcdeeefhilnooprrrsvvyHI'
+       123 0* 0.41911% (97.682% 0.050% 2.268%)   never                                                                                                                        --------aabcdeeefhhilooprrrstvyHI'
+       124 0* 0.41859% (97.698% 0.050% 2.252%)   i                                                                                                                            --------aabcdeeeeefhhlnooprrrrstvvyHI'
+       125 0* 0.40454% (97.785% 0.050% 2.165%)   I've never had a                                                                                                             --------bceefhilooprrrstyH
+       126 0* 0.40446% (97.786% 0.050% 2.165%)   I can't lose                                                                                                                 --------abdeeeefhhioprrrrvvyH
+       127 0* 0.39904% (97.788% 0.050% 2.162%)   I've done it                                                                                                                 --------aabceeefhhloprrrrsvyH
+       128 0* 0.39607% (97.794% 0.050% 2.156%)   perfect                                                                                                                      --------aabdeeehhilnoorrrsvvyHI'
+       129 0* 0.39272% (97.802% 0.050% 2.148%)   holy                                                                                                                         --------aabcdeeeeefhinoprrrrstvvHI'
+       130 0* 1.54669% (97.812% 0.050% 2.138%)   holy crap                                                                                                                    --------abdeeeeefhinorrrstvvHI'
+       131 0* 0.39063% (97.826% 0.050% 2.124%)   I prefer the                                                                                                                 --------aabcdeehilnoorrsvvyH'
+       132 0* 0.38822% (97.827% 0.050% 2.123%)   I've reached                                                                                                                 --------abeefhilnooprrrstvyH
+       133 0* 0.43929% (97.828% 0.050% 2.122%)   I've reached the                                                                                                             --------abefilnooprrrsvyH
+       134 0* 0.38821% (97.828% 0.050% 2.122%)   I never said                                                                                                                 --------abceeefhhlooprrrtvyH'
+       135 0* 0.38493% (97.831% 0.050% 2.119%)   I've heard                                                                                                                   --------abceeefhilnooprrrstvyH
+       136 0* 0.38194% (97.832% 0.050% 2.118%)   I can hardly                                                                                                                 --------beeeeefhiooprrrstvvH'
+       137 0* 0.36993% (97.835% 0.050% 2.115%)   I don't have a                                                                                                               --------bceeeefhiloprrrrsvyH
+       138 0* 0.36804% (97.836% 0.050% 2.114%)   I don't hear                                                                                                                 --------abceeeefhiloprrrsvvyH
+       139 0* 0.35719% (97.838% 0.050% 2.112%)   I feel a                                                                                                                     --------abcdeeehhinooprrrrstvvyH'
+       140 0* 0.35404% (97.849% 0.050% 2.101%)   I prefer this                                                                                                                --------aabcdeeehlnoorrvvyH'
+       141 0* 0.35139% (97.850% 0.050% 2.100%)   I have been                                                                                                                  --------acdeefhilooprrrrstvyH'
+       142 0* 0.35129% (97.853% 0.050% 2.097%)   I do                                                                                                                         --------aabceeeeefhhilnoprrrrstvvyH'
+       143 0* 0.34985% (97.883% 0.050% 2.067%)   ah                                                                                                                           --------abcdeeeeefhilnooprrrrstvvyHI'
+       144 0* 0.34236% (97.935% 0.050% 2.014%)   I also have                                                                                                                  --------bcdeeeefhinoprrrrtvyH'
+       145 0* 0.39238% (97.937% 0.050% 2.013%)   I also have the                                                                                                              --------bcdeeefinoprrrrvyH'
+       146 0* 0.33449% (97.939% 0.050% 2.011%)   later                                                                                                                        --------abcdeeeefhhinooprrrsvvyHI'
+       147 0* 0.33350% (97.954% 0.050% 1.996%)   there'                                                                                                                       --------aabcdeeefhilnooprrrsvvyHI
+       148 0* 0.48870% (97.954% 0.050% 1.996%)   there's                                                                                                                      --------aabcdeeefhilnooprrrvvyHI
+       149 0* 0.32947% (97.959% 0.050% 1.991%)   I can live                                                                                                                   --------abdeeeefhhooprrrrstvyH'
+       150 0* 0.32657% (97.964% 0.050% 1.986%)   I've never felt so bad                                                                                                       --------acehhioprrryH
+       151 0* 0.32435% (97.964% 0.050% 1.986%)   I bet he's already                                                                                                           --------ceefhinooprrrvvH
+       152 0* 0.32396% (97.964% 0.050% 1.986%)   I love brand                                                                                                                 --------aceeeefhhioprrrstvyH'
+       153 0* 0.31768% (97.966% 0.050% 1.984%)   yeah                                                                                                                         --------abcdeeeefhilnooprrrrstvvHI'
+       154 0* 0.31604% (97.989% 0.050% 1.961%)   I never imagined the                                                                                                         aabcdeefhilooprrrsvyH'
+       155 0* 0.31460% (97.989% 0.050% 1.961%)   Holy crap he                                                                                                                 --------abdeeeefhinorrrstvvI'
+       156 0* 0.31143% (97.990% 0.050% 1.960%)   I feel the                                                                                                                   --------aabcdeehinooprrrrsvvyH'
+       157 0* 0.29380% (97.998% 0.050% 1.952%)   Holy crap this brand                                                                                                         --------eeeeefhorrvvI'
+       158 0* 0.29225% (97.998% 0.050% 1.951%)   I've already imagined the                                                                                                    bceefhinooprrrsvH
+       159 0* 0.29070% (97.998% 0.050% 1.951%)   he's not                                                                                                                     --------aabcdeeeefhiloprrrrvvyHI
+       160 0* 0.29058% (98.005% 0.050% 1.945%)   I have never had                                                                                                             --------bceefilooprrrstyH'
+       161 0* 0.29012% (98.005% 0.050% 1.944%)   oh yeah                                                                                                                      --------abcdeeeefilnoprrrrstvvHI'
+       162 0* 0.28971% (98.019% 0.050% 1.931%)   I have to say                                                                                                                --------bcdeeeefhilnoprrrrvH'
+       163 0* 0.28903% (98.022% 0.050% 1.928%)   I feel bad                                                                                                                   --------aceeehhinooprrrrstvvyH'
+       164 0* 0.28784% (98.027% 0.050% 1.923%)   I hope he doesn't live                                                                                                       --------aabcefrrrrvyH
+       165 0* 0.28258% (98.027% 0.050% 1.923%)   I do believe                                                                                                                 --------aaceefhhnoprrrrstvyH'
+       166 0* 0.28242% (98.031% 0.050% 1.919%)   I never imagined this before                                                                                                 aacdehloprrvyH'
+       167 0* 0.28141% (98.031% 0.050% 1.919%)   I can feel the                                                                                                               --------abdeehiooprrrrsvvyH'
+       168 0* 0.28066% (98.033% 0.050% 1.917%)   it                                                                                                                           --------aabcdeeeeefhhlnooprrrrsvvyHI'
+       169 0* 0.42439% (98.070% 0.050% 1.880%)   it'                                                                                                                          --------aabcdeeeeefhhlnooprrrrsvvyHI
+       170 0* 0.55797% (98.071% 0.050% 1.879%)   it's                                                                                                                         --------aabcdeeeeefhhlnooprrrrvvyHI
+       171 0* 0.28058% (98.121% 0.050% 1.829%)   Holy cra                                                                                                                     --------abdeeeeefhhinoprrrstvvI'
+       172 0* 0.27633% (98.125% 0.050% 1.825%)   I've never hated                                                                                                             --------abcefhilooprrrsyH
+       173 0* 0.27523% (98.125% 0.050% 1.825%)   I've never imagined this hard                                                                                                abceeflooprryH
+       174 0* 0.27509% (98.125% 0.050% 1.825%)   I've never said                                                                                                              --------abceefhhlooprrrtyH
+       175 0* 0.27463% (98.125% 0.050% 1.825%)   I already imagined                                                                                                           bceeeefhhinooprrrstvvH'
+       176 0* 0.27107% (98.125% 0.050% 1.824%)   I can't be                                                                                                                   --------adeeeefhhilooprrrrsvvyH
+       177 0* 0.27004% (98.129% 0.050% 1.821%)   there's no                                                                                                                   --------aabcdeeefhiloprrrvvyHI
+       178 0* 0.26846% (98.131% 0.050% 1.818%)   I don't ever                                                                                                                 --------aabceeefhhiloprrrsvyH
+       179 0* 0.26565% (98.133% 0.050% 1.817%)   Holy crap he'                                                                                                                --------abdeeeefhinorrrstvvI
+       180 0* 0.41360% (98.133% 0.050% 1.817%)   Holy crap he's                                                                                                               --------abdeeeefhinorrrtvvI
+       181 0* 0.26527% (98.134% 0.050% 1.816%)   I also imagined                                                                                                              abcdeeeeefhhinoprrrrtvvyH'
+       182 0* 0.26508% (98.134% 0.050% 1.816%)   I've never had this                                                                                                          --------abceeflooprrryH
+       183 0* 0.26021% (98.134% 0.050% 1.815%)   I can't do                                                                                                                   --------abeeeeefhhiloprrrrsvvyH
+       184 0* 0.25933% (98.140% 0.050% 1.810%)   see                                                                                                                          --------aabcdeeefhhilnooprrrrtvvyHI'
+       185 0* 0.25919% (98.175% 0.050% 1.775%)   I can't believe a                                                                                                            --------deefhhooprrrrsvyH
+       186 0* 0.25644% (98.175% 0.050% 1.775%)   I have never imagined this                                                                                                   abcdeeflooprrryH'
+       187 0* 0.25377% (98.175% 0.050% 1.775%)   oh crap                                                                                                                      --------abdeeeeefhilnorrrstvvyHI'
+       188 0* 0.25333% (98.181% 0.050% 1.769%)   Holy craps                                                                                                                   --------abdeeeeefhhinorrrtvvI'
+       189 0* 0.25292% (98.183% 0.050% 1.767%)   I'd say                                                                                                                      --------abceeeeefhhilnooprrrrtvvH
+       190 0* 0.25104% (98.190% 0.050% 1.760%)   I had a                                                                                                                      --------bceeeeefhilnooprrrrstvvyH'
+       191 0* 0.25019% (98.202% 0.050% 1.748%)   I don't feel very                                                                                                            --------aabceehhioprrrsvH
+       192 0* 0.24920% (98.202% 0.050% 1.747%)   I can't say                                                                                                                  --------bdeeeeefhhilooprrrrvvH
+       193 0* 0.24634% (98.205% 0.050% 1.744%)   I never imagined life                                                                                                        aabcdeehhooprrrstvyH'
+       194 0* 0.24599% (98.205% 0.050% 1.744%)   I'd rather be here                                                                                                           --------acefilnooprsvvyH
+       195 0* 0.24098% (98.206% 0.050% 1.744%)   holy crap this                                                                                                               --------abdeeeeefnorrrvvHI'
+       196 0* 0.23822% (98.206% 0.050% 1.743%)   I loved                                                                                                                      --------aabceeeefhhinoprrrrstvyH'
+       197 0* 0.23218% (98.215% 0.050% 1.735%)   a                                                                                                                            --------abcdeeeeefhhilnooprrrrstvvyHI'
+       198 0* 0.23160% (98.278% 0.050% 1.672%)   holy crap I                                                                                                                  --------abdeeeeefhinorrrstvvH'
+       199 0* 0.23097% (98.279% 0.050% 1.671%)   no                                                                                                                           --------aabcdeeeeefhhiloprrrrstvvyHI'
+       200 0* 0.22713% (98.326% 0.050% 1.623%)   I have done                                                                                                                  --------abceeefhiloprrrrstvyH'
+       201 0* 0.22580% (98.328% 0.050% 1.622%)   I prefer to                                                                                                                  --------aabcdeeehhilnorrsvvyH'
+       202 0* 0.22312% (98.329% 0.050% 1.620%)   and I                                                                                                                        --------abceeeeefhhilooprrrrstvvyH'
+       203 0* 0.28546% (98.337% 0.050% 1.613%)   and I'                                                                                                                       --------abceeeeefhhilooprrrrstvvyH
+       204 0* 0.22175% (98.349% 0.050% 1.600%)   the                                                                                                                          --------aabcdeeeefhilnooprrrrsvvyHI'
+       205 0* 0.22165% (98.374% 0.050% 1.576%)   I've learned                                                                                                                 --------abceefhhiooprrrstvyH
+       206 0* 0.21550% (98.374% 0.050% 1.576%)   I never imagined a                                                                                                           abcdeeefhhilooprrrstvyH'
+       207 0* 0.21512% (98.374% 0.050% 1.575%)   I can barely                                                                                                                 --------deeeefhhiooprrrstvvH'
+       208 0* 0.21437% (98.376% 0.050% 1.574%)   I've never had the                                                                                                           --------abcefilooprrrsyH
+       209 0* 0.21353% (98.376% 0.050% 1.574%)   I've never imagined the                                                                                                      aabcdefhilooprrrsyH
+       210 0* 0.21240% (98.376% 0.050% 1.574%)   I've already imagined it                                                                                                     bceeefhhnooprrrsvH
+       211 0* 0.21163% (98.376% 0.050% 1.574%)   I have never heard                                                                                                           --------bcefilooprrstyH'
+       212 0* 0.20672% (98.376% 0.050% 1.574%)   I'd never                                                                                                                    --------aabceeefhhilooprrrstvyH
+       213 0* 0.29730% (98.377% 0.050% 1.572%)   I'd never imagined                                                                                                           aabceeefhhilooprrrstvyH
+       214 0* 0.20570% (98.377% 0.050% 1.572%)   I've only                                                                                                                    --------aabcdeeeefhhioprrrrstvH
+       215 0* 0.20397% (98.380% 0.050% 1.570%)   I love her                                                                                                                   --------aabcdeeefhinoprrrstvyH'
+       216 0* 0.19865% (98.381% 0.050% 1.568%)   I love the brand                                                                                                             --------aceeefhioprrrsvyH'
+       217 0* 0.19826% (98.382% 0.050% 1.568%)   Holy crap I have                                                                                                             --------bdeeeefhinorrrstv'
+       218 0* 0.19731% (98.382% 0.050% 1.568%)   I can't sleep                                                                                                                --------abdeeefhhioorrrrvvyH
+       219 0* 0.19522% (98.383% 0.050% 1.567%)   I hope this                                                                                                                  --------aabcdeeeeflnorrrrvvyH'
+       220 0* 0.19435% (98.387% 0.050% 1.562%)   I believe the                                                                                                                --------aacdefhnooprrrrsvyH'
+       221 0* 0.19367% (98.389% 0.050% 1.560%)   Holy crap I've                                                                                                               --------abdeeeefhhinorrrstv
+       222 0* 0.49794% (98.389% 0.050% 1.560%)   Holy crap I've never                                                                                                         --------abdeefhhiorrst
+       223 0* 3.15021% (98.389% 0.050% 1.560%)   Holy crap I've never imagined                                                                                                abdeefhhiorrst
+       224 0* 2.92155% (98.389% 0.050% 1.560%)   Holy crap I've never imagined this                                                                                           abdeefhorr
+       225 0* 8.65004% (98.389% 0.050% 1.560%)   Holy crap I've never imagined this hard                                                                                      beefor

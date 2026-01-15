@@ -1,279 +1,247 @@
 Utahraptor, I hope you find what you're looking for
-Step          0 (remaining mass 63.323%): Next token is ' Utah', score is 1.87647% (1.122%, 50.075%, 4)
-Step         32 (remaining mass 12.741%): Next token is 'raptor', score is 27.12948% (96.734%, 44.404%, 10)
-Step         33 (remaining mass 12.704%): Next token is ',', score is 34.88610% (60.878%, 51.232%, 11)
-Step         34 (remaining mass 12.393%): Next token is ' I', score is 6.41210% (10.508%, 53.365%, 12)
-Step         46 (remaining mass 11.963%): Next token is ' hope', score is 1.44448% (2.519%, 59.097%, 16)
+Step          0 (remaining mass 63.323%): Next token is ' Utah', score is 7.36868% (1.122%, 50.075%, 4)
+Step         21 (remaining mass 15.640%): Next token is 'raptor', score is 105.46863% (96.734%, 44.404%, 10)
+Step         22 (remaining mass 15.603%): Next token is ',', score is 119.30094% (60.878%, 51.232%, 11)
+Step         23 (remaining mass 15.292%): Next token is ' I', score is 20.92127% (10.508%, 53.365%, 12)
+Step         33 (remaining mass 14.863%): Next token is ' hope', score is 4.09537% (2.519%, 59.097%, 16)
 Non-answer: , I hope you find what you're looking for Utahraptor (6393659285.94%) != Utahraptor, I hope you find what you're looking for
-Step        252 (remaining mass 11.192%): Next token is ' you', score is 7.39504% (80.347%, 69.744%, 19)
-Step        253 (remaining mass 11.192%): Next token is ' find', score is 34.41634% (74.949%, 54.273%, 23)
-Step        254 (remaining mass 11.192%): Next token is ' what', score is 142.33962% (90.177%, 18.440%, 27)
-Step        255 (remaining mass 11.192%): Next token is ' you', score is 7560.69490% (97.462%, 52.795%, 30)
-Step        256 (remaining mass 11.192%): Next token is ''', score is 30326.38739% (98.496%, 81.541%, 31)
-Step        257 (remaining mass 11.192%): Next token is 're', score is 248254.38945% (99.811%, 82.203%, 33)
-Step        258 (remaining mass 11.192%): Next token is ' looking', score is 2001636892.29922% (98.995%, 75.004%, 40)
-Step        259 (remaining mass 11.191%): Next token is ' for', score is 206841607328.67154% (99.700%, 100.000%, 43)
+Step        220 (remaining mass 10.498%): Next token is ' you', score is 17.87975% (80.347%, 69.744%, 19)
+Step        221 (remaining mass 10.498%): Next token is ' find', score is 91.65321% (74.949%, 54.273%, 23)
+Step        222 (remaining mass 10.497%): Next token is ' what', score is 769.47194% (90.177%, 18.440%, 27)
+Step        223 (remaining mass 10.497%): Next token is ' you', score is 14269.95009% (97.462%, 52.795%, 30)
+Step        224 (remaining mass 10.497%): Next token is ''', score is 39563.98311% (98.496%, 81.541%, 31)
+Step        225 (remaining mass 10.497%): Next token is 're', score is 287562.07860% (99.811%, 82.203%, 33)
+Step        226 (remaining mass 10.497%): Next token is ' looking', score is 2135460726.72870% (98.995%, 75.004%, 40)
+Step        227 (remaining mass 10.497%): Next token is ' for', score is 206841607328.67154% (99.700%, 100.000%, 43)
 ' Utahraptor, I hope you find what you're looking for' (206841607328.67%)
-Search successful after 260 steps. Deepest node accessed: 0
-Search time: 11s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
+Search successful after 228 steps. Deepest node accessed: 0
+Search time: 9s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
 
-         0 0* 55.00412% (43.703% 0.040% 56.257%)  ,                                                                                                                             -------aaadeeffhhhinooooopprrrrtttuuwyyUI'
-         1 0* 22.88002% (67.535% 0.060% 32.404%)  , you                                                                                                                         -------aaadeeffhhhinoooopprrrrtttuwyUI'
-         2 0* 18.13951% (69.714% 0.062% 30.224%)  , you'                                                                                                                        -------aaadeeffhhhinoooopprrrrtttuwyUI
-         3 0* 38.96931% (69.837% 0.063% 30.101%)  , you're                                                                                                                      -------aaadeffhhhinoooopprrrtttuwyUI
-         4 0* 13.11005% (71.241% 0.064% 28.696%)  , I                                                                                                                           -------aaadeeffhhhinooooopprrrrtttuuwyyU'
-         5 0* 8.43294% (74.931% 0.066% 25.003%)  , what                                                                                                                        -------aadeeffhhinooooopprrrrttuuyyUI'
-         6 0* 8.24555% (75.559% 0.067% 24.374%)  , I'                                                                                                                          -------aaadeeffhhhinooooopprrrrtttuuwyyU
-         7 0* 8.08865% (77.725% 0.068% 22.207%)  , Utah                                                                                                                        -------aadeeffhhinooooopprrrrttuuwyyI'
-         8 0* 99.51932% (77.776% 0.069% 22.155%)  , Utahraptor                                                                                                                  -------adeeffhhinooooprrtuuwyyI'
-         9 0* 5.77007% (79.643% 0.070% 20.287%)  , what'                                                                                                                       -------aadeeffhhinooooopprrrrttuuyyUI
-        10 0* 5.27773% (80.290% 0.070% 19.640%)  , you're not                                                                                                                  -------aaadeffhhhiooopprrrttuwyUI
-        11 0* 4.55983% (80.367% 0.070% 19.563%)  , what a                                                                                                                      -------adeeffhhinooooopprrrrttuuyyUI'
-        12 0* 3.77148% (81.192% 0.070% 18.738%)  , who                                                                                                                         -------aaadeeffhhinoooopprrrrtttuuyyUI'
-        13 0* 3.55376% (81.897% 0.071% 18.033%)  , how                                                                                                                         -------aaadeeffhhinoooopprrrrtttuuyyUI'
-        14 0* 2.99478% (82.474% 0.071% 17.455%)   you                                                                                                                          -------aaadeeffhhhinoooopprrrrtttuwyU,I'
-        15 0* 2.83117% (83.122% 0.072% 16.807%)  , you're a                                                                                                                    -------aadeffhhhinoooopprrrtttuwyUI
-        16 0* 2.73693% (83.188% 0.072% 16.741%)  , you're the                                                                                                                  -------aaadffhhinoooopprrrttuwyUI
-        17 0* 2.70904% (83.232% 0.072% 16.696%)  , Utahraptor you                                                                                                              -------adeeffhhinoooprrtuwyI'
-        18 0* 2.91799% (83.234% 0.072% 16.694%)  , Utahraptor you'                                                                                                             -------adeeffhhinoooprrtuwyI
-        19 0* 7.54056% (83.234% 0.072% 16.694%)  , Utahraptor you're                                                                                                           -------adeffhhinoooprtuwyI
-        20 0* 2.29310% (83.237% 0.072% 16.691%)   you'                                                                                                                         -------aaadeeffhhhinoooopprrrrtttuwyU,I
-        21 0* 4.81319% (83.257% 0.072% 16.671%)   you're                                                                                                                       -------aaadeffhhhinoooopprrrtttuwyU,I
-        22 0* 2.15630% (83.584% 0.072% 16.344%)  , don                                                                                                                         -------aaaeeffhhhioooopprrrrtttuuwyyUI'
-        23 0* 5.23896% (83.586% 0.072% 16.342%)  , don'                                                                                                                        -------aaaeeffhhhioooopprrrrtttuuwyyUI
-        24 0* 5.32692% (83.586% 0.073% 16.342%)  , don't                                                                                                                       -------aaaeeffhhhioooopprrrrttuuwyyUI
-        25 0* 2.11815% (84.224% 0.073% 15.703%)  , you're way                                                                                                                  -------aadeffhhhinoooopprrrtttuUI
-        26 0* 4.89284% (84.230% 0.073% 15.697%)  , you're way too                                                                                                              -------aadeffhhhinoopprrrttuUI
-        27 0* 2.04933% (84.248% 0.073% 15.679%)  , it                                                                                                                          -------aaadeeffhhhnooooopprrrrttuuwyyUI'
-        28 0* 3.76051% (84.620% 0.073% 15.307%)  , it'                                                                                                                         -------aaadeeffhhhnooooopprrrrttuuwyyUI
-        29 0* 2.03620% (85.692% 0.074% 14.235%)  , why                                                                                                                         -------aaadeeffhhinooooopprrrrtttuuyUI'
-        30 0* 2.00578% (86.092% 0.074% 13.834%)  , that                                                                                                                        -------aadeeffhhinooooopprrrrtuuwyyUI'
-        31 0* 4.42994% (86.545% 0.074% 13.381%)  , that'                                                                                                                       -------aadeeffhhinooooopprrrrtuuwyyUI
-        32 0* 1.87647% (87.184% 0.075% 12.741%)   Utah                                                                                                                         -------aadeeffhhinooooopprrrrttuuwyy,I'
-        33 0* 27.12948% (87.221% 0.075% 12.704%)   Utahraptor                                                                                                                   -------adeeffhhinooooprrtuuwyy,I'
-        34 0* 34.88610% (87.531% 0.076% 12.393%)   Utahraptor,                                                                                                                  -------adeeffhhinooooprrtuuwyyI'
-        35 0* 41.94786% (87.830% 0.076% 12.094%)   Utahraptor, you                                                                                                              -------adeeffhhinoooprrtuwyI'
-        36 0* 41.06087% (87.869% 0.076% 12.055%)   Utahraptor, you'                                                                                                             -------adeeffhhinoooprrtuwyI
-        37 0* 102.45995% (87.873% 0.076% 12.051%)   Utahraptor, you're                                                                                                           -------adeffhhinoooprtuwyI
-        38 0* 15.03222% (87.907% 0.076% 12.017%)   Utahraptor, you're not                                                                                                       -------adeffhhioopruwyI
-        39 0* 13.06487% (87.909% 0.076% 12.015%)   Utahraptor, you're the                                                                                                       -------adffhinooopruwyI
-        40 0* 10.64415% (87.910% 0.076% 12.014%)   Utahraptor you                                                                                                               -------adeeffhhinoooprrtuwy,I'
-        41 0* 11.71896% (87.926% 0.076% 11.998%)   Utahraptor you'                                                                                                              -------adeeffhhinoooprrtuwy,I
-        42 0* 29.26563% (87.927% 0.076% 11.997%)   Utahraptor you're                                                                                                            -------adeffhhinoooprtuwy,I
-        43 0* 10.14617% (87.945% 0.076% 11.980%)   Utahraptor, you're a                                                                                                         -------deffhhinoooprtuwyI
-        44 0* 7.74960% (87.947% 0.076% 11.977%)   Utahraptor, you're way                                                                                                       -------deffhhinoooprtuI
-        45 0* 15.40059% (87.947% 0.076% 11.977%)   Utahraptor, you're way too                                                                                                   -------deffhhinopruI
-        46 0* 6.41210% (87.948% 0.076% 11.976%)   Utahraptor, I                                                                                                                -------adeeffhhinooooprrtuuwyy'
-        47 0* 5.75173% (87.987% 0.076% 11.937%)   Utahraptor, you're no                                                                                                        -------adeffhhiooprtuwyI
-        48 0* 5.08128% (87.988% 0.076% 11.936%)   Utahraptor, I'                                                                                                               -------adeeffhhinooooprrtuuwyy
-        49 0* 4.77442% (88.008% 0.076% 11.916%)   Utahraptor, you are                                                                                                          -------deffhhinoooprtuwyI'
-        50 0* 4.22948% (88.011% 0.076% 11.914%)   Utahraptor, you're looking                                                                                                   adeffhhinoooprtuwyI
-        51 0* 4.03203% (88.011% 0.076% 11.914%)   Utahraptor, you're too                                                                                                       -------adeffhhinopruwyI
-        52 0* 3.79035% (88.011% 0.076% 11.913%)   Utahraptor, you were                                                                                                         -------adffhhinoooprtuyI'
-        53 0* 3.48312% (88.013% 0.076% 11.911%)   Utahraptor, you're one                                                                                                       -------adffhhiooprtuwyI
-        54 0* 3.02974% (88.013% 0.076% 11.911%)   Utahraptor, you need                                                                                                         -------affhhioooprrtuwyI'
-        55 0* 2.81346% (88.013% 0.076% 11.911%)   Utahraptor, you're one of                                                                                                    -------adfhhioprtuwyI
-        56 0* 2.68022% (88.013% 0.076% 11.911%)   Utahraptor you're the                                                                                                        -------adffhinooopruwy,I
-        57 0* 2.66098% (88.014% 0.076% 11.910%)   Utahraptor you're a                                                                                                          -------deffhhinoooprtuwy,I
-        58 0* 2.18199% (88.015% 0.076% 11.909%)   Utahraptor you're way                                                                                                        -------deffhhinoooprtu,I
-        59 0* 2.76931% (88.015% 0.076% 11.909%)   Utahraptor you're way too                                                                                                    -------deffhhinopru,I
-        60 0* 2.12170% (88.015% 0.076% 11.909%)   Utahraptor, you need to                                                                                                      -------affhhiooprruwyI'
-        61 0* 2.08282% (88.017% 0.076% 11.907%)   Utahraptor, how                                                                                                              -------adeeffhinoooprrtuuyyI'
-        62 0* 2.05436% (88.026% 0.076% 11.898%)   Utahraptor, are                                                                                                              -------deffhhinooooprtuuwyyI'
-        63 0* 11.94626% (88.027% 0.076% 11.897%)   Utahraptor, are you                                                                                                          -------deffhhinoooprtuwyI'
-        64 0* 2.02265% (88.033% 0.076% 11.891%)   Utahraptor, are you looking                                                                                                  deffhhinoooprtuwyI'
-        65 0* 1.86275% (88.033% 0.076% 11.891%)  , why are                                                                                                                     -------aadeffhhinooooopprrrtttuuyUI'
-        66 0* 9.85650% (88.069% 0.076% 11.855%)  , why are you                                                                                                                 -------aadeffhhinoooopprrrtttuUI'
-        67 0* 6.35563% (88.218% 0.076% 11.705%)  , why are you looking                                                                                                         aadeffhhinoooopprrrtttuUI'
-        68 0* 11.63222% (88.219% 0.076% 11.705%)  , why are you looking at                                                                                                      adeffhhinoooopprrrttuUI'
-        69 0* 1.85770% (88.222% 0.076% 11.702%)  , you're way too hard                                                                                                         -------aeffhhinoopprrttuUI
-        70 0* 2.39125% (88.222% 0.076% 11.702%)  , you're way too hard on                                                                                                      -------aeffhhiopprrttuUI
-        71 0* 1.83589% (88.223% 0.076% 11.701%)  , you're hard                                                                                                                 -------aaeffhhinoooopprrtttuwyUI
-        72 0* 3.80362% (88.223% 0.076% 11.701%)  , you're hard to                                                                                                              -------aaeffhhinooopprrttuwyUI
-        73 0* 1.79511% (88.236% 0.076% 11.687%)   Utahraptor, your                                                                                                             -------adeeffhhinoooprtuwyI'
-        74 0* 1.78378% (88.239% 0.076% 11.684%)  , your                                                                                                                        -------aaadeeffhhhinoooopprrrtttuwyUI'
-        75 0* 1.74796% (88.436% 0.076% 11.487%)  , I hope                                                                                                                      -------aaadeffhhinooooprrrrtttuuwyyU'
-        76 0* 4.82243% (88.477% 0.076% 11.447%)  , I hope you                                                                                                                  -------aaadeffhhinoooprrrrtttuwyU'
-        77 0* 10.75875% (88.500% 0.076% 11.423%)  , I hope you find                                                                                                             -------aaaefhhoooprrrrtttuwyU'
-        78 0* 42.76161% (88.503% 0.076% 11.420%)  , I hope you find what                                                                                                        -------aaefhoooprrrrttuyU'
-        79 0* 373.79735% (88.504% 0.076% 11.419%)  , I hope you find what you                                                                                                    -------aaefhooprrrrttU'
-        80 0* 1119.33485% (88.505% 0.076% 11.418%)  , I hope you find what you'                                                                                                   -------aaefhooprrrrttU
-        81 0* 3102.69914% (88.505% 0.076% 11.418%)  , I hope you find what you're                                                                                                 -------aafhooprrrttU
-        82 0* 620921.27647% (88.506% 0.076% 11.418%)  , I hope you find what you're looking                                                                                         aafhooprrrttU
-        83 0* 15376729.84227% (88.506% 0.076% 11.418%)  , I hope you find what you're looking for                                                                                     aahoprrttU
-        84 0* 953769.63280% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for Utah                                                                                aoprrt
-        85 0* 131541.02693% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or                                                                                  aahprttU
-        86 0* 107475.21169% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that                                                                             aprU
-        87 0* 92477.80741% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that                                                                                aoprrU
-        88 0* 46786.65131% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at                                                                                  ahoprrtU
-        89 0* 40674.64638% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or at                                                                               ahprtU
-        90 0* 8724.96362% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to                                                                                  aahprrtU
-        91 0* 2838.67513% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at Utah                                                                             oprr
-        92 0* 2684.62717% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for oh                                                                                  aaprrttU
-        93 0* 2296.48591% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at a                                                                                hoprrtU
-        94 0* 2228.62380% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for                                                                                     aahoprrttU
-        95 0* 1693.71510% (88.559% 0.076% 11.364%)  , I hope you find what you're looking fo                                                                                      aahoprrrttU
-        96 0* 1569.63490% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a                                                                                   ahoprrttU
-        97 0* 990.34326% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that a                                                                           prU
-        98 0* 983.94599% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t                                                                                   aahoprrtU
-        99 0* 574.50089% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for ha                                                                                  aoprrttU
-       100 0* 532.75788% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that U                                                                           apr
-       101 0* 441.43554% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for U                                                                                   aahoprrtt
-       102 0* 330.49031% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for pro                                                                                 aahrttU
-       103 0* 311.63180% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for pat                                                                                 ahorrtU
-       104 0* 221.70957% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for o                                                                                   aahprrttU
-       105 0* 219.67178% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for aha                                                                                 oprrttU
-       106 0* 194.72052% (88.559% 0.076% 11.364%)  , I hope you find what you're looking f                                                                                       aahooprrrttU
-       107 0* 194.43387% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for ho                                                                                  aaprrttU
-       108 0* 193.96577% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or a                                                                                ahprttU
-       109 0* 153.68577% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that or                                                                             aprU
-       110 0* 146.99969% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at                                                                                  ahoprrtU
-       111 0* 122.82974% (88.559% 0.076% 11.364%)  , I hope you find what you're looking to                                                                                      aafhoprrrtU
-       112 0* 217.36436% (88.559% 0.076% 11.364%)  , I hope you find what you're looking to for                                                                                  aahprrtU
-       113 0* 122.33270% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at hot                                                                              aprrU
-       114 0* 113.35280% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that a                                                                              oprrU
-       115 0* 99.81220% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for h                                                                                   aaoprrttU
-       116 0* 95.41446% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for                                                                                     aahoprrttU
-       117 0* 92.01446% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for th                                                                                  aaoprrtU
-       118 0* 90.57007% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at at                                                                               hoprrU
-       119 0* 89.73923% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to a                                                                                ahprrtU
-       120 0* 79.24857% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to at                                                                               ahprrU
-       121 0* 78.36079% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or                                                                                      aafhoprrttU
-       122 0* 68.06755% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for p                                                                                   aahorrttU
-       123 0* 64.43254% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that pro                                                                            arU
-       124 0* 63.82369% (88.559% 0.076% 11.364%)  , I hope you find what you're looking at                                                                                      afhooprrrtU
-       125 0* 55.53903% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that                                                                                aoprrU
-       126 0* 48.78843% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to Utah                                                                             aprr
-       127 0* 48.47407% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at pro                                                                              ahrtU
-       128 0* 42.85580% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or at a                                                                             hprtU
-       129 0* 42.69340% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a part                                                                              hortU
-       130 0* 39.39529% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that                                                                             aprU
-       131 0* 35.55930% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at a hot                                                                            prrU
-       132 0* 31.74166% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at r                                                                                ahoprtU
-       133 0* 31.32662% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or a path                                                                           rtU
-       134 0* 27.97204% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at a top                                                                            hrrU
-       135 0* 26.86447% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at th                                                                               aoprrU
-       136 0* 25.99582% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at t                                                                                ahoprrU
-       137 0* 23.98530% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to part                                                                             ahrU
-       138 0* 21.84789% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for r                                                                                   aahoprttU
-       139 0* 21.38587% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at U                                                                                ahoprrt
-       140 0* 19.16001% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or at at                                                                            hprU
-       141 0* 18.45561% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or h                                                                                aaprttU
-       142 0* 18.42681% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or Utah                                                                             aprt
-       143 0* 16.83787% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or for                                                                                  aahprttU
-       144 0* 16.32576% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at a pro                                                                            hrtU
-       145 0* 15.48851% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or that                                                                                 afoprrU
-       146 0* 15.17214% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or for that                                                                             aprU
-       147 0* 15.00005% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a hot                                                                               aprrtU
-       148 0* 13.87408% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or U                                                                                aahprtt
-       149 0* 13.83710% (88.559% 0.076% 11.364%)  , I hope you find what you're looking at for                                                                                  ahoprrtU
-       150 0* 13.03700% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to rapt                                                                             ahrU
-       151 0* 12.97902% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for aphor                                                                               arttU
-       152 0* 12.88413% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that ra                                                                             oprU
-       153 0* 12.12526% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at pat                                                                              horrU
-       154 0* 11.60462% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at rapt                                                                             horU
-       155 0* 10.78964% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or or                                                                                   aafhprttU
-       156 0* 10.20156% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that U                                                                              aoprr
-       157 0* 10.12766% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at top                                                                              ahrrU
-       158 0* 10.03934% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or http                                                                             aarU
-       159 0* 9.37908% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at part                                                                             horU
-       160 0* 7.61200% (88.559% 0.076% 11.364%)  , I hope you find what you're looking                                                                                         aafhooprrrttU
-       161 0* 7.30823% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t o                                                                                 aahprrtU
-       162 0* 7.22399% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at art                                                                              hoprU
-       163 0* 7.04559% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a that                                                                              oprrU
-       164 0* 7.03157% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at ap                                                                               horrtU
-       165 0* 6.42421% (88.559% 0.076% 11.364%)  , I hope you find what you're looking fo r                                                                                    aahoprrttU
-       166 0* 6.27298% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or ha                                                                               aprttU
-       167 0* 6.03296% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or ah                                                                               aprttU
-       168 0* 5.99678% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at ta                                                                               hoprrU
-       169 0* 5.98343% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or pat                                                                              ahrtU
-       170 0* 5.63996% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or                                                                                  aahprttU
-       171 0* 4.73566% (88.559% 0.076% 11.364%)  , I hope you find what you are                                                                                                -------afhooprrrttU'
-       172 0* 1066.40287% (88.559% 0.076% 11.364%)  , I hope you find what you are looking                                                                                        afhooprrrttU'
-       173 0* 36971.39643% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for                                                                                    ahoprrttU'
-       174 0* 3633.59473% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for Utah                                                                               oprrt'
-       175 0* 259.63050% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for that                                                                               oprrU'
-       176 0* 361.09634% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for that'                                                                              oprrU
-       177 0* 243.36040% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for or                                                                                 ahprttU'
-       178 0* 356.35379% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for or that                                                                            prU'
-       179 0* 73.31199% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for at                                                                                 hoprrtU'
-       180 0* 54.14747% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for or at                                                                              hprtU'
-       181 0* 46.77180% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for or that'                                                                           prU
-       182 0* 21.25012% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for to                                                                                 ahprrtU'
-       183 0* 9.53320% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for oh                                                                                 aprrttU'
-       184 0* 6.74873% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for                                                                                    ahoprrttU'
-       185 0* 4.71807% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at aphor                                                                            rtU
-       186 0* 4.57680% (88.559% 0.076% 11.364%)  , I hope you find what you're looking f or                                                                                    aahoprrttU
-       187 0* 3.88736% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that p                                                                              aorrU
-       188 0* 3.80233% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a part                                                                              hortU
-       189 0* 3.68649% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at ra                                                                               hoprtU
-       190 0* 3.68366% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for pat or                                                                              ahrtU
-       191 0* 3.55108% (88.559% 0.076% 11.364%)  , I hope you find what you are looking fo                                                                                     ahoprrrttU'
-       192 0* 3.36783% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a ha                                                                                oprrttU
-       193 0* 3.33833% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that rap                                                                            orU
-       194 0* 3.26576% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at tor                                                                              ahprU
-       195 0* 3.18729% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t h                                                                                 aaoprrtU
-       196 0* 3.59829% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t h a                                                                               aoprrtU
-       197 0* 6.37426% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t h a t                                                                             aoprrU
-       198 0* 3.10924% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at tha                                                                              oprrU
-       199 0* 3.02433% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for a                                                                                  hoprrttU'
-       200 0* 2.91352% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at hor                                                                              aprtU
-       201 0* 2.91063% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or hat                                                                              aprtU
-       202 0* 2.89774% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for t h o                                                                               aaprrtU
-       203 0* 2.85415% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at ar                                                                               hoprtU
-       204 0* 2.75865% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for r that                                                                              aoprU
-       205 0* 2.70223% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a t                                                                                 ahoprrtU
-       206 0* 2.64534% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at tra                                                                              hoprU
-       207 0* 2.52862% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that p                                                                           arU
-       208 0* 2.50213% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for t                                                                                  ahoprrtU'
-       209 0* 2.46719% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at a                                                                                hoprrtU
-       210 0* 2.41315% (88.559% 0.076% 11.364%)  , I hope you find what you're looking or at                                                                                   afhoprrtU
-       211 0* 2.35242% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for a top                                                                               ahrrtU
-       212 0* 2.32792% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or t                                                                                aahprtU
-       213 0* 2.32399% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to ra                                                                               ahprtU
-       214 0* 2.19369% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for or that a                                                                           prU
-       215 0* 2.11634% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at h                                                                                aoprrtU
-       216 0* 2.11487% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for oh p                                                                                aarrttU
-       217 0* 2.01380% (88.559% 0.076% 11.364%)  , I hope you find what you are looking for or that U                                                                          pr'
-       218 0* 1.97717% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that r                                                                              aoprU
-       219 0* 1.95546% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to                                                                                  aahprrtU
-       220 0* 1.86142% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for that ro                                                                             aprU
-       221 0* 1.80687% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for to part                                                                             ahrU
-       222 0* 1.74877% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at hat                                                                              oprrU
-       223 0* 1.71624% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for o that                                                                              aprrU
-       224 0* 1.71143% (88.559% 0.076% 11.364%)  , I hope you find what you're looking for at path                                                                             orrU
-       225 0* 1.68195% (88.559% 0.076% 11.364%)  , what happened                                                                                                               -------affhiooooorrrrttuuyyUI'
-       226 0* 1.68159% (88.563% 0.076% 11.360%)  , I hope you find what you're looking for or ap                                                                               ahrttU
-       227 0* 1.67176% (88.563% 0.076% 11.360%)   Utahraptor, don                                                                                                              -------aeeffhhioooprrtuuwyyI'
-       228 0* 6.71718% (88.563% 0.076% 11.360%)   Utahraptor, don'                                                                                                             -------aeeffhhioooprrtuuwyyI
-       229 0* 1.90181% (88.563% 0.076% 11.360%)   Utahraptor, don't                                                                                                            -------aeeffhhioooprruuwyyI
-       230 0* 1.73813% (88.579% 0.076% 11.344%)   Utahraptor, don't you                                                                                                        -------aeeffhhiooprruwyI
-       231 0* 1.65239% (88.581% 0.076% 11.343%)  , I hope you find what you're looking for to pat                                                                              ahrrU
-       232 0* 1.64994% (88.581% 0.076% 11.343%)   Utahraptor you are                                                                                                           -------deffhhinoooprtuwy,I'
-       233 0* 1.64372% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for at part                                                                             horU
-       234 0* 1.61112% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for or ph                                                                               aarttU
-       235 0* 1.60868% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for at oh                                                                               aprrtU
-       236 0* 1.60408% (88.583% 0.076% 11.341%)  , I hope you find what you are looking for '                                                                                  ahoprrttU
-       237 0* 1.58355% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for t or                                                                                aahprtU
-       238 0* 1.57931% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for o r                                                                                 aahprttU
-       239 0* 1.56625% (88.583% 0.076% 11.341%)  , I hope you find what you're looking for at har                                                                              oprtU
-       240 0* 1.55035% (88.583% 0.076% 11.341%)  , now                                                                                                                         -------aaadeeffhhhioooopprrrrtttuuyyUI'
-       241 0* 1.54174% (88.674% 0.077% 11.249%)  , I hope you find what you're looking for t r                                                                                 aahoprtU
-       242 0* 1.53970% (88.674% 0.077% 11.249%)   Utahraptor, you were looking                                                                                                 adffhhinoooprtuyI'
-       243 0* 1.53834% (88.674% 0.077% 11.249%)  , you're no                                                                                                                   -------aaadeffhhhiooopprrrtttuwyUI
-       244 0* 1.53254% (88.705% 0.077% 11.218%)  , what happened to                                                                                                            -------affhioooorrrrtuuyyUI'
-       245 0* 1.56769% (88.728% 0.077% 11.196%)  , what happened to you                                                                                                        -------affhiooorrrrtuyUI'
-       246 0* 1.49492% (88.730% 0.077% 11.193%)  , I hope you find what you are looking for U                                                                                  ahoprrtt'
-       247 0* 1.48935% (88.730% 0.077% 11.193%)   Utahraptor, you're an                                                                                                        -------deffhhioooprtuwyI
-       248 0* 1.48877% (88.731% 0.077% 11.193%)  , I hope you find what you're looking for a                                                                                   ahoprrttU
-       249 0* 1.46837% (88.731% 0.077% 11.193%)  , I hope you find what you're looking for at to                                                                               ahprrU
-       250 0* 1.46140% (88.731% 0.077% 11.193%)   Utahraptor you're not                                                                                                        -------adeffhhioopruwy,I
-       251 0* 1.45270% (88.731% 0.077% 11.192%)  , I hope you find what you're looking for or a Utah                                                                           prt
-       252 0* 1.44448% (88.731% 0.077% 11.192%)   Utahraptor, I hope                                                                                                           -------adeffhinooorrtuuwyy'
-       253 0* 7.39504% (88.732% 0.077% 11.192%)   Utahraptor, I hope you                                                                                                       -------adeffhinoorrtuwy'
-       254 0* 34.41634% (88.732% 0.077% 11.192%)   Utahraptor, I hope you find                                                                                                  -------aefhoorrtuwy'
-       255 0* 142.33962% (88.732% 0.077% 11.192%)   Utahraptor, I hope you find what                                                                                             -------efoorruy'
-       256 0* 7560.69490% (88.732% 0.077% 11.192%)   Utahraptor, I hope you find what you                                                                                         -------eforr'
-       257 0* 30326.38739% (88.732% 0.077% 11.192%)   Utahraptor, I hope you find what you'                                                                                        -------eforr
-       258 0* 248254.38945% (88.732% 0.077% 11.192%)   Utahraptor, I hope you find what you're                                                                                      -------for
-       259 0* 2001636892.29922% (88.732% 0.077% 11.191%)   Utahraptor, I hope you find what you're looking                                                                              for
+         0 0* 195.70662% (43.703% 0.040% 56.257%)  ,                                                                                                                             -------aaadeeffhhhinooooopprrrrtttuuwyyUI'
+         1 0* 64.78597% (67.535% 0.060% 32.404%)  , you                                                                                                                         -------aaadeeffhhhinoooopprrrrtttuwyUI'
+         2 0* 49.28141% (69.714% 0.062% 30.224%)  , you'                                                                                                                        -------aaadeeffhhhinoooopprrrrtttuwyUI
+         3 0* 103.23265% (69.837% 0.063% 30.101%)  , you're                                                                                                                      -------aaadeffhhhinoooopprrrtttuwyUI
+         4 0* 41.52799% (71.241% 0.064% 28.696%)  , I                                                                                                                           -------aaadeeffhhhinooooopprrrrtttuuwyyU'
+         5 0* 31.27618% (74.931% 0.066% 25.003%)  , what                                                                                                                        -------aadeeffhhinooooopprrrrttuuyyUI'
+         6 0* 26.86903% (75.559% 0.067% 24.374%)  , Utah                                                                                                                        -------aadeeffhhinooooopprrrrttuuwyyI'
+         7 0* 340.32892% (75.610% 0.068% 24.322%)  , Utahraptor                                                                                                                  -------adeeffhhinooooprrtuuwyyI'
+         8 0* 23.12995% (77.477% 0.069% 22.454%)  , I'                                                                                                                          -------aaadeeffhhhinooooopprrrrtttuuwyyU
+         9 0* 17.58617% (79.643% 0.070% 20.287%)  , what'                                                                                                                       -------aadeeffhhinooooopprrrrttuuyyUI
+        10 0* 16.21809% (80.290% 0.070% 19.640%)  , what a                                                                                                                      -------adeeffhhinooooopprrrrttuuyyUI'
+        11 0* 15.24288% (81.115% 0.070% 18.815%)  , you're not                                                                                                                  -------aaadeffhhhiooopprrrttuwyUI
+        12 0* 11.21027% (81.192% 0.070% 18.738%)  , who                                                                                                                         -------aaadeeffhhinoooopprrrrtttuuyyUI'
+        13 0* 10.56312% (81.897% 0.071% 18.033%)  , how                                                                                                                         -------aaadeeffhhinoooopprrrrtttuuyyUI'
+        14 0* 9.21832% (82.474% 0.071% 17.455%)  , that                                                                                                                        -------aadeeffhhinooooopprrrrtuuwyyUI'
+        15 0* 14.44044% (82.927% 0.072% 17.001%)  , that'                                                                                                                       -------aadeeffhhinooooopprrrrtuuwyyUI
+        16 0* 9.06016% (83.567% 0.072% 16.362%)   you                                                                                                                          -------aaadeeffhhhinoooopprrrrtttuwyU,I'
+        17 0* 8.92748% (84.214% 0.072% 15.713%)  , what happened                                                                                                               -------affhiooooorrrrttuuyyUI'
+        18 0* 15.03804% (84.218% 0.072% 15.710%)  , what happened to                                                                                                            -------affhioooorrrrtuuyyUI'
+        19 0* 8.75856% (84.241% 0.072% 15.687%)  , what happened to you                                                                                                        -------affhiooorrrrtuyUI'
+        20 0* 7.61837% (84.244% 0.072% 15.684%)  , you're the                                                                                                                  -------aaadffhhinoooopprrrttuwyUI
+        21 0* 7.36868% (84.288% 0.072% 15.640%)   Utah                                                                                                                         -------aadeeffhhinooooopprrrrttuuwyy,I'
+        22 0* 105.46863% (84.324% 0.073% 15.603%)   Utahraptor                                                                                                                   -------adeeffhhinooooprrtuuwyy,I'
+        23 0* 119.30094% (84.635% 0.073% 15.292%)   Utahraptor,                                                                                                                  -------adeeffhhinooooprrtuuwyyI'
+        24 0* 108.16981% (84.934% 0.073% 14.993%)   Utahraptor, you                                                                                                              -------adeeffhhinoooprrtuwyI'
+        25 0* 98.59249% (84.973% 0.073% 14.954%)   Utahraptor, you'                                                                                                             -------adeeffhhinoooprrtuwyI
+        26 0* 235.81662% (84.977% 0.074% 14.950%)   Utahraptor, you're                                                                                                           -------adeffhhinoooprtuwyI
+        27 0* 40.36106% (85.010% 0.074% 14.916%)   Utahraptor, you're not                                                                                                       -------adeffhhioopruwyI
+        28 0* 33.43404% (85.012% 0.074% 14.914%)   Utahraptor, you're the                                                                                                       -------adffhinooopruwyI
+        29 0* 28.68376% (85.014% 0.074% 14.912%)   Utahraptor you                                                                                                               -------adeeffhhinoooprrtuwy,I'
+        30 0* 28.85583% (85.029% 0.074% 14.897%)   Utahraptor you'                                                                                                              -------adeeffhhinoooprrtuwy,I
+        31 0* 69.61268% (85.031% 0.074% 14.896%)   Utahraptor you're                                                                                                            -------adeffhhinoooprtuwy,I
+        32 0* 22.95610% (85.048% 0.074% 14.878%)   Utahraptor, you're a                                                                                                         -------deffhhinoooprtuwyI
+        33 0* 20.92127% (85.051% 0.074% 14.876%)   Utahraptor, I                                                                                                                -------adeeffhhinooooprrtuuwyy'
+        34 0* 18.79798% (85.090% 0.074% 14.837%)   Utahraptor, you're way                                                                                                       -------deffhhinoooprtuI
+        35 0* 50.32277% (85.090% 0.074% 14.837%)   Utahraptor, you're way too                                                                                                   -------deffhhinopruI
+        36 0* 17.30655% (85.090% 0.074% 14.836%)   Utahraptor, what                                                                                                             -------deeffhinooooprruuyyI'
+        37 0* 13.75121% (85.111% 0.074% 14.815%)   Utahraptor, I'                                                                                                               -------adeeffhhinooooprrtuuwyy
+        38 0* 13.46064% (85.132% 0.074% 14.794%)   Utahraptor, what'                                                                                                            -------deeffhinooooprruuyyI
+        39 0* 13.36410% (85.144% 0.074% 14.783%)   Utahraptor, you're too                                                                                                       -------adeffhhinopruwyI
+        40 0* 12.75967% (85.145% 0.074% 14.782%)   Utahraptor, you're no                                                                                                        -------adeffhhiooprtuwyI
+        41 0* 12.15202% (85.145% 0.074% 14.781%)   Utahraptor, you are                                                                                                          -------deffhhinoooprtuwyI'
+        42 0* 9.54887% (85.148% 0.074% 14.779%)   Utahraptor, you need                                                                                                         -------affhhioooprrtuwyI'
+        43 0* 13.62884% (85.148% 0.074% 14.778%)   Utahraptor, you need to                                                                                                      -------affhhiooprruwyI'
+        44 0* 9.09960% (85.149% 0.074% 14.777%)   Utahraptor, you were                                                                                                         -------adffhhinoooprtuyI'
+        45 0* 8.53942% (85.150% 0.074% 14.776%)   Utahraptor, don                                                                                                              -------aeeffhhioooprrtuuwyyI'
+        46 0* 21.62810% (85.151% 0.074% 14.776%)   Utahraptor, don'                                                                                                             -------aeeffhhioooprrtuuwyyI
+        47 0* 17.04134% (85.151% 0.074% 14.776%)   Utahraptor, don't                                                                                                            -------aeeffhhioooprruuwyyI
+        48 0* 8.57736% (85.167% 0.074% 14.760%)   Utahraptor, don't you                                                                                                        -------aeeffhhiooprruwyI
+        49 0* 8.23128% (85.168% 0.074% 14.758%)   Utahraptor, you're looking                                                                                                   adeffhhinoooprtuwyI
+        50 0* 8.15205% (85.168% 0.074% 14.758%)   Utahraptor, how                                                                                                              -------adeeffhinoooprrtuuyyI'
+        51 0* 7.74714% (85.177% 0.074% 14.749%)   Utahraptor, you're one                                                                                                       -------adffhhiooprtuwyI
+        52 0* 7.53048% (85.177% 0.074% 14.749%)   Utahraptor you're the                                                                                                        -------adffhinooopruwy,I
+        53 0* 7.34386% (85.178% 0.074% 14.748%)  , it                                                                                                                          -------aaadeeffhhhnooooopprrrrttuuwyyUI'
+        54 0* 11.67644% (85.550% 0.074% 14.376%)  , it'                                                                                                                         -------aaadeeffhhhnooooopprrrrttuuwyyUI
+        55 0* 7.34138% (86.622% 0.074% 13.303%)  , you're a                                                                                                                    -------aadeffhhhinoooopprrrtttuwyUI
+        56 0* 7.28792% (86.688% 0.075% 13.237%)   Utahraptor, why                                                                                                              -------adeeffhinooooprrtuuyI'
+        57 0* 10.64732% (86.694% 0.075% 13.232%)   Utahraptor, why are                                                                                                          -------deffhinooooprtuuyI'
+        58 0* 80.24552% (86.694% 0.075% 13.231%)   Utahraptor, why are you                                                                                                      -------deffhinoooprtuI'
+        59 0* 37.81807% (86.699% 0.075% 13.226%)   Utahraptor, why are you looking                                                                                              deffhinoooprtuI'
+        60 0* 7.16292% (86.699% 0.075% 13.226%)  , why                                                                                                                         -------aaadeeffhhinooooopprrrrtttuuyUI'
+        61 0* 7.02032% (87.099% 0.075% 12.826%)  , don                                                                                                                         -------aaaeeffhhhioooopprrrrtttuuwyyUI'
+        62 0* 15.02327% (87.100% 0.075% 12.825%)  , don'                                                                                                                        -------aaaeeffhhhioooopprrrrtttuuwyyUI
+        63 0* 17.01446% (87.100% 0.075% 12.824%)  , don't                                                                                                                       -------aaaeeffhhhioooopprrrrttuuwyyUI
+        64 0* 6.98573% (87.739% 0.076% 12.185%)  , Utahraptor you                                                                                                              -------adeeffhhinoooprrtuwyI'
+        65 0* 7.00646% (87.741% 0.076% 12.183%)  , Utahraptor you'                                                                                                             -------adeeffhhinoooprrtuwyI
+        66 0* 17.35496% (87.741% 0.076% 12.183%)  , Utahraptor you're                                                                                                           -------adeffhhinoooprtuwyI
+        67 0* 6.46677% (87.744% 0.076% 12.180%)   you'                                                                                                                         -------aaadeeffhhhinoooopprrrrtttuwyU,I
+        68 0* 13.47070% (87.764% 0.076% 12.160%)   you're                                                                                                                       -------aaadeffhhhinoooopprrrtttuwyU,I
+        69 0* 6.42843% (88.091% 0.076% 11.833%)   Utahraptor you're a                                                                                                          -------deffhhinoooprtuwy,I
+        70 0* 6.34135% (88.093% 0.076% 11.831%)   Utahraptor, are                                                                                                              -------deffhhinooooprtuuwyyI'
+        71 0* 30.40602% (88.093% 0.076% 11.831%)   Utahraptor, are you                                                                                                          -------deffhhinoooprtuwyI'
+        72 0* 6.27060% (88.099% 0.076% 11.825%)  , why are                                                                                                                     -------aadeffhhinooooopprrrtttuuyUI'
+        73 0* 27.16483% (88.136% 0.076% 11.788%)  , why are you                                                                                                                 -------aadeffhhinoooopprrrtttuUI'
+        74 0* 16.62985% (88.285% 0.076% 11.639%)  , why are you looking                                                                                                         aadeffhhinoooopprrrtttuUI'
+        75 0* 35.23732% (88.285% 0.076% 11.639%)  , why are you looking at                                                                                                      adeffhhinoooopprrrttuUI'
+        76 0* 5.91697% (88.289% 0.076% 11.635%)   Utahraptor, you're one of                                                                                                    -------adfhhioprtuwyI
+        77 0* 5.56335% (88.289% 0.076% 11.635%)   Utahraptor you're way                                                                                                        -------deffhhinoooprtu,I
+        78 0* 12.59210% (88.289% 0.076% 11.635%)   Utahraptor you're way too                                                                                                    -------deffhhinopru,I
+        79 0* 5.55004% (88.289% 0.076% 11.635%)   Utahraptor you're not                                                                                                        -------adeffhhioopruwy,I
+        80 0* 5.48365% (88.290% 0.076% 11.634%)  , you're way                                                                                                                  -------aadeffhhhinoooopprrrtttuUI
+        81 0* 12.99802% (88.296% 0.076% 11.628%)  , you're way too                                                                                                              -------aadeffhhhinoopprrrttuUI
+        82 0* 5.32630% (88.313% 0.076% 11.610%)   Utahraptor, it                                                                                                               -------adeeffhhnooooprruuwyyI'
+        83 0* 8.85293% (88.318% 0.076% 11.606%)   Utahraptor, it'                                                                                                              -------adeeffhhnooooprruuwyyI
+        84 0* 5.04407% (88.337% 0.076% 11.587%)   Utahraptor you are                                                                                                           -------deffhhinoooprtuwy,I'
+        85 0* 5.03746% (88.339% 0.076% 11.585%)  , I hope                                                                                                                      -------aaadeffhhinooooprrrrtttuuwyyU'
+        86 0* 12.93366% (88.380% 0.076% 11.544%)  , I hope you                                                                                                                  -------aaadeffhhinoooprrrrtttuwyU'
+        87 0* 32.44129% (88.403% 0.076% 11.520%)  , I hope you find                                                                                                             -------aaaefhhoooprrrrtttuwyU'
+        88 0* 157.37841% (88.406% 0.076% 11.518%)  , I hope you find what                                                                                                        -------aaefhoooprrrrttuyU'
+        89 0* 999.76844% (88.407% 0.076% 11.517%)  , I hope you find what you                                                                                                    -------aaefhooprrrrttU'
+        90 0* 2347.10461% (88.408% 0.076% 11.516%)  , I hope you find what you'                                                                                                   -------aaefhooprrrrttU
+        91 0* 6469.85593% (88.408% 0.076% 11.515%)  , I hope you find what you're                                                                                                 -------aafhooprrrttU
+        92 0* 902498.57204% (88.409% 0.076% 11.515%)  , I hope you find what you're looking                                                                                         aafhooprrrttU
+        93 0* 16845686.52406% (88.409% 0.076% 11.515%)  , I hope you find what you're looking for                                                                                     aahoprrttU
+        94 0* 1043574.68067% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for Utah                                                                                aoprrt
+        95 0* 149044.08717% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or                                                                                  aahprttU
+        96 0* 118999.46300% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or that                                                                             aprU
+        97 0* 115134.78907% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that                                                                                aoprrU
+        98 0* 51947.50457% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at                                                                                  ahoprrtU
+        99 0* 45185.66766% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or at                                                                               ahprtU
+       100 0* 10666.78029% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to                                                                                  aahprrtU
+       101 0* 3270.36493% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at a                                                                                hoprrtU
+       102 0* 3168.37298% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at Utah                                                                             oprr
+       103 0* 3013.91321% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for oh                                                                                  aaprrttU
+       104 0* 2441.52679% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for                                                                                     aahoprrttU
+       105 0* 2000.04883% (88.462% 0.076% 11.462%)  , I hope you find what you're looking fo                                                                                      aahoprrrttU
+       106 0* 1753.35865% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for a                                                                                   ahoprrttU
+       107 0* 1147.34808% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for t                                                                                   aahoprrtU
+       108 0* 1118.41699% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or that a                                                                           prU
+       109 0* 643.48001% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for ha                                                                                  aoprrttU
+       110 0* 565.29839% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or that U                                                                           apr
+       111 0* 485.43704% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for U                                                                                   aahoprrtt
+       112 0* 370.22267% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for pro                                                                                 aahrttU
+       113 0* 342.33208% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for pat                                                                                 ahorrtU
+       114 0* 293.57464% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for aha                                                                                 oprrttU
+       115 0* 252.18654% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for o                                                                                   aahprrttU
+       116 0* 247.14277% (88.462% 0.076% 11.462%)  , I hope you find what you're looking f                                                                                       aahooprrrttU
+       117 0* 218.28238% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for ho                                                                                  aaprrttU
+       118 0* 216.91844% (88.462% 0.076% 11.462%)  , I hope you find what you're looking to                                                                                      aafhoprrrtU
+       119 0* 265.74069% (88.462% 0.076% 11.462%)  , I hope you find what you're looking to for                                                                                  aahprrtU
+       120 0* 214.53552% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or a                                                                                ahprttU
+       121 0* 170.16504% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that or                                                                             aprU
+       122 0* 163.21465% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at                                                                                  ahoprrtU
+       123 0* 158.65874% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at hot                                                                              aprrU
+       124 0* 157.25868% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at at                                                                               hoprrU
+       125 0* 148.22383% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that a                                                                              oprrU
+       126 0* 141.69095% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to at                                                                               ahprrU
+       127 0* 109.86175% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to a                                                                                ahprrtU
+       128 0* 109.48464% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for h                                                                                   aaoprrttU
+       129 0* 104.79547% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for th                                                                                  aaoprrtU
+       130 0* 104.52951% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for                                                                                     aahoprrttU
+       131 0* 100.18985% (88.462% 0.076% 11.462%)  , I hope you find what you're looking or                                                                                      aafhoprrttU
+       132 0* 96.72377% (88.462% 0.076% 11.462%)  , I hope you find what you're looking at                                                                                      afhooprrrtU
+       133 0* 74.76342% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for p                                                                                   aahorrttU
+       134 0* 70.92338% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that pro                                                                            arU
+       135 0* 69.14604% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that                                                                                aoprrU
+       136 0* 56.74512% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or at a                                                                             hprtU
+       137 0* 55.92604% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at a hot                                                                            prrU
+       138 0* 54.39327% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to Utah                                                                             aprr
+       139 0* 53.13520% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at pro                                                                              ahrtU
+       140 0* 46.49369% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for a part                                                                              hortU
+       141 0* 46.47907% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at a top                                                                            hrrU
+       142 0* 43.61953% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or that                                                                             aprU
+       143 0* 38.41598% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at t                                                                                ahoprrU
+       144 0* 34.53433% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at r                                                                                ahoprtU
+       145 0* 33.49151% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or a path                                                                           rtU
+       146 0* 33.44624% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at th                                                                               aoprrU
+       147 0* 29.15596% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to part                                                                             ahrU
+       148 0* 28.87475% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or at at                                                                            hprU
+       149 0* 24.03879% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for r                                                                                   aahoprttU
+       150 0* 23.20427% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at U                                                                                ahoprrt
+       151 0* 20.60033% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or h                                                                                aaprttU
+       152 0* 20.51442% (88.462% 0.076% 11.462%)  , I hope you find what you're looking or that                                                                                 afoprrU
+       153 0* 19.75442% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or Utah                                                                             aprt
+       154 0* 19.07834% (88.462% 0.076% 11.462%)  , I hope you find what you're looking or for                                                                                  aahprttU
+       155 0* 18.38405% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at a pro                                                                            hrtU
+       156 0* 17.14181% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at pat                                                                              horrU
+       157 0* 16.88498% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for a hot                                                                               aprrtU
+       158 0* 16.79900% (88.462% 0.076% 11.462%)  , I hope you find what you're looking or for that                                                                             aprU
+       159 0* 15.84747% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for to rapt                                                                             ahrU
+       160 0* 15.63139% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at top                                                                              ahrrU
+       161 0* 15.62349% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for or U                                                                                aahprtt
+       162 0* 15.36342% (88.462% 0.076% 11.462%)  , I hope you find what you're looking at for                                                                                  ahoprrtU
+       163 0* 14.29485% (88.462% 0.076% 11.462%)  , I hope you find what you're looking or or                                                                                   aafhprttU
+       164 0* 14.25091% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for that ra                                                                             oprU
+       165 0* 14.09072% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for aphor                                                                               arttU
+       166 0* 13.37604% (88.462% 0.076% 11.462%)  , I hope you find what you're looking for at rapt                                                                             horU
+       167 0* 12.96659% (88.462% 0.076% 11.462%)  , I hope you find what you are                                                                                                -------afhooprrrttU'
+       168 0* 2240.63973% (88.462% 0.076% 11.462%)  , I hope you find what you are looking                                                                                        afhooprrrttU'
+       169 0* 47248.19233% (88.462% 0.076% 11.462%)  , I hope you find what you are looking for                                                                                    ahoprrttU'
+       170 0* 5458.47413% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for Utah                                                                               oprrt'
+       171 0* 649.27865% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for that                                                                               oprrU'
+       172 0* 472.18137% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for that'                                                                              oprrU
+       173 0* 347.68365% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for or                                                                                 ahprttU'
+       174 0* 603.98438% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for or that                                                                            prU'
+       175 0* 196.80222% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for at                                                                                 hoprrtU'
+       176 0* 132.36572% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for or at                                                                              hprtU'
+       177 0* 52.82045% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for or that'                                                                           prU
+       178 0* 48.73697% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for to                                                                                 ahprrtU'
+       179 0* 16.78593% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for oh                                                                                 aprrttU'
+       180 0* 12.51058% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for or http                                                                             aarU
+       181 0* 11.41374% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for that U                                                                              aoprr
+       182 0* 11.06391% (88.462% 0.076% 11.461%)  , I hope you find what you're looking                                                                                         aafhooprrrttU
+       183 0* 10.81078% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for at part                                                                             horU
+       184 0* 10.41233% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for at ta                                                                               hoprrU
+       185 0* 9.21304% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for a that                                                                              oprrU
+       186 0* 8.97986% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for at art                                                                              hoprU
+       187 0* 8.93473% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for t o                                                                                 aahprrtU
+       188 0* 8.62465% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for                                                                                    ahoprrttU'
+       189 0* 8.23134% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for at ap                                                                               horrtU
+       190 0* 7.90920% (88.462% 0.076% 11.461%)  , I hope you find what you are looking for a                                                                                  hoprrttU'
+       191 0* 7.03792% (88.462% 0.076% 11.461%)  , I hope you find what you're looking fo r                                                                                    aahoprrttU
+       192 0* 7.00411% (88.462% 0.076% 11.461%)  , I hope you find what you are looking fo                                                                                     ahoprrrttU'
+       193 0* 6.96773% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for or ha                                                                               aprttU
+       194 0* 6.70113% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for or ah                                                                               aprttU
+       195 0* 6.55878% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for or pat                                                                              ahrtU
+       196 0* 6.39042% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for or                                                                                  aahprttU
+       197 0* 5.04412% (88.462% 0.076% 11.461%)  , I hope you find what you're looking for at aphor                                                                            rtU
+       198 0* 5.01403% (88.462% 0.076% 11.461%)  , I hope you find what you're looking f or                                                                                    aahoprrttU
+       199 0* 4.89476% (88.462% 0.076% 11.461%)  , your                                                                                                                        -------aaadeeffhhhinoooopprrrtttuwyUI'
+       200 0* 4.87669% (88.659% 0.077% 11.264%)  , you're way too hard                                                                                                         -------aeffhhinoopprrttuUI
+       201 0* 6.04767% (88.659% 0.077% 11.264%)  , you're way too hard on                                                                                                      -------aeffhhiopprrttuUI
+       202 0* 4.84958% (88.660% 0.077% 11.264%)   Utahraptor, your                                                                                                             -------adeeffhhinoooprtuwyI'
+       203 0* 4.82966% (88.663% 0.077% 11.261%)  , I don                                                                                                                       -------aaaeeffhhhioooopprrrrtttuuwyyU'
+       204 0* 12.18319% (88.664% 0.077% 11.260%)  , I don'                                                                                                                      -------aaaeeffhhhioooopprrrrtttuuwyyU
+       205 0* 14.11069% (88.664% 0.077% 11.260%)  , I don't                                                                                                                     -------aaaeeffhhhioooopprrrrttuuwyyU
+       206 0* 4.69467% (89.021% 0.077% 10.902%)  , I hope you find what you're looking for that p                                                                              aorrU
+       207 0* 4.60515% (89.021% 0.077% 10.902%)  , you're hard                                                                                                                 -------aaeffhhinoooopprrtttuwyUI
+       208 0* 9.66510% (89.022% 0.077% 10.901%)  , you're hard to                                                                                                              -------aaeffhhinooopprrttuwyUI
+       209 0* 4.55904% (89.035% 0.077% 10.888%)  , now                                                                                                                         -------aaadeeffhhhioooopprrrrtttuuyyUI'
+       210 0* 4.51233% (89.127% 0.077% 10.796%)  , what the                                                                                                                    -------aadeffhinooooopprrrrtuuyyUI'
+       211 0* 4.50085% (89.354% 0.077% 10.569%)  , I hope you find what you're looking for a ha                                                                                oprrttU
+       212 0* 4.32363% (89.354% 0.077% 10.569%)  , I hope you find what you're looking for at ra                                                                               hoprtU
+       213 0* 4.32169% (89.354% 0.077% 10.569%)   Utahraptor, are you looking                                                                                                  deffhhinoooprtuwyI'
+       214 0* 4.20509% (89.354% 0.077% 10.569%)  , what are                                                                                                                    -------adeffhhinooooopprrrttuuyyUI'
+       215 0* 13.86276% (89.376% 0.077% 10.547%)  , what are you                                                                                                                -------adeffhhinoooopprrrttuyUI'
+       216 0* 4.20037% (89.424% 0.077% 10.499%)  , you're way too hard to                                                                                                      -------aeffhhinopprrtuUI
+       217 0* 4.14079% (89.424% 0.077% 10.498%)  , I hope you find what you're looking for a part                                                                              hortU
+       218 0* 4.12213% (89.424% 0.077% 10.498%)  , I hope you find what you're looking for at tor                                                                              ahprU
+       219 0* 4.10597% (89.424% 0.077% 10.498%)  , what happened to your                                                                                                       -------affhiooorrrtuyUI'
+       220 0* 4.09537% (89.425% 0.077% 10.498%)   Utahraptor, I hope                                                                                                           -------adeffhinooorrtuuwyy'
+       221 0* 17.87975% (89.425% 0.077% 10.498%)   Utahraptor, I hope you                                                                                                       -------adeffhinoorrtuwy'
+       222 0* 91.65321% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find                                                                                                  -------aefhoorrtuwy'
+       223 0* 769.47194% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find what                                                                                             -------efoorruy'
+       224 0* 14269.95009% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find what you                                                                                         -------eforr'
+       225 0* 39563.98311% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find what you'                                                                                        -------eforr
+       226 0* 287562.07860% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find what you're                                                                                      -------for
+       227 0* 2135460726.72870% (89.425% 0.077% 10.497%)   Utahraptor, I hope you find what you're looking                                                                              for

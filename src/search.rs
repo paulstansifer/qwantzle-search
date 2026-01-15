@@ -863,11 +863,12 @@ pub fn prob_score(
 
     let rlnn_sched = vec![
         (0, 3.0),
-        (len.saturating_sub(40), 2.0),
+        (len.saturating_sub(40), 2.5),
         (len.saturating_sub(20), 1.5),
+        (len.saturating_sub(10), 0.0),
         (len, 0.0),
     ];
-    let rlnn_mult = (rlnn_prob + 0.0).powf(ilerp(chars_so_far, &rlnn_sched));
+    let rlnn_mult = (rlnn_prob + 0.5).powf(ilerp(chars_so_far, &rlnn_sched));
 
     Score(prod * rlnn_mult as f64)
 }
