@@ -24,22 +24,17 @@ Some people have noticed that the letters that occur the same number of times in
 
 Install Cargo, and download an LLM in gguf format. ([I've got some LLMs fine-tuned on the Dinosaur Comics corpus](https://huggingface.co/paul-stansifer)).
 
-Then set some environment variables. On my Ubuntu machine, it's 
-```
-CC=/usr/bin/gcc-12 CXX=/usr/bin/gcc-12 CPATH=/usr/lib/gcc/x86_64-linux-gnu/12/include LIBRARY_PATH=/usr/lib/x86_64-linux-gnu
-```
+Then do `cargo build`, see what goes wrong, and mess with `.cargo/config.toml` to get it to work. I think Llama.cpp really specifically wants GCC 12 in order to compile?
 
 Then do
 ```
-RUSTFLAGS="-L $LIBRARY_PATH" cargo run --release -- -m <path to LLM> --search-one 1663
+cargo run --release -- -m <path to LLM> --search-one 1663
 ```
-
-Why do you need to set `RUSTFLAGS` in that particular way? Faries insist on it, or they won't help make the LLM go. (Note to self: double-check this bit.)
 
 You can hit Ctrl-C to stop a search and it will save progress. To resume, go
 
 ```
-RUSTFLAGS="-L $LIBRARY_PATH" cargo run --release -- -m <path to LLM> --search-one /home/paul/.qwantzle/1663-in_progress.checkpoint
+cargo run --release -- -m <path to LLM> --search-one /home/paul/.qwantzle/1663-in_progress.checkpoint
 ```
 
 Hope your username is `paul`. (Note to self: check to see if anyone has a different first name than me.)

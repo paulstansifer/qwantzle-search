@@ -1,0 +1,11 @@
+# This kind of file is not really supposed to be checked-in at all; it probably needs to be edited to
+# fit your system. llama.cpp seems to specifically want GCC version 12 to compile.
+
+[env]
+CC = "/usr/bin/gcc-12"
+CXX = "/usr/bin/gcc-12"
+CPATH = "/usr/lib/gcc/x86_64-linux-gnu/12/include"
+LIBRARY_PATH = "/usr/lib/x86_64-linux-gnu"
+
+[build]
+rustflags = ["-L", "native=/usr/lib/x86_64-linux-gnu"]
