@@ -247,6 +247,7 @@ impl Hints {
         if look_at_ties {
             letter_pool.set_ties(letters);
         }
+        letter_pool.set_colon_before_comma();
 
         Hints {
             context: context,

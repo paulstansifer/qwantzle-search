@@ -281,6 +281,7 @@ pub struct LetterPool {
     long_tok: Option<(i32, u8)>,
     last_letter: Option<Char>,
     tie_sequences: Option<Vec<Vec<Char>>>, // if we need to save memory, do Option<[u8; 5]>
+    comma_allowed_yet: bool,               // this is 1663-only logic
 }
 
 struct PoolTok {
@@ -497,6 +498,7 @@ impl LetterPool {
             long_tok: None,
             last_letter: None,
             tie_sequences: None,
+            comma_allowed_yet: true,
         };
 
         for byte in text.as_bytes() {
@@ -573,6 +575,10 @@ impl LetterPool {
         }
     }
 
+    pub fn set_colon_before_comma(&mut self) {
+        self.comma_allowed_yet = false;
+    }
+
     /// Does not respect `.long_tok`!
     fn has_pt(&self, tok: &PoolTok) -> bool {
         for (c, count) in &tok.chars {
@@ -588,6 +594,8 @@ impl LetterPool {
                         return false; // ...and we're the last word, but it's not our last letter.
                     }
                 }
+            } else if *c == Char(b',') && !self.comma_allowed_yet {
+                return false;
             }
         }
         return true;
@@ -617,6 +625,10 @@ impl LetterPool {
             for (c, count) in &tok.chars {
                 let entry = self.entry(*c);
                 *entry -= *count; // panics if this was invalid
+
+                if *c == Char(b':') {
+                    self.comma_allowed_yet = true;
+                }
             }
         }
 
