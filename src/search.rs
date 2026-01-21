@@ -335,7 +335,12 @@ impl SearchState<'_> {
             // synced between this and `load`)
             let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
             sess.boost(colon_tok, 35.0);
-            println!("Colon is boosted!");
+            let i_tok = *str_to_tokens_maybe_with_prefix_space("I totally", llm)
+                .0
+                .first()
+                .unwrap();
+            sess.boost(i_tok, 5.0);
+            println!("':' and 'I' are boosted!");
         }
 
         let first_candidates = sess.advance_and_predict_str(&hints.context, Some(TOK_TOP_P));
@@ -424,6 +429,12 @@ impl SearchState<'_> {
         if sss.hints.id == 1663 {
             let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
             sess.boost(colon_tok, 35.0);
+            let i_tok = *str_to_tokens_maybe_with_prefix_space("I totally", llm)
+                .0
+                .first()
+                .unwrap();
+            sess.boost(i_tok, 5.0);
+            println!("':' and 'I' are boosted!");
         }
 
         // TODO: should probably have `advance` without `predict`
