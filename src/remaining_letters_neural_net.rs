@@ -66,9 +66,14 @@ impl LetterNet {
 
         // Run inference
         let output = self.forward(&input).unwrap().to_vec2::<f32>().unwrap()[0][0];
-
         // Apply sigmoid, which isn't visible in the tensors file!
-        return 1.0 / (1.0 + (-output).exp());
+        let probability = 1.0 / (1.0 + (-output).exp());
+
+        // // Aside from the special case above, we shouldn't ever be certain:
+        // assert!(probability > 0.0);
+        // assert!(probability < 1.0);
+
+        return probability;
     }
 
     fn new_internal(vb: VarBuilder, tensors: &SafeTensors) -> Result<Self> {

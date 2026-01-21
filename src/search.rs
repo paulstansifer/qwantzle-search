@@ -35,7 +35,7 @@ struct Node {
     word_state: WordState,
     remaining: LetterPool,
     probability: f64, // f32 is not quite precise enough!
-    tok_probs: Vec<f32>,
+    rlnn_prob: f32,
     chars_so_far: u8,
     depth_at_pruning: u32,
 }
@@ -631,7 +631,7 @@ impl SearchState<'_> {
             }
 
             let desc = format!(
-                "{:>10} {}{} {:.5}% ({:.3}% {:.3}% {:.3}%)  {:<125} {}",
+                "{:>10} {}{} {:.5}% ({:.3}%) ({:>3.0}%) {:<125} {}",
                 self.step.separate_with_commas(),
                 self.hall_of_fame.possible_completions.len(),
                 if node.remaining.respects_ties() {
@@ -641,8 +641,7 @@ impl SearchState<'_> {
                 },
                 p.0 * 100.0,
                 self.discard_prob_letters * 100.0,
-                self.discard_prob_dregs * 100.0,
-                (1.0 - self.discard_prob_letters - self.discard_prob_dregs) * 100.0,
+                node.rlnn_prob * 100.0,
                 cur_text,
                 node.remaining.print()
             );
@@ -671,8 +670,8 @@ impl SearchState<'_> {
 
         let quit_now = TIME_TO_QUIT.load(std::sync::atomic::Ordering::SeqCst);
 
-        if self.q.len() > 11_000_000 || quit_now {
-            self.q = std::mem::take(&mut self.q).trim(9_000_000);
+        if self.q.len() > 13_000_000 || quit_now {
+            self.q = std::mem::take(&mut self.q).trim(11_000_000);
         }
 
         self.search_time += step_start.elapsed();
@@ -826,14 +825,7 @@ fn ilerp(i: u8, targets: &[(u8, f32)]) -> f32 {
     prev_y + t * (next_y - prev_y)
 }
 
-pub fn prob_score(
-    probs: &Vec<f32>,
-    chars_so_far: u8,
-    chars_remaining: u8,
-    rlnn_prob: f32,
-) -> Score {
-    let probs: Vec<f64> = probs.iter().map(|p| *p as f64).collect();
-
+pub fn prob_score(prob: f64, chars_so_far: u8, chars_remaining: u8, rlnn_prob: f32) -> Score {
     // Try this, but probably way the heck weaker:
 
     //probs.sort_by(|a, b| a.partial_cmp(b).unwrap());
@@ -844,7 +836,7 @@ pub fn prob_score(
     //     }
     // }
 
-    let mut prod: f64 = probs.iter().product();
+    let mut prod = prob; // product of probabilitys so far
     let len = chars_so_far + chars_remaining;
     let mid = (len / 2).saturating_sub(10);
     let late = len.saturating_sub(20);
@@ -879,7 +871,7 @@ impl Node {
             word_state: WordState::new_empty(),
             remaining: hints.letter_pool.clone(),
             probability: 1.0,
-            tok_probs: vec![],
+            rlnn_prob: 1.0,
             chars_so_far: 0,
             depth_at_pruning: 0,
         }
@@ -892,7 +884,7 @@ impl Node {
             word_state: WordState::new_empty(),
             remaining: LetterPool::from_text(text, /*look_at_ties=*/ false),
             probability: 1.0,
-            tok_probs: vec![],
+            rlnn_prob: 1.0,
             chars_so_far: 0,
             depth_at_pruning: 0,
         }
@@ -926,16 +918,15 @@ impl Node {
             remaining: new_remaining,
             word_state: new_word_state,
             text: self.text.clone(),
-            probability: self.probability * prob as f64,
-            tok_probs: self.tok_probs.clone(),
+            probability: self.probability * (prob as f64),
+            rlnn_prob,
             chars_so_far: self.chars_so_far + tok_to_str(t, model).trim().len() as u8,
             depth_at_pruning: self.depth_at_pruning,
         };
         res.text.push(t.0);
-        res.tok_probs.push(prob);
 
         let score = prob_score(
-            &res.tok_probs,
+            res.probability,
             res.chars_so_far,
             res.remaining.size() as u8,
             rlnn_prob,

@@ -298,8 +298,9 @@ fn predict_strip(
 
         let chars_so_far = punchline.replace(" ", "").len() as u8;
 
+        let prob = probs.iter().map(|p| *p as f64).product();
         let score =
-            crate::search::prob_score(&probs, chars_so_far, letter_pool.size() as u8, rlnn_mult);
+            crate::search::prob_score(prob, chars_so_far, letter_pool.size() as u8, rlnn_mult);
         write!(overall_score_s, "{:>11.3}%", score.0 * 100.0).unwrap();
         min_score = f64::min(min_score, score.0);
 

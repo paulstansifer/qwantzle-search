@@ -80,6 +80,11 @@ fn truncate_and_try(model: &LlamaModel, prompt: &str, suffixes: &[&str]) {
 //     display_top_toks(&mut ctx);
 // }
 
+// fn totally_fixed_float_display(f: f64) -> String {
+//     let s = format!("{:>5.5}", f);
+
+// }
+
 fn main() {
     let args = Args::parse();
 
