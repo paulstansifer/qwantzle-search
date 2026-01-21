@@ -55,7 +55,7 @@ impl LetterNet {
         }
         // Matches the order in
         // https://colab.research.google.com/drive/1rGLSxC_esmQAL2OKruSIET5gMy4iaZHL#scrollTo=yW38Co-4Ll6f&line=28&uniqifier=1
-        features[CHAR_FEATURE_ORDER.len()] = remaining.size() as f32;
+        features[CHAR_FEATURE_ORDER.len()] = remaining.size_no_longest() as f32;
         features[CHAR_FEATURE_ORDER.len() + 1] = vowels;
         features[CHAR_FEATURE_ORDER.len() + 2] = consonants;
 
@@ -192,4 +192,32 @@ fn model_distrusts_toenails() {
             /*look_at_ties=*/ false
         )) < 0.2
     );
+}
+
+#[test]
+// The longest token being ignored (though, originally, not correctly!) was accidental behavior,
+// but it also kinda seems like it makes sense.
+fn longest_token_no_effect() {
+    use crate::llm::{str_to_tokens, str_to_tokens_maybe_with_prefix_space};
+
+    let rlnn = LetterNet::new_from_file("corpus/letter_pool.safetensors").unwrap();
+    // TODO: make this device-independent!
+    let llm = crate::llm::model_from_gguf("/home/paul/others/llms/pythia-14m.Q4_K_M.gguf", true);
+
+    let hints = crate::search::Hints::for_1663(&vec![], /*look_at_ties*/ true, &llm);
+
+    let mut s1 = hints.letter_pool.clone();
+    for tok in str_to_tokens(
+        "guess that tells you all you need to know about the current state of",
+        &llm,
+    ) {
+        s1.remove(tok, &llm);
+    }
+
+    let mut s2 = s1.clone();
+    let fund_tok = str_to_tokens_maybe_with_prefix_space("fundamental", &llm).0;
+    assert_eq!(fund_tok.len(), 1);
+    s2.remove(fund_tok[0], &llm);
+
+    assert_eq!(rlnn.evaluate(&s1), rlnn.evaluate(&s2));
 }

@@ -375,15 +375,20 @@ impl LetterPool {
     }
 
     pub fn size(&self) -> usize {
+        let mut res = self.size_no_longest();
+        if let Some((_, lt_len)) = self.long_tok {
+            res += lt_len as usize;
+        }
+        return res;
+    }
+
+    pub fn size_no_longest(&self) -> usize {
         let mut res: usize = 0;
         for count in self.lowercase {
             res += count as usize;
         }
         for (_, count) in &self.other_chars {
             res += *count as usize;
-        }
-        if let Some((_, lt_len)) = self.long_tok {
-            res += lt_len as usize;
         }
         return res;
     }

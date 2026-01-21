@@ -242,8 +242,8 @@ impl Hints {
         let token_size = str_to_tokens(&context, llm).len() + TOK_BUFFER as usize;
         let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
         let mut letter_pool = LetterPool::just_letters_from_text(letters);
-        letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
         letter_pool.set_last_letter(b'w');
+        letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
         if look_at_ties {
             letter_pool.set_ties(letters);
         }
