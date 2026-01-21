@@ -335,7 +335,7 @@ impl SearchState<'_> {
             // TODO: this is ad-hoc; we should at least make this configurable (and not have to be
             // synced between this and `load`)
             let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
-            sess.boost(colon_tok, 35.0);
+            sess.boost(colon_tok, 60.0);
             let i_tok = *str_to_tokens_maybe_with_prefix_space("I totally", llm)
                 .0
                 .first()
@@ -429,7 +429,7 @@ impl SearchState<'_> {
 
         if sss.hints.id == 1663 {
             let colon_tok = *llm::str_to_tokens("totally:", llm).last().unwrap();
-            sess.boost(colon_tok, 35.0);
+            sess.boost(colon_tok, 60.0);
             let i_tok = *str_to_tokens_maybe_with_prefix_space("I totally", llm)
                 .0
                 .first()
