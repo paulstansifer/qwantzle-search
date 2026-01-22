@@ -1,174 +1,192 @@
 has an analogy been so accurate and personally damaging
-Step          0 (remaining mass 26.397%): Next token is ' has', score is 0.18675% (0.177%, 11.513%, 3)
-Step         21 (remaining mass 3.911%): Next token is ' an', score is 0.04493% (5.977%, 21.112%, 5)
-Step        151 (remaining mass 1.853%): Next token is ' analogy', score is 0.92933% (74.141%, 18.161%, 12)
-Step        152 (remaining mass 1.851%): Next token is ' been', score is 3.31384% (42.843%, 23.063%, 16)
-Step        153 (remaining mass 1.848%): Next token is ' so', score is 1.65312% (28.080%, 8.214%, 18)
-Step        156 (remaining mass 1.846%): Next token is ' accurate', score is 19.35507% (7.325%, 38.870%, 26)
-Step        157 (remaining mass 1.845%): Next token is ' and', score is 12.93632% (11.314%, 38.366%, 29)
-Step        158 (remaining mass 1.845%): Next token is ' personally', score is 50.56000% (0.030%, 69.175%, 39)
-Step        159 (remaining mass 1.845%): Next token is ' damaging', score is 133684.72337% (3.483%, 100.000%, 47)
+Step          0 (remaining mass 26.397%): Next token is ' has', score is 0.21882% (0.177%, 5.015%, 3)
+Step         25 (remaining mass 3.496%): Next token is ' an', score is 0.04529% (5.977%, 13.986%, 5)
+Step        170 (remaining mass 1.765%): Next token is ' analogy', score is 1.59973% (74.141%, 34.343%, 12)
+Step        171 (remaining mass 1.763%): Next token is ' been', score is 3.95313% (42.843%, 26.868%, 16)
+Step        172 (remaining mass 1.760%): Next token is ' so', score is 2.06821% (28.080%, 11.770%, 18)
+Step        174 (remaining mass 1.757%): Next token is ' accurate', score is 22.56118% (7.325%, 48.077%, 26)
+Step        175 (remaining mass 1.757%): Next token is ' and', score is 19.01587% (11.314%, 69.175%, 29)
+Step        176 (remaining mass 1.757%): Next token is ' personally', score is 56.17176% (0.030%, 69.175%, 39)
+Step        177 (remaining mass 1.757%): Next token is ' damaging', score is 133684.72337% (3.483%, 100.000%, 47)
 ' has an analogy been so accurate and personally damaging' (133684.72%)
-Search successful after 160 steps. Deepest node accessed: 0
-Search time: 8s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 37ms  Truncate: 0ms.
+Search successful after 178 steps. Deepest node accessed: 0
+Search time: 7s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
 
-         0 0* 5.78210% (89.250% 0.040% 10.710%)  mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
-         1 0* 2.21225% (93.204% 0.042% 6.754%)   mind                                                                                                                         ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
-         2 0* 0.65795% (94.724% 0.042% 5.234%)   said                                                                                                                         ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
-         3 0* 0.55573% (94.924% 0.042% 5.033%)   said a                                                                                                                       ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
-         4 0* 0.55476% (95.026% 0.043% 4.931%)   again                                                                                                                        ----------aaaaaaabccddeeegghlmnnnnoorsstuy
-         5 0* 0.52816% (95.101% 0.043% 4.857%)  mind you                                                                                                                      ----------aaaaaaaaabccdeeeggghlnnnnorsst
-         6 0* 0.40861% (95.193% 0.043% 4.765%)   said a man                                                                                                                   ----------aaaaaabccdeeeggghlnnnnoorstuy
-         7 0* 0.33220% (95.207% 0.043% 4.751%)   mentioned                                                                                                                    ----------aaaaaaaaabccdeggghlnnnorssuy
-         8 0* 0.32163% (95.229% 0.043% 4.728%)   said a more                                                                                                                  ----------aaaaaaabccdeeggghlnnnnnostuy
-         9 0* 0.30495% (95.242% 0.043% 4.715%)   let                                                                                                                          ----------aaaaaaaaabccddeeggghimnnnnnoorssuy
-        10 0* 0.43307% (95.366% 0.043% 4.591%)   let me                                                                                                                       ----------aaaaaaaaabccddeggghinnnnnoorssuy
-        11 0* 0.42503% (95.518% 0.043% 4.439%)   let me hear                                                                                                                  ----------aaaaaaaabccddggginnnnnoossuy
-        12 0* 0.81224% (95.529% 0.043% 4.428%)   let me hear you                                                                                                              ----------aaaaaaaabccddggginnnnnoss
-        13 0* 0.28034% (95.542% 0.043% 4.416%)   say                                                                                                                          ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
-        14 0* 0.25864% (95.785% 0.043% 4.172%)  mentioned                                                                                                                     ----------aaaaaaaaabccdeggghlnnnorssuy
-        15 0* 0.22751% (95.802% 0.043% 4.155%)   said a sad                                                                                                                   ----------aaaaaabcceeeggghlmnnnnnoortuy
-        16 0* 0.21750% (95.824% 0.043% 4.133%)  mind the                                                                                                                      ----------aaaaaaaaabccdeeggglnnnnoorssuy
-        17 0* 0.60369% (95.859% 0.043% 4.098%)  mind the analogy                                                                                                              ----------aaaaaaabccdeeggnnnorssu
-        18 0* 0.35136% (95.862% 0.043% 4.095%)  mind the language                                                                                                             ----------aaaaaaabccdegnnnoorssy
-        19 0* 0.20097% (95.863% 0.043% 4.094%)   use                                                                                                                          ----------aaaaaaaaabccddeeggghilmnnnnnoorsty
-        20 0* 0.19319% (95.975% 0.043% 3.982%)   mind you                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnorsst
-        21 0* 0.18675% (96.009% 0.043% 3.948%)   has                                                                                                                          ----------aaaaaaaabccddeeegggilmnnnnnoorstuy
-        22 0* 0.27447% (96.099% 0.043% 3.858%)   has anyone                                                                                                                   ----------aaaaaaabccddeegggilmnnnorstu
-        23 0* 0.57509% (96.110% 0.043% 3.847%)   has anyone described                                                                                                         ----------aaaaaaacggglmnnnotu
-        24 0* 0.18306% (96.111% 0.043% 3.846%)   said a sentence                                                                                                              ----------aaaaaaabcdggghlmnnnooruy
-        25 0* 0.18207% (96.112% 0.043% 3.845%)   the                                                                                                                          ----------aaaaaaaaabccddeegggilmnnnnnoorssuy
-        26 0* 0.84253% (96.175% 0.043% 3.782%)   the less                                                                                                                     ----------aaaaaaaaabccddegggimnnnnnooruy
-        27 0* 0.23030% (96.330% 0.043% 3.627%)   the less you                                                                                                                 ----------aaaaaaaaabccddegggimnnnnnor
-        28 0* 0.18166% (96.340% 0.043% 3.617%)   did                                                                                                                          ----------aaaaaaaaabcceeeggghlmnnnnnoorsstuy
-        29 0* 0.18152% (96.528% 0.043% 3.429%)   use analogies                                                                                                                ----------aaaaaaabccddegghmnnnnorty
-        30 0* 0.16607% (96.529% 0.043% 3.427%)   let anyone                                                                                                                   ----------aaaaaaaabccddeggghimnnnorssu
-        31 0* 0.16362% (96.539% 0.044% 3.417%)   buy                                                                                                                          ----------aaaaaaaaaccddeeeggghilmnnnnnoorsst
-        32 0* 0.19126% (96.615% 0.044% 3.342%)   buy another                                                                                                                  ----------aaaaaaaaccddeegggilmnnnnoss
-        33 0* 0.16269% (96.621% 0.044% 3.335%)   said anyone                                                                                                                  ----------aaaaaaabccdeeggghlmnnnorstu
-        34 0* 0.16148% (96.626% 0.044% 3.330%)  again                                                                                                                         ----------aaaaaaabccddeeegghlmnnnnoorsstuy
-        35 0* 0.15028% (96.648% 0.044% 3.308%)   are                                                                                                                          ----------aaaaaaaabccddeeggghilmnnnnnoosstuy
-        36 0* 0.21874% (96.678% 0.044% 3.279%)   are languages                                                                                                                ----------aaaaaabccddeghimnnnnoosty
-        37 0* 0.13812% (96.678% 0.044% 3.278%)   you                                                                                                                          ----------aaaaaaaaabccddeeeggghilmnnnnnorsst
-        38 0* 0.13803% (96.817% 0.044% 3.140%)   are they                                                                                                                     ----------aaaaaaaabccddegggilmnnnnnoossu
-        39 0* 0.12690% (96.838% 0.044% 3.118%)   can                                                                                                                          ----------aaaaaaaabcddeeeggghilmnnnnoorsstuy
-        40 0* 0.12579% (96.871% 0.044% 3.085%)   heard                                                                                                                        ----------aaaaaaaabccdeegggilmnnnnnoosstuy
-        41 0* 0.12085% (96.906% 0.044% 3.051%)   in                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnoorsstuy
-        42 0* 0.19183% (96.933% 0.044% 3.023%)   in a                                                                                                                         ----------aaaaaaaabccddeeeggghlmnnnnoorsstuy
-        43 0* 0.11925% (97.049% 0.044% 2.907%)   use the                                                                                                                      ----------aaaaaaaaabccddegggilmnnnnnoorsy
-        44 0* 0.13159% (97.083% 0.044% 2.873%)   use the analogy                                                                                                              ----------aaaaaaabccddeggimnnnnors
-        45 0* 0.11690% (97.084% 0.044% 2.872%)   because                                                                                                                      ----------aaaaaaaacddeggghilmnnnnnoorsty
-        46 0* 0.11628% (97.092% 0.044% 2.864%)   say something                                                                                                                ----------aaaaaaaabccddeegglnnnnoru
-        47 0* 0.11494% (97.094% 0.044% 2.862%)   in a thousand                                                                                                                ----------aaaaaaabccdeeeggglmnnnorsy
-        48 0* 0.94812% (97.095% 0.044% 2.861%)   in a thousand years                                                                                                          ----------aaaaaabccdeeggglmnnno
-        49 0* 0.11348% (97.097% 0.044% 2.860%)   do                                                                                                                           ----------aaaaaaaaabccdeeeggghilmnnnnnorsstuy
-        50 0* 0.11086% (97.247% 0.044% 2.709%)   let me hear you diss                                                                                                         ----------aaaaaaaabccdgggnnnnno
-        51 0* 0.10629% (97.248% 0.044% 2.708%)   has anyone made                                                                                                              ----------aaaaaabccdegggilnnnorstu
-        52 0* 0.10620% (97.248% 0.044% 2.708%)  mindless                                                                                                                      ----------aaaaaaaaabccdeeggghnnnnoortuy
-        53 0* 0.10097% (97.260% 0.044% 2.696%)   mind the                                                                                                                     ----------aaaaaaaaabccdeeggglnnnnoorssuy
-        54 0* 0.43716% (97.276% 0.044% 2.680%)   mind the analogy                                                                                                             ----------aaaaaaabccdeeggnnnorssu
-        55 0* 0.14749% (97.278% 0.044% 2.678%)   mind the language                                                                                                            ----------aaaaaaabccdegnnnoorssy
-        56 0* 0.09979% (97.278% 0.044% 2.678%)   under                                                                                                                        ----------aaaaaaaaabccdeeggghilmnnnnoossty
-        57 0* 0.27032% (97.293% 0.044% 2.663%)   under any                                                                                                                    ----------aaaaaaaabccdeeggghilmnnnoosst
-        58 0* 0.09756% (97.314% 0.044% 2.642%)   has anyone been                                                                                                              ----------aaaaaaaccddgggilmnnorstu
-        59 0* 0.09551% (97.314% 0.044% 2.642%)   has anyone made a                                                                                                            ----------aaaaabccdegggilnnnorstu
-        60 0* 0.09204% (97.314% 0.044% 2.642%)   has language                                                                                                                 ----------aaaaaabccddeegimnnnnoorsty
-        61 0* 0.31127% (97.314% 0.044% 2.641%)   has language been                                                                                                            ----------aaaaaaccddgimnnnoorsty
-        62 0* 0.21613% (97.315% 0.044% 2.641%)   has language been so                                                                                                         ----------aaaaaaccddgimnnnorty
-        63 0* 0.19892% (97.315% 0.044% 2.641%)   has language been so personally                                                                                              aaaaaaccddgimnnnorty
-        64 0* 0.09331% (97.315% 0.044% 2.641%)   has language been so personally and                                                                                          aaaaaccdgimnnorty
-        65 0* 0.08964% (97.315% 0.044% 2.641%)   use the analogy again                                                                                                        ----------aaaaabccddegmnnnors
-        66 0* 0.08950% (97.315% 0.044% 2.641%)   are you                                                                                                                      ----------aaaaaaaabccddeeggghilmnnnnnosst
-        67 0* 0.16653% (97.328% 0.044% 2.628%)   are you going                                                                                                                ----------aaaaaaaabccddeeghlmnnnnsst
-        68 0* 0.08892% (97.332% 0.044% 2.623%)   is                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnnoorstuy
-        69 0* 0.08733% (97.429% 0.044% 2.527%)  mind the analogy because                                                                                                      ----------aaaaaacdggnnnors
-        70 0* 0.08645% (97.429% 0.044% 2.527%)   buy a                                                                                                                        ----------aaaaaaaaccddeeeggghilmnnnnnoorsst
-        71 0* 0.08492% (97.462% 0.044% 2.494%)  mind because                                                                                                                  ----------aaaaaaaacdeggghlnnnnoorsty
-        72 0* 0.08463% (97.463% 0.044% 2.493%)   had                                                                                                                          ----------aaaaaaaabccdeeegggilmnnnnnoorsstuy
-        73 0* 0.07861% (97.494% 0.044% 2.462%)   use this                                                                                                                     ----------aaaaaaaaabccddeeggglmnnnnnoory
-        74 0* 1.93692% (97.499% 0.044% 2.457%)   use this analogy                                                                                                             ----------aaaaaaabccddeeggmnnnnor
-        75 0* 0.10255% (97.509% 0.044% 2.447%)   use this analogy on                                                                                                          ----------aaaaaaabccddeeggmnnnr
-        76 0* 0.27332% (97.509% 0.044% 2.447%)   use this analogy on me                                                                                                       ----------aaaaaaabccddeggnnnr
-        77 0* 0.07817% (97.509% 0.044% 2.446%)  mind about                                                                                                                    ----------aaaaaaaaccdeeeggghlnnnnorssy
-        78 0* 0.07761% (97.514% 0.044% 2.442%)   has a                                                                                                                        ----------aaaaaaabccddeeegggilmnnnnnoorstuy
-        79 0* 0.12387% (97.535% 0.044% 2.421%)   has a language                                                                                                               ----------aaaaabccddeegimnnnnoorsty
-        80 0* 0.37518% (97.535% 0.044% 2.421%)   has a language been                                                                                                          ----------aaaaaccddgimnnnoorsty
-        81 0* 0.26311% (97.535% 0.044% 2.421%)   has a language been so                                                                                                       ----------aaaaaccddgimnnnorty
-        82 0* 0.10657% (97.535% 0.044% 2.421%)   has a language been so personally                                                                                            aaaaaccddgimnnnorty
-        83 0* 0.07635% (97.535% 0.044% 2.421%)   did anyone                                                                                                                   ----------aaaaaaaabcceeggghlmnnnorsstu
-        84 0* 0.07631% (97.540% 0.044% 2.416%)   a                                                                                                                            ----------aaaaaaaabccddeeeggghilmnnnnnoorsstuy
-        85 0* 0.07603% (97.596% 0.044% 2.360%)   has anyone said                                                                                                              ----------aaaaaabccdeeggglmnnnortu
-        86 0* 0.07237% (97.596% 0.044% 2.359%)   gonna                                                                                                                        ----------aaaaaaaabccddeeegghilmnnnorsstuy
-        87 0* 0.07192% (97.610% 0.044% 2.346%)  the                                                                                                                           ----------aaaaaaaaabccddeegggilmnnnnnoorssuy
-        88 0* 0.25502% (97.651% 0.044% 2.304%)  the less                                                                                                                      ----------aaaaaaaaabccddegggimnnnnnooruy
-        89 0* 0.07177% (97.700% 0.044% 2.256%)  said                                                                                                                          ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
-        90 0* 0.07145% (97.722% 0.044% 2.233%)   has a language been so personally and                                                                                        aaaaccdgimnnorty
-        91 0* 0.07051% (97.722% 0.044% 2.233%)   has anyone been so                                                                                                           ----------aaaaaaaccddgggilmnnrtu
-        92 0* 0.07039% (97.723% 0.044% 2.233%)   had a                                                                                                                        ----------aaaaaaabccdeeegggilmnnnnnoorsstuy
-        93 0* 0.06949% (97.743% 0.044% 2.213%)   said such                                                                                                                    ----------aaaaaaaabcdeeeggglmnnnnnoorty
-        94 0* 0.06910% (97.746% 0.044% 2.210%)   are you gonna                                                                                                                ----------aaaaaaabccddeegghilmnnnsst
-        95 0* 0.06849% (97.746% 0.044% 2.209%)   mention                                                                                                                      ----------aaaaaaaaabccddeeggghlnnnorssuy
-        96 0* 0.06806% (97.759% 0.044% 2.197%)   described                                                                                                                    ----------aaaaaaaaaceggghlmnnnnnoostuy
-        97 0* 0.06798% (97.762% 0.044% 2.194%)   said such a                                                                                                                  ----------aaaaaaabcdeeeggglmnnnnnoorty
-        98 0* 0.06599% (97.765% 0.044% 2.190%)  said a                                                                                                                        ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
-        99 0* 0.06293% (97.777% 0.044% 2.178%)   said anyone about                                                                                                            ----------aaaaaaccdeeggghlmnnnrs
-       100 0* 0.06288% (97.777% 0.044% 2.178%)   in my                                                                                                                        ----------aaaaaaaaabccddeeeggghlnnnnoorsstu
-       101 0* 0.06270% (97.827% 0.044% 2.129%)   is there                                                                                                                     ----------aaaaaaaaabccddeggglmnnnnnoosuy
-       102 0* 0.06235% (97.833% 0.044% 2.122%)   did you                                                                                                                      ----------aaaaaaaaabcceeeggghlmnnnnnorsst
-       103 0* 0.06221% (97.851% 0.044% 2.105%)   said language                                                                                                                ----------aaaaaabccdeeghmnnnnoorsty
-       104 0* 0.06150% (97.851% 0.044% 2.105%)   describe                                                                                                                     ----------aaaaaaaaacdeggghlmnnnnnoostuy
-       105 0* 0.08281% (97.853% 0.044% 2.102%)   describe languages                                                                                                           ----------aaaaaaacdghmnnnnooty
-       106 0* 0.06115% (97.853% 0.044% 2.102%)   you can                                                                                                                      ----------aaaaaaaabcddeeeggghilmnnnnorsst
-       107 0* 0.06044% (97.861% 0.044% 2.094%)   listen                                                                                                                       ----------aaaaaaaaabccddeeggghmnnnnoorsuy
-       108 0* 0.06019% (97.881% 0.044% 2.075%)   are language                                                                                                                 ----------aaaaaabccddeghimnnnnoossty
-       109 0* 0.06004% (97.881% 0.044% 2.075%)   abandon                                                                                                                      ----------aaaaaaaccdeeeggghilmnnnorsstuy
-       110 0* 0.05949% (97.885% 0.044% 2.071%)   get                                                                                                                          ----------aaaaaaaaabccddeegghilmnnnnnoorssuy
-       111 0* 0.05856% (97.931% 0.044% 2.024%)   buy another one                                                                                                              ----------aaaaaaaaccddegggilmnnnss
-       112 0* 0.05852% (97.932% 0.044% 2.024%)   say the                                                                                                                      ----------aaaaaaaabccddeegggilmnnnnnoorsu
-       113 0* 0.05768% (97.948% 0.044% 2.007%)   can you                                                                                                                      ----------aaaaaaaabcddeeeggghilmnnnnorsst
-       114 0* 0.05767% (97.955% 0.044% 2.001%)   has someone                                                                                                                  ----------aaaaaaaabccddegggilnnnnrtuy
-       115 0* 0.05729% (97.957% 0.044% 1.998%)   describe my                                                                                                                  ----------aaaaaaaaacdeggghlnnnnnoostu
-       116 0* 1.93410% (97.959% 0.044% 1.997%)   describe my languages                                                                                                        ----------aaaaaaacdghnnnnoot
-       117 0* 0.38736% (97.960% 0.044% 1.996%)   describe my languages to                                                                                                     ----------aaaaaaacdghnnnno
-       118 0* 0.15033% (97.960% 0.044% 1.996%)   describe my language                                                                                                         ----------aaaaaaacdghnnnnoost
-       119 0* 0.09725% (97.960% 0.044% 1.996%)   describe my language as                                                                                                      ----------aaaaaacdghnnnnoot
-       120 0* 0.05729% (97.960% 0.044% 1.996%)   described languages                                                                                                          ----------aaaaaaacghmnnnnooty
-       121 0* 0.05691% (97.960% 0.044% 1.996%)   change                                                                                                                       ----------aaaaaaaabcddeeggilmnnnnoorsstuy
-       122 0* 0.05660% (97.964% 0.044% 1.992%)   describe language                                                                                                            ----------aaaaaaacdghmnnnnoosty
-       123 0* 0.05588% (97.964% 0.044% 1.991%)   buy something                                                                                                                ----------aaaaaaaaaccddeegglnnnnors
-       124 0* 0.05494% (97.965% 0.044% 1.991%)   has a language made                                                                                                          ----------aaaabccdeginnnnoorsty
-       125 0* 0.05451% (97.965% 0.044% 1.991%)  said a more                                                                                                                   ----------aaaaaaabccdeeggghlnnnnnostuy
-       126 0* 0.05418% (97.967% 0.044% 1.988%)   buy another one again                                                                                                        ----------aaaaaaccddegglmnnss
-       127 0* 0.05396% (97.967% 0.044% 1.988%)   buy again                                                                                                                    ----------aaaaaaaccddeeegghlmnnnnoorsst
-       128 0* 0.05388% (97.970% 0.044% 1.986%)   has anyone described a                                                                                                       ----------aaaaaacggglmnnnotu
-       129 0* 0.05385% (97.970% 0.044% 1.986%)   describe my language as a                                                                                                    ----------aaaaacdghnnnnoot
-       130 0* 0.05187% (97.970% 0.044% 1.986%)   heard a                                                                                                                      ----------aaaaaaabccdeegggilmnnnnnoosstuy
-       131 0* 0.05161% (97.977% 0.044% 1.978%)   are they going                                                                                                               ----------aaaaaaaabccddeglmnnnnossu
-       132 0* 0.05017% (97.978% 0.044% 1.978%)  mind your                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnosst
-       133 0* 0.04967% (97.983% 0.044% 1.972%)   use analogies to                                                                                                             ----------aaaaaaabccddegghmnnnnry
-       134 0* 0.04795% (97.984% 0.044% 1.972%)   do anything                                                                                                                  ----------aaaaaaaabccdeeegglmnnnorssu
-       135 0* 0.04661% (97.986% 0.044% 1.970%)   are languages bad                                                                                                            ----------aaaaaccdeghimnnnnoosty
-       136 0* 0.04650% (97.986% 0.044% 1.970%)   go                                                                                                                           ----------aaaaaaaaabccddeeegghilmnnnnnorsstuy
-       137 0* 0.15662% (98.005% 0.045% 1.950%)   go home                                                                                                                      ----------aaaaaaaaabccddeeggilnnnnnrsstuy
-       138 0* 0.27099% (98.036% 0.045% 1.919%)   go home sad                                                                                                                  ----------aaaaaaaabccdeeggilnnnnnrstuy
-       139 0* 0.63641% (98.044% 0.045% 1.912%)   go home sad and                                                                                                              ----------aaaaaaabcceeggilnnnnrstuy
-       140 0* 0.53042% (98.051% 0.045% 1.904%)   go home sad again                                                                                                            ----------aaaaaabccdeeglnnnnrstuy
-       141 0* 0.05528% (98.053% 0.045% 1.902%)   go home sad again because                                                                                                    ----------aaaaacdglnnnnrty
-       142 0* 0.04638% (98.053% 0.045% 1.902%)   can language                                                                                                                 ----------aaaaaabcddeeghimnnnoorssty
-       143 0* 0.05885% (98.053% 0.045% 1.902%)   can language be                                                                                                              ----------aaaaaacddeghimnnnoorssty
-       144 0* 0.04635% (98.054% 0.045% 1.902%)  say                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
-       145 0* 0.04615% (98.094% 0.045% 1.861%)   let me be                                                                                                                    ----------aaaaaaaaaccddggghinnnnnoorssuy
-       146 0* 0.05029% (98.099% 0.045% 1.856%)   let me be sad                                                                                                                ----------aaaaaaaaccdggghinnnnnoorsuy
-       147 0* 0.15930% (98.100% 0.045% 1.855%)   let me be sad again                                                                                                          ----------aaaaaaccdgghnnnnoorsuy
-       148 0* 0.09802% (98.100% 0.045% 1.855%)   let me be sad and                                                                                                            ----------aaaaaaaccggghinnnnoorsuy
-       149 0* 0.04535% (98.101% 0.045% 1.854%)   mind the analogy because                                                                                                     ----------aaaaaacdggnnnors
-       150 0* 0.04524% (98.101% 0.045% 1.854%)  said a man                                                                                                                    ----------aaaaaabccdeeeggghlnnnnoorstuy
-       151 0* 0.04493% (98.103% 0.045% 1.853%)   has an                                                                                                                       ----------aaaaaaabccddeeegggilmnnnnoorstuy
-       152 0* 0.92933% (98.104% 0.045% 1.851%)   has an analogy                                                                                                               ----------aaaaabccddeeeggimnnnorstu
-       153 0* 3.31384% (98.107% 0.045% 1.848%)   has an analogy been                                                                                                          ----------aaaaaccddeggimnnorstu
-       154 0* 7.49457% (98.108% 0.045% 1.847%)   has an analogy been more                                                                                                     ----------aaaaaccddgginnstu
-       155 0* 1.92339% (98.109% 0.045% 1.846%)   has an analogy been more personally                                                                                          aaaaaccddgginnstu
-       156 0* 1.65312% (98.109% 0.045% 1.846%)   has an analogy been so                                                                                                       ----------aaaaaccddeggimnnrtu
-       157 0* 19.35507% (98.110% 0.045% 1.845%)   has an analogy been so accurate                                                                                              ----------aaaddggimnn
-       158 0* 12.93632% (98.110% 0.045% 1.845%)   has an analogy been so accurate and                                                                                          ----------aadggimn
-       159 0* 50.56000% (98.110% 0.045% 1.845%)   has an analogy been so accurate and personally                                                                               aadggimn
+         0 0* 7.62598% (89.250%) (  3%) mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
+         1 0* 2.91773% (93.204%) (  3%)  mind                                                                                                                         ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
+         2 0* 0.80217% (94.724%) (  4%)  said                                                                                                                         ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
+         3 0* 0.68196% (94.924%) (  2%) mind you                                                                                                                      ----------aaaaaaaaabccdeeeggghlnnnnorsst
+         4 0* 0.62918% (95.016%) ( 10%)  said a                                                                                                                       ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
+         5 0* 0.44047% (95.118%) (  1%)  mentioned                                                                                                                    ----------aaaaaaaaabccdeggghlnnnorssuy
+         6 0* 0.43634% (95.140%) (  3%)  let                                                                                                                          ----------aaaaaaaaabccddeeggghimnnnnnoorssuy
+         7 0* 0.57684% (95.264%) (  2%)  let me                                                                                                                       ----------aaaaaaaaabccddeggghinnnnnoorssuy
+         8 0* 0.49196% (95.415%) (  2%)  let me hear                                                                                                                  ----------aaaaaaaabccddggginnnnnoossuy
+         9 0* 1.00667% (95.427%) (  1%)  let me hear you                                                                                                              ----------aaaaaaaabccddggginnnnnoss
+        10 0* 0.42431% (95.439%) ( 29%)  said a man                                                                                                                   ----------aaaaaabccdeeeggghlnnnnoorstuy
+        11 0* 0.37782% (95.454%) ( 19%)  again                                                                                                                        ----------aaaaaaabccddeeegghlmnnnnoorsstuy
+        12 0* 0.37674% (95.528%) ( 12%)  said a sad                                                                                                                   ----------aaaaaabcceeeggghlmnnnnnoortuy
+        13 0* 0.34293% (95.550%) (  1%) mentioned                                                                                                                     ----------aaaaaaaaabccdeggghlnnnorssuy
+        14 0* 0.34051% (95.567%) (  4%)  say                                                                                                                          ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
+        15 0* 0.29698% (95.811%) (  1%) mind the                                                                                                                      ----------aaaaaaaaabccdeeggglnnnnoorssuy
+        16 0* 0.76883% (95.846%) (  4%) mind the analogy                                                                                                              ----------aaaaaaabccdeeggnnnorssu
+        17 0* 0.33202% (95.849%) ( 10%) mind the language                                                                                                             ----------aaaaaaabccdegnnnoorssy
+        18 0* 0.28636% (95.850%) (  4%)  said a more                                                                                                                  ----------aaaaaaabccdeeggghlnnnnnostuy
+        19 0* 0.27502% (95.863%) (  2%)  the                                                                                                                          ----------aaaaaaaaabccddeegggilmnnnnnoorssuy
+        20 0* 1.15875% (95.926%) (  0%)  the less                                                                                                                     ----------aaaaaaaaabccddegggimnnnnnooruy
+        21 0* 0.30685% (96.081%) (  0%)  the less you                                                                                                                 ----------aaaaaaaaabccddegggimnnnnnor
+        22 0* 0.25897% (96.091%) (  2%)  did                                                                                                                          ----------aaaaaaaaabcceeeggghlmnnnnnoorsstuy
+        23 0* 0.24944% (96.279%) (  2%)  mind you                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnorsst
+        24 0* 0.22907% (96.312%) (  3%)  use                                                                                                                          ----------aaaaaaaaabccddeeggghilmnnnnnoorsty
+        25 0* 0.21882% (96.424%) (  5%)  has                                                                                                                          ----------aaaaaaaabccddeeegggilmnnnnnoorstuy
+        26 0* 0.33117% (96.515%) (  6%)  has anyone                                                                                                                   ----------aaaaaaabccddeegggilmnnnorstu
+        27 0* 0.64456% (96.526%) (  1%)  has anyone described                                                                                                         ----------aaaaaaacggglmnnnotu
+        28 0* 0.20923% (96.526%) (  1%)  let anyone                                                                                                                   ----------aaaaaaaabccddeggghimnnnorssu
+        29 0* 0.19348% (96.536%) (  3%)  buy                                                                                                                          ----------aaaaaaaaaccddeeeggghilmnnnnnoorsst
+        30 0* 0.23696% (96.612%) (  2%)  buy another                                                                                                                  ----------aaaaaaaaccddeegggilmnnnnoss
+        31 0* 0.19272% (96.618%) (  2%)  you                                                                                                                          ----------aaaaaaaaabccddeeeggghilmnnnnnorsst
+        32 0* 0.18661% (96.757%) (  3%)  said a sentence                                                                                                              ----------aaaaaaabcdggghlmnnnooruy
+        33 0* 0.18022% (96.758%) (  4%)  said anyone                                                                                                                  ----------aaaaaaabccdeeggghlmnnnorstu
+        34 0* 0.17593% (96.763%) (  3%)  use analogies                                                                                                                ----------aaaaaaabccddegghmnnnnorty
+        35 0* 0.15989% (96.764%) (  4%)  in                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnoorsstuy
+        36 0* 0.17079% (96.792%) (  9%)  in a                                                                                                                         ----------aaaaaaaabccddeeeggghlmnnnnoorsstuy
+        37 0* 0.15832% (96.908%) (  1%)  use the                                                                                                                      ----------aaaaaaaaabccddegggilmnnnnnoorsy
+        38 0* 0.15178% (96.942%) (  3%)  use the analogy                                                                                                              ----------aaaaaaabccddeggimnnnnors
+        39 0* 0.15178% (96.943%) (  7%)  in a thousand                                                                                                                ----------aaaaaaabccdeeeggglmnnnorsy
+        40 0* 1.11785% (96.944%) (  3%)  in a thousand years                                                                                                          ----------aaaaaabccdeeggglmnnno
+        41 0* 0.15022% (96.945%) (  3%)  do                                                                                                                           ----------aaaaaaaaabccdeeeggghilmnnnnnorsstuy
+        42 0* 0.14824% (97.096%) (  0%)  say something                                                                                                                ----------aaaaaaaabccddeegglnnnnoru
+        43 0* 0.14194% (97.098%) (  4%)  heard                                                                                                                        ----------aaaaaaaabccdeegggilmnnnnnoosstuy
+        44 0* 0.14080% (97.132%) (  1%) mindless                                                                                                                      ----------aaaaaaaaabccdeeggghnnnnoortuy
+        45 0* 0.13787% (97.144%) (  1%)  mind the                                                                                                                     ----------aaaaaaaaabccdeeggglnnnnoorssuy
+        46 0* 0.55674% (97.160%) (  4%)  mind the analogy                                                                                                             ----------aaaaaaabccdeeggnnnorssu
+        47 0* 0.13937% (97.162%) ( 10%)  mind the language                                                                                                            ----------aaaaaaabccdegnnnoorssy
+        48 0* 0.13238% (97.163%) (  0%)  let me hear you diss                                                                                                         ----------aaaaaaaabccdgggnnnnno
+        49 0* 0.13170% (97.163%) (  6%)  are                                                                                                                          ----------aaaaaaaabccddeeggghilmnnnnnoosstuy
+        50 0* 0.17567% (97.193%) (  1%)  are they                                                                                                                     ----------aaaaaaaabccddegggilmnnnnnoossu
+        51 0* 0.12421% (97.214%) (  2%)  is                                                                                                                           ----------aaaaaaaaabccddeeeggghlmnnnnnoorstuy
+        52 0* 0.11608% (97.310%) ( 17%)  can                                                                                                                          ----------aaaaaaaabcddeeeggghilmnnnnoorsstuy
+        53 0* 0.11566% (97.344%) ( 21%)  are languages                                                                                                                ----------aaaaaabccddeghimnnnnoosty
+        54 0* 0.11524% (97.344%) (  3%)  has anyone been                                                                                                              ----------aaaaaaaccddgggilmnnorstu
+        55 0* 0.11255% (97.345%) (  4%)  under                                                                                                                        ----------aaaaaaaaabccdeeggghilmnnnnoossty
+        56 0* 0.27762% (97.360%) (  6%)  under any                                                                                                                    ----------aaaaaaaabccdeeggghilmnnnoosst
+        57 0* 0.10997% (97.380%) ( 19%) again                                                                                                                         ----------aaaaaaabccddeeegghlmnnnnoorsstuy
+        58 0* 0.10864% (97.402%) (  2%) the                                                                                                                           ----------aaaaaaaaabccddeegggilmnnnnnoorssuy
+        59 0* 0.35073% (97.444%) (  0%) the less                                                                                                                      ----------aaaaaaaaabccddegggimnnnnnooruy
+        60 0* 0.10524% (97.492%) (  1%)  use this                                                                                                                     ----------aaaaaaaaabccddeeggglmnnnnnoory
+        61 0* 2.35499% (97.496%) (  2%)  use this analogy                                                                                                             ----------aaaaaaabccddeeggmnnnnor
+        62 0* 0.12334% (97.507%) (  1%)  use this analogy on                                                                                                          ----------aaaaaaabccddeeggmnnnr
+        63 0* 0.31672% (97.507%) (  1%)  use this analogy on me                                                                                                       ----------aaaaaaabccddeggnnnr
+        64 0* 0.10265% (97.507%) (  8%)  had                                                                                                                          ----------aaaaaaaabccdeeegggilmnnnnnoorsstuy
+        65 0* 0.10121% (97.538%) ( 11%)  has anyone made                                                                                                              ----------aaaaaabccdegggilnnnorstu
+        66 0* 0.09908% (97.538%) (  3%)  are you                                                                                                                      ----------aaaaaaaabccddeeggghilmnnnnnosst
+        67 0* 0.20977% (97.552%) (  1%)  are you going                                                                                                                ----------aaaaaaaabccddeeghlmnnnnsst
+        68 0* 0.09687% (97.556%) (  2%)  did anyone                                                                                                                   ----------aaaaaaaabcceeggghlmnnnorsstu
+        69 0* 0.09510% (97.561%) (  5%)  has anyone said                                                                                                              ----------aaaaaabccdeeggglmnnnortu
+        70 0* 0.09156% (97.561%) (  1%)  mention                                                                                                                      ----------aaaaaaaaabccddeeggghlnnnorssuy
+        71 0* 0.08996% (97.574%) (  5%) mind about                                                                                                                    ----------aaaaaaaaccdeeeggghlnnnnorssy
+        72 0* 0.08914% (97.578%) (  2%)  in my                                                                                                                        ----------aaaaaaaaabccddeeeggghlnnnnoorsstu
+        73 0* 0.08898% (97.627%) (  6%)  because                                                                                                                      ----------aaaaaaaacddeggghilmnnnnnoorsty
+        74 0* 0.08837% (97.635%) ( 13%)  gonna                                                                                                                        ----------aaaaaaaabccddeeegghilmnnnorsstuy
+        75 0* 0.08771% (97.649%) (  0%)  described                                                                                                                    ----------aaaaaaaaaceggghlmnnnnnoostuy
+        76 0* 0.08751% (97.651%) (  4%) said                                                                                                                          ----------aaaaaaaabccdeeeggghlmnnnnnoorstuy
+        77 0* 0.08678% (97.674%) (  3%)  said such                                                                                                                    ----------aaaaaaaabcdeeeggglmnnnnnoorty
+        78 0* 0.08624% (97.677%) (  1%)  listen                                                                                                                       ----------aaaaaaaaabccddeeggghmnnnnoorsuy
+        79 0* 0.08597% (97.697%) (  0%)  is there                                                                                                                     ----------aaaaaaaaabccddeggglmnnnnnoosuy
+        80 0* 0.08592% (97.703%) (  1%)  has anyone been so                                                                                                           ----------aaaaaaaccddgggilmnnrtu
+        81 0* 0.08588% (97.703%) ( 10%)  use the analogy again                                                                                                        ----------aaaaabccddegmnnnors
+        82 0* 0.08535% (97.703%) (  1%)  did you                                                                                                                      ----------aaaaaaaaabcceeeggghlmnnnnnorsst
+        83 0* 0.08509% (97.721%) (  5%) mind the analogy because                                                                                                      ----------aaaaaacdggnnnors
+        84 0* 0.08451% (97.721%) (  8%)  said such a                                                                                                                  ----------aaaaaaabcdeeeggglmnnnnnoorty
+        85 0* 0.08322% (97.724%) (  2%)  get                                                                                                                          ----------aaaaaaaaabccddeegghilmnnnnnoorssuy
+        86 0* 0.08151% (97.771%) ( 30%)  abandon                                                                                                                      ----------aaaaaaaccdeeeggghilmnnnorsstuy
+        87 0* 0.08128% (97.774%) ( 18%)  had a                                                                                                                        ----------aaaaaaabccdeeegggilmnnnnnoorsstuy
+        88 0* 0.08014% (97.794%) ( 13%)  has a                                                                                                                        ----------aaaaaaabccddeeegggilmnnnnnoorstuy
+        89 0* 0.10927% (97.815%) ( 57%)  has a language                                                                                                               ----------aaaaabccddeegimnnnnoorsty
+        90 0* 0.23311% (97.815%) ( 42%)  has a language been                                                                                                          ----------aaaaaccddgimnnnoorsty
+        91 0* 0.17961% (97.816%) ( 26%)  has a language been so                                                                                                       ----------aaaaaccddgimnnnorty
+        92 0* 0.10442% (97.816%) ( 26%)  has a language been so personally                                                                                            aaaaaccddgimnnnorty
+        93 0* 0.07920% (97.816%) (  1%)  describe                                                                                                                     ----------aaaaaaaaacdeggghlmnnnnnoostuy
+        94 0* 0.07915% (97.818%) (  1%)  say the                                                                                                                      ----------aaaaaaaabccddeegggilmnnnnnoorsu
+        95 0* 0.07899% (97.835%) (  2%)  describe languages                                                                                                           ----------aaaaaaacdghmnnnnooty
+        96 0* 0.07859% (97.835%) ( 28%)  said a sad man                                                                                                               ----------aaaaabcceeeggghlnnnnoortuy
+        97 0* 0.07825% (97.835%) ( 25%)  has anyone made a                                                                                                            ----------aaaaabccdegggilnnnorstu
+        98 0* 0.07700% (97.835%) (  3%) mind because                                                                                                                  ----------aaaaaaaacdeggghlnnnnoorsty
+        99 0* 0.07620% (97.837%) (  1%)  has someone                                                                                                                  ----------aaaaaaaabccddegggilnnnnrtuy
+       100 0* 0.07613% (97.839%) (  7%)  are you gonna                                                                                                                ----------aaaaaaabccddeegghilmnnnsst
+       101 0* 0.07478% (97.840%) (  0%)  describe my                                                                                                                  ----------aaaaaaaaacdeggghlnnnnnoostu
+       102 0* 1.96978% (97.842%) (  1%)  describe my languages                                                                                                        ----------aaaaaaacdghnnnnoot
+       103 0* 0.41011% (97.842%) (  1%)  describe my languages to                                                                                                     ----------aaaaaaacdghnnnno
+       104 0* 0.14647% (97.842%) (  2%)  describe my language                                                                                                         ----------aaaaaaacdghnnnnoost
+       105 0* 0.08382% (97.843%) (  3%)  describe my language as                                                                                                      ----------aaaaaacdghnnnnoot
+       106 0* 0.07471% (97.843%) ( 10%) said a                                                                                                                        ----------aaaaaaabccdeeeggghlmnnnnnoorstuy
+       107 0* 0.07426% (97.855%) (  6%)  buy a                                                                                                                        ----------aaaaaaaaccddeeeggghilmnnnnnoorsst
+       108 0* 0.07325% (97.888%) (  1%)  buy another one                                                                                                              ----------aaaaaaaaccddegggilmnnnss
+       109 0* 0.07206% (97.889%) ( 53%)  has a language been so personally and                                                                                        aaaaccdgimnnorty
+       110 0* 0.07131% (97.889%) (  0%)  buy something                                                                                                                ----------aaaaaaaaaccddeegglnnnnors
+       111 0* 0.07030% (97.889%) (  2%)  said anyone about                                                                                                            ----------aaaaaaccdeeggghlmnnnrs
+       112 0* 0.06518% (97.890%) (  0%)  are they going                                                                                                               ----------aaaaaaaabccddeglmnnnnossu
+       113 0* 0.06505% (97.890%) (  2%)  do anything                                                                                                                  ----------aaaaaaaabccdeeegglmnnnorssu
+       114 0* 0.06475% (97.892%) (  1%) mind your                                                                                                                     ----------aaaaaaaaabccdeeeggghlnnnnosst
+       115 0* 0.06459% (97.898%) ( 32%)  has language                                                                                                                 ----------aaaaaabccddeegimnnnnoorsty
+       116 0* 0.18018% (97.898%) ( 20%)  has language been                                                                                                            ----------aaaaaaccddgimnnnoorsty
+       117 0* 0.17757% (97.898%) ( 12%)  has language been so                                                                                                         ----------aaaaaaccddgimnnnorty
+       118 0* 0.19892% (97.898%) ( 12%)  has language been so personally                                                                                              aaaaaaccddgimnnnorty
+       119 0* 0.08795% (97.898%) ( 27%)  has language been so personally and                                                                                          aaaaaccdgimnnorty
+       120 0* 0.06332% (97.898%) (  3%)  go                                                                                                                           ----------aaaaaaaaabccddeeegghilmnnnnnorsstuy
+       121 0* 0.22167% (97.918%) (  2%)  go home                                                                                                                      ----------aaaaaaaaabccddeeggilnnnnnrsstuy
+       122 0* 0.33894% (97.949%) (  2%)  go home sad                                                                                                                  ----------aaaaaaaabccdeeggilnnnnnrstuy
+       123 0* 0.77638% (97.957%) (  8%)  go home sad and                                                                                                              ----------aaaaaaabcceeggilnnnnrstuy
+       124 0* 0.54567% (97.964%) ( 10%)  go home sad again                                                                                                            ----------aaaaaabccdeeglnnnnrstuy
+       125 0* 0.06180% (97.966%) (  2%)  seen                                                                                                                         ----------aaaaaaaaabccddeggghilmnnnnoorstuy
+       126 0* 0.10105% (97.978%) (  0%)  seen anything                                                                                                                ----------aaaaaaaabccddegglmnnoorsu
+       127 0* 0.12028% (97.978%) (  0%)  seen anything more                                                                                                           ----------aaaaaaaabccddgglnnosu
+       128 0* 0.09433% (97.978%) (  0%)  seen anything so                                                                                                             ----------aaaaaaaabccddegglmnnoru
+       129 0* 0.05914% (97.979%) (  3%)  should                                                                                                                       ----------aaaaaaaaabccdeeegggimnnnnnorsty
+       130 0* 0.05866% (97.990%) (  1%)  do you                                                                                                                       ----------aaaaaaaaabccdeeeggghilmnnnnnrsst
+       131 0* 0.05824% (98.008%) (  1%)  use analogies to                                                                                                             ----------aaaaaaabccddegghmnnnnry
+       132 0* 0.05814% (98.008%) (  1%)  let me be                                                                                                                    ----------aaaaaaaaaccddggghinnnnnoorssuy
+       133 0* 0.05806% (98.013%) (  1%)  let me go                                                                                                                    ----------aaaaaaaaabccddegghinnnnnorssuy
+       134 0* 0.05766% (98.021%) (  1%)  buy another one again                                                                                                        ----------aaaaaaccddegglmnnss
+       135 0* 0.05669% (98.021%) (  2%)  has anyone described a                                                                                                       ----------aaaaaacggglmnnnotu
+       136 0* 0.05642% (98.021%) (  2%)  let me be sad                                                                                                                ----------aaaaaaaaccdggghinnnnnoorsuy
+       137 0* 0.13323% (98.021%) (  7%)  let me be sad again                                                                                                          ----------aaaaaaccdgghnnnnoorsuy
+       138 0* 0.10113% (98.022%) (  5%)  let me be sad and                                                                                                            ----------aaaaaaaccggghinnnnoorsuy
+       139 0* 0.05630% (98.022%) (  4%) say                                                                                                                           ----------aaaaaaaabccddeeeggghilmnnnnnoorstu
+       140 0* 0.05628% (98.063%) ( 10%)  you can                                                                                                                      ----------aaaaaaaabcddeeeggghilmnnnnorsst
+       141 0* 0.05569% (98.071%) (  0%) the less you                                                                                                                  ----------aaaaaaaaabccddegggimnnnnnor
+       142 0* 0.05529% (98.073%) (  2%)  described languages                                                                                                          ----------aaaaaaacghmnnnnooty
+       143 0* 0.05512% (98.073%) ( 10%)  change                                                                                                                       ----------aaaaaaaabcddeeggilmnnnnoorsstuy
+       144 0* 0.05465% (98.077%) (  3%) mind has                                                                                                                      ----------aaaaaaaabccdeeeggglnnnnoorstuy
+       145 0* 0.05405% (98.082%) ( 72%)  has a language made                                                                                                          ----------aaaabccdeginnnnoorsty
+       146 0* 0.05308% (98.083%) ( 10%)  can you                                                                                                                      ----------aaaaaaaabcddeeeggghilmnnnnorsst
+       147 0* 0.05166% (98.089%) (  7%)  go home again                                                                                                                ----------aaaaaaabccddeeglnnnnrsstuy
+       148 0* 0.05136% (98.090%) (  2%)  said the                                                                                                                     ----------aaaaaaaabccdeeggglmnnnnnoorsuy
+       149 0* 0.05016% (98.094%) ( 13%)  a                                                                                                                            ----------aaaaaaaabccddeeeggghilmnnnnnoorsstuy
+       150 0* 0.05007% (98.151%) (  6%)  go home sad again because                                                                                                    ----------aaaaacdglnnnnrty
+       151 0* 0.04966% (98.151%) (  3%)  describe language                                                                                                            ----------aaaaaaacdghmnnnnoosty
+       152 0* 0.04958% (98.151%) (  1%)  buy them                                                                                                                     ----------aaaaaaaaaccddeegggilnnnnnoorss
+       153 0* 0.12136% (98.156%) (  4%)  buy them again                                                                                                               ----------aaaaaaaccddeegglnnnnoorss
+       154 0* 0.04941% (98.158%) ( 38%)  said a man as                                                                                                                ----------aaaaabccdeeeggghlnnnnoortuy
+       155 0* 0.07623% (98.158%) ( 23%)  said a man as he                                                                                                             ----------aaaaabccdeeggglnnnnoortuy
+       156 0* 0.04874% (98.158%) (  1%)  buy the                                                                                                                      ----------aaaaaaaaaccddeegggilmnnnnnoorss
+       157 0* 0.04853% (98.168%) (  4%) said a more                                                                                                                   ----------aaaaaaabccdeeggghlnnnnnostuy
+       158 0* 0.04798% (98.170%) ( 20%)  said language                                                                                                                ----------aaaaaabccdeeghmnnnnoorsty
+       159 0* 0.04747% (98.170%) (  3%)  are they gonna                                                                                                               ----------aaaaaaabccddeggilmnnnossu
+       160 0* 0.04728% (98.171%) (  2%)  is anyone                                                                                                                    ----------aaaaaaaabccddeeggghlmnnnorstu
+       161 0* 0.04711% (98.174%) ( 11%)  heard a                                                                                                                      ----------aaaaaaabccdeegggilmnnnnnoosstuy
+       162 0* 0.04698% (98.181%) ( 29%) said a man                                                                                                                    ----------aaaaaabccdeeeggghlnnnnoorstuy
+       163 0* 0.04684% (98.183%) (  3%) mind has been                                                                                                                 ----------aaaaaaaaccdeggglnnnoorstuy
+       164 0* 0.04662% (98.184%) (  0%) mind the second                                                                                                               ----------aaaaaaaaabceggglnnnorsuy
+       165 0* 0.08044% (98.184%) (  0%) mind the second one                                                                                                           ----------aaaaaaaaabcggglnnrsuy
+       166 0* 0.04555% (98.184%) (  4%)  said the man                                                                                                                 ----------aaaaaaabccdeeggglnnnnoorsuy
+       167 0* 0.04549% (98.185%) (  2%)  are they gonna be                                                                                                            ----------aaaaaaaccddggilmnnnossu
+       168 0* 0.04538% (98.186%) ( 11%)  buy again                                                                                                                    ----------aaaaaaaccddeeegghlmnnnnoorsst
+       169 0* 0.04534% (98.188%) (  2%)  buy action                                                                                                                   ----------aaaaaaaacddeeeggghlmnnnnorss
+       170 0* 0.04529% (98.191%) ( 14%)  has an                                                                                                                       ----------aaaaaaabccddeeegggilmnnnnoorstuy
+       171 0* 1.59973% (98.192%) ( 34%)  has an analogy                                                                                                               ----------aaaaabccddeeeggimnnnorstu
+       172 0* 3.95313% (98.195%) ( 27%)  has an analogy been                                                                                                          ----------aaaaaccddeggimnnorstu
+       173 0* 8.60889% (98.196%) ( 13%)  has an analogy been more                                                                                                     ----------aaaaaccddgginnstu
+       174 0* 2.06821% (98.198%) ( 12%)  has an analogy been so                                                                                                       ----------aaaaaccddeggimnnrtu
+       175 0* 22.56118% (98.198%) ( 48%)  has an analogy been so accurate                                                                                              ----------aaaddggimnn
+       176 0* 19.01587% (98.198%) ( 69%)  has an analogy been so accurate and                                                                                          ----------aadggimn
+       177 0* 56.17176% (98.198%) ( 69%)  has an analogy been so accurate and personally                                                                               aadggimn
