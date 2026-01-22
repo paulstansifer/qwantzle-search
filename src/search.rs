@@ -732,7 +732,7 @@ const TOK_BUFFER: u32 = 35;
 // Performance seems sensitive to this; maybe we need a better criterion?
 const FF_MIN_P: f32 = 0.25;
 
-// 0.999 ^ 20 is around  0.98, so there's a 2% chance this loses a critical token.
+// 0.999 ^ 20 is around  0.98, so there's a 2% chance that 0.999 would lose a critical token.
 // In practice, it seems like we need to be more careful than that.
 const TOK_TOP_P: f32 = 0.9996;
 
@@ -752,7 +752,7 @@ const TOK_TOP_P: f32 = 0.9996;
 // TODO: raising this too high seems to mean that we take *longer* to get to the point we realize
 // that we've discarded the critical token that we took to solve it originally. Why is that?
 const MIN_AVG_P_EARLY: f64 = 0.002;
-const MIN_AVG_P_LATE: f64 = 0.03;
+const MIN_AVG_P_LATE: f64 = 0.01;
 
 // TODO: remove most of these
 thread_local! {

@@ -8,10 +8,9 @@ Step        328 (remaining mass 1.544%): Next token is ' about', score is 0.4003
 Step        329 (remaining mass 1.544%): Next token is ' the', score is 0.54172% (8.991%, 67.270%, 28)
 Step        330 (remaining mass 1.544%): Next token is ' sex', score is 0.17630% (1.426%, 66.858%, 31)
 Step        393 (remaining mass 1.393%): Next token is ',', score is 0.16071% (28.160%, 71.458%, 32)
-Step        437 (remaining mass 1.282%): Next token is ' however', score is 71.01618% (3.046%, 100.000%, 39)
-' would still like to hear about the sex, however' (71.02%)
-Search successful after 438 steps. Deepest node accessed: 0
-Search time: 17s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 28ms  Truncate: 0ms.
+' would still like to hear about the sex however' (2.33%)
+Search successful after 394 steps. Deepest node accessed: 0
+Search time: 14s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 27ms  Truncate: 0ms.
 
          0 0* 29.38199% (87.439%) ( 67%)  should                                                                                                                       -------aabeeeehiikllloorsttttuwx,!
          1 0* 14.30659% (88.585%) ( 87%)  would                                                                                                                        -------aabeeeehhiikllloorssttttux,!
@@ -403,51 +402,7 @@ Search time: 17s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predi
        387 0* 0.18132% (98.549%) ( 44%)  like that last                                                                                                               -------bdeeehillooorstuuwx,!
        388 0* 0.17992% (98.550%) ( 78%)  like how that                                                                                                                -------abdeeeillloorssttuux,!
        389 0* 0.17869% (98.551%) ( 92%)  still owe                                                                                                                    -------aabdeeehhiklloorstttuux,!
-       390 0* 0.17728% (98.552%) ( 74%)  will still be                                                                                                                -------aadeeehhkooorstttuux,!
+       390 0* 0.17728% (98.553%) ( 74%)  will still be                                                                                                                -------aadeeehhkooorstttuux,!
        391 0* 0.17677% (98.553%) ( 71%)  used to tell                                                                                                                 -------aabeehhiiklloorsttuwx,!
        392 0* 0.17641% (98.554%) ( 71%)  hear it                                                                                                                      -------abdeeehikllllooosstttuuwx,!
        393 0* 0.17630% (98.561%) ( 67%)  would still like to hear about the sex                                                                                       -------,!
-       394 0* 0.17586% (98.561%) ( 77%)  should let                                                                                                                   -------aabeeehiiklloorstttuwx,!
-       395 0* 0.17551% (98.562%) ( 66%)  tried to use                                                                                                                 -------aabeehhiklllloosttuwx,!
-       396 0* 0.17488% (98.563%) ( 88%)  still wrote                                                                                                                  -------aabdeeehhiklloosttuux,!
-       397 0* 0.24564% (98.563%) ( 55%)  still wrote this                                                                                                             -------aabdeeehkllootuux,!
-       398 0* 0.17331% (98.563%) ( 72%)  should talk!                                                                                                                 -------abeeeehiilloorstttuwx,
-       399 0* 0.17315% (98.564%) ( 80%)  read it                                                                                                                      -------abeeehhikllllooosstttuuwx,!
-       400 0* 0.17282% (98.568%) ( 28%)  hate the                                                                                                                     -------abdeeiikllllooorssttuuwx,!
-       401 0* 0.17281% (98.576%) ( 49%)  had a lot                                                                                                                    -------beeeehiikllloorsstttuuwx,!
-       402 0* 0.17234% (98.582%) ( 58%)  wrote this so                                                                                                                -------aabdeeehikllllottuux,!
-       403 0* 0.17209% (98.583%) ( 25%)  lied about the last                                                                                                          -------eehiklloorstuwx,!
-       404 0* 0.17108% (98.583%) ( 73%)  would like to use that                                                                                                       -------abeehillorstx,!
-       405 0* 0.17043% (98.583%) ( 79%)  would too                                                                                                                    -------aabeeeehhiiklllrsstttux,!
-       406 0* 0.17021% (98.583%) ( 73%)  use                                                                                                                          -------aabdeeehhiikllllooorsttttuwx,!
-       407 0* 0.21694% (98.592%) ( 46%)  use the                                                                                                                      -------aabdeehiikllllooorstttuwx,!
-       408 0* 0.86360% (98.599%) ( 55%)  use the word                                                                                                                 -------aabeehiiklllloostttux,!
-       409 0* 0.17015% (98.606%) ( 73%)  said,                                                                                                                        -------abeeeehhikllllooorsttttuuwx!
-       410 0* 0.16976% (98.616%) ( 87%)  looked at their                                                                                                              -------abeehilllossttuuwx,!
-       411 0* 0.16889% (98.617%) ( 68%)  tried to show                                                                                                                -------aabeeehikllllosttuux,!
-       412 0* 0.16887% (98.617%) ( 83%)  will also be                                                                                                                 -------adeeehhikloorsttttuux,!
-       413 0* 0.16829% (98.618%) ( 42%)  saw this                                                                                                                     -------abdeeeehikllllooortttuux,!
-       414 0* 0.16824% (98.625%) ( 19%)  wrote that bit                                                                                                               -------adeeehiklllloossuux,!
-       415 0* 0.16819% (98.626%) ( 69%)  will be the                                                                                                                  -------aadeehikllooorsstttuux,!
-       416 0* 0.16781% (98.628%) ( 43%)  hate the word                                                                                                                -------abeeiiklllloossttuux,!
-       417 0* 0.16762% (98.629%) ( 26%)  hate this web                                                                                                                -------adeeikllllooorsttuux,!
-       418 0* 0.16728% (98.630%) ( 75%)  like the word                                                                                                                -------aabeehillloosstttuux,!
-       419 0* 0.16713% (98.631%) ( 13%)  should tell that to                                                                                                          -------abeeeiiklorsuwx,!
-       420 0* 0.16691% (98.631%) ( 90%)  would be,                                                                                                                    -------aaeeehhiikllloorssttttux!
-       421 0* 0.16646% (98.633%) ( 88%)  would be!                                                                                                                    -------aaeeehhiikllloorssttttux,
-       422 0* 0.16608% (98.635%) ( 66%)  bet it was                                                                                                                   -------adeeehhikllllooorsttuux,!
-       423 0* 0.16525% (98.637%) ( 90%)  kid                                                                                                                          -------aabeeeehhillllooorssttttuuwx,!
-       424 0* 0.16442% (98.644%) ( 28%)  read that                                                                                                                    -------beeehiikllllooossttuuwx,!
-       425 0* 0.16398% (98.649%) ( 52%)  lied about that,                                                                                                             -------eeehikllloorsstuwx!
-       426 0* 0.16360% (98.649%) ( 83%)  also wrote                                                                                                                   -------abdeeehhiiklllostttuux,!
-       427 0* 0.18801% (98.650%) ( 62%)  also wrote this                                                                                                              -------abdeeehiklllottuux,!
-       428 0* 0.16347% (98.650%) ( 53%)  was better                                                                                                                   -------adeehhiikllllooosttuux,!
-       429 0* 0.16323% (98.652%) ( 72%)  wrote this but                                                                                                               -------aadeeehiklllloostux,!
-       430 0* 0.16304% (98.652%) ( 67%)  will see                                                                                                                     -------aabdeehhikllooorsttttuux,!
-       431 0* 0.16274% (98.657%) ( 62%)  should write that,                                                                                                           -------abeeeikllloostux!
-       432 0* 0.16210% (98.657%) ( 34%)  had this                                                                                                                     -------abeeeeikllllooorstttuuwx,!
-       433 0* 0.16166% (98.665%) ( 63%)  kissed                                                                                                                       -------aabeeehhillllooorttttuuwx,!
-       434 0* 0.16136% (98.670%) ( 75%)  would start                                                                                                                  -------abeeeehhiikllloosttux,!
-       435 0* 0.16136% (98.671%) ( 50%)  used to be like this!                                                                                                        -------aaehllloorttuwx,
-       436 0* 0.16101% (98.671%) ( 83%)  should like                                                                                                                  -------aabeeehilloorsttttuwx,!
-       437 0* 0.16071% (98.672%) ( 71%)  would still like to hear about the sex,                                                                                      -------!

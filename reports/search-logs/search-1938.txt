@@ -10,7 +10,7 @@ Step        176 (remaining mass 1.757%): Next token is ' personally', score is 5
 Step        177 (remaining mass 1.757%): Next token is ' damaging', score is 133684.72337% (3.483%, 100.000%, 47)
 ' has an analogy been so accurate and personally damaging' (133684.72%)
 Search successful after 178 steps. Deepest node accessed: 0
-Search time: 7s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 30ms  Truncate: 0ms.
+Search time: 7s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 27ms  Truncate: 0ms.
 
          0 0* 7.62598% (89.250%) (  3%) mind                                                                                                                          ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy
          1 0* 2.91773% (93.204%) (  3%)  mind                                                                                                                         ----------aaaaaaaaabccdeeeggghlnnnnoorsstuy

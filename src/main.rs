@@ -378,6 +378,7 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
     // ];
 
     let excused_strips = [
+        1319, // I think the ALL CAPS and the weird phrasing make this really hard.
         1575, // Gemma1 at least has no hope of getting this one
         2199, // Ought to get it, though all-caps makes it harder (has trouble with "BUSTING")
         1833, // Punchline has digits
@@ -387,9 +388,9 @@ fn calibrate_costs(strips: &Vec<Strip>, words: &Vec<String>, model: &LlamaModel,
         886,  // "JODIE FOSTER" is in all caps and she's not mentioned or aluded to in the leadup
         2434, // Weird structure; I don't expect an LLM to figure this one out.
         2255, // "dillweed" as the second word is basically unguessable.
-        1258, // TEMPORARY; WE SHOULD GET THIS
-        1827, // TEMPORARY; WE SHOULD GET THIS
-        1004, // TEMPORARY; WE SHOULD GET THIS
+              // 1258, // TEMPORARY; WE SHOULD GET THIS
+              // 1827, // TEMPORARY; WE SHOULD GET THIS
+              // 1004, // TEMPORARY; WE SHOULD GET THIS
     ];
 
     let exemplars: Vec<&Strip> = round_1_exemplars
