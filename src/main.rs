@@ -632,15 +632,16 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
             .unwrap()
     }
 
-    use llama_cpp_2::sampling::params::LlamaSamplerChainParams;
+    use llama_cpp_2::sampling::LlamaSampler;
 
     // This is suuuuuper ad-hoc.
-    let mut sampler = llama_cpp_2::sampling::LlamaSampler::new(
-        LlamaSamplerChainParams::default().with_no_perf(true),
-    )
-    .unwrap()
-    .add_penalties(100, 9999, 9998, 150, 1.05, 1.05, 1.05, true, false)
-    .add_mirostat_v2(0, 0.1, 5.0);
+    let mut sampler = LlamaSampler::chain(
+        [
+            // TODO: maybe add LLamaSampler::penalties(). I haven't tested this since I changed it for the new version.
+            LlamaSampler::mirostat_v2(0, 0.1, 5.0),
+        ],
+        /*no_perf*/ true,
+    );
 
     for i in 0..max_new_toks {
         ctx.decode(&mut batch).expect("failed to eval");
@@ -653,9 +654,7 @@ fn complete(prefix: &str, max_new_toks: u32, model: &LlamaModel) {
             break;
         }
 
-        let output_str = model
-            .token_to_str(token, llama_cpp_2::model::Special::Tokenize)
-            .unwrap();
+        let output_str = tok_to_str(token, model);
 
         print!("{output_str}");
         std::io::Write::flush(&mut std::io::stdout()).unwrap();

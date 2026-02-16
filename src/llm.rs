@@ -10,6 +10,7 @@ use llama_cpp_2::llama_batch::LlamaBatch;
 use llama_cpp_2::model::AddBos;
 use llama_cpp_2::model::{params::LlamaModelParams, LlamaModel};
 use llama_cpp_2::token::LlamaToken;
+use llama_cpp_2::{send_logs_to_tracing, LogOptions};
 use serde::{Deserialize, Serialize};
 
 lazy_static! {
@@ -17,10 +18,7 @@ lazy_static! {
 }
 
 pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> LlamaModel {
-    let gag_or = gag::Gag::stderr();
-    if let Err(e) = gag_or {
-        println!("Trouble silencing stderr: {e}");
-    }
+    send_logs_to_tracing(LogOptions::default().with_logs_enabled(false));
     let params: LlamaModelParams =
         LlamaModelParams::default().with_n_gpu_layers(if on_gpu { 1000000 } else { 0 });
     // TODO: wish we could set the defrag threshold. Manually defrag?
@@ -29,15 +27,22 @@ pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> Llama
 }
 
 pub fn tok_to_str(t: LlamaToken, model: &LlamaModel) -> String {
+    let mut dec = encoding_rs::UTF_8.new_decoder();
     model
-        .token_to_str(t, llama_cpp_2::model::Special::Plaintext)
-        .unwrap_or("<???>".to_string())
+        .token_to_piece(t, &mut dec, /*special*/ false, /*lstrip*/ None)
+        .unwrap_or_else(|e| e.to_string())
 }
 
 pub fn toks_to_str(t: &[LlamaToken], model: &LlamaModel) -> String {
-    model
-        .tokens_to_str(t, llama_cpp_2::model::Special::Tokenize)
-        .expect("stringifying tokens")
+    let mut dec = encoding_rs::UTF_8.new_decoder();
+
+    let mut res = String::new();
+    for tok in t {
+        res += &model
+            .token_to_piece(*tok, &mut dec, /*special*/ false, /*lstrip*/ None)
+            .unwrap();
+    }
+    return res;
 }
 
 pub fn str_to_tokens(s: &str, model: &LlamaModel) -> Vec<LlamaToken> {
@@ -83,11 +88,11 @@ pub struct SessionTimers {
 
 impl<'a> Session<'a> {
     pub fn new(model: &'a LlamaModel, toks: u32) -> Session<'a> {
-        let params: LlamaContextParams =
-            LlamaContextParams::default().with_n_ctx(std::num::NonZero::new(toks));
+        let params: LlamaContextParams = LlamaContextParams::default()
+            .with_n_ctx(std::num::NonZero::new(toks * 2))
+            .with_n_seq_max(2);
 
         let sess_ctx = {
-            let _stderr_gag = gag::Gag::stderr().unwrap();
             model
                 .new_context(&BACKEND, params)
                 .expect("Unable to build context")
@@ -210,6 +215,10 @@ impl<'a> Session<'a> {
         let before_advance = std::time::Instant::now();
         let mut batch = LlamaBatch::new(toks.len() as usize, 2);
 
+        // I think this actually does the same thing as the below; try it!
+        // batch.add_sequence(toks, OTHER_SEQ_ID, false).unwrap();
+        // self.toks += toks.len();
+
         for (i, t) in toks.iter().enumerate() {
             batch
                 .add(*t, self.toks as i32, &seq_ids, i + 1 == toks.len())
@@ -224,7 +233,6 @@ impl<'a> Session<'a> {
 
         self.timers.advance_time += before_advance.elapsed().as_micros();
         {
-            //let _stderr_gag = gag::Gag::stderr().unwrap();
             let before_predict = std::time::Instant::now();
             self.ctx.decode(&mut batch).expect("predicting");
             self.timers.predict_time += before_predict.elapsed().as_micros();

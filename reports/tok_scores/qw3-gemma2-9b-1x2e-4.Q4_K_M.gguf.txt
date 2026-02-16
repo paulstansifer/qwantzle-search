@@ -1,0 +1,111 @@
+
+446:  Text: For we can always see and feel much that the people in old photos and newsreels
+T-Rex: I have...generations to see!
+Utahraptor: Oh man, I want in! Let's make a documentary about our lives!
+T-Rex: That's a great idea!
+Text: and gone.
+Text: -Robert
+                 Rosen       stone           ,           "           V      isions          of         the        Past           "           
+           T           -         Rex           (       punch        line          ):          We           '          ll        live     forever           !
+prb             0.143%      1.773%     45.332%     43.939%      5.894%     99.224%     91.813%     97.641%     99.566%     31.280%     91.420%     58.562%     99.990%     99.974%     20.218%     99.808%     99.998%     99.831%      5.701%     43.944%     77.321%      0.332%     65.925%     50.058%
+rln scr        38.079%     34.018%     41.521%     38.300%     41.721%     12.007%      2.959%      2.496%      0.371%      0.278%      0.208%      0.122%      0.182%      0.202%      0.169%      1.828%      4.907%     13.594%      5.229%     25.869%     65.404%     68.103%    100.000%    100.000%
+pfx scr         1.160%      0.196%      0.169%      0.110%      0.011%      0.086%      0.147%      0.579%      3.951%      2.056%      3.142%      3.088%      5.230%     25.894%      8.984%    150.012%   1646.676%   8133.823%   2024.604%   3083.441%  23786.490%   5815.458%56567836.811%131849524.940%
+tok ahd            107           8           1           0           2           0           0           0           0           1           0           0           0           0           1           0           0           0           1           0           0          31           0           0
+val ahd             12           2           1           0           1           0           0           0           0           1           0           0           0           0           1           0           0           0           0           0           0           0           0           0
+prb ahd         76.41%      76.54%      47.11%       0.00%      23.85%       0.00%       0.00%       0.00%       0.00%      57.06%       0.00%       0.00%       0.00%       0.00%      75.68%       0.00%       0.00%       0.00%       8.90%       0.00%       0.00%      84.16%       0.00%       0.00%
+min score: 0.0112%  optimistic cost: 6.24e2  average prob: 29.5%  overall_prob: 1.88e-11%  average tok time: 27584 
+524:  T-Rex: My sinister raccoon and cephalopod neighbours are having a sleep-over party. Okay! That's inn...r NEIGHBOURS.
+Narrator: THAT NIGHT:
+Off panel: COME TO OUR SLUMBER PARTY, NEIGHBOUR?
+T-Rex: I'm sorry, I - I think I'm busy that night!
+Off panel: YOU
+                   CAN       SLEEP          IN          MY        ROOM           ,           T           -         REX           .           
+         Off       panel           (       punch        line          ):           I        JUST        WANT          TO           T        ASTE         YOU
+prb             6.832%     12.787%     43.684%     12.327%      8.487%     31.938%     11.764%     98.971%     99.699%     42.694%     48.925%     19.633%     99.956%     20.887%     99.892%     99.992%     99.726%     21.131%      0.833%     11.094%     79.325%      0.429%     17.609%     10.427%
+rln scr         0.003%      0.008%      0.005%      0.005%      0.004%      0.004%      0.008%      0.019%      0.084%      0.096%      0.078%      0.247%      0.982%      0.851%     25.781%     75.186%     88.838%     69.728%     81.715%     86.100%     89.431%     86.914%     72.509%    100.000%
+pfx scr         6.997%      9.384%     10.493%      3.311%      1.842%      0.941%      0.177%      0.281%      1.149%      0.789%      0.633%      0.568%      7.867%      2.787%     81.147%   1592.233%   5489.092%   1737.441%    344.423%   1870.604%  13800.254%    194.533%   6987.393%  67623.023%
+tok ahd              1           1           0           2           1           0           2           0           0           0           0           1           0           1           0           0           0           0          19           0           0          35           1           1
+val ahd              0           0           0           1           0           0           0           0           0           0           0           1           0           1           0           0           0           0           3           0           0           2           0           0
+prb ahd         33.89%      24.01%       0.00%      55.31%      41.71%       0.00%      46.71%       0.00%       0.00%       0.00%       0.00%      78.25%       0.00%      78.95%       0.00%       0.00%       0.00%       0.00%      75.69%       0.00%       0.00%      84.68%      37.64%      70.46%
+min score: 0.1772%  optimistic cost: 9.60e1  average prob: 21.9%  overall_prob: 1.54e-14%  average tok time: 27670 
+533:  T-Rex: I know one thing that puts us (living people made out of meat) above machine intelligences.
+T...guing small points about them?
+T-Rex: Well, I -
+Narrator: EARLIER:
+Off panel: T-REX IF YOU TELL ANYONE ABOUT US THEN YOU WILL BE ELIMINATED
+T-Rex: But
+                  come          on           !         You        have          to       admit        that          we           '          re         the       super           i           -           
+         Off       panel           (       punch        line          ):           E           -         LIM           -         MIN           -         NAT           -          ED
+prb             0.013%     95.711%     44.479%      9.507%      4.075%     45.884%     24.104%     31.437%      9.016%     55.052%     87.825%      9.449%      0.226%      0.512%     65.175%     95.184%     90.363%     99.881%     18.789%     99.798%     99.974%     99.500%      0.114%     15.696%      2.523%     47.989%      0.059%     83.452%      0.065%     92.779%     91.917%
+rln scr         4.470%      4.119%      5.243%      1.817%      1.325%      0.137%      0.021%      0.005%      0.004%      0.008%      0.005%      0.004%      0.004%      0.001%      0.004%      0.003%      0.009%      0.030%      0.019%      1.174%      2.657%     17.690%     19.736%     44.040%     36.081%     60.908%     51.710%     77.152%     71.473%     73.587%    100.000%
+pfx scr         0.026%      0.063%      0.047%      0.016%      0.004%      0.005%      0.012%      0.024%      0.006%      0.005%      0.011%      0.004%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.001%      0.008%      0.051%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd            154           0           0           2           3           0           0           0           0           0           0           0          31          27           0           0           0           0           1           0           0           0          71           1           4           0           9           0          24           0           0
+val ahd             99           0           0           2           2           0           0           0           0           0           0           0           3           2           0           0           0           0           1           0           0           0           7           1           3           0           6           0           8           0           0
+prb ahd         98.13%       0.00%       0.00%      35.45%      70.41%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      87.15%      72.21%       0.00%       0.00%       0.00%       0.00%      81.04%       0.00%       0.00%       0.00%      88.10%      28.27%      64.61%       0.00%      99.21%       0.00%      98.45%       0.00%       0.00%
+min score: 0.0000%  optimistic cost: 8.71e7  average prob: 11.9%  overall_prob: 2.26e-27%  average tok time: 27217 
+743:  God: HEY T-REX HOW COME YOU ALWAYS SLEEP ON YOUR LEFT SIDE
+T-Rex: Because it rules?
+Narrator: COMICS...structed. I'll also use decades of ads to convince the public that this item is absolutely necessary to express true love.
+T-Rex (punchline): [thinks]
+                  Aren           '           t   analogies     usually         non           -     literal           ?          He           '           s     clearly         the         gem     diamond       trade           .
+prb             0.019%     99.477%     99.972%      0.000%      1.395%      0.013%     91.090%     15.801%     75.078%      0.088%     58.814%     98.289%      0.455%      0.140%      4.896%     60.877%     93.741%     23.149%
+rln scr        93.137%     92.921%     87.026%     88.981%     96.429%     86.378%     88.763%     89.909%     91.859%     86.200%     88.393%     87.285%     91.241%     88.120%     88.395%     84.789%    100.000%    100.000%
+pfx scr         0.252%      0.399%      0.587%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd            337           0           0        1764           9         260           0           0           0          25           0           0          36          59           1           0           0           0
+val ahd             85           0           0         792           4          76           0           0           0           0           0           0          10           9           1           0           0           0
+prb ahd         93.34%       0.00%       0.00%      99.38%      63.30%      95.72%       0.00%       0.00%       0.00%      96.96%       0.00%       0.00%      76.65%      86.11%      37.49%       0.00%       0.00%       0.00%
+min score: 0.0000%  optimistic cost: 5.78e9  average prob: 3.3%  overall_prob: 2.57e-25%  average tok time: 27200 
+1156:  Narrator: T-REX VISITS A GHOST TOWN.
+T-Rex: Attention, any ghosts that can hear me! I have one thing...It's okay, I guess. It's mostly just a bunch of crappy buildings!
+T-Rex: Don't even, Utahraptor!
+Off panel: Don't even what?
+T-Rex (punchline): Don't
+                  even           -         don           '           t        even        tell          me         you         don           '           t  appreciate         the       stark  aesthetics         and      beauty          of       decay
+prb            84.356%      0.616%      8.659%     99.869%     99.933%     83.452%      0.665%     82.391%     16.611%      9.642%     99.945%     99.976%      1.378%     39.912%      0.323%      0.046%      6.028%      0.771%     80.488%      6.129%
+rln scr        58.929%     65.096%     51.071%     49.109%     63.018%     80.023%     77.981%     80.283%     70.600%     42.008%     46.885%     53.023%     72.191%     63.973%     64.775%     58.701%     69.153%     75.595%     75.122%    100.000%
+pfx scr       655.969%      7.218%      1.974%      3.033%      6.306%     45.649%      1.929%      4.216%      2.458%      0.565%      1.002%      1.818%      4.738%      7.736%      0.351%      0.053%      0.046%      0.228%      2.421%    222.652%
+tok ahd              0          29           1           0           0           0          22           0           1           1           0           0          10           0          60         115           1          14           0           3
+val ahd              0          16           0           0           0           0          11           0           1           1           0           0           3           0          13          13           1           0           0           1
+prb ahd          0.00%      63.22%      30.57%       0.00%       0.00%       0.00%      63.86%       0.00%      22.38%      43.42%       0.00%       0.00%      87.48%       0.00%      56.59%      92.04%      80.43%      36.46%       0.00%      43.75%
+min score: 0.0459%  optimistic cost: 2.56e6  average prob: 9.8%  overall_prob: 6.16e-19%  average tok time: 27611 
+1537:  Narrator: INTERNET ARGUMENT COMICS
+Narrator: NAZI ACCUSATIONS
+T-Rex: Can we accept that everyone on..." IS SHORT FOR "YOU ARE A *F*RIEND I RESPECT; *A*S SUCH I *G*REATLY LOOK FORWARD TO COMMUNICATING WITH YOU IN AN HONEST WAY IN THE FUTURE"
+T-Rex: Man,
+                  here           I     thought          it       stood         for           "      Fellow     Against         Gal          ac         top         hag        ists          "!           
+           T           -         Rex           (       punch        line          ):         She         esh
+prb             0.085%     12.551%     37.283%     30.054%      5.276%     99.772%     84.174%      0.253%      0.540%      0.053%     27.552%      1.579%      0.975%      3.328%     17.321%     88.711%     21.981%     99.975%     99.965%     27.551%     99.875%     99.999%     99.910%      0.057%     94.380%
+rln scr        94.922%     94.296%     98.128%     94.681%     92.610%     88.698%     87.866%     74.662%     66.081%     59.657%     41.807%     19.296%      9.631%      1.271%      1.127%      0.825%      0.744%      1.470%      1.867%      1.532%     16.356%     20.351%     41.618%     70.680%    100.000%
+pfx scr         1.172%      0.233%      2.460%      1.806%      0.971%      3.752%      4.992%      0.173%      0.024%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.003%      0.000%      0.012%
+tok ahd            101           1           1           0           2           0           0          61          37         141           0           4          13           2           1           0           1           0           0           1           0           0           0         182           0
+val ahd             55           0           1           0           1           0           0          15          13          46           0           3           7           0           0           0           0           0           0           1           0           0           0           2           0
+prb ahd         91.41%      56.92%      39.74%       0.00%      86.64%       0.00%       0.00%      53.46%      56.54%      90.54%       0.00%      91.24%      93.99%      81.67%      34.46%       0.00%      70.34%       0.00%       0.00%      70.47%       0.00%       0.00%       0.00%      87.08%       0.00%
+min score: 0.0000%  optimistic cost: 4.53e8  average prob: 9.5%  overall_prob: 2.71e-24%  average tok time: 27658 
+1972:  Narrator: LITERARY TECHNIQUE COMICS today's technique DELETED AFFAIR
+T-Rex: A deleted affair is when...-Rex: Shakespeare, we need more sequels! You've got to come back with me!
+Off panel: back where
+T-Rex: Back... TO THE FUTURE!
+T-Rex (punchline): You'd
+                   get        that   reference          if         you        came        back        with          me          to         the      future           , Shakespeare          !!
+prb             3.088%      1.913%     16.540%      6.839%     73.022%      3.972%     55.383%     76.080%     95.546%      5.555%     73.614%     85.210%     22.929%     40.650%     11.871%
+rln scr         2.033%      0.375%      7.889%      8.789%      5.071%     22.661%     53.737%     27.849%     58.325%     16.412%      9.025%     30.104%     49.225%    100.000%    100.000%
+pfx scr         3.424%      0.402%      6.038%      1.090%      2.904%      1.414%     11.237%     41.823%    200.334%     15.108%     50.186%   5567.059%   3997.849%1192050644.053%2940159591.455%
+tok ahd              6           5           1           4           0           4           0           0           0           4           0           0           1           0           2
+val ahd              3           4           1           2           0           1           0           0           0           3           0           0           1           0           1
+prb ahd         63.02%      63.38%      29.74%      63.75%       0.00%      59.28%       0.00%       0.00%       0.00%      83.89%       0.00%       0.00%      35.92%       0.00%      74.97%
+min score: 0.4023%  optimistic cost: 3.84e3  average prob: 19.9%  overall_prob: 3.01e-9%  average tok time: 28096 
+2007:  Narrator: EVERYTHING YOU NEED TO KNOW ABOUT KITCHENS
+T-Rex: Kitchens! There's a lot to know about ki...nd the sink.
+T-Rex: ARGH
+Narrator: LATER:
+T-Rex: Man! This is THE WORST Friday morning I've ever had! In three weeks. Involving kitchens.
+T-Rex: ...Is
+                  what           I           '           d         say          if          it       weren           '           t         for      Friday         two       weeks         ago           
+           T           -         Rex           (       punch        line          ):           *        sigh           *
+prb             6.590%     84.190%     27.642%     76.224%     69.991%     68.353%      5.975%     18.151%     99.920%     99.980%     51.410%      0.437%      0.419%     94.721%     91.197%      0.708%     84.953%     99.997%     99.996%     76.959%     99.944%     99.998%     99.922%      1.178%     79.619%     99.257%
+rln scr        97.745%     96.873%     99.114%     98.269%     93.222%     96.527%     94.979%     97.166%     98.419%     93.474%     94.665%     76.603%     46.694%     46.672%      9.528%      7.754%      7.835%     12.078%     16.579%     14.703%     56.788%     52.177%     73.815%     67.629%    100.000%    100.000%
+pfx scr        94.280%    125.504%     57.214%     68.989%    184.546%    338.000%     50.614%     99.262%    161.406%    241.277%    518.643%     31.521%      0.364%      4.701%      9.909%      0.117%      0.174%      0.342%      2.338%      3.577%    492.381%  35684.208% 474303.110%  20498.492%5382987.573%24878244.398%
+tok ahd              4           0           1           0           0           0           2           2           0           0           0          16          16           0           0          10           0           0           0           0           0           0           0          15           0           0
+val ahd              4           0           1           0           0           0           1           2           0           0           0          10           4           0           0           0           0           0           0           0           0           0           0           0           0           0
+prb ahd         70.68%       0.00%      47.96%       0.00%       0.00%       0.00%      71.41%      58.43%       0.00%       0.00%       0.00%      86.20%      93.19%       0.00%       0.00%      94.27%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      75.91%       0.00%       0.00%
+min score: 0.1167%  optimistic cost: 3.30e3  average prob: 29.8%  overall_prob: 2.12e-12%  average tok time: 28120 

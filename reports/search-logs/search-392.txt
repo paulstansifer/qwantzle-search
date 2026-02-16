@@ -1,408 +1,408 @@
 would still like to hear about the sex, however!
-Step          0 (remaining mass 31.406%): Next token is ' would', score is 14.30659% (0.754%, 87.234%, 5)
-Step          1 (remaining mass 10.946%): Next token is ' still', score is 0.74760% (0.482%, 93.056%, 10)
-Step        114 (remaining mass 2.664%): Next token is ' like', score is 1.20929% (25.069%, 90.019%, 14)
-Step        115 (remaining mass 2.662%): Next token is ' to', score is 2.11421% (62.545%, 91.970%, 16)
-Step        116 (remaining mass 2.661%): Next token is ' hear', score is 0.21584% (1.321%, 85.357%, 20)
-Step        328 (remaining mass 1.544%): Next token is ' about', score is 0.40031% (7.789%, 67.170%, 25)
-Step        329 (remaining mass 1.544%): Next token is ' the', score is 0.54172% (8.991%, 67.270%, 28)
-Step        330 (remaining mass 1.544%): Next token is ' sex', score is 0.17630% (1.426%, 66.858%, 31)
-Step        393 (remaining mass 1.393%): Next token is ',', score is 0.16071% (28.160%, 71.458%, 32)
-' would still like to hear about the sex however' (2.33%)
+Step          0 (remaining mass 31.684%): Next token is ' would', score is 13.59594% (0.716%, 87.234%, 5)
+Step          1 (remaining mass 10.856%): Next token is ' still', score is 0.70430% (0.478%, 93.056%, 10)
+Step        116 (remaining mass 2.679%): Next token is ' like', score is 1.15570% (25.431%, 90.019%, 14)
+Step        117 (remaining mass 2.677%): Next token is ' to', score is 1.97720% (61.204%, 91.970%, 16)
+Step        118 (remaining mass 2.677%): Next token is ' hear', score is 0.18936% (1.239%, 85.357%, 20)
+Step        355 (remaining mass 1.467%): Next token is ' about', score is 0.35010% (7.764%, 67.170%, 25)
+Step        356 (remaining mass 1.467%): Next token is ' the', score is 0.47833% (9.077%, 67.270%, 28)
+Step        357 (remaining mass 1.467%): Next token is ' sex', score is 0.17362% (1.590%, 66.858%, 31)
+Step        393 (remaining mass 1.349%): Next token is ',', score is 0.15853% (28.208%, 71.458%, 32)
+' would still like to hear about the sex however' (2.29%)
 Search successful after 394 steps. Deepest node accessed: 0
-Search time: 14s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 27ms  Truncate: 0ms.
+Search time: 15s.  (Non-ML: 1s)  Per-step times: Score: 8ms  Advance: 0ms  Predict: 29ms  Truncate: 0ms.
 
-         0 0* 29.38199% (87.439%) ( 67%)  should                                                                                                                       -------aabeeeehiikllloorsttttuwx,!
-         1 0* 14.30659% (88.585%) ( 87%)  would                                                                                                                        -------aabeeeehhiikllloorssttttux,!
-         2 0* 8.50221% (89.138%) ( 90%)  will                                                                                                                         -------aabdeeeehhikllooorssttttuux,!
-         3 0* 7.94453% (89.704%) ( 82%)  would like                                                                                                                   -------aabeeehhilloorssttttux,!
-         4 0* 16.91828% (89.712%) ( 87%)  would like to                                                                                                                -------aabeeehhillorsstttux,!
-         5 0* 7.06617% (89.759%) ( 86%)  bet                                                                                                                          -------aadeeehhiikllllooorsstttuuwx,!
-         6 0* 6.79910% (90.406%) ( 88%)  still                                                                                                                        -------aabdeeeehhikllooorstttuuwx,!
-         7 0* 6.74761% (90.732%) ( 85%)  also                                                                                                                         -------abdeeeehhiikllloorsttttuuwx,!
-         8 0* 5.93889% (91.241%) ( 60%)  wish                                                                                                                         -------aabdeeeehikllllooorsttttuux,!
-         9 0* 5.70727% (91.920%) ( 68%)  was                                                                                                                          -------abdeeeehhiikllllooorsttttuux,!
-        10 0* 5.60351% (92.731%) ( 85%)  wrote                                                                                                                        -------aabdeeehhiiklllloosstttuux,!
-        11 0* 11.08401% (92.795%) ( 81%)  wrote this                                                                                                                   -------aabdeeehiklllloosttuux,!
-        12 0* 5.79291% (92.881%) ( 57%)  wrote that                                                                                                                   -------abdeeehiiklllloosstuux,!
-        13 0* 4.68982% (92.937%) ( 72%)  said                                                                                                                         -------abeeeehhikllllooorsttttuuwx,!
-        14 0* 4.60416% (93.233%) ( 77%)  should write                                                                                                                 -------aabeeehikllloostttux,!
-        15 0* 6.85664% (93.239%) ( 46%)  should write that                                                                                                            -------abeeeikllloostux,!
-        16 0* 4.44050% (93.244%) ( 66%)  hate                                                                                                                         -------abdeeehiikllllooorsstttuuwx,!
-        17 0* 4.43250% (93.489%) ( 72%)  should be                                                                                                                    -------aaeeehiikllloorsttttuwx,!
-        18 0* 4.34114% (93.546%) ( 90%)  like                                                                                                                         -------aabdeeehhilllooorssttttuuwx,!
-        19 0* 4.31700% (93.724%) ( 78%)  tried                                                                                                                        -------aabeeehhikllllooosstttuuwx,!
-        20 0* 6.53938% (93.780%) ( 80%)  tried to                                                                                                                     -------aabeeehhiklllloossttuuwx,!
-        21 0* 3.70835% (93.903%) ( 69%)  sure                                                                                                                         -------aabdeeehhiikllllooosttttuwx,!
-        22 0* 3.68598% (94.276%) ( 75%)  used                                                                                                                         -------aabeeehhiikllllooorsttttuwx,!
-        23 0* 6.72227% (94.338%) ( 88%)  used to                                                                                                                      -------aabeeehhiiklllloorstttuwx,!
-        24 0* 4.30634% (94.477%) ( 82%)  used to be                                                                                                                   -------aaeehhiiklllloorstttuwx,!
-        25 0* 3.03376% (94.505%) ( 80%)  would break                                                                                                                  -------aeeehhiillloossttttux,!
-        26 0* 2.96675% (94.522%) ( 89%)  would be                                                                                                                     -------aaeeehhiikllloorssttttux,!
-        27 0* 2.88234% (94.558%) ( 84%)  would like to be                                                                                                             -------aaeehhillorsstttux,!
-        28 0* 2.73130% (94.561%) ( 71%)  hate to                                                                                                                      -------abdeeehiiklllloorssttuuwx,!
-        29 0* 3.67393% (94.618%) ( 57%)  hate to break                                                                                                                -------deehiilllloossttuuwx,!
-        30 0* 3.72343% (94.623%) ( 36%)  hate to break it                                                                                                             -------deehilllloosstuuwx,!
-        31 0* 5.31067% (94.624%) (  8%)  hate to break it to                                                                                                          -------deehillllossuuwx,!
-        32 0* 2.71058% (94.634%) ( 66%)  should break                                                                                                                 -------aeeehiillloosttttuwx,!
-        33 0* 2.64174% (94.646%) ( 77%)  would be too                                                                                                                 -------aaeeehhiiklllrsstttux,!
-        34 0* 2.60952% (94.650%) ( 91%)  broke                                                                                                                        -------aadeeehhiilllloossttttuuwx,!
-        35 0* 2.52739% (94.777%) ( 73%)  would be too!                                                                                                                -------aaeeehhiiklllrsstttux,
-        36 0* 2.42323% (94.787%) ( 92%)  like to                                                                                                                      -------aabdeeehhillloorsstttuuwx,!
-        37 0* 2.13507% (94.854%) ( 63%)  hear                                                                                                                         -------abdeeehiikllllooossttttuuwx,!
-        38 0* 2.12445% (95.005%) ( 61%)  heard                                                                                                                        -------abeeehiikllllooossttttuuwx,!
-        39 0* 1.94197% (95.078%) ( 67%)  bet this                                                                                                                     -------aadeeehikllllooorsttuuwx,!
-        40 0* 1.93222% (95.125%) ( 88%)  will be                                                                                                                      -------aadeeehhikllooorssttttuux,!
-        41 0* 1.88528% (95.180%) ( 35%)  hate this                                                                                                                    -------abdeeeikllllooorsttuuwx,!
-        42 0* 1.75334% (95.232%) ( 65%)  had                                                                                                                          -------abeeeehiikllllooorssttttuuwx,!
-        43 0* 1.74108% (95.344%) ( 94%)  told                                                                                                                         -------aabeeeehhiikllloorsstttuuwx,!
-        44 0* 1.72606% (95.462%) ( 78%)  had to                                                                                                                       -------abeeeehiiklllloorsstttuuwx,!
-        45 0* 1.72528% (95.541%) ( 93%) ,                                                                                                                             -------aabdeeeehhiikllllooorssttttuuwx!
-        46 0* 1.68707% (95.888%) ( 81%)  used to like                                                                                                                 -------aabeehhillloorstttuwx,!
-        47 0* 1.66924% (95.896%) ( 58%)  swear                                                                                                                        -------abdeeehhiikllllooosttttuux,!
-        48 0* 1.66505% (95.940%) ( 85%)  take                                                                                                                         -------abdeeehhiillllooorsstttuuwx,!
-        49 0* 1.79984% (95.964%) ( 76%)  take it                                                                                                                      -------abdeeehhillllooorssttuuwx,!
-        50 0* 2.80765% (96.008%) ( 84%)  take it all                                                                                                                  -------bdeeehhillooorssttuuwx,!
-        51 0* 1.58695% (96.032%) ( 52%)  should be the                                                                                                                -------aaeeiikllloorstttuwx,!
-        52 0* 1.57981% (96.041%) ( 32%)  should write this                                                                                                            -------aabeeekllloottux,!
-        53 0* 1.57365% (96.043%) ( 24%)  said that                                                                                                                    -------beeeehikllllooorsttuuwx,!
-        54 0* 1.56538% (96.084%) ( 59%)  used to be a                                                                                                                 -------aeehhiiklllloorstttuwx,!
-        55 0* 1.49818% (96.103%) ( 58%)  said it                                                                                                                      -------abeeeehhkllllooorstttuuwx,!
-        56 0* 1.48364% (96.147%) ( 80%)  should take                                                                                                                  -------abeeehiillloorstttuwx,!
-        57 0* 1.91629% (96.151%) ( 55%)  should take this                                                                                                             -------abeeeillloorttuwx,!
-        58 0* 1.44646% (96.153%) ( 80%)  like that                                                                                                                    -------abdeeehilllooorssttuuwx,!
-        59 0* 1.43465% (96.165%) ( 60%)  tried to be                                                                                                                  -------aaeehhiklllloossttuuwx,!
-        60 0* 1.40552% (96.180%) ( 50%)  was the                                                                                                                      -------abdeeehiikllllooorstttuux,!
-        61 0* 1.39057% (96.262%) ( 88%)  liked                                                                                                                        -------aabeeehhilllooorssttttuuwx,!
-        62 0* 1.36263% (96.309%) ( 36%)  hate to break this                                                                                                           -------deeilllloostuuwx,!
-        63 0* 1.91444% (96.309%) ( 11%)  hate to break this to                                                                                                        -------deeillllosuuwx,!
-        64 0* 1.35664% (96.310%) ( 35%)  should also                                                                                                                  -------abeeeehiikllorttttuwx,!
-        65 0* 1.31836% (96.325%) ( 80%)  drew                                                                                                                         -------aabeeehhiikllllooossttttuux,!
-        66 0* 3.17002% (96.345%) ( 54%)  drew this                                                                                                                    -------aabeeehikllllooostttuux,!
-        67 0* 1.30820% (96.406%) ( 18%)  heard that                                                                                                                   -------beeeiikllllooossttuuwx,!
-        68 0* 1.28075% (96.422%) ( 95%)  look                                                                                                                         -------aabdeeeehhiilllorssttttuuwx,!
-        69 0* 1.24570% (96.512%) ( 62%)  would also                                                                                                                   -------abeeeehhiikllorsttttux,!
-        70 0* 5.39711% (96.516%) ( 62%)  would also like                                                                                                              -------abeeehhilorsttttux,!
-        71 0* 14.06465% (96.517%) ( 71%)  would also like to                                                                                                           -------abeeehhilrstttux,!
-        72 0* 1.38501% (96.524%) ( 25%)  would also like to state                                                                                                     -------beehhilrtux,!
-        73 0* 1.21595% (96.524%) ( 73%)  like this                                                                                                                    -------aabdeeehlllooorstttuuwx,!
-        74 0* 1.17437% (96.541%) ( 26%)  hear that                                                                                                                    -------bdeeeiikllllooossttuuwx,!
-        75 0* 1.15213% (96.569%) ( 11%)  wrote that last                                                                                                              -------bdeeehiikllloosuux,!
-        76 0* 1.09851% (96.575%) ( 53%)  hate to be                                                                                                                   -------adeehiiklllloorssttuuwx,!
-        77 0* 1.08874% (96.579%) ( 22%)  take that                                                                                                                    -------bdeeehiillllooorsstuuwx,!
-        78 0* 1.08555% (96.625%) ( 94%)  doubt                                                                                                                        -------aaeeeehhiiklllloorsstttuwx,!
-        79 0* 1.08428% (96.651%) ( 69%)  should tell                                                                                                                  -------aabeeehiikloorstttuwx,!
-        80 0* 1.07480% (96.657%) ( 54%)  would like to see                                                                                                            -------aabehhillorstttux,!
-        81 0* 1.08731% (96.658%) ( 59%)  would like to see this                                                                                                       -------aabehllorttux,!
-        82 0* 1.07170% (96.658%) ( 10%)  hate to be the                                                                                                               -------adeiiklllloorsstuuwx,!
-        83 0* 1.05574% (96.672%) ( 89%)  stole                                                                                                                        -------aabdeeehhiikllloorstttuuwx,!
-        84 0* 2.04848% (96.678%) ( 64%)  stole this                                                                                                                   -------aabdeeehikllloorttuuwx,!
-        85 0* 1.05329% (96.696%) ( 93%)  do                                                                                                                           -------aabeeeehhiiklllloorssttttuuwx,!
-        86 0* 1.05111% (96.859%) ( 23%)  heard that!                                                                                                                  -------beeeiikllllooossttuuwx,
-        87 0* 1.04501% (96.876%) ( 76%)  had to write                                                                                                                 -------abeeehiklllloossttuux,!
-        88 0* 1.03704% (96.877%) ( 63%)  bet he                                                                                                                       -------aadeehiikllllooorsstttuuwx,!
-        89 0* 1.03688% (96.938%) ( 82%)  wrote it                                                                                                                     -------aabdeeehhiklllloossttuux,!
-        90 0* 1.02596% (96.954%) ( 49%)  used the                                                                                                                     -------aabeehiikllllooorstttuwx,!
-        91 0* 1.02146% (96.992%) ( 69%)  used to like this                                                                                                            -------aabeehllloorttuwx,!
-        92 0* 1.00912% (96.993%) ( 20%)  stole this idea                                                                                                              -------abeehkllloorttuuwx,!
-        93 0* 0.97302% (96.997%) ( 72%)  would also like to be                                                                                                        -------aeehhilrstttux,!
-        94 0* 0.97001% (96.997%) ( 82%)  lied                                                                                                                         -------aabeeehhiklllooorssttttuuwx,!
-        95 0* 0.95484% (97.036%) ( 61%)  wrote the                                                                                                                    -------aabdeehiiklllloossttuux,!
-        96 0* 0.95241% (97.052%) ( 53%)  hate break                                                                                                                   -------deehiillllooosstttuuwx,!
-        97 0* 0.94661% (97.065%) ( 85%)  still like                                                                                                                   -------aabdeeehhlooorstttuuwx,!
-        98 0* 0.93618% (97.072%) ( 59%)  used to be this                                                                                                              -------aaeehiklllloorttuwx,!
-        99 0* 0.91791% (97.075%) ( 74%)  write                                                                                                                        -------aabdeeehhikllllooosstttuux,!
-       100 0* 1.35062% (97.099%) ( 48%)  write this                                                                                                                   -------aabdeeehkllllooosttuux,!
-       101 0* 0.89501% (97.114%) ( 41%)  stole that                                                                                                                   -------abdeeehiikllloorstuuwx,!
-       102 0* 0.87892% (97.126%) ( 66%)  swear,                                                                                                                       -------abdeeehhiikllllooosttttuux!
-       103 0* 0.87832% (97.158%) ( 89%)  break                                                                                                                        -------adeeehhiillllooossttttuuwx,!
-       104 0* 0.87543% (97.202%) ( 88%)  lied about                                                                                                                   -------aeeehhikllloorsstttuwx,!
-       105 0* 0.85377% (97.204%) ( 87%)  also like                                                                                                                    -------abdeeehhilloorsttttuuwx,!
-       106 0* 0.82971% (97.209%) ( 92%)  also like to                                                                                                                 -------abdeeehhillorstttuuwx,!
-       107 0* 0.80936% (97.212%) ( 93%)  took                                                                                                                         -------aabdeeeehhiillllorsstttuuwx,!
-       108 0* 0.95362% (97.230%) ( 89%)  took the                                                                                                                     -------aabdeeehiillllorssttuuwx,!
-       109 0* 0.77401% (97.247%) ( 91%)  looked                                                                                                                       -------aabeeehhiilllorssttttuuwx,!
-       110 0* 0.76490% (97.262%) ( 31%)  should start                                                                                                                 -------abeeeehiikllloottuwx,!
-       111 0* 0.75980% (97.267%) ( 66%)  said it!                                                                                                                     -------abeeeehhkllllooorstttuuwx,
-       112 0* 0.75750% (97.288%) ( 12%)  had to write that                                                                                                            -------beeeiklllloossuux,!
-       113 0* 0.75749% (97.290%) ( 75%)  would like to start                                                                                                          -------abeeehhillostux,!
-       114 0* 0.74760% (97.291%) ( 93%)  would still                                                                                                                  -------aabeeeehhikloorstttux,!
-       115 0* 1.20929% (97.293%) ( 90%)  would still like                                                                                                             -------aabeeehhoorstttux,!
-       116 0* 2.11421% (97.293%) ( 92%)  would still like to                                                                                                          -------aabeeehhorsttux,!
-       117 0* 1.33705% (97.293%) ( 86%)  would still like to be                                                                                                       -------aaeehhorsttux,!
-       118 0* 0.73712% (97.293%) ( 67%)  should write a                                                                                                               -------abeeehikllloostttux,!
-       119 0* 0.73388% (97.295%) ( 19%)  like this better                                                                                                             -------aadehlllooostuuwx,!
-       120 0* 0.72350% (97.296%) ( 50%)  tried to tell                                                                                                                -------aabeehhiklloosstuuwx,!
-       121 0* 0.71571% (97.300%) ( 35%)  lied about that                                                                                                              -------eeehikllloorsstuwx,!
-       122 0* 0.71308% (97.301%) ( 80%)  would also like to let                                                                                                       -------abeehhirsttux,!
-       123 0* 0.70122% (97.301%) ( 31%)  hear that!                                                                                                                   -------bdeeeiikllllooossttuuwx,
-       124 0* 0.69920% (97.316%) ( 73%)  sure would                                                                                                                   -------aabeeehhiikllloosttttx,!
-       125 0* 0.89858% (97.318%) ( 62%)  sure would be                                                                                                                -------aaeehhiikllloosttttx,!
-       126 0* 0.92071% (97.319%) ( 63%)  sure would be!                                                                                                               -------aaeehhiikllloosttttx,
-       127 0* 0.69338% (97.322%) ( 29%)  bet there                                                                                                                    -------aadehiikllllooossttuuwx,!
-       128 0* 0.68828% (97.345%) ( 85%)  tried,                                                                                                                       -------aabeeehhikllllooosstttuuwx!
-       129 0* 1.56841% (97.354%) ( 85%)  tried, but                                                                                                                   -------aaeeehhikllllooossttuwx!
-       130 0* 0.68643% (97.363%) ( 72%)  like the                                                                                                                     -------aabdeehilllooorsstttuuwx,!
-       131 0* 0.66683% (97.378%) ( 38%)  would also like to use                                                                                                       -------abeehhilrtttx,!
-       132 0* 0.66618% (97.379%) ( 67%)  wrote this to                                                                                                                -------aabdeeehikllllostuux,!
-       133 0* 0.66140% (97.381%) ( 57%)  would like to state                                                                                                          -------abeehhillorstux,!
-       134 0* 0.65767% (97.381%) ( 69%)  lied about the                                                                                                               -------aeehikllloorssttuwx,!
-       135 0* 0.60928% (97.383%) ( 55%)  better                                                                                                                       -------aadeehhiikllllooossttuuwx,!
-       136 0* 0.60756% (97.414%) ( 71%)  would like to use                                                                                                            -------aabeehhillorstttx,!
-       137 0* 3.01477% (97.414%) ( 72%)  would like to use this                                                                                                       -------aabeehllorttx,!
-       138 0* 0.60357% (97.415%) ( 93%) , however                                                                                                                     aabdeeeehhiikllllooorssttttuuwx!
-       139 0* 0.58861% (97.422%) ( 71%)  would like to hear                                                                                                           -------abeehillosstttux,!
-       140 0* 0.58647% (97.422%) ( 20%)  like this better!                                                                                                            -------aadehlllooostuuwx,
-       141 0* 0.58134% (97.423%) ( 81%)  doubt this                                                                                                                   -------aaeeeehiklllloorsttuwx,!
-       142 0* 0.57586% (97.427%) ( 30%)  bet that                                                                                                                     -------adeeehiikllllooorsstuuwx,!
-       143 0* 0.57519% (97.456%) ( 30%)  had to write this                                                                                                            -------abeeeklllloostuux,!
-       144 0* 0.56224% (97.457%) ( 84%)  would take                                                                                                                   -------abeeehhiillloorsstttux,!
-       145 0* 0.82636% (97.459%) ( 81%)  would take this                                                                                                              -------abeeehillloorsttux,!
-       146 0* 0.52989% (97.460%) ( 86%)  like how                                                                                                                     -------aabdeeehillloorssttttuux,!
-       147 0* 0.52742% (97.467%) ( 31%)  heard this                                                                                                                   -------abeeeikllllooostttuuwx,!
-       148 0* 0.51773% (97.476%) ( 79%)  read                                                                                                                         -------abeeehhiikllllooossttttuuwx,!
-       149 0* 0.51317% (97.491%) ( 43%)  was about                                                                                                                    -------deeeehhiiklllloorstttux,!
-       150 0* 0.82228% (97.491%) ( 21%)  was about to                                                                                                                 -------deeeehhiikllllorsttux,!
-       151 0* 0.49229% (97.504%) ( 77%)  should talk                                                                                                                  -------abeeeehiilloorstttuwx,!
-       152 0* 0.49103% (97.505%) ( 83%) , uh                                                                                                                          -------aabdeeeehiikllllooorssttttuwx!
-       153 0* 0.48354% (97.574%) ( 25%)  said this                                                                                                                    -------abeeeehkllllooortttuuwx,!
-       154 0* 0.47411% (97.588%) ( 79%)  wrote this all                                                                                                               -------abdeeehiklloosttuux,!
-       155 0* 0.46702% (97.589%) ( 57%)  tried, but it                                                                                                                -------aaeeehhkllllooosstuwx!
-       156 0* 0.46414% (97.591%) ( 81%)  would like this                                                                                                              -------aabeeehlloorstttux,!
-       157 0* 0.46406% (97.592%) ( 77%)  swear to                                                                                                                     -------abdeeehhiiklllloostttuux,!
-       158 0* 0.45999% (97.603%) ( 65%)  liked this                                                                                                                   -------aabeeehlllooorstttuuwx,!
-       159 0* 0.45698% (97.607%) ( 71%)  would like it                                                                                                                -------aabeeehhlloorsstttux,!
-       160 0* 0.45430% (97.609%) ( 53%)  read this                                                                                                                    -------abeeehikllllooostttuuwx,!
-       161 0* 0.45091% (97.617%) ( 85%)  took this                                                                                                                    -------aabdeeeehillllorsttuuwx,!
-       162 0* 0.45033% (97.622%) ( 57%)  hate to tell                                                                                                                 -------abdeehiiklloorsstuuwx,!
-       163 0* 0.44895% (97.626%) ( 86%)  lied!                                                                                                                        -------aabeeehhiklllooorssttttuuwx,
-       164 0* 0.44739% (97.650%) ( 44%)  had a                                                                                                                        -------beeeehiikllllooorssttttuuwx,!
-       165 0* 0.44493% (97.715%) ( 42%)  used to be the                                                                                                               -------aaehiiklllloorsttuwx,!
-       166 0* 0.44227% (97.717%) ( 24%)  used to be that                                                                                                              -------aeehiiklllloorstuwx,!
-       167 0* 0.44092% (97.720%) ( 88%)  will take                                                                                                                    -------abdeeehhillooorsstttuux,!
-       168 0* 0.43453% (97.723%) ( 78%)  would also like it                                                                                                           -------abeeehhlorstttux,!
-       169 0* 0.43426% (97.723%) ( 52%)  bet the                                                                                                                      -------aadeehiikllllooorssttuuwx,!
-       170 0* 0.43374% (97.746%) ( 40%)  hate this break                                                                                                              -------deeillllooosttuuwx,!
-       171 0* 0.43107% (97.747%) ( 65%)  would like to be the                                                                                                         -------aaehillorssttux,!
-       172 0* 0.42815% (97.747%) ( 69%)  threw                                                                                                                        -------aabdeeehiikllllooosstttuux,!
-       173 0* 0.50585% (97.761%) ( 44%)  threw this                                                                                                                   -------aabdeeeikllllooosttuux,!
-       174 0* 0.42676% (97.769%) ( 58%)  should still                                                                                                                 -------aabeeeehikloortttuwx,!
-       175 0* 0.42651% (97.770%) ( 62%)  sure would like                                                                                                              -------aabeehhilloosttttx,!
-       176 0* 0.99907% (97.770%) ( 68%)  sure would like to                                                                                                           -------aabeehhillostttx,!
-       177 0* 0.42560% (97.771%) ( 70%)  would like a                                                                                                                 -------abeeehhilloorssttttux,!
-       178 0* 0.42536% (97.774%) ( 38%)  would like to hear about                                                                                                     -------eehillssttx,!
-       179 0* 0.45029% (97.774%) ( 50%)  would like to hear about this                                                                                                -------eellstx,!
-       180 0* 0.41791% (97.774%) ( 94%) , too                                                                                                                         -------aabdeeeehhiikllllorsstttuuwx!
-       181 0* 0.41628% (97.805%) ( 79%)  tried!                                                                                                                       -------aabeeehhikllllooosstttuuwx,
-       182 0* 0.41185% (97.821%) ( 55%)  swear!                                                                                                                       -------abdeeehhiikllllooosttttuux,
-       183 0* 0.40713% (97.843%) ( 71%)  would hate                                                                                                                   -------abeeehiikllloorsstttux,!
-       184 0* 0.70795% (97.844%) ( 79%)  would hate to                                                                                                                -------abeeehiiklllorssttux,!
-       185 0* 0.93830% (97.845%) ( 71%)  would hate to be                                                                                                             -------aeehiiklllorssttux,!
-       186 0* 0.71102% (97.846%) ( 49%)  would hate to be this                                                                                                        -------aeeiklllorstux,!
-       187 0* 0.41126% (97.846%) ( 31%)  would hate to be the                                                                                                         -------aeiiklllorsstux,!
-       188 0* 0.40614% (97.846%) ( 55%)  took the words                                                                                                               -------aabeeehiillllsttuux,!
-       189 0* 0.40419% (97.848%) ( 79%)  like that!                                                                                                                   -------abdeeehilllooorssttuuwx,
-       190 0* 0.40290% (97.851%) ( 91%)  would tell                                                                                                                   -------aabeeehhiikloorsstttux,!
-       191 0* 0.39778% (97.854%) ( 68%)  liked the                                                                                                                    -------aabeehilllooorsstttuuwx,!
-       192 0* 0.39696% (97.860%) ( 14%)  hate to break the                                                                                                            -------deiilllloosstuuwx,!
-       193 0* 0.39303% (97.861%) ( 49%)  wrote the last                                                                                                               -------abdeehiikllloostuux,!
-       194 0* 0.39259% (97.863%) (  8%)  hate that                                                                                                                    -------bdeeeiikllllooorsstuuwx,!
-       195 0* 0.38854% (97.883%) ( 68%)  saw                                                                                                                          -------abdeeeehhiikllllooorsttttuux,!
-       196 0* 0.38769% (97.922%) ( 83%) , the                                                                                                                         -------aabdeeehiikllllooorsstttuuwx!
-       197 0* 0.38580% (97.952%) ( 54%)  used this                                                                                                                    -------aabeeehikllllooortttuwx,!
-       198 0* 0.38495% (97.960%) ( 47%)  lied about the whole                                                                                                         -------aeikllorssttux,!
-       199 0* 0.38395% (97.960%) ( 70%)  had to look                                                                                                                  -------abeeeehiilllrsstttuuwx,!
-       200 0* 0.38313% (97.964%) ( 63%)  used to be like                                                                                                              -------aaehhillloorstttuwx,!
-       201 0* 0.98310% (97.964%) ( 44%)  used to be like this                                                                                                         -------aaehllloorttuwx,!
-       202 0* 0.62669% (97.964%) ( 57%)  used to be like this,                                                                                                        -------aaehllloorttuwx!
-       203 0* 0.38143% (97.965%) ( 46%)  wrote this last                                                                                                              -------abdeeehiklllootuux,!
-       204 0* 0.37739% (97.965%) ( 76%)  bet it                                                                                                                       -------aadeeehhikllllooorssttuuwx,!
-       205 0* 0.37597% (97.983%) ( 69%)  will take this                                                                                                               -------abdeeehllooorsttuux,!
-       206 0* 0.37401% (97.984%) ( 72%)  would like to be that                                                                                                        -------aeehillorsstux,!
-       207 0* 0.37392% (97.984%) ( 62%)  see                                                                                                                          -------aabdeehhiikllllooorsttttuuwx,!
-       208 0* 0.37333% (98.026%) ( 16%)  wish this                                                                                                                    -------aabdeeeekllllooortttuux,!
-       209 0* 0.36862% (98.044%) ( 56%)  would like to see that                                                                                                       -------abehillorstux,!
-       210 0* 0.36851% (98.044%) ( 80%) , the author                                                                                                                  -------abdeeeiiklllloossttuwx!
-       211 0* 0.36771% (98.046%) ( 13%)  like that better                                                                                                             -------adehilllooossuuwx,!
-       212 0* 0.36379% (98.047%) ( 30%)  heard that,                                                                                                                  -------beeeiikllllooossttuuwx!
-       213 0* 0.36122% (98.052%) ( 75%)  like it                                                                                                                      -------aabdeeehhlllooorsstttuuwx,!
-       214 0* 0.50846% (98.057%) ( 20%)  like it better                                                                                                               -------aadehhlllooosstuuwx,!
-       215 0* 0.36079% (98.061%) ( 78%)  would be too,                                                                                                                -------aaeeehhiiklllrsstttux!
-       216 0* 0.35755% (98.062%) ( 65%)  would still like to see                                                                                                      -------aabehhorttux,!
-       217 0* 0.35654% (98.062%) ( 77%)  would like to be this                                                                                                        -------aaeehllorsttux,!
-       218 0* 0.35188% (98.062%) ( 35%)  used to be like that                                                                                                         -------aehillloorstuwx,!
-       219 0* 0.34842% (98.062%) ( 81%)  wrote a                                                                                                                      -------abdeeehhiiklllloosstttuux,!
-       220 0* 0.34757% (98.073%) ( 38%)  wish the                                                                                                                     -------aabdeeeikllllooorstttuux,!
-       221 0* 0.99509% (98.080%) ( 24%)  wish the best                                                                                                                -------aadeeikllllooorttuux,!
-       222 0* 0.34539% (98.089%) ( 48%)  should write that!                                                                                                           -------abeeeikllloostux,
-       223 0* 0.34485% (98.089%) ( 67%)  hate it                                                                                                                      -------abdeeehikllllooorssttuuwx,!
-       224 0* 0.34461% (98.102%) ( 76%)  will still                                                                                                                   -------aabdeeeehhkooorstttuux,!
-       225 0* 0.34311% (98.104%) ( 52%)  should write the                                                                                                             -------aabeeikllloosttux,!
-       226 0* 0.34278% (98.105%) ( 58%)  should use                                                                                                                   -------aabeeehiikllloorttttwx,!
-       227 0* 0.34171% (98.108%) ( 30%)  write this as                                                                                                                -------abdeeehkllllooottuux,!
-       228 0* 0.34080% (98.109%) ( 58%)  used to write                                                                                                                -------aabeehhiklllloosttux,!
-       229 0* 0.33286% (98.111%) ( 60%)  swear it                                                                                                                     -------abdeeehhikllllooostttuux,!
-       230 0* 0.33195% (98.115%) ( 86%)  would like that                                                                                                              -------abeeehilloorssttux,!
-       231 0* 0.32543% (98.116%) ( 62%)  wrote that!                                                                                                                  -------abdeeehiiklllloosstuux,
-       232 0* 0.32248% (98.118%) ( 62%)  also would                                                                                                                   -------abeeeehhiikllorsttttux,!
-       233 0* 1.30448% (98.119%) ( 62%)  also would like                                                                                                              -------abeeehhilorsttttux,!
-       234 0* 3.23121% (98.120%) ( 71%)  also would like to                                                                                                           -------abeeehhilrstttux,!
-       235 0* 0.32192% (98.121%) ( 92%)  looked it                                                                                                                    -------aabeeehhilllorsstttuuwx,!
-       236 0* 0.32047% (98.125%) ( 90%)  will however                                                                                                                 aabdeeeehhikllooorssttttuux,!
-       237 0* 0.30849% (98.126%) ( 31%)  also heard                                                                                                                   -------beeehiikllloosttttuuwx,!
-       238 0* 0.30818% (98.131%) ( 85%)  would like to tell                                                                                                           -------aabeehhiorssttux,!
-       239 0* 0.30774% (98.131%) ( 88%)  will tell                                                                                                                    -------aabdeeehhikooorsstttuux,!
-       240 0* 0.30645% (98.134%) ( 25%)  also would like to state                                                                                                     -------beehhilrtux,!
-       241 0* 0.30635% (98.134%) ( 83%)  should talk to                                                                                                               -------abeeeehiillorsttuwx,!
-       242 0* 0.30584% (98.135%) ( 43%)  would also like to use the                                                                                                   -------abehilrttx,!
-       243 0* 0.30241% (98.135%) ( 16%)  like that better!                                                                                                            -------adehilllooossuuwx,
-       244 0* 0.30228% (98.135%) ( 57%)  still hate                                                                                                                   -------abdeeehikllooorsttuuwx,!
-       245 0* 0.29959% (98.138%) ( 45%)  lied about that!                                                                                                             -------eeehikllloorsstuwx,
-       246 0* 0.29386% (98.138%) ( 88%)  tell                                                                                                                         -------aabdeeehhiikllooorsstttuuwx,!
-       247 0* 0.29381% (98.160%) ( 56%)  wish it                                                                                                                      -------aabdeeeehkllllooorstttuux,!
-       248 0* 0.29293% (98.174%) ( 87%)  looked at                                                                                                                    -------abeeehhiilllorsstttuuwx,!
-       249 0* 0.28866% (98.176%) ( 56%)  would like to use the                                                                                                        -------aabehillorsttx,!
-       250 0* 0.28863% (98.176%) ( 48%)  used to be like that,                                                                                                        -------aehillloorstuwx!
-       251 0* 0.28307% (98.176%) ( 78%)  doubt this will                                                                                                              -------aaeeeehklloorsttux,!
-       252 0* 0.28162% (98.176%) ( 78%)  worked                                                                                                                       -------aabeeehhiilllloossttttuux,!
-       253 0* 0.28114% (98.184%) ( 66%)  should look                                                                                                                  -------aabeeeehiillrsttttuwx,!
-       254 0* 0.27972% (98.185%) ( 18%)  should write that at                                                                                                         -------beeeikllloosux,!
-       255 0* 0.27822% (98.186%) ( 94%)  too                                                                                                                          -------aabdeeeehhiikllllorsstttuuwx,!
-       256 0* 0.28291% (98.208%) ( 79%)  too would                                                                                                                    -------aabeeeehhiiklllrsstttux,!
-       257 0* 0.35890% (98.209%) ( 77%)  too would be                                                                                                                 -------aaeeehhiiklllrsstttux,!
-       258 0* 0.28255% (98.211%) ( 69%)  too would like                                                                                                               -------aabeeehhillrsstttux,!
-       259 0* 0.27812% (98.212%) ( 69%)  would like to share                                                                                                          -------abeehillostttux,!
-       260 0* 0.27730% (98.212%) ( 73%)  told this                                                                                                                    -------aabeeeehikllloorsttuuwx,!
-       261 0* 0.27717% (98.216%) ( 22%)  heard he                                                                                                                     -------abeeiikllllooossttttuuwx,!
-       262 0* 0.27337% (98.231%) ( 76%)  draw                                                                                                                         -------abeeeehhiikllllooossttttuux,!
-       263 0* 0.27326% (98.247%) ( 72%)  wrote this out                                                                                                               -------aabdeeehikllllostux,!
-       264 0* 0.26950% (98.248%) ( 31%)  should also tell                                                                                                             -------abeeehiikortttuwx,!
-       265 0* 0.26799% (98.248%) ( 72%)  wrote that,                                                                                                                  -------abdeeehiiklllloosstuux!
-       266 0* 0.26663% (98.249%) ( 68%)  said it,                                                                                                                     -------abeeeehhkllllooorstttuuwx!
-       267 0* 0.26661% (98.255%) ( 63%)  still like the                                                                                                               -------aabdeehlooorsttuuwx,!
-       268 0* 0.26543% (98.256%) ( 83%)  also broke                                                                                                                   -------adeeehhiilllosttttuuwx,!
-       269 0* 0.26326% (98.258%) ( 14%)  said that out                                                                                                                -------beeeehiklllloorstuwx,!
-       270 0* 0.26303% (98.261%) ( 88%)  doubt he                                                                                                                     -------aaeeehiiklllloorsstttuwx,!
-       271 0* 0.26298% (98.266%) ( 70%)  bet we                                                                                                                       -------aadeehhiikllllooorsstttuux,!
-       272 0* 0.26260% (98.282%) ( 87%)  also liked                                                                                                                   -------abeeehhilloorsttttuuwx,!
-       273 0* 0.26239% (98.283%) ( 76%)  wrote this!                                                                                                                  -------aabdeeehiklllloosttuux,
-       274 0* 0.25902% (98.285%) ( 40%)  wish that                                                                                                                    -------abdeeeeikllllooorsttuux,!
-       275 0* 0.25836% (98.292%) ( 62%)  like how this                                                                                                                -------aabdeeellloorstttuux,!
-       276 0* 0.25804% (98.293%) ( 31%)  should tell this                                                                                                             -------aabeeeikloorttuwx,!
-       277 0* 0.25780% (98.293%) ( 85%)  wrote this,                                                                                                                  -------aabdeeehiklllloosttuux!
-       278 0* 0.26496% (98.294%) ( 85%)  wrote this, but                                                                                                              -------aadeeehiklllloostux!
-       279 0* 0.25626% (98.294%) ( 80%)  also would like to let                                                                                                       -------abeehhirsttux,!
-       280 0* 0.25456% (98.294%) ( 62%)  used a                                                                                                                       -------abeeehhiikllllooorsttttuwx,!
-       281 0* 0.25440% (98.311%) ( 93%)  still would                                                                                                                  -------aabeeeehhikloorstttux,!
-       282 0* 0.24973% (98.312%) ( 45%)  assure                                                                                                                       -------abdeeehhiikllllooottttuwx,!
-       283 0* 0.24962% (98.328%) ( 51%)  bet she                                                                                                                      -------aadeehiikllllooorstttuuwx,!
-       284 0* 0.24825% (98.340%) ( 58%)  used to like that                                                                                                            -------abeehillloorstuwx,!
-       285 0* 0.24776% (98.341%) ( 68%)  would like to eat                                                                                                            -------abeehhillorssttux,!
-       286 0* 0.24749% (98.341%) ( 72%)  also would like to be                                                                                                        -------aeehhilrstttux,!
-       287 0* 0.24687% (98.341%) ( 58%)  would also like this                                                                                                         -------abeeehlortttux,!
-       288 0* 0.24666% (98.341%) ( 34%)  swear this                                                                                                                   -------abdeeehiklllloootttuux,!
-       289 0* 0.24652% (98.346%) ( 90%)  still would like                                                                                                             -------aabeeehhoorstttux,!
-       290 0* 0.34751% (98.346%) ( 92%)  still would like to                                                                                                          -------aabeeehhorsttux,!
-       291 0* 0.24640% (98.346%) ( 43%)  doubt that                                                                                                                   -------aeeeehiiklllloorsstuwx,!
-       292 0* 0.24620% (98.349%) ( 18%)  would also like to share                                                                                                     -------beehiltttux,!
-       293 0* 0.24279% (98.349%) ( 69%)  liked that                                                                                                                   -------abeeehilllooorssttuuwx,!
-       294 0* 0.24217% (98.350%) ( 61%)  should be so                                                                                                                 -------aaeeehiiklllorttttuwx,!
-       295 0* 0.24192% (98.352%) ( 42%)  still wish                                                                                                                   -------aabdeeeehkllooortttuux,!
-       296 0* 0.23896% (98.356%) ( 24%)  should write these                                                                                                           -------aabeikllloottux,!
-       297 0* 0.23825% (98.356%) ( 88%)  lied,                                                                                                                        -------aabeeehhiklllooorssttttuuwx!
-       298 0* 0.23794% (98.362%) ( 37%)  would also like a                                                                                                            -------beeehhilorsttttux,!
-       299 0* 0.23713% (98.363%) ( 29%)  should take that                                                                                                             -------beeeiillloorstuwx,!
-       300 0* 0.23692% (98.363%) ( 29%)  would also like to hear                                                                                                      -------beehilstttux,!
-       301 0* 0.23654% (98.363%) ( 57%)  would like to start a                                                                                                        -------beeehhillostux,!
-       302 0* 0.23604% (98.363%) ( 75%)  would like to re                                                                                                             -------aabeehhillosstttux,!
-       303 0* 0.23435% (98.364%) ( 82%)  also like the                                                                                                                -------abdeehilloorstttuuwx,!
-       304 0* 0.23378% (98.364%) ( 39%)  bet this is                                                                                                                  -------aadeeehkllllooorttuuwx,!
-       305 0* 0.23362% (98.366%) ( 46%)  write that                                                                                                                   -------abdeeehikllllooosstuux,!
-       306 0* 0.23233% (98.369%) ( 93%)  do however                                                                                                                   aabeeeehhiiklllloorssttttuuwx,!
-       307 0* 0.23082% (98.370%) ( 28%)  sure wish                                                                                                                    -------aabdeeehikllllooottttux,!
-       308 0* 0.22776% (98.377%) ( 34%)  would like to hear about the                                                                                                 -------eillsstx,!
-       309 0* 0.22664% (98.377%) ( 66%)  heard it                                                                                                                     -------abeeehikllllooosstttuuwx,!
-       310 0* 0.22639% (98.381%) ( 65%)  should write a book                                                                                                          -------aeeehilllstttux,!
-       311 0* 0.22378% (98.382%) ( 85%)  told her                                                                                                                     -------aabeeehiikllloosstttuuwx,!
-       312 0* 0.22286% (98.383%) ( 72%)  would also like to let this                                                                                                  -------abeehrtux,!
-       313 0* 0.22277% (98.383%) ( 81%)  wrote both                                                                                                                   -------aadeeehiikllllossttuux,!
-       314 0* 0.37878% (98.384%) ( 37%)  wrote both sides                                                                                                             -------aaeehikllllottuux,!
-       315 0* 0.22263% (98.385%) ( 45%)  sure would like to be                                                                                                        -------aaehhillostttx,!
-       316 0* 0.21993% (98.385%) ( 42%)  said better                                                                                                                  -------aeehhikllllooosttuuwx,!
-       317 0* 0.21959% (98.387%) ( 76%)  tried but                                                                                                                    -------aaeeehhikllllooossttuwx,!
-       318 0* 0.21926% (98.389%) ( 71%)  would like to also                                                                                                           -------abeeehhilrstttux,!
-       319 0* 0.21892% (98.390%) ( 61%)  swear it!                                                                                                                    -------abdeeehhikllllooostttuux,
-       320 0* 0.21844% (98.394%) ( 22%)  wish there                                                                                                                   -------aabdeeikllllooostttuux,!
-       321 0* 0.21804% (98.399%) ( 13%)  sure would like to see                                                                                                       -------aabhhillotttx,!
-       322 0* 0.26261% (98.399%) ( 27%)  sure would like to see that                                                                                                  -------abhillotx,!
-       323 0* 0.21789% (98.399%) ( 50%)  drew the                                                                                                                     -------aabeehiikllllooosstttuux,!
-       324 0* 0.21734% (98.407%) ( 93%)  would still be                                                                                                               -------aaeeehhikloorstttux,!
-       325 0* 0.21688% (98.408%) ( 35%)  should use that                                                                                                              -------abeeeiikllloorttwx,!
-       326 0* 0.21642% (98.408%) ( 73%)  wrote a little                                                                                                               -------abdeehhiklloosstuux,!
-       327 0* 0.21633% (98.409%) ( 88%)  should take it                                                                                                               -------abeeehillloorsttuwx,!
-       328 0* 0.21584% (98.409%) ( 85%)  would still like to hear                                                                                                     -------abeehosttux,!
-       329 0* 0.40031% (98.409%) ( 67%)  would still like to hear about                                                                                               -------eehstx,!
-       330 0* 0.54172% (98.409%) ( 67%)  would still like to hear about the                                                                                           -------esx,!
-       331 0* 0.21525% (98.409%) ( 37%)  hear this                                                                                                                    -------abdeeeikllllooostttuuwx,!
-       332 0* 0.21521% (98.414%) ( 92%)  would still break                                                                                                            -------aeeehhiloostttux,!
-       333 0* 0.21454% (98.414%) ( 42%)  also hate                                                                                                                    -------bdeeehiikllloorstttuuwx,!
-       334 0* 0.21403% (98.418%) ( 67%)  had to break                                                                                                                 -------eeehiilllloosstttuuwx,!
-       335 0* 0.21332% (98.419%) ( 62%)  stole the                                                                                                                    -------aabdeehiikllloorsttuuwx,!
-       336 0* 0.21206% (98.421%) ( 42%)  was a                                                                                                                        -------bdeeeehhiikllllooorsttttuux,!
-       337 0* 0.21110% (98.458%) ( 51%)  tried, but this                                                                                                              -------aaeeehkllllooostuwx!
-       338 0* 0.21097% (98.458%) ( 36%)  would also like to see                                                                                                       -------abehhilrtttux,!
-       339 0* 0.20993% (98.458%) ( 77%)  will also                                                                                                                    -------abdeeeehhikloorsttttuux,!
-       340 0* 0.20796% (98.460%) (  9%)  said that to                                                                                                                 -------beeeehiklllloorstuuwx,!
-       341 0* 0.20659% (98.464%) ( 53%)  wrote this as                                                                                                                -------abdeeehiklllloottuux,!
-       342 0* 0.20647% (98.464%) ( 70%)  should write it                                                                                                              -------aabeeehkllloosttux,!
-       343 0* 0.20533% (98.465%) ( 76%)  would like the                                                                                                               -------aabeehilloorsstttux,!
-       344 0* 0.20515% (98.465%) ( 70%)  should write books                                                                                                           -------aaeeehillltttux,!
-       345 0* 0.20487% (98.465%) ( 25%)  hate to be this                                                                                                              -------adeeiklllloorstuuwx,!
-       346 0* 0.20461% (98.466%) ( 48%)  used to hate                                                                                                                 -------abeehiiklllloorsttuwx,!
-       347 0* 0.20360% (98.467%) ( 88%)  talked                                                                                                                       -------abeeehhiilllooorsstttuuwx,!
-       348 0* 0.29756% (98.468%) ( 81%)  talked to                                                                                                                    -------abeeehhiillloorssttuuwx,!
-       349 0* 0.20269% (98.472%) ( 22%)  should tell that                                                                                                             -------abeeeiikloorstuwx,!
-       350 0* 0.20058% (98.472%) ( 59%)  wrote this at                                                                                                                -------abdeeehiklllloostuux,!
-       351 0* 0.23973% (98.472%) ( 20%)  wrote this at the                                                                                                            -------abdeeiklllloosuux,!
-       352 0* 0.19849% (98.473%) (  7%)  said that too                                                                                                                -------beeeehikllllorstuuwx,!
-       353 0* 0.19805% (98.474%) ( 50%)  would like to share this                                                                                                     -------abeellottux,!
-       354 0* 0.19650% (98.474%) ( 74%)  looked at the                                                                                                                -------abeehiilllorssttuuwx,!
-       355 0* 0.19575% (98.475%) ( 68%)  would also be                                                                                                                -------aeeehhiikllorsttttux,!
-       356 0* 0.19555% (98.476%) ( 72%)  drew it                                                                                                                      -------aabeeehhikllllooosstttuux,!
-       357 0* 0.19545% (98.480%) ( 36%)  would like to start this                                                                                                     -------abeeehlloux,!
-       358 0* 0.19475% (98.480%) ( 70%)  still hate break                                                                                                             -------deehillooosttuuwx,!
-       359 0* 0.19457% (98.481%) ( 67%)  would like to hear that                                                                                                      -------beeillosstux,!
-       360 0* 0.19406% (98.481%) (  6%)  should write that last                                                                                                       -------beeeikllooux,!
-       361 0* 0.19388% (98.481%) ( 37%)  would like to see the                                                                                                        -------aabhillorsttux,!
-       362 0* 0.19356% (98.481%) ( 65%)  tried to talk                                                                                                                -------abeeehhillloosstuuwx,!
-       363 0* 0.19347% (98.481%) ( 20%)  hear he                                                                                                                      -------abdeeiikllllooossttttuuwx,!
-       364 0* 0.19340% (98.500%) (  9%)  stole that idea                                                                                                              -------beehikllloorstuuwx,!
-       365 0* 0.19229% (98.501%) ( 91%)  wrote it all                                                                                                                 -------abdeeehhiklloossttuux,!
-       366 0* 0.19200% (98.502%) ( 49%)  like to write                                                                                                                -------aabdeehhllloossttuux,!
-       367 0* 0.19189% (98.503%) ( 33%)  swear, this                                                                                                                  -------abdeeehiklllloootttuux!
-       368 0* 0.18699% (98.505%) (  2%)  stole that last                                                                                                              -------bdeeehiikllooruuwx,!
-       369 0* 0.18667% (98.506%) ( 37%)  was about to tell                                                                                                            -------deeehhiikllorstux,!
-       370 0* 0.18654% (98.507%) ( 47%)  said the                                                                                                                     -------abeeehikllllooorstttuuwx,!
-       371 0* 0.18533% (98.514%) ( 68%)  drew this to                                                                                                                 -------aabeeehiklllloosttuux,!
-       372 0* 0.18526% (98.515%) ( 29%)  hear the                                                                                                                     -------abdeeiikllllooosstttuuwx,!
-       373 0* 0.18454% (98.525%) ( 67%)  liked it                                                                                                                     -------aabeeehhlllooorsstttuuwx,!
-       374 0* 0.62825% (98.526%) ( 13%)  liked it better                                                                                                              -------aaehhlllooosstuuwx,!
-       375 0* 0.18453% (98.529%) ( 67%)  will be sure                                                                                                                 -------aadeehhikllooosttttux,!
-       376 0* 0.55515% (98.529%) ( 85%)  will be sure to                                                                                                              -------aadeehhiklloostttux,!
-       377 0* 0.57922% (98.530%) ( 73%)  will be sure to tell                                                                                                         -------aadehhikoosttux,!
-       378 0* 0.18400% (98.530%) ( 39%)  wrote that, but                                                                                                              -------adeeehiiklllloossux!
-       379 0* 0.18348% (98.530%) ( 45%)  would take that                                                                                                              -------beeehiillloorsstux,!
-       380 0* 0.18344% (98.531%) ( 14%)  bet this is the                                                                                                              -------aadeekllllooortuuwx,!
-       381 0* 0.18340% (98.532%) ( 65%)  used to be his                                                                                                               -------aaeehiklllloortttuwx,!
-       382 0* 0.18325% (98.533%) ( 53%)  drew this!                                                                                                                   -------aabeeehikllllooostttuux,
-       383 0* 0.18282% (98.535%) ( 80%)  should write about                                                                                                           -------aeeehiklllosttx,!
-       384 0* 0.18812% (98.535%) ( 31%)  should write about that                                                                                                      -------eeeiklllosx,!
-       385 0* 0.18251% (98.535%) ( 53%)  shall                                                                                                                        -------abdeeeehiikllooorsttttuuwx,!
-       386 0* 0.18214% (98.549%) ( 75%)  would like to be his                                                                                                         -------aaeehllorstttux,!
-       387 0* 0.18132% (98.549%) ( 44%)  like that last                                                                                                               -------bdeeehillooorstuuwx,!
-       388 0* 0.17992% (98.550%) ( 78%)  like how that                                                                                                                -------abdeeeillloorssttuux,!
-       389 0* 0.17869% (98.551%) ( 92%)  still owe                                                                                                                    -------aabdeeehhiklloorstttuux,!
-       390 0* 0.17728% (98.553%) ( 74%)  will still be                                                                                                                -------aadeeehhkooorstttuux,!
-       391 0* 0.17677% (98.553%) ( 71%)  used to tell                                                                                                                 -------aabeehhiiklloorsttuwx,!
-       392 0* 0.17641% (98.554%) ( 71%)  hear it                                                                                                                      -------abdeeehikllllooosstttuuwx,!
-       393 0* 0.17630% (98.561%) ( 67%)  would still like to hear about the sex                                                                                       -------,!
+         0 0* 29.20215% (87.561%) ( 67%)  should                                                                                                                       -------aabeeeehiikllloorsttttuwx,!
+         1 0* 13.59594% (88.700%) ( 87%)  would                                                                                                                        -------aabeeeehhiikllloorssttttux,!
+         2 0* 8.34069% (89.227%) ( 90%)  will                                                                                                                         -------aabdeeeehhikllooorssttttuux,!
+         3 0* 7.41437% (89.782%) ( 82%)  would like                                                                                                                   -------aabeeehhilloorssttttux,!
+         4 0* 15.67491% (89.789%) ( 87%)  would like to                                                                                                                -------aabeeehhillorsstttux,!
+         5 0* 7.10176% (89.834%) ( 85%)  also                                                                                                                         -------abdeeeehhiikllloorsttttuuwx,!
+         6 0* 6.87804% (90.369%) ( 86%)  bet                                                                                                                          -------aadeeehhiikllllooorsstttuuwx,!
+         7 0* 6.39920% (91.005%) ( 88%)  still                                                                                                                        -------aabdeeeehhikllooorstttuuwx,!
+         8 0* 5.75280% (91.312%) ( 60%)  wish                                                                                                                         -------aabdeeeehikllllooorsttttuux,!
+         9 0* 5.72375% (91.970%) ( 68%)  was                                                                                                                          -------abdeeeehhiikllllooorsttttuux,!
+        10 0* 5.52608% (92.784%) ( 85%)  wrote                                                                                                                        -------aabdeeehhiiklllloosstttuux,!
+        11 0* 11.20551% (92.847%) ( 81%)  wrote this                                                                                                                   -------aabdeeehiklllloosttuux,!
+        12 0* 5.58270% (92.934%) ( 57%)  wrote that                                                                                                                   -------abdeeehiiklllloosstuux,!
+        13 0* 4.72561% (92.988%) ( 66%)  hate                                                                                                                         -------abdeeehiikllllooorsstttuuwx,!
+        14 0* 4.57851% (93.249%) ( 72%)  said                                                                                                                         -------abeeeehhikllllooorsttttuuwx,!
+        15 0* 4.46245% (93.543%) ( 72%)  should be                                                                                                                    -------aaeeehiikllloorsttttuwx,!
+        16 0* 4.29857% (93.601%) ( 77%)  should write                                                                                                                 -------aabeeehikllloostttux,!
+        17 0* 6.22058% (93.607%) ( 46%)  should write that                                                                                                            -------abeeeikllloostux,!
+        18 0* 3.98581% (93.612%) ( 90%)  like                                                                                                                         -------aabdeeehhilllooorssttttuuwx,!
+        19 0* 3.92968% (93.772%) ( 78%)  tried                                                                                                                        -------aabeeehhikllllooosstttuuwx,!
+        20 0* 6.01630% (93.823%) ( 80%)  tried to                                                                                                                     -------aabeeehhiklllloossttuuwx,!
+        21 0* 3.69605% (93.936%) ( 75%)  used                                                                                                                         -------aabeeehhiikllllooorsttttuwx,!
+        22 0* 6.60658% (94.001%) ( 88%)  used to                                                                                                                      -------aabeeehhiiklllloorstttuwx,!
+        23 0* 4.27596% (94.136%) ( 82%)  used to be                                                                                                                   -------aaeehhiiklllloorstttuwx,!
+        24 0* 3.42189% (94.164%) ( 69%)  sure                                                                                                                         -------aabdeeehhiikllllooosttttuwx,!
+        25 0* 2.95382% (94.506%) ( 71%)  hate to                                                                                                                      -------abdeeehiiklllloorssttuuwx,!
+        26 0* 3.88330% (94.568%) ( 57%)  hate to break                                                                                                                -------deehiilllloossttuuwx,!
+        27 0* 3.75732% (94.574%) ( 36%)  hate to break it                                                                                                             -------deehilllloosstuuwx,!
+        28 0* 5.35411% (94.574%) (  8%)  hate to break it to                                                                                                          -------deehillllossuuwx,!
+        29 0* 2.90118% (94.585%) ( 80%)  would break                                                                                                                  -------aeeehhiillloossttttux,!
+        30 0* 2.78644% (94.601%) ( 89%)  would be                                                                                                                     -------aaeeehhiikllloorssttttux,!
+        31 0* 2.60453% (94.636%) ( 84%)  would like to be                                                                                                             -------aaeehhillorsstttux,!
+        32 0* 2.43311% (94.638%) ( 77%)  would be too                                                                                                                 -------aaeeehhiiklllrsstttux,!
+        33 0* 2.35352% (94.642%) ( 91%)  broke                                                                                                                        -------aadeeehhiilllloossttttuuwx,!
+        34 0* 2.33612% (94.758%) ( 66%)  should break                                                                                                                 -------aeeehiillloosttttuwx,!
+        35 0* 2.33271% (94.768%) ( 73%)  would be too!                                                                                                                -------aaeeehhiiklllrsstttux,
+        36 0* 2.30178% (94.777%) ( 92%)  like to                                                                                                                      -------aabdeeehhillloorsstttuuwx,!
+        37 0* 2.20030% (94.840%) ( 63%)  hear                                                                                                                         -------abdeeehiikllllooossttttuuwx,!
+        38 0* 2.14656% (94.997%) ( 61%)  heard                                                                                                                        -------abeeehiikllllooossttttuuwx,!
+        39 0* 1.97275% (95.072%) ( 35%)  hate this                                                                                                                    -------abdeeeikllllooorsttuuwx,!
+        40 0* 1.91142% (95.127%) ( 67%)  bet this                                                                                                                     -------aadeeehikllllooorsttuuwx,!
+        41 0* 1.90030% (95.173%) ( 88%)  will be                                                                                                                      -------aadeeehhikllooorssttttuux,!
+        42 0* 1.86202% (95.228%) ( 65%)  had                                                                                                                          -------abeeeehiikllllooorssttttuuwx,!
+        43 0* 1.80542% (95.348%) ( 78%)  had to                                                                                                                       -------abeeeehiiklllloorsstttuuwx,!
+        44 0* 1.74623% (95.430%) ( 85%)  take                                                                                                                         -------abdeeehhiillllooorsstttuuwx,!
+        45 0* 1.81013% (95.457%) ( 76%)  take it                                                                                                                      -------abdeeehhillllooorssttuuwx,!
+        46 0* 2.78532% (95.502%) ( 84%)  take it all                                                                                                                  -------bdeeehhillooorssttuuwx,!
+        47 0* 1.69359% (95.527%) ( 93%) ,                                                                                                                             -------aabdeeeehhiikllllooorssttttuuwx!
+        48 0* 1.60437% (95.866%) ( 81%)  used to like                                                                                                                 -------aabeehhillloorstttuwx,!
+        49 0* 1.54909% (95.873%) ( 59%)  used to be a                                                                                                                 -------aeehhiiklllloorstttuwx,!
+        50 0* 1.51397% (95.892%) ( 36%)  hate to break this                                                                                                           -------deeilllloostuuwx,!
+        51 0* 2.12033% (95.892%) ( 11%)  hate to break this to                                                                                                        -------deeillllosuuwx,!
+        52 0* 1.51122% (95.893%) ( 32%)  should write this                                                                                                            -------aabeeekllloottux,!
+        53 0* 1.49710% (95.895%) ( 94%)  told                                                                                                                         -------aabeeeehhiikllloorsstttuuwx,!
+        54 0* 1.49272% (95.996%) ( 35%)  should also                                                                                                                  -------abeeeehiikllorttttuwx,!
+        55 0* 1.48457% (96.012%) ( 52%)  should be the                                                                                                                -------aaeeiikllloorstttuwx,!
+        56 0* 1.45171% (96.020%) ( 58%)  swear                                                                                                                        -------abdeeehhiikllllooosttttuux,!
+        57 0* 1.43425% (96.059%) ( 24%)  said that                                                                                                                    -------beeeehikllllooorsttuuwx,!
+        58 0* 1.42673% (96.097%) ( 58%)  said it                                                                                                                      -------abeeeehhkllllooorstttuuwx,!
+        59 0* 1.42059% (96.138%) ( 80%)  should take                                                                                                                  -------abeeehiillloorstttuwx,!
+        60 0* 1.96486% (96.142%) ( 55%)  should take this                                                                                                             -------abeeeillloorttuwx,!
+        61 0* 1.35816% (96.144%) ( 80%)  drew                                                                                                                         -------aabeeehhiikllllooossttttuux,!
+        62 0* 3.27346% (96.164%) ( 54%)  drew this                                                                                                                    -------aabeeehikllllooostttuux,!
+        63 0* 1.35709% (96.227%) ( 60%)  tried to be                                                                                                                  -------aaeehhiklllloossttuuwx,!
+        64 0* 1.34657% (96.242%) ( 50%)  was the                                                                                                                      -------abdeeehiikllllooorstttuux,!
+        65 0* 1.31070% (96.320%) ( 95%)  look                                                                                                                         -------aabdeeeehhiilllorssttttuuwx,!
+        66 0* 1.27133% (96.413%) ( 80%)  like that                                                                                                                    -------abdeeehilllooorssttuuwx,!
+        67 0* 1.26993% (96.423%) ( 18%)  heard that                                                                                                                   -------beeeiikllllooossttuuwx,!
+        68 0* 1.26256% (96.439%) ( 88%)  liked                                                                                                                        -------aabeeehhilllooorssttttuuwx,!
+        69 0* 1.25614% (96.482%) ( 62%)  would also                                                                                                                   -------abeeeehhiikllorsttttux,!
+        70 0* 5.41135% (96.486%) ( 62%)  would also like                                                                                                              -------abeeehhilorsttttux,!
+        71 0* 14.08253% (96.486%) ( 71%)  would also like to                                                                                                           -------abeeehhilrstttux,!
+        72 0* 1.34336% (96.494%) ( 25%)  would also like to state                                                                                                     -------beehhilrtux,!
+        73 0* 1.18277% (96.494%) ( 53%)  hate to be                                                                                                                   -------adeehiiklllloorssttuuwx,!
+        74 0* 1.17666% (96.499%) ( 89%)  stole                                                                                                                        -------aabdeeehhiikllloorstttuuwx,!
+        75 0* 2.35672% (96.505%) ( 64%)  stole this                                                                                                                   -------aabdeeehikllloorttuuwx,!
+        76 0* 1.17583% (96.527%) ( 26%)  hear that                                                                                                                    -------bdeeeiikllllooossttuuwx,!
+        77 0* 1.17545% (96.556%) ( 11%)  wrote that last                                                                                                              -------bdeeehiikllloosuux,!
+        78 0* 1.17138% (96.561%) ( 94%)  doubt                                                                                                                        -------aaeeeehhiiklllloorsstttuwx,!
+        79 0* 1.16662% (96.590%) ( 22%)  take that                                                                                                                    -------bdeeehiillllooorsstuuwx,!
+        80 0* 1.15875% (96.639%) ( 10%)  hate to be the                                                                                                               -------adeiiklllloorsstuuwx,!
+        81 0* 1.14958% (96.655%) ( 82%)  lied                                                                                                                         -------aabeeehhiklllooorssttttuuwx,!
+        82 0* 1.12695% (96.701%) ( 73%)  like this                                                                                                                    -------aabdeeehlllooorstttuuwx,!
+        83 0* 1.11357% (96.716%) ( 76%)  had to write                                                                                                                 -------abeeehiklllloossttuux,!
+        84 0* 1.10252% (96.718%) ( 93%)  do                                                                                                                           -------aabeeeehhiiklllloorssttttuuwx,!
+        85 0* 1.09021% (96.889%) ( 20%)  stole this idea                                                                                                              -------abeehkllloorttuuwx,!
+        86 0* 1.06688% (96.893%) ( 49%)  used the                                                                                                                     -------aabeehiikllllooorstttuwx,!
+        87 0* 1.05417% (96.932%) ( 88%)  lied about                                                                                                                   -------aeeehhikllloorsstttuwx,!
+        88 0* 1.00931% (96.935%) ( 69%)  should tell                                                                                                                  -------aabeeehiikloorstttuwx,!
+        89 0* 0.97719% (96.941%) ( 82%)  wrote it                                                                                                                     -------aabdeeehhiklllloossttuux,!
+        90 0* 0.97455% (96.955%) ( 53%)  hate break                                                                                                                   -------deehiillllooosstttuuwx,!
+        91 0* 0.95752% (96.968%) ( 74%)  write                                                                                                                        -------aabdeeehhikllllooosstttuux,!
+        92 0* 1.40013% (96.994%) ( 48%)  write this                                                                                                                   -------aabdeeehkllllooosttuux,!
+        93 0* 0.95279% (97.010%) ( 72%)  would also like to be                                                                                                        -------aeehhilrstttux,!
+        94 0* 0.94493% (97.010%) ( 41%)  stole that                                                                                                                   -------abdeeehiikllloorstuuwx,!
+        95 0* 0.94394% (97.023%) ( 23%)  heard that!                                                                                                                  -------beeeiikllllooossttuuwx,
+        96 0* 0.94182% (97.038%) ( 61%)  wrote the                                                                                                                    -------aabdeehiiklllloossttuux,!
+        97 0* 0.93795% (97.054%) ( 54%)  would like to see                                                                                                            -------aabehhillorstttux,!
+        98 0* 0.96153% (97.054%) ( 59%)  would like to see this                                                                                                       -------aabehllorttux,!
+        99 0* 0.93385% (97.055%) ( 59%)  used to be this                                                                                                              -------aaeehiklllloorttuwx,!
+       100 0* 0.92961% (97.057%) ( 63%)  bet he                                                                                                                       -------aadeehiikllllooorsstttuuwx,!
+       101 0* 0.91077% (97.112%) ( 69%)  used to like this                                                                                                            -------aabeehllloorttuwx,!
+       102 0* 0.85622% (97.113%) ( 91%)  looked                                                                                                                       -------aabeeehhiilllorssttttuuwx,!
+       103 0* 0.85247% (97.130%) ( 85%)  still like                                                                                                                   -------aabdeeehhlooorstttuuwx,!
+       104 0* 0.84450% (97.135%) ( 93%)  took                                                                                                                         -------aabdeeeehhiillllorsstttuuwx,!
+       105 0* 0.98471% (97.155%) ( 89%)  took the                                                                                                                     -------aabdeeehiillllorssttuuwx,!
+       106 0* 0.82301% (97.172%) ( 87%)  also like                                                                                                                    -------abdeeehhilloorsttttuuwx,!
+       107 0* 0.81483% (97.176%) ( 92%)  also like to                                                                                                                 -------abdeeehhillorstttuuwx,!
+       108 0* 0.81465% (97.179%) ( 69%)  lied about the                                                                                                               -------aeehikllloorssttuwx,!
+       109 0* 0.81106% (97.181%) ( 35%)  lied about that                                                                                                              -------eeehikllloorsstuwx,!
+       110 0* 0.79397% (97.183%) ( 12%)  had to write that                                                                                                            -------beeeiklllloossuux,!
+       111 0* 0.76584% (97.185%) ( 66%)  said it!                                                                                                                     -------abeeeehhkllllooorstttuuwx,
+       112 0* 0.76276% (97.207%) ( 66%)  swear,                                                                                                                       -------abdeeehhiikllllooosttttuux!
+       113 0* 0.74422% (97.234%) ( 31%)  should start                                                                                                                 -------abeeeehiikllloottuwx,!
+       114 0* 0.72769% (97.239%) ( 80%)  would also like to let                                                                                                       -------abeehhirsttux,!
+       115 0* 0.72742% (97.239%) ( 89%)  break                                                                                                                        -------adeeehhiillllooossttttuuwx,!
+       116 0* 0.70430% (97.275%) ( 93%)  would still                                                                                                                  -------aabeeeehhikloorstttux,!
+       117 0* 1.15570% (97.277%) ( 90%)  would still like                                                                                                             -------aabeeehhoorstttux,!
+       118 0* 1.97720% (97.277%) ( 92%)  would still like to                                                                                                          -------aabeeehhorsttux,!
+       119 0* 1.20797% (97.278%) ( 86%)  would still like to be                                                                                                       -------aaeehhorsttux,!
+       120 0* 0.70341% (97.278%) ( 67%)  should write a                                                                                                               -------abeeehikllloostttux,!
+       121 0* 0.68581% (97.280%) ( 75%)  would like to start                                                                                                          -------abeeehhillostux,!
+       122 0* 0.68533% (97.280%) ( 19%)  like this better                                                                                                             -------aadehlllooostuuwx,!
+       123 0* 0.66936% (97.281%) ( 38%)  would also like to use                                                                                                       -------abeehhilrtttx,!
+       124 0* 0.66068% (97.281%) ( 31%)  hear that!                                                                                                                   -------bdeeeiikllllooossttuuwx,
+       125 0* 0.65714% (97.295%) ( 29%)  bet there                                                                                                                    -------aadehiikllllooossttuuwx,!
+       126 0* 0.65573% (97.316%) ( 73%)  sure would                                                                                                                   -------aabeeehhiikllloosttttx,!
+       127 0* 0.81936% (97.318%) ( 62%)  sure would be                                                                                                                -------aaeehhiikllloosttttx,!
+       128 0* 0.82941% (97.319%) ( 63%)  sure would be!                                                                                                               -------aaeehhiikllloosttttx,
+       129 0* 0.64887% (97.321%) ( 57%)  would like to state                                                                                                          -------abeehhillorstux,!
+       130 0* 0.64423% (97.322%) ( 67%)  wrote this to                                                                                                                -------aabdeeehikllllostuux,!
+       131 0* 0.64007% (97.324%) ( 72%)  like the                                                                                                                     -------aabdeehilllooorsstttuuwx,!
+       132 0* 0.63747% (97.338%) ( 81%)  doubt this                                                                                                                   -------aaeeeehiklllloorsttuwx,!
+       133 0* 0.63645% (97.343%) ( 50%)  tried to tell                                                                                                                -------aabeehhiklloosstuuwx,!
+       134 0* 0.62961% (97.346%) ( 30%)  had to write this                                                                                                            -------abeeeklllloostuux,!
+       135 0* 0.61820% (97.347%) ( 85%)  tried,                                                                                                                       -------aabeeehhikllllooosstttuuwx!
+       136 0* 1.42439% (97.356%) ( 85%)  tried, but                                                                                                                   -------aaeeehhikllllooossttuwx!
+       137 0* 0.59706% (97.364%) ( 93%) , however                                                                                                                     aabdeeeehhiikllllooorssttttuuwx!
+       138 0* 0.58899% (97.371%) ( 79%)  read                                                                                                                         -------abeeehhiikllllooossttttuuwx,!
+       139 0* 0.56876% (97.389%) ( 55%)  better                                                                                                                       -------aadeehhiikllllooossttuuwx,!
+       140 0* 0.56621% (97.418%) ( 31%)  heard this                                                                                                                   -------abeeeikllllooostttuuwx,!
+       141 0* 0.56437% (97.427%) ( 30%)  bet that                                                                                                                     -------adeeehiikllllooorsstuuwx,!
+       142 0* 0.55950% (97.455%) ( 71%)  would like to use                                                                                                            -------aabeehhillorstttx,!
+       143 0* 2.77376% (97.456%) ( 72%)  would like to use this                                                                                                       -------aabeehllorttx,!
+       144 0* 0.54765% (97.456%) ( 43%)  was about                                                                                                                    -------deeeehhiiklllloorstttux,!
+       145 0* 0.87785% (97.456%) ( 21%)  was about to                                                                                                                 -------deeeehhiikllllorsttux,!
+       146 0* 0.54260% (97.470%) ( 20%)  like this better!                                                                                                            -------aadehlllooostuuwx,
+       147 0* 0.53155% (97.470%) ( 84%)  would take                                                                                                                   -------abeeehhiillloorsstttux,!
+       148 0* 0.78858% (97.473%) ( 81%)  would take this                                                                                                              -------abeeehillloorsttux,!
+       149 0* 0.52851% (97.474%) ( 71%)  would like to hear                                                                                                           -------abeehillosstttux,!
+       150 0* 0.52698% (97.474%) ( 86%)  lied!                                                                                                                        -------aabeeehhiklllooorssttttuuwx,
+       151 0* 0.51025% (97.502%) ( 53%)  read this                                                                                                                    -------abeeehikllllooostttuuwx,!
+       152 0* 0.49628% (97.511%) ( 86%)  like how                                                                                                                     -------aabdeeehillloorssttttuux,!
+       153 0* 0.49608% (97.517%) ( 77%)  should talk                                                                                                                  -------abeeeehiilloorstttuwx,!
+       154 0* 0.49387% (97.518%) ( 85%)  took this                                                                                                                    -------aabdeeeehillllorsttuuwx,!
+       155 0* 0.49087% (97.524%) ( 25%)  said this                                                                                                                    -------abeeeehkllllooortttuuwx,!
+       156 0* 0.48881% (97.539%) ( 79%)  wrote this all                                                                                                               -------abdeeehiklloosttuux,!
+       157 0* 0.47721% (97.540%) ( 83%) , uh                                                                                                                          -------aabdeeeehiikllllooorssttttuwx!
+       158 0* 0.47136% (97.607%) ( 57%)  hate to tell                                                                                                                 -------abdeehiiklloorsstuuwx,!
+       159 0* 0.46997% (97.611%) ( 44%)  had a                                                                                                                        -------beeeehiikllllooorssttttuuwx,!
+       160 0* 0.46740% (97.679%) ( 47%)  lied about the whole                                                                                                         -------aeikllorssttux,!
+       161 0* 0.45575% (97.679%) ( 58%)  should still                                                                                                                 -------aabeeeehikloortttuwx,!
+       162 0* 0.45559% (97.681%) ( 69%)  threw                                                                                                                        -------aabdeeehiikllllooosstttuux,!
+       163 0* 0.53338% (97.696%) ( 44%)  threw this                                                                                                                   -------aabdeeeikllllooosttuux,!
+       164 0* 0.45204% (97.704%) ( 71%)  would like it                                                                                                                -------aabeeehhlloorsstttux,!
+       165 0* 0.45149% (97.705%) ( 78%)  would also like it                                                                                                           -------abeeehhlorstttux,!
+       166 0* 0.44621% (97.706%) ( 14%)  hate to break the                                                                                                            -------deiilllloosstuuwx,!
+       167 0* 0.44312% (97.707%) ( 42%)  used to be the                                                                                                               -------aaehiiklllloorsttuwx,!
+       168 0* 0.44199% (97.710%) ( 24%)  used to be that                                                                                                              -------aeehiiklllloorstuwx,!
+       169 0* 0.43952% (97.712%) ( 70%)  had to look                                                                                                                  -------abeeeehiilllrsstttuuwx,!
+       170 0* 0.43694% (97.716%) ( 88%)  will take                                                                                                                    -------abdeeehhillooorsstttuux,!
+       171 0* 0.43340% (97.719%) ( 52%)  bet the                                                                                                                      -------aadeehiikllllooorssttuuwx,!
+       172 0* 0.43318% (97.742%) ( 40%)  hate this break                                                                                                              -------deeillllooosttuuwx,!
+       173 0* 0.43129% (97.743%) ( 81%)  would like this                                                                                                              -------aabeeehlloorstttux,!
+       174 0* 0.42637% (97.743%) ( 57%)  tried, but it                                                                                                                -------aaeeehhkllllooosstuwx!
+       175 0* 0.42343% (97.745%) ( 54%)  used this                                                                                                                    -------aabeeehikllllooortttuwx,!
+       176 0* 0.41600% (97.754%) ( 94%) , too                                                                                                                         -------aabdeeeehhiikllllorsstttuuwx!
+       177 0* 0.41554% (97.786%) ( 55%)  took the words                                                                                                               -------aabeeehiillllsttuux,!
+       178 0* 0.40985% (97.787%) ( 70%)  would like a                                                                                                                 -------abeeehhilloorssttttux,!
+       179 0* 0.40823% (97.790%) ( 62%)  sure would like                                                                                                              -------aabeehhilloosttttx,!
+       180 0* 0.95305% (97.790%) ( 68%)  sure would like to                                                                                                           -------aabeehhillostttx,!
+       181 0* 0.40655% (97.790%) ( 77%)  swear to                                                                                                                     -------abdeeehhiiklllloostttuux,!
+       182 0* 0.40628% (97.799%) ( 65%)  liked this                                                                                                                   -------aabeeehlllooorstttuuwx,!
+       183 0* 0.40608% (97.804%) ( 83%) , the                                                                                                                         -------aabdeeehiikllllooorsstttuuwx!
+       184 0* 0.40513% (97.835%) ( 46%)  wrote this last                                                                                                              -------abdeeehiklllootuux,!
+       185 0* 0.40456% (97.836%) ( 68%)  saw                                                                                                                          -------abdeeeehhiikllllooorsttttuux,!
+       186 0* 0.40377% (97.877%) ( 65%)  would like to be the                                                                                                         -------aaehillorssttux,!
+       187 0* 0.40355% (97.877%) ( 80%) , the author                                                                                                                  -------abdeeeiiklllloossttuwx!
+       188 0* 0.39774% (97.880%) (  8%)  hate that                                                                                                                    -------bdeeeiikllllooorsstuuwx,!
+       189 0* 0.39324% (97.900%) ( 49%)  wrote the last                                                                                                               -------abdeehiikllloostuux,!
+       190 0* 0.39288% (97.901%) ( 71%)  would hate                                                                                                                   -------abeeehiikllloorsstttux,!
+       191 0* 0.68195% (97.902%) ( 79%)  would hate to                                                                                                                -------abeeehiiklllorssttux,!
+       192 0* 0.91090% (97.903%) ( 71%)  would hate to be                                                                                                             -------aeehiiklllorssttux,!
+       193 0* 0.67344% (97.904%) ( 49%)  would hate to be this                                                                                                        -------aeeiklllorstux,!
+       194 0* 0.40577% (97.904%) ( 31%)  would hate to be the                                                                                                         -------aeiiklllorsstux,!
+       195 0* 0.38851% (97.904%) ( 63%)  used to be like                                                                                                              -------aaehhillloorstttuwx,!
+       196 0* 0.99525% (97.905%) ( 44%)  used to be like this                                                                                                         -------aaehllloorttuwx,!
+       197 0* 0.64917% (97.905%) ( 57%)  used to be like this,                                                                                                        -------aaehllloorttuwx!
+       198 0* 0.38448% (97.905%) ( 38%)  would like to hear about                                                                                                     -------eehillssttx,!
+       199 0* 0.42414% (97.905%) ( 50%)  would like to hear about this                                                                                                -------eellstx,!
+       200 0* 0.38277% (97.905%) ( 62%)  see                                                                                                                          -------aabdeehhiikllllooorsttttuuwx,!
+       201 0* 0.37302% (97.948%) ( 92%)  looked it                                                                                                                    -------aabeeehhilllorsstttuuwx,!
+       202 0* 0.37289% (97.953%) ( 16%)  wish this                                                                                                                    -------aabdeeeekllllooortttuux,!
+       203 0* 0.37184% (97.970%) ( 69%)  will take this                                                                                                               -------abdeeehllooorsttuux,!
+       204 0* 0.37182% (97.971%) ( 91%)  would tell                                                                                                                   -------aabeeehhiikloorsstttux,!
+       205 0* 0.36541% (97.974%) ( 76%)  bet it                                                                                                                       -------aadeeehhikllllooorssttuuwx,!
+       206 0* 0.36484% (97.991%) ( 67%)  hate it                                                                                                                      -------abdeeehikllllooorssttuuwx,!
+       207 0* 0.36400% (98.005%) ( 68%)  liked the                                                                                                                    -------aabeehilllooorsstttuuwx,!
+       208 0* 0.36128% (98.010%) ( 79%)  tried!                                                                                                                       -------aabeeehhikllllooosstttuuwx,
+       209 0* 0.36074% (98.024%) ( 30%)  write this as                                                                                                                -------abdeeehkllllooottuux,!
+       210 0* 0.35662% (98.025%) ( 55%)  swear!                                                                                                                       -------abdeeehhiikllllooosttttuux,
+       211 0* 0.35385% (98.045%) ( 35%)  used to be like that                                                                                                         -------aehillloorstuwx,!
+       212 0* 0.34886% (98.045%) ( 30%)  heard that,                                                                                                                  -------beeeiikllllooossttuuwx!
+       213 0* 0.34851% (98.049%) ( 58%)  used to write                                                                                                                -------aabeehhiklllloosttux,!
+       214 0* 0.34689% (98.051%) ( 79%)  like that!                                                                                                                   -------abdeeehilllooorssttuuwx,
+       215 0* 0.34269% (98.054%) ( 62%)  also would                                                                                                                   -------abeeeehhiikllorsttttux,!
+       216 0* 1.38823% (98.055%) ( 62%)  also would like                                                                                                              -------abeeehhilorsttttux,!
+       217 0* 3.45044% (98.055%) ( 71%)  also would like to                                                                                                           -------abeeehhilrstttux,!
+       218 0* 0.34226% (98.057%) ( 81%)  wrote a                                                                                                                      -------abdeeehhiiklllloosstttuux,!
+       219 0* 0.34220% (98.068%) ( 25%)  also would like to state                                                                                                     -------beehhilrtux,!
+       220 0* 0.34115% (98.068%) ( 76%)  will still                                                                                                                   -------aabdeeeehhkooorstttuux,!
+       221 0* 0.34068% (98.071%) ( 38%)  wish the                                                                                                                     -------aabdeeeikllllooorstttuux,!
+       222 0* 0.96770% (98.077%) ( 24%)  wish the best                                                                                                                -------aadeeikllllooorttuux,!
+       223 0* 0.34011% (98.086%) ( 78%)  would be too,                                                                                                                -------aaeeehhiiklllrsstttux!
+       224 0* 0.33917% (98.087%) ( 75%)  like it                                                                                                                      -------aabdeeehhlllooorsstttuuwx,!
+       225 0* 0.47551% (98.093%) ( 20%)  like it better                                                                                                               -------aadehhlllooosstuuwx,!
+       226 0* 0.33898% (98.096%) ( 58%)  should use                                                                                                                   -------aabeeehiikllloorttttwx,!
+       227 0* 0.33536% (98.099%) ( 31%)  also heard                                                                                                                   -------beeehiikllloosttttuuwx,!
+       228 0* 0.33527% (98.104%) ( 45%)  lied about that!                                                                                                             -------eeehikllloorsstuwx,
+       229 0* 0.33329% (98.105%) ( 52%)  should write the                                                                                                             -------aabeeikllloosttux,!
+       230 0* 0.32952% (98.105%) ( 90%)  will however                                                                                                                 aabdeeeehhikllooorssttttuux,!
+       231 0* 0.32883% (98.106%) ( 65%)  would still like to see                                                                                                      -------aabehhorttux,!
+       232 0* 0.32881% (98.106%) ( 72%)  would like to be that                                                                                                        -------aeehillorsstux,!
+       233 0* 0.32529% (98.106%) ( 77%)  would like to be this                                                                                                        -------aaeehllorsttux,!
+       234 0* 0.31579% (98.106%) ( 94%)  too                                                                                                                          -------aabdeeeehhiikllllorsstttuuwx,!
+       235 0* 0.32321% (98.131%) ( 79%)  too would                                                                                                                    -------aabeeeehhiiklllrsstttux,!
+       236 0* 0.41657% (98.133%) ( 77%)  too would be                                                                                                                 -------aaeeehhiiklllrsstttux,!
+       237 0* 0.31457% (98.135%) ( 69%)  too would like                                                                                                               -------aabeeehhillrsstttux,!
+       238 0* 0.31225% (98.136%) ( 13%)  like that better                                                                                                             -------adehilllooossuuwx,!
+       239 0* 0.30917% (98.136%) ( 43%)  would also like to use the                                                                                                   -------abehilrttx,!
+       240 0* 0.30838% (98.136%) ( 87%)  looked at                                                                                                                    -------abeeehhiilllorsstttuuwx,!
+       241 0* 0.30787% (98.138%) ( 56%)  would like to see that                                                                                                       -------abehillorstux,!
+       242 0* 0.30650% (98.138%) ( 78%)  doubt this will                                                                                                              -------aaeeeehklloorsttux,!
+       243 0* 0.30515% (98.138%) ( 83%)  should talk to                                                                                                               -------abeeeehiillorsttuwx,!
+       244 0* 0.30401% (98.139%) ( 48%)  should write that!                                                                                                           -------abeeeikllloostux,
+       245 0* 0.29401% (98.139%) ( 76%)  draw                                                                                                                         -------abeeeehhiikllllooossttttuux,!
+       246 0* 0.29391% (98.157%) ( 88%)  will tell                                                                                                                    -------aabdeeehhikooorsstttuux,!
+       247 0* 0.29303% (98.160%) ( 62%)  wrote that!                                                                                                                  -------abdeeehiiklllloosstuux,
+       248 0* 0.29176% (98.162%) ( 31%)  should also tell                                                                                                             -------abeeehiikortttuwx,!
+       249 0* 0.29001% (98.163%) ( 78%)  worked                                                                                                                       -------aabeeehhiilllloossttttuux,!
+       250 0* 0.28828% (98.171%) ( 66%)  should look                                                                                                                  -------aabeeeehiillrsttttuwx,!
+       251 0* 0.28815% (98.172%) ( 48%)  used to be like that,                                                                                                        -------aehillloorstuwx!
+       252 0* 0.28454% (98.173%) ( 86%)  would like that                                                                                                              -------abeeehilloorssttux,!
+       253 0* 0.28398% (98.173%) ( 85%)  would like to tell                                                                                                           -------aabeehhiorssttux,!
+       254 0* 0.28290% (98.173%) ( 72%)  wrote this out                                                                                                               -------aabdeeehikllllostux,!
+       255 0* 0.28159% (98.174%) ( 57%)  still hate                                                                                                                   -------abdeeehikllooorsttuuwx,!
+       256 0* 0.28080% (98.176%) ( 88%)  lied,                                                                                                                        -------aabeeehhiklllooorssttttuuwx!
+       257 0* 0.27984% (98.183%) ( 88%)  tell                                                                                                                         -------aabdeeehhiikllooorsstttuuwx,!
+       258 0* 0.27906% (98.204%) ( 56%)  wish it                                                                                                                      -------aabdeeeehkllllooorstttuux,!
+       259 0* 0.27549% (98.217%) ( 60%)  swear it                                                                                                                     -------abdeeehhikllllooostttuux,!
+       260 0* 0.27532% (98.221%) ( 80%)  also would like to let                                                                                                       -------abeehhirsttux,!
+       261 0* 0.27386% (98.221%) ( 83%)  also broke                                                                                                                   -------adeeehhiilllosttttuuwx,!
+       262 0* 0.27198% (98.223%) ( 85%)  wrote this,                                                                                                                  -------aabdeeehiklllloosttuux!
+       263 0* 0.27810% (98.224%) ( 85%)  wrote this, but                                                                                                              -------aadeeehiklllloostux!
+       264 0* 0.26815% (98.225%) ( 56%)  would like to use the                                                                                                        -------aabehillorsttx,!
+       265 0* 0.26795% (98.225%) ( 22%)  heard he                                                                                                                     -------abeeiikllllooossttttuuwx,!
+       266 0* 0.26661% (98.239%) ( 68%)  said it,                                                                                                                     -------abeeeehhkllllooorstttuuwx!
+       267 0* 0.26655% (98.245%) ( 76%)  wrote this!                                                                                                                  -------aabdeeehiklllloosttuux,
+       268 0* 0.26603% (98.246%) ( 72%)  also would like to be                                                                                                        -------aeehhilrstttux,!
+       269 0* 0.26329% (98.246%) ( 93%)  do however                                                                                                                   aabeeeehhiiklllloorssttttuuwx,!
+       270 0* 0.26067% (98.248%) ( 43%)  doubt that                                                                                                                   -------aeeeehiiklllloorsstuwx,!
+       271 0* 0.25871% (98.251%) ( 88%)  doubt he                                                                                                                     -------aaeeehiiklllloorsstttuwx,!
+       272 0* 0.25696% (98.255%) ( 70%)  bet we                                                                                                                       -------aadeehhiikllllooorsstttuux,!
+       273 0* 0.25693% (98.271%) ( 16%)  like that better!                                                                                                            -------adehilllooossuuwx,
+       274 0* 0.25692% (98.272%) ( 62%)  used a                                                                                                                       -------abeeehhiikllllooorsttttuwx,!
+       275 0* 0.25590% (98.289%) ( 45%)  assure                                                                                                                       -------abdeeehhiikllllooottttuwx,!
+       276 0* 0.25442% (98.305%) ( 72%)  wrote that,                                                                                                                  -------abdeeehiiklllloosstuux!
+       277 0* 0.25346% (98.306%) ( 63%)  still like the                                                                                                               -------aabdeehlooorsttuuwx,!
+       278 0* 0.24950% (98.307%) ( 18%)  would also like to share                                                                                                     -------beehiltttux,!
+       279 0* 0.24908% (98.307%) ( 58%)  would also like this                                                                                                         -------abeeehlortttux,!
+       280 0* 0.24876% (98.307%) ( 40%)  wish that                                                                                                                    -------abdeeeeikllllooorsttuux,!
+       281 0* 0.24716% (98.314%) ( 18%)  should write that at                                                                                                         -------beeeikllloosux,!
+       282 0* 0.24565% (98.314%) ( 69%)  would like to share                                                                                                          -------abeehillostttux,!
+       283 0* 0.24549% (98.314%) ( 62%)  like how this                                                                                                                -------aabdeeellloorstttuux,!
+       284 0* 0.24414% (98.315%) ( 46%)  write that                                                                                                                   -------abdeeehikllllooosstuux,!
+       285 0* 0.24408% (98.318%) ( 87%)  also liked                                                                                                                   -------abeeehhilloorsttttuuwx,!
+       286 0* 0.24305% (98.319%) ( 73%)  told this                                                                                                                    -------aabeeeehikllloorsttuuwx,!
+       287 0* 0.24027% (98.322%) ( 93%)  still would                                                                                                                  -------aabeeeehhikloorstttux,!
+       288 0* 0.23893% (98.323%) ( 29%)  should take that                                                                                                             -------beeeiillloorstuwx,!
+       289 0* 0.23888% (98.324%) ( 62%)  stole the                                                                                                                    -------aabdeehiikllloorsttuuwx,!
+       290 0* 0.23742% (98.326%) ( 37%)  would also like a                                                                                                            -------beeehhilorsttttux,!
+       291 0* 0.23664% (98.326%) ( 14%)  said that out                                                                                                                -------beeeehiklllloorstuwx,!
+       292 0* 0.23603% (98.329%) ( 31%)  should tell this                                                                                                             -------aabeeeikloorttuwx,!
+       293 0* 0.23452% (98.330%) ( 61%)  should be so                                                                                                                 -------aaeeehiiklllorttttuwx,!
+       294 0* 0.23351% (98.331%) ( 42%)  also hate                                                                                                                    -------bdeeehiikllloorstttuuwx,!
+       295 0* 0.23344% (98.336%) ( 82%)  also like the                                                                                                                -------abdeehilloorstttuuwx,!
+       296 0* 0.23299% (98.336%) ( 51%)  bet she                                                                                                                      -------aadeehiikllllooorstttuuwx,!
+       297 0* 0.23266% (98.347%) ( 66%)  heard it                                                                                                                     -------abeeehikllllooosstttuuwx,!
+       298 0* 0.22992% (98.352%) ( 24%)  should write these                                                                                                           -------aabeikllloottux,!
+       299 0* 0.22986% (98.352%) ( 81%)  wrote both                                                                                                                   -------aadeeehiikllllossttuux,!
+       300 0* 0.36832% (98.353%) ( 37%)  wrote both sides                                                                                                             -------aaeehikllllottuux,!
+       301 0* 0.22942% (98.353%) ( 37%)  hear this                                                                                                                    -------abdeeeikllllooostttuuwx,!
+       302 0* 0.22829% (98.358%) ( 42%)  was a                                                                                                                        -------bdeeeehhiikllllooorsttttuux,!
+       303 0* 0.22793% (98.398%) ( 42%)  still wish                                                                                                                   -------aabdeeeehkllooortttuux,!
+       304 0* 0.22743% (98.401%) ( 77%)  will also                                                                                                                    -------abdeeeehhikloorsttttuux,!
+       305 0* 0.22659% (98.403%) ( 39%)  bet this is                                                                                                                  -------aadeeehkllllooorttuuwx,!
+       306 0* 0.22639% (98.405%) ( 65%)  should write a book                                                                                                          -------aeeehilllstttux,!
+       307 0* 0.22456% (98.405%) ( 29%)  would also like to hear                                                                                                      -------beehilstttux,!
+       308 0* 0.22297% (98.405%) ( 50%)  drew the                                                                                                                     -------aabeehiikllllooosstttuux,!
+       309 0* 0.22193% (98.413%) ( 68%)  would like to eat                                                                                                            -------abeehhillorssttux,!
+       310 0* 0.22184% (98.413%) ( 25%)  hate to be this                                                                                                              -------adeeiklllloorstuuwx,!
+       311 0* 0.22182% (98.414%) ( 71%)  would like to also                                                                                                           -------abeeehhilrstttux,!
+       312 0* 0.22149% (98.414%) ( 90%)  still would like                                                                                                             -------aabeeehhoorstttux,!
+       313 0* 0.30598% (98.415%) ( 92%)  still would like to                                                                                                          -------aabeeehhorsttux,!
+       314 0* 0.22037% (98.415%) ( 58%)  used to like that                                                                                                            -------abeehillloorstuwx,!
+       315 0* 0.21680% (98.415%) ( 72%)  would also like to let this                                                                                                  -------abeehrtux,!
+       316 0* 0.21666% (98.415%) ( 67%)  had to break                                                                                                                 -------eeehiilllloosstttuuwx,!
+       317 0* 0.21607% (98.416%) ( 28%)  sure wish                                                                                                                    -------aabdeeehikllllooottttux,!
+       318 0* 0.21486% (98.423%) ( 48%)  used to hate                                                                                                                 -------abeehiiklllloorsttuwx,!
+       319 0* 0.21300% (98.424%) ( 34%)  swear this                                                                                                                   -------abdeeehiklllloootttuux,!
+       320 0* 0.21186% (98.429%) ( 69%)  liked that                                                                                                                   -------abeeehilllooorssttuuwx,!
+       321 0* 0.21140% (98.430%) ( 34%)  would like to hear about the                                                                                                 -------eillsstx,!
+       322 0* 0.21135% (98.430%) ( 73%)  wrote a little                                                                                                               -------abdeehhiklloosstuux,!
+       323 0* 0.21119% (98.431%) ( 22%)  wish there                                                                                                                   -------aabdeeikllllooostttuux,!
+       324 0* 0.21062% (98.436%) ( 35%)  should use that                                                                                                              -------abeeeiikllloorttwx,!
+       325 0* 0.21051% (98.437%) ( 57%)  would like to start a                                                                                                        -------beeehhillostux,!
+       326 0* 0.21028% (98.437%) ( 88%)  should take it                                                                                                               -------abeeehillloorsttuwx,!
+       327 0* 0.21023% (98.437%) ( 53%)  shall                                                                                                                        -------abdeeeehiikllooorsttttuuwx,!
+       328 0* 0.20989% (98.453%) ( 92%)  would still break                                                                                                            -------aeeehhiloostttux,!
+       329 0* 0.20832% (98.453%) ( 45%)  sure would like to be                                                                                                        -------aaehhillostttx,!
+       330 0* 0.20626% (98.453%) ( 53%)  wrote this as                                                                                                                -------abdeeehiklllloottuux,!
+       331 0* 0.20540% (98.454%) ( 13%)  sure would like to see                                                                                                       -------aabhhillotttx,!
+       332 0* 0.23780% (98.454%) ( 27%)  sure would like to see that                                                                                                  -------abhillotx,!
+       333 0* 0.20488% (98.454%) ( 76%)  tried but                                                                                                                    -------aaeeehhikllllooossttuwx,!
+       334 0* 0.20417% (98.456%) (  9%)  stole that idea                                                                                                              -------beehikllloorstuuwx,!
+       335 0* 0.20287% (98.457%) ( 88%)  talked                                                                                                                       -------abeeehhiilllooorsstttuuwx,!
+       336 0* 0.30139% (98.458%) ( 81%)  talked to                                                                                                                    -------abeeehhiillloorssttuuwx,!
+       337 0* 0.20275% (98.461%) ( 75%)  would like to re                                                                                                             -------aabeehhillosstttux,!
+       338 0* 0.20273% (98.461%) ( 93%)  would still be                                                                                                               -------aaeeehhikloorstttux,!
+       339 0* 0.20263% (98.462%) ( 91%)  wrote it all                                                                                                                 -------abdeeehhiklloossttuux,!
+       340 0* 0.20249% (98.462%) ( 74%)  looked at the                                                                                                                -------abeehiilllorssttuuwx,!
+       341 0* 0.20117% (98.463%) ( 59%)  wrote this at                                                                                                                -------abdeeehiklllloostuux,!
+       342 0* 0.23229% (98.463%) ( 20%)  wrote this at the                                                                                                            -------abdeeiklllloosuux,!
+       343 0* 0.20065% (98.464%) ( 70%)  should write books                                                                                                           -------aaeeehillltttux,!
+       344 0* 0.20042% (98.464%) ( 29%)  hear the                                                                                                                     -------abdeeiikllllooosstttuuwx,!
+       345 0* 0.19862% (98.475%) ( 25%)  lied about the last                                                                                                          -------eehiklloorstuwx,!
+       346 0* 0.19815% (98.475%) ( 42%)  said better                                                                                                                  -------aeehhikllllooosttuuwx,!
+       347 0* 0.19682% (98.477%) ( 76%)  would like the                                                                                                               -------aabeehilloorsstttux,!
+       348 0* 0.19541% (98.477%) ( 51%)  tried, but this                                                                                                              -------aaeeehkllllooostuwx!
+       349 0* 0.19523% (98.478%) ( 37%)  was about to tell                                                                                                            -------deeehhiikllorstux,!
+       350 0* 0.19425% (98.478%) ( 85%)  told her                                                                                                                     -------aabeeehiikllloosstttuuwx,!
+       351 0* 0.19377% (98.480%) ( 68%)  would also be                                                                                                                -------aeeehhiikllorsttttux,!
+       352 0* 0.19312% (98.480%) ( 36%)  would also like to see                                                                                                       -------abehhilrtttux,!
+       353 0* 0.19311% (98.480%) (  2%)  stole that last                                                                                                              -------bdeeehiikllooruuwx,!
+       354 0* 0.19177% (98.482%) ( 80%)  read it                                                                                                                      -------abeeehhikllllooosstttuuwx,!
+       355 0* 0.18936% (98.486%) ( 85%)  would still like to hear                                                                                                     -------abeehosttux,!
+       356 0* 0.35010% (98.486%) ( 67%)  would still like to hear about                                                                                               -------eehstx,!
+       357 0* 0.47833% (98.486%) ( 67%)  would still like to hear about the                                                                                           -------esx,!
+       358 0* 0.18928% (98.486%) ( 20%)  hear he                                                                                                                      -------abdeeiikllllooossttttuuwx,!
+       359 0* 0.18890% (98.505%) ( 70%)  should write it                                                                                                              -------aabeeehkllloosttux,!
+       360 0* 0.18666% (98.505%) ( 72%)  drew it                                                                                                                      -------aabeeehhikllllooosstttuux,!
+       361 0* 0.18647% (98.509%) ( 70%)  still hate break                                                                                                             -------deehillooosttuuwx,!
+       362 0* 0.18632% (98.509%) ( 28%)  hate the                                                                                                                     -------abdeeiikllllooorssttuuwx,!
+       363 0* 0.18589% (98.518%) ( 68%)  drew this to                                                                                                                 -------aabeeehiklllloosttuux,!
+       364 0* 0.18575% (98.519%) ( 28%)  read that                                                                                                                    -------beeehiikllllooossttuuwx,!
+       365 0* 0.18481% (98.525%) ( 83%)  also wrote                                                                                                                   -------abdeeehhiiklllostttuux,!
+       366 0* 0.21489% (98.526%) ( 62%)  also wrote this                                                                                                              -------abdeeehiklllottuux,!
+       367 0* 0.18459% (98.526%) ( 52%)  lied about that,                                                                                                             -------eeehikllloorsstuwx!
+       368 0* 0.18440% (98.526%) ( 71%)  hear it                                                                                                                      -------abdeeehikllllooosstttuuwx,!
+       369 0* 0.18377% (98.534%) ( 73%)  use                                                                                                                          -------aabdeeehhiikllllooorsttttuwx,!
+       370 0* 0.23134% (98.543%) ( 46%)  use the                                                                                                                      -------aabdeehiikllllooorstttuwx,!
+       371 0* 0.92665% (98.550%) ( 55%)  use the word                                                                                                                 -------aabeehiiklllloostttux,!
+       372 0* 0.18291% (98.558%) ( 87%)  looked at their                                                                                                              -------abeehilllossttuuwx,!
+       373 0* 0.18258% (98.558%) (  9%)  said that to                                                                                                                 -------beeeehiklllloorstuuwx,!
+       374 0* 0.18151% (98.561%) ( 65%)  tried to talk                                                                                                                -------abeeehhillloosstuuwx,!
+       375 0* 0.18112% (98.562%) ( 49%)  like to write                                                                                                                -------aabdeehhllloossttuux,!
+       376 0* 0.17989% (98.562%) ( 47%)  said the                                                                                                                     -------abeeehikllllooorstttuuwx,!
+       377 0* 0.17902% (98.569%) ( 22%)  should tell that                                                                                                             -------abeeeiikloorstuwx,!
+       378 0* 0.17893% (98.569%) ( 14%)  bet this is the                                                                                                              -------aadeekllllooortuuwx,!
+       379 0* 0.17890% (98.571%) ( 61%)  swear it!                                                                                                                    -------abdeeehhikllllooostttuux,
+       380 0* 0.17761% (98.574%) ( 77%)  should let                                                                                                                   -------aabeeehiiklloorstttuwx,!
+       381 0* 0.17647% (98.575%) ( 39%)  wrote that, but                                                                                                              -------adeeehiiklllloossux!
+       382 0* 0.17644% (98.576%) ( 60%) , the artist                                                                                                                  -------abdeeehikllllooostuuwx!
+       383 0* 0.17634% (98.577%) ( 53%)  drew this!                                                                                                                   -------aabeeehikllllooostttuux,
+       384 0* 0.17613% (98.580%) ( 72%)  should talk!                                                                                                                 -------abeeeehiilloorstttuwx,
+       385 0* 0.17613% (98.580%) ( 86%)  doubt we                                                                                                                     -------aaeeehhiiklllloorsstttux,!
+       386 0* 0.17563% (98.584%) (  7%)  said that too                                                                                                                -------beeeehikllllorstuuwx,!
+       387 0* 0.17556% (98.586%) ( 34%)  had this                                                                                                                     -------abeeeeikllllooorstttuuwx,!
+       388 0* 0.17530% (98.594%) ( 49%)  had a lot                                                                                                                    -------beeeehiikllloorsstttuuwx,!
+       389 0* 0.17456% (98.600%) ( 83%)  will also be                                                                                                                 -------adeeehhikloorsttttuux,!
+       390 0* 0.17407% (98.601%) ( 26%)  hate this web                                                                                                                -------adeeikllllooorsttuux,!
+       391 0* 0.17402% (98.603%) ( 36%)  would like to start this                                                                                                     -------abeeehlloux,!
+       392 0* 0.17374% (98.603%) ( 92%)  still owe                                                                                                                    -------aabdeeehhiklloorstttuux,!
+       393 0* 0.17362% (98.605%) ( 67%)  would still like to hear about the sex                                                                                       -------,!

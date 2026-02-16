@@ -1,11 +1,27 @@
-Not padding the suffix with a space.
-God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
-T-Rex: I know! Sometimes I worry my ...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+
+1938:  God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
 T-Rex: NEVER
 T-Rex (punchline): -
-          has        an      anal       ogy      been        so  accurate       and personally       dam     aging
-        0.00%     1.49%     0.12%    99.03%     0.02%     0.78%     0.78%     0.79%     0.00%     0.09%    53.62%
-         1519        13       142         0       161        17        17         7      1413       122         0
-          242         7        59         0        56        11         4         2       207         4         0
-       91.82%    54.26%    72.04%     0.00%    95.96%    44.60%    31.00%    89.40%    96.52%    78.19%     0.00%
-optimistic cost: 1.24e12  average probability: 0.3%  average tok time: 5552
+                   has          an        anal         ogy        been          so    accurate         and  personally         dam       aging
+prb             0.003%      1.456%      0.148%     99.750%      0.015%      0.476%      0.603%      0.959%      0.003%      0.094%     61.507%
+rln scr        10.959%     28.924%     72.994%     63.564%     58.166%     33.992%     62.143%     76.632%     69.175%     75.077%    100.000%
+pfx scr         0.004%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%
+tok ahd           1920          12         127           0         151          27          27           6        1503         126           0
+val ahd            341           7          53           0          53          17           9           2         217           4           0
+prb ahd         93.14%      53.12%      70.19%       0.00%      96.26%      54.01%      39.29%      87.26%      96.82%      76.43%       0.00%
+min score: 0.0000%  optimistic cost: 4.70e12  average prob: 0.3%  overall_prob: 4.40e-26%  average tok time: 3132 
+1218:  T-Rex: A few months ago I said I wanted to be a stand-up comedian. It turns out it's a lot of work?...ps.
+Utahraptor: Comedy's hard, I guess!
+T-Rex: I just can't figure out these... these Dinosaur Comics.
+God: OH GOD
+T-Rex: What?
+T-Rex (punchline): You
+                  know        what           ?          It           '           s      really       weird        when         you         say        that           .
+prb            10.172%     14.778%     52.306%      3.735%     70.486%     99.237%      1.811%      2.657%      1.240%     37.695%      1.479%     22.211%     37.477%
+rln scr        60.502%     68.755%     78.337%     57.337%     80.066%     78.918%     93.231%     89.725%     79.063%     77.428%     74.551%    100.000%    100.000%
+pfx scr        80.546%     87.814%     83.885%      5.887%      9.329%     14.904%      7.260%      5.144%      2.315%     22.570%     14.580%   1045.474%   1824.366%
+tok ahd              1           1           0           2           0           0          10           3           7           0          15           0           0
+val ahd              1           0           0           1           0           0           6           2           3           0           0           0           0
+prb ahd         22.99%      31.18%       0.00%      55.41%       0.00%       0.00%      51.58%      50.87%      86.10%       0.00%      67.98%       0.00%       0.00%
+min score: 2.3153%  optimistic cost: 3.36e2  average prob: 11.4%  overall_prob: 5.69e-11%  average tok time: 2365 
