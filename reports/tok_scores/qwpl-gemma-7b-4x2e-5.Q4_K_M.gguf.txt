@@ -1,0 +1,30 @@
+
+446:  Text: For we can always see and feel much that the people in old photos and newsreels
+T-Rex: I have...generations to see!
+Utahraptor: Oh man, I want in! Let's make a documentary about our lives!
+T-Rex: That's a great idea!
+Text: and gone.
+Text: -Robert
+                 Rosen       stone           ,           "           V      isions          of         the        Past           "           
+           T           -         Rex           (       punch        line          ):          We           '          ll        live     forever           !
+prb             0.055%      0.016%     21.142%     20.822%      0.163%     89.823%     90.253%     57.750%     71.374%     41.047%     57.473%     26.300%     99.991%     99.988%     36.608%     99.944%     99.973%     99.967%      4.361%     22.298%     91.708%      0.082%     46.345%     18.498%
+rln scr        38.079%     34.018%     41.521%     38.300%     41.721%     12.007%      2.959%      2.496%      0.371%      0.278%      0.208%      0.122%      0.182%      0.202%      0.169%      1.828%      4.907%     13.594%      5.229%     25.869%     65.404%     68.103%    100.000%    100.000%
+pfx scr         0.446%      0.001%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.000%      0.001%      0.009%      0.045%      0.009%      0.007%      0.061%      0.004%     25.157%     21.668%
+tok ahd            226         115           1           0          71           0           0           0           0           0           0           1           0           0           1           0           0           0           3           1           0          66           0           1
+val ahd             26          37           1           0          13           0           0           0           0           0           0           0           0           0           1           0           0           0           0           0           0           0           0           0
+prb ahd         77.42%      96.16%      47.54%       0.00%      73.37%       0.00%       0.00%       0.00%       0.00%       0.00%       0.00%      47.36%       0.00%       0.00%      57.73%       0.00%       0.00%       0.00%      27.82%      35.41%       0.00%      93.10%       0.00%      22.87%
+min score: 0.0000%  optimistic cost: 5.75e4  average prob: 15.4%  overall_prob: 3.09e-18%  average tok time: 24138 
+524:  T-Rex: My sinister raccoon and cephalopod neighbours are having a sleep-over party. Okay! That's inn...r NEIGHBOURS.
+Narrator: THAT NIGHT:
+Off panel: COME TO OUR SLUMBER PARTY, NEIGHBOUR?
+T-Rex: I'm sorry, I - I think I'm busy that night!
+Off panel: YOU
+                   CAN       SLEEP          IN          MY        ROOM           ,           T           -         REX           .           
+         Off       panel           (       punch        line          ):           I        JUST        WANT          TO           T        ASTE         YOU
+prb            12.272%     13.111%      8.500%      8.553%      7.029%     19.250%      9.197%     96.532%     99.515%     38.582%     46.278%     29.748%     99.974%     40.429%     99.796%     99.716%     99.952%     19.188%      2.244%     21.039%     82.887%      0.298%     18.850%     20.621%
+rln scr         0.003%      0.008%      0.005%      0.005%      0.004%      0.004%      0.008%      0.019%      0.084%      0.096%      0.078%      0.247%      0.982%      0.851%     25.781%     75.186%     88.838%     69.728%     81.715%     86.100%     89.431%     86.914%     72.509%    100.000%
+pfx scr        12.568%     17.282%      3.760%      0.823%      0.379%      0.117%      0.017%      0.027%      0.109%      0.067%      0.051%      0.069%      0.963%      0.660%     19.201%    375.713%   1298.179%    373.116%    199.181%   2051.560%  15814.818%    154.825%   5953.238% 113937.584%
+tok ahd              1           0           2           2           1           0           3           0           0           0           0           1           0           1           0           0           0           0           7           0           0          38           0           1
+val ahd              0           0           0           1           0           0           0           0           0           0           0           1           0           1           0           0           0           0           0           0           0           2           0           0
+prb ahd         18.37%       0.00%      76.29%      73.06%      16.94%       0.00%      45.67%       0.00%       0.00%       0.00%       0.00%      62.64%       0.00%      58.59%       0.00%       0.00%       0.00%       0.00%      54.26%       0.00%       0.00%      83.23%       0.00%      53.02%
+min score: 0.0172%  optimistic cost: 2.40e1  average prob: 22.4%  overall_prob: 2.60e-14%  average tok time: 24331 

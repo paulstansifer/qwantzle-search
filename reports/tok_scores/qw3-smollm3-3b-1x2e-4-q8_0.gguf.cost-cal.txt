@@ -1,0 +1,13 @@
+
+1938:  God: SO HEY T-REX YOU'VE INVENTED TWO LANGUAGES IN AS MANY DAYS
+T-Rex: I know! Sometimes I worry my...d Folly of Space Batman and you end up going home SAD and empty-handed again. THESE VARIANTS ARE YOUR NEW LANGUAGES.
+T-Rex: NEVER
+T-Rex (punchline): -
+                   has          an     analogy        been          so    accurate         and  personally    damaging
+prb             0.040%      2.198%     47.402%     27.999%     35.610%      8.628%     14.896%      0.026%      0.787%
+rln scr        10.959%     28.924%     63.564%     58.166%     33.992%     62.143%     76.632%     69.175%    100.000%
+pfx scr         0.060%      0.006%      0.148%      0.250%      0.154%      1.427%      1.401%      3.386%   1820.214%
+tok ahd            220          11           0           0           0           0           1         343          15
+val ahd             79           5           0           0           0           0           0          33           0
+prb ahd         81.75%      65.49%       0.00%       0.00%       0.00%       0.00%      26.27%      86.51%      64.67%
+min score: 0.0057%  optimistic cost: 1.63e4  average prob: 2.8%  overall_prob: 1.10e-12%  average tok time: 24696 
