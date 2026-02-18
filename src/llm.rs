@@ -1,6 +1,7 @@
 #![allow(dead_code)]
 use core::f64;
 use std::collections::HashMap;
+use std::sync::{LazyLock, Mutex};
 
 use lazy_static::lazy_static;
 use llama_cpp_2::context::params::LlamaContextParams;
@@ -17,6 +18,9 @@ lazy_static! {
     pub static ref BACKEND: LlamaBackend = LlamaBackend::init().unwrap();
 }
 
+static TOK_CACHE: LazyLock<Mutex<HashMap<LlamaToken, String>>> =
+    LazyLock::new(|| Mutex::new(HashMap::new()));
+
 pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> LlamaModel {
     send_logs_to_tracing(LogOptions::default().with_logs_enabled(false));
     let params: LlamaModelParams =
@@ -26,21 +30,25 @@ pub fn model_from_gguf(path: impl AsRef<std::path::Path>, on_gpu: bool) -> Llama
     LlamaModel::load_from_file(&BACKEND, path, &params).expect("loading model")
 }
 
+// It seems like `.token_to_piece` leaks memory, but if we cache, we can limit the damage.
 pub fn tok_to_str(t: LlamaToken, model: &LlamaModel) -> String {
-    let mut dec = encoding_rs::UTF_8.new_decoder();
-    model
-        .token_to_piece(t, &mut dec, /*special*/ false, /*lstrip*/ None)
-        .unwrap_or_else(|e| e.to_string())
+    TOK_CACHE
+        .lock()
+        .unwrap()
+        .entry(t)
+        .or_insert_with(|| {
+            let mut dec = encoding_rs::UTF_8.new_decoder();
+            model
+                .token_to_piece(t, &mut dec, /*special*/ false, /*lstrip*/ None)
+                .unwrap_or_else(|e| e.to_string())
+        })
+        .to_string()
 }
 
 pub fn toks_to_str(t: &[LlamaToken], model: &LlamaModel) -> String {
-    let mut dec = encoding_rs::UTF_8.new_decoder();
-
     let mut res = String::new();
     for tok in t {
-        res += &model
-            .token_to_piece(*tok, &mut dec, /*special*/ false, /*lstrip*/ None)
-            .unwrap();
+        res += &tok_to_str(*tok, model)
     }
     return res;
 }
@@ -106,6 +114,14 @@ impl<'a> Session<'a> {
             timers: SessionTimers::default(),
             boost_toks: HashMap::new(),
         }
+    }
+
+    pub fn ctx_perf(&mut self) -> String {
+        format!(
+            "Timings: {}    Size: {}MB",
+            self.ctx.timings(),
+            self.ctx.get_state_size() / (1_024 * 1_024)
+        )
     }
 
     pub fn boost(&mut self, tok: LlamaToken, boost: f64) {
