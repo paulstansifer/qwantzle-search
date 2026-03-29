@@ -240,7 +240,8 @@ impl Hints {
 
         let context = String::from_utf8(std::fs::read("corpus/1663-prefix.txt").unwrap()).unwrap();
         let token_size = str_to_tokens(&context, llm).len() + TOK_BUFFER as usize;
-        let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,!!";
+        // Omit the "!!", since we know it's at the end, and the first "I", which is in the prefix:
+        let letters = "ttttttttttttooooooooooeeeeeeeeaaaaaaallllllnnnnnnuuuuuuiiiiisssssdddddhhhhhyyyyyIIrrrfffbbwwkcmvg:,";
         let mut letter_pool = LetterPool::just_letters_from_text(letters);
         letter_pool.set_last_letter(b'w');
         letter_pool.set_longest_tok(*long_word_toks.first().unwrap(), llm);
@@ -486,7 +487,13 @@ impl SearchState<'_> {
     fn full_string_complete(&mut self, text: &str, score: Score) -> bool {
         match &self.hints.goal {
             None => {
-                let desc = format!("====> 'I{}!!' ({:.5}%)", text, score.0 * 100.0);
+                let desc = format!(
+                    "====> {}: 'I{}!!' ({:.5}%)",
+                    self.step.separate_with_commas(),
+                    text,
+                    score.0 * 100.0
+                );
+
                 self.log_ln(&desc);
                 self.hall_of_fame.possible_completions.push(desc);
                 let mut file = fs::OpenOptions::new()
@@ -620,7 +627,7 @@ impl SearchState<'_> {
             );
         }
 
-        if self.step % 10_000 == 0 {
+        if self.step % 50_000 == 0 {
             self.hof_write();
         }
     }
