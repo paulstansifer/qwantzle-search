@@ -88,6 +88,10 @@ struct Args {
     #[arg(long)]
     prefix_file: Option<String>,
 
+    /// Ignore the given prefixes
+    #[arg(long)]
+    banned_prefix_file: Option<String>,
+
     /// Interactively manually examine completions for the given strip ID.
     #[arg(long)]
     search_manual: Option<usize>,
