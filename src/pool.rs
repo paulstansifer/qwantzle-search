@@ -537,6 +537,11 @@ impl LetterPool {
         self.last_letter = Some(Char(b))
     }
 
+    // Also a HACK, of course
+    pub fn clear_last_letter(&mut self) {
+        self.last_letter = None
+    }
+
     // HACK: should do this after setting `last_letter`
     pub fn set_longest_tok(&mut self, longest_tok: LlamaToken, model: &LlamaModel) {
         self.remove(longest_tok, model);

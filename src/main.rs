@@ -72,7 +72,9 @@ struct Args {
     #[arg(long)]
     tok_score: Option<usize>,
 
-    /// For tok-score, use a different suffix.
+    /// For tok-score, use a different solution.
+    /// For search-one, remove this from the letter pool, treating it as a known solution
+    /// (I guess "suffix" is being used two different ways here; sorry!)
     #[arg(long)]
     suffix: Option<String>,
 
@@ -733,11 +735,16 @@ fn main() {
         println!("{}", stats.details);
     } else if let Some(ref search) = args.search_one {
         if let Ok(id) = search.parse::<usize>() {
-            let hints = if id == 1663 {
+            let mut hints = if id == 1663 {
                 search::Hints::for_1663(&words, !args.ignore_ties, &model)
             } else {
                 search::Hints::from_strip(&get_strip(id, prompt), &words, !args.ignore_ties, &model)
             };
+
+            if let Some(suffix) = args.suffix {
+                hints.letter_pool.remove_str(&suffix.replace(" ", ""));
+                hints.letter_pool.clear_last_letter();
+            }
 
             let prefixes = if let Some(prefix_file) = args.prefix_file.as_ref() {
                 std::fs::read_to_string(prefix_file)
