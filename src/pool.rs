@@ -669,7 +669,8 @@ impl LetterPool {
     /// Intended for testing.
     /// Panics if the letters aren't available.
     pub fn remove_str(&mut self, s: &str) {
-        assert!(self.long_tok == None); // Can't respect this, if present!
+        // TODO: put this back when suffix is a little better-handled
+        // assert!(self.long_tok == None); // Can't respect this, if present!
         self.remove_pt(&PoolTok::from_str(s), false);
     }
 

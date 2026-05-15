@@ -742,6 +742,7 @@ fn main() {
             };
 
             if let Some(suffix) = args.suffix {
+                assert!(!suffix.contains("fundamental"));
                 hints.letter_pool.remove_str(&suffix.replace(" ", ""));
                 hints.letter_pool.clear_last_letter();
             }
